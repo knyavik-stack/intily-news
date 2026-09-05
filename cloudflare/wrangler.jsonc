@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developers.cloudflare.com/workers/wrangler/config-schema.json",
+  "name": "intily-ai-news",
+  "main": "intily-ai-news.worker.js",
+  "compatibility_date": "2026-09-01",
+  "triggers": {
+    "crons": ["* * * * *"]
+  },
+  "ai": {
+    "binding": "AI"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "STATE",
+      "id": "8d608fcdfed54432b9c84c9c13a1777d"
+    }
+  ]
+}
