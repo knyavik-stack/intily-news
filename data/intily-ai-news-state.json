@@ -624,13 +624,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788651881.9249542,
+    "last_start_ts": 1788652038.1380262,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788651881.9249542,
-    "last_success_ts": 1788651881.9249542,
+    "last_run_ts": 1788652038.1380262,
+    "last_success_ts": 1788652038.1380262,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 11
   },
   "providers": {
@@ -651,13 +651,6 @@
     }
   },
   "stories": {
-    "a7254044d82b6713bd87e1bc04203e6dab8a98ca618ee2448b9e8f31beb0177f": {
-      "time": 1788565579,
-      "title": "ChatGPT vs Claude vs Gemini: 5x File Upload Gap [2026] - tech-insider.org",
-      "desc": "ChatGPT vs Claude vs Gemini: 5x File Upload Gap [2026] tech-insider.org",
-      "source": "tech-insider.org",
-      "region": "WORLD"
-    },
     "bfa9490b08a4416231159daaefdc4d55d529e9194f1a86d2f2fd9e9e65d08db4": {
       "time": 1788565761,
       "title": "California’s Rob Bonta investigating OpenAI over Hugging Face hack - Politico",
@@ -1422,6 +1415,33 @@
       "queue_after": 11,
       "published": 1,
       "publish_attempts": 1,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788652038,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": false,
+      "candidates": 0,
+      "queue_before": 11,
+      "queue_after": 11,
+      "published": 0,
+      "publish_attempts": 0,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
