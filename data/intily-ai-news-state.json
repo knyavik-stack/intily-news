@@ -396,7 +396,8 @@
     "4a30001e2548fa26871459059f14ca29be95b71d626d130f0fd0f98591136545": 1788649810,
     "271f8b82696c7385dd06e6bae858f6a3e8f79f33a40b4fd43d8a8099e48cdb92": 1788650143,
     "794772b61d9fe5282d3bcaf0344d0e78f59ca75935995ff0b983bedfcbf18413": 1788650445,
-    "77b59093be0f67183aa204158094db9fe371c38545d823ba056798c9856a37a8": 1788650681
+    "77b59093be0f67183aa204158094db9fe371c38545d823ba056798c9856a37a8": 1788650681,
+    "776ff5c7ab1a3f7435cf3abc7a1caff1de9c1fe323ff6007f9c8715c1e9bd6b0": 1788650861
   },
   "known": {
     "1ea303ab8ec210bb89b428b7d6dd4f49ac10ea9fb0d8762edde56dab3d962dd2": 1788632289.4549868,
@@ -438,41 +439,11 @@
       "topics": [
         "robotics"
       ],
-      "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Краснов рассказал о планах по внедрению ИИ на всех этапах судопроизводства - РАПСИ",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBEOEh5UXBNSnA3Szh0R1VoMmd5aXFCZTVCUktqYjZJUmVKX3BYM2Z2dWhKWlhvbUgxT0lxSy02a2g3eVM1NXVGRlN1YjF5b2hqUFhGS3JuQmpzcWlBa3lxVmx4R1pPczQxZkhIWnhDcw?oc=5",
-      "desc": "Краснов рассказал о планах по внедрению ИИ на всех этапах судопроизводства РАПСИ",
-      "source": "РАПСИ",
-      "time": 1788607500.0,
-      "score": 65.9,
-      "russia_weight_bonus": 3.9,
-      "key": "b45466d3435feef07fe979987cfecdd3d52e768ca468b34ce7727c727a07b05b",
-      "importance": 65.9,
-      "editorial_value": 50.0,
-      "topics": [
-        "business"
-      ],
-      "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "ИИ-ограничения. От вседозволенности к регулированию - Финам",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaU5tekNMdlpmTGZVSHdGRDhIdFRhcVhXU1F6anBPRGUzV3hzUkJZWkt2SzFNZ0RPcVR1QmtMU3FrMktMUWFEN1dvTHUyai0zTzhfdHpvbFJ1WlhTWGRSMFUwUjFIbGs4MmJiMGZEcXViRXY1Q3FFV19INXFwZm9sYllERWtpdzRINC04NnJVVHJyWG52b3RjU1VPaGhxeEhvVE45bEpGTDFVMUk?oc=5",
-      "desc": "ИИ-ограничения. От вседозволенности к регулированию Финам",
-      "source": "Финам",
-      "time": 1788609600.0,
-      "score": 60.8,
-      "russia_weight_bonus": 4.8,
-      "key": "776ff5c7ab1a3f7435cf3abc7a1caff1de9c1fe323ff6007f9c8715c1e9bd6b0",
-      "importance": 60.8,
-      "editorial_value": 50.0,
-      "topics": [
-        "security_regulation"
-      ],
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1788650861,
+      "last_failure": "RU_QA_FORBIDDEN_STYLE",
+      "failure_count": 1,
+      "next_retry_at": 1788651161
     },
     {
       "region": "RUSSIA",
@@ -575,20 +546,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788650681.508114,
+    "last_start_ts": 1788650861.9117067,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788650681.508114,
-    "last_success_ts": 1788650681.508114,
+    "last_run_ts": 1788650861.9117067,
+    "last_success_ts": 1788650861.9117067,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 9
+    "queue_size": 7
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788650683.270942
+      "updated_at": 1788650867.0217535
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -602,13 +573,6 @@
     }
   },
   "stories": {
-    "d3d217e662f9169ca1760e3bdf09913be74412fcc1f3f1b9c4d09a94e56f30de": {
-      "time": 1788564439,
-      "title": "Measure Workplace AI by Cost per Business Outcome - quasa.io",
-      "desc": "Measure Workplace AI by Cost per Business Outcome quasa.io",
-      "source": "quasa.io",
-      "region": "WORLD"
-    },
     "02a8734d12122fa4d3486e424c4d5bf728716c6ec714b3da73f3504b283089a9": {
       "time": 1788564740,
       "title": "ServiceNow Extends Israeli AI Buying Spree With Sweep Acquisition - finance.biggo.com",
@@ -923,11 +887,17 @@
       "desc": "Nvidia Announces $12.9 Billion Hugging Face Acquisition to Expand Open Source AI mezha.net",
       "source": "mezha.net",
       "region": "WORLD"
+    },
+    "776ff5c7ab1a3f7435cf3abc7a1caff1de9c1fe323ff6007f9c8715c1e9bd6b0": {
+      "time": 1788650861,
+      "title": "ИИ-ограничения. От вседозволенности к регулированию - Финам",
+      "desc": "ИИ-ограничения. От вседозволенности к регулированию Финам",
+      "source": "Финам",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -945,10 +915,11 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "last_search_ts": 1788649303.2180028,
-  "last_publish_ts": 1788650681.508114,
+  "last_publish_ts": 1788650861.9117067,
   "run_history": [
     {
       "ts": 1788649810,
@@ -1070,6 +1041,33 @@
       "published": 1,
       "publish_attempts": 1,
       "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788650861,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "candidates": 0,
+      "queue_before": 8,
+      "queue_after": 7,
+      "published": 1,
+      "publish_attempts": 2,
+      "item_failures": 1,
       "provider_state": {
         "GEMINI": {
           "blocked": false,
