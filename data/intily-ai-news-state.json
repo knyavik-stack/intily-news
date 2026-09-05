@@ -397,7 +397,8 @@
     "271f8b82696c7385dd06e6bae858f6a3e8f79f33a40b4fd43d8a8099e48cdb92": 1788650143,
     "794772b61d9fe5282d3bcaf0344d0e78f59ca75935995ff0b983bedfcbf18413": 1788650445,
     "77b59093be0f67183aa204158094db9fe371c38545d823ba056798c9856a37a8": 1788650681,
-    "776ff5c7ab1a3f7435cf3abc7a1caff1de9c1fe323ff6007f9c8715c1e9bd6b0": 1788650861
+    "776ff5c7ab1a3f7435cf3abc7a1caff1de9c1fe323ff6007f9c8715c1e9bd6b0": 1788650861,
+    "435c53d86686d290ea251bfe50dfaa4501d27c703395b6e672204cbc0073fdb9": 1788651044
   },
   "known": {
     "1ea303ab8ec210bb89b428b7d6dd4f49ac10ea9fb0d8762edde56dab3d962dd2": 1788632289.4549868,
@@ -509,23 +510,11 @@
       "topics": [
         "models"
       ],
-      "tier": "A"
-    },
-    {
-      "region": "WORLD",
-      "title": "OpenAI launches GPT-6 Astra, the AI model built to do more than answer questions - The Indian Express",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSmZCNl9FQ0RXNmJTemhxVmxOdFV2TFJ1bGN3TUdTeGpiN3QwRUNVbUNJRjBqY2NCQVFuNEdUNzRqT2hQTTVsQkliZHFNemdKRC1kYVBWRkotaXRIRWhWNVR2U3pSRTlHbERRVkl3aV9MSUJGNmp4cHdQU09rak5LTjZCMU05Z3A3b1hKajU4UzJ1RXhZb19JYjltZEFBSzFiMWJFSkRQRmFZdFZ2X0NSbEZFb0V2aUJUb01DMkV1QXnSAccBQVVfeXFMT1FqNzYtOVVoTnZ4c2tjT09fRl9SeE9MMFZrUllzdVA2NVBpcUE4VjE5YjJfTElzR1Z1WDdvSzhPT0NWQ1JaVHE2YnpleUFjMTB4LTlUNndsN2cwOVdqTERSeElMaDYyQl80VEJub1FTU1VoNld1TTZjaUdIOXkzQUhzMzJxckhVS0pHWHVfVzdCR29BbENOUUpCQm9BM25FZVkyYTFYZmxUdXhrQ3c4eXNldWdUUVZMeV9Rc0tLTHpFTEYzcWFMTQ?oc=5",
-      "desc": "OpenAI launches GPT-6 Astra, the AI model built to do more than answer questions The Indian Express",
-      "source": "The Indian Express",
-      "time": 1788610500.0,
-      "score": 60.0,
-      "key": "435c53d86686d290ea251bfe50dfaa4501d27c703395b6e672204cbc0073fdb9",
-      "importance": 60.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "models"
-      ],
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1788651044,
+      "last_failure": "RU_QA_FORBIDDEN_STYLE",
+      "failure_count": 1,
+      "next_retry_at": 1788651344
     },
     {
       "region": "WORLD",
@@ -546,20 +535,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788650861.9117067,
+    "last_start_ts": 1788651044.9100633,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788650861.9117067,
-    "last_success_ts": 1788650861.9117067,
+    "last_run_ts": 1788651044.9100633,
+    "last_success_ts": 1788651044.9100633,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 7
+    "queue_size": 6
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788650867.0217535
+      "updated_at": 1788651049.6367762
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -894,10 +883,16 @@
       "desc": "ИИ-ограничения. От вседозволенности к регулированию Финам",
       "source": "Финам",
       "region": "RUSSIA"
+    },
+    "435c53d86686d290ea251bfe50dfaa4501d27c703395b6e672204cbc0073fdb9": {
+      "time": 1788651044,
+      "title": "OpenAI launches GPT-6 Astra, the AI model built to do more than answer questions - The Indian Express",
+      "desc": "OpenAI launches GPT-6 Astra, the AI model built to do more than answer questions The Indian Express",
+      "source": "The Indian Express",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -916,10 +911,11 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "last_search_ts": 1788649303.2180028,
-  "last_publish_ts": 1788650861.9117067,
+  "last_publish_ts": 1788651044.9100633,
   "run_history": [
     {
       "ts": 1788649810,
@@ -1065,6 +1061,33 @@
       "candidates": 0,
       "queue_before": 8,
       "queue_after": 7,
+      "published": 1,
+      "publish_attempts": 2,
+      "item_failures": 1,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788651044,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "candidates": 0,
+      "queue_before": 7,
+      "queue_after": 6,
       "published": 1,
       "publish_attempts": 2,
       "item_failures": 1,
