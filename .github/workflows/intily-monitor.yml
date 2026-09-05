@@ -1,1 +1,21 @@
-PLACEHOLDER
+name: Intily Production Monitor
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Build KPI dashboard
+        run: |
+          python3 scripts/intily_monitor.py | tee /tmp/intily-kpi.md
+          cat /tmp/intily-kpi.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Check production alerts
+        run: python3 scripts/intily_monitor.py --check
