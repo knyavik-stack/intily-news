@@ -400,7 +400,8 @@
     "776ff5c7ab1a3f7435cf3abc7a1caff1de9c1fe323ff6007f9c8715c1e9bd6b0": 1788650861,
     "435c53d86686d290ea251bfe50dfaa4501d27c703395b6e672204cbc0073fdb9": 1788651044,
     "dc691a26b06d64d787caea8f021e41f7217f3e8e0c4054df14d7cd9ae5ef7922": 1788651318,
-    "90f32234779dc5fba43a012179f24eb6f91ebcb8803ae27d2b9b77ba320a4e4d": 1788651522
+    "90f32234779dc5fba43a012179f24eb6f91ebcb8803ae27d2b9b77ba320a4e4d": 1788651522,
+    "4ce9b62638fea71d3213f09ef1996bc33d8a205c495f0b4fe014f52463f59481": 1788651881
   },
   "known": {
     "1ea303ab8ec210bb89b428b7d6dd4f49ac10ea9fb0d8762edde56dab3d962dd2": 1788632289.4549868,
@@ -455,20 +456,6 @@
       "last_failure": "RU_QA_FORBIDDEN_STYLE",
       "failure_count": 2,
       "next_retry_at": 1788652122
-    },
-    {
-      "region": "WORLD",
-      "title": "SDAIA President Dr. Abdullah Alghamdi to represent Saudi Arabia at India AI Impact Summit - News On AIR",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOM3hZaXpOS2Y5VVNaWHp2NXp0RHREd3gzZVBuNjFZOW93RWROUlRsQWMyWC10ekhCeW9uX1VpSFE0enI3NDI1eThtWk1acXhVOE9EalpYVGRYckVWUkZmbG9NZTBCcE1Belotdmk0U1ZfSHdXaVFDcmRLeXJlOUswaUdtVDRobFBrOGFvNi11Q2IxUGo0YzNoa093LTdHT2F4M0Y3ZnlGS1ZXMzRTSFVXZmw5NkU?oc=5",
-      "desc": "SDAIA President Dr. Abdullah Alghamdi to represent Saudi Arabia at India AI Impact Summit News On AIR",
-      "source": "News On AIR",
-      "time": 1788645933.0,
-      "score": 63.5,
-      "key": "4ce9b62638fea71d3213f09ef1996bc33d8a205c495f0b4fe014f52463f59481",
-      "importance": 63.5,
-      "editorial_value": 50.0,
-      "topics": [],
-      "tier": "A"
     },
     {
       "region": "WORLD",
@@ -637,20 +624,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788651702.2572901,
+    "last_start_ts": 1788651881.9249542,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788651702.2572901,
-    "last_success_ts": 1788651702.2572901,
+    "last_run_ts": 1788651881.9249542,
+    "last_success_ts": 1788651881.9249542,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 12
+    "last_published": 1,
+    "queue_size": 11
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788651527.6249442
+      "updated_at": 1788651885.013223
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -985,12 +972,18 @@
       "desc": "Роман Венедиктов («Эмерджентные мультиагентные системы»): «Сегодня сам факт использования ИИ стал обычной частью корпоративной ИТ-среды» prospect.com.ru",
       "source": "prospect.com.ru",
       "region": "RUSSIA"
+    },
+    "4ce9b62638fea71d3213f09ef1996bc33d8a205c495f0b4fe014f52463f59481": {
+      "time": 1788651881,
+      "title": "SDAIA President Dr. Abdullah Alghamdi to represent Saudi Arabia at India AI Impact Summit - News On AIR",
+      "desc": "SDAIA President Dr. Abdullah Alghamdi to represent Saudi Arabia at India AI Impact Summit News On AIR",
+      "source": "News On AIR",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1007,10 +1000,11 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "last_search_ts": 1788651223.5736613,
-  "last_publish_ts": 1788651522.661986,
+  "last_publish_ts": 1788651881.9249542,
   "run_history": [
     {
       "ts": 1788649810,
@@ -1401,6 +1395,33 @@
       "queue_after": 12,
       "published": 0,
       "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788651881,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "candidates": 0,
+      "queue_before": 12,
+      "queue_after": 11,
+      "published": 1,
+      "publish_attempts": 1,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
