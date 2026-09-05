@@ -64,7 +64,7 @@ def dashboard(state, now=None):
         "# Intily Production KPI",
         "",
         f"**Generated:** {dt(now)}",
-        f"**Monitoring:** {'ON' if state.get('run_history') is not None else 'OFF'}",
+        f"**Monitoring:** {'ON' if state.get('kpi_monitoring_enabled', True) else 'OFF'}",
         "",
         "## Current",
         "",

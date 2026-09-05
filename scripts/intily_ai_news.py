@@ -1722,6 +1722,7 @@ def main():
     now = time.time()
     cut = now - 30 * 86400
     health = s['health']
+    s['kpi_monitoring_enabled'] = KPI_MONITORING_ENABLED
 
     previous_success = float(health.get('last_success_ts', 0) or 0)
     if previous_success and now - previous_success > HEARTBEAT_MAX_SECONDS:

@@ -59,3 +59,8 @@ In `scripts/intily_ai_news.py`, under `Production KPI / monitoring`, change `KPI
 ## Safety
 
 Monitoring is read-only with respect to Telegram and providers. It reads the state file and GitHub Actions metadata only. It never prints secret values.
+
+
+## Verified production smoke test
+
+On 2026-09-05 UTC the production publisher smoke test completed successfully with `PUBLISHED`, one Telegram delivery, zero item publication failures and durable state persistence. The subsequent on-demand monitor read the persisted history and returned `GREEN`.

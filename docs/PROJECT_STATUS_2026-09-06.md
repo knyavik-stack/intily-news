@@ -33,3 +33,12 @@ GitHub Actions `SUCCESS` means the technical workflow completed successfully. Th
 ## Remaining maturity work
 
 No architecture change is required. Remaining maturity is empirical: accumulate a meaningful production sample and evaluate publication rate, queue pressure, candidate yield, provider failures and no-publish streaks against agreed SLOs.
+
+
+## Live verification — monitoring closure
+
+Verified after deployment commit `d19f3fb39f718d3199942b193dd489932a94e2c1`: publisher run **#27** completed SUCCESS and produced a real Telegram publication. The runtime emitted `BUSINESS_RESULT PUBLISHED`, `publish_attempts=1`, `item_failures=0`, `queue_after=13`, and persisted state successfully.
+
+The same run generated the KPI dashboard in the GitHub Actions Summary. The on-demand `Intily Production Monitor` was then run against the persisted state and completed GREEN, showing 24h/7d/stored history with 1 run, 1 publication, 100% publication rate and 0 item failures.
+
+This confirms the complete observability path: **publisher → durable KPI history → Actions Summary → on-demand monitor → alert check**.
