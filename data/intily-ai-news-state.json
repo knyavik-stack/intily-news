@@ -637,11 +637,11 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788651643.8706307,
+    "last_start_ts": 1788651702.2572901,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788651643.8706307,
-    "last_success_ts": 1788651643.8706307,
+    "last_run_ts": 1788651702.2572901,
+    "last_success_ts": 1788651702.2572901,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 12
@@ -664,13 +664,6 @@
     }
   },
   "stories": {
-    "4f6b86c987d4ee29e2db999ccd8976e16d0184d2d7dc866d3dfb95e7cd8d10b2": {
-      "time": 1788565283,
-      "title": "EXCLUSIVE: US, China gear up for mid-September AI safety talks - reuters.com",
-      "desc": "EXCLUSIVE: US, China gear up for mid-September AI safety talks reuters.com",
-      "source": "reuters.com",
-      "region": "WORLD"
-    },
     "a7254044d82b6713bd87e1bc04203e6dab8a98ca618ee2448b9e8f31beb0177f": {
       "time": 1788565579,
       "title": "ChatGPT vs Claude vs Gemini: 5x File Upload Gap [2026] - tech-insider.org",
@@ -1372,6 +1365,33 @@
     },
     {
       "ts": 1788651643,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": false,
+      "candidates": 0,
+      "queue_before": 12,
+      "queue_after": 12,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788651702,
       "status": "OK",
       "business_result": "NO_PUBLISH",
       "business_reason": "publish_interval_not_reached",
