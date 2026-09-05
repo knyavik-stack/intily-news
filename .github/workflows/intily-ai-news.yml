@@ -1,28 +1,80 @@
-# INTILY — Telegram AI News Automation
+name: Intily AI News Publisher
 
-INTILY is the dedicated Telegram AI news publication subsystem.
+on:
+  workflow_dispatch:
 
-## Current production status
+permissions:
+  contents: write
+  models: read
 
-**GREEN — restored to the proven 2026-09-05 08:00 MSK architecture.**
+concurrency:
+  group: intily-ai-news-production
+  cancel-in-progress: false
 
-Production is intentionally simple:
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Run news engine
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_CHAT_ID: '@intily'
+          STATE_FILE: data/intily-ai-news-state.json
+        run: timeout 240s python3 scripts/intily_ai_news.py
+      - name: Production KPI summary
+        if: always()
+        continue-on-error: true
+        run: |
+          python3 scripts/intily_monitor.py | tee /tmp/intily-kpi.md
+          cat /tmp/intily-kpi.md >> "$GITHUB_STEP_SUMMARY"
 
-1. Cloudflare `intily-ai-news` runs a **JavaScript** minute scheduler.
-2. The scheduler dispatches GitHub Actions roughly once every three minutes via a 1/3 gate.
-3. GitHub Actions runs the **Python** publisher.
-4. The publisher discovers, ranks, deduplicates, queues and publishes to Telegram.
-5. Publisher state is persisted to `data/intily-ai-news-state.json`.
+      - name: Persist state
+        if: always()
+        run: |
+          if git diff --quiet -- data/intily-ai-news-state.json; then
+            echo 'No state changes.'
+            exit 0
+          fi
 
-The public repository is the only deliberate structural change from the pre-cutover production setup. The Cloudflare source is version-controlled under `cloudflare/`.
+          git config user.name 'intily-ai-news[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
-## Canonical documentation
+          # State is a production artifact, while docs/code may be pushed to
+          # main independently during the run. Preserve the generated state,
+          # rebase it onto the newest main, and retry the push to avoid losing
+          # state on a normal fast-forward race.
+          cp data/intily-ai-news-state.json /tmp/intily-ai-news-state.json
 
-- `docs/INTILY_RUNTIME_RESTORATION_2026-09-05.md` — restoration record and architecture contract.
-- `docs/PROJECT_STATUS_2026-09-06.md` — current verified state.
-- `docs/INTILY_PUBLICATION_SETTINGS.md` — publication controls.
-- `docs/INTILY_OPERATIONS.md` — operational reference.
+          for attempt in 1 2 3; do
+            echo "Persist attempt $attempt"
+            git fetch origin main
+            git reset --hard origin/main
+            cp /tmp/intily-ai-news-state.json data/intily-ai-news-state.json
 
-## Security
+            if git diff --quiet -- data/intily-ai-news-state.json; then
+              echo 'State already matches origin/main.'
+              exit 0
+            fi
 
-This repository is public. Secret values must never be committed or printed to logs. Runtime secrets are stored in GitHub/Cloudflare secret stores.
+            git add data/intily-ai-news-state.json
+            git commit -m 'chore(news): persist publisher state' || true
+
+            if git push origin main; then
+              echo 'State persisted.'
+              exit 0
+            fi
+
+            sleep 2
+          done
+
+          echo 'State persistence failed after retries.'
+          exit 1

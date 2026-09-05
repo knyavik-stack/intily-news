@@ -1,57 +1,37 @@
-# INTILY Publication Settings
+# INTILY — Telegram AI News Automation
 
-**Single control point:** `scripts/intily_ai_news.py` → `PUBLICATION SETTINGS`.
+INTILY is the dedicated Telegram AI news publication subsystem.
 
-| Setting | Value | Meaning |
-|---|---:|---|
-| Search interval | 30 min | Planned news discovery cadence |
-| Publication interval | 3 min | Minimum gap between Telegram posts |
-| Importance threshold | 60/100 | Minimum candidate importance |
-| Max queue | 20 | Maximum qualifying stories in memory |
-| RU minimum share | 50% | Minimum RU share when enough RU candidates exist |
-| Joke rate | 90% | Target for suitable non-serious posts |
-| Urgent queue threshold | 1 | Search immediately at 0–1 queued stories |
-| Temporary queue diagnostics | ON | Adds queue size, RU/WORLD counts, and next-item importance to every published post; remove by setting `SHOW_QUEUE_DIAGNOSTICS = False` |
+## Current production status
 
-## Where to operate
+**GREEN — restored to the proven 2026-09-05 08:00 MSK architecture.**
 
-- **Code/settings:** `scripts/intily_ai_news.py`
-- **Automation trigger:** Cloudflare Worker `intily-ai-news` → Cron `*/3 * * * *`
-- **Publisher workflow:** `.github/workflows/intily-ai-news.yml`
-- **Durable candidate state:** `data/intily-ai-news-state.json`
-- **Rollback snapshot:** `docs/backups/2026-09-03/`
+Production is intentionally simple:
 
+1. Cloudflare `intily-ai-news` runs a **JavaScript** minute scheduler.
+2. The scheduler dispatches GitHub Actions roughly once every three minutes via a 1/3 gate.
+3. GitHub Actions runs the **Python** publisher.
+4. The publisher discovers, ranks, deduplicates, queues and publishes to Telegram.
+5. Publisher state is persisted to `data/intily-ai-news-state.json`.
 
-## Validation snapshot — 2026-09-03
+The public repository is the only deliberate structural change from the pre-cutover production setup. The Cloudflare source is version-controlled under `cloudflare/`.
 
-A live full-collector test returned 216 raw items, 51 qualifying candidates after the 60/100 threshold, with 31 WORLD and 20 RUSSIA candidates before queue capping. The queue rebalance therefore has enough RU inventory to build a 20-item queue with the required 10/10 minimum split.
+## Canonical documentation
 
-A production test also exposed and corrected a concrete Cyrillic-data defect in the previous implementation: Russian AI relevance terms and Russian search queries had been stored as mojibake, causing Russian discovery to return zero results and Russian relevance to fail. The current implementation uses native UTF-8 Cyrillic terms and queries.
+- `docs/INTILY_RUNTIME_RESTORATION_2026-09-05.md` — restoration record and architecture contract.
+- `docs/PROJECT_STATUS_2026-09-06.md` — current verified state.
+- `docs/INTILY_PUBLICATION_SETTINGS.md` — publication controls.
+- `docs/INTILY_OPERATIONS.md` — operational reference.
 
-## Temporary publication diagnostics
+## Security
 
-For temporary production analysis, every Telegram post currently receives a final diagnostic line:
+This repository is public. Secret values must never be committed or printed to logs. Runtime secrets are stored in GitHub/Cloudflare secret stores.
 
-`📊 В очереди: X новостей, RU — Y, WORLD — Z. Следующая в очереди имеет вес P%.`
-
-The values describe the queue **after the published story is removed**, using the same queue filtering/rebalancing rules as production. `P` is the `importance` value (0–100) of the next queued story after rebalancing. If the queue is empty, the footer reports that the next story is absent.
-
-This is deliberately feature-flagged. To remove it later, change `SHOW_QUEUE_DIAGNOSTICS = True` to `False` in the publication settings; no queue logic needs to be changed.
-
-
-## Temporary RU experiment (2026-09-03)
-
-- `RUSSIA_MIN_SHARE = 0.60`
-- `RUSSIA_MIN_QUEUE_SLOTS = 12` for a 20-item queue
-- Russian candidates receive random `russia_weight_bonus` from **+1 to +5** importance points at ingestion.
-- Bonus is applied once per newly collected candidate and persisted with the candidate; it is not re-randomized during queue maintenance.
-- Purpose: temporary measurement of how stronger RU representation and a small stochastic weight advantage affect queue composition and publication order.
-- Remove only after the analytical period is complete.
 
 ## Production KPI and monitoring
 
-Every publisher run records a bounded production history in `data/intily-ai-news-state.json` and renders a human-readable KPI dashboard in the GitHub Actions **Summary**.
+Every publisher run records a bounded production history in `data/intily-ai-news-state.json` and renders the KPI dashboard in the GitHub Actions **Summary**.
 
-For a full on-demand dashboard, open **Actions → Intily Production Monitor → Run workflow**.
+For an on-demand current dashboard, open **Actions → Intily Production Monitor → Run workflow**.
 
-Operator controls are explicitly marked in `scripts/intily_ai_news.py` and `scripts/intily_monitor.py`; the monitoring flags/thresholds do not disable publication unless explicitly documented to do so.
+Operator controls are explicitly marked in `scripts/intily_ai_news.py` and `scripts/intily_monitor.py`. Monitoring controls do not disable publication.

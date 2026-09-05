@@ -55,19 +55,19 @@ This is deliberately feature-flagged. To remove it later, change `SHOW_QUEUE_DIA
 - KPI history size: `KPI_HISTORY_LIMIT`.
 - Monitoring alert threshold: `scripts/intily_monitor.py` → `ALERT_NO_PUBLISH_RUNS`.
 - 24h publication-failure alert: `ALERT_ITEM_FAILURES_24H`.
-- **Important:** disabling KPI collection does not disable publication. It only stops the bounded KPI history from being recorded.
+- Disabling KPI collection does **not** disable publication; it only stops bounded KPI history recording.
 
 ## How to view statistics
 
-1. Open the `intily-news` repository on GitHub.
-2. Open **Actions → Intily AI News Publisher** and open any completed run.
-3. Open the run **Summary**: the KPI dashboard is shown there.
-4. For an on-demand current dashboard, open **Actions → Intily Production Monitor → Run workflow**.
-5. The durable raw history is stored in `data/intily-ai-news-state.json` under `run_history`.
+1. Open `intily-news` on GitHub.
+2. Open **Actions → Intily AI News Publisher** and open a completed run.
+3. Open the run **Summary** to see the KPI dashboard.
+4. For an on-demand dashboard, open **Actions → Intily Production Monitor → Run workflow**.
+5. Raw durable history is in `data/intily-ai-news-state.json` under `run_history`.
 
 ### Status meanings
 
-- `PUBLISHED` — Telegram delivery succeeded in the cycle.
-- `NO_PUBLISH` — the cycle completed normally but there was no publication; the `business_reason` explains why.
-- `PUBLISH_FAILED` — at least one item was attempted and publication failed.
-- GitHub `SUCCESS` remains the **technical** workflow result and must not be interpreted as a publication guarantee.
+- `PUBLISHED` — Telegram delivery succeeded.
+- `NO_PUBLISH` — the cycle completed normally but no post was sent; `business_reason` explains why.
+- `PUBLISH_FAILED` — publication was attempted and failed.
+- GitHub `SUCCESS` is the **technical** workflow result, not a publication guarantee.
