@@ -398,7 +398,8 @@
     "794772b61d9fe5282d3bcaf0344d0e78f59ca75935995ff0b983bedfcbf18413": 1788650445,
     "77b59093be0f67183aa204158094db9fe371c38545d823ba056798c9856a37a8": 1788650681,
     "776ff5c7ab1a3f7435cf3abc7a1caff1de9c1fe323ff6007f9c8715c1e9bd6b0": 1788650861,
-    "435c53d86686d290ea251bfe50dfaa4501d27c703395b6e672204cbc0073fdb9": 1788651044
+    "435c53d86686d290ea251bfe50dfaa4501d27c703395b6e672204cbc0073fdb9": 1788651044,
+    "dc691a26b06d64d787caea8f021e41f7217f3e8e0c4054df14d7cd9ae5ef7922": 1788651318
   },
   "known": {
     "1ea303ab8ec210bb89b428b7d6dd4f49ac10ea9fb0d8762edde56dab3d962dd2": 1788632289.4549868,
@@ -433,21 +434,6 @@
     "14f56fa1180967dda4406b45692e99a58f8c7e77a903653c1b50f2057becca33": 1788651223.5736613
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Meta* сделала свой ИИ на 95% дешевле тем, кто даст компании доступ к данным - prospect.com.ru",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbWFQWDVhWUNnb2lqMDJVdklxVWFyanB4NzlWZURDQXpfNVFMUHVIUDJLRUtWd280aXduQ3Q1RHpjb2d2Q1dnOFNpc0s4TVc3WHd1aURhaWZhZGtxSVRkcGtQMTVfUlhIMzJjX3dxRjc5NF9KbHNwOFY3NnNpbi1VamlDTGRnY2pLS2dKalpLMDQ1TkpFa3BUM1M4UEltM2hjRnV5eG8tdXR1d1ltM0NMUWVUYU12dw?oc=5",
-      "desc": "Meta* сделала свой ИИ на 95% дешевле тем, кто даст компании доступ к данным prospect.com.ru",
-      "source": "prospect.com.ru",
-      "time": 1788650547.0,
-      "score": 72.2,
-      "russia_weight_bonus": 3.7,
-      "key": "dc691a26b06d64d787caea8f021e41f7217f3e8e0c4054df14d7cd9ae5ef7922",
-      "importance": 72.2,
-      "editorial_value": 50.0,
-      "topics": [],
-      "tier": "A"
-    },
     {
       "region": "RUSSIA",
       "title": "NEURA Robotics и Qualcomm объединяют «мозг и нервную систему» для роботов нового поколения - prospect.com.ru",
@@ -667,20 +653,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788651223.5736613,
+    "last_start_ts": 1788651318.4875278,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788651223.5736613,
-    "last_success_ts": 1788651223.5736613,
-    "last_candidates": 26,
-    "last_published": 0,
-    "queue_size": 14
+    "last_run_ts": 1788651318.4875278,
+    "last_success_ts": 1788651318.4875278,
+    "last_candidates": 0,
+    "last_published": 1,
+    "queue_size": 13
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788651049.6367762
+      "updated_at": 1788651320.2658122
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -1015,6 +1001,13 @@
       "desc": "OpenAI launches GPT-6 Astra, the AI model built to do more than answer questions The Indian Express",
       "source": "The Indian Express",
       "region": "WORLD"
+    },
+    "dc691a26b06d64d787caea8f021e41f7217f3e8e0c4054df14d7cd9ae5ef7922": {
+      "time": 1788651318,
+      "title": "Meta* сделала свой ИИ на 95% дешевле тем, кто даст компании доступ к данным - prospect.com.ru",
+      "desc": "Meta* сделала свой ИИ на 95% дешевле тем, кто даст компании доступ к данным prospect.com.ru",
+      "source": "prospect.com.ru",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
@@ -1022,7 +1015,6 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1037,10 +1029,11 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "last_search_ts": 1788651223.5736613,
-  "last_publish_ts": 1788651044.9100633,
+  "last_publish_ts": 1788651318.4875278,
   "run_history": [
     {
       "ts": 1788649810,
@@ -1269,6 +1262,33 @@
       "queue_after": 14,
       "published": 0,
       "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788651318,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "candidates": 0,
+      "queue_before": 14,
+      "queue_after": 13,
+      "published": 1,
+      "publish_attempts": 1,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
