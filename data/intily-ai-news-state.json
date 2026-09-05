@@ -596,13 +596,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788652423.6572158,
+    "last_start_ts": 1788652543.8801913,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788652423.6572158,
-    "last_success_ts": 1788652423.6572158,
+    "last_run_ts": 1788652543.8801913,
+    "last_success_ts": 1788652543.8801913,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 9
   },
   "providers": {
@@ -1435,6 +1435,33 @@
       "published": 1,
       "publish_attempts": 2,
       "item_failures": 1,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788652543,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": false,
+      "candidates": 0,
+      "queue_before": 9,
+      "queue_after": 9,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
       "provider_state": {
         "GEMINI": {
           "blocked": false,
