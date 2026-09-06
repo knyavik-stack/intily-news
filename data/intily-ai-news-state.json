@@ -443,12 +443,10 @@
     "d302568016764ba9247e6ea32a569e5239fb400a040ccd6036df6035436bee4b": 1788678285,
     "f39f395d792404cd937fc33b090220c6ad0052fbb0975e63e6f50863205faf78": 1788678583,
     "1464a5fc171e04ca7316fdccdfdc3f4f96fe86229c695822473f42a4276305f8": 1788678763,
-    "8a4fe2445d1fddf02f35470f6c6eee4e476441494783e53f8d312f92144c495d": 1788679125
+    "8a4fe2445d1fddf02f35470f6c6eee4e476441494783e53f8d312f92144c495d": 1788679125,
+    "074cef7183be63c1fcd5623c0ac8d422f45e15879e1774040e0810a609691640": 1788680444
   },
   "known": {
-    "ee90a19bd8384baf728b539baee88a111e17115a68fdf29a684f53df27dcb536": 1788658482.210256,
-    "c09e395a0b2a370828cb8197ab866fa7d01caaf9b360ced8dada72475b3a3d0a": 1788658482.210256,
-    "a11029a880914b5769952364e57e21ac810b3b63704c0f3b81b98b1daf150308": 1788658783.397171,
     "cb24a8820e1960fd26ca6242a4222d1726d5f5eb7b628006c136a070c47ab835": 1788660281.646836,
     "ee747d04e445ab76e047c781fd0876b88cba00653868401b64968683c53cd6fd": 1788661661.8857415,
     "a375e2a6233fcce62758173a7ba6f1cbd1425c0db20cdd0f12d9a273d4d8aee5": 1788661962.9189608,
@@ -475,24 +473,25 @@
     "d302568016764ba9247e6ea32a569e5239fb400a040ccd6036df6035436bee4b": 1788678050.2563474,
     "f39f395d792404cd937fc33b090220c6ad0052fbb0975e63e6f50863205faf78": 1788678345.1069558,
     "8a4fe2445d1fddf02f35470f6c6eee4e476441494783e53f8d312f92144c495d": 1788678345.1069558,
-    "1464a5fc171e04ca7316fdccdfdc3f4f96fe86229c695822473f42a4276305f8": 1788678763.6180534
+    "1464a5fc171e04ca7316fdccdfdc3f4f96fe86229c695822473f42a4276305f8": 1788678763.6180534,
+    "074cef7183be63c1fcd5623c0ac8d422f45e15879e1774040e0810a609691640": 1788680444.1362836
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788679962.0787652,
+    "last_start_ts": 1788680444.1362836,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788679962.0787652,
-    "last_success_ts": 1788679962.0787652,
-    "last_candidates": 16,
-    "last_published": 0,
+    "last_run_ts": 1788680444.1362836,
+    "last_success_ts": 1788680444.1362836,
+    "last_candidates": 15,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788679136.5995295
+      "updated_at": 1788680454.5933714
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -932,11 +931,17 @@
       "desc": "GPU Nvidia уже необязательны: DeepSeek готовит крупнейшую закупку ИИ-чипов Huawei — 160 тысяч ускорителей prospect.com.ru",
       "source": "prospect.com.ru",
       "region": "RUSSIA"
+    },
+    "074cef7183be63c1fcd5623c0ac8d422f45e15879e1774040e0810a609691640": {
+      "time": 1788680444,
+      "title": "Sony & Warner Confront Anthropic: How Will the AI Era Copyright War Unfold? - 36 Kr",
+      "desc": "Sony & Warner Confront Anthropic: How Will the AI Era Copyright War Unfold? 36 Kr",
+      "source": "36 Kr",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -954,10 +959,11 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
-  "last_search_ts": 1788679962.0787652,
-  "last_publish_ts": 1788679125.8842146,
+  "last_search_ts": 1788680444.1362836,
+  "last_publish_ts": 1788680444.1362836,
   "run_history": [
     {
       "ts": 1788649810,
@@ -5344,6 +5350,33 @@
       "queue_after": 0,
       "published": 0,
       "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788680444,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "candidates": 15,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
