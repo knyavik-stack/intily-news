@@ -433,10 +433,6 @@
     "2ab000870330a261883c9b5803f4295e3be007bf2b60810e19425a9e60074d21": 1788669703
   },
   "known": {
-    "271f8b82696c7385dd06e6bae858f6a3e8f79f33a40b4fd43d8a8099e48cdb92": 1788649303.2180028,
-    "e3c592bdccbaed3aad1ae6532644b5dcd13099689ecaabff4128605eff5e851c": 1788649303.2180028,
-    "15ce5f2ec65dc652f3a80afb33fbe112f28ecfd79fd0efb527a48181ea5dc499": 1788649303.2180028,
-    "776ff5c7ab1a3f7435cf3abc7a1caff1de9c1fe323ff6007f9c8715c1e9bd6b0": 1788649303.2180028,
     "dc691a26b06d64d787caea8f021e41f7217f3e8e0c4054df14d7cd9ae5ef7922": 1788651223.5736613,
     "90f32234779dc5fba43a012179f24eb6f91ebcb8803ae27d2b9b77ba320a4e4d": 1788651223.5736613,
     "4ce9b62638fea71d3213f09ef1996bc33d8a205c495f0b4fe014f52463f59481": 1788651223.5736613,
@@ -471,12 +467,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788670847.3432095,
+    "last_start_ts": 1788670963.0680923,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788670847.3432095,
-    "last_success_ts": 1788670847.3432095,
-    "last_candidates": 16,
+    "last_run_ts": 1788670963.0680923,
+    "last_success_ts": 1788670963.0680923,
+    "last_candidates": 17,
     "last_published": 0,
     "queue_size": 0
   },
@@ -857,7 +853,7 @@
     "RUSSIA",
     "WORLD"
   ],
-  "last_search_ts": 1788670847.3432095,
+  "last_search_ts": 1788670963.0680923,
   "last_publish_ts": 1788669703.714173,
   "run_history": [
     {
@@ -3972,6 +3968,33 @@
       "business_reason": "empty_queue_after_filters",
       "searched": true,
       "candidates": 16,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788670963,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "empty_queue_after_filters",
+      "searched": true,
+      "candidates": 17,
       "queue_before": 0,
       "queue_after": 0,
       "published": 0,
