@@ -1,36 +1,6 @@
 {
   "runs": [
     {
-      "ts": 1788711583,
-      "queries": [],
-      "direct": [],
-      "errors": [],
-      "summary": {},
-      "score_buckets": {},
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key"
-      },
-      "result": {
-        "code": "PUBLISHED",
-        "reason": "telegram_delivery_ok"
-      },
-      "complete": {
-        "searched": false,
-        "candidates": 0,
-        "published": 1,
-        "queue": 3
-      },
-      "publish_wait_seconds": null
-    },
-    {
       "ts": 1788711883,
       "queries": [],
       "direct": [],
@@ -8461,6 +8431,360 @@
         "already_queued": 0,
         "story_queue": 0,
         "story_history": 1,
+        "added": 0,
+        "candidate_count": 3,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "result": {
+        "code": "NO_PUBLISH",
+        "reason": "admission_blocked_published_key"
+      },
+      "complete": {
+        "searched": true,
+        "candidates": 3,
+        "published": 0,
+        "queue": 0
+      },
+      "publish_wait_seconds": null
+    },
+    {
+      "ts": 1788729247,
+      "queries": [
+        {
+          "region": "RUSSIA",
+          "query": "site:kommersant.ru ИИ технологии бизнес Россия",
+          "raw": 86,
+          "доля_поиска": 17.6
+        },
+        {
+          "region": "WORLD",
+          "query": "AI artificial intelligence major technology news",
+          "raw": 47,
+          "доля_поиска": 9.6
+        },
+        {
+          "region": "WORLD",
+          "query": "How to build an AI agent",
+          "raw": 47,
+          "доля_поиска": 9.6
+        },
+        {
+          "region": "RUSSIA",
+          "query": "site:rbc.ru ИИ внедрение бизнес технологии",
+          "raw": 43,
+          "доля_поиска": 8.8
+        },
+        {
+          "region": "RUSSIA",
+          "query": "ИИ искусственный интеллект нейросети Россия технологии",
+          "raw": 36,
+          "доля_поиска": 7.3
+        },
+        {
+          "region": "RUSSIA",
+          "query": "ИИ разработка инфраструктура модели агенты Россия",
+          "raw": 34,
+          "доля_поиска": 6.9
+        },
+        {
+          "region": "RUSSIA",
+          "query": "Развитие ИИ в России национальная стратегия",
+          "raw": 33,
+          "доля_поиска": 6.7
+        },
+        {
+          "region": "RUSSIA",
+          "query": "site:vc.ru ИИ бизнес внедрение автоматизация",
+          "raw": 14,
+          "доля_поиска": 2.9
+        },
+        {
+          "region": "RUSSIA",
+          "query": "российские компании внедрение ИИ бизнес автоматизация",
+          "raw": 14,
+          "доля_поиска": 2.9
+        },
+        {
+          "region": "RUSSIA",
+          "query": "ИИ в образовании",
+          "raw": 12,
+          "доля_поиска": 2.4
+        },
+        {
+          "region": "WORLD",
+          "query": "Anthropic Claude model enterprise",
+          "raw": 12,
+          "доля_поиска": 2.4
+        },
+        {
+          "region": "WORLD",
+          "query": "artificial intelligence research breakthrough science",
+          "raw": 11,
+          "доля_поиска": 2.2
+        },
+        {
+          "region": "RUSSIA",
+          "query": "ИИ в медицине",
+          "raw": 10,
+          "доля_поиска": 2.0
+        },
+        {
+          "region": "RUSSIA",
+          "query": "Как создать ИИ агента",
+          "raw": 10,
+          "доля_поиска": 2.0
+        },
+        {
+          "region": "WORLD",
+          "query": "Nvidia AI chips GPU semiconductor",
+          "raw": 8,
+          "доля_поиска": 1.6
+        },
+        {
+          "region": "RUSSIA",
+          "query": "ИИ регулирование закон инвестиции технологии Россия",
+          "raw": 7,
+          "доля_поиска": 1.4
+        },
+        {
+          "region": "RUSSIA",
+          "query": "Регулирование и законы об ИИ в РФ",
+          "raw": 7,
+          "доля_поиска": 1.4
+        },
+        {
+          "region": "WORLD",
+          "query": "AI agents robotics autonomous systems",
+          "raw": 7,
+          "доля_поиска": 1.4
+        },
+        {
+          "region": "RUSSIA",
+          "query": "ИИ технологии в российском образовании и медицине",
+          "raw": 5,
+          "доля_поиска": 1.0
+        },
+        {
+          "region": "WORLD",
+          "query": "AI software tool platform feature review developer coding",
+          "raw": 5,
+          "доля_поиска": 1.0
+        },
+        {
+          "region": "RUSSIA",
+          "query": "Искусственный интеллект в российском бизнесе кейсы",
+          "raw": 4,
+          "доля_поиска": 0.8
+        },
+        {
+          "region": "WORLD",
+          "query": "AI implementation business enterprise adoption automation",
+          "raw": 4,
+          "доля_поиска": 0.8
+        },
+        {
+          "region": "WORLD",
+          "query": "AI safety standards and international regulations",
+          "raw": 4,
+          "доля_поиска": 0.8
+        },
+        {
+          "region": "WORLD",
+          "query": "AI startup funding acquisition investment enterprise technology",
+          "raw": 4,
+          "доля_поиска": 0.8
+        },
+        {
+          "region": "WORLD",
+          "query": "Generative AI tools for software development productivity",
+          "raw": 3,
+          "доля_поиска": 0.6
+        },
+        {
+          "region": "WORLD",
+          "query": "Google DeepMind Gemini AI technology",
+          "raw": 3,
+          "доля_поиска": 0.6
+        },
+        {
+          "region": "WORLD",
+          "query": "OpenAI Google Anthropic latest LLM models release",
+          "raw": 3,
+          "доля_поиска": 0.6
+        },
+        {
+          "region": "RUSSIA",
+          "query": "ИИ робототехника чипы исследования Россия",
+          "raw": 2,
+          "доля_поиска": 0.4
+        },
+        {
+          "region": "RUSSIA",
+          "query": "ИИ финансы промышленность медицина образование логистика Россия",
+          "raw": 2,
+          "доля_поиска": 0.4
+        },
+        {
+          "region": "RUSSIA",
+          "query": "российский ИИ стартап продукт платформа обзор",
+          "raw": 2,
+          "доля_поиска": 0.4
+        },
+        {
+          "region": "WORLD",
+          "query": "AI customer service sales marketing finance implementation",
+          "raw": 2,
+          "доля_поиска": 0.4
+        },
+        {
+          "region": "WORLD",
+          "query": "AI healthcare education manufacturing logistics application",
+          "raw": 2,
+          "доля_поиска": 0.4
+        },
+        {
+          "region": "WORLD",
+          "query": "Microsoft Meta Apple AI product technology",
+          "raw": 2,
+          "доля_поиска": 0.4
+        },
+        {
+          "region": "WORLD",
+          "query": "OpenAI model launch agent product",
+          "raw": 2,
+          "доля_поиска": 0.4
+        },
+        {
+          "region": "RUSSIA",
+          "query": "ИИ безопасность уязвимость утечка проблемы Россия",
+          "raw": 1,
+          "доля_поиска": 0.2
+        },
+        {
+          "region": "RUSSIA",
+          "query": "ИИ применение практика бизнес кейс Россия",
+          "raw": 1,
+          "доля_поиска": 0.2
+        },
+        {
+          "region": "RUSSIA",
+          "query": "Яндекс Сбер VK ИИ продукт технология",
+          "raw": 1,
+          "доля_поиска": 0.2
+        },
+        {
+          "region": "RUSSIA",
+          "query": "site:sber.ru ИИ искусственный интеллект технологии",
+          "raw": 0,
+          "доля_поиска": 0.0
+        },
+        {
+          "region": "RUSSIA",
+          "query": "site:yandex.ru/company/news ИИ искусственный интеллект",
+          "raw": 0,
+          "доля_поиска": 0.0
+        },
+        {
+          "region": "RUSSIA",
+          "query": "Яндекс Сбер новые нейросети GigaChat YandexGPT",
+          "raw": 0,
+          "доля_поиска": 0.0
+        },
+        {
+          "region": "WORLD",
+          "query": "AGI breakthrough timeline predictions computer science",
+          "raw": 0,
+          "доля_поиска": 0.0
+        },
+        {
+          "region": "WORLD",
+          "query": "AI deployment architecture inference cost reliability",
+          "raw": 0,
+          "доля_поиска": 0.0
+        },
+        {
+          "region": "WORLD",
+          "query": "AI practical application workflow productivity operations",
+          "raw": 0,
+          "доля_поиска": 0.0
+        },
+        {
+          "region": "WORLD",
+          "query": "AI security vulnerability breach agent safety failure problem",
+          "raw": 0,
+          "доля_поиска": 0.0
+        },
+        {
+          "region": "WORLD",
+          "query": "Breakthroughs in robotics powered by multimodal AI",
+          "raw": 0,
+          "доля_поиска": 0.0
+        }
+      ],
+      "direct": [
+        {
+          "source": "Habr AI/News",
+          "raw": 3
+        },
+        {
+          "source": "Ars Technica",
+          "raw": 2
+        },
+        {
+          "source": "TechCrunch AI",
+          "raw": 2
+        },
+        {
+          "source": "CNews",
+          "raw": 0
+        },
+        {
+          "source": "Google DeepMind",
+          "raw": 0
+        },
+        {
+          "source": "Hugging Face",
+          "raw": 0
+        },
+        {
+          "source": "OpenAI News",
+          "raw": 0
+        },
+        {
+          "source": "The Verge AI",
+          "raw": 0
+        }
+      ],
+      "errors": [
+        "VentureBeat AI HTTP Error 429: Too Many Requests",
+        "TechCult HTTP Error 404: Not Found",
+        "Euronews HTTP Error 404: Not Found"
+      ],
+      "summary": {
+        "google_raw": 490,
+        "all_items": 497,
+        "score_filtered": 492,
+        "quality_filtered": 0,
+        "story_dedup": 2,
+        "candidates": 3
+      },
+      "score_buckets": {
+        "0–39": 352,
+        "40–49": 109,
+        "50–59": 31,
+        "60–69": 5,
+        "70–79": 0,
+        "80–84": 0,
+        "85–89": 0,
+        "90–100": 0
+      },
+      "admission": {
+        "published_key": 3,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
         "added": 0,
         "candidate_count": 3,
         "admission_rate": 0.0,
