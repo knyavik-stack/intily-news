@@ -11,7 +11,7 @@ is handled separately by publication priority.
 
 from datetime import datetime, timezone
 
-THRESHOLD = 60.0
+THRESHOLD = 50.0
 
 # The previous policy concentrated too much weight in a binary relevance flag and
 # then assigned small values to most other dimensions. Real production material
