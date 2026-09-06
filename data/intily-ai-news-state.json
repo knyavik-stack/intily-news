@@ -476,7 +476,6 @@
     "23c156b52fe2052ef9ebc9214d10e9b5ea9af725fca091bc199b02267fe589f4": 1788693283
   },
   "known": {
-    "04d433f060196a0b1db9b21973c362974594684f84ac894359b155d9cd8d7c8b": 1788688123.05406,
     "38eed7b3d073cd62cdd67a4f1cfa274276f8ec46688289b91ab680ad951d7a17": 1788689502.502995,
     "0fe2e2274672cc402849c8ac3269a9c217000f86d754bf76aff96762b9d9f8a5": 1788689864.0345984,
     "e4b1931d344a1dfb9be29e9346fde7fbd877c3a62b9727f9ec6d8d57b13d4993": 1788690103.4452233,
@@ -490,11 +489,11 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788693404.4650586,
+    "last_start_ts": 1788693583.750774,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788693404.4650586,
-    "last_success_ts": 1788693404.4650586,
+    "last_run_ts": 1788693583.750774,
+    "last_success_ts": 1788693583.750774,
     "last_candidates": 27,
     "last_published": 0,
     "queue_size": 0
@@ -1177,36 +1176,9 @@
     "RUSSIA",
     "WORLD"
   ],
-  "last_search_ts": 1788693404.4650586,
+  "last_search_ts": 1788693583.750774,
   "last_publish_ts": 1788693283.8283527,
   "run_history": [
-    {
-      "ts": 1788657703,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "empty_queue_after_filters",
-      "searched": true,
-      "candidates": 16,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788658121,
       "status": "OK",
@@ -9351,6 +9323,79 @@
         "story_dedup": 2,
         "candidates": 27,
         "candidate_rate": 0.1677
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788693583,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 12.49,
+      "candidates": 27,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 24,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 0,
+        "candidate_count": 27,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {
+        "queries_attempted": 31,
+        "queries_ok": 31,
+        "query_errors": 0,
+        "direct_feeds_attempted": 8,
+        "direct_feeds_ok": 7,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 9,
+        "raw_items": 167,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 9
+        },
+        "score_filtered": 138,
+        "quality_filtered": 0,
+        "story_dedup": 2,
+        "candidates": 27,
+        "candidate_rate": 0.1709
       },
       "provider": {
         "attempts": [],
