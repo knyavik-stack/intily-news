@@ -39,9 +39,10 @@ def apply_policy(publisher):
     publisher.score = score
     publisher.IMPORTANCE_THRESHOLD = THRESHOLD
 
+    # CNews and TechCult are Russian publishers; Euronews is international.
     extra_feeds = [
-        ('WORLD', 'CNews', 'https://www.cnews.ru/inc/rss/news.xml'),
-        ('WORLD', 'TechCult', 'https://techcult.ru/feed'),
+        ('RUSSIA', 'CNews', 'https://www.cnews.ru/inc/rss/news.xml'),
+        ('RUSSIA', 'TechCult', 'https://techcult.ru/feed'),
         ('WORLD', 'Euronews', 'https://www.euronews.com/rss?format=mrss&level=theme&name=next'),
     ]
     existing = {row[1] for row in publisher.DIRECT_RSS_FEEDS}
