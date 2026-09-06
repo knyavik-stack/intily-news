@@ -475,8 +475,6 @@
     "1c0e4a813e37d27dc9de505d2b38e045b2518a7c7cb118b1ef6bc19807b63e78": 1788692745
   },
   "known": {
-    "cef92be0b855b6168abd2b5b747734f731cc22f5035b94fbf3c8f6d30aaa82a7": 1788687525.4517438,
-    "192dd6bf836536b14703e8dacb626ed222b7a4e02176a6ad2d4b065d5998420d": 1788687525.4517438,
     "04d433f060196a0b1db9b21973c362974594684f84ac894359b155d9cd8d7c8b": 1788688123.05406,
     "38eed7b3d073cd62cdd67a4f1cfa274276f8ec46688289b91ab680ad951d7a17": 1788689502.502995,
     "0fe2e2274672cc402849c8ac3269a9c217000f86d754bf76aff96762b9d9f8a5": 1788689864.0345984,
@@ -490,13 +488,13 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788692745.9096732,
+    "last_start_ts": 1788693048.1327605,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788692745.9096732,
-    "last_success_ts": 1788692745.9096732,
-    "last_candidates": 28,
-    "last_published": 1,
+    "last_run_ts": 1788693048.1327605,
+    "last_success_ts": 1788693048.1327605,
+    "last_candidates": 26,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
@@ -1170,36 +1168,9 @@
     "RUSSIA",
     "RUSSIA"
   ],
-  "last_search_ts": 1788692745.9096732,
+  "last_search_ts": 1788693048.1327605,
   "last_publish_ts": 1788692745.9096732,
   "run_history": [
-    {
-      "ts": 1788656862,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "empty_queue_after_filters",
-      "searched": true,
-      "candidates": 17,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788657346,
       "status": "OK",
@@ -9162,6 +9133,79 @@
           "GEMINI"
         ],
         "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788693048,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 13.1,
+      "candidates": 26,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 23,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 0,
+        "candidate_count": 26,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {
+        "queries_attempted": 31,
+        "queries_ok": 31,
+        "query_errors": 0,
+        "direct_feeds_attempted": 8,
+        "direct_feeds_ok": 7,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 9,
+        "raw_items": 162,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 9
+        },
+        "score_filtered": 135,
+        "quality_filtered": 0,
+        "story_dedup": 1,
+        "candidates": 26,
+        "candidate_rate": 0.1699
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
