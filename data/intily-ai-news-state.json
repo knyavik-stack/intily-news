@@ -455,7 +455,8 @@
     "699c47a86563b04a621e331541c4f3a6d0911d86e057a763ad8d32ba53bf25d1": 1788684345,
     "63a429df989ea7478ad3d6f4b54c3fb3b1ae88e6299e4c5651f2953e1ad32f38": 1788684582,
     "4efacee148ea0c96437b255faf92264b3d0b194647b2b4216d9da7648dc18160": 1788684882,
-    "7b70c8169aeec2be3a12f7bab039de926247d9717d085344399efb69f35d33c5": 1788685246
+    "7b70c8169aeec2be3a12f7bab039de926247d9717d085344399efb69f35d33c5": 1788685246,
+    "c7bca7bdbe37c8d31ce99e3a4203550b670f7e41b03876a7b84ef2ca1f948469": 1788685543
   },
   "known": {
     "074cef7183be63c1fcd5623c0ac8d422f45e15879e1774040e0810a609691640": 1788680444.1362836,
@@ -472,39 +473,22 @@
     "4efacee148ea0c96437b255faf92264b3d0b194647b2b4216d9da7648dc18160": 1788684882.0104403,
     "c7bca7bdbe37c8d31ce99e3a4203550b670f7e41b03876a7b84ef2ca1f948469": 1788685362.6563358
   },
-  "queue": [
-    {
-      "region": "WORLD",
-      "title": "AI Adoption Spreads Beyond Tech as Finance, Manufacturing Businesses Race to Catch Up - TradingView",
-      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPbzl6RTF5R2thZnhsdF9Cb0dlU1FSU29lbVlibndDVHBBakdNTTB1VExUbHZlbzh4dXR3ZDAzYW1USXBUVlZNQXhsQ1B3Y0V4YTZST1lPTG5BU2s2RkpOVklLZFBraHRyQ2EwSWdJTUdwNUVHd1lYeEhnLUMyOE1IaFdzMjVJZzJJMkxSckk3NjgyRXUtbHpCSjdSUThRSVZmY2p5aVo3S1pUZ2tLOFhnMHhSSU1kMlVINGMzX3Z4dzNpNUNJT3BsM2JUYks0TjJTZ0FKakJiZUZaSjg?oc=5",
-      "desc": "AI Adoption Spreads Beyond Tech as Finance, Manufacturing Businesses Race to Catch Up TradingView",
-      "source": "TradingView",
-      "time": 1788678104.0,
-      "score": 69.5,
-      "key": "c7bca7bdbe37c8d31ce99e3a4203550b670f7e41b03876a7b84ef2ca1f948469",
-      "importance": 69.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "business"
-      ],
-      "tier": "A"
-    }
-  ],
+  "queue": [],
   "health": {
-    "last_start_ts": 1788685423.445288,
+    "last_start_ts": 1788685543.7683873,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788685423.445288,
-    "last_success_ts": 1788685423.445288,
-    "last_candidates": 23,
-    "last_published": 0,
-    "queue_size": 1
+    "last_run_ts": 1788685543.7683873,
+    "last_success_ts": 1788685543.7683873,
+    "last_candidates": 21,
+    "last_published": 1,
+    "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788685261.4170332
+      "updated_at": 1788685559.13572
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -1028,10 +1012,16 @@
       "desc": "OpenAI признала инцидент с ИИ-агентами на немецком сайте Runet.news",
       "source": "Runet.news",
       "region": "RUSSIA"
+    },
+    "c7bca7bdbe37c8d31ce99e3a4203550b670f7e41b03876a7b84ef2ca1f948469": {
+      "time": 1788685543,
+      "title": "AI Adoption Spreads Beyond Tech as Finance, Manufacturing Businesses Race to Catch Up - TradingView",
+      "desc": "AI Adoption Spreads Beyond Tech as Finance, Manufacturing Businesses Race to Catch Up TradingView",
+      "source": "TradingView",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -1050,10 +1040,11 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
-  "last_search_ts": 1788685423.445288,
-  "last_publish_ts": 1788685246.844927,
+  "last_search_ts": 1788685543.7683873,
+  "last_publish_ts": 1788685543.7683873,
   "run_history": [
     {
       "ts": 1788649810,
@@ -7095,6 +7086,81 @@
       "provider": {
         "attempts": [],
         "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788685543,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 15.95,
+      "candidates": 21,
+      "queue_before": 1,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 17,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 0,
+        "candidate_count": 21,
+        "admission_rate": 0.0,
+        "dominant_block": "candidate_count"
+      },
+      "rss": {
+        "queries_attempted": 31,
+        "queries_ok": 31,
+        "query_errors": 0,
+        "direct_feeds_attempted": 8,
+        "direct_feeds_ok": 7,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 10,
+        "raw_items": 158,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 9
+        },
+        "score_filtered": 135,
+        "quality_filtered": 0,
+        "story_dedup": 2,
+        "candidates": 21,
+        "candidate_rate": 0.1419
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
