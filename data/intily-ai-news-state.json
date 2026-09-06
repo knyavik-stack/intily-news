@@ -454,12 +454,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788660581.910089,
+    "last_start_ts": 1788661063.7207215,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788660581.910089,
-    "last_success_ts": 1788660581.910089,
-    "last_candidates": 15,
+    "last_run_ts": 1788661063.7207215,
+    "last_success_ts": 1788661063.7207215,
+    "last_candidates": 12,
     "last_published": 0,
     "queue_size": 0
   },
@@ -481,13 +481,6 @@
     }
   },
   "stories": {
-    "644df3b525ca77e77dce33306f0b56f18c74d9d42fc8d159689dc1b1455bf984": {
-      "time": 1788574341,
-      "title": "Nvidia Invests $3.5 Billion in MediaTek: What Is Jensen Huang Eyeing? - tradingkey.com",
-      "desc": "Nvidia Invests $3.5 Billion in MediaTek: What Is Jensen Huang Eyeing? tradingkey.com",
-      "source": "tradingkey.com",
-      "region": "WORLD"
-    },
     "7c73802d3232061b19419a5ce37714c6e7176df33dff7a2b3ecb27955d41d5a9": {
       "time": 1788574736,
       "title": "Snowflake Rose 22% After Its AI Coding Agent Drove a Third Straight Quarter of Accelerating Growth - The Eastern Herald",
@@ -861,7 +854,7 @@
     "RUSSIA",
     "WORLD"
   ],
-  "last_search_ts": 1788660581.910089,
+  "last_search_ts": 1788661063.7207215,
   "last_publish_ts": 1788660281.646836,
   "run_history": [
     {
@@ -2572,6 +2565,33 @@
       "business_reason": "empty_queue_after_filters",
       "searched": true,
       "candidates": 15,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788661063,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "empty_queue_after_filters",
+      "searched": true,
+      "candidates": 12,
       "queue_before": 0,
       "queue_after": 0,
       "published": 0,
