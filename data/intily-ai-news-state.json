@@ -466,9 +466,6 @@
     "04d433f060196a0b1db9b21973c362974594684f84ac894359b155d9cd8d7c8b": 1788688123
   },
   "known": {
-    "bb4b4e66f7a1d01bebd81f68ed2a64b53527e8c66885aa21fe285cfbba96d097": 1788683341.5038276,
-    "642f08bbb45aba509d577844fbf2baf866403b1bd1f96b9dd9c3727937f86dc3": 1788683341.5038276,
-    "63a429df989ea7478ad3d6f4b54c3fb3b1ae88e6299e4c5651f2953e1ad32f38": 1788683341.5038276,
     "a312d09e201c15a7c80343d5135408fabf9d929aab15bef2d19dc51229b834bf": 1788683745.1318836,
     "d930630374d476643fae96e5089fe06caf755fd43fc64ebcbc92042833d74e1c": 1788683745.1318836,
     "699c47a86563b04a621e331541c4f3a6d0911d86e057a763ad8d32ba53bf25d1": 1788684224.7096999,
@@ -485,12 +482,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788688722.6701593,
+    "last_start_ts": 1788688784.082329,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788688722.6701593,
-    "last_success_ts": 1788688722.6701593,
-    "last_candidates": 25,
+    "last_run_ts": 1788688784.082329,
+    "last_success_ts": 1788688784.082329,
+    "last_candidates": 24,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1102,36 +1099,9 @@
     "RUSSIA",
     "WORLD"
   ],
-  "last_search_ts": 1788688722.6701593,
+  "last_search_ts": 1788688784.082329,
   "last_publish_ts": 1788688123.05406,
   "run_history": [
-    {
-      "ts": 1788652543,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "publish_interval_not_reached",
-      "searched": false,
-      "candidates": 0,
-      "queue_before": 9,
-      "queue_after": 9,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788652901,
       "status": "OK",
@@ -8060,6 +8030,79 @@
         "story_dedup": 1,
         "candidates": 25,
         "candidate_rate": 0.1724
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788688784,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 14.65,
+      "candidates": 24,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 22,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 24,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {
+        "queries_attempted": 31,
+        "queries_ok": 31,
+        "query_errors": 0,
+        "direct_feeds_attempted": 8,
+        "direct_feeds_ok": 7,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 10,
+        "raw_items": 157,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 9
+        },
+        "score_filtered": 132,
+        "quality_filtered": 0,
+        "story_dedup": 1,
+        "candidates": 24,
+        "candidate_rate": 0.1633
       },
       "provider": {
         "attempts": [],
