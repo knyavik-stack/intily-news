@@ -1,72 +1,163 @@
 # INTILY Project Status — 2026-09-06
 
-## Production status: GREEN
+## Production status: 🟡 GREEN TECHNICALLY / YELLOW EDITORIAL SUPPLY
 
-Production remains on the restored 2026-09-05 08:00 MSK architecture. This change adds observability only; it does not change the scheduler, publisher cadence, discovery, editorial policy, or Telegram delivery path.
+Production architecture is working. The current concern is not scheduler failure or empty RSS discovery, but insufficient fresh unique stories after duplicate/history checks.
 
-## Observability closure
+## Production architecture
+
+```text
+Cloudflare intily-ai-news
+  → GitHub Actions workflow_dispatch
+  → scripts/intily_ai_news.py
+  → Telegram @intily
+  → data/intily-ai-news-state.json
+```
+
+GitHub publisher has no own cron.
+
+## Observability
 
 Implemented:
 
 - explicit business result per production cycle: `PUBLISHED`, `NO_PUBLISH`, `PUBLISH_FAILED`;
 - reason code for every non-publication;
-- bounded `run_history` (200 cycles) persisted in the existing durable state;
+- bounded `run_history` (200 cycles) persisted in durable state;
 - rolling 24h / 7d KPI calculations;
 - candidate volume, queue size, publication count, attempts and item failures;
-- GitHub Actions run Summary dashboard on every publisher run;
-- on-demand `Intily Production Monitor` workflow;
+- GitHub Actions Summary dashboard;
+- on-demand `Intily Production Monitor`;
 - RED checks for prolonged no-publish and publication failures;
-- operator controls and disable instructions documented directly beside code.
+- provider usage/failover telemetry;
+- RSS/query/direct-feed health telemetry;
+- admission rejection telemetry;
+- queue velocity and publication frequency.
 
-## Operator access
+## Critical terminology
 
-Primary: GitHub → Actions → `Intily AI News Publisher` → any run → **Summary**.
+Numbers in the pipeline are different:
 
-On-demand: GitHub → Actions → `Intily Production Monitor` → **Run workflow**.
+```text
+RSS raw
+  ↓
+score / freshness / AI relevance / story dedup
+  ↓
+CANDIDATES
+  ↓
+published / known / queue / semantic history checks
+  ↓
+NEW QUEUE ADMISSIONS
+  ↓
+durable queue
+  ↓
+AI editorial QA
+  ↓
+Telegram publication
+```
 
-Raw durable history: `data/intily-ai-news-state.json` → `run_history`.
+Therefore `19 candidates` and `0 new admissions` are not contradictory.
 
-## Important distinction
+## Live diagnosis — 2026-09-06 09:34 UTC
 
-GitHub Actions `SUCCESS` means the technical workflow completed successfully. The KPI `business_result` says whether the production objective was achieved. Therefore a green Action with `NO_PUBLISH` is a normal, observable business outcome rather than an ambiguous green box.
+The verified production cycle produced:
 
-## Remaining maturity work
+- 154 RSS raw items;
+- 31/31 Google News queries OK;
+- 8 direct feeds attempted: 7 OK, 1 HTTP 429;
+- 124 items removed by score;
+- 26 candidates after quality/relevance/story dedup;
+- 0 new queue admissions;
+- 23 candidates rejected because the exact item key was already published;
+- 3 candidates rejected by semantic story history;
+- 0 publications in that cycle;
+- technical health `OK`.
 
-No architecture change is required. Remaining maturity is empirical: accumulate a meaningful production sample and evaluate publication rate, queue pressure, candidate yield, provider failures and no-publish streaks against agreed SLOs.
+### Root cause
 
+The discovery layer is **not empty**. It found 26 candidates.
 
-## Live verification — monitoring closure
+The immediate bottleneck is that the candidate pool is dominated by stories the channel already knows/published.
 
-Verified after deployment commit `d19f3fb39f718d3199942b193dd489932a94e2c1`: publisher run **#27** completed SUCCESS and produced a real Telegram publication. The runtime emitted `BUSINESS_RESULT PUBLISHED`, `publish_attempts=1`, `item_failures=0`, `queue_after=13`, and persisted state successfully.
+## Important telemetry bug found and corrected
 
-The same run generated the KPI dashboard in the GitHub Actions Summary. The on-demand `Intily Production Monitor` was then run against the persisted state and completed GREEN, showing 24h/7d/stored history with 1 run, 1 publication, 100% publication rate and 0 item failures.
+`scripts/intily_ai_news.py` previously calculated `dominant_block` while including `candidate_count` among the possible causes.
 
-This confirms the complete observability path: **publisher → durable KPI history → Actions Summary → on-demand monitor → alert check**.
+That was incorrect because `candidate_count` is the size of the input, not a rejection reason. With 26 candidates it could incorrectly report:
 
-## Production correction — 2026-09-06
+```text
+admission_blocked_candidate_count
+```
 
-A 10-hour production analysis proved that the RSS layer had not run out of AI news: production had continued to discover candidates and successfully publish. The bottleneck was downstream candidate admission. The exact admission path showed a 6-hour `known` memory acting as a hard barrier for repeated Google News RSS items.
+while the real cause was, for example:
 
-Correction deployed: `known` is now a 90-minute technical anti-hot-loop memory; published and semantic story memory remain the durable duplicate protections. This allows a previously seen but never published story to be reconsidered without opening the door to republishing already published events.
+```text
+published_key = 23
+story_history = 3
+```
 
-At the same time, Priority-A telemetry was expanded to expose admission rejection reasons, RSS health, actual AI provider usage/failover, queue velocity, publication frequency, PUBLISH_FAILED statistics and precise NO_PUBLISH classification.
+The production hotfix now selects `dominant_block` only from actual rejection causes:
 
-### Current engineering status
+- `published_key`;
+- `known_recent`;
+- `already_queued`;
+- `story_queue`;
+- `story_history`.
 
-- Production architecture unchanged: Cloudflare scheduler → GitHub Actions → Python publisher → Telegram.
-- The fix is behaviorally narrow and is covered by syntax/static validation before production smoke.
-- Empirical tuning remains pending until a larger post-fix sample accumulates.
+The change is applied by a one-time migration step in the production workflow and committed back to main.
 
+## Why 19 candidates existed 12–15 hours earlier
 
-## Priority-B start — source resilience
+The verified 2026-09-02 production cycle received 169 RSS items and produced 19 candidates. One was published and the queue then became empty.
 
-The discovery layer now has two independent paths: Google News RSS query clusters plus curated direct publisher RSS feeds. Per-source yield and direct-feed error telemetry is persisted for subsequent source-intelligence analysis. This directly addresses the observed failure mode where Google News returned many candidates but the majority were already present in publication memory.
+This does not mean there should always be 19 new publishable stories later. Google News can return the same recent stories repeatedly. Once Intily has published those stories, they correctly stop at the admission layer.
 
+The current problem is therefore **fresh unique supply**, not a broken candidate scorer.
 
-## Production verification — 2026-09-06
+## Current source health
 
-Direct-RSS production smoke on commit `9aad362ebf93014a516acee95e47b241a810f90b` completed successfully. Observed in one cycle: 31/31 Google News queries OK; 8 direct feeds attempted, 7 OK, 1 HTTP 429; 134 raw items; 20 candidates; 2 admitted; 1 published to Telegram; Gemini used successfully with zero failover; queue ended at 1. This proves the new source layer is live and capable of recovering publishable items beyond the Google-only candidate set.
+Google News queries are currently returning material and have shown 0 query errors in the verified cycle.
 
-A later monitoring hardening commit `b98bf1ec8f223d3e81d02219296fd57e77a4e54d` made derived KPI rates migration-aware.
+Direct RSS sources are a resilience layer, but several currently return no fresh items in the active window and VentureBeat has returned HTTP 429. These are now visible in telemetry.
 
-Current known limitation: some direct publisher feeds returned zero fresh items in the smoke window, and VentureBeat returned HTTP 429. These are now visible as source-level health signals rather than silent gaps.
+## Next engineering priority — Query + Source Intelligence
+
+Do not blindly add dozens of RSS feeds.
+
+Instrument every query/source separately:
+
+- raw items;
+- fresh items;
+- candidates;
+- already-published rejects;
+- semantic rejects;
+- new admissions;
+- publication yield;
+- error rate;
+- WORLD/RUSSIA contribution.
+
+Then rank query/source clusters by actual production value.
+
+Add fresh source-focused queries using Google News time operators such as `when:6h` and `when:1h` where appropriate, while preserving the existing editorial gates. Google News RSS supports search operators including `when:` and `site:`; these are useful for building focused fresh-source streams. citeturn1search0turn0search8
+
+## Future roadmap
+
+1. Query + Source Intelligence.
+2. Full editorial funnel analytics.
+3. Topic yield and source yield.
+4. Historical trend analysis.
+5. Adaptive query allocation.
+6. Adaptive scoring after empirical data exists.
+7. Adaptive publication timing after Telegram performance data exists.
+8. Anomaly detection.
+9. Weekly executive report in Russian.
+10. Telegram content-performance analytics only when a reliable data source is available.
+
+Do not fabricate Telegram views/reactions/CTR until reliable measurements exist.
+
+## Operator rule
+
+After every material change:
+
+**inspect → root cause → fix → verify → document**.
+
+A successful GitHub Action is not by itself proof of editorial correctness.
