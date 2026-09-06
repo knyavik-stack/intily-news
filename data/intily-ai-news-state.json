@@ -424,7 +424,8 @@
     "289f9c318942504cd94e007596e263d34629af298c7be8f6f48877fc92f7f602": 1788664545,
     "f91c6395c4c1bed17bc967efe378ac1efb3c06002ae9f2115052749dc3429a69": 1788664961,
     "25b53eea0832e67927f22f145cda4906489ca1d328067230f97c366ad886dabf": 1788666102,
-    "008d819d5bf60765de7aab9e05065f3ae15e3e21f0f17e51b613a70a6944bff2": 1788666644
+    "008d819d5bf60765de7aab9e05065f3ae15e3e21f0f17e51b613a70a6944bff2": 1788666644,
+    "354944ff0006f32544350a698f7ebfb21d0e65b5b6aa0212725f83c27ddc0b5e": 1788667902
   },
   "known": {
     "d6dc4d7664f40cf611eea61f0d87e16c501700dc35ce4f5afb6977988bc1c37b": 1788647378.635233,
@@ -464,24 +465,25 @@
     "289f9c318942504cd94e007596e263d34629af298c7be8f6f48877fc92f7f602": 1788664545.4511886,
     "f91c6395c4c1bed17bc967efe378ac1efb3c06002ae9f2115052749dc3429a69": 1788664961.7353408,
     "25b53eea0832e67927f22f145cda4906489ca1d328067230f97c366ad886dabf": 1788665984.6432886,
-    "008d819d5bf60765de7aab9e05065f3ae15e3e21f0f17e51b613a70a6944bff2": 1788666644.9310236
+    "008d819d5bf60765de7aab9e05065f3ae15e3e21f0f17e51b613a70a6944bff2": 1788666644.9310236,
+    "354944ff0006f32544350a698f7ebfb21d0e65b5b6aa0212725f83c27ddc0b5e": 1788667902.135169
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788667663.3912702,
+    "last_start_ts": 1788667902.135169,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788667663.3912702,
-    "last_success_ts": 1788667663.3912702,
-    "last_candidates": 11,
-    "last_published": 0,
+    "last_run_ts": 1788667902.135169,
+    "last_success_ts": 1788667902.135169,
+    "last_candidates": 12,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788666656.927947
+      "updated_at": 1788667915.9145443
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -823,11 +825,17 @@
       "desc": "Как интернет-магазину перестать «играться» с ChatGPT и начать зарабатывать: гайд по внедрению промт-инжиниринга в E-commerce VC.ru",
       "source": "VC.ru",
       "region": "RUSSIA"
+    },
+    "354944ff0006f32544350a698f7ebfb21d0e65b5b6aa0212725f83c27ddc0b5e": {
+      "time": 1788667902,
+      "title": "OpenAI выпустила GPT-6 Astra — самую мощную и противоречивую модель компании - prospect.com.ru",
+      "desc": "OpenAI выпустила GPT-6 Astra — самую мощную и противоречивую модель компании prospect.com.ru",
+      "source": "prospect.com.ru",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -845,10 +853,11 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
-  "last_search_ts": 1788667663.3912702,
-  "last_publish_ts": 1788666644.9310236,
+  "last_search_ts": 1788667902.135169,
+  "last_publish_ts": 1788667902.135169,
   "run_history": [
     {
       "ts": 1788649810,
@@ -3507,6 +3516,33 @@
       "queue_after": 0,
       "published": 0,
       "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788667902,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
