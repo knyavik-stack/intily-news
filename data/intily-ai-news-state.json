@@ -405,7 +405,8 @@
     "a8d28bee14b1ea48ee31bcd9eab345c347479748b40db83ff230cf4c5c8039ce": 1788652423,
     "15ce5f2ec65dc652f3a80afb33fbe112f28ecfd79fd0efb527a48181ea5dc499": 1788652901,
     "7e0ce2e64f8956466eb060eac39a60c2457b75bf129acd6e3d8515a582c28d80": 1788653144,
-    "a930f6e9782840d2c0f5a0babab62b55875023b54f592b4752620f11458b39e3": 1788653454
+    "a930f6e9782840d2c0f5a0babab62b55875023b54f592b4752620f11458b39e3": 1788653454,
+    "00470e27d42dbb11ee94f134f2f871ec0cfa525dbf5d115975e86d9f64f5885a": 1788653683
   },
   "known": {
     "1ea303ab8ec210bb89b428b7d6dd4f49ac10ea9fb0d8762edde56dab3d962dd2": 1788632289.4549868,
@@ -442,23 +443,6 @@
     "a1eda5d02e073b81f4a476a0be4ebbcd37c7fd8290d600857a5e208d835a4bef": 1788653144.8727803
   },
   "queue": [
-    {
-      "region": "WORLD",
-      "title": "Adobe Acquires Indian AI Startup Rilo to Accelerate Agentic Marketing Automation - konsulteer.com",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdVZhVFBHRm1oUXg2N2E5Y29mbDJ5NmltcDFGWmZDSGNhWEhwd0tBRTZHbEgxZjBmZXhZMGJfOGVadktvbFpucXgya042MzZNdjRTTHViRnR2UUppVHdkYkx2UF81UFB3TmlHenBjUXlITU5kajVIbXE4Sy1IUmNhcllvX1NURGNMREVpOTRPM3FsLUZ3eW03dFZneGliSmJjYm1SUGZPN1pYV0w1TG5F?oc=5",
-      "desc": "Adobe Acquires Indian AI Startup Rilo to Accelerate Agentic Marketing Automation konsulteer.com",
-      "source": "konsulteer.com",
-      "time": 1788636195.0,
-      "score": 63.0,
-      "key": "00470e27d42dbb11ee94f134f2f871ec0cfa525dbf5d115975e86d9f64f5885a",
-      "importance": 63.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "applications"
-      ],
-      "tier": "A"
-    },
     {
       "region": "RUSSIA",
       "title": "Adobe купила индийский стартап Rilo для AI-агентов - Techora.ru",
@@ -531,20 +515,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788653623.171036,
+    "last_start_ts": 1788653683.7144897,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788653623.171036,
-    "last_success_ts": 1788653623.171036,
+    "last_run_ts": 1788653683.7144897,
+    "last_success_ts": 1788653683.7144897,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 5
+    "last_published": 1,
+    "queue_size": 4
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788653456.2060905
+      "updated_at": 1788653685.5800207
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -886,10 +870,16 @@
       "desc": "DeepSeek V4-Pro vs Claude Opus 5 vs Gemini 3.1: 15-Point Gap [2026] tech-insider.org",
       "source": "tech-insider.org",
       "region": "WORLD"
+    },
+    "00470e27d42dbb11ee94f134f2f871ec0cfa525dbf5d115975e86d9f64f5885a": {
+      "time": 1788653683,
+      "title": "Adobe Acquires Indian AI Startup Rilo to Accelerate Agentic Marketing Automation - konsulteer.com",
+      "desc": "Adobe Acquires Indian AI Startup Rilo to Accelerate Agentic Marketing Automation konsulteer.com",
+      "source": "konsulteer.com",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -908,10 +898,11 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD"
   ],
   "last_search_ts": 1788653144.8727803,
-  "last_publish_ts": 1788653454.8467226,
+  "last_publish_ts": 1788653683.7144897,
   "run_history": [
     {
       "ts": 1788649810,
@@ -1572,6 +1563,33 @@
       "queue_after": 5,
       "published": 0,
       "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788653683,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "candidates": 0,
+      "queue_before": 5,
+      "queue_after": 4,
+      "published": 1,
+      "publish_attempts": 1,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
