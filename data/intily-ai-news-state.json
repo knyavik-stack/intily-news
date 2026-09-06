@@ -445,7 +445,8 @@
     "1464a5fc171e04ca7316fdccdfdc3f4f96fe86229c695822473f42a4276305f8": 1788678763,
     "8a4fe2445d1fddf02f35470f6c6eee4e476441494783e53f8d312f92144c495d": 1788679125,
     "074cef7183be63c1fcd5623c0ac8d422f45e15879e1774040e0810a609691640": 1788680444,
-    "f6c2eeccd18ce9dae9d04f536daa7f120ec2a8d514e8bcafc0377febe34bd71b": 1788681945
+    "f6c2eeccd18ce9dae9d04f536daa7f120ec2a8d514e8bcafc0377febe34bd71b": 1788681945,
+    "4ffce1475eae4b85f3e6f9f9bf96586200b95672ab661f0df909276a7450f13e": 1788682182
   },
   "known": {
     "ee747d04e445ab76e047c781fd0876b88cba00653868401b64968683c53cd6fd": 1788661661.8857415,
@@ -475,24 +476,25 @@
     "8a4fe2445d1fddf02f35470f6c6eee4e476441494783e53f8d312f92144c495d": 1788678345.1069558,
     "1464a5fc171e04ca7316fdccdfdc3f4f96fe86229c695822473f42a4276305f8": 1788678763.6180534,
     "074cef7183be63c1fcd5623c0ac8d422f45e15879e1774040e0810a609691640": 1788680444.1362836,
-    "f6c2eeccd18ce9dae9d04f536daa7f120ec2a8d514e8bcafc0377febe34bd71b": 1788681945.757408
+    "f6c2eeccd18ce9dae9d04f536daa7f120ec2a8d514e8bcafc0377febe34bd71b": 1788681945.757408,
+    "4ffce1475eae4b85f3e6f9f9bf96586200b95672ab661f0df909276a7450f13e": 1788682182.1962953
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788682003.0167665,
+    "last_start_ts": 1788682182.1962953,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788682003.0167665,
-    "last_success_ts": 1788682003.0167665,
+    "last_run_ts": 1788682182.1962953,
+    "last_success_ts": 1788682182.1962953,
     "last_candidates": 15,
-    "last_published": 0,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788681960.107056
+      "updated_at": 1788682194.5962894
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -946,12 +948,18 @@
       "desc": "What AI Models Can You Use in Japan? 2026 Digital in Asia",
       "source": "Digital in Asia",
       "region": "WORLD"
+    },
+    "4ffce1475eae4b85f3e6f9f9bf96586200b95672ab661f0df909276a7450f13e": {
+      "time": 1788682182,
+      "title": "Bloomberg назвал следующее «этическое минное поле» для ИИ - rbc.ru",
+      "desc": "Bloomberg назвал следующее «этическое минное поле» для ИИ rbc.ru",
+      "source": "rbc.ru",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -968,10 +976,11 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
-  "last_search_ts": 1788682003.0167665,
-  "last_publish_ts": 1788681945.757408,
+  "last_search_ts": 1788682182.1962953,
+  "last_publish_ts": 1788682182.1962953,
   "run_history": [
     {
       "ts": 1788649810,
@@ -5682,6 +5691,33 @@
       "queue_after": 0,
       "published": 0,
       "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788682182,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "candidates": 15,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
