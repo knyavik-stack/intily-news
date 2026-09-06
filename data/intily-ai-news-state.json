@@ -473,7 +473,8 @@
     "5125e0464e409f7881afd1de384a0ff40a53b8fcea2479a9ea9d5e97561e0400": 1788691902,
     "4749303661c8eeecc479c3e4d1322d3d12b3ca6a61a761d413396a086f11e5aa": 1788692383,
     "1c0e4a813e37d27dc9de505d2b38e045b2518a7c7cb118b1ef6bc19807b63e78": 1788692745,
-    "23c156b52fe2052ef9ebc9214d10e9b5ea9af725fca091bc199b02267fe589f4": 1788693283
+    "23c156b52fe2052ef9ebc9214d10e9b5ea9af725fca091bc199b02267fe589f4": 1788693283,
+    "1abea05a31fb63fb23a2659b834fb96d6036fa1e6fd34bf3c83858c4e856cb9b": 1788694002
   },
   "known": {
     "38eed7b3d073cd62cdd67a4f1cfa274276f8ec46688289b91ab680ad951d7a17": 1788689502.502995,
@@ -485,24 +486,25 @@
     "82d15c10e505d61e9b2bda28926dacbe61e2cf5ad8ec211a52fd89c461d5d996": 1788691720.3085623,
     "5125e0464e409f7881afd1de384a0ff40a53b8fcea2479a9ea9d5e97561e0400": 1788691720.3085623,
     "4749303661c8eeecc479c3e4d1322d3d12b3ca6a61a761d413396a086f11e5aa": 1788692024.3129845,
-    "23c156b52fe2052ef9ebc9214d10e9b5ea9af725fca091bc199b02267fe589f4": 1788693283.8283527
+    "23c156b52fe2052ef9ebc9214d10e9b5ea9af725fca091bc199b02267fe589f4": 1788693283.8283527,
+    "1abea05a31fb63fb23a2659b834fb96d6036fa1e6fd34bf3c83858c4e856cb9b": 1788694002.8049405
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788693883.0162585,
+    "last_start_ts": 1788694002.8049405,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788693883.0162585,
-    "last_success_ts": 1788693883.0162585,
-    "last_candidates": 27,
-    "last_published": 0,
+    "last_run_ts": 1788694002.8049405,
+    "last_success_ts": 1788694002.8049405,
+    "last_candidates": 28,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788693299.7262144
+      "updated_at": 1788694016.386286
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -1152,10 +1154,16 @@
       "desc": "The Sequence Radar - Issue 927: Last Week in AI: Model Madness: The Frontier Has a Refresh Button TheSequence | Jesus Rodriguez",
       "source": "TheSequence | Jesus Rodriguez",
       "region": "WORLD"
+    },
+    "1abea05a31fb63fb23a2659b834fb96d6036fa1e6fd34bf3c83858c4e856cb9b": {
+      "time": 1788694002,
+      "title": "Dubai robocops: Police deploy 36 robots as AI expands across policing - Arabian Business",
+      "desc": "Dubai robocops: Police deploy 36 robots as AI expands across policing Arabian Business",
+      "source": "Arabian Business",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -1174,38 +1182,12 @@
     "WORLD",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD"
   ],
-  "last_search_ts": 1788693883.0162585,
-  "last_publish_ts": 1788693283.8283527,
+  "last_search_ts": 1788694002.8049405,
+  "last_publish_ts": 1788694002.8049405,
   "run_history": [
-    {
-      "ts": 1788658482,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "candidates": 15,
-      "queue_before": 0,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788658543,
       "status": "OK",
@@ -9492,6 +9474,81 @@
       "provider": {
         "attempts": [],
         "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788694002,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 13.96,
+      "candidates": 28,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 24,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 1,
+        "candidate_count": 28,
+        "admission_rate": 3.57,
+        "dominant_block": "published_key"
+      },
+      "rss": {
+        "queries_attempted": 31,
+        "queries_ok": 31,
+        "query_errors": 0,
+        "direct_feeds_attempted": 8,
+        "direct_feeds_ok": 7,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 8,
+        "raw_items": 165,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 8
+        },
+        "score_filtered": 135,
+        "quality_filtered": 0,
+        "story_dedup": 2,
+        "candidates": 28,
+        "candidate_rate": 0.1783
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
