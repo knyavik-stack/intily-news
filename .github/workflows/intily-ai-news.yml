@@ -29,7 +29,17 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TELEGRAM_CHAT_ID: '@intily'
           STATE_FILE: data/intily-ai-news-state.json
-        run: timeout 240s python3 scripts/intily_ai_news.py
+        run: |
+          set -o pipefail
+          timeout 240s python3 scripts/intily_ai_news.py 2>&1 | tee /tmp/intily-publisher.log
+
+      - name: Текущая аналитика поиска
+        if: always()
+        continue-on-error: true
+        run: |
+          python3 scripts/intily_cycle_intelligence.py | tee /tmp/intily-search-intelligence.md
+          cat /tmp/intily-search-intelligence.md >> "$GITHUB_STEP_SUMMARY"
+
       - name: Production KPI summary
         if: always()
         continue-on-error: true
@@ -37,44 +47,45 @@ jobs:
           python3 scripts/intily_monitor.py | tee /tmp/intily-kpi.md
           cat /tmp/intily-kpi.md >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Persist state
+      - name: Persist state and analytics
         if: always()
         run: |
-          if git diff --quiet -- data/intily-ai-news-state.json; then
-            echo 'No state changes.'
+          if git diff --quiet -- data/intily-ai-news-state.json data/intily-query-intelligence.json; then
+            echo 'No state or analytics changes.'
             exit 0
           fi
 
           git config user.name 'intily-ai-news[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
-          # State is a production artifact, while docs/code may be pushed to
-          # main independently during the run. Preserve the generated state,
-          # rebase it onto the newest main, and retry the push to avoid losing
-          # state on a normal fast-forward race.
-          cp data/intily-ai-news-state.json /tmp/intily-ai-news-state.json
+          # State and query analytics are production artifacts. Preserve both
+          # generated files, rebase them onto the newest main, and retry the
+          # push to avoid losing data on a normal fast-forward race.
+          cp data/intily-ai-news-state.json /tmp/intily-ai-news-state.json 2>/dev/null || true
+          cp data/intily-query-intelligence.json /tmp/intily-query-intelligence.json 2>/dev/null || true
 
           for attempt in 1 2 3; do
             echo "Persist attempt $attempt"
             git fetch origin main
             git reset --hard origin/main
-            cp /tmp/intily-ai-news-state.json data/intily-ai-news-state.json
+            if [ -f /tmp/intily-ai-news-state.json ]; then cp /tmp/intily-ai-news-state.json data/intily-ai-news-state.json; fi
+            if [ -f /tmp/intily-query-intelligence.json ]; then cp /tmp/intily-query-intelligence.json data/intily-query-intelligence.json; fi
 
-            if git diff --quiet -- data/intily-ai-news-state.json; then
-              echo 'State already matches origin/main.'
+            if git diff --quiet -- data/intily-ai-news-state.json data/intily-query-intelligence.json; then
+              echo 'Artifacts already match origin/main.'
               exit 0
             fi
 
-            git add data/intily-ai-news-state.json
-            git commit -m 'chore(news): persist publisher state' || true
+            git add data/intily-ai-news-state.json data/intily-query-intelligence.json
+            git commit -m 'chore(news): persist publisher analytics' || true
 
             if git push origin main; then
-              echo 'State persisted.'
+              echo 'State and analytics persisted.'
               exit 0
             fi
 
             sleep 2
           done
 
-          echo 'State persistence failed after retries.'
+          echo 'State/analytics persistence failed after retries.'
           exit 1
