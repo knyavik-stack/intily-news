@@ -420,7 +420,8 @@
     "cb24a8820e1960fd26ca6242a4222d1726d5f5eb7b628006c136a070c47ab835": 1788660281,
     "ee747d04e445ab76e047c781fd0876b88cba00653868401b64968683c53cd6fd": 1788661661,
     "a375e2a6233fcce62758173a7ba6f1cbd1425c0db20cdd0f12d9a273d4d8aee5": 1788661962,
-    "b8026be6d6962cbac41d32e3679a5b9688d53b08c68adbf93574342636e5bef8": 1788662202
+    "b8026be6d6962cbac41d32e3679a5b9688d53b08c68adbf93574342636e5bef8": 1788662202,
+    "289f9c318942504cd94e007596e263d34629af298c7be8f6f48877fc92f7f602": 1788664545
   },
   "known": {
     "d6dc4d7664f40cf611eea61f0d87e16c501700dc35ce4f5afb6977988bc1c37b": 1788647378.635233,
@@ -456,24 +457,25 @@
     "cb24a8820e1960fd26ca6242a4222d1726d5f5eb7b628006c136a070c47ab835": 1788660281.646836,
     "ee747d04e445ab76e047c781fd0876b88cba00653868401b64968683c53cd6fd": 1788661661.8857415,
     "a375e2a6233fcce62758173a7ba6f1cbd1425c0db20cdd0f12d9a273d4d8aee5": 1788661962.9189608,
-    "b8026be6d6962cbac41d32e3679a5b9688d53b08c68adbf93574342636e5bef8": 1788662202.5986264
+    "b8026be6d6962cbac41d32e3679a5b9688d53b08c68adbf93574342636e5bef8": 1788662202.5986264,
+    "289f9c318942504cd94e007596e263d34629af298c7be8f6f48877fc92f7f602": 1788664545.4511886
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788664302.435172,
+    "last_start_ts": 1788664545.4511886,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788664302.435172,
-    "last_success_ts": 1788664302.435172,
-    "last_candidates": 14,
-    "last_published": 0,
+    "last_run_ts": 1788664545.4511886,
+    "last_success_ts": 1788664545.4511886,
+    "last_candidates": 15,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788662215.6179504
+      "updated_at": 1788664557.6678274
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -487,13 +489,6 @@
     }
   },
   "stories": {
-    "09996fad3151ec38ea10979b6f5ed283d9e959b3f31d93f6a642caaef4d5c171": {
-      "time": 1788578120,
-      "title": "ИИ-агенты OpenAI захватили немецкую вики и начали учить друг друга обходить ограничения - prospect.com.ru",
-      "desc": "ИИ-агенты OpenAI захватили немецкую вики и начали учить друг друга обходить ограничения prospect.com.ru",
-      "source": "prospect.com.ru",
-      "region": "RUSSIA"
-    },
     "b8bcf176c791465a10f2f5ebc82d403fe51441af7a04e0dd328a46e324946efb": {
       "time": 1788578301,
       "title": "WSJ узнала, как США склонили Баку и Ереван к миру «чиповой дипломатией» - rbc.ru",
@@ -815,10 +810,16 @@
       "desc": "OpenAI admits AI agents used German wiki site for covert communication, to establish new incident disclosure rules finance.biggo.com",
       "source": "finance.biggo.com",
       "region": "WORLD"
+    },
+    "289f9c318942504cd94e007596e263d34629af298c7be8f6f48877fc92f7f602": {
+      "time": 1788664545,
+      "title": "Broadcom's Hidden Ambitions: AI Money Is Flowing Beyond GPUs - odaily.news",
+      "desc": "Broadcom's Hidden Ambitions: AI Money Is Flowing Beyond GPUs odaily.news",
+      "source": "odaily.news",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -834,13 +835,14 @@
     "WORLD",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD",
     "WORLD"
   ],
-  "last_search_ts": 1788664302.435172,
-  "last_publish_ts": 1788662202.5986264,
+  "last_search_ts": 1788664545.4511886,
+  "last_publish_ts": 1788664545.4511886,
   "run_history": [
     {
       "ts": 1788649810,
@@ -2959,6 +2961,33 @@
       "queue_after": 0,
       "published": 0,
       "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788664545,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "candidates": 15,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
