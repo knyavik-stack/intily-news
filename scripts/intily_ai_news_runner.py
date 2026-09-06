@@ -86,6 +86,43 @@ def apply_image_delivery(publisher):
     """Add main-article photo delivery while preserving text-only fallback."""
     from intily_image_pipeline import publish_with_optional_image
 
+    publisher._cycle_image_telemetry = {
+        'attempts': 0,
+        'found': 0,
+        'validated': 0,
+        'photo_sent': 0,
+        'text_fallback': 0,
+        'fallback_reasons': {},
+        'sources': {},
+        'last': None,
+    }
+
+    def register(telemetry):
+        if not telemetry:
+            return
+        stats = publisher._cycle_image_telemetry
+        stats['attempts'] += int(telemetry.get('attempts', 0) or 0)
+        status = telemetry.get('status')
+        if status == 'sent':
+            stats['found'] += 1
+            stats['validated'] += 1
+            stats['photo_sent'] += 1
+            method = telemetry.get('method') or 'unknown'
+            stats['sources'][method] = stats['sources'].get(method, 0) + 1
+        elif status == 'fallback_text':
+            stats['text_fallback'] += 1
+            reason = str(telemetry.get('error') or 'unknown')[:160]
+            stats['fallback_reasons'][reason] = stats['fallback_reasons'].get(reason, 0) + 1
+        stats['last'] = {
+            'status': status,
+            'method': telemetry.get('method'),
+            'source_url': telemetry.get('source_url'),
+            'image_url': telemetry.get('url'),
+            'width': telemetry.get('width'),
+            'height': telemetry.get('height'),
+            'error': telemetry.get('error'),
+        }
+
     original_telegram = publisher.telegram
     original_edit = publisher.edit
 
@@ -100,16 +137,16 @@ def apply_image_delivery(publisher):
         chat_id = os.environ.get('TELEGRAM_CHAT_ID', '@intily')
         article_url = getattr(publisher, '_current_publication_url', '')
         if not token or not article_url:
-            print('IMAGE_FALLBACK_TEXT', 'missing_token_or_article_url')
+            telemetry = {
+                'status': 'fallback_text', 'attempts': 1, 'method': None, 'url': None,
+                'source_url': article_url or None, 'width': None, 'height': None,
+                'error': 'missing_token_or_article_url'
+            }
+            register(telemetry)
+            print('IMAGE_FALLBACK_TEXT', telemetry['error'])
             return original_telegram(text)
         telemetry = publish_with_optional_image(text, article_url, token, chat_id, original_telegram)
+        register(telemetry)
         publisher._last_image_telemetry = telemetry
 
     publisher.telegram = telegram_with_image
-
-
-if __name__ == '__main__':
-    publisher = importlib.import_module('intily_ai_news')
-    apply_policy(publisher)
-    apply_image_delivery(publisher)
-    publisher.main()
