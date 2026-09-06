@@ -478,21 +478,6 @@
     },
     {
       "region": "RUSSIA",
-      "title": "Краснов: российские суды начали применять четыре модели ИИ в пилотном режиме - Дзен",
-      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBRTWF1VnhtTFQ0b3ZkaG5wTnpmRlNUd195ME4zTE91dHRyZkRpS3ZwcnBNWkZaVGFZYU92aTRQQmNucFppY25ZVlZn?oc=5",
-      "desc": "Краснов: российские суды начали применять четыре модели ИИ в пилотном режиме Дзен",
-      "source": "Дзен",
-      "time": 1788610308.0,
-      "score": 60.4,
-      "russia_weight_bonus": 4.4,
-      "key": "a1eda5d02e073b81f4a476a0be4ebbcd37c7fd8290d600857a5e208d835a4bef",
-      "importance": 60.4,
-      "editorial_value": 50.0,
-      "topics": [],
-      "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
       "title": "Навести порядок в российских судах призваны четыре ИИ-модели - Вечерний Санкт-Петербург",
       "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNQThIUjVTSkVIWC1kTG1MMEljUHZObmxmZU1mVVFMUXFWV012aWVRMndGbXVWZV8tYVUwaWtrUUF6U0dTMDFwdldtUFFmSG81RnZuT2NMVkVSTmVFcFc2TjlLNUNhSkNvLVh0WXRFVHZvaEtZV0NDXzBRclItdTJESWpEQm1YV0RvZ0Q3dkpBY21NUFF6RzFtX1JGTmFnUTA?oc=5",
       "desc": "Навести порядок в российских судах призваны четыре ИИ-модели Вечерний Санкт-Петербург",
@@ -546,14 +531,14 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788653454.8467226,
+    "last_start_ts": 1788653562.3219905,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788653454.8467226,
-    "last_success_ts": 1788653454.8467226,
+    "last_run_ts": 1788653562.3219905,
+    "last_success_ts": 1788653562.3219905,
     "last_candidates": 0,
-    "last_published": 1,
-    "queue_size": 6
+    "last_published": 0,
+    "queue_size": 5
   },
   "providers": {
     "GEMINI": {
@@ -1533,6 +1518,33 @@
       "queue_after": 6,
       "published": 1,
       "publish_attempts": 1,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788653562,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": false,
+      "candidates": 0,
+      "queue_before": 5,
+      "queue_after": 5,
+      "published": 0,
+      "publish_attempts": 0,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
