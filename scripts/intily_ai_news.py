@@ -67,7 +67,9 @@ STATE_FILE = os.environ.get(
 # Exact RSS-item memory is only an ingestion guard. It must never act as a
 # 30-day tombstone for an unpublished story. Semantic published history is kept
 # separately in stories.
-KNOWN_LOOKBACK_SECONDS = 6 * 3600
+# Exact RSS-item memory is intentionally short: it prevents hot-loop re-admission
+# but must NOT become a multi-hour editorial blacklist. Disable/change here.
+KNOWN_LOOKBACK_SECONDS = 90 * 60
 
 
 # ------------------------------------------------------------
@@ -642,14 +644,18 @@ def same_story(a, b):
     return any(any(ch.isdigit() for ch in token) for token in shared_anchors) and sim >= 0.50
 
 
-def collect():
+def collect(telemetry=None):
     all_items = []
     raw_total = 0
     scored_out = 0
     quality_out = 0
     story_dupes = 0
+    feed_errors = 0
+    feeds_ok = 0
+    feeds_attempted = 0
 
     for region, q in QUERIES:
+        feeds_attempted += 1
         try:
             started = time.time()
             items = rss(region, q)
@@ -661,10 +667,12 @@ def collect():
                     x['score'] = min(100, x['score'] + x['russia_weight_bonus'])
                 x['key'] = key(x)
                 all_items.append(x)
+            feeds_ok += 1
             print('RSS_QUERY', region, 'raw', len(items), q[:80])
             if time.time() - started > 15:
                 raise TimeoutError('FEED_BUDGET_EXCEEDED')
         except Exception as e:
+            feed_errors += 1
             print('FEED_ERROR', region, str(e)[:180])
 
     all_items.sort(key=lambda x: (x['score'], x['time']), reverse=True)
@@ -681,9 +689,23 @@ def collect():
             continue
         out.append(x)
 
+    rss_telemetry = {
+        'queries_attempted': feeds_attempted,
+        'queries_ok': feeds_ok,
+        'query_errors': feed_errors,
+        'raw_items': raw_total,
+        'score_filtered': scored_out,
+        'quality_filtered': quality_out,
+        'story_dedup': story_dupes,
+        'candidates': len(out),
+        'candidate_rate': round(len(out) / max(1, raw_total), 4),
+    }
+    if telemetry is not None:
+        telemetry.update(rss_telemetry)
     print('INGEST_SUMMARY', 'raw', raw_total, 'all', len(all_items),
           'score_filtered', scored_out, 'quality_filtered', quality_out,
           'story_dedup', story_dupes, 'candidates', len(out))
+    print('RSS_HEALTH', json.dumps(rss_telemetry, ensure_ascii=False, separators=(',', ':')))
     return out
 
 
@@ -1010,6 +1032,10 @@ def gemini_chat(prompt, token):
 
 def ai(prompt, s):
     errors = []
+    telemetry = s.setdefault('_cycle_provider', {
+        'attempts': [], 'used': None, 'failovers': 0, 'failures': 0,
+        'blocked': 0, 'skipped_no_key': 0, 'retries': 0
+    })
 
     providers = [
         (
@@ -1041,18 +1067,21 @@ def ai(prompt, s):
     for name, url, model, token in providers:
 
         if not token:
+            telemetry['skipped_no_key'] += 1
             print(
                 name + '_SKIPPED_NO_KEY'
             )
             continue
 
         if provider_blocked(s, name):
+            telemetry['blocked'] += 1
             errors.append(
                 name + ': CIRCUIT_OPEN'
             )
             continue
 
         try:
+            telemetry['attempts'].append(name)
             print(
                 'AI_PROVIDER_ATTEMPT',
                 name
@@ -1082,10 +1111,13 @@ def ai(prompt, s):
                     name
                 )
 
+                telemetry['used'] = name
+                telemetry['failovers'] = max(0, len(telemetry['attempts']) - 1)
                 print(
                     'AI_PROVIDER_OK',
                     name
                 )
+                print('AI_PROVIDER_USAGE', json.dumps(telemetry, ensure_ascii=False, separators=(',', ':')))
 
                 return result
 
@@ -1646,80 +1678,103 @@ KPI_MONITORING_ENABLED = True
 KPI_HISTORY_LIMIT = 200
 
 
-def record_kpi(s, now, searched, candidates, queue_before, queue_after,
-               published, publish_attempts, item_failures, business_result,
-               business_reason):
+def record_kpi(
+    s, now, searched, candidates, queue_before, queue_after,
+    published, publish_attempts, item_failures, business_result, business_reason,
+    admission=None, rss_telemetry=None, provider_telemetry=None, duration_sec=0.0
+):
     if not KPI_MONITORING_ENABLED:
         return
-    health = s.get('health', {})
-    providers = {}
-    for name, value in s.get('providers', {}).items():
-        if isinstance(value, dict):
-            providers[name] = {
-                'blocked': float(value.get('disabled_until', 0) or 0) > now,
-                'reason': str(value.get('reason', ''))[:120]
-            }
-    entry = {
+    history = s.setdefault('run_history', [])
+    history.append({
         'ts': int(now),
-        'status': 'OK',
+        'status': s.get('health', {}).get('last_status', 'OK'),
         'business_result': business_result,
         'business_reason': business_reason,
         'searched': bool(searched),
+        'duration_sec': round(float(duration_sec), 2),
         'candidates': int(candidates),
         'queue_before': int(queue_before),
         'queue_after': int(queue_after),
         'published': int(published),
         'publish_attempts': int(publish_attempts),
         'item_failures': int(item_failures),
-        'provider_state': providers,
-    }
-    history = s.get('run_history', [])
-    history.append(entry)
-    s['run_history'] = history[-KPI_HISTORY_LIMIT:]
+        'admission': admission or {},
+        'rss': rss_telemetry or {},
+        'provider': provider_telemetry or {},
+        'provider_state': {
+            name: {
+                'blocked': provider_blocked(s, name),
+                'reason': s['providers'].get(name, {}).get('reason', '')
+            }
+            for name in ('GEMINI', 'GROQ', 'OPENAI')
+        }
+    })
+    del history[:-KPI_HISTORY_LIMIT]
 
 
 def kpi_summary(s, now):
     history = s.get('run_history', []) if KPI_MONITORING_ENABLED else []
     def window(seconds):
-        return [x for x in history if now - float(x.get('ts', 0) or 0) <= seconds]
-    recent = window(24 * 3600)
-    recent_7d = window(7 * 86400)
-    def summarize(items):
-        total = len(items)
-        published_n = sum(int(x.get('published', 0) or 0) for x in items)
-        failures = sum(int(x.get('item_failures', 0) or 0) for x in items)
-        no_publish = sum(1 for x in items if x.get('business_result') != 'PUBLISHED')
+        return [r for r in history if now - float(r.get('ts', 0)) <= seconds]
+    def aggregate(rows):
+        pubs = sum(int(r.get('published', 0) or 0) for r in rows)
+        candidates = sum(int(r.get('candidates', 0) or 0) for r in rows)
+        attempts = sum(int(r.get('publish_attempts', 0) or 0) for r in rows)
+        failures = sum(int(r.get('item_failures', 0) or 0) for r in rows)
+        searched = sum(1 for r in rows if r.get('searched'))
+        rss = [r.get('rss', {}) for r in rows if r.get('rss')]
+        admission = [r.get('admission', {}) for r in rows if r.get('admission')]
+        providers = [r.get('provider', {}) for r in rows if r.get('provider')]
+        added = sum(int(a.get('added', 0) or 0) for a in admission)
+        no_publish = sum(1 for r in rows if r.get('business_result') == 'NO_PUBLISH')
+        freq = pubs / (len(rows) / 12) if rows else 0.0
+        intervals=[]
+        pub_ts=[float(r.get('ts',0)) for r in rows if r.get('published')]
+        for a,b in zip(pub_ts, pub_ts[1:]):
+            if b>a: intervals.append((b-a)/60)
+        failovers=sum(int(p.get('failovers',0) or 0) for p in providers)
+        provider_used={}
+        for p in providers:
+            u=p.get('used')
+            if u: provider_used[u]=provider_used.get(u,0)+1
+        q_after=[float(r.get('queue_after',0) or 0) for r in rows]
+        q_delta=[float(r.get('queue_after',0) or 0)-float(r.get('queue_before',0) or 0) for r in rows]
         return {
-            'runs': total,
-            'published': published_n,
+            'cycles': len(rows), 'searches': searched, 'candidates': candidates,
+            'avg_candidates': round(candidates/max(1,len(rows)),2),
+            'published': pubs, 'publication_rate': round(pubs/max(1,len(rows))*100,2),
+            'publication_frequency_per_12h': round(freq,2),
+            'avg_publish_interval_min': round(sum(intervals)/len(intervals),2) if intervals else None,
+            'publish_attempts': attempts, 'item_failures': failures,
+            'publish_failure_rate': round(failures/max(1,attempts)*100,2),
             'no_publish': no_publish,
-            'publish_rate': round((published_n / total) * 100, 1) if total else 0.0,
-            'avg_candidates': round(sum(int(x.get('candidates', 0) or 0) for x in items) / total, 1) if total else 0.0,
-            'avg_queue_after': round(sum(int(x.get('queue_after', 0) or 0) for x in items) / total, 1) if total else 0.0,
-            'item_failures': failures,
+            'no_publish_rate': round(no_publish/max(1,len(rows))*100,2),
+            'queue_avg': round(sum(q_after)/len(q_after),2) if q_after else 0,
+            'queue_max': int(max(q_after)) if q_after else 0,
+            'queue_velocity_avg': round(sum(q_delta)/len(q_delta),2) if q_delta else 0,
+            'admission_candidates': candidates, 'admission_added': added,
+            'admission_rate': round(added/max(1,candidates)*100,2),
+            'rss_raw_items': sum(int(x.get('raw_items',0) or 0) for x in rss),
+            'rss_query_errors': sum(int(x.get('query_errors',0) or 0) for x in rss),
+            'rss_query_error_rate': round(sum(int(x.get('query_errors',0) or 0) for x in rss)/max(1,sum(int(x.get('queries_attempted',0) or 0) for x in rss))*100,2),
+            'provider_used': provider_used, 'provider_failovers': failovers,
         }
-    consecutive_no_publish = 0
-    for x in reversed(history):
-        if x.get('business_result') == 'PUBLISHED':
-            break
-        consecutive_no_publish += 1
     return {
-        'last': history[-1] if history else None,
-        '24h': summarize(recent),
-        '7d': summarize(recent_7d),
-        'sample': summarize(history),
-        'consecutive_no_publish': consecutive_no_publish,
         'monitoring_enabled': KPI_MONITORING_ENABLED,
+        'current': aggregate(history[-1:]) if history else aggregate([]),
+        '24h': aggregate(window(86400)),
+        '7d': aggregate(window(7*86400)),
+        'stored': aggregate(history),
     }
 
 
-# ------------------------------------------------------------
-# Main production loop
-# ------------------------------------------------------------
-
 def main():
+    cycle_started = time.time()
     s = load_state()
     now = time.time()
+    s['_cycle_provider'] = {'attempts': [], 'used': None, 'failovers': 0, 'failures': 0, 'blocked': 0, 'skipped_no_key': 0, 'retries': 0}
+    rss_telemetry = {}
     cut = now - 30 * 86400
     health = s['health']
     s['kpi_monitoring_enabled'] = KPI_MONITORING_ENABLED
@@ -1740,7 +1795,7 @@ def main():
     candidates = []
     if should_search:
         print('SEARCH_START', 'reason', 'URGENT_QUEUE' if urgent_search else 'SCHEDULED')
-        candidates = collect()
+        candidates = collect(rss_telemetry)
         s['last_search_ts'] = now
     else:
         print('SEARCH_SKIPPED', 'next_in', int(SEARCH_INTERVAL_SECONDS - (now - float(s.get('last_search_ts', 0)))))
@@ -1770,6 +1825,13 @@ def main():
 
     queue = rebalance_queue(queue, now)
     counts = region_counts(queue)
+    admission['admission_rate'] = round(admission['added'] / max(1, len(candidates)) * 100, 2)
+    admission['dominant_block'] = max(
+        (k for k in admission if k not in ('added', 'admission_rate')),
+        key=lambda k: admission[k],
+        default='none'
+    )
+    print('QUEUE_ADMISSION', json.dumps(admission, ensure_ascii=False, separators=(',', ':')))
     print('QUEUE_INGEST', 'candidates', len(candidates), 'added', admission['added'], 'queue_total', len(queue), 'world', counts['WORLD'], 'russia', counts['RUSSIA'])
 
     for x in queue:
@@ -1874,7 +1936,10 @@ def main():
         business_reason = 'no_candidates_and_empty_queue'
     elif not s['queue']:
         business_result = 'NO_PUBLISH'
-        business_reason = 'empty_queue_after_filters'
+        if candidates and admission.get('added', 0) == 0:
+            business_reason = 'admission_blocked_' + str(admission.get('dominant_block', 'unknown'))
+        else:
+            business_reason = 'empty_queue_after_filters'
     elif publish_attempts == 0:
         business_result = 'NO_PUBLISH'
         business_reason = 'no_eligible_item'
@@ -1884,11 +1949,17 @@ def main():
 
     record_kpi(
         s, now, should_search, len(candidates), queue_before, len(s['queue']),
-        published, publish_attempts, item_failures, business_result, business_reason
+        published, publish_attempts, item_failures, business_result, business_reason,
+        admission=admission, rss_telemetry=rss_telemetry,
+        provider_telemetry=s.get('_cycle_provider', {}),
+        duration_sec=time.time() - cycle_started
     )
+    s.pop('_cycle_provider', None)
     summary = kpi_summary(s, now)
     save_state(s)
     print('BUSINESS_RESULT', business_result, business_reason)
+    if business_result == 'NO_PUBLISH' and candidates and admission.get('added', 0) == 0:
+        print('QUEUE_STARVATION_SIGNAL', 'candidates_present_but_zero_admitted', 'dominant_block', admission.get('dominant_block'))
     print('PRODUCTION_KPI', json.dumps(summary, ensure_ascii=False, separators=(',', ':')))
     print('RUN_COMPLETE', 'searched', should_search, 'candidates', len(candidates), 'published', published, 'queue', len(s['queue']))
 

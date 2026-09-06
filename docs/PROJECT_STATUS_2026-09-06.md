@@ -42,3 +42,17 @@ Verified after deployment commit `d19f3fb39f718d3199942b193dd489932a94e2c1`: pub
 The same run generated the KPI dashboard in the GitHub Actions Summary. The on-demand `Intily Production Monitor` was then run against the persisted state and completed GREEN, showing 24h/7d/stored history with 1 run, 1 publication, 100% publication rate and 0 item failures.
 
 This confirms the complete observability path: **publisher → durable KPI history → Actions Summary → on-demand monitor → alert check**.
+
+## Production correction — 2026-09-06
+
+A 10-hour production analysis proved that the RSS layer had not run out of AI news: production had continued to discover candidates and successfully publish. The bottleneck was downstream candidate admission. The exact admission path showed a 6-hour `known` memory acting as a hard barrier for repeated Google News RSS items.
+
+Correction deployed: `known` is now a 90-minute technical anti-hot-loop memory; published and semantic story memory remain the durable duplicate protections. This allows a previously seen but never published story to be reconsidered without opening the door to republishing already published events.
+
+At the same time, Priority-A telemetry was expanded to expose admission rejection reasons, RSS health, actual AI provider usage/failover, queue velocity, publication frequency, PUBLISH_FAILED statistics and precise NO_PUBLISH classification.
+
+### Current engineering status
+
+- Production architecture unchanged: Cloudflare scheduler → GitHub Actions → Python publisher → Telegram.
+- The fix is behaviorally narrow and is covered by syntax/static validation before production smoke.
+- Empirical tuning remains pending until a larger post-fix sample accumulates.

@@ -64,3 +64,40 @@ Monitoring is read-only with respect to Telegram and providers. It reads the sta
 ## Verified production smoke test
 
 On 2026-09-05 UTC the production publisher smoke test completed successfully with `PUBLISHED`, one Telegram delivery, zero item publication failures and durable state persistence. The subsequent on-demand monitor read the persisted history and returned `GREEN`.
+
+## Production telemetry expansion — 2026-09-06
+
+The production cycle now records proof-level telemetry for the complete discovery → admission → editorial AI → Telegram path. This is additive observability; it does not alter the one-publication-per-cycle contract.
+
+### Priority-A KPI schema
+
+Each `run_history` record may contain:
+
+- `admission`: published-key, known-recent, already-queued, story-queue, story-history and added counts, plus admission rate and dominant block.
+- `rss`: queries attempted/OK/errors, raw items, score/quality filtering, discovery story dedup, candidate count and candidate yield.
+- `provider`: actual provider used, provider attempts, failovers, failures, blocked providers and missing-key skips. No API secrets are stored.
+- cycle duration, publication attempts, item failures, business result/reason, queue before/after.
+
+The monitor aggregates these values over 24h, 7d and the stored sample. Publication frequency is calculated from the actual timestamp span, not from an assumed scheduler cadence.
+
+### NO_PUBLISH classification
+
+`NO_PUBLISH` is now operationally classified. In particular, `admission_blocked_<reason>` means fresh candidates existed but zero candidates entered the durable queue. This distinguishes a genuine lack of qualifying discovery from an admission-memory/dedup bottleneck.
+
+### Queue starvation protection
+
+The exact RSS-item memory (`known`) is a short anti-hot-loop guard with a **90-minute TTL**. It is not an editorial blacklist. Long-lived duplicate protection remains the `published` + semantic `stories` layer. The monitor raises RED when the latest cycle has candidates but zero admissions and when sustained admission/failure thresholds are breached.
+
+### Operator dashboard
+
+Run **GitHub → Actions → Intily Production Monitor → Run workflow** for a read-only dashboard. Every publisher run also writes the KPI dashboard to the workflow **Summary** page. The monitor never calls Telegram, RSS or AI providers.
+
+### Configuration / disabling
+
+- KPI collection: `scripts/intily_ai_news.py` → `KPI_MONITORING_ENABLED`. Disabling it stops KPI history only; publication continues.
+- Exact-item memory TTL: same file → `KNOWN_LOOKBACK_SECONDS`.
+- Monitor alerts: `scripts/intily_monitor.py` → `ALERT_*` constants. Set an individual threshold to `0` to disable that alert.
+
+### Verification requirement
+
+The new telemetry is intentionally designed to accumulate evidence for Priority B/C optimization. Do not tune SLO thresholds from a tiny sample; use the rolling dashboard after a meaningful production window.
