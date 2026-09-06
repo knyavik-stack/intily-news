@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Русская историческая аналитика поискового потока для Intily Production Monitor."""
+"""Русская историческая аналитика поискового и весового потока Intily."""
 from __future__ import annotations
 
 import json
@@ -20,9 +20,10 @@ BLOCK_LABELS = {
     'already_queued': 'уже находится в очереди',
     'story_queue': 'та же история уже находится в очереди',
     'story_history': 'та же история уже была опубликована недавно',
-    'candidate_count': 'недостаточно новых кандидатов',
     'none': 'нет блокировки',
 }
+
+BUCKETS = ('0–39', '40–49', '50–59', '60–69', '70–79', '80–84', '85–89', '90–100')
 
 
 def load():
@@ -43,8 +44,8 @@ def window(runs, seconds):
 def aggregate(runs):
     queries = {}
     sources = {}
-    google_raw = direct_raw = 0
-    errors = 0
+    buckets = {name: 0 for name in BUCKETS}
+    google_raw = direct_raw = errors = score_total = 0
     launches = len(runs)
     for r in runs:
         for q in r.get('queries', []):
@@ -56,11 +57,13 @@ def aggregate(runs):
             sources[name] = sources.get(name, 0) + int(s.get('raw', 0) or 0)
             direct_raw += int(s.get('raw', 0) or 0)
         errors += len(r.get('errors', []))
-    return launches, google_raw, direct_raw, errors, queries, sources
+        for name in BUCKETS:
+            buckets[name] += int(r.get('score_buckets', {}).get(name, 0) or 0)
+    return launches, google_raw, direct_raw, errors, queries, sources, buckets
 
 
 def print_section(runs):
-    print('## Поисковая аналитика — история')
+    print('## Поисковая и весовая аналитика — история')
     print('')
     if not runs:
         print('Пока нет сохранённой истории поисковых запусков. Она появится после первого нового запуска издателя новостей.')
@@ -69,7 +72,7 @@ def print_section(runs):
     d24 = aggregate(window(runs, 86400))
     d7 = aggregate(window(runs, 7 * 86400))
     stored = aggregate(runs)
-    print('> Здесь показана накопленная статистика поисковых запусков. Дополнительных обращений к источникам нет.')
+    print('> Здесь показана накопленная статистика поисковых и весовых запусков. Дополнительных обращений к источникам нет.')
     print('')
     print('| Показатель | 24 часа | 7 дней | Сохранённая история |')
     print('|---|---:|---:|---:|')
@@ -77,6 +80,14 @@ def print_section(runs):
     print(f'| Материалов из Google News | {d24[1]} | {d7[1]} | {stored[1]} |')
     print(f'| Материалов из прямых RSS | {d24[2]} | {d7[2]} | {stored[2]} |')
     print(f'| Ошибок источников | {d24[3]} | {d7[3]} | {stored[3]} |')
+    print('')
+
+    print('### Распределение входного потока по весу')
+    print('')
+    print('| Вес | 24 часа | 7 дней | История |')
+    print('|---:|---:|---:|---:|')
+    for i, name in enumerate(BUCKETS):
+        print(f'| {name} | {d24[6][name]} | {d7[6][name]} | {stored[6][name]} |')
     print('')
 
     print('### Какие поисковые запросы чаще всего дают материал')
@@ -103,6 +114,7 @@ def print_section(runs):
     latest_summary = latest.get('summary', {})
     latest_admission = latest.get('admission', {})
     result = latest.get('result', {})
+    wait = latest.get('publish_wait_seconds')
     print('### Последний запуск издателя новостей')
     print('')
     print(f"- Материалов из Google News: **{latest_summary.get('google_raw', 0)}**")
@@ -110,17 +122,19 @@ def print_section(runs):
     print(f"- Добавлено в очередь: **{latest_admission.get('added', 0)}**")
     block = latest_admission.get('dominant_block', 'не определена')
     print(f"- Основная причина отказа: **{BLOCK_LABELS.get(block, block)}**")
+    if wait is not None:
+        print(f"- Интервал публикации: ожидалось ещё **{wait} сек.**; это не публикация и не удаление новости из очереди.")
     if result.get('code'):
         print(f"- Результат: **{RESULT_LABELS.get(result.get('code'), result.get('code'))}**")
     print('')
 
     print('### Как правильно читать эти данные')
     print('')
-    print('- Большое количество полученных материалов ещё не означает высокий редакционный результат: один запрос может многократно возвращать одну и ту же историю.')
-    print('- Нулевой результат одного источника не означает, что источник плохой; решение принимается по устойчивому тренду за несколько запусков.')
-    print('- Сейчас статистика показывает, **откуда приходит материал**, но не приписывает публикацию конкретному запросу: один материал может прийти по нескольким запросам.')
-    print('- Поэтому система пока не рассчитывает искусственный рейтинг эффективности запросов.')
-    print('- Следующий безопасный шаг — добавить уникальный идентификатор происхождения материала и только после этого считать путь «запрос → кандидат → очередь → публикация».')
+    print('- Большой входной поток ещё не означает высокий редакционный результат: один материал может приходить из нескольких запросов и источников.')
+    print('- Вес теперь детерминирован и считается с одним знаком после запятой; география не искажает саму редакционную оценку.')
+    print('- Нулевой результат одного источника не означает, что источник плохой: сначала проверяется доступность, затем устойчивый yield за несколько запусков.')
+    print('- Сейчас запросы показывают объём найденного материала, а не гарантированное число уникальных публикаций: один материал может прийти по нескольким запросам.')
+    print('- Следующая эволюция — provenance конкретного материала, чтобы честно считать путь «запрос → уникальная история → кандидат → очередь → публикация».')
 
 
 if __name__ == '__main__':
