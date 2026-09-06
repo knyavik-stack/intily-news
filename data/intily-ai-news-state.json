@@ -466,11 +466,10 @@
     "04d433f060196a0b1db9b21973c362974594684f84ac894359b155d9cd8d7c8b": 1788688123,
     "38eed7b3d073cd62cdd67a4f1cfa274276f8ec46688289b91ab680ad951d7a17": 1788689502,
     "0fe2e2274672cc402849c8ac3269a9c217000f86d754bf76aff96762b9d9f8a5": 1788689864,
-    "e4b1931d344a1dfb9be29e9346fde7fbd877c3a62b9727f9ec6d8d57b13d4993": 1788690103
+    "e4b1931d344a1dfb9be29e9346fde7fbd877c3a62b9727f9ec6d8d57b13d4993": 1788690103,
+    "8a8db8f3bd510e38880e9f2215dafbd5b89ebee4265f5aa609811531b7b0e60d": 1788690284
   },
   "known": {
-    "7b70c8169aeec2be3a12f7bab039de926247d9717d085344399efb69f35d33c5": 1788684882.0104403,
-    "4efacee148ea0c96437b255faf92264b3d0b194647b2b4216d9da7648dc18160": 1788684882.0104403,
     "c7bca7bdbe37c8d31ce99e3a4203550b670f7e41b03876a7b84ef2ca1f948469": 1788685362.6563358,
     "e074b406ae71bb42561750ebaabb07158165b4ad45432bbc3bed2fe7407408eb": 1788686205.654975,
     "2590633f3fe689c5ff07c630a01aa779e970068044ac833b1d28b48c359166e4": 1788686261.8697705,
@@ -482,7 +481,8 @@
     "38eed7b3d073cd62cdd67a4f1cfa274276f8ec46688289b91ab680ad951d7a17": 1788689502.502995,
     "0fe2e2274672cc402849c8ac3269a9c217000f86d754bf76aff96762b9d9f8a5": 1788689864.0345984,
     "e4b1931d344a1dfb9be29e9346fde7fbd877c3a62b9727f9ec6d8d57b13d4993": 1788690103.4452233,
-    "1c0e4a813e37d27dc9de505d2b38e045b2518a7c7cb118b1ef6bc19807b63e78": 1788690103.4452233
+    "1c0e4a813e37d27dc9de505d2b38e045b2518a7c7cb118b1ef6bc19807b63e78": 1788690103.4452233,
+    "8a8db8f3bd510e38880e9f2215dafbd5b89ebee4265f5aa609811531b7b0e60d": 1788690284.5686033
   },
   "queue": [
     {
@@ -502,12 +502,12 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788690103.4452233,
+    "last_start_ts": 1788690284.5686033,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788690103.4452233,
-    "last_success_ts": 1788690103.4452233,
-    "last_candidates": 26,
+    "last_run_ts": 1788690284.5686033,
+    "last_success_ts": 1788690284.5686033,
+    "last_candidates": 28,
     "last_published": 1,
     "queue_size": 1
   },
@@ -515,7 +515,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788690120.9205334
+      "updated_at": 1788690321.331224
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -1116,13 +1116,19 @@
       "desc": "«Яндекс» пока не планирует запускать полноценных ИИ-агентов в колонках Компьютерра",
       "source": "Компьютерра",
       "region": "RUSSIA"
+    },
+    "8a8db8f3bd510e38880e9f2215dafbd5b89ebee4265f5aa609811531b7b0e60d": {
+      "time": 1788690284,
+      "title": "ИИ в нефтяной индустрии: как технологии меняют геологоразведку и добычу - ВФокусе Mail",
+      "desc": "ИИ в нефтяной индустрии: как технологии меняют геологоразведку и добычу ВФокусе Mail",
+      "source": "ВФокусе Mail",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -1138,38 +1144,12 @@
     "WORLD",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
-  "last_search_ts": 1788690103.4452233,
-  "last_publish_ts": 1788690103.4452233,
+  "last_search_ts": 1788690284.5686033,
+  "last_publish_ts": 1788690284.5686033,
   "run_history": [
-    {
-      "ts": 1788654403,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "candidates": 0,
-      "queue_before": 3,
-      "queue_after": 2,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788654644,
       "status": "OK",
@@ -8562,6 +8542,81 @@
         "story_dedup": 1,
         "candidates": 26,
         "candidate_rate": 0.1699
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788690284,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 37.28,
+      "candidates": 28,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 24,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 1,
+        "candidate_count": 28,
+        "admission_rate": 3.57,
+        "dominant_block": "published_key"
+      },
+      "rss": {
+        "queries_attempted": 31,
+        "queries_ok": 31,
+        "query_errors": 0,
+        "direct_feeds_attempted": 8,
+        "direct_feeds_ok": 7,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 10,
+        "raw_items": 161,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 9
+        },
+        "score_filtered": 132,
+        "quality_filtered": 0,
+        "story_dedup": 1,
+        "candidates": 28,
+        "candidate_rate": 0.1854
       },
       "provider": {
         "attempts": [
