@@ -73,6 +73,14 @@ On 2026-09-06, `Intily Production Monitor` run **#4** failed only in `Check prod
 
 Those values are important diagnostics, but they do not by themselves prove an incident. The monitor was therefore corrected to keep them visible as WARN while reserving workflow failure for sustained, high-rate incidents. This fixes the false-positive monitor failure without hiding the underlying KPI degradation.
 
+## Dashboard correctness hardening — 2026-09-06
+
+The first corrected dashboard exposed a second presentation defect: it mixed cycle-level candidates with RSS-only telemetry and divided all publications by newly admitted items, which produced a misleading `700%` publication ratio. This was a **dashboard calculation defect**, not a publisher defect.
+
+Commit `de456bd518e6f1f5f8e66564509b24b4661a9f59` corrected the funnel to use RSS candidate telemetry for the RSS yield stage and reports publication rate against production cycles, explicitly noting that publication can consume previously queued items.
+
+Real Actions run **#6** (`34024533836`) completed SUCCESS and verified the corrected output: `RSS raw=2506`, `RSS candidates=367` (`14.6%`), `admitted=9` (`2.9%` of telemetry-covered candidates), `published=63` (`31.5%` of cycles). No invalid >100% publication ratio remains.
+
 ## NO_PUBLISH classification
 
 `NO_PUBLISH` is operationally classified. In particular, `admission_blocked_<reason>` means fresh candidates existed but zero candidates entered the durable queue. This distinguishes a genuine lack of qualifying discovery from an admission-memory/dedup bottleneck.
@@ -108,11 +116,11 @@ Admission-rate and similar derived metrics are migration-aware: historical cycle
 
 ## Verification
 
-After changing monitor logic, validate both modes:
+Static validation compiled the exact committed monitor source successfully. Regression fixtures reproduced the Monitor #4 sample and returned `MONITOR GREEN`; a deliberate 5/10 publication-failure fixture returned `MONITOR RED` as intended.
 
-```text
-python3 scripts/intily_monitor.py
-python3 scripts/intily_monitor.py --check
-```
+Real GitHub Actions verification completed successfully:
 
-The first command must render a complete Markdown dashboard. The second must return exit code `0` unless a hard incident threshold is genuinely breached.
+- Monitor run **#5** (`34024493076`) — corrected incident-vs-warning policy: SUCCESS.
+- Monitor run **#6** (`34024533836`) — corrected funnel calculations: SUCCESS.
+
+The production dashboard therefore now has both **operational alert correctness** and **metric presentation correctness** verified in the real Actions runtime.
