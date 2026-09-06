@@ -436,7 +436,8 @@
     "0a277972872c7f7bb433f8f864633eecd7c7278c385a42bae40acb89e8ee9ecf": 1788674082,
     "ec851f8d1e5d4bceccc86a1814e0cc91a88f737ade54607556ea25623f7d7134": 1788674263,
     "d02d082cb067dd79bf4c3a173f4c052bb4cc73c35a7f76f41ec1fb67904f48e1": 1788674563,
-    "bfd2987e3b4ba8dbd5b6f886cd1d66c988e27118cfda2e4996d7248026fb0310": 1788675883
+    "bfd2987e3b4ba8dbd5b6f886cd1d66c988e27118cfda2e4996d7248026fb0310": 1788675883,
+    "3e878ea1ed9620bb19976214e4b865a313c9057ec15e5d7ff99d35444fc73c72": 1788676100
   },
   "known": {
     "7422049062c68ce88a098fdb702ef998a97beda7312592ffeda93bacac8a71c5": 1788654644.3799717,
@@ -468,37 +469,22 @@
     "bfd2987e3b4ba8dbd5b6f886cd1d66c988e27118cfda2e4996d7248026fb0310": 1788675883.2781706,
     "3e878ea1ed9620bb19976214e4b865a313c9057ec15e5d7ff99d35444fc73c72": 1788675945.5771945
   },
-  "queue": [
-    {
-      "region": "WORLD",
-      "title": "OpenAI acknowledges 'wiki incident' and need for more transparency around unintended AI behavior - politiko.com.ph",
-      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPS0pEUVcyX3BYV2tjc3BHX2d3d21XY00zXzVmMlp4VjQ5bjJuMndBQWlDci1YMVNvalNkbk5WcHJsN3hKd0J6SnlXSDg4SnRTZ0lYZG4tcFZOUXNNVlFHZlpiNlpva2RIWlFqbWY3UUxzVHg2UUljeFVVZ1dFdWprSzZxbHlzbVpqOGJFOUw2MHhyMmN0RWtySGRoVnZuTEFBUTZsQzJMTkRoNjdnUGJuT0haOUdGS0k4MXRpdEh4RTk0RUVOWGhMVmJGZktYenMyek5FYkJBSGdnNU5mZlRV?oc=5",
-      "desc": "OpenAI acknowledges 'wiki incident' and need for more transparency around unintended AI behavior politiko.com.ph",
-      "source": "politiko.com.ph",
-      "time": 1788672375.0,
-      "score": 66.5,
-      "key": "3e878ea1ed9620bb19976214e4b865a313c9057ec15e5d7ff99d35444fc73c72",
-      "importance": 66.5,
-      "editorial_value": 50.0,
-      "topics": [],
-      "tier": "A"
-    }
-  ],
+  "queue": [],
   "health": {
-    "last_start_ts": 1788675945.5771945,
+    "last_start_ts": 1788676100.539888,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788675945.5771945,
-    "last_success_ts": 1788675945.5771945,
-    "last_candidates": 16,
-    "last_published": 0,
-    "queue_size": 1
+    "last_run_ts": 1788676100.539888,
+    "last_success_ts": 1788676100.539888,
+    "last_candidates": 13,
+    "last_published": 1,
+    "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788675896.1959054
+      "updated_at": 1788676118.570299
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -889,6 +875,13 @@
       "desc": "ИИ-агенты потребляют в 15 раз больше токенов, чем люди, и это даёт преимущество дешёвым китайским моделям prospect.com.ru",
       "source": "prospect.com.ru",
       "region": "RUSSIA"
+    },
+    "3e878ea1ed9620bb19976214e4b865a313c9057ec15e5d7ff99d35444fc73c72": {
+      "time": 1788676100,
+      "title": "OpenAI acknowledges 'wiki incident' and need for more transparency around unintended AI behavior - politiko.com.ph",
+      "desc": "OpenAI acknowledges 'wiki incident' and need for more transparency around unintended AI behavior politiko.com.ph",
+      "source": "politiko.com.ph",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
@@ -896,7 +889,6 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -911,10 +903,11 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
-  "last_search_ts": 1788675945.5771945,
-  "last_publish_ts": 1788675883.2781706,
+  "last_search_ts": 1788676100.539888,
+  "last_publish_ts": 1788676100.539888,
   "run_history": [
     {
       "ts": 1788649810,
@@ -4653,6 +4646,33 @@
       "queue_after": 1,
       "published": 0,
       "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788676100,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "candidates": 13,
+      "queue_before": 1,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
