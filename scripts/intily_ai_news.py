@@ -1923,9 +1923,16 @@ def main():
     counts = region_counts(queue)
     admission['candidate_count'] = len(candidates)
     admission['admission_rate'] = round(admission['added'] / max(1, len(candidates)) * 100, 2)
+    # candidate_count — это размер входа, а не причина отказа.
+    # Иначе он почти всегда становится dominant_block и скрывает реальную
+    # причину: уже опубликовано, недавно известно, уже в очереди или story dedup.
+    block_keys = (
+        'published_key', 'known_recent', 'already_queued',
+        'story_queue', 'story_history'
+    )
     admission['dominant_block'] = max(
-        (k for k in admission if k not in ('added', 'admission_rate')),
-        key=lambda k: admission[k],
+        block_keys,
+        key=lambda k: admission.get(k, 0),
         default='none'
     )
     print('QUEUE_ADMISSION', json.dumps(admission, ensure_ascii=False, separators=(',', ':')))
