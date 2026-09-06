@@ -448,7 +448,8 @@
     "f6c2eeccd18ce9dae9d04f536daa7f120ec2a8d514e8bcafc0377febe34bd71b": 1788681945,
     "4ffce1475eae4b85f3e6f9f9bf96586200b95672ab661f0df909276a7450f13e": 1788682182,
     "08d3b5d34037d848f9a007172288e0b2f9af7d0e2fe59eaab4d4c71bb6823b6e": 1788682363,
-    "bb4b4e66f7a1d01bebd81f68ed2a64b53527e8c66885aa21fe285cfbba96d097": 1788683341
+    "bb4b4e66f7a1d01bebd81f68ed2a64b53527e8c66885aa21fe285cfbba96d097": 1788683341,
+    "642f08bbb45aba509d577844fbf2baf866403b1bd1f96b9dd9c3727937f86dc3": 1788683623
   },
   "known": {
     "f39f395d792404cd937fc33b090220c6ad0052fbb0975e63e6f50863205faf78": 1788678345.1069558,
@@ -463,21 +464,6 @@
     "63a429df989ea7478ad3d6f4b54c3fb3b1ae88e6299e4c5651f2953e1ad32f38": 1788683341.5038276
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Брюс Перенс заявил: только патенты могут спасти Open Source",
-      "link": "https://habr.com/ru/news/1078918/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1078918",
-      "desc": "В OSI License-discuss автор определения Open Source и один из сооснователей самой OSI (Open Source Initiative) Брюс Перенс заявил, что не знает лицензий для открытого ПО, способных защитить код от ИИ. Сам Перенс уже имеет 46 патентов и считает их единственным способом спасения своей интеллектульной собственности. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1788673527.0,
-      "score": 70.3,
-      "russia_weight_bonus": 4.8,
-      "key": "642f08bbb45aba509d577844fbf2baf866403b1bd1f96b9dd9c3727937f86dc3",
-      "importance": 70.3,
-      "editorial_value": 50.0,
-      "topics": [],
-      "tier": "A"
-    },
     {
       "region": "RUSSIA",
       "title": "Власти разных уровней начали сокращать штат и передавать часть функций чиновников ИИ - prospect.com.ru",
@@ -495,20 +481,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788683503.6756418,
+    "last_start_ts": 1788683623.2455108,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788683503.6756418,
-    "last_success_ts": 1788683503.6756418,
+    "last_run_ts": 1788683623.2455108,
+    "last_success_ts": 1788683623.2455108,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 2
+    "last_published": 1,
+    "queue_size": 1
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788683358.374483
+      "updated_at": 1788683627.182003
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -983,10 +969,16 @@
       "desc": "Ещё два издательства подали в суд на OpenAI и Microsoft. The Seattle Times и Newsday обвинили компании в обучении моделей искусственного интеллекта на журналистских материалах без разрешения и компенсации. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "642f08bbb45aba509d577844fbf2baf866403b1bd1f96b9dd9c3727937f86dc3": {
+      "time": 1788683623,
+      "title": "Брюс Перенс заявил: только патенты могут спасти Open Source",
+      "desc": "В OSI License-discuss автор определения Open Source и один из сооснователей самой OSI (Open Source Initiative) Брюс Перенс заявил, что не знает лицензий для открытого ПО, способных защитить код от ИИ. Сам Перенс уже имеет 46 патентов и считает их единственным способом спасения своей интеллектульной собственности. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -1003,12 +995,13 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
   "last_search_ts": 1788683341.5038276,
-  "last_publish_ts": 1788683341.5038276,
+  "last_publish_ts": 1788683623.2455108,
   "run_history": [
     {
       "ts": 1788649810,
@@ -6061,6 +6054,57 @@
       "provider": {
         "attempts": [],
         "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788683623,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 4.49,
+      "candidates": 0,
+      "queue_before": 2,
+      "queue_after": 1,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
