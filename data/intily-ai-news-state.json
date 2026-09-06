@@ -454,7 +454,8 @@
     "a312d09e201c15a7c80343d5135408fabf9d929aab15bef2d19dc51229b834bf": 1788684046,
     "699c47a86563b04a621e331541c4f3a6d0911d86e057a763ad8d32ba53bf25d1": 1788684345,
     "63a429df989ea7478ad3d6f4b54c3fb3b1ae88e6299e4c5651f2953e1ad32f38": 1788684582,
-    "4efacee148ea0c96437b255faf92264b3d0b194647b2b4216d9da7648dc18160": 1788684882
+    "4efacee148ea0c96437b255faf92264b3d0b194647b2b4216d9da7648dc18160": 1788684882,
+    "7b70c8169aeec2be3a12f7bab039de926247d9717d085344399efb69f35d33c5": 1788685246
   },
   "known": {
     "074cef7183be63c1fcd5623c0ac8d422f45e15879e1774040e0810a609691640": 1788680444.1362836,
@@ -470,40 +471,22 @@
     "7b70c8169aeec2be3a12f7bab039de926247d9717d085344399efb69f35d33c5": 1788684882.0104403,
     "4efacee148ea0c96437b255faf92264b3d0b194647b2b4216d9da7648dc18160": 1788684882.0104403
   },
-  "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "OpenAI признала инцидент с ИИ-агентами на немецком сайте - Runet.news",
-      "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBVTDlva1V6aVdrQ3RqdnJRXzF2OFBfWGV2WVhLNlFRMElVX0lpVFUyYkFEbXhjejRiWXNYMmwwTU5Od1k?oc=5",
-      "desc": "OpenAI признала инцидент с ИИ-агентами на немецком сайте Runet.news",
-      "source": "Runet.news",
-      "time": 1788683409.0,
-      "score": 76.5,
-      "russia_weight_bonus": 4.0,
-      "key": "7b70c8169aeec2be3a12f7bab039de926247d9717d085344399efb69f35d33c5",
-      "importance": 76.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents"
-      ],
-      "tier": "A"
-    }
-  ],
+  "queue": [],
   "health": {
-    "last_start_ts": 1788684944.036445,
+    "last_start_ts": 1788685246.844927,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788684944.036445,
-    "last_success_ts": 1788684944.036445,
-    "last_candidates": 23,
-    "last_published": 0,
-    "queue_size": 1
+    "last_run_ts": 1788685246.844927,
+    "last_success_ts": 1788685246.844927,
+    "last_candidates": 22,
+    "last_published": 1,
+    "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788684896.0845025
+      "updated_at": 1788685261.4170332
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -1020,10 +1003,16 @@
       "desc": "Keysight Technologies stock gains on AI safety push and robust share performance AD HOC NEWS",
       "source": "AD HOC NEWS",
       "region": "WORLD"
+    },
+    "7b70c8169aeec2be3a12f7bab039de926247d9717d085344399efb69f35d33c5": {
+      "time": 1788685246,
+      "title": "OpenAI признала инцидент с ИИ-агентами на немецком сайте - Runet.news",
+      "desc": "OpenAI признала инцидент с ИИ-агентами на немецком сайте Runet.news",
+      "source": "Runet.news",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1042,10 +1031,11 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
-  "last_search_ts": 1788684944.036445,
-  "last_publish_ts": 1788684882.0104403,
+  "last_search_ts": 1788685246.844927,
+  "last_publish_ts": 1788685246.844927,
   "run_history": [
     {
       "ts": 1788649810,
@@ -6866,6 +6856,81 @@
       "provider": {
         "attempts": [],
         "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788685246,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 14.92,
+      "candidates": 22,
+      "queue_before": 1,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 19,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 22,
+        "admission_rate": 0.0,
+        "dominant_block": "candidate_count"
+      },
+      "rss": {
+        "queries_attempted": 31,
+        "queries_ok": 31,
+        "query_errors": 0,
+        "direct_feeds_attempted": 8,
+        "direct_feeds_ok": 7,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 10,
+        "raw_items": 143,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 9
+        },
+        "score_filtered": 120,
+        "quality_filtered": 0,
+        "story_dedup": 1,
+        "candidates": 22,
+        "candidate_rate": 0.1654
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
