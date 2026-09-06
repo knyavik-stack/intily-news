@@ -470,7 +470,6 @@
     "8a8db8f3bd510e38880e9f2215dafbd5b89ebee4265f5aa609811531b7b0e60d": 1788690284
   },
   "known": {
-    "c7bca7bdbe37c8d31ce99e3a4203550b670f7e41b03876a7b84ef2ca1f948469": 1788685362.6563358,
     "e074b406ae71bb42561750ebaabb07158165b4ad45432bbc3bed2fe7407408eb": 1788686205.654975,
     "2590633f3fe689c5ff07c630a01aa779e970068044ac833b1d28b48c359166e4": 1788686261.8697705,
     "6e9adcee8491b0cf04c1a9775afda7acd75b44c4e5587d6dc44ed68fd92406b6": 1788686261.8697705,
@@ -498,16 +497,20 @@
       "importance": 60.4,
       "editorial_value": 50.0,
       "topics": [],
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1788690825,
+      "last_failure": "RU_QA_FORBIDDEN_STYLE",
+      "failure_count": 1,
+      "next_retry_at": 1788691125
     }
   ],
   "health": {
-    "last_start_ts": 1788690462.4567957,
+    "last_start_ts": 1788690825.5102434,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788690462.4567957,
-    "last_success_ts": 1788690462.4567957,
-    "last_candidates": 28,
+    "last_run_ts": 1788690825.5102434,
+    "last_success_ts": 1788690825.5102434,
+    "last_candidates": 24,
     "last_published": 0,
     "queue_size": 1
   },
@@ -515,7 +518,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788690321.331224
+      "updated_at": 1788690863.5597775
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -1147,36 +1150,9 @@
     "RUSSIA",
     "RUSSIA"
   ],
-  "last_search_ts": 1788690462.4567957,
+  "last_search_ts": 1788690825.5102434,
   "last_publish_ts": 1788690284.5686033,
   "run_history": [
-    {
-      "ts": 1788655002,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "candidates": 0,
-      "queue_before": 2,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788655157,
       "status": "OK",
@@ -8716,6 +8692,82 @@
         "attempts": [],
         "used": null,
         "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788690825,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": true,
+      "duration_sec": 38.05,
+      "candidates": 24,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 1,
+      "item_failures": 1,
+      "admission": {
+        "published_key": 22,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 24,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {
+        "queries_attempted": 31,
+        "queries_ok": 31,
+        "query_errors": 0,
+        "direct_feeds_attempted": 8,
+        "direct_feeds_ok": 7,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 10,
+        "raw_items": 159,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 9
+        },
+        "score_filtered": 134,
+        "quality_filtered": 0,
+        "story_dedup": 1,
+        "candidates": 24,
+        "candidate_rate": 0.1611
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
         "failures": 0,
         "blocked": 0,
         "skipped_no_key": 0,
