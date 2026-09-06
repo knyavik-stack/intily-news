@@ -438,8 +438,6 @@
     "d02d082cb067dd79bf4c3a173f4c052bb4cc73c35a7f76f41ec1fb67904f48e1": 1788674563
   },
   "known": {
-    "a930f6e9782840d2c0f5a0babab62b55875023b54f592b4752620f11458b39e3": 1788653144.8727803,
-    "a1eda5d02e073b81f4a476a0be4ebbcd37c7fd8290d600857a5e208d835a4bef": 1788653144.8727803,
     "7422049062c68ce88a098fdb702ef998a97beda7312592ffeda93bacac8a71c5": 1788654644.3799717,
     "2e5325eb244fb07f64e9a152d85e3f7f7a0a97b24cd0a9c06d4d0ac18dc34495": 1788654644.3799717,
     "2501312cb900d36193be26f8d1d5d14a6cb4b94fc71e85fb6d6e995fd7bc18c6": 1788655247.3031325,
@@ -469,12 +467,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788674744.344468,
+    "last_start_ts": 1788675463.8514316,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788674744.344468,
-    "last_success_ts": 1788674744.344468,
-    "last_candidates": 14,
+    "last_run_ts": 1788675463.8514316,
+    "last_success_ts": 1788675463.8514316,
+    "last_candidates": 15,
     "last_published": 0,
     "queue_size": 0
   },
@@ -890,7 +888,7 @@
     "WORLD",
     "WORLD"
   ],
-  "last_search_ts": 1788674744.344468,
+  "last_search_ts": 1788675463.8514316,
   "last_publish_ts": 1788674563.5758295,
   "run_history": [
     {
@@ -4491,6 +4489,33 @@
       "business_reason": "empty_queue_after_filters",
       "searched": true,
       "candidates": 14,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788675463,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "empty_queue_after_filters",
+      "searched": true,
+      "candidates": 15,
       "queue_before": 0,
       "queue_after": 0,
       "published": 0,
