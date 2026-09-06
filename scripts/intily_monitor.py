@@ -44,6 +44,8 @@ def sums(data):
     attempts = sum(int(r.get('publish_attempts', 0) or 0) for r in data)
     failures = sum(int(r.get('item_failures', 0) or 0) for r in data)
     candidates = sum(int(r.get('candidates', 0) or 0) for r in data)
+    rss_rows = [r.get('rss', {}) for r in data if r.get('rss')]
+    rss_candidates = sum(int(r.get('rss', {}).get('candidates', 0) or 0) for r in data if r.get('rss'))
     admission_rows = [r for r in data if r.get('admission') and 'candidate_count' in r.get('admission', {})]
     observed_candidates = sum(int(r.get('admission', {}).get('candidate_count', 0) or 0) for r in admission_rows)
     added = sum(int(r.get('admission', {}).get('added', 0) or 0) for r in admission_rows)
@@ -83,7 +85,8 @@ def sums(data):
     span_hours = (data[-1]['ts'] - data[0]['ts']) / 3600 if len(data) > 1 else 0
     return {
         'cycles': len(data), 'searches': sum(1 for r in data if r.get('searched')),
-        'candidates': candidates, 'avg_candidates': candidates / max(1, len(data)),
+        'candidates': candidates, 'rss_candidates': rss_candidates,
+        'avg_candidates': candidates / max(1, len(data)),
         'published': pubs, 'publication_rate': pubs / max(1, len(data)) * 100,
         'publish_frequency': pubs / max(1, span_hours) if span_hours else 0,
         'avg_publish_interval': sum(intervals) / len(intervals) if intervals else None,
@@ -154,10 +157,11 @@ def print_dashboard(state):
     print('')
     print('| Stage | 24h | Rate / signal |')
     print('|---|---:|---:|')
-    print(f"| RSS raw items | {d24['rss_raw']} | — |")
-    print(f"| Candidates | {d24['candidates']} | {pct(d24['candidates'] / max(1, d24['rss_raw']) * 100)} of raw |")
+    print(f"| RSS raw items | {d24['rss_raw']} | telemetry-covered |")
+    print(f"| RSS candidates | {d24['rss_candidates']} | {pct(d24['rss_candidates'] / max(1, d24['rss_raw']) * 100)} of RSS raw |")
+    print(f"| Cycle candidates | {d24['candidates']} | across all cycles |")
     print(f"| Admitted to queue | {d24['admission_added']} | {pct(d24['admission_rate'])} of telemetry-covered candidates |")
-    print(f"| Published | {d24['published']} | {pct(d24['published'] / max(1, d24['admission_added']) * 100)} of admitted |")
+    print(f"| Published | {d24['published']} | {pct(d24['publication_rate'])} of cycles; queue may carry prior admissions |")
     print(f"| Queue velocity | {d24['queue_velocity']:+.2f}/cycle | avg delta |")
     print('')
 
