@@ -461,12 +461,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788673062.1967123,
+    "last_start_ts": 1788673244.6523736,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788673062.1967123,
-    "last_success_ts": 1788673062.1967123,
-    "last_candidates": 14,
+    "last_run_ts": 1788673244.6523736,
+    "last_success_ts": 1788673244.6523736,
+    "last_candidates": 12,
     "last_published": 0,
     "queue_size": 0
   },
@@ -854,7 +854,7 @@
     "WORLD",
     "WORLD"
   ],
-  "last_search_ts": 1788673062.1967123,
+  "last_search_ts": 1788673244.6523736,
   "last_publish_ts": 1788672104.188662,
   "run_history": [
     {
@@ -4239,6 +4239,33 @@
       "business_reason": "empty_queue_after_filters",
       "searched": true,
       "candidates": 14,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788673244,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "empty_queue_after_filters",
+      "searched": true,
+      "candidates": 12,
       "queue_before": 0,
       "queue_after": 0,
       "published": 0,
