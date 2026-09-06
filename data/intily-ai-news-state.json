@@ -783,15 +783,15 @@
         "novelty": 2.0,
         "source_quality": 4.0,
         "evidence": 1.8,
-        "freshness": 3.7,
+        "freshness": 3.6,
         "timeliness": 0.0,
         "low_signal_penalty": 0.0
       },
-      "score": 46.3,
+      "score": 46.2,
       "russia_weight_bonus": 0.0,
       "key": "66ef19d02718776eefaa0acfa90f948479d8c8fb68a1a23f26f7b17e22e2c616",
-      "importance": 46.3,
-      "editorial_value": 49.3,
+      "importance": 46.2,
+      "editorial_value": 49.2,
       "topics": [
         "agents"
       ],
@@ -987,13 +987,13 @@
         "source_quality": 4.0,
         "evidence": 2.5,
         "freshness": 4.9,
-        "timeliness": 4.5,
+        "timeliness": 4.4,
         "low_signal_penalty": 0.0
       },
-      "score": 44.9,
+      "score": 44.8,
       "key": "5ae3820af379c6bd4a6743d56e63543d2be42bdd2125a40fa75c70e0f3b5174f",
-      "importance": 44.9,
-      "editorial_value": 44.9,
+      "importance": 44.8,
+      "editorial_value": 44.8,
       "topics": [],
       "tier": "A"
     },
@@ -1117,11 +1117,11 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788723458.9758503,
+    "last_start_ts": 1788723520.0048802,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788723458.9758503,
-    "last_success_ts": 1788723458.9758503,
+    "last_run_ts": 1788723520.0048802,
+    "last_success_ts": 1788723520.0048802,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 18
@@ -2185,64 +2185,6 @@
   "last_search_ts": 1788723219.5538895,
   "last_publish_ts": 1788723400.0713344,
   "run_history": [
-    {
-      "ts": 1788683115,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 10.08,
-      "candidates": 19,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 17,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key"
-      },
-      "rss": {
-        "queries_attempted": 31,
-        "queries_ok": 31,
-        "query_errors": 0,
-        "raw_items": 125,
-        "score_filtered": 105,
-        "quality_filtered": 0,
-        "story_dedup": 1,
-        "candidates": 19,
-        "candidate_rate": 0.152
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788683181,
       "status": "OK",
@@ -14615,6 +14557,55 @@
       "business_reason": "publish_interval_not_reached",
       "searched": false,
       "duration_sec": 0.3,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 18,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788723520,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": false,
+      "duration_sec": 0.2,
       "candidates": 0,
       "queue_before": 18,
       "queue_after": 18,
