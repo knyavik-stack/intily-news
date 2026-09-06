@@ -803,13 +803,13 @@
         "source_quality": 4.0,
         "evidence": 2.8,
         "freshness": 5.0,
-        "timeliness": 4.9,
+        "timeliness": 4.8,
         "low_signal_penalty": 6.0
       },
-      "score": 47.5,
+      "score": 47.4,
       "key": "fd8f2874611b0f2966158fdf8a121fe816373e337cfbf095713071d91ce4b793",
-      "importance": 47.5,
-      "editorial_value": 43.5,
+      "importance": 47.4,
+      "editorial_value": 43.4,
       "topics": [
         "chips"
       ],
@@ -1159,13 +1159,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788716866.875025,
+    "last_start_ts": 1788716919.376403,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788716866.875025,
-    "last_success_ts": 1788716866.875025,
-    "last_candidates": 108,
-    "last_published": 1,
+    "last_run_ts": 1788716919.376403,
+    "last_success_ts": 1788716919.376403,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 19
   },
   "providers": {
@@ -2157,33 +2157,6 @@
   "last_search_ts": 1788716866.875025,
   "last_publish_ts": 1788716866.875025,
   "run_history": [
-    {
-      "ts": 1788678763,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "candidates": 14,
-      "queue_before": 1,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788678823,
       "status": "OK",
@@ -13931,6 +13904,55 @@
           "GEMINI"
         ],
         "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788716919,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": false,
+      "duration_sec": 0.35,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
