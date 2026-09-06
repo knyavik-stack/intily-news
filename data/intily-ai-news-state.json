@@ -446,18 +446,35 @@
     "2501312cb900d36193be26f8d1d5d14a6cb4b94fc71e85fb6d6e995fd7bc18c6": 1788655247.3031325,
     "23680cf93362f932f9a0697f3026a409cf8fcca4d23728da62aecc5409adce57": 1788657346.009018,
     "ee90a19bd8384baf728b539baee88a111e17115a68fdf29a684f53df27dcb536": 1788658482.210256,
-    "c09e395a0b2a370828cb8197ab866fa7d01caaf9b360ced8dada72475b3a3d0a": 1788658482.210256
+    "c09e395a0b2a370828cb8197ab866fa7d01caaf9b360ced8dada72475b3a3d0a": 1788658482.210256,
+    "a11029a880914b5769952364e57e21ac810b3b63704c0f3b81b98b1daf150308": 1788658783.397171
   },
-  "queue": [],
+  "queue": [
+    {
+      "region": "RUSSIA",
+      "title": "ОП РФ призвала ставить студентам задачи без ИИ - densus.ru",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9yUWhVc2RkcGZvNEJPNTNXaE95YjBxWE9QMkhZa2RzXzRBMTc3czFPT1k5bFBDSWVnVlhWXzhEVDlBTWVWcUFnNWdkMjN2d1BQaUtZNUNwUFR6c1k3VjYwbmUtZm1xbjBHU2FQSzJOZFdNVS14ZlMyQnFfSHpQQQ?oc=5",
+      "desc": "ОП РФ призвала ставить студентам задачи без ИИ densus.ru",
+      "source": "densus.ru",
+      "time": 1788652907.0,
+      "score": 70.3,
+      "russia_weight_bonus": 4.8,
+      "key": "a11029a880914b5769952364e57e21ac810b3b63704c0f3b81b98b1daf150308",
+      "importance": 70.3,
+      "editorial_value": 50.0,
+      "topics": [],
+      "tier": "A"
+    }
+  ],
   "health": {
-    "last_start_ts": 1788658663.840598,
+    "last_start_ts": 1788658783.397171,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788658663.840598,
-    "last_success_ts": 1788658663.840598,
-    "last_candidates": 15,
-    "last_published": 1,
-    "queue_size": 0
+    "last_run_ts": 1788658783.397171,
+    "last_success_ts": 1788658783.397171,
+    "last_candidates": 16,
+    "last_published": 0,
+    "queue_size": 1
   },
   "providers": {
     "GEMINI": {
@@ -871,7 +888,7 @@
     "WORLD",
     "RUSSIA"
   ],
-  "last_search_ts": 1788658663.840598,
+  "last_search_ts": 1788658783.397171,
   "last_publish_ts": 1788658663.840598,
   "run_history": [
     {
@@ -2262,6 +2279,33 @@
       "queue_after": 0,
       "published": 1,
       "publish_attempts": 1,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788658783,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": true,
+      "candidates": 16,
+      "queue_before": 0,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 0,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
