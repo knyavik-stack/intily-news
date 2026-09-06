@@ -21,5 +21,9 @@ jobs:
         run: |
           python3 scripts/intily_search_monitor.py | tee /tmp/intily-search-monitor.md
           cat /tmp/intily-search-monitor.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Filter and weight analytics
+        run: |
+          python3 scripts/intily_policy_analytics.py | tee /tmp/intily-policy-monitor.md
+          cat /tmp/intily-policy-monitor.md >> "$GITHUB_STEP_SUMMARY"
       - name: Check production alerts
         run: python3 scripts/intily_monitor.py --check
