@@ -435,7 +435,8 @@
     "50f699f2fb53019dc1796c7bcb1f025387963d39cd471276414768b99a07ad2e": 1788673484,
     "0a277972872c7f7bb433f8f864633eecd7c7278c385a42bae40acb89e8ee9ecf": 1788674082,
     "ec851f8d1e5d4bceccc86a1814e0cc91a88f737ade54607556ea25623f7d7134": 1788674263,
-    "d02d082cb067dd79bf4c3a173f4c052bb4cc73c35a7f76f41ec1fb67904f48e1": 1788674563
+    "d02d082cb067dd79bf4c3a173f4c052bb4cc73c35a7f76f41ec1fb67904f48e1": 1788674563,
+    "bfd2987e3b4ba8dbd5b6f886cd1d66c988e27118cfda2e4996d7248026fb0310": 1788675883
   },
   "known": {
     "7422049062c68ce88a098fdb702ef998a97beda7312592ffeda93bacac8a71c5": 1788654644.3799717,
@@ -463,24 +464,25 @@
     "50f699f2fb53019dc1796c7bcb1f025387963d39cd471276414768b99a07ad2e": 1788673484.0600832,
     "0a277972872c7f7bb433f8f864633eecd7c7278c385a42bae40acb89e8ee9ecf": 1788673484.0600832,
     "ec851f8d1e5d4bceccc86a1814e0cc91a88f737ade54607556ea25623f7d7134": 1788673484.0600832,
-    "d02d082cb067dd79bf4c3a173f4c052bb4cc73c35a7f76f41ec1fb67904f48e1": 1788674563.5758295
+    "d02d082cb067dd79bf4c3a173f4c052bb4cc73c35a7f76f41ec1fb67904f48e1": 1788674563.5758295,
+    "bfd2987e3b4ba8dbd5b6f886cd1d66c988e27118cfda2e4996d7248026fb0310": 1788675883.2781706
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788675664.2204792,
+    "last_start_ts": 1788675883.2781706,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788675664.2204792,
-    "last_success_ts": 1788675664.2204792,
-    "last_candidates": 11,
-    "last_published": 0,
+    "last_run_ts": 1788675883.2781706,
+    "last_success_ts": 1788675883.2781706,
+    "last_candidates": 14,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788674575.8909383
+      "updated_at": 1788675896.1959054
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -864,10 +866,16 @@
       "desc": "U.S. Deploys GPU Exports as Diplomatic Bargaining Chip 조선일보",
       "source": "조선일보",
       "region": "WORLD"
+    },
+    "bfd2987e3b4ba8dbd5b6f886cd1d66c988e27118cfda2e4996d7248026fb0310": {
+      "time": 1788675883,
+      "title": "ИИ-агенты потребляют в 15 раз больше токенов, чем люди, и это даёт преимущество дешёвым китайским моделям - prospect.com.ru",
+      "desc": "ИИ-агенты потребляют в 15 раз больше токенов, чем люди, и это даёт преимущество дешёвым китайским моделям prospect.com.ru",
+      "source": "prospect.com.ru",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -886,10 +894,11 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
-  "last_search_ts": 1788675664.2204792,
-  "last_publish_ts": 1788674563.5758295,
+  "last_search_ts": 1788675883.2781706,
+  "last_publish_ts": 1788675883.2781706,
   "run_history": [
     {
       "ts": 1788649810,
@@ -4574,6 +4583,33 @@
       "queue_after": 0,
       "published": 0,
       "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788675883,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "candidates": 14,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
