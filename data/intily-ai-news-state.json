@@ -452,7 +452,8 @@
     "642f08bbb45aba509d577844fbf2baf866403b1bd1f96b9dd9c3727937f86dc3": 1788683623,
     "d930630374d476643fae96e5089fe06caf755fd43fc64ebcbc92042833d74e1c": 1788683863,
     "a312d09e201c15a7c80343d5135408fabf9d929aab15bef2d19dc51229b834bf": 1788684046,
-    "699c47a86563b04a621e331541c4f3a6d0911d86e057a763ad8d32ba53bf25d1": 1788684345
+    "699c47a86563b04a621e331541c4f3a6d0911d86e057a763ad8d32ba53bf25d1": 1788684345,
+    "63a429df989ea7478ad3d6f4b54c3fb3b1ae88e6299e4c5651f2953e1ad32f38": 1788684582
   },
   "known": {
     "074cef7183be63c1fcd5623c0ac8d422f45e15879e1774040e0810a609691640": 1788680444.1362836,
@@ -466,38 +467,22 @@
     "d930630374d476643fae96e5089fe06caf755fd43fc64ebcbc92042833d74e1c": 1788683745.1318836,
     "699c47a86563b04a621e331541c4f3a6d0911d86e057a763ad8d32ba53bf25d1": 1788684224.7096999
   },
-  "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Власти разных уровней начали сокращать штат и передавать часть функций чиновников ИИ - prospect.com.ru",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOcmQ0SGdKeld3RXlzWUtoTWNfTF94QUtobnlzSkNtNUtJOUtWdUNQWWc5ZW1XenN5VnlrakNndUpVWHBzcVhWdTNsRkl0b01mQVQ2UUFmSnhHN01wYWxzOHZkLW5WU0VHeW9lVXFBbUtNWUFkOXRFUVFjR3BzeHlEOEpycEJNRlJFX0xva1h6TDNGOExHQk10Rjhob2ViSUNieEhEcFl3UHphU2djMjREejFVWldNZXl5XzJUZ1JHMndNVE9uYnFZWjhn?oc=5",
-      "desc": "Власти разных уровней начали сокращать штат и передавать часть функций чиновников ИИ prospect.com.ru",
-      "source": "prospect.com.ru",
-      "time": 1788670949.0,
-      "score": 60.6,
-      "russia_weight_bonus": 4.6,
-      "key": "63a429df989ea7478ad3d6f4b54c3fb3b1ae88e6299e4c5651f2953e1ad32f38",
-      "importance": 60.6,
-      "editorial_value": 50.0,
-      "topics": [],
-      "tier": "A"
-    }
-  ],
+  "queue": [],
   "health": {
-    "last_start_ts": 1788684523.6743627,
+    "last_start_ts": 1788684582.0316715,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788684523.6743627,
-    "last_success_ts": 1788684523.6743627,
-    "last_candidates": 19,
-    "last_published": 0,
-    "queue_size": 1
+    "last_run_ts": 1788684582.0316715,
+    "last_success_ts": 1788684582.0316715,
+    "last_candidates": 21,
+    "last_published": 1,
+    "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788684350.6438978
+      "updated_at": 1788684598.8625753
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -1000,12 +985,18 @@
       "desc": "Nvidia is no longer just an AI chip company. It is financing the revolution it built calcalistech.com",
       "source": "calcalistech.com",
       "region": "WORLD"
+    },
+    "63a429df989ea7478ad3d6f4b54c3fb3b1ae88e6299e4c5651f2953e1ad32f38": {
+      "time": 1788684582,
+      "title": "Власти разных уровней начали сокращать штат и передавать часть функций чиновников ИИ - prospect.com.ru",
+      "desc": "Власти разных уровней начали сокращать штат и передавать часть функций чиновников ИИ prospect.com.ru",
+      "source": "prospect.com.ru",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1022,10 +1013,11 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
-  "last_search_ts": 1788684523.6743627,
-  "last_publish_ts": 1788684345.621679,
+  "last_search_ts": 1788684582.0316715,
+  "last_publish_ts": 1788684582.0316715,
   "run_history": [
     {
       "ts": 1788649810,
@@ -6550,6 +6542,81 @@
       "provider": {
         "attempts": [],
         "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788684582,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 17.29,
+      "candidates": 21,
+      "queue_before": 1,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 19,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 21,
+        "admission_rate": 0.0,
+        "dominant_block": "candidate_count"
+      },
+      "rss": {
+        "queries_attempted": 31,
+        "queries_ok": 31,
+        "query_errors": 0,
+        "direct_feeds_attempted": 8,
+        "direct_feeds_ok": 7,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 10,
+        "raw_items": 143,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 9
+        },
+        "score_filtered": 121,
+        "quality_filtered": 0,
+        "story_dedup": 1,
+        "candidates": 21,
+        "candidate_rate": 0.1579
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
