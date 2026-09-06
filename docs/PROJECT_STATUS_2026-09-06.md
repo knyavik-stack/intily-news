@@ -61,3 +61,12 @@ At the same time, Priority-A telemetry was expanded to expose admission rejectio
 ## Priority-B start — source resilience
 
 The discovery layer now has two independent paths: Google News RSS query clusters plus curated direct publisher RSS feeds. Per-source yield and direct-feed error telemetry is persisted for subsequent source-intelligence analysis. This directly addresses the observed failure mode where Google News returned many candidates but the majority were already present in publication memory.
+
+
+## Production verification — 2026-09-06
+
+Direct-RSS production smoke on commit `9aad362ebf93014a516acee95e47b241a810f90b` completed successfully. Observed in one cycle: 31/31 Google News queries OK; 8 direct feeds attempted, 7 OK, 1 HTTP 429; 134 raw items; 20 candidates; 2 admitted; 1 published to Telegram; Gemini used successfully with zero failover; queue ended at 1. This proves the new source layer is live and capable of recovering publishable items beyond the Google-only candidate set.
+
+A later monitoring hardening commit `b98bf1ec8f223d3e81d02219296fd57e77a4e54d` made derived KPI rates migration-aware.
+
+Current known limitation: some direct publisher feeds returned zero fresh items in the smoke window, and VentureBeat returned HTTP 429. These are now visible as source-level health signals rather than silent gaps.

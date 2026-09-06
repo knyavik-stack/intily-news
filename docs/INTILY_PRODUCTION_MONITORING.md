@@ -110,3 +110,8 @@ Google News remains the broad aggregator layer, but production now also reads a 
 The source catalog was chosen from currently available publisher RSS endpoints. TechCrunch publishes RSS feeds and provides RSS terms requiring attribution/link preservation; Ars Technica documents its RSS feeds; VentureBeat documents its RSS endpoints; Habr documents RSS availability. citeturn0search2turn0search6turn0search1turn0search0turn3search0
 
 This is deliberately a small resilience layer, not an uncontrolled feed explosion. Priority-B source intelligence will use the recorded source-yield data to decide which sources deserve more query/feed budget.
+
+
+## Telemetry migration hardening — 2026-09-06
+
+Admission-rate and similar derived metrics are migration-aware: historical cycles that predate the expanded telemetry schema are not counted in the denominator for the new admission SLO. This prevents a false RED caused by mixing old and new schemas.
