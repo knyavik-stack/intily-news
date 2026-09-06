@@ -598,11 +598,11 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788728081.0861647,
+    "last_start_ts": 1788728379.628749,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788728081.0861647,
-    "last_success_ts": 1788728081.0861647,
+    "last_run_ts": 1788728379.628749,
+    "last_success_ts": 1788728379.628749,
     "last_candidates": 3,
     "last_published": 0,
     "queue_size": 0
@@ -1740,82 +1740,9 @@
     "RUSSIA",
     "RUSSIA"
   ],
-  "last_search_ts": 1788728081.0861647,
+  "last_search_ts": 1788728379.628749,
   "last_publish_ts": 1788726339.4989982,
   "run_history": [
-    {
-      "ts": 1788687282,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_candidate_count",
-      "searched": true,
-      "duration_sec": 11.23,
-      "candidates": 26,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 23,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 3,
-        "added": 0,
-        "candidate_count": 26,
-        "admission_rate": 0.0,
-        "dominant_block": "candidate_count"
-      },
-      "rss": {
-        "queries_attempted": 31,
-        "queries_ok": 31,
-        "query_errors": 0,
-        "direct_feeds_attempted": 8,
-        "direct_feeds_ok": 7,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 10,
-        "raw_items": 154,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 9
-        },
-        "score_filtered": 124,
-        "quality_filtered": 0,
-        "story_dedup": 4,
-        "candidates": 26,
-        "candidate_rate": 0.1806
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788687525,
       "status": "OK",
@@ -14282,6 +14209,102 @@
         "score_buckets": {
           "0–39": 355,
           "40–49": 109,
+          "50–59": 30,
+          "60–69": 5,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        }
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788728379,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 21.03,
+      "candidates": 3,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 2,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 3,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        }
+      },
+      "rss": {
+        "queries_attempted": 45,
+        "queries_ok": 45,
+        "query_errors": 0,
+        "direct_feeds_attempted": 11,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 3,
+        "direct_raw_items": 8,
+        "raw_items": 504,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 3,
+          "CNews": 0,
+          "TechCult": -1,
+          "Euronews": -1
+        },
+        "score_filtered": 499,
+        "quality_filtered": 0,
+        "story_dedup": 2,
+        "candidates": 3,
+        "candidate_rate": 0.006,
+        "score_buckets": {
+          "0–39": 354,
+          "40–49": 115,
           "50–59": 30,
           "60–69": 5,
           "70–79": 0,
