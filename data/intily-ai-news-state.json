@@ -421,7 +421,8 @@
     "ee747d04e445ab76e047c781fd0876b88cba00653868401b64968683c53cd6fd": 1788661661,
     "a375e2a6233fcce62758173a7ba6f1cbd1425c0db20cdd0f12d9a273d4d8aee5": 1788661962,
     "b8026be6d6962cbac41d32e3679a5b9688d53b08c68adbf93574342636e5bef8": 1788662202,
-    "289f9c318942504cd94e007596e263d34629af298c7be8f6f48877fc92f7f602": 1788664545
+    "289f9c318942504cd94e007596e263d34629af298c7be8f6f48877fc92f7f602": 1788664545,
+    "f91c6395c4c1bed17bc967efe378ac1efb3c06002ae9f2115052749dc3429a69": 1788664961
   },
   "known": {
     "d6dc4d7664f40cf611eea61f0d87e16c501700dc35ce4f5afb6977988bc1c37b": 1788647378.635233,
@@ -458,16 +459,17 @@
     "ee747d04e445ab76e047c781fd0876b88cba00653868401b64968683c53cd6fd": 1788661661.8857415,
     "a375e2a6233fcce62758173a7ba6f1cbd1425c0db20cdd0f12d9a273d4d8aee5": 1788661962.9189608,
     "b8026be6d6962cbac41d32e3679a5b9688d53b08c68adbf93574342636e5bef8": 1788662202.5986264,
-    "289f9c318942504cd94e007596e263d34629af298c7be8f6f48877fc92f7f602": 1788664545.4511886
+    "289f9c318942504cd94e007596e263d34629af298c7be8f6f48877fc92f7f602": 1788664545.4511886,
+    "f91c6395c4c1bed17bc967efe378ac1efb3c06002ae9f2115052749dc3429a69": 1788664961.7353408
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788664545.4511886,
+    "last_start_ts": 1788664961.7353408,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788664545.4511886,
-    "last_success_ts": 1788664545.4511886,
-    "last_candidates": 15,
+    "last_run_ts": 1788664961.7353408,
+    "last_success_ts": 1788664961.7353408,
+    "last_candidates": 17,
     "last_published": 1,
     "queue_size": 0
   },
@@ -475,7 +477,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788664557.6678274
+      "updated_at": 1788664975.0038383
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -489,20 +491,6 @@
     }
   },
   "stories": {
-    "b8bcf176c791465a10f2f5ebc82d403fe51441af7a04e0dd328a46e324946efb": {
-      "time": 1788578301,
-      "title": "WSJ узнала, как США склонили Баку и Ереван к миру «чиповой дипломатией» - rbc.ru",
-      "desc": "WSJ узнала, как США склонили Баку и Ереван к миру «чиповой дипломатией» rbc.ru",
-      "source": "rbc.ru",
-      "region": "RUSSIA"
-    },
-    "6f530ac7237c5bae054ef38d4d9640215672ef595376e86b2c598d139fc54fe1": {
-      "time": 1788578482,
-      "title": "COIN Stock Gains Over 3% — Coinbase Launches Platform For AI Agents To Buy, Sell And Pay - Stocktwits",
-      "desc": "COIN Stock Gains Over 3% — Coinbase Launches Platform For AI Agents To Buy, Sell And Pay Stocktwits",
-      "source": "Stocktwits",
-      "region": "WORLD"
-    },
     "7b1f64039dd8a58335f07d20c51af81a4175a47edd6e0f47bb96d38834919da2": {
       "time": 1788578780,
       "title": "OpenAI выпустила GPT-6 Astra - prospect.com.ru",
@@ -817,12 +805,18 @@
       "desc": "Broadcom's Hidden Ambitions: AI Money Is Flowing Beyond GPUs odaily.news",
       "source": "odaily.news",
       "region": "WORLD"
+    },
+    "f91c6395c4c1bed17bc967efe378ac1efb3c06002ae9f2115052749dc3429a69": {
+      "time": 1788664961,
+      "title": "VNPT сотрудничает с PTIT R&D AI для разработки университета, созданного на основе искусственного интеллекта. - Vietnam.vn",
+      "desc": "VNPT сотрудничает с PTIT R&D AI для разработки университета, созданного на основе искусственного интеллекта. Vietnam.vn",
+      "source": "Vietnam.vn",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -839,10 +833,11 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
-  "last_search_ts": 1788664545.4511886,
-  "last_publish_ts": 1788664545.4511886,
+  "last_search_ts": 1788664961.7353408,
+  "last_publish_ts": 1788664961.7353408,
   "run_history": [
     {
       "ts": 1788649810,
@@ -2984,6 +2979,33 @@
       "business_reason": "telegram_delivery_ok",
       "searched": true,
       "candidates": 15,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788664961,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "candidates": 17,
       "queue_before": 0,
       "queue_after": 0,
       "published": 1,
