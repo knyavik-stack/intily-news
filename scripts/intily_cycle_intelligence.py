@@ -31,12 +31,22 @@ RESULT_LABELS = {
     'PUBLISH_FAILED': 'ОШИБКА ПУБЛИКАЦИИ',
 }
 
+REASON_LABELS = {
+    'telegram_delivery_ok': 'публикация в Telegram выполнена',
+    'empty_queue_after_filters': 'после отбора очередь пуста',
+    'publish_interval_not_reached': 'интервал между публикациями ещё не истёк',
+    'admission_blocked_published_key': 'кандидаты уже были опубликованы ранее',
+    'admission_blocked_candidate_count': 'новых кандидатов недостаточно для добавления',
+    'no_candidates_and_empty_queue': 'нет новых кандидатов и очередь пуста',
+}
+
 BLOCK_LABELS = {
     'published_key': 'история уже опубликована',
     'known_recent': 'материал недавно уже обрабатывался',
     'already_queued': 'материал уже в очереди',
     'story_queue': 'та же история уже в очереди',
     'story_history': 'та же история уже была опубликована недавно',
+    'candidate_count': 'недостаточно новых кандидатов',
     'none': 'нет блокировки',
 }
 
@@ -158,7 +168,7 @@ def print_current(run):
     print(f"| Новых материалов добавлено в очередь | {admission.get('added', 0)} |")
     print(f"| Материалов в очереди после запуска | {queue} |")
     if result.get('reason'):
-        print(f"| Причина результата | {result['reason']} |")
+        print(f"| Причина результата | {REASON_LABELS.get(result['reason'], result['reason'])} |")
     print('')
 
     print('### Что произошло с новостями')
