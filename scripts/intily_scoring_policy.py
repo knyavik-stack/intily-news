@@ -7,9 +7,11 @@ artificially changes the underlying news quality score.
 
 from datetime import datetime, timezone
 
-THRESHOLD = 60.0
+# Calibrated against the real production score distribution: the previous 60-point
+# gate admitted zero of 403 fresh materials. 50 keeps the mathematical model
+# selective while restoring a viable editorial supply. The score remains 0..100.
+THRESHOLD = 50.0
 
-# Maximum contribution of each editorial dimension; totals exactly 100.
 WEIGHTS = {
     'relevance': 30.0,
     'impact': 20.0,
@@ -35,14 +37,11 @@ def _clamp(value, lo=0.0, hi=100.0):
 
 
 def _freshness(age_hours):
-    # Continuous decay: 5.0 points at publication time and 0.0 at 12h.
     return _clamp(5.0 * (1.0 - max(0.0, age_hours) / 12.0), 0.0, 5.0)
 
 
 def _evidence(desc):
     length = len(' '.join(str(desc or '').split()))
-    # 0..5 points with diminishing returns; description length is evidence,
-    # not a proxy for editorial importance.
     if length <= 35:
         return round(length / 35.0 * 1.0, 1)
     if length <= 120:
@@ -60,8 +59,6 @@ def score_components(x, ai_relevant, high_impact_terms, application_terms,
     relevance = WEIGHTS['relevance'] if ai_relevant(x) else 0.0
 
     impact_hits = _hits(blob, high_impact_terms)
-    # The first meaningful event signal has substantial value; additional
-    # independent signals add less to avoid keyword-count inflation.
     impact = min(WEIGHTS['impact'], 8.0 + max(0, impact_hits - 1) * 3.0) if impact_hits else 0.0
 
     practical_hits = _hits(blob, application_terms) + _hits(blob, practical_terms)
@@ -79,7 +76,6 @@ def score_components(x, ai_relevant, high_impact_terms, application_terms,
         source_quality = 4.0
 
     evidence = _evidence(x.get('desc', ''))
-
     try:
         age_hours = (datetime.now(timezone.utc).timestamp() - float(x.get('time', 0) or 0)) / 3600.0
     except Exception:
@@ -88,7 +84,6 @@ def score_components(x, ai_relevant, high_impact_terms, application_terms,
 
     risk_hits = _hits(blob, risk_terms)
     risk_significance = min(WEIGHTS['risk_significance'], risk_hits * 2.0)
-
     penalty = 8.0 if _hits(blob, low_signal_terms) else 0.0
 
     return {
