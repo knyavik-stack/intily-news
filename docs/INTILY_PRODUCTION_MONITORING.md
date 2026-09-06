@@ -9,7 +9,7 @@ This layer separates the **technical GitHub Actions result** from the **business
 ### 1. Every production run
 GitHub → `intily-news` → **Actions** → **Intily AI News Publisher** → open a run → **Summary**.
 
-The Summary contains the current cycle and rolling KPI dashboard.
+The Summary contains the current cycle, rolling KPI dashboard and the **current-run search intelligence**. The latter explains which Google News queries and direct feeds actually supplied fresh material in this launch.
 
 ### 2. On-demand dashboard
 GitHub → **Actions** → **Intily Production Monitor** → **Run workflow**.
@@ -18,6 +18,8 @@ This reads the durable state without publishing anything. The dashboard is Markd
 
 ### 3. Raw history
 `data/intily-ai-news-state.json` → `run_history`. The history is bounded to the latest 200 production cycles.
+
+Search intelligence history is kept separately in `data/intily-query-intelligence.json`, bounded to the latest 100 launches. It contains only query/source counters and derived percentages; no article bodies, API keys or provider secrets.
 
 ## Business statuses
 
@@ -110,17 +112,46 @@ Google News remains the broad aggregator layer, but production now also reads a 
 
 This is deliberately a small resilience layer, not an uncontrolled feed explosion. Priority-B source intelligence will use the recorded source-yield data to decide which sources deserve more query/feed budget.
 
+## Search intelligence — 2026-09-06
+
+The publisher workflow now captures the **current launch's actual search stream** without making any extra RSS calls. The publisher's existing `RSS_QUERY`, `RSS_DIRECT`, `INGEST_SUMMARY` and `QUEUE_ADMISSION` telemetry is parsed after the publisher finishes.
+
+The current-run block is shown in the same GitHub Actions Summary as the publisher dashboard, in Russian, and contains:
+
+- сколько свежих материалов пришло из Google News;
+- сколько пришло из прямых RSS;
+- сколько материалов отсечено score-фильтром;
+- сколько отсечено quality/AI relevance;
+- сколько схлопнуто как одна история;
+- сколько осталось кандидатов;
+- сколько реально добавлено в очередь;
+- таблицу поисковых запросов с регионом, текстом запроса, количеством свежих материалов и долей общего поискового потока;
+- таблицу прямых источников и их свежий yield;
+- понятное объяснение, является ли проблема discovery или admission.
+
+История поискового потока сохраняется отдельно в `data/intily-query-intelligence.json` (100 последних запусков). Это сделано специально, чтобы не раздувать основной `run_history` и не менять publisher только ради аналитики.
+
+### Важное ограничение текущей версии
+
+На этом этапе запросы получают достоверный **raw-yield**, но не получают искусственно приписанную им admission-конверсию. Один и тот же материал может прийти из нескольких запросов, а publisher дедуплицирует уже общий пул. Поэтому распределять `added` между запросами без явной provenance-маркировки было бы ложной точностью.
+
+Следующий эволюционный шаг — лёгкая provenance-маркировка `query_id` на этапе ingestion. Она позволит считать `запрос → raw → score → quality → story-dedup → admission` без повторных RSS-запросов. Реализовывать её имеет смысл после накопления нескольких запусков raw-yield, чтобы сначала увидеть фактическую картину и не усложнять production преждевременно.
+
 ## Telemetry migration hardening — 2026-09-06
 
-Admission-rate and similar derived metrics are migration-aware: historical cycles that predate the expanded telemetry schema are not counted in the denominator for the new admission SLO. This prevents a false RED caused by mixing old and new schemas.
+Admission-rate и подобные derived metrics migration-aware: исторические циклы, предшествующие расширенной telemetry-схеме, не считаются в знаменателе нового admission SLO. Это предотвращает ложный RED из-за смешения старой и новой схем.
 
 ## Verification
 
 Static validation compiled the exact committed monitor source successfully. Regression fixtures reproduced the Monitor #4 sample and returned `MONITOR GREEN`; a deliberate 5/10 publication-failure fixture returned `MONITOR RED` as intended.
 
-Real GitHub Actions verification completed successfully:
+The search-intelligence parser is intentionally side-effect-light: it reads only the current publisher stdout, performs no network calls, bounds history at 100 launches and stores no secrets.
+
+GitHub Actions job summaries are the correct UI for this design: GitHub documents that `GITHUB_STEP_SUMMARY` accepts GitHub-flavored Markdown and is displayed on the workflow run summary page. citeturn1search0turn1search1
+
+Real GitHub Actions verification previously completed successfully:
 
 - Monitor run **#5** (`34024493076`) — corrected incident-vs-warning policy: SUCCESS.
 - Monitor run **#6** (`34024533836`) — corrected funnel calculations: SUCCESS.
 
-The production dashboard therefore now has both **operational alert correctness** and **metric presentation correctness** verified in the real Actions runtime.
+The next production verification must confirm the new search-intelligence step and its persistence on a real publisher launch before this enhancement is considered fully closed.
