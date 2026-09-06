@@ -789,23 +789,6 @@
     },
     {
       "region": "RUSSIA",
-      "title": "Смертоносный вольфрамовый куб: как Claude пытался управлять реальным магазином и что из этого вышло - habr.com",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5WZ1g4VlJsanUxYkZxTDJKZGszRzE5WkQ0MWRyc3NMeVBVQzdUd2pPek9Nb2RnUk9wcmhOa09ob0w2SlhJQlVmNElydFhWa0lZOTNMZ1B3bDHSAVhBVV95cUxOVmdYOFZSbGp1MWJGcUwySmRrM0cxOVpENDFkcnNzTHlQVUM3VHdqT3pPTW9kZ1JPcHJoTmtPaG9MNkpYSUJVZjRJcnRYVmtJWTkzTGdQd2wx?oc=5",
-      "desc": "Смертоносный вольфрамовый куб: как Claude пытался управлять реальным магазином и что из этого вышло habr.com",
-      "source": "habr.com",
-      "time": 1788688312.0,
-      "score": 69.1,
-      "russia_weight_bonus": 3.6,
-      "key": "d21d1d9021383adbcab25fadd952fe7d3393e28f86e8159cdf1fe014e34bc2ca",
-      "importance": 69.1,
-      "editorial_value": 50.0,
-      "topics": [
-        "models"
-      ],
-      "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
       "title": "Глава Росавиации рассказал об использовании ИИ в авиаотрасли - prospect.com.ru",
       "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQ1dEVXdlYm5JLVdNWHViNWw2cVh1ZWtzZ0tsdFVVY3BTMXFnYWt6T3M3NDRMT2tFbGFDUmNpejF1SzFYemEtOWpUT1ZGcHlRUUNzaU9TX2p0dko4cHZubEhRenE3T0FDMDZaaDVianc1eGxKQjVaTHA4WHIwUXNPak9mX0pKZjhoUHJoX0VPa0IyQ2N5OXA5TlBkUzZWbWN0eGRWRw?oc=5",
       "desc": "Глава Росавиации рассказал об использовании ИИ в авиаотрасли prospect.com.ru",
@@ -873,14 +856,14 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788699006.2443738,
+    "last_start_ts": 1788699124.5650623,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788699006.2443738,
-    "last_success_ts": 1788699006.2443738,
-    "last_candidates": 79,
-    "last_published": 1,
-    "queue_size": 19
+    "last_run_ts": 1788699124.5650623,
+    "last_success_ts": 1788699124.5650623,
+    "last_candidates": 0,
+    "last_published": 0,
+    "queue_size": 18
   },
   "providers": {
     "GEMINI": {
@@ -1640,33 +1623,6 @@
   "last_search_ts": 1788699006.2443738,
   "last_publish_ts": 1788699006.2443738,
   "run_history": [
-    {
-      "ts": 1788661182,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "empty_queue_after_filters",
-      "searched": true,
-      "candidates": 15,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788661245,
       "status": "OK",
@@ -10520,6 +10476,55 @@
           "GEMINI"
         ],
         "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788699124,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": false,
+      "duration_sec": 0.29,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 18,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
