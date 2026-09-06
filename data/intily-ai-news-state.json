@@ -452,12 +452,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788659382.5091214,
+    "last_start_ts": 1788659562.2595742,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788659382.5091214,
-    "last_success_ts": 1788659382.5091214,
-    "last_candidates": 13,
+    "last_run_ts": 1788659562.2595742,
+    "last_success_ts": 1788659562.2595742,
+    "last_candidates": 14,
     "last_published": 0,
     "queue_size": 0
   },
@@ -479,13 +479,6 @@
     }
   },
   "stories": {
-    "e11745d700638c75bf6a8d61b34b4cebaef62936f06270bfc6827f6d4c1e0894": {
-      "time": 1788573141,
-      "title": "Saudi Arabia tech deals near $15bn as AWS, Microsoft and major AI investments revealed - Arabian Business",
-      "desc": "Saudi Arabia tech deals near $15bn as AWS, Microsoft and major AI investments revealed Arabian Business",
-      "source": "Arabian Business",
-      "region": "WORLD"
-    },
     "78541832fab30d4881a2a99033b4add88e674fe22c020ad194a9649d9e5fcc08": {
       "time": 1788573439,
       "title": "Microsoft releases 2026 Responsible AI Transparency Report with focus on agentic systems - Crypto Briefing",
@@ -880,7 +873,7 @@
     "RUSSIA",
     "RUSSIA"
   ],
-  "last_search_ts": 1788659382.5091214,
+  "last_search_ts": 1788659562.2595742,
   "last_publish_ts": 1788658901.9211433,
   "run_history": [
     {
@@ -2429,6 +2422,33 @@
       "business_reason": "empty_queue_after_filters",
       "searched": true,
       "candidates": 13,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788659562,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "empty_queue_after_filters",
+      "searched": true,
+      "candidates": 14,
       "queue_before": 0,
       "queue_after": 0,
       "published": 0,
