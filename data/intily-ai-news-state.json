@@ -459,7 +459,8 @@
     "c7bca7bdbe37c8d31ce99e3a4203550b670f7e41b03876a7b84ef2ca1f948469": 1788685543,
     "e074b406ae71bb42561750ebaabb07158165b4ad45432bbc3bed2fe7407408eb": 1788686205,
     "2590633f3fe689c5ff07c630a01aa779e970068044ac833b1d28b48c359166e4": 1788686502,
-    "6480abf103056f12001fef47641021ada2a2f9a747c565766b7f42fc3605e5d8": 1788686744
+    "6480abf103056f12001fef47641021ada2a2f9a747c565766b7f42fc3605e5d8": 1788686744,
+    "6e9adcee8491b0cf04c1a9775afda7acd75b44c4e5587d6dc44ed68fd92406b6": 1788687046
   },
   "known": {
     "f6c2eeccd18ce9dae9d04f536daa7f120ec2a8d514e8bcafc0377febe34bd71b": 1788681945.757408,
@@ -479,38 +480,22 @@
     "6e9adcee8491b0cf04c1a9775afda7acd75b44c4e5587d6dc44ed68fd92406b6": 1788686261.8697705,
     "6480abf103056f12001fef47641021ada2a2f9a747c565766b7f42fc3605e5d8": 1788686622.5980794
   },
-  "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Агрегаторы нейросетей бесплатно в России в 2026 году: рейтинг 7 сервисов для текста, фото и видео с доступом из РФ - Sostav.ru",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XYXByVlZObFhadnUtVjdoWXZ1aUhwdUtQTTFqWXZfNHhpc3R5SXBtYm5GMnBxUDd5dWxFa21RamUwT1RDOTM3Ml8tSHhiQ1ZaQ0JF?oc=5",
-      "desc": "Агрегаторы нейросетей бесплатно в России в 2026 году: рейтинг 7 сервисов для текста, фото и видео с доступом из РФ Sostav.ru",
-      "source": "Sostav.ru",
-      "time": 1788679791.0,
-      "score": 69.8,
-      "russia_weight_bonus": 4.3,
-      "key": "6e9adcee8491b0cf04c1a9775afda7acd75b44c4e5587d6dc44ed68fd92406b6",
-      "importance": 69.8,
-      "editorial_value": 50.0,
-      "topics": [],
-      "tier": "A"
-    }
-  ],
+  "queue": [],
   "health": {
-    "last_start_ts": 1788686803.9146366,
+    "last_start_ts": 1788687046.9897358,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788686803.9146366,
-    "last_success_ts": 1788686803.9146366,
-    "last_candidates": 23,
-    "last_published": 0,
-    "queue_size": 1
+    "last_run_ts": 1788687046.9897358,
+    "last_success_ts": 1788687046.9897358,
+    "last_candidates": 24,
+    "last_published": 1,
+    "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788686747.405902
+      "updated_at": 1788687064.07364
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -1062,12 +1047,18 @@
       "desc": "Китай сделал ставку на ИИ-агентов и собственную технологическую инфраструктуру TKS.RU",
       "source": "TKS.RU",
       "region": "RUSSIA"
+    },
+    "6e9adcee8491b0cf04c1a9775afda7acd75b44c4e5587d6dc44ed68fd92406b6": {
+      "time": 1788687046,
+      "title": "Агрегаторы нейросетей бесплатно в России в 2026 году: рейтинг 7 сервисов для текста, фото и видео с доступом из РФ - Sostav.ru",
+      "desc": "Агрегаторы нейросетей бесплатно в России в 2026 году: рейтинг 7 сервисов для текста, фото и видео с доступом из РФ Sostav.ru",
+      "source": "Sostav.ru",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1082,40 +1073,14 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
-  "last_search_ts": 1788686803.9146366,
-  "last_publish_ts": 1788686744.797736,
+  "last_search_ts": 1788687046.9897358,
+  "last_publish_ts": 1788687046.9897358,
   "run_history": [
-    {
-      "ts": 1788651103,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "publish_interval_not_reached",
-      "searched": false,
-      "candidates": 0,
-      "queue_before": 6,
-      "queue_after": 6,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788651223,
       "status": "OK",
@@ -7534,6 +7499,81 @@
       "provider": {
         "attempts": [],
         "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788687046,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 18.1,
+      "candidates": 24,
+      "queue_before": 1,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 21,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 24,
+        "admission_rate": 0.0,
+        "dominant_block": "candidate_count"
+      },
+      "rss": {
+        "queries_attempted": 31,
+        "queries_ok": 31,
+        "query_errors": 0,
+        "direct_feeds_attempted": 8,
+        "direct_feeds_ok": 7,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 10,
+        "raw_items": 158,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 9
+        },
+        "score_filtered": 131,
+        "quality_filtered": 0,
+        "story_dedup": 3,
+        "candidates": 24,
+        "candidate_rate": 0.1622
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
