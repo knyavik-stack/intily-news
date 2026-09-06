@@ -464,10 +464,10 @@
     "cef92be0b855b6168abd2b5b747734f731cc22f5035b94fbf3c8f6d30aaa82a7": 1788687525,
     "192dd6bf836536b14703e8dacb626ed222b7a4e02176a6ad2d4b065d5998420d": 1788687763,
     "04d433f060196a0b1db9b21973c362974594684f84ac894359b155d9cd8d7c8b": 1788688123,
-    "38eed7b3d073cd62cdd67a4f1cfa274276f8ec46688289b91ab680ad951d7a17": 1788689502
+    "38eed7b3d073cd62cdd67a4f1cfa274276f8ec46688289b91ab680ad951d7a17": 1788689502,
+    "0fe2e2274672cc402849c8ac3269a9c217000f86d754bf76aff96762b9d9f8a5": 1788689864
   },
   "known": {
-    "699c47a86563b04a621e331541c4f3a6d0911d86e057a763ad8d32ba53bf25d1": 1788684224.7096999,
     "7b70c8169aeec2be3a12f7bab039de926247d9717d085344399efb69f35d33c5": 1788684882.0104403,
     "4efacee148ea0c96437b255faf92264b3d0b194647b2b4216d9da7648dc18160": 1788684882.0104403,
     "c7bca7bdbe37c8d31ce99e3a4203550b670f7e41b03876a7b84ef2ca1f948469": 1788685362.6563358,
@@ -478,24 +478,25 @@
     "cef92be0b855b6168abd2b5b747734f731cc22f5035b94fbf3c8f6d30aaa82a7": 1788687525.4517438,
     "192dd6bf836536b14703e8dacb626ed222b7a4e02176a6ad2d4b065d5998420d": 1788687525.4517438,
     "04d433f060196a0b1db9b21973c362974594684f84ac894359b155d9cd8d7c8b": 1788688123.05406,
-    "38eed7b3d073cd62cdd67a4f1cfa274276f8ec46688289b91ab680ad951d7a17": 1788689502.502995
+    "38eed7b3d073cd62cdd67a4f1cfa274276f8ec46688289b91ab680ad951d7a17": 1788689502.502995,
+    "0fe2e2274672cc402849c8ac3269a9c217000f86d754bf76aff96762b9d9f8a5": 1788689864.0345984
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788689562.7193515,
+    "last_start_ts": 1788689864.0345984,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788689562.7193515,
-    "last_success_ts": 1788689562.7193515,
-    "last_candidates": 23,
-    "last_published": 0,
+    "last_run_ts": 1788689864.0345984,
+    "last_success_ts": 1788689864.0345984,
+    "last_candidates": 24,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788689543.8861947
+      "updated_at": 1788689879.798257
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -1082,10 +1083,16 @@
       "desc": "AI Everything Abu Dhabi looks beyond AI experimentation to real-world deployment Fast Company Middle East",
       "source": "Fast Company Middle East",
       "region": "WORLD"
+    },
+    "0fe2e2274672cc402849c8ac3269a9c217000f86d754bf76aff96762b9d9f8a5": {
+      "time": 1788689864,
+      "title": "Why AI users report degraded quality as tech giants push reduced reasoning models to save costs - Milwaukee Independent",
+      "desc": "Why AI users report degraded quality as tech giants push reduced reasoning models to save costs Milwaukee Independent",
+      "source": "Milwaukee Independent",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -1103,39 +1110,13 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD"
   ],
-  "last_search_ts": 1788689562.7193515,
-  "last_publish_ts": 1788689502.502995,
+  "last_search_ts": 1788689864.0345984,
+  "last_publish_ts": 1788689864.0345984,
   "run_history": [
-    {
-      "ts": 1788653683,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "candidates": 0,
-      "queue_before": 5,
-      "queue_after": 4,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788653921,
       "status": "OK",
@@ -8392,6 +8373,81 @@
       "provider": {
         "attempts": [],
         "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788689864,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 16.36,
+      "candidates": 24,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 21,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 1,
+        "candidate_count": 24,
+        "admission_rate": 4.17,
+        "dominant_block": "published_key"
+      },
+      "rss": {
+        "queries_attempted": 31,
+        "queries_ok": 31,
+        "query_errors": 0,
+        "direct_feeds_attempted": 8,
+        "direct_feeds_ok": 7,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 10,
+        "raw_items": 154,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 9
+        },
+        "score_filtered": 128,
+        "quality_filtered": 0,
+        "story_dedup": 2,
+        "candidates": 24,
+        "candidate_rate": 0.1667
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
