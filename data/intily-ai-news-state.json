@@ -410,7 +410,8 @@
     "38fd77970d0781c7e94ecaf3bf75ac05fac50831ca9a822a9557656427e54dd7": 1788653921,
     "14f56fa1180967dda4406b45692e99a58f8c7e77a903653c1b50f2057becca33": 1788654403,
     "7422049062c68ce88a098fdb702ef998a97beda7312592ffeda93bacac8a71c5": 1788654644,
-    "2e5325eb244fb07f64e9a152d85e3f7f7a0a97b24cd0a9c06d4d0ac18dc34495": 1788655002
+    "2e5325eb244fb07f64e9a152d85e3f7f7a0a97b24cd0a9c06d4d0ac18dc34495": 1788655002,
+    "2501312cb900d36193be26f8d1d5d14a6cb4b94fc71e85fb6d6e995fd7bc18c6": 1788655362
   },
   "known": {
     "d6dc4d7664f40cf611eea61f0d87e16c501700dc35ce4f5afb6977988bc1c37b": 1788647378.635233,
@@ -442,24 +443,6 @@
   },
   "queue": [
     {
-      "region": "WORLD",
-      "title": "An AI track is being offered for computer science, information systems majors - The Towerlight",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQU0Ywb002ak0wdmJoQ1ZPMlRCc0s2VjNEOW5leG1iWGtRT1VXbzRNR3JlOFA4dWYyTzg4cVdTWEVIQ2ZkMHc5d01sUWtyN2poc3pMdnNsU05KX3RKR3F3ZVktYTNTQXo2SDVnOFpoZnR4Nmp6NmlRLTk0aDJLcm1jOGh4aktxWHZfNFRXT2hOdVl1dVY5SGNJQ0podlloOXZIa3JOX09n?oc=5",
-      "desc": "An AI track is being offered for computer science, information systems majors The Towerlight",
-      "source": "The Towerlight",
-      "time": 1788651732.0,
-      "score": 69.5,
-      "key": "2501312cb900d36193be26f8d1d5d14a6cb4b94fc71e85fb6d6e995fd7bc18c6",
-      "importance": 69.5,
-      "editorial_value": 50.0,
-      "topics": [],
-      "tier": "A",
-      "last_failed_at": 1788655247,
-      "last_failure": "RU_QA_FORBIDDEN_STYLE",
-      "failure_count": 1,
-      "next_retry_at": 1788655547
-    },
-    {
       "region": "RUSSIA",
       "title": "ИИ-агент GPT-6 Astra создал симуляцию внутри Unreal Engine - techora.ru",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE93TU9pa1l3aVNJazQydWtnemN2MWtILVUtY3VhajhpMGpZc1daYm5NVWFNZ3ladS1FVDFYWmtyLV85YTFPamxTekV1QnE5dll1b2ItVEp6UmFLeC1tMXppcmphMjY0SlFGWVc5dmtGRQ?oc=5",
@@ -479,20 +462,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788655247.3031325,
+    "last_start_ts": 1788655362.8835945,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788655247.3031325,
-    "last_success_ts": 1788655247.3031325,
-    "last_candidates": 18,
-    "last_published": 0,
-    "queue_size": 2
+    "last_run_ts": 1788655362.8835945,
+    "last_success_ts": 1788655362.8835945,
+    "last_candidates": 0,
+    "last_published": 1,
+    "queue_size": 1
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788655268.1209579
+      "updated_at": 1788655364.595623
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -855,12 +838,18 @@
       "desc": "AI chip-smuggling cases a major warning sign, says criminologist Free Malaysia Today",
       "source": "Free Malaysia Today",
       "region": "WORLD"
+    },
+    "2501312cb900d36193be26f8d1d5d14a6cb4b94fc71e85fb6d6e995fd7bc18c6": {
+      "time": 1788655362,
+      "title": "An AI track is being offered for computer science, information systems majors - The Towerlight",
+      "desc": "An AI track is being offered for computer science, information systems majors The Towerlight",
+      "source": "The Towerlight",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -877,10 +866,11 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD"
   ],
   "last_search_ts": 1788655247.3031325,
-  "last_publish_ts": 1788655002.3494935,
+  "last_publish_ts": 1788655362.8835945,
   "run_history": [
     {
       "ts": 1788649810,
@@ -1785,6 +1775,33 @@
       "published": 0,
       "publish_attempts": 1,
       "item_failures": 1,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788655362,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "candidates": 0,
+      "queue_before": 2,
+      "queue_after": 1,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
       "provider_state": {
         "GEMINI": {
           "blocked": false,
