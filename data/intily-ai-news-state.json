@@ -432,7 +432,8 @@
     "31095f323879538db443349dfdd4fc7f2d74c8bbe4a6cb01c35c09fffcdf4d44": 1788669283,
     "2ab000870330a261883c9b5803f4295e3be007bf2b60810e19425a9e60074d21": 1788669703,
     "e1ad94b7b6b28c5bae370aa412ae3e635c00a2adf4db7229d7f43ce7cd8fae31": 1788672104,
-    "50f699f2fb53019dc1796c7bcb1f025387963d39cd471276414768b99a07ad2e": 1788673484
+    "50f699f2fb53019dc1796c7bcb1f025387963d39cd471276414768b99a07ad2e": 1788673484,
+    "0a277972872c7f7bb433f8f864633eecd7c7278c385a42bae40acb89e8ee9ecf": 1788674082
   },
   "known": {
     "a930f6e9782840d2c0f5a0babab62b55875023b54f592b4752620f11458b39e3": 1788653144.8727803,
@@ -466,20 +467,6 @@
   "queue": [
     {
       "region": "WORLD",
-      "title": "AI may create a new management problem: Who is accountable when the machine is wrong? - ABS-CBN",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOTUxocVNGYzd4UzdVSlVwWXdsdVR0WWhsWDBUaS1PUUlmUnk3SWY5Nl9UYndDQ1ZKZi1CcDV0MEtXMGJqWk5DTXE4LUk4aHRmaG5tZ2tuTExjU1dOdjZ4dWNXalFiTlM5czBnSDJCRWVtQjBhR2k2ektJTldqZ1NoZ2E0a2haWXpsc3NQRlNJMlloLXBZeG1LdDRBV0d6SzdjU2J2R3luRGVORmJxVmgyTkEycUtLZHg1YkFkRlREVkpUZkpURTA4TkFvUWtJcExOVHVV?oc=5",
-      "desc": "AI may create a new management problem: Who is accountable when the machine is wrong? ABS-CBN",
-      "source": "ABS-CBN",
-      "time": 1788667458.0,
-      "score": 63.5,
-      "key": "0a277972872c7f7bb433f8f864633eecd7c7278c385a42bae40acb89e8ee9ecf",
-      "importance": 63.5,
-      "editorial_value": 50.0,
-      "topics": [],
-      "tier": "A"
-    },
-    {
-      "region": "WORLD",
       "title": "Foxconn Q3 Results: AI demand lifts outlook, Aug revenue hits record - scanx.trade",
       "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWGFBU0EtVndkanUyaGh6bVJFV3Q5YWR5dkZ0VHZsVmZtNXFjUnRBNzV0amNQQll1S1ZFOW95dlZrejhPUWYxWndYcFQzZzFhRW85RXdJTnRfZDlvTUY3QmNGbUNUaURVSUtqSWhoTEFFNlIwOWo1aVBmVDBwODNjMlBJUXFGdjZ2dVlBeER4dFJMNTU2UHhWX1p1OHRZM2FkYmpLXzJPWUxzbnJmU0VPaW1oLWZ1NUZzT2g2TGpxa0w?oc=5",
       "desc": "Foxconn Q3 Results: AI demand lifts outlook, Aug revenue hits record scanx.trade",
@@ -494,20 +481,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788673662.3034804,
+    "last_start_ts": 1788674082.345616,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788673662.3034804,
-    "last_success_ts": 1788673662.3034804,
+    "last_run_ts": 1788674082.345616,
+    "last_success_ts": 1788674082.345616,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 2
+    "last_published": 1,
+    "queue_size": 1
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788673496.6099725
+      "updated_at": 1788674084.0110073
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -870,11 +857,17 @@
       "desc": "Corporate America is getting hooked on open-source AI The Indian Express",
       "source": "The Indian Express",
       "region": "WORLD"
+    },
+    "0a277972872c7f7bb433f8f864633eecd7c7278c385a42bae40acb89e8ee9ecf": {
+      "time": 1788674082,
+      "title": "AI may create a new management problem: Who is accountable when the machine is wrong? - ABS-CBN",
+      "desc": "AI may create a new management problem: Who is accountable when the machine is wrong? ABS-CBN",
+      "source": "ABS-CBN",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -890,12 +883,13 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD"
   ],
   "last_search_ts": 1788673484.0600832,
-  "last_publish_ts": 1788673484.0600832,
+  "last_publish_ts": 1788674082.345616,
   "run_history": [
     {
       "ts": 1788649810,
@@ -4391,6 +4385,33 @@
       "queue_after": 2,
       "published": 0,
       "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788674082,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "candidates": 0,
+      "queue_before": 2,
+      "queue_after": 1,
+      "published": 1,
+      "publish_attempts": 1,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
