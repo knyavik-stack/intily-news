@@ -462,12 +462,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788683115.5792656,
+    "last_start_ts": 1788683181.7435088,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788683115.5792656,
-    "last_success_ts": 1788683115.5792656,
-    "last_candidates": 19,
+    "last_run_ts": 1788683181.7435088,
+    "last_success_ts": 1788683181.7435088,
+    "last_candidates": 16,
     "last_published": 0,
     "queue_size": 0
   },
@@ -967,7 +967,7 @@
     "RUSSIA",
     "RUSSIA"
   ],
-  "last_search_ts": 1788683115.5792656,
+  "last_search_ts": 1788683181.7435088,
   "last_publish_ts": 1788682363.501088,
   "run_history": [
     {
@@ -5836,6 +5836,64 @@
         "story_dedup": 1,
         "candidates": 19,
         "candidate_rate": 0.152
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788683181,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 8.66,
+      "candidates": 16,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 15,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {
+        "queries_attempted": 31,
+        "queries_ok": 31,
+        "query_errors": 0,
+        "raw_items": 122,
+        "score_filtered": 104,
+        "quality_filtered": 0,
+        "story_dedup": 2,
+        "candidates": 16,
+        "candidate_rate": 0.1311
       },
       "provider": {
         "attempts": [],
