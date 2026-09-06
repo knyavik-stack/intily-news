@@ -509,12 +509,12 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788686261.8697705,
+    "last_start_ts": 1788686382.5356941,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788686261.8697705,
-    "last_success_ts": 1788686261.8697705,
-    "last_candidates": 27,
+    "last_run_ts": 1788686382.5356941,
+    "last_success_ts": 1788686382.5356941,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 2
   },
@@ -1087,33 +1087,6 @@
   "last_search_ts": 1788686261.8697705,
   "last_publish_ts": 1788686205.654975,
   "run_history": [
-    {
-      "ts": 1788650322,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "publish_interval_not_reached",
-      "searched": false,
-      "candidates": 0,
-      "queue_before": 11,
-      "queue_after": 11,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788650445,
       "status": "OK",
@@ -7366,6 +7339,55 @@
         "candidates": 27,
         "candidate_rate": 0.18
       },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788686382,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": false,
+      "duration_sec": 0.0,
+      "candidates": 0,
+      "queue_before": 2,
+      "queue_after": 2,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {},
       "provider": {
         "attempts": [],
         "used": null,
