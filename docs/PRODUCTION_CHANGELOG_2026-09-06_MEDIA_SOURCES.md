@@ -19,47 +19,86 @@ The three sources are visible in the existing direct-source telemetry (`RSS_DIRE
 
 `scripts/intily_image_pipeline.py` implements best-effort article image extraction and Telegram `sendPhoto` delivery.
 
-Image extraction order is now:
+Resolver 2.0 now:
 
-1. resolve the publisher URL by following the Google News RSS redirect;
-2. `og:image`;
-3. JSON-LD `image`;
-4. `image_src`;
-5. `twitter:image`;
-6. text-only fallback.
+1. resolves Google News RSS links to the publisher page via redirects;
+2. if the wrapper does not redirect, attempts canonical/`og:url` publisher references;
+3. refuses to use `news.google.com` as the article source;
+4. parses metadata with the standard-library HTML parser, so attribute order is not significant;
+5. extracts `og:image`, `og:image:url`, JSON-LD image/contentUrl, `image_src`, Twitter image, lazy HTML images and `srcset`;
+6. ranks candidates by source quality and publisher-host affinity and penalizes obvious logo/placeholder/generic assets;
+7. validates candidates independently and tries up to eight candidates before falling back to text.
 
 Validation includes content type, maximum 10 MB, and minimum 200×150 dimensions. The existing text sender remains the fallback for every extraction/download/validation/upload failure.
 
-The selected article URL is bound immediately before editorial rendering through a runtime wrapper around `edit()`. This avoids the incorrect approach of capturing the URL during priority sorting, where multiple candidates are evaluated.
+The selected article URL is bound immediately before editorial rendering through a runtime wrapper around `edit()`. This avoids capturing the URL during priority sorting, where multiple candidates are evaluated.
 
-## Incident found after real publication observation
+## Incidents found after real publication observation
 
-A SecurityLab story published to Intily around 22:06 was observed with a generic Google-like image instead of the article's expected main image. The source article is SecurityLab's 21:45 story “Британия готовится к войне, где человек не успевает нажимать на спуск”; the expected image URL supplied for verification is the SecurityLab-hosted JPG.
+### SecurityLab
 
-Root cause: the first media implementation used the RSS `link` directly as the HTML page to scrape. For Google News RSS, that link is an aggregator/redirect URL. If the request remains on a Google News wrapper, the media layer can select a generic Google preview asset rather than the publisher's representative image.
+A SecurityLab story published to Intily around 22:06 was observed with a generic Google-like image instead of the article's expected main image. The source article was a Google News-originated item.
 
-Fix: the media layer now follows the URL and requires a real publisher final URL. If the final page is still `news.google.com`, it refuses to scrape that wrapper and falls back to text. It also records `IMAGE_SOURCE_RESOLVED` so production logs show the resolved publisher URL.
+Root cause: the first media implementation used the RSS `link` directly as the HTML page to scrape. For Google News RSS, that link is an aggregator/redirect URL.
 
-This is a general fix for Google News-originated items, not a SecurityLab-specific exception.
+Fix: publisher URL resolution is now mandatory; a Google News wrapper is never accepted as the image source.
 
-## CI verification
+### Tekedia
 
-The production workflow compiles the new image module before running the publisher.
+A second real chain was observed where a Tekedia article had a representative publisher image but Intily published without a photo. This exposed the next failure class: selecting only one metadata candidate is brittle even after publisher resolution.
 
-A GitHub Actions publisher run after the first media-module commit completed successfully (`run #407`, GitHub run `34053497700`). That run proves the repository/workflow could execute successfully with the first media module present, but it predates the final runner integration and the Google News source-resolution fix. It is **not** accepted as proof that the corrected Telegram photo delivery is working.
+Fix: Resolver 2.0 extracts multiple candidate families and validates them independently. No Tekedia-specific URL or exception was added.
 
-The acceptance test for the corrected integration is a production run containing one of:
+## Durable media analytics
+
+The runtime now persists image telemetry in every bounded `run_history` record under `admission.image`. The schema remains backward compatible with historical records that have no media block.
+
+Recorded fields:
+
+- `attempts`;
+- `found`;
+- `validated`;
+- `photo_sent`;
+- `text_fallback`;
+- `fallback_reasons`;
+- `sources`;
+- `last` provenance containing resolved publisher URL, selected image URL, extraction method, dimensions and error when applicable.
+
+Production Monitor now aggregates these metrics for 24h, 7d and stored history and shows resolution rate, Telegram photo rate, fallback rate, fallback reasons and extraction methods.
+
+This is durable KPI telemetry, not log scraping.
+
+## Regression tests
+
+Added deterministic standard-library `unittest` coverage for:
+
+- HTML metadata attribute-order variations;
+- JSON-LD and lazy HTML image extraction;
+- Google News canonical publisher fallback;
+- retrying a later valid image when the first candidate is broken.
+
+The production workflow now runs `py_compile` plus these tests before the news engine starts.
+
+## CI / production verification
+
+Run #423 (`34055888118`) was automatically triggered against commit `32b7ba0d5c5929a8f6cef272286f6ac58f88df29` after the media changes. At the latest inspection it was still running; its verification step had already completed successfully. Therefore syntax/regression-test execution is confirmed, while final Telegram media delivery from this run is not yet claimed until the publisher step finishes and its logs/state are inspected.
+
+The earlier run #422 (`34055739496`) is not media verification for Resolver 2.0: it executed before the final media commits and published one text fallback with `ARTICLE_SOURCE_UNRESOLVED` under the older implementation.
+
+Acceptance for the corrected integration remains:
 
 - `TELEGRAM_PHOTO_SENT` — image path verified;
-- `IMAGE_FALLBACK_TEXT` — media path handled a source/image limitation without breaking publication.
+- or `IMAGE_FALLBACK_TEXT` — media limitation handled without breaking publication;
+- for Google News-originated articles, `IMAGE_SOURCE_RESOLVED` must point to the publisher domain, never `news.google.com`;
+- `IMAGE_KPI` must be present in the persisted `run_history` record.
 
-For Google News-originated articles, `IMAGE_SOURCE_RESOLVED` must point to the publisher domain and must not be `news.google.com`.
-
-A green workflow without these markers is not considered media verification.
+A green workflow without these media markers is not considered full media verification.
 
 ## Current status
 
-- Source expansion: implemented; awaiting final runtime yield measurement.
-- Image pipeline: corrected; awaiting final integrated production-cycle evidence.
+- Source expansion: implemented; runtime yield measurement continues.
+- Image resolver 2.0: implemented with regression tests.
+- Durable photo KPI analytics: implemented for current and historical monitor windows.
+- Production workflow #423: in progress at the time of this documentation update; final Telegram evidence still pending.
 - Editorial score threshold: remains operator-controlled at the user's current temporary value of 50 until calibration telemetry is sufficient.
 - No scoring change is coupled to the media work.
