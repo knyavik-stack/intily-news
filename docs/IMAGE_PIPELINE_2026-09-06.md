@@ -8,44 +8,60 @@ Implemented in the production runner. The image layer is presentation-only and h
 
 ```text
 selected article
-  → resolve publisher URL (follow Google News RSS redirect)
+  → resolve publisher URL (follow Google News redirect / canonical fallback)
   → publisher article HTML
-  → og:image / JSON-LD image / image_src / twitter:image
-  → image download
-  → MIME + size + dimensions validation
+  → OG / JSON-LD / image_src / Twitter / HTML image candidates
+  → rank candidates and try them one by one
+  → MIME + size + dimensions validation per candidate
   → Telegram sendPhoto(caption)
   → fallback to existing sendMessage on any image failure
 ```
 
-## Incident found on 2026-09-06
+## Resolver 2.0
 
-A real Intily publication from SecurityLab was observed with a generic Google-like image instead of the article's representative image. The affected item originated from a Google News RSS link; the expected SecurityLab image was the article image supplied by the user.
+The resolver no longer assumes that the first image candidate is usable.
 
-Root cause in the first media implementation: the image pipeline received the RSS `link` and treated it directly as an article page. Google News URLs are aggregator/redirect URLs, not the publisher article itself. If the request remained on a Google News wrapper, the pipeline could extract a generic Google preview image rather than the publisher's `og:image`.
+Implemented safeguards:
 
-The fix is architectural rather than a per-source exception:
+1. Google News URLs are resolved to the real publisher page. If a wrapper does not redirect, canonical/`og:url` publisher references are attempted.
+2. A Google News page is never accepted as the final article source.
+3. Candidate extraction uses the standard-library HTML parser, so attribute order in `<meta>`/`<link>` tags does not matter.
+4. Supported metadata includes `og:image`, `og:image:url`, `twitter:image`, `twitter:image:src`, `link rel=image_src`, and JSON-LD `image`/`contentUrl`.
+5. Last-resort `<img>`, lazy-image attributes, and `srcset` candidates are supported.
+6. Candidates are ranked by source quality and publisher-host affinity, with generic/logo/placeholder-looking URLs penalized.
+7. Up to eight ranked candidates can be attempted; each candidate is independently downloaded and validated. A broken first candidate therefore no longer forces a text-only publication when a later valid article image exists.
+8. No image candidate from Google News is accepted as the representative publisher image.
 
-1. Follow the RSS URL through normal HTTP redirects.
-2. Require the final page to be a real publisher URL rather than `news.google.com`.
-3. Do not scrape a Google News wrapper image when the publisher URL cannot be resolved.
-4. Prefer publisher `og:image`, then JSON-LD image, `image_src`, and finally `twitter:image`.
-5. Emit `IMAGE_SOURCE_RESOLVED` so production logs expose the actual publisher page used for extraction.
+## Incidents covered
 
-This prevents a Google News logo/preview asset from being silently accepted as the article's main image.
+### SecurityLab
+
+A real Intily publication was observed with a generic Google-like image instead of the article's representative image. The affected item originated from a Google News RSS link.
+
+Root cause in the first media implementation: the RSS `link` was treated directly as an article page. The architectural fix is publisher URL resolution before image extraction.
+
+### Tekedia
+
+A second real chain was observed where the Tekedia article had a known representative image but Intily published without a photo. The article originated from a Google News RSS link and the expected publisher image was known from the article chain.
+
+This exposed a second failure class: even after correct publisher URL resolution, selecting only one metadata candidate is brittle. Resolver 2.0 therefore extracts multiple candidate families and validates them independently before falling back to text.
+
+These are source-agnostic fixes; no per-domain hardcoded image URL is used.
 
 ## Why the implementation is isolated
 
-The legacy publisher remains the publication engine. `scripts/intily_ai_news_runner.py` injects the media behavior at runtime. This keeps the existing queue/state/publication semantics unchanged while allowing the media layer to be tested and rolled back independently.
+The legacy publisher remains the publication engine. `scripts/intily_ai_news_runner.py` injects the media behavior at runtime. This keeps existing queue/state/publication semantics unchanged while allowing the media layer to be tested and rolled back independently.
 
 ## Image source priority
 
-1. `og:image`
-2. JSON-LD `image`
+1. `og:image` / `og:image:url`
+2. JSON-LD `image` / `contentUrl`
 3. `image_src`
-4. `twitter:image`
-5. No image → text-only publication
+4. `twitter:image` / `twitter:image:src`
+5. publisher HTML image / lazy image / `srcset`
+6. no acceptable image → text-only publication
 
-The current RSS parser does not persist media fields, so the production implementation resolves the representative image from the publisher article HTML after resolving the publisher URL. RSS media extraction can be added later as an optimization without changing Telegram delivery.
+RSS media extraction is intentionally not required for correctness: the publisher article remains the source of truth for the representative image.
 
 ## Validation
 
@@ -62,6 +78,38 @@ The current RSS parser does not persist media fields, so the production implemen
 
 The selected article is sent as one `sendPhoto` message with the existing HTML post as caption. If extraction, validation, or upload fails, the exact existing text publication path is used.
 
+## Durable media analytics
+
+Photo telemetry is now persisted into each bounded `run_history` record under `admission.image` so historical monitor windows can aggregate it without changing the legacy top-level KPI schema.
+
+Per cycle:
+
+- `attempts` — publication attempts for which image delivery was attempted;
+- `found` — an acceptable image was resolved;
+- `validated` — resolved image passed MIME/size/dimension checks;
+- `photo_sent` — Telegram `sendPhoto` succeeded;
+- `text_fallback` — publication used the normal text sender because media delivery failed;
+- `fallback_reasons` — bounded error categories/messages;
+- `sources` — extraction method used (`og_image`, `jsonld_image`, `image_src`, `twitter_image`, `html_img`);
+- `last` — provenance of the last media attempt: resolved publisher URL, selected image URL, dimensions, method, and error if any.
+
+Production Monitor now reports 24h, 7d, and stored-history values for:
+
+- attempts;
+- found;
+- validated;
+- photo sent;
+- fallback;
+- image resolution rate;
+- Telegram photo rate;
+- fallback rate;
+- fallback reasons;
+- image source methods.
+
+The historical KPI is intentionally derived from durable cycle telemetry rather than from log scraping, so a rotated GitHub Actions log cannot erase the media history.
+
+## Runtime markers
+
 The implementation emits:
 
 - `IMAGE_SOURCE_RESOLVED`
@@ -69,12 +117,15 @@ The implementation emits:
 - `IMAGE_VALIDATED`
 - `TELEGRAM_PHOTO_SENT`
 - `IMAGE_FALLBACK_TEXT`
+- `IMAGE_KPI`
 
-These markers are intended for production verification and future media KPI telemetry.
+For Google News items, `IMAGE_SOURCE_RESOLVED` must point to the publisher domain, not `news.google.com`.
 
-## Important invariant
+## Important invariants
 
 Image availability never changes editorial score, admission, duplicate handling, publication interval, or queue state. A strong story without an acceptable image remains publishable.
+
+The image path is best-effort and must never turn a news story into a failed publication solely because its image is unavailable.
 
 ## Current limitation
 
@@ -84,6 +135,6 @@ Some publishers may block automated HTML access, require JavaScript rendering, o
 
 A real production run must confirm the complete path:
 
-`RSS → candidate → publisher URL resolution → image extraction → validation → Telegram photo → state/analytics`.
+`RSS → candidate → publisher URL resolution → image extraction → validation → Telegram photo/text fallback → durable state/analytics`.
 
-A successful GitHub Actions run alone is not proof that an image was attached; `TELEGRAM_PHOTO_SENT` or an explicit `IMAGE_FALLBACK_TEXT` must be inspected. For a Google News item, `IMAGE_SOURCE_RESOLVED` must point to the publisher domain, not `news.google.com`.
+A successful GitHub Actions run alone is not proof that an image was attached. Inspect `TELEGRAM_PHOTO_SENT` or `IMAGE_FALLBACK_TEXT`, and verify `IMAGE_KPI` was persisted into the resulting `run_history` entry.
