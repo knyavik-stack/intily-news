@@ -12,6 +12,7 @@ MAX_HTML_BYTES = 2 * 1024 * 1024
 MIN_IMAGE_WIDTH = 200
 MIN_IMAGE_HEIGHT = 150
 IMAGE_TYPES = {'image/jpeg', 'image/png', 'image/webp', 'image/gif'}
+GOOGLE_NEWS_HOSTS = {'news.google.com', 'www.news.google.com'}
 
 
 def _request(url, headers=None, timeout=12, max_bytes=None):
@@ -27,31 +28,96 @@ def _request(url, headers=None, timeout=12, max_bytes=None):
         return data, content_type, response.geturl()
 
 
-def _meta_image(text):
+def _host(url):
+    try:
+        return urllib.parse.urlsplit(url).netloc.lower().split('@')[-1].split(':', 1)[0]
+    except Exception:
+        return ''
+
+
+def _meta_image_candidates(text):
     patterns = [
-        r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\'][^>]*>',
-        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\'][^>]*>',
-        r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)["\'][^>]*>',
-        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+name=["\']twitter:image["\'][^>]*>',
+        ('og_image', r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\'][^>]*>'),
+        ('og_image', r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\'][^>]*>'),
+        ('twitter_image', r'<meta[^>]+name=["\']twitter:image["\'][^>]+content=["\']([^"\']+)["\'][^>]*>'),
+        ('twitter_image', r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+name=["\']twitter:image["\'][^>]*>'),
+        ('image_src', r'<link[^>]+rel=["\']image_src["\'][^>]+href=["\']([^"\']+)["\'][^>]*>'),
+        ('image_src', r'<link[^>]+href=["\']([^"\']+)["\'][^>]+rel=["\']image_src["\'][^>]*>'),
     ]
-    for pattern in patterns:
-        match = re.search(pattern, text, re.I)
-        if match:
-            return html.unescape(match.group(1).strip())
-    return ''
+    out = []
+    for method, pattern in patterns:
+        for match in re.finditer(pattern, text, re.I):
+            value = html.unescape(match.group(1).strip())
+            if value and (method, value) not in out:
+                out.append((method, value))
+
+    # JSON-LD is a useful fallback for publishers whose meta tags are incomplete.
+    for match in re.finditer(r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>', text, re.I | re.S):
+        try:
+            payload = json.loads(html.unescape(match.group(1).strip()))
+        except Exception:
+            continue
+
+        def collect(value):
+            if isinstance(value, str) and value.startswith(('http://', 'https://')):
+                out.append(('jsonld_image', value.strip()))
+            elif isinstance(value, list):
+                for item in value:
+                    collect(item)
+            elif isinstance(value, dict):
+                if 'url' in value:
+                    collect(value['url'])
+                if 'image' in value:
+                    collect(value['image'])
+
+        collect(payload.get('image') if isinstance(payload, dict) else payload)
+
+    deduped = []
+    for method, value in out:
+        if (method, value) not in deduped:
+            deduped.append((method, value))
+    return deduped
 
 
-def extract_image_url(article_url):
+def resolve_article_url(article_url):
+    """Follow Google News RSS redirects to the publisher's real article URL."""
     if not article_url.startswith(('http://', 'https://')):
         raise ValueError('ARTICLE_URL_INVALID')
-    data, _, final_url = _request(article_url, {
+
+    data, content_type, final_url = _request(article_url, {
         'User-Agent': 'Mozilla/5.0 (compatible; IntilyNews/1.0)',
         'Accept': 'text/html,application/xhtml+xml'
     }, 12, MAX_HTML_BYTES)
-    image = _meta_image(data.decode('utf-8', 'replace'))
-    if not image:
+
+    final_host = _host(final_url)
+    if final_host not in GOOGLE_NEWS_HOSTS:
+        return final_url, data, content_type
+
+    # A Google News wrapper should normally redirect to the publisher. If it does
+    # not, do not scrape Google News' generic preview image: that is exactly the
+    # class of wrong-image failure this resolver is designed to prevent.
+    raise ValueError('ARTICLE_SOURCE_UNRESOLVED')
+
+
+def extract_image_url(article_url):
+    final_url, data, _ = resolve_article_url(article_url)
+    text = data.decode('utf-8', 'replace')
+    candidates = _meta_image_candidates(text)
+    if not candidates:
         raise ValueError('IMAGE_NOT_FOUND')
-    return urllib.parse.urljoin(final_url, image), 'og_image'
+
+    # Prefer the publisher's OG image. JSON-LD / twitter / image_src are fallbacks.
+    source_host = _host(final_url)
+    ranked = []
+    priority = {'og_image': 0, 'jsonld_image': 1, 'image_src': 2, 'twitter_image': 3}
+    for method, value in candidates:
+        image_url = urllib.parse.urljoin(final_url, value)
+        image_host = _host(image_url)
+        generic_google_penalty = 20 if source_host not in GOOGLE_NEWS_HOSTS and image_host in GOOGLE_NEWS_HOSTS else 0
+        ranked.append((priority.get(method, 9) + generic_google_penalty, method, image_url))
+    ranked.sort(key=lambda row: row[0])
+    _, method, image_url = ranked[0]
+    return image_url, method, final_url
 
 
 def _dimensions(data, content_type):
@@ -86,7 +152,7 @@ def _dimensions(data, content_type):
 
 
 def fetch_image(article_url):
-    image_url, method = extract_image_url(article_url)
+    image_url, method, source_url = extract_image_url(article_url)
     data, content_type, final_url = _request(image_url, {
         'User-Agent': 'Mozilla/5.0 (compatible; IntilyNews/1.0)',
         'Accept': 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
@@ -96,7 +162,7 @@ def fetch_image(article_url):
     dims = _dimensions(data, content_type)
     if not dims or dims[0] < MIN_IMAGE_WIDTH or dims[1] < MIN_IMAGE_HEIGHT:
         raise ValueError('IMAGE_DIMENSIONS_INVALID')
-    return {'data': data, 'content_type': content_type, 'url': final_url, 'method': method, 'width': dims[0], 'height': dims[1]}
+    return {'data': data, 'content_type': content_type, 'url': final_url, 'method': method, 'source_url': source_url, 'width': dims[0], 'height': dims[1]}
 
 
 def _field(name, value, boundary):
@@ -131,13 +197,14 @@ def send_photo(token, chat_id, caption, image):
 
 
 def publish_with_optional_image(text, article_url, token, chat_id, fallback_send):
-    telemetry = {'status': 'not_attempted', 'method': None, 'url': None, 'width': None, 'height': None, 'error': None}
+    telemetry = {'status': 'not_attempted', 'method': None, 'url': None, 'source_url': None, 'width': None, 'height': None, 'error': None}
     try:
         image = fetch_image(article_url)
         if len(text) > 1024:
             raise ValueError('CAPTION_TOO_LONG')
         result = send_photo(token, chat_id, text, image)
-        telemetry.update(status='sent', method=image['method'], url=image['url'], width=image['width'], height=image['height'])
+        telemetry.update(status='sent', method=image['method'], url=image['url'], source_url=image['source_url'], width=image['width'], height=image['height'])
+        print('IMAGE_SOURCE_RESOLVED', image['source_url'])
         print('IMAGE_FOUND', image['method'], image['width'], image['height'])
         print('IMAGE_VALIDATED', image['content_type'], len(image['data']))
         print('TELEGRAM_PHOTO_SENT', result.get('result', {}).get('message_id'))
