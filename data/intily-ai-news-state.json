@@ -460,13 +460,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788655002.3494935,
+    "last_start_ts": 1788655157.3488364,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788655002.3494935,
-    "last_success_ts": 1788655002.3494935,
-    "last_candidates": 0,
-    "last_published": 1,
+    "last_run_ts": 1788655157.3488364,
+    "last_success_ts": 1788655157.3488364,
+    "last_candidates": 16,
+    "last_published": 0,
     "queue_size": 1
   },
   "providers": {
@@ -487,13 +487,6 @@
     }
   },
   "stories": {
-    "4c993c51b502166306ca8d1cfa75c0e199e84c0b3cb4b6eda708754ea1bad5c7": {
-      "time": 1788568641,
-      "title": "Российский производитель чипов заложил сотни установок, в том числе и системы ASML — деньги могут пойти на новый завод по производству 28-нанометровых микросхем - prospect.com.ru",
-      "desc": "Российский производитель чипов заложил сотни установок, в том числе и системы ASML — деньги могут пойти на новый завод по производству 28-нанометровых микросхем prospect.com.ru",
-      "source": "prospect.com.ru",
-      "region": "RUSSIA"
-    },
     "b56483423587a9574d56eeeb3f913d63c9830f6b9ce2f74789b2f4cc0e603e68": {
       "time": 1788569600,
       "title": "Заменит ли ИИ на работе офисного сотрудника - порассуждали на форуме в Хабаровске - Новости Хабаровска",
@@ -867,7 +860,7 @@
     "RUSSIA",
     "WORLD"
   ],
-  "last_search_ts": 1788654644.3799717,
+  "last_search_ts": 1788655157.3488364,
   "last_publish_ts": 1788655002.3494935,
   "run_history": [
     {
@@ -1718,6 +1711,33 @@
       "queue_after": 1,
       "published": 1,
       "publish_attempts": 1,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788655157,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": true,
+      "candidates": 16,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 0,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
