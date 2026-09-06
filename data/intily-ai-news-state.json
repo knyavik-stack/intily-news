@@ -454,12 +454,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788661245.3197696,
+    "last_start_ts": 1788661602.6011138,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788661245.3197696,
-    "last_success_ts": 1788661245.3197696,
-    "last_candidates": 13,
+    "last_run_ts": 1788661602.6011138,
+    "last_success_ts": 1788661602.6011138,
+    "last_candidates": 12,
     "last_published": 0,
     "queue_size": 0
   },
@@ -481,13 +481,6 @@
     }
   },
   "stories": {
-    "e09b60566453a7067efb0b2b0a3fe97bc9abd851b9f8d21aef0aaf57b0977f75": {
-      "time": 1788575002,
-      "title": "OpenAI, Anthropic, Google and Meta All Ship New Models — With the Same Catch - Wowtale",
-      "desc": "OpenAI, Anthropic, Google and Meta All Ship New Models — With the Same Catch Wowtale",
-      "source": "Wowtale",
-      "region": "WORLD"
-    },
     "2aae95a84de08071c1a6a2de00c7835643a83b085e69ce509e3461a7ff433af8": {
       "time": 1788575419,
       "title": "Is your cybersecurity ready for frontier AI? - NTT Data",
@@ -847,7 +840,7 @@
     "RUSSIA",
     "WORLD"
   ],
-  "last_search_ts": 1788661245.3197696,
+  "last_search_ts": 1788661602.6011138,
   "last_publish_ts": 1788660281.646836,
   "run_history": [
     {
@@ -2666,6 +2659,33 @@
       "business_reason": "empty_queue_after_filters",
       "searched": true,
       "candidates": 13,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788661602,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "empty_queue_after_filters",
+      "searched": true,
+      "candidates": 12,
       "queue_before": 0,
       "queue_after": 0,
       "published": 0,
