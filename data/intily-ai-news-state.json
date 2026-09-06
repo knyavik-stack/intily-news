@@ -487,18 +487,37 @@
     "5125e0464e409f7881afd1de384a0ff40a53b8fcea2479a9ea9d5e97561e0400": 1788691720.3085623,
     "4749303661c8eeecc479c3e4d1322d3d12b3ca6a61a761d413396a086f11e5aa": 1788692024.3129845,
     "23c156b52fe2052ef9ebc9214d10e9b5ea9af725fca091bc199b02267fe589f4": 1788693283.8283527,
-    "1abea05a31fb63fb23a2659b834fb96d6036fa1e6fd34bf3c83858c4e856cb9b": 1788694002.8049405
+    "1abea05a31fb63fb23a2659b834fb96d6036fa1e6fd34bf3c83858c4e856cb9b": 1788694002.8049405,
+    "418cf7359d01c7e9186fe8e5abeab2e2c8a8df36dfed3a94184a21e77de67963": 1788694123.1437366
   },
-  "queue": [],
+  "queue": [
+    {
+      "region": "RUSSIA",
+      "title": "Обзор Voiceflow: визуальная среда для проектирования диалоговых агентов - quasa.io",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNaUtQWUsyaFBmalRGNlRRQXVOQm5NU19wUVJiR2dPQ01iYlROT0xKU0UxZ3VJdGcwRDdPaFhTNzRHUDRjWm5tVl9xdDZXemY5NGpVbmRQTUxOdC11b3lXbU1lb0xUdlotXzE1Q05YQmdYRVVZTFdiSG9sYTZ4RGJQRHZjV1JVUmdjOWxZR3pYUmJ2cTBheTRieFowSzFsNVU?oc=5",
+      "desc": "Обзор Voiceflow: визуальная среда для проектирования диалоговых агентов quasa.io",
+      "source": "quasa.io",
+      "time": 1788692892.0,
+      "score": 76.2,
+      "russia_weight_bonus": 3.7,
+      "key": "418cf7359d01c7e9186fe8e5abeab2e2c8a8df36dfed3a94184a21e77de67963",
+      "importance": 76.2,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents"
+      ],
+      "tier": "A"
+    }
+  ],
   "health": {
-    "last_start_ts": 1788694002.8049405,
+    "last_start_ts": 1788694123.1437366,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788694002.8049405,
-    "last_success_ts": 1788694002.8049405,
-    "last_candidates": 28,
-    "last_published": 1,
-    "queue_size": 0
+    "last_run_ts": 1788694123.1437366,
+    "last_success_ts": 1788694123.1437366,
+    "last_candidates": 31,
+    "last_published": 0,
+    "queue_size": 1
   },
   "providers": {
     "GEMINI": {
@@ -1185,36 +1204,9 @@
     "WORLD",
     "WORLD"
   ],
-  "last_search_ts": 1788694002.8049405,
+  "last_search_ts": 1788694123.1437366,
   "last_publish_ts": 1788694002.8049405,
   "run_history": [
-    {
-      "ts": 1788658543,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "publish_interval_not_reached",
-      "searched": true,
-      "candidates": 14,
-      "queue_before": 1,
-      "queue_after": 1,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788658663,
       "status": "OK",
@@ -9549,6 +9541,79 @@
           "GEMINI"
         ],
         "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788694123,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": true,
+      "duration_sec": 12.43,
+      "candidates": 31,
+      "queue_before": 0,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 27,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 1,
+        "candidate_count": 31,
+        "admission_rate": 3.23,
+        "dominant_block": "published_key"
+      },
+      "rss": {
+        "queries_attempted": 31,
+        "queries_ok": 31,
+        "query_errors": 0,
+        "direct_feeds_attempted": 8,
+        "direct_feeds_ok": 7,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 8,
+        "raw_items": 181,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 8
+        },
+        "score_filtered": 148,
+        "quality_filtered": 0,
+        "story_dedup": 2,
+        "candidates": 31,
+        "candidate_rate": 0.1792
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
