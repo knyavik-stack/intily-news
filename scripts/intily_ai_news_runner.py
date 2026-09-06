@@ -39,7 +39,6 @@ def apply_policy(publisher):
     publisher.score = score
     publisher.IMPORTANCE_THRESHOLD = THRESHOLD
 
-    # CNews and TechCult are Russian publishers; Euronews is international.
     extra_feeds = [
         ('RUSSIA', 'CNews', 'https://www.cnews.ru/inc/rss/news.xml'),
         ('RUSSIA', 'TechCult', 'https://techcult.ru/feed'),
@@ -61,9 +60,6 @@ def apply_policy(publisher):
         return result
 
     publisher.collect = collect_with_telemetry
-
-    # Geography is publication priority, not editorial quality. Remove the
-    # legacy random RU score bonus and disable its inverted branch.
     publisher.RUSSIA_WEIGHT_BONUS_MIN = 0.0
     publisher.RUSSIA_WEIGHT_BONUS_MAX = 0.0
     publisher.RUSSIA_TARGET_SHARE = -1.0
@@ -87,14 +83,8 @@ def apply_image_delivery(publisher):
     from intily_image_pipeline import publish_with_optional_image
 
     publisher._cycle_image_telemetry = {
-        'attempts': 0,
-        'found': 0,
-        'validated': 0,
-        'photo_sent': 0,
-        'text_fallback': 0,
-        'fallback_reasons': {},
-        'sources': {},
-        'last': None,
+        'attempts': 0, 'found': 0, 'validated': 0, 'photo_sent': 0,
+        'text_fallback': 0, 'fallback_reasons': {}, 'sources': {}, 'last': None,
     }
 
     def register(telemetry):
@@ -114,12 +104,9 @@ def apply_image_delivery(publisher):
             reason = str(telemetry.get('error') or 'unknown')[:160]
             stats['fallback_reasons'][reason] = stats['fallback_reasons'].get(reason, 0) + 1
         stats['last'] = {
-            'status': status,
-            'method': telemetry.get('method'),
-            'source_url': telemetry.get('source_url'),
-            'image_url': telemetry.get('url'),
-            'width': telemetry.get('width'),
-            'height': telemetry.get('height'),
+            'status': status, 'method': telemetry.get('method'),
+            'source_url': telemetry.get('source_url'), 'image_url': telemetry.get('url'),
+            'width': telemetry.get('width'), 'height': telemetry.get('height'),
             'error': telemetry.get('error'),
         }
 
@@ -148,5 +135,13 @@ def apply_image_delivery(publisher):
         telemetry = publish_with_optional_image(text, article_url, token, chat_id, original_telegram)
         register(telemetry)
         publisher._last_image_telemetry = telemetry
+        return None
 
     publisher.telegram = telegram_with_image
+
+
+if __name__ == '__main__':
+    publisher = importlib.import_module('intily_ai_news')
+    apply_policy(publisher)
+    apply_image_delivery(publisher)
+    publisher.main()
