@@ -454,11 +454,11 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788660401.673443,
+    "last_start_ts": 1788660523.2703853,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788660401.673443,
-    "last_success_ts": 1788660401.673443,
+    "last_run_ts": 1788660523.2703853,
+    "last_success_ts": 1788660523.2703853,
     "last_candidates": 13,
     "last_published": 0,
     "queue_size": 0
@@ -481,13 +481,6 @@
     }
   },
   "stories": {
-    "b218a5eaa8e6cfbc744baf3d38f8b40d8f7b68c79c6b14247eaec0ef96bd85d8": {
-      "time": 1788574041,
-      "title": "ИИ-агент M**a во время тестов начал самовольничать — менял пароли и отправлял письма от имени пользователей - prospect.com.ru",
-      "desc": "ИИ-агент M**a во время тестов начал самовольничать — менял пароли и отправлял письма от имени пользователей prospect.com.ru",
-      "source": "prospect.com.ru",
-      "region": "RUSSIA"
-    },
     "644df3b525ca77e77dce33306f0b56f18c74d9d42fc8d159689dc1b1455bf984": {
       "time": 1788574341,
       "title": "Nvidia Invests $3.5 Billion in MediaTek: What Is Jensen Huang Eyeing? - tradingkey.com",
@@ -868,7 +861,7 @@
     "RUSSIA",
     "WORLD"
   ],
-  "last_search_ts": 1788660401.673443,
+  "last_search_ts": 1788660523.2703853,
   "last_publish_ts": 1788660281.646836,
   "run_history": [
     {
@@ -2523,6 +2516,33 @@
       "status": "OK",
       "business_result": "NO_PUBLISH",
       "business_reason": "publish_interval_not_reached",
+      "searched": true,
+      "candidates": 13,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788660523,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "empty_queue_after_filters",
       "searched": true,
       "candidates": 13,
       "queue_before": 0,
