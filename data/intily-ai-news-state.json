@@ -440,7 +440,6 @@
     "3e878ea1ed9620bb19976214e4b865a313c9057ec15e5d7ff99d35444fc73c72": 1788676127
   },
   "known": {
-    "2501312cb900d36193be26f8d1d5d14a6cb4b94fc71e85fb6d6e995fd7bc18c6": 1788655247.3031325,
     "23680cf93362f932f9a0697f3026a409cf8fcca4d23728da62aecc5409adce57": 1788657346.009018,
     "ee90a19bd8384baf728b539baee88a111e17115a68fdf29a684f53df27dcb536": 1788658482.210256,
     "c09e395a0b2a370828cb8197ab866fa7d01caaf9b360ced8dada72475b3a3d0a": 1788658482.210256,
@@ -469,12 +468,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788676846.5018916,
+    "last_start_ts": 1788677022.4425404,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788676846.5018916,
-    "last_success_ts": 1788676846.5018916,
-    "last_candidates": 15,
+    "last_run_ts": 1788677022.4425404,
+    "last_success_ts": 1788677022.4425404,
+    "last_candidates": 14,
     "last_published": 0,
     "queue_size": 0
   },
@@ -904,7 +903,7 @@
     "RUSSIA",
     "WORLD"
   ],
-  "last_search_ts": 1788676846.5018916,
+  "last_search_ts": 1788677022.4425404,
   "last_publish_ts": 1788676127.6923954,
   "run_history": [
     {
@@ -4829,6 +4828,33 @@
       "business_reason": "empty_queue_after_filters",
       "searched": true,
       "candidates": 15,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788677022,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "empty_queue_after_filters",
+      "searched": true,
+      "candidates": 14,
       "queue_before": 0,
       "queue_after": 0,
       "published": 0,
