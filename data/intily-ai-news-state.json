@@ -468,18 +468,37 @@
     "bfd2987e3b4ba8dbd5b6f886cd1d66c988e27118cfda2e4996d7248026fb0310": 1788675883.2781706,
     "3e878ea1ed9620bb19976214e4b865a313c9057ec15e5d7ff99d35444fc73c72": 1788675945.5771945,
     "a7b09f36be807f2e4039c6ac4b2934df0eb74f22d8e160219bd60b8b3f8386a5": 1788677631.5772247,
-    "d4daca3c2b528ebfa449e85336f1c9451cf96395aaf301a2b030f61ad0f8fe51": 1788677984.142086
+    "d4daca3c2b528ebfa449e85336f1c9451cf96395aaf301a2b030f61ad0f8fe51": 1788677984.142086,
+    "d302568016764ba9247e6ea32a569e5239fb400a040ccd6036df6035436bee4b": 1788678050.2563474
   },
-  "queue": [],
+  "queue": [
+    {
+      "region": "WORLD",
+      "title": "Meta prepares Hatch AI agent as Zuckerberg looks to finally monetize its huge AI spending - Business Upturn",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNRFM4RzZvX0xMRFl3bC1MREc1U3cwWHZXb2FEdzh2Vms4cnNoTFc1VGVLdUhSTUliTk5qczF4bFBDUUg2U2FqbmJseDM4b0k2SmxCQ2pqb3lLd1NJNHNZdEk1WkhKV0k0ZFNuUzR3YktPMHphMTR2RzFPdkRidVpzN2pOTVN4YUtNTjdtVnpNcjFESEFVVng0Y3lDZDlDVmF4TTBFdVh4V0dxR3RJOG1yT2VHNGtHS0dmaTZYRWg5LVYxQXRFWkh2T0duR1pFeGZV?oc=5",
+      "desc": "Meta prepares Hatch AI agent as Zuckerberg looks to finally monetize its huge AI spending Business Upturn",
+      "source": "Business Upturn",
+      "time": 1788673020.0,
+      "score": 70.5,
+      "key": "d302568016764ba9247e6ea32a569e5239fb400a040ccd6036df6035436bee4b",
+      "importance": 70.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "business"
+      ],
+      "tier": "A"
+    }
+  ],
   "health": {
-    "last_start_ts": 1788677984.142086,
+    "last_start_ts": 1788678050.2563474,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788677984.142086,
-    "last_success_ts": 1788677984.142086,
-    "last_candidates": 16,
-    "last_published": 1,
-    "queue_size": 0
+    "last_run_ts": 1788678050.2563474,
+    "last_success_ts": 1788678050.2563474,
+    "last_candidates": 17,
+    "last_published": 0,
+    "queue_size": 1
   },
   "providers": {
     "GEMINI": {
@@ -921,7 +940,7 @@
     "WORLD",
     "WORLD"
   ],
-  "last_search_ts": 1788677984.142086,
+  "last_search_ts": 1788678050.2563474,
   "last_publish_ts": 1788677984.142086,
   "run_history": [
     {
@@ -4958,6 +4977,33 @@
       "queue_after": 0,
       "published": 1,
       "publish_attempts": 1,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788678050,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": true,
+      "candidates": 17,
+      "queue_before": 0,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 0,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
