@@ -601,11 +601,11 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788726999.1953208,
+    "last_start_ts": 1788727061.1387045,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788726999.1953208,
-    "last_success_ts": 1788726999.1953208,
+    "last_run_ts": 1788727061.1387045,
+    "last_success_ts": 1788727061.1387045,
     "last_candidates": 3,
     "last_published": 0,
     "queue_size": 0
@@ -1743,60 +1743,9 @@
     "RUSSIA",
     "RUSSIA"
   ],
-  "last_search_ts": 1788726999.1953208,
+  "last_search_ts": 1788727061.1387045,
   "last_publish_ts": 1788726339.4989982,
   "run_history": [
-    {
-      "ts": 1788686744,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 2.99,
-      "candidates": 0,
-      "queue_before": 2,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key"
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788686803,
       "status": "OK",
@@ -14175,6 +14124,102 @@
           "40–49": 111,
           "50–59": 30,
           "60–69": 5,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        }
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788727061,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 26.19,
+      "candidates": 3,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 3,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 3,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        }
+      },
+      "rss": {
+        "queries_attempted": 45,
+        "queries_ok": 45,
+        "query_errors": 0,
+        "direct_feeds_attempted": 11,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 3,
+        "direct_raw_items": 7,
+        "raw_items": 490,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 3,
+          "CNews": 0,
+          "TechCult": -1,
+          "Euronews": -1
+        },
+        "score_filtered": 486,
+        "quality_filtered": 0,
+        "story_dedup": 1,
+        "candidates": 3,
+        "candidate_rate": 0.0062,
+        "score_buckets": {
+          "0–39": 367,
+          "40–49": 92,
+          "50–59": 27,
+          "60–69": 4,
           "70–79": 0,
           "80–84": 0,
           "85–89": 0,
