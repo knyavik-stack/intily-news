@@ -450,27 +450,6 @@
     "08d3b5d34037d848f9a007172288e0b2f9af7d0e2fe59eaab4d4c71bb6823b6e": 1788682363
   },
   "known": {
-    "ee747d04e445ab76e047c781fd0876b88cba00653868401b64968683c53cd6fd": 1788661661.8857415,
-    "a375e2a6233fcce62758173a7ba6f1cbd1425c0db20cdd0f12d9a273d4d8aee5": 1788661962.9189608,
-    "b8026be6d6962cbac41d32e3679a5b9688d53b08c68adbf93574342636e5bef8": 1788662202.5986264,
-    "289f9c318942504cd94e007596e263d34629af298c7be8f6f48877fc92f7f602": 1788664545.4511886,
-    "f91c6395c4c1bed17bc967efe378ac1efb3c06002ae9f2115052749dc3429a69": 1788664961.7353408,
-    "25b53eea0832e67927f22f145cda4906489ca1d328067230f97c366ad886dabf": 1788665984.6432886,
-    "008d819d5bf60765de7aab9e05065f3ae15e3e21f0f17e51b613a70a6944bff2": 1788666644.9310236,
-    "354944ff0006f32544350a698f7ebfb21d0e65b5b6aa0212725f83c27ddc0b5e": 1788667902.135169,
-    "31095f323879538db443349dfdd4fc7f2d74c8bbe4a6cb01c35c09fffcdf4d44": 1788668021.9100966,
-    "0fc5cb93dfa5f6d495b4ad2b0f31e1c337dcda0ffa4aa044ff7412dfdd3483f9": 1788668203.929261,
-    "b0fe501f8ec136564285ef5a67699e0e08f5c4973c523878833406479597030e": 1788668203.929261,
-    "0b4eee73fd071de06b056e4a4d832f2f183206e7906d75232e1f3c90cdbf332c": 1788668803.5655146,
-    "2ab000870330a261883c9b5803f4295e3be007bf2b60810e19425a9e60074d21": 1788669703.714173,
-    "e1ad94b7b6b28c5bae370aa412ae3e635c00a2adf4db7229d7f43ce7cd8fae31": 1788672104.188662,
-    "50f699f2fb53019dc1796c7bcb1f025387963d39cd471276414768b99a07ad2e": 1788673484.0600832,
-    "0a277972872c7f7bb433f8f864633eecd7c7278c385a42bae40acb89e8ee9ecf": 1788673484.0600832,
-    "ec851f8d1e5d4bceccc86a1814e0cc91a88f737ade54607556ea25623f7d7134": 1788673484.0600832,
-    "d02d082cb067dd79bf4c3a173f4c052bb4cc73c35a7f76f41ec1fb67904f48e1": 1788674563.5758295,
-    "bfd2987e3b4ba8dbd5b6f886cd1d66c988e27118cfda2e4996d7248026fb0310": 1788675883.2781706,
-    "3e878ea1ed9620bb19976214e4b865a313c9057ec15e5d7ff99d35444fc73c72": 1788675945.5771945,
-    "a7b09f36be807f2e4039c6ac4b2934df0eb74f22d8e160219bd60b8b3f8386a5": 1788677631.5772247,
     "d4daca3c2b528ebfa449e85336f1c9451cf96395aaf301a2b030f61ad0f8fe51": 1788677984.142086,
     "d302568016764ba9247e6ea32a569e5239fb400a040ccd6036df6035436bee4b": 1788678050.2563474,
     "f39f395d792404cd937fc33b090220c6ad0052fbb0975e63e6f50863205faf78": 1788678345.1069558,
@@ -483,12 +462,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788683022.3200097,
+    "last_start_ts": 1788683115.5792656,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788683022.3200097,
-    "last_success_ts": 1788683022.3200097,
-    "last_candidates": 17,
+    "last_run_ts": 1788683115.5792656,
+    "last_success_ts": 1788683115.5792656,
+    "last_candidates": 19,
     "last_published": 0,
     "queue_size": 0
   },
@@ -988,7 +967,7 @@
     "RUSSIA",
     "RUSSIA"
   ],
-  "last_search_ts": 1788683022.3200097,
+  "last_search_ts": 1788683115.5792656,
   "last_publish_ts": 1788682363.501088,
   "run_history": [
     {
@@ -5809,6 +5788,64 @@
       "published": 0,
       "publish_attempts": 0,
       "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788683115,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 10.08,
+      "candidates": 19,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 17,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {
+        "queries_attempted": 31,
+        "queries_ok": 31,
+        "query_errors": 0,
+        "raw_items": 125,
+        "score_filtered": 105,
+        "quality_filtered": 0,
+        "story_dedup": 1,
+        "candidates": 19,
+        "candidate_rate": 0.152
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
       "provider_state": {
         "GEMINI": {
           "blocked": false,
