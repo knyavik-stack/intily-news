@@ -610,13 +610,13 @@
         "source_quality": 4.0,
         "evidence": 2.6,
         "freshness": 4.9,
-        "timeliness": 4.6,
+        "timeliness": 4.5,
         "low_signal_penalty": 0.0
       },
-      "score": 47.1,
+      "score": 47.0,
       "key": "bbb88397889c0b0064be814734ed2b08d940d1bc05b3fb81b48d64d8371a5526",
-      "importance": 47.1,
-      "editorial_value": 49.1,
+      "importance": 47.0,
+      "editorial_value": 49.0,
       "topics": [
         "business"
       ],
@@ -815,13 +815,13 @@
         "source_quality": 4.0,
         "evidence": 2.0,
         "freshness": 3.8,
-        "timeliness": 0.1,
+        "timeliness": 0.0,
         "low_signal_penalty": 0.0
       },
-      "score": 44.9,
+      "score": 44.8,
       "key": "2bf2916d7836fcff34103bfc61d38f7fa304555ed6680193c3b0a22ceb4f29f1",
-      "importance": 44.9,
-      "editorial_value": 46.9,
+      "importance": 44.8,
+      "editorial_value": 46.8,
       "topics": [],
       "tier": "A"
     },
@@ -888,13 +888,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788724660.6365335,
+    "last_start_ts": 1788724720.8581126,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788724660.6365335,
-    "last_success_ts": 1788724660.6365335,
+    "last_run_ts": 1788724720.8581126,
+    "last_success_ts": 1788724720.8581126,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 10
   },
   "providers": {
@@ -1998,79 +1998,6 @@
   "last_search_ts": 1788723219.5538895,
   "last_publish_ts": 1788724660.6365335,
   "run_history": [
-    {
-      "ts": 1788684523,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "publish_interval_not_reached",
-      "searched": true,
-      "duration_sec": 12.2,
-      "candidates": 19,
-      "queue_before": 1,
-      "queue_after": 1,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 16,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 3,
-        "added": 0,
-        "candidate_count": 19,
-        "admission_rate": 0.0,
-        "dominant_block": "candidate_count"
-      },
-      "rss": {
-        "queries_attempted": 31,
-        "queries_ok": 31,
-        "query_errors": 0,
-        "direct_feeds_attempted": 8,
-        "direct_feeds_ok": 7,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 10,
-        "raw_items": 143,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 9
-        },
-        "score_filtered": 123,
-        "quality_filtered": 0,
-        "story_dedup": 1,
-        "candidates": 19,
-        "candidate_rate": 0.1429
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788684582,
       "status": "OK",
@@ -14476,6 +14403,65 @@
           "GEMINI"
         ],
         "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788724720,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": false,
+      "duration_sec": 0.09,
+      "candidates": 0,
+      "queue_before": 10,
+      "queue_after": 10,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
