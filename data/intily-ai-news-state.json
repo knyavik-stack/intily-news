@@ -417,7 +417,8 @@
     "c09e395a0b2a370828cb8197ab866fa7d01caaf9b360ced8dada72475b3a3d0a": 1788658482,
     "ee90a19bd8384baf728b539baee88a111e17115a68fdf29a684f53df27dcb536": 1788658663,
     "a11029a880914b5769952364e57e21ac810b3b63704c0f3b81b98b1daf150308": 1788658901,
-    "cb24a8820e1960fd26ca6242a4222d1726d5f5eb7b628006c136a070c47ab835": 1788660281
+    "cb24a8820e1960fd26ca6242a4222d1726d5f5eb7b628006c136a070c47ab835": 1788660281,
+    "ee747d04e445ab76e047c781fd0876b88cba00653868401b64968683c53cd6fd": 1788661661
   },
   "known": {
     "d6dc4d7664f40cf611eea61f0d87e16c501700dc35ce4f5afb6977988bc1c37b": 1788647378.635233,
@@ -450,24 +451,25 @@
     "ee90a19bd8384baf728b539baee88a111e17115a68fdf29a684f53df27dcb536": 1788658482.210256,
     "c09e395a0b2a370828cb8197ab866fa7d01caaf9b360ced8dada72475b3a3d0a": 1788658482.210256,
     "a11029a880914b5769952364e57e21ac810b3b63704c0f3b81b98b1daf150308": 1788658783.397171,
-    "cb24a8820e1960fd26ca6242a4222d1726d5f5eb7b628006c136a070c47ab835": 1788660281.646836
+    "cb24a8820e1960fd26ca6242a4222d1726d5f5eb7b628006c136a070c47ab835": 1788660281.646836,
+    "ee747d04e445ab76e047c781fd0876b88cba00653868401b64968683c53cd6fd": 1788661661.8857415
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788661602.6011138,
+    "last_start_ts": 1788661661.8857415,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788661602.6011138,
-    "last_success_ts": 1788661602.6011138,
-    "last_candidates": 12,
-    "last_published": 0,
+    "last_run_ts": 1788661661.8857415,
+    "last_success_ts": 1788661661.8857415,
+    "last_candidates": 14,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788660294.7326148
+      "updated_at": 1788661673.5320015
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -816,10 +818,16 @@
       "desc": "Is there an AI bubble? Don’t worry, just ask my robot AFR",
       "source": "AFR",
       "region": "WORLD"
+    },
+    "ee747d04e445ab76e047c781fd0876b88cba00653868401b64968683c53cd6fd": {
+      "time": 1788661661,
+      "title": "Fable 5.1 restarts frontier competition with fewer interruptions and new cost tradeoffs - The Rundown AI",
+      "desc": "Fable 5.1 restarts frontier competition with fewer interruptions and new cost tradeoffs The Rundown AI",
+      "source": "The Rundown AI",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -838,10 +846,11 @@
     "WORLD",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD"
   ],
-  "last_search_ts": 1788661602.6011138,
-  "last_publish_ts": 1788660281.646836,
+  "last_search_ts": 1788661661.8857415,
+  "last_publish_ts": 1788661661.8857415,
   "run_history": [
     {
       "ts": 1788649810,
@@ -2690,6 +2699,33 @@
       "queue_after": 0,
       "published": 0,
       "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788661661,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "candidates": 14,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
