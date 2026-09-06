@@ -34,7 +34,9 @@ def sums(data):
     attempts = sum(int(r.get('publish_attempts', 0) or 0) for r in data)
     failures = sum(int(r.get('item_failures', 0) or 0) for r in data)
     candidates = sum(int(r.get('candidates', 0) or 0) for r in data)
-    added = sum(int(r.get('admission', {}).get('added', 0) or 0) for r in data)
+    admission_rows = [r for r in data if r.get('admission')]
+    observed_candidates = sum(int(r.get('admission', {}).get('candidate_count', r.get('candidates', 0)) or 0) for r in admission_rows)
+    added = sum(int(r.get('admission', {}).get('added', 0) or 0) for r in admission_rows)
     no_publish = sum(1 for r in data if r.get('business_result') == 'NO_PUBLISH')
     no_publish_reasons = {}
     admission_blocks = {}
@@ -77,8 +79,8 @@ def sums(data):
         'failure_rate': failures/max(1,attempts)*100,
         'no_publish': no_publish, 'no_publish_rate': no_publish/max(1,len(data))*100,
         'no_publish_reasons': no_publish_reasons,
-        'admission_candidates': candidates, 'admission_added': added,
-        'admission_rate': added/max(1,candidates)*100,
+        'admission_candidates': observed_candidates, 'admission_added': added,
+        'admission_rate': added/max(1,observed_candidates)*100,
         'admission_blocks': admission_blocks,
         'rss_raw': rss_raw, 'rss_errors': rss_errors, 'direct_raw': direct_raw, 'direct_errors': direct_errors, 'source_counts': source_counts,
         'rss_error_rate': rss_errors/max(1,rss_attempts)*100,

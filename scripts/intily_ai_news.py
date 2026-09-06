@@ -1819,6 +1819,9 @@ def kpi_summary(s, now):
         rss = [r.get('rss', {}) for r in rows if r.get('rss')]
         admission = [r.get('admission', {}) for r in rows if r.get('admission')]
         providers = [r.get('provider', {}) for r in rows if r.get('provider')]
+        observed_candidates = sum(int(a.get('candidate_count', 0) or 0) for a in admission)
+        if not observed_candidates:
+            observed_candidates = sum(int(r.get('candidates', 0) or 0) for r in rows if r.get('admission'))
         added = sum(int(a.get('added', 0) or 0) for a in admission)
         no_publish = sum(1 for r in rows if r.get('business_result') == 'NO_PUBLISH')
         freq = pubs / (len(rows) / 12) if rows else 0.0
@@ -1846,8 +1849,8 @@ def kpi_summary(s, now):
             'queue_avg': round(sum(q_after)/len(q_after),2) if q_after else 0,
             'queue_max': int(max(q_after)) if q_after else 0,
             'queue_velocity_avg': round(sum(q_delta)/len(q_delta),2) if q_delta else 0,
-            'admission_candidates': candidates, 'admission_added': added,
-            'admission_rate': round(added/max(1,candidates)*100,2),
+            'admission_candidates': observed_candidates, 'admission_added': added,
+            'admission_rate': round(added/max(1,observed_candidates)*100,2),
             'rss_raw_items': sum(int(x.get('raw_items',0) or 0) for x in rss),
             'rss_query_errors': sum(int(x.get('query_errors',0) or 0) for x in rss),
             'rss_query_error_rate': round(sum(int(x.get('query_errors',0) or 0) for x in rss)/max(1,sum(int(x.get('queries_attempted',0) or 0) for x in rss))*100,2),
@@ -1918,6 +1921,7 @@ def main():
 
     queue = rebalance_queue(queue, now)
     counts = region_counts(queue)
+    admission['candidate_count'] = len(candidates)
     admission['admission_rate'] = round(admission['added'] / max(1, len(candidates)) * 100, 2)
     admission['dominant_block'] = max(
         (k for k in admission if k not in ('added', 'admission_rate')),
