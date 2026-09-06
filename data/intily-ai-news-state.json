@@ -451,8 +451,6 @@
     "bb4b4e66f7a1d01bebd81f68ed2a64b53527e8c66885aa21fe285cfbba96d097": 1788683341
   },
   "known": {
-    "d4daca3c2b528ebfa449e85336f1c9451cf96395aaf301a2b030f61ad0f8fe51": 1788677984.142086,
-    "d302568016764ba9247e6ea32a569e5239fb400a040ccd6036df6035436bee4b": 1788678050.2563474,
     "f39f395d792404cd937fc33b090220c6ad0052fbb0975e63e6f50863205faf78": 1788678345.1069558,
     "8a4fe2445d1fddf02f35470f6c6eee4e476441494783e53f8d312f92144c495d": 1788678345.1069558,
     "1464a5fc171e04ca7316fdccdfdc3f4f96fe86229c695822473f42a4276305f8": 1788678763.6180534,
@@ -497,13 +495,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788683341.5038276,
+    "last_start_ts": 1788683503.6756418,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788683341.5038276,
-    "last_success_ts": 1788683341.5038276,
-    "last_candidates": 22,
-    "last_published": 1,
+    "last_run_ts": 1788683503.6756418,
+    "last_success_ts": 1788683503.6756418,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 2
   },
   "providers": {
@@ -6014,6 +6012,55 @@
           "GEMINI"
         ],
         "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788683503,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": false,
+      "duration_sec": 0.0,
+      "candidates": 0,
+      "queue_before": 2,
+      "queue_after": 2,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
