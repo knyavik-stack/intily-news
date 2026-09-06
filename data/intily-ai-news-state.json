@@ -468,12 +468,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788677082.3703423,
+    "last_start_ts": 1788677394.3923376,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788677082.3703423,
-    "last_success_ts": 1788677082.3703423,
-    "last_candidates": 15,
+    "last_run_ts": 1788677394.3923376,
+    "last_success_ts": 1788677394.3923376,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 0
   },
@@ -903,7 +903,7 @@
     "RUSSIA",
     "WORLD"
   ],
-  "last_search_ts": 1788677082.3703423,
+  "last_search_ts": 1788677394.3923376,
   "last_publish_ts": 1788676127.6923954,
   "run_history": [
     {
@@ -4882,6 +4882,33 @@
       "business_reason": "empty_queue_after_filters",
       "searched": true,
       "candidates": 15,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788677394,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_candidates_and_empty_queue",
+      "searched": true,
+      "candidates": 0,
       "queue_before": 0,
       "queue_after": 0,
       "published": 0,
