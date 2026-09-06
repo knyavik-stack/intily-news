@@ -50,7 +50,7 @@ jobs:
       - name: Persist state and analytics
         if: always()
         run: |
-          if git diff --quiet -- data/intily-ai-news-state.json data/intily-query-intelligence.json; then
+          if [ -z "$(git status --porcelain -- data/intily-ai-news-state.json data/intily-query-intelligence.json 2>/dev/null)" ]; then
             echo 'No state or analytics changes.'
             exit 0
           fi
@@ -71,12 +71,12 @@ jobs:
             if [ -f /tmp/intily-ai-news-state.json ]; then cp /tmp/intily-ai-news-state.json data/intily-ai-news-state.json; fi
             if [ -f /tmp/intily-query-intelligence.json ]; then cp /tmp/intily-query-intelligence.json data/intily-query-intelligence.json; fi
 
-            if git diff --quiet -- data/intily-ai-news-state.json data/intily-query-intelligence.json; then
+            if [ -z "$(git status --porcelain -- data/intily-ai-news-state.json data/intily-query-intelligence.json 2>/dev/null)" ]; then
               echo 'Artifacts already match origin/main.'
               exit 0
             fi
 
-            git add data/intily-ai-news-state.json data/intily-query-intelligence.json
+            git add data/intily-ai-news-state.json data/intily-query-intelligence.json 2>/dev/null || true
             git commit -m 'chore(news): persist publisher analytics' || true
 
             if git push origin main; then
