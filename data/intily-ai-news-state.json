@@ -441,7 +441,8 @@
     "a7b09f36be807f2e4039c6ac4b2934df0eb74f22d8e160219bd60b8b3f8386a5": 1788677631,
     "d4daca3c2b528ebfa449e85336f1c9451cf96395aaf301a2b030f61ad0f8fe51": 1788677984,
     "d302568016764ba9247e6ea32a569e5239fb400a040ccd6036df6035436bee4b": 1788678285,
-    "f39f395d792404cd937fc33b090220c6ad0052fbb0975e63e6f50863205faf78": 1788678583
+    "f39f395d792404cd937fc33b090220c6ad0052fbb0975e63e6f50863205faf78": 1788678583,
+    "1464a5fc171e04ca7316fdccdfdc3f4f96fe86229c695822473f42a4276305f8": 1788678763
   },
   "known": {
     "23680cf93362f932f9a0697f3026a409cf8fcca4d23728da62aecc5409adce57": 1788657346.009018,
@@ -473,7 +474,8 @@
     "d4daca3c2b528ebfa449e85336f1c9451cf96395aaf301a2b030f61ad0f8fe51": 1788677984.142086,
     "d302568016764ba9247e6ea32a569e5239fb400a040ccd6036df6035436bee4b": 1788678050.2563474,
     "f39f395d792404cd937fc33b090220c6ad0052fbb0975e63e6f50863205faf78": 1788678345.1069558,
-    "8a4fe2445d1fddf02f35470f6c6eee4e476441494783e53f8d312f92144c495d": 1788678345.1069558
+    "8a4fe2445d1fddf02f35470f6c6eee4e476441494783e53f8d312f92144c495d": 1788678345.1069558,
+    "1464a5fc171e04ca7316fdccdfdc3f4f96fe86229c695822473f42a4276305f8": 1788678763.6180534
   },
   "queue": [
     {
@@ -495,12 +497,12 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788678583.109659,
+    "last_start_ts": 1788678763.6180534,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788678583.109659,
-    "last_success_ts": 1788678583.109659,
-    "last_candidates": 0,
+    "last_run_ts": 1788678763.6180534,
+    "last_success_ts": 1788678763.6180534,
+    "last_candidates": 14,
     "last_published": 1,
     "queue_size": 1
   },
@@ -508,7 +510,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788678585.8170495
+      "updated_at": 1788678775.0938299
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -934,10 +936,16 @@
       "desc": "Revise Chinese military university’s AI course to ‘educate for war’: researchers South China Morning Post",
       "source": "South China Morning Post",
       "region": "WORLD"
+    },
+    "1464a5fc171e04ca7316fdccdfdc3f4f96fe86229c695822473f42a4276305f8": {
+      "time": 1788678763,
+      "title": "GPT-6 Astra: A new generation of intelligence - OpenAI",
+      "desc": "GPT-6 Astra: A new generation of intelligence OpenAI",
+      "source": "OpenAI",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "RUSSIA",
@@ -952,14 +960,15 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD",
     "WORLD",
     "WORLD"
   ],
-  "last_search_ts": 1788678345.1069558,
-  "last_publish_ts": 1788678583.109659,
+  "last_search_ts": 1788678763.6180534,
+  "last_publish_ts": 1788678763.6180534,
   "run_history": [
     {
       "ts": 1788649810,
@@ -5154,6 +5163,33 @@
       "searched": false,
       "candidates": 0,
       "queue_before": 2,
+      "queue_after": 1,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788678763,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "candidates": 14,
+      "queue_before": 1,
       "queue_after": 1,
       "published": 1,
       "publish_attempts": 1,
