@@ -460,12 +460,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788662321.7332697,
+    "last_start_ts": 1788662744.0316064,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788662321.7332697,
-    "last_success_ts": 1788662321.7332697,
-    "last_candidates": 17,
+    "last_run_ts": 1788662744.0316064,
+    "last_success_ts": 1788662744.0316064,
+    "last_candidates": 15,
     "last_published": 0,
     "queue_size": 0
   },
@@ -487,13 +487,6 @@
     }
   },
   "stories": {
-    "e286e20de4cc3fd866b70c2ea84cac002bf46c015f846e3a3abdebfd9060483f": {
-      "time": 1788576139,
-      "title": "Hollywood told director Maggie Gyllenhaal to use AI to imagine Marilyn Monroe at 100 — it didn’t work - Newswav",
-      "desc": "Hollywood told director Maggie Gyllenhaal to use AI to imagine Marilyn Monroe at 100 — it didn’t work Newswav",
-      "source": "Newswav",
-      "region": "WORLD"
-    },
     "09996fad3151ec38ea10979b6f5ed283d9e959b3f31d93f6a642caaef4d5c171": {
       "time": 1788578120,
       "title": "ИИ-агенты OpenAI захватили немецкую вики и начали учить друг друга обходить ограничения - prospect.com.ru",
@@ -846,7 +839,7 @@
     "WORLD",
     "WORLD"
   ],
-  "last_search_ts": 1788662321.7332697,
+  "last_search_ts": 1788662744.0316064,
   "last_publish_ts": 1788662202.5986264,
   "run_history": [
     {
@@ -2800,6 +2793,33 @@
       "business_reason": "publish_interval_not_reached",
       "searched": true,
       "candidates": 17,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788662744,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "empty_queue_after_filters",
+      "searched": true,
+      "candidates": 15,
       "queue_before": 0,
       "queue_after": 0,
       "published": 0,
