@@ -434,7 +434,8 @@
     "e1ad94b7b6b28c5bae370aa412ae3e635c00a2adf4db7229d7f43ce7cd8fae31": 1788672104,
     "50f699f2fb53019dc1796c7bcb1f025387963d39cd471276414768b99a07ad2e": 1788673484,
     "0a277972872c7f7bb433f8f864633eecd7c7278c385a42bae40acb89e8ee9ecf": 1788674082,
-    "ec851f8d1e5d4bceccc86a1814e0cc91a88f737ade54607556ea25623f7d7134": 1788674263
+    "ec851f8d1e5d4bceccc86a1814e0cc91a88f737ade54607556ea25623f7d7134": 1788674263,
+    "d02d082cb067dd79bf4c3a173f4c052bb4cc73c35a7f76f41ec1fb67904f48e1": 1788674563
   },
   "known": {
     "a930f6e9782840d2c0f5a0babab62b55875023b54f592b4752620f11458b39e3": 1788653144.8727803,
@@ -463,16 +464,17 @@
     "e1ad94b7b6b28c5bae370aa412ae3e635c00a2adf4db7229d7f43ce7cd8fae31": 1788672104.188662,
     "50f699f2fb53019dc1796c7bcb1f025387963d39cd471276414768b99a07ad2e": 1788673484.0600832,
     "0a277972872c7f7bb433f8f864633eecd7c7278c385a42bae40acb89e8ee9ecf": 1788673484.0600832,
-    "ec851f8d1e5d4bceccc86a1814e0cc91a88f737ade54607556ea25623f7d7134": 1788673484.0600832
+    "ec851f8d1e5d4bceccc86a1814e0cc91a88f737ade54607556ea25623f7d7134": 1788673484.0600832,
+    "d02d082cb067dd79bf4c3a173f4c052bb4cc73c35a7f76f41ec1fb67904f48e1": 1788674563.5758295
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788674263.3584743,
+    "last_start_ts": 1788674563.5758295,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788674263.3584743,
-    "last_success_ts": 1788674263.3584743,
-    "last_candidates": 13,
+    "last_run_ts": 1788674563.5758295,
+    "last_success_ts": 1788674563.5758295,
+    "last_candidates": 12,
     "last_published": 1,
     "queue_size": 0
   },
@@ -480,7 +482,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788674274.9188385
+      "updated_at": 1788674575.8909383
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -857,11 +859,17 @@
       "desc": "Foxconn Q3 Results: AI demand lifts outlook, Aug revenue hits record scanx.trade",
       "source": "scanx.trade",
       "region": "WORLD"
+    },
+    "d02d082cb067dd79bf4c3a173f4c052bb4cc73c35a7f76f41ec1fb67904f48e1": {
+      "time": 1788674563,
+      "title": "U.S. Deploys GPU Exports as Diplomatic Bargaining Chip - 조선일보",
+      "desc": "U.S. Deploys GPU Exports as Diplomatic Bargaining Chip 조선일보",
+      "source": "조선일보",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -875,14 +883,15 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD",
     "WORLD",
     "WORLD"
   ],
-  "last_search_ts": 1788674263.3584743,
-  "last_publish_ts": 1788674263.3584743,
+  "last_search_ts": 1788674563.5758295,
+  "last_publish_ts": 1788674563.5758295,
   "run_history": [
     {
       "ts": 1788649810,
@@ -4429,6 +4438,33 @@
       "searched": true,
       "candidates": 13,
       "queue_before": 1,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788674563,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "candidates": 12,
+      "queue_before": 0,
       "queue_after": 0,
       "published": 1,
       "publish_attempts": 1,
