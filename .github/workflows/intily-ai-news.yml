@@ -20,10 +20,10 @@ jobs:
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
-      - name: Validate analytics code
+      - name: Проверка аналитики
         run: |
           python3 -m py_compile scripts/intily_cycle_intelligence.py scripts/intily_monitor.py scripts/intily_search_monitor.py
-      - name: Run news engine
+      - name: Запуск новостного движка
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -36,25 +36,18 @@ jobs:
           set -o pipefail
           timeout 240s python3 scripts/intily_ai_news.py 2>&1 | tee /tmp/intily-publisher.log
 
-      - name: Текущая аналитика поиска
+      - name: Аналитика текущего запуска
         if: always()
         continue-on-error: true
         run: |
-          python3 scripts/intily_cycle_intelligence.py | tee /tmp/intily-search-intelligence.md
-          cat /tmp/intily-search-intelligence.md >> "$GITHUB_STEP_SUMMARY"
+          python3 scripts/intily_cycle_intelligence.py | tee /tmp/intily-current-analytics.md
+          cat /tmp/intily-current-analytics.md >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Production KPI summary
-        if: always()
-        continue-on-error: true
-        run: |
-          python3 scripts/intily_monitor.py | tee /tmp/intily-kpi.md
-          cat /tmp/intily-kpi.md >> "$GITHUB_STEP_SUMMARY"
-
-      - name: Persist state and analytics
+      - name: Сохранение состояния и аналитики
         if: always()
         run: |
           if [ -z "$(git status --porcelain -- data/intily-ai-news-state.json data/intily-query-intelligence.json 2>/dev/null)" ]; then
-            echo 'No state or analytics changes.'
+            echo 'Нет изменений состояния или аналитики.'
             exit 0
           fi
 
@@ -65,14 +58,14 @@ jobs:
           cp data/intily-query-intelligence.json /tmp/intily-query-intelligence.json 2>/dev/null || true
 
           for attempt in 1 2 3; do
-            echo "Persist attempt $attempt"
+            echo "Попытка сохранения $attempt"
             git fetch origin main
             git reset --hard origin/main
             if [ -f /tmp/intily-ai-news-state.json ]; then cp /tmp/intily-ai-news-state.json data/intily-ai-news-state.json; fi
             if [ -f /tmp/intily-query-intelligence.json ]; then cp /tmp/intily-query-intelligence.json data/intily-query-intelligence.json; fi
 
             if [ -z "$(git status --porcelain -- data/intily-ai-news-state.json data/intily-query-intelligence.json 2>/dev/null)" ]; then
-              echo 'Artifacts already match origin/main.'
+              echo 'Файлы уже соответствуют origin/main.'
               exit 0
             fi
 
@@ -80,12 +73,12 @@ jobs:
             git commit -m 'chore(news): persist publisher analytics' || true
 
             if git push origin main; then
-              echo 'State and analytics persisted.'
+              echo 'Состояние и аналитика сохранены.'
               exit 0
             fi
 
             sleep 2
           done
 
-          echo 'State/analytics persistence failed after retries.'
+          echo 'Не удалось сохранить состояние и аналитику после трёх попыток.'
           exit 1
