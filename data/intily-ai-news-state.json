@@ -456,10 +456,10 @@
     "63a429df989ea7478ad3d6f4b54c3fb3b1ae88e6299e4c5651f2953e1ad32f38": 1788684582,
     "4efacee148ea0c96437b255faf92264b3d0b194647b2b4216d9da7648dc18160": 1788684882,
     "7b70c8169aeec2be3a12f7bab039de926247d9717d085344399efb69f35d33c5": 1788685246,
-    "c7bca7bdbe37c8d31ce99e3a4203550b670f7e41b03876a7b84ef2ca1f948469": 1788685543
+    "c7bca7bdbe37c8d31ce99e3a4203550b670f7e41b03876a7b84ef2ca1f948469": 1788685543,
+    "e074b406ae71bb42561750ebaabb07158165b4ad45432bbc3bed2fe7407408eb": 1788686205
   },
   "known": {
-    "074cef7183be63c1fcd5623c0ac8d422f45e15879e1774040e0810a609691640": 1788680444.1362836,
     "f6c2eeccd18ce9dae9d04f536daa7f120ec2a8d514e8bcafc0377febe34bd71b": 1788681945.757408,
     "4ffce1475eae4b85f3e6f9f9bf96586200b95672ab661f0df909276a7450f13e": 1788682182.1962953,
     "08d3b5d34037d848f9a007172288e0b2f9af7d0e2fe59eaab4d4c71bb6823b6e": 1788682363.501088,
@@ -471,24 +471,25 @@
     "699c47a86563b04a621e331541c4f3a6d0911d86e057a763ad8d32ba53bf25d1": 1788684224.7096999,
     "7b70c8169aeec2be3a12f7bab039de926247d9717d085344399efb69f35d33c5": 1788684882.0104403,
     "4efacee148ea0c96437b255faf92264b3d0b194647b2b4216d9da7648dc18160": 1788684882.0104403,
-    "c7bca7bdbe37c8d31ce99e3a4203550b670f7e41b03876a7b84ef2ca1f948469": 1788685362.6563358
+    "c7bca7bdbe37c8d31ce99e3a4203550b670f7e41b03876a7b84ef2ca1f948469": 1788685362.6563358,
+    "e074b406ae71bb42561750ebaabb07158165b4ad45432bbc3bed2fe7407408eb": 1788686205.654975
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788685662.4615998,
+    "last_start_ts": 1788686205.654975,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788685662.4615998,
-    "last_success_ts": 1788685662.4615998,
-    "last_candidates": 23,
-    "last_published": 0,
+    "last_run_ts": 1788686205.654975,
+    "last_success_ts": 1788686205.654975,
+    "last_candidates": 24,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788685559.13572
+      "updated_at": 1788686227.105788
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -1019,6 +1020,13 @@
       "desc": "AI Adoption Spreads Beyond Tech as Finance, Manufacturing Businesses Race to Catch Up TradingView",
       "source": "TradingView",
       "region": "WORLD"
+    },
+    "e074b406ae71bb42561750ebaabb07158165b4ad45432bbc3bed2fe7407408eb": {
+      "time": 1788686205,
+      "title": "На ИТ-форуме «ПроIT» обсудили внедрение ИИ в реальный сектор - Интернет-газета «ЖУК»",
+      "desc": "На ИТ-форуме «ПроIT» обсудили внедрение ИИ в реальный сектор Интернет-газета «ЖУК»",
+      "source": "Интернет-газета «ЖУК»",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
@@ -1027,7 +1035,6 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1041,38 +1048,12 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
-  "last_search_ts": 1788685662.4615998,
-  "last_publish_ts": 1788685543.7683873,
+  "last_search_ts": 1788686205.654975,
+  "last_publish_ts": 1788686205.654975,
   "run_history": [
-    {
-      "ts": 1788649810,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "candidates": 0,
-      "queue_before": 14,
-      "queue_after": 13,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788650143,
       "status": "OK",
@@ -7234,6 +7215,81 @@
       "provider": {
         "attempts": [],
         "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788686205,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 21.89,
+      "candidates": 24,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 20,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 1,
+        "candidate_count": 24,
+        "admission_rate": 4.17,
+        "dominant_block": "candidate_count"
+      },
+      "rss": {
+        "queries_attempted": 31,
+        "queries_ok": 31,
+        "query_errors": 0,
+        "direct_feeds_attempted": 8,
+        "direct_feeds_ok": 7,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 10,
+        "raw_items": 159,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 9
+        },
+        "score_filtered": 134,
+        "quality_filtered": 0,
+        "story_dedup": 1,
+        "candidates": 24,
+        "candidate_rate": 0.1611
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
