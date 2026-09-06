@@ -488,7 +488,8 @@
     "6196d0d33d45eee32c714f9da4f579644d6a883b862c2e87fdc4a176829900f9": 1788699281,
     "77b115b47ccebcb323fbc8839ce5cdb6b06f69f735b62496e488223bbc35f6b9": 1788699486,
     "5ecbafe05e297ececf86ced1a69881af72f999d8b7ca591eef8fb54ba02aeef1": 1788699666,
-    "f4d3769c4ace665705e5b24286ad0f02d8a4be096bd77ef8e1f0f79d83943704": 1788700326
+    "f4d3769c4ace665705e5b24286ad0f02d8a4be096bd77ef8e1f0f79d83943704": 1788700326,
+    "1c0eb51fb5609f1ab228b8fbc682d6971630b866be6fc92f750df9a86fa08775": 1788700625
   },
   "known": {
     "1b8d47880d1f885d91a9764b04d726eefd79ad04b9a233e72afba8bde6c66287": 1788696675.0326302,
@@ -579,23 +580,6 @@
       "last_failure": "RU_QA_FORBIDDEN_STYLE",
       "failure_count": 1,
       "next_retry_at": 1788699966
-    },
-    {
-      "region": "WORLD",
-      "title": "Qwen Office hits 30 million users in first month as Alibaba leverages DingTalk ecosystem to seize enterprise AI agent entry point - finance.biggo.com",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE45N2N3Ym0yMG5WTGQ1M0VUX3ZyWmdiVlBkbzNpR24wbWZRR3JTUTg1VEJVTlU3cGtROGJuaXFwS3VGTjRRRmNXdjRPUG1FY3F3ZlNpSTlwdFR4RWVlSzlzZmZNNjB5OFRBWldjWXdUYjNWYTlfX3c?oc=5",
-      "desc": "Qwen Office hits 30 million users in first month as Alibaba leverages DingTalk ecosystem to seize enterprise AI agent entry point finance.biggo.com",
-      "source": "finance.biggo.com",
-      "time": 1788694500.0,
-      "score": 70.5,
-      "key": "1c0eb51fb5609f1ab228b8fbc682d6971630b866be6fc92f750df9a86fa08775",
-      "importance": 70.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "business"
-      ],
-      "tier": "A"
     },
     {
       "region": "RUSSIA",
@@ -760,20 +744,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788700505.1589518,
+    "last_start_ts": 1788700625.864904,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788700505.1589518,
-    "last_success_ts": 1788700505.1589518,
+    "last_run_ts": 1788700625.864904,
+    "last_success_ts": 1788700625.864904,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 12
+    "last_published": 1,
+    "queue_size": 11
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788700328.3922575
+      "updated_at": 1788700634.6750922
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -1528,10 +1512,16 @@
       "desc": "GoDaddy Inc. stock edges lower as AI security legislation highlights its role AD HOC NEWS",
       "source": "AD HOC NEWS",
       "region": "WORLD"
+    },
+    "1c0eb51fb5609f1ab228b8fbc682d6971630b866be6fc92f750df9a86fa08775": {
+      "time": 1788700625,
+      "title": "Qwen Office hits 30 million users in first month as Alibaba leverages DingTalk ecosystem to seize enterprise AI agent entry point - finance.biggo.com",
+      "desc": "Qwen Office hits 30 million users in first month as Alibaba leverages DingTalk ecosystem to seize enterprise AI agent entry point finance.biggo.com",
+      "source": "finance.biggo.com",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "RUSSIA",
@@ -1550,38 +1540,12 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD"
   ],
   "last_search_ts": 1788699006.2443738,
-  "last_publish_ts": 1788700326.4217153,
+  "last_publish_ts": 1788700625.864904,
   "run_history": [
-    {
-      "ts": 1788663944,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "empty_queue_after_filters",
-      "searched": true,
-      "candidates": 14,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788664061,
       "status": "OK",
@@ -10665,6 +10629,57 @@
       "provider": {
         "attempts": [],
         "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788700625,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 9.39,
+      "candidates": 0,
+      "queue_before": 12,
+      "queue_after": 11,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
