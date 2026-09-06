@@ -467,7 +467,8 @@
     "38eed7b3d073cd62cdd67a4f1cfa274276f8ec46688289b91ab680ad951d7a17": 1788689502,
     "0fe2e2274672cc402849c8ac3269a9c217000f86d754bf76aff96762b9d9f8a5": 1788689864,
     "e4b1931d344a1dfb9be29e9346fde7fbd877c3a62b9727f9ec6d8d57b13d4993": 1788690103,
-    "8a8db8f3bd510e38880e9f2215dafbd5b89ebee4265f5aa609811531b7b0e60d": 1788690284
+    "8a8db8f3bd510e38880e9f2215dafbd5b89ebee4265f5aa609811531b7b0e60d": 1788690284,
+    "7513621c37c002cff35f835a8af9357bf1d275f1edbec37ee5f2eb34e7dd6b19": 1788691002
   },
   "known": {
     "e074b406ae71bb42561750ebaabb07158165b4ad45432bbc3bed2fe7407408eb": 1788686205.654975,
@@ -481,7 +482,8 @@
     "0fe2e2274672cc402849c8ac3269a9c217000f86d754bf76aff96762b9d9f8a5": 1788689864.0345984,
     "e4b1931d344a1dfb9be29e9346fde7fbd877c3a62b9727f9ec6d8d57b13d4993": 1788690103.4452233,
     "1c0e4a813e37d27dc9de505d2b38e045b2518a7c7cb118b1ef6bc19807b63e78": 1788690103.4452233,
-    "8a8db8f3bd510e38880e9f2215dafbd5b89ebee4265f5aa609811531b7b0e60d": 1788690284.5686033
+    "8a8db8f3bd510e38880e9f2215dafbd5b89ebee4265f5aa609811531b7b0e60d": 1788690284.5686033,
+    "7513621c37c002cff35f835a8af9357bf1d275f1edbec37ee5f2eb34e7dd6b19": 1788691002.3213181
   },
   "queue": [
     {
@@ -505,20 +507,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788690825.5102434,
+    "last_start_ts": 1788691002.3213181,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788690825.5102434,
-    "last_success_ts": 1788690825.5102434,
-    "last_candidates": 24,
-    "last_published": 0,
+    "last_run_ts": 1788691002.3213181,
+    "last_success_ts": 1788691002.3213181,
+    "last_candidates": 25,
+    "last_published": 1,
     "queue_size": 1
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788690863.5597775
+      "updated_at": 1788691016.6887662
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -1126,12 +1128,18 @@
       "desc": "ИИ в нефтяной индустрии: как технологии меняют геологоразведку и добычу ВФокусе Mail",
       "source": "ВФокусе Mail",
       "region": "RUSSIA"
+    },
+    "7513621c37c002cff35f835a8af9357bf1d275f1edbec37ee5f2eb34e7dd6b19": {
+      "time": 1788691002,
+      "title": "The turbulent AI era is here. The choices we make now are critical. - gatesnotes.com",
+      "desc": "The turbulent AI era is here. The choices we make now are critical. gatesnotes.com",
+      "source": "gatesnotes.com",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -1148,38 +1156,12 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
-  "last_search_ts": 1788690825.5102434,
-  "last_publish_ts": 1788690284.5686033,
+  "last_search_ts": 1788691002.3213181,
+  "last_publish_ts": 1788691002.3213181,
   "run_history": [
-    {
-      "ts": 1788655157,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "publish_interval_not_reached",
-      "searched": true,
-      "candidates": 16,
-      "queue_before": 1,
-      "queue_after": 1,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788655247,
       "status": "OK",
@@ -8768,6 +8750,81 @@
         ],
         "used": "GEMINI",
         "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788691002,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 14.79,
+      "candidates": 25,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 21,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 1,
+        "candidate_count": 25,
+        "admission_rate": 4.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {
+        "queries_attempted": 31,
+        "queries_ok": 31,
+        "query_errors": 0,
+        "direct_feeds_attempted": 8,
+        "direct_feeds_ok": 7,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 10,
+        "raw_items": 165,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 9
+        },
+        "score_filtered": 138,
+        "quality_filtered": 0,
+        "story_dedup": 2,
+        "candidates": 25,
+        "candidate_rate": 0.1613
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
         "failures": 0,
         "blocked": 0,
         "skipped_no_key": 0,
