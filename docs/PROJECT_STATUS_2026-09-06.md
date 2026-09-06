@@ -95,7 +95,7 @@ published_key = 23
 story_history = 3
 ```
 
-The production hotfix now selects `dominant_block` only from actual rejection causes:
+The production code now selects `dominant_block` only from actual rejection causes:
 
 - `published_key`;
 - `known_recent`;
@@ -103,7 +103,31 @@ The production hotfix now selects `dominant_block` only from actual rejection ca
 - `story_queue`;
 - `story_history`.
 
-The change is applied by a one-time migration step in the production workflow and committed back to main.
+The one-time migration was applied successfully in production and then removed from the workflow and repository.
+
+## Post-fix production verification — 2026-09-06 09:39 UTC
+
+The first production cycle after the correction completed successfully:
+
+- 157 RSS raw items;
+- 31/31 Google News queries OK;
+- 128 score-filtered out;
+- 27 candidates;
+- 23 `published_key` blocks;
+- 2 semantic history blocks;
+- **2 new queue admissions**;
+- **1 Telegram publication**;
+- Gemini used successfully, zero failover;
+- queue ended with 1 item;
+- business result: `PUBLISHED`.
+
+The log explicitly reported:
+
+```text
+QUEUE_ADMISSION ... "published_key":23 ... "story_history":2 ... "added":2 ... "dominant_block":"published_key"
+```
+
+This is the corrected behavior and proves that the earlier `candidate_count` diagnostic was misleading rather than a discovery outage.
 
 ## Why 19 candidates existed 12–15 hours earlier
 
@@ -118,6 +142,24 @@ The current problem is therefore **fresh unique supply**, not a broken candidate
 Google News queries are currently returning material and have shown 0 query errors in the verified cycle.
 
 Direct RSS sources are a resilience layer, but several currently return no fresh items in the active window and VentureBeat has returned HTTP 429. These are now visible in telemetry.
+
+## Current 24h production picture
+
+The stored rolling sample shows:
+
+- 200 cycles;
+- 62 publications;
+- 2,628 candidates;
+- 3,447 RSS raw items;
+- 458 telemetry-covered admission candidates;
+- 15 admissions;
+- 68 publish attempts;
+- 6 item failures;
+- 0 Google query errors;
+- 21 direct-feed errors;
+- 1 provider failover.
+
+The low admission rate is a **diagnostic signal**. It does not mean discovery is empty: the latest cycle alone found 27 candidates and admitted 2.
 
 ## Next engineering priority — Query + Source Intelligence
 
