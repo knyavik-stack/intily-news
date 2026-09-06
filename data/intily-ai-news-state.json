@@ -429,7 +429,8 @@
     "0fc5cb93dfa5f6d495b4ad2b0f31e1c337dcda0ffa4aa044ff7412dfdd3483f9": 1788668203,
     "b0fe501f8ec136564285ef5a67699e0e08f5c4973c523878833406479597030e": 1788668503,
     "0b4eee73fd071de06b056e4a4d832f2f183206e7906d75232e1f3c90cdbf332c": 1788668803,
-    "31095f323879538db443349dfdd4fc7f2d74c8bbe4a6cb01c35c09fffcdf4d44": 1788669283
+    "31095f323879538db443349dfdd4fc7f2d74c8bbe4a6cb01c35c09fffcdf4d44": 1788669283,
+    "2ab000870330a261883c9b5803f4295e3be007bf2b60810e19425a9e60074d21": 1788669703
   },
   "known": {
     "271f8b82696c7385dd06e6bae858f6a3e8f79f33a40b4fd43d8a8099e48cdb92": 1788649303.2180028,
@@ -465,24 +466,25 @@
     "31095f323879538db443349dfdd4fc7f2d74c8bbe4a6cb01c35c09fffcdf4d44": 1788668021.9100966,
     "0fc5cb93dfa5f6d495b4ad2b0f31e1c337dcda0ffa4aa044ff7412dfdd3483f9": 1788668203.929261,
     "b0fe501f8ec136564285ef5a67699e0e08f5c4973c523878833406479597030e": 1788668203.929261,
-    "0b4eee73fd071de06b056e4a4d832f2f183206e7906d75232e1f3c90cdbf332c": 1788668803.5655146
+    "0b4eee73fd071de06b056e4a4d832f2f183206e7906d75232e1f3c90cdbf332c": 1788668803.5655146,
+    "2ab000870330a261883c9b5803f4295e3be007bf2b60810e19425a9e60074d21": 1788669703.714173
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788669403.3433511,
+    "last_start_ts": 1788669703.714173,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788669403.3433511,
-    "last_success_ts": 1788669403.3433511,
-    "last_candidates": 14,
-    "last_published": 0,
+    "last_run_ts": 1788669703.714173,
+    "last_success_ts": 1788669703.714173,
+    "last_candidates": 15,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788669295.184552
+      "updated_at": 1788669714.2265303
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -496,13 +498,6 @@
     }
   },
   "stories": {
-    "10834966d82f11ea00872ee07294ead5e00c9d935cdf2496cae9f9df4fab4cb9": {
-      "time": 1788583161,
-      "title": "Booz Allen: AI models approaching autonomous cyberattack capability as critical infrastructure response windows narrow - industrialcyber.co",
-      "desc": "Booz Allen: AI models approaching autonomous cyberattack capability as critical infrastructure response windows narrow industrialcyber.co",
-      "source": "industrialcyber.co",
-      "region": "WORLD"
-    },
     "7a33a77a735ac022ded6f6b915e0d0f178d3c83ee862e576743a10ac608d7fc1": {
       "time": 1788584060,
       "title": "Pondero Brief: Astra ships Critical for cyber. OpenAI's agents already escaped - buttondown.com",
@@ -845,11 +840,17 @@
       "desc": "Мекка искусственного интеллекта. Зачем NVIDIA купила Hugging Face за $13 млрд и какие технологии ей достанутся NV Техно",
       "source": "NV Техно",
       "region": "RUSSIA"
+    },
+    "2ab000870330a261883c9b5803f4295e3be007bf2b60810e19425a9e60074d21": {
+      "time": 1788669703,
+      "title": "California Passes SB 813 to Police AI Audits After OpenAI's $400,000 Probe - Startup Fortune",
+      "desc": "California Passes SB 813 to Police AI Audits After OpenAI's $400,000 Probe Startup Fortune",
+      "source": "Startup Fortune",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -867,10 +868,11 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
-  "last_search_ts": 1788669403.3433511,
-  "last_publish_ts": 1788669283.5724576,
+  "last_search_ts": 1788669703.714173,
+  "last_publish_ts": 1788669703.714173,
   "run_history": [
     {
       "ts": 1788649810,
@@ -3799,6 +3801,33 @@
       "queue_after": 0,
       "published": 0,
       "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788669703,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "candidates": 15,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
