@@ -11,13 +11,13 @@ THRESHOLD = 60.0
 
 # Maximum contribution of each editorial dimension; totals exactly 100.
 WEIGHTS = {
-    'relevance': 25.0,
-    'impact': 18.0,
+    'relevance': 30.0,
+    'impact': 20.0,
     'practical_value': 15.0,
-    'novelty': 12.0,
+    'novelty': 10.0,
     'source_quality': 10.0,
-    'evidence': 8.0,
-    'freshness': 7.0,
+    'evidence': 5.0,
+    'freshness': 5.0,
     'risk_significance': 5.0,
 }
 
@@ -30,29 +30,24 @@ def _hits(blob, terms):
     return sum(1 for term in terms if term in blob)
 
 
-def _capped_hits(blob, terms, cap, step):
-    return min(cap, _hits(blob, terms) * step)
-
-
 def _clamp(value, lo=0.0, hi=100.0):
     return max(lo, min(hi, float(value)))
 
 
 def _freshness(age_hours):
-    # Continuous decay instead of coarse buckets. Freshness is 7 points at 0h,
-    # reaches 0 at 12h, and therefore creates meaningful one-decimal separation.
-    return _clamp(7.0 * (1.0 - max(0.0, age_hours) / 12.0), 0.0, 7.0)
+    # Continuous decay: 5.0 points at publication time and 0.0 at 12h.
+    return _clamp(5.0 * (1.0 - max(0.0, age_hours) / 12.0), 0.0, 5.0)
 
 
 def _evidence(desc):
     length = len(' '.join(str(desc or '').split()))
-    # 0..8 points, with diminishing returns. Empty/very short feed descriptions
-    # receive little evidence credit; long descriptions do not dominate the score.
+    # 0..5 points with diminishing returns; description length is evidence,
+    # not a proxy for editorial importance.
     if length <= 35:
-        return round(length / 35.0 * 2.0, 1)
+        return round(length / 35.0 * 1.0, 1)
     if length <= 120:
-        return round(2.0 + (length - 35) / 85.0 * 3.0, 1)
-    return round(min(8.0, 5.0 + (length - 120) / 180.0 * 3.0), 1)
+        return round(1.0 + (length - 35) / 85.0 * 2.0, 1)
+    return round(min(5.0, 3.0 + (length - 120) / 180.0 * 2.0), 1)
 
 
 def score_components(x, ai_relevant, high_impact_terms, application_terms,
@@ -65,23 +60,23 @@ def score_components(x, ai_relevant, high_impact_terms, application_terms,
     relevance = WEIGHTS['relevance'] if ai_relevant(x) else 0.0
 
     impact_hits = _hits(blob, high_impact_terms)
-    impact = min(WEIGHTS['impact'], 5.0 + max(0, impact_hits - 1) * 3.0) if impact_hits else 0.0
+    # The first meaningful event signal has substantial value; additional
+    # independent signals add less to avoid keyword-count inflation.
+    impact = min(WEIGHTS['impact'], 8.0 + max(0, impact_hits - 1) * 3.0) if impact_hits else 0.0
 
-    practical_hits = _hits(blob, application_terms)
-    practical_hits += _hits(blob, practical_terms)
+    practical_hits = _hits(blob, application_terms) + _hits(blob, practical_terms)
     practical = min(WEIGHTS['practical_value'], practical_hits * 2.0)
 
     novelty_hits = _hits(title, exclusivity_terms)
-    # Numeric specificity is a useful novelty signal for releases, funding,
-    # benchmarks and measurable events, but never enough to qualify alone.
     has_number = any(ch.isdigit() for ch in title)
-    novelty = min(WEIGHTS['novelty'], novelty_hits * 3.0 + (2.0 if has_number else 0.0))
+    novelty = min(WEIGHTS['novelty'], novelty_hits * 2.5 + (2.0 if has_number else 0.0))
 
-    source_quality = 8.0 if source in quality_trusted else (6.0 if source in trusted else 4.0)
     if source in quality_trusted:
         source_quality = 10.0
     elif source in trusted:
         source_quality = 7.0
+    else:
+        source_quality = 4.0
 
     evidence = _evidence(x.get('desc', ''))
 
