@@ -56,3 +56,8 @@ At the same time, Priority-A telemetry was expanded to expose admission rejectio
 - Production architecture unchanged: Cloudflare scheduler → GitHub Actions → Python publisher → Telegram.
 - The fix is behaviorally narrow and is covered by syntax/static validation before production smoke.
 - Empirical tuning remains pending until a larger post-fix sample accumulates.
+
+
+## Priority-B start — source resilience
+
+The discovery layer now has two independent paths: Google News RSS query clusters plus curated direct publisher RSS feeds. Per-source yield and direct-feed error telemetry is persisted for subsequent source-intelligence analysis. This directly addresses the observed failure mode where Google News returned many candidates but the majority were already present in publication memory.

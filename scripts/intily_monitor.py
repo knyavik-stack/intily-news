@@ -40,7 +40,8 @@ def sums(data):
     admission_blocks = {}
     provider_used = {}
     failovers = 0
-    rss_raw = rss_errors = rss_attempts = 0
+    rss_raw = rss_errors = rss_attempts = direct_raw = direct_errors = 0
+    source_counts = {}
     q_values = [float(r.get('queue_after', 0) or 0) for r in data]
     q_deltas = [float(r.get('queue_after', 0) or 0) - float(r.get('queue_before', 0) or 0) for r in data]
     pub_ts = [float(r.get('ts', 0) or 0) for r in data if r.get('published')]
@@ -61,6 +62,10 @@ def sums(data):
         rss_raw += int(rss.get('raw_items', 0) or 0)
         rss_errors += int(rss.get('query_errors', 0) or 0)
         rss_attempts += int(rss.get('queries_attempted', 0) or 0)
+        direct_raw += int(rss.get('direct_raw_items', 0) or 0)
+        direct_errors += int(rss.get('direct_feed_errors', 0) or 0)
+        for source, count in rss.get('source_counts', {}).items():
+            source_counts[source] = source_counts.get(source, 0) + max(0, int(count or 0))
     intervals = [(b-a)/60 for a,b in zip(pub_ts, pub_ts[1:]) if b>a]
     return {
         'cycles': len(data), 'searches': sum(1 for r in data if r.get('searched')),
@@ -75,7 +80,7 @@ def sums(data):
         'admission_candidates': candidates, 'admission_added': added,
         'admission_rate': added/max(1,candidates)*100,
         'admission_blocks': admission_blocks,
-        'rss_raw': rss_raw, 'rss_errors': rss_errors,
+        'rss_raw': rss_raw, 'rss_errors': rss_errors, 'direct_raw': direct_raw, 'direct_errors': direct_errors, 'source_counts': source_counts,
         'rss_error_rate': rss_errors/max(1,rss_attempts)*100,
         'provider_used': provider_used, 'failovers': failovers,
         'queue_avg': sum(q_values)/len(q_values) if q_values else 0,
@@ -108,7 +113,8 @@ def print_dashboard(state):
     print(f"  attempts={d24['attempts']} PUBLISH_FAILED={d24['failures']} failure_rate={d24['failure_rate']:.2f}%")
     print(f"  NO_PUBLISH={d24['no_publish']} ({d24['no_publish_rate']:.2f}%)")
     print(f"  admission={d24['admission_added']}/{d24['admission_candidates']} ({d24['admission_rate']:.2f}%) blocks={d24['admission_blocks']}")
-    print(f"  RSS raw={d24['rss_raw']} query_errors={d24['rss_errors']} error_rate={d24['rss_error_rate']:.2f}%")
+    print(f"  RSS google_raw={d24['rss_raw']} direct_raw={d24['direct_raw']} query_errors={d24['rss_errors']} direct_errors={d24['direct_errors']} error_rate={d24['rss_error_rate']:.2f}%")
+    if d24['source_counts']: print(f"  source_yield={d24['source_counts']}")
     print(f"  providers_used={d24['provider_used']} failovers={d24['failovers']}")
     print(f"  queue_avg={d24['queue_avg']:.2f} queue_max={d24['queue_max']:.0f} velocity={d24['queue_velocity']:.2f}/cycle")
     if d24['no_publish_reasons']: print(f"  NO_PUBLISH reasons={d24['no_publish_reasons']}")

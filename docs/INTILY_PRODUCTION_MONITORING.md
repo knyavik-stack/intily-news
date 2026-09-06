@@ -101,3 +101,12 @@ Run **GitHub → Actions → Intily Production Monitor → Run workflow** for a 
 ### Verification requirement
 
 The new telemetry is intentionally designed to accumulate evidence for Priority B/C optimization. Do not tune SLO thresholds from a tiny sample; use the rolling dashboard after a meaningful production window.
+
+
+## Source resilience / Priority-B foundation — 2026-09-06
+
+Google News remains the broad aggregator layer, but production now also reads a small curated set of direct publisher feeds: TechCrunch AI, VentureBeat AI, The Verge AI, OpenAI News, Google DeepMind, Hugging Face, Ars Technica and Habr News. The code records per-source yield and direct-feed errors for future source intelligence.
+
+The source catalog was chosen from currently available publisher RSS endpoints. TechCrunch publishes RSS feeds and provides RSS terms requiring attribution/link preservation; Ars Technica documents its RSS feeds; VentureBeat documents its RSS endpoints; Habr documents RSS availability. citeturn0search2turn0search6turn0search1turn0search0turn3search0
+
+This is deliberately a small resilience layer, not an uncontrolled feed explosion. Priority-B source intelligence will use the recorded source-yield data to decide which sources deserve more query/feed budget.

@@ -96,6 +96,20 @@ TG_URL = 'https://api.telegram.org/bot{}/sendMessage'
 # Sources
 # ------------------------------------------------------------
 
+# First-party / publisher RSS sources. This is a resilience layer: Google News remains
+# the broad discovery index, while direct feeds prevent a single aggregator from becoming
+# the only path to fresh stories. Disable individual sources by removing/commenting the row.
+DIRECT_RSS_FEEDS = [
+    ('WORLD', 'TechCrunch AI', 'https://techcrunch.com/category/artificial-intelligence/feed/'),
+    ('WORLD', 'VentureBeat AI', 'https://venturebeat.com/category/ai/feed/'),
+    ('WORLD', 'The Verge AI', 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml'),
+    ('WORLD', 'OpenAI News', 'https://openai.com/news/rss.xml'),
+    ('WORLD', 'Google DeepMind', 'https://deepmind.google/blog/rss.xml'),
+    ('WORLD', 'Hugging Face', 'https://huggingface.co/blog/feed.xml'),
+    ('WORLD', 'Ars Technica', 'https://feeds.arstechnica.com/arstechnica/index'),
+    ('RUSSIA', 'Habr AI/News', 'https://habr.com/ru/rss/news'),
+]
+
 QUERIES = [
     ('WORLD', 'AI artificial intelligence major technology news'),
     ('WORLD', 'OpenAI model launch agent product'),
@@ -644,6 +658,52 @@ def same_story(a, b):
     return any(any(ch.isdigit() for ch in token) for token in shared_anchors) and sim >= 0.50
 
 
+def rss_direct(region, source_name, url):
+    cutoff = datetime.now(timezone.utc) - LOOKBACK
+    root = ET.fromstring(get(url))
+    out = []
+    items = root.findall('.//item')
+    if not items:
+        ns = {'a': 'http://www.w3.org/2005/Atom'}
+        entries = root.findall('.//a:entry', ns)
+        for entry in entries:
+            title = (entry.findtext('a:title', default='', namespaces=ns) or '').strip()
+            link_node = entry.find('a:link', ns)
+            link = (link_node.get('href', '') if link_node is not None else '').strip()
+            desc = (entry.findtext('a:summary', default='', namespaces=ns) or '').strip()
+            raw = (entry.findtext('a:published', default='', namespaces=ns) or entry.findtext('a:updated', default='', namespaces=ns) or '').strip()
+            source = source_name
+            try:
+                dt = datetime.fromisoformat(raw.replace('Z', '+00:00'))
+            except Exception:
+                continue
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            if not title or not link or dt < cutoff:
+                continue
+            out.append({'region': region, 'title': html.unescape(title), 'link': link, 'desc': re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', desc))).strip(), 'source': source, 'time': dt.timestamp()})
+        return out
+    for it in items:
+        title = html.unescape(it.findtext('title') or '').strip()
+        link = (it.findtext('link') or '').strip()
+        desc = re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', html.unescape(it.findtext('description') or ''))).strip()
+        source = (it.findtext('source') or source_name).strip()
+        raw = (it.findtext('pubDate') or it.findtext('published') or '').strip()
+        try:
+            dt = parsedate_to_datetime(raw)
+        except Exception:
+            try:
+                dt = datetime.fromisoformat(raw.replace('Z', '+00:00'))
+            except Exception:
+                continue
+        if not dt.tzinfo:
+            dt = dt.replace(tzinfo=timezone.utc)
+        if not title or not link or dt < cutoff:
+            continue
+        out.append({'region': region, 'title': title, 'link': link, 'desc': desc, 'source': source, 'time': dt.timestamp()})
+    return out
+
+
 def collect(telemetry=None):
     all_items = []
     raw_total = 0
@@ -653,6 +713,11 @@ def collect(telemetry=None):
     feed_errors = 0
     feeds_ok = 0
     feeds_attempted = 0
+    direct_attempted = 0
+    direct_ok = 0
+    direct_errors = 0
+    direct_raw = 0
+    source_counts = {}
 
     for region, q in QUERIES:
         feeds_attempted += 1
@@ -675,6 +740,29 @@ def collect(telemetry=None):
             feed_errors += 1
             print('FEED_ERROR', region, str(e)[:180])
 
+    for region, source_name, feed_url in DIRECT_RSS_FEEDS:
+        direct_attempted += 1
+        try:
+            started = time.time()
+            items = rss_direct(region, source_name, feed_url)
+            direct_ok += 1
+            direct_raw += len(items)
+            source_counts[source_name] = len(items)
+            for x in items:
+                x['score'] = score(x)
+                if region == 'RUSSIA':
+                    x['russia_weight_bonus'] = round(random.uniform(RUSSIA_WEIGHT_BONUS_MIN, RUSSIA_WEIGHT_BONUS_MAX), 1)
+                    x['score'] = min(100, x['score'] + x['russia_weight_bonus'])
+                x['key'] = key(x)
+                all_items.append(x)
+            print('RSS_DIRECT', source_name, 'raw', len(items))
+            if time.time() - started > 15:
+                raise TimeoutError('DIRECT_FEED_BUDGET_EXCEEDED')
+        except Exception as e:
+            direct_errors += 1
+            source_counts[source_name] = -1
+            print('FEED_ERROR', source_name, str(e)[:180])
+
     all_items.sort(key=lambda x: (x['score'], x['time']), reverse=True)
     out = []
     for x in all_items:
@@ -693,7 +781,12 @@ def collect(telemetry=None):
         'queries_attempted': feeds_attempted,
         'queries_ok': feeds_ok,
         'query_errors': feed_errors,
-        'raw_items': raw_total,
+        'direct_feeds_attempted': direct_attempted,
+        'direct_feeds_ok': direct_ok,
+        'direct_feed_errors': direct_errors,
+        'direct_raw_items': direct_raw,
+        'raw_items': raw_total + direct_raw,
+        'source_counts': source_counts,
         'score_filtered': scored_out,
         'quality_filtered': quality_out,
         'story_dedup': story_dupes,
