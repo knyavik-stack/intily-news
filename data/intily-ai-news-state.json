@@ -559,12 +559,12 @@
         "source_quality": 4.0,
         "evidence": 1.8,
         "freshness": 5.0,
-        "timeliness": 4.9,
+        "timeliness": 4.8,
         "low_signal_penalty": 0.0
       },
-      "score": 52.0,
+      "score": 51.9,
       "key": "9728626dd1f988ac158a84bc125796b6505a5f2f27e3399977b2b32712d0a16b",
-      "importance": 52.0,
+      "importance": 51.9,
       "editorial_value": 50.0,
       "topics": [
         "agents",
@@ -588,13 +588,13 @@
         "novelty": 2.0,
         "source_quality": 4.0,
         "evidence": 2.6,
-        "freshness": 4.6,
+        "freshness": 4.5,
         "timeliness": 3.2,
         "low_signal_penalty": 0.0
       },
-      "score": 51.4,
+      "score": 51.3,
       "key": "f63b4f798b9681869497fdf3e663277be3049df5ac6e1445bdcb18909b43a54b",
-      "importance": 51.4,
+      "importance": 51.3,
       "editorial_value": 50.0,
       "topics": [
         "business"
@@ -618,12 +618,12 @@
         "source_quality": 4.0,
         "evidence": 1.7,
         "freshness": 4.5,
-        "timeliness": 2.9,
+        "timeliness": 2.8,
         "low_signal_penalty": 0.0
       },
-      "score": 51.4,
+      "score": 51.3,
       "key": "2c3ecd196a52f6b66601f9a393918e624ff38035e8b75454ccb7a2f5d76940b2",
-      "importance": 51.4,
+      "importance": 51.3,
       "editorial_value": 50.0,
       "topics": [
         "chips"
@@ -632,13 +632,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788710199.7729232,
+    "last_start_ts": 1788710320.5220718,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788710199.7729232,
-    "last_success_ts": 1788710199.7729232,
-    "last_candidates": 22,
-    "last_published": 1,
+    "last_run_ts": 1788710320.5220718,
+    "last_success_ts": 1788710320.5220718,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 4
   },
   "providers": {
@@ -1497,33 +1497,6 @@
   "last_search_ts": 1788710199.7729232,
   "last_publish_ts": 1788710199.7729232,
   "run_history": [
-    {
-      "ts": 1788670122,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "empty_queue_after_filters",
-      "searched": true,
-      "candidates": 17,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788670181,
       "status": "OK",
@@ -12105,6 +12078,55 @@
           "GEMINI"
         ],
         "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788710320,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": false,
+      "duration_sec": 0.02,
+      "candidates": 0,
+      "queue_before": 4,
+      "queue_after": 4,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
