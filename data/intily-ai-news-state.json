@@ -464,13 +464,13 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788664961.7353408,
+    "last_start_ts": 1788665265.2046556,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788664961.7353408,
-    "last_success_ts": 1788664961.7353408,
-    "last_candidates": 17,
-    "last_published": 1,
+    "last_run_ts": 1788665265.2046556,
+    "last_success_ts": 1788665265.2046556,
+    "last_candidates": 16,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
@@ -491,13 +491,6 @@
     }
   },
   "stories": {
-    "7b1f64039dd8a58335f07d20c51af81a4175a47edd6e0f47bb96d38834919da2": {
-      "time": 1788578780,
-      "title": "OpenAI выпустила GPT-6 Astra - prospect.com.ru",
-      "desc": "OpenAI выпустила GPT-6 Astra prospect.com.ru",
-      "source": "prospect.com.ru",
-      "region": "RUSSIA"
-    },
     "8dbf4a0fc047370a24cf6d6de6455aa44526f613a1aca04d262ed3b8686cd38e": {
       "time": 1788582260,
       "title": "Опрос: 77% россиян предпочитают рекламу без участия нейросетей - prospect.com.ru",
@@ -836,7 +829,7 @@
     "WORLD",
     "RUSSIA"
   ],
-  "last_search_ts": 1788664961.7353408,
+  "last_search_ts": 1788665265.2046556,
   "last_publish_ts": 1788664961.7353408,
   "run_history": [
     {
@@ -3010,6 +3003,33 @@
       "queue_after": 0,
       "published": 1,
       "publish_attempts": 1,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788665265,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "empty_queue_after_filters",
+      "searched": true,
+      "candidates": 16,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
