@@ -909,13 +909,13 @@
         "source_quality": 4.0,
         "evidence": 2.3,
         "freshness": 4.0,
-        "timeliness": 1.1,
+        "timeliness": 1.0,
         "low_signal_penalty": 0.0
       },
-      "score": 40.4,
+      "score": 40.3,
       "key": "68b23d9772a0eb2ed4421e389546de71e122c7579de8f0a6297aaa06422589f0",
-      "importance": 40.4,
-      "editorial_value": 40.4,
+      "importance": 40.3,
+      "editorial_value": 40.3,
       "topics": [
         "chips"
       ],
@@ -952,13 +952,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788725321.4398317,
+    "last_start_ts": 1788725440.0398889,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788725321.4398317,
-    "last_success_ts": 1788725321.4398317,
+    "last_run_ts": 1788725440.0398889,
+    "last_success_ts": 1788725440.0398889,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 12
   },
   "providers": {
@@ -2076,81 +2076,6 @@
   "last_search_ts": 1788725080.7248237,
   "last_publish_ts": 1788725321.4398317,
   "run_history": [
-    {
-      "ts": 1788685246,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 14.92,
-      "candidates": 22,
-      "queue_before": 1,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 19,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 0,
-        "candidate_count": 22,
-        "admission_rate": 0.0,
-        "dominant_block": "candidate_count"
-      },
-      "rss": {
-        "queries_attempted": 31,
-        "queries_ok": 31,
-        "query_errors": 0,
-        "direct_feeds_attempted": 8,
-        "direct_feeds_ok": 7,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 10,
-        "raw_items": 143,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 9
-        },
-        "score_filtered": 120,
-        "quality_filtered": 0,
-        "story_dedup": 1,
-        "candidates": 22,
-        "candidate_rate": 0.1654
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788685362,
       "status": "OK",
@@ -14541,6 +14466,65 @@
           "GEMINI"
         ],
         "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788725440,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": false,
+      "duration_sec": 0.14,
+      "candidates": 0,
+      "queue_before": 12,
+      "queue_after": 12,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
