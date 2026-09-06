@@ -433,7 +433,8 @@
     "2ab000870330a261883c9b5803f4295e3be007bf2b60810e19425a9e60074d21": 1788669703,
     "e1ad94b7b6b28c5bae370aa412ae3e635c00a2adf4db7229d7f43ce7cd8fae31": 1788672104,
     "50f699f2fb53019dc1796c7bcb1f025387963d39cd471276414768b99a07ad2e": 1788673484,
-    "0a277972872c7f7bb433f8f864633eecd7c7278c385a42bae40acb89e8ee9ecf": 1788674082
+    "0a277972872c7f7bb433f8f864633eecd7c7278c385a42bae40acb89e8ee9ecf": 1788674082,
+    "ec851f8d1e5d4bceccc86a1814e0cc91a88f737ade54607556ea25623f7d7134": 1788674263
   },
   "known": {
     "a930f6e9782840d2c0f5a0babab62b55875023b54f592b4752620f11458b39e3": 1788653144.8727803,
@@ -464,37 +465,22 @@
     "0a277972872c7f7bb433f8f864633eecd7c7278c385a42bae40acb89e8ee9ecf": 1788673484.0600832,
     "ec851f8d1e5d4bceccc86a1814e0cc91a88f737ade54607556ea25623f7d7134": 1788673484.0600832
   },
-  "queue": [
-    {
-      "region": "WORLD",
-      "title": "Foxconn Q3 Results: AI demand lifts outlook, Aug revenue hits record - scanx.trade",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWGFBU0EtVndkanUyaGh6bVJFV3Q5YWR5dkZ0VHZsVmZtNXFjUnRBNzV0amNQQll1S1ZFOW95dlZrejhPUWYxWndYcFQzZzFhRW85RXdJTnRfZDlvTUY3QmNGbUNUaURVSUtqSWhoTEFFNlIwOWo1aVBmVDBwODNjMlBJUXFGdjZ2dVlBeER4dFJMNTU2UHhWX1p1OHRZM2FkYmpLXzJPWUxzbnJmU0VPaW1oLWZ1NUZzT2g2TGpxa0w?oc=5",
-      "desc": "Foxconn Q3 Results: AI demand lifts outlook, Aug revenue hits record scanx.trade",
-      "source": "scanx.trade",
-      "time": 1788665140.0,
-      "score": 63.5,
-      "key": "ec851f8d1e5d4bceccc86a1814e0cc91a88f737ade54607556ea25623f7d7134",
-      "importance": 63.5,
-      "editorial_value": 50.0,
-      "topics": [],
-      "tier": "A"
-    }
-  ],
+  "queue": [],
   "health": {
-    "last_start_ts": 1788674082.345616,
+    "last_start_ts": 1788674263.3584743,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788674082.345616,
-    "last_success_ts": 1788674082.345616,
-    "last_candidates": 0,
+    "last_run_ts": 1788674263.3584743,
+    "last_success_ts": 1788674263.3584743,
+    "last_candidates": 13,
     "last_published": 1,
-    "queue_size": 1
+    "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788674084.0110073
+      "updated_at": 1788674274.9188385
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -864,10 +850,16 @@
       "desc": "AI may create a new management problem: Who is accountable when the machine is wrong? ABS-CBN",
       "source": "ABS-CBN",
       "region": "WORLD"
+    },
+    "ec851f8d1e5d4bceccc86a1814e0cc91a88f737ade54607556ea25623f7d7134": {
+      "time": 1788674263,
+      "title": "Foxconn Q3 Results: AI demand lifts outlook, Aug revenue hits record - scanx.trade",
+      "desc": "Foxconn Q3 Results: AI demand lifts outlook, Aug revenue hits record scanx.trade",
+      "source": "scanx.trade",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -883,13 +875,14 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD",
     "WORLD"
   ],
-  "last_search_ts": 1788673484.0600832,
-  "last_publish_ts": 1788674082.345616,
+  "last_search_ts": 1788674263.3584743,
+  "last_publish_ts": 1788674263.3584743,
   "run_history": [
     {
       "ts": 1788649810,
@@ -4410,6 +4403,33 @@
       "candidates": 0,
       "queue_before": 2,
       "queue_after": 1,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788674263,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "candidates": 13,
+      "queue_before": 1,
+      "queue_after": 0,
       "published": 1,
       "publish_attempts": 1,
       "item_failures": 0,
