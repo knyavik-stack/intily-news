@@ -469,18 +469,36 @@
     "d930630374d476643fae96e5089fe06caf755fd43fc64ebcbc92042833d74e1c": 1788683745.1318836,
     "699c47a86563b04a621e331541c4f3a6d0911d86e057a763ad8d32ba53bf25d1": 1788684224.7096999,
     "7b70c8169aeec2be3a12f7bab039de926247d9717d085344399efb69f35d33c5": 1788684882.0104403,
-    "4efacee148ea0c96437b255faf92264b3d0b194647b2b4216d9da7648dc18160": 1788684882.0104403
+    "4efacee148ea0c96437b255faf92264b3d0b194647b2b4216d9da7648dc18160": 1788684882.0104403,
+    "c7bca7bdbe37c8d31ce99e3a4203550b670f7e41b03876a7b84ef2ca1f948469": 1788685362.6563358
   },
-  "queue": [],
+  "queue": [
+    {
+      "region": "WORLD",
+      "title": "AI Adoption Spreads Beyond Tech as Finance, Manufacturing Businesses Race to Catch Up - TradingView",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPbzl6RTF5R2thZnhsdF9Cb0dlU1FSU29lbVlibndDVHBBakdNTTB1VExUbHZlbzh4dXR3ZDAzYW1USXBUVlZNQXhsQ1B3Y0V4YTZST1lPTG5BU2s2RkpOVklLZFBraHRyQ2EwSWdJTUdwNUVHd1lYeEhnLUMyOE1IaFdzMjVJZzJJMkxSckk3NjgyRXUtbHpCSjdSUThRSVZmY2p5aVo3S1pUZ2tLOFhnMHhSSU1kMlVINGMzX3Z4dzNpNUNJT3BsM2JUYks0TjJTZ0FKakJiZUZaSjg?oc=5",
+      "desc": "AI Adoption Spreads Beyond Tech as Finance, Manufacturing Businesses Race to Catch Up TradingView",
+      "source": "TradingView",
+      "time": 1788678104.0,
+      "score": 69.5,
+      "key": "c7bca7bdbe37c8d31ce99e3a4203550b670f7e41b03876a7b84ef2ca1f948469",
+      "importance": 69.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "business"
+      ],
+      "tier": "A"
+    }
+  ],
   "health": {
-    "last_start_ts": 1788685246.844927,
+    "last_start_ts": 1788685362.6563358,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788685246.844927,
-    "last_success_ts": 1788685246.844927,
-    "last_candidates": 22,
-    "last_published": 1,
-    "queue_size": 0
+    "last_run_ts": 1788685362.6563358,
+    "last_success_ts": 1788685362.6563358,
+    "last_candidates": 24,
+    "last_published": 0,
+    "queue_size": 1
   },
   "providers": {
     "GEMINI": {
@@ -1034,7 +1052,7 @@
     "WORLD",
     "RUSSIA"
   ],
-  "last_search_ts": 1788685246.844927,
+  "last_search_ts": 1788685362.6563358,
   "last_publish_ts": 1788685246.844927,
   "run_history": [
     {
@@ -6931,6 +6949,79 @@
           "GEMINI"
         ],
         "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788685362,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": true,
+      "duration_sec": 11.76,
+      "candidates": 24,
+      "queue_before": 0,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 21,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 1,
+        "candidate_count": 24,
+        "admission_rate": 4.17,
+        "dominant_block": "candidate_count"
+      },
+      "rss": {
+        "queries_attempted": 31,
+        "queries_ok": 31,
+        "query_errors": 0,
+        "direct_feeds_attempted": 8,
+        "direct_feeds_ok": 7,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 10,
+        "raw_items": 160,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 9
+        },
+        "score_filtered": 135,
+        "quality_filtered": 0,
+        "story_dedup": 1,
+        "candidates": 24,
+        "candidate_rate": 0.16
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
