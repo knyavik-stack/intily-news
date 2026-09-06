@@ -426,7 +426,8 @@
     "25b53eea0832e67927f22f145cda4906489ca1d328067230f97c366ad886dabf": 1788666102,
     "008d819d5bf60765de7aab9e05065f3ae15e3e21f0f17e51b613a70a6944bff2": 1788666644,
     "354944ff0006f32544350a698f7ebfb21d0e65b5b6aa0212725f83c27ddc0b5e": 1788667902,
-    "0fc5cb93dfa5f6d495b4ad2b0f31e1c337dcda0ffa4aa044ff7412dfdd3483f9": 1788668203
+    "0fc5cb93dfa5f6d495b4ad2b0f31e1c337dcda0ffa4aa044ff7412dfdd3483f9": 1788668203,
+    "b0fe501f8ec136564285ef5a67699e0e08f5c4973c523878833406479597030e": 1788668503
   },
   "known": {
     "d6dc4d7664f40cf611eea61f0d87e16c501700dc35ce4f5afb6977988bc1c37b": 1788647378.635233,
@@ -489,39 +490,23 @@
         "chips"
       ],
       "tier": "A"
-    },
-    {
-      "region": "WORLD",
-      "title": "Indian Govt, Intel launch agentic AI skilling programme for future workforce - varindia.com",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNWFgyYUoxLWFZZlZpelVFMEdLZkJ2N0FZNVZxNWFpZm9hQmJ6U0I1RTZidExnZnZUeEpYZlFzS1hscG92WGxNdjI5VEZiOFZpVGZJTlZBSi00STlrb0V4WEUzckpwN2dyWW9qNjBtVDFUanh4TDQydldUbjJvbFFvbjdNV0duMVloVEI2c3NIb05YZXZ4eDZHRmd0R0VGXzlmSFVwVzZkLTNUb0NZT0RpLTl5SW9UWkZ3bVpBTktWUQ?oc=5",
-      "desc": "Indian Govt, Intel launch agentic AI skilling programme for future workforce varindia.com",
-      "source": "varindia.com",
-      "time": 1788637376.0,
-      "score": 60.0,
-      "key": "b0fe501f8ec136564285ef5a67699e0e08f5c4973c523878833406479597030e",
-      "importance": 60.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents"
-      ],
-      "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1788668383.1015568,
+    "last_start_ts": 1788668503.636331,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788668383.1015568,
-    "last_success_ts": 1788668383.1015568,
+    "last_run_ts": 1788668503.636331,
+    "last_success_ts": 1788668503.636331,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 2
+    "last_published": 1,
+    "queue_size": 1
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788668218.9636416
+      "updated_at": 1788668505.4093235
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -877,12 +862,18 @@
       "desc": "Milei defends unregulated AI push after warning from historian Harari Buenos Aires Times",
       "source": "Buenos Aires Times",
       "region": "WORLD"
+    },
+    "b0fe501f8ec136564285ef5a67699e0e08f5c4973c523878833406479597030e": {
+      "time": 1788668503,
+      "title": "Indian Govt, Intel launch agentic AI skilling programme for future workforce - varindia.com",
+      "desc": "Indian Govt, Intel launch agentic AI skilling programme for future workforce varindia.com",
+      "source": "varindia.com",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -899,10 +890,11 @@
     "WORLD",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD"
   ],
   "last_search_ts": 1788668203.929261,
-  "last_publish_ts": 1788668203.929261,
+  "last_publish_ts": 1788668503.636331,
   "run_history": [
     {
       "ts": 1788649810,
@@ -3696,6 +3688,33 @@
       "queue_after": 2,
       "published": 0,
       "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788668503,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "candidates": 0,
+      "queue_before": 2,
+      "queue_after": 1,
+      "published": 1,
+      "publish_attempts": 1,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
