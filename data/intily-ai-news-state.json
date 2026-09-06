@@ -469,13 +469,13 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788669283.5724576,
+    "last_start_ts": 1788669403.3433511,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788669283.5724576,
-    "last_success_ts": 1788669283.5724576,
-    "last_candidates": 16,
-    "last_published": 1,
+    "last_run_ts": 1788669403.3433511,
+    "last_success_ts": 1788669403.3433511,
+    "last_candidates": 14,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
@@ -496,13 +496,6 @@
     }
   },
   "stories": {
-    "52c46b831ceab21c97a56ab2284fd391508a5b2f63d84bcfd829842c48a448a8": {
-      "time": 1788582919,
-      "title": "When AI Agents Form a Community - La Voce di New York",
-      "desc": "When AI Agents Form a Community La Voce di New York",
-      "source": "La Voce di New York",
-      "region": "WORLD"
-    },
     "10834966d82f11ea00872ee07294ead5e00c9d935cdf2496cae9f9df4fab4cb9": {
       "time": 1788583161,
       "title": "Booz Allen: AI models approaching autonomous cyberattack capability as critical infrastructure response windows narrow - industrialcyber.co",
@@ -876,7 +869,7 @@
     "WORLD",
     "RUSSIA"
   ],
-  "last_search_ts": 1788669283.5724576,
+  "last_search_ts": 1788669403.3433511,
   "last_publish_ts": 1788669283.5724576,
   "run_history": [
     {
@@ -3779,6 +3772,33 @@
       "queue_after": 0,
       "published": 1,
       "publish_attempts": 1,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788669403,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": true,
+      "candidates": 14,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
