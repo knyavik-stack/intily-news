@@ -494,7 +494,8 @@
     "8ffb07fc1741bc76028258cde0f57c8765c2eba6d8f7093672ba1159c1f1c3ca": 1788701110,
     "6f38f6e36ee7a40f66b0b64bc7483f5e78c7be3f1f0a345efba167da8b1db60e": 1788701346,
     "a598ab7ad5bd6fee27332a3251202751594aff12d26eb21c9e1fce0361b9cd58": 1788702305,
-    "7a5c732ec45b73694d5644705a6e48f802487c71029d3cb825984524e11de802": 1788704379
+    "7a5c732ec45b73694d5644705a6e48f802487c71029d3cb825984524e11de802": 1788704379,
+    "f642b20d2464b40f04d6162a028cae97e0e8989687f446eec98e1344aa393900": 1788704620
   },
   "known": {
     "8ffb07fc1741bc76028258cde0f57c8765c2eba6d8f7093672ba1159c1f1c3ca": 1788700864.7683244,
@@ -545,35 +546,6 @@
       "tier": "A"
     },
     {
-      "region": "RUSSIA",
-      "title": "AgentCore оценивает агентов независимо от платформы - quasa.io",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPaGxWeVVkYTZOUUI4MkpUaGgwNXBKa1FKZVVmc2ZZQXQyTE9ZNl93ZjlaNkVtU1JsNU4xcjM1LTRxcjdiMXBGWE55QVhXbHNUWDkyb1V0c3NqQWhIOUNubUE2OEFfVDNvc0NjYVJGX2lDTGtPYTJ3NVFYQjJUQ0MyNHYtbnYwam8zc1F3SkdvZ01GSGc?oc=5",
-      "desc": "AgentCore оценивает агентов независимо от платформы quasa.io",
-      "source": "quasa.io",
-      "time": 1788681600.0,
-      "_score_components": {
-        "relevance": 30.0,
-        "impact": 11.0,
-        "practical_value": 2.0,
-        "novelty": 0.0,
-        "source_quality": 4.0,
-        "evidence": 1.6,
-        "freshness": 2.4,
-        "risk_significance": 0.0,
-        "low_signal_penalty": 0.0
-      },
-      "score": 51.0,
-      "russia_weight_bonus": 0.0,
-      "key": "f642b20d2464b40f04d6162a028cae97e0e8989687f446eec98e1344aa393900",
-      "importance": 51.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "tools"
-      ],
-      "tier": "A"
-    },
-    {
       "region": "WORLD",
       "title": "When AI Agents Go Rogue: OpenAI’s Push for Better Transparency - Jo24.net",
       "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5EdnhGalJldlpKTjJlUWtTcWZ6bTdiSVhpdmxueG9aRm53LTdkQjdna3g1WjF3U1VPLVdneGdhY2JNdVc0V3RGYW1R?oc=5",
@@ -602,20 +574,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788704439.4966388,
+    "last_start_ts": 1788704620.170532,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788704439.4966388,
-    "last_success_ts": 1788704439.4966388,
+    "last_run_ts": 1788704620.170532,
+    "last_success_ts": 1788704620.170532,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 3
+    "last_published": 1,
+    "queue_size": 2
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788704402.6229484
+      "updated_at": 1788704623.5530422
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -1412,10 +1384,16 @@
       "desc": "Больше половины российских компаний не имеют стратегии внедрения ИИ, показало исследование prospect.com.ru",
       "source": "prospect.com.ru",
       "region": "RUSSIA"
+    },
+    "f642b20d2464b40f04d6162a028cae97e0e8989687f446eec98e1344aa393900": {
+      "time": 1788704620,
+      "title": "AgentCore оценивает агентов независимо от платформы - quasa.io",
+      "desc": "AgentCore оценивает агентов независимо от платформы quasa.io",
+      "source": "quasa.io",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -1434,38 +1412,12 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "last_search_ts": 1788704379.4188855,
-  "last_publish_ts": 1788704379.4188855,
+  "last_publish_ts": 1788704620.170532,
   "run_history": [
-    {
-      "ts": 1788666764,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "publish_interval_not_reached",
-      "searched": true,
-      "candidates": 15,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788666945,
       "status": "OK",
@@ -11063,6 +11015,57 @@
       "provider": {
         "attempts": [],
         "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788704620,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 3.82,
+      "candidates": 0,
+      "queue_before": 3,
+      "queue_after": 2,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
