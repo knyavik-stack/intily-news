@@ -4,9 +4,9 @@
 
 The production discovery layer now adds these direct sources at runtime:
 
-- CNews — `https://www.cnews.ru/`
-- TechCult — `https://techcult.ru/`
-- Euronews — `https://euronews.com/`
+- CNews — `https://www.cnews.ru/` — RUSSIA
+- TechCult — `https://techcult.ru/` — RUSSIA
+- Euronews — `https://euronews.com/` — WORLD
 
 They are intentionally added as independent direct feeds, not as extra Google News queries.
 
