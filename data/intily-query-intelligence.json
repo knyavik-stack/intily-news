@@ -1,34 +1,6 @@
 {
   "runs": [
     {
-      "ts": 1788697459,
-      "queries": [],
-      "direct": [],
-      "errors": [],
-      "summary": {},
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key"
-      },
-      "result": {
-        "code": "PUBLISHED",
-        "reason": "telegram_delivery_ok"
-      },
-      "complete": {
-        "searched": false,
-        "candidates": 0,
-        "published": 1,
-        "queue": 18
-      }
-    },
-    {
       "ts": 1788698049,
       "queries": [],
       "direct": [],
@@ -11165,6 +11137,36 @@
         "queue": 18
       },
       "publish_wait_seconds": 118
+    },
+    {
+      "ts": 1788717220,
+      "queries": [],
+      "direct": [],
+      "errors": [],
+      "summary": {},
+      "score_buckets": {},
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "result": {
+        "code": "NO_PUBLISH",
+        "reason": "publish_interval_not_reached"
+      },
+      "complete": {
+        "searched": false,
+        "candidates": 0,
+        "published": 0,
+        "queue": 5
+      },
+      "publish_wait_seconds": 59
     }
   ]
 }
