@@ -434,14 +434,6 @@
     "e1ad94b7b6b28c5bae370aa412ae3e635c00a2adf4db7229d7f43ce7cd8fae31": 1788672104
   },
   "known": {
-    "dc691a26b06d64d787caea8f021e41f7217f3e8e0c4054df14d7cd9ae5ef7922": 1788651223.5736613,
-    "90f32234779dc5fba43a012179f24eb6f91ebcb8803ae27d2b9b77ba320a4e4d": 1788651223.5736613,
-    "4ce9b62638fea71d3213f09ef1996bc33d8a205c495f0b4fe014f52463f59481": 1788651223.5736613,
-    "7513621c37c002cff35f835a8af9357bf1d275f1edbec37ee5f2eb34e7dd6b19": 1788651223.5736613,
-    "a8d28bee14b1ea48ee31bcd9eab345c347479748b40db83ff230cf4c5c8039ce": 1788651223.5736613,
-    "00470e27d42dbb11ee94f134f2f871ec0cfa525dbf5d115975e86d9f64f5885a": 1788651223.5736613,
-    "38fd77970d0781c7e94ecaf3bf75ac05fac50831ca9a822a9557656427e54dd7": 1788651223.5736613,
-    "14f56fa1180967dda4406b45692e99a58f8c7e77a903653c1b50f2057becca33": 1788651223.5736613,
     "a930f6e9782840d2c0f5a0babab62b55875023b54f592b4752620f11458b39e3": 1788653144.8727803,
     "a1eda5d02e073b81f4a476a0be4ebbcd37c7fd8290d600857a5e208d835a4bef": 1788653144.8727803,
     "7422049062c68ce88a098fdb702ef998a97beda7312592ffeda93bacac8a71c5": 1788654644.3799717,
@@ -469,12 +461,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788672762.584103,
+    "last_start_ts": 1788673062.1967123,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788672762.584103,
-    "last_success_ts": 1788672762.584103,
-    "last_candidates": 13,
+    "last_run_ts": 1788673062.1967123,
+    "last_success_ts": 1788673062.1967123,
+    "last_candidates": 14,
     "last_published": 0,
     "queue_size": 0
   },
@@ -862,7 +854,7 @@
     "WORLD",
     "WORLD"
   ],
-  "last_search_ts": 1788672762.584103,
+  "last_search_ts": 1788673062.1967123,
   "last_publish_ts": 1788672104.188662,
   "run_history": [
     {
@@ -4220,6 +4212,33 @@
       "business_reason": "empty_queue_after_filters",
       "searched": true,
       "candidates": 13,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788673062,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "empty_queue_after_filters",
+      "searched": true,
+      "candidates": 14,
       "queue_before": 0,
       "queue_after": 0,
       "published": 0,
