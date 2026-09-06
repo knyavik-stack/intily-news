@@ -11,13 +11,11 @@ from pathlib import Path
 
 STATE_PATH = Path(__file__).resolve().parents[1] / 'data' / 'intily-ai-news-state.json'
 
-# Жёсткие пороги аварийного состояния. Это технические пороги, а не редакционные цели.
 ALERT_NO_PUBLISH_RUNS = 10
 ALERT_PUBLISH_FAILURES_24H = 5
 ALERT_PUBLISH_FAILURE_RATE = 20.0
 ALERT_RSS_ERROR_RATE = 25.0
 
-# Диагностические пороги показываются как предупреждения и не ломают workflow.
 WARN_PUBLISH_FAILURES_24H = 3
 WARN_PUBLISH_FAILURE_RATE = 10.0
 WARN_ADMISSION_RATE = 10.0
@@ -69,6 +67,36 @@ def window(data, seconds, now):
     return [r for r in data if now - float(r.get('ts', 0) or 0) <= seconds]
 
 
+def _image_stats(data):
+    attempts = found = validated = photo_sent = fallback = 0
+    reasons = {}
+    sources = {}
+    for r in data:
+        image = r.get('admission', {}).get('image', {})
+        attempts += int(image.get('attempts', 0) or 0)
+        found += int(image.get('found', 0) or 0)
+        validated += int(image.get('validated', 0) or 0)
+        photo_sent += int(image.get('photo_sent', 0) or 0)
+        fallback += int(image.get('text_fallback', 0) or 0)
+        for reason, count in image.get('fallback_reasons', {}).items():
+            reasons[reason] = reasons.get(reason, 0) + int(count or 0)
+        for source, count in image.get('sources', {}).items():
+            sources[source] = sources.get(source, 0) + int(count or 0)
+    return {
+        'attempts': attempts,
+        'found': found,
+        'validated': validated,
+        'photo_sent': photo_sent,
+        'fallback': fallback,
+        'resolution_rate': found / max(1, attempts) * 100,
+        'validation_rate': validated / max(1, found) * 100,
+        'telegram_photo_rate': photo_sent / max(1, attempts) * 100,
+        'fallback_rate': fallback / max(1, attempts) * 100,
+        'fallback_reasons': reasons,
+        'sources': sources,
+    }
+
+
 def sums(data):
     pubs = sum(int(r.get('published', 0) or 0) for r in data)
     attempts = sum(int(r.get('publish_attempts', 0) or 0) for r in data)
@@ -109,11 +137,11 @@ def sums(data):
         direct_raw += int(rss.get('direct_raw_items', 0) or 0)
         direct_errors += int(rss.get('direct_feed_errors', 0) or 0)
         for source, count in rss.get('source_counts', {}).items():
-            # -1 означает ошибку ленты; ошибка уже учитывается отдельно.
             source_counts[source] = source_counts.get(source, 0) + max(0, int(count or 0))
 
     intervals = [(b - a) / 60 for a, b in zip(pub_ts, pub_ts[1:]) if b > a]
     span_hours = (data[-1]['ts'] - data[0]['ts']) / 3600 if len(data) > 1 else 0
+    image = _image_stats(data)
     return {
         'cycles': len(data),
         'searches': sum(1 for r in data if r.get('searched')),
@@ -146,6 +174,7 @@ def sums(data):
         'queue_avg': sum(q_values) / len(q_values) if q_values else 0,
         'queue_max': max(q_values) if q_values else 0,
         'queue_velocity': sum(q_deltas) / len(q_deltas) if q_deltas else 0,
+        'image': image,
     }
 
 
@@ -202,6 +231,39 @@ def print_dashboard(state):
     print(f"| Кандидаты | {d24['candidates']} | {d7['candidates']} | {stored['candidates']} |")
     print(f"| Без публикации | {d24['no_publish']} ({pct(d24['no_publish_rate'])}) | {d7['no_publish']} ({pct(d7['no_publish_rate'])}) | {stored['no_publish']} |")
     print(f"| Ошибки публикации | {d24['failures']} ({pct(d24['failure_rate'])}) | {d7['failures']} ({pct(d7['failure_rate'])}) | {stored['failures']} |")
+    print('')
+
+    print('## Медиа: изображение → валидация → Telegram')
+    print('')
+    print('| Показатель | 24 часа | 7 дней | Сохранённая история |')
+    print('|---|---:|---:|---:|')
+    for label, key in (
+        ('Попытки получить изображение', 'attempts'),
+        ('Изображение найдено', 'found'),
+        ('Изображение прошло валидацию', 'validated'),
+        ('Фото отправлено в Telegram', 'photo_sent'),
+        ('Переход на текст без фото', 'fallback'),
+    ):
+        print(f"| {label} | {d24['image'][key]} | {d7['image'][key]} | {stored['image'][key]} |")
+    print(f"| Доля успешного разрешения изображения | {pct(d24['image']['resolution_rate'])} | {pct(d7['image']['resolution_rate'])} | {pct(stored['image']['resolution_rate'])} |")
+    print(f"| Доля отправки фото среди попыток | {pct(d24['image']['telegram_photo_rate'])} | {pct(d7['image']['telegram_photo_rate'])} | {pct(stored['image']['telegram_photo_rate'])} |")
+    print(f"| Доля fallback без фото | {pct(d24['image']['fallback_rate'])} | {pct(d7['image']['fallback_rate'])} | {pct(stored['image']['fallback_rate'])} |")
+    if d24['image']['fallback_reasons']:
+        print('')
+        print('### Причины fallback без фото за 24 часа')
+        print('')
+        print('| Причина | Количество |')
+        print('|---|---:|')
+        for reason, count in top_items(d24['image']['fallback_reasons'], 8):
+            print(f'| {reason} | {count} |')
+    if d24['image']['sources']:
+        print('')
+        print('### Источники изображения')
+        print('')
+        print('| Метод | Фото |')
+        print('|---|---:|')
+        for source, count in top_items(d24['image']['sources'], 8):
+            print(f'| {source} | {count} |')
     print('')
 
     print('## Поток новостей: поиск → отбор → очередь → публикация')
@@ -274,14 +336,15 @@ def print_dashboard(state):
     print('<details>')
     print('<summary>Последние 12 производственных запусков</summary>')
     print('')
-    print('| Время UTC | Результат | Причина | Кандидаты | Добавлено | Опубликовано | Ошибки | AI |')
-    print('|---|---|---|---:|---:|---:|---:|---|')
+    print('| Время UTC | Результат | Причина | Кандидаты | Добавлено | Опубликовано | Ошибки | Фото | AI |')
+    print('|---|---|---|---:|---:|---:|---:|---:|---|')
     for r in data[-12:]:
         a = r.get('admission', {})
         p = r.get('provider', {})
+        image = a.get('image', {})
         result = RESULT_LABELS.get(r.get('business_result'), r.get('business_result', '-'))
         provider = PROVIDER_LABELS.get(p.get('used'), p.get('used') or '-')
-        print(f"| {time.strftime('%m-%d %H:%M', time.gmtime(r.get('ts', 0)))} | {result} | {reason_label(r.get('business_reason', ''))} | {r.get('candidates', 0)} | {a.get('added', 0)} | {r.get('published', 0)} | {r.get('item_failures', 0)} | {provider} |")
+        print(f"| {time.strftime('%m-%d %H:%M', time.gmtime(r.get('ts', 0)))} | {result} | {reason_label(r.get('business_reason', ''))} | {r.get('candidates', 0)} | {a.get('added', 0)} | {r.get('published', 0)} | {r.get('item_failures', 0)} | {image.get('photo_sent', 0)}/{image.get('attempts', 0)} | {provider} |")
     print('')
     print('</details>')
 
