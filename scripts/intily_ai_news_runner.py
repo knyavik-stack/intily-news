@@ -79,7 +79,7 @@ def apply_policy(publisher):
 
 
 def apply_image_delivery(publisher):
-    """Add main-article photo delivery while preserving text-only fallback."""
+    """Add publisher-image delivery plus durable photo KPIs without blocking text fallback."""
     from intily_image_pipeline import publish_with_optional_image
 
     publisher._cycle_image_telemetry = {
@@ -109,6 +109,37 @@ def apply_image_delivery(publisher):
             'width': telemetry.get('width'), 'height': telemetry.get('height'),
             'error': telemetry.get('error'),
         }
+
+    # record_kpi is called by the legacy publisher core. Wrapping it here keeps
+    # the durable state schema backwards compatible while adding media KPIs under
+    # admission.image. No token, caption or article body is persisted here.
+    original_record_kpi = publisher.record_kpi
+
+    def record_kpi_with_image(s, now, searched, candidates, queue_before, queue_after,
+                              published, publish_attempts, item_failures, business_result,
+                              business_reason, admission=None, rss_telemetry=None,
+                              provider_telemetry=None, duration_sec=0.0):
+        admission_copy = dict(admission or {})
+        image_stats = publisher._cycle_image_telemetry
+        admission_copy['image'] = {
+            'attempts': int(image_stats.get('attempts', 0)),
+            'found': int(image_stats.get('found', 0)),
+            'validated': int(image_stats.get('validated', 0)),
+            'photo_sent': int(image_stats.get('photo_sent', 0)),
+            'text_fallback': int(image_stats.get('text_fallback', 0)),
+            'fallback_reasons': dict(image_stats.get('fallback_reasons', {})),
+            'sources': dict(image_stats.get('sources', {})),
+            'last': image_stats.get('last'),
+        }
+        print('IMAGE_KPI', json.dumps(admission_copy['image'], ensure_ascii=False, separators=(',', ':')))
+        return original_record_kpi(
+            s, now, searched, candidates, queue_before, queue_after,
+            published, publish_attempts, item_failures, business_result, business_reason,
+            admission=admission_copy, rss_telemetry=rss_telemetry,
+            provider_telemetry=provider_telemetry, duration_sec=duration_sec
+        )
+
+    publisher.record_kpi = record_kpi_with_image
 
     original_telegram = publisher.telegram
     original_edit = publisher.edit
