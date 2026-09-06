@@ -482,7 +482,8 @@
     "956f6692ed81bcf5720cea2051d95ef0fc5ce31dc51f20a265bed4d296e20fb2": 1788695886,
     "56f1077de3b7d038d98ec1283db22f7fc8ee4c98806befb7f4fd389924cc01c4": 1788696675,
     "1b8d47880d1f885d91a9764b04d726eefd79ad04b9a233e72afba8bde6c66287": 1788697386,
-    "b738aac3f20313034d3b142886fe11f710c64a612a23a4eee71c1f8814ea7020": 1788698046
+    "b738aac3f20313034d3b142886fe11f710c64a612a23a4eee71c1f8814ea7020": 1788698046,
+    "6a1b8d4c340b83f29179cb1d0501187d907cc57bd73ab5ea77de8af62235c745": 1788698286
   },
   "known": {
     "23c156b52fe2052ef9ebc9214d10e9b5ea9af725fca091bc199b02267fe589f4": 1788693283.8283527,
@@ -539,21 +540,6 @@
     "00606fc1b190baf646abee6ca350ae30218fac4d02d12ce306ecbce902449dfa": 1788696675.0326302
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Ученые: общение с ИИ делает речь пользователей более шаблонной - kommersant.ru",
-      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9ZVXp6M3ZiNXBLNnRqRndTNTFkeWcyUFBweVJqbVB2MURYM2dZMkZVcVVzcTdBaTgzaEN2RXU1YkJHbllvMGhGeU90dnVKUQ?oc=5",
-      "desc": "Ученые: общение с ИИ делает речь пользователей более шаблонной kommersant.ru",
-      "source": "kommersant.ru",
-      "time": 1788695011.0,
-      "score": 71.7,
-      "russia_weight_bonus": 3.2,
-      "key": "6a1b8d4c340b83f29179cb1d0501187d907cc57bd73ab5ea77de8af62235c745",
-      "importance": 71.7,
-      "editorial_value": 50.0,
-      "topics": [],
-      "tier": "A"
-    },
     {
       "region": "RUSSIA",
       "title": "Как искусственный интеллект помогает сохранить десятилетия научных наблюдений - Наука Mail",
@@ -789,20 +775,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788698225.9461946,
+    "last_start_ts": 1788698286.2007174,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788698225.9461946,
-    "last_success_ts": 1788698225.9461946,
+    "last_run_ts": 1788698286.2007174,
+    "last_success_ts": 1788698286.2007174,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 16
+    "last_published": 1,
+    "queue_size": 15
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788698048.7230422
+      "updated_at": 1788698289.8256032
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -1515,12 +1501,18 @@
       "desc": "GPT-6 Astra vs Fable 5.1: Which AI Model Is Better in 2026? Bleap",
       "source": "Bleap",
       "region": "WORLD"
+    },
+    "6a1b8d4c340b83f29179cb1d0501187d907cc57bd73ab5ea77de8af62235c745": {
+      "time": 1788698286,
+      "title": "Ученые: общение с ИИ делает речь пользователей более шаблонной - kommersant.ru",
+      "desc": "Ученые: общение с ИИ делает речь пользователей более шаблонной kommersant.ru",
+      "source": "kommersant.ru",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -1537,38 +1529,12 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "last_search_ts": 1788696675.0326302,
-  "last_publish_ts": 1788698046.0957167,
+  "last_publish_ts": 1788698286.2007174,
   "run_history": [
-    {
-      "ts": 1788660581,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "empty_queue_after_filters",
-      "searched": true,
-      "candidates": 15,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788661063,
       "status": "OK",
@@ -10328,6 +10294,57 @@
       "provider": {
         "attempts": [],
         "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788698286,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 4.44,
+      "candidates": 0,
+      "queue_before": 16,
+      "queue_after": 15,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
