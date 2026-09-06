@@ -473,7 +473,6 @@
     "5125e0464e409f7881afd1de384a0ff40a53b8fcea2479a9ea9d5e97561e0400": 1788691902
   },
   "known": {
-    "6480abf103056f12001fef47641021ada2a2f9a747c565766b7f42fc3605e5d8": 1788686622.5980794,
     "cef92be0b855b6168abd2b5b747734f731cc22f5035b94fbf3c8f6d30aaa82a7": 1788687525.4517438,
     "192dd6bf836536b14703e8dacb626ed222b7a4e02176a6ad2d4b065d5998420d": 1788687525.4517438,
     "04d433f060196a0b1db9b21973c362974594684f84ac894359b155d9cd8d7c8b": 1788688123.05406,
@@ -484,9 +483,25 @@
     "8a8db8f3bd510e38880e9f2215dafbd5b89ebee4265f5aa609811531b7b0e60d": 1788690284.5686033,
     "7513621c37c002cff35f835a8af9357bf1d275f1edbec37ee5f2eb34e7dd6b19": 1788691002.3213181,
     "82d15c10e505d61e9b2bda28926dacbe61e2cf5ad8ec211a52fd89c461d5d996": 1788691720.3085623,
-    "5125e0464e409f7881afd1de384a0ff40a53b8fcea2479a9ea9d5e97561e0400": 1788691720.3085623
+    "5125e0464e409f7881afd1de384a0ff40a53b8fcea2479a9ea9d5e97561e0400": 1788691720.3085623,
+    "4749303661c8eeecc479c3e4d1322d3d12b3ca6a61a761d413396a086f11e5aa": 1788692024.3129845
   },
   "queue": [
+    {
+      "region": "RUSSIA",
+      "title": "Kaiber AI — создание видео с акцентом на музыку - quasa.io",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE96TzB2aS1DMkg1S3pHZEoxOUlqNHZRS0dkX2Qzd3F0ZEREWlMxUGdCOFJoaGhNMDU5OEhTU1UwdTdlMGhCMDJwMzZySkxYWDk2ZTAyU1ZmUl9NOFZvOXpUaG9mOUtYU000TElLLUtSMmk4aDRITWdpSDI5OA?oc=5",
+      "desc": "Kaiber AI — создание видео с акцентом на музыку quasa.io",
+      "source": "quasa.io",
+      "time": 1788691231.0,
+      "score": 72.3,
+      "russia_weight_bonus": 3.8,
+      "key": "4749303661c8eeecc479c3e4d1322d3d12b3ca6a61a761d413396a086f11e5aa",
+      "importance": 72.3,
+      "editorial_value": 50.0,
+      "topics": [],
+      "tier": "A"
+    },
     {
       "region": "RUSSIA",
       "title": "Нейросеть неожиданно повторила, как мозг учится на прошлом опыте - prospect.com.ru",
@@ -508,14 +523,14 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788691962.5017948,
+    "last_start_ts": 1788692024.3129845,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788691962.5017948,
-    "last_success_ts": 1788691962.5017948,
-    "last_candidates": 28,
+    "last_run_ts": 1788692024.3129845,
+    "last_success_ts": 1788692024.3129845,
+    "last_candidates": 27,
     "last_published": 0,
-    "queue_size": 1
+    "queue_size": 2
   },
   "providers": {
     "GEMINI": {
@@ -1174,36 +1189,9 @@
     "RUSSIA",
     "WORLD"
   ],
-  "last_search_ts": 1788691962.5017948,
+  "last_search_ts": 1788692024.3129845,
   "last_publish_ts": 1788691902.8699458,
   "run_history": [
-    {
-      "ts": 1788656142,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "publish_interval_not_reached",
-      "searched": true,
-      "candidates": 16,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788656201,
       "status": "OK",
@@ -8998,6 +8986,79 @@
         "story_dedup": 1,
         "candidates": 28,
         "candidate_rate": 0.1867
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788692024,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": true,
+      "duration_sec": 12.96,
+      "candidates": 27,
+      "queue_before": 1,
+      "queue_after": 2,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 22,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 4,
+        "added": 1,
+        "candidate_count": 27,
+        "admission_rate": 3.7,
+        "dominant_block": "published_key"
+      },
+      "rss": {
+        "queries_attempted": 31,
+        "queries_ok": 31,
+        "query_errors": 0,
+        "direct_feeds_attempted": 8,
+        "direct_feeds_ok": 7,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 9,
+        "raw_items": 159,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 9
+        },
+        "score_filtered": 130,
+        "quality_filtered": 0,
+        "story_dedup": 2,
+        "candidates": 27,
+        "candidate_rate": 0.18
       },
       "provider": {
         "attempts": [],
