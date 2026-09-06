@@ -7,8 +7,9 @@ versioned independently and tested without network calls.
 """
 
 import importlib
+import json
 
-from intily_scoring_policy import calculate
+from intily_scoring_policy import THRESHOLD, calculate
 
 
 def apply_policy(publisher):
@@ -61,6 +62,10 @@ def apply_policy(publisher):
         return value
 
     publisher.score = score
+    # The scoring module owns the admission threshold. Keeping the runtime
+    # threshold in sync prevents the publisher's legacy 60-point constant from
+    # silently rejecting items that the current policy considers admissible.
+    publisher.IMPORTANCE_THRESHOLD = THRESHOLD
 
     original_collect = publisher.collect
 
@@ -71,7 +76,7 @@ def apply_policy(publisher):
         result = original_collect(telemetry)
         if telemetry is not None:
             telemetry['score_buckets'] = dict(score_buckets)
-        print('SCORE_BUCKETS', __import__('json').dumps(score_buckets, ensure_ascii=False, separators=(',', ':')))
+        print('SCORE_BUCKETS', json.dumps(score_buckets, ensure_ascii=False, separators=(',', ':')))
         return result
 
     publisher.collect = collect_with_telemetry
