@@ -416,7 +416,8 @@
     "23680cf93362f932f9a0697f3026a409cf8fcca4d23728da62aecc5409adce57": 1788657346,
     "c09e395a0b2a370828cb8197ab866fa7d01caaf9b360ced8dada72475b3a3d0a": 1788658482,
     "ee90a19bd8384baf728b539baee88a111e17115a68fdf29a684f53df27dcb536": 1788658663,
-    "a11029a880914b5769952364e57e21ac810b3b63704c0f3b81b98b1daf150308": 1788658901
+    "a11029a880914b5769952364e57e21ac810b3b63704c0f3b81b98b1daf150308": 1788658901,
+    "cb24a8820e1960fd26ca6242a4222d1726d5f5eb7b628006c136a070c47ab835": 1788660281
   },
   "known": {
     "d6dc4d7664f40cf611eea61f0d87e16c501700dc35ce4f5afb6977988bc1c37b": 1788647378.635233,
@@ -448,24 +449,25 @@
     "23680cf93362f932f9a0697f3026a409cf8fcca4d23728da62aecc5409adce57": 1788657346.009018,
     "ee90a19bd8384baf728b539baee88a111e17115a68fdf29a684f53df27dcb536": 1788658482.210256,
     "c09e395a0b2a370828cb8197ab866fa7d01caaf9b360ced8dada72475b3a3d0a": 1788658482.210256,
-    "a11029a880914b5769952364e57e21ac810b3b63704c0f3b81b98b1daf150308": 1788658783.397171
+    "a11029a880914b5769952364e57e21ac810b3b63704c0f3b81b98b1daf150308": 1788658783.397171,
+    "cb24a8820e1960fd26ca6242a4222d1726d5f5eb7b628006c136a070c47ab835": 1788660281.646836
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788659562.2595742,
+    "last_start_ts": 1788660281.646836,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788659562.2595742,
-    "last_success_ts": 1788659562.2595742,
+    "last_run_ts": 1788660281.646836,
+    "last_success_ts": 1788660281.646836,
     "last_candidates": 14,
-    "last_published": 0,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788658918.6146202
+      "updated_at": 1788660294.7326148
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -479,20 +481,6 @@
     }
   },
   "stories": {
-    "78541832fab30d4881a2a99033b4add88e674fe22c020ad194a9649d9e5fcc08": {
-      "time": 1788573439,
-      "title": "Microsoft releases 2026 Responsible AI Transparency Report with focus on agentic systems - Crypto Briefing",
-      "desc": "Microsoft releases 2026 Responsible AI Transparency Report with focus on agentic systems Crypto Briefing",
-      "source": "Crypto Briefing",
-      "region": "WORLD"
-    },
-    "dfa96c3499273e9f639349df2895dd2f9da83431d7698e726ea44f40cc8896ba": {
-      "time": 1788573740,
-      "title": "Nvidia bets $13 billion on open AI models with Hugging Face deal - electronics.economictimes.indiatimes.com",
-      "desc": "Nvidia bets $13 billion on open AI models with Hugging Face deal electronics.economictimes.indiatimes.com",
-      "source": "electronics.economictimes.indiatimes.com",
-      "region": "WORLD"
-    },
     "b218a5eaa8e6cfbc744baf3d38f8b40d8f7b68c79c6b14247eaec0ef96bd85d8": {
       "time": 1788574041,
       "title": "ИИ-агент M**a во время тестов начал самовольничать — менял пароли и отправлял письма от имени пользователей - prospect.com.ru",
@@ -849,10 +837,16 @@
       "desc": "ОП РФ призвала ставить студентам задачи без ИИ densus.ru",
       "source": "densus.ru",
       "region": "RUSSIA"
+    },
+    "cb24a8820e1960fd26ca6242a4222d1726d5f5eb7b628006c136a070c47ab835": {
+      "time": 1788660281,
+      "title": "Is there an AI bubble? Don’t worry, just ask my robot - AFR",
+      "desc": "Is there an AI bubble? Don’t worry, just ask my robot AFR",
+      "source": "AFR",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "RUSSIA",
@@ -871,10 +865,11 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
-  "last_search_ts": 1788659562.2595742,
-  "last_publish_ts": 1788658901.9211433,
+  "last_search_ts": 1788660281.646836,
+  "last_publish_ts": 1788660281.646836,
   "run_history": [
     {
       "ts": 1788649810,
@@ -2453,6 +2448,33 @@
       "queue_after": 0,
       "published": 0,
       "publish_attempts": 0,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788660281,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "candidates": 14,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
