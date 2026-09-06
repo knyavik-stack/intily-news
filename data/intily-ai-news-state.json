@@ -463,7 +463,8 @@
     "6e9adcee8491b0cf04c1a9775afda7acd75b44c4e5587d6dc44ed68fd92406b6": 1788687046,
     "cef92be0b855b6168abd2b5b747734f731cc22f5035b94fbf3c8f6d30aaa82a7": 1788687525,
     "192dd6bf836536b14703e8dacb626ed222b7a4e02176a6ad2d4b065d5998420d": 1788687763,
-    "04d433f060196a0b1db9b21973c362974594684f84ac894359b155d9cd8d7c8b": 1788688123
+    "04d433f060196a0b1db9b21973c362974594684f84ac894359b155d9cd8d7c8b": 1788688123,
+    "38eed7b3d073cd62cdd67a4f1cfa274276f8ec46688289b91ab680ad951d7a17": 1788689502
   },
   "known": {
     "699c47a86563b04a621e331541c4f3a6d0911d86e057a763ad8d32ba53bf25d1": 1788684224.7096999,
@@ -476,24 +477,25 @@
     "6480abf103056f12001fef47641021ada2a2f9a747c565766b7f42fc3605e5d8": 1788686622.5980794,
     "cef92be0b855b6168abd2b5b747734f731cc22f5035b94fbf3c8f6d30aaa82a7": 1788687525.4517438,
     "192dd6bf836536b14703e8dacb626ed222b7a4e02176a6ad2d4b065d5998420d": 1788687525.4517438,
-    "04d433f060196a0b1db9b21973c362974594684f84ac894359b155d9cd8d7c8b": 1788688123.05406
+    "04d433f060196a0b1db9b21973c362974594684f84ac894359b155d9cd8d7c8b": 1788688123.05406,
+    "38eed7b3d073cd62cdd67a4f1cfa274276f8ec46688289b91ab680ad951d7a17": 1788689502.502995
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788689383.930374,
+    "last_start_ts": 1788689502.502995,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788689383.930374,
-    "last_success_ts": 1788689383.930374,
-    "last_candidates": 21,
-    "last_published": 0,
+    "last_run_ts": 1788689502.502995,
+    "last_success_ts": 1788689502.502995,
+    "last_candidates": 20,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788688142.901741
+      "updated_at": 1788689543.8861947
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -1073,11 +1075,17 @@
       "desc": "AI hype cycles repeat, 1963 book shows blockchain.news",
       "source": "blockchain.news",
       "region": "WORLD"
+    },
+    "38eed7b3d073cd62cdd67a4f1cfa274276f8ec46688289b91ab680ad951d7a17": {
+      "time": 1788689502,
+      "title": "AI Everything Abu Dhabi looks beyond AI experimentation to real-world deployment - Fast Company Middle East",
+      "desc": "AI Everything Abu Dhabi looks beyond AI experimentation to real-world deployment Fast Company Middle East",
+      "source": "Fast Company Middle East",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -1095,38 +1103,12 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD"
   ],
-  "last_search_ts": 1788689383.930374,
-  "last_publish_ts": 1788688123.05406,
+  "last_search_ts": 1788689502.502995,
+  "last_publish_ts": 1788689502.502995,
   "run_history": [
-    {
-      "ts": 1788653562,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "publish_interval_not_reached",
-      "searched": false,
-      "candidates": 0,
-      "queue_before": 5,
-      "queue_after": 5,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788653623,
       "status": "OK",
@@ -8289,6 +8271,81 @@
       "provider": {
         "attempts": [],
         "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788689502,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 41.83,
+      "candidates": 20,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 16,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 1,
+        "candidate_count": 20,
+        "admission_rate": 5.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {
+        "queries_attempted": 31,
+        "queries_ok": 31,
+        "query_errors": 0,
+        "direct_feeds_attempted": 8,
+        "direct_feeds_ok": 7,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 10,
+        "raw_items": 155,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 9
+        },
+        "score_filtered": 132,
+        "quality_filtered": 0,
+        "story_dedup": 3,
+        "candidates": 20,
+        "candidate_rate": 0.1379
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
