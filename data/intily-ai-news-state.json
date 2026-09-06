@@ -469,7 +469,8 @@
     "e4b1931d344a1dfb9be29e9346fde7fbd877c3a62b9727f9ec6d8d57b13d4993": 1788690103,
     "8a8db8f3bd510e38880e9f2215dafbd5b89ebee4265f5aa609811531b7b0e60d": 1788690284,
     "7513621c37c002cff35f835a8af9357bf1d275f1edbec37ee5f2eb34e7dd6b19": 1788691002,
-    "82d15c10e505d61e9b2bda28926dacbe61e2cf5ad8ec211a52fd89c461d5d996": 1788691720
+    "82d15c10e505d61e9b2bda28926dacbe61e2cf5ad8ec211a52fd89c461d5d996": 1788691720,
+    "5125e0464e409f7881afd1de384a0ff40a53b8fcea2479a9ea9d5e97561e0400": 1788691902
   },
   "known": {
     "6480abf103056f12001fef47641021ada2a2f9a747c565766b7f42fc3605e5d8": 1788686622.5980794,
@@ -486,22 +487,6 @@
     "5125e0464e409f7881afd1de384a0ff40a53b8fcea2479a9ea9d5e97561e0400": 1788691720.3085623
   },
   "queue": [
-    {
-      "region": "WORLD",
-      "title": "OpenAI Agent Incident Raises Reputation Risk and Fresh Regulatory Scrutiny - TipRanks",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTm1ZS2pxUlpMTXhFbEtJMUljUVE3R1FVaWsxYUY4RlRYak5aWGdTNjRvdXVydzFlU3pwTUxTNEZmQzBhcmlDS01YV1JPTWlra2VFNFhNZHc4NE1MZTJXVE5ZcE1NX0xEWjNCQ1J2YUJLazZORE5RZWFYZUhQc19jLWVfM0hyNWxaMFl4VEZDQjR6WWV1QjFpYkJMV3VTSDhkUGNUWXc4VQ?oc=5",
-      "desc": "OpenAI Agent Incident Raises Reputation Risk and Fresh Regulatory Scrutiny TipRanks",
-      "source": "TipRanks",
-      "time": 1788690979.0,
-      "score": 70.5,
-      "key": "5125e0464e409f7881afd1de384a0ff40a53b8fcea2479a9ea9d5e97561e0400",
-      "importance": 70.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents"
-      ],
-      "tier": "A"
-    },
     {
       "region": "RUSSIA",
       "title": "Нейросеть неожиданно повторила, как мозг учится на прошлом опыте - prospect.com.ru",
@@ -523,20 +508,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788691844.9150815,
+    "last_start_ts": 1788691902.8699458,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788691844.9150815,
-    "last_success_ts": 1788691844.9150815,
+    "last_run_ts": 1788691902.8699458,
+    "last_success_ts": 1788691902.8699458,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 2
+    "last_published": 1,
+    "queue_size": 1
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788691744.5043318
+      "updated_at": 1788691905.486523
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -1158,10 +1143,16 @@
       "desc": "Власти Китая впервые одобрили созданный с помощью ИИ препарат от COVID-19 prospect.com.ru",
       "source": "prospect.com.ru",
       "region": "RUSSIA"
+    },
+    "5125e0464e409f7881afd1de384a0ff40a53b8fcea2479a9ea9d5e97561e0400": {
+      "time": 1788691902,
+      "title": "OpenAI Agent Incident Raises Reputation Risk and Fresh Regulatory Scrutiny - TipRanks",
+      "desc": "OpenAI Agent Incident Raises Reputation Risk and Fresh Regulatory Scrutiny TipRanks",
+      "source": "TipRanks",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -1180,38 +1171,12 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "last_search_ts": 1788691720.3085623,
-  "last_publish_ts": 1788691720.3085623,
+  "last_publish_ts": 1788691902.8699458,
   "run_history": [
-    {
-      "ts": 1788655843,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": true,
-      "candidates": 17,
-      "queue_before": 1,
-      "queue_after": 1,
-      "published": 0,
-      "publish_attempts": 1,
-      "item_failures": 1,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788656082,
       "status": "OK",
@@ -8940,6 +8905,57 @@
       "provider": {
         "attempts": [],
         "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788691902,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 3.28,
+      "candidates": 0,
+      "queue_before": 2,
+      "queue_after": 1,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
