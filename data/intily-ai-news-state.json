@@ -503,7 +503,8 @@
     "6a825121bf944c3607aea37ea29f84d8e3cbc80272f42848b76003f21b0c8192": 1788710199,
     "7e9f0b25d84b2376d5ee86a575d55c0fb74710837797c3ed9bad8ab0d1a5913b": 1788711580,
     "9728626dd1f988ac158a84bc125796b6505a5f2f27e3399977b2b32712d0a16b": 1788711880,
-    "4c224b7bfe26b5205936935ae00d923a91c05680446c884a80c9dada8332d990": 1788712182
+    "4c224b7bfe26b5205936935ae00d923a91c05680446c884a80c9dada8332d990": 1788712182,
+    "233a75cd25556c55b8b7ebab46d20b5a548037b07477b945d06490ffec9a5c15": 1788712540
   },
   "known": {
     "5f6f0a69d0f779fa93cb5b672d7a5742e7ed478ada6166d404d6a0c3bf668e7b": 1788708039.1294549,
@@ -566,62 +567,34 @@
         "source_quality": 4.0,
         "evidence": 1.7,
         "freshness": 4.3,
-        "timeliness": 2.4,
+        "timeliness": 2.3,
         "low_signal_penalty": 0.0
       },
-      "score": 50.7,
+      "score": 50.6,
       "key": "2c3ecd196a52f6b66601f9a393918e624ff38035e8b75454ccb7a2f5d76940b2",
-      "importance": 50.7,
+      "importance": 50.6,
       "editorial_value": 50.0,
       "topics": [
         "chips"
       ],
       "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Уволенные из-за ИИ разработчики ПО создали ИИ-систему, заменяющую CEO - Компьютерра",
-      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNFRGSGxGS1FsQVFOUHZKYTY3VkY3WDdGbUk1Rkt0YTJPNzd5c1NYeE9xR2pBbnlDRmpqT2xIZmZTa2NQUl9XSzZNV0xRamlxUWVIMVlldmZsYUVDbGV4aEVHeXVIY0JpelRheGVLdGF1bjdId2xWS3dvUWdrMEtPWExPenR0VGNVT0JrNmVKOGZHSGdEWVRYMUF5ZXlWbHluZzhvcjRXdGlsZmp4?oc=5",
-      "desc": "Уволенные из-за ИИ разработчики ПО создали ИИ-систему, заменяющую CEO Компьютерра",
-      "source": "Компьютерра",
-      "time": 1788711406.0,
-      "_score_components": {
-        "relevance": 25.0,
-        "ai_specificity": 4.0,
-        "impact": 3.8,
-        "event_concreteness": 0.0,
-        "practical_value": 2.0,
-        "novelty": 0.0,
-        "source_quality": 4.0,
-        "evidence": 1.8,
-        "freshness": 4.9,
-        "timeliness": 4.8,
-        "low_signal_penalty": 0.0
-      },
-      "score": 50.3,
-      "russia_weight_bonus": 0.0,
-      "key": "233a75cd25556c55b8b7ebab46d20b5a548037b07477b945d06490ffec9a5c15",
-      "importance": 50.3,
-      "editorial_value": 50.0,
-      "topics": [],
-      "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1788712360.327036,
+    "last_start_ts": 1788712540.173598,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788712360.327036,
-    "last_success_ts": 1788712360.327036,
+    "last_run_ts": 1788712540.173598,
+    "last_success_ts": 1788712540.173598,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 3
+    "last_published": 1,
+    "queue_size": 2
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788712207.246434
+      "updated_at": 1788712544.751694
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -1467,10 +1440,16 @@
       "desc": "ИИ угадывает слова, но упускает смысл: эксперимент с 400 моделями показал предел нейросетей prospect.com.ru",
       "source": "prospect.com.ru",
       "region": "RUSSIA"
+    },
+    "233a75cd25556c55b8b7ebab46d20b5a548037b07477b945d06490ffec9a5c15": {
+      "time": 1788712540,
+      "title": "Уволенные из-за ИИ разработчики ПО создали ИИ-систему, заменяющую CEO - Компьютерра",
+      "desc": "Уволенные из-за ИИ разработчики ПО создали ИИ-систему, заменяющую CEO Компьютерра",
+      "source": "Компьютерра",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -1489,38 +1468,12 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "last_search_ts": 1788712182.297612,
-  "last_publish_ts": 1788712182.297612,
+  "last_publish_ts": 1788712540.173598,
   "run_history": [
-    {
-      "ts": 1788671021,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "empty_queue_after_filters",
-      "searched": true,
-      "candidates": 18,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788671201,
       "status": "OK",
@@ -12274,6 +12227,57 @@
       "provider": {
         "attempts": [],
         "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788712540,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 5.15,
+      "candidates": 0,
+      "queue_before": 3,
+      "queue_after": 2,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
