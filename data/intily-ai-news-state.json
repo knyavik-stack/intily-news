@@ -484,7 +484,8 @@
     "1b8d47880d1f885d91a9764b04d726eefd79ad04b9a233e72afba8bde6c66287": 1788697386,
     "b738aac3f20313034d3b142886fe11f710c64a612a23a4eee71c1f8814ea7020": 1788698046,
     "6a1b8d4c340b83f29179cb1d0501187d907cc57bd73ab5ea77de8af62235c745": 1788698286,
-    "43447a8a4a76d2de03f37970dddbfa97d9b567c5d703a606bb7869b79024f215": 1788699006
+    "43447a8a4a76d2de03f37970dddbfa97d9b567c5d703a606bb7869b79024f215": 1788699006,
+    "6196d0d33d45eee32c714f9da4f579644d6a883b862c2e87fdc4a176829900f9": 1788699281
   },
   "known": {
     "1abea05a31fb63fb23a2659b834fb96d6036fa1e6fd34bf3c83858c4e856cb9b": 1788694002.8049405,
@@ -566,21 +567,6 @@
     "75a112eeca1c9ba4491aeb63c295c47f53a18037eed630221bda6dfb47a51696": 1788699006.2443738
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "ИИ пришел в суды: Россия тестирует 4 модели - BeInCrypto",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBFLWpGSEpxVXMwci1oSGRKMlNDc0txMjExaThrdWJ1bElNeWtYdXQzbGVfZ3VqUm8ycGZUUTgzNTJkWXcteHpxMlFFTXFWVDJtaU40eUlSTUJHWHNPanZTTURIUVcyZDRhWWJSbFp3?oc=5",
-      "desc": "ИИ пришел в суды: Россия тестирует 4 модели BeInCrypto",
-      "source": "BeInCrypto",
-      "time": 1788696900.0,
-      "score": 77.3,
-      "russia_weight_bonus": 4.8,
-      "key": "6196d0d33d45eee32c714f9da4f579644d6a883b862c2e87fdc4a176829900f9",
-      "importance": 77.3,
-      "editorial_value": 50.0,
-      "topics": [],
-      "tier": "A"
-    },
     {
       "region": "RUSSIA",
       "title": "Технологии робота «Теледроид» применят на Луне и новой российской станции - prospect.com.ru",
@@ -856,20 +842,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788699184.5157583,
+    "last_start_ts": 1788699281.9094224,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788699184.5157583,
-    "last_success_ts": 1788699184.5157583,
+    "last_run_ts": 1788699281.9094224,
+    "last_success_ts": 1788699281.9094224,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 18
+    "last_published": 1,
+    "queue_size": 17
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788699032.3347104
+      "updated_at": 1788699284.5089629
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -1596,10 +1582,16 @@
       "desc": "AI Startup Micro1 Opens $90 Hourly Roles for Robotics Training whalesbook.com",
       "source": "whalesbook.com",
       "region": "WORLD"
+    },
+    "6196d0d33d45eee32c714f9da4f579644d6a883b862c2e87fdc4a176829900f9": {
+      "time": 1788699281,
+      "title": "ИИ пришел в суды: Россия тестирует 4 модели - BeInCrypto",
+      "desc": "ИИ пришел в суды: Россия тестирует 4 модели BeInCrypto",
+      "source": "BeInCrypto",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -1618,38 +1610,12 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "last_search_ts": 1788699006.2443738,
-  "last_publish_ts": 1788699006.2443738,
+  "last_publish_ts": 1788699281.9094224,
   "run_history": [
-    {
-      "ts": 1788661602,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "empty_queue_after_filters",
-      "searched": true,
-      "candidates": 12,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788661661,
       "status": "OK",
@@ -10547,6 +10513,57 @@
       "provider": {
         "attempts": [],
         "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788699281,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 3.38,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 17,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
