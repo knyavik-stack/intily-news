@@ -22,7 +22,7 @@ jobs:
           fetch-depth: 0
       - name: Проверка аналитики и политики
         run: |
-          python3 -m py_compile scripts/intily_scoring_policy.py scripts/intily_ai_news_runner.py scripts/intily_cycle_intelligence.py scripts/intily_monitor.py scripts/intily_search_monitor.py scripts/intily_policy_analytics.py
+          python3 -m py_compile scripts/intily_scoring_policy.py scripts/intily_ai_news_runner.py scripts/intily_image_pipeline.py scripts/intily_cycle_intelligence.py scripts/intily_monitor.py scripts/intily_search_monitor.py scripts/intily_policy_analytics.py
       - name: Запуск новостного двигателя
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
