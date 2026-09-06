@@ -39,8 +39,6 @@ def apply_policy(publisher):
     publisher.score = score
     publisher.IMPORTANCE_THRESHOLD = THRESHOLD
 
-    # Independent direct discovery sources. They are runtime additions so the
-    # source expansion remains isolated from the legacy publisher engine.
     extra_feeds = [
         ('WORLD', 'CNews', 'https://www.cnews.ru/inc/rss/news.xml'),
         ('WORLD', 'TechCult', 'https://techcult.ru/feed'),
@@ -88,7 +86,13 @@ def apply_image_delivery(publisher):
     from intily_image_pipeline import publish_with_optional_image
 
     original_telegram = publisher.telegram
-    original_priority = publisher.publication_priority
+    original_edit = publisher.edit
+
+    def edit_with_context(item, state):
+        publisher._current_publication_url = item.get('link', '')
+        return original_edit(item, state)
+
+    publisher.edit = edit_with_context
 
     def telegram_with_image(text):
         token = os.environ.get('TELEGRAM_BOT_TOKEN', '')
@@ -101,15 +105,6 @@ def apply_image_delivery(publisher):
         publisher._last_image_telemetry = telemetry
 
     publisher.telegram = telegram_with_image
-
-    # The legacy engine calls telegram(post) without the source URL. The
-    # publication-priority call is immediately before the actual send, so use it
-    # to bind the current item's canonical article URL to the delivery wrapper.
-    def publication_priority_with_context(state, item):
-        publisher._current_publication_url = item.get('link', '')
-        return original_priority(state, item)
-
-    publisher.publication_priority = publication_priority_with_context
 
 
 if __name__ == '__main__':
