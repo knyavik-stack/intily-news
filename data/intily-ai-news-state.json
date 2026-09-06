@@ -489,12 +489,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788693765.6145847,
+    "last_start_ts": 1788693883.0162585,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788693765.6145847,
-    "last_success_ts": 1788693765.6145847,
-    "last_candidates": 29,
+    "last_run_ts": 1788693883.0162585,
+    "last_success_ts": 1788693883.0162585,
+    "last_candidates": 27,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1176,36 +1176,9 @@
     "RUSSIA",
     "WORLD"
   ],
-  "last_search_ts": 1788693765.6145847,
+  "last_search_ts": 1788693883.0162585,
   "last_publish_ts": 1788693283.8283527,
   "run_history": [
-    {
-      "ts": 1788658244,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "empty_queue_after_filters",
-      "searched": true,
-      "candidates": 13,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788658482,
       "status": "OK",
@@ -9442,6 +9415,79 @@
         "story_dedup": 2,
         "candidates": 29,
         "candidate_rate": 0.1726
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788693883,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 9.52,
+      "candidates": 27,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 23,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 4,
+        "added": 0,
+        "candidate_count": 27,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "rss": {
+        "queries_attempted": 31,
+        "queries_ok": 31,
+        "query_errors": 0,
+        "direct_feeds_attempted": 8,
+        "direct_feeds_ok": 7,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 8,
+        "raw_items": 176,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 8
+        },
+        "score_filtered": 147,
+        "quality_filtered": 0,
+        "story_dedup": 2,
+        "candidates": 27,
+        "candidate_rate": 0.1607
       },
       "provider": {
         "attempts": [],
