@@ -27,7 +27,7 @@ from xml.etree import ElementTree as ET
 
 LOOKBACK = timedelta(hours=12)  # Maximum age of news eligible for discovery/queue.
 SEARCH_INTERVAL_SECONDS = 30 * 60  # Planned news-search interval: 30 minutes.
-PUBLISH_INTERVAL_SECONDS = 3 * 60  # Minimum interval between Telegram publications: 3 minutes.
+PUBLISH_INTERVAL_SECONDS = 2 * 60  # Minimum interval between Telegram publications: 3 minutes.
 IMPORTANCE_THRESHOLD = 50.0  # Minimum mathematical importance score (0–100) for queue/publication.
 MAX_QUEUE = 20  # Maximum number of qualifying stories retained in memory.
 RUSSIA_MIN_SHARE = 0.60  # Minimum Russian-news share in the queue when enough RU candidates exist.
