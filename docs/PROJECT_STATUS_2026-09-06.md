@@ -1,8 +1,8 @@
 # INTILY Project Status — 2026-09-06
 
-## Production status: 🟡 GREEN TECHNICALLY / YELLOW EDITORIAL SUPPLY
+## Production status: 🟡 ТЕХНИЧЕСКИ GREEN / ЖЁЛТЫЙ EDITORIAL SUPPLY
 
-Production architecture is working. The current concern is not scheduler failure or empty RSS discovery, but insufficient fresh unique stories after duplicate/history checks.
+Основная production-архитектура работает. Текущая задача — не восстановление планировщика, а повышение количества свежих уникальных историй и корректность операторской аналитики.
 
 ## Production architecture
 
@@ -14,192 +14,165 @@ Cloudflare intily-ai-news
   → data/intily-ai-news-state.json
 ```
 
-GitHub publisher has no own cron.
+GitHub Publisher не содержит собственного расписания.
 
-## Observability
+## Наблюдаемость
 
-Implemented:
+Реализованы:
 
-- explicit business result per production cycle: `PUBLISHED`, `NO_PUBLISH`, `PUBLISH_FAILED`;
-- reason code for every non-publication;
-- bounded `run_history` (200 cycles) persisted in durable state;
-- rolling 24h / 7d KPI calculations;
-- candidate volume, queue size, publication count, attempts and item failures;
-- GitHub Actions Summary dashboard;
-- on-demand `Intily Production Monitor`;
-- RED checks for prolonged no-publish and publication failures;
-- provider usage/failover telemetry;
-- RSS/query/direct-feed health telemetry;
-- admission rejection telemetry;
-- queue velocity and publication frequency.
+- бизнес-результат каждого production cycle: `PUBLISHED`, `NO_PUBLISH`, `PUBLISH_FAILED`;
+- причина каждого отсутствия публикации;
+- ограниченная история `run_history` — 200 запусков;
+- расчёты за 24 часа и 7 дней;
+- объём кандидатов, очередь, публикации, попытки и ошибки;
+- сводка GitHub Actions;
+- ручной `Intily Production Monitor`;
+- критические проверки для длительного отсутствия публикаций и ошибок публикации;
+- телеметрия AI-провайдеров и переключений;
+- телеметрия Google News и прямых RSS;
+- телеметрия причин отказа при добавлении в очередь;
+- скорость изменения очереди;
+- отдельная поисковая аналитика.
 
-## Critical terminology
+## Важное разделение аналитики
 
-Numbers in the pipeline are different:
+### Intily AI News Publisher
 
-```text
-RSS raw
-  ↓
-score / freshness / AI relevance / story dedup
-  ↓
-CANDIDATES
-  ↓
-published / known / queue / semantic history checks
-  ↓
-NEW QUEUE ADMISSIONS
-  ↓
-durable queue
-  ↓
-AI editorial QA
-  ↓
-Telegram publication
-```
+Показывает **только текущий запуск**:
 
-Therefore `19 candidates` and `0 new admissions` are not contradictory.
+- итог текущего запуска;
+- публикацию текущего запуска;
+- кандидатов и новые добавления в очередь;
+- поток материалов от источников до кандидатов;
+- поисковые запросы и прямые источники текущего запуска;
+- ошибки текущего запуска.
 
-## Live diagnosis — 2026-09-06 09:34 UTC
+Историческая аналитика Monitor сюда не добавляется.
 
-The verified production cycle produced:
+### Intily Production Monitor
 
-- 154 RSS raw items;
-- 31/31 Google News queries OK;
-- 8 direct feeds attempted: 7 OK, 1 HTTP 429;
-- 124 items removed by score;
-- 26 candidates after quality/relevance/story dedup;
-- 0 new queue admissions;
-- 23 candidates rejected because the exact item key was already published;
-- 3 candidates rejected by semantic story history;
-- 0 publications in that cycle;
-- technical health `OK`.
+Показывает **историю системы**:
 
-### Root cause
+- 24 часа;
+- 7 дней;
+- сохранённую историю;
+- причины отсутствия публикаций;
+- здоровье источников;
+- поисковую аналитику;
+- последние 12 запусков;
+- предупреждения и критические состояния.
 
-The discovery layer is **not empty**. It found 26 candidates.
+Весь пользовательский текст обеих аналитических панелей выводится на русском языке. Машинные коды остаются только во внутреннем состоянии программы.
 
-The immediate bottleneck is that the candidate pool is dominated by stories the channel already knows/published.
-
-## Important telemetry bug found and corrected
-
-`scripts/intily_ai_news.py` previously calculated `dominant_block` while including `candidate_count` among the possible causes.
-
-That was incorrect because `candidate_count` is the size of the input, not a rejection reason. With 26 candidates it could incorrectly report:
+## Критическая терминология потока
 
 ```text
-admission_blocked_candidate_count
+RSS
+  ↓
+оценка важности / свежести / AI-релевантности / первичный semantic dedup
+  ↓
+КАНДИДАТЫ
+  ↓
+проверка опубликованных / известных / находящихся в очереди историй
+  ↓
+НОВЫЕ ДЛЯ ОЧЕРЕДИ
+  ↓
+очередь
+  ↓
+редакторская AI-проверка
+  ↓
+Telegram
 ```
 
-while the real cause was, for example:
+Поэтому `19 кандидатов` и `0 новых для очереди` не противоречат друг другу.
 
-```text
-published_key = 23
-story_history = 3
-```
+## Последний фактический production run
 
-The production code now selects `dominant_block` only from actual rejection causes:
+В последнем проверенном запуске Publisher:
 
-- `published_key`;
-- `known_recent`;
-- `already_queued`;
-- `story_queue`;
-- `story_history`.
+- Google News дал 143 материала;
+- прямые RSS дали 10 материалов;
+- всего получено 153 материала;
+- 129 отсечено по оценке важности;
+- 23 кандидата прошли первичный отбор;
+- 0 новых материалов добавлено в очередь;
+- основной блок — уже опубликованные ранее материалы;
+- техническое состояние Publisher — успешно.
 
-The one-time migration was applied successfully in production and then removed from the workflow and repository.
+## Ошибка, обнаруженная после runtime-проверки
 
-## Post-fix production verification — 2026-09-06 09:39 UTC
+В новом блоке текущей аналитики Publisher была обнаружена ошибка `NameError`: функция вывода использовала переменную `errors`, которая не была передана в её область видимости.
 
-The first production cycle after the correction completed successfully:
+Ошибка была реальной, хотя workflow оставался зелёным, потому что аналитический шаг специально имел `continue-on-error`.
 
-- 157 RSS raw items;
-- 31/31 Google News queries OK;
-- 128 score-filtered out;
-- 27 candidates;
-- 23 `published_key` blocks;
-- 2 semantic history blocks;
-- **2 new queue admissions**;
-- **1 Telegram publication**;
-- Gemini used successfully, zero failover;
-- queue ended with 1 item;
-- business result: `PUBLISHED`.
+Исправлено:
 
-The log explicitly reported:
+- `scripts/intily_cycle_intelligence.py` получает и выводит ошибки текущего запуска корректно;
+- текущая аналитика дополнена результатом запуска, публикацией и размером очереди;
+- из Publisher workflow удалён отдельный исторический `intily_monitor.py`.
 
-```text
-QUEUE_ADMISSION ... "published_key":23 ... "story_history":2 ... "added":2 ... "dominant_block":"published_key"
-```
+Это важно: теперь Publisher и Monitor снова имеют строго разные обязанности.
 
-This is the corrected behavior and proves that the earlier `candidate_count` diagnostic was misleading rather than a discovery outage.
+## Последний Production Monitor
 
-## Why 19 candidates existed 12–15 hours earlier
+Реальный `Intily Production Monitor` run #7 завершился успешно.
 
-The verified 2026-09-02 production cycle received 169 RSS items and produced 19 candidates. One was published and the queue then became empty.
+Он показал накопленную картину:
 
-This does not mean there should always be 19 new publishable stories later. Google News can return the same recent stories repeatedly. Once Intily has published those stories, they correctly stop at the admission layer.
+- 200 сохранённых циклов;
+- 59 публикаций;
+- 2 857 кандидатов;
+- 5 026 RSS-материалов;
+- 16 добавлений в очередь по телеметрии;
+- 4 ошибки публикации;
+- 0 ошибок поисковых запросов Google News;
+- 31 ошибка прямых RSS за 24 часа;
+- основной диагностический сигнал — низкое добавление новых историй и ошибки отдельных прямых лент.
 
-The current problem is therefore **fresh unique supply**, not a broken candidate scorer.
+## Текущая задача свежего supply
 
-## Current source health
+Поиск не пуст и не сломан. Последние циклы регулярно находят 20+ кандидатов, но значительная часть уже известна системе или уже публиковалась.
 
-Google News queries are currently returning material and have shown 0 query errors in the verified cycle.
+Следующий инженерный приоритет:
 
-Direct RSS sources are a resilience layer, but several currently return no fresh items in the active window and VentureBeat has returned HTTP 429. These are now visible in telemetry.
+1. накопить достоверную статистику по запросам и источникам;
+2. добавить лёгкую маркировку происхождения материала по запросу;
+3. считать реальную эффективность запросов и источников;
+4. усиливать работающие источники и ослаблять шумные;
+5. отдельно контролировать WORLD/RUSSIA supply.
 
-## Current 24h production picture
+Не добавлять десятки новых RSS-источников вслепую.
 
-The stored rolling sample shows:
+## GREEN / YELLOW / RED
 
-- 200 cycles;
-- 62 publications;
-- 2,628 candidates;
-- 3,447 RSS raw items;
-- 458 telemetry-covered admission candidates;
-- 15 admissions;
-- 68 publish attempts;
-- 6 item failures;
-- 0 Google query errors;
-- 21 direct-feed errors;
-- 1 provider failover.
+### GREEN
 
-The low admission rate is a **diagnostic signal**. It does not mean discovery is empty: the latest cycle alone found 27 candidates and admitted 2.
+- production architecture работает;
+- GitHub Actions запускаются;
+- Publisher публикует в Telegram;
+- AI provider работает и failover проверен;
+- durable state сохраняется;
+- queue работает;
+- duplicate protection работает;
+- Google News discovery работает;
+- Production Monitor запускается;
+- Publisher и Monitor теперь разделены по назначению;
+- аналитика пользовательского интерфейса переведена на русский.
 
-## Next engineering priority — Query + Source Intelligence
+### YELLOW
 
-Do not blindly add dozens of RSS feeds.
+- свежего уникального supply недостаточно относительно уже опубликованного потока;
+- отдельные прямые RSS дают ошибки, включая HTTP 429 у VentureBeat;
+- текущая аналитика Publisher после исправления ещё требует одной реальной runtime-проверки.
 
-Instrument every query/source separately:
+### RED
 
-- raw items;
-- fresh items;
-- candidates;
-- already-published rejects;
-- semantic rejects;
-- new admissions;
-- publication yield;
-- error rate;
-- WORLD/RUSSIA contribution.
+Критических production blockers сейчас не выявлено.
 
-Then rank query/source clusters by actual production value.
+## Правило продолжения
 
-Add fresh source-focused queries using Google News time operators such as `when:6h` and `when:1h` where appropriate, while preserving the existing editorial gates. Google News RSS supports search operators including `when:` and `site:`; these are useful for building focused fresh-source streams. citeturn1search0turn0search8
+После каждого изменения:
 
-## Future roadmap
+**проверить факты → найти первопричину → исправить → проверить → задокументировать**.
 
-1. Query + Source Intelligence.
-2. Full editorial funnel analytics.
-3. Topic yield and source yield.
-4. Historical trend analysis.
-5. Adaptive query allocation.
-6. Adaptive scoring after empirical data exists.
-7. Adaptive publication timing after Telegram performance data exists.
-8. Anomaly detection.
-9. Weekly executive report in Russian.
-10. Telegram content-performance analytics only when a reliable data source is available.
-
-Do not fabricate Telegram views/reactions/CTR until reliable measurements exist.
-
-## Operator rule
-
-After every material change:
-
-**inspect → root cause → fix → verify → document**.
-
-A successful GitHub Action is not by itself proof of editorial correctness.
+Коммит и зелёный workflow сами по себе не считаются доказательством production readiness.
