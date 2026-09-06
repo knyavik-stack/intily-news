@@ -460,13 +460,13 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788662202.5986264,
+    "last_start_ts": 1788662321.7332697,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788662202.5986264,
-    "last_success_ts": 1788662202.5986264,
-    "last_candidates": 16,
-    "last_published": 1,
+    "last_run_ts": 1788662321.7332697,
+    "last_success_ts": 1788662321.7332697,
+    "last_candidates": 17,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
@@ -487,13 +487,6 @@
     }
   },
   "stories": {
-    "561f95128b977429fbb46addbb77a2acafa171f044b370066b5cef57c272adc5": {
-      "time": 1788575900,
-      "title": "AI Push in Assam Schools: SSA Signs Six MoUs for Technology-Enabled Learning - The Sentinel - of this Land, for its People",
-      "desc": "AI Push in Assam Schools: SSA Signs Six MoUs for Technology-Enabled Learning The Sentinel - of this Land, for its People",
-      "source": "The Sentinel - of this Land, for its People",
-      "region": "WORLD"
-    },
     "e286e20de4cc3fd866b70c2ea84cac002bf46c015f846e3a3abdebfd9060483f": {
       "time": 1788576139,
       "title": "Hollywood told director Maggie Gyllenhaal to use AI to imagine Marilyn Monroe at 100 — it didn’t work - Newswav",
@@ -853,7 +846,7 @@
     "WORLD",
     "WORLD"
   ],
-  "last_search_ts": 1788662202.5986264,
+  "last_search_ts": 1788662321.7332697,
   "last_publish_ts": 1788662202.5986264,
   "run_history": [
     {
@@ -2784,6 +2777,33 @@
       "queue_after": 0,
       "published": 1,
       "publish_attempts": 1,
+      "item_failures": 0,
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788662321,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": true,
+      "candidates": 17,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
       "item_failures": 0,
       "provider_state": {
         "GEMINI": {
