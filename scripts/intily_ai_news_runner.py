@@ -8,10 +8,22 @@ versioned independently and tested without network calls.
 
 import importlib
 
-from intily_scoring_policy import calculate, tier
+from intily_scoring_policy import calculate
 
 
 def apply_policy(publisher):
+    score_seen = set()
+    score_buckets = {
+        '0–39': 0,
+        '40–49': 0,
+        '50–59': 0,
+        '60–69': 0,
+        '70–79': 0,
+        '80–84': 0,
+        '85–89': 0,
+        '90–100': 0,
+    }
+
     def score(x):
         value, parts = calculate(
             x,
@@ -26,9 +38,43 @@ def apply_policy(publisher):
             publisher.LOW_SIGNAL_TERMS,
         )
         x['_score_components'] = parts
+        identity = id(x)
+        if identity not in score_seen:
+            score_seen.add(identity)
+            if value < 40:
+                bucket = '0–39'
+            elif value < 50:
+                bucket = '40–49'
+            elif value < 60:
+                bucket = '50–59'
+            elif value < 70:
+                bucket = '60–69'
+            elif value < 80:
+                bucket = '70–79'
+            elif value < 85:
+                bucket = '80–84'
+            elif value < 90:
+                bucket = '85–89'
+            else:
+                bucket = '90–100'
+            score_buckets[bucket] += 1
         return value
 
     publisher.score = score
+
+    original_collect = publisher.collect
+
+    def collect_with_telemetry(telemetry=None):
+        score_seen.clear()
+        for key in score_buckets:
+            score_buckets[key] = 0
+        result = original_collect(telemetry)
+        if telemetry is not None:
+            telemetry['score_buckets'] = dict(score_buckets)
+        print('SCORE_BUCKETS', __import__('json').dumps(score_buckets, ensure_ascii=False, separators=(',', ':')))
+        return result
+
+    publisher.collect = collect_with_telemetry
 
     # Geographic balance is a publication-priority rule, not an editorial-quality
     # weight. Disable the legacy random RU score bonus completely.
