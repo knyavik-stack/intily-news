@@ -8,6 +8,22 @@ from pathlib import Path
 
 STATE_PATH = Path(__file__).resolve().parents[1] / 'data' / 'intily-query-intelligence.json'
 
+RESULT_LABELS = {
+    'PUBLISHED': 'ОПУБЛИКОВАНО',
+    'NO_PUBLISH': 'НЕ ОПУБЛИКОВАНО',
+    'PUBLISH_FAILED': 'ОШИБКА ПУБЛИКАЦИИ',
+}
+
+BLOCK_LABELS = {
+    'published_key': 'уже опубликовано ранее',
+    'known_recent': 'недавно уже обрабатывалось',
+    'already_queued': 'уже находится в очереди',
+    'story_queue': 'та же история уже находится в очереди',
+    'story_history': 'та же история уже была опубликована недавно',
+    'candidate_count': 'недостаточно новых кандидатов',
+    'none': 'нет блокировки',
+}
+
 
 def load():
     if not STATE_PATH.exists():
@@ -47,7 +63,7 @@ def print_section(runs):
     print('## Поисковая аналитика — история')
     print('')
     if not runs:
-        print('Пока нет сохранённой истории поисковых запусков. Она появится после первого нового запуска Publisher.')
+        print('Пока нет сохранённой истории поисковых запусков. Она появится после первого нового запуска издателя новостей.')
         return
 
     d24 = aggregate(window(runs, 86400))
@@ -87,14 +103,15 @@ def print_section(runs):
     latest_summary = latest.get('summary', {})
     latest_admission = latest.get('admission', {})
     result = latest.get('result', {})
-    print('### Последний запуск Publisher')
+    print('### Последний запуск издателя новостей')
     print('')
     print(f"- Материалов из Google News: **{latest_summary.get('google_raw', 0)}**")
     print(f"- Кандидатов после отбора: **{latest_summary.get('candidates', 0)}**")
     print(f"- Добавлено в очередь: **{latest_admission.get('added', 0)}**")
-    print(f"- Основная причина отказа: **{latest_admission.get('dominant_block', 'не определена')}**")
+    block = latest_admission.get('dominant_block', 'не определена')
+    print(f"- Основная причина отказа: **{BLOCK_LABELS.get(block, block)}**")
     if result.get('code'):
-        print(f"- Результат: **{result.get('code')}**")
+        print(f"- Результат: **{RESULT_LABELS.get(result.get('code'), result.get('code'))}**")
     print('')
 
     print('### Как правильно читать эти данные')
