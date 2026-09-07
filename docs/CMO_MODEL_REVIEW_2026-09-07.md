@@ -35,7 +35,7 @@ The previous audience definition was too narrow and likely over-selected global 
 
 The target is defined by behavior and job-to-be-done, not job title alone.
 
-Current evidence supports this broadening. A 2026 survey of Russian companies covers not only developers but also operations, sales, HR, marketing/support, education and finance. Sber Analytics reports AI assistants/agents being used in document processing, finance, HR, planning and customer support. Research on Russian SME owners links personal AI experience with business adoption. citeturn3search10turn3search17turn3search19
+Current evidence supports this broadening. A 2026 survey of Russian companies covers not only developers but also operations, sales, HR, marketing/support, education and finance. Sber Analytics reports AI assistants/agents being used in document processing, finance, HR, planning and customer support. Research on Russian SME owners links personal AI experience with business adoption.
 
 ## 3. Content-interest correction
 The feed now expands Russian discovery around:
@@ -73,13 +73,15 @@ The Telegram diagnostic now says `Следующая в очереди: базо
 
 A queue audit KPI separately counts pre-AI items below 60 and finalized items below 60. The invariant is: **zero finalized queue items below 60**.
 
-## 6. Images
-The image pipeline remains a production acceptance gate until a real scheduled cycle proves it. The workflow explicitly activates the hardened fetcher, and direct runner invocation now activates it through the audience-policy runtime hook as well.
+## 6. Images — corrected hard limit
+The image pipeline remains a production acceptance gate until a real scheduled cycle proves it. The production workflow and direct runner now activate the same hardened runtime.
 
 Required chain:
-`Google News URL → publisher URL → publisher image candidates → validation → Telegram sendPhoto`.
+`Google News URL → publisher URL → publisher image candidates → publisher Referer retry → Google-host rejection → local optimization → <=1,000,000-byte payload → Telegram sendPhoto`.
 
-Google-hosted images are forbidden. Publisher Referer retry is enabled. Telegram's current `sendPhoto` API accepts uploaded photos up to 10 MB and captions up to 1024 characters after entity parsing. citeturn2search0
+Google-hosted images are forbidden. Publisher Referer retry is enabled.
+
+**Intily's own image payload limit is 1,000,000 bytes (1 MB decimal), regardless of Telegram's larger API limit.** Publisher images above this size are not sent raw; the runtime converts/resizes/compresses them to JPEG until they fit the 1 MB cap. Source download is separately bounded at 8 MiB so the optimizer cannot consume unbounded resources.
 
 ## 7. Production validation
 The next real cycle must report:
@@ -91,6 +93,7 @@ The next real cycle must report:
 - AI evaluation/retry counts;
 - RU/WORLD candidate and publication mix;
 - queue score-stage audit;
-- `IMAGE_SOURCE_RESOLVED → IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`.
+- `IMAGE_SOURCE_RESOLVED → IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`;
+- actual image payload size <= 1,000,000 bytes.
 
 No GREEN status should be declared until the scheduled cycle demonstrates both the new editorial funnel and a real Telegram photo publication.
