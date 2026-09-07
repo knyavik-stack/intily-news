@@ -4,7 +4,7 @@
 
 **🟡 98% PRODUCTION-CODE READY / LIVE MEDIA VERIFICATION PENDING**
 
-The publisher architecture, two-stage editorial model, Russian audience expansion, publisher-first media resolver, and strict 1 MB media acceptance policy are implemented. CI and the latest scheduled production cycle are green. The remaining verification gate is proving that a fresh qualifying article produces a real Telegram photo through the complete production path.
+The publisher architecture, two-stage editorial model, Russian audience expansion, publisher-first media resolver, and strict 1 MB media acceptance policy are implemented. The last scheduled production cycle was green. The latest media hard-reject code change is now committed; its CI verification and a fresh qualifying Telegram photo are the remaining evidence gates.
 
 ## Important media decision
 
@@ -12,22 +12,21 @@ The publisher architecture, two-stage editorial model, Russian audience expansio
 
 ```text
 candidate image
-  → validate
   → download
   → payload > 1,000,000 bytes? → REJECT / IMAGE_TOO_LARGE
-  → otherwise → sendPhoto
+  → otherwise → validate → sendPhoto
 ```
 
 The internal source-fetch ceiling may be higher than 1 MB because it is only a guard against excessive downloads; it is never a delivery limit and never means an oversized image should be transformed for delivery.
 
 ## Latest production verification
 
-- Run **#505** completed successfully on 2026-09-07.
+- Run **#577** completed successfully on 2026-09-07 at 16:51 UTC.
 - Media runtime installation passed.
-- All policy/image regression tests passed.
-- News engine completed successfully.
-- Analytics and state persistence completed successfully.
-- This run was very short and did not provide a qualifying fresh publication, so it is evidence of **CI/runtime health**, not proof of successful Telegram photo delivery.
+- Policy/image regression tests passed on that run.
+- News engine, analytics and state persistence completed successfully.
+- Run #577 predates the final hard-reject commit, so it does not prove the new media policy.
+- The current code change is committed as `19248a29d8393bb4fe6b1400ae49bfcd7cd4b9da`; the matching runtime regression tests are committed as `b15e67be3317141dd701cbe48eefbdd81067a83e`.
 
 ## Production architecture
 
