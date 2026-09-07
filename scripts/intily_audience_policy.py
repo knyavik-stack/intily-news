@@ -5,7 +5,7 @@ current subscribers. The score is produced by the same AI editorial pass that
 translates and summarizes the story.
 """
 
-PRE_AI_THRESHOLD = 45.0
+PRE_AI_THRESHOLD = 40.0
 FINAL_THRESHOLD = 60.0
 AUDIENCE_BONUS_MAX = 20.0
 
@@ -68,9 +68,8 @@ def build_evaluation_instruction():
         'Это второй редакторский сигнал. Его вклад в итоговый score линейный: score × 2, то есть 1/10=+2 и 10/10=+20.\n'
     )
 
-# Runtime activation: the image hardening module is deliberately imported here
-# because this policy module is loaded by the production runner before Telegram
-# publication. It keeps the hardened fetch path active without a second AI call.
+# Runtime activation: production CI also activates this explicitly. Keeping the
+# hook here makes direct runner invocation use the same hardened image fetch path.
 try:
     import intily_image_pipeline as _image_pipeline
     from intily_image_hardening import fetch_image as _hardened_fetch_image
