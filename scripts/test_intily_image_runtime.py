@@ -1,3 +1,4 @@
+import os
 import unittest
 from io import BytesIO
 from unittest.mock import patch
@@ -9,12 +10,7 @@ import intily_image_runtime as runtime
 
 class ImageRuntimeTests(unittest.TestCase):
     def _large_png(self):
-        image = Image.new('RGB', (2400, 1600))
-        # Deterministic high-detail-ish pattern so the PNG is comfortably over 1 MiB.
-        pixels = image.load()
-        for y in range(image.height):
-            for x in range(image.width):
-                pixels[x, y] = ((x * 37 + y * 13) % 256, (x * 17 + y * 29) % 256, (x * 7 + y * 43) % 256)
+        image = Image.frombytes('RGB', (1800, 1200), os.urandom(1800 * 1200 * 3))
         out = BytesIO()
         image.save(out, format='PNG')
         return out.getvalue()
@@ -48,8 +44,8 @@ class ImageRuntimeTests(unittest.TestCase):
             'url': 'https://publisher.example/image.png',
             'method': 'og_image',
             'source_url': 'https://publisher.example/story',
-            'width': 2400,
-            'height': 1600,
+            'width': 1800,
+            'height': 1200,
         }
         with patch.object(runtime.hardening, 'fetch_image', return_value=fake):
             result = runtime.fetch_image('https://publisher.example/story')
