@@ -1,73 +1,91 @@
 # INTILY Publication Settings
 
-**Single control point:** `scripts/intily_ai_news.py` → `PUBLICATION SETTINGS`.
+**Дата актуализации:** 2026-09-07
 
-| Setting | Value | Meaning |
+## Effective production policy
+
+The effective production policy is assembled by `scripts/intily_ai_news_runner.py` on top of the base engine. The runner values below therefore override older base-file defaults where they differ.
+
+| Setting | Effective value | Meaning |
 |---|---:|---|
-| Search interval | 30 min | Planned news discovery cadence |
-| Publication interval | 3 min | Minimum gap between Telegram posts |
-| Importance threshold | 60/100 | Minimum candidate importance |
-| Max queue | 20 | Maximum qualifying stories in memory |
-| RU minimum share | 50% | Minimum RU share when enough RU candidates exist |
-| Joke rate | 90% | Target for suitable non-serious posts |
-| Urgent queue threshold | 1 | Search immediately at 0–1 queued stories |
-| Temporary queue diagnostics | ON | Adds queue size, RU/WORLD counts, and next-item importance to every published post; remove by setting `SHOW_QUEUE_DIAGNOSTICS = False` |
+| Discovery lookback | 12 h | Maximum age eligible for discovery/queue |
+| Planned search interval | 30 min | Normal discovery cadence |
+| Telegram publication interval | 3 min | Minimum gap between posts |
+| Pre-AI gate | 40/100 | Minimum base score to reach AI editorial/audience evaluation |
+| Final publication gate | **55/100** | Minimum final score after audience-fit |
+| Audience score | 1–10 | AI editorial usefulness for the target audience |
+| Audience bonus | +2…+20 | `audience_score × 2` |
+| Max queue | 20 | Durable qualifying-story capacity |
+| RU/WORLD portfolio target | ~40% / ~60% | Portfolio objective; no fabricated RU content |
+| Regional relevance bonus | 0 | Geography does not alter mathematical relevance |
+| Joke target | 90% | Only for suitable non-serious posts; editorial gate remains independent |
+| Immediate search queue threshold | 1 | Search immediately when queue has 1 or fewer stories |
+| Queue diagnostics | ON | Temporary footer for operational observation |
 
-## Where to operate
+## Canonical publication flow
 
-- **Code/settings:** `scripts/intily_ai_news.py`
-- **Automation trigger:** Cloudflare Worker `intily-ai-news` → Cron `*/3 * * * *`
-- **Publisher workflow:** `.github/workflows/intily-ai-news.yml`
-- **Durable candidate state:** `data/intily-ai-news-state.json`
-- **Rollback snapshot:** `docs/backups/2026-09-03/`
+```text
+sources / discovery
+    ↓
+base score
+    ↓
+pre-AI gate 40
+    ↓
+AI translation + summary + audience score 1–10
+    ↓
+audience bonus +2…+20
+    ↓
+final score
+    ↓
+final gate 55
+    ↓
+Telegram
+```
 
+The 55 threshold is an editorial admission threshold, not a request to publish weak news. The audience layer can raise a professionally useful 40–54 base candidate, while the final gate still rejects material below 55.
 
-## Validation snapshot — 2026-09-03
+## Media policy
 
-A live full-collector test returned 216 raw items, 51 qualifying candidates after the 60/100 threshold, with 31 WORLD and 20 RUSSIA candidates before queue capping. The queue rebalance therefore has enough RU inventory to build a 20-item queue with the required 10/10 minimum split.
+- Publisher-first image resolution.
+- Google News is a discovery wrapper only and is never an accepted image host.
+- Image candidates are validated independently so a broken first candidate does not suppress a later valid publisher image.
+- **1,000,000 bytes is a hard delivery cap.** Images above 1 MB are skipped; Intily does not resize or recompress them to fit.
+- If no acceptable image remains, the story may be sent text-only when the editorial/publication gate passes.
+- Photo captions are bounded to Telegram's caption limit using safe plain-text HTML escaping; a long article body must not force text-only fallback by itself.
 
-A production test also exposed and corrected a concrete Cyrillic-data defect in the previous implementation: Russian AI relevance terms and Russian search queries had been stored as mojibake, causing Russian discovery to return zero results and Russian relevance to fail. The current implementation uses native UTF-8 Cyrillic terms and queries.
+## Analytics contract
 
-## Temporary publication diagnostics
+**Publisher Summary** shows only the current cycle. It reports current ingestion, filtering, candidates, queue admission, publication, provider and media telemetry.
 
-For temporary production analysis, every Telegram post currently receives a final diagnostic line:
+**Production Monitor** shows history over 24 hours, 7 days and stored runs. It reports publication frequency, no-publication reasons, source health, audience-fit, media delivery, provider/failover and warnings.
 
-`📊 В очереди: X новостей, RU — Y, WORLD — Z. Следующая в очереди имеет вес P%.`
+The analytics scripts import the effective editorial thresholds rather than duplicating hard-coded historical values.
 
-The values describe the queue **after the published story is removed**, using the same queue filtering/rebalancing rules as production. `P` is the `importance` value (0–100) of the next queued story after rebalancing. If the queue is empty, the footer reports that the next story is absent.
+## Production observations
 
-This is deliberately feature-flagged. To remove it later, change `SHOW_QUEUE_DIAGNOSTICS = True` to `False` in the publication settings; no queue logic needs to be changed.
+### Run #577 — 2026-09-07
 
+Run #577 was technically successful but lasted about **3m53s** from runner start to cleanup. The news engine itself did not spend that time on RSS search: it logged `SEARCH_SKIPPED`, then spent the majority of the runtime in AI editorial retries/failover.
 
-## Temporary RU experiment (2026-09-03)
+Observed provider conditions:
 
-- `RUSSIA_MIN_SHARE = 0.60`
-- `RUSSIA_MIN_QUEUE_SLOTS = 12` for a 20-item queue
-- Russian candidates receive random `russia_weight_bonus` from **+1 to +5** importance points at ingestion.
-- Bonus is applied once per newly collected candidate and persisted with the candidate; it is not re-randomized during queue maintenance.
-- Purpose: temporary measurement of how stronger RU representation and a small stochastic weight advantage affect queue composition and publication order.
-- Remove only after the analytical period is complete.
+- Gemini first recovered after a retry, then later hit repeated 503/timeout conditions;
+- Groq returned HTTP 403 / error 1010 and was circuit-opened;
+- OpenAI returned HTTP 429 / no credits and was circuit-opened;
+- the queue contained existing items, so the run still attempted editorial processing and retried failed items.
 
+This explains the near-four-minute runtime. It is a provider-availability/retry-budget issue, not an RSS collection loop. The system correctly avoided publishing when all attempted items failed editorial QA.
 
-## Production KPI / monitoring controls
+### Run #578 — 2026-09-07
 
-- KPI collection: `scripts/intily_ai_news.py` → `KPI_MONITORING_ENABLED`.
-- KPI history size: `KPI_HISTORY_LIMIT`.
-- Monitoring alert threshold: `scripts/intily_monitor.py` → `ALERT_NO_PUBLISH_RUNS`.
-- 24h publication-failure alert: `ALERT_ITEM_FAILURES_24H`.
-- Disabling KPI collection does **not** disable publication; it only stops bounded KPI history recording.
+Run #578 completed successfully in roughly **28 seconds**. It also demonstrated that a publisher-hosted image can be found and validated: the selected image was 48,472 bytes. It was not sent as a photo because the old caption-length guard emitted `CAPTION_TOO_LONG`; that guard is now removed in favor of a bounded safe caption.
 
-## How to view statistics
+The next production cycle must verify the new caption path with `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`.
 
-1. Open `intily-news` on GitHub.
-2. Open **Actions → Intily AI News Publisher** and open a completed run.
-3. Open the run **Summary** to see the KPI dashboard.
-4. For an on-demand dashboard, open **Actions → Intily Production Monitor → Run workflow**.
-5. Raw durable history is in `data/intily-ai-news-state.json` under `run_history`.
+## Operational rule
 
-### Status meanings
+After every material change:
 
-- `PUBLISHED` — Telegram delivery succeeded.
-- `NO_PUBLISH` — the cycle completed normally but no post was sent; `business_reason` explains why.
-- `PUBLISH_FAILED` — publication was attempted and failed.
-- GitHub `SUCCESS` is the **technical** workflow result, not a publication guarantee.
+**verify facts → identify cause → fix → run tests → verify production result → document.**
+
+GitHub Actions `SUCCESS` alone is not a business-result guarantee.
