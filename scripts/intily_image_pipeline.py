@@ -1,9 +1,7 @@
 """Best-effort article image extraction and Telegram photo delivery for Intily.
 
-The resolver is deliberately publisher-first: Google News is only a discovery
-transport. It must never become the image source. Candidate extraction is
-multi-strategy and validation happens per candidate so one broken/placeholder
-image does not force a text-only fallback when a later publisher image works.
+The resolver is publisher-first: Google News is only a discovery transport.
+Candidate extraction is multi-strategy and validation happens per candidate.
 """
 
 import html
@@ -24,8 +22,6 @@ MAX_IMAGE_CANDIDATES = 12
 
 
 class _ArticleParser(HTMLParser):
-    """Extract image/canonical metadata without depending on third-party HTML libs."""
-
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.meta = []
@@ -69,11 +65,9 @@ class _ArticleParser(HTMLParser):
             srcset = a.get('srcset') or a.get('data-srcset') or a.get('src') or ''
             if srcset:
                 self.sources.append(srcset)
-        elif tag == 'script':
-            typ = a.get('type', '').lower()
-            if typ == 'application/ld+json':
-                self._jsonld_depth = 1
-                self._jsonld_buffer = []
+        elif tag == 'script' and a.get('type', '').lower() == 'application/ld+json':
+            self._jsonld_depth = 1
+            self._jsonld_buffer = []
 
     def handle_startendtag(self, tag, attrs):
         self.handle_starttag(tag, attrs)
@@ -165,26 +159,21 @@ def _meta_image_candidates(text):
     meta_map = {}
     for key, value in parser.meta:
         meta_map.setdefault(key, []).append(value)
-
     for key in ('og:image', 'og:image:url', 'og:image:secure_url', 'article:image'):
         for value in meta_map.get(key, []):
             out.append(('og_image', value))
     for key in ('twitter:image', 'twitter:image:src'):
         for value in meta_map.get(key, []):
             out.append(('twitter_image', value))
-
     for rels, href in parser.links:
         if 'image_src' in rels:
             out.append(('image_src', href))
-
     for raw in parser._jsonld:
         try:
-            payload = json.loads(html.unescape(raw))
+            _parse_jsonld_image(json.loads(html.unescape(raw)), out)
         except Exception:
             continue
-        _parse_jsonld_image(payload, out)
-
-    for values, srcset, alt, css_class in parser.images:
+    for values, srcset, _alt, _css_class in parser.images:
         candidates = _srcset_candidates(srcset) if srcset else []
         for _key, value in values:
             if value:
@@ -194,12 +183,10 @@ def _meta_image_candidates(text):
     for srcset in parser.sources:
         for candidate in _srcset_candidates(srcset)[:4]:
             out.append(('html_source', candidate))
-
     for match in re.findall(r'url\s*\(\s*[\'"]?([^\'")\s]+)[\'"]?\s*\)', text, flags=re.I):
         clean_url = html.unescape(match).strip()
         if re.match(r'^https?://|^//|^/', clean_url):
             out.append(('css_image', clean_url))
-
     deduped = []
     seen = set()
     for method, value in out:
@@ -212,21 +199,16 @@ def _meta_image_candidates(text):
 
 
 def resolve_article_url(article_url):
-    """Resolve a Google News item to the real publisher article URL."""
     if not article_url.startswith(('http://', 'https://')):
         raise ValueError('ARTICLE_URL_INVALID')
-
     data, content_type, final_url = _request(article_url, {
         'User-Agent': 'Mozilla/5.0 (compatible; IntilyNews/1.0)',
         'Accept': 'text/html,application/xhtml+xml'
     }, 12, MAX_HTML_BYTES)
-
-    final_host = _host(final_url)
-    if final_host not in GOOGLE_NEWS_HOSTS:
+    if _host(final_url) not in GOOGLE_NEWS_HOSTS:
         return final_url, data, content_type
-
     text = data.decode('utf-8', 'replace')
-    candidates, parser = _meta_image_candidates(text)
+    _candidates, parser = _meta_image_candidates(text)
     source_urls = list(parser.canonical)
     for key, value in parser.meta:
         if key == 'og:url':
@@ -241,27 +223,22 @@ def resolve_article_url(article_url):
         }, 12, MAX_HTML_BYTES)
         if _host(source_final) not in GOOGLE_NEWS_HOSTS:
             return source_final, source_data, source_type
-
     raise ValueError('ARTICLE_SOURCE_UNRESOLVED')
 
 
 def extract_image_candidates(article_url):
     final_url, data, _ = resolve_article_url(article_url)
-    text = data.decode('utf-8', 'replace')
-    candidates, _parser = _meta_image_candidates(text)
+    candidates, _parser = _meta_image_candidates(data.decode('utf-8', 'replace'))
     if not candidates:
         raise ValueError('IMAGE_NOT_FOUND')
-
     source_host = _host(final_url)
-    priority = {
-        'og_image': 0, 'jsonld_image': 1, 'image_src': 2, 'twitter_image': 3,
-        'html_img': 4, 'html_source': 5, 'css_image': 6,
-    }
+    priority = {'og_image': 0, 'jsonld_image': 1, 'image_src': 2, 'twitter_image': 3,
+                'html_img': 4, 'html_source': 5, 'css_image': 6}
     ranked = []
     for method, value in candidates:
         image_url = urllib.parse.urljoin(final_url, value)
         image_host = _host(image_url)
-        penalty = 20 if source_host not in GOOGLE_NEWS_HOSTS and image_host in GOOGLE_NEWS_HOSTS else 0
+        penalty = 20 if image_host in {'news.google.com', 'www.news.google.com'} else 0
         placeholder_penalty = 50 if _looks_placeholder(image_url) else 0
         same_host_bonus = -0.5 if image_host == source_host else 0
         ranked.append((priority.get(method, 9) + penalty + placeholder_penalty + same_host_bonus, method, image_url))
@@ -283,9 +260,8 @@ def _dimensions(data, content_type):
             return struct.unpack('>II', data[16:24])
         if content_type == 'image/gif' and data[:6] in (b'GIF87a', b'GIF89a'):
             return struct.unpack('<HH', data[6:10])
-        if content_type == 'image/webp' and len(data) >= 30 and data[:4] == b'RIFF' and data[8:12] == b'WEBP':
-            if data[12:16] == b'VP8X':
-                return 1 + int.from_bytes(data[24:27], 'little'), 1 + int.from_bytes(data[27:30], 'little')
+        if content_type == 'image/webp' and len(data) >= 30 and data[:4] == b'RIFF' and data[8:12] == b'WEBP' and data[12:16] == b'VP8X':
+            return 1 + int.from_bytes(data[24:27], 'little'), 1 + int.from_bytes(data[27:30], 'little')
         if content_type == 'image/jpeg' and data[:2] == b'\xff\xd8':
             i = 2
             while i + 9 < len(data):
@@ -329,25 +305,31 @@ def fetch_image(article_url):
             dims = _dimensions(data, content_type)
             if not dims or dims[0] < MIN_IMAGE_WIDTH or dims[1] < MIN_IMAGE_HEIGHT:
                 raise ValueError('IMAGE_DIMENSIONS_INVALID')
-            return {
-                'data': data, 'content_type': content_type, 'url': final_url,
-                'method': method, 'source_url': source_url,
-                'width': dims[0], 'height': dims[1]
-            }
+            return {'data': data, 'content_type': content_type, 'url': final_url,
+                    'method': method, 'source_url': source_url,
+                    'width': dims[0], 'height': dims[1]}
         except Exception as exc:
             errors.append(f'{method}:{str(exc)[:100]}')
     raise ValueError('IMAGE_CANDIDATES_FAILED: ' + ' | '.join(errors[:6]))
 
 
 def _photo_caption(text, limit=1024):
-    """Build a Telegram-safe short caption without breaking HTML markup."""
+    """Return HTML-escaped plain text whose final Telegram length is <= limit."""
     plain = re.sub(r'<[^>]+>', ' ', str(text or ''))
     plain = html.unescape(plain)
     plain = ' '.join(plain.split()).strip()
-    if len(plain) > limit:
-        plain = plain[:limit - 1].rstrip() + '…'
-    # send_photo uses HTML parse mode; escape user/editorial text after stripping markup.
-    return html.escape(plain, quote=False)
+    escaped = html.escape(plain, quote=False)
+    if len(escaped) <= limit:
+        return escaped
+    lo, hi = 0, len(plain)
+    while lo < hi:
+        mid = (lo + hi + 1) // 2
+        candidate = html.escape(plain[:mid].rstrip(), quote=False) + '…'
+        if len(candidate) <= limit:
+            lo = mid
+        else:
+            hi = mid - 1
+    return html.escape(plain[:lo].rstrip(), quote=False) + '…'
 
 
 def _field(name, value, boundary):
@@ -361,19 +343,12 @@ def _file(field, filename, data, content_type, boundary):
 def send_photo(token, chat_id, caption, image):
     boundary = '----IntilyBoundary7MA4YWxkTrZu0gW'
     ext = {'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp', 'image/gif': 'gif', 'image/avif': 'jpg'}[image['content_type']]
-    body = b''.join([
-        _field('chat_id', chat_id, boundary),
-        _field('parse_mode', 'HTML', boundary),
-        _field('disable_notification', 'false', boundary),
-        _field('caption', caption, boundary),
-        _file('photo', 'intily.' + ext, image['data'], image['content_type'], boundary),
-        ('--' + boundary + '--\r\n').encode(),
-    ])
-    req = urllib.request.Request(
-        'https://api.telegram.org/bot' + token + '/sendPhoto',
-        data=body,
-        headers={'Content-Type': 'multipart/form-data; boundary=' + boundary},
-    )
+    body = b''.join([_field('chat_id', chat_id, boundary), _field('parse_mode', 'HTML', boundary),
+                     _field('disable_notification', 'false', boundary), _field('caption', caption, boundary),
+                     _file('photo', 'intily.' + ext, image['data'], image['content_type'], boundary),
+                     ('--' + boundary + '--\r\n').encode()])
+    req = urllib.request.Request('https://api.telegram.org/bot' + token + '/sendPhoto', data=body,
+                                 headers={'Content-Type': 'multipart/form-data; boundary=' + boundary})
     with urllib.request.urlopen(req, timeout=20) as response:
         result = json.loads(response.read().decode('utf-8', 'replace'))
     if not result.get('ok'):
@@ -382,19 +357,15 @@ def send_photo(token, chat_id, caption, image):
 
 
 def publish_with_optional_image(text, article_url, token, chat_id, fallback_send):
-    telemetry = {
-        'status': 'not_attempted', 'method': None, 'url': None, 'source_url': None,
-        'width': None, 'height': None, 'error': None, 'attempts': 0,
-    }
+    telemetry = {'status': 'not_attempted', 'method': None, 'url': None, 'source_url': None,
+                 'width': None, 'height': None, 'error': None, 'attempts': 0}
     try:
         telemetry['attempts'] = 1
         image = fetch_image(article_url)
         caption = _photo_caption(text)
         result = send_photo(token, chat_id, caption, image)
-        telemetry.update(
-            status='sent', method=image['method'], url=image['url'], source_url=image['source_url'],
-            width=image['width'], height=image['height']
-        )
+        telemetry.update(status='sent', method=image['method'], url=image['url'], source_url=image['source_url'],
+                         width=image['width'], height=image['height'])
         print('IMAGE_SOURCE_RESOLVED', image['source_url'])
         print('IMAGE_FOUND', image['method'], image['width'], image['height'])
         print('IMAGE_VALIDATED', image['content_type'], len(image['data']))
