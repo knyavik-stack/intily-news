@@ -67,3 +67,15 @@ def build_evaluation_instruction():
         '\nВерни дополнительно audience_score (целое число 1–10) и audience_reason (одна короткая фраза). '
         'Это второй редакторский сигнал. Его вклад в итоговый score линейный: score × 2, то есть 1/10=+2 и 10/10=+20.\n'
     )
+
+# Runtime activation: the image hardening module is deliberately imported here
+# because this policy module is loaded by the production runner before Telegram
+# publication. It keeps the hardened fetch path active without a second AI call.
+try:
+    import intily_image_pipeline as _image_pipeline
+    from intily_image_hardening import fetch_image as _hardened_fetch_image
+    _image_pipeline.fetch_image = _hardened_fetch_image
+    IMAGE_HARDENING_ACTIVE = True
+except Exception as _image_hardening_error:
+    IMAGE_HARDENING_ACTIVE = False
+    IMAGE_HARDENING_ERROR = str(_image_hardening_error)[:200]
