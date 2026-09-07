@@ -102,10 +102,14 @@ def _is_absolute(url):
 
 
 def _request(url, headers, timeout, max_bytes):
+    if not _is_absolute(url):
+        raise ValueError('IMAGE_URL_SCHEME_INVALID')
     req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req, timeout=timeout) as response:
         content_type = response.headers.get('Content-Type', '').split(';', 1)[0].strip().lower()
         final_url = response.geturl()
+        if not _is_absolute(final_url):
+            raise ValueError('IMAGE_FINAL_URL_SCHEME_INVALID')
         data = response.read(max_bytes + 1)
         if len(data) > max_bytes:
             raise ValueError('IMAGE_SOURCE_TOO_LARGE')
@@ -199,7 +203,7 @@ def _meta_image_candidates(text):
 
 
 def resolve_article_url(article_url):
-    if not article_url.startswith(('http://', 'https://')):
+    if not _is_absolute(article_url):
         raise ValueError('ARTICLE_URL_INVALID')
     data, content_type, final_url = _request(article_url, {
         'User-Agent': 'Mozilla/5.0 (compatible; IntilyNews/1.0)',
@@ -207,8 +211,8 @@ def resolve_article_url(article_url):
     }, 12, MAX_HTML_BYTES)
     if _host(final_url) not in GOOGLE_NEWS_HOSTS:
         return final_url, data, content_type
-    text = data.decode('utf-8', 'replace')
-    _candidates, parser = _meta_image_candidates(text)
+    parser_candidates, parser = _meta_image_candidates(data.decode('utf-8', 'replace'))
+    _ = parser_candidates
     source_urls = list(parser.canonical)
     for key, value in parser.meta:
         if key == 'og:url':
@@ -237,13 +241,14 @@ def extract_image_candidates(article_url):
     ranked = []
     for method, value in candidates:
         image_url = urllib.parse.urljoin(final_url, value)
+        if not _is_absolute(image_url):
+            continue
         image_host = _host(image_url)
         penalty = 20 if image_host in {'news.google.com', 'www.news.google.com'} else 0
         placeholder_penalty = 50 if _looks_placeholder(image_url) else 0
         same_host_bonus = -0.5 if image_host == source_host else 0
         ranked.append((priority.get(method, 9) + penalty + placeholder_penalty + same_host_bonus, method, image_url))
-    ranked.sort(key=lambda row: (row[0], row[1], row[2]))
-    return ranked[:MAX_IMAGE_CANDIDATES], final_url
+    return sorted(ranked, key=lambda row: (row[0], row[1], row[2]))[:MAX_IMAGE_CANDIDATES], final_url
 
 
 def extract_image_url(article_url):
