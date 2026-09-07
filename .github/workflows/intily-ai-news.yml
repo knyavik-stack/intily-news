@@ -22,8 +22,8 @@ jobs:
           fetch-depth: 0
       - name: Проверка аналитики и политики
         run: |
-          python3 -m py_compile scripts/intily_scoring_policy.py scripts/intily_google_news.py scripts/intily_ai_news_runner.py scripts/intily_image_pipeline.py scripts/intily_cycle_intelligence.py scripts/intily_monitor.py scripts/intily_search_monitor.py scripts/intily_policy_analytics.py scripts/test_intily_google_news.py scripts/test_intily_image_pipeline.py scripts/test_intily_scoring_policy.py
-          PYTHONPATH=scripts python3 -m unittest scripts/test_intily_google_news.py scripts/test_intily_image_pipeline.py scripts/test_intily_scoring_policy.py -v
+          python3 -m py_compile scripts/intily_scoring_policy.py scripts/intily_audience_policy.py scripts/intily_google_news.py scripts/intily_ai_news_runner.py scripts/intily_image_pipeline.py scripts/intily_cycle_intelligence.py scripts/intily_monitor.py scripts/intily_search_monitor.py scripts/intily_policy_analytics.py scripts/test_intily_google_news.py scripts/test_intily_image_pipeline.py scripts/test_intily_scoring_policy.py scripts/test_intily_audience_policy.py
+          PYTHONPATH=scripts python3 -m unittest scripts/test_intily_google_news.py scripts/test_intily_image_pipeline.py scripts/test_intily_scoring_policy.py scripts/test_intily_audience_policy.py -v
       - name: Запуск новостного двигателя
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -50,6 +50,13 @@ jobs:
         run: |
           python3 scripts/intily_policy_analytics.py | tee /tmp/intily-policy-analytics.md
           cat /tmp/intily-policy-analytics.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Аналитика целевой аудитории
+        if: always()
+        continue-on-error: true
+        run: |
+          python3 scripts/intily_audience_monitor.py | tee /tmp/intily-audience-analytics.md
+          cat /tmp/intily-audience-analytics.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Сохранение состояния и аналитики
         if: always()
