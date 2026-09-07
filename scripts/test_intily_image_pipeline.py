@@ -31,11 +31,7 @@ class ImagePipelineTests(unittest.TestCase):
         self.assertIn('/assets/large.jpg', values)
 
     def test_google_news_canonical_fallback_resolves_publisher(self):
-        wrapper = '''
-        <html><head>
-          <link rel="canonical" href="https://publisher.example/story/1">
-        </head></html>
-        '''
+        wrapper = '<html><head><link rel="canonical" href="https://publisher.example/story/1"></head></html>'
         publisher = '<html><head><meta property="og:image" content="/img.jpg"></head></html>'
         responses = [
             (wrapper.encode(), 'text/html', 'https://news.google.com/rss/articles/abc'),
@@ -64,8 +60,8 @@ class ImagePipelineTests(unittest.TestCase):
         candidates, _ = media._meta_image_candidates(html)
         self.assertEqual(candidates[0], ('og_image', expected))
 
-    def test_photo_caption_is_safe_and_bounded(self):
-        text = '<b>Заголовок &amp; тест</b> ' + ('длинный текст ' * 200)
+    def test_photo_caption_is_safe_and_bounded_after_escaping(self):
+        text = '<b>Заголовок &amp; тест</b> ' + ('длинный & текст ' * 200)
         caption = media._photo_caption(text)
         self.assertLessEqual(len(caption), 1024)
         self.assertIn('Заголовок', caption)
