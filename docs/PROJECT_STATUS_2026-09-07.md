@@ -4,9 +4,9 @@
 
 ### Overall
 
-**🟡 TECHNICALLY GREEN / EDITORIAL SUPPLY RECALIBRATION IN PRODUCTION VERIFICATION**
+**🟡 TECHNICALLY GREEN / SCORING V2 RELEASED — PRODUCTION ACCEPTANCE PENDING NEXT SCHEDULED CYCLE**
 
-The production architecture works. The current blocker was identified as a scoring-distribution problem, not a lack of incoming news.
+The ingestion, queue, deduplication, publication and media architecture is operational. The previous scoring calibration was rejected after production verification showed continued score compression. Scoring v2 is now the production baseline; the next Cloudflare-triggered cycle is the first valid runtime acceptance test.
 
 ## Production architecture
 
@@ -21,130 +21,117 @@ Cloudflare schedule
 
 ## Operator settings
 
-- Editorial admission threshold: **60.0** — operator-approved.
-- Publication interval: controlled by existing publisher policy.
+- Editorial admission threshold: **60.0** — operator-approved and unchanged.
+- 60 means a concrete, materially relevant AI event; 75+ is major; 85+ is exceptional.
+- Publication interval remains controlled by the existing publisher policy.
 - Russia/world balancing is separate from editorial score.
-- No random regional score bonus is active.
+- No random regional score bonus is active in the runner.
 
-## Root-cause finding: zero publications
+## Production evidence: run #472
 
-Production run #471 (`34090244584`) produced:
+Run #472 (`34091375644`) succeeded technically, but checkout log shows it ran commit `e584b0ec1775a1669c294e087c359b0e880179bc`, before scoring v2 was committed. Its useful diagnostic facts are:
 
-- 399 incoming items;
-- 393 filtered by score (98.5%);
-- 6 candidates;
+- 425 incoming items;
+- 423 filtered by score (99.5%);
+- 2 candidates;
+- both candidates were already published;
 - 0 new admissions;
-- all 6 candidates were already published;
-- score buckets: 266 / 98 / 29 / 6 / 0 / 0 / 0 / 0 for 0–39 / 40–49 / 50–59 / 60–69 / 70–79 / 80–84 / 85–89 / 90–100.
+- score buckets: 302 / 85 / 36 / 2 / 0 / 0 / 0 / 0 for 0–39 / 40–49 / 50–59 / 60–69 / 70–79 / 80–84 / 85–89 / 90–100.
 
-Therefore the statement “all news was already published” is false as a general explanation. Most material never reached admission because the score model compressed real-world stories below 60. The six remaining candidates were indeed already published.
+This confirms the real failure mode: the channel was not starved of source material, but the score distribution was overwhelmingly below the 60 gate. The run is **not** a v2 acceptance run.
 
-## Scoring model — current
+## Scoring v2 — current production baseline
 
-`scripts/intily_scoring_policy.py` remains deterministic and sums to 100 before the low-signal penalty:
+Commit: `23819a9728d225a0628f46db8dd02342fceb7997`
+
+`scripts/intily_scoring_policy.py` is now event-first and editorial-materiality driven. The threshold remains 60; the available score is redistributed toward the properties that make a news item publishable.
 
 | Component | Max |
 |---|---:|
-| AI relevance | 25 |
+| AI relevance | 20 |
 | AI specificity | 10 |
-| Impact | 15 |
-| Event concreteness | 10 |
+| Impact | 20 |
+| Event concreteness | 20 |
 | Practical value | 10 |
-| Novelty | 8 |
+| Novelty | 4 |
 | Source quality | 8 |
 | Evidence | 4 |
-| Freshness | 5 |
-| Timeliness | 5 |
-| Low-signal penalty | −6 |
-
-The previous implementation relied too heavily on raw keyword-hit counts. The current model uses bounded baselines and diminishing returns so a real event receives a meaningful base score while keyword repetition cannot inflate it.
+| Freshness | 4 |
+| **Total** | **100** |
+| Low-signal penalty | **−6** |
 
 ### Editorial interpretation
 
-- 0–39: weak signal / mention;
-- 40–49: relevant but ordinary;
-- 50–59: meaningful but not strong enough;
-- **60–74: strong publication candidate**;
-- 75–84: major industry event;
-- 85–100: exceptional/channel-defining event.
+- **<60**: weak signal, commentary, insufficiently material, or non-event content;
+- **60–74**: normal publishable AI news — a concrete event with materiality;
+- **75–84**: major industry event;
+- **85–100**: exceptional/channel-defining event.
 
-Importance and uniqueness are intentionally separate. Semantic deduplication determines whether an event is new; novelty contributes only part of its importance score.
+The model is no longer built around keyword-count accumulation. A single concrete event receives a meaningful baseline; independent impact signals then move the item toward major/exceptional tiers. Semantic story memory remains responsible for uniqueness and deduplication.
 
-## Scoring regression protection
+## Regression protection
 
-Added `scripts/test_intily_scoring_policy.py` and included it in the production workflow. CI now checks:
+The production workflow executes py_compile plus 9 unit tests before the publisher. The last verified suite passed:
 
 - concrete AI release clears 60;
-- major AI acquisition reaches high tier;
-- generic AI commentary stays below 60;
-- non-AI material does not gain AI relevance.
+- major AI acquisition reaches 75+;
+- generic AI commentary remains below 60;
+- non-AI material receives zero AI relevance;
+- image metadata extraction, Google News canonical resolution, candidate retry and Blockchain.News fixture all pass.
 
-## Source health corrections
+## Source health
 
-Production run #471 also found stale direct-feed endpoints:
+Current runtime uses:
 
-- TechCult `/feed` → HTTP 404;
-- old Euronews MRSS path → HTTP 404;
-- VentureBeat → HTTP 429.
+- CNews direct RSS;
+- Euronews public `/rss` root;
+- TechCult via targeted Google News `site:techcult.ru` queries;
+- the established first-party/industry feeds and broad Google News discovery.
 
-Current runtime policy:
-
-- CNews remains direct RSS;
-- Euronews uses its public `/rss` root;
-- TechCult is covered by targeted Google News `site:techcult.ru` queries instead of a broken direct endpoint.
+VentureBeat can still return HTTP 429 intermittently. This is an upstream source-health issue and not the publication gate itself; the broad discovery layer provides redundancy.
 
 ## Image pipeline
 
-Resolver 2.0 is implemented:
+Resolver 2.0 is production code:
 
 ```text
 Google News
-  → real publisher URL
-  → metadata/JSON-LD/HTML candidate set
+  → publisher URL
+  → multi-candidate metadata/JSON-LD/HTML extraction
   → per-candidate validation
   → Telegram sendPhoto
   → controlled text fallback
 ```
 
-Google News can never be accepted as the image source.
+A Google News wrapper image is never accepted. Durable telemetry records attempts, found, validated, photo_sent, fallback reasons and URL provenance.
 
-Durable media analytics are stored in `run_history.admission.image` and aggregated by `scripts/intily_monitor.py` for 24h/7d/history:
+The Blockchain.News supplied publisher image is covered by a regression test. **Real production Telegram delivery has not yet been proven because run #472 published zero items.** The next successful publication is the media acceptance test.
 
-- attempts;
-- found;
-- validated;
-- photo_sent;
-- text fallback;
-- fallback reasons;
-- extraction sources;
-- selected/resolved URL provenance.
+## Release / acceptance state
 
-Reported real incidents covered SecurityLab, Tekedia and Blockchain.News. The latter's supplied image is a real publisher-hosted JPG and is now an explicit acceptance case.
-
-## Production verification state
-
-- Run #471: **valid diagnostic evidence**, pre-recalibration.
-- Run #472 (`34090922205`): SUCCESS but used pre-calibration state commit, therefore **not accepted as scoring verification**.
-- Current `main`: calibrated scoring + source corrections + scoring tests + media pipeline.
+- Run #471: diagnostic only; established original score compression.
+- Run #472: technically SUCCESS, but pre-v2 checkout; 0 publications.
+- Scoring v2: **released to `main`**.
+- Documentation: `docs/SCORING_V2_RELEASE_2026-09-07.md` added.
 - Next Cloudflare-triggered cycle: **first valid production acceptance run**.
 
-### Acceptance
+### Mandatory acceptance criteria
 
-A successful next cycle should demonstrate:
-
-1. non-zero 60+ score supply;
-2. preferably non-zero 70+ supply;
-3. at least one 60+ candidate admitted when not a true duplicate/history hit;
-4. publication when interval permits;
-5. media telemetry showing `photo_sent` or controlled fallback;
-6. Google News media resolution pointing to the publisher host.
+1. workflow succeeds;
+2. scoring and media unit tests pass;
+3. score distribution materially expands above 60 when fresh concrete events exist;
+4. at least one non-duplicate 60+ item is admitted when supply exists;
+5. Telegram publication succeeds;
+6. media telemetry shows `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`, or an explicit controlled text fallback;
+7. selected image provenance points to the publisher host, never Google News.
 
 ## Documentation hierarchy
 
-For current work, this document supersedes older 2026-09-06 status statements where they conflict with the current state.
+This document is the canonical current status and supersedes conflicting older status documents.
 
-Related current docs:
+Related:
 
+- `docs/SCORING_V2_RELEASE_2026-09-07.md`
 - `docs/SCORING_CALIBRATION_2026-09-07.md`
 - `docs/IMAGE_PIPELINE_INCIDENT_2026-09-07.md`
 - `docs/PRODUCTION_CHANGELOG_2026-09-06_MEDIA_SOURCES.md`
