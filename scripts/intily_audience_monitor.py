@@ -7,6 +7,8 @@ import json
 import time
 from pathlib import Path
 
+from intily_audience_policy import FINAL_THRESHOLD, PRE_AI_THRESHOLD, bonus_from_score
+
 STATE_PATH = Path(__file__).resolve().parents[1] / 'data' / 'intily-ai-news-state.json'
 
 
@@ -66,7 +68,7 @@ def main():
     print('')
     print('Модель: AI-активные русскоязычные предприниматели, руководители, product/marketing/sales/operations/HR/finance специалисты, разработчики и AI power users.')
     print('AI оценивает полезность новости одновременно с переводом/пересказом: 1–10 → линейный bonus +2…+20.')
-    print('Pre-AI gate = 40; final publication gate = 60.')
+    print(f'Pre-AI gate = {PRE_AI_THRESHOLD:.0f}; final publication gate = {FINAL_THRESHOLD:.0f}.')
     print('')
     print('| Показатель | 24 часа | 7 дней | История |')
     print('|---|---:|---:|---:|')
@@ -75,8 +77,8 @@ def main():
     print(f"| Средний bonus | +{d24['average_bonus']:.2f} | +{d7['average_bonus']:.2f} | +{stored['average_bonus']:.2f} |" if d24['average_bonus'] is not None else '| Средний bonus | — | — | — |')
     print(f"| Суммарный audience bonus | +{d24['bonus']:.1f} | +{d7['bonus']:.1f} | +{stored['bonus']:.1f} |")
     print(f"| Оценки 8–10 | {d24['high_fit']} ({d24['high_fit_rate']:.1f}%) | {d7['high_fit']} ({d7['high_fit_rate']:.1f}%) | {stored['high_fit']} ({stored['high_fit_rate']:.1f}%) |")
-    print(f"| Pre-AI < 60 | {d24['pre_ai_below']} | {d7['pre_ai_below']} | {stored['pre_ai_below']} |")
-    print(f"| Final < 60 (инвариант) | {d24['final_below']} | {d7['final_below']} | {stored['final_below']} |")
+    print(f"| Pre-AI < {FINAL_THRESHOLD:.0f} | {d24['pre_ai_below']} | {d7['pre_ai_below']} | {stored['pre_ai_below']} |")
+    print(f"| Final < {FINAL_THRESHOLD:.0f} (инвариант) | {d24['final_below']} | {d7['final_below']} | {stored['final_below']} |")
     print('')
     print('## Географический портфель')
     print('')
@@ -85,10 +87,10 @@ def main():
     print('')
     print('### Как читать')
     print('')
-    print('- **8–10/10** — сильная полезность для целевой аудитории, bonus +16…+20.')
-    print('- **6–7/10** — полезный профессиональный контекст, bonus +12…+14.')
-    print('- **1–5/10** — bonus +2…+10; низкая оценка не обнуляет редакционную ценность, но почти не помогает пройти финальный gate.')
-    print('- **Final < 60 = 0** — обязательный инвариант. Pre-AI < 60 допустим, потому что AI-аудит ещё не проведён.')
+    print(f'- **8–10/10** — сильная полезность для целевой аудитории, bonus +{bonus_from_score(8):.0f}…+{bonus_from_score(10):.0f}.')
+    print(f'- **6–7/10** — полезный профессиональный контекст, bonus +{bonus_from_score(6):.0f}…+{bonus_from_score(7):.0f}.')
+    print(f'- **1–5/10** — bonus +{bonus_from_score(1):.0f}…+{bonus_from_score(5):.0f}; низкая оценка не обнуляет редакционную ценность, но почти не помогает пройти финальный gate.')
+    print(f'- **Final < {FINAL_THRESHOLD:.0f} = 0** — обязательный инвариант. Pre-AI < {FINAL_THRESHOLD:.0f} допустим, потому что AI-аудит ещё не проведён.')
 
 
 if __name__ == '__main__':
