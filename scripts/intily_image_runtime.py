@@ -36,8 +36,7 @@ def _encode_jpeg(image, quality):
 
 
 def _prepare(data):
-    source_bytes = len(data)
-    if source_bytes <= MAX_TELEGRAM_IMAGE_BYTES:
+    if len(data) <= MAX_TELEGRAM_IMAGE_BYTES:
         return data, 'image/jpeg' if data[:2] == b'\xff\xd8' else None, False
 
     with Image.open(BytesIO(data)) as image:
@@ -94,4 +93,5 @@ def fetch_image(article_url):
     image['optimized'] = optimized
     image['source_payload_bytes'] = source_bytes
     image['payload_bytes'] = len(data)
+    print('IMAGE_PAYLOAD_BYTES', len(data), 'source_bytes', source_bytes, 'optimized', optimized)
     return image
