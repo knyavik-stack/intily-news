@@ -551,22 +551,17 @@
     "3ef03f251950a2effd51a6e082e6e7ff901dbe149f8480fc5a892590a7d796c3": 1788758175
   },
   "known": {
-    "ce23fb8f7104820815ca18735554229f0b179a5aa2581282ac7ef1a259923649": 1788753628.2793937,
-    "f2563117429ae162b3e9a8f555a26237a8acbe306969b601838dbcdcc3efe8eb": 1788753628.2793937,
-    "b50c4f7c73e56e4a334cf670f7c51d3f03d33a314f99177e657e86ddadd1557e": 1788753628.2793937,
-    "6dd987c3e029e05d2e1cfbaf6638fa4bacfbde04462415854ab3c3ec7c283afb": 1788753628.2793937,
-    "879bc504639d8d8a9445da12e398b1d67d0e2895f8edb9c31490c5e226777ee0": 1788753628.2793937,
     "3ef03f251950a2effd51a6e082e6e7ff901dbe149f8480fc5a892590a7d796c3": 1788758175.3423872
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788758175.3423872,
+    "last_start_ts": 1788759076.1845565,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788758175.3423872,
-    "last_success_ts": 1788758175.3423872,
+    "last_run_ts": 1788759076.1845565,
+    "last_success_ts": 1788759076.1845565,
     "last_candidates": 5,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
@@ -587,13 +582,6 @@
     }
   },
   "stories": {
-    "e1ad94b7b6b28c5bae370aa412ae3e635c00a2adf4db7229d7f43ce7cd8fae31": {
-      "time": 1788672104,
-      "title": "Emad Mostaque Says Human Ideas Now Add 'Negative Value' as AI Model Releases Accelerate - finance.biggo.com",
-      "desc": "Emad Mostaque Says Human Ideas Now Add 'Negative Value' as AI Model Releases Accelerate finance.biggo.com",
-      "source": "finance.biggo.com",
-      "region": "WORLD"
-    },
     "50f699f2fb53019dc1796c7bcb1f025387963d39cd471276414768b99a07ad2e": {
       "time": 1788673484,
       "title": "Corporate America is getting hooked on open-source AI - The Indian Express",
@@ -1436,84 +1424,9 @@
     "WORLD",
     "RUSSIA"
   ],
-  "last_search_ts": 1788758175.3423872,
+  "last_search_ts": 1788759076.1845565,
   "last_publish_ts": 1788758175.3423872,
   "run_history": [
-    {
-      "ts": 1788690103,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 19.04,
-      "candidates": 26,
-      "queue_before": 0,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 21,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 3,
-        "added": 2,
-        "candidate_count": 26,
-        "admission_rate": 7.69,
-        "dominant_block": "published_key"
-      },
-      "rss": {
-        "queries_attempted": 31,
-        "queries_ok": 31,
-        "query_errors": 0,
-        "direct_feeds_attempted": 8,
-        "direct_feeds_ok": 7,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 10,
-        "raw_items": 163,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 9
-        },
-        "score_filtered": 136,
-        "quality_filtered": 0,
-        "story_dedup": 1,
-        "candidates": 26,
-        "candidate_rate": 0.1699
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788690284,
       "status": "OK",
@@ -14306,6 +14219,102 @@
           "GEMINI"
         ],
         "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788759076,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 19.06,
+      "candidates": 5,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 4,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 5,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        }
+      },
+      "rss": {
+        "queries_attempted": 45,
+        "queries_ok": 45,
+        "query_errors": 0,
+        "direct_feeds_attempted": 11,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 3,
+        "direct_raw_items": 12,
+        "raw_items": 385,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 3,
+          "CNews": 7,
+          "TechCult": -1,
+          "Euronews": -1
+        },
+        "score_filtered": 380,
+        "quality_filtered": 0,
+        "story_dedup": 0,
+        "candidates": 5,
+        "candidate_rate": 0.0134,
+        "score_buckets": {
+          "0–39": 265,
+          "40–49": 85,
+          "50–59": 30,
+          "60–69": 5,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        }
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
