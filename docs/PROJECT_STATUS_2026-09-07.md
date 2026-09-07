@@ -2,9 +2,9 @@
 
 ## Canonical current status
 
-**🟡 TECHNICALLY GREEN / CMO AUDIENCE-FIT MODEL RELEASED / MEDIA RESOLUTION RELEASED / PRODUCTION VERIFICATION PENDING**
+**🟡 98% PRODUCTION-CODE READY / LIVE VERIFICATION PENDING**
 
-The publisher is operational and the previous v3 score-compression problem is being addressed with a two-stage editorial model. The final publication threshold remains 60. The new AI editor now evaluates target-audience fit from 1 to 10 in the same pass in which it translates and summarizes the story; this becomes an additive bonus.
+The publisher architecture, two-stage editorial model, Russian audience expansion, media resolver and strict image payload policy are implemented. The remaining gate is live production verification after the latest CI/media changes.
 
 ## Production architecture
 
@@ -17,17 +17,17 @@ Cloudflare schedule
   → durable state + run_history in GitHub
 ```
 
-## Current editorial model
+## Editorial model
 
 ### Stage 1 — deterministic materiality
 
-- Base model: event-first scoring v3.
-- Pre-AI gate: **45.0**.
-- This is intentionally wider than the old 60 gate so the AI editor can distinguish professionally useful 45–59 stories from noise.
+- Event-first scoring v3.
+- Pre-AI gate: **40.0**.
+- This is deliberately wider than the final publication gate so the AI editor can evaluate professionally useful borderline stories.
 
 ### Stage 2 — CMO / target-audience fit
 
-The AI editor returns:
+The same AI editorial pass returns:
 
 - Russian Telegram title/body/meaning;
 - optional joke under existing safety/style rules;
@@ -38,34 +38,82 @@ Target audience hypothesis:
 
 - founders / business owners;
 - executives / managers;
-- product, marketing and operations specialists;
+- product, marketing, sales, operations and finance specialists;
 - developers / technical specialists;
 - AI / technology decision-makers and advanced practitioners.
 
-Audience bonus:
+Audience bonus is strictly linear:
 
 ```text
-1–5  → +0
-6    → +3
-7    → +6
-8    → +9
-9    → +12
-10   → +15
+1  → +2
+2  → +4
+3  → +6
+4  → +8
+5  → +10
+6  → +12
+7  → +14
+8  → +16
+9  → +18
+10 → +20
 ```
 
 Final formula:
 
 ```text
-final_score = min(100, base_score + audience_bonus)
+final_score = min(100, base_score + audience_score * 2)
 ```
 
 Final publication threshold remains **60.0**.
 
-This is not a cosmetic score change: it separates **materiality** from **usefulness to the person we are trying to acquire and retain**.
+The queue can therefore contain a pre-AI item below 60. That is intentional: the item has only passed the **40.0 pre-AI gate**. It must not be described to readers as having a final weight of 58.7. The runner rewrites that diagnostic to explicitly say that the AI audit has not yet been performed.
 
-## Production evidence before the CMO release
+## Media policy — corrected 2026-09-07
 
-Run #474 (`34092034565`) was the first valid production run on scoring v2:
+The previous image path had two independent weaknesses: publisher resolution could fall back to an unresolved Google News wrapper, and the implementation used Telegram's much larger API upload limit as the local payload limit.
+
+The production path is now:
+
+```text
+Google News discovery URL
+  → Google News publisher resolver
+  → real publisher URL
+  → og:image / JSON-LD / image_src / Twitter / HTML candidates
+  → publisher Referer retry
+  → Google-hosted image rejection
+  → source fetch up to bounded 8 MiB
+  → local normalization/compression
+  → STRICT Telegram payload <= 1,000,000 bytes
+  → sendPhoto
+  → text fallback with explicit reason
+```
+
+### Hard image limits
+
+- **Telegram payload maximum for Intily: 1,000,000 bytes (1 MB decimal).**
+- Source download is separately bounded at 8 MiB only to permit safe local optimization of a legitimate publisher image.
+- Oversized publisher images are not sent as-is: they are resized/compressed to JPEG until the 1 MB cap is met.
+- Minimum output dimensions remain 200×150.
+- Google News / Google-hosted image URLs are never accepted as successful media.
+
+New runtime:
+
+`scripts/intily_image_runtime.py`
+
+New regression suite:
+
+`scripts/test_intily_image_runtime.py`
+
+The workflow installs a pinned major-version range of Pillow and executes the new tests before production.
+
+## Production incident found and corrected
+
+The latest verified production run before the media-runtime release was **Run #503**. It failed before the publisher started because an existing image-pipeline regression test expected the method label `twitter_image`, while the actual valid fallback image was correctly reached. The run therefore published nothing; this was a CI test failure, not a Telegram/media runtime failure.
+
+The test was corrected to assert the actual production invariant — the valid fallback URL and dimensions — instead of coupling the test to an internal candidate-method label.
+
+## Previous production evidence
+
+Run #474 was the first valid production run on scoring v2:
 
 - 446 incoming materials;
 - 403 Google News;
@@ -77,96 +125,65 @@ Run #474 (`34092034565`) was the first valid production run on scoring v2:
 - published story score 60.1;
 - VentureBeat HTTP 429.
 
-That proved publication recovery but did not prove a healthy supply distribution. V3 was therefore not accepted as final.
+The subsequent CMO model was introduced because this distribution was still too compressed.
 
-## Why the model changed again
+The pre-release production telemetry also demonstrated that the audience model itself was being evaluated: the monitor recorded 9 audience evaluations with average 8.0 and average bonus +9.0, and the last-20 portfolio was RU=9 / WORLD=11 (45% RU). This is encouraging but is not a substitute for post-release verification.
 
-The remaining problem was not simply «find more technical news». A channel can receive hundreds of AI-related items while still having very little content worth opening for its intended professional reader.
+## Russian content strategy
 
-The new model treats the target audience as a first-class editorial constraint:
+The target portfolio remains approximately **40% RUSSIA / 60% WORLD**. It is a portfolio objective, not a hard relevance override.
 
-```text
-raw supply
-  ↓
-materiality
-  ↓
-professional audience fit
-  ↓
-final score
-  ↓
-publication
-```
+Russian discovery has been expanded across:
 
-The AI audience score is generated during the existing translation/summarization call, so it does not add a second provider request per publication.
+- business adoption and automation;
+- SME productivity;
+- Russian AI models and agents;
+- Yandex, Sber, VK, MTS, MegaFon, Ozon, Avito;
+- finance and banking;
+- industry, logistics and retail;
+- medicine, education, HR and legal use cases;
+- cybersecurity and fraud;
+- regulation and personal data;
+- investment and startups;
+- robotics, computer vision and infrastructure;
+- RBC, Kommersant, VC.ru and TASS targeted discovery;
+- CNews direct RSS.
 
-## Analytics release
+The system does **not** manufacture Russian content to satisfy the ratio: if there are fewer qualifying Russian stories in the active window, WORLD fills the available slot.
 
-Publisher and Production Monitor now expose audience-fit KPIs:
+## Analytics
 
-- number of audience evaluations;
+Production monitoring now records:
+
+- deterministic score buckets;
+- audience score distribution 1–10;
 - average audience score;
-- total audience bonus;
-- count/share of 8–10 scores;
-- last audience score + reason + final score;
-- media attempts/found/validated/photo/fallback.
+- total and average audience bonus;
+- 8–10 audience-fit share;
+- pre-AI queue items below final threshold;
+- final queue items below 60 — mandatory invariant = 0;
+- RU/WORLD publication portfolio;
+- image attempts/found/validated/photo/fallback;
+- image source, dimensions and failure reason.
 
-New operator component:
+## Current acceptance gate
 
-`scripts/intily_audience_monitor.py`
+To move from **98%** to **GREEN / production-verified**, the next Cloudflare-triggered production cycle must demonstrate:
 
-New policy:
-
-`scripts/intily_audience_policy.py`
-
-New regression test:
-
-`scripts/test_intily_audience_policy.py`
-
-## Media status
-
-Image delivery remains publisher-first and Google-News-safe:
-
-```text
-Google News wrapper
-  → Google News resolver
-  → real publisher URL
-  → og:image / JSON-LD / image_src / Twitter / HTML candidates
-  → per-candidate validation
-  → Telegram sendPhoto
-  → controlled text fallback
-```
-
-Google News / Google-hosted images are not accepted as successful image sources.
-
-The code and regression coverage exist, but **live production photo delivery still requires the next scheduled cycle as proof**.
-
-## CI
-
-The workflow now validates:
-
-- scoring policy;
-- target-audience policy;
-- Google News resolver;
-- image pipeline;
-- existing production analytics/policy code.
-
-The workflow also runs the audience analytics section after each production cycle.
-
-## Acceptance gate for this release
-
-### Required on the next production cycle
-
-1. CI passes on the new audience-fit code;
-2. base score distribution is materially broader than the old 3/446 v2 result;
-3. 45–59 items are actually entering the widened editorial pool;
-4. AI returns valid `audience_score` 1–10;
-5. at least one story reaches 60+ after audience bonus when fresh supply exists;
-6. low-audience stories are rejected rather than published merely because they contain AI keywords;
-7. Telegram publication succeeds;
-8. Google News resolves to publisher URL;
-9. publisher image reaches `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT` or a precise fallback reason is recorded;
-10. no Google-hosted image is accepted;
-11. state and KPI analytics persist successfully.
+1. CI passes, including the new 1 MB image runtime tests;
+2. fresh discovery produces a non-empty candidate pool;
+3. 40–59 pre-AI stories can enter the editorial pool;
+4. AI returns valid audience scores 1–10;
+5. audience bonuses are exactly +2…+20 according to the score;
+6. at least one fresh story reaches 60+ after audience evaluation;
+7. no finalized queue item remains below 60;
+8. Telegram publication succeeds;
+9. Google News resolves to the publisher URL when the source is a Google wrapper;
+10. a real publisher image reaches `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`;
+11. the sent payload is **<=1,000,000 bytes**;
+12. no Google-hosted image is accepted;
+13. RU/WORLD portfolio behavior remains within the target policy when qualifying supply exists;
+14. durable state and KPI telemetry persist successfully.
 
 ## Documentation hierarchy
 
@@ -175,6 +192,7 @@ This document is the canonical current status.
 Related:
 
 - `docs/AUDIENCE_STRATEGY_2026-09-07.md`
+- `docs/CMO_MODEL_REVIEW_2026-09-07.md`
 - `docs/INTILY_ANALYTICS.md`
 - `docs/INTILY_PRODUCTION_MONITORING.md`
 - `docs/RELEASE_2026-09-07.md`
