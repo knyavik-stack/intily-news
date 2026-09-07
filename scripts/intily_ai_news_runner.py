@@ -39,10 +39,6 @@ def apply_policy(publisher):
     publisher.score = score
     publisher.IMPORTANCE_THRESHOLD = THRESHOLD
 
-    # Runtime source expansion. TechCult's public site exposes an RSS entry but
-    # its previously configured /feed endpoint now returns 404, so it is kept in
-    # discovery through Google News rather than leaving a permanently failing
-    # direct feed. Euronews' current public MRSS root is /rss.
     extra_feeds = [
         ('RUSSIA', 'CNews', 'https://www.cnews.ru/inc/rss/news.xml'),
         ('WORLD', 'Euronews', 'https://www.euronews.com/rss'),
@@ -98,6 +94,7 @@ def apply_policy(publisher):
 
 def apply_image_delivery(publisher):
     """Add publisher-image delivery plus durable photo KPIs without blocking text fallback."""
+    from intily_google_news import resolve as resolve_google_news
     from intily_image_pipeline import publish_with_optional_image
 
     publisher._cycle_image_telemetry = {
@@ -169,16 +166,19 @@ def apply_image_delivery(publisher):
         token = os.environ.get('TELEGRAM_BOT_TOKEN', '')
         chat_id = os.environ.get('TELEGRAM_CHAT_ID', '@intily')
         article_url = getattr(publisher, '_current_publication_url', '')
-        if not token or not article_url:
+        resolved_url = resolve_google_news(article_url)
+        if not token or not resolved_url:
             telemetry = {
                 'status': 'fallback_text', 'attempts': 1, 'method': None, 'url': None,
-                'source_url': article_url or None, 'width': None, 'height': None,
+                'source_url': resolved_url or article_url or None, 'width': None, 'height': None,
                 'error': 'missing_token_or_article_url'
             }
             register(telemetry)
             print('IMAGE_FALLBACK_TEXT', telemetry['error'])
             return original_telegram(text)
-        telemetry = publish_with_optional_image(text, article_url, token, chat_id, original_telegram)
+        if resolved_url != article_url:
+            print('IMAGE_SOURCE_RESOLVED', resolved_url)
+        telemetry = publish_with_optional_image(text, resolved_url, token, chat_id, original_telegram)
         register(telemetry)
         publisher._last_image_telemetry = telemetry
         return None
