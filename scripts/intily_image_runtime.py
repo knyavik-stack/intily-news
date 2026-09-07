@@ -26,8 +26,8 @@ def _encode_jpeg(image, quality):
     return out.getvalue()
 
 
-def _prepare(data, content_type):
-    # Always normalize non-JPEG sources. This avoids format-dependent Telegram failures.
+def _prepare(data, content_type='image/jpeg'):
+    """Normalize a source to a Telegram-safe JPEG no larger than 1,000,000 B."""
     if len(data) <= MAX_TELEGRAM_IMAGE_BYTES and content_type == 'image/jpeg':
         return data, 'image/jpeg', False
     with Image.open(BytesIO(data)) as image:
@@ -61,7 +61,7 @@ def _prepare(data, content_type):
 def fetch_image(article_url):
     image = hardening.fetch_image(article_url)
     source_bytes = len(image.get('data', b''))
-    data, content_type, optimized = _prepare(image['data'], image['content_type'])
+    data, content_type, optimized = _prepare(image['data'], image.get('content_type', 'image/jpeg'))
     if len(data) > MAX_TELEGRAM_IMAGE_BYTES:
         raise ValueError('IMAGE_OVER_1MB_AFTER_OPTIMIZATION')
     image = dict(image)
