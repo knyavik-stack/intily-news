@@ -38,7 +38,7 @@ jobs:
           STATE_FILE: data/intily-ai-news-state.json
         run: |
           set -o pipefail
-          timeout 240s env PYTHONPATH=scripts python3 -c "import runpy, intily_image_pipeline as p, intily_image_runtime as r; p.fetch_image = r.fetch_image; runpy.run_path('scripts/intily_ai_news_runner.py', run_name='__main__')" 2>&1 | tee /tmp/intily-publisher.log
+          timeout 240s env PYTHONPATH=scripts python3 -u -c "import runpy, intily_image_pipeline as p, intily_image_runtime as r; p.fetch_image = r.fetch_image; runpy.run_path('scripts/intily_ai_news_runner.py', run_name='__main__')" 2>&1 | tee /tmp/intily-publisher.log
 
       - name: Аналитика текущего запуска
         if: always()
