@@ -4,7 +4,7 @@
 
 **🟡 PRODUCTION OBSERVATION MODE / LIVE MEDIA VERIFICATION PENDING**
 
-The production architecture, two-stage editorial model, audience-fit layer, Russian source expansion, publisher-first image resolver and strict 1 MB image policy are implemented. The latest cycle is technically green. The remaining verification target is a fresh qualifying Telegram photo on the newest media/caption code, plus observation of the new 55-point publication gate.
+The production architecture, two-stage editorial model, audience-fit layer, Russian source expansion, publisher-first image resolver and strict 1 MB image policy are implemented. The latest production cycle exposed one regression in the new caption test; it has been fixed and must be re-verified by the next scheduled cycle.
 
 ## Current editorial policy
 
@@ -30,7 +30,7 @@ publisher article
   → publisher Referer fetch
   → >1,000,000 bytes? skip candidate
   → validate type + dimensions
-  → safe caption ≤1024 chars
+  → safe caption ≤1024 chars after escaping
   → Telegram sendPhoto
 ```
 
@@ -42,54 +42,43 @@ If an oversized or broken candidate is encountered, the hardened resolver contin
 
 Run #577 (`34144899129`) started at **16:48:01 UTC** and completed at **16:51:58 UTC**, about **3m57s** wall-clock. The news search was explicitly skipped (`SEARCH_SKIPPED`), so RSS collection was not the cause.
 
-The delay was AI provider retry/failover latency:
-
-- Gemini encountered retry/503/timeout conditions;
-- Groq returned HTTP 403 / error 1010 and was circuit-opened;
-- OpenAI returned HTTP 429 / no credits and was circuit-opened;
-- multiple queued items were still attempted after provider degradation, including a second editorial attempt per item.
-
-The run ended `PUBLISH_FAILED` with 10 item failures. This is a provider availability/retry-budget problem, not a slow news collector.
+The delay was AI provider retry/failover latency. Gemini encountered retry/503/timeout conditions; Groq returned HTTP 403 / error 1010 and was circuit-opened; OpenAI returned HTTP 429 / no credits and was circuit-opened. Multiple queued items were still attempted after provider degradation, including a second editorial attempt per item. The run ended `PUBLISH_FAILED` with 10 item failures.
 
 ### Run #578
 
-Run #578 (`34145727924`) started at **17:00:01 UTC** and completed at **17:00:29 UTC**, about **28s**. It used the latest status commit at that time and completed all workflow steps successfully.
+Run #578 (`34145727924`) completed in about **28s**. A publisher-hosted image of **48,472 bytes** was found and validated, but the old `CAPTION_TOO_LONG` guard prevented `sendPhoto`. That guard has been replaced by a safe bounded caption path.
 
-It demonstrated a real publisher-hosted image path: the image payload was **48,472 bytes**, but the photo was not sent because the old caption guard emitted `CAPTION_TOO_LONG`. That guard has now been replaced with a safe bounded caption builder. Therefore Run #578 proves image discovery/validation but **does not yet prove Telegram photo delivery**.
+### Run #579
+
+Run #579 (`34146591852`) started at **17:12:01 UTC** and failed fast during regression tests. The failure was real and useful: the first implementation bounded the raw caption before HTML escaping, so an input containing `&` expanded to **1028 characters** after escaping despite a 1024 raw-character cap.
+
+The production code now bounds the **final escaped caption**, and the regression test has been corrected to assert that exact contract. The news engine was correctly skipped because CI failed; no publication was attempted from this invalid build.
 
 ## Latest code changes now on main
 
-- Final publication threshold changed to **55**.
-- Audience monitor and policy analytics now import live threshold constants instead of hard-coded historical 60 values.
+- Final publication threshold: **55**.
+- Publisher and audience analytics use current threshold constants instead of historical hard-coded 60 values.
 - Image hardening skips >1 MB candidates without compression and continues to the next candidate.
-- Photo captions are converted to safe plain text and bounded to Telegram's 1024-character caption limit.
-- Runtime remains defense-in-depth: it rejects any payload >1,000,000 bytes.
-- Image regression tests cover strict 1 MB rejection and safe captions.
-- Scoring policy was restored in full after threshold update; no scoring functions were intentionally removed.
+- Runtime keeps a second strict 1 MB defense-in-depth check.
+- Photo captions are converted to safe plain text and bounded **after HTML escaping** to Telegram's 1024-character limit.
+- Image regression coverage includes publisher resolution, candidate fallback, strict 1 MB rejection and safe caption bounds.
+- Scoring policy was restored in full after the threshold edit; the scoring functions remain intact.
 
 ## Current acceptance gate
 
-The system is now in **observation mode**. The next qualifying production cycle should verify:
+The next scheduled production cycle is the observation gate. It should verify:
 
-1. CI/18 regression tests remain green;
-2. final gate is visibly **55** in Publisher/Monitor analytics;
-3. a 40–54 base story can reach AI evaluation and only final 55+ is publishable;
-4. no final queue item below 55 remains;
+1. all regression tests pass;
+2. Publisher/Monitor visibly report final gate **55**;
+3. 40–54 base stories can reach AI evaluation while final <55 is rejected;
+4. no finalized queue item below 55 remains;
 5. publisher image reaches `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`;
 6. sent image payload is ≤1,000,000 bytes;
 7. >1 MB candidates are skipped rather than transformed;
 8. Google-hosted images remain forbidden;
-9. safe caption path no longer causes `CAPTION_TOO_LONG`;
+9. no `CAPTION_TOO_LONG` fallback occurs for an otherwise valid image;
 10. durable state/KPI persistence remains successful;
 11. provider failures do not create uncontrolled runtime latency.
-
-## Analytics contract
-
-**Publisher Summary** = current cycle only.
-
-**Production Monitor** = 24h / 7d / stored history.
-
-Both now use the current editorial threshold and current media policy. Historical documents may retain old values as historical records, but canonical current docs must not present them as live settings.
 
 ## Documentation hierarchy
 
