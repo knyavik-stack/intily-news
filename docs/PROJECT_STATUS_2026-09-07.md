@@ -4,9 +4,9 @@
 
 ### Overall
 
-**🟡 TECHNICALLY GREEN / SCORING V2 RELEASED — PRODUCTION ACCEPTANCE PENDING NEXT SCHEDULED CYCLE**
+**🟡 TECHNICALLY GREEN / PRODUCTION PUBLICATION RESTORED / SCORING V3 + MEDIA RESOLUTION RELEASED**
 
-The ingestion, queue, deduplication, publication and media architecture is operational. The previous scoring calibration was rejected after production verification showed continued score compression. Scoring v2 is now the production baseline; the next Cloudflare-triggered cycle is the first valid runtime acceptance test.
+The production pipeline now successfully admits and publishes a fresh 60+ story. Run #474 is the first valid production run on the calibrated baseline. The remaining release gate is statistical validation of scoring v3 and real publisher-image delivery on the next scheduled cycle.
 
 ## Production architecture
 
@@ -22,115 +22,142 @@ Cloudflare schedule
 ## Operator settings
 
 - Editorial admission threshold: **60.0** — operator-approved and unchanged.
-- 60 means a concrete, materially relevant AI event; 75+ is major; 85+ is exceptional.
+- 60–74.9: normal publishable AI news.
+- 75–84.9: major industry event.
+- 85–100: exceptional/channel-defining event.
 - Publication interval remains controlled by the existing publisher policy.
 - Russia/world balancing is separate from editorial score.
 - No random regional score bonus is active in the runner.
 
-## Production evidence: run #472
+## Production evidence: run #474
 
-Run #472 (`34091375644`) succeeded technically, but checkout log shows it ran commit `e584b0ec1775a1669c294e087c359b0e880179bc`, before scoring v2 was committed. Its useful diagnostic facts are:
+Run #474 (`34092034565`) checked out commit `c6a4923974e04bbc3a96f479388230a687ea2c5a` and completed successfully.
 
-- 425 incoming items;
-- 423 filtered by score (99.5%);
-- 2 candidates;
-- both candidates were already published;
-- 0 new admissions;
-- score buckets: 302 / 85 / 36 / 2 / 0 / 0 / 0 / 0 for 0–39 / 40–49 / 50–59 / 60–69 / 70–79 / 80–84 / 85–89 / 90–100.
+- 446 incoming materials;
+- 403 from Google News;
+- 43 from direct RSS;
+- 443 filtered below 60;
+- 3 candidates;
+- 1 new admission;
+- 2 candidates blocked because their keys were already published;
+- 1 Telegram publication;
+- published story score: **60.1**;
+- queue after run: 0;
+- provider: Gemini, no failover;
+- source error: VentureBeat HTTP 429.
 
-This confirms the real failure mode: the channel was not starved of source material, but the score distribution was overwhelmingly below the 60 gate. The run is **not** a v2 acceptance run.
+This is a material milestone: **the production publisher is no longer stuck at zero output.**
 
-## Scoring v2 — current production baseline
+However, the distribution was still compressed: only 3/446 materials reached 60+ and none reached 70+. Therefore the v2 model is not accepted as final.
 
-Commit: `23819a9728d225a0628f46db8dd02342fceb7997`
+## Scoring v3 — current main
 
-`scripts/intily_scoring_policy.py` is now event-first and editorial-materiality driven. The threshold remains 60; the available score is redistributed toward the properties that make a news item publishable.
+Commit: `a1cca25a3e7b1a88502556cc50bc6eede0cb74c1`
+
+Scoring v3 replaces keyword-weight accumulation with explicit event materiality. The threshold remains 60; it is not lowered to manufacture volume.
 
 | Component | Max |
 |---|---:|
 | AI relevance | 20 |
 | AI specificity | 10 |
 | Impact | 20 |
-| Event concreteness | 20 |
-| Practical value | 10 |
-| Novelty | 4 |
-| Source quality | 8 |
-| Evidence | 4 |
-| Freshness | 4 |
+| Event materiality | 25 |
+| Practical value | 8 |
+| Novelty | 0 |
+| Source quality | 7 |
+| Evidence | 5 |
+| Freshness | 5 |
 | **Total** | **100** |
 | Low-signal penalty | **−6** |
 
-### Editorial interpretation
+### Mathematical change
 
-- **<60**: weak signal, commentary, insufficiently material, or non-event content;
-- **60–74**: normal publishable AI news — a concrete event with materiality;
-- **75–84**: major industry event;
-- **85–100**: exceptional/channel-defining event.
+The previous model awarded points to keyword families. That created a structural problem: a real event often accumulated only a few weak signals, while an article could contain many relevant words without representing a materially important event.
 
-The model is no longer built around keyword-count accumulation. A single concrete event receives a meaningful baseline; independent impact signals then move the item toward major/exceptional tiers. Semantic story memory remains responsible for uniqueness and deduplication.
+V3 changes this to:
 
-## Regression protection
+1. **AI relevance** — confirms that the story belongs in Intily;
+2. **event materiality** — assigns a bounded base for a concrete launch/release/deal/funding/research/policy/incident;
+3. **impact** — evaluates consequence using independent signals, major actors, risk and measurement;
+4. **practical value** — evaluates actual deployment/adoption/use;
+5. **source/evidence/freshness** — supporting confidence signals;
+6. **semantic memory** — independently decides uniqueness.
 
-The production workflow executes py_compile plus 9 unit tests before the publisher. The last verified suite passed:
+The same keyword appearing repeatedly cannot manufacture a high score. A concrete event receives a meaningful base even when the publisher uses different wording.
 
-- concrete AI release clears 60;
-- major AI acquisition reaches 75+;
-- generic AI commentary remains below 60;
-- non-AI material receives zero AI relevance;
-- image metadata extraction, Google News canonical resolution, candidate retry and Blockchain.News fixture all pass.
+Novelty is no longer part of the numeric score. A story is important because of its materiality; whether it is new to Intily is a separate deduplication problem.
 
-## Source health
+## Media release
 
-Current runtime uses:
+Run #474 published text because the old Google News resolution path returned `ARTICLE_SOURCE_UNRESOLVED`.
 
-- CNews direct RSS;
-- Euronews public `/rss` root;
-- TechCult via targeted Google News `site:techcult.ru` queries;
-- the established first-party/industry feeds and broad Google News discovery.
+The cause is current Google News RSS behavior: wrapper URLs may return a Google shell rather than a normal HTTP redirect. A dependency-free resolver has therefore been added:
 
-VentureBeat can still return HTTP 429 intermittently. This is an upstream source-health issue and not the publication gate itself; the broad discovery layer provides redundancy.
+`scripts/intily_google_news.py`
 
-## Image pipeline
+It supports the current article-page decoding parameters and Google's `batchexecute` resolution path, with fail-open behavior. When successful, the publisher receives the real article URL before image extraction begins.
 
-Resolver 2.0 is production code:
+The image pipeline remains publisher-first and multi-candidate:
 
 ```text
-Google News
+Google News wrapper
+  → current Google resolver
   → publisher URL
-  → multi-candidate metadata/JSON-LD/HTML extraction
+  → og:image / JSON-LD / image_src / Twitter / HTML candidates
   → per-candidate validation
   → Telegram sendPhoto
   → controlled text fallback
 ```
 
-A Google News wrapper image is never accepted. Durable telemetry records attempts, found, validated, photo_sent, fallback reasons and URL provenance.
+Google News and Google-hosted images are never accepted as successful photo sources.
 
-The Blockchain.News supplied publisher image is covered by a regression test. **Real production Telegram delivery has not yet been proven because run #472 published zero items.** The next successful publication is the media acceptance test.
+The Blockchain.News image supplied for the incident remains an explicit regression candidate.
 
-## Release / acceptance state
+## CI protection
 
-- Run #471: diagnostic only; established original score compression.
-- Run #472: technically SUCCESS, but pre-v2 checkout; 0 publications.
-- Scoring v2: **released to `main`**.
-- Documentation: `docs/SCORING_V2_RELEASE_2026-09-07.md` added.
-- Next Cloudflare-triggered cycle: **first valid production acceptance run**.
+The workflow now compiles and tests:
 
-### Mandatory acceptance criteria
+- scoring policy;
+- Google News resolver;
+- image pipeline;
+- existing cycle/policy code.
 
-1. workflow succeeds;
-2. scoring and media unit tests pass;
-3. score distribution materially expands above 60 when fresh concrete events exist;
-4. at least one non-duplicate 60+ item is admitted when supply exists;
-5. Telegram publication succeeds;
-6. media telemetry shows `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`, or an explicit controlled text fallback;
-7. selected image provenance points to the publisher host, never Google News.
+The next scheduled cycle is the first runtime test containing both scoring v3 and the new Google resolver.
+
+## Source health
+
+Current runtime uses CNews direct RSS, Euronews `/rss`, TechCult targeted Google News queries, established first-party/industry feeds and broad Google News discovery.
+
+VentureBeat returned HTTP 429 in run #474. This is treated as a non-blocking upstream source-health issue. Repeated failures should be mitigated at source level and must not be compensated for by lowering the editorial gate.
+
+## Release acceptance
+
+### Already proven
+
+- workflow executes successfully;
+- production state is durable;
+- publication has resumed;
+- score 60+ can admit a real story;
+- Telegram delivery succeeds;
+- image pipeline has deterministic unit coverage.
+
+### Next mandatory proof
+
+1. CI passes with the new v3 + Google resolver code;
+2. score distribution becomes materially healthier than the 3/446 result from v2;
+3. at least one non-duplicate 60+ item is admitted when fresh supply exists;
+4. Telegram publication succeeds;
+5. a Google News story resolves to a publisher URL;
+6. a publisher-hosted image reaches `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`, or a precise controlled fallback is recorded;
+7. no Google-hosted image is accepted.
 
 ## Documentation hierarchy
 
 This document is the canonical current status and supersedes conflicting older status documents.
 
-Related:
+Related current release document:
 
+- `docs/RELEASE_2026-09-07.md`
 - `docs/SCORING_V2_RELEASE_2026-09-07.md`
 - `docs/SCORING_CALIBRATION_2026-09-07.md`
 - `docs/IMAGE_PIPELINE_INCIDENT_2026-09-07.md`
