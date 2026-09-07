@@ -1,8 +1,8 @@
 """Runtime hardening for Intily publisher-image retrieval.
 
-Keeps the existing deterministic extractor/validator but adds a publisher
-Referer retry and an explicit ban on Google-hosted image URLs. This is kept in
-a separate module so the core image pipeline remains easy to regression-test.
+Keeps the deterministic extractor/validator, adds a publisher Referer retry,
+forbids Google-hosted images, and skips source images over the product's strict
+1,000,000-byte delivery cap so another valid publisher candidate can be tried.
 """
 
 import urllib.parse
@@ -14,8 +14,9 @@ GOOGLE_IMAGE_HOSTS = {
     'googleusercontent.com', 'www.googleusercontent.com',
 }
 
-# Backward-compatible alias for the production runtime. This is a source-fetch
-# limit only; the final Telegram payload is enforced separately at 1,000,000 B.
+MAX_TELEGRAM_IMAGE_BYTES = 1_000_000
+# Backward-compatible source-fetch limit. It is deliberately higher than the
+# Telegram delivery cap so oversized candidates can be identified and skipped.
 MAX_IMAGE_BYTES = pipeline.MAX_SOURCE_IMAGE_BYTES
 
 
@@ -54,6 +55,11 @@ def fetch_image(article_url):
                     raise ValueError('GOOGLE_IMAGE_FORBIDDEN')
                 if content_type not in pipeline.IMAGE_TYPES:
                     raise ValueError('IMAGE_CONTENT_TYPE_INVALID')
+                if len(data) > MAX_TELEGRAM_IMAGE_BYTES:
+                    # Hard reject: do not resize/recompress. Continue to the
+                    # next publisher candidate instead of falling back early.
+                    errors.append(f'{method}:IMAGE_TOO_LARGE:{len(data)}')
+                    break
                 dims = pipeline._dimensions(data, content_type)
                 if not dims or dims[0] < pipeline.MIN_IMAGE_WIDTH or dims[1] < pipeline.MIN_IMAGE_HEIGHT:
                     raise ValueError('IMAGE_DIMENSIONS_INVALID')
