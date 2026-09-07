@@ -54,19 +54,37 @@ class ImagePipelineTests(unittest.TestCase):
         self.assertEqual(image['url'], 'https://publisher.example/good.jpg')
         self.assertEqual((image['width'], image['height']), (640, 480))
 
+    def test_oversized_first_candidate_is_skipped_for_next_candidate(self):
+        html = '<meta property="og:image" content="/large.jpg"><meta name="twitter:image" content="/good.jpg">'
+        oversized = b'x' * (media.MAX_SOURCE_IMAGE_BYTES + 1)
+        responses = [
+            (html.encode(), 'text/html', 'https://publisher.example/story'),
+            (oversized, 'image/jpeg', 'https://publisher.example/large.jpg'),
+            (self._jpeg(640, 480), 'image/jpeg', 'https://publisher.example/good.jpg'),
+        ]
+        with patch.object(media, '_request', side_effect=responses):
+            image = media.fetch_image('https://publisher.example/story')
+        self.assertEqual(image['url'], 'https://publisher.example/good.jpg')
+
     def test_blockchain_news_expected_image_is_a_first_class_candidate(self):
         expected = 'https://blockchainstock.blob.core.windows.net/features/2242046FCF14090589D5A49FFC590D13A9AF6032D71ECDBD82C9F012CD661799.jpg'
         html = f'<meta property="og:image" content="{expected}">'
         candidates, _ = media._meta_image_candidates(html)
         self.assertEqual(candidates[0], ('og_image', expected))
 
-    def test_photo_caption_is_safe_and_bounded_after_escaping(self):
-        text = '<b>Заголовок &amp; тест</b> ' + ('длинный & текст ' * 200)
+    def test_photo_caption_preserves_supported_formatting_and_is_bounded(self):
+        text = '<b>Заголовок &amp; тест</b> — <i>важно</i> <a href="https://example.com">источник</a> ' + ('длинный & текст ' * 200)
         caption = media._photo_caption(text)
         self.assertLessEqual(len(caption), 1024)
-        self.assertIn('Заголовок', caption)
-        self.assertIn('&amp;', caption)
-        self.assertNotIn('<b>', caption)
+        self.assertIn('<b>Заголовок &amp; тест</b>', caption)
+        self.assertIn('<i>важно</i>', caption)
+        self.assertIn('<a href="https://example.com">источник</a>', caption)
+        self.assertNotIn('<script', caption.lower())
+
+    def test_photo_caption_rejects_unsafe_href(self):
+        caption = media._photo_caption('<a href="javascript:alert(1)">опасная ссылка</a>')
+        self.assertNotIn('javascript:', caption.lower())
+        self.assertIn('опасная ссылка', caption)
 
     @staticmethod
     def _jpeg(width, height):
