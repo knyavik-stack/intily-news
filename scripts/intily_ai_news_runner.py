@@ -39,15 +39,31 @@ def apply_policy(publisher):
     publisher.score = score
     publisher.IMPORTANCE_THRESHOLD = THRESHOLD
 
+    # Runtime source expansion. TechCult's public site exposes an RSS entry but
+    # its previously configured /feed endpoint now returns 404, so it is kept in
+    # discovery through Google News rather than leaving a permanently failing
+    # direct feed. Euronews' current public MRSS root is /rss.
     extra_feeds = [
         ('RUSSIA', 'CNews', 'https://www.cnews.ru/inc/rss/news.xml'),
-        ('RUSSIA', 'TechCult', 'https://techcult.ru/feed'),
-        ('WORLD', 'Euronews', 'https://www.euronews.com/rss?format=mrss&level=theme&name=next'),
+        ('WORLD', 'Euronews', 'https://www.euronews.com/rss'),
     ]
     existing = {row[1] for row in publisher.DIRECT_RSS_FEEDS}
     publisher.DIRECT_RSS_FEEDS = list(publisher.DIRECT_RSS_FEEDS) + [row for row in extra_feeds if row[1] not in existing]
-    publisher.QUALITY_TRUSTED = set(publisher.QUALITY_TRUSTED) | {'cnews', 'cnews.ru', 'techcult'}
-    publisher.TRUSTED = set(publisher.TRUSTED) | {'cnews', 'cnews.ru', 'techcult', 'euronews'}
+
+    extra_queries = [
+        ('RUSSIA', 'site:techcult.ru ИИ искусственный интеллект'),
+        ('RUSSIA', 'site:techcult.ru искусственный интеллект модели роботы'),
+    ]
+    existing_queries = set(publisher.QUERIES)
+    publisher.QUERIES = list(publisher.QUERIES) + [row for row in extra_queries if row not in existing_queries]
+
+    publisher.QUALITY_TRUSTED = set(publisher.QUALITY_TRUSTED) | {
+        'cnews', 'cnews.ru', 'cnbc', 'bbc', 'the wall street journal', 'wsj',
+        'axios', 'the register', 'the information'
+    }
+    publisher.TRUSTED = set(publisher.TRUSTED) | {
+        'cnews', 'cnews.ru', 'euronews', 'cnbc', 'bbc', 'wsj', 'axios', 'the register'
+    }
 
     original_collect = publisher.collect
 
@@ -55,7 +71,8 @@ def apply_policy(publisher):
         score_seen.clear()
         for key in score_buckets: score_buckets[key] = 0
         result = original_collect(telemetry)
-        if telemetry is not None: telemetry['score_buckets'] = dict(score_buckets)
+        if telemetry is not None:
+            telemetry['score_buckets'] = dict(score_buckets)
         print('SCORE_BUCKETS', json.dumps(score_buckets, ensure_ascii=False, separators=(',', ':')))
         return result
 
@@ -66,7 +83,8 @@ def apply_policy(publisher):
 
     def publication_region_boost(state, region):
         history = state.get('publication_regions', [])[-publisher.REGION_HISTORY_SIZE:]
-        if not history: return 0.0
+        if not history:
+            return 0.0
         ru_share = history.count('RUSSIA') / len(history)
         tolerance, target = 0.08, 0.60
         if region == 'RUSSIA' and ru_share < target - tolerance: return 50.0
@@ -110,9 +128,6 @@ def apply_image_delivery(publisher):
             'error': telemetry.get('error'),
         }
 
-    # record_kpi is called by the legacy publisher core. Wrapping it here keeps
-    # the durable state schema backwards compatible while adding media KPIs under
-    # admission.image. No token, caption or article body is persisted here.
     original_record_kpi = publisher.record_kpi
 
     def record_kpi_with_image(s, now, searched, candidates, queue_before, queue_after,
