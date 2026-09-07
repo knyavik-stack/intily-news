@@ -674,10 +674,10 @@
       ],
       "tier": "A",
       "audience_score": 8.0,
-      "last_failed_at": 1788799511,
+      "last_failed_at": 1788799693,
       "last_failure": "FINAL_SCORE_BELOW_THRESHOLD:57.7",
-      "failure_count": 10,
-      "next_retry_at": 1788821111,
+      "failure_count": 11,
+      "next_retry_at": 1788821293,
       "score_stage": "final"
     },
     {
@@ -850,7 +850,11 @@
       "importance": 53.7,
       "editorial_value": 50.0,
       "topics": [],
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1788799693,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\", | GROQ: CIRCUIT_OPEN | OPENAI: CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1788799993
     },
     {
       "region": "WORLD",
@@ -919,7 +923,11 @@
       "importance": 53.2,
       "editorial_value": 50.0,
       "topics": [],
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1788799693,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: CIRCUIT_OPEN | GROQ: CIRCUIT_OPEN | OPENAI: CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1788799993
     },
     {
       "region": "RUSSIA",
@@ -957,7 +965,11 @@
         "applications",
         "models"
       ],
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1788799693,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: CIRCUIT_OPEN | GROQ: CIRCUIT_OPEN | OPENAI: CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1788799993
     },
     {
       "region": "WORLD",
@@ -1026,7 +1038,11 @@
       "topics": [
         "tools"
       ],
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1788799693,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: CIRCUIT_OPEN | GROQ: CIRCUIT_OPEN | OPENAI: CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1788799993
     },
     {
       "region": "WORLD",
@@ -1095,7 +1111,11 @@
       "topics": [
         "chips"
       ],
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1788799693,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: CIRCUIT_OPEN | GROQ: CIRCUIT_OPEN | OPENAI: CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1788799993
     },
     {
       "region": "RUSSIA",
@@ -1131,7 +1151,11 @@
       "topics": [
         "chips"
       ],
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1788799693,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: CIRCUIT_OPEN | GROQ: CIRCUIT_OPEN | OPENAI: CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1788799993
     },
     {
       "region": "RUSSIA",
@@ -1168,7 +1192,11 @@
         "agents",
         "security_regulation"
       ],
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1788799693,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: CIRCUIT_OPEN | GROQ: CIRCUIT_OPEN | OPENAI: CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1788799993
     },
     {
       "region": "RUSSIA",
@@ -1205,7 +1233,11 @@
         "robotics",
         "security_regulation"
       ],
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1788799693,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: CIRCUIT_OPEN | GROQ: CIRCUIT_OPEN | OPENAI: CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1788799993
     },
     {
       "region": "RUSSIA",
@@ -1241,44 +1273,41 @@
       "topics": [
         "robotics"
       ],
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1788799693,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: CIRCUIT_OPEN | GROQ: CIRCUIT_OPEN | OPENAI: CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1788799993
     }
   ],
   "health": {
-    "last_start_ts": 1788799511.600312,
+    "last_start_ts": 1788799693.9142907,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788799511.600312,
-    "last_success_ts": 1788799511.600312,
+    "last_run_ts": 1788799693.9142907,
+    "last_success_ts": 1788799693.9142907,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 17
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1788799520.00396
+      "disabled_until": 1788800032.3034296,
+      "reason": "TEMPORARY_SERVICE_ERROR",
+      "updated_at": 1788799912.3034317
     },
     "GROQ": {
-      "disabled_until": 1788499524.6517646,
+      "disabled_until": 1788821412.400743,
       "reason": "GROQ_403_1010",
-      "updated_at": 1788477924.6517658
+      "updated_at": 1788799812.4007444
     },
     "OPENAI": {
-      "disabled_until": 1788532483.2894158,
+      "disabled_until": 1788886215.536032,
       "reason": "NO_CREDITS_OR_429",
-      "updated_at": 1788446083.289418
+      "updated_at": 1788799815.536034
     }
   },
   "stories": {
-    "76742f5114b07d02ca5b2da9ac431682858547e961ab9236763e7a08f867d866": {
-      "time": 1788713142,
-      "title": "Цифровой напарник для участкового: в России разработали ИИ для полицейской рутины - www1.ru",
-      "desc": "Цифровой напарник для участкового: в России разработали ИИ для полицейской рутины www1.ru",
-      "source": "www1.ru",
-      "region": "RUSSIA"
-    },
     "fa353d6b1fb259390a912804f0115ae7df5097d34951485d13be76c40ee64070": {
       "time": 1788713560,
       "title": "Яндекс Алиса AI назвала меня «Экспертом №1 по AEO». Почему я не враг рекламным агентствам, а ваш лучший союзник в GEO-продвижении - Sostav.ru",
@@ -1914,55 +1943,6 @@
   "last_search_ts": 1788798792.3298495,
   "last_publish_ts": 1788799511.600312,
   "run_history": [
-    {
-      "ts": 1788711999,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "publish_interval_not_reached",
-      "searched": false,
-      "duration_sec": 0.01,
-      "candidates": 0,
-      "queue_before": 2,
-      "queue_after": 2,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key"
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788712182,
       "status": "OK",
@@ -16823,6 +16803,90 @@
         },
         "OPENAI": {
           "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788799693,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 218.54,
+      "candidates": 0,
+      "queue_before": 17,
+      "queue_after": 17,
+      "published": 0,
+      "publish_attempts": 10,
+      "item_failures": 10,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 16.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 16.0,
+            "reason": "Критически важный сдвиг в профессиональных компетенциях для всех, кто работает в IT и хочет оставаться востребованным.",
+            "title": "Работа программистов постепенно смещается к проектированию правил и систем обратной связи для ИИ",
+            "final_score": 57.7
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 16,
+          "final_below_threshold": 1,
+          "invariant_ok": false
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 50,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "TEMPORARY_SERVICE_ERROR"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": true,
           "reason": "NO_CREDITS_OR_429"
         }
       }
