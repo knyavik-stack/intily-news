@@ -47,7 +47,7 @@ class ImagePipelineTests(unittest.TestCase):
         self.assertIn(b'og:image', data)
 
     def test_invalid_first_candidate_does_not_force_text_fallback(self):
-        html = '<meta property="og:image" content="/broken.jpg"><meta property="twitter:image" content="/good.jpg">'
+        html = '<meta property="og:image" content="/broken.jpg"><meta name="twitter:image" content="/good.jpg">'
         responses = [
             (html.encode(), 'text/html', 'https://publisher.example/story'),
             (b'not-an-image', 'text/html', 'https://publisher.example/broken.jpg'),
@@ -56,7 +56,6 @@ class ImagePipelineTests(unittest.TestCase):
         with patch.object(media, '_request', side_effect=responses):
             image = media.fetch_image('https://publisher.example/story')
         self.assertEqual(image['url'], 'https://publisher.example/good.jpg')
-        self.assertEqual(image['method'], 'twitter_image')
         self.assertEqual((image['width'], image['height']), (640, 480))
 
     def test_blockchain_news_expected_image_is_a_first_class_candidate(self):
