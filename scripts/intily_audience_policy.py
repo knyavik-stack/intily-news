@@ -68,13 +68,13 @@ def build_evaluation_instruction():
         'Это второй редакторский сигнал. Его вклад в итоговый score линейный: score × 2, то есть 1/10=+2 и 10/10=+20.\n'
     )
 
-# Runtime activation: production CI also activates this explicitly. Keeping the
-# hook here makes direct runner invocation use the same hardened image fetch path.
+# Runtime activation: direct runner invocation uses the same hardened image
+# fetch and the strict <=1 MiB Telegram payload as production CI.
 try:
     import intily_image_pipeline as _image_pipeline
-    from intily_image_hardening import fetch_image as _hardened_fetch_image
-    _image_pipeline.fetch_image = _hardened_fetch_image
+    from intily_image_runtime import fetch_image as _runtime_fetch_image
+    _image_pipeline.fetch_image = _runtime_fetch_image
     IMAGE_HARDENING_ACTIVE = True
-except Exception as _image_hardening_error:
+except Exception as _image_runtime_error:
     IMAGE_HARDENING_ACTIVE = False
-    IMAGE_HARDENING_ERROR = str(_image_hardening_error)[:200]
+    IMAGE_HARDENING_ERROR = str(_image_runtime_error)[:200]
