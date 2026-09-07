@@ -14,13 +14,13 @@ import urllib.parse
 import urllib.request
 from html.parser import HTMLParser
 
-MAX_IMAGE_BYTES = 10 * 1024 * 1024
+MAX_SOURCE_IMAGE_BYTES = 8 * 1024 * 1024
 MAX_HTML_BYTES = 2 * 1024 * 1024
 MIN_IMAGE_WIDTH = 200
 MIN_IMAGE_HEIGHT = 150
-IMAGE_TYPES = {'image/jpeg', 'image/png', 'image/webp', 'image/gif'}
+IMAGE_TYPES = {'image/jpeg', 'image/png', 'image/webp', 'image/gif', 'image/avif'}
 GOOGLE_NEWS_HOSTS = {'news.google.com', 'www.news.google.com'}
-MAX_IMAGE_CANDIDATES = 8
+MAX_IMAGE_CANDIDATES = 12
 
 
 class _ArticleParser(HTMLParser):
@@ -31,6 +31,7 @@ class _ArticleParser(HTMLParser):
         self.meta = []
         self.links = []
         self.images = []
+        self.sources = []
         self.canonical = []
         self._jsonld = []
         self._jsonld_depth = 0
@@ -56,14 +57,18 @@ class _ArticleParser(HTMLParser):
                 if 'canonical' in rel:
                     self.canonical.append(href)
         elif tag == 'img':
-            for key in ('src', 'data-src', 'data-lazy-src', 'data-original', 'data-image'):
+            values = []
+            for key in ('src', 'data-src', 'data-lazy-src', 'data-original', 'data-image', 'data-filename', 'data-url'):
                 value = html.unescape(a.get(key, '')).strip()
                 if value:
-                    self.images.append((key, value, a.get('srcset', ''), a.get('alt', ''), a.get('class', '')))
-                    break
-            else:
-                if a.get('srcset'):
-                    self.images.append(('srcset', '', a.get('srcset', ''), a.get('alt', ''), a.get('class', '')))
+                    values.append((key, value))
+            srcset = a.get('srcset') or a.get('data-srcset') or ''
+            if values or srcset:
+                self.images.append((values, srcset, a.get('alt', ''), a.get('class', '')))
+        elif tag == 'source':
+            srcset = a.get('srcset') or a.get('data-srcset') or a.get('src') or ''
+            if srcset:
+                self.sources.append(srcset)
         elif tag == 'script':
             typ = a.get('type', '').lower()
             if typ == 'application/ld+json':
@@ -158,6 +163,8 @@ def _parse_jsonld_image(value, out):
                 _parse_jsonld_image(value[key], out)
         if 'image' in value:
             _parse_jsonld_image(value['image'], out)
+        if 'thumbnailUrl' in value:
+            _parse_jsonld_image(value['thumbnailUrl'], out)
         if '@graph' in value:
             _parse_jsonld_image(value['@graph'], out)
 
@@ -168,7 +175,6 @@ def _meta_image_candidates(text):
         parser.feed(text)
         parser.close()
     except Exception:
-        # Metadata extraction should be best effort even for malformed publisher HTML.
         pass
 
     out = []
@@ -176,7 +182,7 @@ def _meta_image_candidates(text):
     for key, value in parser.meta:
         meta_map.setdefault(key, []).append(value)
 
-    for key in ('og:image', 'og:image:url'):
+    for key in ('og:image', 'og:image:url', 'og:image:secure_url', 'article:image'):
         for value in meta_map.get(key, []):
             out.append(('og_image', value))
     for key in ('twitter:image', 'twitter:image:src'):
@@ -194,13 +200,21 @@ def _meta_image_candidates(text):
             continue
         _parse_jsonld_image(payload, out)
 
-    # Last-resort publisher HTML images. Prefer lazy/source-set URLs before plain src.
-    for kind, value, srcset, alt, css_class in parser.images:
+    for values, srcset, alt, css_class in parser.images:
         candidates = _srcset_candidates(srcset) if srcset else []
-        if value:
-            candidates.insert(0, value)
-        for candidate in candidates[:3]:
+        for _key, value in values:
+            if value:
+                candidates.insert(0, value)
+        for candidate in candidates[:4]:
             out.append(('html_img', candidate))
+    for srcset in parser.sources:
+        for candidate in _srcset_candidates(srcset)[:4]:
+            out.append(('html_source', candidate))
+
+    # Some publishers put image URLs in inline CSS rather than img metadata.
+    for match in re.findall(r'url\\([\\\'\"]?([^\\\'\")]+)', text, flags=re.I):
+        if re.match(r'https?://|//|/', html.unescape(match).strip()):
+            out.append(('css_image', html.unescape(match).strip()))
 
     deduped = []
     seen = set()
@@ -227,7 +241,6 @@ def resolve_article_url(article_url):
     if final_host not in GOOGLE_NEWS_HOSTS:
         return final_url, data, content_type
 
-    # Some wrappers do not redirect but expose the publisher URL as canonical/og:url.
     text = data.decode('utf-8', 'replace')
     candidates, parser = _meta_image_candidates(text)
     source_urls = list(parser.canonical)
@@ -256,7 +269,10 @@ def extract_image_candidates(article_url):
         raise ValueError('IMAGE_NOT_FOUND')
 
     source_host = _host(final_url)
-    priority = {'og_image': 0, 'jsonld_image': 1, 'image_src': 2, 'twitter_image': 3, 'html_img': 4}
+    priority = {
+        'og_image': 0, 'jsonld_image': 1, 'image_src': 2, 'twitter_image': 3,
+        'html_img': 4, 'html_source': 5, 'css_image': 6,
+    }
     ranked = []
     for method, value in candidates:
         image_url = urllib.parse.urljoin(final_url, value)
@@ -286,6 +302,7 @@ def _dimensions(data, content_type):
         if content_type == 'image/webp' and len(data) >= 30 and data[:4] == b'RIFF' and data[8:12] == b'WEBP':
             if data[12:16] == b'VP8X':
                 return 1 + int.from_bytes(data[24:27], 'little'), 1 + int.from_bytes(data[27:30], 'little')
+            # VP8/VP8L are common WebP variants; Pillow handles their headers reliably.
         if content_type == 'image/jpeg' and data[:2] == b'\xff\xd8':
             i = 2
             while i + 9 < len(data):
@@ -305,7 +322,13 @@ def _dimensions(data, content_type):
                 i += max(n, 2)
     except Exception:
         return None
-    return None
+    try:
+        from io import BytesIO
+        from PIL import Image
+        with Image.open(BytesIO(data)) as image:
+            return image.size
+    except Exception:
+        return None
 
 
 def fetch_image(article_url):
@@ -315,8 +338,9 @@ def fetch_image(article_url):
         try:
             data, content_type, final_url = _request(image_url, {
                 'User-Agent': 'Mozilla/5.0 (compatible; IntilyNews/1.0)',
-                'Accept': 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8'
-            }, 15, MAX_IMAGE_BYTES)
+                'Accept': 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8',
+                'Referer': source_url,
+            }, 15, MAX_SOURCE_IMAGE_BYTES)
             if content_type not in IMAGE_TYPES:
                 raise ValueError('IMAGE_CONTENT_TYPE_INVALID')
             dims = _dimensions(data, content_type)
@@ -329,7 +353,7 @@ def fetch_image(article_url):
             }
         except Exception as exc:
             errors.append(f'{method}:{str(exc)[:100]}')
-    raise ValueError('IMAGE_CANDIDATES_FAILED: ' + ' | '.join(errors[:4]))
+    raise ValueError('IMAGE_CANDIDATES_FAILED: ' + ' | '.join(errors[:6]))
 
 
 def _field(name, value, boundary):
@@ -342,7 +366,7 @@ def _file(field, filename, data, content_type, boundary):
 
 def send_photo(token, chat_id, caption, image):
     boundary = '----IntilyBoundary7MA4YWxkTrZu0gW'
-    ext = {'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp', 'image/gif': 'gif'}[image['content_type']]
+    ext = {'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp', 'image/gif': 'gif', 'image/avif': 'jpg'}[image['content_type']]
     body = b''.join([
         _field('chat_id', chat_id, boundary),
         _field('parse_mode', 'HTML', boundary),
