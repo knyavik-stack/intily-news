@@ -549,28 +549,30 @@
     "b50c4f7c73e56e4a334cf670f7c51d3f03d33a314f99177e657e86ddadd1557e": 1788754345,
     "6dd987c3e029e05d2e1cfbaf6638fa4bacfbde04462415854ab3c3ec7c283afb": 1788755293,
     "3ef03f251950a2effd51a6e082e6e7ff901dbe149f8480fc5a892590a7d796c3": 1788758175,
-    "31f0cfe961dc6af788886d403f8273f68a0362c442865828615bb327903cd302": 1788761377
+    "31f0cfe961dc6af788886d403f8273f68a0362c442865828615bb327903cd302": 1788761377,
+    "08a6dae5df4ee453581b4db0684f919f2e49fcbd3898f4dc4d45a6252c1770d9": 1788763357
   },
   "known": {
     "3ef03f251950a2effd51a6e082e6e7ff901dbe149f8480fc5a892590a7d796c3": 1788758175.3423872,
-    "31f0cfe961dc6af788886d403f8273f68a0362c442865828615bb327903cd302": 1788761377.4789133
+    "31f0cfe961dc6af788886d403f8273f68a0362c442865828615bb327903cd302": 1788761377.4789133,
+    "08a6dae5df4ee453581b4db0684f919f2e49fcbd3898f4dc4d45a6252c1770d9": 1788763357.2085748
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788762817.5319157,
+    "last_start_ts": 1788763357.2085748,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788762817.5319157,
-    "last_success_ts": 1788762817.5319157,
-    "last_candidates": 2,
-    "last_published": 0,
+    "last_run_ts": 1788763357.2085748,
+    "last_success_ts": 1788763357.2085748,
+    "last_candidates": 3,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788761402.086263
+      "updated_at": 1788763376.7753856
     },
     "GROQ": {
       "disabled_until": 1788499524.6517646,
@@ -1367,11 +1369,17 @@
       "desc": "Microsoft стремится ещё больше расширить функционал своих электронных таблиц за счёт интеграции Copilot и недавно объявила о разработке новой функции под названием «Excel canvas». По сути, это визуальное рабочее пространство, которое будет использовать данные из книги Excel и представлять их в наглядном и понятном виде — например, в формате диаграмм. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "08a6dae5df4ee453581b4db0684f919f2e49fcbd3898f4dc4d45a6252c1770d9": {
+      "time": 1788763357,
+      "title": "Progress Software Announces New Telerik and Kendo UI Release to Accelerate AI-Powered Development and Agent-Ready Applications - iTWire",
+      "desc": "Progress Software Announces New Telerik and Kendo UI Release to Accelerate AI-Powered Development and Agent-Ready Applications iTWire",
+      "source": "iTWire",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -1389,87 +1397,12 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
-  "last_search_ts": 1788762817.5319157,
-  "last_publish_ts": 1788761377.4789133,
+  "last_search_ts": 1788763357.2085748,
+  "last_publish_ts": 1788763357.2085748,
   "run_history": [
-    {
-      "ts": 1788691720,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 24.67,
-      "candidates": 27,
-      "queue_before": 1,
-      "queue_after": 2,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 22,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 2,
-        "candidate_count": 27,
-        "admission_rate": 7.41,
-        "dominant_block": "published_key"
-      },
-      "rss": {
-        "queries_attempted": 31,
-        "queries_ok": 31,
-        "query_errors": 0,
-        "direct_feeds_attempted": 8,
-        "direct_feeds_ok": 7,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 10,
-        "raw_items": 164,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 9
-        },
-        "score_filtered": 136,
-        "quality_filtered": 0,
-        "story_dedup": 1,
-        "candidates": 27,
-        "candidate_rate": 0.1753
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788691782,
       "status": "OK",
@@ -14401,6 +14334,113 @@
       "provider": {
         "attempts": [],
         "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788763357,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 20.2,
+      "candidates": 3,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 2,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 1,
+        "candidate_count": 3,
+        "admission_rate": 33.33,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "ARTICLE_SOURCE_UNRESOLVED": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "ARTICLE_SOURCE_UNRESOLVED"
+          }
+        }
+      },
+      "rss": {
+        "queries_attempted": 47,
+        "queries_ok": 47,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 43,
+        "raw_items": 446,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 8,
+          "CNews": 10,
+          "Euronews": 23
+        },
+        "score_filtered": 443,
+        "quality_filtered": 0,
+        "story_dedup": 0,
+        "candidates": 3,
+        "candidate_rate": 0.0074,
+        "score_buckets": {
+          "0–39": 386,
+          "40–49": 34,
+          "50–59": 23,
+          "60–69": 3,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        }
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
