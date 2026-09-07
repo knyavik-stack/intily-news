@@ -212,9 +212,12 @@ def _meta_image_candidates(text):
             out.append(('html_source', candidate))
 
     # Some publishers put image URLs in inline CSS rather than img metadata.
-    or match in re.findall(r'url\([\'"]?([^\'")]+)[\'"]?\)', text, flags=re.I):
-        if re.match(r'https?://|//|/', html.unescape(match).strip()):
-            out.append(('css_image', html.unescape(match).strip()))
+    # Извлекаем ссылки из inline CSS с учетом возможных пробелов
+    for match in re.findall(r'url\s*\(\s*[\'"]?([^\'")\s]+)[\'"]?\s*\)', text, flags=re.I):
+        clean_url = html.unescape(match).strip()
+        if re.match(r'^https?://|^//|^/', clean_url):
+            out.append(('css_image', clean_url))
+
 
     deduped = []
     seen = set()
