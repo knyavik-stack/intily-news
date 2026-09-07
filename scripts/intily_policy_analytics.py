@@ -12,6 +12,7 @@ from collections import Counter
 from pathlib import Path
 
 from intily_scoring_policy import THRESHOLD, WEIGHTS
+from intily_audience_policy import FINAL_THRESHOLD, PRE_AI_THRESHOLD
 
 ROOT = Path(__file__).resolve().parents[1]
 STATE_PATH = ROOT / 'data' / 'intily-ai-news-state.json'
@@ -70,8 +71,8 @@ def print_rejection(run):
     print('| Этап | Количество | Доля от входа этапа | Что означает |')
     print('|---|---:|---:|---|')
     print(f'| Получено из источников | {raw} | 100% | материалы младше активного окна |')
-    print(f'| Отсечено по весу | {score_filtered} | {pct(score_filtered, raw)} | итоговый вес ниже {THRESHOLD:.1f} |')
-    print(f'| Отсечено по качеству/релевантности | {quality_filtered} | {pct(quality_filtered, max(1, raw-score_filtered))} | не прошёл AI relevance или редакционный gate |')
+    print(f'| Отсечено по весу | {score_filtered} | {pct(score_filtered, raw)} | итоговый вес ниже {PRE_AI_THRESHOLD:.1f} на pre-AI этапе |')
+    print(f'| Отсечено по качеству и релевантности | {quality_filtered} | {pct(quality_filtered, max(1, raw-score_filtered))} | не прошёл AI relevance или редакционный gate |')
     print(f'| Схлопнуто как повтор истории | {story_dedup} | {pct(story_dedup, max(1, raw-score_filtered-quality_filtered))} | одно событие найдено в нескольких источниках/запросах |')
     print(f'| Кандидаты | {candidates} | — | прошли ingestion-фильтры |')
     print(f'| Не допущено в очередь | {max(0, candidates-added)} | {pct(max(0, candidates-added), max(1, candidates))} | уже опубликовано / недавно известно / в очереди / semantic history |')
@@ -104,26 +105,22 @@ def print_weight_policy():
         'timeliness': 'дополнительная ценность действительно свежего события',
     }
     names = {
-        'relevance': 'AI-релевантность',
-        'ai_specificity': 'AI-специфичность',
-        'impact': 'Влияние события',
-        'event_concreteness': 'Конкретность события',
-        'practical_value': 'Практическая ценность',
-        'novelty': 'Новизна',
-        'source_quality': 'Качество источника',
-        'evidence': 'Доказательность',
-        'freshness': 'Свежесть',
-        'timeliness': 'Своевременность',
+        'relevance': 'AI-релевантность', 'ai_specificity': 'AI-специфичность',
+        'impact': 'Влияние события', 'event_concreteness': 'Конкретность события',
+        'practical_value': 'Практическая ценность', 'novelty': 'Новизна',
+        'source_quality': 'Качество источника', 'evidence': 'Доказательность',
+        'freshness': 'Свежесть', 'timeliness': 'Своевременность',
     }
     print('## Как формируется вес новости\n')
-    print('Вес — детерминированная математическая оценка **0–100** с точностью до одного знака. Порог остаётся **60.0**. Мы не снижаем порог ради количества: расширяем шкалу за счёт независимых оценочных измерений.')
+    print(f'Вес — детерминированная математическая оценка **0–100** с точностью до одного знака. Pre-AI порог **{PRE_AI_THRESHOLD:.1f}**, финальный порог публикации **{FINAL_THRESHOLD:.1f}**.')
     print('\n| Компонент | Максимум | Что оценивается |')
     print('|---|---:|---|')
     for key, maximum in WEIGHTS.items():
         print(f'| {names[key]} | {maximum:.1f} | {descriptions[key]} |')
     print('| Низкий сигнал | −6.0 | реклама, sponsored, промокоды и аналогичный шум |')
     print('\n### Логика калибровки\n')
-    print('- Порог **60.0 не меняется**: это редакционная граница допуска.')
+    print(f'- Pre-AI порог **{PRE_AI_THRESHOLD:.1f}** оставляет профессионально интересный пограничный поток для AI-редактора.')
+    print(f'- Финальный порог публикации **{FINAL_THRESHOLD:.1f}** — редакционная граница допуска после audience-fit.')
     print('- Старая проблема была не в самом пороге, а в том, что большая часть потенциально полезного балла была недоступна реальным RSS-материалам.')
     print('- AI-релевантность отделена от AI-специфичности: «материал про AI» и «материал с конкретным технологическим событием» — разные свойства.')
     print('- Добавлена конкретность события: запуск, релиз, исследование, инвестиция, сделка, регулирование и другие проверяемые события получают отдельный вклад.')
@@ -132,8 +129,8 @@ def print_weight_policy():
     print('\n### Категории\n')
     print('| Вес | Категория |')
     print('|---:|---|')
-    print(f'| 0–{THRESHOLD-0.1:.1f} | не проходит порог |')
-    print(f'| {THRESHOLD:.1f}–84.9 | A |')
+    print(f'| 0–{FINAL_THRESHOLD-0.1:.1f} | не проходит финальный порог |')
+    print(f'| {FINAL_THRESHOLD:.1f}–84.9 | A |')
     print('| 85.0–100 | S |')
 
 
