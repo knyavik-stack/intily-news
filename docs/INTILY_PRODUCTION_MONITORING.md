@@ -34,8 +34,8 @@ GitHub → **Actions → Intily Production Monitor → Run workflow**.
 ```text
 publisher article
 → publisher image candidate
+→ candidate payload <= 1,000,000 bytes
 → validation
-→ payload <= 1,000,000 bytes
 → Telegram sendPhoto
 ```
 
@@ -44,8 +44,10 @@ publisher article
 - Google-hosted image запрещено;
 - Google News — только discovery transport;
 - >1,000,000 bytes — hard reject, без сжатия и ресайза;
-- oversized/broken candidate пропускается, следующий candidate может быть проверен;
-- caption для фото ограничивается безопасной версией ≤1024 символов;
+- oversized/broken candidate пропускается, следующий candidate проверяется;
+- caption сохраняет поддерживаемую Telegram HTML-разметку исходной публикации;
+- небезопасные HTML-теги/ссылки удаляются или обезвреживаются;
+- caption ограничивается безопасной версией ≤1024 символов после escaping;
 - если изображения нет или Telegram photo path не проходит, допускается text fallback при успешном editorial gate.
 
 KPI `admission.image` должен различать: attempts, found, validated, photo_sent, text_fallback, fallback_reasons, source/method, dimensions и payload sizes.
@@ -58,9 +60,17 @@ Run #577 показал, что workflow может быть успешным, �
 
 ## Production facts
 
-Run #578 был значительно быстрее (~28 секунд) и успешно дошёл до publisher-hosted image: 48,472 bytes. Фото не ушло из-за старого `CAPTION_TOO_LONG`; этот guard заменён безопасным bounded caption path.
+Run #578 был значительно быстрее (~28 секунд) и успешно дошёл до publisher-hosted image: 48,472 bytes. Фото не ушло из-за старого `CAPTION_TOO_LONG`; этот guard заменён безопасным bounded Telegram-HTML caption path.
 
-Следующий qualifying production cycle должен подтвердить `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT` и payload ≤1 MB.
+Run #579 остановился на regression gate примерно за 14 секунд: тест поймал ошибку, при которой длина caption контролировалась до escaping. Ошибка исправлена, и news engine в #579 не запускался.
+
+После #579 дополнительно исправлена регрессия форматирования: предыдущий image caption helper превращал весь HTML-текст в plain text, поэтому пост с картинкой терял bold/italic/links/code. Теперь разрешённая Telegram HTML-разметка сохраняется, а небезопасная разметка санитизируется.
+
+Следующий qualifying production cycle должен подтвердить одновременно:
+
+`IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`
+
+и сохранение форматирования при payload ≤1 MB.
 
 ## Географический портфель
 
