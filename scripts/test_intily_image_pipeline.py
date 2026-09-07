@@ -63,10 +63,6 @@ class ImagePipelineTests(unittest.TestCase):
         expected = 'https://blockchainstock.blob.core.windows.net/features/2242046FCF14090589D5A49FFC590D13A9AF6032D71ECDBD82C9F012CD661799.jpg'
         html = f'<meta property="og:image" content="{expected}">'
         candidates, _ = media._meta_image_candidates(html)
-        self.assertIn(('og_image', expected), candidates)
-        ranked, final_url = media.extract_image_candidates_from_html_for_test(html, 'https://blockchain.news/ainews/ai-model-fatigue-hits-as-labs-escalate-releases') if hasattr(media, 'extract_image_candidates_from_html_for_test') else ([], '')
-        # The public resolver ranks OG image first; the explicit fixture protects
-        # the supplied publisher URL from future parser regressions.
         self.assertEqual(candidates[0], ('og_image', expected))
 
     @staticmethod
