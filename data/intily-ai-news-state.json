@@ -1315,13 +1315,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788798792.3298495,
+    "last_start_ts": 1788798971.9983144,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788798792.3298495,
-    "last_success_ts": 1788798792.3298495,
-    "last_candidates": 66,
-    "last_published": 1,
+    "last_run_ts": 1788798971.9983144,
+    "last_success_ts": 1788798971.9983144,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 19
   },
   "providers": {
@@ -1342,13 +1342,6 @@
     }
   },
   "stories": {
-    "233a75cd25556c55b8b7ebab46d20b5a548037b07477b945d06490ffec9a5c15": {
-      "time": 1788712540,
-      "title": "Уволенные из-за ИИ разработчики ПО создали ИИ-систему, заменяющую CEO - Компьютерра",
-      "desc": "Уволенные из-за ИИ разработчики ПО создали ИИ-систему, заменяющую CEO Компьютерра",
-      "source": "Компьютерра",
-      "region": "RUSSIA"
-    },
     "f63b4f798b9681869497fdf3e663277be3049df5ac6e1445bdcb18909b43a54b": {
       "time": 1788712839,
       "title": "Shobnom Zarin Chetona takes key role in USD 4.37 million media AI enterprise agreement involving Paytm owner - The Statesman",
@@ -1984,91 +1977,6 @@
   "last_search_ts": 1788798792.3298495,
   "last_publish_ts": 1788798792.3298495,
   "run_history": [
-    {
-      "ts": 1788710199,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 28.33,
-      "candidates": 22,
-      "queue_before": 2,
-      "queue_after": 4,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 10,
-        "known_recent": 0,
-        "already_queued": 2,
-        "story_queue": 0,
-        "story_history": 7,
-        "added": 3,
-        "candidate_count": 22,
-        "admission_rate": 13.64,
-        "dominant_block": "published_key"
-      },
-      "rss": {
-        "queries_attempted": 45,
-        "queries_ok": 45,
-        "query_errors": 0,
-        "direct_feeds_attempted": 8,
-        "direct_feeds_ok": 7,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 10,
-        "raw_items": 473,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 2,
-          "Habr AI/News": 8
-        },
-        "score_filtered": 445,
-        "quality_filtered": 0,
-        "story_dedup": 6,
-        "candidates": 22,
-        "candidate_rate": 0.0475,
-        "score_buckets": {
-          "0–39": 351,
-          "40–49": 94,
-          "50–59": 28,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        }
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788710320,
       "status": "OK",
@@ -16787,6 +16695,78 @@
         ],
         "used": "GEMINI",
         "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788798971,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": false,
+      "duration_sec": 0.36,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 18,
+          "final_below_threshold": 1,
+          "invariant_ok": false
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
         "failures": 0,
         "blocked": 0,
         "skipped_no_key": 0,
