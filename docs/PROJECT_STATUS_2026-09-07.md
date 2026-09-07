@@ -2,120 +2,94 @@
 
 ## Canonical current status
 
-**🟡 98% PRODUCTION-CODE READY / LIVE MEDIA VERIFICATION PENDING**
+**🟡 PRODUCTION OBSERVATION MODE / LIVE MEDIA VERIFICATION PENDING**
 
-The publisher architecture, two-stage editorial model, Russian audience expansion, publisher-first media resolver, and strict 1 MB media acceptance policy are implemented. The last scheduled production cycle was green. The latest media hard-reject code change is now committed; its CI verification and a fresh qualifying Telegram photo are the remaining evidence gates.
+The production architecture, two-stage editorial model, audience-fit layer, Russian source expansion, publisher-first image resolver and strict 1 MB image policy are implemented. The latest cycle is technically green. The remaining verification target is a fresh qualifying Telegram photo on the newest media/caption code, plus observation of the new 55-point publication gate.
 
-## Important media decision
+## Current editorial policy
 
-**1 MB is a hard reject, not a compression target.** If the selected source image is larger than **1,000,000 bytes (1 MB decimal)**, Intily must skip that image. It must not resize or compress it merely to make it fit. The story may continue as text-only if the editorial/publication gates pass.
+- Pre-AI gate: **40/100**.
+- Final publication gate: **55/100**.
+- Audience score: **1–10**.
+- Audience bonus: **+2…+20**, exactly `audience_score × 2`.
+- Final formula: `min(100, base_score + audience_score × 2)`.
+- RU/WORLD portfolio target: approximately **40% / 60%**; geography is not a relevance bonus.
 
-```text
-candidate image
-  → download
-  → payload > 1,000,000 bytes? → REJECT / IMAGE_TOO_LARGE
-  → otherwise → validate → sendPhoto
-```
+A 40–54 base candidate reaches AI editorial evaluation but is published only when final score is at least 55.
 
-The internal source-fetch ceiling may be higher than 1 MB because it is only a guard against excessive downloads; it is never a delivery limit and never means an oversized image should be transformed for delivery.
+## Media policy
 
-## Latest production verification
+**1 MB is a hard reject, not a compression target.** If an image payload is larger than **1,000,000 bytes decimal**, it is skipped. No resize or recompression is performed to make it fit.
 
-- Run **#577** completed successfully on 2026-09-07 at 16:51 UTC.
-- Media runtime installation passed.
-- Policy/image regression tests passed on that run.
-- News engine, analytics and state persistence completed successfully.
-- Run #577 predates the final hard-reject commit, so it does not prove the new media policy.
-- The current code change is committed as `19248a29d8393bb4fe6b1400ae49bfcd7cd4b9da`; the matching runtime regression tests are committed as `b15e67be3317141dd701cbe48eefbdd81067a83e`.
-
-## Production architecture
+Production path:
 
 ```text
-Cloudflare schedule
-  → GitHub Actions workflow_dispatch
-  → scripts/intily_ai_news_runner.py
-  → scripts/intily_ai_news.py
-  → Telegram @intily
-  → durable state + run_history in GitHub
+publisher article
+  → image candidates
+  → Google-host ban
+  → publisher Referer fetch
+  → >1,000,000 bytes? skip candidate
+  → validate type + dimensions
+  → safe caption ≤1024 chars
+  → Telegram sendPhoto
 ```
 
-## Editorial model
+If an oversized or broken candidate is encountered, the hardened resolver continues with the next publisher candidate. If no acceptable image remains, text-only fallback is allowed when editorial/publication gates pass.
 
-### Stage 1 — deterministic materiality
+## Verified production evidence
 
-- Event-first scoring v3.
-- Pre-AI gate: **40.0**.
-- This is deliberately wider than the final publication gate so the AI editor can evaluate professionally useful borderline stories.
+### Run #577 — root cause of the ~4-minute runtime
 
-### Stage 2 — CMO / target-audience fit
+Run #577 (`34144899129`) started at **16:48:01 UTC** and completed at **16:51:58 UTC**, about **3m57s** wall-clock. The news search was explicitly skipped (`SEARCH_SKIPPED`), so RSS collection was not the cause.
 
-The same AI editorial pass returns:
+The delay was AI provider retry/failover latency:
 
-- Russian Telegram title/body/meaning;
-- optional joke under existing safety/style rules;
-- `audience_score` **1–10**;
-- short `audience_reason`.
+- Gemini encountered retry/503/timeout conditions;
+- Groq returned HTTP 403 / error 1010 and was circuit-opened;
+- OpenAI returned HTTP 429 / no credits and was circuit-opened;
+- multiple queued items were still attempted after provider degradation, including a second editorial attempt per item.
 
-Target audience hypothesis:
+The run ended `PUBLISH_FAILED` with 10 item failures. This is a provider availability/retry-budget problem, not a slow news collector.
 
-- founders / business owners;
-- executives / managers;
-- product, marketing, sales, operations and finance specialists;
-- developers / technical specialists;
-- AI / technology decision-makers and advanced practitioners.
+### Run #578
 
-Audience bonus is strictly linear:
+Run #578 (`34145727924`) started at **17:00:01 UTC** and completed at **17:00:29 UTC**, about **28s**. It used the latest status commit at that time and completed all workflow steps successfully.
 
-```text
-1  → +2
-2  → +4
-3  → +6
-4  → +8
-5  → +10
-6  → +12
-7  → +14
-8  → +16
-9  → +18
-10 → +20
-```
+It demonstrated a real publisher-hosted image path: the image payload was **48,472 bytes**, but the photo was not sent because the old caption guard emitted `CAPTION_TOO_LONG`. That guard has now been replaced with a safe bounded caption builder. Therefore Run #578 proves image discovery/validation but **does not yet prove Telegram photo delivery**.
 
-Final formula:
+## Latest code changes now on main
 
-```text
-final_score = min(100, base_score + audience_score * 2)
-```
-
-Final publication threshold remains **60.0**.
-
-## Russian content strategy
-
-The target portfolio remains approximately **40% RUSSIA / 60% WORLD**. It is a portfolio objective, not a hard relevance override.
-
-The system does **not** manufacture Russian content to satisfy the ratio: if there are fewer qualifying Russian stories in the active window, WORLD fills the available slot.
-
-## Analytics
-
-Production monitoring records deterministic score buckets, audience score distribution, audience bonus, queue threshold invariants, RU/WORLD portfolio, and image attempts/found/validated/photo/fallback telemetry including image source, dimensions, source payload size, final payload size and failure reason.
+- Final publication threshold changed to **55**.
+- Audience monitor and policy analytics now import live threshold constants instead of hard-coded historical 60 values.
+- Image hardening skips >1 MB candidates without compression and continues to the next candidate.
+- Photo captions are converted to safe plain text and bounded to Telegram's 1024-character caption limit.
+- Runtime remains defense-in-depth: it rejects any payload >1,000,000 bytes.
+- Image regression tests cover strict 1 MB rejection and safe captions.
+- Scoring policy was restored in full after threshold update; no scoring functions were intentionally removed.
 
 ## Current acceptance gate
 
-To move from **98%** to **GREEN / production-verified**, the next qualifying production cycle must demonstrate:
+The system is now in **observation mode**. The next qualifying production cycle should verify:
 
-1. CI passes, including image runtime tests;
-2. fresh discovery produces a non-empty candidate pool;
-3. 40–59 pre-AI stories can enter the editorial pool;
-4. AI returns valid audience scores 1–10;
-5. audience bonuses are exactly +2…+20 according to the score;
-6. at least one fresh story reaches 60+ after audience evaluation;
-7. no finalized queue item remains below 60;
-8. Telegram publication succeeds;
-9. Google News resolves to the publisher URL when the source is a Google wrapper;
-10. a real publisher image reaches `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`;
-11. the sent payload is **<=1,000,000 bytes**;
-12. any source image above 1 MB is rejected rather than compressed/resized;
-13. no Google-hosted image is accepted;
-14. RU/WORLD portfolio behavior remains within the target policy when qualifying supply exists;
-15. durable state and KPI telemetry persist successfully.
+1. CI/18 regression tests remain green;
+2. final gate is visibly **55** in Publisher/Monitor analytics;
+3. a 40–54 base story can reach AI evaluation and only final 55+ is publishable;
+4. no final queue item below 55 remains;
+5. publisher image reaches `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`;
+6. sent image payload is ≤1,000,000 bytes;
+7. >1 MB candidates are skipped rather than transformed;
+8. Google-hosted images remain forbidden;
+9. safe caption path no longer causes `CAPTION_TOO_LONG`;
+10. durable state/KPI persistence remains successful;
+11. provider failures do not create uncontrolled runtime latency.
+
+## Analytics contract
+
+**Publisher Summary** = current cycle only.
+
+**Production Monitor** = 24h / 7d / stored history.
+
+Both now use the current editorial threshold and current media policy. Historical documents may retain old values as historical records, but canonical current docs must not present them as live settings.
 
 ## Documentation hierarchy
 
@@ -123,11 +97,12 @@ This document is the canonical current status.
 
 Related:
 
-- `docs/CMO_MODEL_REVIEW_2026-09-07.md`
 - `docs/INTILY_ANALYTICS.md`
 - `docs/INTILY_PRODUCTION_MONITORING.md`
+- `docs/INTILY_PUBLICATION_SETTINGS.md`
 - `docs/RELEASE_2026-09-07.md`
 - `docs/SCORING_CALIBRATION_2026-09-07.md`
+- `docs/CMO_MODEL_REVIEW_2026-09-07.md`
 - `docs/IMAGE_PIPELINE_INCIDENT_2026-09-07.md`
 - `docs/PRODUCTION_CHANGELOG_2026-09-07_MEDIA_1MB.md`
 - `docs/USER_HANDOFF.md`
