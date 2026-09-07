@@ -12,7 +12,7 @@ import urllib.parse
 import urllib.request
 from html.parser import HTMLParser
 
-MAX_SOURCE_IMAGE_BYTES = 8 * 1024 * 1024
+MAX_SOURCE_IMAGE_BYTES = 1_000_000
 MAX_HTML_BYTES = 2 * 1024 * 1024
 MIN_IMAGE_WIDTH = 200
 MIN_IMAGE_HEIGHT = 150
@@ -329,8 +329,6 @@ def _sanitize_telegram_html(text):
     for match in token_re.finditer(source):
         if match.start() > pos:
             chunk = source[pos:match.start()]
-            # Existing entities are kept; raw ampersands are escaped without
-            # double-escaping valid entities produced by the editorial formatter.
             chunk = re.sub(r'&(?!#\d+;|#x[0-9A-Fa-f]+;|(?:amp|lt|gt|quot);)', '&amp;', chunk)
             chunk = chunk.replace('<', '&lt;').replace('>', '&gt;')
             out.append(chunk)
@@ -352,7 +350,7 @@ def _sanitize_telegram_html(text):
             href_match = re.search(r'href\s*=\s*["\']([^"\']+)["\']', attrs, flags=re.I)
             href = html.unescape(href_match.group(1)).strip() if href_match else ''
             parsed = urllib.parse.urlsplit(href)
-            if parsed.scheme.lower() in {'http', 'https', 'tg'} and parsed.netloc or parsed.scheme.lower() == 'tg':
+            if parsed.scheme.lower() in {'http', 'https'} and parsed.netloc or parsed.scheme.lower() == 'tg':
                 out.append(f'<a href="{html.escape(href, quote=True)}">')
             else:
                 out.append('<a>')
@@ -410,7 +408,7 @@ def _photo_caption(text, limit=MAX_TELEGRAM_CAPTION_BYTES):
 
 
 def _field(name, value, boundary):
-    return ('--' + boundary + '\r\nContent-Disposition: form-data; name="' + name + '\r\n\r\n').encode() + str(value).encode() + b'\r\n'
+    return ('--' + boundary + '\r\nContent-Disposition: form-data; name="' + name + '"\r\n\r\n').encode() + str(value).encode() + b'\r\n'
 
 
 def _file(field, filename, data, content_type, boundary):
