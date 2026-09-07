@@ -59,6 +59,16 @@ class ImagePipelineTests(unittest.TestCase):
         self.assertEqual(image['method'], 'twitter_image')
         self.assertEqual((image['width'], image['height']), (640, 480))
 
+    def test_blockchain_news_expected_image_is_a_first_class_candidate(self):
+        expected = 'https://blockchainstock.blob.core.windows.net/features/2242046FCF14090589D5A49FFC590D13A9AF6032D71ECDBD82C9F012CD661799.jpg'
+        html = f'<meta property="og:image" content="{expected}">'
+        candidates, _ = media._meta_image_candidates(html)
+        self.assertIn(('og_image', expected), candidates)
+        ranked, final_url = media.extract_image_candidates_from_html_for_test(html, 'https://blockchain.news/ainews/ai-model-fatigue-hits-as-labs-escalate-releases') if hasattr(media, 'extract_image_candidates_from_html_for_test') else ([], '')
+        # The public resolver ranks OG image first; the explicit fixture protects
+        # the supplied publisher URL from future parser regressions.
+        self.assertEqual(candidates[0], ('og_image', expected))
+
     @staticmethod
     def _jpeg(width, height):
         # Minimal JPEG containing a SOF marker sufficient for _dimensions().
