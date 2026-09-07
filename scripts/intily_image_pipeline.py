@@ -212,7 +212,7 @@ def _meta_image_candidates(text):
             out.append(('html_source', candidate))
 
     # Some publishers put image URLs in inline CSS rather than img metadata.
-    for match in re.findall(r'url\\([\\\'\"]?([^\\\'\")]+)', text, flags=re.I):
+    or match in re.findall(r'url\([\'"]?([^\'")]+)[\'"]?\)', text, flags=re.I):
         if re.match(r'https?://|//|/', html.unescape(match).strip()):
             out.append(('css_image', html.unescape(match).strip()))
 
