@@ -19,6 +19,8 @@ MIN_IMAGE_HEIGHT = 150
 IMAGE_TYPES = {'image/jpeg', 'image/png', 'image/webp', 'image/gif', 'image/avif'}
 GOOGLE_NEWS_HOSTS = {'news.google.com', 'www.news.google.com'}
 MAX_IMAGE_CANDIDATES = 12
+MAX_TELEGRAM_CAPTION_BYTES = 1024
+ALLOWED_HTML_TAGS = {'b', 'strong', 'i', 'em', 'u', 'ins', 's', 'strike', 'del', 'code', 'pre', 'a', 'blockquote', 'tg-spoiler'}
 
 
 class _ArticleParser(HTMLParser):
@@ -318,27 +320,97 @@ def fetch_image(article_url):
     raise ValueError('IMAGE_CANDIDATES_FAILED: ' + ' | '.join(errors[:6]))
 
 
-def _photo_caption(text, limit=1024):
-    """Return HTML-escaped plain text whose final Telegram length is <= limit."""
-    plain = re.sub(r'<[^>]+>', ' ', str(text or ''))
-    plain = html.unescape(plain)
-    plain = ' '.join(plain.split()).strip()
-    escaped = html.escape(plain, quote=False)
-    if len(escaped) <= limit:
-        return escaped
-    lo, hi = 0, len(plain)
-    while lo < hi:
-        mid = (lo + hi + 1) // 2
-        candidate = html.escape(plain[:mid].rstrip(), quote=False) + '…'
-        if len(candidate) <= limit:
-            lo = mid
+def _sanitize_telegram_html(text):
+    """Preserve supported Telegram HTML formatting while removing unsafe markup."""
+    source = str(text or '')
+    token_re = re.compile(r'<[^>]*>')
+    out = []
+    pos = 0
+    for match in token_re.finditer(source):
+        if match.start() > pos:
+            chunk = source[pos:match.start()]
+            # Existing entities are kept; raw ampersands are escaped without
+            # double-escaping valid entities produced by the editorial formatter.
+            chunk = re.sub(r'&(?!#\d+;|#x[0-9A-Fa-f]+;|(?:amp|lt|gt|quot);)', '&amp;', chunk)
+            chunk = chunk.replace('<', '&lt;').replace('>', '&gt;')
+            out.append(chunk)
+        raw = match.group(0)
+        tag_match = re.fullmatch(r'</?\s*([A-Za-z0-9-]+)([^>]*)>', raw)
+        if not tag_match:
+            out.append(html.escape(raw, quote=False))
+            pos = match.end()
+            continue
+        tag = tag_match.group(1).lower()
+        attrs = tag_match.group(2) or ''
+        closing = raw.lstrip().startswith('</')
+        if tag not in ALLOWED_HTML_TAGS:
+            pos = match.end()
+            continue
+        if closing:
+            out.append(f'</{tag}>')
+        elif tag == 'a':
+            href_match = re.search(r'href\s*=\s*["\']([^"\']+)["\']', attrs, flags=re.I)
+            href = html.unescape(href_match.group(1)).strip() if href_match else ''
+            parsed = urllib.parse.urlsplit(href)
+            if parsed.scheme.lower() in {'http', 'https', 'tg'} and parsed.netloc or parsed.scheme.lower() == 'tg':
+                out.append(f'<a href="{html.escape(href, quote=True)}">')
+            else:
+                out.append('<a>')
         else:
-            hi = mid - 1
-    return html.escape(plain[:lo].rstrip(), quote=False) + '…'
+            out.append(f'<{tag}>')
+        pos = match.end()
+    if pos < len(source):
+        chunk = source[pos:]
+        chunk = re.sub(r'&(?!#\d+;|#x[0-9A-Fa-f]+;|(?:amp|lt|gt|quot);)', '&amp;', chunk)
+        chunk = chunk.replace('<', '&lt;').replace('>', '&gt;')
+        out.append(chunk)
+    return ''.join(out)
+
+
+def _photo_caption(text, limit=MAX_TELEGRAM_CAPTION_BYTES):
+    """Return safe Telegram HTML, preserving formatting, bounded after escaping."""
+    sanitized = _sanitize_telegram_html(text)
+    if len(sanitized) <= limit:
+        return sanitized
+    parts = re.findall(r'</?[^>]+>|[^<]+', sanitized)
+    result = []
+    open_tags = []
+    used = 0
+    for part in parts:
+        if part.startswith('<'):
+            tag_match = re.fullmatch(r'<(/?)([A-Za-z0-9-]+)(?: [^>]*)?>', part)
+            if not tag_match:
+                continue
+            closing, tag = tag_match.groups()
+            if closing:
+                if tag in open_tags:
+                    while open_tags:
+                        current = open_tags.pop()
+                        if current == tag:
+                            break
+                        result.append(f'</{current}>')
+                    result.append(part)
+            else:
+                result.append(part)
+                open_tags.append(tag)
+            continue
+        remaining = limit - used - 1
+        if remaining <= 0:
+            break
+        if len(part) <= remaining:
+            result.append(part)
+            used += len(part)
+        else:
+            result.append(part[:remaining].rstrip() + '…')
+            used += remaining + 1
+            break
+    while open_tags:
+        result.append(f'</{open_tags.pop()}>')
+    return ''.join(result)[:limit]
 
 
 def _field(name, value, boundary):
-    return ('--' + boundary + '\r\nContent-Disposition: form-data; name="' + name + '"\r\n\r\n').encode() + str(value).encode() + b'\r\n'
+    return ('--' + boundary + '\r\nContent-Disposition: form-data; name="' + name + '\r\n\r\n').encode() + str(value).encode() + b'\r\n'
 
 
 def _file(field, filename, data, content_type, boundary):
