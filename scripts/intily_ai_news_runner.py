@@ -1,10 +1,11 @@
-"""Production entrypoint for Intily with current editorial and source policy."""
+"""Production entrypoint for Intily with current editorial, audience and source policy."""
 
 import importlib
 import json
 import os
 
 from intily_scoring_policy import THRESHOLD, calculate
+from intily_audience_policy import PRE_AI_THRESHOLD, FINAL_THRESHOLD, bonus_from_score, build_evaluation_instruction, clamp_score
 
 
 def apply_policy(publisher):
@@ -13,15 +14,36 @@ def apply_policy(publisher):
         '0–39': 0, '40–49': 0, '50–59': 0, '60–69': 0,
         '70–79': 0, '80–84': 0, '85–89': 0, '90–100': 0,
     }
+    audience_buckets = {str(i): 0 for i in range(1, 11)}
+    publisher._cycle_audience = {
+        'evaluated': 0, 'scores': [], 'bonus_total': 0.0,
+        'final_buckets': {k: 0 for k in score_buckets},
+        'last': None,
+    }
 
     def score(x):
-        value, parts = calculate(
+        base_value, parts = calculate(
             x, publisher.ai_relevant, publisher.HIGH_IMPACT_TERMS,
             publisher.APPLICATION_TERMS, publisher.PRACTICAL_IMPLEMENTATION_TERMS,
             publisher.RISK_AND_PROBLEM_TERMS, publisher.EXCLUSIVITY_TERMS,
             publisher.QUALITY_TRUSTED, publisher.TRUSTED, publisher.LOW_SIGNAL_TERMS,
         )
+        audience_score = x.get('audience_score')
+        audience_bonus = 0.0
+        if audience_score is not None:
+            try:
+                audience_score = clamp_score(audience_score)
+                audience_bonus = bonus_from_score(audience_score)
+            except Exception:
+                audience_score = None
+        value = round(min(100.0, base_value + audience_bonus), 1)
+        parts['base_score'] = round(base_value, 1)
+        parts['audience_score'] = audience_score
+        parts['audience_bonus'] = audience_bonus
+        parts['final_score'] = value
         x['_score_components'] = parts
+        x['base_score'] = round(base_value, 1)
+        x['audience_bonus'] = audience_bonus
         identity = id(x)
         if identity not in score_seen:
             score_seen.add(identity)
@@ -34,10 +56,15 @@ def apply_policy(publisher):
             elif value < 90: bucket = '85–89'
             else: bucket = '90–100'
             score_buckets[bucket] += 1
+            if audience_score is not None:
+                audience_buckets[str(int(audience_score))] += 1
         return value
 
     publisher.score = score
-    publisher.IMPORTANCE_THRESHOLD = THRESHOLD
+    # Two-stage gate: deterministic materiality admits a wider editorial pool;
+    # the AI editor then adds target-audience fit before the final 60 gate.
+    publisher.IMPORTANCE_THRESHOLD = PRE_AI_THRESHOLD
+    publisher.FINAL_IMPORTANCE_THRESHOLD = FINAL_THRESHOLD
 
     extra_feeds = [
         ('RUSSIA', 'CNews', 'https://www.cnews.ru/inc/rss/news.xml'),
@@ -61,6 +88,65 @@ def apply_policy(publisher):
         'cnews', 'cnews.ru', 'euronews', 'cnbc', 'bbc', 'wsj', 'axios', 'the register'
     }
 
+    # The same AI editorial pass that translates/summarises the story also
+    # returns audience_score 1–10. The parser validates it, so no separate AI
+    # request is needed and the publication remains inside the cycle budget.
+    original_build_prompt = publisher.build_edit_prompt
+    def build_prompt_with_audience(x, retry=False, previous_error=''):
+        return original_build_prompt(x, retry=retry, previous_error=previous_error) + build_evaluation_instruction()
+    publisher.build_edit_prompt = build_prompt_with_audience
+
+    original_parse_json = publisher.parse_editor_json
+    def parse_editor_json_with_audience(raw):
+        parsed = original_parse_json(raw)
+        value = parsed.get('audience_score')
+        if value is None:
+            raise RuntimeError('AUDIENCE_SCORE_MISSING')
+        try:
+            audience_score = clamp_score(value)
+        except Exception as exc:
+            raise RuntimeError(str(exc))
+        publisher._last_ai_audience = {
+            'score': audience_score,
+            'reason': str(parsed.get('audience_reason', '') or '').strip()[:240],
+        }
+        return parsed
+    publisher.parse_editor_json = parse_editor_json_with_audience
+
+    original_edit = publisher.edit
+    def edit_with_audience(x, state):
+        publisher._last_ai_audience = None
+        post = original_edit(x, state)
+        audience = publisher._last_ai_audience
+        if not audience:
+            raise RuntimeError('AUDIENCE_SCORE_UNAVAILABLE')
+        audience_score = clamp_score(audience['score'])
+        audience_bonus = bonus_from_score(audience_score)
+        x['audience_score'] = audience_score
+        x['audience_bonus'] = audience_bonus
+        # Re-run the patched score so all downstream tier/priority/KPI paths see
+        # the same final number.
+        final_score = publisher.score(x)
+        x['importance'] = final_score
+        x['score'] = final_score
+        x['tier'] = publisher.tier(x)
+        stats = publisher._cycle_audience
+        stats['evaluated'] += 1
+        stats['scores'].append(audience_score)
+        stats['bonus_total'] += audience_bonus
+        stats['last'] = {
+            'score': audience_score,
+            'bonus': audience_bonus,
+            'reason': audience.get('reason', ''),
+            'title': x.get('title', ''),
+            'final_score': final_score,
+        }
+        print('AUDIENCE_SCORE', json.dumps(stats['last'], ensure_ascii=False, separators=(',', ':')))
+        if final_score < FINAL_THRESHOLD:
+            raise RuntimeError(f'FINAL_SCORE_BELOW_THRESHOLD:{final_score}')
+        return post
+    publisher.edit = edit_with_audience
+
     original_collect = publisher.collect
 
     def collect_with_telemetry(telemetry=None):
@@ -69,10 +155,37 @@ def apply_policy(publisher):
         result = original_collect(telemetry)
         if telemetry is not None:
             telemetry['score_buckets'] = dict(score_buckets)
+            telemetry['audience_stage'] = 'post_editorial'
         print('SCORE_BUCKETS', json.dumps(score_buckets, ensure_ascii=False, separators=(',', ':')))
         return result
 
     publisher.collect = collect_with_telemetry
+
+    original_record_kpi = publisher.record_kpi
+    def record_kpi_with_audience(s, now, searched, candidates, queue_before, queue_after,
+                                 published, publish_attempts, item_failures, business_result,
+                                 business_reason, admission=None, rss_telemetry=None,
+                                 provider_telemetry=None, duration_sec=0.0):
+        admission_copy = dict(admission or {})
+        stats = publisher._cycle_audience
+        scores = list(stats.get('scores', []))
+        admission_copy['audience'] = {
+            'evaluated': int(stats.get('evaluated', 0)),
+            'average_score': round(sum(scores) / len(scores), 2) if scores else None,
+            'bonus_total': round(float(stats.get('bonus_total', 0.0)), 1),
+            'max_score': max(scores) if scores else None,
+            'high_fit_8_10': sum(1 for value in scores if value >= 8),
+            'last': stats.get('last'),
+        }
+        print('AUDIENCE_KPI', json.dumps(admission_copy['audience'], ensure_ascii=False, separators=(',', ':')))
+        return original_record_kpi(
+            s, now, searched, candidates, queue_before, queue_after,
+            published, publish_attempts, item_failures, business_result, business_reason,
+            admission=admission_copy, rss_telemetry=rss_telemetry,
+            provider_telemetry=provider_telemetry, duration_sec=duration_sec
+        )
+    publisher.record_kpi = record_kpi_with_audience
+
     publisher.RUSSIA_WEIGHT_BONUS_MIN = 0.0
     publisher.RUSSIA_WEIGHT_BONUS_MAX = 0.0
     publisher.RUSSIA_TARGET_SHARE = -1.0
@@ -143,6 +256,7 @@ def apply_image_delivery(publisher):
             'sources': dict(image_stats.get('sources', {})),
             'last': image_stats.get('last'),
         }
+        # Preserve the audience block injected by the previous wrapper.
         print('IMAGE_KPI', json.dumps(admission_copy['image'], ensure_ascii=False, separators=(',', ':')))
         return original_record_kpi(
             s, now, searched, candidates, queue_before, queue_after,
@@ -154,11 +268,11 @@ def apply_image_delivery(publisher):
     publisher.record_kpi = record_kpi_with_image
 
     original_telegram = publisher.telegram
-    original_edit = publisher.edit
+    original_edit_context = publisher.edit
 
     def edit_with_context(item, state):
         publisher._current_publication_url = item.get('link', '')
-        return original_edit(item, state)
+        return original_edit_context(item, state)
 
     publisher.edit = edit_with_context
 
