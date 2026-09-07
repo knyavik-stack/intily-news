@@ -48,10 +48,10 @@ The 55 threshold is an editorial admission threshold, not a request to publish w
 
 - Publisher-first image resolution.
 - Google News is a discovery wrapper only and is never an accepted image host.
-- Image candidates are validated independently so a broken first candidate does not suppress a later valid publisher image.
+- Image candidates are validated independently so a broken or oversized first candidate does not suppress a later valid publisher image.
 - **1,000,000 bytes is a hard delivery cap.** Images above 1 MB are skipped; Intily does not resize or recompress them to fit.
 - If no acceptable image remains, the story may be sent text-only when the editorial/publication gate passes.
-- Photo captions are bounded to Telegram's caption limit using safe plain-text HTML escaping; a long article body must not force text-only fallback by itself.
+- Photo captions preserve supported Telegram HTML formatting, sanitize unsafe markup/links, and are bounded to Telegram's 1024-character caption limit after escaping.
 
 ## Analytics contract
 
@@ -78,9 +78,23 @@ This explains the near-four-minute runtime. It is a provider-availability/retry-
 
 ### Run #578 — 2026-09-07
 
-Run #578 completed successfully in roughly **28 seconds**. It also demonstrated that a publisher-hosted image can be found and validated: the selected image was 48,472 bytes. It was not sent as a photo because the old caption-length guard emitted `CAPTION_TOO_LONG`; that guard is now removed in favor of a bounded safe caption.
+Run #578 completed successfully in roughly **28 seconds**. It demonstrated that a publisher-hosted image can be found and validated: the selected image was **48,472 bytes**. It was not sent as a photo because the old caption-length guard emitted `CAPTION_TOO_LONG`.
 
-The next production cycle must verify the new caption path with `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`.
+The guard is now replaced by a safe Telegram-HTML caption path. The previous implementation also stripped all formatting tags from photo captions; that regression is fixed so bold/italic/link/code formatting is retained while unsafe markup is removed.
+
+### Run #579 — 2026-09-07
+
+Run #579 failed fast in the regression gate, before the news engine, because the caption test exposed a post-escaping length bug. The fix now bounds the final sanitized Telegram HTML rather than raw pre-escaped text.
+
+### Post-#579 media fix
+
+The media pipeline now enforces the 1 MB limit while iterating candidates, so an oversized first image is rejected immediately and the resolver continues to the next candidate. A second runtime-side 1 MB defense remains in place.
+
+The next scheduled production cycle must verify the complete path:
+
+`IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`
+
+with formatted caption preserved and sent image payload ≤1,000,000 bytes.
 
 ## Operational rule
 
