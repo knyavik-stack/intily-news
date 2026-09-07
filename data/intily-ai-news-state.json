@@ -651,19 +651,19 @@
         "novelty": 0.0,
         "source_quality": 3.0,
         "evidence": 1.0,
-        "freshness": 4.0,
+        "freshness": 3.0,
         "low_signal_penalty": 0.0,
-        "base_score": 58.0,
+        "base_score": 57.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 58.0
+        "final_score": 57.0
       },
-      "base_score": 58.0,
+      "base_score": 57.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 58.0,
+      "score": 57.0,
       "key": "d31b88d4fbc13334add274df868e5f1f85861c32e7023ed2f9827bf8f93cf15e",
-      "importance": 58.0,
+      "importance": 57.0,
       "editorial_value": 50.0,
       "topics": [
         "models"
@@ -1301,13 +1301,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788806531.3829913,
+    "last_start_ts": 1788806710.256614,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788806531.3829913,
-    "last_success_ts": 1788806531.3829913,
+    "last_run_ts": 1788806710.256614,
+    "last_success_ts": 1788806710.256614,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 18
   },
   "providers": {
@@ -1872,89 +1872,6 @@
   "last_search_ts": 1788805633.7906108,
   "last_publish_ts": 1788806531.3829913,
   "run_history": [
-    {
-      "ts": 1788713019,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "publish_interval_not_reached",
-      "searched": true,
-      "duration_sec": 33.29,
-      "candidates": 99,
-      "queue_before": 1,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 31,
-        "known_recent": 1,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 13,
-        "added": 53,
-        "candidate_count": 99,
-        "admission_rate": 53.54,
-        "dominant_block": "published_key"
-      },
-      "rss": {
-        "queries_attempted": 45,
-        "queries_ok": 45,
-        "query_errors": 0,
-        "direct_feeds_attempted": 8,
-        "direct_feeds_ok": 7,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 11,
-        "raw_items": 498,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 2,
-          "Habr AI/News": 8
-        },
-        "score_filtered": 366,
-        "quality_filtered": 0,
-        "story_dedup": 33,
-        "candidates": 99,
-        "candidate_rate": 0.2033,
-        "score_buckets": {
-          "0–39": 366,
-          "40–49": 101,
-          "50–59": 31,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        }
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788713142,
       "status": "OK",
@@ -17104,6 +17021,78 @@
           "GEMINI"
         ],
         "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788806710,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": false,
+      "duration_sec": 0.31,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 18,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 17,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
