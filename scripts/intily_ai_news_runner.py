@@ -1,11 +1,18 @@
-"""Production entrypoint for Intily with current editorial, audience and source policy."""
+"""Production entrypoint for Intily: editorial, CMO audience, geography and media policy."""
 
 import importlib
 import json
 import os
+import re
 
 from intily_scoring_policy import THRESHOLD, calculate
-from intily_audience_policy import PRE_AI_THRESHOLD, FINAL_THRESHOLD, bonus_from_score, build_evaluation_instruction, clamp_score
+from intily_audience_policy import (
+    PRE_AI_THRESHOLD,
+    FINAL_THRESHOLD,
+    bonus_from_score,
+    build_evaluation_instruction,
+    clamp_score,
+)
 
 
 def apply_policy(publisher):
@@ -44,6 +51,7 @@ def apply_policy(publisher):
         x['_score_components'] = parts
         x['base_score'] = round(base_value, 1)
         x['audience_bonus'] = audience_bonus
+        x['score_stage'] = 'final' if audience_score is not None else 'pre_ai'
         identity = id(x)
         if identity not in score_seen:
             score_seen.add(identity)
@@ -61,36 +69,55 @@ def apply_policy(publisher):
         return value
 
     publisher.score = score
-    # Two-stage gate: deterministic materiality admits a wider editorial pool;
-    # the AI editor then adds target-audience fit before the final 60 gate.
+    # Stage 1 is intentionally wider: only material stories reach the AI editor.
     publisher.IMPORTANCE_THRESHOLD = PRE_AI_THRESHOLD
     publisher.FINAL_IMPORTANCE_THRESHOLD = FINAL_THRESHOLD
 
+    # Russian discovery is expanded by job-to-be-done, not only by AI-company names.
     extra_feeds = [
         ('RUSSIA', 'CNews', 'https://www.cnews.ru/inc/rss/news.xml'),
         ('WORLD', 'Euronews', 'https://www.euronews.com/rss'),
     ]
     existing = {row[1] for row in publisher.DIRECT_RSS_FEEDS}
-    publisher.DIRECT_RSS_FEEDS = list(publisher.DIRECT_RSS_FEEDS) + [row for row in extra_feeds if row[1] not in existing]
+    publisher.DIRECT_RSS_FEEDS = list(publisher.DIRECT_RSS_FEEDS) + [
+        row for row in extra_feeds if row[1] not in existing
+    ]
 
     extra_queries = [
         ('RUSSIA', 'site:techcult.ru ИИ искусственный интеллект'),
         ('RUSSIA', 'site:techcult.ru искусственный интеллект модели роботы'),
+        ('RUSSIA', 'ИИ российский бизнес автоматизация продажи маркетинг сервис'),
+        ('RUSSIA', 'ИИ малый средний бизнес Россия внедрение продуктивность'),
+        ('RUSSIA', 'российские нейросети AI агенты продукты сервисы компании'),
+        ('RUSSIA', 'Яндекс Сбер GigaChat Alice AI новые модели продукты'),
+        ('RUSSIA', 'VK МТС Мегафон Ozon Avito AI искусственный интеллект'),
+        ('RUSSIA', 'ИИ финансы банки страхование Россия автоматизация'),
+        ('RUSSIA', 'ИИ промышленность производство логистика ритейл Россия'),
+        ('RUSSIA', 'ИИ медицина образование HR юристы Россия применение'),
+        ('RUSSIA', 'ИИ кибербезопасность утечка мошенничество Россия'),
+        ('RUSSIA', 'ИИ регулирование закон персональные данные Россия'),
+        ('RUSSIA', 'ИИ инвестиции стартапы венчур Россия'),
+        ('RUSSIA', 'роботы агенты компьютерное зрение Россия технологии'),
+        ('RUSSIA', 'импортозамещение ИИ инфраструктура GPU датацентры Россия'),
+        ('RUSSIA', 'site:rbc.ru ИИ бизнес технологии Россия'),
+        ('RUSSIA', 'site:kommersant.ru ИИ бизнес технологии Россия'),
+        ('RUSSIA', 'site:vc.ru ИИ бизнес автоматизация Россия'),
+        ('RUSSIA', 'site:tass.ru ИИ искусственный интеллект технологии'),
     ]
     existing_queries = set(publisher.QUERIES)
-    publisher.QUERIES = list(publisher.QUERIES) + [row for row in extra_queries if row not in existing_queries]
+    publisher.QUERIES = list(publisher.QUERIES) + [
+        row for row in extra_queries if row not in existing_queries
+    ]
 
     publisher.QUALITY_TRUSTED = set(publisher.QUALITY_TRUSTED) | {
         'cnews', 'cnews.ru', 'cnbc', 'bbc', 'the wall street journal', 'wsj',
-        'axios', 'the register', 'the information'
+        'axios', 'the register', 'the information', 'рбк', 'rbc.ru',
     }
     publisher.TRUSTED = set(publisher.TRUSTED) | {
-        'cnews', 'cnews.ru', 'euronews', 'cnbc', 'bbc', 'wsj', 'axios', 'the register'
+        'cnews', 'cnews.ru', 'euronews', 'cnbc', 'bbc', 'wsj', 'axios',
+        'the register', 'рбк', 'rbc.ru',
     }
 
-    # The same AI editorial pass that translates/summarises the story also
-    # returns audience_score 1–10. The parser validates it, so no separate AI
-    # request is needed and the publication remains inside the cycle budget.
     original_build_prompt = publisher.build_edit_prompt
     def build_prompt_with_audience(x, retry=False, previous_error=''):
         return original_build_prompt(x, retry=retry, previous_error=previous_error) + build_evaluation_instruction()
@@ -102,10 +129,7 @@ def apply_policy(publisher):
         value = parsed.get('audience_score')
         if value is None:
             raise RuntimeError('AUDIENCE_SCORE_MISSING')
-        try:
-            audience_score = clamp_score(value)
-        except Exception as exc:
-            raise RuntimeError(str(exc))
+        audience_score = clamp_score(value)
         publisher._last_ai_audience = {
             'score': audience_score,
             'reason': str(parsed.get('audience_reason', '') or '').strip()[:240],
@@ -124,12 +148,11 @@ def apply_policy(publisher):
         audience_bonus = bonus_from_score(audience_score)
         x['audience_score'] = audience_score
         x['audience_bonus'] = audience_bonus
-        # Re-run the patched score so all downstream tier/priority/KPI paths see
-        # the same final number.
         final_score = publisher.score(x)
         x['importance'] = final_score
         x['score'] = final_score
         x['tier'] = publisher.tier(x)
+        x['score_stage'] = 'final'
         stats = publisher._cycle_audience
         stats['evaluated'] += 1
         stats['scores'].append(audience_score)
@@ -148,17 +171,18 @@ def apply_policy(publisher):
     publisher.edit = edit_with_audience
 
     original_collect = publisher.collect
-
     def collect_with_telemetry(telemetry=None):
         score_seen.clear()
-        for key in score_buckets: score_buckets[key] = 0
+        for key in score_buckets:
+            score_buckets[key] = 0
         result = original_collect(telemetry)
         if telemetry is not None:
             telemetry['score_buckets'] = dict(score_buckets)
+            telemetry['audience_buckets'] = dict(audience_buckets)
             telemetry['audience_stage'] = 'post_editorial'
         print('SCORE_BUCKETS', json.dumps(score_buckets, ensure_ascii=False, separators=(',', ':')))
+        print('AUDIENCE_BUCKETS', json.dumps(audience_buckets, ensure_ascii=False, separators=(',', ':')))
         return result
-
     publisher.collect = collect_with_telemetry
 
     original_record_kpi = publisher.record_kpi
@@ -169,6 +193,17 @@ def apply_policy(publisher):
         admission_copy = dict(admission or {})
         stats = publisher._cycle_audience
         scores = list(stats.get('scores', []))
+        queue_items = list(s.get('queue', []) or [])
+        pre_ai_below_final = sum(
+            1 for item in queue_items
+            if item.get('score_stage', 'pre_ai') != 'final'
+            and float(item.get('importance', item.get('score', 0)) or 0) < FINAL_THRESHOLD
+        )
+        final_below_threshold = sum(
+            1 for item in queue_items
+            if item.get('score_stage') == 'final'
+            and float(item.get('importance', item.get('score', 0)) or 0) < FINAL_THRESHOLD
+        )
         admission_copy['audience'] = {
             'evaluated': int(stats.get('evaluated', 0)),
             'average_score': round(sum(scores) / len(scores), 2) if scores else None,
@@ -177,7 +212,13 @@ def apply_policy(publisher):
             'high_fit_8_10': sum(1 for value in scores if value >= 8),
             'last': stats.get('last'),
         }
+        admission_copy['queue_score_audit'] = {
+            'pre_ai_below_final_threshold': pre_ai_below_final,
+            'final_below_threshold': final_below_threshold,
+            'invariant_ok': final_below_threshold == 0,
+        }
         print('AUDIENCE_KPI', json.dumps(admission_copy['audience'], ensure_ascii=False, separators=(',', ':')))
+        print('QUEUE_SCORE_AUDIT', json.dumps(admission_copy['queue_score_audit'], ensure_ascii=False, separators=(',', ':')))
         return original_record_kpi(
             s, now, searched, candidates, queue_before, queue_after,
             published, publish_attempts, item_failures, business_result, business_reason,
@@ -186,27 +227,31 @@ def apply_policy(publisher):
         )
     publisher.record_kpi = record_kpi_with_audience
 
+    # Geographic mix is a portfolio objective, not a relevance bonus.
     publisher.RUSSIA_WEIGHT_BONUS_MIN = 0.0
     publisher.RUSSIA_WEIGHT_BONUS_MAX = 0.0
-    publisher.RUSSIA_TARGET_SHARE = -1.0
+    publisher.RUSSIA_TARGET_SHARE = -1.0  # do not hard-filter WORLD while RU is scarce
 
     def publication_region_boost(state, region):
         history = state.get('publication_regions', [])[-publisher.REGION_HISTORY_SIZE:]
         if not history:
             return 0.0
         ru_share = history.count('RUSSIA') / len(history)
-        tolerance, target = 0.08, 0.60
-        if region == 'RUSSIA' and ru_share < target - tolerance: return 50.0
-        if region == 'WORLD' and ru_share < target - tolerance: return -12.0
-        if region == 'WORLD' and ru_share > target + tolerance: return 20.0
-        if region == 'RUSSIA' and ru_share > target + tolerance: return -50.0
+        tolerance, target = 0.05, 0.40
+        if region == 'RUSSIA' and ru_share < target - tolerance:
+            return 35.0
+        if region == 'WORLD' and ru_share < target - tolerance:
+            return -8.0
+        if region == 'WORLD' and ru_share > target + tolerance:
+            return 10.0
+        if region == 'RUSSIA' and ru_share > target + tolerance:
+            return -25.0
         return 0.0
-
     publisher.publication_region_boost = publication_region_boost
 
 
 def apply_image_delivery(publisher):
-    """Add publisher-image delivery plus durable photo KPIs without blocking text fallback."""
+    """Publisher-first image delivery with hard validation and Google-host ban."""
     from intily_google_news import resolve as resolve_google_news
     from intily_image_pipeline import publish_with_optional_image
 
@@ -239,7 +284,6 @@ def apply_image_delivery(publisher):
         }
 
     original_record_kpi = publisher.record_kpi
-
     def record_kpi_with_image(s, now, searched, candidates, queue_before, queue_after,
                               published, publish_attempts, item_failures, business_result,
                               business_reason, admission=None, rss_telemetry=None,
@@ -256,7 +300,6 @@ def apply_image_delivery(publisher):
             'sources': dict(image_stats.get('sources', {})),
             'last': image_stats.get('last'),
         }
-        # Preserve the audience block injected by the previous wrapper.
         print('IMAGE_KPI', json.dumps(admission_copy['image'], ensure_ascii=False, separators=(',', ':')))
         return original_record_kpi(
             s, now, searched, candidates, queue_before, queue_after,
@@ -264,16 +307,13 @@ def apply_image_delivery(publisher):
             admission=admission_copy, rss_telemetry=rss_telemetry,
             provider_telemetry=provider_telemetry, duration_sec=duration_sec
         )
-
     publisher.record_kpi = record_kpi_with_image
 
     original_telegram = publisher.telegram
     original_edit_context = publisher.edit
-
     def edit_with_context(item, state):
         publisher._current_publication_url = item.get('link', '')
         return original_edit_context(item, state)
-
     publisher.edit = edit_with_context
 
     def telegram_with_image(text):
@@ -292,11 +332,18 @@ def apply_image_delivery(publisher):
             return original_telegram(text)
         if resolved_url != article_url:
             print('IMAGE_SOURCE_RESOLVED', resolved_url)
+        # The base publisher currently labels this as a "weight" even though it
+        # is pre-AI. Make the diagnostic truthful: 58.7 is a pre-AI candidate
+        # weight, not a violation of the final 60 publication gate.
+        text = re.sub(
+            r'Следующая в очереди имеет вес ([0-9]+(?:\.[0-9])?)%\.',
+            r'Следующая в очереди: базовый вес \1/100; AI-аудит ещё не проведён.',
+            text,
+        )
         telemetry = publish_with_optional_image(text, resolved_url, token, chat_id, original_telegram)
         register(telemetry)
         publisher._last_image_telemetry = telemetry
         return None
-
     publisher.telegram = telegram_with_image
 
 
