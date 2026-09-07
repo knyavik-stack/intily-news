@@ -5,7 +5,7 @@ from intily_audience_policy import PRE_AI_THRESHOLD, FINAL_THRESHOLD, bonus_from
 
 class AudiencePolicyTests(unittest.TestCase):
     def test_two_stage_thresholds(self):
-        self.assertEqual(PRE_AI_THRESHOLD, 45.0)
+        self.assertEqual(PRE_AI_THRESHOLD, 40.0)
         self.assertEqual(FINAL_THRESHOLD, 60.0)
 
     def test_bonus_is_linear_from_one_to_ten(self):
