@@ -64,9 +64,16 @@ class ImagePipelineTests(unittest.TestCase):
         candidates, _ = media._meta_image_candidates(html)
         self.assertEqual(candidates[0], ('og_image', expected))
 
+    def test_photo_caption_is_safe_and_bounded(self):
+        text = '<b>Заголовок &amp; тест</b> ' + ('длинный текст ' * 200)
+        caption = media._photo_caption(text)
+        self.assertLessEqual(len(caption), 1024)
+        self.assertIn('Заголовок', caption)
+        self.assertIn('&amp;', caption)
+        self.assertNotIn('<b>', caption)
+
     @staticmethod
     def _jpeg(width, height):
-        # Minimal JPEG containing a SOF marker sufficient for _dimensions().
         return (b'\xff\xd8\xff\xc0\x00\x11\x08' + height.to_bytes(2, 'big') +
                 width.to_bytes(2, 'big') + b'\x01\x01\x11\x00' + b'\xff\xd9')
 
