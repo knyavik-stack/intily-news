@@ -6,7 +6,7 @@ translates and summarizes the story.
 """
 
 PRE_AI_THRESHOLD = 40.0
-FINAL_THRESHOLD = 60.0
+FINAL_THRESHOLD = 55.0
 AUDIENCE_BONUS_MAX = 20.0
 
 AUDIENCE_RUBRIC = {
