@@ -1,25 +1,31 @@
-# INTILY Production Change Log — Sources + Media — 2026-09-06
+# INTILY Production Change Log — Sources + Media — 2026-09-06/07
 
 ## Approved scope
 
-Implemented approved plan items:
+Implemented and extended the approved media/source work:
 
-1. add CNews, TechCult and Euronews to discovery;
-5. implement article-main-image attachment;
-6. production verification path;
-7. documentation.
+1. add CNews, TechCult and Euronews discovery;
+2. implement article-main-image attachment;
+3. production verification path;
+4. durable media analytics;
+5. scoring calibration at the operator-approved 60 threshold;
+6. regression protection and incident documentation.
 
 ## Source changes
 
-CNews, TechCult and Euronews are added to `DIRECT_RSS_FEEDS` at runtime by `intily_ai_news_runner.py`. They do not bypass scoring, quality, semantic deduplication or admission gates.
+CNews remains a direct RSS source.
 
-The three sources are visible in the existing direct-source telemetry (`RSS_DIRECT`, `source_counts`, `direct_raw_items`). Their incremental value must be judged after real cycles by unique admissions, not raw item count.
+TechCult's previously configured direct `/feed` endpoint returned HTTP 404 in production. Rather than keeping a permanently failing feed, TechCult is now covered by targeted Google News `site:techcult.ru` discovery queries. The public TechCult site remains active and exposes an RSS entry, but the exact direct feed endpoint could not be established reliably enough to keep the broken URL in production. citeturn3search0turn5search1
+
+Euronews is now configured through its current public `/rss` root. Euronews documents its public MRSS/RSS feeds, including news sections. citeturn2search1turn2search9
+
+The sources remain subject to normal scoring, AI relevance, semantic deduplication and admission gates.
 
 ## Media changes
 
 `scripts/intily_image_pipeline.py` implements best-effort article image extraction and Telegram `sendPhoto` delivery.
 
-Resolver 2.0 now:
+Resolver 2.0:
 
 1. resolves Google News RSS links to the publisher page via redirects;
 2. if the wrapper does not redirect, attempts canonical/`og:url` publisher references;
@@ -29,31 +35,27 @@ Resolver 2.0 now:
 6. ranks candidates by source quality and publisher-host affinity and penalizes obvious logo/placeholder/generic assets;
 7. validates candidates independently and tries up to eight candidates before falling back to text.
 
-Validation includes content type, maximum 10 MB, and minimum 200×150 dimensions. The existing text sender remains the fallback for every extraction/download/validation/upload failure.
+Validation includes content type, maximum 10 MB, and minimum 200×150 dimensions. Text publication remains the safe fallback for every extraction/download/validation/upload failure.
 
-The selected article URL is bound immediately before editorial rendering through a runtime wrapper around `edit()`. This avoids capturing the URL during priority sorting, where multiple candidates are evaluated.
-
-## Incidents found after real publication observation
+## Real media incidents
 
 ### SecurityLab
 
-A SecurityLab story published to Intily around 22:06 was observed with a generic Google-like image instead of the article's expected main image. The source article was a Google News-originated item.
-
-Root cause: the first media implementation used the RSS `link` directly as the HTML page to scrape. For Google News RSS, that link is an aggregator/redirect URL.
-
-Fix: publisher URL resolution is now mandatory; a Google News wrapper is never accepted as the image source.
+A Google News-originated SecurityLab publication was observed with a generic Google-like image. Root cause was scraping the aggregator URL instead of the publisher page. The resolver was changed to require publisher resolution and to reject Google News as an image source.
 
 ### Tekedia
 
-A second real chain was observed where a Tekedia article had a representative publisher image but Intily published without a photo. This exposed the next failure class: selecting only one metadata candidate is brittle even after publisher resolution.
+A Tekedia publication had a representative publisher image but Intily published without a photo. This exposed brittle single-candidate extraction after publisher resolution. Resolver 2.0 now tries multiple metadata/HTML candidate families independently.
 
-Fix: Resolver 2.0 extracts multiple candidate families and validates them independently. No Tekedia-specific URL or exception was added.
+### Blockchain.News
+
+A further reported chain resolves to `blockchain.news/ainews/ai-model-fatigue-hits-as-labs-escalate-releases`, with the expected image supplied from `blockchainstock.blob.core.windows.net`. The public page is indexed with the matching title, and the supplied JPG resolves as a real 1000×524 image. citeturn0search0turn1view1
+
+This chain is now an explicit acceptance case: production must either send the resolved publisher image or emit a controlled text fallback with a durable reason. A generic Google image is never success.
 
 ## Durable media analytics
 
-The runtime now persists image telemetry in every bounded `run_history` record under `admission.image`. The schema remains backward compatible with historical records that have no media block.
-
-Recorded fields:
+Image telemetry is persisted in each bounded `run_history` record under `admission.image`:
 
 - `attempts`;
 - `found`;
@@ -62,43 +64,52 @@ Recorded fields:
 - `text_fallback`;
 - `fallback_reasons`;
 - `sources`;
-- `last` provenance containing resolved publisher URL, selected image URL, extraction method, dimensions and error when applicable.
+- `last` provenance containing resolved publisher URL, selected image URL, extraction method, dimensions and error where applicable.
 
-Production Monitor now aggregates these metrics for 24h, 7d and stored history and shows resolution rate, Telegram photo rate, fallback rate, fallback reasons and extraction methods.
+Production Monitor aggregates these metrics for 24h, 7d and stored history and reports resolution rate, Telegram photo rate, fallback rate, reasons and extraction methods.
 
-This is durable KPI telemetry, not log scraping.
+## Scoring incident and recalibration
 
-## Regression tests
+Production run #471 (`34090244584`) provided the decisive evidence for the scoring problem:
 
-Added deterministic standard-library `unittest` coverage for:
+- 399 incoming materials;
+- 393 filtered by score (98.5%);
+- 6 candidates;
+- 0 new admissions;
+- all 6 candidates were already published;
+- score distribution: 266 in 0–39, 98 in 40–49, 29 in 50–59, 6 in 60–69, and **0 above 70**.
 
-- HTML metadata attribute-order variations;
-- JSON-LD and lazy HTML image extraction;
-- Google News canonical publisher fallback;
-- retrying a later valid image when the first candidate is broken.
+This proves that the previous mathematical model was under-calibrated for real RSS language. The 60 threshold itself was not the root problem.
 
-The production workflow now runs `py_compile` plus these tests before the news engine starts.
+The scoring policy has now been recalibrated without lowering the gate. It uses bounded baselines and diminishing returns for AI specificity, impact, event concreteness, practical value and novelty. The intended interpretation is:
 
-## CI / production verification
+- 60–74 = strong publication candidate;
+- 75–84 = major industry event;
+- 85–100 = exceptional/channel-defining event.
 
-Run #423 (`34055888118`) was automatically triggered against commit `32b7ba0d5c5929a8f6cef272286f6ac58f88df29` after the media changes. At the latest inspection it was still running; its verification step had already completed successfully. Therefore syntax/regression-test execution is confirmed, while final Telegram media delivery from this run is not yet claimed until the publisher step finishes and its logs/state are inspected.
+Uniqueness is kept separate from importance: semantic story deduplication handles repeated reporting, while novelty remains only one score component.
 
-The earlier run #422 (`34055739496`) is not media verification for Resolver 2.0: it executed before the final media commits and published one text fallback with `ARTICLE_SOURCE_UNRESOLVED` under the older implementation.
+A dedicated regression test suite now runs in CI and verifies that a concrete AI release clears 60, a major acquisition reaches high tier, generic AI commentary stays below 60, and non-AI material receives no AI relevance score.
 
-Acceptance for the corrected integration remains:
+## Production verification
 
-- `TELEGRAM_PHOTO_SENT` — image path verified;
-- or `IMAGE_FALLBACK_TEXT` — media limitation handled without breaking publication;
-- for Google News-originated articles, `IMAGE_SOURCE_RESOLVED` must point to the publisher domain, never `news.google.com`;
-- `IMAGE_KPI` must be present in the persisted `run_history` record.
+Run #472 (`34090922205`) was a successful Cloudflare/GitHub cycle but started from the pre-calibration state commit `6b7fcb6`, so it is **not** evidence for the new scoring model.
 
-A green workflow without these media markers is not considered full media verification.
+The current `main` branch contains the calibrated scoring policy, repaired source configuration, scoring regression tests and CI enforcement. The next Cloudflare-triggered cycle is the first valid production acceptance run for this change set.
+
+Acceptance criteria:
+
+- `SCORE_BUCKETS` shows material supply at 60+ and preferably some 70+;
+- qualifying 60+ material is admitted unless blocked by a genuine published/semantic-duplicate/history reason;
+- an eligible queue item publishes when the Telegram interval permits;
+- media KPI emits `photo_sent` or controlled `text_fallback` with a reason;
+- Google News-originated media resolution points to the real publisher host.
 
 ## Current status
 
-- Source expansion: implemented; runtime yield measurement continues.
-- Image resolver 2.0: implemented with regression tests.
-- Durable photo KPI analytics: implemented for current and historical monitor windows.
-- Production workflow #423: in progress at the time of this documentation update; final Telegram evidence still pending.
-- Editorial score threshold: remains operator-controlled at the user's current temporary value of 50 until calibration telemetry is sufficient.
-- No scoring change is coupled to the media work.
+- Editorial threshold: **60.0**, operator-approved.
+- Scoring model: recalibrated; production verification pending next cycle.
+- Source expansion: CNews direct, Euronews corrected to `/rss`, TechCult moved from broken direct feed to targeted discovery.
+- Image resolver 2.0: implemented and regression-tested.
+- Durable photo KPI analytics: implemented.
+- No scoring change is coupled to media delivery.
