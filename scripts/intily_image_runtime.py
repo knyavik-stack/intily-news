@@ -36,8 +36,9 @@ def _encode_jpeg(image, quality):
 
 
 def _prepare(data):
-    if len(data) <= MAX_TELEGRAM_IMAGE_BYTES:
-        return data, 'image/jpeg' if data[:2] == b'\xff\xd8' else None
+    source_bytes = len(data)
+    if source_bytes <= MAX_TELEGRAM_IMAGE_BYTES:
+        return data, 'image/jpeg' if data[:2] == b'\xff\xd8' else None, False
 
     with Image.open(BytesIO(data)) as image:
         image = ImageOps.exif_transpose(image)
@@ -51,10 +52,8 @@ def _prepare(data):
         for quality in JPEG_QUALITIES:
             encoded = _encode_jpeg(image, quality)
             if len(encoded) <= MAX_TELEGRAM_IMAGE_BYTES:
-                return encoded, 'image/jpeg'
+                return encoded, 'image/jpeg', True
 
-        # Quality alone can be insufficient for very detailed images. Reduce
-        # dimensions progressively, then retry the same bounded quality ladder.
         current = image
         while max(current.size) > 800:
             scale = 0.8
@@ -66,7 +65,7 @@ def _prepare(data):
             for quality in JPEG_QUALITIES:
                 encoded = _encode_jpeg(current, quality)
                 if len(encoded) <= MAX_TELEGRAM_IMAGE_BYTES:
-                    return encoded, 'image/jpeg'
+                    return encoded, 'image/jpeg', True
 
     raise ValueError('IMAGE_OPTIMIZATION_FAILED_1MB')
 
@@ -80,7 +79,8 @@ def fetch_image(article_url):
     finally:
         hardening.pipeline.MAX_IMAGE_BYTES = original_limit
 
-    data, content_type = _prepare(image['data'])
+    source_bytes = len(image.get('data', b''))
+    data, content_type, optimized = _prepare(image['data'])
     if len(data) > MAX_TELEGRAM_IMAGE_BYTES:
         raise ValueError('IMAGE_OVER_1MB_AFTER_OPTIMIZATION')
 
@@ -91,6 +91,7 @@ def fetch_image(article_url):
     if not dims or dims[0] < MIN_IMAGE_WIDTH or dims[1] < MIN_IMAGE_HEIGHT:
         raise ValueError('IMAGE_DIMENSIONS_INVALID_AFTER_OPTIMIZATION')
     image['width'], image['height'] = dims
-    image['optimized'] = len(image.get('data', b'')) < len(image.get('_source_data', image['data']))
+    image['optimized'] = optimized
+    image['source_payload_bytes'] = source_bytes
     image['payload_bytes'] = len(data)
     return image
