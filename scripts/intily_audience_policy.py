@@ -1,26 +1,20 @@
-"""Intily target-audience policy.
+"""Intily target-audience editorial policy.
 
-This is an editorial/CMO layer, not a demographic claim about the existing
-subscriber base. It is the current acquisition hypothesis for a Russian
-AI-news Telegram channel and is intentionally measurable in production.
-
-The audience is treated as practical AI-active professionals: founders and
-owners, executives/managers, product/marketing/operations specialists,
-developers/technical specialists, and AI/technology decision-makers.
-Their core job-to-be-done is fast context: what changed, why it matters to
-work/business/technology, and what action or risk follows.
+Audience is a behavioral/job-to-be-done model, not a demographic claim about
+current subscribers. The score is produced by the same AI editorial pass that
+translates and summarizes the story.
 """
 
 PRE_AI_THRESHOLD = 45.0
 FINAL_THRESHOLD = 60.0
-AUDIENCE_BONUS_MAX = 15.0
+AUDIENCE_BONUS_MAX = 20.0
 
 AUDIENCE_RUBRIC = {
-    10: 'Immediate practical or strategic consequence; the reader can act, adapt a workflow, make a decision, or avoid a material risk now.',
+    10: 'Immediate practical or strategic consequence; the reader can act, change a workflow, make a decision, or avoid a material risk now.',
     9: 'Very strong practical/strategic relevance with clear implications for work, product, business, technology, or risk.',
     8: 'Strong relevance; a substantial change in tools, capabilities, economics, competition, regulation, or implementation.',
     7: 'Useful professional context with a concrete implication, but not urgent or transformative.',
-    6: 'Moderately useful; relevant to an AI-active professional but limited practical consequence.',
+    6: 'Moderately useful; relevant to an AI-active professional with a meaningful but limited consequence.',
     5: 'Interesting industry information with weak or indirect practical value.',
     4: 'Mostly passive awareness; useful mainly to specialists following the topic closely.',
     3: 'Curiosity or commentary with little consequence for the target reader.',
@@ -34,7 +28,7 @@ POSITIVE_SIGNALS = (
     'productivity', 'integration', 'implementation', 'agent', 'regulation',
     'security', 'risk', 'интеграц', 'внедрен', 'бизнес', 'выручк', 'затрат',
     'окупаем', 'автоматизац', 'разработ', 'продакшн', 'практик', 'кейс',
-    'безопас', 'риск', 'регулир', 'агент',
+    'безопас', 'риск', 'регулир', 'агент', 'российск', 'рунет', 'импортозамещ',
 )
 
 LOW_AUDIENCE_SIGNALS = (
@@ -54,26 +48,22 @@ def clamp_score(value):
 
 
 def bonus_from_score(value):
-    """Audience fit is a plus, not a replacement for editorial materiality.
-
-    Scores 1–5 receive no bonus; 6–10 receive +3…+15. This prevents an
-    audience score from rescuing a genuinely weak story while rewarding news
-    that is materially useful to Intily's target reader.
-    """
+    """Map audience score 1–10 linearly to +2…+20."""
     score = clamp_score(value)
-    return round(min(AUDIENCE_BONUS_MAX, max(0.0, (score - 5.0) * 3.0)), 1)
+    return round(score * 2.0, 1)
 
 
 def build_evaluation_instruction():
     rubric = '\n'.join(f'{k}/10 — {v}' for k, v in AUDIENCE_RUBRIC.items())
     return (
         '\nОТДЕЛЬНАЯ ОЦЕНКА ЦЕЛЕВОЙ АУДИТОРИИ INTILY. После того как ты понял и пересказал новость, '
-        'оцени её полезность именно для практического AI-профессионала: основателя/владельца бизнеса, '
-        'руководителя или менеджера, product/marketing/operations специалиста, разработчика/технического специалиста '
-        'или другого человека, который внедряет AI в работу. Не оценивай «насколько новость интересна вообще».\n'
-        'Главные вопросы: изменит ли это работу/продукт/бизнес/технологический стек; даст ли решение, возможность, экономию, '
-        'риск или важный сигнал; есть ли причина открыть пост именно сейчас.\n'
+        'оцени её полезность именно для русскоязычного AI-активного профессионала. Это может быть предприниматель или '
+        'владелец малого/среднего бизнеса, руководитель/менеджер, product/marketing/sales/operations/finance специалист, '
+        'разработчик/технический специалист, AI-практик или power user. Не оценивай «насколько новость интересна вообще».\n'
+        'Главные вопросы: изменит ли это работу, продукт, бизнес, затраты, производительность, автоматизацию, технологии '
+        'или риск; даст ли инструмент/решение/возможность; важно ли знать это сейчас; применимо ли это в российском '
+        'контексте или помогает понимать мировой AI-рынок.\n'
         'Шкала:\n' + rubric +
         '\nВерни дополнительно audience_score (целое число 1–10) и audience_reason (одна короткая фраза). '
-        'Это не заменяет редакционный score: это отдельный audience-fit bonus.\n'
+        'Это второй редакторский сигнал. Его вклад в итоговый score линейный: score × 2, то есть 1/10=+2 и 10/10=+20.\n'
     )
