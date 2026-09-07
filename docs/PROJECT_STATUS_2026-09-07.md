@@ -2,9 +2,18 @@
 
 ## Canonical current status
 
-**🟡 98% PRODUCTION-CODE READY / LIVE VERIFICATION PENDING**
+**🟡 98% PRODUCTION-CODE READY / LIVE MEDIA VERIFICATION PENDING**
 
-The publisher architecture, two-stage editorial model, Russian audience expansion, media resolver and strict image payload policy are implemented. The remaining gate is live production verification after the latest CI/media changes.
+The publisher architecture, two-stage editorial model, Russian audience expansion, publisher-first media resolver, image normalization and strict 1 MB delivery policy are implemented. CI and the latest scheduled production cycle are green. The remaining verification gate is proving that a fresh qualifying article produces a real Telegram photo through the complete production path.
+
+## Latest production verification
+
+- Run **#505** completed successfully on 2026-09-07.
+- Media runtime installation passed.
+- All policy/image regression tests passed.
+- News engine completed successfully.
+- Analytics and state persistence completed successfully.
+- This run was very short and did not provide a qualifying fresh publication, so it is evidence of **CI/runtime health**, not proof of successful Telegram photo delivery.
 
 ## Production architecture
 
@@ -67,49 +76,41 @@ Final publication threshold remains **60.0**.
 
 The queue can therefore contain a pre-AI item below 60. That is intentional: the item has only passed the **40.0 pre-AI gate**. It must not be described to readers as having a final weight of 58.7. The runner rewrites that diagnostic to explicitly say that the AI audit has not yet been performed.
 
-## Media policy — corrected 2026-09-07
+## Media policy — hardened 2026-09-07
 
-The previous image path had two independent weaknesses: publisher resolution could fall back to an unresolved Google News wrapper, and the implementation used Telegram's much larger API upload limit as the local payload limit.
-
-The production path is now:
+The image path now treats image retrieval as a separate production subsystem. Google News is discovery transport only and can never be an accepted image source.
 
 ```text
 Google News discovery URL
-  → Google News publisher resolver
-  → real publisher URL
-  → og:image / JSON-LD / image_src / Twitter / HTML candidates
+  → publisher URL resolution
+  → multi-strategy image discovery
+  → candidate-by-candidate validation
   → publisher Referer retry
   → Google-hosted image rejection
-  → source fetch up to bounded 8 MiB
-  → local normalization/compression
-  → STRICT Telegram payload <= 1,000,000 bytes
+  → bounded source download (8 MiB)
+  → local format normalization
+  → resize/compression
+  → STRICT delivery payload <= 1,000,000 bytes
   → sendPhoto
   → text fallback with explicit reason
 ```
 
 ### Hard image limits
 
-- **Telegram payload maximum for Intily: 1,000,000 bytes (1 MB decimal).**
-- Source download is separately bounded at 8 MiB only to permit safe local optimization of a legitimate publisher image.
-- Oversized publisher images are not sent as-is: they are resized/compressed to JPEG until the 1 MB cap is met.
+- **Intily delivery payload: maximum 1,000,000 bytes (1 MB decimal).**
+- The 8 MiB source limit is an internal fetch ceiling only; a source image is never delivered at that size.
+- Non-JPEG sources are normalized to JPEG before delivery.
+- Images larger than 1 MB are resized/compressed until they fit the hard cap.
 - Minimum output dimensions remain 200×150.
 - Google News / Google-hosted image URLs are never accepted as successful media.
-
-New runtime:
-
-`scripts/intily_image_runtime.py`
-
-New regression suite:
-
-`scripts/test_intily_image_runtime.py`
-
-The workflow installs a pinned major-version range of Pillow and executes the new tests before production.
+- Candidate discovery was expanded to include `og:image`, secure/article image metadata, JSON-LD, `image_src`, Twitter metadata, lazy/data image attributes, `srcset`, `<source>` and CSS URL candidates.
+- WebP dimension validation now falls back to Pillow when a low-level WebP header is not one of the explicitly parsed variants.
 
 ## Production incident found and corrected
 
-The latest verified production run before the media-runtime release was **Run #503**. It failed before the publisher started because an existing image-pipeline regression test expected the method label `twitter_image`, while the actual valid fallback image was correctly reached. The run therefore published nothing; this was a CI test failure, not a Telegram/media runtime failure.
+Run **#503** failed before the publisher started because an image-pipeline regression test was coupled to an internal candidate-method label. That test was corrected to assert the actual fallback-image invariant. Run **#505** subsequently passed the complete CI/test stage and production engine.
 
-The test was corrected to assert the actual production invariant — the valid fallback URL and dimensions — instead of coupling the test to an internal candidate-method label.
+A second compatibility issue introduced during the 1 MB/source-limit hardening was also corrected: the hardening module now exposes a backward-compatible source-fetch alias while the delivery runtime retains the strict 1 MB payload cap.
 
 ## Previous production evidence
 
@@ -126,8 +127,6 @@ Run #474 was the first valid production run on scoring v2:
 - VentureBeat HTTP 429.
 
 The subsequent CMO model was introduced because this distribution was still too compressed.
-
-The pre-release production telemetry also demonstrated that the audience model itself was being evaluated: the monitor recorded 9 audience evaluations with average 8.0 and average bonus +9.0, and the last-20 portfolio was RU=9 / WORLD=11 (45% RU). This is encouraging but is not a substitute for post-release verification.
 
 ## Russian content strategy
 
@@ -153,7 +152,7 @@ The system does **not** manufacture Russian content to satisfy the ratio: if the
 
 ## Analytics
 
-Production monitoring now records:
+Production monitoring records:
 
 - deterministic score buckets;
 - audience score distribution 1–10;
@@ -164,13 +163,13 @@ Production monitoring now records:
 - final queue items below 60 — mandatory invariant = 0;
 - RU/WORLD publication portfolio;
 - image attempts/found/validated/photo/fallback;
-- image source, dimensions and failure reason.
+- image source, dimensions, source payload size, final payload size and failure reason.
 
 ## Current acceptance gate
 
-To move from **98%** to **GREEN / production-verified**, the next Cloudflare-triggered production cycle must demonstrate:
+To move from **98%** to **GREEN / production-verified**, the next qualifying production cycle must demonstrate:
 
-1. CI passes, including the new 1 MB image runtime tests;
+1. CI passes, including the new image runtime tests;
 2. fresh discovery produces a non-empty candidate pool;
 3. 40–59 pre-AI stories can enter the editorial pool;
 4. AI returns valid audience scores 1–10;
@@ -191,7 +190,6 @@ This document is the canonical current status.
 
 Related:
 
-- `docs/AUDIENCE_STRATEGY_2026-09-07.md`
 - `docs/CMO_MODEL_REVIEW_2026-09-07.md`
 - `docs/INTILY_ANALYTICS.md`
 - `docs/INTILY_PRODUCTION_MONITORING.md`
