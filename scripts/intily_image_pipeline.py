@@ -78,35 +78,19 @@ class _ArticleParser(HTMLParser):
     def handle_startendtag(self, tag, attrs):
         self.handle_starttag(tag, attrs)
         if tag.lower() == 'script' and self._jsonld_depth:
-            self._finish_jsonld()
+            self._jsonld.append(''.join(self._jsonld_buffer))
+            self._jsonld_depth = 0
+            self._jsonld_buffer = []
+
+    def handle_endtag(self, tag):
+        if tag.lower() == 'script' and self._jsonld_depth:
+            self._jsonld.append(''.join(self._jsonld_buffer))
+            self._jsonld_depth = 0
+            self._jsonld_buffer = []
 
     def handle_data(self, data):
         if self._jsonld_depth:
             self._jsonld_buffer.append(data)
-
-    def handle_endtag(self, tag):
-        if tag.lower() == 'script' and self._jsonld_depth:
-            self._finish_jsonld()
-
-    def _finish_jsonld(self):
-        raw = ''.join(self._jsonld_buffer).strip()
-        self._jsonld_depth = 0
-        self._jsonld_buffer = []
-        if raw:
-            self._jsonld.append(raw)
-
-
-def _request(url, headers=None, timeout=12, max_bytes=None):
-    req = urllib.request.Request(url, headers=headers or {'User-Agent': 'Mozilla/5.0 (compatible; IntilyNews/1.0)'})
-    with urllib.request.urlopen(req, timeout=timeout) as response:
-        content_type = (response.headers.get('Content-Type') or '').split(';', 1)[0].lower()
-        length = response.headers.get('Content-Length')
-        if length and max_bytes and int(length) > max_bytes:
-            raise ValueError('IMAGE_TOO_LARGE')
-        data = response.read((max_bytes or MAX_HTML_BYTES) + 1)
-        if max_bytes and len(data) > max_bytes:
-            raise ValueError('IMAGE_TOO_LARGE')
-        return data, content_type, response.geturl()
 
 
 def _host(url):
@@ -116,67 +100,67 @@ def _host(url):
         return ''
 
 
-def _is_absolute(value):
-    return value.startswith(('http://', 'https://'))
+def _is_absolute(url):
+    try:
+        return urllib.parse.urlsplit(url).scheme in ('http', 'https')
+    except Exception:
+        return False
+
+
+def _request(url, headers, timeout, max_bytes):
+    req = urllib.request.Request(url, headers=headers)
+    with urllib.request.urlopen(req, timeout=timeout) as response:
+        content_type = response.headers.get('Content-Type', '').split(';', 1)[0].strip().lower()
+        final_url = response.geturl()
+        data = response.read(max_bytes + 1)
+        if len(data) > max_bytes:
+            raise ValueError('IMAGE_SOURCE_TOO_LARGE')
+        return data, content_type, final_url
+
+
+def _looks_placeholder(url):
+    lower = url.lower()
+    return any(token in lower for token in ('placeholder', 'default-image', 'no-image', 'no_image', 'spacer.gif'))
 
 
 def _srcset_candidates(value):
-    out = []
-    for part in value.split(','):
-        token = part.strip().split()
-        if not token:
-            continue
-        url = token[0]
-        descriptor = token[1] if len(token) > 1 else ''
-        score = 0
-        match = re.match(r'(\d+)(w|x)?$', descriptor, re.I)
-        if match:
-            score = int(match.group(1))
-            if match.group(2) == 'x':
-                score *= 1000
-        out.append((score, url))
-    return [url for _score, url in sorted(out, reverse=True)]
+    result = []
+    for item in str(value or '').split(','):
+        token = item.strip().split()[0] if item.strip() else ''
+        if token:
+            result.append(token)
+    return result
 
 
-def _looks_placeholder(value):
-    low = urllib.parse.unquote(str(value or '')).lower()
-    return any(term in low for term in (
-        'favicon', 'placeholder', 'default-image', 'default_image',
-        '/logo', 'logo.', 'avatar', 'icon.', 'spacer.', 'pixel.',
-        'google-news', 'googleusercontent'
-    ))
-
-
-def _parse_jsonld_image(value, out):
-    if isinstance(value, str):
-        value = value.strip()
-        if _is_absolute(value):
-            out.append(('jsonld_image', value))
-        return
-    if isinstance(value, list):
-        for item in value:
-            _parse_jsonld_image(item, out)
-        return
-    if isinstance(value, dict):
-        for key in ('url', 'contentUrl'):
-            if key in value:
-                _parse_jsonld_image(value[key], out)
-        if 'image' in value:
-            _parse_jsonld_image(value['image'], out)
-        if 'thumbnailUrl' in value:
-            _parse_jsonld_image(value['thumbnailUrl'], out)
-        if '@graph' in value:
-            _parse_jsonld_image(value['@graph'], out)
+def _parse_jsonld_image(payload, out):
+    if isinstance(payload, dict):
+        for key in ('image', 'thumbnailUrl'):
+            value = payload.get(key)
+            if isinstance(value, str):
+                out.append(('jsonld_image', value))
+            elif isinstance(value, dict):
+                for subkey in ('url', 'contentUrl'):
+                    if isinstance(value.get(subkey), str):
+                        out.append(('jsonld_image', value[subkey]))
+            elif isinstance(value, list):
+                for item in value:
+                    if isinstance(item, str):
+                        out.append(('jsonld_image', item))
+                    elif isinstance(item, dict):
+                        for subkey in ('url', 'contentUrl'):
+                            if isinstance(item.get(subkey), str):
+                                out.append(('jsonld_image', item[subkey]))
+        for value in payload.values():
+            if isinstance(value, (dict, list)):
+                _parse_jsonld_image(value, out)
+    elif isinstance(payload, list):
+        for value in payload:
+            _parse_jsonld_image(value, out)
 
 
 def _meta_image_candidates(text):
     parser = _ArticleParser()
-    try:
-        parser.feed(text)
-        parser.close()
-    except Exception:
-        pass
-
+    parser.feed(text)
     out = []
     meta_map = {}
     for key, value in parser.meta:
@@ -211,13 +195,10 @@ def _meta_image_candidates(text):
         for candidate in _srcset_candidates(srcset)[:4]:
             out.append(('html_source', candidate))
 
-    # Some publishers put image URLs in inline CSS rather than img metadata.
-    # Извлекаем ссылки из inline CSS с учетом возможных пробелов
     for match in re.findall(r'url\s*\(\s*[\'"]?([^\'")\s]+)[\'"]?\s*\)', text, flags=re.I):
         clean_url = html.unescape(match).strip()
         if re.match(r'^https?://|^//|^/', clean_url):
             out.append(('css_image', clean_url))
-
 
     deduped = []
     seen = set()
@@ -305,7 +286,6 @@ def _dimensions(data, content_type):
         if content_type == 'image/webp' and len(data) >= 30 and data[:4] == b'RIFF' and data[8:12] == b'WEBP':
             if data[12:16] == b'VP8X':
                 return 1 + int.from_bytes(data[24:27], 'little'), 1 + int.from_bytes(data[27:30], 'little')
-            # VP8/VP8L are common WebP variants; Pillow handles their headers reliably.
         if content_type == 'image/jpeg' and data[:2] == b'\xff\xd8':
             i = 2
             while i + 9 < len(data):
@@ -359,6 +339,17 @@ def fetch_image(article_url):
     raise ValueError('IMAGE_CANDIDATES_FAILED: ' + ' | '.join(errors[:6]))
 
 
+def _photo_caption(text, limit=1024):
+    """Build a Telegram-safe short caption without breaking HTML markup."""
+    plain = re.sub(r'<[^>]+>', ' ', str(text or ''))
+    plain = html.unescape(plain)
+    plain = ' '.join(plain.split()).strip()
+    if len(plain) > limit:
+        plain = plain[:limit - 1].rstrip() + '…'
+    # send_photo uses HTML parse mode; escape user/editorial text after stripping markup.
+    return html.escape(plain, quote=False)
+
+
 def _field(name, value, boundary):
     return ('--' + boundary + '\r\nContent-Disposition: form-data; name="' + name + '"\r\n\r\n').encode() + str(value).encode() + b'\r\n'
 
@@ -398,9 +389,8 @@ def publish_with_optional_image(text, article_url, token, chat_id, fallback_send
     try:
         telemetry['attempts'] = 1
         image = fetch_image(article_url)
-        if len(text) > 1024:
-            raise ValueError('CAPTION_TOO_LONG')
-        result = send_photo(token, chat_id, text, image)
+        caption = _photo_caption(text)
+        result = send_photo(token, chat_id, caption, image)
         telemetry.update(
             status='sent', method=image['method'], url=image['url'], source_url=image['source_url'],
             width=image['width'], height=image['height']
