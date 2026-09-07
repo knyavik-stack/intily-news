@@ -14,6 +14,10 @@ GOOGLE_IMAGE_HOSTS = {
     'googleusercontent.com', 'www.googleusercontent.com',
 }
 
+# Backward-compatible alias for the production runtime. This is a source-fetch
+# limit only; the final Telegram payload is enforced separately at 1,000,000 B.
+MAX_IMAGE_BYTES = pipeline.MAX_SOURCE_IMAGE_BYTES
+
 
 def _host(url):
     try:
@@ -44,7 +48,7 @@ def fetch_image(article_url):
         for headers in attempts:
             try:
                 data, content_type, final_url = pipeline._request(
-                    image_url, headers, 15, pipeline.MAX_IMAGE_BYTES
+                    image_url, headers, 15, MAX_IMAGE_BYTES
                 )
                 if _host(final_url) in GOOGLE_IMAGE_HOSTS or _host(final_url).endswith('.googleusercontent.com'):
                     raise ValueError('GOOGLE_IMAGE_FORBIDDEN')
@@ -65,4 +69,4 @@ def fetch_image(article_url):
             except Exception as exc:
                 errors.append(f'{method}:{str(exc)[:100]}')
 
-    raise ValueError('IMAGE_CANDIDATES_FAILED: ' + ' | '.join(errors[:6]))
+    raise ValueError('IMAGE_CANDIDATES_FAILED: ' + ' | '.join(errors[:8]))
