@@ -4,7 +4,7 @@
 
 **🟡 PRODUCTION OBSERVATION MODE / LIVE MEDIA VERIFICATION PENDING**
 
-The production architecture, two-stage editorial model, audience-fit layer, Russian source expansion, publisher-first image resolver and strict 1 MB image policy are implemented. The latest production cycle exposed one regression in the new caption test; it has been fixed and must be re-verified by the next scheduled cycle.
+The production architecture, two-stage editorial model, audience-fit layer, Russian source expansion, publisher-first image resolver and strict 1 MB image policy are implemented. A production regression was found in photo-caption formatting and fixed: photo posts now preserve supported Telegram HTML formatting instead of converting the whole caption to plain text. The fix must be re-verified by the next scheduled cycle.
 
 ## Current editorial policy
 
@@ -30,6 +30,7 @@ publisher article
   → publisher Referer fetch
   → >1,000,000 bytes? skip candidate
   → validate type + dimensions
+  → preserve/sanitize Telegram HTML
   → safe caption ≤1024 chars after escaping
   → Telegram sendPhoto
 ```
@@ -52,7 +53,22 @@ Run #578 (`34145727924`) completed in about **28s**. A publisher-hosted image of
 
 Run #579 (`34146591852`) started at **17:12:01 UTC** and failed fast during regression tests. The failure was real and useful: the first implementation bounded the raw caption before HTML escaping, so an input containing `&` expanded to **1028 characters** after escaping despite a 1024 raw-character cap.
 
-The production code now bounds the **final escaped caption**, and the regression test has been corrected to assert that exact contract. The news engine was correctly skipped because CI failed; no publication was attempted from this invalid build.
+The production code now bounds the **final sanitized Telegram HTML**, and the regression test asserts the exact contract. The news engine was correctly skipped because CI failed; no publication was attempted from this invalid build.
+
+### Post-#579 formatting regression
+
+The image caption helper was found to be stripping all HTML tags from a valid formatted publication before `sendPhoto`. This explains the user's observed photo post with unformatted text. It was a real production-code defect, not a Telegram display issue.
+
+The helper is now changed to:
+
+- preserve supported Telegram formatting tags;
+- sanitize unsupported/unsafe markup;
+- allow only safe `http`, `https` and `tg` link schemes;
+- preserve existing HTML entities without double escaping;
+- enforce the 1024-character caption limit after sanitization/escaping;
+- close open formatting tags when truncation is required.
+
+The image resolver also now rejects >1 MB candidates at candidate-fetch time and continues to the next candidate.
 
 ## Latest code changes now on main
 
@@ -60,9 +76,9 @@ The production code now bounds the **final escaped caption**, and the regression
 - Publisher and audience analytics use current threshold constants instead of historical hard-coded 60 values.
 - Image hardening skips >1 MB candidates without compression and continues to the next candidate.
 - Runtime keeps a second strict 1 MB defense-in-depth check.
-- Photo captions are converted to safe plain text and bounded **after HTML escaping** to Telegram's 1024-character limit.
-- Image regression coverage includes publisher resolution, candidate fallback, strict 1 MB rejection and safe caption bounds.
-- Scoring policy was restored in full after the threshold edit; the scoring functions remain intact.
+- Photo captions preserve supported Telegram HTML formatting while sanitizing unsafe markup and respecting the 1024-character limit.
+- Image regression coverage includes publisher resolution, candidate fallback, strict 1 MB rejection, formatting preservation, unsafe-link sanitization and safe caption bounds.
+- Scoring policy remains intact.
 
 ## Current acceptance gate
 
@@ -76,9 +92,10 @@ The next scheduled production cycle is the observation gate. It should verify:
 6. sent image payload is ≤1,000,000 bytes;
 7. >1 MB candidates are skipped rather than transformed;
 8. Google-hosted images remain forbidden;
-9. no `CAPTION_TOO_LONG` fallback occurs for an otherwise valid image;
-10. durable state/KPI persistence remains successful;
-11. provider failures do not create uncontrolled runtime latency.
+9. photo caption formatting is preserved;
+10. no `CAPTION_TOO_LONG` fallback occurs for an otherwise valid image;
+11. durable state/KPI persistence remains successful;
+12. provider failures do not create uncontrolled runtime latency.
 
 ## Documentation hierarchy
 
