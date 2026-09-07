@@ -1280,13 +1280,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788799159.690041,
+    "last_start_ts": 1788799333.8653607,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788799159.690041,
-    "last_success_ts": 1788799159.690041,
+    "last_run_ts": 1788799333.8653607,
+    "last_success_ts": 1788799333.8653607,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 18
   },
   "providers": {
@@ -1307,13 +1307,6 @@
     }
   },
   "stories": {
-    "f63b4f798b9681869497fdf3e663277be3049df5ac6e1445bdcb18909b43a54b": {
-      "time": 1788712839,
-      "title": "Shobnom Zarin Chetona takes key role in USD 4.37 million media AI enterprise agreement involving Paytm owner - The Statesman",
-      "desc": "Shobnom Zarin Chetona takes key role in USD 4.37 million media AI enterprise agreement involving Paytm owner The Statesman",
-      "source": "The Statesman",
-      "region": "WORLD"
-    },
     "76742f5114b07d02ca5b2da9ac431682858547e961ab9236763e7a08f867d866": {
       "time": 1788713142,
       "title": "Цифровой напарник для участкового: в России разработали ИИ для полицейской рутины - www1.ru",
@@ -1949,57 +1942,6 @@
   "last_search_ts": 1788798792.3298495,
   "last_publish_ts": 1788799159.690041,
   "run_history": [
-    {
-      "ts": 1788711580,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 2.73,
-      "candidates": 0,
-      "queue_before": 4,
-      "queue_after": 3,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key"
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788711880,
       "status": "OK",
@@ -16781,6 +16723,78 @@
         ],
         "used": "GEMINI",
         "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788799333,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": false,
+      "duration_sec": 0.29,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 18,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 17,
+          "final_below_threshold": 1,
+          "invariant_ok": false
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
         "failures": 0,
         "blocked": 0,
         "skipped_no_key": 0,
