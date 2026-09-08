@@ -658,7 +658,8 @@
     "c57f973c316670f898807d53e58b40b1b03aa081f2fad7727ba85774120f7db0": 1788859684,
     "75ed8d4e7b566ad7a76671fc67b7e86dd1418687a4f54f93d691f2dc810b433a": 1788859868,
     "da7bad333d9eb2c0855822846fc581b914a01600de0773faa587def882f553d8": 1788860045,
-    "6333db86aef6d51bee9051180c759f727775d81cf3e967c440b9e5e1aaa6c7e0": 1788860238
+    "6333db86aef6d51bee9051180c759f727775d81cf3e967c440b9e5e1aaa6c7e0": 1788860238,
+    "3d18a4b16e06dc0f7764b62e0f70ef209f00dfc8ff0c4b6023475966e8b46fd0": 1788860407
   },
   "known": {
     "713d50d62f72a5d55fba6c4ca41e4a8a5ac2622e17a9f3478adeeb4f97d7c80d": 1788855547.3381925,
@@ -734,10 +735,10 @@
       ],
       "tier": "A",
       "audience_score": 6.0,
-      "last_failed_at": 1788859327,
+      "last_failed_at": 1788860407,
       "last_failure": "FINAL_SCORE_BELOW_THRESHOLD:54.6",
-      "failure_count": 3,
-      "next_retry_at": 1788860527
+      "failure_count": 4,
+      "next_retry_at": 1788862807
     },
     {
       "region": "WORLD",
@@ -804,42 +805,6 @@
       "editorial_value": 45.0,
       "topics": [
         "models"
-      ],
-      "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "DeepSeek Harness стал агентом разработки №1 на GitHub и тестирует Agent Teams - Techora.ru",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxON0JIaUZRci00N041Ym1la1dKUjl4YVdBM0pMTmYtYnFNbXNKUmtEMjR6UWh6MWZ0MmIxcURTdVByWG9qXzJVbUtYeThOeGZqOTAxX1U5OWlTVG1oamEzdi1ZREx3STZuclJBeXUxUWRFSlluOWpqRk5BRkdQRjRzZEFWdw?oc=5",
-      "desc": "DeepSeek Harness стал агентом разработки №1 на GitHub и тестирует Agent Teams Techora.ru",
-      "source": "Techora.ru",
-      "time": 1788854649.0,
-      "_score_components": {
-        "relevance": 20.0,
-        "ai_specificity": 6.5,
-        "impact": 8.0,
-        "event_concreteness": 0.0,
-        "practical_value": 2.0,
-        "novelty": 0.0,
-        "source_quality": 3.0,
-        "evidence": 1.1,
-        "freshness": 4.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 44.6,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 44.6
-      },
-      "base_score": 44.6,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 44.6,
-      "russia_weight_bonus": 0.0,
-      "key": "3d18a4b16e06dc0f7764b62e0f70ef209f00dfc8ff0c4b6023475966e8b46fd0",
-      "importance": 44.6,
-      "editorial_value": 49.6,
-      "topics": [
-        "agents"
       ],
       "tier": "A"
     },
@@ -1160,20 +1125,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788860238.403609,
+    "last_start_ts": 1788860407.130093,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788860238.403609,
-    "last_success_ts": 1788860238.403609,
+    "last_run_ts": 1788860407.130093,
+    "last_success_ts": 1788860407.130093,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 13
+    "queue_size": 12
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788860242.3585312
+      "updated_at": 1788860412.6990504
     },
     "GROQ": {
       "disabled_until": 1788878310.3510802,
@@ -1879,6 +1844,13 @@
       "desc": "Shenzhen Longsys Electronics secures $903 million funding to boost AI data center technology expansion The Economic Times",
       "source": "The Economic Times",
       "region": "WORLD"
+    },
+    "3d18a4b16e06dc0f7764b62e0f70ef209f00dfc8ff0c4b6023475966e8b46fd0": {
+      "time": 1788860407,
+      "title": "DeepSeek Harness стал агентом разработки №1 на GitHub и тестирует Agent Teams - Techora.ru",
+      "desc": "DeepSeek Harness стал агентом разработки №1 на GitHub и тестирует Agent Teams Techora.ru",
+      "source": "Techora.ru",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
@@ -1886,7 +1858,6 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -1901,82 +1872,12 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "last_search_ts": 1788859504.211661,
-  "last_publish_ts": 1788860238.403609,
+  "last_publish_ts": 1788860407.130093,
   "run_history": [
-    {
-      "ts": 1788724064,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 6.51,
-      "candidates": 0,
-      "queue_before": 15,
-      "queue_after": 14,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "ARTICLE_SOURCE_UNRESOLVED": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "ARTICLE_SOURCE_UNRESOLVED"
-          }
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788724119,
       "status": "OK",
@@ -20031,6 +19932,97 @@
         ],
         "used": "GEMINI",
         "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788860407,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 7.12,
+      "candidates": 0,
+      "queue_before": 13,
+      "queue_after": 12,
+      "published": 1,
+      "publish_attempts": 2,
+      "item_failures": 1,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "IMAGE_NOT_FOUND": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "IMAGE_NOT_FOUND"
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 30.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 9.0,
+            "bonus": 18.0,
+            "reason": "Критический сдвиг в инструментарии разработки, требующий немедленной адаптации процессов.",
+            "title": "DeepSeek Harness стал агентом разработки №1 на GitHub и тестирует Agent Teams - Techora.ru",
+            "final_score": 62.6
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 11,
+          "final_below_threshold": 1,
+          "invariant_ok": false
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
         "failures": 0,
         "blocked": 0,
         "skipped_no_key": 0,
