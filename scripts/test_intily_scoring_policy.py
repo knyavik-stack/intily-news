@@ -45,17 +45,18 @@ class ScoringPolicyTests(unittest.TestCase):
             'OpenAI launches a new reasoning model for enterprise coding',
             'OpenAI released the model today with lower latency and a larger context window for production software teams.'
         )
-        self.assertGreaterEqual(value, 40.0)
+        self.assertGreaterEqual(value, 50.0)
         self.assertGreater(parts['event_concreteness'], 0)
         self.assertGreater(parts['impact'], 0)
 
     def test_major_acquisition_has_strong_base_materiality(self):
         value, parts = self.score(
             'Nvidia acquires AI infrastructure startup for $8 billion',
-            'The acquisition expands Nvidia capacity for AI inference and enterprise deployment.'
+            'The acquisition expands Nvidia capacity for AI inference and enterprise deployment. The deal changes infrastructure capacity for customers and includes a concrete financial commitment.'
         )
-        self.assertGreaterEqual(value, 40.0)
+        self.assertGreaterEqual(value, 60.0)
         self.assertGreaterEqual(parts['event_concreteness'], 14.0)
+        self.assertGreaterEqual(parts['impact'], 10.0)
 
     def test_generic_ai_commentary_does_not_clear_final_gate_by_itself(self):
         value, _parts = self.score(
@@ -77,6 +78,18 @@ class ScoringPolicyTests(unittest.TestCase):
         self.assertLessEqual(_freshness(2), WEIGHTS['freshness'])
         self.assertLessEqual(_freshness(6), WEIGHTS['freshness'])
         self.assertLessEqual(_freshness(12), WEIGHTS['freshness'])
+
+    def test_strong_event_can_use_upper_half_of_base_scale(self):
+        value, parts = self.score(
+            'OpenAI launches frontier AI model worldwide with record performance',
+            'OpenAI released a production model after a major benchmark. It improves performance, latency, cost, users and enterprise deployment. '
+            'The launch is global, first-ever and critical for developers, coding, automation, integration and business operations. '
+            'The event affects security and risk for customers and includes measurable performance and cost changes.'
+        )
+        self.assertGreaterEqual(value, 60.0)
+        self.assertLessEqual(value, BASE_MAX)
+        for key, maximum in WEIGHTS.items():
+            self.assertLessEqual(parts[key], maximum, key)
 
     def test_scoring_never_exceeds_base_max(self):
         value, _parts = self.score(
