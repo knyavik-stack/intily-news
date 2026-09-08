@@ -461,7 +461,7 @@ def score(x):
     if age < -0.5 or age > LOOKBACK.total_seconds() / 3600.0:
         return 0.0
 
-    relevance = 45.0 if ai_relevant(x) else 0.0
+    relevance = 35.0 if ai_relevant(x) else 0.0
     impact_hits = sum(1 for term in HIGH_IMPACT_TERMS if term in blob)
     impact = min(20.0, impact_hits * 8.0)
     application_hits = sum(1 for term in APPLICATION_TERMS if term in blob)
@@ -487,19 +487,19 @@ def editorial_value(x):
     value = x.get('score', 0)
 
     if source in QUALITY_TRUSTED:
-        value += 3.0
+        value += 6.0
     if any(term in blob for term in HIGH_IMPACT_TERMS):
-        value += 3.0
+        value += 6.0
     if any(term in blob for term in APPLICATION_TERMS):
-        value += 2.0
+        value += 4.0
     if any(term in blob for term in PRACTICAL_IMPLEMENTATION_TERMS):
-        value += 3.0
+        value += 6.0
     if any(term in blob for term in RISK_AND_PROBLEM_TERMS):
-        value += 3.0
+        value += 6.0
     if any(term in blob for term in EXCLUSIVITY_TERMS):
-        value += 2.0
+        value += 4.0
     if len(normalize(x.get('desc', ''))) >= 120:
-        value += 1.0
+        value += 2.0
     elif len(normalize(x.get('desc', ''))) < 35:
         value -= 3.0
     if any(term in blob for term in LOW_SIGNAL_TERMS):
