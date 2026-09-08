@@ -13,7 +13,7 @@ from datetime import datetime, timezone
 
 THRESHOLD = 55.0
 BASE_MAX = 70.0
-AI_MAX = 30.0
+AI_MAX = 50.0
 
 WEIGHTS = {
     'relevance': 12.0,
