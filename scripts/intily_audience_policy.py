@@ -70,10 +70,22 @@ def build_evaluation_instruction():
         'Это второй редакторский сигнал и ровно 30% итоговой шкалы: score × 3, то есть 1/10=+3 и 10/10=+30.\n'
     )
 
+# Runtime activation keeps the hardened media fetch and makes one important
+# Telegram constraint explicit: never truncate editorial text to fit a photo
+# caption. If the complete sanitized caption exceeds Telegram's 1024-char
+# limit, the caller falls back to the complete text-only post.
 try:
     import intily_image_pipeline as _image_pipeline
     from intily_image_runtime import fetch_image as _runtime_fetch_image
     _image_pipeline.fetch_image = _runtime_fetch_image
+
+    def _full_or_reject_photo_caption(text, limit=1024):
+        sanitized = _image_pipeline._sanitize_telegram_html(text)
+        if len(sanitized) > limit:
+            raise ValueError('PHOTO_CAPTION_LIMIT_TEXT_FALLBACK')
+        return sanitized
+
+    _image_pipeline._photo_caption = _full_or_reject_photo_caption
     IMAGE_HARDENING_ACTIVE = True
 except Exception as _image_runtime_error:
     IMAGE_HARDENING_ACTIVE = False
