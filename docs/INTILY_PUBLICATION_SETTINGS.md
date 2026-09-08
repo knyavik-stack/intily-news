@@ -1,48 +1,55 @@
 # INTILY Publication Settings
 
-**Дата актуализации:** 2026-09-07
+**Дата актуализации:** 2026-09-08
 
 ## Effective production policy
 
-The effective production policy is assembled by `scripts/intily_ai_news_runner.py` on top of the base engine. The runner values below therefore override older base-file defaults where they differ.
+The effective production policy is assembled by `scripts/intily_ai_news_runner.py` and the audience policy module.
 
 | Setting | Effective value | Meaning |
 |---|---:|---|
 | Discovery lookback | 12 h | Maximum age eligible for discovery/queue |
 | Planned search interval | 30 min | Normal discovery cadence |
 | Telegram publication interval | 3 min | Minimum gap between posts |
-| Pre-AI gate | 40/100 | Minimum base score to reach AI editorial/audience evaluation |
+| Pre-AI gate | **40/100** | Minimum base score to reach AI editorial/audience evaluation |
+| Base score ceiling | **70/100** | Deterministic editorial layer |
 | Final publication gate | **55/100** | Minimum final score after audience-fit |
-| Audience score | 1–10 | AI editorial usefulness for the target audience |
-| Audience bonus | +2…+20 | `audience_score × 2` |
+| Audience score | **1–10** | AI editorial usefulness for the target audience |
+| Audience bonus | **+3…+30** | `audience_score × 3`; exactly 30% of scale |
 | Max queue | 20 | Durable qualifying-story capacity |
 | RU/WORLD portfolio target | ~40% / ~60% | Portfolio objective; no fabricated RU content |
 | Regional relevance bonus | 0 | Geography does not alter mathematical relevance |
 | Joke target | 90% | Only for suitable non-serious posts; editorial gate remains independent |
 | Immediate search queue threshold | 1 | Search immediately when queue has 1 or fewer stories |
-| Queue diagnostics | ON | Temporary footer for operational observation |
+| Queue diagnostics | ON | Operational observation |
 
 ## Canonical publication flow
 
 ```text
 sources / discovery
     ↓
-base score
+base editorial score 0–70
     ↓
 pre-AI gate 40
     ↓
 AI translation + summary + audience score 1–10
     ↓
-audience bonus +2…+20
+audience bonus +3…+30
     ↓
-final score
+final score 0–100
     ↓
 final gate 55
     ↓
 Telegram
 ```
 
-The 55 threshold is an editorial admission threshold, not a request to publish weak news. The audience layer can raise a professionally useful 40–54 base candidate, while the final gate still rejects material below 55.
+A pre-AI 40–54 candidate is legitimate queue material. A finalized item below 55 is a reject and is removed from durable queue. It must never be published.
+
+## Audience-fit policy
+
+The AI score is consequence-first. High scores require concrete impact on work, product, business, economics, technology strategy, regulation, security or material risk.
+
+The model explicitly avoids rewarding a story simply because it mentions a major AI company, a large valuation/funding round, a rumor, a forecast or a dramatic headline.
 
 ## Media policy
 
@@ -51,50 +58,32 @@ The 55 threshold is an editorial admission threshold, not a request to publish w
 - Image candidates are validated independently so a broken or oversized first candidate does not suppress a later valid publisher image.
 - **1,000,000 bytes is a hard delivery cap.** Images above 1 MB are skipped; Intily does not resize or recompress them to fit.
 - If no acceptable image remains, the story may be sent text-only when the editorial/publication gate passes.
-- Photo captions preserve supported Telegram HTML formatting, sanitize unsafe markup/links, and are bounded to Telegram's 1024-character caption limit after escaping.
+- Photo captions preserve supported Telegram HTML formatting and sanitize unsafe markup/links.
+- **Photo captions are never truncated.** If the complete sanitized caption exceeds Telegram's 1024-character limit, the full text is delivered via text-only fallback so the editorial tail cannot disappear.
+
+## Queue invariant
+
+The durable queue may contain:
+
+- `score_stage=pre_ai` with base 40–54;
+- `score_stage=pre_ai` with base 55+;
+- finalized items only when final score ≥55.
+
+It may **not** contain `score_stage=final` with score <55. The runtime guard enforces this during queue rebalancing.
 
 ## Analytics contract
 
-**Publisher Summary** shows only the current cycle. It reports current ingestion, filtering, candidates, queue admission, publication, provider and media telemetry.
+**Publisher Summary** shows only the current cycle. It reports ingestion, filtering, candidates, queue admission, publication, provider and media telemetry.
 
 **Production Monitor** shows history over 24 hours, 7 days and stored runs. It reports publication frequency, no-publication reasons, source health, audience-fit, media delivery, provider/failover and warnings.
 
-The analytics scripts import the effective editorial thresholds rather than duplicating hard-coded historical values.
+The analytics scripts use effective production thresholds instead of historical hard-coded 60 values.
 
-## Production observations
+## Last verified production evidence
 
-### Run #577 — 2026-09-07
+Run #680 (`34219243075`) passed 21 regression tests and published one story at final score 69.1 under the old ×2 audience layer. It also exposed `final_below_threshold=4` in the queue; those were not published because the editor gate rejected them, but the queue state violated the intended invariant. The new guard closes this.
 
-Run #577 was technically successful but lasted about **3m53s** from runner start to cleanup. The news engine itself did not spend that time on RSS search: it logged `SEARCH_SKIPPED`, then spent the majority of the runtime in AI editorial retries/failover.
-
-Observed provider conditions:
-
-- Gemini first recovered after a retry, then later hit repeated 503/timeout conditions;
-- Groq returned HTTP 403 / error 1010 and was circuit-opened;
-- OpenAI returned HTTP 429 / no credits and was circuit-opened;
-- the queue contained existing items, so the run still attempted editorial processing and retried failed items.
-
-This explains the near-four-minute runtime. It is a provider-availability/retry-budget issue, not an RSS collection loop. The system correctly avoided publishing when all attempted items failed editorial QA.
-
-### Run #578 — 2026-09-07
-
-Run #578 completed successfully in roughly **28 seconds**. It demonstrated that a publisher-hosted image can be found and validated: the selected image was **48,472 bytes**. It was not sent as a photo because the old caption-length guard emitted `CAPTION_TOO_LONG`.
-
-The guard is now replaced by a safe Telegram-HTML caption path. The previous implementation also stripped all formatting tags from photo captions; that regression is fixed so bold/italic/link/code formatting is retained while unsafe markup is removed.
-
-### Run #579 — 2026-09-07
-
-Run #579 failed fast in the regression gate, before the news engine, because the caption test exposed a post-escaping length bug. The fix now bounds the final sanitized Telegram HTML rather than raw pre-escaped text.
-
-### Post-#579 media fix
-
-The media pipeline now enforces the 1 MB limit while iterating candidates, so an oversized first image is rejected immediately and the resolver continues to the next candidate. A second runtime-side 1 MB defense remains in place.
-
-The next scheduled production cycle must verify the complete path:
-
-`IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`
-
-with formatted caption preserved and sent image payload ≤1,000,000 bytes.
+The same run hit HTTP 403 on the image path, so the new publisher-image path still needs one live confirmation after these changes.
 
 ## Operational rule
 
