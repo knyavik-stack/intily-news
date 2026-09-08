@@ -1,15 +1,14 @@
-"""Production scoring runtime guard and transparent score diagnostics.
+"""Production scoring runtime guard, final-score ordering and score diagnostics.
 
-The legacy runner still contains a historical pre-AI +10 audience placeholder.
-The guard enforces the canonical stage contract and adds a compact, explicit
-score breakdown to every published post. The breakdown is intentionally added
-before the image delivery layer so the photo-caption safety policy can decide
-whether the complete post fits Telegram's caption limit; editorial text is never
-truncated to make room for diagnostics.
+The legacy runner contains historical scoring behavior that must not leak into
+production ordering: a pre-AI +10 placeholder and a random RU queue bonus. This
+adapter enforces the canonical contract, evaluates queued candidates before
+publication ordering, sorts by the resulting final score, and appends a compact
+traceable score footer without truncating editorial text.
 """
 
 import functools
-import html
+import time
 
 
 SCORE_COMPONENT_LABELS = (
@@ -41,11 +40,7 @@ def _score_footer(item):
     for key, label, maximum in SCORE_COMPONENT_LABELS:
         value = float(components.get(key, 0) or 0)
         lines.append(f'{label}: {value:.1f}/{maximum:.0f}')
-    if penalty:
-        lines.append(f'Шум/низкий сигнал: −{penalty:.1f}')
-    else:
-        lines.append('Шум/низкий сигнал: 0.0')
-
+    lines.append(f'Шум/низкий сигнал: −{penalty:.1f}' if penalty else 'Шум/низкий сигнал: 0.0')
     if audience_score is not None:
         lines.append(f'Аудитория: {float(audience_score):.0f}/10 → +{audience_bonus:.1f}')
     else:
@@ -55,14 +50,31 @@ def _score_footer(item):
 
 def _attach_score_footer(item, post):
     """Append diagnostics without ever truncating the editorial post."""
-    footer = _score_footer(item)
-    candidate = str(post or '').rstrip() + '\n' + footer
-    # Telegram text messages are limited to 4096 characters. Photo captions are
-    # stricter at 1024; image runtime will deliberately fall back to full text
-    # if the complete caption is too long. Never slice the candidate here.
+    candidate = str(post or '').rstrip() + '\n' + _score_footer(item)
     if len(candidate) > 4096:
         raise RuntimeError('SCORE_DIAGNOSTICS_TEXT_LIMIT')
     return candidate
+
+
+def _base_recalculate(publisher, item):
+    """Remove legacy RU bonus and make importance equal to deterministic base."""
+    item.pop('russia_weight_bonus', None)
+    item['audience_score'] = None
+    base = float(publisher.score(item))
+    item['score'] = round(base, 1)
+    item['importance'] = round(base, 1)
+    item['base_score'] = round(base, 1)
+    item['audience_bonus'] = 0.0
+    item['score_stage'] = 'pre_ai'
+    return base
+
+
+def _final_sort_key(item):
+    """Canonical queue/publication ordering: final score first, freshness second."""
+    return (
+        float(item.get('importance', item.get('score', 0.0)) or 0.0),
+        float(item.get('time', 0.0) or 0.0),
+    )
 
 
 class PublisherScoreProxy:
@@ -105,20 +117,82 @@ def run_production():
     runner.apply_policy(publisher)
     runner.apply_image_delivery(publisher)
 
-    # The runner's editorial wrapper has already performed AI audience scoring.
-    # Add the transparent breakdown immediately before main() starts publication,
-    # so both photo and text delivery receive exactly the same complete content.
+    # Final score is the publication order. Editorial/geography heuristics may
+    # describe the item, but they must not outrank the agreed score.
+    publisher.publication_priority = lambda state, item: float(
+        item.get('importance', item.get('score', 0.0)) or 0.0
+    )
+
     original_edit = publisher.edit
+    post_cache = {}
+    current_state = {'value': None}
 
     @functools.wraps(original_edit)
     def edit_with_score_footer(item, state):
+        key = item.get('key') or item.get('link') or item.get('title')
+        cached = post_cache.get(key)
+        if cached is not None:
+            return cached
         post = original_edit(item, state)
-        item['_score_components'] = dict(item.get('_score_components') or {})
         post = _attach_score_footer(item, post)
-        item['post'] = post
+        post_cache[key] = post
         return post
 
     publisher.edit = edit_with_score_footer
+
+    def evaluate_item(item, state):
+        """Run the real AI editorial layer once and cache its complete post."""
+        if item.get('score_stage') == 'final' and item.get('audience_score') is not None:
+            return True
+        try:
+            _base_recalculate(publisher, item)
+            edit_with_score_footer(item, state)
+            return item.get('score_stage') == 'final' and item.get('audience_score') is not None
+        except Exception as exc:
+            print('FINAL_SCORE_PRECHECK_FAILED', str(item.get('title', ''))[:160], str(exc)[:240])
+            try:
+                _base_recalculate(publisher, item)
+            except Exception:
+                pass
+            return False
+
+    original_load_state = publisher.load_state
+
+    def load_state_with_final_score_precheck(*args, **kwargs):
+        state = original_load_state(*args, **kwargs)
+        current_state['value'] = state
+        now = time.time()
+        published = state.get('published', {})
+        for item in list(state.get('queue', []) or []):
+            if item.get('key') in published or item.get('legacy_key') in published:
+                continue
+            if float(item.get('time', 0) or 0) < now - publisher.LOOKBACK.total_seconds():
+                continue
+            if item.get('score_stage') != 'final':
+                evaluate_item(item, state)
+        state['queue'] = sorted(state.get('queue', []) or [], key=_final_sort_key, reverse=True)
+        print('FINAL_SCORE_QUEUE_PRECHECK', len(state.get('queue', []) or []))
+        return state
+
+    publisher.load_state = load_state_with_final_score_precheck
+
+    original_collect = publisher.collect
+
+    def collect_with_final_score_precheck(telemetry=None):
+        candidates = original_collect(telemetry)
+        state = current_state.get('value')
+        if state is not None:
+            for item in candidates:
+                # The legacy collector adds a random RU bonus after score().
+                # Recalculate immediately so RU and WORLD use the same base.
+                _base_recalculate(publisher, item)
+                evaluate_item(item, state)
+            candidates.sort(key=_final_sort_key, reverse=True)
+            print('FINAL_SCORE_CANDIDATES_SORTED', len(candidates))
+        return candidates
+
+    publisher.collect = collect_with_final_score_precheck
+
     publisher.main()
 
 
