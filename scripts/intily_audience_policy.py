@@ -70,13 +70,25 @@ def build_evaluation_instruction():
         'Это второй редакторский сигнал и ровно 30% итоговой шкалы: score × 3, то есть 1/10=+3 и 10/10=+30.\n'
     )
 
-# Runtime activation keeps the hardened media fetch and makes one important
-# Telegram constraint explicit: never truncate editorial text to fit a photo
-# caption. If the complete sanitized caption exceeds Telegram's 1024-char
-# limit, the caller falls back to the complete text-only post.
 try:
+    import intily_ai_news as _publisher
     import intily_image_pipeline as _image_pipeline
     from intily_image_runtime import fetch_image as _runtime_fetch_image
+
+    # Finalized items below the production gate are never durable queue items.
+    # Pre-AI 40–54 items remain valid queue candidates until AI editorial review.
+    _original_rebalance_queue = _publisher.rebalance_queue
+    def _guard_final_queue(queue, now):
+        filtered = [
+            item for item in (queue or [])
+            if not (
+                str(item.get('score_stage', 'pre_ai')) == 'final'
+                and float(item.get('importance', item.get('score', 0)) or 0) < FINAL_THRESHOLD
+            )
+        ]
+        return _original_rebalance_queue(filtered, now)
+    _publisher.rebalance_queue = _guard_final_queue
+
     _image_pipeline.fetch_image = _runtime_fetch_image
 
     def _full_or_reject_photo_caption(text, limit=1024):
