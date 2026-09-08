@@ -33,7 +33,8 @@
     "b604140436913215abe8096f815b72738b4cb1d7233656948c6c577c791e286a": 1788890604,
     "45bcd9f8318d321efc0bd22834c7748dd17e079ce11de4eb82be9d397c991c41": 1788890784,
     "c5c3ee8b29e45c3274691da228d927fe911fb83e1a8fa748028f2b8b0867a90f": 1788890962,
-    "33c78c5c9e92b765d7c6eea8e5cefa0de7ab6af618e69bed75aa9bf961d62224": 1788891143
+    "33c78c5c9e92b765d7c6eea8e5cefa0de7ab6af618e69bed75aa9bf961d62224": 1788891143,
+    "d2f8f3161d5cf3c5eeacacb1933d1c9bfa5392f6084fbad3e8ed84a3a0378351": 1788891322
   },
   "known": {
     "1b227251c5dfdf1886227a64e446d5dc6ed5b681b41dd1552bf2585c3da6f12f": 1788887004.696961,
@@ -142,42 +143,6 @@
     "02acbe433fbe791f12bc1e171f8d6fd8a4d4fd885e3f251777cf0039d864b2c9": 1788890784.5061297
   },
   "queue": [
-    {
-      "region": "WORLD",
-      "title": "Chrome is now shipping updates every 2 weeks as AI changes the security landscape",
-      "link": "https://techcrunch.com/2026/09/08/chrome-is-now-shipping-updates-every-2-weeks-as-ai-changes-the-security-landscape/",
-      "desc": "Google is speeding up Chrome’s release schedule to ship security patches and new features faster.",
-      "source": "TechCrunch AI",
-      "time": 1788879849.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.3,
-        "impact": 13.8,
-        "event_concreteness": 18.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 0.7,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 50.8,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 50.8
-      },
-      "base_score": 50.8,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 50.8,
-      "key": "d2f8f3161d5cf3c5eeacacb1933d1c9bfa5392f6084fbad3e8ed84a3a0378351",
-      "importance": 50.8,
-      "editorial_value": 50.0,
-      "topics": [
-        "security_regulation",
-        "tools"
-      ],
-      "tier": "A"
-    },
     {
       "region": "WORLD",
       "title": "OpenAI Reports Rogue AI Agent Incident to European Commission - Tekedia",
@@ -718,20 +683,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788891143.7296638,
+    "last_start_ts": 1788891322.9602268,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788891143.7296638,
-    "last_success_ts": 1788891143.7296638,
+    "last_run_ts": 1788891322.9602268,
+    "last_success_ts": 1788891322.9602268,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 16
+    "queue_size": 15
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788891147.01806
+      "updated_at": 1788891358.0199811
     }
   },
   "stories": {
@@ -972,10 +937,16 @@
       "desc": "OpenAI заявила о решении задачи Навье - Стокса! OpenAI опубликовала 165-страничное доказательство по одной из семи задач тысячелетия - существованию и гладкости решений уравнений Навье - Стокса. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "d2f8f3161d5cf3c5eeacacb1933d1c9bfa5392f6084fbad3e8ed84a3a0378351": {
+      "time": 1788891322,
+      "title": "Chrome is now shipping updates every 2 weeks as AI changes the security landscape",
+      "desc": "Google is speeding up Chrome’s release schedule to ship security patches and new features faster.",
+      "source": "TechCrunch AI",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -994,7 +965,8 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
     {
@@ -4448,9 +4420,99 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1788891322,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 36.24,
+      "candidates": 0,
+      "queue_before": 16,
+      "queue_after": 15,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 24.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость перестройки процессов CI/CD и безопасности под ускоренный цикл релизов браузера.",
+            "title": "Chrome is now shipping updates every 2 weeks as AI changes the security landscape",
+            "final_score": 74.8
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 15,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1788890784.5061297,
-  "last_publish_ts": 1788891143.7296638
+  "last_publish_ts": 1788891322.9602268
 }
