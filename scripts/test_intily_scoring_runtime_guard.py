@@ -1,6 +1,6 @@
 import unittest
 
-from intily_scoring_runtime_guard import PublisherScoreProxy, _attach_score_footer
+from intily_scoring_runtime_guard import PublisherScoreProxy, _attach_score_footer, _final_sort_key
 
 
 class ScoringRuntimeGuardTests(unittest.TestCase):
@@ -45,6 +45,15 @@ class ScoringRuntimeGuardTests(unittest.TestCase):
         proxy.score = legacy_score
         item = {'audience_score': 10}
         self.assertEqual(proxy.score(item), 100.0)
+
+    def test_final_score_is_primary_queue_order(self):
+        items = [
+            {'importance': 71.0, 'time': 300},
+            {'importance': 94.0, 'time': 100},
+            {'importance': 83.0, 'time': 200},
+        ]
+        ordered = sorted(items, key=_final_sort_key, reverse=True)
+        self.assertEqual([x['importance'] for x in ordered], [94.0, 83.0, 71.0])
 
     def test_footer_contains_every_component_and_total(self):
         item = {
