@@ -11,8 +11,8 @@ import json
 from collections import Counter
 from pathlib import Path
 
-from intily_scoring_policy import THRESHOLD, WEIGHTS, BASE_MAX
-from intily_audience_policy import FINAL_THRESHOLD, PRE_AI_THRESHOLD, AI_MAX
+from intily_scoring_policy import THRESHOLD, WEIGHTS, BASE_MAX, AI_MAX
+from intily_audience_policy import FINAL_THRESHOLD, PRE_AI_THRESHOLD
 
 ROOT = Path(__file__).resolve().parents[1]
 STATE_PATH = ROOT / 'data' / 'intily-ai-news-state.json'
@@ -33,8 +33,8 @@ def pct(value, total):
 def bucket(score):
     try:
         value = float(score)
-    except (TypeError, ValueError):
-        return 'не определён'
+    except Exception:
+        value = 0.0
     if value < 40:
         return '0–39'
     if value < 50:
@@ -52,147 +52,61 @@ def bucket(score):
     return '90–100'
 
 
-def current_run(state):
-    rows = state.get('run_history', [])
-    return rows[-1] if rows else {}
-
-
-def print_rejection(run):
-    rss = run.get('rss', {})
-    admission = run.get('admission', {})
-    raw = int(rss.get('raw_items', 0) or 0)
-    score_filtered = int(rss.get('score_filtered', 0) or 0)
-    quality_filtered = int(rss.get('quality_filtered', 0) or 0)
-    story_dedup = int(rss.get('story_dedup', 0) or 0)
-    candidates = int(rss.get('candidates', 0) or 0)
-    added = int(admission.get('added', 0) or 0)
-
-    print('## Причины отсева — текущий запуск\n')
-    print('| Этап | Количество | Доля от входа этапа | Что означает |')
-    print('|---|---:|---:|---|')
-    print(f'| Получено из источников | {raw} | 100% | материалы младше активного окна |')
-    print(f'| Отсечено по весу | {score_filtered} | {pct(score_filtered, raw)} | итоговый вес ниже {PRE_AI_THRESHOLD:.1f} на pre-AI этапе |')
-    print(f'| Отсечено по качеству и релевантности | {quality_filtered} | {pct(quality_filtered, max(1, raw-score_filtered))} | не прошёл AI relevance или редакционный gate |')
-    print(f'| Схлопнуто как повтор истории | {story_dedup} | {pct(story_dedup, max(1, raw-score_filtered-quality_filtered))} | одно событие найдено в нескольких источниках/запросах |')
-    print(f'| Кандидаты | {candidates} | — | прошли ingestion-фильтры |')
-    print(f'| Не допущено в очередь | {max(0, candidates-added)} | {pct(max(0, candidates-added), max(1, candidates))} | уже опубликовано / недавно известно / в очереди / semantic history |')
-    print(f'| Новых в очереди | {added} | {pct(added, max(1, candidates))} | реально допущены в durable queue |')
-    print('\n### Причины admission\n')
-    labels = {
-        'published_key': 'уже опубликовано ранее',
-        'known_recent': 'недавно уже обрабатывалось',
-        'already_queued': 'уже находится в очереди',
-        'story_queue': 'та же история уже находится в очереди',
-        'story_history': 'та же история уже была опубликована недавно',
-    }
-    print('| Причина | Количество |')
-    print('|---|---:|')
-    for key, label in labels.items():
-        print(f"| {label} | {int(admission.get(key, 0) or 0)} |")
-
-
-def print_weight_policy():
-    descriptions = {
-        'relevance': 'прямое отношение материала к ИИ',
-        'ai_specificity': 'плотность конкретных AI-концепций, моделей и технологий',
-        'impact': 'масштаб и значимость события',
-        'event_concreteness': 'наличие конкретного события: запуск, сделка, исследование, закон и т.п.',
-        'practical_value': 'внедрение, автоматизация, разработка и применимость',
-        'novelty': 'новизна, эксклюзивность и числовая конкретика',
-        'source_quality': 'качество и доверенность источника',
-        'evidence': 'информативность описания без линейной накрутки длиной',
-        'freshness': 'свежесть материала в активном окне',
-        'timeliness': 'дополнительная ценность действительно свежего события',
-    }
-    names = {
-        'relevance': 'AI-релевантность', 'ai_specificity': 'AI-специфичность',
-        'impact': 'Влияние события', 'event_concreteness': 'Конкретность события',
-        'practical_value': 'Практическая ценность', 'novelty': 'Новизна',
-        'source_quality': 'Качество источника', 'evidence': 'Доказательность',
-        'freshness': 'Свежесть', 'timeliness': 'Своевременность',
-    }
-    print('## Как формируется вес новости\n')
-    print(f'Базовый детерминированный вес: **0–{BASE_MAX:.0f}**. AI contribution: **0–{AI_MAX:.0f}**. Полная итоговая шкала: **0–100**. Pre-AI порог **{PRE_AI_THRESHOLD:.1f}**, финальный порог публикации **{FINAL_THRESHOLD:.1f}**.')
-    print('\n| Компонент | Максимум | Что оценивается |')
-    print('|---|---:|---|')
-    for key, maximum in WEIGHTS.items():
-        print(f'| {names[key]} | {maximum:.1f} | {descriptions[key]} |')
-    print('| Низкий сигнал | −6.0 | реклама, sponsored, промокоды и аналогичный шум |')
-    print(f'| **Итого base** | **{sum(WEIGHTS.values()):.1f}** | должно быть ровно {BASE_MAX:.0f} |')
-    print(f'| **AI audience** | **+3…+{AI_MAX:.0f}** | только после AI-оценки |')
-    print('| **Итого final max** | **100.0** | base 70 + AI 30 |')
-    print('\n### Логика калибровки\n')
-    print(f'- Pre-AI порог **{PRE_AI_THRESHOLD:.1f}** оставляет профессионально интересный пограничный поток для AI-редактора.')
-    print(f'- Финальный порог публикации **{FINAL_THRESHOLD:.1f}** — редакционная граница допуска после audience-fit.')
-    print('- Pre-AI не получает фиктивного audience bonus: до AI-оценки bonus всегда равен 0.')
-    print('- AI-релевантность отделена от AI-специфичности: «материал про AI» и «материал с конкретным технологическим событием» — разные свойства.')
-    print('- Добавлена конкретность события: запуск, релиз, исследование, инвестиция, сделка, регулирование и другие проверяемые события получают отдельный вклад.')
-    print('- Свежесть разделена на общий freshness и timeliness, чтобы текущие события не конкурировали на равных со старыми материалами.')
-    print('- Случайный бонус региона не используется. География влияет только на publication priority.')
-    print('\n### Категории\n')
-    print('| Вес | Категория |')
-    print('|---:|---|')
-    print(f'| 0–{FINAL_THRESHOLD-0.1:.1f} | не проходит финальный порог |')
-    print(f'| {FINAL_THRESHOLD:.1f}–84.9 | A |')
-    print('| 85.0–100 | S |')
-
-
-def print_weight_distribution(state):
-    run = current_run(state)
-    rss = run.get('rss', {})
-    incoming = rss.get('score_buckets', {})
-    queue = state.get('queue', [])
-    queue_counts = Counter(bucket(x.get('importance', x.get('score'))) for x in queue)
-    names = ('0–39', '40–49', '50–59', '60–69', '70–79', '80–84', '85–89', '90–100')
-    print('\n## Распределение новостей по весу\n')
-    print('### Входной поток последнего запуска\n')
-    print('| Вес | Материалов |')
-    print('|---:|---:|')
-    for name in names:
-        print(f"| {name} | {int(incoming.get(name, 0) or 0)} |")
-    print('\n### Durable-очередь сейчас\n')
-    print('| Вес | Новостей |')
-    print('|---:|---:|')
-    if queue_counts:
-        for name in names:
-            if queue_counts.get(name, 0):
-                print(f'| {name} | {queue_counts[name]} |')
-    else:
-        print('| — | 0 |')
-
-
-def print_sources(search):
-    runs = search.get('runs', []) if isinstance(search, dict) else []
-    latest = runs[-1] if runs else {}
-    print('\n## Почему источник может не дать материал\n')
-    print('**Нулевой результат сам по себе не является ошибкой.** Он означает, что запрос/лента ответили, но в активном временном окне не осталось свежих материалов. Ошибка — отдельный технический сигнал.')
-    print('\n| Источник/запрос | Результат | Интерпретация |')
-    print('|---|---:|---|')
-    for q in latest.get('queries', []):
-        raw = int(q.get('raw', 0) or 0)
-        reason = 'есть свежие материалы' if raw else 'ответил, но свежих материалов в окне нет'
-        print(f"| {q.get('region','')} — {q.get('query','')} | {raw} | {reason} |")
-    for src in latest.get('direct', []):
-        raw = int(src.get('raw', 0) or 0)
-        reason = 'есть свежие материалы' if raw else 'лента доступна, но свежих материалов в окне нет'
-        print(f"| {src.get('source','')} | {raw} | {reason} |")
-    errors = latest.get('errors', [])
-    if errors:
-        print('\n### Ошибки источников текущего запуска')
-        for error in errors:
-            print(f'- {error}')
-    print('\nМатериал также может исчезнуть после получения: из-за низкого веса, нерелевантности ИИ, повторения той же истории, уже опубликованного ключа, недавней обработки или наличия аналогичной истории в очереди/semantic memory.')
-
-
 def main():
     state = load_json(STATE_PATH, {})
-    search = load_json(SEARCH_PATH, {'runs': []})
-    run = current_run(state)
-    print('# Intily — аналитика алгоритма отбора\n')
-    print_rejection(run)
-    print_weight_policy()
-    print_weight_distribution(state)
-    print_sources(search)
+    history = state.get('run_history', []) or []
+    queue = state.get('queue', []) or []
+    latest = history[-1] if history else {}
+    admission = latest.get('admission', {}) or {}
+    rss = latest.get('rss', {}) or {}
+
+    scores = [float(x.get('importance', x.get('score', 0)) or 0) for x in queue]
+    buckets = Counter(bucket(x) for x in scores)
+    final_scores = [float(x.get('importance', x.get('score', 0)) or 0) for x in queue if x.get('score_stage') == 'final']
+    pre_ai_scores = [float(x.get('importance', x.get('score', 0)) or 0) for x in queue if x.get('score_stage', 'pre_ai') != 'final']
+
+    print('# Intily — аналитика политики отбора')
+    print()
+    print('## Каноническая формула')
+    print()
+    print(f'- Base score: **0–{BASE_MAX:g}**.')
+    print(f'- AI audience contribution: **+3…+{AI_MAX:g}**.')
+    print(f'- Final score: `min(100, base_score + audience_score × 3)`.')
+    print(f'- Pre-AI gate: **{PRE_AI_THRESHOLD:g}**.')
+    print(f'- Final publication gate: **{FINAL_THRESHOLD:g}**.')
+    print(f'- `sum(WEIGHTS) = {sum(WEIGHTS.values()):g}`; canonical base ceiling = **{BASE_MAX:g}**.')
+    print('- Queue/publication order: **final score descending**, freshness only as tie-breaker.')
+    print('- Geography is not added to the mathematical score.')
+    print()
+
+    print('## Очередь сейчас')
+    print()
+    print(f'- Элементов в durable queue: **{len(queue)}**.')
+    print(f'- Final-scored queue items: **{len(final_scores)}**.')
+    print(f'- Pre-AI queue items: **{len(pre_ai_scores)}**.')
+    if final_scores:
+        print(f'- Final score range: **{min(final_scores):.1f}–{max(final_scores):.1f}**.')
+    if pre_ai_scores:
+        print(f'- Pre-AI score range: **{min(pre_ai_scores):.1f}–{max(pre_ai_scores):.1f}**.')
+    print()
+    print('| Диапазон | В очереди | Доля |')
+    print('|---|---:|---:|')
+    for name in ('0–39', '40–49', '50–59', '60–69', '70–79', '80–84', '85–89', '90–100'):
+        print(f'| {name} | {buckets.get(name, 0)} | {pct(buckets.get(name, 0), len(scores))} |')
+    print()
+
+    print('## Последний запуск')
+    print()
+    print(f"- Кандидаты после отбора: **{latest.get('candidates', 0)}**.")
+    print(f"- Добавлено в очередь: **{admission.get('added', 0)}**.")
+    print(f"- Raw RSS/News materials: **{rss.get('raw_items', 0)}**.")
+    print(f"- Published: **{latest.get('published', 0)}**.")
+    print()
+
+    print('## Распределение текущего durable queue')
+    print()
+    for name in ('0–39', '40–49', '50–59', '60–69', '70–79', '80–84', '85–89', '90–100'):
+        print(f'- `{name}`: {buckets.get(name, 0)}')
 
 
 if __name__ == '__main__':
