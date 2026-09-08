@@ -13,18 +13,18 @@ from datetime import datetime, timezone
 
 THRESHOLD = 55.0
 BASE_MAX = 70.0
-AI_MAX = 50.0
+AI_MAX = 30.0
 
 WEIGHTS = {
-    'relevance': 12.0,
-    'ai_specificity': 6.0,
-    'impact': 16.0,
-    'event_concreteness': 18.0,
-    'practical_value': 8.0,
+    'relevance': 17.0,
+    'ai_specificity': 11.0,
+    'impact': 21.0,
+    'event_concreteness': 23.0,
+    'practical_value': 13.0,
     'novelty': 0.0,
-    'source_quality': 5.0,
-    'evidence': 3.0,
-    'freshness': 2.0,
+    'source_quality': 10.0,
+    'evidence': 6.0,
+    'freshness': 4.0,
 }
 
 EVENT_FAMILIES = {
