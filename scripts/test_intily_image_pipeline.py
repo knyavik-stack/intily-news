@@ -1,6 +1,9 @@
 import unittest
 from unittest.mock import patch
 
+# Production loads audience policy before media delivery; importing it first
+# activates the no-truncation caption guard used in production.
+import intily_audience_policy  # noqa: F401
 import intily_image_pipeline as media
 
 
@@ -72,14 +75,19 @@ class ImagePipelineTests(unittest.TestCase):
         candidates, _ = media._meta_image_candidates(html)
         self.assertEqual(candidates[0], ('og_image', expected))
 
-    def test_photo_caption_preserves_supported_formatting_and_is_bounded(self):
-        text = '<b>Заголовок &amp; тест</b> — <i>важно</i> <a href="https://example.com">источник</a> ' + ('длинный & текст ' * 200)
+    def test_photo_caption_preserves_supported_formatting(self):
+        text = '<b>Заголовок &amp; тест</b> — <i>важно</i> <a href="https://example.com">источник</a>'
         caption = media._photo_caption(text)
         self.assertLessEqual(len(caption), 1024)
         self.assertIn('<b>Заголовок &amp; тест</b>', caption)
         self.assertIn('<i>важно</i>', caption)
         self.assertIn('<a href="https://example.com">источник</a>', caption)
         self.assertNotIn('<script', caption.lower())
+
+    def test_long_photo_caption_is_rejected_instead_of_truncated(self):
+        text = '<b>Заголовок</b> ' + ('длинный & текст ' * 200)
+        with self.assertRaisesRegex(ValueError, 'PHOTO_CAPTION_LIMIT_TEXT_FALLBACK'):
+            media._photo_caption(text)
 
     def test_photo_caption_rejects_unsafe_href(self):
         caption = media._photo_caption('<a href="javascript:alert(1)">опасная ссылка</a>')
