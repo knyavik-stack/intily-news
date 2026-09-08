@@ -36,7 +36,7 @@ def apply_policy(publisher):
             publisher.QUALITY_TRUSTED, publisher.TRUSTED, publisher.LOW_SIGNAL_TERMS,
         )
         audience_score = x.get('audience_score')
-        audience_bonus = 0.0
+        audience_bonus = 10.0
         if audience_score is not None:
             try:
                 audience_score = clamp_score(audience_score)
