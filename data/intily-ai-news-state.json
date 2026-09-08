@@ -716,16 +716,17 @@
     "0e64f9580ddbe92a95d596eb4e3b44d16c816ba936d77a4d5e4a384e2e926a6e": 1788865268.525443,
     "da8856969dbac1dcd4c9bc6e0744f037cf26fc01e02f235b6c58a774536ce7ec": 1788865268.525443,
     "b41ba7c539af5800e758e4d756aa3be669f68bc0b8662ec7569fdb3d21e592d6": 1788865268.525443,
-    "2b62555a201de26ea15667682940221ca4a3476809122a1ca8c89e5b0ddc4535": 1788865268.525443
+    "2b62555a201de26ea15667682940221ca4a3476809122a1ca8c89e5b0ddc4535": 1788865268.525443,
+    "66ff9be4bba72224943fe6ed34f1c3b3c74ce4faf97bca9520128b21dee11133": 1788866525.8381283
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788866345.3553748,
+    "last_start_ts": 1788866525.8381283,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788866345.3553748,
-    "last_success_ts": 1788866345.3553748,
-    "last_candidates": 0,
+    "last_run_ts": 1788866525.8381283,
+    "last_success_ts": 1788866525.8381283,
+    "last_candidates": 14,
     "last_published": 0,
     "queue_size": 0
   },
@@ -733,7 +734,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788865807.6366243
+      "updated_at": 1788866564.9871032
     },
     "GROQ": {
       "disabled_until": 1788878310.3510802,
@@ -1659,118 +1660,9 @@
     "RUSSIA",
     "WORLD"
   ],
-  "last_search_ts": 1788865268.525443,
+  "last_search_ts": 1788866525.8381283,
   "last_publish_ts": 1788865804.3728595,
   "run_history": [
-    {
-      "ts": 1788753628,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 26.99,
-      "candidates": 5,
-      "queue_before": 0,
-      "queue_after": 4,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 5,
-        "candidate_count": 5,
-        "admission_rate": 100.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "ARTICLE_SOURCE_UNRESOLVED": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "ARTICLE_SOURCE_UNRESOLVED"
-          }
-        }
-      },
-      "rss": {
-        "queries_attempted": 45,
-        "queries_ok": 45,
-        "query_errors": 0,
-        "direct_feeds_attempted": 11,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 3,
-        "direct_raw_items": 5,
-        "raw_items": 378,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 1,
-          "CNews": 1,
-          "TechCult": -1,
-          "Euronews": -1
-        },
-        "score_filtered": 373,
-        "quality_filtered": 0,
-        "story_dedup": 0,
-        "candidates": 5,
-        "candidate_rate": 0.0134,
-        "score_buckets": {
-          "0–39": 253,
-          "40–49": 91,
-          "50–59": 29,
-          "60–69": 5,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        }
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788753804,
       "status": "OK",
@@ -20299,6 +20191,135 @@
       "provider": {
         "attempts": [],
         "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788866525,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": true,
+      "duration_sec": 39.15,
+      "candidates": 14,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 1,
+      "item_failures": 1,
+      "admission": {
+        "published_key": 8,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 5,
+        "added": 1,
+        "candidate_count": 14,
+        "admission_rate": 7.14,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 3.0,
+          "bonus_total": 9.0,
+          "max_score": 3.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 3.0,
+            "bonus": 9.0,
+            "reason": "Технология не имеет прикладного значения для бизнеса или разработки, оставаясь спекулятивной игрушкой.",
+            "title": "Experts Are Sounding The Alarm On AI Animal Translation – Breakthrough Tool Or New Form Of Exploitation? - TechRound",
+            "final_score": 52.4
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 135,
+        "raw_items": 837,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 36,
+          "CNews": 49,
+          "Euronews": 50
+        },
+        "score_filtered": 820,
+        "quality_filtered": 1,
+        "story_dedup": 2,
+        "candidates": 14,
+        "candidate_rate": 0.0199,
+        "score_buckets": {
+          "0–39": 820,
+          "40–49": 17,
+          "50–59": 0,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
