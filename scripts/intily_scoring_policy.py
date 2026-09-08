@@ -90,11 +90,11 @@ def _age_hours(x):
 
 def _freshness(age_hours):
     if age_hours <= 1.0:
-        return 2.0
+        return 7.0
     if age_hours <= 3.0:
-        return 1.5
+        return 6.5
     if age_hours <= 6.0:
-        return 1.0
+        return 6.0
     if age_hours <= 12.0:
         return 0.5
     return 0.0
@@ -112,9 +112,9 @@ def _event_concreteness(blob, title):
     value = max(primary[name] for name in hits)
     value += min(2.0, max(0, len(hits) - 1) * 1.0)
     if any(actor in blob for actor in MAJOR_ACTORS):
-        value += 1.0
+        value += 6.0
     if any(signal in blob for signal in MAJOR_EVENT_SIGNALS):
-        value += 1.0
+        value += 6.0
     if any(ch.isdigit() for ch in title):
         value += 0.5
     return min(WEIGHTS['event_concreteness'], value)
@@ -140,11 +140,11 @@ def _impact(blob, high_impact_terms, risk_terms):
     value += min(4.0, max(0, impact_hits - 1) * 1.25)
     value += min(4.0, risk_hits * 2.0)
     if actor:
-        value += 1.5
+        value += 6.5
     if major_signal:
-        value += 1.5
+        value += 6.5
     if measured:
-        value += 1.0
+        value += 6.0
     return min(WEIGHTS['impact'], value)
 
 
@@ -160,8 +160,8 @@ def _source_quality(source, quality_trusted, trusted):
     if source in quality_trusted:
         return WEIGHTS['source_quality']
     if source in trusted:
-        return 3.5
-    return 2.0
+        return 8.5
+    return 7.0
 
 
 def _evidence(desc):
