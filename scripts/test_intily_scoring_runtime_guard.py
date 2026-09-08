@@ -9,6 +9,7 @@ class ScoringRuntimeGuardTests(unittest.TestCase):
             pass
 
         module = Module()
+        proxy = PublisherScoreProxy(module)
 
         def legacy_score(item):
             base = 70.0
@@ -20,8 +21,7 @@ class ScoringRuntimeGuardTests(unittest.TestCase):
             item['audience_bonus'] = 10.0
             return 80.0
 
-        module.score = legacy_score
-        proxy = PublisherScoreProxy(module)
+        proxy.score = legacy_score
         item = {}
         result = proxy.score(item)
 
@@ -35,12 +35,14 @@ class ScoringRuntimeGuardTests(unittest.TestCase):
             pass
 
         module = Module()
+        proxy = PublisherScoreProxy(module)
 
         def legacy_score(item):
-            return 100.0
+            base = 70.0
+            bonus = 30.0 if item.get('audience_score') == 10 else 0.0
+            return base + bonus
 
-        module.score = legacy_score
-        proxy = PublisherScoreProxy(module)
+        proxy.score = legacy_score
         item = {'audience_score': 10}
         self.assertEqual(proxy.score(item), 100.0)
 
