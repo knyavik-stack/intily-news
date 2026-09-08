@@ -2,9 +2,9 @@
 
 ## Canonical current status
 
-**🟡 PRODUCTION VERIFICATION MODE / SCORING WEIGHT CONTRACT RESTORED, LIVE CONFIRMATION PENDING**
+**🟡 PRODUCTION VERIFICATION MODE / SCORING RUNTIME FIX DEPLOYED, LIVE CONFIRMATION PENDING**
 
-The project has a 55-point final publication gate, a 70/30 deterministic+AI score architecture, finalized-queue hygiene, and a no-truncation photo-caption policy. The scoring layer had a concrete regression: the point allocations in `scripts/intily_scoring_policy.py` had been changed so their declared weights no longer represented the 70-point base budget, and the freshness component could exceed its own allocation. The weight contract is now restored and enforced in code/tests. One real production cycle on the new code remains required before claiming GREEN.
+The project has a 55-point final publication gate, a 70/30 deterministic+AI score architecture, finalized-queue hygiene, and a no-truncation photo-caption policy. A scoring runtime defect was found and fixed: the legacy runner was adding a phantom +10 audience bonus before AI evaluation, making a perfect base score appear as 80 instead of 70 and preventing the full 100-point contract from being observable. One real production cycle on the corrected runtime remains required before claiming GREEN.
 
 ## Editorial contract
 
@@ -12,8 +12,9 @@ The project has a 55-point final publication gate, a 70/30 deterministic+AI scor
 - Base deterministic model: **0–70**.
 - AI audience-fit: **1–10 → +3…+30**.
 - AI contribution: exactly **30% of the 100-point scale**.
-- Final formula: `min(100, base_score + audience_score × 3)`.
+- Final formula after AI: `min(100, base_score + audience_score × 3)`.
 - Final publication gate: **55/100**.
+- Pre-AI score contains **no audience bonus**.
 - `score_stage=final` with score <55 is forbidden in durable queue.
 - `score_stage=pre_ai` with base 40–54 is valid until AI evaluation.
 - RU/WORLD target: ~40/60; geography is not a relevance bonus.
@@ -32,15 +33,52 @@ The project has a 55-point final publication gate, a 70/30 deterministic+AI scor
 | Freshness | 2 |
 | **Total** | **70** |
 
-These are **point allocations**, not arbitrary multipliers. The code now fails fast if `sum(WEIGHTS) != BASE_MAX`, and component functions are bounded by their corresponding allocation. This prevents a silent 70-point model from becoming a different scale through weight edits.
-
-The model is event/consequence-first rather than keyword-density-first. Semantic uniqueness remains outside the arithmetic score.
+These are point allocations, not arbitrary multipliers. The code fails fast if `sum(WEIGHTS) != BASE_MAX`, and component functions are bounded by their corresponding allocation.
 
 ## Root cause found 2026-09-08
 
-The production scoring file had drifted from the canonical 70-point calibration. Its declared allocations had become `17+11+21+23+13+0+10+6+4 = 105`, while the public contract still said 70. The final clamp hid the inconsistency instead of exposing it. In addition, freshness returned up to 7 points while its documented allocation was only 2 points. This made the arithmetic contract internally inconsistent and made score behavior difficult to reason about.
+The user's deliberate weight inflation exposed a second, deeper runtime defect. The deterministic model could reach its full 70-point base ceiling, but `scripts/intily_ai_news_runner.py` initialized `audience_bonus = 10.0` even when `audience_score` was still absent.
 
-The fix restores the canonical allocations, restores `AI_MAX=30`, caps freshness at its 2-point allocation, and adds a hard invariant plus regression tests for the exact budget. This is the scoring defect identified during the user's manual weight perturbation test.
+The observed state therefore became:
+
+```text
+base_score       = 70
+ audience_score  = null
+ audience_bonus  = 10
+ final_score     = 80
+```
+
+This exactly explains the user's experiment. The missing 20 points were not disappearing inside the weights. The runtime was substituting a legacy +10 placeholder for the real AI contribution of up to +30. Therefore the maximum observable pre-AI score was artificially **80**, not the intended 70, and the full 100-point final contract was never observable without an AI result.
+
+The intended arithmetic is:
+
+```text
+Deterministic base maximum     70
+AI audience maximum             30
+---------------------------------
+Final maximum                  100
+```
+
+And by stage:
+
+```text
+pre-AI       = base + 0          → max 70
+AI 1/10      = base + 3          → max 73
+AI 5/10      = base + 15         → max 85
+AI 10/10     = base + 30         → max 100
+```
+
+## Runtime fix
+
+Added `scripts/intily_scoring_runtime_guard.py`.
+
+The production workflow now runs through this guard. It intercepts the legacy runner's score assignment and enforces zero audience contribution before AI evaluation while preserving the real `audience_score × 3` contribution after evaluation.
+
+Added `scripts/test_intily_scoring_runtime_guard.py` to lock the invariant.
+
+The regression test is included in the production workflow before the news engine starts.
+
+Full forensic record: `docs/SCORING_RUNTIME_BUG_2026-09-08.md`.
 
 ## Audience model
 
@@ -72,29 +110,32 @@ Supported Telegram HTML formatting remains preserved and unsafe markup/links are
 
 Run #680 passed 21 regression tests and published one story. It also hit HTTP 403 on the image path, so the new publisher-image path still needs live confirmation.
 
-Run #687 (`34221093470`) then demonstrated candidate starvation: 843 materials were discovered, 15 scored candidates were admitted, all remained in the old ~45–49 base-score band, no AI provider call was made, and no story was published. This is why the score contract must be fixed before further tuning of thresholds or deduplication.
+Run #687 (`34221093470`) then demonstrated candidate starvation: 843 materials were discovered, 15 scored candidates were admitted, all remained in the old ~45–49 base-score band, no AI provider call was made, and no story was published.
 
-The scoring-weight fix is committed in the current main branch, followed by explicit regression tests. Because the production workflow is configured for `workflow_dispatch`, the next scheduled/dispatch cycle is the authoritative live verification; no post-fix production result exists yet.
+The scoring runtime fix and regression protection are now committed. Because the production workflow is configured for `workflow_dispatch`, the next scheduled/dispatch cycle is the authoritative live verification; no post-fix production result exists yet.
 
 ## Acceptance gate for GREEN
 
 1. regression suite green;
 2. base score ≤70;
-3. AI bonus +3…+30;
-4. every publication final ≥55;
-5. `final_below_threshold=0`;
-6. no finalized <55 in durable queue;
-7. long photo post retains its full text;
-8. image payload ≤1,000,000 bytes;
-9. oversized candidate is skipped without transformation;
-10. publisher image reaches `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT` when source allows;
-11. Telegram HTML formatting remains intact;
-12. new score distribution shows strong stories moving above the historical 40–60 concentration;
-13. provider failures do not create uncontrolled retry latency;
-14. `sum(WEIGHTS) == BASE_MAX == 70` and every component is bounded by its declared allocation.
+3. pre-AI audience bonus = 0;
+4. AI bonus +3…+30;
+5. perfect base + AI 10/10 = 100;
+6. every publication final ≥55;
+7. `final_below_threshold=0`;
+8. no finalized <55 in durable queue;
+9. long photo post retains its full text;
+10. image payload ≤1,000,000 bytes;
+11. oversized candidate is skipped without transformation;
+12. publisher image reaches `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT` when source allows;
+13. Telegram HTML formatting remains intact;
+14. new score distribution shows strong stories moving above the historical 40–60 concentration;
+15. provider failures do not create uncontrolled retry latency;
+16. `sum(WEIGHTS) == BASE_MAX == 70` and every component is bounded by its declared allocation.
 
 ## Canonical related docs
 
+- `docs/SCORING_RUNTIME_BUG_2026-09-08.md`
 - `docs/INTILY_ANALYTICS.md`
 - `docs/INTILY_PRODUCTION_MONITORING.md`
 - `docs/INTILY_PUBLICATION_SETTINGS.md`
