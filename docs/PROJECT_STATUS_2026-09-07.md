@@ -1,27 +1,61 @@
-# INTILY Project Status — 2026-09-07
+# INTILY Project Status — 2026-09-08
 
 ## Canonical current status
 
-**🟡 PRODUCTION OBSERVATION MODE / LIVE MEDIA VERIFICATION PENDING**
+**🟡 PRODUCTION VERIFICATION MODE / MODEL + MEDIA FIXES DEPLOYED, LIVE CONFIRMATION PENDING**
 
-The production architecture, two-stage editorial model, audience-fit layer, Russian source expansion, publisher-first image resolver and strict 1 MB image policy are implemented. A production regression was found in photo-caption formatting and fixed: photo posts now preserve supported Telegram HTML formatting instead of converting the whole caption to plain text. The fix must be re-verified by the next scheduled cycle.
+The project has a corrected 55-point final publication gate, a 70/30 deterministic+AI score architecture, queue hygiene for finalized rejects, and a no-truncation photo-caption policy. The remaining acceptance step is one real production cycle on the new code to verify the new score distribution and publisher image delivery.
 
 ## Current editorial policy
 
 - Pre-AI gate: **40/100**.
 - Final publication gate: **55/100**.
-- Audience score: **1–10**.
-- Audience bonus: **+2…+20**, exactly `audience_score × 2`.
-- Final formula: `min(100, base_score + audience_score × 2)`.
-- RU/WORLD portfolio target: approximately **40% / 60%**; geography is not a relevance bonus.
+- Base deterministic model: **0–70**.
+- AI audience-fit: **1–10 → +3…+30**.
+- AI layer: exactly **30% of the 100-point scale**.
+- Final formula: `min(100, base_score + audience_score × 3)`.
+- Finalized `score_stage=final` items below 55 are not allowed to remain in durable queue.
+- RU/WORLD portfolio target: approximately **40% / 60%**; geography is not an editorial score bonus.
 
-A 40–54 base candidate reaches AI editorial evaluation but is published only when final score is at least 55.
+### Base model
+
+| Component | Max |
+|---|---:|
+| AI relevance | 12 |
+| AI specificity | 6 |
+| Impact | 16 |
+| Event concreteness | 18 |
+| Practical value | 8 |
+| Source quality | 5 |
+| Evidence | 3 |
+| Freshness | 2 |
+| **Total** | **70** |
+
+## Audience model
+
+The AI editor now evaluates concrete consequence for the target Russian-speaking AI-active professional. The rubric was tightened so that funding, valuation, brand name, rumors and generic commentary do not receive high audience scores without a demonstrated consequence.
+
+Audience contribution:
+
+`1→+3, 2→+6, 3→+9, 4→+12, 5→+15, 6→+18, 7→+21, 8→+24, 9→+27, 10→+30`.
+
+Working probability prior is documented in `docs/SCORING_CALIBRATION_2026-09-07.md`; it is explicitly a model calibration hypothesis, not subscriber statistics. Expected AI contribution under that prior is **19.74/30**.
+
+## Queue defect found and closed
+
+Run #680 (`34219243075`) showed:
+
+- one publication at final score **69.1**;
+- audience score 7/10 under the old ×2 layer;
+- `final_below_threshold=4` in durable queue.
+
+Those four items were not evidence of publication below 55 because the AI editor gate blocked final scores below 55. They were nevertheless a real queue invariant violation: finalized rejects should not remain durable candidates. A guard now removes `score_stage=final` items below 55 during queue rebalancing. Pre-AI 40–54 remains valid until AI evaluation.
 
 ## Media policy
 
-**1 MB is a hard reject, not a compression target.** If an image payload is larger than **1,000,000 bytes decimal**, it is skipped. No resize or recompression is performed to make it fit.
+**1 MB remains a hard reject.** No resize or recompression is used to make an image fit.
 
-Production path:
+The production media path is:
 
 ```text
 publisher article
@@ -31,82 +65,50 @@ publisher article
   → >1,000,000 bytes? skip candidate
   → validate type + dimensions
   → preserve/sanitize Telegram HTML
-  → safe caption ≤1024 chars after escaping
-  → Telegram sendPhoto
+  → caption ≤1024?
+       yes → sendPhoto
+       no  → complete text-only fallback
 ```
 
-If an oversized or broken candidate is encountered, the hardened resolver continues with the next publisher candidate. If no acceptable image remains, text-only fallback is allowed when editorial/publication gates pass.
+The important change is that **photo captions are no longer truncated**. Telegram's 1024-character caption limit is treated as a delivery constraint, not a reason to delete the tail of the editorial post. If the complete sanitized caption is too long, the full text is sent without the image.
 
-## Verified production evidence
+## Production evidence
 
-### Run #577 — root cause of the ~4-minute runtime
+### Run #680
 
-Run #577 (`34144899129`) started at **16:48:01 UTC** and completed at **16:51:58 UTC**, about **3m57s** wall-clock. The news search was explicitly skipped (`SEARCH_SKIPPED`), so RSS collection was not the cause.
+CI: green, 21 regression tests passed. Production published one item at final score 69.1. Image path fell back on HTTP 403. This run used the previous ×2 audience layer and therefore is not a validation run for the new 70/30 model.
 
-The delay was AI provider retry/failover latency. Gemini encountered retry/503/timeout conditions; Groq returned HTTP 403 / error 1010 and was circuit-opened; OpenAI returned HTTP 429 / no credits and was circuit-opened. Multiple queued items were still attempted after provider degradation, including a second editorial attempt per item. The run ended `PUBLISH_FAILED` with 10 item failures.
+### Historical image incident
 
-### Run #578
-
-Run #578 (`34145727924`) completed in about **28s**. A publisher-hosted image of **48,472 bytes** was found and validated, but the old `CAPTION_TOO_LONG` guard prevented `sendPhoto`. That guard has been replaced by a safe bounded caption path.
-
-### Run #579
-
-Run #579 (`34146591852`) started at **17:12:01 UTC** and failed fast during regression tests. The failure was real and useful: the first implementation bounded the raw caption before HTML escaping, so an input containing `&` expanded to **1028 characters** after escaping despite a 1024 raw-character cap.
-
-The production code now bounds the **final sanitized Telegram HTML**, and the regression test asserts the exact contract. The news engine was correctly skipped because CI failed; no publication was attempted from this invalid build.
-
-### Post-#579 formatting regression
-
-The image caption helper was found to be stripping all HTML tags from a valid formatted publication before `sendPhoto`. This explains the user's observed photo post with unformatted text. It was a real production-code defect, not a Telegram display issue.
-
-The helper is now changed to:
-
-- preserve supported Telegram formatting tags;
-- sanitize unsupported/unsafe markup;
-- allow only safe `http`, `https` and `tg` link schemes;
-- preserve existing HTML entities without double escaping;
-- enforce the 1024-character caption limit after sanitization/escaping;
-- close open formatting tags when truncation is required.
-
-The image resolver also now rejects >1 MB candidates at candidate-fetch time and continues to the next candidate.
-
-## Latest code changes now on main
-
-- Final publication threshold: **55**.
-- Publisher and audience analytics use current threshold constants instead of historical hard-coded 60 values.
-- Image hardening skips >1 MB candidates without compression and continues to the next candidate.
-- Runtime keeps a second strict 1 MB defense-in-depth check.
-- Photo captions preserve supported Telegram HTML formatting while sanitizing unsafe markup and respecting the 1024-character limit.
-- Image regression coverage includes publisher resolution, candidate fallback, strict 1 MB rejection, formatting preservation, unsafe-link sanitization and safe caption bounds.
-- Scoring policy remains intact.
+The previous photo formatting regression was caused by stripping all Telegram HTML before `sendPhoto`. That code path has been replaced by formatting-preserving sanitization. The new no-truncation policy also removes the second class of defect: a valid post cannot lose its final section merely because an image is attached.
 
 ## Current acceptance gate
 
-The next scheduled production cycle is the observation gate. It should verify:
+The next real production cycle is the final verification gate:
 
 1. all regression tests pass;
-2. Publisher/Monitor visibly report final gate **55**;
-3. 40–54 base stories can reach AI evaluation while final <55 is rejected;
-4. no finalized queue item below 55 remains;
-5. publisher image reaches `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`;
-6. sent image payload is ≤1,000,000 bytes;
-7. >1 MB candidates are skipped rather than transformed;
-8. Google-hosted images remain forbidden;
-9. photo caption formatting is preserved;
-10. no `CAPTION_TOO_LONG` fallback occurs for an otherwise valid image;
-11. durable state/KPI persistence remains successful;
-12. provider failures do not create uncontrolled runtime latency.
+2. `BASE_MAX=70` and no base score exceeds 70;
+3. AI bonus is exactly +3…+30;
+4. every publication has final score ≥55;
+5. `final_below_threshold=0`;
+6. no final <55 item remains in durable queue;
+7. a long photo post never loses its tail;
+8. image payload ≤1,000,000 bytes;
+9. oversized first image candidate is skipped and next candidate is tried;
+10. publisher image reaches `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT` when source permits;
+11. Telegram HTML formatting remains intact;
+12. provider failure does not create uncontrolled retry latency;
+13. new score distribution moves strong stories out of the historical 40–60 concentration.
 
 ## Documentation hierarchy
 
-This document is the canonical current status.
+This document is canonical current status.
 
 Related:
 
 - `docs/INTILY_ANALYTICS.md`
 - `docs/INTILY_PRODUCTION_MONITORING.md`
 - `docs/INTILY_PUBLICATION_SETTINGS.md`
-- `docs/RELEASE_2026-09-07.md`
 - `docs/SCORING_CALIBRATION_2026-09-07.md`
 - `docs/CMO_MODEL_REVIEW_2026-09-07.md`
 - `docs/IMAGE_PIPELINE_INCIDENT_2026-09-07.md`
