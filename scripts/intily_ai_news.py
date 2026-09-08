@@ -463,11 +463,11 @@ def score(x):
 
     relevance = 45.0 if ai_relevant(x) else 0.0
     impact_hits = sum(1 for term in HIGH_IMPACT_TERMS if term in blob)
-    impact = min(20.0, impact_hits * 4.0)
+    impact = min(20.0, impact_hits * 8.0)
     application_hits = sum(1 for term in APPLICATION_TERMS if term in blob)
-    practical = min(15.0, application_hits * 3.0)
+    practical = min(15.0, application_hits * 6.0)
     source = x.get('source', '').lower().strip()
-    source_points = 8.0 if source in QUALITY_TRUSTED else (6.0 if source in TRUSTED else 5.0)
+    source_points = 18.0 if source in QUALITY_TRUSTED else (16.0 if source in TRUSTED else 15.0)
     freshness = 15.0 if age <= 1.0 else 12.0 if age <= 3.0 else 8.0 if age <= 6.0 else 4.0
     penalty = 15.0 if any(term in blob for term in LOW_SIGNAL_TERMS) else 0.0
 
