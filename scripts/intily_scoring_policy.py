@@ -15,17 +15,22 @@ THRESHOLD = 55.0
 BASE_MAX = 70.0
 AI_MAX = 30.0
 
+# IMPORTANT: these are point allocations, not multipliers. Their sum MUST equal
+# BASE_MAX. Every component function below is also bounded by its allocation.
 WEIGHTS = {
-    'relevance': 17.0,
-    'ai_specificity': 11.0,
-    'impact': 21.0,
-    'event_concreteness': 23.0,
-    'practical_value': 13.0,
+    'relevance': 12.0,
+    'ai_specificity': 6.0,
+    'impact': 16.0,
+    'event_concreteness': 18.0,
+    'practical_value': 8.0,
     'novelty': 0.0,
-    'source_quality': 10.0,
-    'evidence': 6.0,
-    'freshness': 4.0,
+    'source_quality': 5.0,
+    'evidence': 3.0,
+    'freshness': 2.0,
 }
+
+if round(sum(WEIGHTS.values()), 6) != BASE_MAX:
+    raise RuntimeError('Scoring weight contract broken: WEIGHTS must sum to BASE_MAX')
 
 EVENT_FAMILIES = {
     'launch': ('launch', 'launched', 'debut', 'unveils', 'unveiled', 'запуст', 'старт'),
@@ -90,11 +95,11 @@ def _age_hours(x):
 
 def _freshness(age_hours):
     if age_hours <= 1.0:
-        return 7.0
+        return WEIGHTS['freshness']
     if age_hours <= 3.0:
-        return 6.5
+        return 1.5
     if age_hours <= 6.0:
-        return 6.0
+        return 1.0
     if age_hours <= 12.0:
         return 0.5
     return 0.0
@@ -160,8 +165,8 @@ def _source_quality(source, quality_trusted, trusted):
     if source in quality_trusted:
         return WEIGHTS['source_quality']
     if source in trusted:
-        return 8.5
-    return 7.0
+        return min(3.5, WEIGHTS['source_quality'])
+    return min(2.0, WEIGHTS['source_quality'])
 
 
 def _evidence(desc):
