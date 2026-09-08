@@ -689,18 +689,6 @@
     "af03502ef1b3f003c459389d0d96c603eab1fbdc6aa8b5b5582ac9809cfc731c": 1788865804
   },
   "known": {
-    "382fb6ac6a094d9a230f98405f9ceaa7d849eafef925fc9164bd62f8d0d8d00f": 1788861305.3126938,
-    "2e1eeaa4127ebc3cf2e34a95cdfeca17d22f40953a8d44304259eb3be18282fd": 1788861305.3126938,
-    "c3fbd415805f6773cfef6aa793b0cd4ee4f3655f795905ebefed42f021f7ca04": 1788861305.3126938,
-    "4c890770f00243dd855cd6e854ba41b9a035d3f455a980eb676169125b8385e5": 1788861305.3126938,
-    "da10731a5d100b962871340ee83b1bbb4ecb38b3ed67fd9958155df6fb527b08": 1788861305.3126938,
-    "1d173e2b3b51f11743773aa089517fcabdbff2199e76b20c8762be355b7e3fc3": 1788861305.3126938,
-    "c7e564deb4c2180f7f72419b7afc085d68ab848b52169e7a810d7aa8c738650a": 1788861305.3126938,
-    "3a5b57e1ce70a217fca2af310fe4b5bc79d4d3c6c01a9728e0906ffa5c877e70": 1788861305.3126938,
-    "0df8d44dcd99cb0c39d143b14d160a941252da80514208d5b8b9290d8b3f4350": 1788861305.3126938,
-    "b1a51cea1b5a47002b314bb86fd743cd7b0b353488fcde4844cdc606940f7364": 1788861305.3126938,
-    "247a35b87b24ab448419928b93c85e29a0a299770992f60a9876e8705a517016": 1788861305.3126938,
-    "291489652b571de303e866f60778a8f304f57ab8d32e2ddd7dd3aa8cfbfd2383": 1788861305.3126938,
     "3834298e7aca35832b0ed39c205bb20ad94e010219bcf01c0b37aec09cd59528": 1788863288.4295883,
     "bb7d7a814fca29b979bc244daeda489397e5dbfd336a36ccfa6f88763bdc7b9d": 1788863288.4295883,
     "d4f145240bd1b295111714dd4ecf543859ffc056283a6fb46fc49db0b067ddaf": 1788863288.4295883,
@@ -721,12 +709,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1788866525.8381283,
+    "last_start_ts": 1788866705.8164024,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788866525.8381283,
-    "last_success_ts": 1788866525.8381283,
-    "last_candidates": 14,
+    "last_run_ts": 1788866705.8164024,
+    "last_success_ts": 1788866705.8164024,
+    "last_candidates": 15,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1660,68 +1648,9 @@
     "RUSSIA",
     "WORLD"
   ],
-  "last_search_ts": 1788866525.8381283,
+  "last_search_ts": 1788866705.8164024,
   "last_publish_ts": 1788865804.3728595,
   "run_history": [
-    {
-      "ts": 1788753804,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "publish_interval_not_reached",
-      "searched": false,
-      "duration_sec": 0.02,
-      "candidates": 0,
-      "queue_before": 4,
-      "queue_after": 4,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788754163,
       "status": "OK",
@@ -20320,6 +20249,127 @@
           "GEMINI"
         ],
         "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788866705,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 27.55,
+      "candidates": 15,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 1,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 4,
+        "added": 0,
+        "candidate_count": 15,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 135,
+        "raw_items": 832,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 36,
+          "CNews": 49,
+          "Euronews": 50
+        },
+        "score_filtered": 814,
+        "quality_filtered": 1,
+        "story_dedup": 2,
+        "candidates": 15,
+        "candidate_rate": 0.0215,
+        "score_buckets": {
+          "0–39": 814,
+          "40–49": 18,
+          "50–59": 0,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
