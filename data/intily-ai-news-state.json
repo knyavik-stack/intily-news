@@ -38,7 +38,8 @@
     "e465102233234473379a58df33f4dd61950f722363ddf6a9476a7579e7c284b0": 1788891503,
     "f34193a9ed3b64e8ecf29978cad5c889f73d808e5a4f78a640a718aee6aafc55": 1788891684,
     "d45f7028a36e11e0da64f654ff6e1e38ea3806fc1ba728dcfe484bfebe5ea1a3": 1788891865,
-    "0b1aeb34f5beb3a3b3fb01e173b69124428410c44f9f0b64b2a5bd4363fbe9d3": 1788892044
+    "0b1aeb34f5beb3a3b3fb01e173b69124428410c44f9f0b64b2a5bd4363fbe9d3": 1788892044,
+    "2b234bce829b0f65150225d2b59b60ad1705899096708aaf07c92e81d8893d2e": 1788892222
   },
   "known": {
     "1b227251c5dfdf1886227a64e446d5dc6ed5b681b41dd1552bf2585c3da6f12f": 1788887004.696961,
@@ -147,42 +148,6 @@
     "02acbe433fbe791f12bc1e171f8d6fd8a4d4fd885e3f251777cf0039d864b2c9": 1788890784.5061297
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "«Крестный отец ИИ» призвал запретить сверхмощные нейросети: Они могут уничтожить человечество",
-      "link": "https://www.cnews.ru/news/top/2026-09-08_krestnyj_otets_ii_prizval",
-      "desc": "Человечество может оказаться под угрозой из-за бесконтрольного развития искусственного интеллекта, считает один из пионеров глубокого обучения Джеффри Хинтон (Geoffrey Hinton). По его оценке, если прогресс в этой сфере продолжит опережать возможности контроля и регулирования, риски для общества будут только расти. Ранее нейронные сети сразу нескольких технологических гигантов выходили из-под контроля во время тестирования и совершали несанкционированные действия, в том числе взламывали ИТ-системы других компаний.",
-      "source": "CNews",
-      "time": 1788850920.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 5.0,
-        "event_concreteness": 12.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 3.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 45.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 45.0
-      },
-      "base_score": 45.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 45.0,
-      "russia_weight_bonus": 6.5,
-      "key": "2b234bce829b0f65150225d2b59b60ad1705899096708aaf07c92e81d8893d2e",
-      "importance": 45.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "security_regulation"
-      ],
-      "tier": "A"
-    },
     {
       "region": "RUSSIA",
       "title": "EME выпустила систему управления складской логистикой с ИИ-агентами и MCP-сервером",
@@ -506,20 +471,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788892044.8411407,
+    "last_start_ts": 1788892222.372333,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788892044.8411407,
-    "last_success_ts": 1788892044.8411407,
+    "last_run_ts": 1788892222.372333,
+    "last_success_ts": 1788892222.372333,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 10
+    "queue_size": 9
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788892050.2308593
+      "updated_at": 1788892226.4529283
     }
   },
   "stories": {
@@ -795,10 +760,16 @@
       "desc": "Former DeepMind researcher Danijar Hafner launches stealth startup building AI agents for real-world adaptability Crypto Briefing",
       "source": "Crypto Briefing",
       "region": "WORLD"
+    },
+    "2b234bce829b0f65150225d2b59b60ad1705899096708aaf07c92e81d8893d2e": {
+      "time": 1788892222,
+      "title": "«Крестный отец ИИ» призвал запретить сверхмощные нейросети: Они могут уничтожить человечество",
+      "desc": "Человечество может оказаться под угрозой из-за бесконтрольного развития искусственного интеллекта, считает один из пионеров глубокого обучения Джеффри Хинтон (Geoffrey Hinton). По его оценке, если прогресс в этой сфере продолжит опережать возможности контроля и регулирования, риски для общества будут только расти. Ранее нейронные сети сразу нескольких технологических гигантов выходили из-под контроля во время тестирования и совершали несанкционированные действия, в том числе взламывали ИТ-системы других компаний.",
+      "source": "CNews",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -817,7 +788,8 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
     {
@@ -4722,9 +4694,99 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1788892222,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 7.58,
+      "candidates": 0,
+      "queue_before": 10,
+      "queue_after": 9,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 7.0,
+          "bonus_total": 21.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Необходимость пересмотра протоколов безопасности и оценки рисков при внедрении автономных ИИ-агентов.",
+            "title": "«Крестный отец ИИ» призвал запретить сверхмощные нейросети: Они могут уничтожить человечество",
+            "final_score": 66.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 9,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1788890784.5061297,
-  "last_publish_ts": 1788892044.8411407
+  "last_publish_ts": 1788892222.372333
 }
