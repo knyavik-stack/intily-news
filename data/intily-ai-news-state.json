@@ -666,7 +666,8 @@
     "f9c4d23fa6e9c53df28de99df5f2184b2713b0013e839dfc519d6d75e1ecb41a": 1788861125,
     "382fb6ac6a094d9a230f98405f9ceaa7d849eafef925fc9164bd62f8d0d8d00f": 1788861305,
     "2e1eeaa4127ebc3cf2e34a95cdfeca17d22f40953a8d44304259eb3be18282fd": 1788861485,
-    "c3fbd415805f6773cfef6aa793b0cd4ee4f3655f795905ebefed42f021f7ca04": 1788861665
+    "c3fbd415805f6773cfef6aa793b0cd4ee4f3655f795905ebefed42f021f7ca04": 1788861665,
+    "3a5b57e1ce70a217fca2af310fe4b5bc79d4d3c6c01a9728e0906ffa5c877e70": 1788861844
   },
   "known": {
     "fc227e1afde9e12cc5ee2d7e374cb36d9aae955cccc1e38d6d8dd3f39d003fd4": 1788857527.402865,
@@ -740,10 +741,10 @@
       ],
       "tier": "A",
       "audience_score": 6.0,
-      "last_failed_at": 1788860765,
+      "last_failed_at": 1788861844,
       "last_failure": "FINAL_SCORE_BELOW_THRESHOLD:54.6",
-      "failure_count": 6,
-      "next_retry_at": 1788870365
+      "failure_count": 7,
+      "next_retry_at": 1788881044
     },
     {
       "region": "WORLD",
@@ -914,43 +915,6 @@
       "editorial_value": 44.4,
       "topics": [
         "research"
-      ],
-      "tier": "A"
-    },
-    {
-      "region": "WORLD",
-      "title": "NVIDIA Details 4 Security Layers For Future AI Agents - Quantum Zeitgeist",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE80aDNYR0V0QmY3OVBmZk5wOGNzVTZ4NExuWHM5Q0NPcnhwSFI2NjN5eWpOaHV2Qkx3ZkVZOHJUWlYzZzhaTk5WZHQ4WU5QdDJEZm5hMkphanlnVEJMaS1pbGU2M1luVVYwQ1pkWW5aUjNpWS1TZHc?oc=5",
-      "desc": "NVIDIA Details 4 Security Layers For Future AI Agents Quantum Zeitgeist",
-      "source": "Quantum Zeitgeist",
-      "time": 1788853803.0,
-      "_score_components": {
-        "relevance": 20.0,
-        "ai_specificity": 5.2,
-        "impact": 11.0,
-        "event_concreteness": 0.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 3.0,
-        "evidence": 0.8,
-        "freshness": 4.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 44.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 44.0
-      },
-      "base_score": 44.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 44.0,
-      "key": "3a5b57e1ce70a217fca2af310fe4b5bc79d4d3c6c01a9728e0906ffa5c877e70",
-      "importance": 44.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "chips",
-        "security_regulation"
       ],
       "tier": "A"
     },
@@ -1271,20 +1235,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788861665.7376957,
+    "last_start_ts": 1788861844.472095,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788861665.7376957,
-    "last_success_ts": 1788861665.7376957,
+    "last_run_ts": 1788861844.472095,
+    "last_success_ts": 1788861844.472095,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 16
+    "queue_size": 15
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788861669.8570745
+      "updated_at": 1788861848.7670693
     },
     "GROQ": {
       "disabled_until": 1788878310.3510802,
@@ -2046,12 +2010,18 @@
       "desc": "AI agents cheat, can they also catch cheaters? What Google DeepMind paper says indianexpress.com",
       "source": "indianexpress.com",
       "region": "WORLD"
+    },
+    "3a5b57e1ce70a217fca2af310fe4b5bc79d4d3c6c01a9728e0906ffa5c877e70": {
+      "time": 1788861844,
+      "title": "NVIDIA Details 4 Security Layers For Future AI Agents - Quantum Zeitgeist",
+      "desc": "NVIDIA Details 4 Security Layers For Future AI Agents Quantum Zeitgeist",
+      "source": "Quantum Zeitgeist",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "WORLD",
@@ -2064,6 +2034,7 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -2071,67 +2042,8 @@
     "WORLD"
   ],
   "last_search_ts": 1788861305.3126938,
-  "last_publish_ts": 1788861665.7376957,
+  "last_publish_ts": 1788861844.472095,
   "run_history": [
-    {
-      "ts": 1788725200,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "publish_interval_not_reached",
-      "searched": false,
-      "duration_sec": 0.17,
-      "candidates": 0,
-      "queue_before": 13,
-      "queue_after": 13,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788725321,
       "status": "OK",
@@ -20411,6 +20323,97 @@
         ],
         "used": "GEMINI",
         "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788861844,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 5.94,
+      "candidates": 0,
+      "queue_before": 16,
+      "queue_after": 15,
+      "published": 1,
+      "publish_attempts": 2,
+      "item_failures": 1,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 400: Bad Request": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 400: Bad Request"
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 28.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 16.0,
+            "reason": "Критически важно для безопасности корпоративных ИИ-решений и минимизации рисков при внедрении агентов.",
+            "title": "NVIDIA Details 4 Security Layers For Future AI Agents - Quantum Zeitgeist",
+            "final_score": 60.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 14,
+          "final_below_threshold": 1,
+          "invariant_ok": false
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
         "failures": 0,
         "blocked": 0,
         "skipped_no_key": 0,
