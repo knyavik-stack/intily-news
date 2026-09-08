@@ -37,7 +37,7 @@ Production flow:
 ## Canonical documentation
 
 - `docs/PROJECT_STATUS_2026-09-08.md` — canonical current status.
-- `docs/SCORING_CALIBRATION_2026-09-07.md` — current 70/30 scoring model, expected-value calibration and acceptance criteria.
+- `docs/SCORING_CALIBRATION_2026-09-08.md` — canonical current scoring model, expected-value calibration and acceptance criteria.
 - `docs/INTILY_ANALYTICS.md` — current analytics contract.
 - `docs/INTILY_PUBLICATION_SETTINGS.md` — effective production settings.
 - `docs/INTILY_PRODUCTION_MONITORING.md` — monitoring and incident interpretation.
