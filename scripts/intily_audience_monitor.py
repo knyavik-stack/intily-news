@@ -67,8 +67,8 @@ def main():
     print('## CMO / Target Audience / Editorial Fit')
     print('')
     print('Модель: AI-активные русскоязычные предприниматели, руководители, product/marketing/sales/operations/HR/finance специалисты, разработчики и AI power users.')
-    print('AI оценивает полезность новости одновременно с переводом/пересказом: 1–10 → линейный bonus +2…+20.')
-    print(f'Pre-AI gate = {PRE_AI_THRESHOLD:.0f}; final publication gate = {FINAL_THRESHOLD:.0f}.')
+    print('AI оценивает полезность новости одновременно с переводом/пересказом: 1–10 → линейный bonus +3…+30 (30% итоговой шкалы).')
+    print(f'Base score = 0–70; Pre-AI gate = {PRE_AI_THRESHOLD:.0f}; final publication gate = {FINAL_THRESHOLD:.0f}.')
     print('')
     print('| Показатель | 24 часа | 7 дней | История |')
     print('|---|---:|---:|---:|')
@@ -90,7 +90,7 @@ def main():
     print(f'- **8–10/10** — сильная полезность для целевой аудитории, bonus +{bonus_from_score(8):.0f}…+{bonus_from_score(10):.0f}.')
     print(f'- **6–7/10** — полезный профессиональный контекст, bonus +{bonus_from_score(6):.0f}…+{bonus_from_score(7):.0f}.')
     print(f'- **1–5/10** — bonus +{bonus_from_score(1):.0f}…+{bonus_from_score(5):.0f}; низкая оценка не обнуляет редакционную ценность, но почти не помогает пройти финальный gate.')
-    print(f'- **Final < {FINAL_THRESHOLD:.0f} = 0** — обязательный инвариант. Pre-AI < {FINAL_THRESHOLD:.0f} допустим, потому что AI-аудит ещё не проведён.')
+    print(f'- **Final < {FINAL_THRESHOLD:.0f} = 0** — обязательный инвариант. Pre-AI < {PRE_AI_THRESHOLD:.0f} допустим, потому что AI-аудит ещё не проведён.')
 
 
 if __name__ == '__main__':
