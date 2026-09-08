@@ -228,8 +228,8 @@ def apply_policy(publisher):
     publisher.record_kpi = record_kpi_with_audience
 
     # Geographic mix is a portfolio objective, not a relevance bonus.
-    publisher.RUSSIA_WEIGHT_BONUS_MIN = 0.0
-    publisher.RUSSIA_WEIGHT_BONUS_MAX = 0.0
+    publisher.RUSSIA_WEIGHT_BONUS_MIN = 5.0
+    publisher.RUSSIA_WEIGHT_BONUS_MAX = 10.0
     publisher.RUSSIA_TARGET_SHARE = -1.0  # do not hard-filter WORLD while RU is scarce
 
     def publication_region_boost(state, region):
