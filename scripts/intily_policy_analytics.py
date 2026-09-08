@@ -11,8 +11,8 @@ import json
 from collections import Counter
 from pathlib import Path
 
-from intily_scoring_policy import THRESHOLD, WEIGHTS
-from intily_audience_policy import FINAL_THRESHOLD, PRE_AI_THRESHOLD
+from intily_scoring_policy import THRESHOLD, WEIGHTS, BASE_MAX
+from intily_audience_policy import FINAL_THRESHOLD, PRE_AI_THRESHOLD, AI_MAX
 
 ROOT = Path(__file__).resolve().parents[1]
 STATE_PATH = ROOT / 'data' / 'intily-ai-news-state.json'
@@ -112,16 +112,19 @@ def print_weight_policy():
         'freshness': 'Свежесть', 'timeliness': 'Своевременность',
     }
     print('## Как формируется вес новости\n')
-    print(f'Вес — детерминированная математическая оценка **0–100** с точностью до одного знака. Pre-AI порог **{PRE_AI_THRESHOLD:.1f}**, финальный порог публикации **{FINAL_THRESHOLD:.1f}**.')
+    print(f'Базовый детерминированный вес: **0–{BASE_MAX:.0f}**. AI contribution: **0–{AI_MAX:.0f}**. Полная итоговая шкала: **0–100**. Pre-AI порог **{PRE_AI_THRESHOLD:.1f}**, финальный порог публикации **{FINAL_THRESHOLD:.1f}**.')
     print('\n| Компонент | Максимум | Что оценивается |')
     print('|---|---:|---|')
     for key, maximum in WEIGHTS.items():
         print(f'| {names[key]} | {maximum:.1f} | {descriptions[key]} |')
     print('| Низкий сигнал | −6.0 | реклама, sponsored, промокоды и аналогичный шум |')
+    print(f'| **Итого base** | **{sum(WEIGHTS.values()):.1f}** | должно быть ровно {BASE_MAX:.0f} |')
+    print(f'| **AI audience** | **+3…+{AI_MAX:.0f}** | только после AI-оценки |')
+    print('| **Итого final max** | **100.0** | base 70 + AI 30 |')
     print('\n### Логика калибровки\n')
     print(f'- Pre-AI порог **{PRE_AI_THRESHOLD:.1f}** оставляет профессионально интересный пограничный поток для AI-редактора.')
     print(f'- Финальный порог публикации **{FINAL_THRESHOLD:.1f}** — редакционная граница допуска после audience-fit.')
-    print('- Старая проблема была не в самом пороге, а в том, что большая часть потенциально полезного балла была недоступна реальным RSS-материалам.')
+    print('- Pre-AI не получает фиктивного audience bonus: до AI-оценки bonus всегда равен 0.')
     print('- AI-релевантность отделена от AI-специфичности: «материал про AI» и «материал с конкретным технологическим событием» — разные свойства.')
     print('- Добавлена конкретность события: запуск, релиз, исследование, инвестиция, сделка, регулирование и другие проверяемые события получают отдельный вклад.')
     print('- Свежесть разделена на общий freshness и timeliness, чтобы текущие события не конкурировали на равных со старыми материалами.')
