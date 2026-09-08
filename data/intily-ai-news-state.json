@@ -11,7 +11,8 @@
     "b6be920361d1095253aab9fb9ae460bdaa7de880d0c49fcbe7437fe29891ca9b": 1788870665,
     "50b334a61f55cfdb0f01f5b65d65172f7210f5138f2265d08326f7f2cc424f9e": 1788870846,
     "2e1eeaa4127ebc3cf2e34a95cdfeca17d22f40953a8d44304259eb3be18282fd": 1788871024,
-    "80dd79eaf85a5aea967f4605a9c75fb2c90354407c52b7c9a7688c0eba5adbbe": 1788871209
+    "80dd79eaf85a5aea967f4605a9c75fb2c90354407c52b7c9a7688c0eba5adbbe": 1788871209,
+    "e465102233234473379a58df33f4dd61950f722363ddf6a9476a7579e7c284b0": 1788871386
   },
   "known": {
     "470adb77948c27136b2076b108acf4b6577da2ea26512affff779f9b2185be14": 1788869227.0844085,
@@ -70,44 +71,6 @@
     "08228bf34b0ff6f834724ab1fc018b0b331fbee365b410c6559383f6dfe35bcc": 1788871209.3966222
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Elma обновила Cortex: ИИ-агенты научились работать со сканами, фото и записями звонков",
-      "link": "https://www.cnews.ru/news/line/2026-09-08_elma_obnovila_cortex_ii-agenty",
-      "desc": "Компания Elma выпустила летнее обновление Elma Cortex — платформы для встраивания ИИ-агентов в бизнес-процессы и приложения...",
-      "source": "CNews",
-      "time": 1788868800.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.7,
-        "impact": 5.2,
-        "event_concreteness": 13.0,
-        "practical_value": 2.0,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 0.9,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 45.8,
-        "audience_score": null,
-        "audience_bonus": 10.0,
-        "final_score": 55.8
-      },
-      "base_score": 45.8,
-      "audience_bonus": 10.0,
-      "score_stage": "pre_ai",
-      "score": 55.8,
-      "russia_weight_bonus": 8.3,
-      "key": "e465102233234473379a58df33f4dd61950f722363ddf6a9476a7579e7c284b0",
-      "importance": 55.8,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "business",
-        "tools"
-      ],
-      "tier": "A"
-    },
     {
       "region": "RUSSIA",
       "title": "«Думейт» представила российскую агентную среду для разработки и цифровых задач",
@@ -603,20 +566,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788871209.3966222,
+    "last_start_ts": 1788871386.085282,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788871209.3966222,
-    "last_success_ts": 1788871209.3966222,
-    "last_candidates": 46,
+    "last_run_ts": 1788871386.085282,
+    "last_success_ts": 1788871386.085282,
+    "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 15
+    "queue_size": 14
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788871240.609881
+      "updated_at": 1788871390.1094446
     }
   },
   "stories": {
@@ -703,6 +666,13 @@
       "desc": "Chartmetric launches AI agent Flow, priced from $60 per month: ‘Not just another AI chatbot’ Music Business Worldwide",
       "source": "Music Business Worldwide",
       "region": "WORLD"
+    },
+    "e465102233234473379a58df33f4dd61950f722363ddf6a9476a7579e7c284b0": {
+      "time": 1788871386,
+      "title": "Elma обновила Cortex: ИИ-агенты научились работать со сканами, фото и записями звонков",
+      "desc": "Компания Elma выпустила летнее обновление Elma Cortex — платформы для встраивания ИИ-агентов в бизнес-процессы и приложения...",
+      "source": "CNews",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
@@ -717,7 +687,8 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
     {
@@ -1897,9 +1868,99 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1788871386,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 26.82,
+      "candidates": 0,
+      "queue_before": 15,
+      "queue_after": 14,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIO": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_I"
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 24.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Прямая автоматизация рутинных операций с документами и аудио снижает операционные расходы.",
+            "title": "Elma обновила Cortex: ИИ-агенты научились работать со сканами, фото и записями звонков",
+            "final_score": 69.8
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 13,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1788871209.3966222,
-  "last_publish_ts": 1788871209.3966222
+  "last_publish_ts": 1788871386.085282
 }
