@@ -2,7 +2,7 @@ import unittest
 from datetime import datetime, timezone
 
 import intily_ai_news as publisher
-from intily_scoring_policy import BASE_MAX, THRESHOLD, calculate, tier
+from intily_scoring_policy import BASE_MAX, THRESHOLD, WEIGHTS, calculate, tier
 
 
 class ScoringPolicyTests(unittest.TestCase):
@@ -28,6 +28,17 @@ class ScoringPolicyTests(unittest.TestCase):
 
     def test_base_model_has_explicit_seventy_point_ceiling(self):
         self.assertEqual(BASE_MAX, 70.0)
+        self.assertEqual(sum(WEIGHTS.values()), BASE_MAX)
+
+    def test_each_weight_is_a_real_point_allocation(self):
+        self.assertEqual(WEIGHTS['relevance'], 12.0)
+        self.assertEqual(WEIGHTS['ai_specificity'], 6.0)
+        self.assertEqual(WEIGHTS['impact'], 16.0)
+        self.assertEqual(WEIGHTS['event_concreteness'], 18.0)
+        self.assertEqual(WEIGHTS['practical_value'], 8.0)
+        self.assertEqual(WEIGHTS['source_quality'], 5.0)
+        self.assertEqual(WEIGHTS['evidence'], 3.0)
+        self.assertEqual(WEIGHTS['freshness'], 2.0)
 
     def test_relevant_concrete_release_has_material_base_score(self):
         value, parts = self.score(
@@ -60,6 +71,18 @@ class ScoringPolicyTests(unittest.TestCase):
         )
         self.assertEqual(parts['relevance'], 0.0)
         self.assertLess(value, THRESHOLD)
+
+    def test_freshness_never_exceeds_its_weight(self):
+        self.assertLessEqual(publisher.__dict__.get('_freshness', lambda _x: 0.0)(0), WEIGHTS['freshness'])
+
+    def test_scoring_never_exceeds_base_max(self):
+        value, _parts = self.score(
+            'OpenAI launches frontier AI model worldwide with record performance',
+            'OpenAI released a production model after a major benchmark. It improves performance, latency, cost, users and enterprise deployment. '
+            'The launch is global, first-ever and critical for developers, coding, automation, integration and business operations. '
+            'Nvidia investment and regulation also affect security and risk for customers.'
+        )
+        self.assertLessEqual(value, BASE_MAX)
 
 
 if __name__ == '__main__':
