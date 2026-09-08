@@ -2,7 +2,7 @@ import unittest
 from datetime import datetime, timezone
 
 import intily_ai_news as publisher
-from intily_scoring_policy import BASE_MAX, THRESHOLD, WEIGHTS, calculate, tier
+from intily_scoring_policy import BASE_MAX, THRESHOLD, WEIGHTS, _freshness, calculate
 
 
 class ScoringPolicyTests(unittest.TestCase):
@@ -62,7 +62,7 @@ class ScoringPolicyTests(unittest.TestCase):
             'AI market trends continue to shape technology',
             'Analysts discuss how artificial intelligence may affect software and business over time.'
         )
-        self.assertLess(value, THRESHOLD)
+        self.assertLess(value, 55.0)
 
     def test_non_ai_story_is_zero_relevance(self):
         value, parts = self.score(
@@ -70,10 +70,13 @@ class ScoringPolicyTests(unittest.TestCase):
             'The factory will produce chips for consumer electronics.'
         )
         self.assertEqual(parts['relevance'], 0.0)
-        self.assertLess(value, THRESHOLD)
+        self.assertLess(value, 55.0)
 
     def test_freshness_never_exceeds_its_weight(self):
-        self.assertLessEqual(publisher.__dict__.get('_freshness', lambda _x: 0.0)(0), WEIGHTS['freshness'])
+        self.assertLessEqual(_freshness(0), WEIGHTS['freshness'])
+        self.assertLessEqual(_freshness(2), WEIGHTS['freshness'])
+        self.assertLessEqual(_freshness(6), WEIGHTS['freshness'])
+        self.assertLessEqual(_freshness(12), WEIGHTS['freshness'])
 
     def test_scoring_never_exceeds_base_max(self):
         value, _parts = self.score(
