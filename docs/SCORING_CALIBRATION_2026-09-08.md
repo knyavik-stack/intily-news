@@ -9,27 +9,43 @@
 - Final score: `min(100, base_score + audience_score × 3)`.
 - Final publication gate: **55/100**.
 
-## Why the model was rebuilt
+## Two separate scoring defects
 
-Production telemetry showed that materially important stories clustered around 40–60 base points. The former audience layer contributed at most +20, so it could not represent the agreed 30% AI editorial contribution.
+### 1. Runtime placeholder defect
 
-Run #680 also exposed four finalized queue elements below 55. They were blocked by the final editor gate, but remained in durable queue. The queue invariant is now explicit: finalized <55 is rejected and removed; pre-AI 40–54 is valid until AI evaluation.
+The legacy runner initialized `audience_bonus=10` before AI evaluation. Therefore a perfect deterministic base could appear as 80 instead of 70. The runtime guard now forces pre-AI audience bonus to zero and preserves the real AI contribution after editorial evaluation.
+
+### 2. Deterministic calibration compression
+
+The subsequent production observation showed **16 queue stories with a maximum base score around 52**. This was a different defect: the arithmetic weights summed to 70, but the component functions did not use their allocations effectively on real material.
+
+The old formulas were structurally conservative:
+
+- AI specificity often stopped at 2.5–4.1/6;
+- impact commonly stayed in the lower half unless several signals aligned;
+- event concreteness often stopped at 11–14/18;
+- practical value commonly stopped at 2–5/8;
+- evidence and freshness were bounded but frequently partial;
+- novelty was explicitly 0.
+
+So the system had a **nominal 70-point ceiling but a practical ceiling around 52 for the observed story mix**. The 18-point gap was a calibration problem, not a missing final-sum operation.
 
 ## Base model — 70 points
 
-| Component | Max |
-|---|---:|
-| AI relevance | 12 |
-| AI specificity | 6 |
-| Impact | 16 |
-| Event concreteness | 18 |
-| Practical value | 8 |
-| Source quality | 5 |
-| Evidence | 3 |
-| Freshness | 2 |
-| **Total** | **70** |
+| Component | Max | v5 calibration principle |
+|---|---:|---|
+| AI relevance | 12 | Full allocation when the story is genuinely AI-relevant |
+| AI specificity | 6 | 4 evidence tiers: 3 / 4.5 / 5.5 / 6 |
+| Impact | 16 | consequence baseline + independent scale/actor/major/measurement/risk evidence |
+| Event concreteness | 18 | event family + actor + major-event + measurement evidence |
+| Practical value | 8 | 3 / 5 / 6.5 / 8 applicability tiers |
+| Novelty | 0 | intentionally outside arithmetic until a defensible novelty model exists |
+| Source quality | 5 | 5 trusted / 4 known / 2 other |
+| Evidence | 3 | bounded evidence-density tiers, not length multiplication |
+| Freshness | 2 | time-window based |
+| **Total** | **70** | |
 
-The model is event/consequence-first. Keyword density is not the objective. Semantic uniqueness remains outside the arithmetic score.
+v5 is deliberately not a keyword-count multiplier. Multiple words from one sentence do not independently create unlimited points. The goal is to recognize independent evidence dimensions that were previously underweighted.
 
 ## AI audience-fit — 30 points
 
@@ -68,23 +84,31 @@ The following is a **model calibration prior**, not observed subscriber behavior
 | 10 | 5% | +30 | 1.50 |
 | **Total / E[AI]** | **100%** | | **19.74/30** |
 
-This prior is intentionally conservative: it gives meaningful lift to useful stories while reserving +24…+30 for strong audience fit.
+## Transparent publication diagnostics
 
-## Practical score interpretation
+Every published item now carries a compact score footer before media delivery:
 
-Examples of the new composition:
+```text
+📊 Оценка новости
+Итого: X/100 = база Y/70 + аудитория Z/30
+AI-релевантность: …/12
+AI-специфичность: …/6
+Влияние: …/16
+Конкретность события: …/18
+Практическая ценность: …/8
+Новизна: 0/0
+Качество источника: …/5
+Доказательность: …/3
+Свежесть: …/2
+Шум/низкий сигнал: …
+Аудитория: …/10 → +…
+```
 
-- base 35 + audience 6 = **53** → reject;
-- base 40 + audience 6 = **58** → publishable;
-- base 45 + audience 7 = **66** → solid A;
-- base 55 + audience 8 = **79** → strong A+;
-- base 65 + audience 9 = **92** → S.
+This makes every point traceable and prevents future “where did the points go?” debugging from relying on aggregate telemetry alone.
 
-This is the intended mechanism for moving genuinely important news out of the old 40–60 concentration without simply lowering the 55 gate.
+## No-truncation rule
 
-## Media rule connected to scoring
-
-Editorial text is never sacrificed to satisfy Telegram's photo-caption limit. If a sanitized photo caption exceeds 1024 characters, the full text is sent through text-only fallback. A photo is therefore optional; the integrity of the editorial post is not.
+Editorial text is never sacrificed to satisfy Telegram's photo-caption limit. Telegram's `sendPhoto` caption is limited to 1024 characters after entity parsing. If the complete post plus diagnostics is too long for a photo caption, the image path must fall back to the complete text-only post. If the full text post itself exceeds the Telegram text limit, the publisher raises a controlled diagnostic-limit error rather than silently slicing content.
 
 The image payload remains hard-capped at 1,000,000 bytes with no resize/recompression.
 
@@ -92,10 +116,15 @@ The image payload remains hard-capped at 1,000,000 bytes with no resize/recompre
 
 - CI regression suite green;
 - base score ≤70;
+- pre-AI audience bonus = 0;
 - AI bonus +3…+30;
+- perfect base + AI 10/10 = 100;
+- strong real stories demonstrably use >55 base when evidence supports it;
 - every published final score ≥55;
 - `final_below_threshold=0`;
 - no finalized <55 in durable queue;
+- every publication contains the complete score footer;
+- score footer never truncates editorial text;
 - long photo captions never lose their tail;
 - valid publisher image reaches `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT` when source permits;
 - strong stories move above the historical 40–60 concentration.
