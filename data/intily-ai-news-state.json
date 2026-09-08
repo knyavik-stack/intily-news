@@ -671,7 +671,8 @@
     "b1a51cea1b5a47002b314bb86fd743cd7b0b353488fcde4844cdc606940f7364": 1788862025,
     "da10731a5d100b962871340ee83b1bbb4ecb38b3ed67fd9958155df6fb527b08": 1788862211,
     "4c890770f00243dd855cd6e854ba41b9a035d3f455a980eb676169125b8385e5": 1788862384,
-    "ad37295671d04001679047ac1a443866f4321781dcd32cead515a163d22285c7": 1788862567
+    "ad37295671d04001679047ac1a443866f4321781dcd32cead515a163d22285c7": 1788862567,
+    "1d173e2b3b51f11743773aa089517fcabdbff2199e76b20c8762be355b7e3fc3": 1788862743
   },
   "known": {
     "fc227e1afde9e12cc5ee2d7e374cb36d9aae955cccc1e38d6d8dd3f39d003fd4": 1788857527.402865,
@@ -746,10 +747,10 @@
       ],
       "tier": "A",
       "audience_score": 6.0,
-      "last_failed_at": 1788862567,
+      "last_failed_at": 1788862743,
       "last_failure": "FINAL_SCORE_BELOW_THRESHOLD:53.7",
-      "failure_count": 3,
-      "next_retry_at": 1788863767
+      "failure_count": 4,
+      "next_retry_at": 1788865143
     },
     {
       "region": "RUSSIA",
@@ -787,43 +788,10 @@
       ],
       "tier": "A",
       "audience_score": 6.0,
-      "last_failed_at": 1788862567,
+      "last_failed_at": 1788862743,
       "last_failure": "FINAL_SCORE_BELOW_THRESHOLD:53.6",
-      "failure_count": 11,
-      "next_retry_at": 1788884167
-    },
-    {
-      "region": "WORLD",
-      "title": "Zuckerberg Opposed White House AI Regulator Plan In Trump Call - Memeburn",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQejJhbHlLR0xhQVU3QjNtNkF6aWE0bGZxRkZkS2M1Y1llOXFHM2xKRG5jYkEzVUhwVkNDWnlyZ2Yxc0JvTjRiRF9Rb0l2eGxoRFZfYmFIMnFCZ2xFcVJ5ZXJTVm1ITzFLN1hnSGFGeGo0NmI5eEFiSHdTcW5EX0NBc1JRdTlRZElVZVdUTA?oc=5",
-      "desc": "Zuckerberg Opposed White House AI Regulator Plan In Trump Call Memeburn",
-      "source": "Memeburn",
-      "time": 1788848111.0,
-      "_score_components": {
-        "relevance": 20.0,
-        "ai_specificity": 0.0,
-        "impact": 0.0,
-        "event_concreteness": 18.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 3.0,
-        "evidence": 0.8,
-        "freshness": 3.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 44.8,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 44.8
-      },
-      "base_score": 44.8,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 44.8,
-      "key": "1d173e2b3b51f11743773aa089517fcabdbff2199e76b20c8762be355b7e3fc3",
-      "importance": 44.8,
-      "editorial_value": 44.8,
-      "topics": [],
-      "tier": "A"
+      "failure_count": 12,
+      "next_retry_at": 1788884343
     },
     {
       "region": "WORLD",
@@ -1069,20 +1037,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788862567.7377172,
+    "last_start_ts": 1788862743.9375503,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788862567.7377172,
-    "last_success_ts": 1788862567.7377172,
+    "last_run_ts": 1788862743.9375503,
+    "last_success_ts": 1788862743.9375503,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 10
+    "queue_size": 9
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788862630.7499316
+      "updated_at": 1788862754.9951663
     },
     "GROQ": {
       "disabled_until": 1788878310.3510802,
@@ -1879,11 +1847,17 @@
       "desc": "OpenAI Unveils GPT-6 Astra, Trails Anthropic and Meta in Benchmarks thelec.net",
       "source": "thelec.net",
       "region": "WORLD"
+    },
+    "1d173e2b3b51f11743773aa089517fcabdbff2199e76b20c8762be355b7e3fc3": {
+      "time": 1788862743,
+      "title": "Zuckerberg Opposed White House AI Regulator Plan In Trump Call - Memeburn",
+      "desc": "Zuckerberg Opposed White House AI Regulator Plan In Trump Call Memeburn",
+      "source": "Memeburn",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -1900,71 +1874,13 @@
     "WORLD",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD"
   ],
   "last_search_ts": 1788861305.3126938,
-  "last_publish_ts": 1788862567.7377172,
+  "last_publish_ts": 1788862743.9375503,
   "run_history": [
-    {
-      "ts": 1788725680,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "publish_interval_not_reached",
-      "searched": false,
-      "duration_sec": 0.11,
-      "candidates": 0,
-      "queue_before": 11,
-      "queue_after": 11,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788725860,
       "status": "OK",
@@ -20370,6 +20286,98 @@
         },
         "queue_score_audit": {
           "pre_ai_below_final_threshold": 8,
+          "final_below_threshold": 2,
+          "invariant_ok": false
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788862743,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 12.6,
+      "candidates": 0,
+      "queue_before": 10,
+      "queue_after": 9,
+      "published": 1,
+      "publish_attempts": 3,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 400: Bad Request": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 400: Bad Request"
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 6.33,
+          "bonus_total": 38.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 14.0,
+            "reason": "Понимание политических игр гигантов критично для оценки рисков и стратегии развития AI-продуктов.",
+            "title": "Zuckerberg Opposed White House AI Regulator Plan In Trump Call - Memeburn",
+            "final_score": 58.8
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 7,
           "final_below_threshold": 2,
           "invariant_ok": false
         }
