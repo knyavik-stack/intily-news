@@ -12,7 +12,7 @@ class AudiencePolicyTests(unittest.TestCase):
         self.assertEqual(AUDIENCE_BONUS_MAX, 30.0)
         self.assertEqual(
             [bonus_from_score(i) for i in range(1, 11)],
-            [21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 27.0, 28.0, 29.0, 30.0],
+            [3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0],
         )
 
     def test_range_is_strict(self):
