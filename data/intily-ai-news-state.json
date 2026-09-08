@@ -26,7 +26,8 @@
     "faec3ac0cf7363e64de7f29270e3b57ea7b96555ad43103b93a8a1996dea0c36": 1788889166,
     "e94aed7349e1044377b16f51686c863cc6f56e123c74e3cb12f848f3cdbb0efe": 1788889344,
     "bb440aa621347bed459368c0c5d1375a647f8e6fa1cc347e06a4ab85e3d23e92": 1788889703,
-    "c589343289a14ffb8db41d7b078a95b33e66cfc97ac6612b782660a619930c89": 1788889883
+    "c589343289a14ffb8db41d7b078a95b33e66cfc97ac6612b782660a619930c89": 1788889883,
+    "99bff462af912812e496046a46ac265c0a14bf696738fc3561e211efe7e559c6": 1788890070
   },
   "known": {
     "1b227251c5dfdf1886227a64e446d5dc6ed5b681b41dd1552bf2585c3da6f12f": 1788887004.696961,
@@ -126,39 +127,6 @@
     "4f09b401f931af561edfc8e11215d93cd024c240875e40a24d773571f99cf46d": 1788888814.942637
   },
   "queue": [
-    {
-      "region": "WORLD",
-      "title": "OpenAI fought dirty on career-making math problem, says NYU mathematician",
-      "link": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/",
-      "desc": "There is a $1 million bounty for the first person providing a solution to the Navier-Stokes existence and smoothness problem.",
-      "source": "TechCrunch AI",
-      "time": 1788888735.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.3,
-        "impact": 16.0,
-        "event_concreteness": 17.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 0.9,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 53.2,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 53.2
-      },
-      "base_score": 53.2,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 53.2,
-      "key": "99bff462af912812e496046a46ac265c0a14bf696738fc3561e211efe7e559c6",
-      "importance": 53.2,
-      "editorial_value": 50.0,
-      "topics": [],
-      "tier": "A"
-    },
     {
       "region": "WORLD",
       "title": "Samsung Invests $3.5 Billion in 'Europe's OpenAI' Mistral AI to Co-Develop Semiconductor-Specialized AI - finance.biggo.com",
@@ -625,20 +593,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788889883.4681108,
+    "last_start_ts": 1788890070.1117966,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788889883.4681108,
-    "last_success_ts": 1788889883.4681108,
+    "last_run_ts": 1788890070.1117966,
+    "last_success_ts": 1788890070.1117966,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 14
+    "queue_size": 13
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788889887.1179655
+      "updated_at": 1788890073.0374517
     }
   },
   "stories": {
@@ -830,10 +798,16 @@
       "desc": "Японское агентство аэрокосмических исследований (JAXA) готовится к запуску зонда Martian Moons eXploration (MMX), который соберёт первые образцы на одном из двух спутников Марса и доставит материал на Землю. Запуск миссии запланировали на 20 октября 2026 года с площадки Космического центра Танегасима. В случае успеха аппарат доставит с Фобоса не менее 10 г материала. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "99bff462af912812e496046a46ac265c0a14bf696738fc3561e211efe7e559c6": {
+      "time": 1788890070,
+      "title": "OpenAI fought dirty on career-making math problem, says NYU mathematician",
+      "desc": "There is a $1 million bounty for the first person providing a solution to the Navier-Stokes existence and smoothness problem.",
+      "source": "TechCrunch AI",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "WORLD",
@@ -852,7 +826,8 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
     {
@@ -3627,9 +3602,99 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1788890070,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 4.64,
+      "candidates": 0,
+      "queue_before": 14,
+      "queue_after": 13,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/",
+            "image_url": "https://techcrunch.com/wp-content/uploads/2022/08/GettyImages-1219382595.jpg?resize=1200,750",
+            "width": 1200,
+            "height": 750,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 3.0,
+          "bonus_total": 9.0,
+          "max_score": 3.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 3.0,
+            "bonus": 9.0,
+            "reason": "Новость носит репутационный характер и не несет практической ценности для рабочих процессов или стратегии развития AI-продуктов.",
+            "title": "OpenAI fought dirty on career-making math problem, says NYU mathematician",
+            "final_score": 62.2
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 13,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1788888814.942637,
-  "last_publish_ts": 1788889883.4681108
+  "last_publish_ts": 1788890070.1117966
 }
