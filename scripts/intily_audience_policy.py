@@ -1,24 +1,24 @@
 """Intily target-audience editorial policy.
 
 Audience is a behavioral/job-to-be-done model, not a demographic claim about
-current subscribers. The score is produced by the same AI editorial pass that
-translates and summarizes the story.
+current subscribers. The AI editorial pass contributes exactly 30 points of
+the 100-point final score: audience_score 1–10 is mapped linearly to +3…+30.
 """
 
 PRE_AI_THRESHOLD = 40.0
 FINAL_THRESHOLD = 55.0
-AUDIENCE_BONUS_MAX = 20.0
+AUDIENCE_BONUS_MAX = 30.0
 
 AUDIENCE_RUBRIC = {
-    10: 'Immediate practical or strategic consequence; the reader can act, change a workflow, make a decision, or avoid a material risk now.',
-    9: 'Very strong practical/strategic relevance with clear implications for work, product, business, technology, or risk.',
-    8: 'Strong relevance; a substantial change in tools, capabilities, economics, competition, regulation, or implementation.',
-    7: 'Useful professional context with a concrete implication, but not urgent or transformative.',
-    6: 'Moderately useful; relevant to an AI-active professional with a meaningful but limited consequence.',
-    5: 'Interesting industry information with weak or indirect practical value.',
-    4: 'Mostly passive awareness; useful mainly to specialists following the topic closely.',
-    3: 'Curiosity or commentary with little consequence for the target reader.',
-    2: 'Low-value industry noise, weak evidence, or marginal product/news detail.',
+    10: 'Immediate, material consequence: the reader should change a decision, workflow, product, spend, security posture, or operating plan now.',
+    9: 'Very strong practical or strategic consequence with a clear near-term action for business, product, technology, or risk.',
+    8: 'Strong concrete relevance: a material new capability, deployment, economics, competition, regulation, security event, or implementation change.',
+    7: 'Useful professional context with a concrete implication or credible use case, but limited urgency or magnitude.',
+    6: 'Meaningfully relevant to an AI-active professional, but the consequence is indirect, narrow, or not immediately actionable.',
+    5: 'Interesting industry information; useful awareness but weak direct effect on work or decisions.',
+    4: 'Mostly passive awareness; value is concentrated among specialists closely following the topic.',
+    3: 'Curiosity/commentary with little practical consequence for the target reader.',
+    2: 'Low-value noise, weak evidence, speculative detail, or marginal product/news information.',
     1: 'Essentially irrelevant to the target audience despite containing AI-related language.',
 }
 
@@ -48,28 +48,28 @@ def clamp_score(value):
 
 
 def bonus_from_score(value):
-    """Map audience score 1–10 linearly to +2…+20."""
+    """Map audience score 1–10 linearly to +3…+30 (30% of 100)."""
     score = clamp_score(value)
-    return round(score * 2.0, 1)
+    return round(score * 3.0, 1)
 
 
 def build_evaluation_instruction():
     rubric = '\n'.join(f'{k}/10 — {v}' for k, v in AUDIENCE_RUBRIC.items())
     return (
         '\nОТДЕЛЬНАЯ ОЦЕНКА ЦЕЛЕВОЙ АУДИТОРИИ INTILY. После того как ты понял и пересказал новость, '
-        'оцени её полезность именно для русскоязычного AI-активного профессионала. Это может быть предприниматель или '
-        'владелец малого/среднего бизнеса, руководитель/менеджер, product/marketing/sales/operations/finance специалист, '
-        'разработчик/технический специалист, AI-практик или power user. Не оценивай «насколько новость интересна вообще».\n'
-        'Главные вопросы: изменит ли это работу, продукт, бизнес, затраты, производительность, автоматизацию, технологии '
-        'или риск; даст ли инструмент/решение/возможность; важно ли знать это сейчас; применимо ли это в российском '
-        'контексте или помогает понимать мировой AI-рынок. На сколько это вредит конечному человеку, в период потери рабочих мест и замены людей на ИИ\n'
+        'оцени её полезность именно для русскоязычного AI-активного профессионала: предпринимателя/владельца бизнеса, '
+        'руководителя/менеджера, product/marketing/sales/operations/finance специалиста, разработчика/технического специалиста, '
+        'AI-практика или power user. Не оценивай «насколько новость интересна вообще».\n'
+        'Сначала оцени фактическое последствие: изменится ли работа, продукт, бизнес, затраты, производительность, автоматизация, '
+        'технологическая стратегия, безопасность или риск; появится ли доступная возможность; нужно ли принимать решение сейчас. '
+        'Учитывай как позитивные возможности, так и материальные риски, включая изменение занятости и замену отдельных задач ИИ, '
+        'но не повышай оценку только из-за драматичности формулировки. Не ставь высокий балл за сам факт известного бренда, '
+        'финансирования, оценки компании, слуха или прогноза без доказанного последствия.\n'
         'Шкала:\n' + rubric +
-        '\nВерни дополнительно audience_score (целое число 5–10) и audience_reason (одна короткая фраза). '
-        'Это второй редакторский сигнал. Его вклад в итоговый score линейный: score × 2, то есть 1/10=+2 и 10/10=+20.\n'
+        '\nВерни дополнительно audience_score (целое число 1–10) и audience_reason (одна короткая фраза, объясняющая конкретное последствие). '
+        'Это второй редакторский сигнал и ровно 30% итоговой шкалы: score × 3, то есть 1/10=+3 и 10/10=+30.\n'
     )
 
-# Runtime activation: direct runner invocation uses the same hardened image
-# fetch and the strict <=1 MiB Telegram payload as production CI.
 try:
     import intily_image_pipeline as _image_pipeline
     from intily_image_runtime import fetch_image as _runtime_fetch_image
