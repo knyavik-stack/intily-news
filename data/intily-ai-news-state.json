@@ -651,7 +651,8 @@
     "d0c8ceb07a05a3cc89146e23a98bc93b9af9466ca9865d07b47af57064887edb": 1788858427,
     "0d48661f8ed3efd2a9a30b1ba162a6fad807bba8694b8d0bb369d0a2e8ffff4e": 1788858605,
     "176a5a5f2504303daee8a74b7bcbaf397c69086c4e4a81e9d669610c1e775580": 1788858785,
-    "8e49651d7526108866df74b9dd30b51870b6e4d842bc1680605a58bec6b68a2b": 1788858964
+    "8e49651d7526108866df74b9dd30b51870b6e4d842bc1680605a58bec6b68a2b": 1788858964,
+    "ef73eaf69539a3241871285ee226301eacf6b6653e0f939722d2ac737b8ed64d": 1788859145
   },
   "known": {
     "15aaebf4175fb4b9c43751801c18324dfccc12df704d7fdb6a39c327c09cea9c": 1788853745.2191985,
@@ -722,43 +723,10 @@
       ],
       "tier": "A",
       "audience_score": 6.0,
-      "last_failed_at": 1788858964,
+      "last_failed_at": 1788859145,
       "last_failure": "FINAL_SCORE_BELOW_THRESHOLD:54.6",
-      "failure_count": 1,
-      "next_retry_at": 1788859264
-    },
-    {
-      "region": "WORLD",
-      "title": "Caterpillar and FieldAI Advance Industrial AI - Machine Maker",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPLTFqampUS1dPX3FKZGVXWktnRnMxV2VkV05LWG00Vm9udW1oY1poLWtpODlxWmFzVThWWUhYV05aem9nSWhoVUR3TG5mRzVhak9IRHRJdnBWSWJEcm83ck01SEVvaGVaMEhSeUZNVlJVb29wMV84ekdMdTJYbmFraHBpMDBuZw?oc=5",
-      "desc": "Caterpillar and FieldAI Advance Industrial AI Machine Maker",
-      "source": "Machine Maker",
-      "time": 1788847427.0,
-      "_score_components": {
-        "relevance": 20.0,
-        "ai_specificity": 4.0,
-        "impact": 0.0,
-        "event_concreteness": 16.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 3.0,
-        "evidence": 0.7,
-        "freshness": 3.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 46.7,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 46.7
-      },
-      "base_score": 46.7,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 46.7,
-      "key": "ef73eaf69539a3241871285ee226301eacf6b6653e0f939722d2ac737b8ed64d",
-      "importance": 46.7,
-      "editorial_value": 48.7,
-      "topics": [],
-      "tier": "A"
+      "failure_count": 2,
+      "next_retry_at": 1788859745
     },
     {
       "region": "WORLD",
@@ -972,20 +940,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788858964.5967915,
+    "last_start_ts": 1788859145.185423,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788858964.5967915,
-    "last_success_ts": 1788858964.5967915,
+    "last_run_ts": 1788859145.185423,
+    "last_success_ts": 1788859145.185423,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 8
+    "queue_size": 7
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788858971.919481
+      "updated_at": 1788859150.5938737
     },
     "GROQ": {
       "disabled_until": 1788878310.3510802,
@@ -1642,12 +1610,18 @@
       "desc": "Главный научный сотрудник OpenAI призвал замедлить разработку ИИ Код.ру",
       "source": "Код.ру",
       "region": "RUSSIA"
+    },
+    "ef73eaf69539a3241871285ee226301eacf6b6653e0f939722d2ac737b8ed64d": {
+      "time": 1788859145,
+      "title": "Caterpillar and FieldAI Advance Industrial AI - Machine Maker",
+      "desc": "Caterpillar and FieldAI Advance Industrial AI Machine Maker",
+      "source": "Machine Maker",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1664,60 +1638,12 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "last_search_ts": 1788857527.402865,
-  "last_publish_ts": 1788858964.5967915,
+  "last_publish_ts": 1788859145.185423,
   "run_history": [
-    {
-      "ts": 1788723458,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "publish_interval_not_reached",
-      "searched": false,
-      "duration_sec": 0.3,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 18,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key"
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788723520,
       "status": "OK",
@@ -19482,6 +19408,97 @@
         },
         "queue_score_audit": {
           "pre_ai_below_final_threshold": 7,
+          "final_below_threshold": 1,
+          "invariant_ok": false
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1788859145,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 8.34,
+      "candidates": 0,
+      "queue_before": 8,
+      "queue_after": 7,
+      "published": 1,
+      "publish_attempts": 2,
+      "item_failures": 1,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 400: Bad Request": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 400: Bad Request"
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 28.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 16.0,
+            "reason": "Показывает реальный вектор автоматизации тяжелого труда, что критично для понимания рынка.",
+            "title": "Caterpillar and FieldAI Advance Industrial AI - Machine Maker",
+            "final_score": 62.7
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 6,
           "final_below_threshold": 1,
           "invariant_ok": false
         }
