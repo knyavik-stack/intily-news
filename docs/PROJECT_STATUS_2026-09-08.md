@@ -87,7 +87,7 @@ The latest commits after #680 change the score model, queue guard, media behavio
 - `docs/INTILY_ANALYTICS.md`
 - `docs/INTILY_PRODUCTION_MONITORING.md`
 - `docs/INTILY_PUBLICATION_SETTINGS.md`
-- `docs/SCORING_CALIBRATION_2026-09-07.md`
+- `docs/SCORING_CALIBRATION_2026-09-08.md`
 - `docs/CMO_MODEL_REVIEW_2026-09-07.md`
 - `docs/IMAGE_PIPELINE_INCIDENT_2026-09-07.md`
 - `docs/USER_HANDOFF.md`
