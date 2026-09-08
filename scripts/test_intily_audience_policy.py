@@ -1,6 +1,6 @@
 import unittest
 
-from intily_audience_policy import PRE_AI_THRESHOLD, FINAL_THRESHOLD, bonus_from_score, clamp_score
+from intily_audience_policy import PRE_AI_THRESHOLD, FINAL_THRESHOLD, AUDIENCE_BONUS_MAX, bonus_from_score, clamp_score
 
 
 class AudiencePolicyTests(unittest.TestCase):
@@ -8,10 +8,11 @@ class AudiencePolicyTests(unittest.TestCase):
         self.assertEqual(PRE_AI_THRESHOLD, 40.0)
         self.assertEqual(FINAL_THRESHOLD, 55.0)
 
-    def test_bonus_is_linear_from_one_to_ten(self):
+    def test_ai_layer_is_exactly_thirty_points(self):
+        self.assertEqual(AUDIENCE_BONUS_MAX, 30.0)
         self.assertEqual(
             [bonus_from_score(i) for i in range(1, 11)],
-            [2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0],
+            [3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0, 27.0, 30.0],
         )
 
     def test_range_is_strict(self):
