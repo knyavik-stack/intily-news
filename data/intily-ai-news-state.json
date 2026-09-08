@@ -21,7 +21,8 @@
     "a093fc74d46951243a851593d7e17540337fda368c8093403747a4a5ead94799": 1788885564,
     "80dd79eaf85a5aea967f4605a9c75fb2c90354407c52b7c9a7688c0eba5adbbe": 1788885742,
     "1b227251c5dfdf1886227a64e446d5dc6ed5b681b41dd1552bf2585c3da6f12f": 1788887004,
-    "bc26109de7d9b9d85bba7820b4d41b7ac3073d52be18fc0c84c85274038581eb": 1788888814
+    "bc26109de7d9b9d85bba7820b4d41b7ac3073d52be18fc0c84c85274038581eb": 1788888814,
+    "49d6e9360895335b3cf364007db7fb3a059a4c91a1a9f4c4ce56d5fdb3062da1": 1788888982
   },
   "known": {
     "6cb1d1efb9713cc52caea800add9ba21a1906d947d3c1c242fc76ffd07386c00": 1788883943.3004284,
@@ -216,43 +217,6 @@
     "4f09b401f931af561edfc8e11215d93cd024c240875e40a24d773571f99cf46d": 1788888814.942637
   },
   "queue": [
-    {
-      "region": "WORLD",
-      "title": "A new class action lawsuit questions whether Anthropic broke the law by misleading power users",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
-      "desc": "Anthropic says power users are key to its business - it's prioritized them even when it means cutting off other popular applications, like OpenClaw. But some of these same customers say Anthropic misled them into believing they'd get more out of a top-tier pricing subscription than they did. In an expanded class-action lawsuit filed today, […]",
-      "source": "The Verge AI",
-      "time": 1788888451.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.9,
-        "impact": 16.0,
-        "event_concreteness": 18.0,
-        "practical_value": 2.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 59.9,
-        "audience_score": null,
-        "audience_bonus": 10.0,
-        "final_score": 69.9
-      },
-      "base_score": 59.9,
-      "audience_bonus": 10.0,
-      "score_stage": "pre_ai",
-      "score": 69.9,
-      "key": "49d6e9360895335b3cf364007db7fb3a059a4c91a1a9f4c4ce56d5fdb3062da1",
-      "importance": 69.9,
-      "editorial_value": 50.0,
-      "topics": [
-        "applications",
-        "business",
-        "security_regulation"
-      ],
-      "tier": "A"
-    },
     {
       "region": "WORLD",
       "title": "Google DeepMind maps 9 billion human DNA mutations in major genetics breakthrough - thenews.com.pk",
@@ -891,20 +855,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788888814.942637,
+    "last_start_ts": 1788888982.7005098,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788888814.942637,
-    "last_success_ts": 1788888814.942637,
-    "last_candidates": 99,
+    "last_run_ts": 1788888982.7005098,
+    "last_success_ts": 1788888982.7005098,
+    "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 19
+    "queue_size": 18
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788888858.190192
+      "updated_at": 1788888988.196512
     }
   },
   "stories": {
@@ -1061,10 +1025,16 @@
       "desc": "Крупнейший в Европе разработчик ИИ подорожал до €21 млрд и привлёк €3 млрд инвестиций 3DNews",
       "source": "3DNews",
       "region": "RUSSIA"
+    },
+    "49d6e9360895335b3cf364007db7fb3a059a4c91a1a9f4c4ce56d5fdb3062da1": {
+      "time": 1788888982,
+      "title": "A new class action lawsuit questions whether Anthropic broke the law by misleading power users",
+      "desc": "Anthropic says power users are key to its business - it's prioritized them even when it means cutting off other popular applications, like OpenClaw. But some of these same customers say Anthropic misled them into believing they'd get more out of a top-tier pricing subscription than they did. In an expanded class-action lawsuit filed today, […]",
+      "source": "The Verge AI",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -1083,7 +1053,8 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
     {
@@ -3408,9 +3379,99 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1788888982,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 7.33,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 18,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
+            "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/STK202_DARIO_AMODEI_CVIRGINIA_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+            "width": 1200,
+            "height": 624,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 7.0,
+          "bonus_total": 21.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Необходимость пересмотра рисков при выборе вендора и зависимости от проприетарных API.",
+            "title": "A new class action lawsuit questions whether Anthropic broke the law by misleading power users",
+            "final_score": 80.9
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 7,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1788888814.942637,
-  "last_publish_ts": 1788888814.942637
+  "last_publish_ts": 1788888982.7005098
 }
