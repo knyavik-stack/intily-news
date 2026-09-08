@@ -1,29 +1,30 @@
-"""Intily editorial scoring policy v3.
+"""Intily editorial scoring policy v4.
 
-55 is the production publication gate after the separate audience-fit layer.
-The score measures editorial materiality, not keyword density. The model is event-first: AI relevance proves
-channel fit; an explicit event family supplies the main base score; consequence,
-actor scale, measurable effect, source quality and freshness refine it.
+The production score is split into two independent editorial layers:
+- base editorial model: 0–70 points, deterministic and event/consequence-first;
+- AI audience-fit: 1–10 mapped to 3–30 points, exactly 30% of the 100-point scale.
 
-Uniqueness is intentionally outside the score. Semantic story memory decides
-whether an event is new, so an important event is not made less important just
-because several publishers reported it.
+The model is deliberately not keyword-count scoring. A concrete material event
+can score highly even when the source uses different wording, while commentary,
+speculation and weakly evidenced stories stay below the gate.
 """
 
 from datetime import datetime, timezone
 
 THRESHOLD = 55.0
+BASE_MAX = 70.0
+AI_MAX = 30.0
 
 WEIGHTS = {
-    'relevance': 20.0,
-    'ai_specificity': 10.0,
-    'impact': 20.0,
-    'event_concreteness': 25.0,
+    'relevance': 12.0,
+    'ai_specificity': 6.0,
+    'impact': 16.0,
+    'event_concreteness': 18.0,
     'practical_value': 8.0,
     'novelty': 0.0,
-    'source_quality': 7.0,
-    'evidence': 5.0,
-    'freshness': 5.0,
+    'source_quality': 5.0,
+    'evidence': 3.0,
+    'freshness': 2.0,
 }
 
 EVENT_FAMILIES = {
@@ -89,33 +90,33 @@ def _age_hours(x):
 
 def _freshness(age_hours):
     if age_hours <= 1.0:
-        return 5.0
+        return 2.0
     if age_hours <= 3.0:
-        return 4.0
+        return 1.5
     if age_hours <= 6.0:
-        return 3.0
-    if age_hours <= 12.0:
         return 1.0
+    if age_hours <= 12.0:
+        return 0.5
     return 0.0
 
 
 def _event_concreteness(blob, title):
-    """Return a materiality base for a concrete event, not keyword density."""
+    """Score verifiable event materiality, not the number of matching words."""
     hits = [name for name, terms in EVENT_FAMILIES.items() if any(term in blob for term in terms)]
     if not hits:
         return 0.0
     primary = {
-        'launch': 17.0, 'release': 17.0, 'deal': 19.0, 'money': 17.0,
-        'research': 16.0, 'policy': 18.0, 'incident': 18.0,
+        'launch': 13.0, 'release': 13.0, 'deal': 14.0, 'money': 11.0,
+        'research': 11.0, 'policy': 14.0, 'incident': 14.0,
     }
     value = max(primary[name] for name in hits)
-    value += min(4.0, max(0, len(hits) - 1) * 2.0)
+    value += min(2.0, max(0, len(hits) - 1) * 1.0)
     if any(actor in blob for actor in MAJOR_ACTORS):
-        value += 2.0
-    if any(signal in blob for signal in MAJOR_EVENT_SIGNALS):
-        value += 2.0
-    if any(ch.isdigit() for ch in title):
         value += 1.0
+    if any(signal in blob for signal in MAJOR_EVENT_SIGNALS):
+        value += 1.0
+    if any(ch.isdigit() for ch in title):
+        value += 0.5
     return min(WEIGHTS['event_concreteness'], value)
 
 
@@ -123,11 +124,11 @@ def _ai_specificity(blob, ai_terms):
     hits = _distinct_hits(blob, ai_terms)
     if not hits:
         return 0.0
-    return min(WEIGHTS['ai_specificity'], 4.0 + max(0, hits - 1) * 1.25)
+    return min(WEIGHTS['ai_specificity'], 2.5 + max(0, hits - 1) * 0.8)
 
 
 def _impact(blob, high_impact_terms, risk_terms):
-    """Estimate consequence using independent signals and diminishing returns."""
+    """Estimate consequence with independent scale, risk and measurable-effect signals."""
     impact_hits = _distinct_hits(blob, high_impact_terms)
     risk_hits = _distinct_hits(blob, risk_terms)
     actor = any(term in blob for term in MAJOR_ACTORS)
@@ -135,13 +136,13 @@ def _impact(blob, high_impact_terms, risk_terms):
     measured = any(term in blob for term in MEASUREMENT_SIGNALS)
     if not impact_hits and not risk_hits:
         return 0.0
-    value = 5.0
-    value += min(5.0, max(0, impact_hits - 1) * 1.5)
-    value += min(5.0, risk_hits * 2.5)
+    value = 4.0
+    value += min(4.0, max(0, impact_hits - 1) * 1.25)
+    value += min(4.0, risk_hits * 2.0)
     if actor:
-        value += 2.0
+        value += 1.5
     if major_signal:
-        value += 2.0
+        value += 1.5
     if measured:
         value += 1.0
     return min(WEIGHTS['impact'], value)
@@ -151,7 +152,7 @@ def _practical(blob):
     hits = _distinct_hits(blob, PRACTICAL_SIGNALS)
     if not hits:
         return 0.0
-    return min(WEIGHTS['practical_value'], 2.0 + max(0, hits - 1) * 1.25)
+    return min(WEIGHTS['practical_value'], 2.0 + max(0, hits - 1) * 1.0)
 
 
 def _source_quality(source, quality_trusted, trusted):
@@ -159,19 +160,19 @@ def _source_quality(source, quality_trusted, trusted):
     if source in quality_trusted:
         return WEIGHTS['source_quality']
     if source in trusted:
-        return 5.0
-    return 3.0
+        return 3.5
+    return 2.0
 
 
 def _evidence(desc):
     length = len(' '.join(str(desc or '').split()))
     if length < 50:
-        return 0.5
+        return 0.3
     if length < 140:
-        return round(0.5 + (length - 50) / 90.0 * 1.5, 1)
+        return round(0.3 + (length - 50) / 90.0 * 0.7, 1)
     if length < 320:
-        return round(2.0 + (length - 140) / 180.0 * 3.0, 1)
-    return 5.0
+        return round(1.0 + (length - 140) / 180.0 * 2.0, 1)
+    return 3.0
 
 
 def score_components(x, ai_relevant, high_impact_terms, application_terms,
@@ -193,8 +194,7 @@ def score_components(x, ai_relevant, high_impact_terms, application_terms,
         'evidence': _evidence(x.get('desc', '')),
         'freshness': _freshness(_age_hours(x)),
     }
-    penalty_terms = low_signal_terms or LOW_SIGNAL_DEFAULTS
-    parts['low_signal_penalty'] = 6.0 if _distinct_hits(blob, penalty_terms) else 0.0
+    parts['low_signal_penalty'] = 6.0 if _distinct_hits(blob, low_signal_terms or LOW_SIGNAL_DEFAULTS) else 0.0
     return {k: round(v, 1) for k, v in parts.items()}
 
 
@@ -206,8 +206,11 @@ def calculate(x, ai_relevant, high_impact_terms, application_terms,
         practical_terms, risk_terms, exclusivity_terms,
         quality_trusted, trusted, low_signal_terms,
     )
-    total = sum(parts[k] for k in WEIGHTS) - parts['low_signal_penalty']
-    return round(_clamp(total), 1), parts
+    base_total = sum(parts[k] for k in WEIGHTS) - parts['low_signal_penalty']
+    # Keep the deterministic layer on an explicit 70-point ceiling. This is
+    # a safety invariant: AI audience-fit owns the remaining 30 points.
+    total = _clamp(base_total, 0.0, BASE_MAX)
+    return round(total, 1), parts
 
 
 def tier(score):
