@@ -1280,12 +1280,13 @@ def ai(prompt, s):
                 and (
                     'HTTP_503' in message
                     or 'HTTP_500' in message
+                    or 'HTTP_429' in message  # <-- ДОБАВИТЬ ЭТУ СТРОКУ
                 )
             ):
                 block_provider(
                     s,
                     name,
-                    'TEMPORARY_SERVICE_ERROR'
+                    'TEMPORARY_SERVICE_ERROR_OR_429'
                 )
 
     raise RuntimeError(
