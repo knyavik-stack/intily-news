@@ -24,6 +24,11 @@ SCORE_COMPONENT_LABELS = (
     ('freshness', 'Свежесть', 2.0),
 )
 
+# Production publication contract: a finalized item is durable only when its
+# final score clears the publication gate. Pre-AI 40–54 items may remain in
+# the queue because they are intentionally waiting for AI audience review.
+FINAL_QUEUE_THRESHOLD = 55.0
+
 # Set by intily_production_entrypoint.py. Keeping the default unbounded makes
 # this module safe for unit tests and non-production callers.
 AI_EVALUATION_DEADLINE = None
@@ -119,6 +124,11 @@ def _pure_score_rebalance(publisher, items, now):
         if float(item.get('time', 0) or 0) < now - publisher.LOOKBACK.total_seconds():
             continue
         if not publisher.candidate_quality(item):
+            continue
+        # A finalized story that failed the publication gate is not a valid
+        # durable queue item. Do not confuse it with a pre-AI 40–54 candidate:
+        # those remain intentionally eligible for future AI evaluation.
+        if _is_final(item) and _final_score(item) < FINAL_QUEUE_THRESHOLD:
             continue
         fresh.append(item)
 
