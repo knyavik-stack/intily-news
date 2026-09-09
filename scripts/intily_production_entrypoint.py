@@ -28,6 +28,7 @@ AI_EVALUATION_BUDGET_SECONDS = 180.0
 GEMINI_REQUEST_TIMEOUT_SECONDS = 20
 
 _gemini_last_request_at = 0.0
+_active_provider_state = None
 
 
 def _wait_for_gemini_slot():
@@ -76,11 +77,7 @@ def _gemini_chat(prompt, token):
         }).encode()
 
         url = publisher.GEMINI_URL + '?key=' + urllib.parse.quote(token, safe='')
-        req = urllib.request.Request(
-            url,
-            data=body,
-            headers={'Content-Type': 'application/json'},
-        )
+        req = urllib.request.Request(url, data=body, headers={'Content-Type': 'application/json'})
 
         try:
             with urllib.request.urlopen(req, timeout=GEMINI_REQUEST_TIMEOUT_SECONDS) as response:
@@ -109,7 +106,6 @@ def _gemini_chat(prompt, token):
 
 
 def _one_shot_gemini_chat(prompt, token):
-    """Compatibility wrapper retained for tests and callers expecting one-shot semantics."""
     return _gemini_chat(prompt, token)
 
 
@@ -118,10 +114,7 @@ def _github_models_chat(prompt, token):
     body = json.dumps({
         'model': GITHUB_MODELS_MODEL,
         'messages': [
-            {
-                'role': 'system',
-                'content': 'Ты профессиональный редактор русского Telegram-канала об AI. Отвечай только валидным JSON.'
-            },
+            {'role': 'system', 'content': 'Ты профессиональный редактор русского Telegram-канала об AI. Отвечай только валидным JSON.'},
             {'role': 'user', 'content': _compact_gemini_prompt(prompt)},
         ],
         'temperature': 0.25,
@@ -148,12 +141,29 @@ def _github_models_chat(prompt, token):
 
 
 def install_runtime_hardening():
+    global _active_provider_state
     publisher.IMPORTANCE_THRESHOLD = CANONICAL_PRE_AI_THRESHOLD
     publisher.gemini_chat = _gemini_chat
 
     original_ai = publisher.ai
+    original_chat = publisher.chat
+
+    def circuit_checked_gemini(prompt, token):
+        if _active_provider_state is not None and publisher.provider_blocked(_active_provider_state, 'GEMINI'):
+            raise RuntimeError('GEMINI_CIRCUIT_OPEN')
+        return _gemini_chat(prompt, token)
+
+    def circuit_checked_chat(url, model, token, prompt, provider, retries=2):
+        if _active_provider_state is not None and publisher.provider_blocked(_active_provider_state, provider):
+            raise RuntimeError(provider + '_CIRCUIT_OPEN')
+        return original_chat(url, model, token, prompt, provider, retries)
+
+    publisher.gemini_chat = circuit_checked_gemini
+    publisher.chat = circuit_checked_chat
 
     def ai_with_quota_circuit(prompt, state):
+        global _active_provider_state
+        _active_provider_state = state
         try:
             return original_ai(prompt, state)
         except RuntimeError as exc:
@@ -186,11 +196,12 @@ def install_runtime_hardening():
                         return result
                     raise RuntimeError('EMPTY_RESPONSE')
                 except Exception as fallback_error:
-                    fallback_message = str(fallback_error)
-                    print('AI_PROVIDER_FAILED GITHUB_MODELS', fallback_message[:180])
+                    print('AI_PROVIDER_FAILED GITHUB_MODELS', str(fallback_error)[:180])
                     publisher.block_provider(state, 'GITHUB_MODELS', 'GITHUB_MODELS_UNAVAILABLE')
 
             raise
+        finally:
+            _active_provider_state = None
 
     publisher.ai = ai_with_quota_circuit
 
