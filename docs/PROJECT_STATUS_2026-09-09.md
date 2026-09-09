@@ -2,7 +2,7 @@
 
 ## Canonical current status
 
-**🟡 PRODUCTION VERIFICATION MODE — scoring/queue ordering fix and provider/pre-AI hardening deployed; fresh live verification pending.**
+**🟡 PRODUCTION VERIFICATION MODE — scoring/queue ordering and provider/pre-AI hardening deployed; GitHub Models fallback live verification pending.**
 
 This document is the canonical current status. The production contract remains: deterministic base 0–70 → AI audience +3…+30 → final 0–100 → queue/publication ordered by final score descending. Geography is not part of the mathematical score.
 
@@ -39,9 +39,24 @@ The same run exposed a scoring-contract drift in the legacy collector:
 
 Observed ingestion telemetry: raw 496, score-filtered 449, quality-filtered 4, story-dedup 16, candidates 27. The score buckets contained 416 items below 40, demonstrating that the production input stream is substantially broader than the legacy 60-point admission path.
 
-Added `scripts/intily_production_entrypoint.py` as the production entrypoint before the scoring guard. It forces the canonical 40-point pre-AI gate, strips the legacy regional bonus before canonical scoring, filters true base scores below 40, and changes Gemini quota handling to a single request followed by a six-hour provider circuit on quota-exhaustion 429. A dedicated regression test covers the one-shot 429 behavior.
+Added `scripts/intily_production_entrypoint.py` as the production entrypoint before the scoring guard. It now forces the canonical 40-point pre-AI gate, strips the legacy regional bonus before canonical scoring, filters true base scores below 40, changes Gemini quota handling to a single request followed by a six-hour provider circuit, and provides GitHub Models as an emergency AI fallback using the workflow's `models: read` permission.
 
 Incident documentation: `docs/PRODUCTION_INCIDENT_2026-09-09_AI_PROVIDER_TIMEOUT.md`.
+
+## Live evidence after first hardening
+
+Production run #792 (`34316757631`) is the first post-fix live discovery run:
+
+- 35/35 regression tests passed;
+- discovery executed;
+- 499 raw items → 26 candidates;
+- `CANONICAL_PRE_AI_FILTER 26 -> 26 threshold 40.0` confirmed the canonical gate;
+- Gemini 429 failed immediately with **no `GEMINI_RETRY` loop**;
+- Gemini circuit opened for six hours;
+- the workflow completed normally rather than timing out;
+- 8 new candidates entered the durable queue.
+
+However, all original AI vendors were unavailable at that moment, so the run published 0. This confirms the timeout and gate fixes, but not yet the full fallback/publication path. GitHub Models fallback was deployed immediately afterward.
 
 ## Regression coverage
 
@@ -56,13 +71,8 @@ Current regression coverage includes:
 - all score components are printed;
 - over-limit editorial text is rejected instead of truncated;
 - canonical pre-AI threshold is 40;
-- Gemini 429 path performs exactly one request instead of an unbounded retry loop.
-
-## Live evidence
-
-Production run #764 (`34265206024`) successfully executed 32/32 previous regression tests, pre-evaluated 7 queued items and published a 64-point item. However, discovery was skipped in that run, so it did not prove the new-search reorder scenario.
-
-The later production log supplied for the 2026-09-09 incident demonstrated the new-search ingestion path but failed on provider exhaustion and therefore cannot be used as a successful acceptance run.
+- Gemini 429 path performs exactly one request instead of an unbounded retry loop;
+- GitHub Models fallback uses the documented OpenAI-compatible endpoint.
 
 ## Current commits
 
@@ -71,7 +81,9 @@ The later production log supplied for the 2026-09-09 incident demonstrated the n
 - `6fbc091907051e1961787100d085c858b802702c` — hardened production entrypoint: canonical pre-AI gate and Gemini fail-fast.
 - `ff0f25e80cc10b41584965d6fde077512eb567a7` — production-entrypoint regression test.
 - `18200a2d8019530a93a070524a645f5ed4a2c4ed` — workflow uses hardened entrypoint and test.
-- `187669758afa55628b7a0f72084c69ad382a046b` — incident documentation.
+- `bdd599bc87991bdafaf5b5413e2adf6f6fa69c7a` — GitHub Models emergency AI fallback.
+- `afee8d3d0c54fdf602029bcce45b5e09efc8d945` — GitHub Models fallback regression test.
+- `a14cab944c72b555af6a3287de4ca3e773b1fc86` — incident documentation updated with live evidence and fallback.
 
 ## Remaining acceptance test
 
@@ -79,7 +91,7 @@ The next real production cycle must demonstrate all of the following in one run:
 
 1. fresh discovery completes;
 2. the canonical pre-AI gate is 40, without geographic/random score bonus;
-3. candidates above 40 are AI-evaluated when a provider is available;
+3. at least one candidate receives a real AI audience score through a healthy vendor or GitHub Models fallback;
 4. provider failure is fail-fast and does not consume the workflow budget;
 5. final scores are persisted;
 6. the durable queue is reordered by final score, not geography or editorial heuristics;
