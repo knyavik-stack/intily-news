@@ -4,8 +4,10 @@ from intily_scoring_runtime_guard import (
     PublisherScoreProxy,
     _attach_score_footer,
     _final_sort_key,
+    _pure_score_rebalance,
     AI_MAX_EVALUATIONS_PER_RUN,
     _ai_evaluation_limit_reached,
+    FINAL_QUEUE_THRESHOLD,
 )
 
 
@@ -69,6 +71,55 @@ class ScoringRuntimeGuardTests(unittest.TestCase):
         ordered = sorted(items, key=_final_sort_key, reverse=True)
         self.assertEqual(ordered[0]['importance'], 56.0)
         self.assertIsNotNone(ordered[0].get('audience_score'))
+
+    def test_finalized_item_below_publication_gate_is_not_durable(self):
+        class Publisher:
+            LOOKBACK = type('Lookback', (), {'total_seconds': lambda self: 3600})()
+            MAX_QUEUE = 10
+
+            @staticmethod
+            def normalize_item_text(item):
+                return item
+
+            @staticmethod
+            def candidate_quality(item):
+                return True
+
+            @staticmethod
+            def same_story(left, right):
+                return left.get('key') == right.get('key')
+
+        now = 10_000
+        below = {
+            'key': 'below',
+            'time': now,
+            'importance': FINAL_QUEUE_THRESHOLD - 0.1,
+            'score': FINAL_QUEUE_THRESHOLD - 0.1,
+            'score_stage': 'final',
+            'audience_score': 5,
+        }
+        pre_ai = {
+            'key': 'pre-ai',
+            'time': now,
+            'importance': FINAL_QUEUE_THRESHOLD - 0.1,
+            'score': FINAL_QUEUE_THRESHOLD - 0.1,
+            'score_stage': 'pre_ai',
+            'audience_score': None,
+        }
+        passing = {
+            'key': 'passing',
+            'time': now,
+            'importance': FINAL_QUEUE_THRESHOLD,
+            'score': FINAL_QUEUE_THRESHOLD,
+            'score_stage': 'final',
+            'audience_score': 5,
+        }
+
+        queue = _pure_score_rebalance(Publisher(), [below, pre_ai, passing], now)
+        keys = [item['key'] for item in queue]
+        self.assertNotIn('below', keys)
+        self.assertIn('pre-ai', keys)
+        self.assertIn('passing', keys)
 
     def test_footer_contains_every_component_and_total(self):
         item = {
