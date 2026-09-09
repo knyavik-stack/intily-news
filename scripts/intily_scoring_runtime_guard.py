@@ -28,9 +28,21 @@ SCORE_COMPONENT_LABELS = (
 # this module safe for unit tests and non-production callers.
 AI_EVALUATION_DEADLINE = None
 
+# Hard cap on real editorial AI evaluations in one production cycle. This is
+# deliberately independent from the wall-clock deadline: a healthy provider
+# must not be allowed to turn a large candidate burst into dozens of serial
+# network calls. The candidate list is already deterministic-score ordered.
+AI_MAX_EVALUATIONS_PER_RUN = 10
+AI_EVALUATIONS_STARTED = 0
+AI_PROVIDER_RUNTIME_HALTED = False
+
 
 def _evaluation_budget_exhausted():
     return AI_EVALUATION_DEADLINE is not None and time.monotonic() >= AI_EVALUATION_DEADLINE
+
+
+def _ai_evaluation_limit_reached():
+    return AI_EVALUATIONS_STARTED >= AI_MAX_EVALUATIONS_PER_RUN
 
 
 def _score_footer(item):
@@ -152,6 +164,10 @@ class PublisherScoreProxy:
 def run_production():
     import importlib
 
+    global AI_EVALUATIONS_STARTED, AI_PROVIDER_RUNTIME_HALTED
+    AI_EVALUATIONS_STARTED = 0
+    AI_PROVIDER_RUNTIME_HALTED = False
+
     runner = importlib.import_module('intily_ai_news_runner')
     publisher_module = importlib.import_module('intily_ai_news')
     publisher = PublisherScoreProxy(publisher_module)
@@ -181,7 +197,7 @@ def run_production():
             post,
         )
         post = re.sub(
-            r'Следующая в очереди имеет вес [0-9]+(?:\.[0-9])?%\.',
+            r'Следующая в очереди имеет вес [0-9]+(?:\.[0-9])?%.',
             '',
             post,
         )
@@ -192,18 +208,31 @@ def run_production():
     publisher.edit = edit_with_score_footer
 
     def evaluate_item(item, state):
-        """Run the real AI editorial layer once, but never start work past the deadline."""
+        """Run the real AI editorial layer once, but never start work past safety limits."""
+        global AI_EVALUATIONS_STARTED, AI_PROVIDER_RUNTIME_HALTED
         if _is_final(item):
             return True
+        if AI_PROVIDER_RUNTIME_HALTED:
+            print('AI_EVALUATION_HALTED', 'provider_runtime_unavailable')
+            return False
         if _evaluation_budget_exhausted():
             print('AI_EVALUATION_BUDGET_EXHAUSTED', 'before_item', str(item.get('title', ''))[:120])
             return False
+        if _ai_evaluation_limit_reached():
+            print('AI_EVALUATION_LIMIT_REACHED', AI_MAX_EVALUATIONS_PER_RUN, 'before_item', str(item.get('title', ''))[:120])
+            return False
+        AI_EVALUATIONS_STARTED += 1
+        print('AI_EVALUATION_START', AI_EVALUATIONS_STARTED, str(item.get('title', ''))[:100])
         try:
             _base_recalculate(publisher, item)
             edit_with_score_footer(item, state)
             return _is_final(item)
         except Exception as exc:
-            print('FINAL_SCORE_PRECHECK_FAILED', str(item.get('title', ''))[:160], str(exc)[:240])
+            message = str(exc)
+            if 'AI_PROVIDERS_UNAVAILABLE' in message:
+                AI_PROVIDER_RUNTIME_HALTED = True
+                print('AI_EVALUATION_HALTED', 'provider_runtime_unavailable')
+            print('FINAL_SCORE_PRECHECK_FAILED', str(item.get('title', ''))[:160], message[:240])
             try:
                 _base_recalculate(publisher, item)
             except Exception:
@@ -224,8 +253,14 @@ def run_production():
                 continue
             if not _is_final(item):
                 if not evaluate_item(item, state):
+                    if AI_PROVIDER_RUNTIME_HALTED:
+                        print('AI_EVALUATION_HALTED', 'queue_precheck_remaining')
+                        break
                     if _evaluation_budget_exhausted():
                         print('AI_EVALUATION_BUDGET_EXHAUSTED', 'queue_precheck_remaining')
+                        break
+                    if _ai_evaluation_limit_reached():
+                        print('AI_EVALUATION_LIMIT_REACHED', 'queue_precheck_remaining')
                         break
         state['queue'] = _pure_score_rebalance(publisher, state.get('queue', []), now)
         print('FINAL_SCORE_QUEUE_PRECHECK', len(state.get('queue', []) or []))
@@ -240,18 +275,25 @@ def run_production():
         state = current_state.get('value')
         evaluated = 0
         for item in candidates:
+            if AI_PROVIDER_RUNTIME_HALTED:
+                print('AI_EVALUATION_HALTED', 'candidates_remaining', len(candidates) - evaluated)
+                break
             if _evaluation_budget_exhausted():
                 print('AI_EVALUATION_BUDGET_EXHAUSTED', 'candidates_remaining', len(candidates) - evaluated)
+                break
+            if _ai_evaluation_limit_reached():
+                print('AI_EVALUATION_LIMIT_REACHED', 'candidates_remaining', len(candidates) - evaluated)
                 break
             _base_recalculate(publisher, item)
             if evaluate_item(item, state):
                 evaluated += 1
             else:
-                if _evaluation_budget_exhausted():
-                    break
                 evaluated += 1
+                if AI_PROVIDER_RUNTIME_HALTED or _evaluation_budget_exhausted() or _ai_evaluation_limit_reached():
+                    break
         candidates.sort(key=_final_sort_key, reverse=True)
         print('FINAL_SCORE_CANDIDATES_SORTED', len(candidates), 'evaluated', evaluated)
+        print('AI_EVALUATION_SUMMARY', 'started', AI_EVALUATIONS_STARTED, 'limit', AI_MAX_EVALUATIONS_PER_RUN, 'provider_halted', AI_PROVIDER_RUNTIME_HALTED)
         return candidates
 
     publisher.collect = collect_with_final_score_precheck
