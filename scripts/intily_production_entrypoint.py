@@ -7,6 +7,7 @@ fallback when all external API providers are unavailable.
 
 import json
 import os
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -17,44 +18,100 @@ import intily_scoring_runtime_guard as guard
 
 CANONICAL_PRE_AI_THRESHOLD = 40.0
 GEMINI_QUOTA_COOLDOWN_SECONDS = 6 * 3600
+GEMINI_MIN_REQUEST_INTERVAL_SECONDS = 5.0
+GEMINI_RETRY_DELAYS_SECONDS = (2.0, 4.0, 8.0, 16.0)
+GEMINI_MAX_PROMPT_CHARS = 12000
 GITHUB_MODELS_COOLDOWN_SECONDS = 6 * 3600
 GITHUB_MODELS_URL = 'https://models.github.ai/inference/chat/completions'
 GITHUB_MODELS_MODEL = 'openai/gpt-4o'
 
+_gemini_last_request_at = 0.0
+
+
+def _wait_for_gemini_slot():
+    """Keep Gemini comfortably below a 15-RPM-style ceiling between calls."""
+    global _gemini_last_request_at
+    now = time.monotonic()
+    wait = GEMINI_MIN_REQUEST_INTERVAL_SECONDS - (now - _gemini_last_request_at)
+    if wait > 0:
+        time.sleep(wait)
+    _gemini_last_request_at = time.monotonic()
+
+
+def _compact_gemini_prompt(prompt):
+    """Bound the model context; preserve the beginning and end of the editorial prompt."""
+    if not isinstance(prompt, str) or len(prompt) <= GEMINI_MAX_PROMPT_CHARS:
+        return prompt
+    head = GEMINI_MAX_PROMPT_CHARS * 2 // 3
+    tail = GEMINI_MAX_PROMPT_CHARS - head
+    return prompt[:head] + "\n[CONTEXT_TRUNCATED]\n" + prompt[-tail:]
+
+
+def _gemini_chat(prompt, token):
+    """Rate-limit Gemini and retry only transient 429s with bounded exponential backoff.
+
+    Daily/project quota exhaustion is not retried: Google documents quota_exceeded
+    separately from transient rate_limit_exceeded and recommends waiting for quota reset
+    rather than repeatedly sending requests.
+    """
+    prompt = _compact_gemini_prompt(prompt)
+    last_error = None
+
+    for retry_index in range(len(GEMINI_RETRY_DELAYS_SECONDS) + 1):
+        _wait_for_gemini_slot()
+        body = json.dumps({
+            'systemInstruction': {
+                'parts': [{
+                    'text': 'Ты профессиональный редактор русского Telegram-канала об AI. Отвечай только валидным JSON.'
+                }]
+            },
+            'contents': [{
+                'role': 'user',
+                'parts': [{'text': prompt}]
+            }],
+            'generationConfig': {
+                'temperature': 0.25,
+                'maxOutputTokens': 900,
+                'responseMimeType': 'application/json'
+            }
+        }).encode()
+
+        url = publisher.GEMINI_URL + '?key=' + urllib.parse.quote(token, safe='')
+        req = urllib.request.Request(
+            url,
+            data=body,
+            headers={'Content-Type': 'application/json'},
+        )
+
+        try:
+            with urllib.request.urlopen(req, timeout=25) as response:
+                data = json.loads(response.read().decode())
+            return data['candidates'][0]['content']['parts'][0]['text']
+        except urllib.error.HTTPError as exc:
+            raw = exc.read().decode('utf-8', 'replace')
+            last_error = RuntimeError(f'GEMINI_HTTP_{exc.code}: {raw[:500]}')
+            if exc.code != 429:
+                raise last_error
+
+            lowered = raw.lower()
+            quota_exhausted = (
+                'quota_exceeded' in lowered
+                or 'exceeded your current quota' in lowered
+                or 'daily quota' in lowered
+            )
+            if quota_exhausted or retry_index >= len(GEMINI_RETRY_DELAYS_SECONDS):
+                raise last_error
+
+            delay = GEMINI_RETRY_DELAYS_SECONDS[retry_index]
+            print('GEMINI_RETRY', int(delay), 'transient_429')
+            time.sleep(delay)
+
+    raise last_error or RuntimeError('GEMINI_UNAVAILABLE')
+
 
 def _one_shot_gemini_chat(prompt, token):
-    """One request only; quota errors must not consume the whole CI budget."""
-    body = json.dumps({
-        'systemInstruction': {
-            'parts': [{
-                'text': 'Ты профессиональный редактор русского Telegram-канала об AI. Отвечай только валидным JSON.'
-            }]
-        },
-        'contents': [{
-            'role': 'user',
-            'parts': [{'text': prompt}]
-        }],
-        'generationConfig': {
-            'temperature': 0.25,
-            'maxOutputTokens': 900,
-            'responseMimeType': 'application/json'
-        }
-    }).encode()
-
-    url = publisher.GEMINI_URL + '?key=' + urllib.parse.quote(token, safe='')
-    req = urllib.request.Request(
-        url,
-        data=body,
-        headers={'Content-Type': 'application/json'},
-    )
-
-    try:
-        with urllib.request.urlopen(req, timeout=25) as response:
-            data = json.loads(response.read().decode())
-        return data['candidates'][0]['content']['parts'][0]['text']
-    except urllib.error.HTTPError as exc:
-        raw = exc.read().decode('utf-8', 'replace')
-        raise RuntimeError(f'GEMINI_HTTP_{exc.code}: {raw[:300]}') from exc
+    """Compatibility wrapper retained for tests and callers expecting one-shot semantics."""
+    return _gemini_chat(prompt, token)
 
 
 def _github_models_chat(prompt, token):
@@ -66,7 +123,7 @@ def _github_models_chat(prompt, token):
                 'role': 'system',
                 'content': 'Ты профессиональный редактор русского Telegram-канала об AI. Отвечай только валидным JSON.'
             },
-            {'role': 'user', 'content': prompt},
+            {'role': 'user', 'content': _compact_gemini_prompt(prompt)},
         ],
         'temperature': 0.25,
         'max_tokens': 900,
@@ -93,7 +150,7 @@ def _github_models_chat(prompt, token):
 
 def install_runtime_hardening():
     publisher.IMPORTANCE_THRESHOLD = CANONICAL_PRE_AI_THRESHOLD
-    publisher.gemini_chat = _one_shot_gemini_chat
+    publisher.gemini_chat = _gemini_chat
 
     original_ai = publisher.ai
 
@@ -106,7 +163,7 @@ def install_runtime_hardening():
                 lowered = message.lower()
                 cooldown = (
                     GEMINI_QUOTA_COOLDOWN_SECONDS
-                    if 'exceeded your current quota' in lowered
+                    if ('exceeded your current quota' in lowered or 'quota_exceeded' in lowered or 'daily quota' in lowered)
                     else publisher.PROVIDER_COOLDOWN.get('GEMINI', 120)
                 )
                 publisher.PROVIDER_COOLDOWN['GEMINI'] = cooldown
@@ -144,9 +201,6 @@ def install_runtime_hardening():
 
     publisher.ai = ai_with_quota_circuit
 
-    # The legacy collector still applies a regional random bonus before its
-    # filtering stage. Recalculate with the canonical scoring function and keep
-    # only genuine pre-AI >=40 candidates before the guard runs AI evaluation.
     legacy_collect = publisher.collect
 
     def canonical_collect(telemetry=None):
