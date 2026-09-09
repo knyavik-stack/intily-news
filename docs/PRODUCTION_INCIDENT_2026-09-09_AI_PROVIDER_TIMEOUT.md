@@ -50,26 +50,43 @@ It now:
 - drops candidates whose true deterministic base is below 40;
 - replaces Gemini's multi-retry path with a single request;
 - detects Gemini 429 quota exhaustion and opens a six-hour circuit for that provider;
-- leaves other providers to the existing failover logic;
-- prevents one exhausted provider from consuming the entire five-minute production budget.
+- adds GitHub Models (`models: read`) as an emergency AI fallback when Gemini, Groq and OpenAI are unavailable;
+- circuit-breaks GitHub Models after a hard fallback failure so an unavailable fallback cannot create another timeout loop;
+- prevents one exhausted provider from consuming the five-minute production budget.
 
-The workflow now runs `scripts/intily_production_entrypoint.py` and includes its regression test.
+The workflow already has `models: read`, which is the documented permission required by GitHub's current AI inference tooling. GitHub's current AI inference documentation exposes the GitHub Models REST endpoint and confirms that GitHub Models can be used from Actions with `models: read`. citeturn5search1turn5search6
 
 ## Provider evidence
 
 Google's current Gemini API documentation distinguishes `quota_exceeded` 429 errors from transient rate-limit conditions and recommends backoff only where retry is appropriate. The production error text explicitly reported exhausted current quota, so treating that response as a long per-item retry loop was incorrect for this runtime. citeturn1search0turn0search0
 
+## Live verification after first hardening
+
+The first post-fix run (#792, `34316757631`) is important evidence:
+
+- 35/35 regression tests passed;
+- discovery executed successfully;
+- 499 raw items were ingested;
+- 26 candidates were produced;
+- the Gemini 429 failed immediately without `GEMINI_RETRY`;
+- Gemini circuit opened for 6 hours;
+- the workflow completed in seconds rather than timing out;
+- 8 new candidates entered the durable queue.
+
+That run still published 0 because, at that moment, all three original providers were unavailable and the GitHub Models fallback had not yet been deployed. This proves the timeout defect is fixed, but not yet the full AI-publication path.
+
 ## Verification required
 
-The fix is committed and covered by a regression test for the one-shot 429 path. A fresh production run must still verify:
+The next production run must verify:
 
-1. no repeated `GEMINI_RETRY` loop after quota exhaustion;
-2. provider circuit opens after the first quota failure;
-3. workflow completes within the normal budget;
-4. canonical pre-AI 40 gate is actually used;
-5. new-search candidates are AI-evaluated when a provider is available;
-6. final-score queue ordering remains correct;
-7. highest finalized score is published;
-8. no final score below 55 remains in the durable queue.
+1. GitHub Models fallback is actually reachable with the workflow's `models: read` permission;
+2. at least one candidate receives a real AI audience score through the fallback if vendor APIs remain unavailable;
+3. no repeated provider retry loop occurs;
+4. workflow completes within the normal budget;
+5. canonical pre-AI 40 gate is actually used;
+6. new-search candidates are AI-evaluated when a provider is available;
+7. final-score queue ordering remains correct;
+8. highest finalized score is published;
+9. no final score below 55 remains in the durable queue.
 
-Status remains **YELLOW until live verification**.
+Status remains **YELLOW until this live provider/publication verification passes**.
