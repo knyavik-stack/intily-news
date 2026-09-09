@@ -1,13 +1,14 @@
 """Production scoring runtime guard, final-score ordering and score diagnostics.
 
 The legacy runner contains historical scoring behavior that must not leak into
-production ordering: a pre-AI +10 placeholder and a random RU queue bonus. This
-adapter enforces the canonical contract, evaluates queued candidates before
-publication ordering, sorts by the resulting final score, and appends a compact
-traceable score footer without truncating editorial text.
+production ordering: a pre-AI +10 placeholder, regional priority and a quota
+rebalance that can displace a higher-scoring story. This adapter enforces the
+canonical contract: deterministic base -> AI audience -> final score -> queue
+ordering/publication, with geography kept outside the mathematical score.
 """
 
 import functools
+import re
 import time
 
 
@@ -48,6 +49,15 @@ def _score_footer(item):
     return '\n'.join(lines)
 
 
+def _final_score(item):
+    components = item.get('_score_components') or {}
+    return float(components.get('final_score', item.get('importance', item.get('score', 0.0))) or 0.0)
+
+
+def _is_final(item):
+    return item.get('score_stage') == 'final' and item.get('audience_score') is not None
+
+
 def _attach_score_footer(item, post):
     """Append diagnostics without ever truncating the editorial post."""
     candidate = str(post or '').rstrip() + '\n' + _score_footer(item)
@@ -70,11 +80,35 @@ def _base_recalculate(publisher, item):
 
 
 def _final_sort_key(item):
-    """Canonical queue/publication ordering: final score first, freshness second."""
+    """Final items outrank pending pre-AI items; score is always primary."""
     return (
-        float(item.get('importance', item.get('score', 0.0)) or 0.0),
+        1 if _is_final(item) else 0,
+        _final_score(item),
         float(item.get('time', 0.0) or 0.0),
     )
+
+
+def _pure_score_rebalance(publisher, items, now):
+    """Keep the best qualifying stories; never let geography displace score."""
+    fresh = []
+    for item in items or []:
+        try:
+            publisher.normalize_item_text(item)
+        except Exception:
+            pass
+        if float(item.get('time', 0) or 0) < now - publisher.LOOKBACK.total_seconds():
+            continue
+        if not publisher.candidate_quality(item):
+            continue
+        fresh.append(item)
+
+    fresh.sort(key=_final_sort_key, reverse=True)
+    unique = []
+    for item in fresh:
+        if any(publisher.same_story(item, other) for other in unique):
+            continue
+        unique.append(item)
+    return unique[:publisher.MAX_QUEUE]
 
 
 class PublisherScoreProxy:
@@ -117,11 +151,15 @@ def run_production():
     runner.apply_policy(publisher)
     runner.apply_image_delivery(publisher)
 
-    # Final score is the publication order. Editorial/geography heuristics may
-    # describe the item, but they must not outrank the agreed score.
-    publisher.publication_priority = lambda state, item: float(
-        item.get('importance', item.get('score', 0.0)) or 0.0
+    # Final score is the sole publication priority. Pre-AI items are pending and
+    # must never outrank an already-finalized item.
+    publisher.publication_priority = lambda state, item: (
+        _final_score(item) if _is_final(item) else -1.0
     )
+
+    # The legacy rebalance enforces a regional quota and can therefore discard a
+    # higher-scoring story. Replace it with a pure score-capacity rebalance.
+    publisher.rebalance_queue = lambda items, now: _pure_score_rebalance(publisher, items, now)
 
     original_edit = publisher.edit
     post_cache = {}
@@ -134,6 +172,37 @@ def run_production():
         if cached is not None:
             return cached
         post = original_edit(item, state)
+        # Legacy queue text described a pre-AI score. The guard has already
+        # evaluated the queue, so replace it with the actual final-score view.
+        post = re.sub(
+            r'Следующая в очереди: базовый вес [0-9]+(?:\.[0-9])?/100; AI-аудит ещё не проведён\.',
+            '',
+            post,
+        )
+        post = re.sub(
+            r'Следующая в очереди имеет вес [0-9]+(?:\.[0-9])?%\.',
+            '',
+            post,
+        )
+        state_queue = [x for x in (state.get('queue', []) or []) if x is not item]
+        ordered = _pure_score_rebalance(publisher, state_queue, time.time())
+        if ordered:
+            next_item = ordered[0]
+            if _is_final(next_item):
+                next_text = f'Следующая в очереди: итоговый вес {_final_score(next_item):.1f}/100.'
+            else:
+                next_text = f'Следующая в очереди: базовый вес {_final_score(next_item):.1f}/70; AI-аудит ещё не завершён.'
+        else:
+            next_text = 'Следующая в очереди отсутствует.'
+        counts = {
+            'RUSSIA': sum(1 for x in ordered if x.get('region') == 'RUSSIA'),
+            'WORLD': sum(1 for x in ordered if x.get('region') != 'RUSSIA'),
+        }
+        post += (
+            '\n\n📊 В очереди: '
+            f'{len(ordered)} новостей, RU — {counts["RUSSIA"]}, WORLD — {counts["WORLD"]}. '
+            + next_text
+        )
         post = _attach_score_footer(item, post)
         post_cache[key] = post
         return post
@@ -142,12 +211,12 @@ def run_production():
 
     def evaluate_item(item, state):
         """Run the real AI editorial layer once and cache its complete post."""
-        if item.get('score_stage') == 'final' and item.get('audience_score') is not None:
+        if _is_final(item):
             return True
         try:
             _base_recalculate(publisher, item)
             edit_with_score_footer(item, state)
-            return item.get('score_stage') == 'final' and item.get('audience_score') is not None
+            return _is_final(item)
         except Exception as exc:
             print('FINAL_SCORE_PRECHECK_FAILED', str(item.get('title', ''))[:160], str(exc)[:240])
             try:
@@ -168,9 +237,9 @@ def run_production():
                 continue
             if float(item.get('time', 0) or 0) < now - publisher.LOOKBACK.total_seconds():
                 continue
-            if item.get('score_stage') != 'final':
+            if not _is_final(item):
                 evaluate_item(item, state)
-        state['queue'] = sorted(state.get('queue', []) or [], key=_final_sort_key, reverse=True)
+        state['queue'] = _pure_score_rebalance(publisher, state.get('queue', []), now)
         print('FINAL_SCORE_QUEUE_PRECHECK', len(state.get('queue', []) or []))
         return state
 
@@ -183,8 +252,6 @@ def run_production():
         state = current_state.get('value')
         if state is not None:
             for item in candidates:
-                # The legacy collector adds a random RU bonus after score().
-                # Recalculate immediately so RU and WORLD use the same base.
                 _base_recalculate(publisher, item)
                 evaluate_item(item, state)
             candidates.sort(key=_final_sort_key, reverse=True)
