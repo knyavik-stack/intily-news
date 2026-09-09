@@ -49,11 +49,20 @@ class ScoringRuntimeGuardTests(unittest.TestCase):
     def test_final_score_is_primary_queue_order(self):
         items = [
             {'importance': 71.0, 'time': 300},
-            {'importance': 94.0, 'time': 100},
-            {'importance': 83.0, 'time': 200},
+            {'importance': 94.0, 'time': 100, 'score_stage': 'final', 'audience_score': 10},
+            {'importance': 83.0, 'time': 200, 'score_stage': 'final', 'audience_score': 8},
         ]
         ordered = sorted(items, key=_final_sort_key, reverse=True)
         self.assertEqual([x['importance'] for x in ordered], [94.0, 83.0, 71.0])
+
+    def test_pending_pre_ai_cannot_outrank_final_item(self):
+        items = [
+            {'importance': 69.0, 'time': 300},
+            {'importance': 56.0, 'time': 100, 'score_stage': 'final', 'audience_score': 6},
+        ]
+        ordered = sorted(items, key=_final_sort_key, reverse=True)
+        self.assertEqual(ordered[0]['importance'], 56.0)
+        self.assertIsNotNone(ordered[0].get('audience_score'))
 
     def test_footer_contains_every_component_and_total(self):
         item = {
