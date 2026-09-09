@@ -42,6 +42,9 @@ def _compact_gemini_prompt(prompt):
     """Bound the model context; preserve the beginning and end of the editorial prompt."""
     if not isinstance(prompt, str) or len(prompt) <= GEMINI_MAX_PROMPT_CHARS:
         return prompt
+    truncation_marker = "\n[CONTEXT_TRUNCATED]\n"
+    # Вычитаем длину маркера из общего доступного лимита
+    available_chars = GEMINI_MAX_PROMPT_CHARS - len(truncation_marker)
     head = GEMINI_MAX_PROMPT_CHARS * 2 // 3
     tail = GEMINI_MAX_PROMPT_CHARS - head
     return prompt[:head] + "\n[CONTEXT_TRUNCATED]\n" + prompt[-tail:]
