@@ -2,7 +2,7 @@
 
 ## Canonical current status
 
-**🟡 PRODUCTION VERIFICATION MODE — scoring/queue ordering and provider/pre-AI hardening deployed; workflow-budget hardening deployed; live AI publication verification pending.**
+**🟡 PRODUCTION VERIFICATION MODE — scoring/queue ordering and provider/pre-AI hardening deployed; workflow-budget hardening deployed; live acceptance partially verified by run #847; full acceptance still pending log-level proof of every invariant.**
 
 This document is the canonical current status. The production contract remains: deterministic base 0–70 → AI audience +3…+30 → final 0–100 → queue/publication ordered by final score descending. Geography is not part of the mathematical score.
 
@@ -30,28 +30,25 @@ Changes in `scripts/intily_scoring_runtime_guard.py`:
 
 ## Production incident — AI evaluation exceeded workflow budget
 
-The latest failed Action is **run #834 (`34346240698`)**, commit `5d7993c03ac6e66e452c3831bc2fe8c0fa9fa398`. GitHub reports the `publish` job failed specifically in the **"Запуск новостного двигателя"** step; the subsequent analytics and state-persistence steps still executed. fileciteturn1059file0
+The failed Action was run #834 (`34346240698`), commit `5d7993c03ac6e66e452c3831bc2fe8c0fa9fa398`. The publish job failed in the production engine step after the regression suite completed 38/38 OK; analytics and state persistence still executed.
 
-The failure was **not** a new test failure. The regression suite completed **38/38 OK**. The production engine then performed a fresh search and produced 43 candidates. Gemini was healthy, but the runtime evaluated candidates serially at the conservative 5-second request spacing. The run reached 42 AI evaluations and was killed by the explicit `timeout 240s` wrapper with `exit code 124` before the queue/publish phase could complete.
+The production engine performed a fresh search and produced 43 candidates. Gemini was healthy, but the runtime evaluated candidates serially at the conservative 5-second request spacing. The run reached 42 AI evaluations and was killed by the explicit `timeout 240s` wrapper with `exit code 124` before queue/publication could complete.
 
-This exposed a second-order design defect: provider rate limiting was bounded, but the **number of AI evaluations was not bounded**. With 43 candidates, a 5-second inter-request guard alone can consume more than the workflow's total budget after discovery, state loading and persistence overhead. The Action log proves this exact failure mode: `INGEST_SUMMARY ... candidates 43`, then repeated `AI_PROVIDER_OK GEMINI`, followed by `Process completed with exit code 124`. 
+This exposed a second-order design defect: provider rate limiting was bounded, but the number of AI evaluations was not bounded. With 43 candidates, a 5-second inter-request guard alone can consume more than the workflow's total budget after discovery, state loading and persistence overhead.
 
 ## Workflow-budget hardening — deployed
 
-The production runtime now has a shared AI-evaluation deadline of **180 seconds**, intentionally below the workflow's 240-second production command timeout. The deadline covers both:
+The production runtime now has a shared AI-evaluation deadline of **180 seconds**, intentionally below the workflow's 240-second production command timeout. The deadline covers both pending queue items and fresh candidates.
 
-- pre-existing pending queue items that still need final AI scoring;
-- fresh candidates from the current discovery cycle.
+Before starting each new model evaluation, the guard checks the deadline. When the budget is exhausted, it stops starting new AI calls, leaves remaining candidates as `pre_ai`, sorts the resulting queue using the canonical final-score authority, and returns control to the normal publisher so durable state can still be saved. This prevents `timeout 240s` / exit 124 from killing the entire cycle.
 
-Before starting each new model evaluation, the guard checks the deadline. When the budget is exhausted, it **stops starting new AI calls**, leaves remaining candidates as `pre_ai`, sorts the resulting queue using the canonical final-score authority, and returns control to the normal publisher so durable state can still be saved. This prevents `timeout 240s` / exit 124 from killing the entire cycle.
-
-Additional hardening in the same change:
+Additional hardening:
 
 - Gemini request timeout reduced to 20 seconds;
-- prompt compaction was corrected to be **exactly ≤12,000 characters** rather than potentially exceeding the limit by the truncation marker;
-- runtime provider wrappers now honor persisted provider circuit state before making Gemini/Groq/OpenAI calls, repairing a legacy `pass` path that had disabled the provider-block check;
-- GitHub Models remains the emergency fallback and has its own circuit breaker;
-- regression tests now assert the AI budget, bounded Gemini request timeout and exact prompt length.
+- prompt compaction is exactly ≤12,000 characters;
+- runtime provider wrappers honor persisted provider circuit state before vendor calls;
+- GitHub Models remains an emergency fallback with its own circuit breaker;
+- regression tests assert the AI budget, bounded Gemini request timeout and exact prompt length.
 
 ## Gemini rate-limit hardening — deployed
 
@@ -59,14 +56,11 @@ The production Gemini adapter is deliberately conservative:
 
 - minimum **5 seconds between Gemini requests**;
 - bounded exponential retry for **transient** 429 responses: 2s → 4s → 8s → 16s;
-- explicit `quota_exceeded` / daily-quota responses are **not retried** and immediately open the provider circuit;
-- prompts are bounded to `12,000` characters, preserving the beginning and end and marking the cut with `[CONTEXT_TRUNCATED]`;
-- the GitHub Models fallback receives the same bounded prompt;
+- explicit `quota_exceeded` / daily-quota responses are not retried and immediately open the provider circuit;
+- prompts are bounded to `12,000` characters;
 - provider circuits prevent an exhausted provider from consuming the production budget repeatedly.
 
-Google's current documentation states that Gemini limits are model/tier/project dependent and can apply across RPM, input TPM and RPD; it distinguishes transient `rate_limit_exceeded` from `quota_exceeded`, recommending exponential backoff for transient limits and waiting for quota reset for exhausted daily quota. citeturn1search2turn1search1turn1search3
-
-Therefore the implementation deliberately does **not** assume that every 429 means exactly 15 RPM. The 5-second spacing is a conservative local guard, while the error body determines whether retrying is appropriate.
+Google's current documentation states that Gemini limits are model/tier/project dependent and can apply across RPM, input TPM and RPD. The implementation therefore does not assume a universal RPM value.
 
 ## Live evidence before the latest timeout
 
@@ -78,14 +72,14 @@ Production run #792 (`34316757631`) was the first post-fix live discovery run:
 - `CANONICAL_PRE_AI_FILTER 26 -> 26 threshold 40.0` confirmed the canonical gate;
 - Gemini 429 failed immediately with no retry loop;
 - Gemini circuit opened for six hours;
-- the workflow completed normally rather than timing out;
+- workflow completed normally rather than timing out;
 - 8 new candidates entered the durable queue.
 
-All original AI vendors were unavailable at that moment, so the run published 0. GitHub Models fallback was deployed immediately afterward.
+All original AI vendors were unavailable at that moment, so the run published 0. GitHub Models fallback was deployed afterward.
 
 ## Latest failed run — concrete evidence
 
-Run #834 (`34346240698`) demonstrated that Gemini can now remain healthy without 429 retry storms, but the engine still needed a cycle-level evaluation budget:
+Run #834 (`34346240698`) demonstrated that Gemini can remain healthy without 429 retry storms, but the engine still needed a cycle-level evaluation budget:
 
 - regression tests: **38/38 OK**;
 - discovery: **799 total raw items**;
@@ -95,7 +89,26 @@ Run #834 (`34346240698`) demonstrated that Gemini can now remain healthy without
 - failure point: explicit command timeout, **exit code 124**;
 - analytics and state persistence still executed after the engine step failed.
 
-This is now classified as a **workflow-budget defect**, not a Gemini quota defect.
+This is classified as a workflow-budget defect, not a Gemini quota defect.
+
+## Live verification — run #847
+
+Run #847 (`34363454469`) is the first production run on the fully deployed performance hardening commit `3db7ea5a514e751868098fe1b0fd783cf10b4f39`.
+
+Verified directly from GitHub Actions:
+
+- workflow event: `workflow_dispatch`;
+- run conclusion: **success**;
+- production job conclusion: **success**;
+- production engine step (`Запуск новостного двигателя`): **success**;
+- engine runtime: approximately **54 seconds** (`14:25:11Z` → `14:26:05Z`);
+- no `timeout 240s` / exit-124 termination;
+- analytics and state-persistence steps completed successfully;
+- publisher analytics were persisted by bot commit `fd0b788e9afa70469fef7a29e9f49cdf7d623c29` immediately after the run.
+
+The persisted state from that run contains finalized items with real audience scores and final scores, and the queue-score audit reports `invariant_ok: true` for the persisted production state. The latest inspected persisted analytics also show a healthy Gemini provider state in the successful cycle.
+
+**What is not claimed yet:** the available GitHub Actions metadata does not expose the complete raw production log in the current connector surface, so this verification does not independently prove every log-level acceptance item such as the exact `AI_EVALUATION_SUMMARY` line or the exact number of AI evaluations started in #847. Those remain explicit acceptance checks for the next observable cycle.
 
 ## Regression coverage
 
@@ -119,6 +132,10 @@ Current regression coverage includes:
 
 ## Current commits
 
+- `3db7ea5a514e751868098fe1b0fd783cf10b4f39` — provider cooldown correction; used by verified run #847.
+- `c767c7c5681399ce463065abe85e4ca7c37a71d4` — bounded AI evaluations and provider-outage fast stop.
+- `add990ba2de8bc4b6ec0d875967e49f3cee1d1ee` — regression coverage for AI evaluation cap/provider halt.
+- `72bc6992d41bcfc72c96b9350399dd729dc34d57` — production performance-fix documentation.
 - `438982e9d3386f2df8eda9ba4c6666c258d5d197` — final-score queue ordering guard.
 - `fb1cda0016d53bb63bc6f0e4457e284a789857be` — finalized-vs-pending ordering regression test.
 - `6fbc091907051e1961787100d085c858b802702c` — hardened production entrypoint: canonical pre-AI gate and Gemini fail-fast.
@@ -132,7 +149,7 @@ Current regression coverage includes:
 
 ## Remaining acceptance test
 
-The next real production cycle must demonstrate all of the following in one run:
+The next observable production cycle must demonstrate all of the following in one run:
 
 1. fresh discovery completes;
 2. canonical pre-AI gate is 40, without geographic/random score bonus;
@@ -145,6 +162,8 @@ The next real production cycle must demonstrate all of the following in one run:
 9. highest finalized score is published;
 10. no finalized item below 55 remains in durable queue;
 11. footer values exactly match persisted components;
-12. no editorial text is truncated.
+12. no editorial text is truncated;
+13. `AI_EVALUATION_SUMMARY` is visible in the production log;
+14. real AI evaluation count is ≤10 for the cycle.
 
-Until this live acceptance cycle passes, status remains **YELLOW**.
+Until this live acceptance cycle passes with observable log-level evidence, status remains **YELLOW**.
