@@ -1,15 +1,12 @@
 """Canonical production entrypoint hardening the legacy publisher at runtime.
 
 This adapter is intentionally small and sits before the scoring runtime guard.
-It fixes two legacy behaviors that cannot be allowed into production:
-- collection must use the canonical 40-point pre-AI gate, not the legacy 60;
-- a Gemini 429 quota response must fail fast and open a circuit, rather than
-  sleeping 5+10+20 seconds for every queued item until the workflow times out.
+It fixes legacy collection/provider behavior and provides a GitHub Models
+fallback when all external API providers are unavailable.
 """
 
 import json
 import os
-import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -20,6 +17,9 @@ import intily_scoring_runtime_guard as guard
 
 CANONICAL_PRE_AI_THRESHOLD = 40.0
 GEMINI_QUOTA_COOLDOWN_SECONDS = 6 * 3600
+GITHUB_MODELS_COOLDOWN_SECONDS = 6 * 3600
+GITHUB_MODELS_URL = 'https://models.github.ai/inference/chat/completions'
+GITHUB_MODELS_MODEL = 'openai/gpt-4o'
 
 
 def _one_shot_gemini_chat(prompt, token):
@@ -57,6 +57,40 @@ def _one_shot_gemini_chat(prompt, token):
         raise RuntimeError(f'GEMINI_HTTP_{exc.code}: {raw[:300]}') from exc
 
 
+def _github_models_chat(prompt, token):
+    """OpenAI-compatible GitHub Models inference using workflow models permission."""
+    body = json.dumps({
+        'model': GITHUB_MODELS_MODEL,
+        'messages': [
+            {
+                'role': 'system',
+                'content': 'Ты профессиональный редактор русского Telegram-канала об AI. Отвечай только валидным JSON.'
+            },
+            {'role': 'user', 'content': prompt},
+        ],
+        'temperature': 0.25,
+        'max_tokens': 900,
+    }).encode()
+
+    req = urllib.request.Request(
+        GITHUB_MODELS_URL,
+        data=body,
+        headers={
+            'Authorization': 'Bearer ' + token,
+            'Accept': 'application/vnd.github+json',
+            'Content-Type': 'application/json',
+        },
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=25) as response:
+            data = json.loads(response.read().decode())
+        return data['choices'][0]['message']['content']
+    except urllib.error.HTTPError as exc:
+        raw = exc.read().decode('utf-8', 'replace')
+        raise RuntimeError(f'GITHUB_MODELS_HTTP_{exc.code}: {raw[:300]}') from exc
+
+
 def install_runtime_hardening():
     publisher.IMPORTANCE_THRESHOLD = CANONICAL_PRE_AI_THRESHOLD
     publisher.gemini_chat = _one_shot_gemini_chat
@@ -77,6 +111,35 @@ def install_runtime_hardening():
                 )
                 publisher.PROVIDER_COOLDOWN['GEMINI'] = cooldown
                 publisher.block_provider(state, 'GEMINI', 'HTTP_429_QUOTA_OR_RATE_LIMIT')
+
+            # GitHub Actions already grants models:read to this workflow. Use
+            # GitHub Models as a production fallback when all vendor APIs fail.
+            github_token = os.environ.get('GITHUB_TOKEN')
+            if github_token and not publisher.provider_blocked(state, 'GITHUB_MODELS'):
+                telemetry = state.setdefault('_cycle_provider', {
+                    'attempts': [], 'used': None, 'failovers': 0, 'failures': 0,
+                    'blocked': 0, 'skipped_no_key': 0, 'retries': 0
+                })
+                try:
+                    telemetry['attempts'].append('GITHUB_MODELS')
+                    print('AI_PROVIDER_ATTEMPT GITHUB_MODELS')
+                    result = _github_models_chat(prompt, github_token)
+                    if result and len(result.strip()) > 20:
+                        telemetry['used'] = 'GITHUB_MODELS'
+                        telemetry['failovers'] = max(0, len(telemetry['attempts']) - 1)
+                        print('AI_PROVIDER_OK GITHUB_MODELS')
+                        print('AI_PROVIDER_USAGE', json.dumps(telemetry, ensure_ascii=False, separators=(',', ':')))
+                        return result
+                    raise RuntimeError('EMPTY_RESPONSE')
+                except Exception as fallback_error:
+                    fallback_message = str(fallback_error)
+                    print('AI_PROVIDER_FAILED GITHUB_MODELS', fallback_message[:180])
+                    publisher.block_provider(
+                        state,
+                        'GITHUB_MODELS',
+                        'GITHUB_MODELS_UNAVAILABLE',
+                    )
+
             raise
 
     publisher.ai = ai_with_quota_circuit
