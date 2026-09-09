@@ -24,6 +24,14 @@ SCORE_COMPONENT_LABELS = (
     ('freshness', 'Свежесть', 2.0),
 )
 
+# Set by intily_production_entrypoint.py. Keeping the default unbounded makes
+# this module safe for unit tests and non-production callers.
+AI_EVALUATION_DEADLINE = None
+
+
+def _evaluation_budget_exhausted():
+    return AI_EVALUATION_DEADLINE is not None and time.monotonic() >= AI_EVALUATION_DEADLINE
+
 
 def _score_footer(item):
     components = item.get('_score_components') or {}
@@ -151,14 +159,9 @@ def run_production():
     runner.apply_policy(publisher)
     runner.apply_image_delivery(publisher)
 
-    # Final score is the sole publication priority. Pre-AI items are pending and
-    # must never outrank an already-finalized item.
     publisher.publication_priority = lambda state, item: (
         _final_score(item) if _is_final(item) else -1.0
     )
-
-    # The legacy rebalance enforces a regional quota and can therefore discard a
-    # higher-scoring story. Replace it with a pure score-capacity rebalance.
     publisher.rebalance_queue = lambda items, now: _pure_score_rebalance(publisher, items, now)
 
     original_edit = publisher.edit
@@ -172,8 +175,6 @@ def run_production():
         if cached is not None:
             return cached
         post = original_edit(item, state)
-        # Remove legacy pre-AI queue wording. The main publisher appends the
-        # authoritative queue diagnostic after its own final-score rebalance.
         post = re.sub(
             r'Следующая в очереди: базовый вес [0-9]+(?:\.[0-9])?/100; AI-аудит ещё не проведён\.',
             '',
@@ -191,9 +192,12 @@ def run_production():
     publisher.edit = edit_with_score_footer
 
     def evaluate_item(item, state):
-        """Run the real AI editorial layer once and cache its complete post."""
+        """Run the real AI editorial layer once, but never start work past the deadline."""
         if _is_final(item):
             return True
+        if _evaluation_budget_exhausted():
+            print('AI_EVALUATION_BUDGET_EXHAUSTED', 'before_item', str(item.get('title', ''))[:120])
+            return False
         try:
             _base_recalculate(publisher, item)
             edit_with_score_footer(item, state)
@@ -219,7 +223,10 @@ def run_production():
             if float(item.get('time', 0) or 0) < now - publisher.LOOKBACK.total_seconds():
                 continue
             if not _is_final(item):
-                evaluate_item(item, state)
+                if not evaluate_item(item, state):
+                    if _evaluation_budget_exhausted():
+                        print('AI_EVALUATION_BUDGET_EXHAUSTED', 'queue_precheck_remaining')
+                        break
         state['queue'] = _pure_score_rebalance(publisher, state.get('queue', []), now)
         print('FINAL_SCORE_QUEUE_PRECHECK', len(state.get('queue', []) or []))
         return state
@@ -231,13 +238,20 @@ def run_production():
     def collect_with_final_score_precheck(telemetry=None):
         candidates = original_collect(telemetry)
         state = current_state.get('value')
+        evaluated = 0
         for item in candidates:
+            if _evaluation_budget_exhausted():
+                print('AI_EVALUATION_BUDGET_EXHAUSTED', 'candidates_remaining', len(candidates) - evaluated)
+                break
             _base_recalculate(publisher, item)
-            # Candidates are evaluated before main() admits them to durable queue.
-            # This is the critical new-search -> final-score -> queue contract.
-            evaluate_item(item, state)
+            if evaluate_item(item, state):
+                evaluated += 1
+            else:
+                if _evaluation_budget_exhausted():
+                    break
+                evaluated += 1
         candidates.sort(key=_final_sort_key, reverse=True)
-        print('FINAL_SCORE_CANDIDATES_SORTED', len(candidates))
+        print('FINAL_SCORE_CANDIDATES_SORTED', len(candidates), 'evaluated', evaluated)
         return candidates
 
     publisher.collect = collect_with_final_score_precheck
