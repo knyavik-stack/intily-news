@@ -1143,10 +1143,7 @@ def ai(prompt, s):
         'attempts': [], 'used': None, 'failovers': 0, 'failures': 0,
         'blocked': 0, 'skipped_no_key': 0, 'retries': 0
     })
-    # ВСТАВЬТЕ ЭТИ ТРИ СТРОЧКИ СЮДА:
-    if '_blocked_providers' in s:
-        s['_blocked_providers'] = {}
-        
+
     providers = [
         (
             'GEMINI',
@@ -1183,12 +1180,8 @@ def ai(prompt, s):
             )
             continue
 
-        if provider_blocked(s, name):
-            telemetry['blocked'] += 1
-            errors.append(
-                name + ': CIRCUIT_OPEN'
-            )
-            continue
+        # ВРЕМЕННО ОТКЛЮЧИЛИ БЛОКИРОВКУ, ЧТОБЫ СБРОСИТЬ CIRCUIT_OPEN
+        pass
 
         try:
             telemetry['attempts'].append(name)
@@ -1283,7 +1276,7 @@ def ai(prompt, s):
                 and (
                     'HTTP_503' in message
                     or 'HTTP_500' in message
-                    or 'HTTP_429' in message  # <-- ДОБАВИТЬ ЭТУ СТРОКУ
+                    or 'HTTP_429' in message
                 )
             ):
                 block_provider(
@@ -1296,7 +1289,6 @@ def ai(prompt, s):
         'AI_PROVIDERS_UNAVAILABLE | '
         + ' | '.join(errors)
     )
-
 
 # ------------------------------------------------------------
 # Editorial QA
