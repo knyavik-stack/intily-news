@@ -65,7 +65,8 @@
     "6129ba138eedd7d458f8f5c75bbf1c31080e69300ba3a27fc64a18ec698accd6": 1788929664,
     "d43d04a78854fd6a70d6f3b2a1240db7efce063a5c0f248458ee98a0c0606db4": 1788930201,
     "6ace864e8f6eb1fb2fd786e1bd92acab5815db8cf85fd2b74fd3a07203d57e83": 1788930923,
-    "dec1f230250ee4bc851ff13bd2b4a1ee45f06207b4e9fc680f090917c7c1089f": 1788943117
+    "dec1f230250ee4bc851ff13bd2b4a1ee45f06207b4e9fc680f090917c7c1089f": 1788943117,
+    "9d30c12f8e74694ee7efeed323331e51f9a364fea1e615cea608871f5ddc2ca0": 1788943575
   },
   "known": {
     "dec1f230250ee4bc851ff13bd2b4a1ee45f06207b4e9fc680f090917c7c1089f": 1788941053.1276386,
@@ -79,46 +80,6 @@
     "93dd41f62afde2d8303b11306f46ec62ff1be62be25d0aea0260948d3af4fefd": 1788942856.6341758
   },
   "queue": [
-    {
-      "region": "WORLD",
-      "title": "Qualcomm Signs Up to $60 Billion AI Chip Supply Agreement with Amazon : 국제 : JKN - 재경일보",
-      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9WS3JHc3JEZ1FHNTMtNDFUZndVZ1l0NFIxRHpkSUZLTWVBb0UtRGZKaFNPdVpES0pIYlhDejhtTm82NDJsNmYxSFhB?oc=5",
-      "desc": "Qualcomm Signs Up to $60 Billion AI Chip Supply Agreement with Amazon : 국제 : JKN 재경일보",
-      "source": "재경일보",
-      "time": 1788930000.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 12.0,
-        "event_concreteness": 17.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 50.0,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 74.0
-      },
-      "base_score": 50.0,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 74.0,
-      "key": "9d30c12f8e74694ee7efeed323331e51f9a364fea1e615cea608871f5ddc2ca0",
-      "importance": 74.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "chips"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "last_failed_at": 1788942856,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: CIRCUIT_OPEN | GROQ: CIRCUIT_OPEN | OPENAI: CIRCUIT_OPEN",
-      "failure_count": 12,
-      "next_retry_at": 1788964456
-    },
     {
       "region": "WORLD",
       "title": "Meta's Muse AI Agent Promises to Handle Your Digital Life — but Internal Tests Reportedly Revealed Privacy Risks, Security Flaws and 'Failure Modes That Made It Unreliable' - TradingView",
@@ -813,20 +774,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788943213.3360775,
+    "last_start_ts": 1788943575.7444968,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788943213.3360775,
-    "last_success_ts": 1788943213.3360775,
+    "last_run_ts": 1788943575.7444968,
+    "last_success_ts": 1788943575.7444968,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 19
+    "last_published": 1,
+    "queue_size": 18
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788943213.1941826
+      "updated_at": 1788943579.9290917
     },
     "GROQ": {
       "disabled_until": 1788954895.468409,
@@ -1306,11 +1267,17 @@
       "desc": "Nebius Group (бывшая Yandex N.V.) под руководством Аркадия Воложа предоставит мощности для тренировки ИИ‑моделей американской компании Palantir Питера Тиля. Сотрудничество с Nebius в качестве стратегического партнёра по «суверенной ИИ‑инфраструктуре» позволит клиентам Palantir (в них входит, например, промышленный и военный сектор США, а также спецслужбы разных стран) разрабатывать собственные системы «под свои конкретные задачи». Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "9d30c12f8e74694ee7efeed323331e51f9a364fea1e615cea608871f5ddc2ca0": {
+      "time": 1788943575,
+      "title": "Qualcomm Signs Up to $60 Billion AI Chip Supply Agreement with Amazon : 국제 : JKN - 재경일보",
+      "desc": "Qualcomm Signs Up to $60 Billion AI Chip Supply Agreement with Amazon : 국제 : JKN 재경일보",
+      "source": "재경일보",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -1328,7 +1295,8 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
     {
@@ -9241,9 +9209,99 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1788943575,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 12.28,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 18,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 5.5,
+          "bonus_total": 33.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Масштабная сделка создает дефицит мощностей и меняет стратегию закупок для всех, кто зависит от облачных вычислений.",
+            "title": "Qualcomm Signs Up to $60 Billion AI Chip Supply Agreement with Amazon : 국제 : JKN - 재경일보",
+            "final_score": 74.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1788942856.6341758,
-  "last_publish_ts": 1788943117.1168134
+  "last_publish_ts": 1788943575.7444968
 }
