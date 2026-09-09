@@ -25,7 +25,7 @@ jobs:
           python3 -m pip install --disable-pip-version-check --no-cache-dir 'Pillow>=11,<13'
       - name: Проверка аналитики и политики
         run: |
-          python3 -m py_compile scripts/intily_scoring_policy.py scripts/intily_audience_policy.py scripts/intily_google_news.py scripts/intily_image_pipeline.py scripts/intily_image_hardening.py scripts/intily_image_runtime.py scripts/intily_ai_news_runner.py scripts/intily_scoring_runtime_guard.py scripts/intily_cycle_intelligence.py scripts/intily_monitor.py scripts/intily_search_monitor.py scripts/intily_policy_analytics.py scripts/intily_audience_monitor.py scripts/test_intily_google_news.py scripts/test_intily_image_pipeline.py scripts/test_intily_scoring_policy.py scripts/test_intily_audience_policy.py scripts/test_intily_image_runtime.py scripts/test_intily_scoring_runtime_guard.py
+          python3 -m py_compile scripts/intily_scoring_policy.py scripts/intily_audience_policy.py scripts/intily_google_news.py scripts/intily_image_pipeline.py scripts/intily_image_hardening.py scripts/intily_image_runtime.py scripts/intily_ai_news_runner.py scripts/intily_scoring_runtime_guard.py scripts/intily_production_entrypoint.py scripts/intily_cycle_intelligence.py scripts/intily_monitor.py scripts/intily_search_monitor.py scripts/intily_policy_analytics.py scripts/intily_audience_monitor.py scripts/test_intily_google_news.py scripts/test_intily_image_pipeline.py scripts/test_intily_scoring_policy.py scripts/test_intily_audience_policy.py scripts/test_intily_image_runtime.py scripts/test_intily_scoring_runtime_guard.py
           PYTHONPATH=scripts python3 -m unittest scripts/test_intily_google_news.py scripts/test_intily_image_pipeline.py scripts/test_intily_scoring_policy.py scripts/test_intily_audience_policy.py scripts/test_intily_image_runtime.py scripts/test_intily_scoring_runtime_guard.py -v
       - name: Запуск новостного двигателя
         env:
@@ -38,7 +38,7 @@ jobs:
           STATE_FILE: data/intily-ai-news-state.json
         run: |
           set -o pipefail
-          timeout 240s env PYTHONPATH=scripts python3 -u scripts/intily_scoring_runtime_guard.py 2>&1 | tee /tmp/intily-publisher.log
+          timeout 240s env PYTHONPATH=scripts python3 -u scripts/intily_production_entrypoint.py 2>&1 | tee /tmp/intily-publisher.log
 
       - name: Аналитика текущего запуска
         if: always()
