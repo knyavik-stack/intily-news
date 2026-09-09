@@ -163,6 +163,7 @@ def run_production():
 
     original_edit = publisher.edit
     post_cache = {}
+    current_state = {'value': None}
 
     @functools.wraps(original_edit)
     def edit_with_score_footer(item, state):
@@ -209,6 +210,7 @@ def run_production():
 
     def load_state_with_final_score_precheck(*args, **kwargs):
         state = original_load_state(*args, **kwargs)
+        current_state['value'] = state
         now = time.time()
         published = state.get('published', {})
         for item in list(state.get('queue', []) or []):
@@ -228,7 +230,7 @@ def run_production():
 
     def collect_with_final_score_precheck(telemetry=None):
         candidates = original_collect(telemetry)
-        state = None
+        state = current_state.get('value')
         for item in candidates:
             _base_recalculate(publisher, item)
             # Candidates are evaluated before main() admits them to durable queue.
