@@ -2,19 +2,19 @@
 
 ## Canonical current status
 
-**🟡 PRODUCTION VERIFICATION MODE — scoring/queue ordering and provider/pre-AI hardening deployed; workflow-budget hardening deployed; live acceptance partially verified by run #847; full acceptance still pending log-level proof of every invariant.**
+**🟡 PRODUCTION VERIFICATION MODE — performance/provider hardening is live; queue-gate purge is deployed and verified in production run #881; one fresh discovery-cycle acceptance run is still required before GREEN.**
 
 This document is the canonical current status. The production contract remains: deterministic base 0–70 → AI audience +3…+30 → final 0–100 → queue/publication ordered by final score descending. Geography is not part of the mathematical score.
 
 ## Verified defect and correction — queue ordering
 
-The previous queue implementation still had three paths that could make the user-visible queue diverge from the agreed final-score contract:
+The previous queue implementation had three paths that could make the user-visible queue diverge from the agreed final-score contract:
 
 1. finalized and pending `pre_ai` items were sorted in one numeric field (`importance`), so a pending base score could outrank an already-finalized lower score;
-2. the legacy `rebalance_queue()` enforced a regional quota before final sorting and could discard a higher-scoring story in favor of lower-scoring RU stories;
+2. the legacy `rebalance_queue()` enforced a regional quota before final sorting and could displace a higher-scoring story;
 3. the publication priority was guarded, but the legacy regional candidate selection and rebalance remained separate ordering authorities.
 
-The runtime guard was hardened so there is now one ordering authority:
+The runtime guard now has one ordering authority:
 
 `AI final score → queue ranking → publication priority`.
 
@@ -22,11 +22,13 @@ Changes in `scripts/intily_scoring_runtime_guard.py`:
 
 - final items always outrank pending `pre_ai` items;
 - among finalized items, `final_score` is the primary key and timestamp is only a tie-breaker;
-- the legacy regional quota rebalance is bypassed in production in favor of a pure score-capacity rebalance (`MAX_QUEUE`);
+- the legacy regional quota rebalance is bypassed in production in favor of pure score-capacity rebalance (`MAX_QUEUE`);
 - pre-AI items cannot outrank finalized items during publication selection;
-- legacy pre-AI queue wording is removed from generated posts;
-- the queue diagnostic uses the same ranking authority as publication;
+- finalized items below the **55.0 publication gate are explicitly removed from the durable queue**;
+- pre-AI 40–54 items remain valid queue candidates until AI editorial review;
 - score footer remains complete and non-truncating.
+
+This last rule was added after live run #880 exposed **2 finalized queue items below 55**, violating the documented invariant. The correction was deployed in `54f10ea6e7212e253353cdc69f7583522c7f78e1`.
 
 ## Production incident — AI evaluation exceeded workflow budget
 
@@ -34,7 +36,7 @@ The failed Action was run #834 (`34346240698`), commit `5d7993c03ac6e66e452c3831
 
 The production engine performed a fresh search and produced 43 candidates. Gemini was healthy, but the runtime evaluated candidates serially at the conservative 5-second request spacing. The run reached 42 AI evaluations and was killed by the explicit `timeout 240s` wrapper with `exit code 124` before queue/publication could complete.
 
-This exposed a second-order design defect: provider rate limiting was bounded, but the number of AI evaluations was not bounded. With 43 candidates, a 5-second inter-request guard alone can consume more than the workflow's total budget after discovery, state loading and persistence overhead.
+This exposed a second-order design defect: provider rate limiting was bounded, but the number of AI evaluations was not bounded.
 
 ## Workflow-budget hardening — deployed
 
@@ -56,70 +58,80 @@ The production Gemini adapter is deliberately conservative:
 
 - minimum **5 seconds between Gemini requests**;
 - bounded exponential retry for **transient** 429 responses: 2s → 4s → 8s → 16s;
-- explicit `quota_exceeded` / daily-quota responses are not retried and immediately open the provider circuit;
+- explicit quota/daily-quota responses are not retried and immediately open the provider circuit;
 - prompts are bounded to `12,000` characters;
 - provider circuits prevent an exhausted provider from consuming the production budget repeatedly.
 
-Google's current documentation states that Gemini limits are model/tier/project dependent and can apply across RPM, input TPM and RPD. The implementation therefore does not assume a universal RPM value.
+## Live verification — run #880 → #881
 
-## Live evidence before the latest timeout
+Run #880 (`34392418735`) on the pre-purge runtime exposed the exact remaining invariant violation:
 
-Production run #792 (`34316757631`) was the first post-fix live discovery run:
+- 58 candidates after ingestion;
+- 9 real AI evaluations started before provider runtime became unavailable;
+- `AI_EVALUATION_SUMMARY started 9 limit 10 provider_halted True` was emitted;
+- workflow completed successfully without `exit 124`;
+- however, `QUEUE_SCORE_AUDIT` reported `final_below_threshold: 2` and `invariant_ok: false`.
 
-- 35/35 regression tests passed;
-- discovery executed;
-- 499 raw items → 26 candidates;
-- `CANONICAL_PRE_AI_FILTER 26 -> 26 threshold 40.0` confirmed the canonical gate;
-- Gemini 429 failed immediately with no retry loop;
-- Gemini circuit opened for six hours;
-- workflow completed normally rather than timing out;
-- 8 new candidates entered the durable queue.
+The queue-gate correction was then deployed as `54f10ea6e7212e253353cdc69f7583522c7f78e1`.
 
-All original AI vendors were unavailable at that moment, so the run published 0. GitHub Models fallback was deployed afterward.
+Run #881 (`34393036299`) is the first live production verification of that correction:
 
-## Latest failed run — concrete evidence
+- workflow: **success**;
+- production job: **success**;
+- production engine: **success**;
+- commit executed: `54f10ea6e7212e253353cdc69f7583522c7f78e1`;
+- regression suite: **41/41 OK**;
+- AI evaluation budget: **180s**;
+- real AI evaluations started: **4**;
+- Gemini successfully evaluated all four items in this cycle;
+- one Telegram publication succeeded (`TELEGRAM_SENT`);
+- queue after publication: **12**;
+- `QUEUE_SCORE_AUDIT`: `pre_ai_below_final_threshold: 0`, `final_below_threshold: 0`, **`invariant_ok: true`**;
+- no `timeout 240s` / exit 124.
 
-Run #834 (`34346240698`) demonstrated that Gemini can remain healthy without 429 retry storms, but the engine still needed a cycle-level evaluation budget:
+This is strong evidence that the queue-gate correction works in production.
 
-- regression tests: **38/38 OK**;
-- discovery: **799 total raw items**;
-- canonical candidates: **43**;
-- Gemini: successful throughout the observed sequence;
-- no provider-quota retry storm;
-- failure point: explicit command timeout, **exit code 124**;
-- analytics and state persistence still executed after the engine step failed.
+Run #881 was a queue-drain cycle (`SEARCH_SKIPPED` because fresh discovery was not due yet), so it does **not** by itself close the full fresh-discovery acceptance. The next discovery cycle must be checked for the same invariants plus candidate evaluation telemetry.
 
-This is classified as a workflow-budget defect, not a Gemini quota defect.
+## Scheduler/runtime observation
 
-## Live verification — run #847
+The repository contract intentionally keeps GitHub Actions as `workflow_dispatch` only; Cloudflare is the scheduler. The current Worker source declares a minutely Cron and a randomized 1-in-3 dispatch gate, while collection itself is separately throttled by the publisher's durable state.
 
-Run #847 (`34363454469`) is the first production run on the fully deployed performance hardening commit `3db7ea5a514e751868098fe1b0fd783cf10b4f39`.
+Observed live runs #880 and #881 at `19:00Z` and `19:06Z` confirm that the Cloudflare → GitHub dispatch path is currently producing production runs at the expected approximate cadence. No second GitHub scheduler was introduced.
 
-Verified directly from GitHub Actions:
+## Discovery performance
 
-- workflow event: `workflow_dispatch`;
-- run conclusion: **success**;
-- production job conclusion: **success**;
-- production engine step (`Запуск новостного двигателя`): **success**;
-- engine runtime: approximately **54 seconds** (`14:25:11Z` → `14:26:05Z`);
-- no `timeout 240s` / exit-124 termination;
-- analytics and state-persistence steps completed successfully;
-- publisher analytics were persisted by bot commit `fd0b788e9afa70469fef7a29e9f49cdf7d623c29` immediately after the run.
+The latest fresh discovery run #880 processed:
 
-The persisted state from that run contains finalized items with real audience scores and final scores, and the queue-score audit reports `invariant_ok: true` for the persisted production state. The latest inspected persisted analytics also show a healthy Gemini provider state in the successful cycle.
+- 64/64 Google News queries successfully;
+- 9/10 direct RSS feeds successfully;
+- VentureBeat AI remained the only direct-feed error (`HTTP 429`);
+- 1,507 raw items;
+- 58 candidates;
+- roughly 36 seconds for serial discovery before candidate processing.
 
-**What is not claimed yet:** the available GitHub Actions metadata does not expose the complete raw production log in the current connector surface, so this verification does not independently prove every log-level acceptance item such as the exact `AI_EVALUATION_SUMMARY` line or the exact number of AI evaluations started in #847. Those remain explicit acceptance checks for the next observable cycle.
+This is now the next optimization target, but **not** a production-breaking defect. The planned optimization remains bounded I/O concurrency for discovery, followed later by deterministic upper-bound pruning and a two-stage AI architecture.
+
+## Current production quality observations
+
+Run #881 confirms the core publication path is healthy, but two non-blocking quality signals remain under observation:
+
+1. **Image fallback:** the selected source image was unavailable/blocked, so the publisher correctly used text fallback rather than truncating the post.
+2. **Provider resilience:** Gemini can temporarily return timeout/503; the runtime now stops starting new evaluations once the provider circuit opens. In #880 this occurred after 9 evaluations and did not break the workflow.
+
+The 24h monitor still reports a historically high item-failure ratio because it aggregates older degraded cycles. This is not treated as a current single-run failure; it remains an operational KPI to reduce as provider availability stabilizes.
 
 ## Regression coverage
 
-The workflow runs the scoring, audience, image, Google News, runtime-guard and production-entrypoint regression suites before production execution.
+The workflow currently runs the scoring, audience, image, Google News, runtime-guard and production-entrypoint regression suites before production execution.
 
-Current regression coverage includes:
+Coverage includes:
 
 - no legacy +10 pre-AI audience placeholder;
 - AI 10/10 contribution reaches +30;
 - final score is primary ordering key;
 - finalized items outrank pending pre-AI items;
+- finalized items below 55 are rejected from durable queue;
 - all score components are printed;
 - over-limit editorial text is rejected instead of truncated;
 - canonical pre-AI threshold is 40;
@@ -132,7 +144,9 @@ Current regression coverage includes:
 
 ## Current commits
 
-- `3db7ea5a514e751868098fe1b0fd783cf10b4f39` — provider cooldown correction; used by verified run #847.
+- `54f10ea6e7212e253353cdc69f7583522c7f78e1` — purge finalized stories below publication gate; verified by run #881.
+- `3e143b79e5a5ed1a869216c98fc4551af319b7e0` — regression test for finalized queue gate.
+- `3db7ea5a514e751868098fe1b0fd783cf10b4f39` — provider cooldown correction; used by run #847 and later cycles.
 - `c767c7c5681399ce463065abe85e4ca7c37a71d4` — bounded AI evaluations and provider-outage fast stop.
 - `add990ba2de8bc4b6ec0d875967e49f3cee1d1ee` — regression coverage for AI evaluation cap/provider halt.
 - `72bc6992d41bcfc72c96b9350399dd729dc34d57` — production performance-fix documentation.
@@ -149,21 +163,23 @@ Current regression coverage includes:
 
 ## Remaining acceptance test
 
-The next observable production cycle must demonstrate all of the following in one run:
+The next **fresh discovery** production cycle must demonstrate all of the following in one run:
 
 1. fresh discovery completes;
 2. canonical pre-AI gate is 40, without geographic/random score bonus;
 3. at least one candidate receives a real AI audience score through a healthy vendor or GitHub Models fallback;
 4. provider failure is fail-fast and does not consume the workflow budget;
 5. the 180-second AI evaluation deadline is honored and the workflow does not exit 124;
-6. final scores are persisted;
-7. durable queue ordered by final score, not geography or editorial heuristics;
-8. `В очереди` matches the actual top item/score that publication will select;
-9. highest finalized score is published;
-10. no finalized item below 55 remains in durable queue;
-11. footer values exactly match persisted components;
-12. no editorial text is truncated;
-13. `AI_EVALUATION_SUMMARY` is visible in the production log;
-14. real AI evaluation count is ≤10 for the cycle.
+6. `AI_EVALUATION_SUMMARY` is visible;
+7. real AI evaluation count is ≤10;
+8. final scores are persisted;
+9. durable queue ordered by final score, not geography or editorial heuristics;
+10. `В очереди` matches the actual top item/score that publication will select;
+11. highest finalized score is published;
+12. `QUEUE_SCORE_AUDIT.invariant_ok` is true;
+13. no finalized item below 55 remains in durable queue;
+14. footer values exactly match persisted components;
+15. no editorial text is truncated;
+16. state/analytics persist successfully.
 
-Until this live acceptance cycle passes with observable log-level evidence, status remains **YELLOW**.
+Until this fresh-discovery acceptance cycle passes, status remains **YELLOW**. After it passes, the next planned engineering step is discovery I/O concurrency; after performance acceptance, deterministic upper-bound pruning and two-stage AI editorial triage remain the forward architecture.
