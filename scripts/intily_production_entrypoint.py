@@ -47,7 +47,7 @@ def _compact_gemini_prompt(prompt):
     available_chars = GEMINI_MAX_PROMPT_CHARS - len(truncation_marker)
     head = GEMINI_MAX_PROMPT_CHARS * 2 // 3
     tail = GEMINI_MAX_PROMPT_CHARS - head
-    return prompt[:head] + "\n[CONTEXT_TRUNCATED]\n" + prompt[-tail:]
+    return prompt[:head] + truncation_marker + prompt[-tail:]
 
 
 def _gemini_chat(prompt, token):
