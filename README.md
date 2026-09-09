@@ -4,7 +4,7 @@ INTILY is the dedicated Telegram AI news publication subsystem.
 
 ## Current production status
 
-**🟡 PRODUCTION VERIFICATION MODE** — architecture is live, editorial/media fixes are deployed, and one real production cycle remains to verify the new scoring distribution and image delivery end-to-end.
+**🟡 PRODUCTION VERIFICATION MODE** — scoring/queue ordering has been hardened so final score is authoritative; the next real discovery cycle must still verify the new-search → final-score → queue → publication path end-to-end.
 
 Production flow:
 
@@ -24,6 +24,7 @@ Production flow:
 - Final publication gate: **55/100**.
 - A finalized item below 55 is rejected and removed from durable queue.
 - Pre-AI 40–54 remains valid until AI editorial evaluation.
+- Finalized items are ordered by final score; geography is not a mathematical score bonus and cannot displace a higher-scoring story from queue capacity.
 
 ## Media contract
 
@@ -36,8 +37,10 @@ Production flow:
 
 ## Canonical documentation
 
-- `docs/PROJECT_STATUS_2026-09-08.md` — canonical current status.
-- `docs/SCORING_CALIBRATION_2026-09-08.md` — canonical current scoring model, expected-value calibration and acceptance criteria.
+- `docs/PROJECT_STATUS_2026-09-09.md` — canonical current status.
+- `docs/PROJECT_STATUS_2026-09-08.md` — previous status snapshot.
+- `docs/QUEUE_ORDERING_FIX_2026-09-08.md` — original queue-ordering incident analysis.
+- `docs/SCORING_CALIBRATION_2026-09-08.md` — canonical scoring model and acceptance criteria.
 - `docs/INTILY_ANALYTICS.md` — current analytics contract.
 - `docs/INTILY_PUBLICATION_SETTINGS.md` — effective production settings.
 - `docs/INTILY_PRODUCTION_MONITORING.md` — monitoring and incident interpretation.
@@ -47,7 +50,7 @@ Production flow:
 
 ## Verification status
 
-The latest verified production run before the current model change was run #680 (`34219243075`): CI passed 21 regression tests and one story was published at final 69.1 under the previous ×2 audience layer. That run also exposed four finalized queue items below 55 and an HTTP 403 image fallback. Both classes are addressed in the current code, but the new model/media path requires a fresh production cycle before claiming final GREEN.
+Run #764 (`34265206024`) successfully executed 32/32 regression tests, evaluated seven queued items with AI and published a final-score-ranked 64-point story. It did not run discovery, so the new-search reordering scenario was not proven. The latest guard/test changes are now committed; the next discovery run is the required production acceptance test.
 
 ## Security
 
