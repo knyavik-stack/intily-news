@@ -197,6 +197,7 @@ def install_runtime_hardening():
                     raise RuntimeError('EMPTY_RESPONSE')
                 except Exception as fallback_error:
                     print('AI_PROVIDER_FAILED GITHUB_MODELS', str(fallback_error)[:180])
+                    publisher.PROVIDER_COOLDOWN['GITHUB_MODELS'] = GITHUB_MODELS_COOLDOWN_SECONDS
                     publisher.block_provider(state, 'GITHUB_MODELS', 'GITHUB_MODELS_UNAVAILABLE')
 
             raise
