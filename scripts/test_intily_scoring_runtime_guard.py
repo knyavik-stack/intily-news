@@ -1,6 +1,12 @@
 import unittest
 
-from intily_scoring_runtime_guard import PublisherScoreProxy, _attach_score_footer, _final_sort_key
+from intily_scoring_runtime_guard import (
+    PublisherScoreProxy,
+    _attach_score_footer,
+    _final_sort_key,
+    AI_MAX_EVALUATIONS_PER_RUN,
+    _ai_evaluation_limit_reached,
+)
 
 
 class ScoringRuntimeGuardTests(unittest.TestCase):
@@ -100,6 +106,10 @@ class ScoringRuntimeGuardTests(unittest.TestCase):
         item = {'_score_components': {'base_score': 1, 'final_score': 1, 'audience_bonus': 0}}
         with self.assertRaisesRegex(RuntimeError, 'SCORE_DIAGNOSTICS_TEXT_LIMIT'):
             _attach_score_footer(item, 'x' * 4096)
+
+    def test_ai_evaluation_limit_is_explicit_and_bounded(self):
+        self.assertEqual(AI_MAX_EVALUATIONS_PER_RUN, 10)
+        self.assertFalse(_ai_evaluation_limit_reached())
 
 
 if __name__ == '__main__':
