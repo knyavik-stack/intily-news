@@ -70,7 +70,8 @@
     "e407ac9c064641886e342378d91410c2ecb135603d7c6250b672340490bd3f10": 1788944117,
     "907eb9280d41a1dc686b39e29f0d3d88f250e88252b908870878aa3cb37d866f": 1788944479,
     "f516429cb0dcc5f04cf4fc568c9ef2c5433a59697566f3d3d87da40b271bb62b": 1788944655,
-    "be3f75ae7e1bc8c5aabd90787d565a776994cc1ccaeb0f12312d7555f826c31a": 1788945454
+    "be3f75ae7e1bc8c5aabd90787d565a776994cc1ccaeb0f12312d7555f826c31a": 1788945454,
+    "ce5daa2e0ac8bd348fadfa67d170eda85a160b792590cf952de487f9d0f8e6f6": 1788945729
   },
   "known": {
     "dec1f230250ee4bc851ff13bd2b4a1ee45f06207b4e9fc680f090917c7c1089f": 1788941053.1276386,
@@ -90,42 +91,6 @@
     "97247dc45a06915bade3063c47a80e95c9ef988f7950485b63351e3f33e10baf": 1788945454.4160957
   },
   "queue": [
-    {
-      "region": "WORLD",
-      "title": "Zscaler launches Agentic SOC to fight AI-driven attacks - IT Brief UK",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMHkxWlFGREFiM2w2OWRTdlB2bHVDaEJIbEkwa2Fqdm1mWm5vNk16YkJ0ZDNWN1lPc1ZDTGdZSlFkU1RfQ3gtQU1Ha0djYlRtMml3ZGh0Qnp5Mm1HZ2lBN2szV0Zia05VcnhUaFN5RUFvVTZRaUc0MmJ3c3JPOFRXeDdiRkFVZ05PRE5vWnB6bk90ZGFDWV9UcjFRTWpzcno5ZEtQTXE2OEttU0JTUjFKVzhjdjBtRTRhak5hTA?oc=5",
-      "desc": "Zscaler launches Agentic SOC to fight AI-driven attacks IT Brief UK",
-      "source": "IT Brief UK",
-      "time": 1788942960.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 8.0,
-        "event_concreteness": 13.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 43.5,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 67.5
-      },
-      "base_score": 43.5,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 67.5,
-      "key": "ce5daa2e0ac8bd348fadfa67d170eda85a160b792590cf952de487f9d0f8e6f6",
-      "importance": 67.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents"
-      ],
-      "audience_score": 8.0,
-      "tier": "A"
-    },
     {
       "region": "RUSSIA",
       "title": "Meta представила Muse — персонального ИИ-агента, который выполняет задачи за пользователя - the-tech.kz",
@@ -805,20 +770,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1788945454.4160957,
+    "last_start_ts": 1788945729.765408,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1788945454.4160957,
-    "last_success_ts": 1788945454.4160957,
-    "last_candidates": 32,
+    "last_run_ts": 1788945729.765408,
+    "last_success_ts": 1788945729.765408,
+    "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 19
+    "queue_size": 18
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1788945679.3468566
+      "updated_at": 1788945734.338501
     },
     "GROQ": {
       "disabled_until": 1788967271.2981436,
@@ -1333,6 +1298,13 @@
       "desc": "Nebius (бывшая Yandex) стала предпочтительным партнером по инфраструктуре суверенного ИИ компании Palantir, разработчика ИИ для ЦРУ и Пентагона. Клиенты Palantir смогут использовать инфраструктуру Nebius для запуска ИИ-моделей, сохраняя полный контроль ресурсами и моделями.",
       "source": "CNews",
       "region": "RUSSIA"
+    },
+    "ce5daa2e0ac8bd348fadfa67d170eda85a160b792590cf952de487f9d0f8e6f6": {
+      "time": 1788945729,
+      "title": "Zscaler launches Agentic SOC to fight AI-driven attacks - IT Brief UK",
+      "desc": "Zscaler launches Agentic SOC to fight AI-driven attacks IT Brief UK",
+      "source": "IT Brief UK",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
@@ -1342,7 +1314,6 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1355,7 +1326,8 @@
     "WORLD",
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
     {
@@ -9808,9 +9780,99 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1788945729,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 6.58,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 18,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 406: Not Acceptable": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 406: Not Acceptable"
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 24.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра стратегии кибербезопасности в сторону автономных систем защиты.",
+            "title": "Zscaler launches Agentic SOC to fight AI-driven attacks - IT Brief UK",
+            "final_score": 67.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1788945454.4160957,
-  "last_publish_ts": 1788945454.4160957
+  "last_publish_ts": 1788945729.765408
 }
