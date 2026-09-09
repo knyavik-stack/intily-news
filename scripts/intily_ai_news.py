@@ -1143,7 +1143,10 @@ def ai(prompt, s):
         'attempts': [], 'used': None, 'failovers': 0, 'failures': 0,
         'blocked': 0, 'skipped_no_key': 0, 'retries': 0
     })
-
+    # ВСТАВЬТЕ ЭТИ ТРИ СТРОЧКИ СЮДА:
+    if '_blocked_providers' in s:
+        s['_blocked_providers'] = {}
+        
     providers = [
         (
             'GEMINI',
