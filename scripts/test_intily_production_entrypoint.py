@@ -85,7 +85,8 @@ class ProductionEntrypointTests(unittest.TestCase):
             with patch('intily_production_entrypoint.time.sleep'):
                 result = _one_shot_gemini_chat(long_prompt, 'token')
         self.assertEqual(result, '{"ok":true}')
-        body = json.loads(mocked.call_args.kwargs['data'].decode())
+        request = mocked.call_args.args[0]
+        body = json.loads(request.data.decode())
         prompt_sent = body['contents'][0]['parts'][0]['text']
         self.assertLessEqual(len(prompt_sent), GEMINI_MAX_PROMPT_CHARS)
 
