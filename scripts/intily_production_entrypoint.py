@@ -24,6 +24,8 @@ GEMINI_MAX_PROMPT_CHARS = 12000
 GITHUB_MODELS_COOLDOWN_SECONDS = 6 * 3600
 GITHUB_MODELS_URL = 'https://models.github.ai/inference/chat/completions'
 GITHUB_MODELS_MODEL = 'openai/gpt-4o'
+AI_EVALUATION_BUDGET_SECONDS = 180.0
+GEMINI_REQUEST_TIMEOUT_SECONDS = 20
 
 _gemini_last_request_at = 0.0
 
@@ -39,24 +41,18 @@ def _wait_for_gemini_slot():
 
 
 def _compact_gemini_prompt(prompt):
-    """Bound the model context; preserve the beginning and end of the editorial prompt."""
+    """Bound model context without exceeding the configured character limit."""
     if not isinstance(prompt, str) or len(prompt) <= GEMINI_MAX_PROMPT_CHARS:
         return prompt
     truncation_marker = "\n[CONTEXT_TRUNCATED]\n"
-    # Вычитаем длину маркера из общего доступного лимита
     available_chars = GEMINI_MAX_PROMPT_CHARS - len(truncation_marker)
-    head = GEMINI_MAX_PROMPT_CHARS * 2 // 3
-    tail = GEMINI_MAX_PROMPT_CHARS - head
+    head = available_chars * 2 // 3
+    tail = available_chars - head
     return prompt[:head] + truncation_marker + prompt[-tail:]
 
 
 def _gemini_chat(prompt, token):
-    """Rate-limit Gemini and retry only transient 429s with bounded exponential backoff.
-
-    Daily/project quota exhaustion is not retried: Google documents quota_exceeded
-    separately from transient rate_limit_exceeded and recommends waiting for quota reset
-    rather than repeatedly sending requests.
-    """
+    """Rate-limit Gemini and retry only transient 429s with bounded exponential backoff."""
     prompt = _compact_gemini_prompt(prompt)
     last_error = None
 
@@ -87,7 +83,7 @@ def _gemini_chat(prompt, token):
         )
 
         try:
-            with urllib.request.urlopen(req, timeout=25) as response:
+            with urllib.request.urlopen(req, timeout=GEMINI_REQUEST_TIMEOUT_SECONDS) as response:
                 data = json.loads(response.read().decode())
             return data['candidates'][0]['content']['parts'][0]['text']
         except urllib.error.HTTPError as exc:
@@ -172,8 +168,6 @@ def install_runtime_hardening():
                 publisher.PROVIDER_COOLDOWN['GEMINI'] = cooldown
                 publisher.block_provider(state, 'GEMINI', 'HTTP_429_QUOTA_OR_RATE_LIMIT')
 
-            # GitHub Actions already grants models:read to this workflow. Use
-            # GitHub Models as a production fallback when all vendor APIs fail.
             github_token = os.environ.get('GITHUB_TOKEN')
             if github_token and not publisher.provider_blocked(state, 'GITHUB_MODELS'):
                 telemetry = state.setdefault('_cycle_provider', {
@@ -194,11 +188,7 @@ def install_runtime_hardening():
                 except Exception as fallback_error:
                     fallback_message = str(fallback_error)
                     print('AI_PROVIDER_FAILED GITHUB_MODELS', fallback_message[:180])
-                    publisher.block_provider(
-                        state,
-                        'GITHUB_MODELS',
-                        'GITHUB_MODELS_UNAVAILABLE',
-                    )
+                    publisher.block_provider(state, 'GITHUB_MODELS', 'GITHUB_MODELS_UNAVAILABLE')
 
             raise
 
@@ -229,6 +219,8 @@ def install_runtime_hardening():
 
 def main():
     install_runtime_hardening()
+    guard.AI_EVALUATION_DEADLINE = time.monotonic() + AI_EVALUATION_BUDGET_SECONDS
+    print('AI_EVALUATION_BUDGET', int(AI_EVALUATION_BUDGET_SECONDS))
     guard.run_production()
 
 
