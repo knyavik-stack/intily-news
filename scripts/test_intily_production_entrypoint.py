@@ -4,9 +4,12 @@ from unittest.mock import patch
 import urllib.error
 
 from intily_production_entrypoint import (
+    AI_EVALUATION_BUDGET_SECONDS,
     CANONICAL_PRE_AI_THRESHOLD,
     GEMINI_MAX_PROMPT_CHARS,
+    GEMINI_REQUEST_TIMEOUT_SECONDS,
     GITHUB_MODELS_MODEL,
+    _compact_gemini_prompt,
     _github_models_chat,
     _one_shot_gemini_chat,
 )
@@ -15,6 +18,13 @@ from intily_production_entrypoint import (
 class ProductionEntrypointTests(unittest.TestCase):
     def test_canonical_pre_ai_threshold_is_40(self):
         self.assertEqual(CANONICAL_PRE_AI_THRESHOLD, 40.0)
+
+    def test_ai_evaluation_budget_leaves_workflow_safety_margin(self):
+        self.assertGreaterEqual(AI_EVALUATION_BUDGET_SECONDS, 120.0)
+        self.assertLessEqual(AI_EVALUATION_BUDGET_SECONDS, 180.0)
+
+    def test_gemini_request_timeout_is_bounded(self):
+        self.assertLessEqual(GEMINI_REQUEST_TIMEOUT_SECONDS, 20)
 
     def test_gemini_quota_429_fails_without_retry(self):
         error_body = json.dumps({
@@ -73,6 +83,9 @@ class ProductionEntrypointTests(unittest.TestCase):
 
     def test_gemini_prompt_is_bounded(self):
         long_prompt = 'x' * (GEMINI_MAX_PROMPT_CHARS + 5000)
+        compacted = _compact_gemini_prompt(long_prompt)
+        self.assertEqual(len(compacted), GEMINI_MAX_PROMPT_CHARS)
+
         with patch('intily_production_entrypoint.urllib.request.urlopen') as mocked:
             response = type('Response', (), {
                 '__enter__': lambda self: self,
@@ -88,9 +101,7 @@ class ProductionEntrypointTests(unittest.TestCase):
         request = mocked.call_args.args[0]
         body = json.loads(request.data.decode())
         prompt_sent = body['contents'][0]['parts'][0]['text']
-        # Заменили строгую проверку на проверку с запасом +50 символов
-        self.assertLessEqual(len(prompt_sent), GEMINI_MAX_PROMPT_CHARS + 50)
-
+        self.assertEqual(len(prompt_sent), GEMINI_MAX_PROMPT_CHARS)
 
     def test_github_models_uses_openai_compatible_endpoint(self):
         payload = {
