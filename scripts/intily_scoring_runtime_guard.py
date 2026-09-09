@@ -163,7 +163,6 @@ def run_production():
 
     original_edit = publisher.edit
     post_cache = {}
-    current_state = {'value': None}
 
     @functools.wraps(original_edit)
     def edit_with_score_footer(item, state):
@@ -172,8 +171,8 @@ def run_production():
         if cached is not None:
             return cached
         post = original_edit(item, state)
-        # Legacy queue text described a pre-AI score. The guard has already
-        # evaluated the queue, so replace it with the actual final-score view.
+        # Remove legacy pre-AI queue wording. The main publisher appends the
+        # authoritative queue diagnostic after its own final-score rebalance.
         post = re.sub(
             r'Следующая в очереди: базовый вес [0-9]+(?:\.[0-9])?/100; AI-аудит ещё не проведён\.',
             '',
@@ -183,25 +182,6 @@ def run_production():
             r'Следующая в очереди имеет вес [0-9]+(?:\.[0-9])?%\.',
             '',
             post,
-        )
-        state_queue = [x for x in (state.get('queue', []) or []) if x is not item]
-        ordered = _pure_score_rebalance(publisher, state_queue, time.time())
-        if ordered:
-            next_item = ordered[0]
-            if _is_final(next_item):
-                next_text = f'Следующая в очереди: итоговый вес {_final_score(next_item):.1f}/100.'
-            else:
-                next_text = f'Следующая в очереди: базовый вес {_final_score(next_item):.1f}/70; AI-аудит ещё не завершён.'
-        else:
-            next_text = 'Следующая в очереди отсутствует.'
-        counts = {
-            'RUSSIA': sum(1 for x in ordered if x.get('region') == 'RUSSIA'),
-            'WORLD': sum(1 for x in ordered if x.get('region') != 'RUSSIA'),
-        }
-        post += (
-            '\n\n📊 В очереди: '
-            f'{len(ordered)} новостей, RU — {counts["RUSSIA"]}, WORLD — {counts["WORLD"]}. '
-            + next_text
         )
         post = _attach_score_footer(item, post)
         post_cache[key] = post
@@ -229,7 +209,6 @@ def run_production():
 
     def load_state_with_final_score_precheck(*args, **kwargs):
         state = original_load_state(*args, **kwargs)
-        current_state['value'] = state
         now = time.time()
         published = state.get('published', {})
         for item in list(state.get('queue', []) or []):
@@ -249,13 +228,14 @@ def run_production():
 
     def collect_with_final_score_precheck(telemetry=None):
         candidates = original_collect(telemetry)
-        state = current_state.get('value')
-        if state is not None:
-            for item in candidates:
-                _base_recalculate(publisher, item)
-                evaluate_item(item, state)
-            candidates.sort(key=_final_sort_key, reverse=True)
-            print('FINAL_SCORE_CANDIDATES_SORTED', len(candidates))
+        state = None
+        for item in candidates:
+            _base_recalculate(publisher, item)
+            # Candidates are evaluated before main() admits them to durable queue.
+            # This is the critical new-search -> final-score -> queue contract.
+            evaluate_item(item, state)
+        candidates.sort(key=_final_sort_key, reverse=True)
+        print('FINAL_SCORE_CANDIDATES_SORTED', len(candidates))
         return candidates
 
     publisher.collect = collect_with_final_score_precheck
