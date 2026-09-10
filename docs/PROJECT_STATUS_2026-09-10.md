@@ -2,7 +2,7 @@
 
 ## Canonical current status
 
-**🟡 PRODUCTION VERIFICATION MODE.** Core publication works end-to-end. The latest CI regression was fixed and production run #953 proved successful text publication. The image pipeline reached a real 41 KB image, but photo delivery was blocked by Telegram caption length. The previously added runtime editorial override has now been removed: the user-authored prompt in `scripts/intily_ai_news.py` is canonical and is not to be changed or overridden without explicit approval.
+**🟡 PRODUCTION VERIFICATION MODE.** Core publication works end-to-end in successful runs, but the latest production run #1002 exposed a provider-retry timeout defect. The user-authored editorial prompt remains canonical and selectable through `style_prompt`; it is not to be changed or overridden without explicit approval.
 
 Production contract:
 
@@ -10,17 +10,33 @@ Production contract:
 
 Telegram posts contain **editorial content only**. Queue statistics, queue-next information and operational diagnostics remain disabled (`SHOW_QUEUE_DIAGNOSTICS = False`).
 
-## Latest CI regression — fixed
+## Latest production incident — run #1002
 
-Run #951 failed at the regression gate before publisher execution because the two new image-hardening tests mocked `extract_image_candidates()` as a list, while the production contract returns `(ranked_candidates, final_url)`. This caused:
+Run #1002 failed in the news-engine step and ended with exit code **124**. The root cause is now established from the Actions log:
 
-`ValueError: not enough values to unpack (expected 2, got 1)`
+- Gemini temporarily returned HTTP 503 for one candidate and opened its temporary circuit.
+- Groq then returned HTTP 429 with a **tokens-per-day** rate-limit message for `openai/gpt-oss-20b`.
+- The Groq runtime treated that daily/token quota response as retryable and waited 30 seconds, then retried again.
+- OpenAI was already circuit-blocked.
+- The publisher subsequently attempted another Gemini/Groq failover path; Groq waited again and the outer `timeout 240s` killed the process.
+- GitHub reported: `Process completed with exit code 124`.
 
-Fixed in `5415478c418263ab3e8233ff731584a90b5ee198`.
+This is a **technical retry-classification/budget defect**, not an editorial prompt defect and not a Telegram delivery defect.
 
-A dedicated non-production `Intily Regression Gate` was added. Its latest verified run #11 completed successfully.
+### Fix deployed
 
-## Latest production verification — run #953
+Commit `75cdc250cf3e03546aa4583c74d047a61dfd1a3c` hardens `scripts/intily_production_entrypoint.py`:
+
+- Groq daily/token quota responses are classified as non-retryable and immediately handed back to provider failover;
+- Gemini and Groq request timeouts are bounded by the remaining AI evaluation budget;
+- retry sleeps are refused when the remaining AI budget cannot accommodate them;
+- Russian comments document the quota behavior.
+
+A regression test was added in `ae3d283e030f0d27324ec88f1157664608aa5853` to prove that a Groq `tokens per day` HTTP 429 causes **one request and no sleep/retry**.
+
+The first regression run after the two sequential commits was cancelled by GitHub because a newer push superseded it; its test step had already completed successfully. The newer Regression Gate run #17 is the authoritative verification run and must finish successfully before the fix is considered CI-proven.
+
+## Latest successful production verification — run #953
 
 Run #953 completed successfully and proved:
 
@@ -31,8 +47,6 @@ Run #953 completed successfully and proved:
 - `BUSINESS_RESULT PUBLISHED telegram_delivery_ok`;
 - `QUEUE_SCORE_AUDIT invariant_ok:true`;
 - state and analytics persisted.
-
-The earlier run also logged `PUBLISH_INTERVAL_RUNTIME_OVERRIDE`, `JOKE_RATE_RUNTIME_OVERRIDE` and `EDITOR_PROMPT_RUNTIME_OVERRIDE`; those were produced by an unauthorized compatibility override and have now been removed from `scripts/sitecustomize.py`. They are not current production policy.
 
 ## User editorial prompt — canonical rule
 
@@ -69,9 +83,9 @@ Historical evidence showed retired `llama-3.1-8b-instant → 404 → svgmodel_no
 
 Current technical runtime target is `openai/gpt-oss-20b`.
 
-**Open gate:** real fallback request must show `AI_PROVIDER_ATTEMPT GROQ` + `AI_PROVIDER_OK GROQ`, or a bounded correctly classified failure.
+The latest run proved that this model can return a 429 daily/token limit. The new code classifies that condition without retrying, but **a successful live fallback request is still unproven**.
 
-Run #953 used Gemini for all live editorial requests, so it still does not prove Groq fallback.
+**Open gate:** real fallback request must show `AI_PROVIDER_ATTEMPT GROQ` + `AI_PROVIDER_OK GROQ`, or a bounded correctly classified failure without exhausting the workflow timeout.
 
 ## Scheduler / cadence
 
@@ -88,12 +102,13 @@ The versioned Cloudflare worker uses `* * * * *` UTC with a 1/3 dispatch gate. T
 - Telegram text delivery;
 - durable state;
 - queue/dedup/final-score invariant;
-- regression gate passes on the corrected publisher;
 - user-authored editorial prompt remains canonical and is selectable through `style_prompt`;
-- image retrieval/validation reached a real 41 KB image in #953.
+- image retrieval/validation reached a real 41 KB image in #953;
+- provider retry hardening is implemented and covered by regression tests.
 
 ### 🟡 YELLOW / OPEN
 
+- Regression Gate #17 completion after retry hardening;
 - Groq live fallback proof;
 - structural photo delivery and real photo-send proof;
 - several consecutive scheduler cycles;
@@ -101,7 +116,7 @@ The versioned Cloudflare worker uses `* * * * *` UTC with a 1/3 dispatch gate. T
 
 ### 🔴 RED
 
-No known critical blocker in the core architecture.
+No known critical architecture blocker. Run #1002 exposed a bounded technical reliability defect; the corrective code is deployed and awaiting fresh CI + production proof.
 
 ## Acceptance rule
 
