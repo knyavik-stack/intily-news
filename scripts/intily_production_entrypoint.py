@@ -19,6 +19,7 @@ GEMINI_RETRY_DELAYS_SECONDS = (2.0, 4.0, 8.0, 16.0)
 GEMINI_MAX_PROMPT_CHARS = 12000
 AI_EVALUATION_BUDGET_SECONDS = 180.0
 GEMINI_REQUEST_TIMEOUT_SECONDS = 20
+GROQ_REQUEST_TIMEOUT_SECONDS = 20
 
 _gemini_last_request_at = 0.0
 _active_provider_state = None
@@ -31,6 +32,23 @@ def _wait_for_gemini_slot():
     if wait > 0:
         time.sleep(wait)
     _gemini_last_request_at = time.monotonic()
+
+
+def _remaining_ai_budget():
+    deadline = getattr(guard, 'AI_EVALUATION_DEADLINE', None)
+    if deadline is None:
+        return None
+    return deadline - time.monotonic()
+
+
+def _bounded_request_timeout(default_timeout):
+    """Ограничивает сетевой таймаут оставшимся бюджетом AI-оценки."""
+    remaining = _remaining_ai_budget()
+    if remaining is None:
+        return default_timeout
+    if remaining <= 0:
+        raise RuntimeError('AI_EVALUATION_DEADLINE_EXCEEDED')
+    return max(1.0, min(float(default_timeout), remaining))
 
 
 def _compact_gemini_prompt(prompt):
@@ -56,7 +74,7 @@ def _gemini_chat(prompt, token):
         url = publisher.GEMINI_URL + '?key=' + urllib.parse.quote(token, safe='')
         req = urllib.request.Request(url, data=body, headers={'Content-Type': 'application/json', 'User-Agent': 'IntilyAI-News/7.0'})
         try:
-            with urllib.request.urlopen(req, timeout=GEMINI_REQUEST_TIMEOUT_SECONDS) as response:
+            with urllib.request.urlopen(req, timeout=_bounded_request_timeout(GEMINI_REQUEST_TIMEOUT_SECONDS)) as response:
                 data = json.loads(response.read().decode())
             return data['candidates'][0]['content']['parts'][0]['text']
         except urllib.error.HTTPError as exc:
@@ -69,6 +87,9 @@ def _gemini_chat(prompt, token):
             if quota_exhausted or retry_index >= len(GEMINI_RETRY_DELAYS_SECONDS):
                 raise last_error
             delay = GEMINI_RETRY_DELAYS_SECONDS[retry_index]
+            remaining = _remaining_ai_budget()
+            if remaining is not None and remaining <= delay:
+                raise RuntimeError('AI_EVALUATION_DEADLINE_EXCEEDED') from last_error
             print('GEMINI_RETRY', int(delay), 'transient_429')
             time.sleep(delay)
     raise last_error or RuntimeError('GEMINI_UNAVAILABLE')
@@ -102,7 +123,7 @@ def _groq_chat(url, model, token, prompt, retries=2):
                     'User-Agent': 'IntilyAI-News/7.0',
                 },
             )
-            with urllib.request.urlopen(req, timeout=20) as response:
+            with urllib.request.urlopen(req, timeout=_bounded_request_timeout(GROQ_REQUEST_TIMEOUT_SECONDS)) as response:
                 data = json.loads(response.read().decode())
             return data['choices'][0]['message']['content']
         except urllib.error.HTTPError as exc:
@@ -112,14 +133,32 @@ def _groq_chat(url, model, token, prompt, retries=2):
                 raise last
             if exc.code not in (429, 500, 502, 503, 504):
                 raise last
+            lowered = raw.lower()
+            quota_exhausted = any(marker in lowered for marker in (
+                'tokens per day',
+                'rate limit reached',
+                'daily limit',
+                'quota_exceeded',
+                'exceeded your current quota',
+            ))
+            # Суточный/токенный лимит не восстановится через 2–30 секунд.
+            # Немедленно передаём управление следующему провайдеру, не сжигая бюджет цикла.
+            if quota_exhausted:
+                raise last
             retry_after = exc.headers.get('Retry-After')
             wait = min(int(retry_after), 30) if retry_after and retry_after.isdigit() else min(2 ** attempt * 3, 20)
+            remaining = _remaining_ai_budget()
+            if remaining is not None and remaining <= wait:
+                raise RuntimeError('AI_EVALUATION_DEADLINE_EXCEEDED') from last
             print('GROQ_RETRY', exc.code, wait)
             time.sleep(wait)
         except Exception as exc:
             last = exc
             if attempt < retries - 1:
                 wait = min(2 ** attempt * 3, 15)
+                remaining = _remaining_ai_budget()
+                if remaining is not None and remaining <= wait:
+                    raise RuntimeError('AI_EVALUATION_DEADLINE_EXCEEDED') from last
                 print('GROQ_RETRY_EXCEPTION', wait)
                 time.sleep(wait)
     raise last or RuntimeError('GROQ_FAILED')
