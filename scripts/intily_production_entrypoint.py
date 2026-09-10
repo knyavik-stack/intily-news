@@ -54,7 +54,7 @@ def _gemini_chat(prompt, token):
             'generationConfig': {'temperature': 0.25, 'maxOutputTokens': 900, 'responseMimeType': 'application/json'}
         }).encode()
         url = publisher.GEMINI_URL + '?key=' + urllib.parse.quote(token, safe='')
-        req = urllib.request.Request(url, data=body, headers={'Content-Type': 'application/json'})
+        req = urllib.request.Request(url, data=body, headers={'Content-Type': 'application/json', 'User-Agent': 'IntilyAI-News/7.0'})
         try:
             with urllib.request.urlopen(req, timeout=GEMINI_REQUEST_TIMEOUT_SECONDS) as response:
                 data = json.loads(response.read().decode())
@@ -72,6 +72,52 @@ def _gemini_chat(prompt, token):
             print('GEMINI_RETRY', int(delay), 'transient_429')
             time.sleep(delay)
     raise last_error or RuntimeError('GEMINI_UNAVAILABLE')
+
+
+def _groq_chat(url, model, token, prompt, retries=2):
+    """Groq OpenAI-compatible request with an explicit app User-Agent."""
+    body = json.dumps({
+        'model': model,
+        'messages': [
+            {'role': 'system', 'content': 'Ты профессиональный редактор русского Telegram-канала об AI. Отвечай только валидным JSON.'},
+            {'role': 'user', 'content': prompt},
+        ],
+        'temperature': 0.25,
+        'max_tokens': 900,
+    }).encode()
+    last = None
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(
+                url,
+                data=body,
+                headers={
+                    'Authorization': 'Bearer ' + token,
+                    'Content-Type': 'application/json',
+                    'User-Agent': 'IntilyAI-News/7.0',
+                },
+            )
+            with urllib.request.urlopen(req, timeout=20) as response:
+                data = json.loads(response.read().decode())
+            return data['choices'][0]['message']['content']
+        except urllib.error.HTTPError as exc:
+            raw = exc.read().decode('utf-8', 'replace')
+            last = RuntimeError(f'GROQ_HTTP_{exc.code}: {raw[:300]}')
+            if exc.code == 403 and '1010' in raw:
+                raise last
+            if exc.code not in (429, 500, 502, 503, 504):
+                raise last
+            retry_after = exc.headers.get('Retry-After')
+            wait = min(int(retry_after), 30) if retry_after and retry_after.isdigit() else min(2 ** attempt * 3, 20)
+            print('GROQ_RETRY', exc.code, wait)
+            time.sleep(wait)
+        except Exception as exc:
+            last = exc
+            if attempt < retries - 1:
+                wait = min(2 ** attempt * 3, 15)
+                print('GROQ_RETRY_EXCEPTION', wait)
+                time.sleep(wait)
+    raise last or RuntimeError('GROQ_FAILED')
 
 
 def _provider_key_fingerprint(token):
@@ -118,6 +164,8 @@ def install_runtime_hardening():
     def circuit_checked_chat(url, model, token, prompt, provider, retries=2):
         if _active_provider_state is not None and publisher.provider_blocked(_active_provider_state, provider):
             raise RuntimeError(provider + '_CIRCUIT_OPEN')
+        if provider == 'GROQ':
+            return _groq_chat(url, model, token, prompt, retries)
         return original_chat(url, model, token, prompt, provider, retries)
 
     publisher.gemini_chat = circuit_checked_gemini
