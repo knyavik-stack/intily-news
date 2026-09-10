@@ -2,6 +2,9 @@ name: Intily AI News Publisher
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - scripts/intily_provider_recovery.py
 
 permissions:
   contents: write
