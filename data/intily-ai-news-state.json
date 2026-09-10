@@ -202,7 +202,8 @@
     "873083c5a159b9a07593d60bd8b8aa9586c2d3adb982c63c0c82279ad99e75cf": 1789050268.6176848,
     "5e360dc1530e01ce9ffc692f095522e5207af9a06ed5ee980b2f14ee9f6832c5": 1789050268.6176848,
     "bb0c6e9a299cf41c453ef4681f0f27582bd39c67798ab8d8100db7834c1558fb": 1789050268.6176848,
-    "fc6d61172f3a3bb2ef4794a6612a1ebb670f2c688bc29d105a9061216679e7df": 1789052253.7802255
+    "fc6d61172f3a3bb2ef4794a6612a1ebb670f2c688bc29d105a9061216679e7df": 1789052253.7802255,
+    "e38d7f5c1eba47ee53b83c19c5c88af0c3be11a8d06987f566fdeefca16651df": 1789054409.315156
   },
   "queue": [
     {
@@ -239,10 +240,10 @@
       "audience_score": 6.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1789050633,
+      "last_failed_at": 1789054409,
       "last_failure": "Expecting value: line 1 column 1 (char 0)",
-      "failure_count": 1,
-      "next_retry_at": 1789050933
+      "failure_count": 2,
+      "next_retry_at": 1789055009
     },
     {
       "region": "WORLD",
@@ -279,10 +280,10 @@
       ],
       "audience_score": 6.0,
       "tier": "A",
-      "last_failed_at": 1789050633,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: EMPTY_RESPONSE | OPENAI: OPENAI_CIRCUIT_OPEN",
-      "failure_count": 1,
-      "next_retry_at": 1789050933
+      "last_failed_at": 1789054409,
+      "last_failure": "Expecting value: line 1 column 1 (char 0)",
+      "failure_count": 2,
+      "next_retry_at": 1789055009
     },
     {
       "region": "WORLD",
@@ -319,10 +320,10 @@
       ],
       "audience_score": 6.0,
       "tier": "A",
-      "last_failed_at": 1789050633,
-      "last_failure": "Expecting value: line 1 column 1 (char 0)",
-      "failure_count": 1,
-      "next_retry_at": 1789050933
+      "last_failed_at": 1789054409,
+      "last_failure": "Unterminated string starting at: line 1 column 84 (char 83)",
+      "failure_count": 2,
+      "next_retry_at": 1789055009
     },
     {
       "region": "WORLD",
@@ -358,7 +359,11 @@
         "business"
       ],
       "audience_score": 5.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1789054409,
+      "last_failure": "Expecting value: line 1 column 1 (char 0)",
+      "failure_count": 1,
+      "next_retry_at": 1789054709
     },
     {
       "region": "WORLD",
@@ -395,7 +400,11 @@
         "research"
       ],
       "audience_score": 6.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1789054409,
+      "last_failure": "Expecting value: line 1 column 1 (char 0)",
+      "failure_count": 1,
+      "next_retry_at": 1789054709
     },
     {
       "region": "RUSSIA",
@@ -432,7 +441,11 @@
       ],
       "audience_score": 6.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1789054409,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_HTTP_429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m1e9qqc7eeva92csec7za87f` service tier `on_demand` on tokens per minute | OPENAI: OPENAI_CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1789054709
     },
     {
       "region": "WORLD",
@@ -468,7 +481,11 @@
         "business"
       ],
       "audience_score": 5.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1789054409,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_HTTP_429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m1e9qqc7eeva92csec7za87f` service tier `on_demand` on tokens per minute | OPENAI: OPENAI_CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1789054709
     },
     {
       "region": "RUSSIA",
@@ -507,32 +524,73 @@
       "audience_score": 6.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1789038386,
+      "last_failed_at": 1789054409,
       "last_failure": "Expecting value: line 1 column 1 (char 0)",
-      "failure_count": 4,
-      "next_retry_at": 1789040786
+      "failure_count": 5,
+      "next_retry_at": 1789059209
+    },
+    {
+      "region": "WORLD",
+      "title": "Meta’s Muse AI works and creeps me out",
+      "link": "https://www.theverge.com/tech/993391/meta-muse-ai-hands-on",
+      "desc": "Meta has launched its new Muse assistant, marking the company's first real foray into AI-powered productivity tools. The company says its AI agent can \"take the busywork off your plate\" by helping you with online shopping, emails, trip-planning, and more. I decided to try out the new tool and see how well it performed - […]",
+      "source": "The Verge AI",
+      "time": 1789052400.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 10.0,
+        "event_concreteness": 13.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 48.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 48.0
+      },
+      "base_score": 48.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 48.0,
+      "key": "e38d7f5c1eba47ee53b83c19c5c88af0c3be11a8d06987f566fdeefca16651df",
+      "importance": 48.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "last_failed_at": 1789054409,
+      "last_failure": "Expecting value: line 1 column 1 (char 0)",
+      "failure_count": 1,
+      "next_retry_at": 1789054709
     }
   ],
   "health": {
-    "last_start_ts": 1789054046.794885,
+    "last_start_ts": 1789054409.315156,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789054046.794885,
-    "last_success_ts": 1789054046.794885,
-    "last_candidates": 0,
-    "last_published": 1,
-    "queue_size": 8
+    "last_run_ts": 1789054409.315156,
+    "last_success_ts": 1789054409.315156,
+    "last_candidates": 51,
+    "last_published": 0,
+    "queue_size": 9
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789054050.370818
+      "disabled_until": 1789054624.7040315,
+      "reason": "TEMPORARY_SERVICE_ERROR_OR_429",
+      "updated_at": 1789054504.7040339
     },
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789050785.4094098
+      "updated_at": 1789054600.9763787
     },
     "OPENAI": {
       "disabled_until": 1789114033.480713,
@@ -546,13 +604,6 @@
     }
   },
   "stories": {
-    "5475ef17a7ccc4e2ae253e3c1a6c81fa80df61c7efdd90c41de3f7494dafab24": {
-      "time": 1788967873,
-      "title": "Meta* представила ИИ-агента Muse, который доступен внутри WhatsApp и не только - Rozetked.me",
-      "desc": "Meta* представила ИИ-агента Muse, который доступен внутри WhatsApp и не только Rozetked.me",
-      "source": "Rozetked.me",
-      "region": "RUSSIA"
-    },
     "9ba5a10873b76522d0e3d59d9c6e84cfce6ff09c5b3d274aa633e4cf5472abf0": {
       "time": 1788968592,
       "title": "Google’s New AI Atlas Presents Breakthrough for Genetic Disease Research - ProPakistani",
@@ -1263,96 +1314,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1788892402,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 9.4,
-      "candidates": 0,
-      "queue_before": 9,
-      "queue_after": 8,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходим срочный аудит безопасности и пересмотр рисков при использовании автономных ИИ-агентов в бизнес-процессах.",
-            "title": "OpenAI Reports Rogue AI Agent Incident to European Commission - Tekedia",
-            "final_score": 67.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 8,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1788892584,
       "status": "OK",
@@ -23174,10 +23135,191 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789054409,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": true,
+      "duration_sec": 191.74,
+      "candidates": 51,
+      "queue_before": 8,
+      "queue_after": 9,
+      "published": 0,
+      "publish_attempts": 9,
+      "item_failures": 9,
+      "admission": {
+        "published_key": 36,
+        "known_recent": 0,
+        "already_queued": 5,
+        "story_queue": 0,
+        "story_history": 9,
+        "added": 1,
+        "candidate_count": 51,
+        "admission_rate": 1.96,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 10,
+          "average_score": 7.1,
+          "bonus_total": 213.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 5,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Существенное снижение стоимости кэширования позволяет оптимизировать расходы на LLM-инфраструктуру в продакшене.",
+            "title": "DeepSeek V4.1 Flash: почти вдвое больше параметров и на 57% дешевле кэш",
+            "final_score": 74.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 164,
+        "raw_items": 1297,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 3,
+          "OpenAI News": 2,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 40,
+          "CNews": 66,
+          "Euronews": 50
+        },
+        "score_filtered": 1180,
+        "quality_filtered": 54,
+        "story_dedup": 12,
+        "candidates": 51,
+        "candidate_rate": 0.045,
+        "score_buckets": {
+          "0–39": 1112,
+          "40–49": 118,
+          "50–59": 57,
+          "60–69": 10,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 6,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ"
+        ],
+        "used": "GROQ",
+        "failovers": 52,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789052253.7802255,
+  "last_search_ts": 1789054409.315156,
   "last_publish_ts": 1789054046.794885,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
