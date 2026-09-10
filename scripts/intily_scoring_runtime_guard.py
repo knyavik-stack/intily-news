@@ -203,6 +203,7 @@ def run_production():
     publisher.rebalance_queue = lambda items, now: _pure_score_rebalance(publisher, items, now)
 
     original_edit = publisher.edit
+    publisher.edit = original_edit  # Вынудит систему использовать стандартный метод без аналитики
     post_cache = {}
     current_state = {'value': None}
 
