@@ -4,6 +4,7 @@ from intily_scoring_runtime_guard import (
     PublisherScoreProxy,
     _attach_score_footer,
     _final_sort_key,
+    _halt_publication_attempts,
     _pure_score_rebalance,
     AI_MAX_EVALUATIONS_PER_RUN,
     _ai_evaluation_limit_reached,
@@ -120,6 +121,14 @@ class ScoringRuntimeGuardTests(unittest.TestCase):
         self.assertNotIn('below', keys)
         self.assertIn('pre-ai', keys)
         self.assertIn('passing', keys)
+
+    def test_provider_outage_halts_legacy_publication_loop(self):
+        class Publisher:
+            MAX_ATTEMPTS_PER_RUN = 10
+
+        publisher = Publisher()
+        _halt_publication_attempts(publisher)
+        self.assertEqual(publisher.MAX_ATTEMPTS_PER_RUN, 0)
 
     def test_footer_contains_every_component_and_total(self):
         item = {
