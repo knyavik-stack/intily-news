@@ -75,16 +75,14 @@ def _gemini_chat(prompt, token):
 
 
 def _provider_key_fingerprint(token):
-    """Store only a one-way credential fingerprint so rotated keys can reopen circuits."""
     if not token:
         return None
     return hashlib.sha256(token.encode('utf-8')).hexdigest()[:16]
 
 
 def _sync_provider_credentials(state):
-    """Automatically reopen a provider when its configured secret has changed."""
+    """Reopen circuits on first migration and whenever an API secret rotates."""
     fingerprints = state.setdefault('_provider_key_fingerprints', {})
-    changed = []
     for name, env_name in (
         ('GEMINI', 'GEMINI_API_KEY'),
         ('GROQ', 'GROQ_API_KEY'),
@@ -95,12 +93,14 @@ def _sync_provider_credentials(state):
             continue
         current = _provider_key_fingerprint(token)
         previous = fingerprints.get(name)
-        if previous and previous != current:
+        if previous is None:
+            if publisher.provider_blocked(state, name):
+                publisher.clear_provider(state, name)
+                print('AI_PROVIDER_CIRCUIT_MIGRATION_RESET', name)
+        elif previous != current:
             publisher.clear_provider(state, name)
             print('AI_PROVIDER_CREDENTIAL_ROTATED', name)
-            changed.append(name)
         fingerprints[name] = current
-    return changed
 
 
 def install_runtime_hardening():
