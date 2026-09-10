@@ -1,36 +1,6 @@
 {
   "runs": [
     {
-      "ts": 1788942131,
-      "queries": [],
-      "direct": [],
-      "errors": [],
-      "summary": {},
-      "score_buckets": {},
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key"
-      },
-      "result": {
-        "code": "PUBLISH_FAILED",
-        "reason": "all_attempted_items_failed"
-      },
-      "complete": {
-        "searched": false,
-        "candidates": 0,
-        "published": 0,
-        "queue": 20
-      },
-      "publish_wait_seconds": null
-    },
-    {
       "ts": 1788942312,
       "queries": [],
       "direct": [],
@@ -14398,6 +14368,36 @@
         "candidates": 31,
         "published": 1,
         "queue": 15
+      },
+      "publish_wait_seconds": null
+    },
+    {
+      "ts": 1789027637,
+      "queries": [],
+      "direct": [],
+      "errors": [],
+      "summary": {},
+      "score_buckets": {},
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key"
+      },
+      "result": {
+        "code": "PUBLISHED",
+        "reason": "telegram_delivery_ok"
+      },
+      "complete": {
+        "searched": false,
+        "candidates": 0,
+        "published": 1,
+        "queue": 14
       },
       "publish_wait_seconds": null
     }
