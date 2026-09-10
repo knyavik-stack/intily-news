@@ -9,6 +9,7 @@ from intily_production_entrypoint import (
     GEMINI_MAX_PROMPT_CHARS,
     GEMINI_REQUEST_TIMEOUT_SECONDS,
     _compact_gemini_prompt,
+    _groq_chat,
     _one_shot_gemini_chat,
     _sync_provider_credentials,
 )
@@ -62,6 +63,34 @@ class ProductionEntrypointTests(unittest.TestCase):
         long_prompt = 'x' * (GEMINI_MAX_PROMPT_CHARS + 5000)
         compacted = _compact_gemini_prompt(long_prompt)
         self.assertEqual(len(compacted), GEMINI_MAX_PROMPT_CHARS)
+
+    def test_groq_uses_explicit_user_agent(self):
+        class FakeResponse:
+            def __enter__(self): return self
+            def __exit__(self, *args): return False
+            def read(self):
+                return json.dumps({'choices': [{'message': {'content': '{"audience_score":8}'}}]}).encode()
+
+        captured = {}
+        def fake_urlopen(request, timeout):
+            captured['request'] = request
+            captured['timeout'] = timeout
+            return FakeResponse()
+
+        with patch('intily_production_entrypoint.urllib.request.urlopen', side_effect=fake_urlopen):
+            result = _groq_chat('https://api.groq.com/openai/v1/chat/completions', 'llama-3.1-8b-instant', 'token', 'test')
+
+        self.assertEqual(result, '{"audience_score":8}')
+        self.assertEqual(captured['timeout'], 20)
+        self.assertEqual(captured['request'].headers['User-agent'], 'IntilyAI-News/7.0')
+
+    def test_groq_cloudflare_1010_is_not_retried(self):
+        error = urllib.error.HTTPError('https://api.groq.com', 403, 'forbidden', {}, None)
+        error.read = lambda: b'error code: 1010'
+        with patch('intily_production_entrypoint.urllib.request.urlopen', side_effect=error) as mocked:
+            with self.assertRaisesRegex(RuntimeError, r'GROQ_HTTP_403'):
+                _groq_chat('https://api.groq.com/openai/v1/chat/completions', 'llama-3.1-8b-instant', 'token', 'test')
+        self.assertEqual(mocked.call_count, 1)
 
     def test_first_provider_migration_reset_reopens_existing_circuit(self):
         state = {'providers': {'OPENAI': {'disabled_until': 9999999999}}, '_provider_key_fingerprints': {}}
