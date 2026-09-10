@@ -1,6 +1,6 @@
 """Runtime hardening for Intily publisher-image retrieval.
 
-Keeps the deterministic extractor/validator, adds a publisher Referer retry,
+Keeps the deterministic extractor/validator, adds publisher Referer retry,
 forbids Google-hosted images, and skips source images over the product's strict
 1,000,000-byte delivery cap so another valid publisher candidate can be tried.
 """
@@ -15,9 +15,13 @@ GOOGLE_IMAGE_HOSTS = {
 }
 
 MAX_TELEGRAM_IMAGE_BYTES = 1_000_000
-# Backward-compatible source-fetch limit. It is deliberately higher than the
-# Telegram delivery cap so oversized candidates can be identified and skipped.
 MAX_IMAGE_BYTES = pipeline.MAX_SOURCE_IMAGE_BYTES
+
+BROWSER_USER_AGENT = (
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
+    'AppleWebKit/537.36 (KHTML, like Gecko) '
+    'Chrome/151.0.0.0 Safari/537.36'
+)
 
 
 def _host(url):
@@ -45,6 +49,15 @@ def fetch_image(article_url):
                 'User-Agent': 'Mozilla/5.0 (compatible; IntilyNews/1.0)',
                 'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8',
             },
+            {
+                'User-Agent': BROWSER_USER_AGENT,
+                'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.9',
+                'Referer': source_url,
+                'Sec-Fetch-Dest': 'image',
+                'Sec-Fetch-Mode': 'no-cors',
+                'Sec-Fetch-Site': 'cross-site',
+            },
         ]
         for headers in attempts:
             try:
@@ -56,8 +69,6 @@ def fetch_image(article_url):
                 if content_type not in pipeline.IMAGE_TYPES:
                     raise ValueError('IMAGE_CONTENT_TYPE_INVALID')
                 if len(data) > MAX_TELEGRAM_IMAGE_BYTES:
-                    # Hard reject: do not resize/recompress. Continue to the
-                    # next publisher candidate instead of falling back early.
                     errors.append(f'{method}:IMAGE_TOO_LARGE:{len(data)}')
                     break
                 dims = pipeline._dimensions(data, content_type)
