@@ -202,7 +202,11 @@
         "research"
       ],
       "audience_score": 8.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1789033886,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: EMPTY_RESPONSE | OPENAI: OPENAI_CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1789034186
     },
     {
       "region": "RUSSIA",
@@ -220,26 +224,30 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 40.5,
+        "base_score": 40.0,
         "audience_score": 8.0,
         "audience_bonus": 24.0,
-        "final_score": 64.5
+        "final_score": 64.0
       },
-      "base_score": 40.5,
+      "base_score": 40.0,
       "audience_bonus": 24.0,
       "score_stage": "final",
-      "score": 64.5,
+      "score": 64.0,
       "key": "8b770887c6af2af126371073dcc827d0448f3008d9c71b3468a35ef850933db1",
-      "importance": 64.5,
+      "importance": 64.0,
       "editorial_value": 50.0,
       "topics": [
         "security_regulation"
       ],
       "audience_score": 8.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1789033886,
+      "last_failure": "Unterminated string starting at: line 3 column 11 (char 64)",
+      "failure_count": 1,
+      "next_retry_at": 1789034186
     },
     {
       "region": "WORLD",
@@ -276,7 +284,11 @@
         "security_regulation"
       ],
       "audience_score": 6.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1789033886,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: EMPTY_RESPONSE | OPENAI: OPENAI_CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1789034186
     },
     {
       "region": "WORLD",
@@ -312,7 +324,11 @@
         "robotics"
       ],
       "audience_score": 6.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1789033886,
+      "last_failure": "Unterminated string starting at: line 2 column 12 (char 13)",
+      "failure_count": 1,
+      "next_retry_at": 1789034186
     },
     {
       "region": "WORLD",
@@ -349,7 +365,11 @@
         "models"
       ],
       "audience_score": 5.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1789033886,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: EMPTY_RESPONSE | OPENAI: OPENAI_CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1789034186
     },
     {
       "region": "RUSSIA",
@@ -384,7 +404,11 @@
       "topics": [],
       "audience_score": 6.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1789033886,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: EMPTY_RESPONSE | OPENAI: OPENAI_CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1789034186
     },
     {
       "region": "RUSSIA",
@@ -422,29 +446,33 @@
       ],
       "audience_score": 6.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1789033886,
+      "last_failure": "Expecting value: line 1 column 1 (char 0)",
+      "failure_count": 1,
+      "next_retry_at": 1789034186
     }
   ],
   "health": {
-    "last_start_ts": 1789033382.9551063,
+    "last_start_ts": 1789033886.7766213,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789033382.9551063,
-    "last_success_ts": 1789033382.9551063,
-    "last_candidates": 33,
-    "last_published": 1,
+    "last_run_ts": 1789033886.7766213,
+    "last_success_ts": 1789033886.7766213,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 7
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789033471.4681926
+      "disabled_until": 1789034138.9861882,
+      "reason": "TEMPORARY_SERVICE_ERROR_OR_429",
+      "updated_at": 1789034018.9861927
     },
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789031587.299552
+      "updated_at": 1789034028.3907485
     },
     "OPENAI": {
       "disabled_until": 1789114033.480713,
@@ -458,13 +486,6 @@
     }
   },
   "stories": {
-    "70c8cc1ca32e53e2d0ee70f5736be8c3025d93283d55702a9540620512d65c31": {
-      "time": 1788947354,
-      "title": "Мнение: у нас есть год, чтобы повсеместно решить вопросы безопасности",
-      "desc": "Автор техноблога написал пост, повящённый проблемам кибербезопасности в эпоху ИИ‑агентов. Он считает, что у отрасли есть примерно год, чтобы решить вопрос уязвимостей. Основной причиной для беспокойства автор называет выход модели GLM 5.3-flash от китайской лаборатории Z.ai. Она относится к классу open‑weight — то есть её веса может скачать и запустить у себя любой желающий. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "08386cf8f102ed5a5aa87c6fb92d39c6e0ba6b8acab1a79e98628a23766f4098": {
       "time": 1788948075,
       "title": "Meta Muse AI Agent Launch: $20 & $100 Tiers [2026] - tech-insider.org",
@@ -21534,6 +21555,117 @@
         "GEMINI": {
           "blocked": false,
           "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1789033886,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 141.65,
+      "candidates": 0,
+      "queue_before": 7,
+      "queue_after": 7,
+      "published": 0,
+      "publish_attempts": 7,
+      "item_failures": 7,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ"
+        ],
+        "used": "GROQ",
+        "failovers": 37,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
         },
         "GROQ": {
           "blocked": false,
