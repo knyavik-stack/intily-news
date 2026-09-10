@@ -2,7 +2,7 @@
 
 ## Canonical current status
 
-**🟡 PRODUCTION VERIFICATION MODE — fresh discovery is healthy; queue-gate invariants remain healthy; current AI provider pool is unavailable; provider publication fast-stop has been fixed and needs live verification before GREEN.**
+**🟡 PRODUCTION VERIFICATION MODE — provider incident resolved for Gemini; fresh-discovery acceptance remains the final gate to GREEN.**
 
 This document supersedes the older 2026-09-09 status for the current operational state. Historical documents remain useful for incident context.
 
@@ -20,115 +20,89 @@ Final publication gate: **55.0**.
 
 Geography is not part of the mathematical score.
 
-## Latest live verification — run #895
+## Root cause found — provider circuit deadlock
 
-GitHub Actions run `34443365835` completed successfully.
+Runs #895/#899 did not fail because news discovery or Telegram was broken. Persisted provider circuit state marked Gemini, Groq, OpenAI and GitHub Models as disabled, so the next cycles were blocked before making real vendor requests.
 
-### Discovery
+Run #900 used the one-shot recovery utility and proved the real external state:
 
-- 64/64 Google News queries succeeded.
-- 9/10 direct RSS feeds succeeded.
-- VentureBeat AI returned HTTP 429; it was the only direct-feed error.
-- 519 raw items were collected.
-- 463 were removed by the deterministic score filter.
-- 22 were removed by quality/relevance filtering.
-- 7 were collapsed as story duplicates.
-- 27 candidates remained.
-- canonical pre-AI filter: 27 → 27 at threshold 40.0.
-- discovery completed in roughly 29 seconds from first query to ingest summary.
+- **Gemini: GREEN** — multiple real `AI_PROVIDER_OK GEMINI` responses;
+- **Groq: RED** — HTTP 403 / code 1010;
+- **OpenAI: RED** — HTTP 429, `You have no credits remaining`;
+- **GitHub Models: RED** — HTTP 410 retirement brownout.
 
-This confirms the previously required **fresh-discovery acceptance** on the ingestion side.
+The recovery cycle then completed end-to-end Telegram publication:
 
-### AI/provider layer
+- `TELEGRAM_SENT 1096`;
+- `PUBLISHED Anthropic Discloses Four Incidents of Claude Models Accessing Real Systems - Hokanews importance 71.0`;
+- `BUSINESS_RESULT PUBLISHED telegram_delivery_ok`;
+- `QUEUE_SCORE_AUDIT invariant_ok:true`;
+- no workflow timeout.
 
-The current production state has no usable provider:
+A single Gemini request timed out during the cycle; the following Gemini request succeeded. This is treated as transient provider behavior, not a persistent API block.
 
-- Gemini circuit-open;
-- Groq circuit-open;
-- OpenAI circuit-open;
-- GitHub Models circuit-open.
+## Recovery implementation
 
-Run #895 started one real AI evaluation, then emitted:
+Added:
 
-`AI_EVALUATION_SUMMARY started 1 limit 10 provider_halted True`
+- `scripts/intily_provider_recovery.py` — one-shot operator recovery of persisted provider circuits;
+- `scripts/test_intily_provider_recovery.py` — regression coverage;
+- `docs/PRODUCTION_INCIDENT_2026-09-10_PROVIDER_ROOT_CAUSE.md` — incident evidence and remediation.
 
-No real audience score was produced in that cycle, so the full acceptance test is **not passed**.
+The temporary recovery mode and temporary push trigger were removed immediately after run #900. The normal workflow is again `workflow_dispatch` only.
 
-## Newly discovered runtime defect
+The recovery utility remains available but is not invoked during normal production cycles.
 
-The runtime guard stopped further AI evaluations correctly, but the legacy publisher's local publication-attempt loop was independent of that guard. During provider outage it continued attempting editorial processing for additional queue items.
+## OpenAI status
 
-Run #895 therefore recorded 10 publication attempts and 10 item failures with the same provider-unavailable condition.
+The production workflow reads `secrets.OPENAI_API_KEY`. GitHub secret values are intentionally not inspectable through the connector.
 
-This was wasteful but did not cause a workflow timeout or corrupt the durable queue.
+The current secret was actually tested in run #900 and OpenAI returned HTTP 429 with `You have no credits remaining`.
 
-## Fix deployed
+If Boss created a new OpenAI API key, it must be installed as the repository Actions secret `OPENAI_API_KEY`. If that key belongs to an organization/project without available API credits, key rotation alone will not solve the 429.
 
-`65cc5fe0131e6697a3d75f61673739a3aedc102c`
+Do not send API keys through chat.
 
-### Provider outage publication fast-stop
+## Gemini status
 
-`scripts/intily_scoring_runtime_guard.py` now:
+Gemini is currently the confirmed production AI provider. Run #900 produced several successful editorial evaluations and audience scores after the persisted circuit was cleared.
 
-- propagates provider-runtime halt into the legacy publication loop;
-- sets the process-local publication attempt cap to zero after provider outage;
-- prevents the wrapped editorial path from starting another AI edit after halt;
-- emits `PUBLICATION_HALTED provider_runtime_unavailable`;
-- preserves the existing 10-evaluation cap and 180-second AI safety budget.
+Current runtime keeps bounded timeout, request spacing and retry behavior. Google's current documentation confirms that Gemini limits are project/model/tier dependent and distinguishes transient rate limits from daily quota exhaustion.
 
-Regression test:
+## Queue / publication integrity
 
-`817daff3facd1083fd099f591b3f808b743f1bbf`
+Run #900 confirmed:
 
-`test_provider_outage_halts_legacy_publication_loop`.
-
-## Queue integrity
-
-The queue-gate purge remains verified from run #881:
-
-- `pre_ai_below_final_threshold: 0`;
-- `final_below_threshold: 0`;
+- final-below-threshold: 0;
 - `QUEUE_SCORE_AUDIT.invariant_ok: true`;
-- finalized items below 55 are not durable.
-
-The latest run #895 also reported `final_below_threshold: 0` and `invariant_ok: true`.
+- real audience scores generated;
+- Telegram delivery confirmed;
+- durable queue preserved.
 
 ## Tests
 
-Run #895 executed the pre-production regression suite successfully:
-
-- **42/42 tests OK** before the new fast-stop regression was committed.
-- The new fast-stop test is now on `main` and must be verified by the next Action run.
-
-## Provider availability
-
-The current persisted provider cooldowns are not bypassed blindly. This is intentional. Repeated calls to exhausted providers waste the production safety budget and can amplify an outage.
-
-Current Gemini handling remains conservative: bounded retry/backoff, request timeout, prompt bound and persisted circuit state. Google's current Gemini documentation states that rate limits vary by model/project/tier and are measured across RPM, TPM and RPD; quota/rate-limit failures should use bounded retry/backoff.
+The normal CI suite now includes the provider recovery utility regression test. The live recovery run executed the pre-existing 43-test suite successfully; the new utility test is included in the next normal workflow run.
 
 ## Next acceptance gate
 
-The next production run must demonstrate:
+The next fresh-discovery cycle must demonstrate:
 
-1. new regression suite passes;
-2. fresh discovery still completes;
-3. provider outage fast-stops publication attempts rather than repeating across the queue;
-4. `AI_EVALUATION_SUMMARY` is present;
-5. real AI evaluation count remains ≤10;
-6. no `exit 124` / workflow timeout;
-7. final queue invariant remains true;
-8. once a provider is healthy, at least one real audience score is generated;
-9. highest finalized score is published to Telegram;
-10. score footer matches persisted components;
-11. state and analytics persist.
+1. current Google News/direct RSS discovery;
+2. canonical pre-AI gate 40;
+3. real Gemini audience evaluation;
+4. `AI_EVALUATION_SUMMARY` with evaluation count ≤10;
+5. final-score queue ordering;
+6. highest qualifying finalized item published;
+7. `QUEUE_SCORE_AUDIT.invariant_ok:true`;
+8. no finalized queue item below 55;
+9. footer matches persisted score components;
+10. state and analytics persist.
 
-**Until a healthy provider produces a real audience score and a publication succeeds, the overall production status remains YELLOW.**
+Only after this fresh-discovery cycle passes should the incident class return to GREEN.
 
 ## Forward plan after GREEN
 
-After the AI/provider acceptance closes, proceed with the already planned performance work:
-
-1. bounded I/O concurrency for discovery, preserving query order, source telemetry and per-feed time budgets;
+1. bounded I/O concurrency for discovery while preserving query/source telemetry;
 2. deterministic upper-bound pruning before AI calls;
-3. two-stage AI editorial triage to spend model calls only on candidates capable of clearing the 55 gate;
-4. improve provider redundancy so a single vendor outage does not stop editorial publication.
+3. two-stage AI editorial triage;
+4. stronger provider redundancy and credential-rotation recovery semantics.
