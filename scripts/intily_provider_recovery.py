@@ -45,5 +45,6 @@ def recover_state(path=STATE_FILE):
 
 
 if __name__ == '__main__':
+    # Recovery is intentionally observable and one-shot; normal runs do not call this utility.
     recovered = recover_state()
     print('AI_PROVIDER_RECOVERY_RESET', json.dumps(recovered, ensure_ascii=False, separators=(',', ':')))
