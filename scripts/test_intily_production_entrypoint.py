@@ -84,6 +84,17 @@ class ProductionEntrypointTests(unittest.TestCase):
         self.assertEqual(captured['timeout'], 20)
         self.assertEqual(captured['request'].headers['User-agent'], 'IntilyAI-News/7.0')
 
+    def test_groq_quota_429_fails_without_retry(self):
+        error_body = json.dumps({'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` on tokens per day'}}).encode()
+        error = urllib.error.HTTPError('https://api.groq.com', 429, 'rate', {}, None)
+        error.read = lambda: error_body
+        with patch('intily_production_entrypoint.urllib.request.urlopen', side_effect=error) as mocked:
+            with patch('intily_production_entrypoint.time.sleep') as sleep:
+                with self.assertRaisesRegex(RuntimeError, r'GROQ_HTTP_429'):
+                    _groq_chat('https://api.groq.com/openai/v1/chat/completions', 'openai/gpt-oss-20b', 'token', 'test')
+        self.assertEqual(mocked.call_count, 1)
+        sleep.assert_not_called()
+
     def test_groq_cloudflare_1010_is_not_retried(self):
         error = urllib.error.HTTPError('https://api.groq.com', 403, 'forbidden', {}, None)
         error.read = lambda: b'error code: 1010'
