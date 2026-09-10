@@ -225,7 +225,7 @@ def run_production():
             '',
             post,
         )
-        post = _attach_score_footer(item, post)
+     #   post = _attach_score_footer(item, post)
         post_cache[key] = post
         return post
 
