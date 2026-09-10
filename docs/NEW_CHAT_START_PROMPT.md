@@ -1,102 +1,84 @@
-> **CANONICAL CURRENT STATE — 2026-09-06**
->
-> This file contains historical operational material. The current production contract is: **Cloudflare `intily-ai-news` JavaScript scheduler → GitHub Actions `workflow_dispatch` → Python `scripts/intily_ai_news.py` → Telegram**. Cloudflare production is **not Python**.
->
-> Cloudflare baseline source recovered from v54 (`8d9de9eb-7e28-4880-a46f-881fce654f8f`) is versioned in `cloudflare/intily-ai-news.worker.js`; production currently serves v87 (`b20948d7-c11c-4495-a9ca-421c9fb58dcc`), with the only intentional runtime change being the GitHub repository target `knyavik-stack/intily-news`. Cron is `* * * * *` UTC with the original 1/3 dispatch gate.
->
-> Read `docs/PROJECT_STATUS_2026-09-06.md` and `docs/INTILY_RUNTIME_RESTORATION_2026-09-05.md` before making runtime changes. Those documents override older historical values in this file.
+# INTILY — START PROMPT FOR A NEW CHAT
 
-# START PROMPT FOR NEW CHAT — SYNAPSEMAX
-
-Продолжаем **существующий SynapseMax project**. Ничего не начинай с нуля и не проси пользователя повторять историю.
+Продолжаем существующий проект **INTILY Telegram AI News Publisher**. Ничего не начинать с нуля и не просить пользователя пересказывать историю.
 
 ## Обязательное начало
 
-Самостоятельно прочитай в GitHub repository knyavik-stack/synapsemax:
+Самостоятельно изучить в GitHub `knyavik-stack/intily-news`:
 
-1. docs/PROJECT_STATUS_2026-09-02.md — главный актуальный статус.
-2. docs/INTILY_OPERATIONS.md — news production architecture.
-3. docs/DECISION_LOG.md — принятые решения.
-4. docs/PROJECT_OPERATING_SYSTEM.md — operating rules.
-5. docs/RC_CHAT_TRANSITION_2026-08-30.md — RC continuity.
-6. текущий main, последние commits и GitHub Actions.
+1. `docs/PROJECT_STATUS_2026-09-10.md` — текущий канонический статус;
+2. `docs/FINAL_PRODUCTION_AUDIT_2026-09-10.md` — последний production audit;
+3. `docs/INTILY_OPERATIONS.md` — эксплуатационная модель;
+4. `docs/USER_HANDOFF.md` — правила продолжения;
+5. `docs/INTILY_PRODUCTION_MONITORING.md` — мониторинг;
+6. текущий `main`, последние commits и GitHub Actions.
 
-После чтения **сразу работай по фактам**. Не выдавай пользователю длинный пересказ плана.
+После чтения сразу работать по фактам.
 
 ## Главные правила
 
-- Пользователь хочет результат, а не разговоры о том, что будет сделано.
 - Уже согласованные задачи выполнять самостоятельно.
-- Если обнаружена проблема: inspect → root cause → fix → verify → document.
+- Если обнаружена проблема: **inspect → root cause → fix → verify → document**.
 - Commit ≠ production evidence.
-- Не ослаблять тест, чтобы получить зелёный CI.
-- Документацию после существенных изменений обновлять в GitHub.
-- Просить пользователя о действии только когда без его доступа/секрета/авторизации это реально невозможно.
+- Не ослаблять тесты ради зелёного CI.
+- После существенного изменения обновлять документацию в GitHub.
+- Не просить пользователя о ручном действии, если его доступ/секрет/авторизация реально не требуется.
+- Не смешивать INTILY с другими проектами.
+- Не использовать случайные внешние прокси или Google Images как источник фотографий.
 
-## Текущая архитектура
+## Текущий production-контур
 
-### Website
+`Cloudflare intily-ai-news scheduler → GitHub Actions workflow_dispatch → Python production entrypoint → Telegram @intily → durable GitHub state`
 
-Cloudflare Worker synapsemax, frontend/runtime в src/, build/QA в scripts/, visual assets в assets/.
+GitHub workflow не имеет собственного cron. Cloudflare является production scheduler.
 
-### Intily AI News
+## Текущий продуктовый контракт
 
-Canonical production trigger:
+- один production cycle публикует максимум одну новость;
+- Telegram-пост содержит только редакционный контент;
+- queue statistics / queue-next / operational diagnostics в постах отключены;
+- AI provider failover: Gemini → Groq GPT-OSS 20B → OpenAI;
+- discovery lookback: 12h;
+- healthy-queue search interval: 30m;
+- urgent search при queue ≤1;
+- importance threshold: 60;
+- durable queue cap: 20;
+- RU target share: 60% при наличии достаточного качественного RU supply.
 
-Cloudflare Worker intily-ai-news → cron */6 * * * * → GitHub workflow_dispatch → scripts/intily_ai_news.py → Telegram → persisted state.
+## Текущие открытые production gates
 
-GitHub publisher workflow **не имеет собственного cron**.
+### P1 — CI regression closure
 
-Worker intily-news-trigger был проверен как duplicate: schedules пусты, routes отсутствовали, поэтому он удалён из Cloudflare.
+Последний run **#951** завершился failure на regression gate до запуска publisher. Причина была в тесте: mock `extract_image_candidates()` не соответствовал реальному контракту `(ranked_candidates, final_url)`. Исправление закоммичено в `5415478c418263ab3e8233ff731584a90b5ee198`.
 
-## Текущая editorial policy
+Следующий исполнитель должен проверить свежий workflow run на исправленном commit.
 
-- freshness: 6h;
-- MAX_PUBLISH: 1;
-- MIN_SCORE: 9;
-- target queue: 24; hard cap 30;
-- target mix: 60% WORLD / 40% RUSSIA;
-- Russian reserved capacity: 10;
-- semantic story memory: 24h;
-- known-item memory: 6h;
-- failed items use exponential retry.
+### P2 — Groq live proof
 
-Тематика включает AI business adoption, automation, practical use, architecture, inference, reliability, cost, developer tools, security, incidents, robotics, chips, research, funding и российские AI кейсы.
+Runtime override уже загружается как `openai/gpt-oss-20b`. Нужен реальный fallback request с telemetry `AI_PROVIDER_ATTEMPT GROQ` + `AI_PROVIDER_OK GROQ` либо корректно классифицированной ошибкой.
 
-## Последнее фактическое состояние
+### P3 — Photo live proof
 
-На последней проверке:
-- published 133;
-- stories 118;
-- queue 22;
-- WORLD 20 / RUSSIA 2;
-- health OK;
-- consecutive_failures 0.
+Image hardening включает browser-like retry, one-level HTML image indirection и bounded 12s fetch budget. Нужен реальный production `IMAGE_FOUND` → `IMAGE_VALIDATED` → `TELEGRAM_PHOTO_SENT`.
 
-Последние CI проверки на a42cf92:
-- Immediate QA success;
-- Production Smoke success.
+### P4 — Scheduler cadence
 
-## Открытые задачи
+Текущий versioned Cloudflare worker использует cron `* * * * *` и 1/3 dispatch gate. Это не гарантированные 3 или 5 минут. Подтвердить cadence только по нескольким реальным GitHub workflow_dispatch runs.
 
-### Priority 1 — scheduler runtime evidence
+## Что не делать
 
-Cloudflare API подтверждает один cron */6, но следующий исполнитель должен проверить несколько последующих фактических GitHub workflow_dispatch runs и подтвердить cadence.
+- не возвращать queue diagnostics в Telegram без отдельного решения пользователя;
+- не считать зелёный commit доказательством production readiness;
+- не возвращать retired `llama-3.1-8b-instant`;
+- не объявлять photo pipeline GREEN до реального `TELEGRAM_PHOTO_SENT`;
+- не удалять исторические monitoring failures — это audit trail.
 
-### Priority 2 — Russian supply quality
+## Формат отчёта
 
-Текущий queue snapshot не достиг 60/40. Не публиковать слабые новости ради квоты. Сначала наблюдать несколько реальных cycles. Если дефицит устойчивый — добавить проверенные прямые RSS/API российские источники и только затем корректировать policy.
-
-### Priority 3 — RC / product roadmap
-
-Продолжать только после сверки PROJECT_STATUS, DECISION_LOG, RC documents и фактического production evidence. Не начинать DEX v4 автоматически без visual approval DEX v3.
-
-## Формат отчёта пользователю
-
-Коротко:
+Коротко и по делу:
 
 🟢 сделано
-🟡 в работе / требует наблюдения
+🟡 в работе / требует live verification
 🔴 блокеры
 
-Но сначала выполнить максимально возможный объём работы, затем сообщать результат.
+Сначала выполнить максимально возможный объём работы, затем отчитаться.
