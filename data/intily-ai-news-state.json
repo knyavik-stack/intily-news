@@ -136,7 +136,8 @@
     "66b1a87eaac00c2448066dc83c51e9692359564c4912d7c5ade876b28c673518": 1789024166,
     "85bb6298fa0f2aa2498e0a0f81e0dbb321b3a381c2143f4aef10b6ef122de904": 1789024352,
     "f5d404184a4689c38b94d94631c9154bbf2ff9a2172ce0a63eb406423ab2869c": 1789024533,
-    "4ce63407498285065a3928d8301b0262c6164908165ce4c64f563a1713156ea5": 1789025429
+    "4ce63407498285065a3928d8301b0262c6164908165ce4c64f563a1713156ea5": 1789025429,
+    "f932cd058bcd9e59255cfc253f30bc3eeb642b11e10cdc03e3d9a118104a1818": 1789025793
   },
   "known": {
     "a06810003442ad90150001f8dbe7a506578771116df72b7a37b8463b8d2b6a48": 1789022368.5042305,
@@ -147,47 +148,6 @@
     "4ce63407498285065a3928d8301b0262c6164908165ce4c64f563a1713156ea5": 1789024352.172984
   },
   "queue": [
-    {
-      "region": "WORLD",
-      "title": "Claude models trigger cybersecurity incident analysis - blockchain.news",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPYlZNdGxBbFJpazdEN0VVVGxhcjNmeFkxZi1KWXhpVmttM0NqSElkNFMwR3NmY01CS2dpRFZwOXRrU3U5dWtUZFlZSm82VVVZLUxRN2dHNXdQcG9RdEdyMnJfZG1oWXd4MTRoSF9GaHpnU3RhS04tODV0eXJ2UkF0al9fcVY1MktPeGFnUg?oc=5",
-      "desc": "Claude models trigger cybersecurity incident analysis blockchain.news",
-      "source": "blockchain.news",
-      "time": 1788998078.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 9.0,
-        "event_concreteness": 12.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 42.0,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 66.0
-      },
-      "base_score": 42.0,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 66.0,
-      "key": "f932cd058bcd9e59255cfc253f30bc3eeb642b11e10cdc03e3d9a118104a1818",
-      "importance": 66.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "models",
-        "security_regulation"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "last_failed_at": 1789020405,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_CIRCUIT_OPEN | OPENAI: OPENAI_CIRCUIT_OPEN",
-      "failure_count": 5,
-      "next_retry_at": 1789025205
-    },
     {
       "region": "WORLD",
       "title": "TSMC Revenue Soars 53% on AI Chip Boom - blockchain.news",
@@ -605,20 +565,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789025429.0401602,
+    "last_start_ts": 1789025793.374986,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789025429.0401602,
-    "last_success_ts": 1789025429.0401602,
+    "last_run_ts": 1789025793.374986,
+    "last_success_ts": 1789025793.374986,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 12
+    "queue_size": 11
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789025434.1159685
+      "updated_at": 1789025817.478712
     },
     "GROQ": {
       "disabled_until": 1789044925.888514,
@@ -1140,11 +1100,17 @@
       "desc": "Компания Check Point Research обнаружила скрытый канал, позволяющий сеансу ChatGPT под одной учётной записью отправлять задачи в совершенно отдельный сеанс другого аккаунта. При этом в беседе обоих пользователей не наблюдалось ничего необычного. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "f932cd058bcd9e59255cfc253f30bc3eeb642b11e10cdc03e3d9a118104a1818": {
+      "time": 1789025793,
+      "title": "Claude models trigger cybersecurity incident analysis - blockchain.news",
+      "desc": "Claude models trigger cybersecurity incident analysis blockchain.news",
+      "source": "blockchain.news",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1162,7 +1128,8 @@
     "WORLD",
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
     {
@@ -19758,9 +19725,102 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789025793,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 30.56,
+      "candidates": 0,
+      "queue_before": 12,
+      "queue_after": 11,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 5.5,
+          "bonus_total": 33.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходим аудит безопасности при использовании API Claude из-за подтвержденных рисков утечек.",
+            "title": "Claude models trigger cybersecurity incident analysis - blockchain.news",
+            "final_score": 66.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 3,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1789024352.172984,
-  "last_publish_ts": 1789025429.0401602
+  "last_publish_ts": 1789025793.374986
 }
