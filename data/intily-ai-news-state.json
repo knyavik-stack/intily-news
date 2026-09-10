@@ -153,7 +153,8 @@
     "b6e5fb6ac65617029f1c4dfaceb9b3548deceab4c2ffefcfbf12e3e759c444da": 1789031754,
     "696bac0adbac5bf31a4aebf1a6280e4f5f0032487308ef81cc53b8a481fb7a3e": 1789032085,
     "b857a7f8254f0614c89e619dd0a879ce00bd9ecec69fe7c96af7383100fed817": 1789033166,
-    "860237b90957c5fe7695443c206eada5dda5270c80ada5d209efda8872da7371": 1789033382
+    "860237b90957c5fe7695443c206eada5dda5270c80ada5d209efda8872da7371": 1789033382,
+    "5806935391a319dc96f5b686615803cd20f6aa2952439151c1a8341797cf18d8": 1789034246
   },
   "known": {
     "2688ac3fd82b5e336b95c4aeaaedee2e32d4136b6e3305aad2986a0c10f42c69": 1789029389.2498102,
@@ -203,10 +204,10 @@
       ],
       "audience_score": 8.0,
       "tier": "A",
-      "last_failed_at": 1789034069,
-      "last_failure": "Expecting value: line 1 column 1 (char 0)",
-      "failure_count": 2,
-      "next_retry_at": 1789034669
+      "last_failed_at": 1789034246,
+      "last_failure": "Unterminated string starting at: line 1 column 117 (char 116)",
+      "failure_count": 3,
+      "next_retry_at": 1789035446
     },
     {
       "region": "RUSSIA",
@@ -244,10 +245,10 @@
       "audience_score": 8.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1789034069,
-      "last_failure": "Expecting value: line 1 column 1 (char 0)",
-      "failure_count": 2,
-      "next_retry_at": 1789034669
+      "last_failed_at": 1789034246,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: EMPTY_RESPONSE | OPENAI: OPENAI_CIRCUIT_OPEN",
+      "failure_count": 3,
+      "next_retry_at": 1789035446
     },
     {
       "region": "WORLD",
@@ -285,50 +286,10 @@
       ],
       "audience_score": 6.0,
       "tier": "A",
-      "last_failed_at": 1789034069,
+      "last_failed_at": 1789034246,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: EMPTY_RESPONSE | OPENAI: OPENAI_CIRCUIT_OPEN",
-      "failure_count": 2,
-      "next_retry_at": 1789034669
-    },
-    {
-      "region": "WORLD",
-      "title": "Global Forum on Mechanical Engineering 2026 Robotics Shaping Tomorrow's Industrial Ecosystem with Physical AI - EurekAlert!",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBPRXN0Qi1EY2RKNW5TUW1EWlBNWEpkdkpSM2RiTjlhNGU5SlFwRXFMMXF6N1k1LXF5UDR2ZFlZQnNWdDBqX19IRTcyOXhfaGJwVkFzVl9DeWFVR2s1?oc=5",
-      "desc": "Global Forum on Mechanical Engineering 2026 Robotics Shaping Tomorrow's Industrial Ecosystem with Physical AI EurekAlert!",
-      "source": "EurekAlert!",
-      "time": 1789014244.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 9.0,
-        "event_concreteness": 11.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 2.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 43.0,
-        "audience_score": 6.0,
-        "audience_bonus": 18.0,
-        "final_score": 61.0
-      },
-      "base_score": 43.0,
-      "audience_bonus": 18.0,
-      "score_stage": "final",
-      "score": 61.0,
-      "key": "5806935391a319dc96f5b686615803cd20f6aa2952439151c1a8341797cf18d8",
-      "importance": 61.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "robotics"
-      ],
-      "audience_score": 6.0,
-      "tier": "A",
-      "last_failed_at": 1789034069,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_HTTP_429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m1e9qqc7eeva92csec7za87f` service tier `on_demand` on tokens per minute | OPENAI: OPENAI_CIRCUIT_OPEN",
-      "failure_count": 2,
-      "next_retry_at": 1789034669
+      "failure_count": 3,
+      "next_retry_at": 1789035446
     },
     {
       "region": "WORLD",
@@ -454,25 +415,25 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789034069.6242232,
+    "last_start_ts": 1789034246.642922,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789034069.6242232,
-    "last_success_ts": 1789034069.6242232,
+    "last_run_ts": 1789034246.642922,
+    "last_success_ts": 1789034246.642922,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 7
+    "last_published": 1,
+    "queue_size": 6
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1789034266.6083012,
-      "reason": "TEMPORARY_SERVICE_ERROR_OR_429",
-      "updated_at": 1789034146.6083028
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1789034271.0782006
     },
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789034159.1224065
+      "updated_at": 1789034260.7377357
     },
     "OPENAI": {
       "disabled_until": 1789114033.480713,
@@ -1038,12 +999,18 @@
       "desc": "«Сбер» представил новую версию своей мультимодальной нейросети GigaChat — GigaChat 3.5 Reasoning. В модели появился отдельный режим рассуждений: перед формированием ответа она разбивает задачу на этапы, составляет план решения, при необходимости использует внешние инструменты и проверяет промежуточные результаты. Об этом Хабру рассказали в пресс‑службе компании. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "5806935391a319dc96f5b686615803cd20f6aa2952439151c1a8341797cf18d8": {
+      "time": 1789034246,
+      "title": "Global Forum on Mechanical Engineering 2026 Robotics Shaping Tomorrow's Industrial Ecosystem with Physical AI - EurekAlert!",
+      "desc": "Global Forum on Mechanical Engineering 2026 Robotics Shaping Tomorrow's Industrial Ecosystem with Physical AI EurekAlert!",
+      "source": "EurekAlert!",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -1060,7 +1027,8 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
     {
@@ -21787,11 +21755,115 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789034246,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 25.97,
+      "candidates": 0,
+      "queue_before": 7,
+      "queue_after": 6,
+      "published": 1,
+      "publish_attempts": 4,
+      "item_failures": 3,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 6.0,
+          "bonus_total": 18.0,
+          "max_score": 6.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Понимание тренда на Physical AI критично для планирования долгосрочных инвестиций в автоматизацию производства.",
+            "title": "Global Forum on Mechanical Engineering 2026 Robotics Shaping Tomorrow's Industrial Ecosystem with Physical AI - EurekAlert!",
+            "final_score": 61.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 14,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1789033382.9551063,
-  "last_publish_ts": 1789033382.9551063,
+  "last_publish_ts": 1789034246.642922,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
