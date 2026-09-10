@@ -50,7 +50,7 @@ QUEUE_RETRY_BASE_SECONDS = 300
 QUEUE_RETRY_MAX_SECONDS = 6 * 3600
 
 # Temporary publication footer for queue analysis. Set False when Boss requests removal.
-SHOW_QUEUE_DIAGNOSTICS = True
+SHOW_QUEUE_DIAGNOSTICS = False
 POLICY_VERSION = '2026-09-04'  # Policy version used in runtime diagnostics and state migrations.
 
 HEARTBEAT_MAX_SECONDS = 900
