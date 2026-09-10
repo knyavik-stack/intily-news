@@ -4,64 +4,71 @@
 
 **Overall readiness: 80% — YELLOW / production verification mode.**
 
-Core publication has been proven end-to-end. The remaining production gates are Groq live fallback, photo delivery and several consecutive scheduler cycles. A CI regression introduced by the new media tests was detected by the production gate and fixed before publisher execution could proceed.
+Core publication is production-capable and has been proven end-to-end. The latest CI regression was a defect in the new media tests, not in the publisher; it is fixed. A runtime inspection also exposed a legacy editor-prompt defect and corrected it through the production compatibility layer. Fresh production evidence is still required after these corrections.
 
-## Product decision
+## Product contract
 
-Telegram posts contain **editorial content only**. Queue statistics, queue-next information and operational diagnostics are disabled in posts and remain internal.
+Telegram posts contain **editorial content only**. Queue statistics, queue-next information and operational diagnostics are disabled in posts.
 
 `SHOW_QUEUE_DIAGNOSTICS = False`
 
-## Latest incident — run #951
+Current runtime policy also enforces a 3-minute minimum publication interval and an 80% target joke probability where context permits. Serious safety/law/accident/harm/incident topics suppress humor.
 
-Run #951 completed with `failure`, but the publisher itself was **not started**: the regression gate stopped the job first.
+## Latest CI incident — run #951
 
-The exact failure was in `scripts/test_intily_image_hardening.py`. The test mocked `extract_image_candidates()` as a list, while the production function returns `(ranked_candidates, final_url)`. This produced:
+Run #951 failed at the regression gate before publisher execution.
+
+Root cause: both image-hardening tests mocked `extract_image_candidates()` as a list, while the real function returns `(ranked_candidates, final_url)`. This produced:
 
 `ValueError: not enough values to unpack (expected 2, got 1)`
 
-Both affected tests used the same incorrect mock contract.
+Fix: `5415478c418263ab3e8233ff731584a90b5ee198`.
 
-### Fix
+The regression gate correctly prevented an unverified publisher run.
 
-Commit `5415478c418263ab3e8233ff731584a90b5ee198` corrects both mocks to the real two-value return contract.
+## Latest runtime correction
 
-This was a genuine CI defect in the new tests, not a provider or Telegram outage. The gate behaved correctly by preventing a potentially unverified production run.
+Inspection of the legacy `build_edit_prompt()` found an unsuitable historical prompt that required excessive profanity and an inappropriate character style. That was inconsistent with the intended INTILY editorial contract.
+
+`scripts/sitecustomize.py` now overrides the legacy prompt at production runtime and also pins:
+
+- Groq model: `openai/gpt-oss-20b`;
+- publication minimum interval: 3 minutes;
+- joke target probability: 80%.
+
+Commit: `1060cf2971855a4bd4daa7ec7d3aa4e39443b89e`.
+
+This correction is source-verified but not yet production-proven on a fresh publisher run.
 
 ## Live production evidence — run #949
 
 Run #949 proved:
 
 - 47 regression tests passed at that revision;
-- runtime loaded `GROQ_MODEL_RUNTIME_OVERRIDE openai/gpt-oss-20b`;
-- Gemini successfully edited candidates;
-- Telegram publication succeeded: `TELEGRAM_SENT 1134`;
+- `GROQ_MODEL_RUNTIME_OVERRIDE openai/gpt-oss-20b` loaded;
+- Gemini edited candidates;
+- Telegram text publication succeeded: `TELEGRAM_SENT 1134`;
 - `BUSINESS_RESULT PUBLISHED telegram_delivery_ok`;
 - `QUEUE_SCORE_AUDIT invariant_ok:true`;
 - state and analytics persisted.
 
-Run #949 did not prove a real Groq fallback because Gemini handled live requests first. It also did not prove photo delivery.
+It did not prove Groq fallback and did not prove photo delivery.
 
 ## Groq gate
 
-The retired `llama-3.1-8b-instant` produced the historical real `404 svgmodel_not_found`. Production runtime now targets `openai/gpt-oss-20b` through `scripts/sitecustomize.py`.
+The retired `llama-3.1-8b-instant` produced the historical `404 svgmodel_not_found`. The runtime now selects `openai/gpt-oss-20b`.
 
-Required closure evidence:
+Closure requires a real fallback telemetry sequence:
 
 `AI_PROVIDER_ATTEMPT GROQ` → `AI_PROVIDER_OK GROQ`
 
-or a bounded, correctly classified Groq failure.
+or a bounded correctly classified Groq failure.
 
 ## Photo gate
 
-The previous live run still ended in text fallback:
+The previous live publisher run ended in text fallback (`found=0`, `validated=0`, `photo_sent=0`).
 
-- found: `0`;
-- validated: `0`;
-- photo sent: `0`;
-- text fallback: `1`.
-
-The deployed hardening adds:
+Current media hardening provides:
 
 - browser-like retries;
 - one-level HTML image indirection;
@@ -72,43 +79,44 @@ The deployed hardening adds:
 - MIME/dimension checks;
 - Telegram ≤1 MB payload cap.
 
-Required closure evidence:
+Closure requires:
 
 `IMAGE_FOUND` → `IMAGE_VALIDATED` → `TELEGRAM_PHOTO_SENT`
 
-If this still fails in live production, implement first-class RSS/Atom media extraction (`media:content`, `media:thumbnail`, `enclosure`) and pass those hints into the image runtime. Do not use random Google Images as a fallback.
+If this fails again, implement first-class RSS/Atom media extraction (`media:content`, `media:thumbnail`, `enclosure`) and pass the hints into the image runtime. Do not use random Google Images.
 
-## Cadence
+## Scheduler / cadence
 
-GitHub Actions is `workflow_dispatch` only. Cloudflare is the scheduler.
+GitHub Actions is `workflow_dispatch` only. Cloudflare is the production scheduler.
 
-The current versioned worker uses `* * * * *` with a 1/3 dispatch gate. This is probabilistic dispatch, not a guaranteed 3- or 5-minute interval. Cadence must be judged from several real workflow runs, not from the cron expression alone.
+The current versioned worker uses `* * * * *` UTC with a 1/3 dispatch gate. This is probabilistic dispatch, not a guaranteed 3- or 5-minute cadence. Several real runs are required to measure actual cadence.
 
-## Current editorial runtime
+The Python publisher has a separate 3-minute minimum publication interval.
 
-- discovery lookback: 12h;
+## Current runtime
+
+- lookback: 12h;
 - healthy-queue search interval: 30m;
 - urgent search: queue ≤1;
 - max publish per cycle: 1;
 - importance threshold: 60;
 - queue cap: 20;
 - RU target share: 60% when enough qualifying RU supply exists;
+- joke target probability: 80% where context permits;
 - Telegram queue diagnostics: disabled.
 
-## Remaining production gates
+## Remaining gates
 
-1. Fresh regression run on commit `5415478...` with all tests passing.
+1. Fresh regression run after the latest fixes.
 2. Real Groq fallback proof.
 3. Real Telegram photo proof.
-4. Several consecutive successful scheduler-dispatched cycles.
-5. Confirm acceptable publication cadence under normal queue conditions.
+4. Several consecutive successful Cloudflare-dispatched cycles.
+5. Confirm acceptable cadence under normal queue conditions.
 
 ## Final assessment
 
-**80% — YELLOW. Production-capable, but not fully GREEN.**
+**80% — YELLOW. Production-capable, not yet fully GREEN.**
 
-Acceptance remains:
+Acceptance rule:
 
 **fact → root cause → implementation → tests → real production run → telemetry inspection → documentation.**
-
-A commit or green unit test is never treated as production evidence by itself.
