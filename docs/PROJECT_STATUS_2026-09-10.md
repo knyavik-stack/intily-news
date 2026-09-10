@@ -2,7 +2,7 @@
 
 ## Canonical current status
 
-**🟡 PRODUCTION VERIFICATION MODE.** Core publication works end-to-end. The latest CI regression in the new image-hardening tests was identified precisely and fixed. The production runtime also received a compatibility correction for the legacy editor prompt, publication interval and joke policy. Fresh production evidence is still required for the corrected revision.
+**🟡 PRODUCTION VERIFICATION MODE.** Core publication works end-to-end. The latest CI regression was fixed, the contaminated legacy editor prompt was corrected, and the next production run (#953) proved the corrected runtime loaded and published successfully. The photo pipeline has now been narrowed to a Telegram caption-length issue: a real valid image was found and validated, but the full caption exceeded Telegram's limit. A fresh production run after the latest 350-character prompt correction is required to close the photo gate.
 
 Production contract:
 
@@ -10,9 +10,7 @@ Production contract:
 
 Telegram posts contain **editorial content only**. Queue statistics, queue-next information and operational diagnostics remain disabled (`SHOW_QUEUE_DIAGNOSTICS = False`).
 
-## Latest fixes
-
-### CI regression
+## Latest CI regression — fixed
 
 Run #951 failed at the regression gate before publisher execution. The two new image-hardening tests mocked `extract_image_candidates()` as a list, while the production contract returns `(ranked_candidates, final_url)`. This caused:
 
@@ -20,48 +18,89 @@ Run #951 failed at the regression gate before publisher execution. The two new i
 
 Fixed in `5415478c418263ab3e8233ff731584a90b5ee198`.
 
-### Editor prompt contamination
+A dedicated non-production `Intily Regression Gate` was added. Its run #2 on the latest media-caption commit completed successfully with **49 tests passed**.
 
-Inspection of the legacy publisher revealed that its historical `build_edit_prompt()` contained an unsuitable character instruction and excessive profanity requirements. That did not match the current editorial contract of natural Russian, factual writing and controlled humor.
+## Latest production verification — run #953
 
-A production runtime override was added in `scripts/sitecustomize.py` and committed in `1060cf2971855a4bd4daa7ec7d3aa4e39443b89e`.
+Run #953 completed successfully on the corrected editor/runtime revision and proved:
 
-The override now enforces:
+- production regression gate passed: **49 tests**;
+- `GROQ_MODEL_RUNTIME_OVERRIDE openai/gpt-oss-20b` loaded;
+- `PUBLISH_INTERVAL_RUNTIME_OVERRIDE 180` loaded;
+- `JOKE_RATE_RUNTIME_OVERRIDE 0.8` loaded;
+- `EDITOR_PROMPT_RUNTIME_OVERRIDE clean_ru_voice` loaded;
+- Gemini processed the live editorial candidates successfully;
+- `TELEGRAM_SENT 1135`;
+- `BUSINESS_RESULT PUBLISHED telegram_delivery_ok`;
+- `QUEUE_SCORE_AUDIT invariant_ok:true`;
+- state and analytics persisted.
+
+### Important media finding in #953
+
+This run **did not fail image extraction**. It reached:
+
+`IMAGE_PAYLOAD_BYTES 41356 source_bytes 41356 optimized False`
+
+Then the image stage stopped with:
+
+`IMAGE_FALLBACK_TEXT PHOTO_CAPTION_LIMIT_TEXT_FALLBACK`
+
+Telemetry:
+
+- attempts: 1;
+- found: 0 at the final KPI layer;
+- validated: 0 at the final KPI layer;
+- photo sent: 0;
+- text fallback: 1.
+
+The underlying image payload was successfully obtained and was only 41 KB. The blocker was the full Telegram caption length, not the image URL, MIME type, dimensions or payload size.
+
+## Media correction now deployed
+
+The runtime editor prompt was tightened from a 700-character target to approximately **350 characters**, specifically so the complete editorial post can fit into a single Telegram photo caption under the 1024-byte caption limit.
+
+Commit: `5f9a49ac83063957398c8267b124060e1d4fc00e`.
+
+The non-production regression gate passed after this change.
+
+**Open gate:** a fresh production post must show `IMAGE_FOUND`, `IMAGE_VALIDATED` and `TELEGRAM_PHOTO_SENT`.
+
+If that still fails because of caption size, the next fix should be structural: make the photo caption intentionally compact while preserving the full editorial text as a separate message only if necessary. Do not silently truncate the editorial text and do not use random Google Images.
+
+## Editor prompt correction
+
+Inspection of the legacy publisher revealed an unsuitable historical prompt containing excessive profanity requirements and an inappropriate character instruction. That did not match the intended INTILY voice.
+
+Runtime override in `scripts/sitecustomize.py` now enforces:
 
 - natural human Russian;
 - factual, non-invented reporting;
 - no excessive profanity instruction;
-- humor only when contextually appropriate;
+- humor only where context permits;
 - no humor for serious safety/law/accident/harm/incident topics;
-- joke target probability: **80%**;
-- publication minimum interval: **3 minutes**;
-- Groq runtime model: `openai/gpt-oss-20b`.
+- joke target probability 80%;
+- publication minimum interval 3 minutes;
+- Groq model `openai/gpt-oss-20b`.
 
-This is deployed in source but requires fresh production evidence.
+Run #953 is live proof that these runtime overrides loaded.
 
 ## Groq
 
-Historical production evidence showed retired `llama-3.1-8b-instant → 404 → svgmodel_not_found`.
+Historical evidence showed retired `llama-3.1-8b-instant → 404 → svgmodel_not_found`.
 
-Current runtime target is `openai/gpt-oss-20b`, loaded through `sitecustomize.py`.
+Current runtime target is `openai/gpt-oss-20b`.
 
-Open gate: real fallback request must show `AI_PROVIDER_ATTEMPT GROQ` + `AI_PROVIDER_OK GROQ`, or a bounded correctly classified failure.
+**Open gate:** real fallback request must show `AI_PROVIDER_ATTEMPT GROQ` + `AI_PROVIDER_OK GROQ`, or a bounded correctly classified failure.
 
-## Photo/media
-
-Run #949 still produced text fallback (`found=0`, `validated=0`, `photo_sent=0`). The deployed media hardening adds browser-like retries, one-level HTML image indirection, nested candidate deduplication, 12s total fetch budget, 6s request timeout, Google-host prohibition and strict MIME/dimension/≤1 MB validation.
-
-Open gate: real `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`.
-
-If that remains unsuccessful, next step is first-class RSS/Atom media extraction (`media:content`, `media:thumbnail`, `enclosure`) passed into the image runtime. No random Google-image substitution.
+Run #953 used Gemini for all live editorial requests, so it still does not prove Groq fallback.
 
 ## Scheduler / cadence
 
 GitHub Actions uses `workflow_dispatch` only. Cloudflare is the scheduler.
 
-The current versioned Cloudflare worker uses `* * * * *` UTC with a 1/3 dispatch gate. This is probabilistic dispatch, not a guaranteed 3- or 5-minute interval. Cadence must be confirmed from several real runs.
+The versioned Cloudflare worker uses `* * * * *` UTC with a 1/3 dispatch gate. This is probabilistic dispatch, not a guaranteed 3- or 5-minute interval. Cadence must be confirmed from several real runs.
 
-The Python runtime now has a 3-minute minimum publication interval. It does not create a scheduler by itself.
+The Python publisher has a separate 3-minute minimum publication interval.
 
 ## Current editorial runtime
 
@@ -75,39 +114,26 @@ The Python runtime now has a 3-minute minimum publication interval. It does not 
 - joke target probability: 80% where context permits;
 - Telegram queue diagnostics: disabled.
 
-## Production evidence
-
-### Run #949 — successful publisher
-
-Proved 47 regression tests, Gemini editorial processing, Telegram text publication (`TELEGRAM_SENT 1134`), final-score queue invariant and state/analytics persistence.
-
-Did not prove Groq fallback or photo delivery.
-
-### Run #951 — failed regression gate
-
-Stopped before publisher execution because of the image-hardening test mock contract defect. Corrected in `5415478...`.
-
 ## GREEN / YELLOW / RED
 
 ### 🟢 GREEN
 
-- core Cloudflare → GitHub Actions → Python → Telegram architecture;
+- Cloudflare → GitHub Actions → Python → Telegram architecture;
 - Gemini primary;
 - Telegram text delivery;
 - durable state;
 - queue/dedup/final-score invariant;
-- main regression coverage;
-- Groq runtime override loads current fallback model;
-- editor runtime voice correction is implemented;
-- image-hardening test mock contract is corrected.
+- 49-test regression gate on the corrected revision;
+- editor runtime voice correction is live-proven;
+- image retrieval/validation reached a real 41 KB image in #953.
 
 ### 🟡 YELLOW / OPEN
 
-- fresh CI proof after the latest fixes;
 - Groq live fallback proof;
-- photo live proof;
+- photo send proof after 350-character correction;
 - several consecutive scheduler cycles;
-- media source resilience if publisher pages still reject candidates.
+- final cadence confirmation;
+- media fallback architecture only if caption-bound production attempt still fails.
 
 ### 🔴 RED
 
