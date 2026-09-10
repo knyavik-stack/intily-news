@@ -195,7 +195,8 @@
     "1cb44d4b22c4bc708e681bbff773d9eec6e6cde88219fb84a2de8867dea42d1f": 1789053505,
     "d03660f882a9ebab804fe0e19ad5a884878b53f2d4ad9bd550ea091d51124995": 1789053866,
     "a0bc99f50378afd6bd798a8ab0c3a05af4631d66c198da60896c20da46b7abea": 1789054046,
-    "5e360dc1530e01ce9ffc692f095522e5207af9a06ed5ee980b2f14ee9f6832c5": 1789054619
+    "5e360dc1530e01ce9ffc692f095522e5207af9a06ed5ee980b2f14ee9f6832c5": 1789054619,
+    "bf171047d8f63e9ec734cb9dba43139073d68789a16ea62a81c0b0af4c19d895": 1789054784
   },
   "known": {
     "f3c39694b792a53628fbaa6b4defbc27941f40d9349085b2dbbbb52f7a2cb4c7": 1789050268.6176848,
@@ -242,10 +243,10 @@
       ],
       "audience_score": 6.0,
       "tier": "A",
-      "last_failed_at": 1789050633,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: EMPTY_RESPONSE | OPENAI: OPENAI_CIRCUIT_OPEN",
-      "failure_count": 1,
-      "next_retry_at": 1789050933
+      "last_failed_at": 1789054784,
+      "last_failure": "Expecting value: line 1 column 1 (char 0)",
+      "failure_count": 2,
+      "next_retry_at": 1789055384
     },
     {
       "region": "WORLD",
@@ -282,10 +283,10 @@
       ],
       "audience_score": 6.0,
       "tier": "A",
-      "last_failed_at": 1789050633,
+      "last_failed_at": 1789054784,
       "last_failure": "Expecting value: line 1 column 1 (char 0)",
-      "failure_count": 1,
-      "next_retry_at": 1789050933
+      "failure_count": 2,
+      "next_retry_at": 1789055384
     },
     {
       "region": "WORLD",
@@ -321,7 +322,11 @@
         "business"
       ],
       "audience_score": 5.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1789054784,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_HTTP_429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m1e9qqc7eeva92csec7za87f` service tier `on_demand` on tokens per minute | OPENAI: OPENAI_CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1789055084
     },
     {
       "region": "WORLD",
@@ -358,7 +363,11 @@
         "research"
       ],
       "audience_score": 6.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1789054784,
+      "last_failure": "Expecting value: line 1 column 1 (char 0)",
+      "failure_count": 1,
+      "next_retry_at": 1789055084
     },
     {
       "region": "RUSSIA",
@@ -395,7 +404,11 @@
       ],
       "audience_score": 6.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1789054784,
+      "last_failure": "Expecting value: line 1 column 1 (char 0)",
+      "failure_count": 1,
+      "next_retry_at": 1789055084
     },
     {
       "region": "WORLD",
@@ -431,49 +444,11 @@
         "business"
       ],
       "audience_score": 5.0,
-      "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "VK Frontend Meetup SPB — про веб-анимации, AI и автоматизацию",
-      "link": "https://habr.com/ru/companies/vk/news/1080660/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1080660",
-      "desc": "30 сентября в Санкт-Петербурге встречаемся с фронтенд-разработчиками на VK Frontend Meetup SPB. В этот раз разберём три слоя фронтенда: то, что видит пользователь, то, как мы создаём интерфейсы, и то, как масштабируем разработку. Поговорим о практических задачах, которые возникают в больших продуктах: как стабильно рендерить много анимаций, как научить AI верстать по правилам проекта, а не «примерно похоже», и как автоматизировать типовые задачи, чтобы запускать сотни промо без постоянного участия разработчиков. Что в программе",
-      "source": "Habr AI/News",
-      "time": 1789026604.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 9.0,
-        "event_concreteness": 0.0,
-        "practical_value": 6.5,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 38.5,
-        "audience_score": 6.0,
-        "audience_bonus": 18.0,
-        "final_score": 56.5
-      },
-      "base_score": 38.5,
-      "audience_bonus": 18.0,
-      "score_stage": "final",
-      "score": 56.5,
-      "key": "bf171047d8f63e9ec734cb9dba43139073d68789a16ea62a81c0b0af4c19d895",
-      "importance": 56.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "applications",
-        "tools"
-      ],
-      "audience_score": 6.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0,
-      "last_failed_at": 1789038386,
+      "last_failed_at": 1789054784,
       "last_failure": "Expecting value: line 1 column 1 (char 0)",
-      "failure_count": 4,
-      "next_retry_at": 1789040786
+      "failure_count": 1,
+      "next_retry_at": 1789055084
     },
     {
       "region": "WORLD",
@@ -514,25 +489,25 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789054619.436096,
+    "last_start_ts": 1789054784.283891,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789054619.436096,
-    "last_success_ts": 1789054619.436096,
-    "last_candidates": 53,
+    "last_run_ts": 1789054784.283891,
+    "last_success_ts": 1789054784.283891,
+    "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 8
+    "queue_size": 7
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789054729.3999317
+      "updated_at": 1789054937.9487011
     },
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789050785.4094098
+      "updated_at": 1789054875.4149375
     },
     "OPENAI": {
       "disabled_until": 1789114033.480713,
@@ -1238,6 +1213,13 @@
       "desc": "Сервис путешествий «Туту» представил «Кэпа» — ИИ-ассистента, который помогает найти, забронировать и оплатить...",
       "source": "CNews",
       "region": "RUSSIA"
+    },
+    "bf171047d8f63e9ec734cb9dba43139073d68789a16ea62a81c0b0af4c19d895": {
+      "time": 1789054784,
+      "title": "VK Frontend Meetup SPB — про веб-анимации, AI и автоматизацию",
+      "desc": "30 сентября в Санкт-Петербурге встречаемся с фронтенд-разработчиками на VK Frontend Meetup SPB. В этот раз разберём три слоя фронтенда: то, что видит пользователь, то, как мы создаём интерфейсы, и то, как масштабируем разработку. Поговорим о практических задачах, которые возникают в больших продуктах: как стабильно рендерить много анимаций, как научить AI верстать по правилам проекта, а не «примерно похоже», и как автоматизировать типовые задачи, чтобы запускать сотни промо без постоянного участия разработчиков. Что в программе",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
@@ -1251,7 +1233,6 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1260,148 +1241,10 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1788892584,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 75.42,
-      "candidates": 48,
-      "queue_before": 8,
-      "queue_after": 10,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 28,
-        "known_recent": 4,
-        "already_queued": 8,
-        "story_queue": 0,
-        "story_history": 5,
-        "added": 3,
-        "candidate_count": 48,
-        "admission_rate": 6.25,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIO": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_I"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 6.0,
-          "bonus_total": 18.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Полезно для оптимизации логистических цепочек через интеграцию ИИ-агентов, но требует глубокой настройки инфраструктуры.",
-            "title": "EME выпустила систему управления складской логистикой с ИИ-агентами и MCP-сервером",
-            "final_score": 62.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 10,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 179,
-        "raw_items": 1436,
-        "source_counts": {
-          "TechCrunch AI": 4,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 3,
-          "Google DeepMind": 1,
-          "Hugging Face": 1,
-          "Ars Technica": 6,
-          "Habr AI/News": 40,
-          "CNews": 71,
-          "Euronews": 50
-        },
-        "score_filtered": 1342,
-        "quality_filtered": 42,
-        "story_dedup": 4,
-        "candidates": 48,
-        "candidate_rate": 0.0382,
-        "score_buckets": {
-          "0–39": 1282,
-          "40–49": 100,
-          "50–59": 45,
-          "60–69": 9,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1788892765,
       "status": "OK",
@@ -23233,11 +23076,134 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789054784,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 172.4,
+      "candidates": 0,
+      "queue_before": 8,
+      "queue_after": 7,
+      "published": 1,
+      "publish_attempts": 7,
+      "item_failures": 6,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 6.0,
+          "bonus_total": 18.0,
+          "max_score": 6.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Практический кейс автоматизации верстки через AI может сократить время на рутинные задачи в крупных проектах.",
+            "title": "VK Frontend Meetup SPB — про веб-анимации, AI и автоматизацию",
+            "final_score": 56.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 33,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1789054619.436096,
-  "last_publish_ts": 1789054619.436096,
+  "last_publish_ts": 1789054784.283891,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
