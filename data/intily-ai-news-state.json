@@ -247,10 +247,10 @@
       "audience_score": 6.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1789054784,
+      "last_failed_at": 1789058366,
       "last_failure": "Expecting value: line 1 column 1 (char 0)",
-      "failure_count": 1,
-      "next_retry_at": 1789055084
+      "failure_count": 2,
+      "next_retry_at": 1789058966
     },
     {
       "region": "WORLD",
@@ -287,32 +287,32 @@
       ],
       "audience_score": 5.0,
       "tier": "A",
-      "last_failed_at": 1789054784,
-      "last_failure": "Expecting value: line 1 column 1 (char 0)",
-      "failure_count": 1,
-      "next_retry_at": 1789055084
+      "last_failed_at": 1789058366,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: EMPTY_RESPONSE | OPENAI: OPENAI_CIRCUIT_OPEN",
+      "failure_count": 2,
+      "next_retry_at": 1789058966
     }
   ],
   "health": {
-    "last_start_ts": 1789058191.2359672,
+    "last_start_ts": 1789058366.232189,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789058191.2359672,
-    "last_success_ts": 1789058191.2359672,
+    "last_run_ts": 1789058366.232189,
+    "last_success_ts": 1789058366.232189,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 2
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789058196.553078
+      "disabled_until": 1789058487.8912854,
+      "reason": "TEMPORARY_SERVICE_ERROR_OR_429",
+      "updated_at": 1789058367.891287
     },
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789054875.4149375
+      "updated_at": 1789058369.7572818
     },
     "OPENAI": {
       "disabled_until": 1789114033.480713,
@@ -1043,96 +1043,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1788894029,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 8.71,
-      "candidates": 0,
-      "queue_before": 3,
-      "queue_after": 2,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 4.5,
-          "bonus_total": 27.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Сигнал о перегретости рынка и важности глубокого технического аудита при сделках M&A.",
-            "title": "Anthropic cancels $6B acquisition of Israeli AI start-up Decart following due diligence - The Jerusalem Post",
-            "final_score": 60.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1788894208,
       "status": "OK",
@@ -23043,6 +22953,88 @@
         "GEMINI": {
           "blocked": false,
           "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1789058366,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 4.98,
+      "candidates": 0,
+      "queue_before": 2,
+      "queue_after": 2,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI"
+        ],
+        "used": "GROQ",
+        "failovers": 5,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
         },
         "GROQ": {
           "blocked": false,
