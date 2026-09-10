@@ -151,8 +151,7 @@
     "e259d38c4fa51338e59253272e3c2190c803a5459abd1afe5a23f573b5331dd4": 1789030650,
     "8a051d104e91c832050e594652c7977233b672454619dfee9451c90501bd7be3": 1789030832,
     "b6e5fb6ac65617029f1c4dfaceb9b3548deceab4c2ffefcfbf12e3e759c444da": 1789031754,
-    "696bac0adbac5bf31a4aebf1a6280e4f5f0032487308ef81cc53b8a481fb7a3e": 1789032085,
-    "77560a58e9069867e5865aedb30c2e5e8be6a6ddc19a4239668d2bedd9e08c7c": 1789032273
+    "696bac0adbac5bf31a4aebf1a6280e4f5f0032487308ef81cc53b8a481fb7a3e": 1789032085
   },
   "known": {
     "360c40a0741e949fcee10ac39bc1e4d72620cc33f4ae44f8a969649c81a5dea7": 1789027463.9979773,
@@ -209,11 +208,7 @@
       ],
       "audience_score": 7.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0,
-      "last_failed_at": 1789032273,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: EMPTY_RESPONSE | OPENAI: OPENAI_CIRCUIT_OPEN",
-      "failure_count": 1,
-      "next_retry_at": 1789032573
+      "russia_weight_bonus": 0.0
     },
     {
       "region": "RUSSIA",
@@ -250,11 +245,7 @@
       ],
       "audience_score": 6.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0,
-      "last_failed_at": 1789032273,
-      "last_failure": "Unterminated string starting at: line 3 column 11 (char 100)",
-      "failure_count": 1,
-      "next_retry_at": 1789032573
+      "russia_weight_bonus": 0.0
     },
     {
       "region": "WORLD",
@@ -290,11 +281,7 @@
         "research"
       ],
       "audience_score": 8.0,
-      "tier": "A",
-      "last_failed_at": 1789032273,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: EMPTY_RESPONSE | OPENAI: OPENAI_CIRCUIT_OPEN",
-      "failure_count": 1,
-      "next_retry_at": 1789032573
+      "tier": "A"
     },
     {
       "region": "RUSSIA",
@@ -331,11 +318,7 @@
       ],
       "audience_score": 8.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0,
-      "last_failed_at": 1789032273,
-      "last_failure": "Unterminated string starting at: line 1 column 81 (char 80)",
-      "failure_count": 1,
-      "next_retry_at": 1789032573
+      "russia_weight_bonus": 0.0
     },
     {
       "region": "WORLD",
@@ -353,30 +336,26 @@
         "novelty": 0.0,
         "source_quality": 4.0,
         "evidence": 3.0,
-        "freshness": 1.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 43.0,
+        "base_score": 43.5,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 61.0
+        "final_score": 61.5
       },
-      "base_score": 43.0,
+      "base_score": 43.5,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 61.0,
+      "score": 61.5,
       "key": "a862475de41189055a933ea4982af2240f6d4bb3e10c56e3f532a37b9fb6cfc0",
-      "importance": 61.0,
+      "importance": 61.5,
       "editorial_value": 50.0,
       "topics": [
         "research",
         "security_regulation"
       ],
       "audience_score": 6.0,
-      "tier": "A",
-      "last_failed_at": 1789032273,
-      "last_failure": "Unterminated string starting at: line 3 column 11 (char 86)",
-      "failure_count": 1,
-      "next_retry_at": 1789032573
+      "tier": "A"
     },
     {
       "region": "WORLD",
@@ -412,11 +391,7 @@
         "robotics"
       ],
       "audience_score": 6.0,
-      "tier": "A",
-      "last_failed_at": 1789032273,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_HTTP_429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m1e9qqc7eeva92csec7za87f` service tier `on_demand` on tokens per minute | OPENAI: OPENAI_CIRCUIT_OPEN",
-      "failure_count": 1,
-      "next_retry_at": 1789032573
+      "tier": "A"
     },
     {
       "region": "WORLD",
@@ -453,11 +428,80 @@
         "models"
       ],
       "audience_score": 5.0,
+      "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Представители 25 российских компаний вошли в Совет по генеративной разработке ПО - PrimaMedia",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1VS093dFdMdW5YX2Nsb1ZGcFJkZFBmaXpKZUhTRVlNSmJkV1VLZzNuRGE5ZGZ2Tmg3czJNUTRhZDhHU2JzTmxMN01uOA?oc=5",
+      "desc": "Представители 25 российских компаний вошли в Совет по генеративной разработке ПО PrimaMedia",
+      "source": "PrimaMedia",
+      "time": 1789008079.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 7.0,
+        "event_concreteness": 10.5,
+        "practical_value": 5.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 0.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 42.5,
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 60.5
+      },
+      "base_score": 42.5,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 60.5,
+      "key": "7ef8e789fa40a98ebb8d76dd3bf400c087fa3b30f584f824216ffe6c2fe9cc5a",
+      "importance": 60.5,
+      "editorial_value": 50.0,
+      "topics": [],
+      "audience_score": 6.0,
       "tier": "A",
-      "last_failed_at": 1789032273,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: EMPTY_RESPONSE | OPENAI: OPENAI_CIRCUIT_OPEN",
-      "failure_count": 1,
-      "next_retry_at": 1789032573
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Apple представила iPhone 18 Pro и 18 Pro Max с переменной диафрагмой и 2-нм чипом A20 Pro",
+      "link": "https://habr.com/ru/news/1080544/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1080544",
+      "desc": "Apple представила iPhone 18 Pro и 18 Pro Max. Главным нововведением линейки стал основной модуль камеры с физически регулируемой диафрагмой и расширенными настройками съёмки. Кроме того, смартфоны получили более компактный Dynamic Island, 2-нанометровый процессор A20 Pro и увеличенное время автономной работы. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1788989226.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 10.0,
+        "event_concreteness": 16.5,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 0.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 53.0,
+        "audience_score": 2.0,
+        "audience_bonus": 6.0,
+        "final_score": 59.0
+      },
+      "base_score": 53.0,
+      "audience_bonus": 6.0,
+      "score_stage": "final",
+      "score": 59.0,
+      "key": "77560a58e9069867e5865aedb30c2e5e8be6a6ddc19a4239668d2bedd9e08c7c",
+      "importance": 59.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "chips",
+        "security_regulation"
+      ],
+      "audience_score": 2.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     },
     {
       "region": "RUSSIA",
@@ -499,25 +543,25 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789032273.0991232,
+    "last_start_ts": 1789032085.3406894,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789032273.0991232,
-    "last_success_ts": 1789032273.0991232,
+    "last_run_ts": 1789032085.3406894,
+    "last_success_ts": 1789032085.3406894,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 8
+    "queue_size": 10
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789032455.389961
+      "updated_at": 1789032088.1806126
     },
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789032360.9417727
+      "updated_at": 1789031587.299552
     },
     "OPENAI": {
       "disabled_until": 1789114033.480713,
@@ -531,6 +575,13 @@
     }
   },
   "stories": {
+    "ce5daa2e0ac8bd348fadfa67d170eda85a160b792590cf952de487f9d0f8e6f6": {
+      "time": 1788945729,
+      "title": "Zscaler launches Agentic SOC to fight AI-driven attacks - IT Brief UK",
+      "desc": "Zscaler launches Agentic SOC to fight AI-driven attacks IT Brief UK",
+      "source": "IT Brief UK",
+      "region": "WORLD"
+    },
     "07a6dd88d04a10cc380903fdcc2ee6b78dbfca889bab0bfb725755b5693d8679": {
       "time": 1788946273,
       "title": "Meta представила Muse — персонального ИИ-агента, который выполняет задачи за пользователя - the-tech.kz",
@@ -1090,33 +1141,26 @@
       "desc": "DeepSeek вывела V4.1-Flash — младшую модель новой архитектурной линейки компании. Это MoE-модель на 552 млрд параметров с нативной поддержкой изображений, контекстом до 1 млн токенов и отдельными режимами reasoning. Наиболее интересная часть релиза — архитектурные изменения. DeepSeek перешла к асимметричной схеме Causal Encoder–Decoder: при prefill активируется около 8 млрд параметров на токен, а при decode — 16 млрд. То есть вычислительный бюджет для обработки входа и генерации намеренно сделали разным. В модели также используется новый Engram-модуль на 196 млрд параметров для работы с N-граммами. В сочетании с MoE это позволяет разделить часть знаний и вычислений между параметрами, которые не нужно прогонять через основную сеть на каждом токене. Отдельно DeepSeek переработала работу с KV-cache. Для длинного контекста это одна из ключевых оптимизаций V4.1-Flash: компания заявляет заметное снижение memory footprint по сравнению с предыдущим поколением. В документации модель также использует QAT для KV-cache и FP4-квантизацию, что дополнительно снижает требования к памяти при инференсе. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
-    },
-    "77560a58e9069867e5865aedb30c2e5e8be6a6ddc19a4239668d2bedd9e08c7c": {
-      "time": 1789032273,
-      "title": "Apple представила iPhone 18 Pro и 18 Pro Max с переменной диафрагмой и 2-нм чипом A20 Pro",
-      "desc": "Apple представила iPhone 18 Pro и 18 Pro Max. Главным нововведением линейки стал основной модуль камеры с физически регулируемой диафрагмой и расширенными настройками съёмки. Кроме того, смартфоны получили более компактный Dynamic Island, 2-нанометровый процессор A20 Pro и увеличенное время автономной работы. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
-    "RUSSIA",
-    "RUSSIA",
-    "RUSSIA",
-    "WORLD",
     "WORLD",
     "RUSSIA",
-    "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
+    "WORLD",
+    "RUSSIA",
+    "WORLD",
+    "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
-    "RUSSIA",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA"
@@ -21386,146 +21430,11 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
-    },
-    {
-      "ts": 1789032273,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 185.54,
-      "candidates": 0,
-      "queue_before": 10,
-      "queue_after": 8,
-      "published": 1,
-      "publish_attempts": 9,
-      "item_failures": 8,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 3.5,
-          "bonus_total": 21.0,
-          "max_score": 4.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 4.0,
-            "bonus": 12.0,
-            "reason": "Обычное обновление потребительского железа без прямого влияния на AI-стек или бизнес-процессы.",
-            "title": "Apple представила iPhone 18 Pro и 18 Pro Max с переменной диафрагмой и 2-нм чипом A20 Pro",
-            "final_score": 64.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "GEMINI",
-          "GROQ",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 45,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1789031550.2575133,
-  "last_publish_ts": 1789032273.0991232,
+  "last_publish_ts": 1789032085.3406894,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
