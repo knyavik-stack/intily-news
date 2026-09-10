@@ -4,7 +4,7 @@
 
 **Overall readiness: 80% — YELLOW / production verification mode.**
 
-Core publication is production-capable and has been proven end-to-end. The latest CI regression was a defect in the new media tests, not in the publisher; it is fixed. A runtime inspection also exposed a legacy editor-prompt defect and corrected it through the production compatibility layer. Fresh production evidence is still required after these corrections.
+Core publication is proven end-to-end. CI regression was fixed. The contaminated legacy editor prompt was corrected and the correction was proven in production run #953. The media investigation advanced materially: #953 obtained a real 41 KB image payload, but photo delivery was blocked by the Telegram caption-length guard. A fresh run after the latest 350-character prompt correction is still required.
 
 ## Product contract
 
@@ -12,86 +12,89 @@ Telegram posts contain **editorial content only**. Queue statistics, queue-next 
 
 `SHOW_QUEUE_DIAGNOSTICS = False`
 
-Current runtime policy also enforces a 3-minute minimum publication interval and an 80% target joke probability where context permits. Serious safety/law/accident/harm/incident topics suppress humor.
+Current runtime policy:
 
-## Latest CI incident — run #951
+- 3-minute minimum publication interval;
+- 80% target joke probability where context permits;
+- serious safety/law/accident/harm/incident topics suppress humor;
+- natural Russian editorial voice without the legacy excessive-profanity instruction.
 
-Run #951 failed at the regression gate before publisher execution.
+## CI regression — closed
 
-Root cause: both image-hardening tests mocked `extract_image_candidates()` as a list, while the real function returns `(ranked_candidates, final_url)`. This produced:
+Run #951 failed at the regression gate because two image-hardening tests mocked `extract_image_candidates()` as a list instead of the real `(ranked_candidates, final_url)` tuple.
 
-`ValueError: not enough values to unpack (expected 2, got 1)`
+Fixed in `5415478c418263ab3e8233ff731584a90b5ee198`.
 
-Fix: `5415478c418263ab3e8233ff731584a90b5ee198`.
+A dedicated non-production `Intily Regression Gate` now runs on push/PR. Run #2 passed **49/49 tests** on the latest media-caption correction.
 
-The regression gate correctly prevented an unverified publisher run.
+## Production run #953
 
-## Latest runtime correction
+Run #953 completed successfully and proved:
 
-Inspection of the legacy `build_edit_prompt()` found an unsuitable historical prompt that required excessive profanity and an inappropriate character style. That was inconsistent with the intended INTILY editorial contract.
-
-`scripts/sitecustomize.py` now overrides the legacy prompt at production runtime and also pins:
-
-- Groq model: `openai/gpt-oss-20b`;
-- publication minimum interval: 3 minutes;
-- joke target probability: 80%.
-
-Commit: `1060cf2971855a4bd4daa7ec7d3aa4e39443b89e`.
-
-This correction is source-verified but not yet production-proven on a fresh publisher run.
-
-## Live production evidence — run #949
-
-Run #949 proved:
-
-- 47 regression tests passed at that revision;
-- `GROQ_MODEL_RUNTIME_OVERRIDE openai/gpt-oss-20b` loaded;
-- Gemini edited candidates;
-- Telegram text publication succeeded: `TELEGRAM_SENT 1134`;
+- 49 regression tests passed;
+- Groq runtime override loaded: `openai/gpt-oss-20b`;
+- publication interval override loaded: `180` seconds;
+- joke rate override loaded: `0.8`;
+- clean editor prompt override loaded;
+- Gemini successfully processed live candidates;
+- Telegram publication succeeded: `TELEGRAM_SENT 1135`;
 - `BUSINESS_RESULT PUBLISHED telegram_delivery_ok`;
 - `QUEUE_SCORE_AUDIT invariant_ok:true`;
 - state and analytics persisted.
 
-It did not prove Groq fallback and did not prove photo delivery.
+## Media diagnosis from #953
+
+The image subsystem reached a real image payload:
+
+`IMAGE_PAYLOAD_BYTES 41356 source_bytes 41356 optimized False`
+
+The image itself was therefore not blocked by source access, MIME, dimensions or Telegram payload size.
+
+The final failure was:
+
+`IMAGE_FALLBACK_TEXT PHOTO_CAPTION_LIMIT_TEXT_FALLBACK`
+
+So #953 did **not** prove photo delivery, but it did prove that the prior image extraction/validation work can obtain a usable image in production.
+
+## Media correction deployed after #953
+
+The runtime editor prompt was tightened to approximately 350 characters so that the complete editorial post can fit within Telegram's photo-caption limit while remaining one message.
+
+Commit: `5f9a49ac83063957398c8267b124060e1d4fc00e`.
+
+Regression Gate run #2 passed after this correction.
+
+### Required next evidence
+
+A new production run must show:
+
+`IMAGE_FOUND` → `IMAGE_VALIDATED` → `TELEGRAM_PHOTO_SENT`
+
+If caption length still blocks delivery, do not silently truncate the editorial text. Implement a structural photo/text delivery strategy instead.
+
+## Editor prompt correction
+
+Inspection exposed a legacy `build_edit_prompt()` that instructed an unsuitable character and excessive profanity. Production runtime now overrides it with a factual, natural Russian editorial prompt and controlled humor.
+
+Run #953 proves the override loaded successfully.
 
 ## Groq gate
 
-The retired `llama-3.1-8b-instant` produced the historical `404 svgmodel_not_found`. The runtime now selects `openai/gpt-oss-20b`.
+The retired `llama-3.1-8b-instant` caused the historical `404 svgmodel_not_found`. Current runtime is `openai/gpt-oss-20b`.
 
-Closure requires a real fallback telemetry sequence:
+Run #953 used Gemini for all live editorial requests, so Groq fallback remains unproven.
+
+Closure evidence:
 
 `AI_PROVIDER_ATTEMPT GROQ` → `AI_PROVIDER_OK GROQ`
 
 or a bounded correctly classified Groq failure.
 
-## Photo gate
-
-The previous live publisher run ended in text fallback (`found=0`, `validated=0`, `photo_sent=0`).
-
-Current media hardening provides:
-
-- browser-like retries;
-- one-level HTML image indirection;
-- nested candidate deduplication;
-- 12s total image-fetch budget;
-- 6s individual request timeout;
-- Google-hosted image prohibition;
-- MIME/dimension checks;
-- Telegram ≤1 MB payload cap.
-
-Closure requires:
-
-`IMAGE_FOUND` → `IMAGE_VALIDATED` → `TELEGRAM_PHOTO_SENT`
-
-If this fails again, implement first-class RSS/Atom media extraction (`media:content`, `media:thumbnail`, `enclosure`) and pass the hints into the image runtime. Do not use random Google Images.
-
 ## Scheduler / cadence
 
 GitHub Actions is `workflow_dispatch` only. Cloudflare is the production scheduler.
 
-The current versioned worker uses `* * * * *` UTC with a 1/3 dispatch gate. This is probabilistic dispatch, not a guaranteed 3- or 5-minute cadence. Several real runs are required to measure actual cadence.
-
-The Python publisher has a separate 3-minute minimum publication interval.
+Current versioned worker: `* * * * *` UTC with a 1/3 dispatch gate. This is probabilistic dispatch, not a guaranteed 3- or 5-minute cadence. Several consecutive production runs are required for cadence confirmation.
 
 ## Current runtime
 
@@ -107,11 +110,10 @@ The Python publisher has a separate 3-minute minimum publication interval.
 
 ## Remaining gates
 
-1. Fresh regression run after the latest fixes.
-2. Real Groq fallback proof.
-3. Real Telegram photo proof.
-4. Several consecutive successful Cloudflare-dispatched cycles.
-5. Confirm acceptable cadence under normal queue conditions.
+1. Real Groq fallback proof.
+2. Real photo publication proof after the 350-character correction.
+3. Several consecutive successful scheduler-dispatched cycles.
+4. Cadence confirmation.
 
 ## Final assessment
 
@@ -120,3 +122,5 @@ The Python publisher has a separate 3-minute minimum publication interval.
 Acceptance rule:
 
 **fact → root cause → implementation → tests → real production run → telemetry inspection → documentation.**
+
+A commit or green unit test is never production proof by itself.
