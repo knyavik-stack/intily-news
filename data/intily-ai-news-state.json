@@ -157,7 +157,8 @@
     "5806935391a319dc96f5b686615803cd20f6aa2952439151c1a8341797cf18d8": 1789034246,
     "a862475de41189055a933ea4982af2240f6d4bb3e10c56e3f532a37b9fb6cfc0": 1789034785,
     "56456a6af04ea7021674694464ac63b02487254ba64b9acce874418ddd4a7313": 1789035147,
-    "66da13a271e57e5507e8f8ee7193cf522b027f9a6a4febae841e0895531ce5c3": 1789035516
+    "66da13a271e57e5507e8f8ee7193cf522b027f9a6a4febae841e0895531ce5c3": 1789035516,
+    "c0e7a836c576f582757cf20001f8ca29ccb57f54cee766905b83455e4dbbb3d6": 1789035867
   },
   "known": {
     "b6e5fb6ac65617029f1c4dfaceb9b3548deceab4c2ffefcfbf12e3e759c444da": 1789031550.2575133,
@@ -170,46 +171,6 @@
     "c0e7a836c576f582757cf20001f8ca29ccb57f54cee766905b83455e4dbbb3d6": 1789035328.2896736
   },
   "queue": [
-    {
-      "region": "WORLD",
-      "title": "OpenAI and Anthropic incidents fuel pressure for AI regulation - Helsinki Times",
-      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQaEF1djNRZzJXY1hKdmpRbTN1azFyMF9MUXFweFdwN2ZPNkctTXJsTno4dnlGZ1ZYVXZVakl6V1Nob3gyS0JDVTQyME9BcjhRRVpwLWdnTEYwdlJSdU1oUERseFVsX19jWXBqSldqTno2ME5XczRlc0M1RVA1dmc0bVBudkwzemdiSVBUWVBIcXZUWE81b2ZjTGRUZmNJdTNKaEdRMVlVMjl1QW9qa3JJTTVPZWVWeVNReDlsX1ljYlVxb2x5NnBBOHJKbHh3bG8wTVRWZjRR?oc=5",
-      "desc": "OpenAI and Anthropic incidents fuel pressure for AI regulation Helsinki Times",
-      "source": "Helsinki Times",
-      "time": 1789033471.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 8.0,
-        "event_concreteness": 16.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 45.5,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 69.5
-      },
-      "base_score": 45.5,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 69.5,
-      "key": "c0e7a836c576f582757cf20001f8ca29ccb57f54cee766905b83455e4dbbb3d6",
-      "importance": 69.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "security_regulation"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "last_failed_at": 1789035689,
-      "last_failure": "Unterminated string starting at: line 1 column 78 (char 77)",
-      "failure_count": 1,
-      "next_retry_at": 1789035989
-    },
     {
       "region": "RUSSIA",
       "title": "Как закон о регулировании ИИ изменит ландшафт креативных индустрий - Эксперт",
@@ -375,20 +336,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789035689.3660622,
+    "last_start_ts": 1789035867.2848005,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789035689.3660622,
-    "last_success_ts": 1789035689.3660622,
+    "last_run_ts": 1789035867.2848005,
+    "last_success_ts": 1789035867.2848005,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 5
+    "last_published": 1,
+    "queue_size": 4
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1789035809.6079638,
-      "reason": "TEMPORARY_SERVICE_ERROR_OR_429",
-      "updated_at": 1789035689.6079655
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1789035870.2492766
     },
     "GROQ": {
       "disabled_until": 0,
@@ -966,10 +927,16 @@
       "desc": "Компания Gmonit, разработчик observability-платформы, сообщила о расширении возможностей своего продукта: в нем реализована...",
       "source": "CNews",
       "region": "RUSSIA"
+    },
+    "c0e7a836c576f582757cf20001f8ca29ccb57f54cee766905b83455e4dbbb3d6": {
+      "time": 1789035867,
+      "title": "OpenAI and Anthropic incidents fuel pressure for AI regulation - Helsinki Times",
+      "desc": "OpenAI and Anthropic incidents fuel pressure for AI regulation Helsinki Times",
+      "source": "Helsinki Times",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -988,7 +955,8 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
     {
@@ -22325,11 +22293,101 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789035867,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 5.85,
+      "candidates": 0,
+      "queue_before": 5,
+      "queue_after": 4,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 403: Forbidden": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 403: Forbidden"
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 24.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра стратегии комплаенса и оценки рисков из-за грядущего ужесточения законодательства.",
+            "title": "OpenAI and Anthropic incidents fuel pressure for AI regulation - Helsinki Times",
+            "final_score": 69.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1789035328.2896736,
-  "last_publish_ts": 1789035516.6328707,
+  "last_publish_ts": 1789035867.2848005,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
