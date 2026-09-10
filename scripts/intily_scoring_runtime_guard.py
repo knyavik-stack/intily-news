@@ -67,7 +67,7 @@ def _score_footer(item):
         value = float(components.get(key, 0) or 0)
         lines.append(f'{label}: {value:.1f}/{maximum:.0f}')
     lines.append(f'Шум/низкий сигнал: −{penalty:.1f}' if penalty else 'Шум/низкий сигнал: 0.0')
-   if audience_score is not None:
+    if audience_score is not None:
         lines.append(f'Аудитория: {float(audience_score):.0f}/10 → +{audience_bonus:.1f}')
     else:
         lines.append('Аудитория: ещё не оценена')
