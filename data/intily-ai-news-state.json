@@ -148,7 +148,8 @@
     "0ec94d3b869cb6fe922135c86080c8fa8f41fec4b1cc8ed60cda0f981a75f9eb": 1789029928,
     "0791e915d344df131702f7703bed7b0c2b42fbd8e50935335b355e2804206af7": 1789030288,
     "f9c62b3024d112d7e2889c2c797bd7ef22159d670e30d7d0b694b33d531bdb3d": 1789030468,
-    "e259d38c4fa51338e59253272e3c2190c803a5459abd1afe5a23f573b5331dd4": 1789030650
+    "e259d38c4fa51338e59253272e3c2190c803a5459abd1afe5a23f573b5331dd4": 1789030650,
+    "8a051d104e91c832050e594652c7977233b672454619dfee9451c90501bd7be3": 1789030832
   },
   "known": {
     "360c40a0741e949fcee10ac39bc1e4d72620cc33f4ae44f8a969649c81a5dea7": 1789027463.9979773,
@@ -163,44 +164,6 @@
     "0791e915d344df131702f7703bed7b0c2b42fbd8e50935335b355e2804206af7": 1789029389.2498102
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Группа ИT-компаний Lad представила Ai Control Center — платформу для безопасного запуска ИИ в корпоративном контуре",
-      "link": "https://www.cnews.ru/news/line/2026-09-10_gruppa_it-kompanij_lad_predstavila",
-      "desc": "Группа ИT-компаний Lad объявила о запуске Ai Control Center (AiCC) — корпоративной платформы централизованного контроля...",
-      "source": "CNews",
-      "time": 1789027020.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 5.0,
-        "event_concreteness": 10.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 2.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 44.0,
-        "audience_score": 6.0,
-        "audience_bonus": 18.0,
-        "final_score": 62.0
-      },
-      "base_score": 44.0,
-      "audience_bonus": 18.0,
-      "score_stage": "final",
-      "score": 62.0,
-      "key": "8a051d104e91c832050e594652c7977233b672454619dfee9451c90501bd7be3",
-      "importance": 62.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "security_regulation",
-        "tools"
-      ],
-      "audience_score": 6.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "WORLD",
       "title": "Europe Today: Drone nearly hits Zelensky's plane as Riga debates Russia threat",
@@ -424,20 +387,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789030650.8374863,
+    "last_start_ts": 1789030832.2732184,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789030650.8374863,
-    "last_success_ts": 1789030650.8374863,
+    "last_run_ts": 1789030832.2732184,
+    "last_success_ts": 1789030832.2732184,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 7
+    "queue_size": 6
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789030657.0352044
+      "updated_at": 1789030836.3068056
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1022,11 +985,17 @@
       "desc": "Digital Provenance Platform Market to Reach $18.24 Billion by 2035 as AI-Generated Content Drives Demand for Digital Authentication | Research by SNS Insider Business Upturn",
       "source": "Business Upturn",
       "region": "WORLD"
+    },
+    "8a051d104e91c832050e594652c7977233b672454619dfee9451c90501bd7be3": {
+      "time": 1789030832,
+      "title": "Группа ИT-компаний Lad представила Ai Control Center — платформу для безопасного запуска ИИ в корпоративном контуре",
+      "desc": "Группа ИT-компаний Lad объявила о запуске Ai Control Center (AiCC) — корпоративной платформы централизованного контроля...",
+      "source": "CNews",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1044,7 +1013,8 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
     {
@@ -20910,11 +20880,101 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789030832,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 34.05,
+      "candidates": 0,
+      "queue_before": 7,
+      "queue_after": 6,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENS": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INV"
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 4.5,
+          "bonus_total": 27.0,
+          "max_score": 6.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Позволяет внедрить ИИ в консервативных компаниях с жестким комплаенсом, снижая риски утечек.",
+            "title": "Группа ИT-компаний Lad представила Ai Control Center — платформу для безопасного запуска ИИ в корпоративном контуре",
+            "final_score": 62.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1789029389.2498102,
-  "last_publish_ts": 1789030650.8374863,
+  "last_publish_ts": 1789030832.2732184,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
