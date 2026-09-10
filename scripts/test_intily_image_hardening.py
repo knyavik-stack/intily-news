@@ -12,7 +12,7 @@ class ImageHardeningTests(unittest.TestCase):
             (html, 'text/html', 'https://cdn.example/wrapper'),
             (image, 'image/jpeg', 'https://cdn.example/photo.jpg'),
         ]
-        with patch.object(hardening.pipeline, 'extract_image_candidates', return_value=[(1, 'html_img', 'https://cdn.example/wrapper')],), \
+        with patch.object(hardening.pipeline, 'extract_image_candidates', return_value=[(1, 'html_img', 'https://cdn.example/wrapper')]), \
              patch.object(hardening.pipeline, '_request', side_effect=responses), \
              patch.object(hardening.pipeline, '_dimensions', return_value=(1200, 800)):
             result = hardening.fetch_image('https://publisher.example/story')
@@ -23,7 +23,7 @@ class ImageHardeningTests(unittest.TestCase):
         html = b'<meta property="og:image" content="https://googleusercontent.com/x.jpg">'
         with patch.object(hardening.pipeline, 'extract_image_candidates', return_value=[(1, 'html_img', 'https://cdn.example/wrapper')]), \
              patch.object(hardening.pipeline, '_request', return_value=(html, 'text/html', 'https://cdn.example/wrapper')):
-            with self.assertRaisesRegex(ValueError, 'GOOGLE_IMAGE_FORBIDDEN'):
+            with self.assertRaisesRegex(ValueError, 'IMAGE_CANDIDATES_FAILED'):
                 hardening.fetch_image('https://publisher.example/story')
 
 
