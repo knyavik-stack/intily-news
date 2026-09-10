@@ -127,7 +127,8 @@
     "76b60464d83f4f5052111919a419f47a16f028b6d531afea9fae35e6239b511c": 1789012853,
     "06884862c763e784f1b35a54ce2fecf764fb740e7de76a2ded83cfc4442eb60c": 1789015767,
     "921c359aa2a2fd0895857c195a2f2b0b378589aecc9fd43fda5070a49a4dda31": 1789016480,
-    "1485a415a4094ebdf10c962b0f5301563e2e3499f06cd453e9986996a5b3f12f": 1789016848
+    "1485a415a4094ebdf10c962b0f5301563e2e3499f06cd453e9986996a5b3f12f": 1789016848,
+    "133e19f3d573b73485a8c4a6944c148f22f7ff6c468beb2f42e6fbd4cd2ed5cd": 1789018251
   },
   "known": {
     "76b60464d83f4f5052111919a419f47a16f028b6d531afea9fae35e6239b511c": 1789012853.4456985,
@@ -150,7 +151,9 @@
     "b5d86a08b87e03d0504196f2c0dbf648722adb423d5ea04e2ab04d77f6eed6c0": 1789012853.4456985,
     "921c359aa2a2fd0895857c195a2f2b0b378589aecc9fd43fda5070a49a4dda31": 1789015767.0624833,
     "5806935391a319dc96f5b686615803cd20f6aa2952439151c1a8341797cf18d8": 1789015767.0624833,
-    "2413b3966534326f4a9c55cddfaebe136416f149099ca3a5cf314ff9475a96dc": 1789015767.0624833
+    "2413b3966534326f4a9c55cddfaebe136416f149099ca3a5cf314ff9475a96dc": 1789015767.0624833,
+    "38b03082324f7798d0ebe7a18987174d475496a6a1fc98e8d579ed6c34a03104": 1789018251.6886137,
+    "313f2f8c30c8c2eb83e7a18cd123912991189d222611da79b3fecc77e8638324": 1789018251.6886137
   },
   "queue": [
     {
@@ -185,7 +188,11 @@
       "editorial_value": 50.0,
       "topics": [],
       "audience_score": 10.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1789018251,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_CIRCUIT_OPEN | OPENAI: OPENAI_CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1789018551
     },
     {
       "region": "RUSSIA",
@@ -224,10 +231,10 @@
       "audience_score": 7.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1789016480,
+      "last_failed_at": 1789018251,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_CIRCUIT_OPEN | OPENAI: OPENAI_CIRCUIT_OPEN",
-      "failure_count": 1,
-      "next_retry_at": 1789016780
+      "failure_count": 2,
+      "next_retry_at": 1789018851
     },
     {
       "region": "WORLD",
@@ -263,7 +270,11 @@
         "models"
       ],
       "audience_score": 8.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1789018251,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_CIRCUIT_OPEN | OPENAI: OPENAI_CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1789018551
     },
     {
       "region": "WORLD",
@@ -299,7 +310,11 @@
         "research"
       ],
       "audience_score": 7.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1789018251,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_CIRCUIT_OPEN | OPENAI: OPENAI_CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1789018551
     },
     {
       "region": "WORLD",
@@ -335,7 +350,11 @@
         "security_regulation"
       ],
       "audience_score": 8.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1789018251,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_CIRCUIT_OPEN | OPENAI: OPENAI_CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1789018551
     },
     {
       "region": "WORLD",
@@ -371,7 +390,11 @@
         "agents"
       ],
       "audience_score": 8.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1789018251,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_CIRCUIT_OPEN | OPENAI: OPENAI_CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1789018551
     },
     {
       "region": "WORLD",
@@ -408,42 +431,11 @@
         "security_regulation"
       ],
       "audience_score": 8.0,
-      "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Anthropic выпустили 3 сценария будущего с ИИ",
-      "link": "https://habr.com/ru/news/1080570/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1080570",
-      "desc": "Красивый сайт и PDF . Если кратко, то к 2030 году ИИ сделает экономику богаче, но неравенство — рекордным: по прогнозу Anthropic, к 2030 году ВВП США может вырасти до +32%, однако безработица среди офисных работников достигнет 18%, а 15% национального дохода уйдёт от людей владельцам технологий. Профессия сварщика становится перспективнее профессии аналитика: зарплаты в физическом секторе взлетят на треть. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1788998067.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 11.0,
-        "event_concreteness": 16.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 50.0,
-        "audience_score": 5.0,
-        "audience_bonus": 15.0,
-        "final_score": 65.0
-      },
-      "base_score": 50.0,
-      "audience_bonus": 15.0,
-      "score_stage": "final",
-      "score": 65.0,
-      "key": "133e19f3d573b73485a8c4a6944c148f22f7ff6c468beb2f42e6fbd4cd2ed5cd",
-      "importance": 65.0,
-      "editorial_value": 50.0,
-      "topics": [],
-      "audience_score": 5.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "last_failed_at": 1789018251,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_CIRCUIT_OPEN | OPENAI: OPENAI_CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1789018551
     },
     {
       "region": "WORLD",
@@ -573,19 +565,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 2.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 44.0,
+        "base_score": 43.5,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 62.0
+        "final_score": 61.5
       },
-      "base_score": 44.0,
+      "base_score": 43.5,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 62.0,
+      "score": 61.5,
       "key": "5806935391a319dc96f5b686615803cd20f6aa2952439151c1a8341797cf18d8",
-      "importance": 62.0,
+      "importance": 61.5,
       "editorial_value": 50.0,
       "topics": [
         "robotics"
@@ -740,6 +732,42 @@
       "russia_weight_bonus": 0.0
     },
     {
+      "region": "WORLD",
+      "title": "Anthropic Discloses Four Incidents of Claude Models Accessing Real Systems - Hokanews",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPVi1XOVI4RWRZRXhEVWNraUFlbHpXbVVabFFJQ04xeW5nRmNsQllIMXphQ1hYaGF5YUNmZ2JEOU1BTld4WFVIaGJTcVdPTl9PNk9WVWpsTVJDb0pIdFFKdVNwWmtleEhQeWZnSV9tTTVPOHNCaHlhSHgxTXRrY0dvSA?oc=5",
+      "desc": "Anthropic Discloses Four Incidents of Claude Models Accessing Real Systems Hokanews",
+      "source": "Hokanews",
+      "time": 1789016700.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 8.0,
+        "event_concreteness": 15.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 44.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 44.5
+      },
+      "base_score": 44.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 44.5,
+      "key": "38b03082324f7798d0ebe7a18987174d475496a6a1fc98e8d579ed6c34a03104",
+      "importance": 44.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "models"
+      ],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
       "region": "RUSSIA",
       "title": "Представители 25 российских компаний вошли в Совет по генеративной разработке ПО - PrimaMedia",
       "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1VS093dFdMdW5YX2Nsb1ZGcFJkZFBmaXpKZUhTRVlNSmJkV1VLZzNuRGE5ZGZ2Tmg3czJNUTRhZDhHU2JzTmxMN01uOA?oc=5",
@@ -773,23 +801,60 @@
       "audience_score": null,
       "tier": "A",
       "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "Euno Raises $23 Million to Help AI Agents Work With Enterprise Data - israeldefense.co.il",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBRaWxXMTFyWnRWZ1RNZmZBTFlmbTFXZ3JQUXRrXzNHZ3kwRE1HelNsYXBaWlRHbGlGdVZraGItSWtmQ0tMbTF2UVJ1YjlLRnhOVHdmQ25YaHM?oc=5",
+      "desc": "Euno Raises $23 Million to Help AI Agents Work With Enterprise Data israeldefense.co.il",
+      "source": "israeldefense.co.il",
+      "time": 1789017023.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 6.0,
+        "event_concreteness": 10.5,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 41.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 41.0
+      },
+      "base_score": 41.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 41.0,
+      "key": "313f2f8c30c8c2eb83e7a18cd123912991189d222611da79b3fecc77e8638324",
+      "importance": 41.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "business"
+      ],
+      "audience_score": null,
+      "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1789016848.7103956,
+    "last_start_ts": 1789018251.6886137,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789016848.7103956,
-    "last_success_ts": 1789016848.7103956,
-    "last_candidates": 0,
+    "last_run_ts": 1789018251.6886137,
+    "last_success_ts": 1789018251.6886137,
+    "last_candidates": 27,
     "last_published": 1,
-    "queue_size": 17
+    "queue_size": 18
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789016854.063871
+      "disabled_until": 1789039894.0528927,
+      "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT",
+      "updated_at": 1789018294.0528932
     },
     "GROQ": {
       "disabled_until": 1789037353.1200495,
@@ -808,13 +873,6 @@
     }
   },
   "stories": {
-    "6ace864e8f6eb1fb2fd786e1bd92acab5815db8cf85fd2b74fd3a07203d57e83": {
-      "time": 1788930923,
-      "title": "Anthropic Abandons Decart Acquisition, Leaving Claude Compute Cost Gap Unsolved - Tech Times",
-      "desc": "Anthropic Abandons Decart Acquisition, Leaving Claude Compute Cost Gap Unsolved Tech Times",
-      "source": "Tech Times",
-      "region": "WORLD"
-    },
     "dec1f230250ee4bc851ff13bd2b4a1ee45f06207b4e9fc680f090917c7c1089f": {
       "time": 1788943117,
       "title": "Nebius Аркадия Воложа заключила соглашение с Palantir Питера Тиля",
@@ -1255,13 +1313,19 @@
       "desc": "Broadcom Conference Call: AI Revenue to Double Annually for the Next Two Years, Reaching $230 Billion; Custom Chip Performance \"Rivals GPUs at Half the Cost\" 富途牛牛",
       "source": "富途牛牛",
       "region": "WORLD"
+    },
+    "133e19f3d573b73485a8c4a6944c148f22f7ff6c468beb2f42e6fbd4cd2ed5cd": {
+      "time": 1789018251,
+      "title": "Anthropic выпустили 3 сценария будущего с ИИ",
+      "desc": "Красивый сайт и PDF . Если кратко, то к 2030 году ИИ сделает экономику богаче, но неравенство — рекордным: по прогнозу Anthropic, к 2030 году ВВП США может вырасти до +32%, однако безработица среди офисных работников достигнет 18%, а 15% национального дохода уйдёт от людей владельцам технологий. Профессия сварщика становится перспективнее профессии аналитика: зарплаты в физическом секторе взлетят на треть. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1277,7 +1341,8 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
     {
@@ -18063,9 +18128,198 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789018251,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 49.52,
+      "candidates": 27,
+      "queue_before": 17,
+      "queue_after": 18,
+      "published": 1,
+      "publish_attempts": 8,
+      "item_failures": 7,
+      "admission": {
+        "published_key": 5,
+        "known_recent": 0,
+        "already_queued": 17,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 2,
+        "candidate_count": 27,
+        "admission_rate": 7.41,
+        "dominant_block": "already_queued",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
+          }
+        },
+        "audience": {
+          "evaluated": 4,
+          "average_score": 3.75,
+          "bonus_total": 45.0,
+          "max_score": 6.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 5.0,
+            "bonus": 15.0,
+            "reason": "Спекулятивный прогноз без конкретных инструментов для немедленного изменения бизнес-процессов.",
+            "title": "Anthropic выпустили 3 сценария будущего с ИИ",
+            "final_score": 65.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 51,
+        "raw_items": 554,
+        "source_counts": {
+          "TechCrunch AI": 9,
+          "VentureBeat AI": -1,
+          "The Verge AI": 4,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 10,
+          "Habr AI/News": 6,
+          "CNews": 5,
+          "Euronews": 17
+        },
+        "score_filtered": 502,
+        "quality_filtered": 18,
+        "story_dedup": 7,
+        "candidates": 27,
+        "candidate_rate": 0.0537,
+        "score_buckets": {
+          "0–39": 463,
+          "40–49": 57,
+          "50–59": 31,
+          "60–69": 3,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 1,
+          "3": 0,
+          "4": 0,
+          "5": 3,
+          "6": 2,
+          "7": 5,
+          "8": 4,
+          "9": 0,
+          "10": 1
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789015767.0624833,
-  "last_publish_ts": 1789016848.7103956
+  "last_search_ts": 1789018251.6886137,
+  "last_publish_ts": 1789018251.6886137
 }
