@@ -347,19 +347,19 @@
         "novelty": 0.0,
         "source_quality": 4.0,
         "evidence": 2.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 41.5,
+        "base_score": 41.0,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 59.5
+        "final_score": 59.0
       },
-      "base_score": 41.5,
+      "base_score": 41.0,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 59.5,
+      "score": 59.0,
       "key": "2d2267664c027a90ea9cd964eba58c48a4efdce68d4e60bb29efad0aa62f5c0b",
-      "importance": 59.5,
+      "importance": 59.0,
       "editorial_value": 50.0,
       "topics": [
         "chips"
@@ -486,20 +486,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789041472.914963,
+    "last_start_ts": 1789041637.0606399,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789041472.914963,
-    "last_success_ts": 1789041472.914963,
+    "last_run_ts": 1789041637.0606399,
+    "last_success_ts": 1789041637.0606399,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 8
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789041472.8721533
+      "updated_at": 1789041637.0260181
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1144,96 +1144,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1788873724,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 8.37,
-      "candidates": 0,
-      "queue_before": 14,
-      "queue_after": 13,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 9.0,
-          "bonus_total": 27.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходим немедленный аудит безопасности из-за кратного ускорения атак с использованием ИИ.",
-            "title": "Google says attackers used AI agents to steal credentials in under six hours - SiliconANGLE",
-            "final_score": 93.9
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1788874582,
       "status": "OK",
@@ -23086,6 +22996,78 @@
             "title": "Ответ Западу и Китаю: «Сбер» запустил ИИ с рассуждениями - BeInCrypto",
             "final_score": 61.0
           }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1789041637,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "publish_interval_not_reached",
+      "searched": false,
+      "duration_sec": 8.74,
+      "candidates": 0,
+      "queue_before": 8,
+      "queue_after": 8,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
         },
         "queue_score_audit": {
           "pre_ai_below_final_threshold": 1,
