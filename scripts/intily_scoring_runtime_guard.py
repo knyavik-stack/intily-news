@@ -58,20 +58,21 @@ def _score_footer(item):
     audience_bonus = float(components.get('audience_bonus', item.get('audience_bonus', 0)) or 0)
     penalty = float(components.get('low_signal_penalty', 0) or 0)
 
-    lines = [
-        '',
-        '📊 <b>Оценка новости</b>',
-        f'<b>Итого: {final_score:.1f}/100</b> = база {base_score:.1f}/70 + аудитория {audience_bonus:.1f}/30',
-    ]
-    for key, label, maximum in SCORE_COMPONENT_LABELS:
-        value = float(components.get(key, 0) or 0)
-        lines.append(f'{label}: {value:.1f}/{maximum:.0f}')
-    lines.append(f'Шум/низкий сигнал: −{penalty:.1f}' if penalty else 'Шум/низкий сигнал: 0.0')
-    if audience_score is not None:
-        lines.append(f'Аудитория: {float(audience_score):.0f}/10 → +{audience_bonus:.1f}')
-    else:
-        lines.append('Аудитория: ещё не оценена')
-    return '\n'.join(lines)
+    # отключаем показ статистики
+#    lines = [
+#        '',
+#        '📊 <b>Оценка новости</b>',
+#        f'<b>Итого: {final_score:.1f}/100</b> = база {base_score:.1f}/70 + аудитория {audience_bonus:.1f}/30',
+#    ]
+#    for key, label, maximum in SCORE_COMPONENT_LABELS:
+#        value = float(components.get(key, 0) or 0)
+#        lines.append(f'{label}: {value:.1f}/{maximum:.0f}')
+#    lines.append(f'Шум/низкий сигнал: −{penalty:.1f}' if penalty else 'Шум/низкий сигнал: 0.0')
+#   if audience_score is not None:
+#        lines.append(f'Аудитория: {float(audience_score):.0f}/10 → +{audience_bonus:.1f}')
+#    else:
+#        lines.append('Аудитория: ещё не оценена')
+#    return '\n'.join(lines)
 
 
 def _final_score(item):
@@ -215,16 +216,16 @@ def run_production():
         if cached is not None:
             return cached
         post = original_edit(item, state)
-        post = re.sub(
-            r'Следующая в очереди: базовый вес [0-9]+(?:\.[0-9])?/100; AI-аудит ещё не проведён\.',
-            '',
-            post,
-        )
-        post = re.sub(
-            r'Следующая в очереди имеет вес [0-9]+(?:\.[0-9])?%.',
-            '',
-            post,
-        )
+#        post = re.sub(
+#            r'Следующая в очереди: базовый вес [0-9]+(?:\.[0-9])?/100; AI-аудит ещё не проведён\.',
+#            '',
+#            post,
+#        )
+#        post = re.sub(
+#            r'Следующая в очереди имеет вес [0-9]+(?:\.[0-9])?%.',
+#            '',
+#            post,
+#        )
         post = _attach_score_footer(item, post)
         post_cache[key] = post
         return post
