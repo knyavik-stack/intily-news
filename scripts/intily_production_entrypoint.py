@@ -74,6 +74,11 @@ def _gemini_chat(prompt, token):
     raise last_error or RuntimeError('GEMINI_UNAVAILABLE')
 
 
+def _one_shot_gemini_chat(prompt, token):
+    """Compatibility entrypoint retained for the production regression suite."""
+    return _gemini_chat(prompt, token)
+
+
 def _groq_chat(url, model, token, prompt, retries=2):
     """Groq OpenAI-compatible request with an explicit app User-Agent."""
     body = json.dumps({
