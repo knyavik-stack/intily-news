@@ -133,14 +133,56 @@
     "e0cdf29b3810a11fa260ca936a5ebe4d86ac8fdeedbafa07164657b54d9cbe10": 1789023629,
     "8026872b3d7bb0beb229bbcfeb3409357fd6684bee0ecfa566bf1d4614746d3b": 1789023811,
     "200e59dc4b88b14cd98c89a78162e10e44af2a7d638fb095c4b4bfaf9256f2b4": 1789023989,
-    "66b1a87eaac00c2448066dc83c51e9692359564c4912d7c5ade876b28c673518": 1789024166
+    "66b1a87eaac00c2448066dc83c51e9692359564c4912d7c5ade876b28c673518": 1789024166,
+    "85bb6298fa0f2aa2498e0a0f81e0dbb321b3a381c2143f4aef10b6ef122de904": 1789024352
   },
   "known": {
     "a06810003442ad90150001f8dbe7a506578771116df72b7a37b8463b8d2b6a48": 1789022368.5042305,
     "a862475de41189055a933ea4982af2240f6d4bb3e10c56e3f532a37b9fb6cfc0": 1789022368.5042305,
-    "6abf05321b46370dc85175ee1c9e44ca98e58fc5504382d6e2b079635eb9bdab": 1789022368.5042305
+    "6abf05321b46370dc85175ee1c9e44ca98e58fc5504382d6e2b079635eb9bdab": 1789022368.5042305,
+    "85bb6298fa0f2aa2498e0a0f81e0dbb321b3a381c2143f4aef10b6ef122de904": 1789024352.172984,
+    "f5d404184a4689c38b94d94631c9154bbf2ff9a2172ce0a63eb406423ab2869c": 1789024352.172984,
+    "4ce63407498285065a3928d8301b0262c6164908165ce4c64f563a1713156ea5": 1789024352.172984
   },
   "queue": [
+    {
+      "region": "RUSSIA",
+      "title": "DeepSeek V4.1 Flash: почти вдвое больше параметров и на 57% дешевле кэш",
+      "link": "https://habr.com/ru/news/1080640/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1080640",
+      "desc": "DeepSeek выпустили V4.1 Flash. Количество параметров почти удвоилось: с 284 до 552 млрд. Модель прибавила в тестах на программирование, а чтение из кэша подешевело в 2,3 раза относительно августовских тарифов. По таблице DeepSeek, на Terminal-Bench 4.0 новая Flash набрала 31,2% против 7% у V4-Flash-0731. На DeepSWE v1.1 результат вырос с 54,4% до 74,2%. При этом до лидеров Terminal-Bench ещё есть расстояние: у GPT-6 Astra 57,9%, у Claude Fable 5.1 55,8%. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1789024292.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 11.0,
+        "event_concreteness": 13.5,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 52.0,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 76.0
+      },
+      "base_score": 52.0,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 76.0,
+      "key": "f5d404184a4689c38b94d94631c9154bbf2ff9a2172ce0a63eb406423ab2869c",
+      "importance": 76.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "models",
+        "tools"
+      ],
+      "audience_score": 8.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
     {
       "region": "WORLD",
       "title": "An alignment assessment of recent cybersecurity incidents - Anthropic",
@@ -672,23 +714,62 @@
       "audience_score": null,
       "tier": "A",
       "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Исследование: ИИ‑агенты ChatGPT могли извлекать данные из одной учётной записи и передавать их в другую",
+      "link": "https://habr.com/ru/news/1080636/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1080636",
+      "desc": "Компания Check Point Research обнаружила скрытый канал, позволяющий сеансу ChatGPT под одной учётной записью отправлять задачи в совершенно отдельный сеанс другого аккаунта. При этом в беседе обоих пользователей не наблюдалось ничего необычного. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1789024047.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 3.0,
+        "impact": 6.0,
+        "event_concreteness": 10.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 41.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 41.0
+      },
+      "base_score": 41.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 41.0,
+      "key": "4ce63407498285065a3928d8301b0262c6164908165ce4c64f563a1713156ea5",
+      "importance": 41.0,
+      "editorial_value": 49.0,
+      "topics": [
+        "agents",
+        "models",
+        "research"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1789024166.6480544,
+    "last_start_ts": 1789024352.172984,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789024166.6480544,
-    "last_success_ts": 1789024166.6480544,
-    "last_candidates": 0,
+    "last_run_ts": 1789024352.172984,
+    "last_success_ts": 1789024352.172984,
+    "last_candidates": 29,
     "last_published": 1,
-    "queue_size": 14
+    "queue_size": 16
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789024172.3237617
+      "updated_at": 1789024421.654429
     },
     "GROQ": {
       "disabled_until": 1789044925.888514,
@@ -1189,6 +1270,13 @@
       "desc": "OpenAI's announcement Tuesday that it has solved one of mathematics' legendary Millennium Prize problems should have been a moment of triumph. The result is both an undeniable achievement and a striking demonstration of just how rapidly AI is transforming mathematics. But before it was even formally announced, the breakthrough had been complicated by the unusual […]",
       "source": "The Verge AI",
       "region": "WORLD"
+    },
+    "85bb6298fa0f2aa2498e0a0f81e0dbb321b3a381c2143f4aef10b6ef122de904": {
+      "time": 1789024352,
+      "title": "Чужую почту в Gmail можно читать с помощью ChatGPT",
+      "desc": "Исследователи по кибербезопасности Check Point Research обнаружили серьезную ИТ-уязвимость в интеграции ChatGPT с Gmail, которая потенциально позволяла связать две независимые учетные записи и передавать данные между ними. ИТ-уязвимость особенно опасна тем, что пользователь мог не видеть в своем чате ничего подозрительного. Специалисты предупреждают, что подключение Gmail к ChatGPT фактически дает искусственному интеллекту доступ к содержимому почты в рамках выданных пользователем разрешений.",
+      "source": "CNews",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
@@ -1196,7 +1284,6 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1211,7 +1298,8 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
     {
@@ -19480,9 +19568,156 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789024352,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 76.89,
+      "candidates": 29,
+      "queue_before": 14,
+      "queue_after": 16,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 11,
+        "story_queue": 1,
+        "story_history": 3,
+        "added": 3,
+        "candidate_count": 29,
+        "admission_rate": 10.34,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
+          }
+        },
+        "audience": {
+          "evaluated": 10,
+          "average_score": 6.4,
+          "bonus_total": 192.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 4,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Ускорение R&D процессов и автоматизация сложных вычислений меняют требования к квалификации технических кадров.",
+            "title": "OpenAI’s sly mathematical breakthrough sends a chill through academia",
+            "final_score": 68.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 58,
+        "raw_items": 518,
+        "source_counts": {
+          "TechCrunch AI": 6,
+          "VentureBeat AI": -1,
+          "The Verge AI": 4,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 5,
+          "Habr AI/News": 12,
+          "CNews": 12,
+          "Euronews": 19
+        },
+        "score_filtered": 455,
+        "quality_filtered": 25,
+        "story_dedup": 9,
+        "candidates": 29,
+        "candidate_rate": 0.063,
+        "score_buckets": {
+          "0–39": 422,
+          "40–49": 58,
+          "50–59": 34,
+          "60–69": 4,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 1,
+          "3": 0,
+          "4": 0,
+          "5": 3,
+          "6": 3,
+          "7": 3,
+          "8": 3,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 8,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_403_1010"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789022368.5042305,
-  "last_publish_ts": 1789024166.6480544
+  "last_search_ts": 1789024352.172984,
+  "last_publish_ts": 1789024352.172984
 }
