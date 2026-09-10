@@ -1,54 +1,66 @@
-> **CANONICAL CURRENT STATE — 2026-09-06**
->
-> This file contains historical operational material. The current production contract is: **Cloudflare `intily-ai-news` JavaScript scheduler → GitHub Actions `workflow_dispatch` → Python `scripts/intily_ai_news.py` → Telegram**. Cloudflare production is **not Python**.
->
-> Cloudflare baseline source recovered from v54 (`8d9de9eb-7e28-4880-a46f-881fce654f8f`) is versioned in `cloudflare/intily-ai-news.worker.js`; production currently serves v87 (`b20948d7-c11c-4495-a9ca-421c9fb58dcc`), with the only intentional runtime change being the GitHub repository target `knyavik-stack/intily-news`. Cron is `* * * * *` UTC with the original 1/3 dispatch gate.
->
-> Read `docs/PROJECT_STATUS_2026-09-06.md` and `docs/INTILY_RUNTIME_RESTORATION_2026-09-05.md` before making runtime changes. Those documents override older historical values in this file.
+# INTILY — User Handoff
 
-# SynapseMax — Инструкция для владельца проекта
+**Актуализация: 2026-09-10**
 
 ## Где смотреть реальное состояние
 
-1. GitHub Actions — последние результаты Immediate QA, Production Smoke и Intily AI News Publisher.
-2. `docs/PROJECT_STATUS_2026-09-06.md` — текущая карта проекта и GREEN/YELLOW/RED.
-3. `docs/INTILY_OPERATIONS.md` — техническая эксплуатация news pipeline.
-4. `docs/INTILY_ANALYTICS.md` — правила чтения аналитики простым языком.
-5. `docs/INTILY_PRODUCTION_MONITORING.md` — назначение и правила Production Monitor.
-6. `docs/NEW_CHAT_START_PROMPT.md` — перенос контекста в новый чат.
+1. `docs/PROJECT_STATUS_2026-09-10.md` — канонический текущий статус.
+2. `docs/FINAL_PRODUCTION_AUDIT_2026-09-10.md` — последний production audit.
+3. `docs/INTILY_OPERATIONS.md` — текущая эксплуатационная модель.
+4. `docs/INTILY_PRODUCTION_MONITORING.md` — исторический мониторинг и здоровье системы.
+5. `docs/NEW_CHAT_START_PROMPT.md` — инструкция для нового чата.
+6. GitHub Actions — фактические production runs и telemetry.
 
-## Как теперь разделена аналитика
+## Production contract
 
-### Intily AI News Publisher
+`Cloudflare intily-ai-news scheduler → GitHub Actions workflow_dispatch → Python production entrypoint → Telegram @intily → durable GitHub state`
 
-Показывает **только текущий запуск**: найденные материалы, кандидатов, отбраковку, новые добавления в очередь, публикацию, запросы и источники текущего запуска.
+GitHub workflow не имеет собственного cron. Cloudflare — production scheduler.
 
-Исторические показатели 24 часа / 7 дней и история Monitor сюда не добавляются.
+## Пользовательский контракт Telegram
 
-### Intily Production Monitor
+Пост содержит только редакционный контент. Queue statistics, queue-next и operational diagnostics в постах отключены:
 
-Показывает **историю системы**: 24 часа, 7 дней, сохранённую историю, причины отсутствия публикаций, здоровье источников, поисковую аналитику, последние запуски и предупреждения.
+`SHOW_QUEUE_DIAGNOSTICS = False`
 
-Пользовательская аналитика обоих экранов выводится на русском языке. Машинные коды используются только внутри состояния программы.
+## Текущее состояние
 
-## Для нового чата
+Core pipeline доказан end-to-end. Последний успешный publisher run #949 отправил Telegram message `1134` и сохранил state/analytics.
 
-Открой новый чат и отправь содержимое `docs/NEW_CHAT_START_PROMPT.md`. Новый исполнитель должен самостоятельно прочитать связанные документы и проверить текущий `main`, а не просить пересказывать историю.
+Последующий run #951 остановился на regression gate до запуска publisher. Причина — ошибка mock-контракта в двух новых image-hardening tests. Исправление закоммичено в `5415478c418263ab3e8233ff731584a90b5ee198`.
 
-## Когда вмешательство владельца действительно нужно
+## Открытые production gates
 
-Только если:
-- требуется новый секрет/API key;
-- требуется авторизация внешнего сервиса;
-- внешний сервис изменил доступ или требует ручного подтверждения;
-- есть необратимое бизнес-решение, которое нельзя принять автоматически.
+1. свежий workflow run после `5415478...` с полным зелёным regression gate;
+2. реальный Groq fallback на `openai/gpt-oss-20b`;
+3. реальная photo delivery telemetry `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`;
+4. несколько последовательных Cloudflare-dispatched cycles для подтверждения cadence.
 
-Во всех остальных случаях работа продолжается самостоятельно.
+## Provider policy
+
+Failover: Gemini → Groq GPT-OSS 20B → OpenAI.
+
+Retired `llama-3.1-8b-instant` не возвращать.
+
+## Media policy
+
+Publisher-first images only. Browser-like retries, one-level HTML indirection, bounded fetch budget and strict validation are enabled. Google-hosted image substitution запрещена.
+
+Если текущая hardening-цепочка не даст реальную photo delivery, следующий шаг — first-class RSS/Atom media hints (`media:content`, `media:thumbnail`, `enclosure`).
+
+## Когда нужен пользователь
+
+Только если требуется:
+
+- новый секрет/API key;
+- авторизация внешнего сервиса;
+- ручное подтверждение внешнего сервиса;
+- необратимое бизнес-решение.
+
+В остальных случаях исполнитель продолжает самостоятельно.
 
 ## Правило проверки
 
-После каждого существенного изменения:
+**fact → root cause → fix → tests → real production run → telemetry → documentation**.
 
-**проверить факты → найти причину → исправить → проверить результат → задокументировать**.
-
-Зелёный GitHub Actions не считается достаточным доказательством, если отдельный аналитический или редакционный этап фактически не проверен.
+Commit/CI green без production evidence не считается закрытием задачи.
