@@ -216,16 +216,16 @@ def run_production():
         if cached is not None:
             return cached
         post = original_edit(item, state)
-        post = re.sub(
-            r'Следующая в очереди: базовый вес [0-9]+(?:\.[0-9])?/100; AI-аудит ещё не проведён\.',
-            '',
-            post,
-        )
-        post = re.sub(
-            r'Следующая в очереди имеет вес [0-9]+(?:\.[0-9])?%.',
-            '',
-            post,
-        )
+#        post = re.sub(
+#            r'Следующая в очереди: базовый вес [0-9]+(?:\.[0-9])?/100; AI-аудит ещё не проведён\.',
+#            '',
+#            post,
+#        )
+#        post = re.sub(
+#            r'Следующая в очереди имеет вес [0-9]+(?:\.[0-9])?%.',
+#            '',
+#            post,
+#        )
      #   post = _attach_score_footer(item, post)
         post_cache[key] = post
         return post
