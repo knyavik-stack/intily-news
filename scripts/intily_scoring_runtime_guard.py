@@ -171,6 +171,18 @@ class PublisherScoreProxy:
         setattr(self._module, name, value)
 
 
+def _halt_publication_attempts(publisher):
+    """Stop the legacy publication loop immediately after provider outage.
+
+    The legacy publisher owns its own local attempt counter, so merely setting
+    the runtime guard flag is insufficient: the next queue item would still
+    enter edit()/AI and repeat the same provider failure. Setting the process
+    local cap to zero makes the next loop guard fail before another attempt.
+    """
+    publisher.MAX_ATTEMPTS_PER_RUN = 0
+    print('PUBLICATION_HALTED', 'provider_runtime_unavailable')
+
+
 def run_production():
     import importlib
 
@@ -196,6 +208,8 @@ def run_production():
 
     @functools.wraps(original_edit)
     def edit_with_score_footer(item, state):
+        if AI_PROVIDER_RUNTIME_HALTED:
+            raise RuntimeError('AI_PROVIDER_RUNTIME_HALTED')
         key = item.get('key') or item.get('link') or item.get('title')
         cached = post_cache.get(key)
         if cached is not None:
@@ -241,6 +255,7 @@ def run_production():
             message = str(exc)
             if 'AI_PROVIDERS_UNAVAILABLE' in message:
                 AI_PROVIDER_RUNTIME_HALTED = True
+                _halt_publication_attempts(publisher)
                 print('AI_EVALUATION_HALTED', 'provider_runtime_unavailable')
             print('FINAL_SCORE_PRECHECK_FAILED', str(item.get('title', ''))[:160], message[:240])
             try:
@@ -264,6 +279,7 @@ def run_production():
             if not _is_final(item):
                 if not evaluate_item(item, state):
                     if AI_PROVIDER_RUNTIME_HALTED:
+                        _halt_publication_attempts(publisher)
                         print('AI_EVALUATION_HALTED', 'queue_precheck_remaining')
                         break
                     if _evaluation_budget_exhausted():
@@ -286,6 +302,7 @@ def run_production():
         evaluated = 0
         for item in candidates:
             if AI_PROVIDER_RUNTIME_HALTED:
+                _halt_publication_attempts(publisher)
                 print('AI_EVALUATION_HALTED', 'candidates_remaining', len(candidates) - evaluated)
                 break
             if _evaluation_budget_exhausted():
@@ -300,6 +317,8 @@ def run_production():
             else:
                 evaluated += 1
                 if AI_PROVIDER_RUNTIME_HALTED or _evaluation_budget_exhausted() or _ai_evaluation_limit_reached():
+                    if AI_PROVIDER_RUNTIME_HALTED:
+                        _halt_publication_attempts(publisher)
                     break
         candidates.sort(key=_final_sort_key, reverse=True)
         print('FINAL_SCORE_CANDIDATES_SORTED', len(candidates), 'evaluated', evaluated)
