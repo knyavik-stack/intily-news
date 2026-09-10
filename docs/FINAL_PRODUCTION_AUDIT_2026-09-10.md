@@ -20,7 +20,7 @@ Run #951 failed at the regression gate because two image-hardening tests mocked 
 
 Fixed in `5415478c418263ab3e8233ff731584a90b5ee198`.
 
-A dedicated non-production `Intily Regression Gate` now runs on push/PR. Run #2 passed **49/49 tests**.
+A dedicated non-production `Intily Regression Gate` now runs on push/PR. The corrected publisher passed the latest regression run.
 
 ## Production run #953
 
@@ -39,6 +39,13 @@ The run also contained logs for publication-interval, joke-rate and editor-promp
 ## User editorial prompt — canonical
 
 The prompt around line 1345 of `scripts/intily_ai_news.py` is the user's intentional configuration. Its tone, profanity, humor target and approximately 700-character target are part of the requested editorial behavior and remain unchanged.
+
+A manual switch is now available near the beginning of the file:
+
+- `style_prompt = 1` — the user's original hard/maternal/sarcastic prompt;
+- `style_prompt = 2` — the additional clean/professional Russian prompt without profanity.
+
+The selected prompt is the only editorial prompt passed to the AI editor. Invalid values fail explicitly.
 
 **Rule:** technical defects may be fixed autonomously; user-authored editorial behavior requires explicit approval before modification or runtime override.
 
