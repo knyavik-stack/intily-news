@@ -2,7 +2,7 @@
 
 ## Canonical current status
 
-**🟡 PRODUCTION VERIFICATION MODE.** Core publication works end-to-end. The latest CI regression was fixed, the contaminated legacy editor prompt was corrected, and the next production run (#953) proved the corrected runtime loaded and published successfully. The photo pipeline has now been narrowed to a Telegram caption-length issue: a real valid image was found and validated, but the full caption exceeded Telegram's limit. A fresh production run after the latest 350-character prompt correction is required to close the photo gate.
+**🟡 PRODUCTION VERIFICATION MODE.** Core publication works end-to-end. The latest CI regression was fixed and production run #953 proved successful text publication. The image pipeline reached a real 41 KB image, but photo delivery was blocked by Telegram caption length. The previously added runtime editorial override has now been removed: the user-authored prompt in `scripts/intily_ai_news.py` is canonical and is not to be changed or overridden without explicit approval.
 
 Production contract:
 
@@ -12,32 +12,37 @@ Telegram posts contain **editorial content only**. Queue statistics, queue-next 
 
 ## Latest CI regression — fixed
 
-Run #951 failed at the regression gate before publisher execution. The two new image-hardening tests mocked `extract_image_candidates()` as a list, while the production contract returns `(ranked_candidates, final_url)`. This caused:
+Run #951 failed at the regression gate before publisher execution because the two new image-hardening tests mocked `extract_image_candidates()` as a list, while the production contract returns `(ranked_candidates, final_url)`. This caused:
 
 `ValueError: not enough values to unpack (expected 2, got 1)`
 
 Fixed in `5415478c418263ab3e8233ff731584a90b5ee198`.
 
-A dedicated non-production `Intily Regression Gate` was added. Its run #2 on the latest media-caption commit completed successfully with **49 tests passed**.
+A dedicated non-production `Intily Regression Gate` was added. Its run #2 completed successfully with **49 tests passed**.
 
 ## Latest production verification — run #953
 
-Run #953 completed successfully on the corrected editor/runtime revision and proved:
+Run #953 completed successfully and proved:
 
 - production regression gate passed: **49 tests**;
-- `GROQ_MODEL_RUNTIME_OVERRIDE openai/gpt-oss-20b` loaded;
-- `PUBLISH_INTERVAL_RUNTIME_OVERRIDE 180` loaded;
-- `JOKE_RATE_RUNTIME_OVERRIDE 0.8` loaded;
-- `EDITOR_PROMPT_RUNTIME_OVERRIDE clean_ru_voice` loaded;
+- technical Groq runtime migration loaded: `openai/gpt-oss-20b`;
 - Gemini processed the live editorial candidates successfully;
 - `TELEGRAM_SENT 1135`;
 - `BUSINESS_RESULT PUBLISHED telegram_delivery_ok`;
 - `QUEUE_SCORE_AUDIT invariant_ok:true`;
 - state and analytics persisted.
 
-### Important media finding in #953
+The earlier run also logged `PUBLISH_INTERVAL_RUNTIME_OVERRIDE`, `JOKE_RATE_RUNTIME_OVERRIDE` and `EDITOR_PROMPT_RUNTIME_OVERRIDE`; those were produced by an unauthorized compatibility override and have now been removed from `scripts/sitecustomize.py`. They are not current production policy.
 
-This run **did not fail image extraction**. It reached:
+## User editorial prompt — canonical rule
+
+The prompt beginning in `scripts/intily_ai_news.py` around line 1345 is the user's intentional editorial configuration, including its tone, profanity, humor target and approximately 700-character target. It remains unchanged.
+
+**Rule:** technical defects may be fixed autonomously, but user-authored editorial behavior must not be modified or runtime-overridden without explicit user approval.
+
+## Media finding in #953
+
+The run did **not** fail image extraction. It reached:
 
 `IMAGE_PAYLOAD_BYTES 41356 source_bytes 41356 optimized False`
 
@@ -45,50 +50,17 @@ Then the image stage stopped with:
 
 `IMAGE_FALLBACK_TEXT PHOTO_CAPTION_LIMIT_TEXT_FALLBACK`
 
-Telemetry:
+The image payload was successfully obtained and was only 41 KB. The blocker was Telegram caption length, not image URL access, MIME, dimensions or payload size.
 
-- attempts: 1;
-- found: 0 at the final KPI layer;
-- validated: 0 at the final KPI layer;
-- photo sent: 0;
-- text fallback: 1.
+No 350-character editorial limit is currently deployed. The earlier runtime change that attempted to force such a limit has been removed.
 
-The underlying image payload was successfully obtained and was only 41 KB. The blocker was the full Telegram caption length, not the image URL, MIME type, dimensions or payload size.
-
-## Media correction now deployed
-
-The runtime editor prompt was tightened from a 700-character target to approximately **350 characters**, specifically so the complete editorial post can fit into a single Telegram photo caption under the 1024-byte caption limit.
-
-Commit: `5f9a49ac83063957398c8267b124060e1d4fc00e`.
-
-The non-production regression gate passed after this change.
-
-**Open gate:** a fresh production post must show `IMAGE_FOUND`, `IMAGE_VALIDATED` and `TELEGRAM_PHOTO_SENT`.
-
-If that still fails because of caption size, the next fix should be structural: make the photo caption intentionally compact while preserving the full editorial text as a separate message only if necessary. Do not silently truncate the editorial text and do not use random Google Images.
-
-## Editor prompt correction
-
-Inspection of the legacy publisher revealed an unsuitable historical prompt containing excessive profanity requirements and an inappropriate character instruction. That did not match the intended INTILY voice.
-
-Runtime override in `scripts/sitecustomize.py` now enforces:
-
-- natural human Russian;
-- factual, non-invented reporting;
-- no excessive profanity instruction;
-- humor only where context permits;
-- no humor for serious safety/law/accident/harm/incident topics;
-- joke target probability 80%;
-- publication minimum interval 3 minutes;
-- Groq model `openai/gpt-oss-20b`.
-
-Run #953 is live proof that these runtime overrides loaded.
+**Open media gate:** solve the caption limit structurally without changing or truncating the user's editorial content, then prove `IMAGE_FOUND` → `IMAGE_VALIDATED` → `TELEGRAM_PHOTO_SENT` in a real production run.
 
 ## Groq
 
 Historical evidence showed retired `llama-3.1-8b-instant → 404 → svgmodel_not_found`.
 
-Current runtime target is `openai/gpt-oss-20b`.
+Current technical runtime target is `openai/gpt-oss-20b`.
 
 **Open gate:** real fallback request must show `AI_PROVIDER_ATTEMPT GROQ` + `AI_PROVIDER_OK GROQ`, or a bounded correctly classified failure.
 
@@ -100,21 +72,7 @@ GitHub Actions uses `workflow_dispatch` only. Cloudflare is the scheduler.
 
 The versioned Cloudflare worker uses `* * * * *` UTC with a 1/3 dispatch gate. This is probabilistic dispatch, not a guaranteed 3- or 5-minute interval. Cadence must be confirmed from several real runs.
 
-The Python publisher has a separate 3-minute minimum publication interval.
-
-## Current editorial runtime
-
-- discovery lookback: 12h;
-- healthy-queue search interval: 30m;
-- urgent search when queue ≤1;
-- maximum publication per cycle: 1;
-- importance threshold: 60;
-- queue cap: 20;
-- RU target share: 60% when sufficient qualifying RU supply exists;
-- joke target probability: 80% where context permits;
-- Telegram queue diagnostics: disabled.
-
-## GREEN / YELLOW / RED
+## Current production gates
 
 ### 🟢 GREEN
 
@@ -123,17 +81,16 @@ The Python publisher has a separate 3-minute minimum publication interval.
 - Telegram text delivery;
 - durable state;
 - queue/dedup/final-score invariant;
-- 49-test regression gate on the corrected revision;
-- editor runtime voice correction is live-proven;
+- 49-test regression gate;
+- user-authored editorial prompt remains canonical;
 - image retrieval/validation reached a real 41 KB image in #953.
 
 ### 🟡 YELLOW / OPEN
 
 - Groq live fallback proof;
-- photo send proof after 350-character correction;
+- structural photo delivery and real photo-send proof;
 - several consecutive scheduler cycles;
-- final cadence confirmation;
-- media fallback architecture only if caption-bound production attempt still fails.
+- final cadence confirmation.
 
 ### 🔴 RED
 
