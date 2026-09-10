@@ -203,10 +203,10 @@
       ],
       "audience_score": 8.0,
       "tier": "A",
-      "last_failed_at": 1789033886,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: EMPTY_RESPONSE | OPENAI: OPENAI_CIRCUIT_OPEN",
-      "failure_count": 1,
-      "next_retry_at": 1789034186
+      "last_failed_at": 1789034069,
+      "last_failure": "Expecting value: line 1 column 1 (char 0)",
+      "failure_count": 2,
+      "next_retry_at": 1789034669
     },
     {
       "region": "RUSSIA",
@@ -244,10 +244,10 @@
       "audience_score": 8.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1789033886,
-      "last_failure": "Unterminated string starting at: line 3 column 11 (char 64)",
-      "failure_count": 1,
-      "next_retry_at": 1789034186
+      "last_failed_at": 1789034069,
+      "last_failure": "Expecting value: line 1 column 1 (char 0)",
+      "failure_count": 2,
+      "next_retry_at": 1789034669
     },
     {
       "region": "WORLD",
@@ -285,10 +285,10 @@
       ],
       "audience_score": 6.0,
       "tier": "A",
-      "last_failed_at": 1789033886,
+      "last_failed_at": 1789034069,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: EMPTY_RESPONSE | OPENAI: OPENAI_CIRCUIT_OPEN",
-      "failure_count": 1,
-      "next_retry_at": 1789034186
+      "failure_count": 2,
+      "next_retry_at": 1789034669
     },
     {
       "region": "WORLD",
@@ -325,10 +325,10 @@
       ],
       "audience_score": 6.0,
       "tier": "A",
-      "last_failed_at": 1789033886,
-      "last_failure": "Unterminated string starting at: line 2 column 12 (char 13)",
-      "failure_count": 1,
-      "next_retry_at": 1789034186
+      "last_failed_at": 1789034069,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_HTTP_429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m1e9qqc7eeva92csec7za87f` service tier `on_demand` on tokens per minute | OPENAI: OPENAI_CIRCUIT_OPEN",
+      "failure_count": 2,
+      "next_retry_at": 1789034669
     },
     {
       "region": "WORLD",
@@ -366,10 +366,10 @@
       ],
       "audience_score": 5.0,
       "tier": "A",
-      "last_failed_at": 1789033886,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: EMPTY_RESPONSE | OPENAI: OPENAI_CIRCUIT_OPEN",
-      "failure_count": 1,
-      "next_retry_at": 1789034186
+      "last_failed_at": 1789034069,
+      "last_failure": "Expecting value: line 1 column 1 (char 0)",
+      "failure_count": 2,
+      "next_retry_at": 1789034669
     },
     {
       "region": "RUSSIA",
@@ -405,10 +405,10 @@
       "audience_score": 6.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1789033886,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: EMPTY_RESPONSE | OPENAI: OPENAI_CIRCUIT_OPEN",
-      "failure_count": 1,
-      "next_retry_at": 1789034186
+      "last_failed_at": 1789034069,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_HTTP_500: {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n | GROQ: GROQ_HTTP_429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m1e9qqc7eeva92csec7za",
+      "failure_count": 2,
+      "next_retry_at": 1789034669
     },
     {
       "region": "RUSSIA",
@@ -447,32 +447,32 @@
       "audience_score": 6.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1789033886,
-      "last_failure": "Expecting value: line 1 column 1 (char 0)",
-      "failure_count": 1,
-      "next_retry_at": 1789034186
+      "last_failed_at": 1789034069,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_HTTP_429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m1e9qqc7eeva92csec7za87f` service tier `on_demand` on tokens per minute | OPENAI: OPENAI_CIRCUIT_OPEN",
+      "failure_count": 2,
+      "next_retry_at": 1789034669
     }
   ],
   "health": {
-    "last_start_ts": 1789033886.7766213,
+    "last_start_ts": 1789034069.6242232,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789033886.7766213,
-    "last_success_ts": 1789033886.7766213,
+    "last_run_ts": 1789034069.6242232,
+    "last_success_ts": 1789034069.6242232,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 7
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1789034138.9861882,
+      "disabled_until": 1789034266.6083012,
       "reason": "TEMPORARY_SERVICE_ERROR_OR_429",
-      "updated_at": 1789034018.9861927
+      "updated_at": 1789034146.6083028
     },
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789034028.3907485
+      "updated_at": 1789034159.1224065
     },
     "OPENAI": {
       "disabled_until": 1789114033.480713,
@@ -21657,6 +21657,117 @@
         ],
         "used": "GROQ",
         "failovers": 37,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1789034069,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 104.01,
+      "candidates": 0,
+      "queue_before": 7,
+      "queue_after": 7,
+      "published": 0,
+      "publish_attempts": 7,
+      "item_failures": 7,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI"
+        ],
+        "used": "GROQ",
+        "failovers": 34,
         "failures": 0,
         "blocked": 0,
         "skipped_no_key": 0,
