@@ -2,116 +2,107 @@
 
 ## Canonical current status
 
-**🟡 PRODUCTION VERIFICATION MODE — Gemini is confirmed healthy and Telegram delivery works; OpenAI key rotation is now handled automatically; Groq 403/1010 is identified as a client-signature/Cloudflare edge issue and is being fixed in the HTTP client; fresh-discovery acceptance remains the final gate to GREEN.**
-
-This document supersedes the older 2026-09-09 status for the current operational state. Historical documents remain useful for incident context.
+**🟡 PRODUCTION VERIFICATION MODE.** Core publication works end-to-end. Gemini is the confirmed primary AI provider. Groq is being migrated from a retired model to the currently supported free-tier `openai/gpt-oss-20b`. Photo delivery remains under live verification: the browser-like image retry is committed, but a real production `TELEGRAM_PHOTO_SENT` is still required before marking media GREEN.
 
 ## Current production contract
 
 `Cloudflare intily-ai-news scheduler → GitHub Actions workflow_dispatch → Python production entrypoint → Telegram → durable GitHub state`.
 
-The mathematical editorial contract remains:
+## Provider status — verified against current Groq documentation on 2026-09-10
 
-`deterministic base 0–70 → AI audience +3…+30 → final 0–100 → queue/publication by final score descending`.
+### Groq model incident
 
-Pre-AI admission threshold: **40.0**.
+The production log showed:
 
-Final publication gate: **55.0**.
+`llama-3.1-8b-instant → 404 → svgmodel_not_found`
 
-Geography is not part of the mathematical score.
+This is consistent with Groq's documented deprecation: `llama-3.1-8b-instant` was shut down on **2026-08-16**. Groq explicitly recommends `openai/gpt-oss-20b` as its replacement. The old model must not be used in production anymore.
 
-## Root cause found — provider circuit deadlock
+The previous model was hard-coded in the legacy publisher. A production runtime override was therefore added in `scripts/sitecustomize.py`; because the workflow runs with `PYTHONPATH=scripts`, Python auto-loads the override before the production entrypoint imports the publisher.
 
-Runs #895/#899 did not fail because news discovery or Telegram was broken. Persisted provider circuit state marked Gemini, Groq, OpenAI and GitHub Models as disabled, so the next cycles were blocked before making real vendor requests.
+Current runtime model:
 
-Run #900 used the one-shot recovery utility and proved the real external state:
+`openai/gpt-oss-20b`
 
-- **Gemini: GREEN** — multiple real `AI_PROVIDER_OK GEMINI` responses;
-- **Groq: RED at that time** — HTTP 403 / Cloudflare code 1010;
-- **OpenAI: RED at that time** — HTTP 429, `You have no credits remaining`;
-- **GitHub Models: permanently unavailable** — GitHub retired GitHub Models on July 30, 2026.
+This model is listed by Groq as a production model and is included in the current Free Plan limits: **30 RPM, 1,000 RPD, 8K TPM, 200K TPD**. The same free-plan table also lists `openai/gpt-oss-120b`, `openai/gpt-oss-safeguard-20b`, `qwen/qwen3.6-27b`, and `qwen/qwen3.8-27b`. These are free-plan rate limits; Groq's separate Developer tier has paid token pricing. The project currently uses GPT-OSS 20B because it is the documented replacement for the retired Llama 3.1 8B and is production-class rather than preview.
 
-The recovery cycle then completed end-to-end Telegram publication:
+The current production failover order remains:
 
-- `TELEGRAM_SENT 1096`;
-- `BUSINESS_RESULT PUBLISHED telegram_delivery_ok`;
-- `QUEUE_SCORE_AUDIT invariant_ok:true`;
-- no workflow timeout.
+1. Gemini — primary;
+2. Groq GPT-OSS 20B — fallback;
+3. OpenAI — fallback only when its key/quota is usable.
 
-## Provider architecture correction — 2026-09-10
+GitHub Models is not part of the fallback pool because GitHub retired the service on 2026-07-30.
 
-The former GitHub Models emergency fallback has been removed from production code. It is not a viable fallback because GitHub officially retired the GitHub Models inference service on July 30, 2026. This is a permanent service retirement, not a temporary outage.
+## Groq model research conclusions
 
-The production AI pool is now explicitly:
+The user's supplied list is substantially aligned with Groq's current catalog, but it mixes production models, production systems, preview models, and speech models. It should not be treated as a single interchangeable pool.
 
-1. Gemini — primary confirmed provider;
-2. Groq — fallback, with a client-side Cloudflare 1010 fix being deployed;
-3. OpenAI — fallback, key rotation supplied by Boss and awaiting next live production verification.
+- `openai/gpt-oss-20b` — production, current recommended fallback for retired Llama 3.1 8B; chosen for INTILY.
+- `openai/gpt-oss-120b` — production and stronger, but not necessary for the current free-only fallback role.
+- `openai/gpt-oss-safeguard-20b` — safety/moderation model; not a general editorial writer.
+- `qwen/qwen3.6-27b` — preview, multimodal/vision capable; not the default fallback because it is a preview model.
+- `qwen/qwen3.8-27b` — preview, multimodal/vision capable; not the default fallback for the same reason.
+- `groq/compound` / `groq/compound-mini` — production systems, not ordinary text models; they add built-in tools and are unnecessary for INTILY's current editorial call.
+- `meta-llama/llama-prompt-guard-2-22m` / `86m` — moderation/security models, not editorial generators.
+- `canopylabs/orpheus-*` — speech/TTS models, not editorial text generation.
+- `whisper-large-v3` — speech-to-text, not editorial text generation.
 
-### API-key rotation recovery
+Groq's current documentation also confirms JSON mode for GPT-OSS 20B and strict Structured Outputs support, which makes it suitable for the publisher's JSON editorial contract. We are not enabling a new structured-output request shape in this change; the first objective is to restore a valid free fallback without changing the editorial pipeline simultaneously.
 
-Production stores only a short SHA-256 fingerprint of each configured provider key in durable state. The secret itself is never persisted.
+## Photo/media status
 
-On first migration, if an existing circuit is present, the provider circuit is reopened once and its current key fingerprint is recorded. On subsequent secret rotation, a changed fingerprint automatically reopens that provider circuit.
+The last verified production run before the media hardening showed:
 
-This prevents a legitimate API-key replacement from remaining blocked behind a stale 6-hour/24-hour circuit.
+- image attempts: `1`;
+- image found: `0`;
+- image validated: `0`;
+- Telegram photo sent: `0`;
+- text fallback: `1`;
+- source image request failed with HTTP 403.
 
-## OpenAI status
+A browser-like third fetch attempt was committed in `52b25d92971329fabb78092e340b1fb83eda0745`:
 
-The workflow reads `secrets.OPENAI_API_KEY`. Secret values are intentionally not inspectable through the GitHub connector.
+- Chrome-like User-Agent;
+- Accept-Language;
+- Referer;
+- Sec-Fetch headers;
+- candidate-by-candidate retry;
+- Google-hosted image prohibition retained;
+- MIME/dimension checks retained;
+- Telegram 1 MB image cap retained.
 
-Boss has replaced the GitHub Actions secret. The next production cycle will detect the changed key fingerprint and clear the stale OpenAI circuit automatically. No API key should be sent through chat.
+This is an implementation fix, **not yet production proof**. The next authoritative verification is a real run with `photo_sent > 0` / `TELEGRAM_PHOTO_SENT`.
 
-## Gemini status
+If publisher pages still reject all candidates, the next planned improvement is first-class extraction of RSS/Atom media fields (`media:content`, `media:thumbnail`, `enclosure`) before publisher-page extraction. No random Google-image substitution is allowed.
 
-Gemini is the confirmed production AI provider. Run #900 produced several successful editorial evaluations and audience scores after the persisted circuit was cleared.
+## Production verification rule
 
-Current runtime keeps bounded timeout, request spacing and retry behavior. Google's current documentation confirms that Gemini limits are project/model/tier dependent and distinguishes transient rate limits from daily quota exhaustion.
+A green commit or green unit tests do not prove production readiness. For this project the acceptance sequence is:
 
-## Groq status — root cause identified
+**fact → root cause → implementation → tests → real production run → inspect telemetry → document result.**
 
-The HTTP 403 response contained Cloudflare error code **1010**. This is not evidence that the Groq API key is invalid. Current technical reports show Groq's Cloudflare edge can reject Python `urllib`'s default client signature/User-Agent with 403/1010, while a normal application User-Agent succeeds. Groq's own documentation separately defines ordinary 403s as permission restrictions.
+## Current GREEN / YELLOW / RED
 
-INTILY's generic `chat()` request uses `urllib.request`, so the production request path is susceptible to this exact edge behavior. The correct fix is to send an explicit application User-Agent on Groq requests rather than rotating the key blindly.
+### GREEN
 
-The configured model remains `llama-3.1-8b-instant`. After the HTTP-client fix, the next live cycle will be the authoritative Groq probe.
+- Cloudflare → GitHub Actions → Python → Telegram architecture;
+- Gemini production path;
+- Telegram delivery;
+- durable queue/state;
+- deduplication;
+- RSS/Google News discovery;
+- analytics and production monitoring;
+- Groq HTTP client User-Agent hardening;
+- Groq model selection has been corrected in runtime to a currently supported free-plan model.
 
-## Queue / publication integrity
+### YELLOW
 
-Run #900 confirmed:
+- Groq GPT-OSS 20B still needs a real production request proving the account accepts it;
+- image delivery still needs a real `TELEGRAM_PHOTO_SENT` proof;
+- direct RSS has intermittent publisher errors such as VentureBeat HTTP 429;
+- fresh-discovery/scoring supply remains under observation.
 
-- final-below-threshold: 0;
-- `QUEUE_SCORE_AUDIT.invariant_ok: true`;
-- real audience scores generated;
-- Telegram delivery confirmed;
-- durable queue preserved.
+### RED
 
-## Tests
-
-The normal CI suite includes provider recovery and API-key rotation regression coverage. The next normal workflow run must verify the updated production entrypoint and the Groq client path.
-
-## Next acceptance gate
-
-The next fresh-discovery cycle must demonstrate:
-
-1. current Google News/direct RSS discovery;
-2. canonical pre-AI gate 40;
-3. real Gemini and/or newly rotated OpenAI audience evaluation;
-4. Groq probe with explicit application User-Agent;
-5. `AI_EVALUATION_SUMMARY` with evaluation count ≤10;
-6. final-score queue ordering;
-7. highest qualifying finalized item published;
-8. `QUEUE_SCORE_AUDIT.invariant_ok:true`;
-9. no finalized queue item below 55;
-10. footer matches persisted score components;
-11. state and analytics persist.
-
-Only after this fresh-discovery cycle passes should the incident class return to GREEN.
-
-## Forward plan after GREEN
-
-1. bounded I/O concurrency for discovery while preserving query/source telemetry;
-2. deterministic upper-bound pruning before AI calls;
-3. two-stage AI editorial triage;
-4. retain at least two independently verified AI providers;
-5. keep credential-rotation recovery automatic.
+No known critical production blocker at the time of this update.
