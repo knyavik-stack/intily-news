@@ -18,7 +18,7 @@ Run #951 failed at the regression gate before publisher execution because the tw
 
 Fixed in `5415478c418263ab3e8233ff731584a90b5ee198`.
 
-A dedicated non-production `Intily Regression Gate` was added. Its run #2 completed successfully with **49 tests passed**.
+A dedicated non-production `Intily Regression Gate` was added. Its latest verified run #11 completed successfully.
 
 ## Latest production verification — run #953
 
@@ -37,6 +37,13 @@ The earlier run also logged `PUBLISH_INTERVAL_RUNTIME_OVERRIDE`, `JOKE_RATE_RUNT
 ## User editorial prompt — canonical rule
 
 The prompt beginning in `scripts/intily_ai_news.py` around line 1345 is the user's intentional editorial configuration, including its tone, profanity, humor target and approximately 700-character target. It remains unchanged.
+
+The file now has a user-controlled `style_prompt` switch near the publication settings:
+
+- `style_prompt = 1` — the user's original hard/maternal/sarcastic prompt;
+- `style_prompt = 2` — an additional clean/professional Russian prompt without profanity;
+- only the selected prompt is passed to the AI editor;
+- any other value fails explicitly instead of silently selecting a style.
 
 **Rule:** technical defects may be fixed autonomously, but user-authored editorial behavior must not be modified or runtime-overridden without explicit user approval.
 
@@ -81,8 +88,8 @@ The versioned Cloudflare worker uses `* * * * *` UTC with a 1/3 dispatch gate. T
 - Telegram text delivery;
 - durable state;
 - queue/dedup/final-score invariant;
-- 49-test regression gate;
-- user-authored editorial prompt remains canonical;
+- regression gate passes on the corrected publisher;
+- user-authored editorial prompt remains canonical and is selectable through `style_prompt`;
 - image retrieval/validation reached a real 41 KB image in #953.
 
 ### 🟡 YELLOW / OPEN
