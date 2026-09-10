@@ -2,7 +2,7 @@
 
 ## Canonical current status
 
-**🟡 PRODUCTION VERIFICATION MODE — provider incident resolved for Gemini; fresh-discovery acceptance remains the final gate to GREEN.**
+**🟡 PRODUCTION VERIFICATION MODE — Gemini is confirmed healthy and Telegram delivery works; OpenAI key rotation is now handled automatically; Groq 403/1010 is identified as a client-signature/Cloudflare edge issue and is being fixed in the HTTP client; fresh-discovery acceptance remains the final gate to GREEN.**
 
 This document supersedes the older 2026-09-09 status for the current operational state. Historical documents remain useful for incident context.
 
@@ -27,47 +27,54 @@ Runs #895/#899 did not fail because news discovery or Telegram was broken. Persi
 Run #900 used the one-shot recovery utility and proved the real external state:
 
 - **Gemini: GREEN** — multiple real `AI_PROVIDER_OK GEMINI` responses;
-- **Groq: RED** — HTTP 403 / code 1010;
-- **OpenAI: RED** — HTTP 429, `You have no credits remaining`;
-- **GitHub Models: RED** — HTTP 410 retirement brownout.
+- **Groq: RED at that time** — HTTP 403 / Cloudflare code 1010;
+- **OpenAI: RED at that time** — HTTP 429, `You have no credits remaining`;
+- **GitHub Models: permanently unavailable** — GitHub retired GitHub Models on July 30, 2026.
 
 The recovery cycle then completed end-to-end Telegram publication:
 
 - `TELEGRAM_SENT 1096`;
-- `PUBLISHED Anthropic Discloses Four Incidents of Claude Models Accessing Real Systems - Hokanews importance 71.0`;
 - `BUSINESS_RESULT PUBLISHED telegram_delivery_ok`;
 - `QUEUE_SCORE_AUDIT invariant_ok:true`;
 - no workflow timeout.
 
-A single Gemini request timed out during the cycle; the following Gemini request succeeded. This is treated as transient provider behavior, not a persistent API block.
+## Provider architecture correction — 2026-09-10
 
-## Recovery implementation
+The former GitHub Models emergency fallback has been removed from production code. It is not a viable fallback because GitHub officially retired the GitHub Models inference service on July 30, 2026. This is a permanent service retirement, not a temporary outage.
 
-Added:
+The production AI pool is now explicitly:
 
-- `scripts/intily_provider_recovery.py` — one-shot operator recovery of persisted provider circuits;
-- `scripts/test_intily_provider_recovery.py` — regression coverage;
-- `docs/PRODUCTION_INCIDENT_2026-09-10_PROVIDER_ROOT_CAUSE.md` — incident evidence and remediation.
+1. Gemini — primary confirmed provider;
+2. Groq — fallback, with a client-side Cloudflare 1010 fix being deployed;
+3. OpenAI — fallback, key rotation supplied by Boss and awaiting next live production verification.
 
-The temporary recovery mode and temporary push trigger were removed immediately after run #900. The normal workflow is again `workflow_dispatch` only.
+### API-key rotation recovery
 
-The recovery utility remains available but is not invoked during normal production cycles.
+Production stores only a short SHA-256 fingerprint of each configured provider key in durable state. The secret itself is never persisted.
+
+On first migration, if an existing circuit is present, the provider circuit is reopened once and its current key fingerprint is recorded. On subsequent secret rotation, a changed fingerprint automatically reopens that provider circuit.
+
+This prevents a legitimate API-key replacement from remaining blocked behind a stale 6-hour/24-hour circuit.
 
 ## OpenAI status
 
-The production workflow reads `secrets.OPENAI_API_KEY`. GitHub secret values are intentionally not inspectable through the connector.
+The workflow reads `secrets.OPENAI_API_KEY`. Secret values are intentionally not inspectable through the GitHub connector.
 
-The current secret was actually tested in run #900 and OpenAI returned HTTP 429 with `You have no credits remaining`.
-
-If Boss created a new OpenAI API key, it must be installed as the repository Actions secret `OPENAI_API_KEY`. If that key belongs to an organization/project without available API credits, key rotation alone will not solve the 429.
-
-Do not send API keys through chat.
+Boss has replaced the GitHub Actions secret. The next production cycle will detect the changed key fingerprint and clear the stale OpenAI circuit automatically. No API key should be sent through chat.
 
 ## Gemini status
 
-Gemini is currently the confirmed production AI provider. Run #900 produced several successful editorial evaluations and audience scores after the persisted circuit was cleared.
+Gemini is the confirmed production AI provider. Run #900 produced several successful editorial evaluations and audience scores after the persisted circuit was cleared.
 
 Current runtime keeps bounded timeout, request spacing and retry behavior. Google's current documentation confirms that Gemini limits are project/model/tier dependent and distinguishes transient rate limits from daily quota exhaustion.
+
+## Groq status — root cause identified
+
+The HTTP 403 response contained Cloudflare error code **1010**. This is not evidence that the Groq API key is invalid. Current technical reports show Groq's Cloudflare edge can reject Python `urllib`'s default client signature/User-Agent with 403/1010, while a normal application User-Agent succeeds. Groq's own documentation separately defines ordinary 403s as permission restrictions.
+
+INTILY's generic `chat()` request uses `urllib.request`, so the production request path is susceptible to this exact edge behavior. The correct fix is to send an explicit application User-Agent on Groq requests rather than rotating the key blindly.
+
+The configured model remains `llama-3.1-8b-instant`. After the HTTP-client fix, the next live cycle will be the authoritative Groq probe.
 
 ## Queue / publication integrity
 
@@ -81,7 +88,7 @@ Run #900 confirmed:
 
 ## Tests
 
-The normal CI suite now includes the provider recovery utility regression test. The live recovery run executed the pre-existing 43-test suite successfully; the new utility test is included in the next normal workflow run.
+The normal CI suite includes provider recovery and API-key rotation regression coverage. The next normal workflow run must verify the updated production entrypoint and the Groq client path.
 
 ## Next acceptance gate
 
@@ -89,14 +96,15 @@ The next fresh-discovery cycle must demonstrate:
 
 1. current Google News/direct RSS discovery;
 2. canonical pre-AI gate 40;
-3. real Gemini audience evaluation;
-4. `AI_EVALUATION_SUMMARY` with evaluation count ≤10;
-5. final-score queue ordering;
-6. highest qualifying finalized item published;
-7. `QUEUE_SCORE_AUDIT.invariant_ok:true`;
-8. no finalized queue item below 55;
-9. footer matches persisted score components;
-10. state and analytics persist.
+3. real Gemini and/or newly rotated OpenAI audience evaluation;
+4. Groq probe with explicit application User-Agent;
+5. `AI_EVALUATION_SUMMARY` with evaluation count ≤10;
+6. final-score queue ordering;
+7. highest qualifying finalized item published;
+8. `QUEUE_SCORE_AUDIT.invariant_ok:true`;
+9. no finalized queue item below 55;
+10. footer matches persisted score components;
+11. state and analytics persist.
 
 Only after this fresh-discovery cycle passes should the incident class return to GREEN.
 
@@ -105,4 +113,5 @@ Only after this fresh-discovery cycle passes should the incident class return to
 1. bounded I/O concurrency for discovery while preserving query/source telemetry;
 2. deterministic upper-bound pruning before AI calls;
 3. two-stage AI editorial triage;
-4. stronger provider redundancy and credential-rotation recovery semantics.
+4. retain at least two independently verified AI providers;
+5. keep credential-rotation recovery automatic.
