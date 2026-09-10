@@ -164,7 +164,9 @@
     "b857a7f8254f0614c89e619dd0a879ce00bd9ecec69fe7c96af7383100fed817": 1789031550.2575133,
     "696bac0adbac5bf31a4aebf1a6280e4f5f0032487308ef81cc53b8a481fb7a3e": 1789031550.2575133,
     "56456a6af04ea7021674694464ac63b02487254ba64b9acce874418ddd4a7313": 1789031550.2575133,
-    "8b770887c6af2af126371073dcc827d0448f3008d9c71b3468a35ef850933db1": 1789031550.2575133
+    "8b770887c6af2af126371073dcc827d0448f3008d9c71b3468a35ef850933db1": 1789031550.2575133,
+    "66da13a271e57e5507e8f8ee7193cf522b027f9a6a4febae841e0895531ce5c3": 1789035328.2896736,
+    "c0e7a836c576f582757cf20001f8ca29ccb57f54cee766905b83455e4dbbb3d6": 1789035328.2896736
   },
   "queue": [
     {
@@ -329,28 +331,102 @@
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_HTTP_429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m1e9qqc7eeva92csec7za87f` service tier `on_demand` on tokens per minute | OPENAI: OPENAI_CIRCUIT_OPEN",
       "failure_count": 2,
       "next_retry_at": 1789034669
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Gmonit представила новую функцию доступа ИИ-агентов к данным мониторинга через MCP",
+      "link": "https://www.cnews.ru/news/line/2026-09-10_gmonit_predstavila_novuyu_funktsiyu",
+      "desc": "Компания Gmonit, разработчик observability-платформы, сообщила о расширении возможностей своего продукта: в нем реализована...",
+      "source": "CNews",
+      "time": 1789035000.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 7.0,
+        "event_concreteness": 10.0,
+        "practical_value": 5.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 2.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 49.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 49.0
+      },
+      "base_score": 49.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 49.0,
+      "key": "66da13a271e57e5507e8f8ee7193cf522b027f9a6a4febae841e0895531ce5c3",
+      "importance": 49.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "OpenAI and Anthropic incidents fuel pressure for AI regulation - Helsinki Times",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQaEF1djNRZzJXY1hKdmpRbTN1azFyMF9MUXFweFdwN2ZPNkctTXJsTno4dnlGZ1ZYVXZVakl6V1Nob3gyS0JDVTQyME9BcjhRRVpwLWdnTEYwdlJSdU1oUERseFVsX19jWXBqSldqTno2ME5XczRlc0M1RVA1dmc0bVBudkwzemdiSVBUWVBIcXZUWE81b2ZjTGRUZmNJdTNKaEdRMVlVMjl1QW9qa3JJTTVPZWVWeVNReDlsX1ljYlVxb2x5NnBBOHJKbHh3bG8wTVRWZjRR?oc=5",
+      "desc": "OpenAI and Anthropic incidents fuel pressure for AI regulation Helsinki Times",
+      "source": "Helsinki Times",
+      "time": 1789033471.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 8.0,
+        "event_concreteness": 16.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 45.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 45.5
+      },
+      "base_score": 45.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 45.5,
+      "key": "c0e7a836c576f582757cf20001f8ca29ccb57f54cee766905b83455e4dbbb3d6",
+      "importance": 45.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "security_regulation"
+      ],
+      "audience_score": null,
+      "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1789035147.6136007,
+    "last_start_ts": 1789035328.2896736,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789035147.6136007,
-    "last_success_ts": 1789035147.6136007,
-    "last_candidates": 0,
-    "last_published": 1,
-    "queue_size": 4
+    "last_run_ts": 1789035328.2896736,
+    "last_success_ts": 1789035328.2896736,
+    "last_candidates": 36,
+    "last_published": 0,
+    "queue_size": 6
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789035155.3078332
+      "disabled_until": 1789035480.8720214,
+      "reason": "TEMPORARY_SERVICE_ERROR_OR_429",
+      "updated_at": 1789035360.8720236
     },
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789034792.902158
+      "updated_at": 1789035362.2569144
     },
     "OPENAI": {
       "disabled_until": 1789114033.480713,
@@ -21960,10 +22036,137 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789035328,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 35.88,
+      "candidates": 36,
+      "queue_before": 4,
+      "queue_after": 6,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 24,
+        "known_recent": 0,
+        "already_queued": 2,
+        "story_queue": 0,
+        "story_history": 8,
+        "added": 2,
+        "candidate_count": 36,
+        "admission_rate": 5.56,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 108,
+        "raw_items": 692,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 26,
+          "CNews": 30,
+          "Euronews": 50
+        },
+        "score_filtered": 610,
+        "quality_filtered": 31,
+        "story_dedup": 15,
+        "candidates": 36,
+        "candidate_rate": 0.0616,
+        "score_buckets": {
+          "0–39": 570,
+          "40–49": 70,
+          "50–59": 45,
+          "60–69": 7,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 2,
+          "7": 0,
+          "8": 1,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI"
+        ],
+        "used": "GROQ",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789033382.9551063,
+  "last_search_ts": 1789035328.2896736,
   "last_publish_ts": 1789035147.6136007,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
