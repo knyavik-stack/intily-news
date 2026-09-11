@@ -230,17 +230,16 @@
     "841f3f290d6c693fd0eb8f10045312014e7c0b861333ef4fa13c9600ebb152b6": 1789113646,
     "07766c7671058ae0ed482c4f5233528c9fc2312e3bfdcc3404f81e368ab24c92": 1789114133,
     "6a81ac7fd037490477a10c6d9089cd3112102145b64574aa408d48252011a2bd": 1789115077,
-    "de6d0d8d2aca11bb99c3568d783fe656e7a0fd625b4da660fa99925ff905a215": 1789115317
+    "de6d0d8d2aca11bb99c3568d783fe656e7a0fd625b4da660fa99925ff905a215": 1789115317,
+    "f1e9d3a22f1d34c9bc8c37e51c292f6f7647e9233162eb41e175514a060c9823": 1789116277
   },
   "known": {
-    "7c3f326d983053f073a081bb194b50c63998a7d1bbef5341d704883cc9a94a9f": 1789110761.734928,
-    "6ee71fa8f2eb3d75e80b6fd08a0b7e87bb5534a70a86dcbc020626011c54b1bf": 1789110761.734928,
-    "016f22f52eebcdad7a7e9ede1cc06e6cefa9a5e5145c23a4650fa2aed16d5050": 1789110761.734928,
     "841f3f290d6c693fd0eb8f10045312014e7c0b861333ef4fa13c9600ebb152b6": 1789113646.2573557,
     "f4a1bf6c2991c9936a8a539628eeeb8dddc2c26177554dd3f3301174352a34d1": 1789113646.2573557,
     "9eca0ddf83bd63fd7ace60a0bc3ea0cf90138e83ebcac780396121efbff488aa": 1789113646.2573557,
     "07766c7671058ae0ed482c4f5233528c9fc2312e3bfdcc3404f81e368ab24c92": 1789113646.2573557,
-    "170e2ae3b549602c0e40900fbff8fabf4954db6d717e84d517fa4c9b543f79d8": 1789113646.2573557
+    "170e2ae3b549602c0e40900fbff8fabf4954db6d717e84d517fa4c9b543f79d8": 1789113646.2573557,
+    "f1e9d3a22f1d34c9bc8c37e51c292f6f7647e9233162eb41e175514a060c9823": 1789116277.8363807
   },
   "queue": [
     {
@@ -403,19 +402,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 43.0,
+        "base_score": 42.5,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 61.0
+        "final_score": 60.5
       },
-      "base_score": 43.0,
+      "base_score": 42.5,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 61.0,
+      "score": 60.5,
       "key": "9eca0ddf83bd63fd7ace60a0bc3ea0cf90138e83ebcac780396121efbff488aa",
-      "importance": 61.0,
+      "importance": 60.5,
       "editorial_value": 50.0,
       "topics": [],
       "audience_score": 6.0,
@@ -460,12 +459,12 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789115317.5872192,
+    "last_start_ts": 1789116277.8363807,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789115317.5872192,
-    "last_success_ts": 1789115317.5872192,
-    "last_candidates": 0,
+    "last_run_ts": 1789116277.8363807,
+    "last_success_ts": 1789116277.8363807,
+    "last_candidates": 23,
     "last_published": 1,
     "queue_size": 6
   },
@@ -473,7 +472,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789115319.8326108
+      "updated_at": 1789116365.3218768
     },
     "GROQ": {
       "disabled_until": 0,
@@ -492,27 +491,6 @@
     }
   },
   "stories": {
-    "297ee652b82f9b2d6c6960ce4284b3f1d67e9d80159cfabcdca57d3885f0be77": {
-      "time": 1789029030,
-      "title": "Anthropic releases Claude Fable 5.1 with reduced safeguard interruptions and enterprise data‑retention options - Digital Watch Observatory",
-      "desc": "Anthropic releases Claude Fable 5.1 with reduced safeguard interruptions and enterprise data‑retention options Digital Watch Observatory",
-      "source": "Digital Watch Observatory",
-      "region": "WORLD"
-    },
-    "2688ac3fd82b5e336b95c4aeaaedee2e32d4136b6e3305aad2986a0c10f42c69": {
-      "time": 1789029389,
-      "title": "Anthropic's Claude Opus 4.6 Model Faces Security Breach Concerns - GuruFocus",
-      "desc": "Anthropic's Claude Opus 4.6 Model Faces Security Breach Concerns GuruFocus",
-      "source": "GuruFocus",
-      "region": "WORLD"
-    },
-    "8cbf086c7366db7a26d7c32d9ac5abd8e2cebde71d945c8f62f83f8a1d7b7297": {
-      "time": 1789029767,
-      "title": "Оно снова в npm: вредонос Shai-Hulud вернулся спустя 111 дней",
-      "desc": "7 сентября специалисты Aikido нашли в npm четыре новых пакета с полезной нагрузкой Shai-Hulud: feishu-docx-mcp@0.3.2, bmc-i18n-extract-cli@1.1.1, blueai-cli@0.7.0 и bmc-translate-utils@1.1.1. Все версии опубликовала одна учетная запись в течение часа. Самое интересное, что вредоносный файл даже не пытались замаскировать заново: его SHA-256 полностью совпал с образцом из майской атаки на пакеты @AntV. По истории обнаружений Aikido этот файл встречался в 319 версиях пакетов 19 мая, а затем исчез на 111 дней. Новая четверка стала первым повторным появлением того же хэша. Это не новая техника и даже не слегка измененный вариант червя, а уже известный образец, по которому достаточно обычного сопоставления контрольной суммы. В корне пакетов находился index.js, который запускался установочным скриптом preinstall через команду bun run index.js. Полезная нагрузка искала доступные секреты и токены npm, внедрялась в другие пакеты, повышала их версии и публиковала зараженные архивы. Среди признаков закрепления Aikido также называет файлы .vscode/tasks.json и .claude/settings.json, способные запускать команды при дальнейшей работе с проектом. Этот эпизод особенно неприятен из-за времени публикации. 28 июля npm включил автоматическое сканирование новых пакетов до того, как они становятся доступны для установки. Обычно проверка задерживает публикацию примерно на пять минут, а подозрительный пакет может отправить на ручной разбор или заблокировать. Тем не менее четыре версии с известным вредоносным хэшем появились в реестре. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "0ec94d3b869cb6fe922135c86080c8fa8f41fec4b1cc8ed60cda0f981a75f9eb": {
       "time": 1789029928,
       "title": "Дайджест ИИ: Агенты Databricks догнали Claude и GPT-5.6 вдвое быстрее, платформа GRID от General Robotics, взрыв данных в отчете IDC и агенты в стройке - VC.ru",
@@ -1114,11 +1092,17 @@
       "desc": "Hugging Face добавила в HuggingChat AI‑агента ML Intern для задач, связанных с машинным обучением. В компании его описывают как автономного ML‑инженера: пользователь формулирует задачу на естественном языке, а агент изучает документацию, подбирает данные и модели, генерирует код, запускает вычисления и сохраняет полученные артефакты. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "f1e9d3a22f1d34c9bc8c37e51c292f6f7647e9233162eb41e175514a060c9823": {
+      "time": 1789116277,
+      "title": "Создатели Claude: Из-за внедрения ИИ экономика вырастет, но зарплаты упадут. Дополнительный доход достанется хозяевам бизнеса",
+      "desc": "Айтишникам, возможно, придется переквалифицироваться в электриков, такой сценарий будущего рынка труда описывают аналитики Anthropic, разработчик Claude. Уже к 2030 г. искусственный интеллект возьмет на себя значительную часть интеллектуальной работы, из-за чего спрос на ИТ-разработчиков, аналитиков и операторов рухнет. Доходы работников почти перестанут расти или даже упадут более чем на 10%. При этом сама экономика станет богаче, однако все большая доля национального дохода будет доставаться владельцам капитала - владельцам технологий, инфраструктуры и активов, а не наемным сотрудникам.",
+      "source": "CNews",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1136,99 +1120,10 @@
     "WORLD",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1788944117,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 14.38,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 5.5,
-          "bonus_total": 33.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость пересмотра рисков безопасности при интеграции сторонних ИИ-агентов в корпоративные системы.",
-            "title": "Meta's Muse AI Agent Promises to Handle Your Digital Life — but Internal Tests Reportedly Revealed Privacy Risks, Security Flaws and 'Failure Modes That Made It Unreliable' - TradingView",
-            "final_score": 71.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788944479,
       "status": "OK",
@@ -23306,11 +23201,159 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789116277,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 91.4,
+      "candidates": 23,
+      "queue_before": 6,
+      "queue_after": 6,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 14,
+        "known_recent": 0,
+        "already_queued": 2,
+        "story_queue": 2,
+        "story_history": 4,
+        "added": 1,
+        "candidate_count": 23,
+        "admission_rate": 4.35,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 400: Bad Request": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 400: Bad Request"
+          }
+        },
+        "audience": {
+          "evaluated": 10,
+          "average_score": 7.8,
+          "bonus_total": 234.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 7,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра протоколов кибербезопасности при интеграции LLM в бизнес-процессы.",
+            "title": "From OpenAI to Anthropic: How fake personas, hacked servers and 13-hour outages exposed AI risks - economictimes.indiatimes.com",
+            "final_score": 70.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 69,
+        "raw_items": 575,
+        "source_counts": {
+          "TechCrunch AI": 4,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 21,
+          "CNews": 10,
+          "Euronews": 31
+        },
+        "score_filtered": 523,
+        "quality_filtered": 24,
+        "story_dedup": 5,
+        "candidates": 23,
+        "candidate_rate": 0.0455,
+        "score_buckets": {
+          "0–39": 490,
+          "40–49": 54,
+          "50–59": 27,
+          "60–69": 4,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 3,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 9,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789113646.2573557,
-  "last_publish_ts": 1789115317.5872192,
+  "last_search_ts": 1789116277.8363807,
+  "last_publish_ts": 1789116277.8363807,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
