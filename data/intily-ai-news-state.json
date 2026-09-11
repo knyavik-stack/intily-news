@@ -224,7 +224,8 @@
     "c834c0411c82cdb3d811c37fe0b35df4bc191668d4e03b8a25de9e2a379fedf1": 1789107890,
     "2116eb56157cb159a5c73ca1f72b6efb8d32ad869a08ade91a68fc015e95df47": 1789109365,
     "7c3f326d983053f073a081bb194b50c63998a7d1bbef5341d704883cc9a94a9f": 1789110761,
-    "6ee71fa8f2eb3d75e80b6fd08a0b7e87bb5534a70a86dcbc020626011c54b1bf": 1789111478
+    "6ee71fa8f2eb3d75e80b6fd08a0b7e87bb5534a70a86dcbc020626011c54b1bf": 1789111478,
+    "bc7764aec76c99cf7d3d4a3e0c21af806ad77b9fc80eafe9149c5efb75e377cb": 1789111957
   },
   "known": {
     "c834c0411c82cdb3d811c37fe0b35df4bc191668d4e03b8a25de9e2a379fedf1": 1789107890.6184406,
@@ -233,43 +234,6 @@
     "016f22f52eebcdad7a7e9ede1cc06e6cefa9a5e5145c23a4650fa2aed16d5050": 1789110761.734928
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "OpenAI запустила в США Agents API: один вызов для агентов Codex - Techora.ru",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBuSFhSNktnSHVJcW55YkhVeHZiM2JUUll2a1lmeHh5Uk9JRWtnaTBCZ2s4Vm1rNTR2WVFwb3o4QnRsc19TQ2dmUjltb3RjYl9fRWRtUTEtNnZHTElmbmxOWlEzVFRWU1NoMTUwbHVCcFREUFpER3VPTw?oc=5",
-      "desc": "OpenAI запустила в США Agents API: один вызов для агентов Codex Techora.ru",
-      "source": "Techora.ru",
-      "time": 1789076397.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 10.0,
-        "event_concreteness": 13.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 44.0,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 68.0
-      },
-      "base_score": 44.0,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 68.0,
-      "key": "bc7764aec76c99cf7d3d4a3e0c21af806ad77b9fc80eafe9149c5efb75e377cb",
-      "importance": 68.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "WORLD",
       "title": "Congratulations on Your Flawless AI Agent. Too Bad the Business Runs on Slack. - HackerNoon",
@@ -490,20 +454,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789111478.767606,
+    "last_start_ts": 1789111957.247706,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789111478.767606,
-    "last_success_ts": 1789111478.767606,
+    "last_run_ts": 1789111957.247706,
+    "last_success_ts": 1789111957.247706,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 7
+    "queue_size": 6
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789111483.5188062
+      "updated_at": 1789111960.1309116
     },
     "GROQ": {
       "disabled_until": 0,
@@ -522,13 +486,6 @@
     }
   },
   "stories": {
-    "4ce63407498285065a3928d8301b0262c6164908165ce4c64f563a1713156ea5": {
-      "time": 1789025429,
-      "title": "Исследование: ИИ‑агенты ChatGPT могли извлекать данные из одной учётной записи и передавать их в другую",
-      "desc": "Компания Check Point Research обнаружила скрытый канал, позволяющий сеансу ChatGPT под одной учётной записью отправлять задачи в совершенно отдельный сеанс другого аккаунта. При этом в беседе обоих пользователей не наблюдалось ничего необычного. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "f932cd058bcd9e59255cfc253f30bc3eeb642b11e10cdc03e3d9a118104a1818": {
       "time": 1789025793,
       "title": "Claude models trigger cybersecurity incident analysis - blockchain.news",
@@ -1144,6 +1101,13 @@
       "desc": "Anthropic опубликовала новый Threat Intelligence Report об использовании Claude в кибератаках, шпионаже, мошенничестве и дистилляции ИИ-моделей. Интересного много, искренне советую почитать самим, здесь остановимся на истории с китайскими ИИ-компаниями. По данным Anthropic, DeepSeek и Moonshot (Kimi) не только собирали ответы Claude для обучения собственных моделей, но и в отдельных случаях отправляли через него реальные запросы своих пользователей. Затем полученные ответы возвращались пользователям как результаты собственных моделей. Claude в этой схеме становился скрытым backend для конкурирующего сервиса. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "bc7764aec76c99cf7d3d4a3e0c21af806ad77b9fc80eafe9149c5efb75e377cb": {
+      "time": 1789111957,
+      "title": "OpenAI запустила в США Agents API: один вызов для агентов Codex - Techora.ru",
+      "desc": "OpenAI запустила в США Agents API: один вызов для агентов Codex Techora.ru",
+      "source": "Techora.ru",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
@@ -1154,7 +1118,6 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1164,83 +1127,12 @@
     "WORLD",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1788942493,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 0.89,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 10,
-      "item_failures": 10,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 17,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 60,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788942672,
       "status": "OK",
@@ -23261,11 +23153,101 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789111957,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 4.62,
+      "candidates": 0,
+      "queue_before": 7,
+      "queue_after": 6,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "IMAGE_NOT_FOUND": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "IMAGE_NOT_FOUND"
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 24.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Снижение сложности интеграции агентов ускоряет внедрение автоматизации в бизнес-процессы.",
+            "title": "OpenAI запустила в США Agents API: один вызов для агентов Codex - Techora.ru",
+            "final_score": 68.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1789110761.734928,
-  "last_publish_ts": 1789111478.767606,
+  "last_publish_ts": 1789111957.247706,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
