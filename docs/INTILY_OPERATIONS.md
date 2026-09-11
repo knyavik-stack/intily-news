@@ -81,7 +81,7 @@ Runtime override в `scripts/sitecustomize.py` ограничен техниче
 
 Publisher-first media extraction:
 
-`article URL → metadata/JSON-LD/HTML candidates → validation → Telegram sendPhoto → text fallback`
+`article URL → metadata/JSON-LD/HTML candidates → validation → Telegram sendPhoto → full editorial text`
 
 Hardening:
 
@@ -94,11 +94,21 @@ Hardening:
 - minimum dimensions;
 - Telegram payload cap ≤1 MB.
 
+Caption handling is explicitly **no-truncation**:
+
+- complete sanitized text ≤1024 bytes → `sendPhoto(caption=full_text)`;
+- complete sanitized text >1024 bytes → validated `sendPhoto(caption='')`, immediately followed by the **complete unchanged editorial text** via the existing Telegram text sender;
+- image failure → complete text fallback as before.
+
+This preserves the user's editorial text and still delivers the validated image. No editorial text is truncated merely to satisfy Telegram's photo-caption limit.
+
 Production acceptance requires telemetry:
 
 `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`
 
-If the complete editorial post exceeds Telegram's 1024-byte photo-caption limit, the production guard rejects the photo caption rather than truncating or rewriting editorial content. The current open gate is a real successful photo-send path.
+For split delivery the expected additional telemetry is:
+
+`TELEGRAM_FULL_TEXT_SENT_AFTER_PHOTO`
 
 ## 8. Regression Gate reliability
 
@@ -112,15 +122,20 @@ Current policy:
 - image fixtures are generated with Python stdlib only;
 - concurrency cancellation is limited to superseded regression changes.
 
-This removes the previous CI dependency on a mutable Pillow version for test-fixture generation and reduces workflow churn caused by production analytics commits.
+Verified green baseline:
 
-Fresh green verification after commit `8c8b52d18705b1085a08b1d3a0fe5559844bfeb5` is required before this gate is considered closed.
+- commit `8c8b52d18705b1085a08b1d3a0fe5559844bfeb5`;
+- workflow run `34566421454`;
+- check run `103159366568`;
+- **50/50 tests passed**.
 
 ## 9. Production evidence
 
 Run #1018 completed successfully.
 
 Historical run #1002 exposed the provider retry-budget defect; it was fixed in `75cdc250cf3e03546aa4583c74d047a61dfd1a3c` with regression coverage in `ae3d283e030f0d27324ec88f1157664608aa5853`.
+
+The current media split-delivery change requires a fresh Regression Gate and a real production cycle before it is marked GREEN.
 
 ## 10. Monitoring
 
