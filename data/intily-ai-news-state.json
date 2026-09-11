@@ -316,22 +316,22 @@
         "freshness": 2.0,
         "low_signal_penalty": 0.0,
         "base_score": 41.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 41.5
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 62.5
       },
       "base_score": 41.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 41.5,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 62.5,
       "key": "70a5c269877fd1f5d546f5be0165b4f12cabe5fa2fa32b07dfa9f98964717b30",
-      "importance": 41.5,
+      "importance": 62.5,
       "editorial_value": 50.0,
       "topics": [
         "agents",
         "applications"
       ],
-      "audience_score": null,
+      "audience_score": 7.0,
       "tier": "A",
       "last_failed_at": 1789154418,
       "last_failure": "Unterminated string starting at: line 1 column 115 (char 114)",
@@ -340,25 +340,25 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789154418.1587403,
+    "last_start_ts": 1789154657.761174,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789154418.1587403,
-    "last_success_ts": 1789154418.1587403,
+    "last_run_ts": 1789154657.761174,
+    "last_success_ts": 1789154657.761174,
     "last_candidates": 38,
     "last_published": 0,
     "queue_size": 1
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1789154638.622982,
+      "disabled_until": 1789154826.5350606,
       "reason": "TEMPORARY_SERVICE_ERROR_OR_429",
-      "updated_at": 1789154518.6229844
+      "updated_at": 1789154706.5350623
     },
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789154523.42512
+      "updated_at": 1789154710.521648
     },
     "OPENAI": {
       "disabled_until": 1789207540.9698231,
@@ -921,150 +921,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789015767,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 76.08,
-      "candidates": 27,
-      "queue_before": 17,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 2,
-      "item_failures": 1,
-      "admission": {
-        "published_key": 4,
-        "known_recent": 0,
-        "already_queued": 17,
-        "story_queue": 0,
-        "story_history": 3,
-        "added": 3,
-        "candidate_count": 27,
-        "admission_rate": 11.11,
-        "dominant_block": "already_queued",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "IMAGE_NOT_FOUND": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "IMAGE_NOT_FOUND"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Снижение зависимости от Nvidia и потенциальное изменение цен на облачную инфраструктуру напрямую влияют на операционные расходы бизнеса.",
-            "title": "Qualcomm strikes AI chip deal with Amazon worth up to $60 billion - Big News Network.com",
-            "final_score": 70.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 12,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 48,
-        "raw_items": 572,
-        "source_counts": {
-          "TechCrunch AI": 9,
-          "VentureBeat AI": -1,
-          "The Verge AI": 5,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 12,
-          "Habr AI/News": 5,
-          "CNews": 3,
-          "Euronews": 13
-        },
-        "score_filtered": 519,
-        "quality_filtered": 21,
-        "story_dedup": 5,
-        "candidates": 27,
-        "candidate_rate": 0.0515,
-        "score_buckets": {
-          "0–39": 480,
-          "40–49": 60,
-          "50–59": 28,
-          "60–69": 4,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 1,
-          "3": 0,
-          "4": 0,
-          "5": 1,
-          "6": 1,
-          "7": 3,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789016480,
       "status": "OK",
@@ -22443,10 +22299,157 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789154657,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 55.89,
+      "candidates": 38,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 30,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 7,
+        "added": 0,
+        "candidate_count": 38,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 5,
+          "average_score": 7.4,
+          "bonus_total": 111.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра политик безопасности и изоляции при интеграции LLM-агентов в рабочие процессы.",
+            "title": "Anthropic Finds Fourth Claude Cyber Incident After Model Accessed Third-Party Computer - Security Boulevard",
+            "final_score": 72.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 152,
+        "raw_items": 1396,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 6,
+          "Habr AI/News": 35,
+          "CNews": 56,
+          "Euronews": 50
+        },
+        "score_filtered": 1303,
+        "quality_filtered": 43,
+        "story_dedup": 12,
+        "candidates": 38,
+        "candidate_rate": 0.0305,
+        "score_buckets": {
+          "0–39": 1224,
+          "40–49": 120,
+          "50–59": 49,
+          "60–69": 3,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI"
+        ],
+        "used": "GROQ",
+        "failovers": 15,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789154418.1587403,
+  "last_search_ts": 1789154657.761174,
   "last_publish_ts": 1789153699.3622231,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
