@@ -1,3 +1,4 @@
+import hashlib
 import struct
 import unittest
 import zlib
@@ -33,9 +34,13 @@ class ImageRuntimeTests(unittest.TestCase):
     def _large_png(self):
         # Deterministic high-entropy RGB rows keep the fixture above 1 MB.
         rows = []
-        for y in range(1200):
-            row = bytes(((x * 17 + y * 31 + (x >> 3)) & 0xFF) for x in range(1800 * 3))
-            rows.append(b'\x00' + row)
+        state = b'intily-media-fixture'
+        for _y in range(1200):
+            row = bytearray()
+            while len(row) < 1800 * 3:
+                state = hashlib.sha256(state).digest()
+                row.extend(state)
+            rows.append(b'\x00' + bytes(row[:1800 * 3]))
         raw = b''.join(rows)
         compressed = zlib.compress(raw, 9)
 
