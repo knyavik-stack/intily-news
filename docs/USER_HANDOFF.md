@@ -1,6 +1,6 @@
 # INTILY — User Handoff
 
-**Актуализация: 2026-09-10**
+**Актуализация: 2026-09-11**
 
 ## Где смотреть реальное состояние
 
@@ -25,13 +25,18 @@ GitHub workflow не имеет собственного cron. Cloudflare — pr
 
 ## Текущее состояние
 
-Core pipeline доказан end-to-end. Последний успешный publisher run #949 отправил Telegram message `1134` и сохранил state/analytics.
+Production run #1018 завершился успешно.
 
-Последующий run #951 остановился на regression gate до запуска publisher. Причина — ошибка mock-контракта в двух новых image-hardening tests. Исправление закоммичено в `5415478c418263ab3e8233ff731584a90b5ee198`.
+Последний CI-инцидент касался не production publisher, а Regression Gate: предыдущая конфигурация устанавливала Pillow только ради генерации тестовых изображений и запускалась на каждом push в `main`, включая production state/analytics commits. Сейчас regression fixtures полностью stdlib-only, Pillow из Regression Gate удалён, а workflow запускается только при изменениях `scripts/**` или самого gate workflow.
+
+Commits:
+
+- `58ae14dc266fd9d0449ee72dee1005d8aaccfc24` — изоляция Regression Gate;
+- `8c8b52d18705b1085a08b1d3a0fe5559844bfeb5` — финальная deterministic fixture.
 
 ## Открытые production gates
 
-1. свежий workflow run после `5415478...` с полным зелёным regression gate;
+1. свежий зелёный Regression Gate после CI hardening;
 2. реальный Groq fallback на `openai/gpt-oss-20b`;
 3. реальная photo delivery telemetry `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`;
 4. несколько последовательных Cloudflare-dispatched cycles для подтверждения cadence.
@@ -46,7 +51,11 @@ Retired `llama-3.1-8b-instant` не возвращать.
 
 Publisher-first images only. Browser-like retries, one-level HTML indirection, bounded fetch budget and strict validation are enabled. Google-hosted image substitution запрещена.
 
-Если текущая hardening-цепочка не даст реальную photo delivery, следующий шаг — first-class RSS/Atom media hints (`media:content`, `media:thumbnail`, `enclosure`).
+Если caption превышает Telegram limit, editorial text не режется и не переписывается. Текущий production path использует полный text-only fallback; photo-send remains an explicit verification gate.
+
+## CI policy
+
+Regression Gate — non-production. Production state commits under `data/**` не должны запускать regression suite. Тесты не должны зависеть от случайной версии Pillow или другого внешнего fixture-generation runtime.
 
 ## Когда нужен пользователь
 
