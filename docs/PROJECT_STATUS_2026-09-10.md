@@ -2,7 +2,7 @@
 
 ## Canonical current status
 
-**🟡 PRODUCTION VERIFICATION MODE.** Core publication works end-to-end in successful runs, but the latest production run #1002 exposed a provider-retry timeout defect. The user-authored editorial prompt remains canonical and selectable through `style_prompt`; it is not to be changed or overridden without explicit approval.
+**🟡 PRODUCTION VERIFICATION MODE — CI reliability hardening in progress.** Core publication works end-to-end in successful runs, and production run #1018 completed successfully. The latest engineering incident was not a publisher outage: the dedicated Regression Gate became noisy/coupled to production state commits, while its test fixture unnecessarily depended on Pillow. This has now been structurally removed from the regression gate; fresh CI verification is required.
 
 Production contract:
 
@@ -10,90 +10,88 @@ Production contract:
 
 Telegram posts contain **editorial content only**. Queue statistics, queue-next information and operational diagnostics remain disabled (`SHOW_QUEUE_DIAGNOSTICS = False`).
 
-## Latest production incident — run #1002
+## CI incident — Regression Gate #17–#21
 
-Run #1002 failed in the news-engine step and ended with exit code **124**. The root cause is now established from the Actions log:
+The user observed that after Regression Gate runs #17–#19 the production `Intily AI News Publisher` Actions stopped executing normally. Gates #20 and #21 became executable again after the user manually changed the regression workflow to `Pillow<10.0.0`.
 
-- Gemini temporarily returned HTTP 503 for one candidate and opened its temporary circuit.
-- Groq then returned HTTP 429 with a **tokens-per-day** rate-limit message for `openai/gpt-oss-20b`.
-- The Groq runtime treated that daily/token quota response as retryable and waited 30 seconds, then retried again.
-- OpenAI was already circuit-blocked.
-- The publisher subsequently attempted another Gemini/Groq failover path; Groq waited again and the outer `timeout 240s` killed the process.
-- GitHub reported: `Process completed with exit code 124`.
+The previous regression workflow installed `Pillow>=11,<13` even though the regression tests only needed Pillow to manufacture test images. This made CI dependent on an external imaging-library API/version that is not part of the regression contract. The production workflow is a separate runtime and successfully completed run #1018.
 
-This is a **technical retry-classification/budget defect**, not an editorial prompt defect and not a Telegram delivery defect.
+A blind permanent Pillow downgrade is **not** the accepted fix. Instead:
 
-### Fix deployed
+- `scripts/test_intily_image_runtime.py` now creates deterministic PNG fixtures using only Python stdlib (`hashlib`, `struct`, `zlib`);
+- `.github/workflows/intily-regression.yml` no longer installs Pillow at all;
+- the regression gate now uses `paths` filters for `scripts/**` and its own workflow, so production state/analytics writes under `data/**` do not spawn regression runs;
+- production scheduling remains independent of the regression gate.
 
-Commit `75cdc250cf3e03546aa4583c74d047a61dfd1a3c` hardens `scripts/intily_production_entrypoint.py`:
+Commits:
 
-- Groq daily/token quota responses are classified as non-retryable and immediately handed back to provider failover;
-- Gemini and Groq request timeouts are bounded by the remaining AI evaluation budget;
-- retry sleeps are refused when the remaining AI budget cannot accommodate them;
-- Russian comments document the quota behavior.
+- `ec865255fa8ec534a0304b8893324717ef2370f7` — first dependency-free image fixture implementation;
+- `58ae14dc266fd9d0449ee72dee1005d8aaccfc24` — regression path isolation and Pillow removal from workflow;
+- `8c8b52d18705b1085a08b1d3a0fe5559844bfeb5` — deterministic >1 MB image fixture correction.
 
-A regression test was added in `ae3d283e030f0d27324ec88f1157664608aa5853` to prove that a Groq `tokens per day` HTTP 429 causes **one request and no sleep/retry**.
+**Verification gate:** a fresh Regression Gate run on `8c8b52d...` must finish green. Until that is observed, CI is not marked GREEN.
 
-The first regression run after the two sequential commits was cancelled by GitHub because a newer push superseded it; its test step had already completed successfully. The newer Regression Gate run #17 is the authoritative verification run and must finish successfully before the fix is considered CI-proven.
+GitHub path filters are intentionally used here: when both branch and path filters are present, GitHub runs the workflow only when both conditions match. citeturn3search0turn3search2
 
-## Latest successful production verification — run #953
+## Latest production verification — run #1018
 
-Run #953 completed successfully and proved:
+Run #1018 completed successfully:
 
-- production regression gate passed: **49 tests**;
-- technical Groq runtime migration loaded: `openai/gpt-oss-20b`;
-- Gemini processed the live editorial candidates successfully;
-- `TELEGRAM_SENT 1135`;
-- `BUSINESS_RESULT PUBLISHED telegram_delivery_ok`;
-- `QUEUE_SCORE_AUDIT invariant_ok:true`;
-- state and analytics persisted.
+- workflow conclusion: `success`;
+- production head: `8b9f47b4b4e9edb7c42f6ac3656206a5e5bf42d0`;
+- the production workflow remained `workflow_dispatch` only;
+- state/analytics persistence completed.
+
+The production workflow currently installs `Pillow>=11,<13`. This is intentionally separate from the regression fixture dependency and has not been changed based on an unproven assumption.
+
+## Latest production reliability incident — run #1002
+
+Run #1002 failed in the news-engine step and ended with exit code **124**. Root cause was established from the Actions log:
+
+- Gemini temporarily returned HTTP 503;
+- Groq returned HTTP 429 with a **tokens-per-day** rate-limit message for `openai/gpt-oss-20b`;
+- the runtime incorrectly treated that daily/token quota response as retryable and slept before retrying;
+- OpenAI was already circuit-blocked;
+- the outer `timeout 240s` killed the process.
+
+Fix deployed in `75cdc250cf3e03546aa4583c74d047a61dfd1a3c` and regression coverage in `ae3d283e030f0d27324ec88f1157664608aa5853`.
 
 ## User editorial prompt — canonical rule
 
-The prompt beginning in `scripts/intily_ai_news.py` around line 1345 is the user's intentional editorial configuration, including its tone, profanity, humor target and approximately 700-character target. It remains unchanged.
+The user-authored prompt in `scripts/intily_ai_news.py` remains canonical and selectable through `style_prompt`:
 
-The file now has a user-controlled `style_prompt` switch near the publication settings:
+- `style_prompt = 1` — original user prompt;
+- `style_prompt = 2` — clean/professional alternative.
 
-- `style_prompt = 1` — the user's original hard/maternal/sarcastic prompt;
-- `style_prompt = 2` — an additional clean/professional Russian prompt without profanity;
-- only the selected prompt is passed to the AI editor;
-- any other value fails explicitly instead of silently selecting a style.
+No technical runtime layer may replace the selected editorial prompt without explicit approval.
 
-**Rule:** technical defects may be fixed autonomously, but user-authored editorial behavior must not be modified or runtime-overridden without explicit user approval.
+## Media gate
 
-## Media finding in #953
-
-The run did **not** fail image extraction. It reached:
+Run #953 proved that publisher-first image retrieval can obtain a real usable image:
 
 `IMAGE_PAYLOAD_BYTES 41356 source_bytes 41356 optimized False`
 
-Then the image stage stopped with:
+The remaining blocker was the Telegram photo-caption limit. Production intentionally rejects over-limit captions instead of truncating editorial content.
 
-`IMAGE_FALLBACK_TEXT PHOTO_CAPTION_LIMIT_TEXT_FALLBACK`
+**Open production evidence:** `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT` in a real run.
 
-The image payload was successfully obtained and was only 41 KB. The blocker was Telegram caption length, not image URL access, MIME, dimensions or payload size.
+## Provider gate
 
-No 350-character editorial limit is currently deployed. The earlier runtime change that attempted to force such a limit has been removed.
+Failover order remains:
 
-**Open media gate:** solve the caption limit structurally without changing or truncating the user's editorial content, then prove `IMAGE_FOUND` → `IMAGE_VALIDATED` → `TELEGRAM_PHOTO_SENT` in a real production run.
+1. Gemini — primary;
+2. Groq `openai/gpt-oss-20b` — fallback;
+3. OpenAI — fallback if key/quota is available.
 
-## Groq
-
-Historical evidence showed retired `llama-3.1-8b-instant → 404 → svgmodel_not_found`.
-
-Current technical runtime target is `openai/gpt-oss-20b`.
-
-The latest run proved that this model can return a 429 daily/token limit. The new code classifies that condition without retrying, but **a successful live fallback request is still unproven**.
-
-**Open gate:** real fallback request must show `AI_PROVIDER_ATTEMPT GROQ` + `AI_PROVIDER_OK GROQ`, or a bounded correctly classified failure without exhausting the workflow timeout.
+A successful live Groq fallback remains unproven, but daily quota failures are now bounded and non-retryable.
 
 ## Scheduler / cadence
 
-GitHub Actions uses `workflow_dispatch` only. Cloudflare is the scheduler.
+GitHub Actions uses `workflow_dispatch` only. Cloudflare is the production scheduler.
 
-The versioned Cloudflare worker uses `* * * * *` UTC with a 1/3 dispatch gate. This is probabilistic dispatch, not a guaranteed 3- or 5-minute interval. Cadence must be confirmed from several real runs.
+The versioned worker uses `* * * * *` UTC with a 1/3 dispatch gate. This is probabilistic, not a guaranteed 3- or 5-minute cadence. Several real cycles are required for confirmation.
 
-## Current production gates
+## Current gates
 
 ### 🟢 GREEN
 
@@ -102,24 +100,25 @@ The versioned Cloudflare worker uses `* * * * *` UTC with a 1/3 dispatch gate. T
 - Telegram text delivery;
 - durable state;
 - queue/dedup/final-score invariant;
-- user-authored editorial prompt remains canonical and is selectable through `style_prompt`;
-- image retrieval/validation reached a real 41 KB image in #953;
-- provider retry hardening is implemented and covered by regression tests.
+- canonical user editorial prompt;
+- image retrieval/validation reached a real payload;
+- provider retry hardening implemented;
+- production run #1018 successful.
 
 ### 🟡 YELLOW / OPEN
 
-- Regression Gate #17 completion after retry hardening;
-- Groq live fallback proof;
-- structural photo delivery and real photo-send proof;
-- several consecutive scheduler cycles;
-- final cadence confirmation.
+- fresh Regression Gate after CI dependency/isolation fix;
+- real Groq fallback proof;
+- real photo-send proof;
+- several consecutive Cloudflare-dispatched cycles;
+- cadence confirmation.
 
 ### 🔴 RED
 
-No known critical architecture blocker. Run #1002 exposed a bounded technical reliability defect; the corrective code is deployed and awaiting fresh CI + production proof.
+No known critical architecture blocker.
 
 ## Acceptance rule
 
 **fact → root cause → implementation → tests → real production run → telemetry inspection → documentation.**
 
-Commit or unit-test success alone is never production proof.
+Commit/CI success alone is never production proof.
