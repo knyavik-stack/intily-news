@@ -243,7 +243,8 @@
   "known": {
     "f1e9d3a22f1d34c9bc8c37e51c292f6f7647e9233162eb41e175514a060c9823": 1789116277.8363807,
     "445a54cf132e1b940bc0b65ef7baf35cfced3fb9c1b399ee5a3dceca0dbff396": 1789118197.651732,
-    "6222320e939aada040581956e517b51d959a10fabae835b1c7e30793d0ea9033": 1789118197.651732
+    "6222320e939aada040581956e517b51d959a10fabae835b1c7e30793d0ea9033": 1789118197.651732,
+    "51197e95533b84e261c3a9ecd1391b421bec4df51cc4f920aeb7d834327ed92d": 1789121082.8315039
   },
   "queue": [
     {
@@ -282,33 +283,70 @@
       ],
       "audience_score": 7.0,
       "tier": "A"
+    },
+    {
+      "region": "WORLD",
+      "title": "Cymphony Emerges From Stealth With $30 Million to Secure Enterprise AI Agents - konsulteer.com",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNN3VVY29oYm9GTUQtWmVsTy0tNUFGU0NETldmWFliOTdad1FSZGRZeEFEX0JEZUpqakZxY0tUWGRRdlRDNXlfNVVpSXpIeGtIbW85Y0ZNX0U1MkdRc1Q0SW91X1YtbkNYcUdoV0JZeF9GQ2l1QnlHcF9KWUFfN0phem1BYzBnOWxJNmFRS3lXYTZVb1FlM0JEMkZiYS0waDV6dWtEUFoxbEtzWGktY1g1dQ?oc=5",
+      "desc": "Cymphony Emerges From Stealth With $30 Million to Secure Enterprise AI Agents konsulteer.com",
+      "source": "konsulteer.com",
+      "time": 1789107463.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 6.0,
+        "event_concreteness": 10.5,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 1.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 40.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 40.0
+      },
+      "base_score": 40.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 40.0,
+      "key": "51197e95533b84e261c3a9ecd1391b421bec4df51cc4f920aeb7d834327ed92d",
+      "importance": 40.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "business"
+      ],
+      "audience_score": null,
+      "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1789120363.7935157,
+    "last_start_ts": 1789121082.8315039,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789120363.7935157,
-    "last_success_ts": 1789120363.7935157,
-    "last_candidates": 23,
-    "last_published": 1,
-    "queue_size": 1
+    "last_run_ts": 1789121082.8315039,
+    "last_success_ts": 1789121082.8315039,
+    "last_candidates": 24,
+    "last_published": 0,
+    "queue_size": 2
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789120457.7949173
+      "disabled_until": 1789121257.6584985,
+      "reason": "TEMPORARY_SERVICE_ERROR_OR_429",
+      "updated_at": 1789121137.6585011
     },
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789103187.0107124
+      "updated_at": 1789121143.7134438
     },
     "OPENAI": {
-      "disabled_until": 1789114033.480713,
+      "disabled_until": 1789207540.9698231,
       "reason": "NO_CREDITS_OR_429",
-      "updated_at": 1789027633.4807153
+      "updated_at": 1789121140.9698257
     },
     "GITHUB_MODELS": {
       "disabled_until": 1789044927.6586776,
@@ -317,13 +355,6 @@
     }
   },
   "stories": {
-    "5806935391a319dc96f5b686615803cd20f6aa2952439151c1a8341797cf18d8": {
-      "time": 1789034246,
-      "title": "Global Forum on Mechanical Engineering 2026 Robotics Shaping Tomorrow's Industrial Ecosystem with Physical AI - EurekAlert!",
-      "desc": "Global Forum on Mechanical Engineering 2026 Robotics Shaping Tomorrow's Industrial Ecosystem with Physical AI EurekAlert!",
-      "source": "EurekAlert!",
-      "region": "WORLD"
-    },
     "a862475de41189055a933ea4982af2240f6d4bb3e10c56e3f532a37b9fb6cfc0": {
       "time": 1789034785,
       "title": "Europe Today: Drone nearly hits Zelensky's plane as Riga debates Russia threat",
@@ -936,96 +967,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1788948075,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 10.32,
-      "candidates": 0,
-      "queue_before": 16,
-      "queue_after": 15,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 5.5,
-          "bonus_total": 33.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость пересмотра бюджета на ИИ-инструменты и оценки целесообразности подписки для рабочих процессов.",
-            "title": "Meta Muse AI Agent Launch: $20 & $100 Tiers [2026] - tech-insider.org",
-            "final_score": 65.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788948449,
       "status": "OK",
@@ -23112,10 +23053,158 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789121082,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 61.32,
+      "candidates": 24,
+      "queue_before": 1,
+      "queue_after": 2,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 18,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 5,
+        "added": 1,
+        "candidate_count": 24,
+        "admission_rate": 4.17,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 4,
+          "average_score": 7.75,
+          "bonus_total": 93.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 3,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра долгосрочной стратегии найма и личного профессионального развития в условиях девальвации интеллектуального труда.",
+            "title": "Создатели Claude: Из-за внедрения ИИ экономика вырастет, но зарплаты упадут. Дополнительный доход достанется хозяевам бизнеса",
+            "final_score": 73.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 78,
+        "raw_items": 586,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 25,
+          "CNews": 12,
+          "Euronews": 40
+        },
+        "score_filtered": 537,
+        "quality_filtered": 22,
+        "story_dedup": 3,
+        "candidates": 24,
+        "candidate_rate": 0.0472,
+        "score_buckets": {
+          "0–39": 497,
+          "40–49": 59,
+          "50–59": 27,
+          "60–69": 3,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 1,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI"
+        ],
+        "used": "GROQ",
+        "failovers": 13,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789120363.7935157,
+  "last_search_ts": 1789121082.8315039,
   "last_publish_ts": 1789120363.7935157,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
