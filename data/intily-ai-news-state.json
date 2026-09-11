@@ -280,22 +280,24 @@
     "a3f5db7598dfe5396cf9831edeecac77ec8adebf9e11938934ca82a7f2bee5a7": 1789143401,
     "e79fc9b90cb036699b0a5554dc7febd26667507836ee9c2e9c130d8ce9d771f1": 1789143648,
     "a2b0e47de8c9325adde026a6d0031bc957cb8bfdbc1978198ee592d8b9d69fc6": 1789143897,
-    "3ae7c9d051161507bc9773d2a04d9c0c1275309735764e70e53d898b507299e7": 1789146976
+    "3ae7c9d051161507bc9773d2a04d9c0c1275309735764e70e53d898b507299e7": 1789146976,
+    "b28f342c7568ae3cc4d14310395b613e1290c8818af58845bd003754e3acb308": 1789147456
   },
   "known": {
     "3a08a55fd841340dfe3e7bc86402ff270d52fea816f77cb7d46e25ccd7efbf71": 1789142204.0616226,
     "d50e4c749be3f94940ff24c34b872ba1e663adc0b02e1f7293e100b0159262e6": 1789142204.0616226,
     "e79fc9b90cb036699b0a5554dc7febd26667507836ee9c2e9c130d8ce9d771f1": 1789143648.4765608,
     "a2b0e47de8c9325adde026a6d0031bc957cb8bfdbc1978198ee592d8b9d69fc6": 1789143897.4972744,
-    "3ae7c9d051161507bc9773d2a04d9c0c1275309735764e70e53d898b507299e7": 1789146976.6014805
+    "3ae7c9d051161507bc9773d2a04d9c0c1275309735764e70e53d898b507299e7": 1789146976.6014805,
+    "b28f342c7568ae3cc4d14310395b613e1290c8818af58845bd003754e3acb308": 1789147456.683745
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789146976.6014805,
+    "last_start_ts": 1789147456.683745,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789146976.6014805,
-    "last_success_ts": 1789146976.6014805,
+    "last_run_ts": 1789147456.683745,
+    "last_success_ts": 1789147456.683745,
     "last_candidates": 41,
     "last_published": 1,
     "queue_size": 0
@@ -304,7 +306,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789147108.3838642
+      "updated_at": 1789147550.6278462
     },
     "GROQ": {
       "disabled_until": 0,
@@ -854,12 +856,18 @@
       "desc": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.",
       "source": "OpenAI News",
       "region": "WORLD"
+    },
+    "b28f342c7568ae3cc4d14310395b613e1290c8818af58845bd003754e3acb308": {
+      "time": 1789147456,
+      "title": "Закон об ИИ проверит не модели, а зрелость данных - Код.ру",
+      "desc": "Закон об ИИ проверит не модели, а зрелость данных Код.ру",
+      "source": "Код.ру",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -876,99 +884,10 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1788977956,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 11.02,
-      "candidates": 0,
-      "queue_before": 16,
-      "queue_after": 15,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 4.0,
-          "bonus_total": 24.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Рост регуляторных рисков и неопределенности в развитии LLM требует пересмотра стратегий безопасности и долгосрочных инвестиций.",
-            "title": "Anthropic researcher quits, warns AI race could ‘kill us all’; safety lead says extinction risk above 10% - madhyamamonline.com",
-            "final_score": 61.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 2,
-          "invariant_ok": false
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788978496,
       "status": "OK",
@@ -22055,11 +21974,160 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789147456,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 101.06,
+      "candidates": 41,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 30,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 10,
+        "added": 1,
+        "candidate_count": 41,
+        "admission_rate": 2.44,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://kod.ru/zakon-ob-ii-kii-dannye",
+            "image_url": "https://i.kod.ru/unsafe/rs:fill:1200:630:1/q:85/plain/https%3A%2F%2Fapi.kod.ru%2Fcontent%2Fimages%2F2026%2F09%2F----------------------_2026-09-12_005553717.png",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 11,
+          "average_score": 7.91,
+          "bonus_total": 261.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 9,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость аудита данных для соответствия будущим стандартам регуляции.",
+            "title": "Закон об ИИ проверит не модели, а зрелость данных - Код.ру",
+            "final_score": 64.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 160,
+        "raw_items": 1381,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 5,
+          "Habr AI/News": 40,
+          "CNews": 61,
+          "Euronews": 50
+        },
+        "score_filtered": 1287,
+        "quality_filtered": 43,
+        "story_dedup": 10,
+        "candidates": 41,
+        "candidate_rate": 0.0336,
+        "score_buckets": {
+          "0–39": 1217,
+          "40–49": 111,
+          "50–59": 48,
+          "60–69": 5,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 10,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789146976.6014805,
-  "last_publish_ts": 1789146976.6014805,
+  "last_search_ts": 1789147456.683745,
+  "last_publish_ts": 1789147456.683745,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
