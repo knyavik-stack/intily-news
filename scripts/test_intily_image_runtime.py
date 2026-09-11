@@ -1,19 +1,59 @@
-import os
+import struct
 import unittest
-from io import BytesIO
+import zlib
 from unittest.mock import patch
-
-from PIL import Image
 
 import intily_image_runtime as runtime
 
 
+def _png(width, height, pixel=b'\xff\xff\xff'):
+    """Build a deterministic RGB PNG fixture without an external imaging library."""
+    row = pixel * width
+    raw = b''.join(b'\x00' + row for _ in range(height))
+    compressed = zlib.compress(raw, 9)
+
+    def chunk(kind, data):
+        return (
+            struct.pack('>I', len(data))
+            + kind
+            + data
+            + struct.pack('>I', zlib.crc32(kind + data) & 0xFFFFFFFF)
+        )
+
+    header = struct.pack('>IIBBBBB', width, height, 8, 2, 0, 0, 0)
+    return (
+        b'\x89PNG\r\n\x1a\n'
+        + chunk(b'IHDR', header)
+        + chunk(b'IDAT', compressed)
+        + chunk(b'IEND', b'')
+    )
+
+
 class ImageRuntimeTests(unittest.TestCase):
     def _large_png(self):
-        image = Image.frombytes('RGB', (1800, 1200), os.urandom(1800 * 1200 * 3))
-        out = BytesIO()
-        image.save(out, format='PNG')
-        return out.getvalue()
+        # Deterministic high-entropy RGB rows keep the fixture above 1 MB.
+        rows = []
+        for y in range(1200):
+            row = bytes(((x * 17 + y * 31 + (x >> 3)) & 0xFF) for x in range(1800 * 3))
+            rows.append(b'\x00' + row)
+        raw = b''.join(rows)
+        compressed = zlib.compress(raw, 9)
+
+        def chunk(kind, data):
+            return (
+                struct.pack('>I', len(data))
+                + kind
+                + data
+                + struct.pack('>I', zlib.crc32(kind + data) & 0xFFFFFFFF)
+            )
+
+        header = struct.pack('>IIBBBBB', 1800, 1200, 8, 2, 0, 0, 0)
+        return (
+            b'\x89PNG\r\n\x1a\n'
+            + chunk(b'IHDR', header)
+            + chunk(b'IDAT', compressed)
+            + chunk(b'IEND', b'')
+        )
 
     def test_prepare_rejects_oversized_image_without_optimization(self):
         source = self._large_png()
@@ -21,11 +61,9 @@ class ImageRuntimeTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, '^IMAGE_TOO_LARGE$'):
             runtime._prepare(source, 'image/png')
 
-    def test_small_jpeg_is_accepted_unchanged(self):
-        image = Image.new('RGB', (800, 600), 'white')
-        out = BytesIO()
-        image.save(out, format='JPEG', quality=80)
-        source = out.getvalue()
+    def test_small_png_is_accepted_unchanged(self):
+        source = _png(800, 600)
+        self.assertLess(len(source), runtime.MAX_TELEGRAM_IMAGE_BYTES)
         data, content_type, optimized = runtime._prepare(source)
         self.assertEqual(data, source)
         self.assertEqual(content_type, 'image/jpeg')
