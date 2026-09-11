@@ -1,6 +1,6 @@
 # INTILY — AI News Publisher Operations
 
-**Актуализация: 2026-09-10**
+**Актуализация: 2026-09-11**
 
 ## 1. Production contract
 
@@ -31,7 +31,7 @@ Runtime setting:
 - `LOOKBACK = 12h`;
 - `SEARCH_INTERVAL_SECONDS = 30m` при здоровой очереди;
 - немедленный поиск при `queue <= 1`;
-- `IMPORTANCE_THRESHOLD = 60`;
+- `IMPORTANCE_THRESHOLD = 60` до применения audience policy;
 - `MAX_QUEUE = 20`.
 
 Нулевой результат источника не считается технической ошибкой: важно различать отсутствие свежих материалов и `FEED_ERROR`.
@@ -73,7 +73,7 @@ Failover order:
 
 Retired `llama-3.1-8b-instant` не использовать.
 
-Runtime override загружается через `scripts/sitecustomize.py` при production `PYTHONPATH=scripts`.
+Runtime override в `scripts/sitecustomize.py` ограничен технической миграцией Groq model и не меняет editorial policy.
 
 Требование production verification: реальный fallback должен дать `AI_PROVIDER_ATTEMPT GROQ` + `AI_PROVIDER_OK GROQ`, либо bounded correctly classified failure.
 
@@ -86,10 +86,9 @@ Publisher-first media extraction:
 Hardening:
 
 - browser-like request headers;
-- one-level HTML image indirection;
+- one-level HTML indirection;
 - nested candidate deduplication;
-- total fetch budget 12s;
-- individual request timeout 6s;
+- bounded fetch budget;
 - Google-hosted image prohibition;
 - MIME validation;
 - minimum dimensions;
@@ -99,23 +98,29 @@ Production acceptance requires telemetry:
 
 `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`
 
-If publisher pages continue to fail after the current hardening, next architectural step is first-class RSS/Atom media extraction (`media:content`, `media:thumbnail`, `enclosure`) passed into the image runtime. Random Google-image substitution is prohibited.
+If the complete editorial post exceeds Telegram's 1024-byte photo-caption limit, the production guard rejects the photo caption rather than truncating or rewriting editorial content. The current open gate is a real successful photo-send path.
 
-## 8. Current incident / CI gate
+## 8. Regression Gate reliability
 
-Run #951 failed correctly at the regression gate before publisher execution. Root cause: the new image-hardening tests mocked `extract_image_candidates()` as a list although the real function returns `(ranked_candidates, final_url)`.
+The dedicated `Intily Regression Gate` is **non-production CI**. It must not be coupled to production state persistence.
 
-Fixed in commit:
+Current policy:
 
-`5415478c418263ab3e8233ff731584a90b5ee198`
+- triggers on `scripts/**` or the regression workflow itself;
+- does not trigger on `data/**` analytics/state commits;
+- no Pillow installation is required by regression tests;
+- image fixtures are generated with Python stdlib only;
+- concurrency cancellation is limited to superseded regression changes.
 
-A fresh workflow run on the corrected commit is required before the CI gate can be considered green.
+This removes the previous CI dependency on a mutable Pillow version for test-fixture generation and reduces workflow churn caused by production analytics commits.
+
+Fresh green verification after commit `8c8b52d18705b1085a08b1d3a0fe5559844bfeb5` is required before this gate is considered closed.
 
 ## 9. Production evidence
 
-Run #949 proved end-to-end Telegram text publication, Gemini editorial processing, final-score queue invariant and state persistence. It did not prove Groq fallback or photo delivery.
+Run #1018 completed successfully.
 
-Run #951 is a CI regression-gate failure and must not be interpreted as a Telegram/provider outage.
+Historical run #1002 exposed the provider retry-budget defect; it was fixed in `75cdc250cf3e03546aa4583c74d047a61dfd1a3c` with regression coverage in `ae3d283e030f0d27324ec88f1157664608aa5853`.
 
 ## 10. Monitoring
 
@@ -123,6 +128,6 @@ Publisher analytics describe the current cycle. Production Monitor describes his
 
 Required operational sequence:
 
-**fact → root cause → implementation → tests → real production run → telemetry inspection → documentation**.
+**fact → root cause → implementation → tests → real production run → telemetry inspection → documentation.**
 
 A green commit or unit test is not sufficient production evidence.
