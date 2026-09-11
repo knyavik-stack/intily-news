@@ -366,45 +366,11 @@ def _sanitize_telegram_html(text):
 
 
 def _photo_caption(text, limit=MAX_TELEGRAM_CAPTION_BYTES):
-    """Return safe Telegram HTML, preserving formatting, bounded after escaping."""
+    """Return safe Telegram HTML only when the complete text fits the caption limit."""
     sanitized = _sanitize_telegram_html(text)
     if len(sanitized) <= limit:
         return sanitized
-    parts = re.findall(r'</?[^>]+>|[^<]+', sanitized)
-    result = []
-    open_tags = []
-    used = 0
-    for part in parts:
-        if part.startswith('<'):
-            tag_match = re.fullmatch(r'<(/?)([A-Za-z0-9-]+)(?: [^>]*)?>', part)
-            if not tag_match:
-                continue
-            closing, tag = tag_match.groups()
-            if closing:
-                if tag in open_tags:
-                    while open_tags:
-                        current = open_tags.pop()
-                        if current == tag:
-                            break
-                        result.append(f'</{current}>')
-                    result.append(part)
-            else:
-                result.append(part)
-                open_tags.append(tag)
-            continue
-        remaining = limit - used - 1
-        if remaining <= 0:
-            break
-        if len(part) <= remaining:
-            result.append(part)
-            used += len(part)
-        else:
-            result.append(part[:remaining].rstrip() + '…')
-            used += remaining + 1
-            break
-    while open_tags:
-        result.append(f'</{open_tags.pop()}>')
-    return ''.join(result)[:limit]
+    raise ValueError('PHOTO_CAPTION_LIMIT_TEXT_SPLIT')
 
 
 def _field(name, value, boundary):
@@ -433,12 +399,28 @@ def send_photo(token, chat_id, caption, image):
 
 def publish_with_optional_image(text, article_url, token, chat_id, fallback_send):
     telemetry = {'status': 'not_attempted', 'method': None, 'url': None, 'source_url': None,
-                 'width': None, 'height': None, 'error': None, 'attempts': 0}
+                 'width': None, 'height': None, 'error': None, 'attempts': 0, 'caption_mode': None}
     try:
         telemetry['attempts'] = 1
         image = fetch_image(article_url)
-        caption = _photo_caption(text)
-        result = send_photo(token, chat_id, caption, image)
+        try:
+            caption = _photo_caption(text)
+            result = send_photo(token, chat_id, caption, image)
+            telemetry['caption_mode'] = 'full'
+        except ValueError as exc:
+            if str(exc) != 'PHOTO_CAPTION_LIMIT_TEXT_SPLIT':
+                raise
+            result = send_photo(token, chat_id, '', image)
+            telemetry['caption_mode'] = 'photo_plus_full_text'
+            telemetry.update(status='sent', method=image['method'], url=image['url'], source_url=image['source_url'],
+                             width=image['width'], height=image['height'])
+            print('IMAGE_SOURCE_RESOLVED', image['source_url'])
+            print('IMAGE_FOUND', image['method'], image['width'], image['height'])
+            print('IMAGE_VALIDATED', image['content_type'], len(image['data']))
+            print('TELEGRAM_PHOTO_SENT', result.get('result', {}).get('message_id'))
+            fallback_send(text)
+            print('TELEGRAM_FULL_TEXT_SENT_AFTER_PHOTO')
+            return telemetry
         telemetry.update(status='sent', method=image['method'], url=image['url'], source_url=image['source_url'],
                          width=image['width'], height=image['height'])
         print('IMAGE_SOURCE_RESOLVED', image['source_url'])
