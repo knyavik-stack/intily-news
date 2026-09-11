@@ -86,8 +86,33 @@ class ImagePipelineTests(unittest.TestCase):
 
     def test_long_photo_caption_is_rejected_instead_of_truncated(self):
         text = '<b>Заголовок</b> ' + ('длинный & текст ' * 200)
-        with self.assertRaisesRegex(ValueError, 'PHOTO_CAPTION_LIMIT_TEXT_FALLBACK'):
+        with self.assertRaisesRegex(ValueError, 'PHOTO_CAPTION_LIMIT_TEXT_SPLIT'):
             media._photo_caption(text)
+
+    def test_long_post_sends_photo_and_full_text_separately(self):
+        text = '<b>Заголовок</b> ' + ('длинный текст ' * 200)
+        image = {
+            'data': self._jpeg(640, 480),
+            'content_type': 'image/jpeg',
+            'url': 'https://publisher.example/good.jpg',
+            'method': 'og_image',
+            'source_url': 'https://publisher.example/story',
+            'width': 640,
+            'height': 480,
+        }
+        with patch.object(media, 'fetch_image', return_value=image), \
+             patch.object(media, 'send_photo', return_value={'ok': True, 'result': {'message_id': 123}}) as send_photo, \
+             patch.object(media, 'MAX_TELEGRAM_CAPTION_BYTES', 1024), \
+             patch.object(media, '_photo_caption', side_effect=ValueError('PHOTO_CAPTION_LIMIT_TEXT_SPLIT')):
+            full_text = []
+            telemetry = media.publish_with_optional_image(
+                text, image['source_url'], 'token', '@intily', full_text.append
+            )
+        self.assertEqual(telemetry['status'], 'sent')
+        self.assertEqual(telemetry['caption_mode'], 'photo_plus_full_text')
+        self.assertEqual(full_text, [text])
+        self.assertEqual(send_photo.call_count, 1)
+        self.assertEqual(send_photo.call_args.args[2], '')
 
     def test_photo_caption_rejects_unsafe_href(self):
         caption = media._photo_caption('<a href="javascript:alert(1)">опасная ссылка</a>')
