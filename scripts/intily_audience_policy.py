@@ -113,6 +113,24 @@ try:
         return sanitized
 
     _image_pipeline._photo_caption = _full_or_reject_photo_caption
+
+    # Telegram sendPhoto cannot carry a full editorial post above its 1024-character
+    # caption limit. Never publish an orphan image followed by a second text message:
+    # preserve the complete editorial unit as one text-only post instead.
+    _original_publish_with_optional_image = _image_pipeline.publish_with_optional_image
+    def _publish_with_no_orphan_image(text, article_url, token, chat_id, fallback_send):
+        sanitized = _image_pipeline._sanitize_telegram_html(text)
+        if _telegram_caption_text_length(sanitized) > 1024:
+            print('IMAGE_SKIPPED_CAPTION_LIMIT', _telegram_caption_text_length(sanitized))
+            telemetry = {
+                'status': 'sent', 'method': None, 'url': None, 'source_url': article_url,
+                'width': None, 'height': None, 'error': None, 'attempts': 0,
+                'caption_mode': 'text_only_caption_limit',
+            }
+            fallback_send(text)
+            return telemetry
+        return _original_publish_with_optional_image(text, article_url, token, chat_id, fallback_send)
+    _image_pipeline.publish_with_optional_image = _publish_with_no_orphan_image
     IMAGE_HARDENING_ACTIVE = True
 except Exception as _image_runtime_error:
     IMAGE_HARDENING_ACTIVE = False
