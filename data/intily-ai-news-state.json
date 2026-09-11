@@ -279,30 +279,32 @@
     "d50e4c749be3f94940ff24c34b872ba1e663adc0b02e1f7293e100b0159262e6": 1789142925,
     "a3f5db7598dfe5396cf9831edeecac77ec8adebf9e11938934ca82a7f2bee5a7": 1789143401,
     "e79fc9b90cb036699b0a5554dc7febd26667507836ee9c2e9c130d8ce9d771f1": 1789143648,
-    "a2b0e47de8c9325adde026a6d0031bc957cb8bfdbc1978198ee592d8b9d69fc6": 1789143897
+    "a2b0e47de8c9325adde026a6d0031bc957cb8bfdbc1978198ee592d8b9d69fc6": 1789143897,
+    "3ae7c9d051161507bc9773d2a04d9c0c1275309735764e70e53d898b507299e7": 1789146976
   },
   "known": {
     "3a08a55fd841340dfe3e7bc86402ff270d52fea816f77cb7d46e25ccd7efbf71": 1789142204.0616226,
     "d50e4c749be3f94940ff24c34b872ba1e663adc0b02e1f7293e100b0159262e6": 1789142204.0616226,
     "e79fc9b90cb036699b0a5554dc7febd26667507836ee9c2e9c130d8ce9d771f1": 1789143648.4765608,
-    "a2b0e47de8c9325adde026a6d0031bc957cb8bfdbc1978198ee592d8b9d69fc6": 1789143897.4972744
+    "a2b0e47de8c9325adde026a6d0031bc957cb8bfdbc1978198ee592d8b9d69fc6": 1789143897.4972744,
+    "3ae7c9d051161507bc9773d2a04d9c0c1275309735764e70e53d898b507299e7": 1789146976.6014805
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789145782.4296439,
+    "last_start_ts": 1789146976.6014805,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789145782.4296439,
-    "last_success_ts": 1789145782.4296439,
-    "last_candidates": 39,
-    "last_published": 0,
+    "last_run_ts": 1789146976.6014805,
+    "last_success_ts": 1789146976.6014805,
+    "last_candidates": 41,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789145895.4930785
+      "updated_at": 1789147108.3838642
     },
     "GROQ": {
       "disabled_until": 0,
@@ -321,13 +323,6 @@
     }
   },
   "stories": {
-    "1775b5707cb22109103000e15f9091c1efb6d0015637ef24bcd38da19683556c": {
-      "time": 1789059806,
-      "title": "China hits back at U.S. over industrial-scale AI theft claims as Washington beats Beijing to Africa with $1 billion AI deal - Business Insider Africa",
-      "desc": "China hits back at U.S. over industrial-scale AI theft claims as Washington beats Beijing to Africa with $1 billion AI deal Business Insider Africa",
-      "source": "Business Insider Africa",
-      "region": "WORLD"
-    },
     "1d5e3428a744e91793ab057157022fe42868b52857329dcdbfa3a2222d0f0703": {
       "time": 1789063532,
       "title": "Anthropic's safety monitor missed a live cyberattack because Mythos 5's reasoning said everything was fine - VentureBeat",
@@ -852,13 +847,19 @@
       "desc": "AI Daily: OpenAI Launches GPT-Live-1 API; DeepSeek V4.1-Flash Joins WorkBuddy; Google Launches Gemini Windows Desktop Application AIBase",
       "source": "AIBase",
       "region": "WORLD"
+    },
+    "3ae7c9d051161507bc9773d2a04d9c0c1275309735764e70e53d898b507299e7": {
+      "time": 1789146976,
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+      "desc": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.",
+      "source": "OpenAI News",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -872,101 +873,12 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1788977067,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 19.13,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 5.5,
-          "bonus_total": 33.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходимость срочного внедрения усиленной аутентификации из-за кратного роста скорости автоматизированных атак.",
-            "title": "Hackers Use Autonomous AI Agents to Launch Mass Credential Theft Attacks in Under 6 Hours - cyberpress.org",
-            "final_score": 69.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 2,
-          "invariant_ok": false
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788977956,
       "status": "OK",
@@ -21989,11 +21901,165 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789146976,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 132.61,
+      "candidates": 41,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 32,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 8,
+        "added": 1,
+        "candidate_count": 41,
+        "admission_rate": 2.44,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 10,
+          "average_score": 7.7,
+          "bonus_total": 231.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 7,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Понимание архитектурных ограничений помогает при проектировании собственных высоконагруженных AI-сервисов.",
+            "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+            "final_score": 68.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 160,
+        "raw_items": 1374,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 5,
+          "Habr AI/News": 40,
+          "CNews": 61,
+          "Euronews": 50
+        },
+        "score_filtered": 1285,
+        "quality_filtered": 40,
+        "story_dedup": 8,
+        "candidates": 41,
+        "candidate_rate": 0.0338,
+        "score_buckets": {
+          "0–39": 1212,
+          "40–49": 111,
+          "50–59": 46,
+          "60–69": 5,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 15,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789145782.4296439,
-  "last_publish_ts": 1789143897.4972744,
+  "last_search_ts": 1789146976.6014805,
+  "last_publish_ts": 1789146976.6014805,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
