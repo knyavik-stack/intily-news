@@ -2,7 +2,7 @@
 
 ## Canonical current status
 
-**🟡 FINAL PRODUCTION VERIFICATION — 94%.** Core publication works end-to-end in successful runs. Production run #1047 completed successfully with 52 regression tests, live editorial processing, real image retrieval and Telegram photo delivery. The media caption policy is now hardened so posts exceeding Telegram's 1024-character photo-caption limit are published as one complete text-only post rather than an orphan image plus a second text message. Remaining work is a fresh production run on this exact policy, fresh live Groq fallback evidence, and several consecutive Cloudflare-dispatched cycles/cadence confirmation.
+**🟡 FINAL PRODUCTION VERIFICATION — 94%.** Core publication works end-to-end in successful runs. Production run #1047 completed successfully with live editorial processing, real image retrieval and Telegram photo delivery. The media caption policy is now hardened so posts exceeding Telegram's 1024-character photo-caption limit are published as one complete text-only post rather than an orphan image plus a second text message. Regression Gate #35 is green with **53 tests** on the corrected media policy. Remaining work is a fresh production run on this exact policy, fresh live Groq fallback evidence, and several consecutive Cloudflare-dispatched cycles/cadence confirmation.
 
 Production contract:
 
@@ -41,8 +41,7 @@ Run #1047 completed successfully and proved the current ordinary image path:
 
 - production workflow `success`;
 - media runtime installed **Pillow 12.3.0**;
-- **52 regression tests passed** before publisher execution;
-- Gemini processed the live editorial candidate;
+- live editorial candidate processed successfully;
 - real image was found and validated;
 - `TELEGRAM_PHOTO_SENT` was emitted;
 - `TELEGRAM_SENT` and `BUSINESS_RESULT PUBLISHED telegram_delivery_ok` were emitted;
@@ -50,6 +49,12 @@ Run #1047 completed successfully and proved the current ordinary image path:
 - state/analytics persistence succeeded.
 
 The long-caption orphan-image case was not exercised by #1047; that case is now covered by regression tests and awaits a fresh production observation.
+
+## Production run #1048 — CLOSED AS STALE-CODE FAILURE
+
+Run #1048 was started from commit `b4ddc428f517dbfc5dfdc2889bac61371c9c5d3b`, before the regression-test update. Its policy/analytics check failed because it still expected the old `photo_plus_full_text` behavior. The log explicitly shows the assertion mismatch and then the state was persisted successfully. It did **not** execute the news engine.
+
+This is not evidence of a failure in the current `main`: Regression Gate #35 subsequently checked commit `cc0fee92747d99b6a08cce25aebe849946a8a0eb` and passed 53/53.
 
 ## Latest production reliability incident — run #1002 — FIXED
 
@@ -82,7 +87,7 @@ Current production media policy:
 
 The no-orphan behavior is implemented in the audience/media policy layer and is regression-tested. Commit: `b4ddc428f517dbfc5dfdc2889bac61371c9c5d3b`.
 
-Regression coverage was updated in commit `cc0fee92747d99b6a08cce25aebe849946a8a0eb`.
+Regression coverage was updated in commit `cc0fee92747d99b6a08cce25aebe849946a8a0eb` and **53/53 passed** in Regression Gate #35 (`34592272934`).
 
 Expected telemetry for a same-message photo post:
 
@@ -125,6 +130,7 @@ The versioned worker uses `* * * * *` UTC with a 1/3 dispatch gate. This is prob
 - image retrieval/validation reached real payloads;
 - real Telegram photo delivery reached in production;
 - provider retry hardening implemented and regression-tested;
+- Regression Gate #35 **53/53 green**;
 - production run #1047 successful;
 - Pillow 12.3.0 proven compatible with production test/runtime path;
 - no-orphan media policy implemented and regression-tested;
