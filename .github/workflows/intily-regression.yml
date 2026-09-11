@@ -3,8 +3,14 @@ name: Intily Regression Gate
 on:
   push:
     branches: [main]
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/intily-regression.yml'
   pull_request:
     branches: [main]
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/intily-regression.yml'
 
 permissions:
   contents: read
@@ -22,10 +28,6 @@ jobs:
         uses: actions/checkout@v6
         with:
           fetch-depth: 1
-
-      - name: Установка media runtime
-        run: |
-          python3 -m pip install --disable-pip-version-check --no-cache-dir 'Pillow<10.0.0'
 
       - name: Regression tests
         run: |
