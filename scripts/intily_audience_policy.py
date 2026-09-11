@@ -5,6 +5,9 @@ current subscribers. The AI editorial pass contributes exactly 30 points of
 the 100-point final score: audience_score 1–10 is mapped linearly to +3…+30.
 """
 
+import html
+import re
+
 PRE_AI_THRESHOLD = 40.0
 FINAL_THRESHOLD = 55.0
 AUDIENCE_BONUS_MAX = 30.0
@@ -70,6 +73,18 @@ def build_evaluation_instruction():
         'Это второй редакторский сигнал и ровно 30% итоговой шкалы: score × 3, то есть 5/10=+3 и 10/10=+30.\n'
     )
 
+
+def _telegram_caption_text_length(sanitized):
+    """Count visible caption characters after Telegram-style entity parsing.
+
+    Telegram's sendPhoto caption limit is 1024 characters, not 1024 UTF-8
+    bytes. HTML tags and encoded entities are not visible caption characters.
+    """
+    visible = re.sub(r'<[^>]*>', '', str(sanitized or ''))
+    visible = html.unescape(visible)
+    return len(visible)
+
+
 try:
     import intily_ai_news as _publisher
     import intily_image_pipeline as _image_pipeline
@@ -93,7 +108,7 @@ try:
 
     def _full_or_reject_photo_caption(text, limit=1024):
         sanitized = _image_pipeline._sanitize_telegram_html(text)
-        if len(sanitized) > limit:
+        if _telegram_caption_text_length(sanitized) > limit:
             raise ValueError('PHOTO_CAPTION_LIMIT_TEXT_SPLIT')
         return sanitized
 
