@@ -1,106 +1,105 @@
-# INTILY — Final Production Audit — 2026-09-10
+# INTILY — Final Production Audit — 2026-09-11
 
 ## Executive status
 
-**Overall readiness: 80% — YELLOW / production verification mode.**
+**Overall readiness: 90% — YELLOW / final production verification.**
 
-Core publication is proven end-to-end. CI regression was fixed. Production run #953 proved successful text publication. The media investigation advanced materially: #953 obtained a real 41 KB image payload, but photo delivery was blocked by the Telegram caption-length guard.
+Core publication is proven end-to-end. Production run #1018 completed successfully, and the dedicated Regression Gate is now independently green after the CI isolation fix: **50 tests passed** on commit `8c8b52d18705b1085a08b1d3a0fe5559844bfeb5`.
+
+The previous Pillow incident is now clarified by facts: production run #1018 installed **Pillow 12.3.0** and all 50 tests passed. Therefore Pillow 12.3.0 was not proven to be the cause of the earlier regression-gate interruption. The durable fix is to remove Pillow from regression fixture generation entirely and isolate Regression Gate triggers from production state commits.
 
 The previously introduced runtime editorial override has been removed. The user's prompt in `scripts/intily_ai_news.py` is canonical and must not be changed or overridden without explicit approval.
 
-## Product contract
+## CI reliability — GREEN
 
-Telegram posts contain **editorial content only**. Queue statistics, queue-next information and operational diagnostics are disabled in posts.
+Regression Gate commit `8c8b52d18705b1085a08b1d3a0fe5559844bfeb5` produced check run `103159366568` / Actions run `34566421454` with:
 
-`SHOW_QUEUE_DIAGNOSTICS = False`
+- `status=completed`;
+- `conclusion=success`;
+- **50 tests in 0.555s — OK**;
+- no Pillow installation step;
+- deterministic stdlib-only image fixtures.
 
-## CI regression — closed
+The workflow now uses path filters for `scripts/**` and its own workflow. Production state/analytics writes under `data/**` no longer start regression CI. This is the architectural correction for CI coupling/churn.
 
-Run #951 failed at the regression gate because two image-hardening tests mocked `extract_image_candidates()` as a list instead of the real `(ranked_candidates, final_url)` tuple.
+## Production run #1018
 
-Fixed in `5415478c418263ab3e8233ff731584a90b5ee198`.
+Run #1018 completed successfully with the production workflow:
 
-A dedicated non-production `Intily Regression Gate` now runs on push/PR. The corrected publisher passed the latest regression run.
-
-## Production run #953
-
-Run #953 completed successfully and proved:
-
-- 49 regression tests passed;
-- technical Groq runtime migration loaded: `openai/gpt-oss-20b`;
+- production media runtime installed **Pillow 12.3.0** successfully;
+- all 50 regression tests passed before publisher execution;
 - Gemini successfully processed live candidates;
-- Telegram publication succeeded: `TELEGRAM_SENT 1135`;
+- Telegram publication succeeded: `TELEGRAM_SENT 1186`;
 - `BUSINESS_RESULT PUBLISHED telegram_delivery_ok`;
 - `QUEUE_SCORE_AUDIT invariant_ok:true`;
 - state and analytics persisted.
 
-The run also contained logs for publication-interval, joke-rate and editor-prompt runtime overrides. Those overrides were not authorized product policy and have now been removed from `scripts/sitecustomize.py`.
+This is direct evidence that current production code is compatible with Pillow 12.3.0.
+
+## Historical provider incident — fixed
+
+Run #1002 failed with exit code 124 because a Groq daily/token quota HTTP 429 was incorrectly treated as retryable, causing repeated waits until the outer 240-second timeout.
+
+Fix:
+
+`75cdc250cf3e03546aa4583c74d047a61dfd1a3c`
+
+Regression coverage:
+
+`ae3d283e030f0d27324ec88f1157664608aa5853`
+
+Current regression evidence includes explicit tests that Groq quota 429 and Cloudflare 1010 failures do not retry indefinitely.
 
 ## User editorial prompt — canonical
 
-The prompt around line 1345 of `scripts/intily_ai_news.py` is the user's intentional configuration. Its tone, profanity, humor target and approximately 700-character target are part of the requested editorial behavior and remain unchanged.
+The prompt in `scripts/intily_ai_news.py` remains the user's intentional configuration. The selector is:
 
-A manual switch is now available near the beginning of the file:
+- `style_prompt = 1` — original user prompt;
+- `style_prompt = 2` — clean/professional alternative.
 
-- `style_prompt = 1` — the user's original hard/maternal/sarcastic prompt;
-- `style_prompt = 2` — the additional clean/professional Russian prompt without profanity.
+Technical compatibility layers must not replace the selected editorial prompt.
 
-The selected prompt is the only editorial prompt passed to the AI editor. Invalid values fail explicitly.
+## Media gate
 
-**Rule:** technical defects may be fixed autonomously; user-authored editorial behavior requires explicit approval before modification or runtime override.
+Run #953 and run #1018 both prove that the image subsystem can obtain a real image payload. Run #1018 reached:
 
-## Media diagnosis from #953
+`IMAGE_PAYLOAD_BYTES 85730 source_bytes 85730 optimized False`
 
-The image subsystem reached a real image payload:
-
-`IMAGE_PAYLOAD_BYTES 41356 source_bytes 41356 optimized False`
-
-The image itself was therefore not blocked by source access, MIME, dimensions or Telegram payload size.
-
-The final failure was:
+The current production guard then rejected the complete photo caption because it exceeded Telegram's 1024-byte caption limit and correctly fell back to the complete text post:
 
 `IMAGE_FALLBACK_TEXT PHOTO_CAPTION_LIMIT_TEXT_FALLBACK`
 
-So #953 did **not** prove photo delivery, but it did prove that the image extraction/validation work can obtain a usable image in production.
+Editorial text is not truncated.
 
-The earlier attempt to force an approximately 350-character editorial prompt has been removed. Do not shorten or alter the user's editorial prompt to solve this technical limitation.
+**Open gate:** real photo delivery telemetry:
 
-### Required next evidence
-
-A new production run must show:
-
-`IMAGE_FOUND` → `IMAGE_VALIDATED` → `TELEGRAM_PHOTO_SENT`
-
-If caption length blocks delivery, implement a structural media/text delivery strategy that preserves the complete editorial content rather than silently truncating or rewriting it.
+`IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`
 
 ## Groq gate
 
-The retired `llama-3.1-8b-instant` caused the historical `404 svgmodel_not_found`. Current technical runtime is `openai/gpt-oss-20b`.
+Current technical runtime is `openai/gpt-oss-20b` via a technical-only `sitecustomize.py` override because the historical `llama-3.1-8b-instant` was retired.
 
-Run #953 used Gemini for all live editorial requests, so Groq fallback remains unproven.
-
-Closure evidence:
-
-`AI_PROVIDER_ATTEMPT GROQ` → `AI_PROVIDER_OK GROQ`
-
-or a bounded correctly classified Groq failure.
+Current tests prove bounded quota failure handling. A fresh live fallback after the current hardening is still preferred as final evidence.
 
 ## Scheduler / cadence
 
 GitHub Actions is `workflow_dispatch` only. Cloudflare is the production scheduler.
 
-Current versioned worker: `* * * * *` UTC with a 1/3 dispatch gate. This is probabilistic dispatch, not a guaranteed 3- or 5-minute cadence. Several consecutive production runs are required for cadence confirmation.
+Current versioned worker: `* * * * *` UTC with a 1/3 dispatch gate. This is probabilistic and not a guaranteed 3- or 5-minute cadence.
+
+**Open gate:** several consecutive Cloudflare-dispatched production cycles proving real cadence and no regression between cycles.
 
 ## Remaining gates
 
-1. Real Groq fallback proof.
-2. Real photo publication proof without changing the user's editorial prompt.
-3. Several consecutive successful scheduler-dispatched cycles.
-4. Cadence confirmation.
+1. Real photo publication proof without changing the user's editorial prompt.
+2. Fresh live Groq fallback proof after retry hardening, or a production bounded failure under quota conditions.
+3. Several consecutive scheduler-dispatched production cycles and cadence confirmation.
 
 ## Final assessment
 
-**80% — YELLOW. Production-capable, not yet fully GREEN.**
+**90% — YELLOW. Production-capable and CI-stable; not yet fully GREEN.**
+
+The project is materially closer to the requested 99% state. No further user action is currently required for the CI fix.
 
 Acceptance rule:
 
