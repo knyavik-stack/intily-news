@@ -47,19 +47,25 @@ GitHub workflow не имеет собственного cron. Cloudflare явл
 
 ## Текущие открытые production gates
 
-### P1 — CI regression closure
+### P1 — CI regression closure — GREEN
 
-Последний run **#951** завершился failure на regression gate до запуска publisher. Причина была в тесте: mock `extract_image_candidates()` не соответствовал реальному контракту `(ranked_candidates, final_url)`. Исправление закоммичено в `5415478c418263ab3e8233ff731584a90b5ee198`.
+Regression Gate теперь изолирован от production state writes:
 
-Следующий исполнитель должен проверить свежий workflow run на исправленном commit.
+- workflow запускается только при изменениях `scripts/**` или собственного workflow;
+- production `data/**` commits не запускают regression suite;
+- тестовые изображения генерируются Python stdlib, Pillow в Regression Gate не устанавливается;
+- commit `8c8b52d18705b1085a08b1d3a0fe5559844bfeb5` прошёл свежий regression check успешно;
+- фактический результат: **50 tests, OK**, job `103159366568`, workflow run `34566421454`.
+
+Важно: production run #1018 также доказал, что production test/runtime path успешно работает с Pillow **12.3.0**. Поэтому прежнее предположение «Pillow 12.3.0 ломает текущий production code» не подтверждается фактами. Рабочий fix — убрать ненужную зависимость из CI, а не навсегда понижать Pillow.
 
 ### P2 — Groq live proof
 
-Runtime override уже загружается как `openai/gpt-oss-20b`. Нужен реальный fallback request с telemetry `AI_PROVIDER_ATTEMPT GROQ` + `AI_PROVIDER_OK GROQ` либо корректно классифицированной ошибкой.
+Runtime override загружается как `openai/gpt-oss-20b`. Нужен свежий production fallback request с telemetry `AI_PROVIDER_ATTEMPT GROQ` + `AI_PROVIDER_OK GROQ` либо корректно классифицированной ошибкой после текущего retry hardening.
 
 ### P3 — Photo live proof
 
-Image hardening включает browser-like retry, one-level HTML image indirection и bounded 12s fetch budget. Нужен реальный production `IMAGE_FOUND` → `IMAGE_VALIDATED` → `TELEGRAM_PHOTO_SENT`.
+Image hardening включает browser-like retry, one-level HTML image indirection и bounded fetch budget. Нужен реальный production `IMAGE_FOUND` → `IMAGE_VALIDATED` → `TELEGRAM_PHOTO_SENT`.
 
 ### P4 — Scheduler cadence
 
