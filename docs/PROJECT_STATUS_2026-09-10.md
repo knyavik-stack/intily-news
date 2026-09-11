@@ -31,7 +31,7 @@ Commits:
 
 **Verification gate:** a fresh Regression Gate run on `8c8b52d...` must finish green. Until that is observed, CI is not marked GREEN.
 
-GitHub path filters are intentionally used here: when both branch and path filters are present, GitHub runs the workflow only when both conditions match. citeturn3search0turn3search2
+GitHub supports combining branch and path filters so a workflow runs only when both conditions match. The current gate uses this to prevent production state-only pushes from starting regression CI.
 
 ## Latest production verification — run #1018
 
