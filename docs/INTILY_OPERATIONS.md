@@ -94,21 +94,27 @@ Hardening:
 - minimum dimensions;
 - Telegram payload cap ≤1 MB.
 
-Caption handling is explicitly **no-truncation**:
+Caption handling is explicitly **no-truncation / no-orphan-image**:
 
-- complete sanitized text ≤1024 bytes → `sendPhoto(caption=full_text)`;
-- complete sanitized text >1024 bytes → validated `sendPhoto(caption='')`, immediately followed by the **complete unchanged editorial text** via the existing Telegram text sender;
-- image failure → complete text fallback as before.
+- complete sanitized text **≤1024 visible Telegram characters** → `sendPhoto(caption=full_text)`;
+- complete sanitized text **>1024 visible characters** → **do not call `sendPhoto`**; publish the complete unchanged editorial text exactly once through the existing Telegram text sender;
+- image retrieval, validation or photo delivery failure → complete text fallback as before.
 
-This preserves the user's editorial text and still delivers the validated image. No editorial text is truncated merely to satisfy Telegram's photo-caption limit.
+Telegram's `sendPhoto` caption limit is a character limit after entities parsing, not a UTF-8 byte limit. The runtime guard therefore measures visible characters after Telegram-style HTML sanitization/entity decoding.
 
-Production acceptance requires telemetry:
+This preserves the user's editorial text and prevents an orphan image followed by a second text message.
+
+Production acceptance telemetry:
+
+Short/fit post:
 
 `IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`
 
-For split delivery the expected additional telemetry is:
+Long post:
 
-`TELEGRAM_FULL_TEXT_SENT_AFTER_PHOTO`
+`IMAGE_SKIPPED_CAPTION_LIMIT → TELEGRAM_SENT`
+
+The long branch must have no `TELEGRAM_PHOTO_SENT` and no second text message.
 
 ## 8. Regression Gate reliability
 
@@ -129,13 +135,17 @@ Verified green baseline:
 - check run `103159366568`;
 - **50/50 tests passed**.
 
+Latest media-policy regression gate: **53/53 passed** in run `34592272934`.
+
 ## 9. Production evidence
 
-Run #1018 completed successfully.
+Production run #1047 completed successfully and proved the ordinary image path: live editorial processing, real image retrieval/validation, `TELEGRAM_PHOTO_SENT`, Telegram publication and state/analytics persistence.
+
+Production run #1062 completed successfully on current production code and proved the publisher remains operational after the no-orphan policy change: 53 regression tests passed in the production preflight, Gemini successfully edited a live candidate, and Telegram publication completed with `TELEGRAM_SENT`. This run did not naturally exercise the long-caption branch because the selected post used text fallback due to unresolved article source.
 
 Historical run #1002 exposed the provider retry-budget defect; it was fixed in `75cdc250cf3e03546aa4583c74d047a61dfd1a3c` with regression coverage in `ae3d283e030f0d27324ec88f1157664608aa5853`.
 
-The current media split-delivery change requires a fresh Regression Gate and a real production cycle before it is marked GREEN.
+Fresh live proof of both media branches and fresh live Groq fallback remain open acceptance gates.
 
 ## 10. Monitoring
 
