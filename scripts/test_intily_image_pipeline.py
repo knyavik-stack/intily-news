@@ -71,7 +71,7 @@ class ImagePipelineTests(unittest.TestCase):
 
     def test_blockchain_news_expected_image_is_a_first_class_candidate(self):
         expected = 'https://blockchainstock.blob.core.windows.net/features/2242046FCF14090589D5A49FFC590D13A9AF6032D71ECDBD82C9F012CD661799.jpg'
-        html = f'<meta property="og:image" content="{expected}">'
+        html = f'<meta property="og:image" content="{expected}">' 
         candidates, _ = media._meta_image_candidates(html)
         self.assertEqual(candidates[0], ('og_image', expected))
 
@@ -83,6 +83,12 @@ class ImagePipelineTests(unittest.TestCase):
         self.assertIn('<i>важно</i>', caption)
         self.assertIn('<a href="https://example.com">источник</a>', caption)
         self.assertNotIn('<script', caption.lower())
+
+    def test_cyrillic_caption_uses_characters_not_utf8_bytes(self):
+        text = 'Привет ' * 170
+        self.assertGreater(len(text.encode('utf-8')), 1024)
+        caption = media._photo_caption(text)
+        self.assertEqual(caption, text)
 
     def test_long_photo_caption_is_rejected_instead_of_truncated(self):
         text = '<b>Заголовок</b> ' + ('длинный & текст ' * 200)
