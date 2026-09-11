@@ -94,7 +94,7 @@ try:
     def _full_or_reject_photo_caption(text, limit=1024):
         sanitized = _image_pipeline._sanitize_telegram_html(text)
         if len(sanitized) > limit:
-            raise ValueError('PHOTO_CAPTION_LIMIT_TEXT_FALLBACK')
+            raise ValueError('PHOTO_CAPTION_LIMIT_TEXT_SPLIT')
         return sanitized
 
     _image_pipeline._photo_caption = _full_or_reject_photo_caption
