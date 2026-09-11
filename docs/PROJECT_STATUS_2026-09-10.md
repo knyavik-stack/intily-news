@@ -2,7 +2,7 @@
 
 ## Canonical current status
 
-**🟡 FINAL PRODUCTION VERIFICATION — 94%.** Core publication works end-to-end in successful runs. Production run #1047 completed successfully with live editorial processing, real image retrieval and Telegram photo delivery. The media caption policy is now hardened so posts exceeding Telegram's 1024-character photo-caption limit are published as one complete text-only post rather than an orphan image plus a second text message. Regression Gate #35 is green with **53 tests** on the corrected media policy. Remaining work is a fresh production run on this exact policy, fresh live Groq fallback evidence, and several consecutive Cloudflare-dispatched cycles/cadence confirmation.
+**🟡 FINAL PRODUCTION VERIFICATION — 94%.** Core publication works end-to-end in successful runs. Production runs #1047 and #1062 completed successfully with live editorial processing; #1047 proved real image retrieval and Telegram photo delivery, while #1062 proved the current no-orphan policy code passes the full 53-test preflight and remains operational in production. The media caption policy is hardened so posts exceeding Telegram's 1024-character photo-caption limit are published as one complete text-only post rather than an orphan image plus a second text message. Regression Gate #35 is green with **53 tests** on the corrected media policy. Remaining work is fresh live proof of both media branches, fresh live Groq fallback evidence, and several consecutive Cloudflare-dispatched cycles/cadence confirmation.
 
 Production contract:
 
@@ -35,9 +35,26 @@ Verified baseline:
 - Actions run `34566421454`;
 - **50/50 passed** in 0.555s.
 
-## Latest production verification — run #1047
+## Latest production verification — run #1062
 
-Run #1047 completed successfully and proved the current ordinary image path:
+Run #1062 completed successfully on commit `c1922b4520b639e7f71602a67eb8909dee87f3de` before the subsequent analytics persistence commit.
+
+Verified from the production job log:
+
+- media runtime installed **Pillow 12.3.0**;
+- the production preflight ran **53/53 tests successfully**;
+- `GROQ_MODEL_RUNTIME_OVERRIDE openai/gpt-oss-20b` loaded only as technical compatibility migration;
+- Gemini successfully edited a live candidate;
+- Telegram publication emitted `TELEGRAM_SENT 1230`;
+- `BUSINESS_RESULT PUBLISHED telegram_delivery_ok`;
+- `QUEUE_SCORE_AUDIT invariant_ok:true`;
+- state/analytics persistence succeeded and advanced `main` to `6f35e9f`.
+
+The selected item in #1062 did **not** exercise the no-orphan long-caption branch: its image path fell back because `ARTICLE_SOURCE_UNRESOLVED`. Therefore #1062 is proof that the current production policy remains operational, not proof of the long-caption branch itself.
+
+## Latest ordinary image verification — run #1047
+
+Run #1047 completed successfully and proved the ordinary image path:
 
 - production workflow `success`;
 - media runtime installed **Pillow 12.3.0**;
@@ -47,8 +64,6 @@ Run #1047 completed successfully and proved the current ordinary image path:
 - `TELEGRAM_SENT` and `BUSINESS_RESULT PUBLISHED telegram_delivery_ok` were emitted;
 - `QUEUE_SCORE_AUDIT invariant_ok:true`;
 - state/analytics persistence succeeded.
-
-The long-caption orphan-image case was not exercised by #1047; that case is now covered by regression tests and awaits a fresh production observation.
 
 ## Production run #1048 — CLOSED AS STALE-CODE FAILURE
 
@@ -97,7 +112,7 @@ Expected telemetry for a long post:
 
 `IMAGE_SKIPPED_CAPTION_LIMIT → TELEGRAM_SENT` with no `TELEGRAM_PHOTO_SENT` and no second text message.
 
-**Fresh live production proof on the exact no-orphan branch remains open.**
+**Fresh live production proof of the exact long-caption no-orphan branch remains open.**
 
 Detailed incident/fix record: `docs/PRODUCTION_CHANGELOG_2026-09-11_MEDIA_CAPTION_POLICY.md`.
 
@@ -131,7 +146,7 @@ The versioned worker uses `* * * * *` UTC with a 1/3 dispatch gate. This is prob
 - real Telegram photo delivery reached in production;
 - provider retry hardening implemented and regression-tested;
 - Regression Gate #35 **53/53 green**;
-- production run #1047 successful;
+- production runs #1047 and #1062 successful;
 - Pillow 12.3.0 proven compatible with production test/runtime path;
 - no-orphan media policy implemented and regression-tested;
 - Telegram caption limit handled as characters, not bytes.
