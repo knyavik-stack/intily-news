@@ -295,20 +295,20 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789150337.0048926,
+    "last_start_ts": 1789150817.768554,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789150337.0048926,
-    "last_success_ts": 1789150337.0048926,
-    "last_candidates": 41,
-    "last_published": 1,
+    "last_run_ts": 1789150817.768554,
+    "last_success_ts": 1789150817.768554,
+    "last_candidates": 40,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789150496.1071916
+      "updated_at": 1789150908.256016
     },
     "GROQ": {
       "disabled_until": 0,
@@ -327,13 +327,6 @@
     }
   },
   "stories": {
-    "0f7432dc0e130715b06e5b26af230001bcc8fb82c00d6352bdf7038017a46493": {
-      "time": 1789064209,
-      "title": "AI-powered attack exploited PaperCut flaws to hack 395 organizations - BleepingComputer",
-      "desc": "AI-powered attack exploited PaperCut flaws to hack 395 organizations BleepingComputer",
-      "source": "BleepingComputer",
-      "region": "WORLD"
-    },
     "6df6a2eda3b9b4179ac565d992298d5d093620ba707dfdb07a122e0ff59658af": {
       "time": 1789064453,
       "title": "OpenAI has launched a data agent that transforms enterprise data into analytics and dashboards with a single prompt, but has not disclosed accuracy benchmarks. - 富途牛牛",
@@ -904,204 +897,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1788982578,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": true,
-      "duration_sec": 64.2,
-      "candidates": 53,
-      "queue_before": 8,
-      "queue_after": 17,
-      "published": 0,
-      "publish_attempts": 10,
-      "item_failures": 10,
-      "admission": {
-        "published_key": 30,
-        "known_recent": 0,
-        "already_queued": 5,
-        "story_queue": 2,
-        "story_history": 7,
-        "added": 9,
-        "candidate_count": 53,
-        "admission_rate": 16.98,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 4,
-          "average_score": 6.75,
-          "bonus_total": 81.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость пересмотра выбора облачного провайдера из-за геополитических рисков и смены вектора инфраструктуры.",
-            "title": "Nebius Аркадия Воложа заключила соглашение с Palantir Питера Тиля",
-            "final_score": 73.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 9,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 160,
-        "raw_items": 1429,
-        "source_counts": {
-          "TechCrunch AI": -1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 5,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 1,
-          "Ars Technica": 2,
-          "Habr AI/News": 31,
-          "CNews": 70,
-          "Euronews": 50
-        },
-        "score_filtered": 1320,
-        "quality_filtered": 41,
-        "story_dedup": 15,
-        "candidates": 53,
-        "candidate_rate": 0.0418,
-        "score_buckets": {
-          "0–39": 1239,
-          "40–49": 120,
-          "50–59": 66,
-          "60–69": 3,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 3,
-          "6": 4,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI"
-        ],
-        "used": "GEMINI",
-        "failovers": 3,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788982980,
       "status": "OK",
@@ -22310,10 +22105,148 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789150817,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 90.75,
+      "candidates": 40,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 32,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 8,
+        "added": 0,
+        "candidate_count": 40,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 10,
+          "average_score": 7.8,
+          "bonus_total": 234.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 7,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Понимание подходов к масштабированию высоконагруженных систем критично для архитекторов и CTO, строящих свои AI-продукты.",
+            "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+            "final_score": 68.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 160,
+        "raw_items": 1423,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 6,
+          "Habr AI/News": 40,
+          "CNews": 60,
+          "Euronews": 50
+        },
+        "score_filtered": 1335,
+        "quality_filtered": 40,
+        "story_dedup": 8,
+        "candidates": 40,
+        "candidate_rate": 0.0317,
+        "score_buckets": {
+          "0–39": 1254,
+          "40–49": 119,
+          "50–59": 45,
+          "60–69": 5,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 9,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789150337.0048926,
+  "last_search_ts": 1789150817.768554,
   "last_publish_ts": 1789150337.0048926,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
