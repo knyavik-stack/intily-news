@@ -284,8 +284,6 @@
     "b28f342c7568ae3cc4d14310395b613e1290c8818af58845bd003754e3acb308": 1789147456
   },
   "known": {
-    "3a08a55fd841340dfe3e7bc86402ff270d52fea816f77cb7d46e25ccd7efbf71": 1789142204.0616226,
-    "d50e4c749be3f94940ff24c34b872ba1e663adc0b02e1f7293e100b0159262e6": 1789142204.0616226,
     "e79fc9b90cb036699b0a5554dc7febd26667507836ee9c2e9c130d8ce9d771f1": 1789143648.4765608,
     "a2b0e47de8c9325adde026a6d0031bc957cb8bfdbc1978198ee592d8b9d69fc6": 1789143897.4972744,
     "3ae7c9d051161507bc9773d2a04d9c0c1275309735764e70e53d898b507299e7": 1789146976.6014805,
@@ -293,20 +291,20 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789147456.683745,
+    "last_start_ts": 1789147695.0416288,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789147456.683745,
-    "last_success_ts": 1789147456.683745,
+    "last_run_ts": 1789147695.0416288,
+    "last_success_ts": 1789147695.0416288,
     "last_candidates": 41,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789147550.6278462
+      "updated_at": 1789147779.1512659
     },
     "GROQ": {
       "disabled_until": 0,
@@ -888,188 +886,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1788978496,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": true,
-      "duration_sec": 40.94,
-      "candidates": 56,
-      "queue_before": 15,
-      "queue_after": 16,
-      "published": 0,
-      "publish_attempts": 10,
-      "item_failures": 10,
-      "admission": {
-        "published_key": 31,
-        "known_recent": 5,
-        "already_queued": 7,
-        "story_queue": 3,
-        "story_history": 9,
-        "added": 1,
-        "candidate_count": 56,
-        "admission_rate": 1.79,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 2,
-          "invariant_ok": false
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 184,
-        "raw_items": 1490,
-        "source_counts": {
-          "TechCrunch AI": 13,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 1,
-          "Ars Technica": 2,
-          "Habr AI/News": 38,
-          "CNews": 76,
-          "Euronews": 50
-        },
-        "score_filtered": 1368,
-        "quality_filtered": 45,
-        "story_dedup": 21,
-        "candidates": 56,
-        "candidate_rate": 0.0429,
-        "score_buckets": {
-          "0–39": 1279,
-          "40–49": 132,
-          "50–59": 76,
-          "60–69": 2,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 1,
-          "4": 3,
-          "5": 5,
-          "6": 4,
-          "7": 1,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788978683,
       "status": "OK",
@@ -22123,10 +21939,148 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789147695,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 84.45,
+      "candidates": 41,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 33,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 8,
+        "added": 0,
+        "candidate_count": 41,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 10,
+          "average_score": 7.8,
+          "bonus_total": 234.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 7,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Понимание архитектурных решений OpenAI помогает инженерам проектировать высоконагруженные системы с учетом реальных кейсов.",
+            "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+            "final_score": 68.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 160,
+        "raw_items": 1384,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 5,
+          "Habr AI/News": 40,
+          "CNews": 61,
+          "Euronews": 50
+        },
+        "score_filtered": 1285,
+        "quality_filtered": 48,
+        "story_dedup": 10,
+        "candidates": 41,
+        "candidate_rate": 0.0335,
+        "score_buckets": {
+          "0–39": 1218,
+          "40–49": 113,
+          "50–59": 48,
+          "60–69": 5,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 9,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789147456.683745,
+  "last_search_ts": 1789147695.0416288,
   "last_publish_ts": 1789147456.683745,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
