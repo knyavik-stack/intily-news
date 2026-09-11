@@ -283,35 +283,37 @@
     "3ae7c9d051161507bc9773d2a04d9c0c1275309735764e70e53d898b507299e7": 1789146976,
     "b28f342c7568ae3cc4d14310395b613e1290c8818af58845bd003754e3acb308": 1789147456,
     "7c549b44fc2b414137068ff4fc93a3ce2e6d696e0a9a9f1355105bb771537c84": 1789148905,
-    "abc2a8a8ca073de3996f9aee20c69d8063eb5902728b18ecbef32efd27c3a2bb": 1789149377
+    "abc2a8a8ca073de3996f9aee20c69d8063eb5902728b18ecbef32efd27c3a2bb": 1789149377,
+    "f7d2469bccaaf0ce60b158d91c7e73c7499e1843feb1fcdab601b3896963c187": 1789150337
   },
   "known": {
     "3ae7c9d051161507bc9773d2a04d9c0c1275309735764e70e53d898b507299e7": 1789146976.6014805,
     "b28f342c7568ae3cc4d14310395b613e1290c8818af58845bd003754e3acb308": 1789147456.683745,
     "7c549b44fc2b414137068ff4fc93a3ce2e6d696e0a9a9f1355105bb771537c84": 1789148176.44913,
-    "abc2a8a8ca073de3996f9aee20c69d8063eb5902728b18ecbef32efd27c3a2bb": 1789148905.7378135
+    "abc2a8a8ca073de3996f9aee20c69d8063eb5902728b18ecbef32efd27c3a2bb": 1789148905.7378135,
+    "f7d2469bccaaf0ce60b158d91c7e73c7499e1843feb1fcdab601b3896963c187": 1789150337.0048926
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789149617.6738384,
+    "last_start_ts": 1789150337.0048926,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789149617.6738384,
-    "last_success_ts": 1789149617.6738384,
+    "last_run_ts": 1789150337.0048926,
+    "last_success_ts": 1789150337.0048926,
     "last_candidates": 41,
-    "last_published": 0,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1789149774.9827662,
-      "reason": "TEMPORARY_SERVICE_ERROR_OR_429",
-      "updated_at": 1789149654.982768
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1789150496.1071916
     },
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789149658.3475041
+      "updated_at": 1789150482.643246
     },
     "OPENAI": {
       "disabled_until": 1789207540.9698231,
@@ -325,13 +327,6 @@
     }
   },
   "stories": {
-    "1d5e3428a744e91793ab057157022fe42868b52857329dcdbfa3a2222d0f0703": {
-      "time": 1789063532,
-      "title": "Anthropic's safety monitor missed a live cyberattack because Mythos 5's reasoning said everything was fine - VentureBeat",
-      "desc": "Anthropic's safety monitor missed a live cyberattack because Mythos 5's reasoning said everything was fine VentureBeat",
-      "source": "VentureBeat",
-      "region": "WORLD"
-    },
     "0f7432dc0e130715b06e5b26af230001bcc8fb82c00d6352bdf7038017a46493": {
       "time": 1789064209,
       "title": "AI-powered attack exploited PaperCut flaws to hack 395 organizations - BleepingComputer",
@@ -877,10 +872,16 @@
       "desc": "Anthropic blocks potential misuse of AI for biological weapons research wng.org",
       "source": "wng.org",
       "region": "WORLD"
+    },
+    "f7d2469bccaaf0ce60b158d91c7e73c7499e1843feb1fcdab601b3896963c187": {
+      "time": 1789150337,
+      "title": "Anthropic Warning Spurs DC Regulation Push - blockchain.news",
+      "desc": "Anthropic Warning Spurs DC Regulation Push blockchain.news",
+      "source": "blockchain.news",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -898,100 +899,11 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1788982217,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 5.0,
-      "candidates": 0,
-      "queue_before": 9,
-      "queue_after": 8,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Изменение бизнес-модели Suno напрямую влияет на стоимость и доступность инструментов для создания контента.",
-            "title": "AI Music Startup Suno Launches New Models That Pay Labels - Bloomberg",
-            "final_score": 61.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1788982578,
       "status": "OK",
@@ -22241,11 +22153,168 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789150337,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 172.83,
+      "candidates": 41,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 32,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 8,
+        "added": 1,
+        "candidate_count": 41,
+        "admission_rate": 2.44,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "The read operation timed out": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "The read operation timed out"
+          }
+        },
+        "audience": {
+          "evaluated": 11,
+          "average_score": 7.73,
+          "bonus_total": 255.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 7,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Риск ужесточения комплаенса и юридических требований к использованию LLM в бизнес-процессах.",
+            "title": "Anthropic Warning Spurs DC Regulation Push - blockchain.news",
+            "final_score": 62.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 161,
+        "raw_items": 1411,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 6,
+          "Habr AI/News": 40,
+          "CNews": 61,
+          "Euronews": 50
+        },
+        "score_filtered": 1318,
+        "quality_filtered": 44,
+        "story_dedup": 8,
+        "candidates": 41,
+        "candidate_rate": 0.0328,
+        "score_buckets": {
+          "0–39": 1241,
+          "40–49": 119,
+          "50–59": 46,
+          "60–69": 5,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 18,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789149617.6738384,
-  "last_publish_ts": 1789149377.998458,
+  "last_search_ts": 1789150337.0048926,
+  "last_publish_ts": 1789150337.0048926,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
