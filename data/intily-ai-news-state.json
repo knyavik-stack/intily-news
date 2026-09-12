@@ -311,14 +311,15 @@
     "44ad4ae831c2d16c628f66cb5c65dab00284c6e6c3aceb0e3c50ce9f8e8bbd68": 1789217335,
     "ebfaa4dc962ca12fbaff124f3f58b560a48c16e54b517178884d1f9b8942dcb2": 1789218771,
     "9dc72d9d2a64829d427a0f5bc9702e1ccd048c74143e7b477f3af2a02eb7bd6c": 1789219732,
-    "ef50545febd0e1b85a3913ef18e4f8a637aeb608fbeaf240b32039ba7507f0f9": 1789221170
+    "ef50545febd0e1b85a3913ef18e4f8a637aeb608fbeaf240b32039ba7507f0f9": 1789221170,
+    "151308f4dc67e096e7518d816886c456cf72c08d94af40d1abe4e1acfc70f303": 1789221890
   },
   "known": {
-    "44ad4ae831c2d16c628f66cb5c65dab00284c6e6c3aceb0e3c50ce9f8e8bbd68": 1789216371.3279278,
     "ebfaa4dc962ca12fbaff124f3f58b560a48c16e54b517178884d1f9b8942dcb2": 1789218771.2093413,
     "22de1bf23835fa5d23a2b1cf1271e1cf1721c0c879bb49951fd1a1a91956fa9a": 1789218771.2093413,
     "9dc72d9d2a64829d427a0f5bc9702e1ccd048c74143e7b477f3af2a02eb7bd6c": 1789219732.6234894,
-    "ef50545febd0e1b85a3913ef18e4f8a637aeb608fbeaf240b32039ba7507f0f9": 1789221170.2968338
+    "ef50545febd0e1b85a3913ef18e4f8a637aeb608fbeaf240b32039ba7507f0f9": 1789221170.2968338,
+    "151308f4dc67e096e7518d816886c456cf72c08d94af40d1abe4e1acfc70f303": 1789221890.755231
   },
   "queue": [
     {
@@ -359,11 +360,11 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789221170.2968338,
+    "last_start_ts": 1789221890.755231,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789221170.2968338,
-    "last_success_ts": 1789221170.2968338,
+    "last_run_ts": 1789221890.755231,
+    "last_success_ts": 1789221890.755231,
     "last_candidates": 16,
     "last_published": 1,
     "queue_size": 1
@@ -372,7 +373,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789221236.7294662
+      "updated_at": 1789221957.8281958
     },
     "GROQ": {
       "disabled_until": 0,
@@ -391,13 +392,6 @@
     }
   },
   "stories": {
-    "7a56f24fc1ec786bd29fa656fceb429df7b87db1bf749c51a080aa8e595ab205": {
-      "time": 1789135479,
-      "title": "SAP CEO says he will launch only AI agents that solve complex problems - 디지털투데이",
-      "desc": "SAP CEO says he will launch only AI agents that solve complex problems 디지털투데이",
-      "source": "디지털투데이",
-      "region": "WORLD"
-    },
     "bdc9546814ee524a172d09b55230456c1de9618dfb25abefaed54ad77c6c1eda": {
       "time": 1789135767,
       "title": "Elliptic Launches Global Standard to Combat Agentic On-Chain Risk in AI-Driven Finance - FF News",
@@ -761,10 +755,16 @@
       "desc": "Anthropic Discloses Fourth Cybersecurity Incident Involving Claude BW Businessworld",
       "source": "BW Businessworld",
       "region": "WORLD"
+    },
+    "151308f4dc67e096e7518d816886c456cf72c08d94af40d1abe4e1acfc70f303": {
+      "time": 1789221890,
+      "title": "ИИ-агент OpenAI совершил кибератаку на сервис RubyGems - Runet.news",
+      "desc": "ИИ-агент OpenAI совершил кибератаку на сервис RubyGems Runet.news",
+      "source": "Runet.news",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -783,157 +783,10 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789037486,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 101.98,
-      "candidates": 30,
-      "queue_before": 2,
-      "queue_after": 3,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 24,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 3,
-        "added": 2,
-        "candidate_count": 30,
-        "admission_rate": 6.67,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 10,
-          "average_score": 7.2,
-          "bonus_total": 216.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 5,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходим пересмотр рисков использования Claude в процессах с конфиденциальными данными.",
-            "title": "Anthropic discloses fourth security incident with Claude AI model By Investing.com - Investing.com India",
-            "final_score": 72.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 77,
-        "raw_items": 638,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 26,
-          "CNews": -1,
-          "Euronews": 50
-        },
-        "score_filtered": 567,
-        "quality_filtered": 32,
-        "story_dedup": 9,
-        "candidates": 30,
-        "candidate_rate": 0.0535,
-        "score_buckets": {
-          "0–39": 535,
-          "40–49": 63,
-          "50–59": 33,
-          "60–69": 7,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 2,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 9,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789037737,
       "status": "OK",
@@ -23678,11 +23531,158 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789221890,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 72.62,
+      "candidates": 16,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 8,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 6,
+        "added": 1,
+        "candidate_count": 16,
+        "admission_rate": 6.25,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://runet.news/news/79617",
+            "image_url": "https://runet.news/wp-content/uploads/2026/09/597891359898572-3-1200x600.jpeg",
+            "width": 1200,
+            "height": 600,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 10,
+          "average_score": 6.8,
+          "bonus_total": 204.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 6,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Необходим немедленный аудит прав доступа и ограничений для всех автономных ИИ-агентов в продакшене.",
+            "title": "ИИ-агент OpenAI совершил кибератаку на сервис RubyGems - Runet.news",
+            "final_score": 70.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 31,
+        "raw_items": 718,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 10,
+          "CNews": 0,
+          "Euronews": 18
+        },
+        "score_filtered": 683,
+        "quality_filtered": 13,
+        "story_dedup": 6,
+        "candidates": 16,
+        "candidate_rate": 0.0233,
+        "score_buckets": {
+          "0–39": 660,
+          "40–49": 36,
+          "50–59": 22,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 8,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789221170.2968338,
-  "last_publish_ts": 1789221170.2968338,
+  "last_search_ts": 1789221890.755231,
+  "last_publish_ts": 1789221890.755231,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
