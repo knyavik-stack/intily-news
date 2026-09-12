@@ -323,11 +323,11 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789225255.5865302,
+    "last_start_ts": 1789225969.2744763,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789225255.5865302,
-    "last_success_ts": 1789225255.5865302,
+    "last_run_ts": 1789225969.2744763,
+    "last_success_ts": 1789225969.2744763,
     "last_candidates": 19,
     "last_published": 0,
     "queue_size": 0
@@ -336,7 +336,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789225334.4375892
+      "updated_at": 1789226045.9101772
     },
     "GROQ": {
       "disabled_until": 0,
@@ -355,34 +355,6 @@
     }
   },
   "stories": {
-    "c4fd73096b42b8cf8a35ec09aa9798ea3415cff8f293c9dacc297e0dc51feb85": {
-      "time": 1789138859,
-      "title": "Связанные с Россией кибершпионы использовали Claude для атак на Украину и Европу . Они похищали данные о военных дронах и переписку украинских чиновников. Главное из доклада Anthropic - Новая газета Европа",
-      "desc": "Связанные с Россией кибершпионы использовали Claude для атак на Украину и Европу . Они похищали данные о военных дронах и переписку украинских чиновников. Главное из доклада Anthropic Новая газета Европа",
-      "source": "Новая газета Европа",
-      "region": "RUSSIA"
-    },
-    "abe54e9b32b0279392ee7dc15320fe989e89e932fe89263d547d723da5d151f9": {
-      "time": 1789139081,
-      "title": "California AI Chatbot Law: What Adam's Law and SB 867 Mean for Kids - International Business Times, Singapore Edition",
-      "desc": "California AI Chatbot Law: What Adam's Law and SB 867 Mean for Kids International Business Times, Singapore Edition",
-      "source": "International Business Times, Singapore Edition",
-      "region": "WORLD"
-    },
-    "a40a0577baa23f055ecaac6a1128bc48486e87399c1e5be734a14712bee6d163": {
-      "time": 1789139320,
-      "title": "«Дочка» «Ростелекома» стала включать в договоры с ИТ-компаниями 30% неустойки за применение ИИ",
-      "desc": "Структура «Ростелекома» — ООО «РТК — Информационная безопасность» (бренд ГК «Солар») начала включать в новые договоры с ИТ-подрядчиками пункты о запрете на использование искусственного интеллекта без согласования и жесткие неустойки (в 30% от цены контракта) для нарушителей. Эксперты говорят, что тренд на ограничения для ИИ уже набирает в российском бизнесе обороты, но технически доказать использование нейросетей не всегда возможно.",
-      "source": "CNews",
-      "region": "RUSSIA"
-    },
-    "039f8fc150320f22061324be275e74ee1761e8c7fccd51d7ac933c7846dd184d": {
-      "time": 1789139561,
-      "title": "US lawmakers seek new AI rules after Anthropic researchers warn of extinction risk - The Indian Express",
-      "desc": "US lawmakers seek new AI rules after Anthropic researchers warn of extinction risk The Indian Express",
-      "source": "The Indian Express",
-      "region": "WORLD"
-    },
     "77a1189de967b3a1ae6501d3ffe3b469fa8885668dcd37ded5a4abe5ad740bda": {
       "time": 1789139798,
       "title": "Anthropic Finds Fourth Claude Cyber Incident After Model Accessed Third-Party Computer - Security Boulevard",
@@ -708,94 +680,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789038386,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 28.5,
-      "candidates": 0,
-      "queue_before": 2,
-      "queue_after": 1,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 3.0,
-          "bonus_total": 9.0,
-          "max_score": 3.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 3.0,
-            "bonus": 9.0,
-            "reason": "Новость носит чисто бюрократический характер и не дает инструментов или стратегий для реального бизнеса.",
-            "title": "Представители 25 российских компаний вошли в Совет по генеративной разработке ПО - PrimaMedia",
-            "final_score": 51.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ"
-        ],
-        "used": "GROQ",
-        "failovers": 8,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789038750,
       "status": "OK",
@@ -23727,10 +23611,148 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789225969,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 76.75,
+      "candidates": 19,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 1,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 7,
+        "added": 0,
+        "candidate_count": 19,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 10,
+          "average_score": 8.0,
+          "bonus_total": 240.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 8,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Необходим немедленный аудит прав доступа и политик безопасности для всех автономных ИИ-агентов, имеющих доступ к кодовой базе.",
+            "title": "OpenAI's AI Agents Secretly Attacked RubyGems Two Months Before Hugging Face Hack - Startup Fortune",
+            "final_score": 70.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 33,
+        "raw_items": 760,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 10,
+          "CNews": 0,
+          "Euronews": 19
+        },
+        "score_filtered": 722,
+        "quality_filtered": 15,
+        "story_dedup": 4,
+        "candidates": 19,
+        "candidate_rate": 0.0261,
+        "score_buckets": {
+          "0–39": 698,
+          "40–49": 39,
+          "50–59": 22,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 9,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789225255.5865302,
+  "last_search_ts": 1789225969.2744763,
   "last_publish_ts": 1789224772.3810773,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
