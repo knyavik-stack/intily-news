@@ -316,19 +316,18 @@
     "271c0c04724a3eeba7246f26116307a8765ee71ac4b1f720a551fd440969a794": 1789224772
   },
   "known": {
-    "ef50545febd0e1b85a3913ef18e4f8a637aeb608fbeaf240b32039ba7507f0f9": 1789221170.2968338,
     "151308f4dc67e096e7518d816886c456cf72c08d94af40d1abe4e1acfc70f303": 1789221890.755231,
     "271c0c04724a3eeba7246f26116307a8765ee71ac4b1f720a551fd440969a794": 1789224772.3810773,
     "22de1bf23835fa5d23a2b1cf1271e1cf1721c0c879bb49951fd1a1a91956fa9a": 1789225255.5865302
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789225969.2744763,
+    "last_start_ts": 1789226689.8684614,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789225969.2744763,
-    "last_success_ts": 1789225969.2744763,
-    "last_candidates": 19,
+    "last_run_ts": 1789226689.8684614,
+    "last_success_ts": 1789226689.8684614,
+    "last_candidates": 18,
     "last_published": 0,
     "queue_size": 0
   },
@@ -336,7 +335,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789226045.9101772
+      "updated_at": 1789226777.8955007
     },
     "GROQ": {
       "disabled_until": 0,
@@ -355,13 +354,6 @@
     }
   },
   "stories": {
-    "77a1189de967b3a1ae6501d3ffe3b469fa8885668dcd37ded5a4abe5ad740bda": {
-      "time": 1789139798,
-      "title": "Anthropic Finds Fourth Claude Cyber Incident After Model Accessed Third-Party Computer - Security Boulevard",
-      "desc": "Anthropic Finds Fourth Claude Cyber Incident After Model Accessed Third-Party Computer Security Boulevard",
-      "source": "Security Boulevard",
-      "region": "WORLD"
-    },
     "bf97d909cf92313ef20ed84aa47da45af02a62f2c0806e3723f04f41d687e6e3": {
       "time": 1789140532,
       "title": "OpenAI: GPT-6 Astra Launches 1M Token Context - blockchain.news",
@@ -680,154 +672,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789038750,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 103.11,
-      "candidates": 39,
-      "queue_before": 1,
-      "queue_after": 7,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 26,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 6,
-        "added": 7,
-        "candidate_count": 39,
-        "admission_rate": 17.95,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENS": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INV"
-          }
-        },
-        "audience": {
-          "evaluated": 10,
-          "average_score": 7.4,
-          "bonus_total": 222.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 6,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость срочного пересмотра политики безопасности при интеграции LLM для предотвращения утечек данных.",
-            "title": "От рисков к развитию: утечки данных в ИИ стали фактором для развития нового сегмента рынка ИБ",
-            "final_score": 74.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 5,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 124,
-        "raw_items": 701,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 29,
-          "CNews": 44,
-          "Euronews": 50
-        },
-        "score_filtered": 617,
-        "quality_filtered": 35,
-        "story_dedup": 10,
-        "candidates": 39,
-        "candidate_rate": 0.0676,
-        "score_buckets": {
-          "0–39": 579,
-          "40–49": 72,
-          "50–59": 39,
-          "60–69": 11,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 1,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 9,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789038952,
       "status": "OK",
@@ -23749,10 +23593,148 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789226689,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 88.11,
+      "candidates": 18,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 13,
+        "known_recent": 1,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 4,
+        "added": 0,
+        "candidate_count": 18,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 10,
+          "average_score": 7.5,
+          "bonus_total": 225.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 7,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Необходим немедленный аудит прав доступа и изоляция сред для всех автономных ИИ-агентов из-за риска неконтролируемой активности.",
+            "title": "OpenAI's AI Agents Secretly Attacked RubyGems Two Months Before Hugging Face Hack - Startup Fortune",
+            "final_score": 70.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 32,
+        "raw_items": 763,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 10,
+          "CNews": 0,
+          "Euronews": 19
+        },
+        "score_filtered": 725,
+        "quality_filtered": 15,
+        "story_dedup": 5,
+        "candidates": 18,
+        "candidate_rate": 0.0246,
+        "score_buckets": {
+          "0–39": 698,
+          "40–49": 42,
+          "50–59": 22,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 9,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789225969.2744763,
+  "last_search_ts": 1789226689.8684614,
   "last_publish_ts": 1789224772.3810773,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
