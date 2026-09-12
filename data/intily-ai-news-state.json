@@ -306,11 +306,11 @@
   "known": {},
   "queue": [],
   "health": {
-    "last_start_ts": 1789211093.9249384,
+    "last_start_ts": 1789211327.2049742,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789211093.9249384,
-    "last_success_ts": 1789211093.9249384,
+    "last_run_ts": 1789211327.2049742,
+    "last_success_ts": 1789211327.2049742,
     "last_candidates": 10,
     "last_published": 0,
     "queue_size": 0
@@ -319,7 +319,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789211168.0969563
+      "updated_at": 1789211401.2764575
     },
     "GROQ": {
       "disabled_until": 0,
@@ -338,13 +338,6 @@
     }
   },
   "stories": {
-    "d4a83eed7428b4ac5a1e92f11a9ae033b28f3d3b61d52073559cd1465745a5f4": {
-      "time": 1789124916,
-      "title": "Человек только выбирает цель. Anthropic показала кибератаки, которыми уже управляет ИИ - SecurityLab.ru",
-      "desc": "Человек только выбирает цель. Anthropic показала кибератаки, которыми уже управляет ИИ SecurityLab.ru",
-      "source": "SecurityLab.ru",
-      "region": "RUSSIA"
-    },
     "e4a4f16179867cf34021105edea9a92f4a283fb30c01ec650422cf6e9712bffa": {
       "time": 1789125168,
       "title": "Anthropic раскрыла, как ИИ используется в кибератаках, пропаганде и разработке оружия - Frank Media",
@@ -782,139 +775,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789031550,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 41.19,
-      "candidates": 38,
-      "queue_before": 6,
-      "queue_after": 12,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 24,
-        "known_recent": 0,
-        "already_queued": 4,
-        "story_queue": 0,
-        "story_history": 4,
-        "added": 6,
-        "candidate_count": 38,
-        "admission_rate": 15.79,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 6.0,
-          "bonus_total": 18.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Potential shift in collaboration and standards for generative AI in Russia.",
-            "title": "Представители 25 российских компаний вошли в Совет по генеративной разработке ПО - PrimaMedia",
-            "final_score": 60.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 91,
-        "raw_items": 641,
-        "source_counts": {
-          "TechCrunch AI": 3,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 25,
-          "CNews": 21,
-          "Euronews": 40
-        },
-        "score_filtered": 561,
-        "quality_filtered": 28,
-        "story_dedup": 14,
-        "candidates": 38,
-        "candidate_rate": 0.0691,
-        "score_buckets": {
-          "0–39": 523,
-          "40–49": 65,
-          "50–59": 44,
-          "60–69": 9,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 1,
-          "3": 0,
-          "4": 0,
-          "5": 1,
-          "6": 3,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "GEMINI",
-          "GROQ",
-          "OPENAI"
-        ],
-        "used": "GROQ",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789031754,
       "status": "OK",
@@ -23249,10 +23109,148 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789211327,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 74.13,
+      "candidates": 10,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 10,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 10,
+          "average_score": 8.6,
+          "bonus_total": 258.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 8,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Прогноз указывает на долгосрочный тренд, требующий внимания при планировании стратегии в MedTech.",
+            "title": "AI in Diagnostic Imaging Market Size to Reach USD 24.73 Billion by 2035 Growing at a CAGR of 23.83% - SNS Insider - Business Upturn",
+            "final_score": 58.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 26,
+        "raw_items": 299,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 9,
+          "CNews": 0,
+          "Euronews": 14
+        },
+        "score_filtered": 273,
+        "quality_filtered": 14,
+        "story_dedup": 2,
+        "candidates": 10,
+        "candidate_rate": 0.0366,
+        "score_buckets": {
+          "0–39": 260,
+          "40–49": 27,
+          "50–59": 11,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 9,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789211093.9249384,
+  "last_search_ts": 1789211327.2049742,
   "last_publish_ts": 1789204132.696613,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
