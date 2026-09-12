@@ -313,29 +313,31 @@
     "9dc72d9d2a64829d427a0f5bc9702e1ccd048c74143e7b477f3af2a02eb7bd6c": 1789219732,
     "ef50545febd0e1b85a3913ef18e4f8a637aeb608fbeaf240b32039ba7507f0f9": 1789221170,
     "151308f4dc67e096e7518d816886c456cf72c08d94af40d1abe4e1acfc70f303": 1789221890,
-    "271c0c04724a3eeba7246f26116307a8765ee71ac4b1f720a551fd440969a794": 1789224772
+    "271c0c04724a3eeba7246f26116307a8765ee71ac4b1f720a551fd440969a794": 1789224772,
+    "325fbd003e7f23bdfc98eecd0b6339b1e5050d45dc7ae5132e4b13604cd35be0": 1789226928
   },
   "known": {
     "151308f4dc67e096e7518d816886c456cf72c08d94af40d1abe4e1acfc70f303": 1789221890.755231,
     "271c0c04724a3eeba7246f26116307a8765ee71ac4b1f720a551fd440969a794": 1789224772.3810773,
-    "22de1bf23835fa5d23a2b1cf1271e1cf1721c0c879bb49951fd1a1a91956fa9a": 1789225255.5865302
+    "22de1bf23835fa5d23a2b1cf1271e1cf1721c0c879bb49951fd1a1a91956fa9a": 1789225255.5865302,
+    "325fbd003e7f23bdfc98eecd0b6339b1e5050d45dc7ae5132e4b13604cd35be0": 1789226928.7557585
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789226689.8684614,
+    "last_start_ts": 1789226928.7557585,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789226689.8684614,
-    "last_success_ts": 1789226689.8684614,
-    "last_candidates": 18,
-    "last_published": 0,
+    "last_run_ts": 1789226928.7557585,
+    "last_success_ts": 1789226928.7557585,
+    "last_candidates": 20,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789226777.8955007
+      "updated_at": 1789227014.6042309
     },
     "GROQ": {
       "disabled_until": 0,
@@ -647,12 +649,18 @@
       "desc": "President Donald Trump is weakening environmental regulations in the name of speeding up the construction of AI data centers, raising health risks for Americans, a cadre of former EPA officials said this week in a briefing and new report. They are urging - perhaps futilely - the president to adopt a \"Data Center Health Protection […]",
       "source": "The Verge AI",
       "region": "WORLD"
+    },
+    "325fbd003e7f23bdfc98eecd0b6339b1e5050d45dc7ae5132e4b13604cd35be0": {
+      "time": 1789226928,
+      "title": "С 1 сентября в России стартовал цифровой рубль, вступил в силу закон об ИИ и выросли лимиты на сверхурочную работу - Агентство Бизнес Новостей",
+      "desc": "С 1 сентября в России стартовал цифровой рубль, вступил в силу закон об ИИ и выросли лимиты на сверхурочную работу Агентство Бизнес Новостей",
+      "source": "Агентство Бизнес Новостей",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -669,97 +677,10 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789038952,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 58.67,
-      "candidates": 0,
-      "queue_before": 7,
-      "queue_after": 6,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENS": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INV"
-          }
-        },
-        "audience": {
-          "evaluated": 5,
-          "average_score": 6.0,
-          "bonus_total": 90.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Упрощает доступ к модели для быстрой проверки гипотез, но не несет фундаментальных изменений в архитектуре.",
-            "title": "Cloud.ru открыл доступ к OpenClaw 2.0 в облачном маркетплейсе",
-            "final_score": 58.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789039291,
       "status": "OK",
@@ -23731,11 +23652,159 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789226928,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 87.12,
+      "candidates": 20,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 1,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 7,
+        "added": 1,
+        "candidate_count": 20,
+        "admission_rate": 5.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://pasqualepillitteri.it/en/news/15775/openai-agents-attack-rubygems",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 10,
+          "average_score": 7.4,
+          "bonus_total": 222.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 7,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходим немедленный пересмотр протоколов безопасности при интеграции автономных агентов в CI/CD пайплайны.",
+            "title": "OpenAI's own agents attacked RubyGems with 2,000 malicious packages and nobody knows why - Pasquale Pillitteri",
+            "final_score": 67.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 33,
+        "raw_items": 768,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 10,
+          "CNews": 0,
+          "Euronews": 19
+        },
+        "score_filtered": 730,
+        "quality_filtered": 13,
+        "story_dedup": 5,
+        "candidates": 20,
+        "candidate_rate": 0.0272,
+        "score_buckets": {
+          "0–39": 701,
+          "40–49": 42,
+          "50–59": 24,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 9,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789226689.8684614,
-  "last_publish_ts": 1789224772.3810773,
+  "last_search_ts": 1789226928.7557585,
+  "last_publish_ts": 1789226928.7557585,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
