@@ -1,6 +1,6 @@
 # INTILY — AI News Publisher Operations
 
-**Актуализация: 2026-09-11**
+**Актуализация: 2026-09-12**
 
 ## 1. Production contract
 
@@ -8,7 +8,19 @@
 
 GitHub Actions не использует собственный cron. Production scheduler — Cloudflare.
 
-Текущий versioned Cloudflare worker использует cron `* * * * *` UTC и 1/3 dispatch gate. Это вероятностная частота запуска, а не гарантированные 3 или 5 минут. Cadence считается подтверждённым только по серии реальных `workflow_dispatch` runs.
+### Scheduler policy
+
+Canonical worker source: `cloudflare/intily-ai-news.worker.js`.
+
+Current source version: **6.0**.
+
+Current cron: `*/5 * * * *` UTC.
+
+The previous per-minute 1/3 random dispatch gate has been removed. Every Cloudflare scheduled tick at the five-minute boundary now attempts exactly one GitHub `workflow_dispatch` for `main`.
+
+This gives a deterministic five-minute scheduler contract rather than a probabilistic average. Production cadence is considered restored only after the Worker is redeployed and several real workflow runs confirm it.
+
+**Current incident:** GitHub evidence shows no production run after #1062 at 2026-09-11 12:32 UTC. The worker source was hardened in commit `29ced61d5ae78f1d699c98b64cf9abb0a016ff59`, but deployment to the live Cloudflare Worker is still required.
 
 ## 2. Publication contract
 
@@ -102,20 +114,6 @@ Caption handling is explicitly **no-truncation / no-orphan-image**:
 
 Telegram's `sendPhoto` caption limit is a character limit after entities parsing, not a UTF-8 byte limit. The runtime guard therefore measures visible characters after Telegram-style HTML sanitization/entity decoding.
 
-This preserves the user's editorial text and prevents an orphan image followed by a second text message.
-
-Production acceptance telemetry:
-
-Short/fit post:
-
-`IMAGE_FOUND → IMAGE_VALIDATED → TELEGRAM_PHOTO_SENT`
-
-Long post:
-
-`IMAGE_SKIPPED_CAPTION_LIMIT → TELEGRAM_SENT`
-
-The long branch must have no `TELEGRAM_PHOTO_SENT` and no second text message.
-
 ## 8. Regression Gate reliability
 
 The dedicated `Intily Regression Gate` is **non-production CI**. It must not be coupled to production state persistence.
@@ -128,28 +126,27 @@ Current policy:
 - image fixtures are generated with Python stdlib only;
 - concurrency cancellation is limited to superseded regression changes.
 
-Verified green baseline:
-
-- commit `8c8b52d18705b1085a08b1d3a0fe5559844bfeb5`;
-- workflow run `34566421454`;
-- check run `103159366568`;
-- **50/50 tests passed**.
-
 Latest media-policy regression gate: **53/53 passed** in run `34592272934`.
 
 ## 9. Production evidence
 
-Production run #1047 completed successfully and proved the ordinary image path: live editorial processing, real image retrieval/validation, `TELEGRAM_PHOTO_SENT`, Telegram publication and state/analytics persistence.
+Production run #1047 proved the ordinary image path: live editorial processing, real image retrieval/validation, `TELEGRAM_PHOTO_SENT`, Telegram publication and state/analytics persistence.
 
-Production run #1062 completed successfully on current production code and proved the publisher remains operational after the no-orphan policy change: 53 regression tests passed in the production preflight, Gemini successfully edited a live candidate, and Telegram publication completed with `TELEGRAM_SENT`. This run did not naturally exercise the long-caption branch because the selected post used text fallback due to unresolved article source.
+Production run #1062 completed successfully: 53 regression tests passed in the production preflight, Gemini successfully edited a live candidate, Telegram publication completed with `TELEGRAM_SENT`, `BUSINESS_RESULT PUBLISHED telegram_delivery_ok`, and `QUEUE_SCORE_AUDIT invariant_ok:true`.
 
-Historical run #1002 exposed the provider retry-budget defect; it was fixed in `75cdc250cf3e03546aa4583c74d047a61dfd1a3c` with regression coverage in `ae3d283e030f0d27324ec88f1157664608aa5853`.
+Run #1062 did not exercise the long-caption branch because the selected post used text fallback due to unresolved article source.
 
-Fresh live proof of both media branches and fresh live Groq fallback remain open acceptance gates.
+No newer production run has been observed since #1062. This is the current live-scheduling incident, not evidence of a Python publisher failure.
 
-## 10. Monitoring
+## 10. Monitoring / incident response
 
-Publisher analytics describe the current cycle. Production Monitor describes historical health across cycles.
+When Telegram stops receiving posts:
+
+1. inspect the latest GitHub production run timestamp;
+2. if no recent run exists, inspect Cloudflare scheduler/Worker deployment before changing Python publisher code;
+3. if a run exists, inspect its job logs and telemetry;
+4. do not change editorial prompt, scoring or providers merely because scheduling is absent;
+5. document the actual failure layer.
 
 Required operational sequence:
 
