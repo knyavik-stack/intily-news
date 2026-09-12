@@ -316,10 +316,10 @@
     "271c0c04724a3eeba7246f26116307a8765ee71ac4b1f720a551fd440969a794": 1789224772,
     "325fbd003e7f23bdfc98eecd0b6339b1e5050d45dc7ae5132e4b13604cd35be0": 1789226928,
     "62892d4ecc1e1f4699e8af43d659f6ddad7cd2bc90e7f958269e59c630c4d93e": 1789227888,
-    "ec89011ff067d307bbbe5b89bfce81b576ecee1ebf832f5d4cda1fa44fe81877": 1789230532
+    "ec89011ff067d307bbbe5b89bfce81b576ecee1ebf832f5d4cda1fa44fe81877": 1789230532,
+    "15beceae14be13736669b9d0c42258ae8b16a5e177e0a0dce1fedbff94a45787": 1789230768
   },
   "known": {
-    "22de1bf23835fa5d23a2b1cf1271e1cf1721c0c879bb49951fd1a1a91956fa9a": 1789225255.5865302,
     "325fbd003e7f23bdfc98eecd0b6339b1e5050d45dc7ae5132e4b13604cd35be0": 1789226928.7557585,
     "62892d4ecc1e1f4699e8af43d659f6ddad7cd2bc90e7f958269e59c630c4d93e": 1789227888.7605512,
     "fb606fa8606779f6a1419dd07dda34eed6463d73b6aaa04a25a7818d406a8233": 1789229330.5027301,
@@ -327,43 +327,6 @@
     "15beceae14be13736669b9d0c42258ae8b16a5e177e0a0dce1fedbff94a45787": 1789230532.2125933
   },
   "queue": [
-    {
-      "region": "WORLD",
-      "title": "Anthropic CEO Dario Amodei calls on AI companies to slow down AI development amid superintelligence risks.",
-      "link": "https://www.euronews.com/my-europe/2026/09/12/anthropic-ceo-dario-amodei-calls-on-ai-companies-to-slow-down-ai-development-amid-superint",
-      "desc": "Amodei's announcement came days after the AI company revealed that its models were being used for cyberattacks, propaganda campaigns and dangerous biological research.",
-      "source": "Euronews",
-      "time": 1789230286.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 9.0,
-        "event_concreteness": 17.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 4.0,
-        "evidence": 2.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 51.5,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 75.5
-      },
-      "base_score": 51.5,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 75.5,
-      "key": "15beceae14be13736669b9d0c42258ae8b16a5e177e0a0dce1fedbff94a45787",
-      "importance": 75.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "models",
-        "research"
-      ],
-      "audience_score": 8.0,
-      "tier": "A"
-    },
     {
       "region": "WORLD",
       "title": "Nvidia considers $10B investment in potential record Anthropic IPO: Reuters - TradingView",
@@ -403,20 +366,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789230532.2125933,
+    "last_start_ts": 1789230768.2423031,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789230532.2125933,
-    "last_success_ts": 1789230532.2125933,
-    "last_candidates": 22,
+    "last_run_ts": 1789230768.2423031,
+    "last_success_ts": 1789230768.2423031,
+    "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 2
+    "queue_size": 1
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789230615.6471484
+      "updated_at": 1789230770.2747023
     },
     "GROQ": {
       "disabled_until": 0,
@@ -693,10 +656,16 @@
       "desc": "Глава Anthropic Дарио Амодеи опубликовал эссе We Must Pace the Frontier , в котором предложил замедлить рост возможностей передовых ИИ-моделей. По его мнению, исследования безопасности перестают успевать за прогрессом. Anthropic обязуется начать с постоянного доступа внешних проверяющих к внутренней работе компании. Амодеи объясняет изменение позиции двумя причинами: ИИ всё активнее участвует в создании следующих поколений моделей, а инцидент с агентами OpenAI и инфраструктурой Hugging Face показал опасность их несогласованного с разработчиками поведения. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "15beceae14be13736669b9d0c42258ae8b16a5e177e0a0dce1fedbff94a45787": {
+      "time": 1789230768,
+      "title": "Anthropic CEO Dario Amodei calls on AI companies to slow down AI development amid superintelligence risks.",
+      "desc": "Amodei's announcement came days after the AI company revealed that its models were being used for cyberattacks, propaganda campaigns and dangerous biological research.",
+      "source": "Euronews",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "WORLD",
@@ -715,97 +684,10 @@
     "WORLD",
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789041816,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 23.38,
-      "candidates": 0,
-      "queue_before": 8,
-      "queue_after": 7,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENS": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INV"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Появление легального API для ИИ-агентов открывает возможности для автоматизации трейдинга, но требует навыков разработки и риск-менеджмента.",
-            "title": "«Т-Банк» открыл клиентам доступ к торговле на бирже с помощью внешних ИИ-агентов",
-            "final_score": 65.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789041989,
       "status": "OK",
@@ -24009,11 +23891,101 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789230768,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 4.66,
+      "candidates": 0,
+      "queue_before": 2,
+      "queue_after": 1,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 400: Bad Request": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 400: Bad Request"
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 7.0,
+          "bonus_total": 21.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Необходимость пересмотра протоколов безопасности и оценки рисков при внедрении LLM в критические бизнес-процессы.",
+            "title": "Anthropic CEO Dario Amodei calls on AI companies to slow down AI development amid superintelligence risks.",
+            "final_score": 72.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1789230532.2125933,
-  "last_publish_ts": 1789230532.2125933,
+  "last_publish_ts": 1789230768.2423031,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
