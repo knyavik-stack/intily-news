@@ -316,27 +316,27 @@
     "271c0c04724a3eeba7246f26116307a8765ee71ac4b1f720a551fd440969a794": 1789224772
   },
   "known": {
-    "9dc72d9d2a64829d427a0f5bc9702e1ccd048c74143e7b477f3af2a02eb7bd6c": 1789219732.6234894,
     "ef50545febd0e1b85a3913ef18e4f8a637aeb608fbeaf240b32039ba7507f0f9": 1789221170.2968338,
     "151308f4dc67e096e7518d816886c456cf72c08d94af40d1abe4e1acfc70f303": 1789221890.755231,
-    "271c0c04724a3eeba7246f26116307a8765ee71ac4b1f720a551fd440969a794": 1789224772.3810773
+    "271c0c04724a3eeba7246f26116307a8765ee71ac4b1f720a551fd440969a794": 1789224772.3810773,
+    "22de1bf23835fa5d23a2b1cf1271e1cf1721c0c879bb49951fd1a1a91956fa9a": 1789225255.5865302
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789224772.3810773,
+    "last_start_ts": 1789225255.5865302,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789224772.3810773,
-    "last_success_ts": 1789224772.3810773,
-    "last_candidates": 18,
-    "last_published": 1,
+    "last_run_ts": 1789225255.5865302,
+    "last_success_ts": 1789225255.5865302,
+    "last_candidates": 19,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789224850.1604812
+      "updated_at": 1789225334.4375892
     },
     "GROQ": {
       "disabled_until": 0,
@@ -708,78 +708,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789037845,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "publish_interval_not_reached",
-      "searched": false,
-      "duration_sec": 0.02,
-      "candidates": 0,
-      "queue_before": 2,
-      "queue_after": 2,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789038386,
       "status": "OK",
@@ -23660,10 +23588,149 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789225255,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": true,
+      "duration_sec": 78.86,
+      "candidates": 19,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 1,
+      "item_failures": 1,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 7,
+        "added": 1,
+        "candidate_count": 19,
+        "admission_rate": 5.26,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 11,
+          "average_score": 7.45,
+          "bonus_total": 246.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 8,
+          "last": {
+            "score": 2.0,
+            "bonus": 6.0,
+            "reason": "Спекулятивная информация о далеком будущем без конкретных технических спецификаций или влияния на бизнес.",
+            "title": "iOS 27 Release Date: When Is Apple’s Big iPhone Update Coming? Check Top Features, Siri AI, Performance Boosts, Compatible iPhones and When You Can Download It - The Sunday Guardian",
+            "final_score": 49.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 32,
+        "raw_items": 743,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 10,
+          "CNews": 0,
+          "Euronews": 18
+        },
+        "score_filtered": 704,
+        "quality_filtered": 16,
+        "story_dedup": 4,
+        "candidates": 19,
+        "candidate_rate": 0.0267,
+        "score_buckets": {
+          "0–39": 679,
+          "40–49": 41,
+          "50–59": 22,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 10,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789224772.3810773,
+  "last_search_ts": 1789225255.5865302,
   "last_publish_ts": 1789224772.3810773,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
