@@ -298,29 +298,31 @@
     "04ee5fc6eadb241edc7f52d04039a82c5a65df6190c3603ef8e99edc31c476b1": 1789195046,
     "bacb04ec8a2f98aa46958fdab8813c85fa69eaf51f5f6c3e9c07904ea5e9a152": 1789195489,
     "60dd4361468c5931e4f2820122dd710467dc3133ca6eb49b369970fbb5b17d9f": 1789198850,
-    "72130d5f81feb2c1c7156161534da4f0d4e9f51c2a11696ba7ea19ab5e2272e3": 1789199568
+    "72130d5f81feb2c1c7156161534da4f0d4e9f51c2a11696ba7ea19ab5e2272e3": 1789199568,
+    "9589bc778559c4aa546689da3793dcc89870992252a337fa00827b6783449b58": 1789200528
   },
   "known": {
     "bacb04ec8a2f98aa46958fdab8813c85fa69eaf51f5f6c3e9c07904ea5e9a152": 1789195489.8445644,
     "60dd4361468c5931e4f2820122dd710467dc3133ca6eb49b369970fbb5b17d9f": 1789198850.469322,
-    "72130d5f81feb2c1c7156161534da4f0d4e9f51c2a11696ba7ea19ab5e2272e3": 1789198850.469322
+    "72130d5f81feb2c1c7156161534da4f0d4e9f51c2a11696ba7ea19ab5e2272e3": 1789198850.469322,
+    "9589bc778559c4aa546689da3793dcc89870992252a337fa00827b6783449b58": 1789200528.6717055
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789200287.0815365,
+    "last_start_ts": 1789200528.6717055,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789200287.0815365,
-    "last_success_ts": 1789200287.0815365,
-    "last_candidates": 11,
-    "last_published": 0,
+    "last_run_ts": 1789200528.6717055,
+    "last_success_ts": 1789200528.6717055,
+    "last_candidates": 12,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789200357.1850235
+      "updated_at": 1789200659.87041
     },
     "GROQ": {
       "disabled_until": 0,
@@ -835,11 +837,17 @@
       "desc": "Google Quietly Closes 1.5 Billion Dollar Talent Deal With AI Coding Startup Mechanize Startup Fortune",
       "source": "Startup Fortune",
       "region": "WORLD"
+    },
+    "9589bc778559c4aa546689da3793dcc89870992252a337fa00827b6783449b58": {
+      "time": 1789200528,
+      "title": "ИИ-агенты компании OpenAI причастны к атаке на сервис для программистов - prospect.com.ru",
+      "desc": "ИИ-агенты компании OpenAI причастны к атаке на сервис для программистов prospect.com.ru",
+      "source": "prospect.com.ru",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -857,99 +865,10 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789025429,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 10.03,
-      "candidates": 0,
-      "queue_before": 13,
-      "queue_after": 12,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 6.0,
-          "bonus_total": 36.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходим немедленный пересмотр политики безопасности при работе с LLM и запрет на передачу чувствительных данных в облачные чаты.",
-            "title": "Исследование: ИИ‑агенты ChatGPT могли извлекать данные из одной учётной записи и передавать их в другую",
-            "final_score": 68.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789025793,
       "status": "OK",
@@ -22667,11 +22586,162 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789200528,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 151.97,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 1,
+        "candidate_count": 12,
+        "admission_rate": 8.33,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 400: Bad Request": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 400: Bad Request"
+          }
+        },
+        "audience": {
+          "evaluated": 10,
+          "average_score": 8.3,
+          "bonus_total": 249.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 8,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра политик безопасности и комплаенса при использовании LLM в корпоративных продуктах из-за грядущего ужесточения контроля.",
+            "title": "ИИ-гигант Anthropic: наши технологии могли незаконно использоваться для создания биологического оружия - Голос Америки",
+            "final_score": 64.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 27,
+        "raw_items": 278,
+        "source_counts": {
+          "TechCrunch AI": 5,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 4,
+          "Habr AI/News": 7,
+          "CNews": 0,
+          "Euronews": 9
+        },
+        "score_filtered": 255,
+        "quality_filtered": 7,
+        "story_dedup": 4,
+        "candidates": 12,
+        "candidate_rate": 0.0478,
+        "score_buckets": {
+          "0–39": 238,
+          "40–49": 24,
+          "50–59": 15,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 12,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789200287.0815365,
-  "last_publish_ts": 1789199568.9561915,
+  "last_search_ts": 1789200528.6717055,
+  "last_publish_ts": 1789200528.6717055,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
