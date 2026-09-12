@@ -302,32 +302,31 @@
     "9589bc778559c4aa546689da3793dcc89870992252a337fa00827b6783449b58": 1789200528
   },
   "known": {
-    "bacb04ec8a2f98aa46958fdab8813c85fa69eaf51f5f6c3e9c07904ea5e9a152": 1789195489.8445644,
     "60dd4361468c5931e4f2820122dd710467dc3133ca6eb49b369970fbb5b17d9f": 1789198850.469322,
     "72130d5f81feb2c1c7156161534da4f0d4e9f51c2a11696ba7ea19ab5e2272e3": 1789198850.469322,
     "9589bc778559c4aa546689da3793dcc89870992252a337fa00827b6783449b58": 1789200528.6717055
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789200528.6717055,
+    "last_start_ts": 1789201008.3105175,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789200528.6717055,
-    "last_success_ts": 1789200528.6717055,
+    "last_run_ts": 1789201008.3105175,
+    "last_success_ts": 1789201008.3105175,
     "last_candidates": 12,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789200659.87041
+      "disabled_until": 1789201196.3945968,
+      "reason": "TEMPORARY_SERVICE_ERROR_OR_429",
+      "updated_at": 1789201076.3945985
     },
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789197220.6278582
+      "updated_at": 1789201078.1658192
     },
     "OPENAI": {
       "disabled_until": 1789207540.9698231,
@@ -341,13 +340,6 @@
     }
   },
   "stories": {
-    "07766c7671058ae0ed482c4f5233528c9fc2312e3bfdcc3404f81e368ab24c92": {
-      "time": 1789114133,
-      "title": "Hackers Use Claude AI Agents to Automate Cyberattacks, Develop 0-Days and Evade Detection - CyberSecurityNews",
-      "desc": "Hackers Use Claude AI Agents to Automate Cyberattacks, Develop 0-Days and Evade Detection CyberSecurityNews",
-      "source": "CyberSecurityNews",
-      "region": "WORLD"
-    },
     "6a81ac7fd037490477a10c6d9089cd3112102145b64574aa408d48252011a2bd": {
       "time": 1789115077,
       "title": "Chinese AI labs secretly used millions of Claude exchanges to train their models, Anthropic says - CNBC",
@@ -869,99 +861,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789025793,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 30.56,
-      "candidates": 0,
-      "queue_before": 12,
-      "queue_after": 11,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 5.5,
-          "bonus_total": 33.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходим аудит безопасности при использовании API Claude из-за подтвержденных рисков утечек.",
-            "title": "Claude models trigger cybersecurity incident analysis - blockchain.news",
-            "final_score": 66.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 3,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789026149,
       "status": "OK",
@@ -22737,10 +22636,155 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789201008,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 72.44,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 12,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 6,
+          "average_score": 9.0,
+          "bonus_total": 162.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 6,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Необходим немедленный аудит прав доступа и изоляция сред для всех автономных ИИ-агентов, имеющих выход в интернет.",
+            "title": "Экспериментальные ИИ-агенты OpenAI атаковали платформу RubyGems - techora.ru",
+            "final_score": 73.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 27,
+        "raw_items": 278,
+        "source_counts": {
+          "TechCrunch AI": 5,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 4,
+          "Habr AI/News": 7,
+          "CNews": 0,
+          "Euronews": 9
+        },
+        "score_filtered": 257,
+        "quality_filtered": 8,
+        "story_dedup": 1,
+        "candidates": 12,
+        "candidate_rate": 0.0478,
+        "score_buckets": {
+          "0–39": 237,
+          "40–49": 28,
+          "50–59": 12,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI"
+        ],
+        "used": "GROQ",
+        "failovers": 10,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789200528.6717055,
+  "last_search_ts": 1789201008.3105175,
   "last_publish_ts": 1789200528.6717055,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
