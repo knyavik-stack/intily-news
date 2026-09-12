@@ -310,11 +310,11 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789204852.9250212,
+    "last_start_ts": 1789205329.0458107,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789204852.9250212,
-    "last_success_ts": 1789204852.9250212,
+    "last_run_ts": 1789205329.0458107,
+    "last_success_ts": 1789205329.0458107,
     "last_candidates": 11,
     "last_published": 0,
     "queue_size": 0
@@ -323,7 +323,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789204926.3896923
+      "updated_at": 1789205413.340136
     },
     "GROQ": {
       "disabled_until": 0,
@@ -342,13 +342,6 @@
     }
   },
   "stories": {
-    "dd5eb149423a92a0d27bc277de8677b7f00827ef87c5df20974d1608683fd59d": {
-      "time": 1789118684,
-      "title": "US lawmakers target OpenAI over safety fears; tech giant changes stand, backs tougher safeguards - Mathrubhumi English",
-      "desc": "US lawmakers target OpenAI over safety fears; tech giant changes stand, backs tougher safeguards Mathrubhumi English",
-      "source": "Mathrubhumi English",
-      "region": "WORLD"
-    },
     "6222320e939aada040581956e517b51d959a10fabae835b1c7e30793d0ea9033": {
       "time": 1789119402,
       "title": "Группа ИT-компаний Lad представила Ai Control Center — платформу для безопасного запуска ИИ в корпоративном контуре - prospect.com.ru",
@@ -835,78 +828,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789029206,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 0.6,
-      "candidates": 0,
-      "queue_before": 10,
-      "queue_after": 10,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789029389,
       "status": "OK",
@@ -22955,10 +22876,148 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789205329,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 84.38,
+      "candidates": 11,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 11,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 10,
+          "average_score": 8.6,
+          "bonus_total": 258.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 8,
+          "last": {
+            "score": 5.0,
+            "bonus": 15.0,
+            "reason": "Прогноз роста рынка дает общее понимание инвестиционного климата, но не несет конкретных прикладных инструментов для немедленного внедрения.",
+            "title": "AI in Diagnostic Imaging Market Size to Reach USD 24.73 Billion by 2035 Growing at a CAGR of 23.83% - SNS Insider - Business Upturn",
+            "final_score": 55.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 20,
+        "raw_items": 272,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 7,
+          "CNews": 0,
+          "Euronews": 9
+        },
+        "score_filtered": 244,
+        "quality_filtered": 14,
+        "story_dedup": 3,
+        "candidates": 11,
+        "candidate_rate": 0.0437,
+        "score_buckets": {
+          "0–39": 230,
+          "40–49": 28,
+          "50–59": 12,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 9,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789204852.9250212,
+  "last_search_ts": 1789205329.0458107,
   "last_publish_ts": 1789204132.696613,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
