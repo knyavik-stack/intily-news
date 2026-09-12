@@ -295,7 +295,8 @@
     "b9ef79cfffd28dccdc76f2a6b282597b14658036131228019226fa13d411c74e": 1789194293,
     "7c6bb1fde2c48e7454dadb3d50e1d78f9d37cb3906dd80c618f80888287e3860": 1789194529,
     "70a5c269877fd1f5d546f5be0165b4f12cabe5fa2fa32b07dfa9f98964717b30": 1789194767,
-    "04ee5fc6eadb241edc7f52d04039a82c5a65df6190c3603ef8e99edc31c476b1": 1789195046
+    "04ee5fc6eadb241edc7f52d04039a82c5a65df6190c3603ef8e99edc31c476b1": 1789195046,
+    "bacb04ec8a2f98aa46958fdab8813c85fa69eaf51f5f6c3e9c07904ea5e9a152": 1789195489
   },
   "known": {
     "a67b0c87d0e0c203a3e435c82d65e0c4dc487bca24663ec48516086b3e0f9094": 1789190457.6442032,
@@ -305,15 +306,16 @@
     "8011bda70044bec847dcc0c86fedec7ba11690e4069dda7f917e7debb66923de": 1789190457.6442032,
     "04ee5fc6eadb241edc7f52d04039a82c5a65df6190c3603ef8e99edc31c476b1": 1789190457.6442032,
     "b54f6ad237f5a0bdcce7291eb1da1d90f68e3da33deaea812c64e95612b00330": 1789190457.6442032,
-    "b9ef79cfffd28dccdc76f2a6b282597b14658036131228019226fa13d411c74e": 1789194293.090425
+    "b9ef79cfffd28dccdc76f2a6b282597b14658036131228019226fa13d411c74e": 1789194293.090425,
+    "bacb04ec8a2f98aa46958fdab8813c85fa69eaf51f5f6c3e9c07904ea5e9a152": 1789195489.8445644
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789195046.9080937,
+    "last_start_ts": 1789195489.8445644,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789195046.9080937,
-    "last_success_ts": 1789195046.9080937,
+    "last_run_ts": 1789195489.8445644,
+    "last_success_ts": 1789195489.8445644,
     "last_candidates": 12,
     "last_published": 1,
     "queue_size": 0
@@ -322,7 +324,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789195132.521792
+      "updated_at": 1789195562.3562713
     },
     "GROQ": {
       "disabled_until": 0,
@@ -858,10 +860,16 @@
       "desc": "AI in Diagnostic Imaging Market Size to Reach USD 24.73 Billion by 2035 Growing at a CAGR of 23.83% - SNS Insider Business Upturn",
       "source": "Business Upturn",
       "region": "WORLD"
+    },
+    "bacb04ec8a2f98aa46958fdab8813c85fa69eaf51f5f6c3e9c07904ea5e9a152": {
+      "time": 1789195489,
+      "title": "Anthropic IPO: AI Giant in Talks With Nvidia for USD 10 Billion Anchor Investment Ahead of Historic Listing - LatestLY",
+      "desc": "Anthropic IPO: AI Giant in Talks With Nvidia for USD 10 Billion Anchor Investment Ahead of Historic Listing LatestLY",
+      "source": "LatestLY",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -879,82 +887,11 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789022906,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 0.53,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 5,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789023346,
       "status": "OK",
@@ -22312,11 +22249,159 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789195489,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 73.43,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 1,
+        "candidate_count": 12,
+        "admission_rate": 8.33,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://www.golosameriki.com/a/8197131.html",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 10,
+          "average_score": 8.1,
+          "bonus_total": 243.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 7,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра протоколов безопасности и подготовки к неизбежному ужесточению регуляторики в сфере ИИ.",
+            "title": "ИИ-гигант Anthropic: наши технологии могли незаконно использоваться для создания биологического оружия - Голос Америки",
+            "final_score": 64.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 27,
+        "raw_items": 286,
+        "source_counts": {
+          "TechCrunch AI": 6,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 6,
+          "Habr AI/News": 3,
+          "CNews": 0,
+          "Euronews": 10
+        },
+        "score_filtered": 262,
+        "quality_filtered": 8,
+        "story_dedup": 4,
+        "candidates": 12,
+        "candidate_rate": 0.0463,
+        "score_buckets": {
+          "0–39": 242,
+          "40–49": 28,
+          "50–59": 16,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 9,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789195046.9080937,
-  "last_publish_ts": 1789195046.9080937,
+  "last_search_ts": 1789195489.8445644,
+  "last_publish_ts": 1789195489.8445644,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
