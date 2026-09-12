@@ -304,25 +304,25 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789196688.5662863,
+    "last_start_ts": 1789197169.5675645,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789196688.5662863,
-    "last_success_ts": 1789196688.5662863,
+    "last_run_ts": 1789197169.5675645,
+    "last_success_ts": 1789197169.5675645,
     "last_candidates": 11,
     "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789196761.3496013
+      "disabled_until": 1789197339.4831014,
+      "reason": "TEMPORARY_SERVICE_ERROR_OR_429",
+      "updated_at": 1789197219.4831038
     },
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789191677.656313
+      "updated_at": 1789197220.6278582
     },
     "OPENAI": {
       "disabled_until": 1789207540.9698231,
@@ -336,13 +336,6 @@
     }
   },
   "stories": {
-    "7c3f326d983053f073a081bb194b50c63998a7d1bbef5341d704883cc9a94a9f": {
-      "time": 1789110761,
-      "title": "Один из крупнейших инструментов для программистов изгнал россиян после его покупки Илоном Маском",
-      "desc": "Для российских пользователей заблокировали Cursor - один из крупнейших зарубежных сервисов для написания кода с использованием искусственного интеллекта. ИТ-платформа перестала функционировать 4 сентября 2026 г. без каких-либо официальных заявлений. Накануне в пользовательское соглашение Cursor был добавлен пункт об экспортном контроле США, этому предшествовала сделка SpaceX по приобретению Anysphere (разработчика Cursor) в середине августа. Отключение Cursor стало очередным ограничением доступа российских разработчиков к зарубежным ИИ-инструментам для написания кода. При этом эксперты сходятся во мнении, что рынок адаптируется за счет альтернативных решений и обходных путей.",
-      "source": "CNews",
-      "region": "RUSSIA"
-    },
     "6ee71fa8f2eb3d75e80b6fd08a0b7e87bb5534a70a86dcbc020626011c54b1bf": {
       "time": 1789111478,
       "title": "Anthropic: DeepSeek и Moonshot отправляли пользовательские запросы в Claude",
@@ -878,96 +871,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789023811,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 12.29,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 16,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 4.5,
-          "bonus_total": 27.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Понимание вектора развития инструментов Meta для автоматизации бизнеса в перспективе.",
-            "title": "Meta купила шведский ИИ-стартап, чтобы ускорить разработку бизнес-агента - Oninvest",
-            "final_score": 67.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789023989,
       "status": "OK",
@@ -22481,10 +22384,149 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789197169,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 53.94,
+      "candidates": 11,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 11,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 10.0,
+          "bonus_total": 30.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 10.0,
+            "bonus": 30.0,
+            "reason": "Оценка в $50 млрд сигнализирует о критическом перегреве рынка, требующем пересмотра стратегии инвестиций и рисков.",
+            "title": "Google-affiliated AI startup Discovery Loop reportedly launches new funding round, targeting $50 billion valuation - finance.biggo.com",
+            "final_score": 79.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 25,
+        "raw_items": 280,
+        "source_counts": {
+          "TechCrunch AI": 6,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 5,
+          "Habr AI/News": 3,
+          "CNews": 0,
+          "Euronews": 9
+        },
+        "score_filtered": 254,
+        "quality_filtered": 11,
+        "story_dedup": 4,
+        "candidates": 11,
+        "candidate_rate": 0.0431,
+        "score_buckets": {
+          "0–39": 239,
+          "40–49": 26,
+          "50–59": 15,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI"
+        ],
+        "used": "GROQ",
+        "failovers": 4,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789196688.5662863,
+  "last_search_ts": 1789197169.5675645,
   "last_publish_ts": 1789195489.8445644,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
