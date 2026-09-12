@@ -330,25 +330,25 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789234133.2674963,
+    "last_start_ts": 1789234366.9797006,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789234133.2674963,
-    "last_success_ts": 1789234133.2674963,
-    "last_candidates": 21,
+    "last_run_ts": 1789234366.9797006,
+    "last_success_ts": 1789234366.9797006,
+    "last_candidates": 22,
     "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789234207.8562982
+      "disabled_until": 1789256009.082895,
+      "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT",
+      "updated_at": 1789234409.0828967
     },
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789229363.1333327
+      "updated_at": 1789234411.1745112
     },
     "OPENAI": {
       "disabled_until": 1789302841.0912836,
@@ -652,100 +652,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789043835,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 56.5,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 2,
-      "item_failures": 1,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
-          }
-        },
-        "audience": {
-          "evaluated": 9,
-          "average_score": 7.11,
-          "bonus_total": 192.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 4,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Риск усложнения комплаенса и замедления внедрения ИИ-решений из-за новых законодательных ограничений.",
-            "title": "Newsom teases more AI safety regulations after Anthropic researcher’s resignation - Sacramento Bee",
-            "final_score": 63.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 5,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "GEMINI",
-          "GROQ",
-          "OPENAI"
-        ],
-        "used": "GROQ",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789044352,
       "status": "OK",
@@ -24191,10 +24097,155 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789234366,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 45.58,
+      "candidates": 22,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 16,
+        "known_recent": 1,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 5,
+        "added": 0,
+        "candidate_count": 22,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Риск ужесточения регуляторики и безопасности напрямую влияет на архитектуру продуктов и комплаенс-стратегии.",
+            "title": "Anthropic CEO Dario Amodei calls on AI companies to slow down AI development amid superintelligence risks",
+            "final_score": 75.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 34,
+        "raw_items": 829,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 3,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 9,
+          "CNews": 0,
+          "Euronews": 19
+        },
+        "score_filtered": 784,
+        "quality_filtered": 17,
+        "story_dedup": 6,
+        "candidates": 22,
+        "candidate_rate": 0.0277,
+        "score_buckets": {
+          "0–39": 753,
+          "40–49": 48,
+          "50–59": 25,
+          "60–69": 2,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI"
+        ],
+        "used": "GROQ",
+        "failovers": 10,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT"
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789234133.2674963,
+  "last_search_ts": 1789234366.9797006,
   "last_publish_ts": 1789233169.2588186,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
