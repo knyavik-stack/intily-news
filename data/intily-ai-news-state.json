@@ -304,28 +304,26 @@
     "1e252425b8baaa6e3da03a23e01f9b654c5499d465a5e351d44fe5f656f05af7": 1789204132
   },
   "known": {
-    "60dd4361468c5931e4f2820122dd710467dc3133ca6eb49b369970fbb5b17d9f": 1789198850.469322,
-    "72130d5f81feb2c1c7156161534da4f0d4e9f51c2a11696ba7ea19ab5e2272e3": 1789198850.469322,
     "9589bc778559c4aa546689da3793dcc89870992252a337fa00827b6783449b58": 1789200528.6717055,
     "6f101074b88d95b9a5b0677ec669a07dabb25a0e5108672d5cbe4a4871d85c5f": 1789202210.006435,
     "1e252425b8baaa6e3da03a23e01f9b654c5499d465a5e351d44fe5f656f05af7": 1789204132.696613
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789204132.696613,
+    "last_start_ts": 1789204852.9250212,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789204132.696613,
-    "last_success_ts": 1789204132.696613,
+    "last_run_ts": 1789204852.9250212,
+    "last_success_ts": 1789204852.9250212,
     "last_candidates": 11,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789204206.0869975
+      "updated_at": 1789204926.3896923
     },
     "GROQ": {
       "disabled_until": 0,
@@ -344,20 +342,6 @@
     }
   },
   "stories": {
-    "2a8bc7b9fb97f76b93deb95ac468095a8ca60f188afaa3d823c6fdfddf541444": {
-      "time": 1789117964,
-      "title": "Chairman Hawley Launches Investigation into OpenAI for Hacking, Existential Risk of AI Products - hawley.senate.gov",
-      "desc": "Chairman Hawley Launches Investigation into OpenAI for Hacking, Existential Risk of AI Products hawley.senate.gov",
-      "source": "hawley.senate.gov",
-      "region": "WORLD"
-    },
-    "445a54cf132e1b940bc0b65ef7baf35cfced3fb9c1b399ee5a3dceca0dbff396": {
-      "time": 1789118197,
-      "title": "OpenAI makes U-turn and calls for binding national AI safety rules",
-      "desc": "The intervention comes a week after OpenAI released GPT-6 Astra, “its most capable model to date,” after delaying its rollout over cybersecurity concerns.",
-      "source": "Euronews",
-      "region": "WORLD"
-    },
     "dd5eb149423a92a0d27bc277de8677b7f00827ef87c5df20974d1608683fd59d": {
       "time": 1789118684,
       "title": "US lawmakers target OpenAI over safety fears; tech giant changes stand, backs tougher safeguards - Mathrubhumi English",
@@ -851,96 +835,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789029030,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 9.73,
-      "candidates": 0,
-      "queue_before": 11,
-      "queue_after": 10,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 5.5,
-          "bonus_total": 33.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Улучшенные настройки удержания данных и снижение ограничений позволяют внедрять Claude в бизнес-процессы с меньшими рисками.",
-            "title": "Anthropic releases Claude Fable 5.1 with reduced safeguard interruptions and enterprise data‑retention options - Digital Watch Observatory",
-            "final_score": 70.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789029206,
       "status": "OK",
@@ -22923,10 +22817,148 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789204852,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 73.51,
+      "candidates": 11,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 11,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 10,
+          "average_score": 8.5,
+          "bonus_total": 255.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 8,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Прогноз подтверждает долгосрочный тренд на автоматизацию диагностики, что требует пересмотра стратегии для медтех-стартапов.",
+            "title": "AI in Diagnostic Imaging Market Size to Reach USD 24.73 Billion by 2035 Growing at a CAGR of 23.83% - SNS Insider - Business Upturn",
+            "final_score": 61.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 20,
+        "raw_items": 265,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 7,
+          "CNews": 0,
+          "Euronews": 9
+        },
+        "score_filtered": 238,
+        "quality_filtered": 14,
+        "story_dedup": 2,
+        "candidates": 11,
+        "candidate_rate": 0.0449,
+        "score_buckets": {
+          "0–39": 225,
+          "40–49": 27,
+          "50–59": 11,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 9,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789204132.696613,
+  "last_search_ts": 1789204852.9250212,
   "last_publish_ts": 1789204132.696613,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
