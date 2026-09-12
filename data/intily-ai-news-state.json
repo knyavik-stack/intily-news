@@ -301,27 +301,29 @@
     "72130d5f81feb2c1c7156161534da4f0d4e9f51c2a11696ba7ea19ab5e2272e3": 1789199568,
     "9589bc778559c4aa546689da3793dcc89870992252a337fa00827b6783449b58": 1789200528,
     "6f101074b88d95b9a5b0677ec669a07dabb25a0e5108672d5cbe4a4871d85c5f": 1789202210,
-    "1e252425b8baaa6e3da03a23e01f9b654c5499d465a5e351d44fe5f656f05af7": 1789204132
+    "1e252425b8baaa6e3da03a23e01f9b654c5499d465a5e351d44fe5f656f05af7": 1789204132,
+    "def3b3d2b4e7101a1b09797f764cef1f7fc0259ca2d3213bfd7a45adb60f25fb": 1789213732
   },
   "known": {
-    "9dc72d9d2a64829d427a0f5bc9702e1ccd048c74143e7b477f3af2a02eb7bd6c": 1789212052.0197072
+    "9dc72d9d2a64829d427a0f5bc9702e1ccd048c74143e7b477f3af2a02eb7bd6c": 1789212052.0197072,
+    "def3b3d2b4e7101a1b09797f764cef1f7fc0259ca2d3213bfd7a45adb60f25fb": 1789213732.906868
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789213489.3791924,
+    "last_start_ts": 1789213732.906868,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789213489.3791924,
-    "last_success_ts": 1789213489.3791924,
+    "last_run_ts": 1789213732.906868,
+    "last_success_ts": 1789213732.906868,
     "last_candidates": 9,
-    "last_published": 0,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789213563.3505914
+      "updated_at": 1789213812.36596
     },
     "GROQ": {
       "disabled_until": 0,
@@ -724,12 +726,18 @@
       "desc": "SpaceX Nears $100 Billion in Annual Recurring Revenue as AI Compute Fuels Historic Growth entARABI",
       "source": "entARABI",
       "region": "WORLD"
+    },
+    "def3b3d2b4e7101a1b09797f764cef1f7fc0259ca2d3213bfd7a45adb60f25fb": {
+      "time": 1789213732,
+      "title": "Hackers Use Claude AI Agents to Automate Cyberattacks, Develop 0-Days and Evade Detection - cybersecuritynews.com",
+      "desc": "Hackers Use Claude AI Agents to Automate Cyberattacks, Develop 0-Days and Evade Detection cybersecuritynews.com",
+      "source": "cybersecuritynews.com",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -745,158 +753,11 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789033382,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 94.31,
-      "candidates": 33,
-      "queue_before": 8,
-      "queue_after": 7,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 23,
-        "known_recent": 0,
-        "already_queued": 4,
-        "story_queue": 2,
-        "story_history": 4,
-        "added": 0,
-        "candidate_count": 33,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
-          }
-        },
-        "audience": {
-          "evaluated": 10,
-          "average_score": 7.4,
-          "bonus_total": 222.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 6,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Ускорение разработки ИИ-агентов Meta напрямую влияет на инструменты автоматизации продаж и клиентского сервиса.",
-            "title": "Meta купила шведский ИИ-стартап, чтобы ускорить разработку бизнес-агента - Oninvest",
-            "final_score": 70.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 99,
-        "raw_items": 636,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 25,
-          "CNews": 26,
-          "Euronews": 46
-        },
-        "score_filtered": 557,
-        "quality_filtered": 31,
-        "story_dedup": 15,
-        "candidates": 33,
-        "candidate_rate": 0.0615,
-        "score_buckets": {
-          "0–39": 518,
-          "40–49": 69,
-          "50–59": 42,
-          "60–69": 7,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 1,
-          "6": 5,
-          "7": 0,
-          "8": 2,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 9,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789033886,
       "status": "OK",
@@ -23366,11 +23227,158 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789213732,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 83.19,
+      "candidates": 9,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 7,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 9,
+        "admission_rate": 11.11,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://entarabi.com/en/2026/09/spacex-nears-100-billion-in-annual-recurring-revenue-as-ai-compute-fuels-historic-growth/",
+            "image_url": "https://entarabi.com/wp-content/uploads/2026/09/Space-X.jpeg",
+            "width": 1200,
+            "height": 675,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 9,
+          "average_score": 8.56,
+          "bonus_total": 231.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 7,
+          "last": {
+            "score": 10.0,
+            "bonus": 30.0,
+            "reason": "Необходимость пересмотра стратегии инвестиций в инфраструктурные активы, обеспечивающие работу ИИ-моделей.",
+            "title": "SpaceX Nears $100 Billion in Annual Recurring Revenue as AI Compute Fuels Historic Growth - entARABI",
+            "final_score": 70.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 26,
+        "raw_items": 307,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 9,
+          "CNews": 0,
+          "Euronews": 15
+        },
+        "score_filtered": 280,
+        "quality_filtered": 16,
+        "story_dedup": 2,
+        "candidates": 9,
+        "candidate_rate": 0.032,
+        "score_buckets": {
+          "0–39": 268,
+          "40–49": 28,
+          "50–59": 10,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 8,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789213489.3791924,
-  "last_publish_ts": 1789204132.696613,
+  "last_search_ts": 1789213732.906868,
+  "last_publish_ts": 1789213732.906868,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
