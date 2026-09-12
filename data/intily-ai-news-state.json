@@ -301,27 +301,26 @@
     "72130d5f81feb2c1c7156161534da4f0d4e9f51c2a11696ba7ea19ab5e2272e3": 1789199568
   },
   "known": {
-    "b9ef79cfffd28dccdc76f2a6b282597b14658036131228019226fa13d411c74e": 1789194293.090425,
     "bacb04ec8a2f98aa46958fdab8813c85fa69eaf51f5f6c3e9c07904ea5e9a152": 1789195489.8445644,
     "60dd4361468c5931e4f2820122dd710467dc3133ca6eb49b369970fbb5b17d9f": 1789198850.469322,
     "72130d5f81feb2c1c7156161534da4f0d4e9f51c2a11696ba7ea19ab5e2272e3": 1789198850.469322
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789199568.9561915,
+    "last_start_ts": 1789200287.0815365,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789199568.9561915,
-    "last_success_ts": 1789199568.9561915,
+    "last_run_ts": 1789200287.0815365,
+    "last_success_ts": 1789200287.0815365,
     "last_candidates": 11,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789199643.9539244
+      "updated_at": 1789200357.1850235
     },
     "GROQ": {
       "disabled_until": 0,
@@ -340,13 +339,6 @@
     }
   },
   "stories": {
-    "841f3f290d6c693fd0eb8f10045312014e7c0b861333ef4fa13c9600ebb152b6": {
-      "time": 1789113646,
-      "title": "Yemen missiles to Taiwan attack plans: Anthropic flags Claude’s alarming misuse cases - Invezz",
-      "desc": "Yemen missiles to Taiwan attack plans: Anthropic flags Claude’s alarming misuse cases Invezz",
-      "source": "Invezz",
-      "region": "WORLD"
-    },
     "07766c7671058ae0ed482c4f5233528c9fc2312e3bfdcc3404f81e368ab24c92": {
       "time": 1789114133,
       "title": "Hackers Use Claude AI Agents to Automate Cyberattacks, Develop 0-Days and Evade Detection - CyberSecurityNews",
@@ -868,96 +860,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789024533,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 15.78,
-      "candidates": 0,
-      "queue_before": 15,
-      "queue_after": 14,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 6.33,
-          "bonus_total": 57.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Существенное снижение стоимости API и рост качества кода позволяют немедленно оптимизировать затраты на AI-инфраструктуру.",
-            "title": "DeepSeek V4.1 Flash: почти вдвое больше параметров и на 57% дешевле кэш",
-            "final_score": 76.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_403_1010"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789025429,
       "status": "OK",
@@ -22627,10 +22529,148 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789200287,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 70.16,
+      "candidates": 11,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 11,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 10,
+          "average_score": 8.3,
+          "bonus_total": 249.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 8,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет оптимизировать процессы мониторинга безопасности, снижая операционные затраты на ручную обработку инцидентов.",
+            "title": "Innostage обновила платформу ИИ-агентов для автоматизации SOC – Innostage TDIR 1.5.1 - prospect.com.ru",
+            "final_score": 61.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 27,
+        "raw_items": 281,
+        "source_counts": {
+          "TechCrunch AI": 5,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 4,
+          "Habr AI/News": 6,
+          "CNews": 0,
+          "Euronews": 10
+        },
+        "score_filtered": 257,
+        "quality_filtered": 8,
+        "story_dedup": 5,
+        "candidates": 11,
+        "candidate_rate": 0.0433,
+        "score_buckets": {
+          "0–39": 241,
+          "40–49": 24,
+          "50–59": 16,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 9,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789199568.9561915,
+  "last_search_ts": 1789200287.0815365,
   "last_publish_ts": 1789199568.9561915,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
