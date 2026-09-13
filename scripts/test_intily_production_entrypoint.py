@@ -90,16 +90,48 @@ class ProductionEntrypointTests(unittest.TestCase):
         self.assertEqual(payload['response_format'], {'type': 'json_object'})
         self.assertNotIn('max_tokens', payload)
 
-    def test_groq_empty_content_is_not_accepted(self):
+    def test_groq_json_mode_400_falls_back_to_plain_text_json(self):
+        error = urllib.error.HTTPError('https://api.groq.com', 400, 'invalid json', {}, None)
+        error.read = lambda: b'{"error":{"message":"Failed to generate JSON. Please adjust your prompt.","code":"json_valid"}}'
+
         class FakeResponse:
+            def __enter__(self): return self
+            def __exit__(self, *args): return False
+            def read(self):
+                return json.dumps({'choices': [{'message': {'content': 'Here is the JSON: {"audience_score":8}'}}]}).encode()
+
+        calls = [error, FakeResponse()]
+        captured = []
+        def fake_urlopen(request, timeout):
+            captured.append(json.loads(request.data.decode()))
+            value = calls.pop(0)
+            if isinstance(value, Exception): raise value
+            return value
+
+        with patch('intily_production_entrypoint.urllib.request.urlopen', side_effect=fake_urlopen):
+            result = _groq_chat('https://api.groq.com/openai/v1/chat/completions', 'openai/gpt-oss-20b', 'token', 'test')
+
+        self.assertEqual(result, '{"audience_score":8}')
+        self.assertEqual(len(captured), 2)
+        self.assertEqual(captured[0]['response_format'], {'type': 'json_object'})
+        self.assertNotIn('response_format', captured[1])
+
+    def test_groq_empty_content_falls_back_to_plain_text_json(self):
+        class EmptyResponse:
             def __enter__(self): return self
             def __exit__(self, *args): return False
             def read(self):
                 return json.dumps({'choices': [{'message': {'content': ''}}]}).encode()
 
-        with patch('intily_production_entrypoint.urllib.request.urlopen', return_value=FakeResponse()):
-            with self.assertRaisesRegex(RuntimeError, r'GROQ_EMPTY_CONTENT'):
-                _groq_chat('https://api.groq.com/openai/v1/chat/completions', 'openai/gpt-oss-20b', 'token', 'test')
+        class ValidResponse:
+            def __enter__(self): return self
+            def __exit__(self, *args): return False
+            def read(self):
+                return json.dumps({'choices': [{'message': {'content': '{"audience_score":8}'}}]}).encode()
+
+        with patch('intily_production_entrypoint.urllib.request.urlopen', side_effect=[EmptyResponse(), ValidResponse()]):
+            result = _groq_chat('https://api.groq.com/openai/v1/chat/completions', 'openai/gpt-oss-20b', 'token', 'test')
+        self.assertEqual(result, '{"audience_score":8}')
 
     def test_groq_quota_429_fails_without_retry(self):
         error_body = json.dumps({'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` on tokens per day'}}).encode()
