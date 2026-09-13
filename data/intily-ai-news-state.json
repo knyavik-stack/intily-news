@@ -523,19 +523,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 44.0,
+        "base_score": 43.5,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 44.0
+        "final_score": 43.5
       },
-      "base_score": 44.0,
+      "base_score": 43.5,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 44.0,
+      "score": 43.5,
       "key": "d5f72b93bf017dc9c2db881e81da384d43523581d7d1a9dfc2ffb9cbbab6cee5",
-      "importance": 44.0,
+      "importance": 43.5,
       "editorial_value": 50.0,
       "topics": [
         "agents"
@@ -560,19 +560,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 43.5,
+        "base_score": 43.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 43.5
+        "final_score": 43.0
       },
-      "base_score": 43.5,
+      "base_score": 43.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 43.5,
+      "score": 43.0,
       "key": "d49d01bd8c67350b40afa44015db269b208833d74a94805c39b065d9277d02db",
-      "importance": 43.5,
+      "importance": 43.0,
       "editorial_value": 50.0,
       "topics": [
         "models",
@@ -691,12 +691,12 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789294373.1393447,
+    "last_start_ts": 1789295090.6622348,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789294373.1393447,
-    "last_success_ts": 1789294373.1393447,
-    "last_candidates": 9,
+    "last_run_ts": 1789295090.6622348,
+    "last_success_ts": 1789295090.6622348,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 10
   },
@@ -709,7 +709,7 @@
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789294370.5987756
+      "updated_at": 1789295090.3781033
     },
     "OPENAI": {
       "disabled_until": 1789302841.0912836,
@@ -873,96 +873,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789053866,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 12.34,
-      "candidates": 0,
-      "queue_before": 10,
-      "queue_after": 9,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Снижение зависимости от импортных компонентов критично для планирования цепочек поставок в hardware-проектах.",
-            "title": "В России разработан полный комплект СВЧ-чипов для радаров и БПЛА. Готовится запуск в серию",
-            "final_score": 65.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789054046,
       "status": "OK",
@@ -24406,6 +24316,78 @@
         },
         "audience_stage": "post_editorial"
       },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT"
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1789295090,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 3.93,
+      "candidates": 0,
+      "queue_before": 10,
+      "queue_after": 10,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 9,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
       "provider": {
         "attempts": [],
         "used": null,
