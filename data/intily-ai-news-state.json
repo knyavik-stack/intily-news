@@ -329,11 +329,13 @@
     "3a9a41a497bc900c25b803b777264d50eda8ca1c76c24b9212990f1fb63c5b21": 1789306849,
     "97bc243651385c3cc83955fd81ae2f17cfb89ab7cf9371704dc4173abfe26a25": 1789307085,
     "283813e7f7b2a49b6b7c000c7d4fd3f48d73419cc74b6472f9173a612eb7f344": 1789308523,
-    "5f6a48b05eb875d2e17bfc410a7b042a668d208b3873811aba66288c1d098a0e": 1789309726
+    "5f6a48b05eb875d2e17bfc410a7b042a668d208b3873811aba66288c1d098a0e": 1789309726,
+    "d7171bbe4b4022f6e5b42eda6b72a9195458c5d011e6a4371ded5ea86c4997be": 1789310683
   },
   "known": {
     "3a9a41a497bc900c25b803b777264d50eda8ca1c76c24b9212990f1fb63c5b21": 1789305886.5436401,
-    "283813e7f7b2a49b6b7c000c7d4fd3f48d73419cc74b6472f9173a612eb7f344": 1789308523.1709096
+    "283813e7f7b2a49b6b7c000c7d4fd3f48d73419cc74b6472f9173a612eb7f344": 1789308523.1709096,
+    "d7171bbe4b4022f6e5b42eda6b72a9195458c5d011e6a4371ded5ea86c4997be": 1789310683.2905433
   },
   "queue": [
     {
@@ -627,12 +629,12 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789309726.0687122,
+    "last_start_ts": 1789310683.2905433,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789309726.0687122,
-    "last_success_ts": 1789309726.0687122,
-    "last_candidates": 0,
+    "last_run_ts": 1789310683.2905433,
+    "last_success_ts": 1789310683.2905433,
+    "last_candidates": 15,
     "last_published": 1,
     "queue_size": 8
   },
@@ -640,7 +642,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789309728.163057
+      "updated_at": 1789310763.585771
     },
     "GROQ": {
       "disabled_until": 0,
@@ -777,11 +779,17 @@
       "desc": "South Korea expands espionage law to crack down on AI chip tech theft The News International",
       "source": "The News International",
       "region": "WORLD"
+    },
+    "d7171bbe4b4022f6e5b42eda6b72a9195458c5d011e6a4371ded5ea86c4997be": {
+      "time": 1789310683,
+      "title": "AI Startup Discovery Loop, Founded by Former Google Chief Scientist Jeff Dean, Seeks Funding at $50 Billion Valuation - TechStory",
+      "desc": "AI Startup Discovery Loop, Founded by Former Google Chief Scientist Jeff Dean, Seeks Funding at $50 Billion Valuation TechStory",
+      "source": "TechStory",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -797,101 +805,12 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789065649,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 6.49,
-      "candidates": 0,
-      "queue_before": 10,
-      "queue_after": 9,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 6.0,
-          "bonus_total": 18.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Покупка указывает на усиление конкуренции в B2B-сегменте, что требует мониторинга новых инструментов Meta для бизнеса.",
-            "title": "Stilla acquisition to strengthen Meta’s enterprise AI products – Freedom - Freedom Broker",
-            "final_score": 64.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789066129,
       "status": "OK",
@@ -24231,11 +24150,159 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789310683,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 90.78,
+      "candidates": 15,
+      "queue_before": 8,
+      "queue_after": 8,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 6,
+        "known_recent": 0,
+        "already_queued": 4,
+        "story_queue": 3,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 15,
+        "admission_rate": 6.67,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://geosirius.ifz.ru/openai-kept-rogue-agent-incident-quiet-means-ai-safety",
+            "image_url": "https://static01.nyt.com/images/2026/09/02/multimedia/00biz-openai-investigation-01-ktwg/00biz-openai-investigation-01-ktwg-mediumSquareAt3X.jpg",
+            "width": 1800,
+            "height": 1800,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 10,
+          "average_score": 7.4,
+          "bonus_total": 222.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 4,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходим пересмотр протоколов безопасности при интеграции LLM-агентов в критические бизнес-процессы.",
+            "title": "Why Openai Kept Its Rogue Agent Incident Quiet And What It M - ИФЗ РАН",
+            "final_score": 67.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 36,
+        "raw_items": 714,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 16,
+          "CNews": 0,
+          "Euronews": 18
+        },
+        "score_filtered": 689,
+        "quality_filtered": 6,
+        "story_dedup": 4,
+        "candidates": 15,
+        "candidate_rate": 0.0221,
+        "score_buckets": {
+          "0–39": 674,
+          "40–49": 20,
+          "50–59": 20,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 2,
+          "7": 2,
+          "8": 2,
+          "9": 1,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 9,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789308523.1709096,
-  "last_publish_ts": 1789309726.0687122,
+  "last_search_ts": 1789310683.2905433,
+  "last_publish_ts": 1789310683.2905433,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
