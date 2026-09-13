@@ -20,6 +20,7 @@ GEMINI_MAX_PROMPT_CHARS = 12000
 AI_EVALUATION_BUDGET_SECONDS = 180.0
 GEMINI_REQUEST_TIMEOUT_SECONDS = 20
 GROQ_REQUEST_TIMEOUT_SECONDS = 20
+GROQ_MAX_COMPLETION_TOKENS = 1200
 
 _gemini_last_request_at = 0.0
 _active_provider_state = None
@@ -101,7 +102,7 @@ def _one_shot_gemini_chat(prompt, token):
 
 
 def _groq_chat(url, model, token, prompt, retries=2):
-    """Groq OpenAI-compatible request with an explicit app User-Agent."""
+    """Groq OpenAI-compatible request hardened for GPT-OSS structured output."""
     body = json.dumps({
         'model': model,
         'messages': [
@@ -109,7 +110,9 @@ def _groq_chat(url, model, token, prompt, retries=2):
             {'role': 'user', 'content': prompt},
         ],
         'temperature': 0.25,
-        'max_tokens': 900,
+        'max_completion_tokens': GROQ_MAX_COMPLETION_TOKENS,
+        'include_reasoning': False,
+        'response_format': {'type': 'json_object'},
     }).encode()
     last = None
     for attempt in range(retries):
@@ -125,7 +128,10 @@ def _groq_chat(url, model, token, prompt, retries=2):
             )
             with urllib.request.urlopen(req, timeout=_bounded_request_timeout(GROQ_REQUEST_TIMEOUT_SECONDS)) as response:
                 data = json.loads(response.read().decode())
-            return data['choices'][0]['message']['content']
+            content = data['choices'][0]['message'].get('content')
+            if not isinstance(content, str) or not content.strip():
+                raise RuntimeError('GROQ_EMPTY_CONTENT')
+            return content
         except urllib.error.HTTPError as exc:
             raw = exc.read().decode('utf-8', 'replace')
             last = RuntimeError(f'GROQ_HTTP_{exc.code}: {raw[:300]}')
@@ -141,8 +147,6 @@ def _groq_chat(url, model, token, prompt, retries=2):
                 'quota_exceeded',
                 'exceeded your current quota',
             ))
-            # Суточный/токенный лимит не восстановится через 2–30 секунд.
-            # Немедленно передаём управление следующему провайдеру, не сжигая бюджет цикла.
             if quota_exhausted:
                 raise last
             retry_after = exc.headers.get('Retry-After')
@@ -152,6 +156,8 @@ def _groq_chat(url, model, token, prompt, retries=2):
                 raise RuntimeError('AI_EVALUATION_DEADLINE_EXCEEDED') from last
             print('GROQ_RETRY', exc.code, wait)
             time.sleep(wait)
+        except RuntimeError:
+            raise
         except Exception as exc:
             last = exc
             if attempt < retries - 1:
