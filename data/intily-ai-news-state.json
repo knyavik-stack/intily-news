@@ -348,11 +348,11 @@
   "known": {},
   "queue": [],
   "health": {
-    "last_start_ts": 1789327009.0026011,
+    "last_start_ts": 1789327251.489537,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789327009.0026011,
-    "last_success_ts": 1789327009.0026011,
+    "last_run_ts": 1789327251.489537,
+    "last_success_ts": 1789327251.489537,
     "last_candidates": 17,
     "last_published": 0,
     "queue_size": 0
@@ -361,7 +361,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789327081.7919633
+      "updated_at": 1789327338.8005927
     },
     "GROQ": {
       "disabled_until": 0,
@@ -572,154 +572,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789116277,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 91.4,
-      "candidates": 23,
-      "queue_before": 6,
-      "queue_after": 6,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 14,
-        "known_recent": 0,
-        "already_queued": 2,
-        "story_queue": 2,
-        "story_history": 4,
-        "added": 1,
-        "candidate_count": 23,
-        "admission_rate": 4.35,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 400: Bad Request": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 400: Bad Request"
-          }
-        },
-        "audience": {
-          "evaluated": 10,
-          "average_score": 7.8,
-          "bonus_total": 234.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 7,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра протоколов кибербезопасности при интеграции LLM в бизнес-процессы.",
-            "title": "From OpenAI to Anthropic: How fake personas, hacked servers and 13-hour outages exposed AI risks - economictimes.indiatimes.com",
-            "final_score": 70.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 69,
-        "raw_items": 575,
-        "source_counts": {
-          "TechCrunch AI": 4,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 2,
-          "Habr AI/News": 21,
-          "CNews": 10,
-          "Euronews": 31
-        },
-        "score_filtered": 523,
-        "quality_filtered": 24,
-        "story_dedup": 5,
-        "candidates": 23,
-        "candidate_rate": 0.0455,
-        "score_buckets": {
-          "0–39": 490,
-          "40–49": 54,
-          "50–59": 27,
-          "60–69": 4,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 1,
-          "6": 1,
-          "7": 1,
-          "8": 3,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 9,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789117481,
       "status": "OK",
@@ -24239,10 +24091,148 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789327251,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 87.34,
+      "candidates": 17,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 13,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 4,
+        "added": 0,
+        "candidate_count": 17,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 10,
+          "average_score": 7.1,
+          "bonus_total": 213.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 3,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра политик безопасности и прав доступа для автономных ИИ-агентов в CI/CD пайплайнах.",
+            "title": "OpenAI AI Agents Linked to RubyGems Cyberattack in May - PhoneWorld",
+            "final_score": 67.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 36,
+        "raw_items": 838,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 14,
+          "CNews": 0,
+          "Euronews": 19
+        },
+        "score_filtered": 810,
+        "quality_filtered": 8,
+        "story_dedup": 3,
+        "candidates": 17,
+        "candidate_rate": 0.0212,
+        "score_buckets": {
+          "0–39": 788,
+          "40–49": 30,
+          "50–59": 20,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 9,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789327009.0026011,
+  "last_search_ts": 1789327251.489537,
   "last_publish_ts": 1789322450.7772424,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
