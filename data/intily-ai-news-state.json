@@ -345,18 +345,15 @@
     "4da77bd290fec9d89a89f3c58ea33957df48ef416dfaf36d970284aee4ed6056": 1789319813,
     "828f054ca2acdae498d861bbf5c73e046e52d7838d0b0a7a11296eed4c38b1bb": 1789322450
   },
-  "known": {
-    "4da77bd290fec9d89a89f3c58ea33957df48ef416dfaf36d970284aee4ed6056": 1789318859.760044,
-    "828f054ca2acdae498d861bbf5c73e046e52d7838d0b0a7a11296eed4c38b1bb": 1789318859.760044
-  },
+  "known": {},
   "queue": [],
   "health": {
-    "last_start_ts": 1789322930.5985153,
+    "last_start_ts": 1789325326.3950374,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789322930.5985153,
-    "last_success_ts": 1789322930.5985153,
-    "last_candidates": 18,
+    "last_run_ts": 1789325326.3950374,
+    "last_success_ts": 1789325326.3950374,
+    "last_candidates": 16,
     "last_published": 0,
     "queue_size": 0
   },
@@ -364,7 +361,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789323011.6279376
+      "updated_at": 1789325404.087453
     },
     "GROQ": {
       "disabled_until": 0,
@@ -575,154 +572,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789113646,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 78.1,
-      "candidates": 22,
-      "queue_before": 5,
-      "queue_after": 9,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 10,
-        "known_recent": 0,
-        "already_queued": 3,
-        "story_queue": 1,
-        "story_history": 3,
-        "added": 5,
-        "candidate_count": 22,
-        "admission_rate": 22.73,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://internationalfinance.com/technology/anthropic-discloses-fourth-ai-hacking-incident-as-openai-pushes-for-safety-rules/",
-            "image_url": "https://internationalfinance.com/wp-content/uploads/2026/09/ifm-anthropic-discloses-fourth-ai-hacking-incident-as-openai-pushes-for-safety-rules.webp",
-            "width": 440,
-            "height": 320,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 10,
-          "average_score": 7.6,
-          "bonus_total": 228.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 6,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходим пересмотр протоколов безопасности при интеграции LLM в бизнес-процессы из-за доказанной уязвимости моделей.",
-            "title": "Anthropic discloses fourth AI hacking incident as OpenAI pushes for safety rules - internationalfinance.com",
-            "final_score": 69.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 63,
-        "raw_items": 546,
-        "source_counts": {
-          "TechCrunch AI": 4,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 2,
-          "Habr AI/News": 17,
-          "CNews": 8,
-          "Euronews": 31
-        },
-        "score_filtered": 501,
-        "quality_filtered": 19,
-        "story_dedup": 4,
-        "candidates": 22,
-        "candidate_rate": 0.0455,
-        "score_buckets": {
-          "0–39": 465,
-          "40–49": 53,
-          "50–59": 25,
-          "60–69": 3,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 1,
-          "8": 4,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 9,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789114133,
       "status": "OK",
@@ -24106,10 +23955,148 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789325326,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 77.72,
+      "candidates": 16,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 13,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 0,
+        "candidate_count": 16,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 10,
+          "average_score": 7.5,
+          "bonus_total": 225.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 5,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходим пересмотр стратегии безопасности и риск-менеджмента при интеграции сторонних ИИ-агентов в критические бизнес-процессы.",
+            "title": "Why Openai Kept Its Rogue Agent Incident Quiet And What It M - ИФЗ РАН",
+            "final_score": 67.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 37,
+        "raw_items": 862,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 15,
+          "CNews": 0,
+          "Euronews": 19
+        },
+        "score_filtered": 837,
+        "quality_filtered": 6,
+        "story_dedup": 3,
+        "candidates": 16,
+        "candidate_rate": 0.0194,
+        "score_buckets": {
+          "0–39": 811,
+          "40–49": 31,
+          "50–59": 20,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 9,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789322930.5985153,
+  "last_search_ts": 1789325326.3950374,
   "last_publish_ts": 1789322450.7772424,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
