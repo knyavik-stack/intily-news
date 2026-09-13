@@ -101,9 +101,31 @@ def _one_shot_gemini_chat(prompt, token):
     return _gemini_chat(prompt, token)
 
 
+def _extract_json_object(text):
+    """Return a valid JSON object embedded in model text, if one exists."""
+    if not isinstance(text, str):
+        return None
+    candidate = text.strip()
+    try:
+        parsed = json.loads(candidate)
+        return candidate if isinstance(parsed, dict) else None
+    except json.JSONDecodeError:
+        pass
+    start = candidate.find('{')
+    end = candidate.rfind('}')
+    if start < 0 or end <= start:
+        return None
+    candidate = candidate[start:end + 1]
+    try:
+        parsed = json.loads(candidate)
+    except json.JSONDecodeError:
+        return None
+    return candidate if isinstance(parsed, dict) else None
+
+
 def _groq_chat(url, model, token, prompt, retries=2):
-    """Groq OpenAI-compatible request hardened for GPT-OSS structured output."""
-    body = json.dumps({
+    """Groq request with a JSON-mode fallback for transient generation failures."""
+    base = {
         'model': model,
         'messages': [
             {'role': 'system', 'content': 'Ты профессиональный редактор русского Telegram-канала об AI. Отвечай только валидным JSON.'},
@@ -112,10 +134,14 @@ def _groq_chat(url, model, token, prompt, retries=2):
         'temperature': 0.25,
         'max_completion_tokens': GROQ_MAX_COMPLETION_TOKENS,
         'include_reasoning': False,
-        'response_format': {'type': 'json_object'},
-    }).encode()
+    }
     last = None
+    json_mode = True
     for attempt in range(retries):
+        body_payload = dict(base)
+        if json_mode:
+            body_payload['response_format'] = {'type': 'json_object'}
+        body = json.dumps(body_payload).encode()
         try:
             req = urllib.request.Request(
                 url,
@@ -129,17 +155,25 @@ def _groq_chat(url, model, token, prompt, retries=2):
             with urllib.request.urlopen(req, timeout=_bounded_request_timeout(GROQ_REQUEST_TIMEOUT_SECONDS)) as response:
                 data = json.loads(response.read().decode())
             content = data['choices'][0]['message'].get('content')
-            if not isinstance(content, str) or not content.strip():
-                raise RuntimeError('GROQ_EMPTY_CONTENT')
-            return content
+            extracted = _extract_json_object(content)
+            if extracted is not None:
+                if not json_mode:
+                    print('GROQ_JSON_TEXT_FALLBACK_OK')
+                return extracted
+            raise RuntimeError('GROQ_EMPTY_OR_INVALID_CONTENT')
         except urllib.error.HTTPError as exc:
             raw = exc.read().decode('utf-8', 'replace')
-            last = RuntimeError(f'GROQ_HTTP_{exc.code}: {raw[:300]}')
+            last = RuntimeError(f'GROQ_HTTP_{exc.code}: {raw[:500]}')
             if exc.code == 403 and '1010' in raw:
                 raise last
+            lowered = raw.lower()
+            json_generation_failure = exc.code == 400 and ('json_valid' in lowered or 'failed to generate json' in lowered or 'failed to validate json' in lowered)
+            if json_generation_failure and json_mode and attempt < retries - 1:
+                json_mode = False
+                print('GROQ_JSON_MODE_FALLBACK_TEXT')
+                continue
             if exc.code not in (429, 500, 502, 503, 504):
                 raise last
-            lowered = raw.lower()
             quota_exhausted = any(marker in lowered for marker in (
                 'tokens per day',
                 'rate limit reached',
@@ -156,7 +190,12 @@ def _groq_chat(url, model, token, prompt, retries=2):
                 raise RuntimeError('AI_EVALUATION_DEADLINE_EXCEEDED') from last
             print('GROQ_RETRY', exc.code, wait)
             time.sleep(wait)
-        except RuntimeError:
+        except RuntimeError as exc:
+            last = exc
+            if str(exc) in ('GROQ_EMPTY_OR_INVALID_CONTENT', 'GROQ_EMPTY_CONTENT') and json_mode and attempt < retries - 1:
+                json_mode = False
+                print('GROQ_JSON_MODE_FALLBACK_TEXT')
+                continue
             raise
         except Exception as exc:
             last = exc
