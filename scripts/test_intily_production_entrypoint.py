@@ -8,6 +8,7 @@ from intily_production_entrypoint import (
     CANONICAL_PRE_AI_THRESHOLD,
     GEMINI_MAX_PROMPT_CHARS,
     GEMINI_REQUEST_TIMEOUT_SECONDS,
+    GROQ_MAX_COMPLETION_TOKENS,
     _compact_gemini_prompt,
     _groq_chat,
     _one_shot_gemini_chat,
@@ -64,7 +65,7 @@ class ProductionEntrypointTests(unittest.TestCase):
         compacted = _compact_gemini_prompt(long_prompt)
         self.assertEqual(len(compacted), GEMINI_MAX_PROMPT_CHARS)
 
-    def test_groq_uses_explicit_user_agent(self):
+    def test_groq_uses_gpt_oss_json_contract(self):
         class FakeResponse:
             def __enter__(self): return self
             def __exit__(self, *args): return False
@@ -78,11 +79,27 @@ class ProductionEntrypointTests(unittest.TestCase):
             return FakeResponse()
 
         with patch('intily_production_entrypoint.urllib.request.urlopen', side_effect=fake_urlopen):
-            result = _groq_chat('https://api.groq.com/openai/v1/chat/completions', 'llama-3.1-8b-instant', 'token', 'test')
+            result = _groq_chat('https://api.groq.com/openai/v1/chat/completions', 'openai/gpt-oss-20b', 'token', 'test')
 
         self.assertEqual(result, '{"audience_score":8}')
         self.assertEqual(captured['timeout'], 20)
         self.assertEqual(captured['request'].headers['User-agent'], 'IntilyAI-News/7.0')
+        payload = json.loads(captured['request'].data.decode())
+        self.assertEqual(payload['max_completion_tokens'], GROQ_MAX_COMPLETION_TOKENS)
+        self.assertEqual(payload['include_reasoning'], False)
+        self.assertEqual(payload['response_format'], {'type': 'json_object'})
+        self.assertNotIn('max_tokens', payload)
+
+    def test_groq_empty_content_is_not_accepted(self):
+        class FakeResponse:
+            def __enter__(self): return self
+            def __exit__(self, *args): return False
+            def read(self):
+                return json.dumps({'choices': [{'message': {'content': ''}}]}).encode()
+
+        with patch('intily_production_entrypoint.urllib.request.urlopen', return_value=FakeResponse()):
+            with self.assertRaisesRegex(RuntimeError, r'GROQ_EMPTY_CONTENT'):
+                _groq_chat('https://api.groq.com/openai/v1/chat/completions', 'openai/gpt-oss-20b', 'token', 'test')
 
     def test_groq_quota_429_fails_without_retry(self):
         error_body = json.dumps({'error': {'message': 'Rate limit reached for model `openai/gpt-oss-20b` on tokens per day'}}).encode()
@@ -100,7 +117,7 @@ class ProductionEntrypointTests(unittest.TestCase):
         error.read = lambda: b'error code: 1010'
         with patch('intily_production_entrypoint.urllib.request.urlopen', side_effect=error) as mocked:
             with self.assertRaisesRegex(RuntimeError, r'GROQ_HTTP_403'):
-                _groq_chat('https://api.groq.com/openai/v1/chat/completions', 'llama-3.1-8b-instant', 'token', 'test')
+                _groq_chat('https://api.groq.com/openai/v1/chat/completions', 'openai/gpt-oss-20b', 'token', 'test')
         self.assertEqual(mocked.call_count, 1)
 
     def test_first_provider_migration_reset_reopens_existing_circuit(self):
