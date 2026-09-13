@@ -691,11 +691,11 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789295568.0809264,
+    "last_start_ts": 1789296048.3452091,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789295568.0809264,
-    "last_success_ts": 1789295568.0809264,
+    "last_run_ts": 1789296048.3452091,
+    "last_success_ts": 1789296048.3452091,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 10
@@ -873,155 +873,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789054619,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 124.26,
-      "candidates": 53,
-      "queue_before": 8,
-      "queue_after": 8,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 35,
-        "known_recent": 0,
-        "already_queued": 5,
-        "story_queue": 0,
-        "story_history": 12,
-        "added": 1,
-        "candidate_count": 53,
-        "admission_rate": 1.89,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENS": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INV"
-          }
-        },
-        "audience": {
-          "evaluated": 11,
-          "average_score": 7.18,
-          "bonus_total": 237.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 5,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Демонстрация практического применения MCP в enterprise-сегменте для автоматизации пользовательских сценариев.",
-            "title": "«Туту» запустил нового ИИ-ассистента с поддержкой протокола MCP",
-            "final_score": 59.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 164,
-        "raw_items": 1311,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 2,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 40,
-          "CNews": 66,
-          "Euronews": 50
-        },
-        "score_filtered": 1191,
-        "quality_filtered": 54,
-        "story_dedup": 13,
-        "candidates": 53,
-        "candidate_rate": 0.0462,
-        "score_buckets": {
-          "0–39": 1121,
-          "40–49": 120,
-          "50–59": 60,
-          "60–69": 10,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 2,
-          "6": 6,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 10,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789054784,
       "status": "OK",
@@ -24329,6 +24180,78 @@
       "business_reason": "no_eligible_item",
       "searched": false,
       "duration_sec": 2.65,
+      "candidates": 0,
+      "queue_before": 10,
+      "queue_after": 10,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 9,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT"
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1789296048,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 2.87,
       "candidates": 0,
       "queue_before": 10,
       "queue_after": 10,
