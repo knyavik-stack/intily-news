@@ -367,43 +367,6 @@
       "tier": "A"
     },
     {
-      "region": "WORLD",
-      "title": "OpenAI’s rogue AI tried to hack another company in May",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
-      "desc": "In May, hundreds of malicious and spam packages were uploaded to RubyGems, causing a serious disruption for the host. Now independent researchers have said that a swarm of OpenAI agents were responsible for the attack. Not only that, but the AI tried to steal users' API keys. At the time, RubyGems described it as a […]",
-      "source": "The Verge AI",
-      "time": 1789249296.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 10.0,
-        "event_concreteness": 17.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 49.0,
-        "audience_score": 10.0,
-        "audience_bonus": 30.0,
-        "final_score": 79.0
-      },
-      "base_score": 49.0,
-      "audience_bonus": 30.0,
-      "score_stage": "final",
-      "score": 79.0,
-      "key": "dd704b8f279f456bf7f55788096313dfae634597dbb988558378ca423b6a2346",
-      "importance": 79.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "research"
-      ],
-      "audience_score": 10.0,
-      "tier": "A"
-    },
-    {
       "region": "RUSSIA",
       "title": "Google переводит соучредителя Mechanize и более десятка инженеров в DeepMind",
       "link": "https://habr.com/ru/news/1081652/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1081652",
@@ -599,19 +562,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 2.0,
-        "freshness": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 41.0,
+        "base_score": 40.5,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 41.0
+        "final_score": 40.5
       },
-      "base_score": 41.0,
+      "base_score": 40.5,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 41.0,
+      "score": 40.5,
       "key": "a86e794f75ff967a71e3a2c22793b9b26dee8a06348e306bb11b432cd7b130e9",
-      "importance": 41.0,
+      "importance": 40.5,
       "editorial_value": 50.0,
       "topics": [
         "agents"
@@ -658,14 +621,14 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789292215.0993469,
+    "last_start_ts": 1789293169.8798726,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789292215.0993469,
-    "last_success_ts": 1789292215.0993469,
-    "last_candidates": 8,
+    "last_run_ts": 1789293169.8798726,
+    "last_success_ts": 1789293169.8798726,
+    "last_candidates": 0,
     "last_published": 0,
-    "queue_size": 9
+    "queue_size": 8
   },
   "providers": {
     "GEMINI": {
@@ -840,96 +803,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789053149,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 7.29,
-      "candidates": 0,
-      "queue_before": 12,
-      "queue_after": 11,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Ускоряет пайплайны подготовки данных, критически важных для качества RAG-систем в Enterprise.",
-            "title": "Prophecy Launches AI Data Prep Tools to Help Enterprises Move AI Into Production - konsulteer.com",
-            "final_score": 61.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789053505,
       "status": "OK",
@@ -24360,6 +24233,78 @@
         },
         "audience_stage": "post_editorial"
       },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT"
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1789293169,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 3.11,
+      "candidates": 0,
+      "queue_before": 8,
+      "queue_after": 8,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 7,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
       "provider": {
         "attempts": [],
         "used": null,
