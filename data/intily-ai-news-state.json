@@ -706,20 +706,20 @@
         "novelty": 0.0,
         "source_quality": 4.0,
         "evidence": 2.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 40.5,
+        "base_score": 40.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 40.5
+        "final_score": 40.0
       },
-      "base_score": 40.5,
+      "base_score": 40.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 40.5,
+      "score": 40.0,
       "key": "a028c022e7bb78e9c9dc4e063921092ae612cad29a2119ebde051db2d56fc06b",
-      "importance": 40.5,
-      "editorial_value": 48.5,
+      "importance": 40.0,
+      "editorial_value": 48.0,
       "topics": [
         "agents",
         "models"
@@ -730,12 +730,12 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789278289.2261183,
+    "last_start_ts": 1789279013.6915681,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789278289.2261183,
-    "last_success_ts": 1789278289.2261183,
-    "last_candidates": 0,
+    "last_run_ts": 1789279013.6915681,
+    "last_success_ts": 1789279013.6915681,
+    "last_candidates": 12,
     "last_published": 0,
     "queue_size": 11
   },
@@ -748,7 +748,7 @@
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789278289.1065178
+      "updated_at": 1789279013.3101513
     },
     "OPENAI": {
       "disabled_until": 1789302841.0912836,
@@ -982,155 +982,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789048107,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 80.93,
-      "candidates": 48,
-      "queue_before": 13,
-      "queue_after": 15,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 29,
-        "known_recent": 0,
-        "already_queued": 12,
-        "story_queue": 0,
-        "story_history": 4,
-        "added": 3,
-        "candidate_count": 48,
-        "admission_rate": 6.25,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "PHOTO_CAPTION_LIMIT_TEXT_FALLBACK"
-          }
-        },
-        "audience": {
-          "evaluated": 11,
-          "average_score": 7.27,
-          "bonus_total": 240.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 5,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Упрощает внедрение RAG для бизнеса, работающего в экосистеме Databricks, снижая затраты на разработку поиска.",
-            "title": "Databricks launches model to boost data retrieval for AI - TechTarget",
-            "final_score": 65.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 150,
-        "raw_items": 1189,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 40,
-          "CNews": 58,
-          "Euronews": 50
-        },
-        "score_filtered": 1084,
-        "quality_filtered": 48,
-        "story_dedup": 9,
-        "candidates": 48,
-        "candidate_rate": 0.0462,
-        "score_buckets": {
-          "0–39": 1020,
-          "40–49": 109,
-          "50–59": 50,
-          "60–69": 10,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 3,
-          "6": 6,
-          "7": 3,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 10,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789048306,
       "status": "OK",
@@ -24626,10 +24477,131 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789279013,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 40.93,
+      "candidates": 12,
+      "queue_before": 11,
+      "queue_after": 11,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 1,
+        "known_recent": 0,
+        "already_queued": 8,
+        "story_queue": 2,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 12,
+        "admission_rate": 0.0,
+        "dominant_block": "already_queued",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 8,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 14,
+        "raw_items": 341,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 2,
+          "CNews": 0,
+          "Euronews": 7
+        },
+        "score_filtered": 320,
+        "quality_filtered": 7,
+        "story_dedup": 2,
+        "candidates": 12,
+        "candidate_rate": 0.0367,
+        "score_buckets": {
+          "0–39": 303,
+          "40–49": 24,
+          "50–59": 13,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 0,
+          "7": 0,
+          "8": 2,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT"
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789276613.1671634,
+  "last_search_ts": 1789279013.6915681,
   "last_publish_ts": 1789233169.2588186,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
