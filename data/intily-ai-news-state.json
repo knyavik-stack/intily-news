@@ -388,7 +388,8 @@
     "1f26ede49173273eb4bdf69486bffbf6ea21480a1219ec6a11b4123bf1418fd5": 1789400920,
     "c2a37b00a359c5f74777eda277edccf2e480a9793d491a1fc85675b5de4f23d3": 1789402360,
     "927771bd4f4970ff11c98cc566c57defa287800167c0f0e478649a410433adee": 1789403071,
-    "8466af7c0329ca6794dd5cf184c57babd8340e55f063760d6bca5e9c7d208b13": 1789405965
+    "8466af7c0329ca6794dd5cf184c57babd8340e55f063760d6bca5e9c7d208b13": 1789405965,
+    "a24ea6c61c66ecfb082f7c3ebec4d69726f7aad4da26021d798525135cb119be": 1789406909
   },
   "known": {
     "0f667dd2ce2db43f97623c8f62e2044a909d9de5b65e52a713255ddcd4fc2c7c": 1789402111.325928,
@@ -398,43 +399,6 @@
     "d6a9a81dcd6c35691e1443648e22d74f1cdf030a694800514cf1e637eb52fcb6": 1789404034.0762897
   },
   "queue": [
-    {
-      "region": "WORLD",
-      "title": "OpenAI may have violated California’s AI safety law with latest model releases, AI watchdog says - Fortune",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQN3lYTmFmeTRwb0d0SHcxSXFnaW9OZS1DdzF2X3gwNjlJODRoRXlYN0RKdjlzX0pQbVNhcERIeVhVeTZUQ0FoUWJwTVU0ZzdXbUVCWGowVWtEb3h1RTExbi05YnpscC1mUkdfSWNUWmhOeWFXWVZXTDFOSTZ2WE55UzdHRTgwM2tRMkVyVnZDYWpmMS1VWndpQjBMYTBhWmJPVW9OcndKYTZVdlVoUDhJRF9LU2lGZmZkbExSeXBPY29Jd00?oc=5",
-      "desc": "OpenAI may have violated California’s AI safety law with latest model releases, AI watchdog says Fortune",
-      "source": "Fortune",
-      "time": 1789400460.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 10.0,
-        "event_concreteness": 16.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 48.0,
-        "audience_score": 7.0,
-        "audience_bonus": 21.0,
-        "final_score": 69.0
-      },
-      "base_score": 48.0,
-      "audience_bonus": 21.0,
-      "score_stage": "final",
-      "score": 69.0,
-      "key": "a24ea6c61c66ecfb082f7c3ebec4d69726f7aad4da26021d798525135cb119be",
-      "importance": 69.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "models",
-        "security_regulation"
-      ],
-      "audience_score": 7.0,
-      "tier": "A"
-    },
     {
       "region": "RUSSIA",
       "title": "Компания «Сател» представила интеллектуальную систему управления знаниями «Инфосфера»",
@@ -556,25 +520,25 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789405965.704306,
+    "last_start_ts": 1789406909.931848,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789405965.704306,
-    "last_success_ts": 1789405965.704306,
-    "last_candidates": 28,
+    "last_run_ts": 1789406909.931848,
+    "last_success_ts": 1789406909.931848,
+    "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 4
+    "queue_size": 3
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789406035.1459723
+      "disabled_until": 1789407030.683494,
+      "reason": "TEMPORARY_SERVICE_ERROR_OR_429",
+      "updated_at": 1789406910.6834958
     },
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789404075.565831
+      "updated_at": 1789406916.0250096
     },
     "OPENAI": {
       "disabled_until": 1789481626.7375183,
@@ -588,13 +552,6 @@
     }
   },
   "stories": {
-    "4da77bd290fec9d89a89f3c58ea33957df48ef416dfaf36d970284aee4ed6056": {
-      "time": 1789319813,
-      "title": "Nvidia weighs $10 billion investment in Anthropic IPO - The American Bazaar",
-      "desc": "Nvidia weighs $10 billion investment in Anthropic IPO The American Bazaar",
-      "source": "The American Bazaar",
-      "region": "WORLD"
-    },
     "828f054ca2acdae498d861bbf5c73e046e52d7838d0b0a7a11296eed4c38b1bb": {
       "time": 1789322450,
       "title": "Лидер демократов в Конгрессе призвал законодателей заняться регулированием ИИ - Рамблер",
@@ -916,10 +873,16 @@
       "desc": "Anthropic launches Claude for financial advisors with Schwab, BlackRock, Addepar, and Orion integrations Crypto Briefing",
       "source": "Crypto Briefing",
       "region": "WORLD"
+    },
+    "a24ea6c61c66ecfb082f7c3ebec4d69726f7aad4da26021d798525135cb119be": {
+      "time": 1789406909,
+      "title": "OpenAI may have violated California’s AI safety law with latest model releases, AI watchdog says - Fortune",
+      "desc": "OpenAI may have violated California’s AI safety law with latest model releases, AI watchdog says Fortune",
+      "source": "Fortune",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -935,102 +898,13 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789194767,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 2.88,
-      "candidates": 0,
-      "queue_before": 2,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.fiercehealthcare.com/ai-and-machine-learning/arpa-h-launches-63m-cardiovascular-ai-initiative-naming-updoc-tempus-ai",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Создание прецедента сертификации ИИ-агентов FDA критично для стратегии разработки в MedTech.",
-            "title": "ARPA-H launches $63M effort to build FDA-authorized AI agents for heart failure care - Fierce Healthcare",
-            "final_score": 61.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789195046,
       "status": "OK",
@@ -25525,11 +25399,105 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789406909,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 17.06,
+      "candidates": 0,
+      "queue_before": 4,
+      "queue_after": 3,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://fortune.com/2026/09/14/openai-may-have-violated-californias-ai-safety-law-with-astra-model-releases-ai-watchdog-says/",
+            "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/GettyImages-2292627005-e1789393316328.jpg?resize=1200,600",
+            "width": 1200,
+            "height": 600,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 24.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Regulatory risk for AI-dependent products.",
+            "title": "OpenAI may have violated California’s AI safety law with latest model releases, AI watchdog says - Fortune",
+            "final_score": 72.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ"
+        ],
+        "used": "GROQ",
+        "failovers": 4,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1789405965.704306,
-  "last_publish_ts": 1789405965.704306,
+  "last_publish_ts": 1789406909.931848,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
