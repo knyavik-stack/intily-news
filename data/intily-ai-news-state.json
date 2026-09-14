@@ -350,11 +350,13 @@
     "bb192369104862459a2824cc61bc4b09a6d21d615274188ccaf363f92855d296": 1789365886,
     "996eb8cab86d6d404d05cadb95c1b92b1af42608a053903cfe5a50c75977045d": 1789369230,
     "152d78aac9e8e495e6dd792a778aa75c9e53b902b9248fd880ba1afcb77be78e": 1789369471,
-    "ce4d07a1732c02114098b8801bc602c2a68f0f6832fbf92fb17b4c42d5b11e0b": 1789369745
+    "ce4d07a1732c02114098b8801bc602c2a68f0f6832fbf92fb17b4c42d5b11e0b": 1789369745,
+    "49569e348dce57350ad50c0175773da1fa0f6059d1277e254f2f6d9e5c80f61f": 1789369950
   },
   "known": {
     "bb192369104862459a2824cc61bc4b09a6d21d615274188ccaf363f92855d296": 1789365886.6322122,
-    "996eb8cab86d6d404d05cadb95c1b92b1af42608a053903cfe5a50c75977045d": 1789365886.6322122
+    "996eb8cab86d6d404d05cadb95c1b92b1af42608a053903cfe5a50c75977045d": 1789365886.6322122,
+    "49569e348dce57350ad50c0175773da1fa0f6059d1277e254f2f6d9e5c80f61f": 1789369950.7701192
   },
   "queue": [
     {
@@ -395,12 +397,12 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789369745.0244212,
+    "last_start_ts": 1789369950.7701192,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789369745.0244212,
-    "last_success_ts": 1789369745.0244212,
-    "last_candidates": 0,
+    "last_run_ts": 1789369950.7701192,
+    "last_success_ts": 1789369950.7701192,
+    "last_candidates": 10,
     "last_published": 1,
     "queue_size": 1
   },
@@ -408,7 +410,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789369746.6898487
+      "updated_at": 1789370037.0956883
     },
     "GROQ": {
       "disabled_until": 0,
@@ -643,10 +645,16 @@
       "desc": "Has Google DeepMind Successfully Cracked RSI? Latest AI Research Breakthrough & Key Insights 36 Kr",
       "source": "36 Kr",
       "region": "WORLD"
+    },
+    "49569e348dce57350ad50c0175773da1fa0f6059d1277e254f2f6d9e5c80f61f": {
+      "time": 1789369950,
+      "title": "Funding Weekly | Nasdaq Invests $100 Million in Kraken Parent Payward; Mistral AI Completes €3 Billion Series D Financing - PANews",
+      "desc": "Funding Weekly | Nasdaq Invests $100 Million in Kraken Parent Payward; Mistral AI Completes €3 Billion Series D Financing PANews",
+      "source": "PANews",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -661,6 +669,7 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -668,94 +677,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789121565,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 7.04,
-      "candidates": 0,
-      "queue_before": 2,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.konsulteer.com/article/cymphony-emerges-from-stealth-with-30-million-to-secure-enterprise-ai-agents",
-            "image_url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7782f69ef8ab56df259733435fb6595c/id-preview-110e1c90--932326a4-54ee-42d7-b885-0a3d514c39eb.lovable.app-1788456754641.png",
-            "width": 1920,
-            "height": 1080,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость внедрения инструментов защиты при масштабировании AI-агентов в корпоративной среде.",
-            "title": "Cymphony Emerges From Stealth With $30 Million to Secure Enterprise AI Agents - konsulteer.com",
-            "final_score": 64.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789122760,
       "status": "OK",
@@ -24368,11 +24289,159 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789369950,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 87.58,
+      "candidates": 10,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 6,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 1,
+        "candidate_count": 10,
+        "admission_rate": 10.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdUNWcE1mNmVsQnUwMVE0Mk5ibjhqa1luX0tPdmF1M2FTWjg0eklJbmJTYUkteERQYkRYY0hkMTk3Ukk3cDVpV2lxbm44NnhBUl81bUpSUVZNZDItYlNlejJoeW9PYjVrSXQzNXp3akRyZGNQa0gtRkQ5ZnhqUDl3WDZ6YWtjNXZDZVpYRG1TT3dUbEF4UDNMXy1QYUVkMDFHeXJQcV95QQ?oc=5",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 10,
+          "average_score": 7.6,
+          "bonus_total": 228.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 6,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Приток капитала в европейский ИИ-сектор создает новые рынки и возможности для партнерств.",
+            "title": "UAE pledges $46.5 billion investment in Germany across AI, tech and energy - fastcompanyme.com",
+            "final_score": 61.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 42,
+        "raw_items": 587,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 10,
+          "CNews": 8,
+          "Euronews": 20
+        },
+        "score_filtered": 554,
+        "quality_filtered": 22,
+        "story_dedup": 1,
+        "candidates": 10,
+        "candidate_rate": 0.0183,
+        "score_buckets": {
+          "0–39": 525,
+          "40–49": 51,
+          "50–59": 11,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 1,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 9,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789369230.8447347,
-  "last_publish_ts": 1789369745.0244212,
+  "last_search_ts": 1789369950.7701192,
+  "last_publish_ts": 1789369950.7701192,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
