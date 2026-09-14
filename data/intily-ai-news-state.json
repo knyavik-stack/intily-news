@@ -391,7 +391,8 @@
     "8466af7c0329ca6794dd5cf184c57babd8340e55f063760d6bca5e9c7d208b13": 1789405965,
     "a24ea6c61c66ecfb082f7c3ebec4d69726f7aad4da26021d798525135cb119be": 1789406909,
     "0f667dd2ce2db43f97623c8f62e2044a909d9de5b65e52a713255ddcd4fc2c7c": 1789407151,
-    "d6a9a81dcd6c35691e1443648e22d74f1cdf030a694800514cf1e637eb52fcb6": 1789407391
+    "d6a9a81dcd6c35691e1443648e22d74f1cdf030a694800514cf1e637eb52fcb6": 1789407391,
+    "dffa32cb06d2038927e55038f46ffda5dcaa9f001f051437aead0215ccacb29f": 1789408834
   },
   "known": {
     "a24ea6c61c66ecfb082f7c3ebec4d69726f7aad4da26021d798525135cb119be": 1789404034.0762897,
@@ -439,59 +440,23 @@
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_HTTP_429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m1e9qqc7eeva92csec7za87f` service tier `on_demand` on tokens per minute | OPENAI: OPENAI_CIRCUIT_OPEN",
       "failure_count": 1,
       "next_retry_at": 1789403611
-    },
-    {
-      "region": "WORLD",
-      "title": "California's new 'Adam's Law' on chatbots shows OpenAI's strategy shift on state AI regulations - Fortune",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRF9kZkdLS0tPcjYtNEh0Y2ZJTmVBTDBnSU9qT2VBQllWZ3FLTnAwcU9IYXViNU5tM3B3UVB2M1I3aTcwZDBPSmhXMXdkejFzV0lFRmNWbzgyWXFpY2ZRTnJva0FrSWJmajQ5Um9xYkIzbWhxMm9VUVJIWTgtYWYyV0doR05VcVFtYUItUG1DaFQ2aFNORkoxLVcwUV91SHBnblBlaVNXc3B1WWRHVEtWWU03T1dFQXphbzVZM3p3?oc=5",
-      "desc": "California's new 'Adam's Law' on chatbots shows OpenAI's strategy shift on state AI regulations Fortune",
-      "source": "Fortune",
-      "time": 1789407660.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 10.0,
-        "event_concreteness": 15.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 46.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 46.5
-      },
-      "base_score": 46.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 46.5,
-      "key": "dffa32cb06d2038927e55038f46ffda5dcaa9f001f051437aead0215ccacb29f",
-      "importance": 46.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "security_regulation"
-      ],
-      "audience_score": null,
-      "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1789408349.1326385,
+    "last_start_ts": 1789408834.1611967,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789408349.1326385,
-    "last_success_ts": 1789408349.1326385,
-    "last_candidates": 28,
-    "last_published": 0,
-    "queue_size": 2
+    "last_run_ts": 1789408834.1611967,
+    "last_success_ts": 1789408834.1611967,
+    "last_candidates": 0,
+    "last_published": 1,
+    "queue_size": 1
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1789408515.6504927,
-      "reason": "TEMPORARY_SERVICE_ERROR_OR_429",
-      "updated_at": 1789408395.6504948
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1789408834.1578887
     },
     "GROQ": {
       "disabled_until": 0,
@@ -852,11 +817,17 @@
       "desc": "Один из крупнейших в России франчайзи «Вкусно — и точка», которым владеет казахстанский предприниматель Кайрат Боранбаев, решил внедрить ИИ в управление финансами на фоне снижения чистой прибыли. Если проект состоится, руководителям компании больше не придётся перебирать таблицы Excel: финансовые комментарии на русском языке им будут предоставлять ИИ-агенты, использующие языковую модель. На выбор предлагаются китайская Qwen 2.5 или американская LLaMA 3.3 (принадлежит запрещенной в России Meta) для интерпретации расчетов.",
       "source": "CNews",
       "region": "RUSSIA"
+    },
+    "dffa32cb06d2038927e55038f46ffda5dcaa9f001f051437aead0215ccacb29f": {
+      "time": 1789408834,
+      "title": "California's new 'Adam's Law' on chatbots shows OpenAI's strategy shift on state AI regulations - Fortune",
+      "desc": "California's new 'Adam's Law' on chatbots shows OpenAI's strategy shift on state AI regulations Fortune",
+      "source": "Fortune",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -874,148 +845,10 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789197169,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 53.94,
-      "candidates": 11,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 9,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 0,
-        "candidate_count": 11,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 10.0,
-          "bonus_total": 30.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Оценка в $50 млрд сигнализирует о критическом перегреве рынка, требующем пересмотра стратегии инвестиций и рисков.",
-            "title": "Google-affiliated AI startup Discovery Loop reportedly launches new funding round, targeting $50 billion valuation - finance.biggo.com",
-            "final_score": 79.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 25,
-        "raw_items": 280,
-        "source_counts": {
-          "TechCrunch AI": 6,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 5,
-          "Habr AI/News": 3,
-          "CNews": 0,
-          "Euronews": 9
-        },
-        "score_filtered": 254,
-        "quality_filtered": 11,
-        "story_dedup": 4,
-        "candidates": 11,
-        "candidate_rate": 0.0431,
-        "score_buckets": {
-          "0–39": 239,
-          "40–49": 26,
-          "50–59": 15,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GROQ",
-          "GEMINI",
-          "GROQ",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI"
-        ],
-        "used": "GROQ",
-        "failovers": 4,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789197890,
       "status": "OK",
@@ -25360,11 +25193,99 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789408834,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 5.74,
+      "candidates": 0,
+      "queue_before": 2,
+      "queue_after": 1,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://fortune.com/2026/09/14/openai-shows-new-policy-strategy-in-negotiation-over-california-new-chatbot-law-adams-law/",
+            "image_url": "https://fortune.com/img-assets/wp-content/uploads/2026/09/GettyImages-2271211538-e1789407153936.jpg?resize=1200,600",
+            "width": 1200,
+            "height": 600,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 7.0,
+          "bonus_total": 21.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Изменение регуляторного ландшафта потребует пересмотра стратегии compliance для компаний, использующих LLM в США.",
+            "title": "California's new 'Adam's Law' on chatbots shows OpenAI's strategy shift on state AI regulations - Fortune",
+            "final_score": 67.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1789408349.1326385,
-  "last_publish_ts": 1789407391.1007388,
+  "last_publish_ts": 1789408834.1611967,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
