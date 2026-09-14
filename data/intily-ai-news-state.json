@@ -379,9 +379,45 @@
     "6280eace952945d01f6bf6e84490ee435a8a6184cb7f66b4cb1cd1b52926f83d": 1789386991.8085146,
     "c5cdace3d7a32c2205112aebf3a16466fa1461a55991b9a9432fc1475d1dd376": 1789387708.6900132,
     "9f54120aff5d7b3bfecc50df18fe5e7585266eea8f150fd449c47b9f1aa39995": 1789387708.6900132,
-    "a431474621d49fae18eac2fbde774ca315c2cc7e3c91e82fe819041cbba8ec97": 1789387708.6900132
+    "a431474621d49fae18eac2fbde774ca315c2cc7e3c91e82fe819041cbba8ec97": 1789387708.6900132,
+    "1925e3081c655b3fce75dd8a6a76e21cb932bdefaba20f19470eb11db6808931": 1789388690.402485
   },
   "queue": [
+    {
+      "region": "RUSSIA",
+      "title": "KTS запустила ИИ-ассистента для девелоперов",
+      "link": "https://www.cnews.ru/news/line/2026-09-14_kts_zapustila_ii-assistenta",
+      "desc": "ИТ-компания KTS сообщила о запуске ИИ-ассистента для девелоперов, который помогает подбирать объекты, отвечать...",
+      "source": "CNews",
+      "time": 1789387740.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 3.0,
+        "impact": 4.0,
+        "event_concreteness": 10.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 40.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 40.0
+      },
+      "base_score": 40.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 40.0,
+      "key": "1925e3081c655b3fce75dd8a6a76e21cb932bdefaba20f19470eb11db6808931",
+      "importance": 40.0,
+      "editorial_value": 50.0,
+      "topics": [],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
     {
       "region": "RUSSIA",
       "title": "Медведев: договориться о регулировании ИИ не выйдет из-за жадности корпораций - Мировое обозрение",
@@ -421,20 +457,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789388191.9870381,
+    "last_start_ts": 1789388690.402485,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789388191.9870381,
-    "last_success_ts": 1789388191.9870381,
-    "last_candidates": 0,
-    "last_published": 1,
-    "queue_size": 1
+    "last_run_ts": 1789388690.402485,
+    "last_success_ts": 1789388690.402485,
+    "last_candidates": 15,
+    "last_published": 0,
+    "queue_size": 2
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789388197.3692029
+      "disabled_until": 1789388855.7681203,
+      "reason": "TEMPORARY_SERVICE_ERROR_OR_429",
+      "updated_at": 1789388735.7681222
     },
     "GROQ": {
       "disabled_until": 0,
@@ -834,84 +870,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789140064,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 13.01,
-      "candidates": 0,
-      "queue_before": 5,
-      "queue_after": 5,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Возможность загрузки огромных контекстов радикально снижает затраты на разработку RAG-систем и ускоряет внедрение AI в бизнес-процессы.",
-            "title": "OpenAI: GPT-6 Astra Launches 1M Token Context - blockchain.news",
-            "final_score": 67.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789140532,
       "status": "OK",
@@ -25616,10 +25574,145 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789388690,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 70.43,
+      "candidates": 15,
+      "queue_before": 1,
+      "queue_after": 2,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 1,
+        "candidate_count": 15,
+        "admission_rate": 6.67,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.0,
+          "bonus_total": 36.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость срочной адаптации навыков под ИИ-инструменты для сохранения конкурентоспособности на фоне сокращений.",
+            "title": "ИТ-компании избавляются от сотрудников. В 2026 году будут уволены почти 130 тысяч человек",
+            "final_score": 75.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 119,
+        "raw_items": 1033,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 24,
+          "CNews": 45,
+          "Euronews": 50
+        },
+        "score_filtered": 983,
+        "quality_filtered": 35,
+        "story_dedup": 0,
+        "candidates": 15,
+        "candidate_rate": 0.0164,
+        "score_buckets": {
+          "0–39": 951,
+          "40–49": 66,
+          "50–59": 14,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789387708.6900132,
+  "last_search_ts": 1789388690.402485,
   "last_publish_ts": 1789388191.9870381,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
