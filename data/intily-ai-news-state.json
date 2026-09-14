@@ -358,27 +358,26 @@
     "63a3988a84d5f85b3888c80cd9526c4c37c505862e0573df1b239e18094852a9": 1789374508
   },
   "known": {
-    "49569e348dce57350ad50c0175773da1fa0f6059d1277e254f2f6d9e5c80f61f": 1789369950.7701192,
     "aa7878ee6d6cb6b7528d1eb72e5fb37d376e4950f5b052e367d9038add52d447": 1789371150.9645338,
     "ecbccc244ddfd1d22ae85e1814bda643878bb1a1333aefeabf5bc33320db8ffe": 1789372592.9609876,
     "63a3988a84d5f85b3888c80cd9526c4c37c505862e0573df1b239e18094852a9": 1789374508.6323786
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789375233.1728022,
+    "last_start_ts": 1789375714.5689147,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789375233.1728022,
-    "last_success_ts": 1789375233.1728022,
-    "last_candidates": 9,
+    "last_run_ts": 1789375714.5689147,
+    "last_success_ts": 1789375714.5689147,
+    "last_candidates": 10,
     "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1789375400.4614842,
-      "reason": "TEMPORARY_SERVICE_ERROR_OR_429",
-      "updated_at": 1789375280.4614863
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1789375785.7857633
     },
     "GROQ": {
       "disabled_until": 0,
@@ -673,145 +672,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789128282,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 55.63,
-      "candidates": 25,
-      "queue_before": 1,
-      "queue_after": 6,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 15,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 4,
-        "added": 5,
-        "candidate_count": 25,
-        "admission_rate": 20.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 5,
-          "average_score": 7.6,
-          "bonus_total": 114.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 4,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра стратегии личного капитала и перехода от роли исполнителя к роли владельца активов или управления ИИ-инфраструктурой.",
-            "title": "Создатели Claude: Из-за внедрения ИИ экономика вырастет, но зарплаты упадут. Дополнительный доход достанется хозяевам бизнеса",
-            "final_score": 73.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 5,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 118,
-        "raw_items": 1044,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 32,
-          "CNews": 36,
-          "Euronews": 50
-        },
-        "score_filtered": 982,
-        "quality_filtered": 34,
-        "story_dedup": 3,
-        "candidates": 25,
-        "candidate_rate": 0.027,
-        "score_buckets": {
-          "0–39": 932,
-          "40–49": 80,
-          "50–59": 28,
-          "60–69": 4,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 1,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI"
-        ],
-        "used": "GEMINI",
-        "failovers": 4,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789128541,
       "status": "OK",
@@ -24843,10 +24703,148 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789375714,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 71.32,
+      "candidates": 10,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 6,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 4,
+        "added": 0,
+        "candidate_count": 10,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 10,
+          "average_score": 8.2,
+          "bonus_total": 246.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 8,
+          "last": {
+            "score": 10.0,
+            "bonus": 30.0,
+            "reason": "Оценка капитализации Anthropic напрямую влияет на стратегию инвестиций и конкурентную среду в секторе LLM.",
+            "title": "Anthropic Strikes $13.7 Billion Deal With Trump-Linked Rum Group: Can It Drive IPO Valuation Higher? - tradingkey.com",
+            "final_score": 71.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 61,
+        "raw_items": 700,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 16,
+          "CNews": 13,
+          "Euronews": 30
+        },
+        "score_filtered": 662,
+        "quality_filtered": 27,
+        "story_dedup": 1,
+        "candidates": 10,
+        "candidate_rate": 0.0156,
+        "score_buckets": {
+          "0–39": 631,
+          "40–49": 58,
+          "50–59": 11,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 9,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789375233.1728022,
+  "last_search_ts": 1789375714.5689147,
   "last_publish_ts": 1789374508.6323786,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
