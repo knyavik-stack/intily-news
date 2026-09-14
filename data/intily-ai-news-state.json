@@ -390,8 +390,6 @@
     "927771bd4f4970ff11c98cc566c57defa287800167c0f0e478649a410433adee": 1789403071
   },
   "known": {
-    "1f26ede49173273eb4bdf69486bffbf6ea21480a1219ec6a11b4123bf1418fd5": 1789399471.5785005,
-    "927771bd4f4970ff11c98cc566c57defa287800167c0f0e478649a410433adee": 1789399471.5785005,
     "0f667dd2ce2db43f97623c8f62e2044a909d9de5b65e52a713255ddcd4fc2c7c": 1789402111.325928,
     "c2a37b00a359c5f74777eda277edccf2e480a9793d491a1fc85675b5de4f23d3": 1789402111.325928,
     "a24ea6c61c66ecfb082f7c3ebec4d69726f7aad4da26021d798525135cb119be": 1789404034.0762897,
@@ -593,20 +591,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789404034.0762897,
+    "last_start_ts": 1789405715.8740203,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789404034.0762897,
-    "last_success_ts": 1789404034.0762897,
-    "last_candidates": 29,
+    "last_run_ts": 1789405715.8740203,
+    "last_success_ts": 1789405715.8740203,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 5
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1789404189.4957824,
+      "disabled_until": 1789405830.841698,
       "reason": "TEMPORARY_SERVICE_ERROR_OR_429",
-      "updated_at": 1789404069.495784
+      "updated_at": 1789405710.8417
     },
     "GROQ": {
       "disabled_until": 0,
@@ -625,13 +623,6 @@
     }
   },
   "stories": {
-    "358145dac2ae0ac389f3db16286f880498fd44d4a47f54ad1a38c2b805646c22": {
-      "time": 1789317646,
-      "title": "Building India’s Digital ADR Architecture: Panel calls for national AI regulation, institutional leadership and technology-enabled dispute resolution - SCC Online",
-      "desc": "Building India’s Digital ADR Architecture: Panel calls for national AI regulation, institutional leadership and technology-enabled dispute resolution SCC Online",
-      "source": "SCC Online",
-      "region": "WORLD"
-    },
     "4da77bd290fec9d89a89f3c58ea33957df48ef416dfaf36d970284aee4ed6056": {
       "time": 1789319813,
       "title": "Nvidia weighs $10 billion investment in Anthropic IPO - The American Bazaar",
@@ -978,154 +969,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789194293,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 81.9,
-      "candidates": 12,
-      "queue_before": 3,
-      "queue_after": 3,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 6,
-        "known_recent": 0,
-        "already_queued": 3,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 1,
-        "candidate_count": 12,
-        "admission_rate": 8.33,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 400: Bad Request": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 400: Bad Request"
-          }
-        },
-        "audience": {
-          "evaluated": 10,
-          "average_score": 8.2,
-          "bonus_total": 246.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 7,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра протоколов безопасности и подготовки к ужесточению комплаенса при интеграции LLM.",
-            "title": "ИИ-гигант Anthropic: наши технологии могли незаконно использоваться для создания биологического оружия - Голос Америки",
-            "final_score": 64.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 27,
-        "raw_items": 296,
-        "source_counts": {
-          "TechCrunch AI": 7,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 6,
-          "Habr AI/News": 3,
-          "CNews": 0,
-          "Euronews": 9
-        },
-        "score_filtered": 273,
-        "quality_filtered": 7,
-        "story_dedup": 4,
-        "candidates": 12,
-        "candidate_rate": 0.0446,
-        "score_buckets": {
-          "0–39": 251,
-          "40–49": 29,
-          "50–59": 15,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 1,
-          "6": 0,
-          "7": 1,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 9,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789194529,
       "status": "OK",
@@ -25565,6 +25408,78 @@
         ],
         "used": "GROQ",
         "failovers": 4,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1789405715,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 5.78,
+      "candidates": 0,
+      "queue_before": 5,
+      "queue_after": 5,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
         "failures": 0,
         "blocked": 0,
         "skipped_no_key": 0,
