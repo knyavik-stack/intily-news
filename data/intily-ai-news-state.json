@@ -366,7 +366,8 @@
     "2e5762cbc0be12b9446034d84a497c3355e0b857eef34c5021453d14b73ffae1": 1789384830,
     "8586e3b919a5d3d4f4f661047c6813d22b7b6fa20b433aa7274100161941436a": 1789385550,
     "71b6161ad461701cd6883e50ab5ca9ddd9888968634a95d9a5139c41f8afb668": 1789385791,
-    "ee8365b4b68fe5c77f56b7996e7f490f70e9f02de8f20abf02acc5e3f0ddcc43": 1789386031
+    "ee8365b4b68fe5c77f56b7996e7f490f70e9f02de8f20abf02acc5e3f0ddcc43": 1789386031,
+    "17443ccb53829e656cbc5f981c0aedaeab873dc547e02b94f6b7a401bba9aaee": 1789386268
   },
   "known": {
     "139a2200afe3c34bb969ec971e3475b11fb713760e5eb586d9aafa88c989dd7b": 1789380994.4127614,
@@ -375,15 +376,16 @@
     "71b6161ad461701cd6883e50ab5ca9ddd9888968634a95d9a5139c41f8afb668": 1789381951.6321037,
     "ee8365b4b68fe5c77f56b7996e7f490f70e9f02de8f20abf02acc5e3f0ddcc43": 1789381951.6321037,
     "3a14754e52c9c49c03df7cdaa6495e63616e385ee18e48be59155b105666057e": 1789384110.4754074,
-    "8586e3b919a5d3d4f4f661047c6813d22b7b6fa20b433aa7274100161941436a": 1789384110.4754074
+    "8586e3b919a5d3d4f4f661047c6813d22b7b6fa20b433aa7274100161941436a": 1789384110.4754074,
+    "17443ccb53829e656cbc5f981c0aedaeab873dc547e02b94f6b7a401bba9aaee": 1789386268.8633754
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789386031.9136288,
+    "last_start_ts": 1789386268.8633754,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789386031.9136288,
-    "last_success_ts": 1789386031.9136288,
+    "last_run_ts": 1789386268.8633754,
+    "last_success_ts": 1789386268.8633754,
     "last_candidates": 18,
     "last_published": 1,
     "queue_size": 0
@@ -392,7 +394,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789386112.3792994
+      "updated_at": 1789386350.1100388
     },
     "GROQ": {
       "disabled_until": 0,
@@ -739,6 +741,13 @@
       "desc": "Регулируем на сухую? Клименко удивился предложению Медведева контролировать ИИ Национальная Служба Новостей",
       "source": "Национальная Служба Новостей",
       "region": "RUSSIA"
+    },
+    "17443ccb53829e656cbc5f981c0aedaeab873dc547e02b94f6b7a401bba9aaee": {
+      "time": 1789386268,
+      "title": "Meta launches AI agent capable of accessing other apps - thedailystar.net",
+      "desc": "Meta launches AI agent capable of accessing other apps thedailystar.net",
+      "source": "thedailystar.net",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
@@ -747,7 +756,6 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -761,99 +769,10 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789138859,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 6.87,
-      "candidates": 0,
-      "queue_before": 5,
-      "queue_after": 4,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://novayagazeta.eu/articles/2026/09/11/sviazannye-s-rossiei-kibershpiony-ispolzovali-claude-dlia-atak-na-ukrainu-i-evropu",
-            "image_url": "https://static.s3.novayagazeta.eu/static/previews/2026/09/11/sviazannye-s-rossiei-kibershpiony-ispolzovali-claude-dlia-atak-na-ukrainu-i-evropu.png",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходим пересмотр политик безопасности и фильтрации данных при использовании облачных LLM в корпоративных процессах.",
-            "title": "Связанные с Россией кибершпионы использовали Claude для атак на Украину и Европу . Они похищали данные о военных дронах и переписку украинских чиновников. Главное из доклада Anthropic - Новая газета Европа",
-            "final_score": 68.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789139081,
       "status": "OK",
@@ -25388,11 +25307,160 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789386268,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 81.92,
+      "candidates": 18,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 16,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 18,
+        "admission_rate": 5.56,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://www.thedailystar.net/news/technology/news/meta-launches-ai-agent-capable-accessing-other-apps-4269431",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 11,
+          "average_score": 7.73,
+          "bonus_total": 255.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 7,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра политик безопасности и интеграции новых агентов в бизнес-процессы для автоматизации задач.",
+            "title": "Meta launches AI agent capable of accessing other apps - thedailystar.net",
+            "final_score": 67.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 108,
+        "raw_items": 860,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 23,
+          "CNews": 37,
+          "Euronews": 47
+        },
+        "score_filtered": 800,
+        "quality_filtered": 40,
+        "story_dedup": 2,
+        "candidates": 18,
+        "candidate_rate": 0.0239,
+        "score_buckets": {
+          "0–39": 766,
+          "40–49": 73,
+          "50–59": 19,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 10,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789386031.9136288,
-  "last_publish_ts": 1789386031.9136288,
+  "last_search_ts": 1789386268.8633754,
+  "last_publish_ts": 1789386268.8633754,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
