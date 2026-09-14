@@ -372,7 +372,8 @@
     "c5cdace3d7a32c2205112aebf3a16466fa1461a55991b9a9432fc1475d1dd376": 1789387708,
     "9f54120aff5d7b3bfecc50df18fe5e7585266eea8f150fd449c47b9f1aa39995": 1789388191,
     "1925e3081c655b3fce75dd8a6a76e21cb932bdefaba20f19470eb11db6808931": 1789388916,
-    "8b763852ceec89c7806978572f3e0ac2bf1105284b8fa534a8508776ef10b3fb": 1789389401
+    "8b763852ceec89c7806978572f3e0ac2bf1105284b8fa534a8508776ef10b3fb": 1789389401,
+    "00b0ca36635d9c5c937ffa0ab177f868f6da08e16d287ad0c98226d954bfd905": 1789390349
   },
   "known": {
     "17443ccb53829e656cbc5f981c0aedaeab873dc547e02b94f6b7a401bba9aaee": 1789386268.8633754,
@@ -381,24 +382,25 @@
     "9f54120aff5d7b3bfecc50df18fe5e7585266eea8f150fd449c47b9f1aa39995": 1789387708.6900132,
     "a431474621d49fae18eac2fbde774ca315c2cc7e3c91e82fe819041cbba8ec97": 1789387708.6900132,
     "1925e3081c655b3fce75dd8a6a76e21cb932bdefaba20f19470eb11db6808931": 1789388690.402485,
-    "8b763852ceec89c7806978572f3e0ac2bf1105284b8fa534a8508776ef10b3fb": 1789389401.1150503
+    "8b763852ceec89c7806978572f3e0ac2bf1105284b8fa534a8508776ef10b3fb": 1789389401.1150503,
+    "00b0ca36635d9c5c937ffa0ab177f868f6da08e16d287ad0c98226d954bfd905": 1789390349.2413988
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789389633.0117683,
+    "last_start_ts": 1789390349.2413988,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789389633.0117683,
-    "last_success_ts": 1789389633.0117683,
+    "last_run_ts": 1789390349.2413988,
+    "last_success_ts": 1789390349.2413988,
     "last_candidates": 16,
-    "last_published": 0,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789389705.1477993
+      "updated_at": 1789390428.7522407
     },
     "GROQ": {
       "disabled_until": 0,
@@ -773,11 +775,17 @@
       "desc": "В июле 2026 г. в России зафиксировали рекордное количество веб-атак на российские компании – 417 млн. Под атаками...",
       "source": "CNews",
       "region": "RUSSIA"
+    },
+    "00b0ca36635d9c5c937ffa0ab177f868f6da08e16d287ad0c98226d954bfd905": {
+      "time": 1789390349,
+      "title": "Медведев: регулировать ИИ на мировом уровне не получится - BeInCrypto",
+      "desc": "Медведев: регулировать ИИ на мировом уровне не получится BeInCrypto",
+      "source": "BeInCrypto",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "WORLD",
@@ -793,161 +801,12 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789142204,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 112.98,
-      "candidates": 41,
-      "queue_before": 2,
-      "queue_after": 3,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 28,
-        "known_recent": 0,
-        "already_queued": 2,
-        "story_queue": 0,
-        "story_history": 9,
-        "added": 2,
-        "candidate_count": 41,
-        "admission_rate": 4.88,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.businessinsider.com/nvidia-challenger-enflame-techology-stock-china-ai-chip-ipo-boom-2026-9",
-            "image_url": "https://i.insider.com/6aa39618ec15fe2d3cf16166?width=1200&format=jpeg",
-            "width": 1200,
-            "height": 600,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 10,
-          "average_score": 7.6,
-          "bonus_total": 228.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 7,
-          "last": {
-            "score": 5.0,
-            "bonus": 15.0,
-            "reason": "Спекулятивный рост акций не несет прямой пользы для разработки или внедрения AI-инструментов в бизнес-процессы.",
-            "title": "China's AI chip IPO boom rolls on as another Nvidia challenger soars 200% in market debut - Business Insider",
-            "final_score": 61.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 158,
-        "raw_items": 1311,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 5,
-          "Habr AI/News": 40,
-          "CNews": 62,
-          "Euronews": 50
-        },
-        "score_filtered": 1225,
-        "quality_filtered": 40,
-        "story_dedup": 5,
-        "candidates": 41,
-        "candidate_rate": 0.0356,
-        "score_buckets": {
-          "0–39": 1159,
-          "40–49": 104,
-          "50–59": 44,
-          "60–69": 4,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 1,
-          "6": 1,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GROQ",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 11,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789142925,
       "status": "OK",
@@ -25740,11 +25599,160 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789390349,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 80.42,
+      "candidates": 16,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 14,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 16,
+        "admission_rate": 6.25,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 403: Forbidden": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 403: Forbidden"
+          }
+        },
+        "audience": {
+          "evaluated": 11,
+          "average_score": 7.09,
+          "bonus_total": 234.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 4,
+          "last": {
+            "score": 5.0,
+            "bonus": 15.0,
+            "reason": "Прогноз об отсутствии регулирования подтверждает необходимость самостоятельного внедрения внутренних политик безопасности.",
+            "title": "Медведев: регулировать ИИ на мировом уровне не получится - BeInCrypto",
+            "final_score": 55.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 127,
+        "raw_items": 1074,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 25,
+          "CNews": 52,
+          "Euronews": 50
+        },
+        "score_filtered": 1022,
+        "quality_filtered": 36,
+        "story_dedup": 0,
+        "candidates": 16,
+        "candidate_rate": 0.0169,
+        "score_buckets": {
+          "0–39": 991,
+          "40–49": 66,
+          "50–59": 14,
+          "60–69": 3,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 10,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789389633.0117683,
-  "last_publish_ts": 1789389401.1150503,
+  "last_search_ts": 1789390349.2413988,
+  "last_publish_ts": 1789390349.2413988,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
