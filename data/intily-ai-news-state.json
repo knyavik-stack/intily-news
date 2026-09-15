@@ -417,11 +417,6 @@
     "e2961ce568f30b3eb234dda8263fd444bdfed2f8e2009915df60bd54a4bd54fd": 1789484679
   },
   "known": {
-    "95c5044e9e18137271dfaa823dd96f3d29d5dac73eb60e7a2582714cf56283d9": 1789482036.1348767,
-    "c10d1509d57825bcedc7bb35f000edbf5fa09952a26a966d1a10f2863147ee83": 1789482036.1348767,
-    "2cb4ef7616f7881dacbe4d4e747bccbfdf23273a0e259e8b1d27cefa7a4de03a": 1789482036.1348767,
-    "28a734c2cacd710965b66dc368faf03e147e5d7bf250e7015c4c3f811fc5c0f7": 1789482036.1348767,
-    "ce6c57869dd8d442055d2508a8bd8a902d558b2c9e4cc6b20ec8c78071edd66f": 1789482036.1348767,
     "5f887fe62aa99319ca97fd42b763ac6bff94add20aae21bbe51cc094ef7e84f1": 1789483950.5824797,
     "e2961ce568f30b3eb234dda8263fd444bdfed2f8e2009915df60bd54a4bd54fd": 1789483950.5824797,
     "23b63eaa79b53249776a47787b7d064a0eb91781b1838874a6bdc11d32ca8281": 1789483950.5824797,
@@ -1196,30 +1191,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789486901.9893706,
+    "last_start_ts": 1789487821.9388664,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789486901.9893706,
-    "last_success_ts": 1789486901.9893706,
+    "last_run_ts": 1789487821.9388664,
+    "last_success_ts": 1789487821.9388664,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1789490432.1297197,
+      "disabled_until": 1789491392.538754,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1789486832.1297219
+      "updated_at": 1789487792.5387561
     },
     "GROQ": {
-      "disabled_until": 1789573232.3543973,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1789486832.3543987
+      "disabled_until": 1789491396.0050778,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1789487796.0050793
     },
     "OPENAI": {
-      "disabled_until": 1789573301.8031645,
+      "disabled_until": 1789574221.7975712,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1789486901.8031662
+      "updated_at": 1789487821.7975726
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1227,19 +1222,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1789490500.1664422,
+      "disabled_until": 1789491421.3847384,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1789486900.166444
+      "updated_at": 1789487821.38474
     }
   },
   "stories": {
-    "1f26ede49173273eb4bdf69486bffbf6ea21480a1219ec6a11b4123bf1418fd5": {
-      "time": 1789400920,
-      "title": "Salesforce launches AI agents for business workflows - IT Brief UK",
-      "desc": "Salesforce launches AI agents for business workflows IT Brief UK",
-      "source": "IT Brief UK",
-      "region": "WORLD"
-    },
     "c2a37b00a359c5f74777eda277edccf2e480a9793d491a1fc85675b5de4f23d3": {
       "time": 1789402360,
       "title": "AI/R launches platform that turns expert knowledge into Digital Twins, which already account for up to 72% of approved deliverables in projects - mykxlg.com",
@@ -1467,84 +1455,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789314332,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 46.94,
-      "candidates": 0,
-      "queue_before": 6,
-      "queue_after": 6,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 6.0,
-          "bonus_total": 36.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Показывает реальную стоимость владения инфраструктурой и риски переоценки рынка облачных вычислений для AI-проектов.",
-            "title": "Старые GPU NVIDIA приносят $1,05/час, но CoreWeave в минусе на $626 млн - Techora.ru",
-            "final_score": 63.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789314526,
       "status": "OK",
@@ -23080,6 +22990,78 @@
         "GROQ": {
           "blocked": true,
           "reason": "DAILY_QUOTA_OR_CREDITS"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1789487821,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 32.82,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
         },
         "OPENAI": {
           "blocked": true,
