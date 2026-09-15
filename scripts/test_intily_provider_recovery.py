@@ -39,6 +39,7 @@ class ProviderRecoveryTests(unittest.TestCase):
             'providers': {
                 'GEMINI': {'disabled_until': 9999999999, 'reason': 'quota'},
                 'GROQ': {'disabled_until': 9999999999, 'reason': '429'},
+                'OPENROUTER': {'disabled_until': 9999999999, 'reason': 'quota'},
                 'OPENAI': {'disabled_until': 9999999999, 'reason': 'circuit'},
             },
         }
@@ -52,11 +53,43 @@ class ProviderRecoveryTests(unittest.TestCase):
             with open(path, encoding='utf-8') as handle:
                 result = json.load(handle)
 
-        self.assertEqual(len(recovered), 3)
+        self.assertEqual(len(recovered), 4)
         self.assertEqual(result['queue'], state['queue'])
-        for name in ('GEMINI', 'GROQ', 'OPENAI'):
+        for name in ('GEMINI', 'GROQ', 'OPENROUTER', 'OPENAI'):
             self.assertEqual(result['providers'][name]['disabled_until'], 0)
             self.assertEqual(result['providers'][name]['reason'], '')
+
+    def test_github_token_does_not_count_as_available_ai_provider(self):
+        state = {
+            'providers': {
+                'GEMINI': {'disabled_until': 9999999999, 'reason': 'quota'},
+                'GROQ': {'disabled_until': 9999999999, 'reason': '429'},
+                'OPENROUTER': {'disabled_until': 9999999999, 'reason': 'quota'},
+                'OPENAI': {'disabled_until': 9999999999, 'reason': 'circuit'},
+                'GITHUB_MODELS': {'disabled_until': 0, 'reason': ''},
+            },
+        }
+        previous = os.environ.get('GITHUB_TOKEN')
+        os.environ['GITHUB_TOKEN'] = 'test-token'
+        try:
+            with tempfile.TemporaryDirectory() as directory:
+                path = os.path.join(directory, 'state.json')
+                with open(path, 'w', encoding='utf-8') as handle:
+                    json.dump(state, handle)
+
+                recovered = recover_if_all_blocked(path)
+
+                with open(path, encoding='utf-8') as handle:
+                    result = json.load(handle)
+        finally:
+            if previous is None:
+                os.environ.pop('GITHUB_TOKEN', None)
+            else:
+                os.environ['GITHUB_TOKEN'] = previous
+
+        self.assertEqual(len(recovered), 4)
+        self.assertEqual(result['providers']['GITHUB_MODELS']['disabled_until'], 0)
+        self.assertEqual(result['providers']['GITHUB_MODELS']['reason'], '')
 
     def test_recover_if_all_blocked_does_not_reset_when_one_provider_is_available(self):
         state = {
