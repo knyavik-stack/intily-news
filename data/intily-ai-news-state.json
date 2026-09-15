@@ -474,10 +474,10 @@
       ],
       "audience_score": 8.0,
       "tier": "A",
-      "last_failed_at": 1789491630,
+      "last_failed_at": 1789491874,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 2,
-      "next_retry_at": 1789492230
+      "failure_count": 3,
+      "next_retry_at": 1789493074
     },
     {
       "region": "WORLD",
@@ -515,10 +515,10 @@
       ],
       "audience_score": 8.0,
       "tier": "A",
-      "last_failed_at": 1789491630,
+      "last_failed_at": 1789491874,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 3,
-      "next_retry_at": 1789492830
+      "failure_count": 4,
+      "next_retry_at": 1789494274
     },
     {
       "region": "WORLD",
@@ -1197,30 +1197,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789491630.539397,
+    "last_start_ts": 1789491874.26842,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789491630.539397,
-    "last_success_ts": 1789491630.539397,
+    "last_run_ts": 1789491874.26842,
+    "last_success_ts": 1789491874.26842,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1789495231.8926528,
+      "disabled_until": 1789495483.0040128,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1789491631.8926551
+      "updated_at": 1789491883.0040147
     },
     "GROQ": {
-      "disabled_until": 1789578032.0124454,
+      "disabled_until": 1789578284.612028,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1789491632.0124478
+      "updated_at": 1789491884.6120298
     },
     "OPENAI": {
-      "disabled_until": 1789578041.0019085,
+      "disabled_until": 1789578302.589808,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1789491641.0019102
+      "updated_at": 1789491902.5898097
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1228,9 +1228,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1789495237.7448301,
+      "disabled_until": 1789495501.346257,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1789491637.744832
+      "updated_at": 1789491901.3462584
     }
   },
   "stories": {
@@ -1454,155 +1454,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789322450,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 112.43,
-      "candidates": 18,
-      "queue_before": 1,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 14,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 1,
-        "story_history": 3,
-        "added": 0,
-        "candidate_count": 18,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "<urlopen error _ssl.c:983: The handshake operation timed out>": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "<urlopen error _ssl.c:983: The handshake operation timed out>"
-          }
-        },
-        "audience": {
-          "evaluated": 11,
-          "average_score": 7.27,
-          "bonus_total": 240.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 4,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Регулирование создаст новые юридические риски и требования к комплаенсу для всех, кто внедряет ИИ в бизнес-процессы.",
-            "title": "Лидер демократов в Конгрессе призвал законодателей заняться регулированием ИИ - Рамблер",
-            "final_score": 61.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 38,
-        "raw_items": 838,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 15,
-          "CNews": 0,
-          "Euronews": 20
-        },
-        "score_filtered": 809,
-        "quality_filtered": 7,
-        "story_dedup": 4,
-        "candidates": 18,
-        "candidate_rate": 0.0225,
-        "score_buckets": {
-          "0–39": 785,
-          "40–49": 30,
-          "50–59": 23,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 10,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789322684,
       "status": "OK",
@@ -22849,6 +22700,83 @@
       "business_reason": "all_attempted_items_failed",
       "searched": false,
       "duration_sec": 10.84,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1789491874,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 28.62,
       "candidates": 0,
       "queue_before": 20,
       "queue_after": 20,
