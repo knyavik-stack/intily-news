@@ -1160,13 +1160,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789484679.8829377,
+    "last_start_ts": 1789485132.2835486,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789484679.8829377,
-    "last_success_ts": 1789484679.8829377,
+    "last_run_ts": 1789485132.2835486,
+    "last_success_ts": 1789485132.2835486,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 19
   },
   "providers": {
@@ -1176,14 +1176,14 @@
       "updated_at": 1789484673.0054882
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789484679.681185
+      "disabled_until": 1789488517.6036463,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1789484917.6036475
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789484671.3509097
+      "disabled_until": 1789571532.110789,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1789485132.1107914
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1191,19 +1191,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789484671.3509097
+      "disabled_until": 1789488731.7027006,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1789485131.7027023
     }
   },
   "stories": {
-    "a980c8b95ad0f2fe3f7728690b46d01aeb4903aa200ef730f8e84f22ebce154e": {
-      "time": 1789398526,
-      "title": "OpenAI Announces Breakthrough in Solving Navier-Stokes Equation - RS Web Solutions",
-      "desc": "OpenAI Announces Breakthrough in Solving Navier-Stokes Equation RS Web Solutions",
-      "source": "RS Web Solutions",
-      "region": "WORLD"
-    },
     "995fce1bf91343d5afff02e0be412c7139c05d605a09cad8c0a2ec702e0dcd7d": {
       "time": 1789398990,
       "title": "SpaceX запустит суперкомпьютеры Nvidia в космос - prospect.com.ru",
@@ -1445,96 +1438,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789311890,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 4.87,
-      "candidates": 0,
-      "queue_before": 6,
-      "queue_after": 5,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://shattered.io/anthropic-4th-claude-cyber-breach-2026/",
-            "image_url": "https://shattered.io/wp-content/uploads/2026/09/anthropic-4th-claude-cyber-breach-2026-1-1024x585.webp",
-            "width": 1024,
-            "height": 585,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 9.0,
-          "bonus_total": 27.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходим немедленный пересмотр политики безопасности и отказ от передачи чувствительных данных в облачные модели Claude.",
-            "title": "Anthropic 4th Claude Cyber Breach: What Happened [2026] - shattered.io",
-            "final_score": 69.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789312125,
       "status": "OK",
@@ -23119,6 +23022,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1789485132,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 219.76,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
