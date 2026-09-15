@@ -408,7 +408,8 @@
     "aa3d085c7ca9f7292f00f6f9e4423ce534e80dab9585343d168a59e73cff6294": 1789448428.9260104,
     "f2e517711ad9fc5cbb7c0f5cbbf956ced787511634f56869e909ee5ec7a114ae": 1789448428.9260104,
     "8e164b5371455e982e39228243e1024f4011082200a934586821aca2cf170398": 1789448428.9260104,
-    "c303973a6ca5b10509a37b797a62e95ff4c3a35276d182c514bdfd80afb123e7": 1789448428.9260104
+    "c303973a6ca5b10509a37b797a62e95ff4c3a35276d182c514bdfd80afb123e7": 1789448428.9260104,
+    "22e5349205d568cc218443a82dd2d4e00ba13196e10ec25761d322842a0d063e": 1789450350.5468493
   },
   "queue": [
     {
@@ -708,19 +709,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 42.0,
+        "base_score": 41.5,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 60.0
+        "final_score": 59.5
       },
-      "base_score": 42.0,
+      "base_score": 41.5,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 60.0,
+      "score": 59.5,
       "key": "60abb42cd08fba9c93d277e08b555cb13e32a5248d66b3d3476f5213b7dee743",
-      "importance": 60.0,
+      "importance": 59.5,
       "editorial_value": 50.0,
       "topics": [],
       "audience_score": 6.0,
@@ -770,17 +771,54 @@
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_HTTP_429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m1e9qqc7eeva92csec7za87f` service tier `on_demand` on tokens per minute | OPENAI: OPENAI_CIRCUIT_OPEN",
       "failure_count": 2,
       "next_retry_at": 1789450708
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Хакеры атаковали компании в России под видом ChatGPT, DeepSeek и Claude - rbc.ru",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE0yQ1FxUHNsUElHU244aXBqVmw4eU9aWk91Q3d3UktHa3Nmek92VURGV29jVzNhdG16SjJtUVBrR0lPMkc0Q1gyY3FjQTBWVWswWGc0Mm5iM0RDRjlIaERoMWptcEhsQdIBcEFVX3lxTFBoNlh2RXlOeDV2NDlHNzdHNFE4bEJld24wSWNVODRHZHVvYnNaaGhZTnJPeDRGQWx4VVRhOHJldlRRNUVta2hTVEcwTG1TOUlNY2tUVXpQbVgtNkt6aWx5QUZDeTJRbGRsTFl3OUpDSXQ?oc=5",
+      "desc": "Хакеры атаковали компании в России под видом ChatGPT, DeepSeek и Claude rbc.ru",
+      "source": "rbc.ru",
+      "time": 1789412820.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 3.0,
+        "impact": 5.0,
+        "event_concreteness": 12.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 1.0,
+        "freshness": 0.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 41.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 41.5
+      },
+      "base_score": 41.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 41.5,
+      "key": "22e5349205d568cc218443a82dd2d4e00ba13196e10ec25761d322842a0d063e",
+      "importance": 41.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "models"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1789450108.9504383,
+    "last_start_ts": 1789450350.5468493,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789450108.9504383,
-    "last_success_ts": 1789450108.9504383,
-    "last_candidates": 0,
+    "last_run_ts": 1789450350.5468493,
+    "last_success_ts": 1789450350.5468493,
+    "last_candidates": 11,
     "last_published": 0,
-    "queue_size": 9
+    "queue_size": 10
   },
   "providers": {
     "GEMINI": {
@@ -805,13 +843,6 @@
     }
   },
   "stories": {
-    "fa45b84bac2dffd89dcd2f8a2c3cd22fa17893e6c4726cd8d00544363e342872": {
-      "time": 1789363728,
-      "title": "Nvidia’s $12.93 Billion Hugging Face Deal Now Carries a Senate Disclosure Test - TechStock²",
-      "desc": "Nvidia’s $12.93 Billion Hugging Face Deal Now Carries a Senate Disclosure Test TechStock²",
-      "source": "TechStock²",
-      "region": "WORLD"
-    },
     "bb192369104862459a2824cc61bc4b09a6d21d615274188ccaf363f92855d296": {
       "time": 1789365886,
       "title": "Sakana AI Launches \"Fugu Ultra v2,\" Surpassing GPT-6 Astra; Low-Cost Version Also Unveiled - finance.biggo.com",
@@ -1193,143 +1224,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789212288,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 67.92,
-      "candidates": 9,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 8,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 0,
-        "candidate_count": 9,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 9,
-          "average_score": 8.22,
-          "bonus_total": 222.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 6,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Инфраструктура передачи данных становится узким местом для масштабирования AI-моделей, что требует пересмотра стратегий закупок и логистики.",
-            "title": "SpaceX Nears $100 Billion in Annual Recurring Revenue as AI Compute Fuels Historic Growth - entARABI",
-            "final_score": 70.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 25,
-        "raw_items": 306,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 9,
-          "CNews": 0,
-          "Euronews": 14
-        },
-        "score_filtered": 279,
-        "quality_filtered": 16,
-        "story_dedup": 2,
-        "candidates": 9,
-        "candidate_rate": 0.032,
-        "score_buckets": {
-          "0–39": 268,
-          "40–49": 27,
-          "50–59": 10,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 8,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789213489,
       "status": "OK",
@@ -24752,10 +24646,138 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789450350,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 45.54,
+      "candidates": 11,
+      "queue_before": 9,
+      "queue_after": 10,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 2,
+        "known_recent": 0,
+        "already_queued": 7,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 11,
+        "admission_rate": 9.09,
+        "dominant_block": "already_queued",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 47,
+        "raw_items": 454,
+        "source_counts": {
+          "TechCrunch AI": 3,
+          "VentureBeat AI": -1,
+          "The Verge AI": 3,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 10,
+          "Habr AI/News": 6,
+          "CNews": 6,
+          "Euronews": 19
+        },
+        "score_filtered": 435,
+        "quality_filtered": 7,
+        "story_dedup": 1,
+        "candidates": 11,
+        "candidate_rate": 0.027,
+        "score_buckets": {
+          "0–39": 414,
+          "40–49": 28,
+          "50–59": 12,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0,
+          "5": 0,
+          "6": 3,
+          "7": 1,
+          "8": 3,
+          "9": 1,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT"
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789448428.9260104,
+  "last_search_ts": 1789450350.5468493,
   "last_publish_ts": 1789449152.8800063,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
