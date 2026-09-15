@@ -12,10 +12,11 @@ import sys
 import time
 
 
-PROVIDERS = ('GEMINI', 'GROQ', 'OPENAI', 'GITHUB_MODELS')
+PROVIDERS = ('GEMINI', 'GROQ', 'OPENROUTER', 'OPENAI', 'GITHUB_MODELS')
 PROVIDER_ENV = {
     'GEMINI': 'GEMINI_API_KEY',
     'GROQ': 'GROQ_API_KEY',
+    'OPENROUTER': 'OPENROUTER_API_KEY',
     'OPENAI': 'OPENAI_API_KEY',
     'GITHUB_MODELS': 'GITHUB_TOKEN',
 }
@@ -30,8 +31,6 @@ def _configured_providers(state):
             configured.append(name)
     if configured:
         return configured
-    # Keep the utility deterministic for tests/operator use when provider
-    # secrets are intentionally not injected into the environment.
     return [name for name in PROVIDERS if name in state.get('providers', {})]
 
 
@@ -95,6 +94,5 @@ if __name__ == '__main__':
     if '--all-blocked' in sys.argv:
         recovered = recover_if_all_blocked()
     else:
-        # Operator-triggered emergency reset remains available explicitly.
         recovered = recover_state()
         print('AI_PROVIDER_RECOVERY_RESET', json.dumps(recovered, ensure_ascii=False, separators=(',', ':')))
