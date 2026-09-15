@@ -878,11 +878,11 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789458515.0428405,
+    "last_start_ts": 1789458752.2648706,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789458515.0428405,
-    "last_success_ts": 1789458515.0428405,
+    "last_run_ts": 1789458752.2648706,
+    "last_success_ts": 1789458752.2648706,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 12
@@ -1256,155 +1256,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789224772,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 84.46,
-      "candidates": 18,
-      "queue_before": 1,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 2,
-      "item_failures": 1,
-      "admission": {
-        "published_key": 9,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 7,
-        "added": 1,
-        "candidate_count": 18,
-        "admission_rate": 5.56,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.theverge.com/ai-artificial-intelligence/994112/ai-data-center-pollution-health-epa",
-            "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STKS528_DATA_CENTERS_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-            "width": 1200,
-            "height": 624,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 12,
-          "average_score": 6.25,
-          "bonus_total": 225.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 6,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Изменение регуляторной среды влияет на стоимость и сроки развертывания инфраструктуры для крупных AI-проектов.",
-            "title": "Trump is giving data centers a pass to pollute",
-            "final_score": 58.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 32,
-        "raw_items": 751,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 10,
-          "CNews": 0,
-          "Euronews": 18
-        },
-        "score_filtered": 712,
-        "quality_filtered": 15,
-        "story_dedup": 6,
-        "candidates": 18,
-        "candidate_rate": 0.025,
-        "score_buckets": {
-          "0–39": 688,
-          "40–49": 39,
-          "50–59": 24,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 10,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789225255,
       "status": "OK",
@@ -24309,6 +24160,78 @@
       "business_reason": "no_eligible_item",
       "searched": false,
       "duration_sec": 0.39,
+      "candidates": 0,
+      "queue_before": 12,
+      "queue_after": 12,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 5,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT"
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1789458752,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 0.34,
       "candidates": 0,
       "queue_before": 12,
       "queue_after": 12,
