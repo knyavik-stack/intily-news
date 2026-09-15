@@ -168,7 +168,7 @@ class ScoringRuntimeGuardTests(unittest.TestCase):
             _attach_score_footer(item, 'x' * 4096)
 
     def test_ai_evaluation_limit_is_explicit_and_bounded(self):
-        self.assertEqual(AI_MAX_EVALUATIONS_PER_RUN, 10)
+        self.assertEqual(AI_MAX_EVALUATIONS_PER_RUN, 2)
         self.assertFalse(_ai_evaluation_limit_reached())
 
 
