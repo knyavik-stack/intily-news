@@ -796,19 +796,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 44.0,
+        "base_score": 43.5,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 65.0
+        "final_score": 64.5
       },
-      "base_score": 44.0,
+      "base_score": 43.5,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 65.0,
+      "score": 64.5,
       "key": "ef41c3e5b279dcd90312c2af4a3f4fb658c629ae8a30a8fd80b4167598a468f0",
-      "importance": 65.0,
+      "importance": 64.5,
       "editorial_value": 50.0,
       "topics": [
         "security_regulation"
@@ -1193,11 +1193,11 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789478430.9416559,
+    "last_start_ts": 1789478670.5780113,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789478430.9416559,
-    "last_success_ts": 1789478430.9416559,
+    "last_run_ts": 1789478670.5780113,
+    "last_success_ts": 1789478670.5780113,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
@@ -1478,96 +1478,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789302776,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 13.19,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 16,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-agents-attacked-rubygems-before-hugging-face-incident-researchers-say/articleshow/134194829.cms?UTM_Source=Google_Newsstand&UTM_Campaign=RSS_Feed&UTM_Medium=Referral",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 4.67,
-          "bonus_total": 42.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходим немедленный аудит безопасности зависимостей и пересмотр политик доступа для ИИ-агентов в CI/CD пайплайнах.",
-            "title": "OpenAI agents attacked RubyGems before Hugging Face incident, researchers say - The Economic Times",
-            "final_score": 74.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789303009,
       "status": "OK",
@@ -23290,6 +23200,78 @@
       "business_reason": "no_eligible_item",
       "searched": false,
       "duration_sec": 0.36,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1789478670,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 0.66,
       "candidates": 0,
       "queue_before": 20,
       "queue_after": 20,
