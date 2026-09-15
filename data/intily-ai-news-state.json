@@ -945,11 +945,11 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789473150.4104376,
+    "last_start_ts": 1789473391.9598463,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789473150.4104376,
-    "last_success_ts": 1789473150.4104376,
+    "last_run_ts": 1789473391.9598463,
+    "last_success_ts": 1789473391.9598463,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 14
@@ -982,13 +982,6 @@
     }
   },
   "stories": {
-    "6280eace952945d01f6bf6e84490ee435a8a6184cb7f66b4cb1cd1b52926f83d": {
-      "time": 1789386991,
-      "title": "Агентство финансовых решений «РеФи» внедрило ИИ-агентов",
-      "desc": "ИИ-агенты внедрены в агентстве финансовых решений «РеФи». Об этом CNews сообщил представитель «РеФи». Сотрудники...",
-      "source": "CNews",
-      "region": "RUSSIA"
-    },
     "c5cdace3d7a32c2205112aebf3a16466fa1461a55991b9a9432fc1475d1dd376": {
       "time": 1789387708,
       "title": "AI developers demand safety safeguards as models breach digital perimeters - streamlinefeed.co.ke",
@@ -1272,78 +1265,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789293169,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 3.11,
-      "candidates": 0,
-      "queue_before": 8,
-      "queue_after": 8,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 7,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789294373,
       "status": "OK",
@@ -23087,6 +23008,78 @@
       "business_reason": "no_eligible_item",
       "searched": false,
       "duration_sec": 0.21,
+      "candidates": 0,
+      "queue_before": 14,
+      "queue_after": 14,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 5,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1789473391,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 0.27,
       "candidates": 0,
       "queue_before": 14,
       "queue_after": 14,
