@@ -1,9 +1,10 @@
 """Recovery helper for persisted AI-provider circuit breakers.
 
 Normal production cycles use the bounded automatic recovery mode below. It only
-clears provider cooldowns when every configured AI provider is blocked; this
-prevents a persisted all-provider outage from becoming a permanent deadlock
-while preserving circuit-breaker protection when at least one provider works.
+clears provider cooldowns when every provider actually used by the production
+free-first router is blocked; this prevents a persisted all-provider outage from
+becoming a permanent deadlock while preserving circuit-breaker protection when
+at least one live router provider works.
 """
 
 import json
@@ -12,13 +13,15 @@ import sys
 import time
 
 
-PROVIDERS = ('GEMINI', 'GROQ', 'OPENROUTER', 'OPENAI', 'GITHUB_MODELS')
+# Keep this list aligned with intily_free_ai_router.py. GitHub Models is retired
+# and GITHUB_TOKEN is required for state persistence, so it must never count as
+# an available AI provider here.
+PROVIDERS = ('GEMINI', 'GROQ', 'OPENROUTER', 'OPENAI')
 PROVIDER_ENV = {
     'GEMINI': 'GEMINI_API_KEY',
     'GROQ': 'GROQ_API_KEY',
     'OPENROUTER': 'OPENROUTER_API_KEY',
     'OPENAI': 'OPENAI_API_KEY',
-    'GITHUB_MODELS': 'GITHUB_TOKEN',
 }
 STATE_FILE = os.environ.get('STATE_FILE', 'data/intily-ai-news-state.json')
 
