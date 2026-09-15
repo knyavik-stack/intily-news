@@ -402,7 +402,8 @@
     "1e3be71e7867de3be4d57379fb8327b82a7ee9c890abc1795e0e0950361b5a57": 1789452031,
     "a0d99d0ded3a697d17f4e33879eb6db41d6fdaca20497c90668f3db65c357835": 1789464798,
     "f76394d91b79b6776885c11ac9db6133f5c622e5ce4cb56907b84804f0b477c9": 1789465238,
-    "b0eefa0baf79945636345aa6cb8fb27afc1a706792fa116f93185889ac12f7a4": 1789465953
+    "b0eefa0baf79945636345aa6cb8fb27afc1a706792fa116f93185889ac12f7a4": 1789465953,
+    "f2ed34b44294601299dc8dc0917d80f0540c4885e204ae89db3716c56e30f772": 1789466194
   },
   "known": {
     "a0d99d0ded3a697d17f4e33879eb6db41d6fdaca20497c90668f3db65c357835": 1789460908.5916715,
@@ -413,41 +414,6 @@
     "f76394d91b79b6776885c11ac9db6133f5c622e5ce4cb56907b84804f0b477c9": 1789465238.7519026
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Microsoft опубликовала кодекс поведения ИИ: моделям запретили кибератаки и обман пользователей - incrussia.ru",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNb0dZLVNuaEFLMGFDdkp2eDhMQ3VWb3lGc092SzNJQU1ldENCMDlNSWI0WXdFUzhsYy1FNFMxUzY4WG0tUFlvZ1dlNHZhazZ1Y3p6XzlQNkRRbUJFaWI2ZnJVZmlraWR2TGFTY18xZGpwX29aNEdLaEl1QTQ2bFp3bTlQaVlBaGp0R2h3ZGR1a0Iwc2gxV2p2UDRXTmRaTVNIcGw1OUZQSk53aHpjRU5vUEVlRklYZEMyMEg3SDRn?oc=5",
-      "desc": "Microsoft опубликовала кодекс поведения ИИ: моделям запретили кибератаки и обман пользователей incrussia.ru",
-      "source": "incrussia.ru",
-      "time": 1789459640.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 10.0,
-        "event_concreteness": 16.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 47.0,
-        "audience_score": 7.0,
-        "audience_bonus": 21.0,
-        "final_score": 68.0
-      },
-      "base_score": 47.0,
-      "audience_bonus": 21.0,
-      "score_stage": "final",
-      "score": 68.0,
-      "key": "f2ed34b44294601299dc8dc0917d80f0540c4885e204ae89db3716c56e30f772",
-      "importance": 68.0,
-      "editorial_value": 50.0,
-      "topics": [],
-      "audience_score": 7.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "WORLD",
       "title": "NVIDIA and Major Tech Companies Block Anthropic’s Fable Model Over Data Retention Policy - KuCoin",
@@ -871,25 +837,25 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789465953.367381,
+    "last_start_ts": 1789466194.3168292,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789465953.367381,
-    "last_success_ts": 1789465953.367381,
+    "last_run_ts": 1789466194.3168292,
+    "last_success_ts": 1789466194.3168292,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 12
+    "queue_size": 11
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789465958.5681124
+      "disabled_until": 1789469801.475854,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1789466201.4758563
     },
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789464749.646598
+      "updated_at": 1789466202.686192
     },
     "OPENAI": {
       "disabled_until": 0,
@@ -1210,10 +1176,16 @@
       "desc": "ТОП-100 MCP-серверов: лучшие инструменты для ИИ, агентов и автоматизации (3.1 млн звезд на GitHub). Забирайте бесплатно в одной таблице VC.ru",
       "source": "VC.ru",
       "region": "RUSSIA"
+    },
+    "f2ed34b44294601299dc8dc0917d80f0540c4885e204ae89db3716c56e30f772": {
+      "time": 1789466194,
+      "title": "Microsoft опубликовала кодекс поведения ИИ: моделям запретили кибератаки и обман пользователей - incrussia.ru",
+      "desc": "Microsoft опубликовала кодекс поведения ИИ: моделям запретили кибератаки и обман пользователей incrussia.ru",
+      "source": "incrussia.ru",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1232,142 +1204,10 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789237250,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 34.01,
-      "candidates": 20,
-      "queue_before": 0,
-      "queue_after": 2,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 14,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 4,
-        "added": 2,
-        "candidate_count": 20,
-        "admission_rate": 10.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 35,
-        "raw_items": 858,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 10,
-          "CNews": 0,
-          "Euronews": 19
-        },
-        "score_filtered": 814,
-        "quality_filtered": 18,
-        "story_dedup": 6,
-        "candidates": 20,
-        "candidate_rate": 0.0243,
-        "score_buckets": {
-          "0–39": 782,
-          "40–49": 50,
-          "50–59": 23,
-          "60–69": 2,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI"
-        ],
-        "used": "GROQ",
-        "failovers": 4,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789240613,
       "status": "OK",
@@ -23401,11 +23241,102 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1789466194,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 16.44,
+      "candidates": 0,
+      "queue_before": 12,
+      "queue_after": 11,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://incrussia.ru/news/microsoft-opublikovala-kodeks-povedeniya-ii-modelyam-zapretili-kiberataki-i-obman-polzovatelej/",
+            "image_url": "https://incrussia.ru/upload/social_cache/8b1d1fe18cb63ea963c4e561c7e34fcfv3.jpg?v=0.4",
+            "width": 1148,
+            "height": 602,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 5.5,
+          "bonus_total": 33.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Must adjust AI product compliance and security",
+            "title": "Microsoft опубликовала кодекс поведения ИИ: моделям запретили кибератаки и обман пользователей - incrussia.ru",
+            "final_score": 71.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ"
+        ],
+        "used": "GROQ",
+        "failovers": 1,
+        "failures": 1,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1789465238.7519026,
-  "last_publish_ts": 1789465953.367381,
+  "last_publish_ts": 1789466194.3168292,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
