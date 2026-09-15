@@ -809,19 +809,19 @@
         "novelty": 0.0,
         "source_quality": 5.0,
         "evidence": 2.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 49.0,
+        "base_score": 48.5,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 49.0
+        "final_score": 48.5
       },
-      "base_score": 49.0,
+      "base_score": 48.5,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 49.0,
+      "score": 48.5,
       "key": "767acfcc85e046784dc60e6ab284a163f17b68717c9a7b226b06b5d5ffda9275",
-      "importance": 49.0,
+      "importance": 48.5,
       "editorial_value": 50.0,
       "topics": [
         "tools"
@@ -946,11 +946,11 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789470082.4245136,
+    "last_start_ts": 1789470510.2286518,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789470082.4245136,
-    "last_success_ts": 1789470082.4245136,
+    "last_run_ts": 1789470510.2286518,
+    "last_success_ts": 1789470510.2286518,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 14
@@ -983,13 +983,6 @@
     }
   },
   "stories": {
-    "3a14754e52c9c49c03df7cdaa6495e63616e385ee18e48be59155b105666057e": {
-      "time": 1789384110,
-      "title": "Рухнул крупный российский интернет-провайдер. Десятки тысяч абонентов остались без домашнего интернета и телевидения",
-      "desc": "В ночь на понедельник 14 сентября 2026 г. был зафиксирован масштабный ИТ-сбой в работе телекоммуникационной сети крупного интернет-провайдера SkyNet. По данным мониторингового сервиса Downdetector, массовые неполадки начались около двух часов ночи. По состоянию на 13:00 по Москве, было зарегистрировано более 1500 официальных обращений от абонентов. Граждане сообщают, что недоступен оптоволоконный интернет, нет доступа как по Wi-Fi, так и по кабелю. У жителей Санкт-Петербурга и Ленобласти жалуются на перебои в работе провайдера SkyNet, также проблемы фиксируют и в других регионах - Вологодской области, Пермского края и Ямало-Ненецкого автономного округа.",
-      "source": "CNews",
-      "region": "RUSSIA"
-    },
     "2e5762cbc0be12b9446034d84a497c3355e0b857eef34c5021453d14b73ffae1": {
       "time": 1789384830,
       "title": "Microsoft Expands Copilot Model Library: SpaceXAI Grok Officially Launched in Word, Excel, and PowerPoint - AIBase",
@@ -1315,78 +1308,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789284528,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 1.7,
-      "candidates": 0,
-      "queue_before": 8,
-      "queue_after": 8,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 6,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789284770,
       "status": "OK",
@@ -23261,6 +23182,78 @@
             "title": "«Сбер» представил Time Adapter — надстройку к генеративным моделям для управления динамикой событий и частотой кадров",
             "final_score": 69.5
           }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 4,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1789470510,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 0.21,
+      "candidates": 0,
+      "queue_before": 14,
+      "queue_after": 14,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
         },
         "queue_score_audit": {
           "pre_ai_below_final_threshold": 4,
