@@ -433,19 +433,19 @@
         "novelty": 0.0,
         "source_quality": 5.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 52.5,
+        "base_score": 52.0,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 73.5
+        "final_score": 73.0
       },
-      "base_score": 52.5,
+      "base_score": 52.0,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 73.5,
+      "score": 73.0,
       "key": "58a36c3dcf3b9b0b28b56ee79d5d3f6bf57798a74056be027fa6571eea4f8358",
-      "importance": 73.5,
+      "importance": 73.0,
       "editorial_value": 50.0,
       "topics": [
         "tools"
@@ -505,19 +505,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 48.0,
+        "base_score": 47.5,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 66.0
+        "final_score": 65.5
       },
-      "base_score": 48.0,
+      "base_score": 47.5,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 66.0,
+      "score": 65.5,
       "key": "4856132a16c18755ed589de93b5a3a2e821d9e2629b09b5f6e518b4a99563ec0",
-      "importance": 66.0,
+      "importance": 65.5,
       "editorial_value": 50.0,
       "topics": [
         "agents",
@@ -619,19 +619,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 44.0,
+        "base_score": 43.5,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 62.0
+        "final_score": 61.5
       },
-      "base_score": 44.0,
+      "base_score": 43.5,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 62.0,
+      "score": 61.5,
       "key": "7bb5a5391458aaa56386e7d97536d8bba9f7078156922c56b7988201e3be7ba7",
-      "importance": 62.0,
+      "importance": 61.5,
       "editorial_value": 50.0,
       "topics": [
         "applications",
@@ -946,11 +946,11 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789471950.178234,
+    "last_start_ts": 1789472190.3837848,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789471950.178234,
-    "last_success_ts": 1789471950.178234,
+    "last_run_ts": 1789472190.3837848,
+    "last_success_ts": 1789472190.3837848,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 14
@@ -1294,78 +1294,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789286929,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 4.23,
-      "candidates": 0,
-      "queue_before": 6,
-      "queue_after": 6,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789287659,
       "status": "OK",
@@ -23207,6 +23135,78 @@
       "business_reason": "no_eligible_item",
       "searched": false,
       "duration_sec": 0.28,
+      "candidates": 0,
+      "queue_before": 14,
+      "queue_after": 14,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 5,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1789472190,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 0.27,
       "candidates": 0,
       "queue_before": 14,
       "queue_after": 14,
