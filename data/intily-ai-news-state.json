@@ -424,7 +424,8 @@
     "23b63eaa79b53249776a47787b7d064a0eb91781b1838874a6bdc11d32ca8281": 1789496912,
     "76a1e7e0c7e6dcb1ce24164062463b9db154149c99bbe60fd66d203886544b55": 1789498588,
     "7544a0d65faea9ee38b023bc14463e62fb9eb66e722e5c5ed16399f570bc89aa": 1789499595,
-    "d0608e4384175cbdeea5b2630726d648e527d1b1b1ce0188fca9aa073c327d04": 1789499792
+    "d0608e4384175cbdeea5b2630726d648e527d1b1b1ce0188fca9aa073c327d04": 1789499792,
+    "9d73e687868e9e35dc77be2dd701408315cbe9af60504fe44b85d506827b723a": 1789500059
   },
   "known": {
     "6fbbddabcc4c03394463efd252c7fcb5fa9c32a3532e45396165edb828226f70": 1789494751.011391,
@@ -451,48 +452,6 @@
     "18d6f349eb68064fe2e0ff22d06c653ca339566354740d4bbcc1a7f0194fe354": 1789498834.9315917
   },
   "queue": [
-    {
-      "region": "WORLD",
-      "title": "Trump dials Nvidia CEO, slams AI safety regulations as a 'hoax' - The Business Standard",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQmlFaTc4MlVLeEE0Tmh6eDY1aXUtcGQyYW80TkZPRHA1dm1iVUJ0anZVTjFhZFNFSExyOVcxWVFfQlNXelprMFI4cWk4ZUF0VjZSMk5mbFJQcWpzWi1LWFE3NmlVd3FLdFRQczB2NE10YXN5ZmVWU2tqRHVSc3AxU1RxY29vMnBxcWFjdUVsNnBzTVZqVExmSw?oc=5",
-      "desc": "Trump dials Nvidia CEO, slams AI safety regulations as a 'hoax' The Business Standard",
-      "source": "The Business Standard",
-      "time": 1789467600.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 7.0,
-        "event_concreteness": 15.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 45.0,
-        "audience_score": 7.0,
-        "audience_bonus": 21.0,
-        "final_score": 66.0
-      },
-      "base_score": 45.0,
-      "audience_bonus": 21.0,
-      "score_stage": "final",
-      "score": 66.0,
-      "key": "9d73e687868e9e35dc77be2dd701408315cbe9af60504fe44b85d506827b723a",
-      "importance": 66.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "business",
-        "chips",
-        "security_regulation"
-      ],
-      "audience_score": 7.0,
-      "tier": "A",
-      "last_failed_at": 1789498355,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 2,
-      "next_retry_at": 1789498955
-    },
     {
       "region": "WORLD",
       "title": "Airrived Launches Agentic Observability, Giving Enterprises Real-Time Visibility and Control Over Every AI Agent Decision - aithority.com",
@@ -1051,25 +1010,25 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789499792.966518,
+    "last_start_ts": 1789500059.0942547,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789499792.966518,
-    "last_success_ts": 1789499792.966518,
+    "last_run_ts": 1789500059.0942547,
+    "last_success_ts": 1789500059.0942547,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 16
+    "queue_size": 15
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789499801.7218366
+      "disabled_until": 1789503675.8130517,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1789500075.8130534
     },
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789499586.2294555
+      "updated_at": 1789500077.3134532
     },
     "OPENAI": {
       "disabled_until": 0,
@@ -1290,11 +1249,17 @@
       "desc": "Samsung Is Betting On An Alternative To Nvidia. Dutch AI Chip Startup Euclyd Just Raised $231 Million. International Business Times",
       "source": "International Business Times",
       "region": "WORLD"
+    },
+    "9d73e687868e9e35dc77be2dd701408315cbe9af60504fe44b85d506827b723a": {
+      "time": 1789500059,
+      "title": "Trump dials Nvidia CEO, slams AI safety regulations as a 'hoax' - The Business Standard",
+      "desc": "Trump dials Nvidia CEO, slams AI safety regulations as a 'hoax' The Business Standard",
+      "source": "The Business Standard",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -1310,149 +1275,12 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789371150,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 62.41,
-      "candidates": 11,
-      "queue_before": 0,
-      "queue_after": 1,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 8,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 1,
-        "candidate_count": 11,
-        "admission_rate": 9.09,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.33,
-          "bonus_total": 66.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Расширение финансирования может изменить конкурентный ландшафт и возможности интеграции.",
-            "title": "Funding Weekly | Nasdaq Invests $100 Million in Kraken Parent Payward; Mistral AI Completes €3 Billion Series D Financing - PANews",
-            "final_score": 65.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 47,
-        "raw_items": 617,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 10,
-          "CNews": 10,
-          "Euronews": 23
-        },
-        "score_filtered": 586,
-        "quality_filtered": 19,
-        "story_dedup": 1,
-        "candidates": 11,
-        "candidate_rate": 0.0193,
-        "score_buckets": {
-          "0–39": 553,
-          "40–49": 52,
-          "50–59": 12,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GROQ",
-          "GEMINI",
-          "GROQ",
-          "OPENAI",
-          "GEMINI",
-          "GROQ",
-          "OPENAI"
-        ],
-        "used": "GROQ",
-        "failovers": 3,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789371395,
       "status": "OK",
@@ -22137,11 +21965,102 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1789500059,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 28.89,
+      "candidates": 0,
+      "queue_before": 16,
+      "queue_after": 15,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://www.tbsnews.net/world/trump-dials-nvidia-ceo-slams-ai-safety-regulations-hoax-1543251",
+            "image_url": "https://www.tbsnews.net/sites/default/files/styles/social_share/public/images/2026/09/15/screenshot_2026-09-15_162340.png",
+            "width": 600,
+            "height": 314,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 6.0,
+          "bonus_total": 18.0,
+          "max_score": 6.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Влияние на регуляцию может появиться, но сейчас не требует действий.",
+            "title": "Trump dials Nvidia CEO, slams AI safety regulations as a 'hoax' - The Business Standard",
+            "final_score": 63.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ"
+        ],
+        "used": "GROQ",
+        "failovers": 1,
+        "failures": 1,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1789498834.9315917,
-  "last_publish_ts": 1789499792.966518,
+  "last_publish_ts": 1789500059.0942547,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
