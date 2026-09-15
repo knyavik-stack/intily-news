@@ -946,12 +946,12 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789471763.9359064,
+    "last_start_ts": 1789471950.178234,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789471763.9359064,
-    "last_success_ts": 1789471763.9359064,
-    "last_candidates": 19,
+    "last_run_ts": 1789471950.178234,
+    "last_success_ts": 1789471950.178234,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 14
   },
@@ -983,13 +983,6 @@
     }
   },
   "stories": {
-    "8586e3b919a5d3d4f4f661047c6813d22b7b6fa20b433aa7274100161941436a": {
-      "time": 1789385550,
-      "title": "Fujitsu set to launch global sales of Japan-made AI chip 'Monaka' - Latest news from Azerbaijan",
-      "desc": "Fujitsu set to launch global sales of Japan-made AI chip 'Monaka' Latest news from Azerbaijan",
-      "source": "Latest news from Azerbaijan",
-      "region": "WORLD"
-    },
     "71b6161ad461701cd6883e50ab5ca9ddd9888968634a95d9a5139c41f8afb668": {
       "time": 1789385791,
       "title": "«1С:Itilium 1.0.1.14»: от ИИ-консультанта — к ИИ-ассистенту и действиям под контролем человека",
@@ -1301,78 +1294,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789286690,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 4.32,
-      "candidates": 0,
-      "queue_before": 6,
-      "queue_after": 6,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789286929,
       "status": "OK",
@@ -23255,6 +23176,78 @@
         },
         "audience_stage": "post_editorial"
       },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1789471950,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 0.28,
+      "candidates": 0,
+      "queue_before": 14,
+      "queue_after": 14,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 5,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
       "provider": {
         "attempts": [],
         "used": null,
