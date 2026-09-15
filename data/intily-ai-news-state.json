@@ -1147,11 +1147,11 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789476559.3412879,
+    "last_start_ts": 1789476991.3547702,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789476559.3412879,
-    "last_success_ts": 1789476559.3412879,
+    "last_run_ts": 1789476991.3547702,
+    "last_success_ts": 1789476991.3547702,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 19
@@ -1184,13 +1184,6 @@
     }
   },
   "stories": {
-    "00b0ca36635d9c5c937ffa0ab177f868f6da08e16d287ad0c98226d954bfd905": {
-      "time": 1789390349,
-      "title": "Медведев: регулировать ИИ на мировом уровне не получится - BeInCrypto",
-      "desc": "Медведев: регулировать ИИ на мировом уровне не получится BeInCrypto",
-      "source": "BeInCrypto",
-      "region": "RUSSIA"
-    },
     "150922dce8cc1eb075efe47c461a2dea8cb160a3d25cf1344cee4a83d23d0c3f": {
       "time": 1789390830,
       "title": "Anthropic Eyes USD 2 Trillion IPO as Claude Revenue Surges Past USD 11.5 Billion - Analytics Insight",
@@ -1467,133 +1460,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789299905,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 50.67,
-      "candidates": 11,
-      "queue_before": 11,
-      "queue_after": 12,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 1,
-        "known_recent": 0,
-        "already_queued": 8,
-        "story_queue": 1,
-        "story_history": 0,
-        "added": 1,
-        "candidate_count": 11,
-        "admission_rate": 9.09,
-        "dominant_block": "already_queued",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.0,
-          "bonus_total": 63.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Критический риск зависимости от платформы требует пересмотра стратегии разработки продукта.",
-            "title": "He was close to a $1 million breakthrough. Then OpenAI swooped in. - The Washington Post",
-            "final_score": 70.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 8,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 29,
-        "raw_items": 457,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 13,
-          "CNews": 0,
-          "Euronews": 15
-        },
-        "score_filtered": 431,
-        "quality_filtered": 9,
-        "story_dedup": 6,
-        "candidates": 11,
-        "candidate_rate": 0.0257,
-        "score_buckets": {
-          "0–39": 412,
-          "40–49": 27,
-          "50–59": 18,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 1
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "TEMPORARY_SERVICE_ERROR_OR_429"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789301847,
       "status": "OK",
@@ -23419,6 +23285,78 @@
         "failovers": 2,
         "failures": 1,
         "blocked": 9,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1789476991,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 0.57,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
         "skipped_no_key": 0,
         "retries": 0
       },
