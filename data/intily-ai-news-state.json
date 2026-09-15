@@ -396,7 +396,8 @@
     "00e750acc5fb01cea27c672cd5c54a330ea17ee1f0a555d11fc3c8be158fa1b9": 1789409804,
     "ed773c9e5fcbd09e343694b2493553f3106fb90115de3cd7962562678d3d8905": 1789410030,
     "d078478ce8749c65e0f2cf6fe9c2cb0bd427a72670910abc0ea9d9e5d19db18c": 1789412438,
-    "052cc4e06a92b445390a272d2c5e8803a6aaaa68221e43b32fab3f1c4bef8423": 1789415309
+    "052cc4e06a92b445390a272d2c5e8803a6aaaa68221e43b32fab3f1c4bef8423": 1789415309,
+    "8e164b5371455e982e39228243e1024f4011082200a934586821aca2cf170398": 1789449152
   },
   "known": {
     "1e3be71e7867de3be4d57379fb8327b82a7ee9c890abc1795e0e0950361b5a57": 1789448428.9260104,
@@ -444,7 +445,11 @@
         "agents"
       ],
       "audience_score": 9.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1789449152,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_HTTP_429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m1e9qqc7eeva92csec7za87f` service tier `on_demand` on tokens per minute | OPENAI: OPENAI_CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1789449452
     },
     {
       "region": "RUSSIA",
@@ -483,7 +488,11 @@
       ],
       "audience_score": 6.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1789449152,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_HTTP_429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m1e9qqc7eeva92csec7za87f` service tier `on_demand` on tokens per minute | OPENAI: OPENAI_CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1789449452
     },
     {
       "region": "WORLD",
@@ -501,23 +510,62 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 2.0,
-        "freshness": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 41.0,
+        "base_score": 40.5,
         "audience_score": 8.0,
         "audience_bonus": 24.0,
-        "final_score": 65.0
+        "final_score": 64.5
       },
-      "base_score": 41.0,
+      "base_score": 40.5,
       "audience_bonus": 24.0,
       "score_stage": "final",
-      "score": 65.0,
+      "score": 64.5,
       "key": "aa3d085c7ca9f7292f00f6f9e4423ce534e80dab9585343d168a59e73cff6294",
-      "importance": 65.0,
+      "importance": 64.5,
       "editorial_value": 50.0,
       "topics": [],
       "audience_score": 8.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1789449152,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_HTTP_429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m1e9qqc7eeva92csec7za87f` service tier `on_demand` on tokens per minute | OPENAI: OPENAI_CIRCUIT_OPEN",
+      "failure_count": 1,
+      "next_retry_at": 1789449452
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Bell Canada вложит 52,5 миллиарда долларов в ИИ-инфраструктуру Канады — Иммигрант сегодня - Immigrant.Today",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNV3VKVUlRaGY1eWd5a3d0THZ4Q0NHRzA2UFBSMERNWjBvUzFfeGxmRVlhSmU3QTlrWm40UEY0MXJsRXd0WF9iaXhwdlJFQldqbWpfemVMdGU3SHlwY3gtWkYwODdTRWxZeXpGbUFPcm9ZanI5OHNzenhHSFdRV3E4M1I0aTFYTTlxWjk4Sk1KQlBFcTZUSkhnTWFSYnRPMERhLTFGQjJoWkpZeFgwamln?oc=5",
+      "desc": "Bell Canada вложит 52,5 миллиарда долларов в ИИ-инфраструктуру Канады — Иммигрант сегодня Immigrant.Today",
+      "source": "Immigrant.Today",
+      "time": 1789434148.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 6.0,
+        "event_concreteness": 10.5,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 1.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 40.0,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 64.0
+      },
+      "base_score": 40.0,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 64.0,
+      "key": "c303973a6ca5b10509a37b797a62e95ff4c3a35276d182c514bdfd80afb123e7",
+      "importance": 64.0,
+      "editorial_value": 50.0,
+      "topics": [],
+      "audience_score": 8.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     },
     {
       "region": "WORLD",
@@ -702,90 +750,17 @@
       ],
       "audience_score": 3.0,
       "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Бизнес попросил правительство ввести меры поддержки для приобретения ИИ-чипов - kommersant.ru",
-      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBLX3VIZ2JqQ2ZCTGtwRk5PVW5OR2pJdWdLdUhIdjRFNFNTbG9kMHozOXdMaFhZcjlON0lILXlNOVZrUmpmcEJZckwxeEJvZw?oc=5",
-      "desc": "Бизнес попросил правительство ввести меры поддержки для приобретения ИИ-чипов kommersant.ru",
-      "source": "kommersant.ru",
-      "time": 1789443060.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 4.0,
-        "event_concreteness": 12.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 40.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 40.0
-      },
-      "base_score": 40.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 40.0,
-      "key": "8e164b5371455e982e39228243e1024f4011082200a934586821aca2cf170398",
-      "importance": 40.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "business",
-        "chips"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Bell Canada вложит 52,5 миллиарда долларов в ИИ-инфраструктуру Канады — Иммигрант сегодня - Immigrant.Today",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNV3VKVUlRaGY1eWd5a3d0THZ4Q0NHRzA2UFBSMERNWjBvUzFfeGxmRVlhSmU3QTlrWm40UEY0MXJsRXd0WF9iaXhwdlJFQldqbWpfemVMdGU3SHlwY3gtWkYwODdTRWxZeXpGbUFPcm9ZanI5OHNzenhHSFdRV3E4M1I0aTFYTTlxWjk4Sk1KQlBFcTZUSkhnTWFSYnRPMERhLTFGQjJoWkpZeFgwamln?oc=5",
-      "desc": "Bell Canada вложит 52,5 миллиарда долларов в ИИ-инфраструктуру Канады — Иммигрант сегодня Immigrant.Today",
-      "source": "Immigrant.Today",
-      "time": 1789434148.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 6.0,
-        "event_concreteness": 10.5,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 40.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 40.0
-      },
-      "base_score": 40.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 40.0,
-      "key": "c303973a6ca5b10509a37b797a62e95ff4c3a35276d182c514bdfd80afb123e7",
-      "importance": 40.0,
-      "editorial_value": 50.0,
-      "topics": [],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1789448918.8176913,
+    "last_start_ts": 1789449152.8800063,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789448918.8176913,
-    "last_success_ts": 1789448918.8176913,
+    "last_run_ts": 1789449152.8800063,
+    "last_success_ts": 1789449152.8800063,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 10
+    "last_published": 1,
+    "queue_size": 9
   },
   "providers": {
     "GEMINI": {
@@ -796,7 +771,7 @@
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789448918.5724785
+      "updated_at": 1789449152.8436263
     },
     "OPENAI": {
       "disabled_until": 1789481626.7375183,
@@ -1180,10 +1155,16 @@
       "desc": "Trump Rejects Talk of A.I. Regulation and Calls Out Anthropic’s CEO The New York Times",
       "source": "The New York Times",
       "region": "WORLD"
+    },
+    "8e164b5371455e982e39228243e1024f4011082200a934586821aca2cf170398": {
+      "time": 1789449152,
+      "title": "Бизнес попросил правительство ввести меры поддержки для приобретения ИИ-чипов - kommersant.ru",
+      "desc": "Бизнес попросил правительство ввести меры поддержки для приобретения ИИ-чипов kommersant.ru",
+      "source": "kommersant.ru",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -1202,147 +1183,10 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789211093,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 74.27,
-      "candidates": 10,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 8,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 0,
-        "candidate_count": 10,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 10,
-          "average_score": 8.4,
-          "bonus_total": 252.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 8,
-          "last": {
-            "score": 5.0,
-            "bonus": 15.0,
-            "reason": "Прогноз роста рынка дает понимание вектора инвестиций, но не несет немедленных изменений в рабочих процессах.",
-            "title": "AI in Diagnostic Imaging Market Size to Reach USD 24.73 Billion by 2035 Growing at a CAGR of 23.83% - SNS Insider - Business Upturn",
-            "final_score": 55.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 26,
-        "raw_items": 296,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 9,
-          "CNews": 0,
-          "Euronews": 14
-        },
-        "score_filtered": 269,
-        "quality_filtered": 15,
-        "story_dedup": 2,
-        "candidates": 10,
-        "candidate_rate": 0.037,
-        "score_buckets": {
-          "0–39": 257,
-          "40–49": 27,
-          "50–59": 11,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 9,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789211327,
       "status": "OK",
@@ -24818,11 +24662,118 @@
           "reason": "NO_CREDITS_OR_429"
         }
       }
+    },
+    {
+      "ts": 1789449152,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 9.7,
+      "candidates": 0,
+      "queue_before": 10,
+      "queue_after": 9,
+      "published": 1,
+      "publish_attempts": 4,
+      "item_failures": 3,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 400: Bad Request": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 400: Bad Request"
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Новые вычислительные ресурсы ускорят AI‑разработку и повысят конкуренцию",
+            "title": "Bell Canada вложит 52,5 миллиарда долларов в ИИ-инфраструктуру Канады — Иммигрант сегодня - Immigrant.Today",
+            "final_score": 64.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI",
+          "GEMINI",
+          "GROQ",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT"
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1789448428.9260104,
-  "last_publish_ts": 1789415309.6471815,
+  "last_publish_ts": 1789449152.8800063,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
