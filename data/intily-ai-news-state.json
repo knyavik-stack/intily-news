@@ -402,8 +402,6 @@
     "1e3be71e7867de3be4d57379fb8327b82a7ee9c890abc1795e0e0950361b5a57": 1789452031
   },
   "known": {
-    "3f54bb67522bd0cca5e58a2fe1d5fce18fee327c9fab602c070d9682f330b337": 1789457075.0470357,
-    "9a8b7fb0755492cf43d66d6707964836869d5564f2c596302d30c76ecaac9944": 1789457075.0470357,
     "b0eefa0baf79945636345aa6cb8fb27afc1a706792fa116f93185889ac12f7a4": 1789458992.6411018,
     "a0d99d0ded3a697d17f4e33879eb6db41d6fdaca20497c90668f3db65c357835": 1789460908.5916715,
     "8db883f799e1f59dcb948efc47428118061becd44b23f1f3120d4d4aa3c706a9": 1789460908.5916715
@@ -829,11 +827,11 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789462349.9397848,
+    "last_start_ts": 1789462593.8598204,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789462349.9397848,
-    "last_success_ts": 1789462349.9397848,
+    "last_run_ts": 1789462593.8598204,
+    "last_success_ts": 1789462593.8598204,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 11
@@ -1193,155 +1191,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789231009,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 125.91,
-      "candidates": 22,
-      "queue_before": 1,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 16,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 5,
-        "added": 1,
-        "candidate_count": 22,
-        "admission_rate": 4.55,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.tradingview.com/news/cointelegraph:46c153571094b:0-nvidia-considers-10b-investment-in-potential-record-anthropic-ipo-reuters/",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 11,
-          "average_score": 7.64,
-          "bonus_total": 252.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 6,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Консолидация капитала в ИИ-секторе напрямую влияет на доступность вычислительных мощностей и стратегию развития LLM-продуктов.",
-            "title": "Nvidia considers $10B investment in potential record Anthropic IPO: Reuters - TradingView",
-            "final_score": 74.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 36,
-        "raw_items": 800,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 10,
-          "CNews": 0,
-          "Euronews": 21
-        },
-        "score_filtered": 757,
-        "quality_filtered": 16,
-        "story_dedup": 5,
-        "candidates": 22,
-        "candidate_rate": 0.0288,
-        "score_buckets": {
-          "0–39": 734,
-          "40–49": 39,
-          "50–59": 24,
-          "60–69": 2,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 1
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 10,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789232210,
       "status": "OK",
@@ -23692,6 +23541,78 @@
       "business_reason": "no_eligible_item",
       "searched": false,
       "duration_sec": 0.36,
+      "candidates": 0,
+      "queue_before": 11,
+      "queue_after": 11,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 7,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT"
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1789462593,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 1.85,
       "candidates": 0,
       "queue_before": 11,
       "queue_after": 11,
