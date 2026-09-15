@@ -408,7 +408,6 @@
     "8db883f799e1f59dcb948efc47428118061becd44b23f1f3120d4d4aa3c706a9": 1789466918
   },
   "known": {
-    "f76394d91b79b6776885c11ac9db6133f5c622e5ce4cb56907b84804f0b477c9": 1789465238.7519026,
     "9c665709612eefa6cd359924046747f87cc17072eeb960854bac17895652d8c1": 1789467151.177828,
     "58a36c3dcf3b9b0b28b56ee79d5d3f6bf57798a74056be027fa6571eea4f8358": 1789469310.9288814,
     "767acfcc85e046784dc60e6ab284a163f17b68717c9a7b226b06b5d5ffda9275": 1789469310.9288814,
@@ -526,44 +525,6 @@
       "audience_score": 6.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "WORLD",
-      "title": "Cyber attacks? Bioterrorism? To ‘Pace the Frontier’ of AI effectively, we must improve our anticipatory thinking - The Conversation",
-      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNOWlkWmdRM1R5SktqeF95eDEyUElBckthemZ1M0drSG9fOHJ6ZFFGZFRtaTllbEt0Y2taSDBTcF9JWnp6T1JvTzl4ZWl6U0VGbHcxQUZKOFozR0FVOUVaOUNwVHgtU2dzSWlIWVBJUUk3U2RYYWVJenk1dTI3dkwxZFlZS01iYTR5OFp2bkljaGxZeFplNGNwdW5JaGE0RVdralNWWUNDZ1NmRWZJRS1ZNl9FamJMWkJUaF9ZVDlwQTZha3h3ZEZENGZuUWVWd0MxZU5FNTRoZ3NPQQ?oc=5",
-      "desc": "Cyber attacks? Bioterrorism? To ‘Pace the Frontier’ of AI effectively, we must improve our anticipatory thinking The Conversation",
-      "source": "The Conversation",
-      "time": 1789427406.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 7.0,
-        "event_concreteness": 14.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 2.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 40.5,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 64.5
-      },
-      "base_score": 40.5,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 64.5,
-      "key": "aa3d085c7ca9f7292f00f6f9e4423ce534e80dab9585343d168a59e73cff6294",
-      "importance": 64.5,
-      "editorial_value": 50.0,
-      "topics": [],
-      "audience_score": 8.0,
-      "tier": "A",
-      "last_failed_at": 1789453715,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GEMINI: GEMINI_CIRCUIT_OPEN | GROQ: GROQ_HTTP_429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01m1e9qqc7eeva92csec7za87f` service tier `on_demand` on tokens per minute | OPENAI: OPENAI_CIRCUIT_OPEN",
-      "failure_count": 6,
-      "next_retry_at": 1789463315
     },
     {
       "region": "RUSSIA",
@@ -946,14 +907,14 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789470510.2286518,
+    "last_start_ts": 1789470749.774637,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789470510.2286518,
-    "last_success_ts": 1789470510.2286518,
+    "last_run_ts": 1789470749.774637,
+    "last_success_ts": 1789470749.774637,
     "last_candidates": 0,
     "last_published": 0,
-    "queue_size": 14
+    "queue_size": 13
   },
   "providers": {
     "GEMINI": {
@@ -1308,78 +1269,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789284770,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 5.03,
-      "candidates": 0,
-      "queue_before": 7,
-      "queue_after": 7,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 5,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789286210,
       "status": "OK",
@@ -23224,6 +23113,78 @@
       "candidates": 0,
       "queue_before": 14,
       "queue_after": 14,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 4,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1789470749,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 0.19,
+      "candidates": 0,
+      "queue_before": 13,
+      "queue_after": 13,
       "published": 0,
       "publish_attempts": 0,
       "item_failures": 0,
