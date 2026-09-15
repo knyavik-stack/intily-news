@@ -24,19 +24,11 @@ SCORE_COMPONENT_LABELS = (
     ('freshness', 'Свежесть', 2.0),
 )
 
-# Production publication contract: a finalized item is durable only when its
-# final score clears the publication gate. Pre-AI 40–54 items may remain in
-# the queue because they are intentionally waiting for AI audience review.
 FINAL_QUEUE_THRESHOLD = 55.0
-
-# Set by intily_production_entrypoint.py. Keeping the default unbounded makes
-# this module safe for unit tests and non-production callers.
 AI_EVALUATION_DEADLINE = None
 
-# Hard cap on real editorial AI evaluations in one production cycle. The free
-# router sets the same cap on the legacy publication loop. Keeping the guard
-# cap at the same value is critical: queue prechecks run outside that legacy
-# loop and otherwise silently bypass the router's provider budget.
+# The free router also sets the legacy publication-loop cap. This guard must
+# enforce the same ceiling because queue prechecks run outside that loop.
 AI_MAX_EVALUATIONS_PER_RUN = 2
 AI_EVALUATIONS_STARTED = 0
 AI_PROVIDER_RUNTIME_HALTED = False
@@ -57,12 +49,7 @@ def _score_footer(item):
     audience_score = components.get('audience_score', item.get('audience_score'))
     audience_bonus = float(components.get('audience_bonus', item.get('audience_bonus', 0)) or 0)
     penalty = float(components.get('low_signal_penalty', 0) or 0)
-
-    lines = [
-        '',
-        '📊 <b>Оценка новости</b>',
-        f'<b>Итого: {final_score:.1f}/100</b> = база {base_score:.1f}/70 + аудитория {audience_bonus:.1f}/30',
-    ]
+    lines = ['', '📊 <b>Оценка новости</b>', f'<b>Итого: {final_score:.1f}/100</b> = база {base_score:.1f}/70 + аудитория {audience_bonus:.1f}/30']
     for key, label, maximum in SCORE_COMPONENT_LABELS:
         value = float(components.get(key, 0) or 0)
         lines.append(f'{label}: {value:.1f}/{maximum:.0f}')
@@ -84,7 +71,6 @@ def _is_final(item):
 
 
 def _attach_score_footer(item, post):
-    """Append diagnostics without ever truncating the editorial post."""
     candidate = str(post or '').rstrip() + '\n' + _score_footer(item)
     if len(candidate) > 4096:
         raise RuntimeError('SCORE_DIAGNOSTICS_TEXT_LIMIT')
@@ -92,7 +78,6 @@ def _attach_score_footer(item, post):
 
 
 def _base_recalculate(publisher, item):
-    """Remove legacy RU bonus and make importance equal to deterministic base."""
     item.pop('russia_weight_bonus', None)
     item['audience_score'] = None
     base = float(publisher.score(item))
@@ -105,16 +90,10 @@ def _base_recalculate(publisher, item):
 
 
 def _final_sort_key(item):
-    """Final items outrank pending pre-AI items; score is always primary."""
-    return (
-        1 if _is_final(item) else 0,
-        _final_score(item),
-        float(item.get('time', 0.0) or 0.0),
-    )
+    return (1 if _is_final(item) else 0, _final_score(item), float(item.get('time', 0.0) or 0.0))
 
 
 def _pure_score_rebalance(publisher, items, now):
-    """Keep the best qualifying stories; never let geography displace score."""
     fresh = []
     for item in items or []:
         try:
@@ -125,13 +104,9 @@ def _pure_score_rebalance(publisher, items, now):
             continue
         if not publisher.candidate_quality(item):
             continue
-        # A finalized story that failed the publication gate is not a valid
-        # durable queue item. Do not confuse it with a pre-AI 40–54 candidate:
-        # those remain intentionally eligible for future AI evaluation.
         if _is_final(item) and _final_score(item) < FINAL_QUEUE_THRESHOLD:
             continue
         fresh.append(item)
-
     fresh.sort(key=_final_sort_key, reverse=True)
     unique = []
     for item in fresh:
@@ -142,8 +117,6 @@ def _pure_score_rebalance(publisher, items, now):
 
 
 class PublisherScoreProxy:
-    """Proxy that guards the score function installed by the legacy runner."""
-
     def __init__(self, module):
         object.__setattr__(self, '_module', module)
 
@@ -165,27 +138,18 @@ class PublisherScoreProxy:
                     item['score_stage'] = 'pre_ai'
                     return base_score
                 return result
-
             setattr(self._module, name, guarded_score)
             return
         setattr(self._module, name, value)
 
 
 def _halt_publication_attempts(publisher):
-    """Stop the legacy publication loop immediately after provider outage.
-
-    The legacy publisher owns its own local attempt counter, so merely setting
-    the runtime guard flag is insufficient: the next queue item would still
-    enter edit()/AI and repeat the same provider failure. Setting the process
-    local cap to zero makes the next loop guard fail before another attempt.
-    """
     publisher.MAX_ATTEMPTS_PER_RUN = 0
     print('PUBLICATION_HALTED', 'provider_runtime_unavailable')
 
 
 def run_production():
     import importlib
-
     global AI_EVALUATIONS_STARTED, AI_PROVIDER_RUNTIME_HALTED
     AI_EVALUATIONS_STARTED = 0
     AI_PROVIDER_RUNTIME_HALTED = False
@@ -193,17 +157,12 @@ def run_production():
     runner = importlib.import_module('intily_ai_news_runner')
     publisher_module = importlib.import_module('intily_ai_news')
     publisher = PublisherScoreProxy(publisher_module)
-
     runner.apply_policy(publisher)
     runner.apply_image_delivery(publisher)
-
-    publisher.publication_priority = lambda state, item: (
-        _final_score(item) if _is_final(item) else -1.0
-    )
+    publisher.publication_priority = lambda state, item: (_final_score(item) if _is_final(item) else -1.0)
     publisher.rebalance_queue = lambda items, now: _pure_score_rebalance(publisher, items, now)
 
     original_edit = publisher.edit
-    publisher.edit = original_edit
     post_cache = {}
     current_state = {'value': None}
 
@@ -222,7 +181,6 @@ def run_production():
     publisher.edit = edit_with_score_footer
 
     def evaluate_item(item, state):
-        """Run the real AI editorial layer once, but never start work past safety limits."""
         global AI_EVALUATIONS_STARTED, AI_PROVIDER_RUNTIME_HALTED
         if _is_final(item):
             return True
@@ -283,7 +241,6 @@ def run_production():
         return state
 
     publisher.load_state = load_state_with_final_score_precheck
-
     original_collect = publisher.collect
 
     def collect_with_final_score_precheck(telemetry=None):
@@ -299,7 +256,7 @@ def run_production():
                 print('AI_EVALUATION_BUDGET_EXHAUSTED', 'candidates_remaining', len(candidates) - evaluated)
                 break
             if _ai_evaluation_limit_reached():
-                print('AI_EVALUATION_LIMIT_REACHED', len(candidates) - evaluated)
+                print('AI_EVALUATION_LIMIT_REACHED', AI_MAX_EVALUATIONS_PER_RUN, 'candidates_remaining', len(candidates) - evaluated)
                 break
             _base_recalculate(publisher, item)
             if evaluate_item(item, state):
@@ -316,7 +273,6 @@ def run_production():
         return candidates
 
     publisher.collect = collect_with_final_score_precheck
-
     publisher.main()
 
 
