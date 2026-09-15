@@ -33,11 +33,11 @@ FINAL_QUEUE_THRESHOLD = 55.0
 # this module safe for unit tests and non-production callers.
 AI_EVALUATION_DEADLINE = None
 
-# Hard cap on real editorial AI evaluations in one production cycle. This is
-# deliberately independent from the wall-clock deadline: a healthy provider
-# must not be allowed to turn a large candidate burst into dozens of serial
-# network calls. The candidate list is already deterministic-score ordered.
-AI_MAX_EVALUATIONS_PER_RUN = 10
+# Hard cap on real editorial AI evaluations in one production cycle. The free
+# router sets the same cap on the legacy publication loop. Keeping the guard
+# cap at the same value is critical: queue prechecks run outside that legacy
+# loop and otherwise silently bypass the router's provider budget.
+AI_MAX_EVALUATIONS_PER_RUN = 2
 AI_EVALUATIONS_STARTED = 0
 AI_PROVIDER_RUNTIME_HALTED = False
 
@@ -203,7 +203,7 @@ def run_production():
     publisher.rebalance_queue = lambda items, now: _pure_score_rebalance(publisher, items, now)
 
     original_edit = publisher.edit
-    publisher.edit = original_edit  # Вынудит систему использовать стандартный метод без аналитики
+    publisher.edit = original_edit
     post_cache = {}
     current_state = {'value': None}
 
@@ -216,17 +216,6 @@ def run_production():
         if cached is not None:
             return cached
         post = original_edit(item, state)
-#        post = re.sub(
-#            r'Следующая в очереди: базовый вес [0-9]+(?:\.[0-9])?/100; AI-аудит ещё не проведён\.',
-#            '',
-#            post,
-#        )
-#        post = re.sub(
-#            r'Следующая в очереди имеет вес [0-9]+(?:\.[0-9])?%.',
-#            '',
-#            post,
-#        )
-     #   post = _attach_score_footer(item, post)
         post_cache[key] = post
         return post
 
@@ -310,7 +299,7 @@ def run_production():
                 print('AI_EVALUATION_BUDGET_EXHAUSTED', 'candidates_remaining', len(candidates) - evaluated)
                 break
             if _ai_evaluation_limit_reached():
-                print('AI_EVALUATION_LIMIT_REACHED', 'candidates_remaining', len(candidates) - evaluated)
+                print('AI_EVALUATION_LIMIT_REACHED', len(candidates) - evaluated)
                 break
             _base_recalculate(publisher, item)
             if evaluate_item(item, state):
