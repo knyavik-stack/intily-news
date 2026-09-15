@@ -417,16 +417,6 @@
     "e2961ce568f30b3eb234dda8263fd444bdfed2f8e2009915df60bd54a4bd54fd": 1789484679
   },
   "known": {
-    "5f887fe62aa99319ca97fd42b763ac6bff94add20aae21bbe51cc094ef7e84f1": 1789483950.5824797,
-    "e2961ce568f30b3eb234dda8263fd444bdfed2f8e2009915df60bd54a4bd54fd": 1789483950.5824797,
-    "23b63eaa79b53249776a47787b7d064a0eb91781b1838874a6bdc11d32ca8281": 1789483950.5824797,
-    "9f9987f51e59b0f21b92f73ed24a984595a87af75fd700eb086d934c768d8cba": 1789483950.5824797,
-    "a0ead3f550b003c73a5c7e4732e1d342492041feb83bb910f423ebafade7c293": 1789483950.5824797,
-    "3f2a49f74a96267a8e2ed6a09273acfbdb7aa6f74f57cbf9decf16dd50eed39a": 1789483950.5824797,
-    "5ee8bbafa59a5923c8e8299bc4cc589019ee0052a64e1387baa8a444039ac4a2": 1789483950.5824797,
-    "aaca8a842d764beb083d0c66ad49daaacc2774283ef5f4d4d1b44e42d7a95609": 1789483950.5824797,
-    "d3ee16f170c06f6cf68f325c4d57d3222df19c2739369aa78000ac5a9022cc82": 1789483950.5824797,
-    "8219691aea575a07fa16130f8870da93785835ff84f165be0a9a7a521a19756a": 1789483950.5824797,
     "d77bd4b2750e7fe3d1b4abb0f0d74d2a3c9bd3ece3212b3f27dcacc7c47018a1": 1789486619.5669553,
     "0bc9b82c1ecf04e4b9139598f549d38d0eec376057e1905f4e5723cdf4a96cc0": 1789486619.5669553,
     "0fa1a6f73c520d0deaad1ec7836e0bc76f11ca07819d91db0f52f2f8afae257d": 1789486619.5669553,
@@ -1195,30 +1185,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789489258.128943,
+    "last_start_ts": 1789489740.527502,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789489258.128943,
-    "last_success_ts": 1789489258.128943,
+    "last_run_ts": 1789489740.527502,
+    "last_success_ts": 1789489740.527502,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1789492830.5294838,
+      "disabled_until": 1789493311.4970758,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1789489230.5294867
+      "updated_at": 1789489711.4970775
     },
     "GROQ": {
-      "disabled_until": 1789492832.4937937,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1789489232.4937963
+      "disabled_until": 1789576111.6624086,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1789489711.6624105
     },
     "OPENAI": {
-      "disabled_until": 1789575657.9524908,
+      "disabled_until": 1789576140.3537211,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1789489257.952493
+      "updated_at": 1789489740.3537228
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1226,19 +1216,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1789492856.5540926,
+      "disabled_until": 1789493338.9381988,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1789489256.5540943
+      "updated_at": 1789489738.9382002
     }
   },
   "stories": {
-    "927771bd4f4970ff11c98cc566c57defa287800167c0f0e478649a410433adee": {
-      "time": 1789403071,
-      "title": "Microsoft Announces Restrictions on Its Own AI Models After Anthropic and OpenAI Call for Slower AI Development - TradingKey",
-      "desc": "Microsoft Announces Restrictions on Its Own AI Models After Anthropic and OpenAI Call for Slower AI Development TradingKey",
-      "source": "TradingKey",
-      "region": "WORLD"
-    },
     "8466af7c0329ca6794dd5cf184c57babd8340e55f063760d6bca5e9c7d208b13": {
       "time": 1789405965,
       "title": "Anthropic launches Claude for financial advisors with Schwab, BlackRock, Addepar, and Orion integrations - Crypto Briefing",
@@ -1452,154 +1435,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789316449,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 73.94,
-      "candidates": 16,
-      "queue_before": 4,
-      "queue_after": 3,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 10,
-        "known_recent": 0,
-        "already_queued": 3,
-        "story_queue": 1,
-        "story_history": 2,
-        "added": 0,
-        "candidate_count": 16,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://blockonomi.com/spacexai-team-launches-72-hour-startup-challenge-powered-by-grok-bot-ai-agents/",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 10,
-          "average_score": 7.3,
-          "bonus_total": 219.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 4,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Полезно для понимания темпов внедрения ИИ-агентов в разработку, но не несет немедленных изменений в бизнес-процессы.",
-            "title": "SpaceXAI Team Launches 72-Hour Startup Challenge Powered by Grok Bot AI Agents - Blockonomi",
-            "final_score": 61.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 40,
-        "raw_items": 793,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 16,
-          "CNews": 0,
-          "Euronews": 22
-        },
-        "score_filtered": 765,
-        "quality_filtered": 8,
-        "story_dedup": 4,
-        "candidates": 16,
-        "candidate_rate": 0.0212,
-        "score_buckets": {
-          "0–39": 746,
-          "40–49": 26,
-          "50–59": 21,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 2,
-          "6": 1,
-          "7": 1,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 9,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789316685,
       "status": "OK",
@@ -23080,6 +22915,78 @@
         "GROQ": {
           "blocked": true,
           "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1789489740,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 30.5,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         },
         "OPENAI": {
           "blocked": true,
