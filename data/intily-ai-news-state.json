@@ -799,11 +799,11 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789467391.6236804,
+    "last_start_ts": 1789467868.4582965,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789467391.6236804,
-    "last_success_ts": 1789467391.6236804,
+    "last_run_ts": 1789467868.4582965,
+    "last_success_ts": 1789467868.4582965,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 10
@@ -836,13 +836,6 @@
     }
   },
   "stories": {
-    "139a2200afe3c34bb969ec971e3475b11fb713760e5eb586d9aafa88c989dd7b": {
-      "time": 1789380994,
-      "title": "ИТ-компании избавляются от сотрудников. В 2026 году будут уволены почти 130 тысяч человек",
-      "desc": "Волна сокращений персонала в мировом технологическом секторе этого года превысит показатели прошлого. Только за 10 дней сентября уже уволено больше 6 тыс. человек, а по итогам года цифра достигнет 128 тыс. ИИ и ЦОДы требуют все больше инвестиций, параллельно с наращиванием которых, бизнес снижает расходы не сотрудников.",
-      "source": "CNews",
-      "region": "RUSSIA"
-    },
     "2a5dd28f20d053a8fa91a5d28556f058b49f027cdccecf36d06be754face2876": {
       "time": 1789381470,
       "title": "Airrived Launches Agentic Observability, Giving Enterprises Real-Time Visibility and Control Over Every AI Agent Decision - Voice of Alexandria",
@@ -1189,78 +1182,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789277089,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 2.72,
-      "candidates": 0,
-      "queue_before": 11,
-      "queue_after": 11,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 8,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789278289,
       "status": "OK",
@@ -23201,6 +23122,78 @@
     },
     {
       "ts": 1789467391,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 0.16,
+      "candidates": 0,
+      "queue_before": 10,
+      "queue_after": 10,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1789467868,
       "status": "OK",
       "business_result": "NO_PUBLISH",
       "business_reason": "no_eligible_item",
