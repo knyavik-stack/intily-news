@@ -731,19 +731,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 43.5,
+        "base_score": 43.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 43.5
+        "final_score": 43.0
       },
-      "base_score": 43.5,
+      "base_score": 43.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 43.5,
+      "score": 43.0,
       "key": "8db883f799e1f59dcb948efc47428118061becd44b23f1f3120d4d4aa3c706a9",
-      "importance": 43.5,
+      "importance": 43.0,
       "editorial_value": 50.0,
       "topics": [
         "chips",
@@ -826,55 +826,17 @@
       "audience_score": null,
       "tier": "A",
       "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Трамп: \"Мир не будет под властью роботов… Требования о регулировании – это троянский конь\" - 재경일보",
-      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1WN2d1QW9XQW9jeWVHUk10WERvcXBRaXItYW5BR3M1c0NaeXNDT2YzZEZuLTlGREhVWHFodHVGVjZiZXUzUkdudS1B?oc=5",
-      "desc": "Трамп: \"Мир не будет под властью роботов… Требования о регулировании – это троянский конь\" 재경일보",
-      "source": "재경일보",
-      "time": 1789451400.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 7.0,
-        "event_concreteness": 12.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 40.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 40.0
-      },
-      "base_score": 40.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 40.0,
-      "key": "43e1830cb73e6f238848f739f5c031dd5fb80cd520f515d462bd8044ceb306a3",
-      "importance": 40.0,
-      "editorial_value": 46.0,
-      "topics": [
-        "robotics",
-        "security_regulation"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1789461871.827519,
+    "last_start_ts": 1789462349.9397848,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789461871.827519,
-    "last_success_ts": 1789461871.827519,
+    "last_run_ts": 1789462349.9397848,
+    "last_success_ts": 1789462349.9397848,
     "last_candidates": 0,
     "last_published": 0,
-    "queue_size": 12
+    "queue_size": 11
   },
   "providers": {
     "GEMINI": {
@@ -1231,96 +1193,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789230768,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 4.66,
-      "candidates": 0,
-      "queue_before": 2,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 400: Bad Request": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 400: Bad Request"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость пересмотра протоколов безопасности и оценки рисков при внедрении LLM в критические бизнес-процессы.",
-            "title": "Anthropic CEO Dario Amodei calls on AI companies to slow down AI development amid superintelligence risks.",
-            "final_score": 72.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789231009,
       "status": "OK",
@@ -23784,6 +23656,78 @@
         },
         "queue_score_audit": {
           "pre_ai_below_final_threshold": 8,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "HTTP_429_QUOTA_OR_RATE_LIMIT"
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "NO_CREDITS_OR_429"
+        }
+      }
+    },
+    {
+      "ts": 1789462349,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 0.36,
+      "candidates": 0,
+      "queue_before": 11,
+      "queue_after": 11,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 7,
           "final_below_threshold": 0,
           "invariant_ok": true
         }
