@@ -464,8 +464,6 @@
     "c05383c8dbfc37b7d662f61f976e534ece460f39a0c5e3c480f977f9fe82fe11": 1789565124
   },
   "known": {
-    "3c415da96dc6c251a88d6bc7801b76e1fa357a78de5e8ba3b63e8f5ec42ba908": 1789559819.8606625,
-    "605d5fb52fd6ef37cf6f83686b85d433322e86abed23d0924ea5f561e4cfd753": 1789559819.8606625,
     "c35cd0237782e5374c9e88c63c5581a14315c80b96a90010fa5c6ef12c7163e9": 1789562455.455042,
     "227d2aea5530e0dd72f7bca184008328d6c2615e5083c2a3886452593f453563": 1789562455.455042,
     "af90891739e1cb7ed38b20b13ab6b8fe289f6771163ccb99e869b1249cfe15b0": 1789562455.455042,
@@ -763,19 +761,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 41.0,
+        "base_score": 40.5,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 59.0
+        "final_score": 58.5
       },
-      "base_score": 41.0,
+      "base_score": 40.5,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 59.0,
+      "score": 58.5,
       "key": "16f540a23458e37811d8cdd5c8102bc5c8414063916d9a21c9cceabf8b302e6e",
-      "importance": 59.0,
+      "importance": 58.5,
       "editorial_value": 50.0,
       "topics": [
         "chips",
@@ -1078,13 +1076,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789565124.0182493,
+    "last_start_ts": 1789565353.869637,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789565124.0182493,
-    "last_success_ts": 1789565124.0182493,
+    "last_run_ts": 1789565353.869637,
+    "last_success_ts": 1789565353.869637,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 16
   },
   "providers": {
@@ -1094,14 +1092,14 @@
       "updated_at": 1789565121.0403848
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789565127.2230582
+      "disabled_until": 1789568939.5826962,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1789565339.5826979
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789559336.8839345
+      "disabled_until": 1789651753.7624278,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1789565353.7624297
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1109,9 +1107,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789559336.8839345
+      "disabled_until": 1789568951.9698377,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1789565351.9698396
     }
   },
   "stories": {
@@ -1503,155 +1501,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789394191,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 82.38,
-      "candidates": 17,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 15,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 1,
-        "candidate_count": 17,
-        "admission_rate": 5.88,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.thestandard.com.hk/finance/article/342734/BIS-says-global-market-AI-momentum-showing-signs-of-vulnerability",
-            "image_url": "https://image.hkstandard.com.hk/f/1200p0/0x0/100/none/d30a75801b23e38dab4e3a6d8ecae387/2025-10/WhatsApp_Image_2025-10-03_at_16_03_08.jpeg",
-            "width": 1200,
-            "height": 814,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 11,
-          "average_score": 7.45,
-          "bonus_total": 246.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 5,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость пересмотра стратегии финансирования и оценки рисков при работе с ИИ-проектами.",
-            "title": "BIS says global market AI momentum showing signs of vulnerability - The Standard (HK)",
-            "final_score": 62.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 135,
-        "raw_items": 1156,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 27,
-          "CNews": 57,
-          "Euronews": 50
-        },
-        "score_filtered": 1102,
-        "quality_filtered": 32,
-        "story_dedup": 5,
-        "candidates": 17,
-        "candidate_rate": 0.0167,
-        "score_buckets": {
-          "0–39": 1055,
-          "40–49": 77,
-          "50–59": 21,
-          "60–69": 3,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 10,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789395152,
       "status": "OK",
@@ -20989,6 +20838,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1789565353,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 17.71,
+      "candidates": 0,
+      "queue_before": 16,
+      "queue_after": 16,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 5,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
