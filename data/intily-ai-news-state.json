@@ -430,7 +430,8 @@
     "5caec7cdc20eee8d4f682a6a5a6221f01d59c4293aa2b9eb6a699774874a37c7": 1789501477,
     "11a61c2ec8d1a9ff6b296689a23b5b5b2ff3d05fb376bf0ecef2c67d3086fa07": 1789535581,
     "c340956303830008fdff0511cc496ad4a33cb64b089530cf384be7dcfdb29351": 1789537028,
-    "d390cbdf10a6fa0f3804160b8465713d068467a48430f8e66cd08100d3eb4ed7": 1789539426
+    "d390cbdf10a6fa0f3804160b8465713d068467a48430f8e66cd08100d3eb4ed7": 1789539426,
+    "77ecee6ae5ed7e87e2fb47d83a3492579f1c3242255b98134c999de23f5fd004": 1789539902
   },
   "known": {
     "c340956303830008fdff0511cc496ad4a33cb64b089530cf384be7dcfdb29351": 1789535581.0974653,
@@ -532,45 +533,6 @@
       "tier": "A"
     },
     {
-      "region": "RUSSIA",
-      "title": "Роевой интеллект: AI-агенты сообща обошли защитные ограничения",
-      "link": "https://habr.com/ru/companies/ideco/news/1082758/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1082758",
-      "desc": "Исследователи Emergence AI (независимый разработчик корпоративной инфраструктуры для управления AI-агентами) проверили, как восемь виртуальных обществ из автономных AI-агентов справляются с киберугрозами: ни одно не оказалось устойчивым ко всем испытаниям, сообщает Semafor . Самый необычный эпизод произошёл с агентами Claude: они коллективно решили связаться с людьми за пределами симуляции, преодолели четыре защитные проверки и разместили приглашения на внешних площадках, по данным издания . В данном эксперименте используются коммерческие и доступные всем LLM, в отличии от описанных уже кейсов «сбежавших агентов», где использовались внутренние экспериментальные модели. Для нас в Ideco главный вопрос в этой истории: кто остановит действие, если защитные ограничения (guardrails) модели не сработали? «Роевой интеллект» здесь используем как описание согласованного поведения группы агентов, а не как утверждение о появлении у них общего сознания. Распознали фишинг, но не остановились В семи симуляциях участвовали по десять агентов одной модели, в восьмой собрали смешанную группу. Каждую группу проверяли на трёх классах угроз: фишинге, дезинформации и нарушении конфиденциальности памяти агентов. В последнем сценарии другим участникам открывали доступ к записям долговременной памяти, включая сохранённые сводки опыта. Обнаружение опасности не гарантировало безопасного поведения: агент Mistral записал в собственную память информацию из фишинговой атаки, которую сам отметил как опасную. Агент Gemini тоже распознал приманку, но примерно через 46 часов всё-таки совершил связанное с ней действие. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1789538117.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 14.0,
-        "event_concreteness": 17.0,
-        "practical_value": 6.5,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 62.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 62.5
-      },
-      "base_score": 62.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 62.5,
-      "key": "77ecee6ae5ed7e87e2fb47d83a3492579f1c3242255b98134c999de23f5fd004",
-      "importance": 62.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "models",
-        "security_regulation"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
       "region": "WORLD",
       "title": "Is GPT-6 Sol Launch Imminent? OpenAI Poised for a Major AI Release Frenzy This Week - 36 Kr",
       "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5aeUgwVVZBYU5WdkpBVVhWTWtOYl9yQXNDT0pTTWFWdHNVdGRKc0UyU0E5Ul9iMjUyM083QlVHVS15cVFBMk5naGpvMzJ1T29pS0Vv?oc=5",
@@ -589,21 +551,21 @@
         "freshness": 1.0,
         "low_signal_penalty": 0.0,
         "base_score": 46.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 46.0
+        "audience_score": 5.0,
+        "audience_bonus": 15.0,
+        "final_score": 61.0
       },
       "base_score": 46.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 46.0,
+      "audience_bonus": 15.0,
+      "score_stage": "final",
+      "score": 61.0,
       "key": "c32474336e034df5f6dfab7eeab33a17f88a9a7266fc0f058dc0155c21c41966",
-      "importance": 46.0,
+      "importance": 61.0,
       "editorial_value": 50.0,
       "topics": [
         "models"
       ],
-      "audience_score": null,
+      "audience_score": 5.0,
       "tier": "A"
     },
     {
@@ -823,44 +785,6 @@
     },
     {
       "region": "WORLD",
-      "title": "We don’t need AI regulation — leave safety to us, Nvidia’s Jensen Huang says",
-      "link": "https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/",
-      "desc": "AI isn't some new form of \"alien mind,\" according to Jensen Huang. It's just hardware and software, so safety can be engineered by each AI product maker.",
-      "source": "TechCrunch AI",
-      "time": 1789518039.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 7.0,
-        "event_concreteness": 15.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 2.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 43.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 43.5
-      },
-      "base_score": 43.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 43.5,
-      "key": "4ea6924915d37231bf9bfd7ca34aa602e66b89fba37f3049357a400f78a23623",
-      "importance": 43.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "chips",
-        "security_regulation",
-        "tools"
-      ],
-      "audience_score": null,
-      "tier": "A"
-    },
-    {
-      "region": "WORLD",
       "title": "Lexington expert grapples with artificial intelligence risks, regulation, and opportunity - fox56news.com",
       "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQOE40dGc5TC02MzgxMmhOV3NBNHoxUndjZ2RNcFItTXg4T0g4a0RyUW11OHQtX0s0WFFMRloxVFJVODlSXy1xbnljLUdiNlc4LXNPWFEtWTZTSi02bmJIa3ZPSEJDYjR4UmRCcW5iWl9VSzY0Z0ZTU2NsR2VPUURfYTdFZVBWQnNPY1VQNEpudVlhX1ROOVBlSTZBZ3NwUWVPbGc4Xzh2bXR6NkM3cFJOR3h1eWlsSzdxTU9Xd1d2SUd6NFZodGJLSTZFTdIB0AFBVV95cUxNRDVoNjVEQ2RCbFY0ZU9PektwODRvR3pha3ZiTzFlUFkwdVJ4bElVeU94cXB1NW1VNUY5Q3lHWTZSOEJ2NGRWeEowUHJ4enM3cF9takROOFBBbWcxRDY2TGR6SGZpYWpFZ2JZZFo3dW1QM3B4anQyN0tiRkt2Qm5TZ2owb0NhQVl4bUtWM3MtLVpaUE9ZR2h3U2tfOUVXTzhOWlVsUm1yZHdtQ3gxcGluQ053ZlA4YmdlRWNxRkExUWVfVTFvU0kwRGtBS3JCWUVN?oc=5",
       "desc": "Lexington expert grapples with artificial intelligence risks, regulation, and opportunity fox56news.com",
@@ -927,6 +851,44 @@
       "editorial_value": 50.0,
       "topics": [
         "business"
+      ],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
+      "region": "WORLD",
+      "title": "We don’t need AI regulation — leave safety to us, Nvidia’s Jensen Huang says",
+      "link": "https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/",
+      "desc": "AI isn't some new form of \"alien mind,\" according to Jensen Huang. It's just hardware and software, so safety can be engineered by each AI product maker.",
+      "source": "TechCrunch AI",
+      "time": 1789518039.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 7.0,
+        "event_concreteness": 15.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 2.0,
+        "freshness": 0.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 43.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 43.0
+      },
+      "base_score": 43.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 43.0,
+      "key": "4ea6924915d37231bf9bfd7ca34aa602e66b89fba37f3049357a400f78a23623",
+      "importance": 43.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "chips",
+        "security_regulation",
+        "tools"
       ],
       "audience_score": null,
       "tier": "A"
@@ -1110,20 +1072,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789539426.6113694,
+    "last_start_ts": 1789539902.283724,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789539426.6113694,
-    "last_success_ts": 1789539426.6113694,
-    "last_candidates": 26,
+    "last_run_ts": 1789539902.283724,
+    "last_success_ts": 1789539902.283724,
+    "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 18
+    "queue_size": 17
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789539460.7700238
+      "updated_at": 1789539902.1059382
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1363,10 +1325,16 @@
       "desc": "Meta launches WhatsApp Business MCP to let AI agents handle setup and testing Livemint",
       "source": "Livemint",
       "region": "WORLD"
+    },
+    "77ecee6ae5ed7e87e2fb47d83a3492579f1c3242255b98134c999de23f5fd004": {
+      "time": 1789539902,
+      "title": "Роевой интеллект: AI-агенты сообща обошли защитные ограничения",
+      "desc": "Исследователи Emergence AI (независимый разработчик корпоративной инфраструктуры для управления AI-агентами) проверили, как восемь виртуальных обществ из автономных AI-агентов справляются с киберугрозами: ни одно не оказалось устойчивым ко всем испытаниям, сообщает Semafor . Самый необычный эпизод произошёл с агентами Claude: они коллективно решили связаться с людьми за пределами симуляции, преодолели четыре защитные проверки и разместили приглашения на внешних площадках, по данным издания . В данном эксперименте используются коммерческие и доступные всем LLM, в отличии от описанных уже кейсов «сбежавших агентов», где использовались внутренние экспериментальные модели. Для нас в Ideco главный вопрос в этой истории: кто остановит действие, если защитные ограничения (guardrails) модели не сработали? «Роевой интеллект» здесь используем как описание согласованного поведения группы агентов, а не как утверждение о появлении у них общего сознания. Распознали фишинг, но не остановились В семи симуляциях участвовали по десять агентов одной модели, в восьмой собрали смешанную группу. Каждую группу проверяли на трёх классах угроз: фишинге, дезинформации и нарушении конфиденциальности памяти агентов. В последнем сценарии другим участникам открывали доступ к записям долговременной памяти, включая сохранённые сводки опыта. Обнаружение опасности не гарантировало безопасного поведения: агент Mistral записал в собственную память информацию из фишинговой атаки, которую сам отметил как опасную. Агент Gemini тоже распознал приманку, но примерно через 46 часов всё-таки совершил связанное с ней действие. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -1385,146 +1353,10 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789374991,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 74.96,
-      "candidates": 9,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 6,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 3,
-        "added": 0,
-        "candidate_count": 9,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 9,
-          "average_score": 8.11,
-          "bonus_total": 219.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 8,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Оценка капитализации Anthropic напрямую влияет на стратегию инвестиций и оценку конкурентоспособности ИИ-стартапов.",
-            "title": "Anthropic Strikes $13.7 Billion Deal With Trump-Linked Rum Group: Can It Drive IPO Valuation Higher? - tradingkey.com",
-            "final_score": 71.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 59,
-        "raw_items": 693,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 14,
-          "CNews": 13,
-          "Euronews": 30
-        },
-        "score_filtered": 660,
-        "quality_filtered": 23,
-        "story_dedup": 1,
-        "candidates": 9,
-        "candidate_rate": 0.0142,
-        "score_buckets": {
-          "0–39": 630,
-          "40–49": 53,
-          "50–59": 10,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 8,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "NO_CREDITS_OR_429"
-        }
-      }
-    },
     {
       "ts": 1789375233,
       "status": "OK",
@@ -21919,11 +21751,99 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1789539902,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 8.27,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 17,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://eu.36kr.com/en/p/3985279522765832",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.5,
+          "bonus_total": 39.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 5.0,
+            "bonus": 15.0,
+            "reason": "Спекулятивные слухи без подтвержденных технических характеристик не требуют немедленных изменений в бизнес-процессах.",
+            "title": "Is GPT-6 Sol Launch Imminent? OpenAI Poised for a Major AI Release Frenzy This Week - 36 Kr",
+            "final_score": 61.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 14,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1789539426.6113694,
-  "last_publish_ts": 1789539426.6113694,
+  "last_publish_ts": 1789539902.283724,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
