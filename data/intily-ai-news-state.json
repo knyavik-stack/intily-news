@@ -1231,13 +1231,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789672401.8133507,
+    "last_start_ts": 1789673124.1982353,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789672401.8133507,
-    "last_success_ts": 1789672401.8133507,
+    "last_run_ts": 1789673124.1982353,
+    "last_success_ts": 1789673124.1982353,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 18
   },
   "providers": {
@@ -1247,14 +1247,14 @@
       "updated_at": 1789672400.2711864
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789672401.7009058
+      "disabled_until": 1789676699.4225621,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1789673099.4225636
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789672136.498398
+      "disabled_until": 1789759524.0127852,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1789673124.0127869
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1262,33 +1262,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789672136.498398
+      "disabled_until": 1789676722.1945274,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1789673122.1945295
     }
   },
   "stories": {
-    "825402b9a98824c41f09d71d220e3a1c7f34583e5267abda9673f80cd0a605ce": {
-      "time": 1789586225,
-      "title": "Signoff Launches Enterprise Agentic AI Intelligence Platform - CXOToday.com",
-      "desc": "Signoff Launches Enterprise Agentic AI Intelligence Platform CXOToday.com",
-      "source": "CXOToday.com",
-      "region": "WORLD"
-    },
-    "b25723ece69aa0ae2b5d432c73565009e8857461399a1d14ea0f472760494d54": {
-      "time": 1789586460,
-      "title": "Rubrik Unveils Rubrik Code Guardian, Harnessing Anthropic’s Claude Mythos 5 to Red-Team Code and Prioritize Cyber Risks - CXOToday.com",
-      "desc": "Rubrik Unveils Rubrik Code Guardian, Harnessing Anthropic’s Claude Mythos 5 to Red-Team Code and Prioritize Cyber Risks CXOToday.com",
-      "source": "CXOToday.com",
-      "region": "WORLD"
-    },
-    "35c7c2e79fbdc752b1b6060a911986f9bc3e3fb2ba230a5bd2cfa9c4e5870f1c": {
-      "time": 1789586696,
-      "title": "Anthropic is killing off Claude Cowork and folding it into Claude chat, launching Claude Docs and Claude Slides - VentureBeat",
-      "desc": "Anthropic is killing off Claude Cowork and folding it into Claude chat, launching Claude Docs and Claude Slides VentureBeat",
-      "source": "VentureBeat",
-      "region": "WORLD"
-    },
     "79638a1c54c63b95fb4084b911945ec8df802509bc10f1c4faace6bca302c78e": {
       "time": 1789587897,
       "title": "Mymeet.ai выпустила десктопное приложение для записи встреч с устройства пользователя",
@@ -1733,78 +1712,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789478670,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 0.66,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1789478910,
       "status": "OK",
@@ -21554,6 +21461,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1789673124,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 28.97,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 18,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
