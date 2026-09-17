@@ -1172,30 +1172,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789647664.5496469,
+    "last_start_ts": 1789647933.398604,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789647664.5496469,
-    "last_success_ts": 1789647664.5496469,
+    "last_run_ts": 1789647933.398604,
+    "last_success_ts": 1789647933.398604,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 17
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789647664.4327052
+      "disabled_until": 1789651516.8288927,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1789647916.828895
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789647178.1006153
+      "disabled_until": 1789651520.1191962,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1789647920.1191976
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789647178.1006153
+      "disabled_until": 1789734333.3225994,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1789647933.3226008
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1203,19 +1203,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789647178.1006153
+      "disabled_until": 1789651532.1913054,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1789647932.1913075
     }
   },
   "stories": {
-    "605d5fb52fd6ef37cf6f83686b85d433322e86abed23d0924ea5f561e4cfd753": {
-      "time": 1789561497,
-      "title": "Got a rogue AI? A new hotline is encouraging agents to tell on each other",
-      "desc": "Two new hotlines are giving AI agents a way to report suspected misbehaviour by other agents, following a series of incidents.",
-      "source": "Euronews",
-      "region": "WORLD"
-    },
     "397943261a91c3e3f7c8ad58fe8558862a13540beea3c9b42c9730b5276eda2d": {
       "time": 1789562455,
       "title": "Billions risk being locked out of the AI revolution due to smartphone costs",
@@ -1730,94 +1723,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789466482,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 68.37,
-      "candidates": 0,
-      "queue_before": 11,
-      "queue_after": 10,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENS": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INV"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 9.0,
-          "bonus_total": 27.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Новые помощники дают реальный шанс на автоматизацию, но требуют быстрой интеграции и оценки рисков.",
-            "title": "В экосистеме голосовых помощников Подмосковья пополнение",
-            "final_score": 67.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789466669,
       "status": "OK",
@@ -21064,6 +20969,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1789647933,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 33.95,
+      "candidates": 0,
+      "queue_before": 17,
+      "queue_after": 17,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 5,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
