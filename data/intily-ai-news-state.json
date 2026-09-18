@@ -586,7 +586,8 @@
     "b67ac8d43e3aeecce61ccbbeccf2222de05ac0059c6c2ca2c1a7b5d62264aa44": 1789735024,
     "95c37be0ee5702c3c8dc14fd9736402b36c9fb42eda1944e3e5050da5ee7e10a": 1789735502,
     "a51fca43f9b31e5a3db3f44b44d9c4bfd769a129704ef83d0fa2f2c93e96dcb6": 1789735741,
-    "a3d124b33c08c0dd3dd9729dbbeff457975884e08ec707bba0e7b4cbb01bda36": 1789735987
+    "a3d124b33c08c0dd3dd9729dbbeff457975884e08ec707bba0e7b4cbb01bda36": 1789735987,
+    "5839c1999886075f21540075d4648ed04de4a36185b78e484bc4fc36224e4246": 1789736698
   },
   "known": {
     "b6e645b493014daeb6e6328e3ef6712812eee297044d2882095c7a0c2e842b85": 1789731898.327383,
@@ -601,41 +602,6 @@
     "025ed3fd46e791462bea3baa8446e6a68beb63e64953a2cd72c456658d142bf1": 1789735024.1721835
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "OpenAI сообщила о шести новых тревожных инцидентах с ИИ - Наука Mail",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0tYTVCcnhlUVpnR1lfNlgxbzNTVVVzOHpRRVY0NWpHNjhyMGRoVTI3VlRFb1hnT2p2ek1MZUwwYTNBNkhWa3JELU53M3BqS280M19KWnBZMV9yWU9JOFk0QUxXY0pYYzNT?oc=5",
-      "desc": "OpenAI сообщила о шести новых тревожных инцидентах с ИИ Наука Mail",
-      "source": "Наука Mail",
-      "time": 1789717246.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 8.0,
-        "event_concreteness": 15.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 42.0,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 66.0
-      },
-      "base_score": 42.0,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 66.0,
-      "key": "5839c1999886075f21540075d4648ed04de4a36185b78e484bc4fc36224e4246",
-      "importance": 66.0,
-      "editorial_value": 50.0,
-      "topics": [],
-      "audience_score": 8.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "WORLD",
       "title": "AI seen creating global $67.4bn private-network investment wave - Businessamlive",
@@ -746,20 +712,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789735987.2181988,
+    "last_start_ts": 1789736698.126214,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789735987.2181988,
-    "last_success_ts": 1789735987.2181988,
+    "last_run_ts": 1789736698.126214,
+    "last_success_ts": 1789736698.126214,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 4
+    "queue_size": 3
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789735992.4971004
+      "updated_at": 1789736711.5666707
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1188,11 +1154,17 @@
       "desc": "WSO2 Releases Agent Manager as Enterprises Look to Control Growing AI Agent Sprawl infoq.com",
       "source": "infoq.com",
       "region": "WORLD"
+    },
+    "5839c1999886075f21540075d4648ed04de4a36185b78e484bc4fc36224e4246": {
+      "time": 1789736698,
+      "title": "OpenAI сообщила о шести новых тревожных инцидентах с ИИ - Наука Mail",
+      "desc": "OpenAI сообщила о шести новых тревожных инцидентах с ИИ Наука Mail",
+      "source": "Наука Mail",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -1210,146 +1182,10 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789535581,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 35.18,
-      "candidates": 24,
-      "queue_before": 3,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 2,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 20,
-        "candidate_count": 24,
-        "admission_rate": 83.33,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://cryptobriefing.com/googledeepmind-unveils-gemini-38-live-models-for-advanced-voice-ai/",
-            "image_url": "https://static.cryptobriefing.com/wp-content/uploads/2026/09/15130957/library-googledeepmind-unveils-gemini-3-8-live-models-for-advanc-1-800x450.png",
-            "width": 800,
-            "height": 450,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Позволяет интегрировать более качественный голосовой интерфейс в продукты, снижая затраты на поддержку.",
-            "title": "GoogleDeepMind unveils Gemini 3.8 Live models for advanced voice AI - Crypto Briefing",
-            "final_score": 60.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 17,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 48,
-        "raw_items": 578,
-        "source_counts": {
-          "TechCrunch AI": 6,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 7,
-          "Habr AI/News": 10,
-          "CNews": 9,
-          "Euronews": 15
-        },
-        "score_filtered": 533,
-        "quality_filtered": 15,
-        "story_dedup": 6,
-        "candidates": 24,
-        "candidate_rate": 0.0453,
-        "score_buckets": {
-          "0–39": 487,
-          "40–49": 61,
-          "50–59": 27,
-          "60–69": 3,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 1,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789537028,
       "status": "OK",
@@ -21552,11 +21388,101 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1789736698,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 18.94,
+      "candidates": 0,
+      "queue_before": 4,
+      "queue_after": 3,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://science.mail.ru/news/57005-incidenty-s-ii-openai/",
+            "image_url": "https://resizer.mail.ru/p/8e0abc40-e734-505d-9a38-cf865e9b3711/AQA4LspTVCK_dPbNaPwnOcgNTN-pNbU26DTf92qgZr-RJBDb2nvVqqv3EfxaZqPrIUOe4ZFzesC-7kHal6uEDY69FSs.jpg",
+            "width": 1200,
+            "height": 675,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 24.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра протоколов безопасности и риск-менеджмента при интеграции LLM в бизнес-процессы.",
+            "title": "OpenAI сообщила о шести новых тревожных инцидентах с ИИ - Наука Mail",
+            "final_score": 66.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1789735024.1721835,
-  "last_publish_ts": 1789735987.2181988,
+  "last_publish_ts": 1789736698.126214,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
