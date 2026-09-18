@@ -650,45 +650,11 @@
       ],
       "audience_score": 7.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Мобильный банкинг или приложение: что теперь должен уметь веб?",
-      "link": "https://habr.com/ru/companies/gazprombank/news/1083846/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1083846",
-      "desc": "Еще несколько лет назад мобильная веб-версия банка чаще была планом Б - открыть сайт, если приложение недоступно или его нет на устройстве. Сейчас этот сценарий стал куда менее экзотическим. С мобильными приложениями в последние годы все стало немного сложнее: где-то приложение нельзя просто скачать привычным способом, где-то возникают вопросы с обновлениями, а иногда пользователю проще вообще не зависеть от конкретного устройства и магазина приложений. На этом фоне качество мобильного веба перестает быть второстепенной характеристикой банка. Клиент ожидает, что откроет банк в браузере и сможет сделать примерно то же, что привык делать в приложении. Без ощущения, что перед ним облегченная версия основного сервиса. Это видно и по тому, как меняются отраслевые исследования. В Mobile Web Banking Rank 2026 агентства Markswebb Газпромбанк занял третье место сразу в двух категориях — «Ежедневный банкинг» и «Цифровой офис». Читать далее",
-      "source": "Habr AI/News",
-      "time": 1789740204.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 6.0,
-        "event_concreteness": 12.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 39.0,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 63.0
-      },
-      "base_score": 39.0,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 63.0,
-      "key": "5c1f8bafc5e9df388f42803557822c79676a71c10dacf3fec54bca232398e428",
-      "importance": 63.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "research"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1789753018,
+      "last_failure": "Expecting value: line 1 column 1 (char 0)",
+      "failure_count": 1,
+      "next_retry_at": 1789753318
     },
     {
       "region": "RUSSIA",
@@ -1022,25 +988,25 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789752535.8266137,
+    "last_start_ts": 1789753018.406083,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789752535.8266137,
-    "last_success_ts": 1789752535.8266137,
+    "last_run_ts": 1789753018.406083,
+    "last_success_ts": 1789753018.406083,
     "last_candidates": 0,
-    "last_published": 1,
-    "queue_size": 11
+    "last_published": 0,
+    "queue_size": 10
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789752546.6646698
+      "disabled_until": 1789756638.5462406,
+      "reason": "The read operation timed out",
+      "updated_at": 1789753038.5462434
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789751819.1256745
+      "disabled_until": 1789756641.3544407,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1789753041.3544426
     },
     "OPENAI": {
       "disabled_until": 0,
@@ -1055,7 +1021,7 @@
     "OPENROUTER": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789751819.1256745
+      "updated_at": 1789753121.8996272
     }
   },
   "stories": {
@@ -1517,84 +1483,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789553622,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 45.24,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 18,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость пересмотра протоколов кибербезопасности из-за появления новых векторов атак через ИИ-инструменты.",
-            "title": "Artezio разработала решение для защиты российского бизнеса от атак ИИ",
-            "final_score": 76.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1789554065,
       "status": "OK",
@@ -21771,6 +21659,90 @@
         "GROQ": {
           "blocked": false,
           "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1789753018,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 103.64,
+      "candidates": 0,
+      "queue_before": 11,
+      "queue_after": 10,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 1.0,
+          "bonus_total": 3.0,
+          "max_score": 1.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 1.0,
+            "bonus": 3.0,
+            "reason": "Запрос направлен на создание токсичного контента, а не на анализ новости для AI-профессионалов.",
+            "title": "Мобильный банкинг или приложение: что теперь должен уметь веб?",
+            "final_score": 42.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENROUTER",
+          "OPENROUTER"
+        ],
+        "used": "OPENROUTER",
+        "failovers": 4,
+        "failures": 2,
+        "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
         },
         "OPENAI": {
           "blocked": false,
