@@ -573,7 +573,8 @@
     "7390a1beccbd4bb9576cbfa0cdec97ae5f149ee084b133310fc7ddf7ba309d4f": 1789724699,
     "e03f130aa5c6a35e76146b605f689ca402ed81d196a094c8c3e317662e4b1427": 1789725667,
     "02126116784680c3b77a038bbd092227d4a00e1aa8f4f5945212c3d69e4df3d2": 1789726385,
-    "7909ad7f8a3d04d44835ae86d91cd75abf3936821b9990ea2d653929bcd5b315": 1789726619
+    "7909ad7f8a3d04d44835ae86d91cd75abf3936821b9990ea2d653929bcd5b315": 1789726619,
+    "9911a84146a072074867290e892649032e6cf562741e9519a1d7eb9fc79e48bc": 1789727105
   },
   "known": {
     "7390a1beccbd4bb9576cbfa0cdec97ae5f149ee084b133310fc7ddf7ba309d4f": 1789724699.068545,
@@ -586,43 +587,6 @@
     "9f8327599be6f67fe1b69b2e303888430b9e1c2116c40f4f01d60d41411659a5": 1789726619.265998
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "AMD повысит цены на продукцию на 10% в четвёртом квартале",
-      "link": "https://habr.com/ru/news/1083740/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1083740",
-      "desc": "AMD заявила партнёрам, что планирует повысить цены примерно на 10% на некоторые CPU в четвёртом квартале 2026 года. На такой шаг компания идёт из‑за увеличения производственных расходов тайваньской TSMC, которая выпускает для неё CPU и GPU. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1789724863.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 6.0,
-        "event_concreteness": 13.5,
-        "practical_value": 5.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 48.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 48.0
-      },
-      "base_score": 48.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 48.0,
-      "key": "9911a84146a072074867290e892649032e6cf562741e9519a1d7eb9fc79e48bc",
-      "importance": 48.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "chips"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "WORLD",
       "title": "Anthropic’s Claude AI Exploited to Infiltrate OpenAI Systems Within 72 Hours - Blockonomi",
@@ -642,21 +606,21 @@
         "freshness": 1.5,
         "low_signal_penalty": 0.0,
         "base_score": 43.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 43.0
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 67.0
       },
       "base_score": 43.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 43.0,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 67.0,
       "key": "0ddd5ddf5fc8ec4fbbe0773fce516a9e2b1f9815659c791f56fb605923b8fbab",
-      "importance": 43.0,
-      "editorial_value": 49.0,
+      "importance": 67.0,
+      "editorial_value": 50.0,
       "topics": [
         "models"
       ],
-      "audience_score": null,
+      "audience_score": 8.0,
       "tier": "A"
     },
     {
@@ -735,20 +699,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789726619.265998,
+    "last_start_ts": 1789727105.0643888,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789726619.265998,
-    "last_success_ts": 1789726619.265998,
-    "last_candidates": 19,
+    "last_run_ts": 1789727105.0643888,
+    "last_success_ts": 1789727105.0643888,
+    "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 4
+    "queue_size": 3
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789726657.9552078
+      "updated_at": 1789727105.0493345
     },
     "GROQ": {
       "disabled_until": 0,
@@ -772,13 +736,6 @@
     }
   },
   "stories": {
-    "eb11a556764639425dcf566ae85ad3669db45643711fef551000dd7d5e27ff29": {
-      "time": 1789640701,
-      "title": "OpenAI раскрыла ранее неизвестные инциденты со сбоями в поведении своих ИИ-моделей - incrussia.ru",
-      "desc": "OpenAI раскрыла ранее неизвестные инциденты со сбоями в поведении своих ИИ-моделей incrussia.ru",
-      "source": "incrussia.ru",
-      "region": "RUSSIA"
-    },
     "c2161c5aaa5e01c8d7c38206aa788d3779d5b7db62f77af628f74964790564dc": {
       "time": 1789642137,
       "title": "Анонсированы модули RDIMM DDR5-9200 объемом 512 ГБ от Micron",
@@ -1163,10 +1120,16 @@
       "desc": "ASUS Ascent QN10 Worlds First Agentic 80 TOPS NPU AI Mini PC Launches Geeky Gadgets",
       "source": "Geeky Gadgets",
       "region": "WORLD"
+    },
+    "9911a84146a072074867290e892649032e6cf562741e9519a1d7eb9fc79e48bc": {
+      "time": 1789727105,
+      "title": "AMD повысит цены на продукцию на 10% в четвёртом квартале",
+      "desc": "AMD заявила партнёрам, что планирует повысить цены примерно на 10% на некоторые CPU в четвёртом квартале 2026 года. На такой шаг компания идёт из‑за увеличения производственных расходов тайваньской TSMC, которая выпускает для неё CPU и GPU. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -1185,97 +1148,10 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789495000,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 12.52,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "IMAGE_NOT_FOUND": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "IMAGE_NOT_FOUND"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Прямая автоматизация аналитических задач требует немедленного пересмотра операционных процессов в финсекторе.",
-            "title": "Anthropic Launches Claude for Financial Advisors to Automate Wealth Management Workflows - FF News",
-            "final_score": 67.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789495230,
       "status": "OK",
@@ -21341,11 +21217,99 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1789727105,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 9.38,
+      "candidates": 0,
+      "queue_before": 4,
+      "queue_after": 3,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://blockonomi.com/anthropics-claude-ai-exploited-to-infiltrate-openai-systems-within-72-hours/",
+            "image_url": "https://blockonomi.com/wp-content/uploads/2026/09/Anthropic-Claude-1-scaled-1.jpg",
+            "width": 2560,
+            "height": 1707,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость внедрения многоуровневой защиты API и пересмотра рисков при интеграции сторонних LLM.",
+            "title": "Anthropic’s Claude AI Exploited to Infiltrate OpenAI Systems Within 72 Hours - Blockonomi",
+            "final_score": 67.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1789726619.265998,
-  "last_publish_ts": 1789726619.265998,
+  "last_publish_ts": 1789727105.0643888,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
