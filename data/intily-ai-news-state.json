@@ -606,7 +606,8 @@
     "d0e45cb66dcbdd5e669d00c5202c3355a3e2e64707e1e7c735149ae64fd32693": 1789752535,
     "885cba029c072fd72f4b2b694903c6c5cd1847f2ca509c11bda9fd9b514fa34d": 1789755430,
     "9484664cdc9b413ebbd197616b5d620212f0f84e1bdf3906c050484fe7209565": 1789756377,
-    "c4945354a75098df86be63320fa2b455aad446b41e73648deb4afee98496e94a": 1789756855
+    "c4945354a75098df86be63320fa2b455aad446b41e73648deb4afee98496e94a": 1789756855,
+    "51f34cf2f9bc0f480c2a0e9c38fe3351af68d2425694772ebf7db30c84012134": 1789757096
   },
   "known": {
     "885cba029c072fd72f4b2b694903c6c5cd1847f2ca509c11bda9fd9b514fa34d": 1789753255.1714022,
@@ -614,47 +615,6 @@
     "9484664cdc9b413ebbd197616b5d620212f0f84e1bdf3906c050484fe7209565": 1789755430.2758098
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Американская фабрика Samsung начинает выпуск 2 нм чипов",
-      "link": "https://www.cnews.ru/news/top/2026-09-18_novaya_fabrika_samsung_pristupila",
-      "desc": "Samsung резко ускорила строительство своей 2-нм фабрики в Техасе. Причиной стало получение крупного заказа от Tesla на чипы AI5 и AI6. Пробный выпуск продукции на новом предприятии запланирован на сентябрь-октябрь 2026 г. Массовое производство должно стартовать в 2027 г. Мощность фабрики составит до 50 тыс. пластин в месяц. По имеющимся данным, мощности завода уже могут быть загружены на годы вперед заказами от Tesla, а также от Broadcom и Arm. Это позволяет Samsung рассчитывать на стабильную загрузку нового производства в ближайшие годы.",
-      "source": "CNews",
-      "time": 1789715340.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 4.0,
-        "event_concreteness": 10.5,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 3.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 42.5,
-        "audience_score": 7.0,
-        "audience_bonus": 21.0,
-        "final_score": 63.5
-      },
-      "base_score": 42.5,
-      "audience_bonus": 21.0,
-      "score_stage": "final",
-      "score": 63.5,
-      "key": "51f34cf2f9bc0f480c2a0e9c38fe3351af68d2425694772ebf7db30c84012134",
-      "importance": 63.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "chips"
-      ],
-      "audience_score": 7.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0,
-      "last_failed_at": 1789753255,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 2,
-      "next_retry_at": 1789753855
-    },
     {
       "region": "RUSSIA",
       "title": "На Форуме ProcessTech представили новый подход к внедрению корпоративного ИИ",
@@ -955,20 +915,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789756855.8944921,
+    "last_start_ts": 1789757096.4164417,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789756855.8944921,
-    "last_success_ts": 1789756855.8944921,
+    "last_run_ts": 1789757096.4164417,
+    "last_success_ts": 1789757096.4164417,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 9
+    "queue_size": 8
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789756871.171513
+      "updated_at": 1789757098.6728191
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1411,12 +1371,18 @@
       "desc": "Ollama: как запустить нейросеть локально на своём ПК — журнал Яндекс Практикума «Код» Журнал «Код",
       "source": "Журнал «Код",
       "region": "RUSSIA"
+    },
+    "51f34cf2f9bc0f480c2a0e9c38fe3351af68d2425694772ebf7db30c84012134": {
+      "time": 1789757096,
+      "title": "Американская фабрика Samsung начинает выпуск 2 нм чипов",
+      "desc": "Samsung резко ускорила строительство своей 2-нм фабрики в Техасе. Причиной стало получение крупного заказа от Tesla на чипы AI5 и AI6. Пробный выпуск продукции на новом предприятии запланирован на сентябрь-октябрь 2026 г. Массовое производство должно стартовать в 2027 г. Мощность фабрики составит до 50 тыс. пластин в месяц. По имеющимся данным, мощности завода уже могут быть загружены на годы вперед заказами от Tesla, а также от Broadcom и Arm. Это позволяет Samsung рассчитывать на стабильную загрузку нового производства в ближайшие годы.",
+      "source": "CNews",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -1433,99 +1399,10 @@
     "WORLD",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789555975,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 6.46,
-      "candidates": 0,
-      "queue_before": 14,
-      "queue_after": 13,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://forklog.com/news/ai/ceo-nvidia-vystupil-protiv-novogo-regulirovaniya-ii",
-            "image_url": "https://forklog.com/wp-content/uploads/REGULATION-2.webp",
-            "width": 1200,
-            "height": 960,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Регулирование напрямую влияет на стоимость и доступность вычислительных мощностей для бизнеса.",
-            "title": "CEO Nvidia выступил против нового регулирования ИИ - forklog.com",
-            "final_score": 62.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789556218,
       "status": "OK",
@@ -21742,11 +21619,101 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1789757096,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 2.82,
+      "candidates": 0,
+      "queue_before": 9,
+      "queue_after": 8,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://www.cnews.ru/news/top/2026-09-18_novaya_fabrika_samsung_pristupila",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 7.0,
+          "bonus_total": 21.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Необходимость учета долгосрочных рисков цепочек поставок при планировании аппаратных затрат на ИИ-инфраструктуру.",
+            "title": "Американская фабрика Samsung начинает выпуск 2 нм чипов",
+            "final_score": 63.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1789755430.2758098,
-  "last_publish_ts": 1789756855.8944921,
+  "last_publish_ts": 1789757096.4164417,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
