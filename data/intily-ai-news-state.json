@@ -625,7 +625,11 @@
       ],
       "audience_score": 8.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1789729978,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1789730278
     },
     {
       "region": "WORLD",
@@ -661,34 +665,38 @@
         "research"
       ],
       "audience_score": 6.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1789729978,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1789730278
     }
   ],
   "health": {
-    "last_start_ts": 1789729017.692345,
+    "last_start_ts": 1789729978.0007713,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789729017.692345,
-    "last_success_ts": 1789729017.692345,
+    "last_run_ts": 1789729978.0007713,
+    "last_success_ts": 1789729978.0007713,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 2
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789729019.9146905
+      "disabled_until": 1789733598.099877,
+      "reason": "The read operation timed out",
+      "updated_at": 1789729998.099879
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789728774.7657633
+      "disabled_until": 1789733601.3393383,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1789730001.3393402
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789728774.7657633
+      "disabled_until": 1789816407.8360093,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1789730007.836011
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -696,26 +704,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789728774.7657633
+      "disabled_until": 1789733606.9075615,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1789730006.907563
     }
   },
   "stories": {
-    "abe8eb77bfef02c98fd663b7ee4f514f16f7bba322b4e0808fef8b97f0ed91df": {
-      "time": 1789643098,
-      "title": "OpenAI призналась ещё в шести инцидентах с попытками выхода ИИ из-под контроля - prospect.com.ru",
-      "desc": "OpenAI призналась ещё в шести инцидентах с попытками выхода ИИ из-под контроля prospect.com.ru",
-      "source": "prospect.com.ru",
-      "region": "RUSSIA"
-    },
-    "7c929724ca1bb8f16510178573a62fdf674677d8191c00674f758751b6cce326": {
-      "time": 1789643334,
-      "title": "HCLTech Launches New Unit to Target $500 Million to $5 Billion Enterprises with AI Services - analyticsindiamag.com",
-      "desc": "HCLTech Launches New Unit to Target $500 Million to $5 Billion Enterprises with AI Services analyticsindiamag.com",
-      "source": "analyticsindiamag.com",
-      "region": "WORLD"
-    },
     "578801064c2509de5aaa9d11a7b90cd655848b487d7eaab851b5bf88621264a1": {
       "time": 1789645497,
       "title": "Эксперт РШУ представил кейс внедрения ИИ в бизнес-процессы на всероссийском HR-форуме - Sostav.ru",
@@ -1118,89 +1112,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789498355,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 24.66,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 18,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость пересмотра стратегии безопасности и риск-менеджмента при интеграции LLM.",
-            "title": "Cyber attacks? Bioterrorism? To 'Pace the Frontier' of AI effectively, we must improve our anticipatory thinking - Tech Xplore",
-            "final_score": 61.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 12,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1789498588,
       "status": "OK",
@@ -21267,6 +21178,83 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1789729978,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 29.85,
+      "candidates": 0,
+      "queue_before": 2,
+      "queue_after": 2,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
