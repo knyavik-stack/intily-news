@@ -612,7 +612,9 @@
     "46ff85ad01ec9d2fa545dc282689bf77e1dba954899ff4ede6be9fce3ca3954c": 1789749177.2037096,
     "db6d0520c05ed839ca545bede850ef71a5f965ff5e256a6eae9ad05be7099680": 1789749177.2037096,
     "2b84e2aae3e6f8b42ae8890fa8de8ace3abbe18f914559c06a28a2f9ed87e4aa": 1789751387.7300284,
-    "3c841efba8a47a37837125b6b7f4c94f94d354a844a4052dbf442008a490bf91": 1789751387.7300284
+    "3c841efba8a47a37837125b6b7f4c94f94d354a844a4052dbf442008a490bf91": 1789751387.7300284,
+    "885cba029c072fd72f4b2b694903c6c5cd1847f2ca509c11bda9fd9b514fa34d": 1789753255.1714022,
+    "c4945354a75098df86be63320fa2b455aad446b41e73648deb4afee98496e94a": 1789753255.1714022
   },
   "queue": [
     {
@@ -651,10 +653,10 @@
       "audience_score": 7.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1789753018,
-      "last_failure": "Expecting value: line 1 column 1 (char 0)",
-      "failure_count": 1,
-      "next_retry_at": 1789753318
+      "last_failed_at": 1789753255,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 2,
+      "next_retry_at": 1789753855
     },
     {
       "region": "RUSSIA",
@@ -692,7 +694,11 @@
       ],
       "audience_score": 6.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1789753255,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1789753555
     },
     {
       "region": "WORLD",
@@ -782,19 +788,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 42.0,
+        "base_score": 41.5,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 60.0
+        "final_score": 59.5
       },
-      "base_score": 42.0,
+      "base_score": 41.5,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 60.0,
+      "score": 59.5,
       "key": "2b84e2aae3e6f8b42ae8890fa8de8ace3abbe18f914559c06a28a2f9ed87e4aa",
-      "importance": 60.0,
+      "importance": 59.5,
       "editorial_value": 50.0,
       "topics": [
         "research"
@@ -985,17 +991,90 @@
       ],
       "audience_score": 5.0,
       "tier": "A"
+    },
+    {
+      "region": "WORLD",
+      "title": "A zero-click RCE flaw in AI coding agents could have exposed enterprise systems - csoonline.com",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOVWR4Q2JYVjdEc25BWm1DeVdWa0lPOUYyajRheWR2LXBYQW16TFpsWXhlLUJYTTdBWnkyWVB2LTRyUVl2N0lwd1Zqd3F0cGRYYnF6SWhNMF9iYUgxZTc4ZVdwRURjcEozMHBVSnJtdnRTcE9TTk1tT3V0LU9KbmVVMGpzWWtUMGJkMHdzNEFlZzZ4ZzVCazBQMzRGNUhNV2ZvNkc4bEdFV1gzc3ZHZnFvVmZSNEVSWi1CckNyOGpGTWhod2plZ0U0?oc=5",
+      "desc": "A zero-click RCE flaw in AI coding agents could have exposed enterprise systems csoonline.com",
+      "source": "csoonline.com",
+      "time": 1789746249.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 7.0,
+        "event_concreteness": 12.0,
+        "practical_value": 5.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 46.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 46.5
+      },
+      "base_score": 46.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 46.5,
+      "key": "885cba029c072fd72f4b2b694903c6c5cd1847f2ca509c11bda9fd9b514fa34d",
+      "importance": 46.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "business",
+        "security_regulation"
+      ],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Ollama: как запустить нейросеть локально на своём ПК — журнал Яндекс Практикума «Код» - Журнал «Код",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA3NE9XOGxuOU80N0pFMlJNM2wwbDZVb3k0UDJlM29lQ1RkSEZJR0NxNXRJVjhRQ3hZM3E5SDZVUy1xRlVKV0RBeTF0QUhSVjRaMW5ONzZ3dHFFYjN0?oc=5",
+      "desc": "Ollama: как запустить нейросеть локально на своём ПК — журнал Яндекс Практикума «Код» Журнал «Код",
+      "source": "Журнал «Код",
+      "time": 1789721327.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 7.0,
+        "event_concreteness": 13.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 0.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 40.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 40.0
+      },
+      "base_score": 40.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 40.0,
+      "key": "c4945354a75098df86be63320fa2b455aad446b41e73648deb4afee98496e94a",
+      "importance": 40.0,
+      "editorial_value": 50.0,
+      "topics": [],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1789753018.406083,
+    "last_start_ts": 1789753255.1714022,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789753018.406083,
-    "last_success_ts": 1789753018.406083,
-    "last_candidates": 0,
+    "last_run_ts": 1789753255.1714022,
+    "last_success_ts": 1789753255.1714022,
+    "last_candidates": 43,
     "last_published": 0,
-    "queue_size": 10
+    "queue_size": 12
   },
   "providers": {
     "GEMINI": {
@@ -1009,9 +1088,9 @@
       "updated_at": 1789753041.3544426
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789751819.1256745
+      "disabled_until": 1789839826.2497,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1789753426.2497017
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1019,9 +1098,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789753121.8996272
+      "disabled_until": 1789757024.221215,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1789753424.2212164
     }
   },
   "stories": {
@@ -1483,96 +1562,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789554065,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 28.89,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENS": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INV"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.67,
-          "bonus_total": 69.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра стратегии кибербезопасности из-за роста атак с применением ИИ.",
-            "title": "Artezio разработала решение для защиты российского бизнеса от атак ИИ",
-            "final_score": 79.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789554541,
       "status": "OK",
@@ -21749,10 +21738,143 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1789753255,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": true,
+      "duration_sec": 171.24,
+      "candidates": 43,
+      "queue_before": 10,
+      "queue_after": 12,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 26,
+        "known_recent": 0,
+        "already_queued": 8,
+        "story_queue": 0,
+        "story_history": 7,
+        "added": 2,
+        "candidate_count": 43,
+        "admission_rate": 4.65,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 9.0,
+          "bonus_total": 27.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Требует немедленного пересмотра стратегии автоматизации и внедрения собственных ИИ‑агентов.",
+            "title": "ИИ сам разрабатывает следующую версию самого себя",
+            "final_score": 85.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 181,
+        "raw_items": 1395,
+        "source_counts": {
+          "TechCrunch AI": 9,
+          "VentureBeat AI": -1,
+          "The Verge AI": 4,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 3,
+          "Habr AI/News": 40,
+          "CNews": 75,
+          "Euronews": 50
+        },
+        "score_filtered": 1308,
+        "quality_filtered": 35,
+        "story_dedup": 9,
+        "candidates": 43,
+        "candidate_rate": 0.0354,
+        "score_buckets": {
+          "0–39": 1242,
+          "40–49": 101,
+          "50–59": 42,
+          "60–69": 10,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 3,
+          "6": 4,
+          "7": 3,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "OPENROUTER",
+          "OPENROUTER",
+          "OPENROUTER",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "OPENROUTER",
+        "failovers": 2,
+        "failures": 2,
+        "blocked": 20,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789751387.7300284,
+  "last_search_ts": 1789753255.1714022,
   "last_publish_ts": 1789752535.8266137,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
