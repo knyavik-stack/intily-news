@@ -647,38 +647,40 @@
     "5d01a42f5c024d822d444329cf7233c6bdd6bf55f9dc96d1f5d731fc1bd6ee64": 1789828856,
     "defb6b730139907da51a0d7d57a677ac291a0a9eba45192c5ce89a7c3c8f693e": 1789829335,
     "b45ec22c84d9092f7d9ce5fb17e10aa64418ac9a9719c53dddb80a0677d30353": 1789842774,
-    "2292606d53c0c0760d7bd7f251d039ff432eacf5d257c711cc21b20be6c922bb": 1789843979
+    "2292606d53c0c0760d7bd7f251d039ff432eacf5d257c711cc21b20be6c922bb": 1789843979,
+    "35cf7cce9befd23c1e4ff9f20efa085024a9727b7def37926ec71a20e69502c0": 1789846617
   },
   "known": {
     "b45ec22c84d9092f7d9ce5fb17e10aa64418ac9a9719c53dddb80a0677d30353": 1789842774.7674408,
-    "2292606d53c0c0760d7bd7f251d039ff432eacf5d257c711cc21b20be6c922bb": 1789842774.7674408
+    "2292606d53c0c0760d7bd7f251d039ff432eacf5d257c711cc21b20be6c922bb": 1789842774.7674408,
+    "35cf7cce9befd23c1e4ff9f20efa085024a9727b7def37926ec71a20e69502c0": 1789846617.0191193
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789845657.7491806,
+    "last_start_ts": 1789846617.0191193,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789845657.7491806,
-    "last_success_ts": 1789845657.7491806,
+    "last_run_ts": 1789846617.0191193,
+    "last_success_ts": 1789846617.0191193,
     "last_candidates": 22,
-    "last_published": 0,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1789849308.0241106,
-      "reason": "The read operation timed out",
-      "updated_at": 1789845708.0241127
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1789846662.679233
     },
     "GROQ": {
-      "disabled_until": 1789849311.4626913,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1789845711.4626935
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1789846616.9134257
     },
     "OPENAI": {
-      "disabled_until": 1789932125.459368,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1789845725.4593697
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1789846616.9134257
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -686,19 +688,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1789849324.1163547,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1789845724.1163561
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1789846616.9134257
     }
   },
   "stories": {
-    "8e7a434f67801bcfb3223462a207bf4c46420c22e10f41160467050e2b7dd1f2": {
-      "time": 1789759975,
-      "title": "AI Agent Market to Reach USD 179.8 Billion by 2034, Expanding at a 43.2% CAGR - openpr.com",
-      "desc": "AI Agent Market to Reach USD 179.8 Billion by 2034, Expanding at a 43.2% CAGR openpr.com",
-      "source": "openpr.com",
-      "region": "WORLD"
-    },
     "42fa8c9570ecdda31ec30f6879f32ace3b944da7d3121ae4e9fe07a932c7f5ec": {
       "time": 1789760697,
       "title": "\"Astra Group\" launched AI that independently analyzes technical failures and business data - www1.ru",
@@ -957,10 +952,16 @@
       "desc": "OpenAI agents incident sparks ops rethink blockchain.news",
       "source": "blockchain.news",
       "region": "WORLD"
+    },
+    "35cf7cce9befd23c1e4ff9f20efa085024a9727b7def37926ec71a20e69502c0": {
+      "time": 1789846617,
+      "title": "GitHub Copilot связали с Sentry. Агент работает от падения приложения до готового pull request",
+      "desc": "Итак, картина маслом. Приложение падает в продакшене. Sentry фиксирует ошибку. Разработчик открывает отчёт, изучает вызовы функций, ищет связанный участок кода, пытается воспроизвести проблему и только потом приступает к исправлению. GitHub решил ( уничтожить профессию разработчика ) передать значительную часть этой цепочки Copilot. Таким образом в GitHub Copilot завезли Sentry Canvas. Агент получает данные об ошибке, изучает контекст, помогает найти причину, проверяет исправление и готовит pull request. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -979,99 +980,10 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789626326,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 26.92,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 16,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://pulse2.com/crux-ai-lines-up-22-billion-chip-loan-from-10-banks-to-buy-google-tpus/",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.0,
-          "bonus_total": 72.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 3,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Критическое изменение рыночной экономики обучения моделей в пользу владельцев инфраструктуры.",
-            "title": "Crux AI Lines Up $22 Billion Chip Loan From 10 Banks To Buy Google TPUs - Pulse 2.0",
-            "final_score": 69.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 8,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789627262,
       "status": "OK",
@@ -22505,11 +22417,152 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1789846617,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 49.31,
+      "candidates": 22,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 17,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 4,
+        "added": 1,
+        "candidate_count": 22,
+        "admission_rate": 4.55,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/news/1084210/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1084210",
+            "image_url": "https://habr.com/share/publication/1084210/bdde9767cd4dd4d234eacda58dbf0f7b/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.67,
+          "bonus_total": 69.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Прямое сокращение времени на отладку и изменение процесса работы с инцидентами в продакшене.",
+            "title": "GitHub Copilot связали с Sentry. Агент работает от падения приложения до готового pull request",
+            "final_score": 68.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 37,
+        "raw_items": 781,
+        "source_counts": {
+          "TechCrunch AI": 5,
+          "VentureBeat AI": -1,
+          "The Verge AI": 3,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 11,
+          "CNews": 0,
+          "Euronews": 16
+        },
+        "score_filtered": 735,
+        "quality_filtered": 15,
+        "story_dedup": 9,
+        "candidates": 22,
+        "candidate_rate": 0.0296,
+        "score_buckets": {
+          "0–39": 698,
+          "40–49": 52,
+          "50–59": 28,
+          "60–69": 2,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789845657.7491806,
-  "last_publish_ts": 1789843979.408767,
+  "last_search_ts": 1789846617.0191193,
+  "last_publish_ts": 1789846617.0191193,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
