@@ -616,7 +616,8 @@
     "69d0a06e6aedbb0362971ed1853730c545f1c89448ff06a6e5f515a13485041e": 1789795035,
     "1a13a2be28c7de33bdc8cc303b8f9e6eeb0aa0a04d78e72ef0a36929ec6f9686": 1789797423,
     "f3f0c9bdfff72137d767519f7e5871698aa89d6478ea1f1a31ed76d52ca7ad4b": 1789797664,
-    "77f4aaa98a019ff14852b66321c26194c7a92d423a14dde398cffbdedfd5920a": 1789800304
+    "77f4aaa98a019ff14852b66321c26194c7a92d423a14dde398cffbdedfd5920a": 1789800304,
+    "418a7d6b9961f78abae29ba8582b37fcaf37b58e5a17b3f14ea8b2e1ff5cd10b": 1789800785
   },
   "known": {
     "bd808b48bf4979a1d535fc76a9a44d39afb220e9a08ce8f1535df86bbe50158f": 1789797423.0045338,
@@ -695,6 +696,43 @@
       ],
       "audience_score": 8.0,
       "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "OpenAI заявила о наступлении «эпохи AGI» — компания представила GPT-6-Astra - thecode.media",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMzVSSmNhVk5TX3B3aWVkUGhydFp4bTUzaTRoRFIzUDRtQllTRUJBX2xhc0VjWkNOdHI1TmdteGk4Vnhja3QyY1BPdlE0UFNWYTFuVGNYR0VzdEJsTHB1NVV3RExkSVp6TmlMLTk2YjdOOTQ0VHl1TjR2eFdZQUdGYjFYNEJERTEw?oc=5",
+      "desc": "OpenAI заявила о наступлении «эпохи AGI» — компания представила GPT-6-Astra thecode.media",
+      "source": "thecode.media",
+      "time": 1789775144.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 3.0,
+        "impact": 7.0,
+        "event_concreteness": 13.5,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 0.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 42.0,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 66.0
+      },
+      "base_score": 42.0,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 66.0,
+      "key": "d9783a610fea8a2efb3c2b33325cdc3d83b22d4b8a19afca09518b1111cb9620",
+      "importance": 66.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "models"
+      ],
+      "audience_score": 8.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     },
     {
       "region": "WORLD",
@@ -803,80 +841,6 @@
       ],
       "audience_score": 5.0,
       "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Как уязвимость в обработке картинок привела к доступу к OpenAI",
-      "link": "https://habr.com/ru/news/1084066/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1084066",
-      "desc": "Команда Hacktron нашла цепочку из двух багов. Первый жил в обработке HEIF (High Efficiency Image File Format) — это современный высокоэффективный формат хранения изображений, а HEIC — его конкретная разновидность (контейнер), использующая кодек HEVC для сжатия фото на устройствах Apple \" data-abbr=\"HEIC/HEIF\">HEIC/HEIF . Если загрузить на форум специально собранный файл, он давал удалённое выполнение кода. По сути, позволял исполнять на сервере свои команды. Второй баг был в SSO, общей системе входа. Сессия форума открывала путь к ChatGPT и Codex. Так исследователи смогли войти в аккаунт сотрудника OpenAI, у которого Codex был подключён к GitHub. Хакеры оказались белыми и просто оставили PR в GitHub OpenAI, чтобы доказать взлом. Весь процесс длился меньше 72 часов, и почти всю работу сделала модель конкурентов из Anthropic. Claude Opus 4.8. Она нашла уязвимость и собрала эксплойт, а Opus 5 довёл его до рабочего состояния. OpenAI закрыла свою часть проблемы примерно за 14 часов и заплатила $6500. При этом половина этой суммы ушли на токены. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1789794091.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 11.0,
-        "event_concreteness": 16.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 54.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 54.5
-      },
-      "base_score": 54.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 54.5,
-      "key": "418a7d6b9961f78abae29ba8582b37fcaf37b58e5a17b3f14ea8b2e1ff5cd10b",
-      "importance": 54.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "models"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "OpenAI заявила о наступлении «эпохи AGI» — компания представила GPT-6-Astra - thecode.media",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMzVSSmNhVk5TX3B3aWVkUGhydFp4bTUzaTRoRFIzUDRtQllTRUJBX2xhc0VjWkNOdHI1TmdteGk4Vnhja3QyY1BPdlE0UFNWYTFuVGNYR0VzdEJsTHB1NVV3RExkSVp6TmlMLTk2YjdOOTQ0VHl1TjR2eFdZQUdGYjFYNEJERTEw?oc=5",
-      "desc": "OpenAI заявила о наступлении «эпохи AGI» — компания представила GPT-6-Astra thecode.media",
-      "source": "thecode.media",
-      "time": 1789775144.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 7.0,
-        "event_concreteness": 13.5,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 42.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 42.0
-      },
-      "base_score": 42.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 42.0,
-      "key": "d9783a610fea8a2efb3c2b33325cdc3d83b22d4b8a19afca09518b1111cb9620",
-      "importance": 42.0,
-      "editorial_value": 48.0,
-      "topics": [
-        "models"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
     },
     {
       "region": "WORLD",
@@ -1026,20 +990,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789800304.654956,
+    "last_start_ts": 1789800785.1447332,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789800304.654956,
-    "last_success_ts": 1789800304.654956,
-    "last_candidates": 13,
+    "last_run_ts": 1789800785.1447332,
+    "last_success_ts": 1789800785.1447332,
+    "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 11
+    "queue_size": 10
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789800304.5947106
+      "updated_at": 1789800785.0833936
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1063,20 +1027,6 @@
     }
   },
   "stories": {
-    "5dc4c76735502346bc34cb98a71ff1271a930640dbe3dd58ada0c1fb61cdaa46": {
-      "time": 1789714136,
-      "title": "Anthropic says its model Claude is helping to build the next version of itself - Beaumont Enterprise",
-      "desc": "Anthropic says its model Claude is helping to build the next version of itself Beaumont Enterprise",
-      "source": "Beaumont Enterprise",
-      "region": "WORLD"
-    },
-    "33b049a5fd49a0d087baff7328b7ac6da39833bac885cc5e61f51da5dd5fe284": {
-      "time": 1789714374,
-      "title": "OpenAI hacked by small team of white hat security researchers using Anthropic's Claude Opus 5 - VentureBeat",
-      "desc": "OpenAI hacked by small team of white hat security researchers using Anthropic's Claude Opus 5 VentureBeat",
-      "source": "VentureBeat",
-      "region": "WORLD"
-    },
     "ec658e817981646f185476ef69c39ba1b20308e0a5e6d8dc23cf38f637f61e09": {
       "time": 1789715095,
       "title": "AI Security Debate — Amazon Says AI Models To Be Released Only When 'Ready And Safe' - TradingView",
@@ -1468,12 +1418,18 @@
       "desc": "Google's Gemini AI carried out cyberattacks, guessed passwords ABS-CBN",
       "source": "ABS-CBN",
       "region": "WORLD"
+    },
+    "418a7d6b9961f78abae29ba8582b37fcaf37b58e5a17b3f14ea8b2e1ff5cd10b": {
+      "time": 1789800785,
+      "title": "Как уязвимость в обработке картинок привела к доступу к OpenAI",
+      "desc": "Команда Hacktron нашла цепочку из двух багов. Первый жил в обработке HEIF (High Efficiency Image File Format) — это современный высокоэффективный формат хранения изображений, а HEIC — его конкретная разновидность (контейнер), использующая кодек HEVC для сжатия фото на устройствах Apple \" data-abbr=\"HEIC/HEIF\">HEIC/HEIF . Если загрузить на форум специально собранный файл, он давал удалённое выполнение кода. По сути, позволял исполнять на сервере свои команды. Второй баг был в SSO, общей системе входа. Сессия форума открывала путь к ChatGPT и Codex. Так исследователи смогли войти в аккаунт сотрудника OpenAI, у которого Codex был подключён к GitHub. Хакеры оказались белыми и просто оставили PR в GitHub OpenAI, чтобы доказать взлом. Весь процесс длился меньше 72 часов, и почти всю работу сделала модель конкурентов из Anthropic. Claude Opus 4.8. Она нашла уязвимость и собрала эксплойт, а Opus 5 довёл его до рабочего состояния. OpenAI закрыла свою часть проблемы примерно за 14 часов и заплатила $6500. При этом половина этой суммы ушли на токены. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -1490,150 +1446,10 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789562455,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 43.89,
-      "candidates": 43,
-      "queue_before": 9,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 12,
-        "known_recent": 0,
-        "already_queued": 6,
-        "story_queue": 1,
-        "story_history": 8,
-        "added": 16,
-        "candidate_count": 43,
-        "admission_rate": 37.21,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.euronews.com/next/2026/09/16/billions-risk-being-locked-out-of-the-ai-revolution-due-to-smartphone-costs",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.0,
-          "bonus_total": 63.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Ограничение доступности железа сужает рынок сбыта для B2C ИИ-продуктов и требует пересмотра стратегии дистрибуции.",
-            "title": "Billions risk being locked out of the AI revolution due to smartphone costs",
-            "final_score": 62.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 11,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 188,
-        "raw_items": 1161,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 40,
-          "CNews": 95,
-          "Euronews": 50
-        },
-        "score_filtered": 1072,
-        "quality_filtered": 41,
-        "story_dedup": 5,
-        "candidates": 43,
-        "candidate_rate": 0.0442,
-        "score_buckets": {
-          "0–39": 1027,
-          "40–49": 85,
-          "50–59": 45,
-          "60–69": 4,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 3,
-          "6": 4,
-          "7": 2,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789562703,
       "status": "OK",
@@ -21973,11 +21789,99 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1789800785,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 11.41,
+      "candidates": 0,
+      "queue_before": 11,
+      "queue_after": 10,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://thecode.media/openai-predstavila-gpt-6-astra-kto-i-kogda-poluchit-dostup/",
+            "image_url": "https://thecode.media/wp-content/uploads/2026/09/1-5-1024x576.png",
+            "width": 1024,
+            "height": 576,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость адаптации бизнес-процессов под качественно новый уровень автономности ИИ.",
+            "title": "OpenAI заявила о наступлении «эпохи AGI» — компания представила GPT-6-Astra - thecode.media",
+            "final_score": 66.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 4,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1789800304.654956,
-  "last_publish_ts": 1789800304.654956,
+  "last_publish_ts": 1789800785.1447332,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
