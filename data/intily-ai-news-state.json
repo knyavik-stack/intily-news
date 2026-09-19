@@ -628,10 +628,12 @@
     "964e6c49b177eab6f906d056cf716124f8ad94c010afa0c51c81edc6fca7de79": 1789808942,
     "4f3c3eb5b8d773a1df019d0876faf24c040d5ecee0281ef002c5ba6f55a446e7": 1789810616,
     "bd808b48bf4979a1d535fc76a9a44d39afb220e9a08ce8f1535df86bbe50158f": 1789812055,
-    "2420d2a51a88ed190efc06296013dd56cf4e6d539d06f3de8096b5d2e37439b2": 1789813499
+    "2420d2a51a88ed190efc06296013dd56cf4e6d539d06f3de8096b5d2e37439b2": 1789813499,
+    "1a97b76d20d4d7c90e6381f91cbc0c7426101c66996268c9285a5613eb0a5288": 1789813977
   },
   "known": {
-    "2420d2a51a88ed190efc06296013dd56cf4e6d539d06f3de8096b5d2e37439b2": 1789812055.7490876
+    "2420d2a51a88ed190efc06296013dd56cf4e6d539d06f3de8096b5d2e37439b2": 1789812055.7490876,
+    "1a97b76d20d4d7c90e6381f91cbc0c7426101c66996268c9285a5613eb0a5288": 1789813977.0978785
   },
   "queue": [
     {
@@ -672,12 +674,12 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789813499.9185944,
+    "last_start_ts": 1789813977.0978785,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789813499.9185944,
-    "last_success_ts": 1789813499.9185944,
-    "last_candidates": 0,
+    "last_run_ts": 1789813977.0978785,
+    "last_success_ts": 1789813977.0978785,
+    "last_candidates": 13,
     "last_published": 1,
     "queue_size": 1
   },
@@ -685,7 +687,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789813499.9159448
+      "updated_at": 1789814014.1228127
     },
     "GROQ": {
       "disabled_until": 0,
@@ -709,13 +711,6 @@
     }
   },
   "stories": {
-    "9911a84146a072074867290e892649032e6cf562741e9519a1d7eb9fc79e48bc": {
-      "time": 1789727105,
-      "title": "AMD повысит цены на продукцию на 10% в четвёртом квартале",
-      "desc": "AMD заявила партнёрам, что планирует повысить цены примерно на 10% на некоторые CPU в четвёртом квартале 2026 года. На такой шаг компания идёт из‑за увеличения производственных расходов тайваньской TSMC, которая выпускает для неё CPU и GPU. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "d97f5f78848eb08190a3d6202c6b1c9bfe5100cf48e2a1873d98d8e5910743cb": {
       "time": 1789728778,
       "title": "Anthropic запустили в бете обновлённые Projects в Claude Code",
@@ -1093,12 +1088,18 @@
       "desc": "Anthropic, OpenAI safety push risks creating regulatory barrier for smaller AI rivals SME Futures",
       "source": "SME Futures",
       "region": "WORLD"
+    },
+    "1a97b76d20d4d7c90e6381f91cbc0c7426101c66996268c9285a5613eb0a5288": {
+      "time": 1789813977,
+      "title": "Anthropic пустит внешних аудиторов к разработке Claude. На проект направят минимум $2 млрд",
+      "desc": "Anthropic впервые пустит внешних аудиторов прямо внутрь разработки Claude, с доступом почти на уровне сотрудников. Они будут наблюдать за обучением моделей, проверять защитные механизмы и искать опасное поведение ещё до релиза. Неужели сами не справляются?! Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1115,93 +1116,10 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789569899,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 29.73,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 17,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Позволяет оценить готовность enterprise-решений к внедрению LLM-агентов в контурах с жестким комплаенсом.",
-            "title": "OpenText и Cohere сотрудничают в области агентного ИИ для регулируемых секторов - Unite.AI",
-            "final_score": 61.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": "OPENROUTER",
-        "failovers": 2,
-        "failures": 4,
-        "blocked": 10,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1789570139,
       "status": "OK",
@@ -21633,11 +21551,151 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1789813977,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 40.95,
+      "candidates": 13,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 6,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 6,
+        "added": 1,
+        "candidate_count": 13,
+        "admission_rate": 7.69,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/news/1084066/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1084066",
+            "image_url": "https://habr.com/share/publication/1084066/6525b82e9cfad66f4ead6ff6cf4defb2/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Критический риск цепочки поставок и SSO требует немедленного аудита безопасности инфраструктуры.",
+            "title": "Как уязвимость в обработке картинок привела к доступу к OpenAI",
+            "final_score": 78.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 30,
+        "raw_items": 360,
+        "source_counts": {
+          "TechCrunch AI": 5,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 9,
+          "CNews": 0,
+          "Euronews": 16
+        },
+        "score_filtered": 329,
+        "quality_filtered": 13,
+        "story_dedup": 5,
+        "candidates": 13,
+        "candidate_rate": 0.0394,
+        "score_buckets": {
+          "0–39": 305,
+          "40–49": 37,
+          "50–59": 16,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789812055.7490876,
-  "last_publish_ts": 1789813499.9185944,
+  "last_search_ts": 1789813977.0978785,
+  "last_publish_ts": 1789813977.0978785,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
