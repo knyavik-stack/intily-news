@@ -648,7 +648,6 @@
     "defb6b730139907da51a0d7d57a677ac291a0a9eba45192c5ce89a7c3c8f693e": 1789829335
   },
   "known": {
-    "c3e8af0a217e3259ed0849006b0e0048de239da338761401d835b73ddd0c8037": 1789825735.8196833,
     "cb20eaad1299dc8d6e5e23122fa00aa47a187f334da95fac48f80b62959b0c5a": 1789826699.129359,
     "93dfea9cba0894906ac192317f1bed03431b9fe8b37370b6e21145994e2b915d": 1789826699.129359,
     "5d01a42f5c024d822d444329cf7233c6bdd6bf55f9dc96d1f5d731fc1bd6ee64": 1789826699.129359,
@@ -656,30 +655,30 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789830778.093824,
+    "last_start_ts": 1789831495.6926177,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789830778.093824,
-    "last_success_ts": 1789830778.093824,
+    "last_run_ts": 1789831495.6926177,
+    "last_success_ts": 1789831495.6926177,
     "last_candidates": 25,
     "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1789834430.5122726,
-      "reason": "The read operation timed out",
-      "updated_at": 1789830830.5122747
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1789831527.8410535
     },
     "GROQ": {
-      "disabled_until": 1789834433.786658,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1789830833.78666
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1789831495.5860598
     },
     "OPENAI": {
-      "disabled_until": 1789917238.727916,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1789830838.7279177
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1789831495.5860598
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -687,9 +686,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1789834437.3324475,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1789830837.332449
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1789831495.5860598
     }
   },
   "stories": {
@@ -1067,96 +1066,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789583344,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 17.81,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.justsecurity.org/157417/international-lawyers-answer-ai-leaders-wakeup-call/?utm_source=rss&utm_medium=rss&utm_campaign=international-lawyers-answer-ai-leaders-wakeup-call",
-            "image_url": "https://www.justsecurity.org/wp-content/uploads/2026/09/GettyImages-2295365377.jpg",
-            "width": 1920,
-            "height": 1280,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.0,
-          "bonus_total": 63.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость закладывать юридические риски и комплаенс в архитектуру ИИ-продуктов уже сейчас.",
-            "title": "September 12th’s Red Alert: How International Lawyers Should Answer AI Leaders’ Wakeup Call - Just Security",
-            "final_score": 66.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789583815,
       "status": "OK",
@@ -22195,10 +22104,140 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1789831495,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 32.35,
+      "candidates": 25,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 18,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 7,
+        "added": 0,
+        "candidate_count": 25,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Необходимость адаптации внутренних процессов безопасности под новые стандарты аудита ИИ.",
+            "title": "Anthropic пустит внешних аудиторов к разработке Claude. На проект направят минимум $2 млрд",
+            "final_score": 78.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 40,
+        "raw_items": 588,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 11,
+          "CNews": 0,
+          "Euronews": 23
+        },
+        "score_filtered": 551,
+        "quality_filtered": 7,
+        "story_dedup": 5,
+        "candidates": 25,
+        "candidate_rate": 0.0456,
+        "score_buckets": {
+          "0–39": 522,
+          "40–49": 36,
+          "50–59": 27,
+          "60–69": 2,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789830778.093824,
+  "last_search_ts": 1789831495.6926177,
   "last_publish_ts": 1789829335.691895,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
