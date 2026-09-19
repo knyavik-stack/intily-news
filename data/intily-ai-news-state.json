@@ -648,19 +648,16 @@
     "defb6b730139907da51a0d7d57a677ac291a0a9eba45192c5ce89a7c3c8f693e": 1789829335
   },
   "known": {
-    "cb20eaad1299dc8d6e5e23122fa00aa47a187f334da95fac48f80b62959b0c5a": 1789826699.129359,
-    "93dfea9cba0894906ac192317f1bed03431b9fe8b37370b6e21145994e2b915d": 1789826699.129359,
-    "5d01a42f5c024d822d444329cf7233c6bdd6bf55f9dc96d1f5d731fc1bd6ee64": 1789826699.129359,
     "defb6b730139907da51a0d7d57a677ac291a0a9eba45192c5ce89a7c3c8f693e": 1789829335.691895
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789831495.6926177,
+    "last_start_ts": 1789832938.229933,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789831495.6926177,
-    "last_success_ts": 1789831495.6926177,
-    "last_candidates": 25,
+    "last_run_ts": 1789832938.229933,
+    "last_success_ts": 1789832938.229933,
+    "last_candidates": 26,
     "last_published": 0,
     "queue_size": 0
   },
@@ -668,7 +665,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789831527.8410535
+      "updated_at": 1789832975.2819052
     },
     "GROQ": {
       "disabled_until": 0,
@@ -692,13 +689,6 @@
     }
   },
   "stories": {
-    "7350f7a940632c3d2d3da529408d8b7bd0ba1db209ea16bb1ea10208262e1b83": {
-      "time": 1789746062,
-      "title": "Оштрафован на 90 миллионов разработчик «космических» чипов на замену американским. Задержался на год с лишним",
-      "desc": "Минпромторг в очередной раз оштрафовал АО НТЦ «Модуль» — на этот раз на 91,66 млн рублей за просрочку разработки радиационно-стойких малошумящих операционных усилителей для космических применений. Контракт стоимостью 126,7 млн рублей был сдан с задержкой в 432 дня.",
-      "source": "CNews",
-      "region": "RUSSIA"
-    },
     "1f1367eeca89f7ac7b3e65ae839d4ee319dd66cd04815b943f007416365f0813": {
       "time": 1789747036,
       "title": "How Hackers Used Claude Opus 5 to Breach OpenAI Systems - Security Boulevard",
@@ -1066,96 +1056,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789583815,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 5.76,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 16,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://kfgo.com/2026/09/16/anthropic-to-fold-claude-ai-features-into-one-interface-launches-document-tools/",
-            "image_url": "https://storage.googleapis.com/media.mwcradio.com/mimesis/2026-09/16/2026-09-16T164227Z_1_LYNXMPEM8F1QC_RTROPTP_3_ANTHROPIC-FINANCIAL-SERVICES.JPG",
-            "width": 800,
-            "height": 533,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Упрощение рабочего процесса с документами напрямую повышает скорость обработки информации для бизнеса.",
-            "title": "Anthropic to fold Claude AI features into one interface, launches document tools - The Mighty 790 KFGO",
-            "final_score": 65.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789585016,
       "status": "OK",
@@ -22234,10 +22134,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1789832938,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 37.25,
+      "candidates": 26,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 18,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 8,
+        "added": 0,
+        "candidate_count": 26,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Внедрение внешнего аудита безопасности станет отраслевым стандартом, влияющим на требования к комплаенсу при внедрении LLM в бизнес.",
+            "title": "Anthropic пустит внешних аудиторов к разработке Claude. На проект направят минимум $2 млрд",
+            "final_score": 78.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 43,
+        "raw_items": 595,
+        "source_counts": {
+          "TechCrunch AI": 4,
+          "VentureBeat AI": -1,
+          "The Verge AI": 3,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 11,
+          "CNews": 0,
+          "Euronews": 23
+        },
+        "score_filtered": 557,
+        "quality_filtered": 8,
+        "story_dedup": 4,
+        "candidates": 26,
+        "candidate_rate": 0.0471,
+        "score_buckets": {
+          "0–39": 527,
+          "40–49": 38,
+          "50–59": 26,
+          "60–69": 3,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789831495.6926177,
+  "last_search_ts": 1789832938.229933,
   "last_publish_ts": 1789829335.691895,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
