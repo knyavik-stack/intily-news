@@ -625,7 +625,6 @@
     "9d8c50732fdf4e03e07241d13b8e7fcd80c0f6b311f1739b1e948dcf90110e16": 1789804616
   },
   "known": {
-    "418a7d6b9961f78abae29ba8582b37fcaf37b58e5a17b3f14ea8b2e1ff5cd10b": 1789800304.654956,
     "be50947835480f7ff5d3d82d5487fcecf49ee9fb0d6093b1d6b9575af03300ff": 1789802695.0094414,
     "a0b6f1b4ea5481ba63a297eadcc2af7e36cb8ea5a38ea923267872eb4ee37822": 1789804616.9156682,
     "dc7ebd604636eede8ca9532ecf49f66e9963e08dbeb01b87a222bce7e196ccd4": 1789804616.9156682,
@@ -757,19 +756,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 44.0,
+        "base_score": 43.5,
         "audience_score": 5.0,
         "audience_bonus": 15.0,
-        "final_score": 59.0
+        "final_score": 58.5
       },
-      "base_score": 44.0,
+      "base_score": 43.5,
       "audience_bonus": 15.0,
       "score_stage": "final",
-      "score": 59.0,
+      "score": 58.5,
       "key": "bd808b48bf4979a1d535fc76a9a44d39afb220e9a08ce8f1535df86bbe50158f",
-      "importance": 59.0,
+      "importance": 58.5,
       "editorial_value": 50.0,
       "topics": [
         "models"
@@ -865,19 +864,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 45.5,
+        "base_score": 45.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 45.5
+        "final_score": 45.0
       },
-      "base_score": 45.5,
+      "base_score": 45.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 45.5,
+      "score": 45.0,
       "key": "dc7ebd604636eede8ca9532ecf49f66e9963e08dbeb01b87a222bce7e196ccd4",
-      "importance": 45.5,
+      "importance": 45.0,
       "editorial_value": 50.0,
       "topics": [
         "security_regulation"
@@ -901,19 +900,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 44.5,
+        "base_score": 44.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 44.5
+        "final_score": 44.0
       },
-      "base_score": 44.5,
+      "base_score": 44.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 44.5,
+      "score": 44.0,
       "key": "964e6c49b177eab6f906d056cf716124f8ad94c010afa0c51c81edc6fca7de79",
-      "importance": 44.5,
+      "importance": 44.0,
       "editorial_value": 50.0,
       "topics": [
         "models"
@@ -924,13 +923,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789804616.9156682,
+    "last_start_ts": 1789805914.783846,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789804616.9156682,
-    "last_success_ts": 1789804616.9156682,
-    "last_candidates": 17,
-    "last_published": 1,
+    "last_run_ts": 1789805914.783846,
+    "last_success_ts": 1789805914.783846,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 8
   },
   "providers": {
@@ -940,14 +939,14 @@
       "updated_at": 1789804679.1249745
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789804681.8209395
+      "disabled_until": 1789809420.80318,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1789805820.8031821
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789759975.7859073
+      "disabled_until": 1789892314.759965,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1789805914.7599664
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -955,26 +954,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789759975.7859073
+      "disabled_until": 1789809513.3264666,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1789805913.326469
     }
   },
   "stories": {
-    "c370400f527c415099c28e4fdb55a1c5cf45f9a395d2266b173576da4b0d514c": {
-      "time": 1789718734,
-      "title": "В AI‑режиме браузера Firefox появится поддержка модели Mistral Small 4",
-      "desc": "Mozilla и французская компания Mistral заключили партнёрство, в рамках которого модель Mistral Small 4 появится в AI‑режиме Firefox Smart Window. На первом этапе нейросеть станет доступна в США, Канаде и Франции. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
-    "589e99cb0f755e0bab1c38e4b321ca6c1cf28b4154daff85bae50a98388a7165": {
-      "time": 1789718934,
-      "title": "Vyzoxa, an EdTech Platform for AI Agent Development Learning, Empowers Learners Worldwide to Move From Using AI to Building With It, With a Mission to Shape One Million AI Innovators by 2030 - StreetInsider",
-      "desc": "Vyzoxa, an EdTech Platform for AI Agent Development Learning, Empowers Learners Worldwide to Move From Using AI to Building With It, With a Mission to Shape One Million AI Innovators by 2030 StreetInsider",
-      "source": "StreetInsider",
-      "region": "WORLD"
-    },
     "3adaef22087c3b2a2cda12b3512ea724acd12241105c7708020547791e91d914": {
       "time": 1789720855,
       "title": "Google DeepMind launches institute to widen the AGI debate",
@@ -1384,96 +1369,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789565582,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 15.44,
-      "candidates": 0,
-      "queue_before": 16,
-      "queue_after": 15,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://techno.nv.ua/it-industry/iskusstvennyy-intellekt-glava-nvidia-vystupil-protiv-novyh-zakonov-dlya-ii-50641794.html",
-            "image_url": "https://static.nv.ua/shared/system/Article/posters/003/364/290/original/aa2dba639afe7e54c179f1b1f65dd51d.jpg?q=85&stamp=20260916100451&f=webp",
-            "width": 1920,
-            "height": 960,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.0,
-          "bonus_total": 63.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Снижение регуляторного давления ускорит внедрение ИИ, но повышает риски ответственности для бизнеса.",
-            "title": "Государственное регулирование не нужно. Гендиректор Nvidia Дженсен Хуанг призвал возложить вопросы безопасности ИИ на компании - NV Техно",
-            "final_score": 69.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789565822,
       "status": "OK",
@@ -21885,6 +21780,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1789805914,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 95.94,
+      "candidates": 0,
+      "queue_before": 8,
+      "queue_after": 8,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
