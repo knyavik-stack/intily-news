@@ -656,30 +656,30 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789829335.691895,
+    "last_start_ts": 1789830778.093824,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789829335.691895,
-    "last_success_ts": 1789829335.691895,
-    "last_candidates": 26,
-    "last_published": 1,
+    "last_run_ts": 1789830778.093824,
+    "last_success_ts": 1789830778.093824,
+    "last_candidates": 25,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789829378.711057
+      "disabled_until": 1789834430.5122726,
+      "reason": "The read operation timed out",
+      "updated_at": 1789830830.5122747
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789824536.1231887
+      "disabled_until": 1789834433.786658,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1789830833.78666
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789824536.1231887
+      "disabled_until": 1789917238.727916,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1789830838.7279177
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -687,19 +687,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789824536.1231887
+      "disabled_until": 1789834437.3324475,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1789830837.332449
     }
   },
   "stories": {
-    "114a0e3c285d12ea0c99c1049207af78b24f9404d0f2d7bd0a751f0294827542": {
-      "time": 1789742967,
-      "title": "QuiverAI выпустила Arrow 2 — семейство моделей для работы с векторной графикой",
-      "desc": "Компания QuiverAI представила Arrow 2 — обновлённое семейство моделей для работы с векторной графикой. Нейросети могут генерировать SVG по текстовому описанию или референсу, конвертировать растровые изображения в векторные, редактировать уже готовые файлы и анимировать их. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "7350f7a940632c3d2d3da529408d8b7bd0ba1db209ea16bb1ea10208262e1b83": {
       "time": 1789746062,
       "title": "Оштрафован на 90 миллионов разработчик «космических» чипов на замену американским. Задержался на год с лишним",
@@ -1074,94 +1067,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789583103,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 8.89,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость адаптации рабочих процессов под ИИ-аналитику для сохранения конкурентоспособности в финансовом секторе.",
-            "title": "Anthropic Launches Claude For Advisors With Schwab And BlackRock - Forbes",
-            "final_score": 66.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789583344,
       "status": "OK",
@@ -22164,10 +22069,136 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1789830778,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 60.8,
+      "candidates": 25,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 18,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 7,
+        "added": 0,
+        "candidate_count": 25,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 40,
+        "raw_items": 573,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 12,
+          "CNews": 0,
+          "Euronews": 22
+        },
+        "score_filtered": 535,
+        "quality_filtered": 7,
+        "story_dedup": 6,
+        "candidates": 25,
+        "candidate_rate": 0.0469,
+        "score_buckets": {
+          "0–39": 507,
+          "40–49": 35,
+          "50–59": 28,
+          "60–69": 2,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789829335.691895,
+  "last_search_ts": 1789830778.093824,
   "last_publish_ts": 1789829335.691895,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
