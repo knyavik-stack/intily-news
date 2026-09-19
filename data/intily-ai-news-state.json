@@ -657,11 +657,11 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789846856.5585501,
+    "last_start_ts": 1789847097.2164302,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789846856.5585501,
-    "last_success_ts": 1789846856.5585501,
+    "last_run_ts": 1789847097.2164302,
+    "last_success_ts": 1789847097.2164302,
     "last_candidates": 22,
     "last_published": 0,
     "queue_size": 0
@@ -670,7 +670,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789846896.7858021
+      "updated_at": 1789847134.0622985
     },
     "GROQ": {
       "disabled_until": 0,
@@ -694,13 +694,6 @@
     }
   },
   "stories": {
-    "42fa8c9570ecdda31ec30f6879f32ace3b944da7d3121ae4e9fe07a932c7f5ec": {
-      "time": 1789760697,
-      "title": "\"Astra Group\" launched AI that independently analyzes technical failures and business data - www1.ru",
-      "desc": "\"Astra Group\" launched AI that independently analyzes technical failures and business data www1.ru",
-      "source": "www1.ru",
-      "region": "WORLD"
-    },
     "3bd96ea59d3e6ae415f5b1d83101b140728527cff0b4c52255fdf6b82dc7f67e": {
       "time": 1789794781,
       "title": "Одной картинки хватило, чтобы взломать OpenAI",
@@ -984,143 +977,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789627503,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 36.12,
-      "candidates": 31,
-      "queue_before": 14,
-      "queue_after": 16,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 8,
-        "known_recent": 5,
-        "already_queued": 12,
-        "story_queue": 2,
-        "story_history": 1,
-        "added": 3,
-        "candidate_count": 31,
-        "admission_rate": 9.68,
-        "dominant_block": "already_queued",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.5,
-          "bonus_total": 51.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходимость внедрения строгих протоколов проверки безопасности зависимостей из-за роста автоматизированных атак с применением LLM.",
-            "title": "Агентов OpenAI связали с атакой на RubyGems - prospect.com.ru",
-            "final_score": 70.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 7,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 57,
-        "raw_items": 489,
-        "source_counts": {
-          "TechCrunch AI": 6,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 7,
-          "Habr AI/News": 11,
-          "CNews": 9,
-          "Euronews": 21
-        },
-        "score_filtered": 442,
-        "quality_filtered": 14,
-        "story_dedup": 2,
-        "candidates": 31,
-        "candidate_rate": 0.0718,
-        "score_buckets": {
-          "0–39": 413,
-          "40–49": 43,
-          "50–59": 32,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 2,
-          "7": 1,
-          "8": 5,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789628712,
       "status": "OK",
@@ -22600,10 +22456,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1789847097,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 36.92,
+      "candidates": 22,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 17,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 5,
+        "added": 0,
+        "candidate_count": 22,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Ужесточение стандартов безопасности Anthropic напрямую влияет на комплаенс и риски при интеграции Claude в корпоративные продукты.",
+            "title": "Anthropic пустит внешних аудиторов к разработке Claude. На проект направят минимум $2 млрд",
+            "final_score": 77.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 36,
+        "raw_items": 693,
+        "source_counts": {
+          "TechCrunch AI": 5,
+          "VentureBeat AI": -1,
+          "The Verge AI": 3,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 11,
+          "CNews": 0,
+          "Euronews": 15
+        },
+        "score_filtered": 650,
+        "quality_filtered": 12,
+        "story_dedup": 9,
+        "candidates": 22,
+        "candidate_rate": 0.0335,
+        "score_buckets": {
+          "0–39": 614,
+          "40–49": 48,
+          "50–59": 28,
+          "60–69": 2,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789846856.5585501,
+  "last_search_ts": 1789847097.2164302,
   "last_publish_ts": 1789846617.0191193,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
