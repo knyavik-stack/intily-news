@@ -662,28 +662,25 @@
     "afe409b2b0ad01efe0fab93f4440e7bf25941b55a14aa6dea641d19c373ca6dd": 1789893416
   },
   "known": {
-    "d40e1b5b9d622872fdac5ff733e99cbb7b378d08d422c5c4b458f4fbb0fd3fee": 1789888618.8448834,
-    "c21fce5217e0c8622d82afcb19984cac716119ee9ad31660d161d1fb0b80a5cd": 1789888618.8448834,
-    "7ceb5606514f2b84edb54db17c0fe284f26be8f7841d5bb7571b621e544a53b3": 1789888618.8448834,
-    "c83c206a5dc87ae8e5664ef04c0d67b9b8173054206b1e00d344b6ba40f579a6": 1789888618.8448834,
-    "afe409b2b0ad01efe0fab93f4440e7bf25941b55a14aa6dea641d19c373ca6dd": 1789893416.0610774
+    "afe409b2b0ad01efe0fab93f4440e7bf25941b55a14aa6dea641d19c373ca6dd": 1789893416.0610774,
+    "7ceb5606514f2b84edb54db17c0fe284f26be8f7841d5bb7571b621e544a53b3": 1789894375.9543822
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789893416.0610774,
+    "last_start_ts": 1789894375.9543822,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789893416.0610774,
-    "last_success_ts": 1789893416.0610774,
+    "last_run_ts": 1789894375.9543822,
+    "last_success_ts": 1789894375.9543822,
     "last_candidates": 14,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789893456.4356742
+      "updated_at": 1789894415.0292692
     },
     "GROQ": {
       "disabled_until": 0,
@@ -707,13 +704,6 @@
     }
   },
   "stories": {
-    "a0b6f1b4ea5481ba63a297eadcc2af7e36cb8ea5a38ea923267872eb4ee37822": {
-      "time": 1789807018,
-      "title": "OpenAI is begging for AI regulation while allegedly ignoring the laws already on the books - Dagens.com",
-      "desc": "OpenAI is begging for AI regulation while allegedly ignoring the laws already on the books Dagens.com",
-      "source": "Dagens.com",
-      "region": "WORLD"
-    },
     "964e6c49b177eab6f906d056cf716124f8ad94c010afa0c51c81edc6fca7de79": {
       "time": 1789808942,
       "title": "Anthropic до IPO собирается выпустить ИИ-модель, которая станет ответом на OpenAI GPT-6 Astra - prospect.com.ru",
@@ -983,83 +973,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789636618,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 37.3,
-      "candidates": 0,
-      "queue_before": 8,
-      "queue_after": 8,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 12,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1789636855,
       "status": "OK",
@@ -22837,10 +22750,141 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1789894375,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": true,
+      "duration_sec": 39.08,
+      "candidates": 14,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 1,
+      "item_failures": 1,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 1,
+        "candidate_count": 14,
+        "admission_rate": 7.14,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 6.0,
+          "bonus_total": 54.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 4.0,
+            "bonus": 12.0,
+            "reason": "Регулирование школьного сектора создает барьеры для входа EdTech-стартапов, но не меняет ландшафт для B2B или Enterprise AI.",
+            "title": "Минпросвещения выпустило рекомендации по применению ИИ в школе - rbc.ru",
+            "final_score": 52.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 19,
+        "raw_items": 384,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 10,
+          "CNews": 0,
+          "Euronews": 9
+        },
+        "score_filtered": 361,
+        "quality_filtered": 2,
+        "story_dedup": 7,
+        "candidates": 14,
+        "candidate_rate": 0.0384,
+        "score_buckets": {
+          "0–39": 339,
+          "40–49": 24,
+          "50–59": 20,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789893416.0610774,
+  "last_search_ts": 1789894375.9543822,
   "last_publish_ts": 1789893416.0610774,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
