@@ -678,19 +678,19 @@
         "novelty": 0.0,
         "source_quality": 5.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 41.5,
+        "base_score": 41.0,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 59.5
+        "final_score": 59.0
       },
-      "base_score": 41.5,
+      "base_score": 41.0,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 59.5,
+      "score": 59.0,
       "key": "7ceb5606514f2b84edb54db17c0fe284f26be8f7841d5bb7571b621e544a53b3",
-      "importance": 59.5,
+      "importance": 59.0,
       "editorial_value": 50.0,
       "topics": [
         "applications"
@@ -715,19 +715,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 40.5,
+        "base_score": 40.0,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 58.5
+        "final_score": 58.0
       },
-      "base_score": 40.5,
+      "base_score": 40.0,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 58.5,
+      "score": 58.0,
       "key": "2af4014066abd03b55c97915c60d24dc5b13216834681fef972158941a5fc2c3",
-      "importance": 58.5,
+      "importance": 58.0,
       "editorial_value": 50.0,
       "topics": [
         "business",
@@ -752,20 +752,20 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 40.5,
+        "base_score": 40.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 40.5
+        "final_score": 40.0
       },
-      "base_score": 40.5,
+      "base_score": 40.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 40.5,
+      "score": 40.0,
       "key": "0e8f3647e937f1a290ae5c7785054ab2870cdde784af5f5c7b0074e0608b30f8",
-      "importance": 40.5,
-      "editorial_value": 46.5,
+      "importance": 40.0,
+      "editorial_value": 46.0,
       "topics": [
         "business",
         "security_regulation"
@@ -775,30 +775,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789882146.2799726,
+    "last_start_ts": 1789883625.3553004,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789882146.2799726,
-    "last_success_ts": 1789882146.2799726,
-    "last_candidates": 0,
-    "last_published": 1,
+    "last_run_ts": 1789883625.3553004,
+    "last_success_ts": 1789883625.3553004,
+    "last_candidates": 9,
+    "last_published": 0,
     "queue_size": 3
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789882146.2735353
+      "disabled_until": 1789887196.7195923,
+      "reason": "The read operation timed out",
+      "updated_at": 1789883596.7195942
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789846616.9134257
+      "disabled_until": 1789887199.7316065,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1789883599.731608
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789846616.9134257
+      "disabled_until": 1789970025.351652,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1789883625.351653
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -806,9 +806,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789846616.9134257
+      "disabled_until": 1789887223.737688,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1789883623.737689
     }
   },
   "stories": {
@@ -1102,146 +1102,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789629662,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 46.35,
-      "candidates": 31,
-      "queue_before": 12,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 12,
-        "known_recent": 0,
-        "already_queued": 11,
-        "story_queue": 1,
-        "story_history": 1,
-        "added": 6,
-        "candidate_count": 31,
-        "admission_rate": 19.35,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 400: Bad Request": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 400: Bad Request"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.33,
-          "bonus_total": 75.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра стратегии безопасности и внедрения дополнительных слоев валидации ответов ИИ в продакшене.",
-            "title": "OpenAI Discloses 6 New AI Model Safety Incidents Since March - The Tech Buzz",
-            "final_score": 67.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 6,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 68,
-        "raw_items": 516,
-        "source_counts": {
-          "TechCrunch AI": 6,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 6,
-          "Habr AI/News": 15,
-          "CNews": 14,
-          "Euronews": 24
-        },
-        "score_filtered": 467,
-        "quality_filtered": 16,
-        "story_dedup": 2,
-        "candidates": 31,
-        "candidate_rate": 0.0692,
-        "score_buckets": {
-          "0–39": 434,
-          "40–49": 48,
-          "50–59": 32,
-          "60–69": 2,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 1,
-          "6": 2,
-          "7": 2,
-          "8": 6,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789630438,
       "status": "OK",
@@ -22760,10 +22620,131 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1789883625,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 79.65,
+      "candidates": 9,
+      "queue_before": 3,
+      "queue_after": 3,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 5,
+        "known_recent": 0,
+        "already_queued": 3,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 9,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 14,
+        "raw_items": 371,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 5,
+          "CNews": 0,
+          "Euronews": 6
+        },
+        "score_filtered": 354,
+        "quality_filtered": 3,
+        "story_dedup": 5,
+        "candidates": 9,
+        "candidate_rate": 0.0252,
+        "score_buckets": {
+          "0–39": 340,
+          "40–49": 17,
+          "50–59": 14,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789881176.4802299,
+  "last_search_ts": 1789883625.3553004,
   "last_publish_ts": 1789882146.2799726,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
