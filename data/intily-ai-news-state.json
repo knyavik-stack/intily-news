@@ -661,8 +661,6 @@
     "c83c206a5dc87ae8e5664ef04c0d67b9b8173054206b1e00d344b6ba40f579a6": 1789889343
   },
   "known": {
-    "8a0a9486e91cf6abd72b74f72072fac85e4db5015742bdebd6ab117fbb47697a": 1789886457.439276,
-    "30cfb095833e88acb0fb15ede6a3208ed0556fbc62e3f6b10421e297963d08d6": 1789886457.439276,
     "d40e1b5b9d622872fdac5ff733e99cbb7b378d08d422c5c4b458f4fbb0fd3fee": 1789888618.8448834,
     "c21fce5217e0c8622d82afcb19984cac716119ee9ad31660d161d1fb0b80a5cd": 1789888618.8448834,
     "7ceb5606514f2b84edb54db17c0fe284f26be8f7841d5bb7571b621e544a53b3": 1789888618.8448834,
@@ -670,12 +668,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789890295.1103208,
+    "last_start_ts": 1789891977.914926,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789890295.1103208,
-    "last_success_ts": 1789890295.1103208,
-    "last_candidates": 13,
+    "last_run_ts": 1789891977.914926,
+    "last_success_ts": 1789891977.914926,
+    "last_candidates": 11,
     "last_published": 0,
     "queue_size": 0
   },
@@ -683,7 +681,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789890327.5901387
+      "updated_at": 1789892016.8512154
     },
     "GROQ": {
       "disabled_until": 0,
@@ -707,20 +705,6 @@
     }
   },
   "stories": {
-    "be50947835480f7ff5d3d82d5487fcecf49ee9fb0d6093b1d6b9575af03300ff": {
-      "time": 1789804137,
-      "title": "Google Gemini Cybersecurity Incident: What Happened? - Business Outreach Magazine",
-      "desc": "Google Gemini Cybersecurity Incident: What Happened? Business Outreach Magazine",
-      "source": "Business Outreach Magazine",
-      "region": "WORLD"
-    },
-    "9d8c50732fdf4e03e07241d13b8e7fcd80c0f6b311f1739b1e948dcf90110e16": {
-      "time": 1789804616,
-      "title": "Samsung Backs Nvidia AI Chip Rival Euclyd In $230M Funding Round - Memeburn",
-      "desc": "Samsung Backs Nvidia AI Chip Rival Euclyd In $230M Funding Round Memeburn",
-      "source": "Memeburn",
-      "region": "WORLD"
-    },
     "dc7ebd604636eede8ca9532ecf49f66e9963e08dbeb01b87a222bce7e196ccd4": {
       "time": 1789806551,
       "title": "Cybersecurity in the Age of AI, OpenAI-Hugging Face Incident 2026 - Vajiram & Ravi",
@@ -997,96 +981,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789634935,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 18.41,
-      "candidates": 0,
-      "queue_before": 13,
-      "queue_after": 12,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENS": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INV"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Снижение операционных затрат на SOC и ускорение реагирования на киберугрозы через автоматизацию.",
-            "title": "Первое в России NTA-решение, усиленное генеративным ИИ: понимает контекст бизнеса, убирает рутину и ускоряет реагирование SOC",
-            "final_score": 66.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789635655,
       "status": "OK",
@@ -22731,10 +22625,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1789891977,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 38.97,
+      "candidates": 11,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 8,
+        "known_recent": 1,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 11,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Риск замедления темпов внедрения технологий из-за регуляторных ограничений и картельных договоренностей.",
+            "title": "Lawsuit says Anthropic, OpenAI, SpaceXAI and Google made illegal agreement on AI slowdown - livingstonenterprise.net",
+            "final_score": 64.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 19,
+        "raw_items": 364,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 8,
+          "CNews": 0,
+          "Euronews": 9
+        },
+        "score_filtered": 345,
+        "quality_filtered": 1,
+        "story_dedup": 7,
+        "candidates": 11,
+        "candidate_rate": 0.0319,
+        "score_buckets": {
+          "0–39": 322,
+          "40–49": 24,
+          "50–59": 17,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789890295.1103208,
+  "last_search_ts": 1789891977.914926,
   "last_publish_ts": 1789889343.0559263,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
