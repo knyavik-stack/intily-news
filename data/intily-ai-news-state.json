@@ -678,19 +678,16 @@
     "2ae0cd7bef0c1e4c3c180b98b3e2376e6d5e94eb190bd811d88c80ae0f08b1e8": 1789918135
   },
   "known": {
-    "2525eca1b14d0b44f90a53b1aa8bd4d2c98d7e30643c53242c86b96fbbbbd3c1": 1789914775.304232,
-    "2ae0cd7bef0c1e4c3c180b98b3e2376e6d5e94eb190bd811d88c80ae0f08b1e8": 1789914775.304232,
-    "b0fe5a4b7d7f24d016cc172de98e7ff2b1fbad89147a3ed376c7ebb0b5646101": 1789914775.304232,
     "eae264acc91a5f852c2722ce2e08d914e78916d5ff959d47c3aed911756b4efc": 1789917894.4683104
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789919335.9238212,
+    "last_start_ts": 1789920774.8634605,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789919335.9238212,
-    "last_success_ts": 1789919335.9238212,
-    "last_candidates": 12,
+    "last_run_ts": 1789920774.8634605,
+    "last_success_ts": 1789920774.8634605,
+    "last_candidates": 13,
     "last_published": 0,
     "queue_size": 0
   },
@@ -698,7 +695,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789919374.190062
+      "updated_at": 1789920815.2715423
     },
     "GROQ": {
       "disabled_until": 0,
@@ -956,96 +953,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789661825,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 20.6,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.cnews.ru/news/top/2026-07-15_vlasti_potratyat_bolee_4_mlrd",
-            "image_url": "https://static.cnews.ru/img/news/2023/08/31/ekb_1.jpg",
-            "width": 700,
-            "height": 466,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.0,
-          "bonus_total": 63.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 5.0,
-            "bonus": 15.0,
-            "reason": "Новость носит ознакомительный характер и не дает немедленных инструментов для изменения бизнес-процессов или стратегии.",
-            "title": "Власти потратят более 4 миллиардов на разработку материалов для выпуска чипов",
-            "final_score": 69.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789662056,
       "status": "OK",
@@ -23680,10 +23587,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1789920774,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 40.46,
+      "candidates": 13,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 0,
+        "candidate_count": 13,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость усиления кибербезопасности из-за роста автоматизированных атак с применением ИИ.",
+            "title": "ЦИК зафиксировал рост кибератак на 8300 % и риски применения ИИ в информационных атаках - realnoevremya.ru",
+            "final_score": 71.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 36,
+        "raw_items": 743,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 3,
+          "Habr AI/News": 12,
+          "CNews": 0,
+          "Euronews": 18
+        },
+        "score_filtered": 714,
+        "quality_filtered": 9,
+        "story_dedup": 7,
+        "candidates": 13,
+        "candidate_rate": 0.0184,
+        "score_buckets": {
+          "0–39": 685,
+          "40–49": 38,
+          "50–59": 20,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789919335.9238212,
+  "last_search_ts": 1789920774.8634605,
   "last_publish_ts": 1789918135.0838697,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
