@@ -676,27 +676,29 @@
     "b0fe5a4b7d7f24d016cc172de98e7ff2b1fbad89147a3ed376c7ebb0b5646101": 1789915022,
     "eae264acc91a5f852c2722ce2e08d914e78916d5ff959d47c3aed911756b4efc": 1789917894,
     "2ae0cd7bef0c1e4c3c180b98b3e2376e6d5e94eb190bd811d88c80ae0f08b1e8": 1789918135,
-    "0c5adfce978475903862df1443509610b005d15f5c3c29d6c67f144ef4806ce4": 1789923175
+    "0c5adfce978475903862df1443509610b005d15f5c3c29d6c67f144ef4806ce4": 1789923175,
+    "6ed326b420b64bc725b8dacaf51a215d0e59133da036720e09b8e3285f441459": 1789927019
   },
   "known": {
-    "0c5adfce978475903862df1443509610b005d15f5c3c29d6c67f144ef4806ce4": 1789923175.6707923
+    "0c5adfce978475903862df1443509610b005d15f5c3c29d6c67f144ef4806ce4": 1789923175.6707923,
+    "6ed326b420b64bc725b8dacaf51a215d0e59133da036720e09b8e3285f441459": 1789927019.042467
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789926055.977219,
+    "last_start_ts": 1789927019.042467,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789926055.977219,
-    "last_success_ts": 1789926055.977219,
-    "last_candidates": 13,
-    "last_published": 0,
+    "last_run_ts": 1789927019.042467,
+    "last_success_ts": 1789927019.042467,
+    "last_candidates": 15,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789926091.2291234
+      "updated_at": 1789927069.9434657
     },
     "GROQ": {
       "disabled_until": 0,
@@ -936,11 +938,17 @@
       "desc": "Alphabet and Meta launch competing AI agents CC and Muse Crypto Briefing",
       "source": "Crypto Briefing",
       "region": "WORLD"
+    },
+    "6ed326b420b64bc725b8dacaf51a215d0e59133da036720e09b8e3285f441459": {
+      "time": 1789927019,
+      "title": "Google's Gemini AI carried out cyberattacks, guessed passwords - abs-cbn.com",
+      "desc": "Google's Gemini AI carried out cyberattacks, guessed passwords abs-cbn.com",
+      "source": "abs-cbn.com",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -957,85 +965,11 @@
     "WORLD",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789668553,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 25.97,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 19,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 2,
-        "blocked": 14,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1789668781,
       "status": "OK",
@@ -23893,11 +23827,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1789927019,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 59.93,
+      "candidates": 15,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 12,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 1,
+        "candidate_count": 15,
+        "admission_rate": 6.67,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 400: Bad Request": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 400: Bad Request"
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 8.33,
+          "bonus_total": 75.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 3,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Необходим немедленный пересмотр политик безопасности и ограничение доступа LLM к чувствительным данным из-за риска несанкционированного использования.",
+            "title": "Google's Gemini AI carried out cyberattacks, guessed passwords - abs-cbn.com",
+            "final_score": 68.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 33,
+        "raw_items": 794,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 3,
+          "Habr AI/News": 12,
+          "CNews": 0,
+          "Euronews": 15
+        },
+        "score_filtered": 764,
+        "quality_filtered": 10,
+        "story_dedup": 5,
+        "candidates": 15,
+        "candidate_rate": 0.0197,
+        "score_buckets": {
+          "0–39": 729,
+          "40–49": 45,
+          "50–59": 20,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789926055.977219,
-  "last_publish_ts": 1789923175.6707923,
+  "last_search_ts": 1789927019.042467,
+  "last_publish_ts": 1789927019.042467,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
