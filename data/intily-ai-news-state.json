@@ -683,12 +683,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1789925817.742535,
+    "last_start_ts": 1789926055.977219,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789925817.742535,
-    "last_success_ts": 1789925817.742535,
-    "last_candidates": 12,
+    "last_run_ts": 1789926055.977219,
+    "last_success_ts": 1789926055.977219,
+    "last_candidates": 13,
     "last_published": 0,
     "queue_size": 0
   },
@@ -696,7 +696,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789925853.096196
+      "updated_at": 1789926091.2291234
     },
     "GROQ": {
       "disabled_until": 0,
@@ -961,143 +961,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789668320,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 61.66,
-      "candidates": 54,
-      "queue_before": 19,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 27,
-        "known_recent": 0,
-        "already_queued": 13,
-        "story_queue": 3,
-        "story_history": 4,
-        "added": 7,
-        "candidate_count": 54,
-        "admission_rate": 12.96,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://nypost.com/2026/09/17/us-news/lawler-and-gottheimer-roll-out-bill-targeting-rogue-ai-agents-to-prevent-a-terminator-sequel/",
-            "image_url": "https://nypost.com/wp-content/uploads/sites/2/2026/09/newspress-collage-br138cr7y-1789662314745.jpg?quality=75&strip=all&1789647973&w=1200",
-            "width": 1200,
-            "height": 799,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.5,
-          "bonus_total": 51.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Нужно обновить политику безопасности ИИ сейчас",
-            "title": "Lawler and Gottheimer roll out bill targeting rogue AI agents to prevent ‘a Terminator sequel’ - New York Post",
-            "final_score": 64.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 187,
-        "raw_items": 1362,
-        "source_counts": {
-          "TechCrunch AI": 6,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 36,
-          "CNews": 92,
-          "Euronews": 50
-        },
-        "score_filtered": 1266,
-        "quality_filtered": 37,
-        "story_dedup": 5,
-        "candidates": 54,
-        "candidate_rate": 0.046,
-        "score_buckets": {
-          "0–39": 1175,
-          "40–49": 124,
-          "50–59": 56,
-          "60–69": 7,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 2,
-          "6": 6,
-          "7": 7,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789668553,
       "status": "OK",
@@ -23900,10 +23763,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1789926055,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 35.36,
+      "candidates": 13,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 8,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 5,
+        "added": 0,
+        "candidate_count": 13,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.5,
+          "bonus_total": 51.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Необходимость срочного обновления систем кибербезопасности из-за кратного роста автоматизированных угроз.",
+            "title": "ЦИК зафиксировал рост кибератак на 8300 % и риски применения ИИ в информационных атаках - Реальное время",
+            "final_score": 73.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 33,
+        "raw_items": 795,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 3,
+          "Habr AI/News": 12,
+          "CNews": 0,
+          "Euronews": 15
+        },
+        "score_filtered": 764,
+        "quality_filtered": 11,
+        "story_dedup": 7,
+        "candidates": 13,
+        "candidate_rate": 0.0171,
+        "score_buckets": {
+          "0–39": 733,
+          "40–49": 42,
+          "50–59": 20,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789925817.742535,
+  "last_search_ts": 1789926055.977219,
   "last_publish_ts": 1789923175.6707923,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
