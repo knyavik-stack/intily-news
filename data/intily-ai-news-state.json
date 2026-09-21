@@ -694,7 +694,10 @@
     "09897d5c02eba5315dbff4c15f3fc218782d0b83a92b7268f4f301e7afc483c2": 1789967816.69929,
     "c72f1863c4fabac7d69ed69f4a4bed5cce6d35888330fc9cdbb4cdab8da1df47": 1789967816.69929,
     "6f2973d6180a424db388e76c72bda9c6766cb19c036c641c35a94575afaff0ed": 1789970002.3654666,
-    "c95283fcca0ccf062102ee7ed9374a73d7b3732e79fe2bda4bc8e32a82a03a40": 1789970002.3654666
+    "c95283fcca0ccf062102ee7ed9374a73d7b3732e79fe2bda4bc8e32a82a03a40": 1789970002.3654666,
+    "1bfa569db2239c6f421f164466b5562a3b57d9530f59734f07f443486d296f24": 1789972618.945233,
+    "cc4b6dfb33df842cb899f490dd3c0172ccfe2b6dcdfcda37890f7a141a8af169": 1789972618.945233,
+    "768f4b7ef8524968313e0d7b051af8cb3f95f8c973c70b3a7c82f0d5c229c110": 1789972618.945233
   },
   "queue": [
     {
@@ -732,7 +735,11 @@
       ],
       "audience_score": 7.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1789972618,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | OPENROUTER: OPENROUTER_EMPTY_OR_INVALID_CONTENT | OPENAI: OPENAI_HTTP_429: {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/bill",
+      "failure_count": 1,
+      "next_retry_at": 1789972918
     },
     {
       "region": "WORLD",
@@ -768,7 +775,11 @@
         "security_regulation"
       ],
       "audience_score": 7.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1789972618,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1789972918
     },
     {
       "region": "WORLD",
@@ -862,49 +873,159 @@
         "freshness": 2.0,
         "low_signal_penalty": 0.0,
         "base_score": 40.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 40.0
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 58.0
       },
       "base_score": 40.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 40.0,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 58.0,
       "key": "c95283fcca0ccf062102ee7ed9374a73d7b3732e79fe2bda4bc8e32a82a03a40",
-      "importance": 40.0,
-      "editorial_value": 46.0,
+      "importance": 58.0,
+      "editorial_value": 50.0,
       "topics": [
         "security_regulation"
+      ],
+      "audience_score": 6.0,
+      "tier": "A"
+    },
+    {
+      "region": "WORLD",
+      "title": "Google releases Kotlin ADK 1.0 for AI agents, on-device capabilities - TechGig",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQN3R1MGZ3RVhFUm92dzFBU20yUnlIRi1WNXROdFUtWDlkdVBRVlliSTRvaFMxNTVGeEVIeEhUQkxZWFdOVEFiWWhMblJPYWJIN05RUEJMMnpRd19mb2Z5NGRrMlR0SDZsQ3YtMXVWWElJNTJIVXRxU19ObGhnRi1acWJ1RVZzeGxoaEZISktIUmRlTDBMN2p1V0pKeXZaQndmb2lyQ2EzcWfSAa4BQVVfeXFMT2JtdE5TdmJFV3hmaVNRZmFBYUlTYWlFMzFrZnduNTNmZ2Q4Uy1ud3FtbThwdDdnTVRQa2lYVVVhVlQ4b0dJaWdWTzR3VXpIX3IyNlRrbHk3NFdHN2RkNlpKMUoxa3NmNHI0RG1Xa1dBSFgxX1pZTjNzdnhzTzg0OUxrbmNkWDBzdFRXQ21sNXdxZDhQcjVYVjhGZWtUQUpXLTFoeTZtNFdKQ19sWWF3?oc=5",
+      "desc": "Google releases Kotlin ADK 1.0 for AI agents, on-device capabilities TechGig",
+      "source": "TechGig",
+      "time": 1789952014.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 10.0,
+        "event_concreteness": 13.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 1.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 44.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 44.0
+      },
+      "base_score": 44.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 44.0,
+      "key": "1bfa569db2239c6f421f164466b5562a3b57d9530f59734f07f443486d296f24",
+      "importance": 44.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents"
+      ],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "ФБР увеличила использование ИИ на 605% для предотвращения преступлений",
+      "link": "https://habr.com/ru/news/1084482/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1084482",
+      "desc": "Директор Федерального бюро расследований Каш Патель рассказал , что он ответственен за увеличение использования инструментов искусственного интеллекта в ведомстве на 605%. При законном использовании нейросети — это важнейший инструмент для обработки данных, заявил Патель. По его словам, эта технология может оказаться бесценной для защиты детей от шутинга в школах. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1789971240.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 6.0,
+        "event_concreteness": 13.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 43.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 43.0
+      },
+      "base_score": 43.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 43.0,
+      "key": "cc4b6dfb33df842cb899f490dd3c0172ccfe2b6dcdfcda37890f7a141a8af169",
+      "importance": 43.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "security_regulation",
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "Ex-OpenAI Researcher Launches Jev, A Chatbot That Makes Decisions Instead Of Text - ETV Bharat",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNaVNfTE50QTRWWGdBWUVhSDZPZXAxMU1wa291RjVrdkx2N0VHMlkyQWcxSlN4OGk0ZjY2VTlhUW9uRjlpc2ZsNlJNcVYxMmQxWVpBRzhyTTJLdFIzNDA5d0oybW52dENrd2lraDFyTVJwRUU5MTdmekVFVEQtZ0ZuMVNjY29EbFF5Z0xYSlpsVDJtNFBDXzBRT0lkb0F5Q0JXRXd6NzQ4eGIxOWJG0gGyAUFVX3lxTE1JM3FnbDlGaGlzR2IwYUxPS1VMZzY3RkgwV2Rrc3VXcmxmUk50VGpVVUQ0YTlMMURrbnpRSE54SWZWTHRDdWVidDE4OWdKWG1tNlctZ3phcl9ncmFEUXFiemxRT0JWMXRaYm9LZ1cyTlp2SDhzMEhWLWliNVdDS1dQSFBURWhEdklIeWkyLUpjdDRici1MS2pKRnJBaWw4Y290YllfclBFa0pwMFUyZTFaR2c?oc=5",
+      "desc": "Ex-OpenAI Researcher Launches Jev, A Chatbot That Makes Decisions Instead Of Text ETV Bharat",
+      "source": "ETV Bharat",
+      "time": 1789971006.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 3.0,
+        "impact": 7.0,
+        "event_concreteness": 14.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 41.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 41.0
+      },
+      "base_score": 41.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 41.0,
+      "key": "768f4b7ef8524968313e0d7b051af8cb3f95f8c973c70b3a7c82f0d5c229c110",
+      "importance": 41.0,
+      "editorial_value": 47.0,
+      "topics": [
+        "research"
       ],
       "audience_score": null,
       "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1789971182.3853252,
+    "last_start_ts": 1789972618.945233,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789971182.3853252,
-    "last_success_ts": 1789971182.3853252,
-    "last_candidates": 0,
-    "last_published": 1,
-    "queue_size": 5
+    "last_run_ts": 1789972618.945233,
+    "last_success_ts": 1789972618.945233,
+    "last_candidates": 14,
+    "last_published": 0,
+    "queue_size": 8
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789971187.7158053
+      "disabled_until": 1789976277.143024,
+      "reason": "The read operation timed out",
+      "updated_at": 1789972677.143025
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789971175.3014913
+      "disabled_until": 1789976280.8181744,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1789972680.8181753
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789971175.3014913
+      "disabled_until": 1790059125.1551573,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1789972725.1551583
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -912,9 +1033,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1789971175.3014913
+      "disabled_until": 1789976323.8768368,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1789972723.8768382
     }
   },
   "stories": {
@@ -1166,94 +1287,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789673578,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 3.34,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 16,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 10.0,
-          "bonus_total": 30.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Оценка компании является чистым финансовым показателем без доказанного влияния на операционную деятельность.",
-            "title": "Manus AI Targets $4 Billion Valuation After Meta Split - TechStory",
-            "final_score": 72.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789675022,
       "status": "OK",
@@ -24365,10 +24398,144 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1789972618,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": true,
+      "duration_sec": 108.84,
+      "candidates": 14,
+      "queue_before": 5,
+      "queue_after": 8,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 5,
+        "known_recent": 0,
+        "already_queued": 4,
+        "story_queue": 1,
+        "story_history": 1,
+        "added": 3,
+        "candidate_count": 14,
+        "admission_rate": 21.43,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Необходим немедленный аудит безопасности промптов и доступа к данным для всех систем, использующих LLM.",
+            "title": "You too Google! Google Confirms Gemini Breached 3 Companies in AI Security Tests - MarkTechPost",
+            "final_score": 74.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 34,
+        "raw_items": 526,
+        "source_counts": {
+          "TechCrunch AI": 3,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 7,
+          "CNews": 8,
+          "Euronews": 15
+        },
+        "score_filtered": 498,
+        "quality_filtered": 10,
+        "story_dedup": 4,
+        "candidates": 14,
+        "candidate_rate": 0.0285,
+        "score_buckets": {
+          "0–39": 478,
+          "40–49": 30,
+          "50–59": 18,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 0,
+          "7": 2,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "OPENROUTER",
+        "failovers": 3,
+        "failures": 4,
+        "blocked": 10,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789970002.3654666,
+  "last_search_ts": 1789972618.945233,
   "last_publish_ts": 1789971182.3853252,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
