@@ -702,12 +702,14 @@
     "23a85b7aa3b7b255cc6f4118ee0c0a1926497dd3dd320093c094e5cb37a9c1b2": 1789986775,
     "beaa17afac68c1fb773a54efdc746cfa8f525c58bddbc0f7b2566b9f14d5b443": 1789987495,
     "d46c29fc8826a6f43ed2ede439f0f2d731f5c197dec1e8f7dc58b5e04653e247": 1789987978,
-    "a8bb78d5bb60f8481579658e1e335375305a0fbd14df35131de7e2e46cf3e395": 1789990619
+    "a8bb78d5bb60f8481579658e1e335375305a0fbd14df35131de7e2e46cf3e395": 1789990619,
+    "b40fa8415eae73f5068020cbdf47fda77d5ed3716822c0666225025ec5704060": 1789991624
   },
   "known": {
     "7f1c7f4d2e39ddc2ec6f41f67167b567c631542e045f17e4bcb09ddc5bcd6f86": 1789987495.752872,
     "a8bb78d5bb60f8481579658e1e335375305a0fbd14df35131de7e2e46cf3e395": 1789989898.972848,
-    "2d9027ac7e86e6eb7b8fb50719b218a5c14409bff5888428f0d2c18ffb5274a1": 1789990619.4950788
+    "2d9027ac7e86e6eb7b8fb50719b218a5c14409bff5888428f0d2c18ffb5274a1": 1789990619.4950788,
+    "b40fa8415eae73f5068020cbdf47fda77d5ed3716822c0666225025ec5704060": 1789991624.130937
   },
   "queue": [
     {
@@ -729,31 +731,31 @@
         "freshness": 2.0,
         "low_signal_penalty": 0.0,
         "base_score": 47.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 47.5
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 68.5
       },
       "base_score": 47.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 47.5,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 68.5,
       "key": "2d9027ac7e86e6eb7b8fb50719b218a5c14409bff5888428f0d2c18ffb5274a1",
-      "importance": 47.5,
+      "importance": 68.5,
       "editorial_value": 50.0,
       "topics": [
         "security_regulation"
       ],
-      "audience_score": null,
+      "audience_score": 7.0,
       "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1789990619.4950788,
+    "last_start_ts": 1789991624.130937,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789990619.4950788,
-    "last_success_ts": 1789990619.4950788,
-    "last_candidates": 21,
+    "last_run_ts": 1789991624.130937,
+    "last_success_ts": 1789991624.130937,
+    "last_candidates": 22,
     "last_published": 1,
     "queue_size": 1
   },
@@ -761,7 +763,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1789990648.386492
+      "updated_at": 1789991657.611139
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1050,10 +1052,16 @@
       "desc": "Xicom Launches Agentic and Multi-Agent AI Development Services to Move Enterprises from Pilot to Production openPR.com",
       "source": "openPR.com",
       "region": "WORLD"
+    },
+    "b40fa8415eae73f5068020cbdf47fda77d5ed3716822c0666225025ec5704060": {
+      "time": 1789991624,
+      "title": "«Яндекс» выпустил мощный суверенный ИИ, хорошо справляющийся с вопросами на русском языке",
+      "desc": "«Яндекс» представил эффективную экспериментальную модель Alice AI Foundation LLM с архитектурой Mixture of Experts, которая при относительно небольшом числе активных параметров (80 млрд) показывает сильные результаты в математике, программировании и русскоязычных задачах. При обработке запросов задействуются только 3 млрд из них, благодаря чему модель требует меньше вычислительных ресурсов.",
+      "source": "CNews",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -1072,150 +1080,10 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789720855,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 40.67,
-      "candidates": 17,
-      "queue_before": 1,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 13,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 1,
-        "candidate_count": 17,
-        "admission_rate": 5.88,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/",
-            "image_url": "https://techcrunch.com/wp-content/uploads/2023/05/GettyImages-1481927442.jpg?resize=1200,800",
-            "width": 1200,
-            "height": 800,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 6.67,
-          "bonus_total": 60.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 5.0,
-            "bonus": 15.0,
-            "reason": "Это лишь площадка для дискуссий, не дающая инструментов для немедленного внедрения или изменения бизнес-процессов.",
-            "title": "Google DeepMind launches institute to widen the AGI debate",
-            "final_score": 60.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 84,
-        "raw_items": 519,
-        "source_counts": {
-          "TechCrunch AI": 4,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 2,
-          "Habr AI/News": 17,
-          "CNews": 34,
-          "Euronews": 27
-        },
-        "score_filtered": 470,
-        "quality_filtered": 20,
-        "story_dedup": 12,
-        "candidates": 17,
-        "candidate_rate": 0.0391,
-        "score_buckets": {
-          "0–39": 428,
-          "40–49": 62,
-          "50–59": 26,
-          "60–69": 3,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789722059,
       "status": "OK",
@@ -24518,11 +24386,150 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1789991624,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 50.13,
+      "candidates": 22,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 16,
+        "known_recent": 1,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 1,
+        "candidate_count": 22,
+        "admission_rate": 4.55,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://www.cnews.ru/news/top/2026-09-21_yandeks_vypustil_moshchnuyu",
+            "image_url": "https://static.cnews.ru/img/news/2024/04/10/ali600.jpg",
+            "width": 2000,
+            "height": 1333,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Позволяет оптимизировать затраты на инфраструктуру и внедрить локальное решение без санкционных рисков.",
+            "title": "«Яндекс» выпустил мощный суверенный ИИ, хорошо справляющийся с вопросами на русском языке",
+            "final_score": 83.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 153,
+        "raw_items": 923,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 30,
+          "CNews": 71,
+          "Euronews": 50
+        },
+        "score_filtered": 863,
+        "quality_filtered": 28,
+        "story_dedup": 10,
+        "candidates": 22,
+        "candidate_rate": 0.0286,
+        "score_buckets": {
+          "0–39": 811,
+          "40–49": 80,
+          "50–59": 29,
+          "60–69": 3,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1789990619.4950788,
-  "last_publish_ts": 1789990619.4950788,
+  "last_search_ts": 1789991624.130937,
+  "last_publish_ts": 1789991624.130937,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
