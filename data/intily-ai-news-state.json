@@ -683,7 +683,8 @@
     "7d8994a28edfeabb7204db0c67ddbd4d0e35420f066190402c789587e55d92a3": 1789967816,
     "fdf8884aec55c5a7688ef9eae1fbdb412cbbe228ffc71a0b18900032adb449d8": 1789969023,
     "09897d5c02eba5315dbff4c15f3fc218782d0b83a92b7268f4f301e7afc483c2": 1789970002,
-    "601de58a0730ed29b1c8ace5c8ac40333c571ee9e2a8fe432e080c1c0a99debd": 1789971182
+    "601de58a0730ed29b1c8ace5c8ac40333c571ee9e2a8fe432e080c1c0a99debd": 1789971182,
+    "1bfa569db2239c6f421f164466b5562a3b57d9530f59734f07f443486d296f24": 1789973104
   },
   "known": {
     "7d8994a28edfeabb7204db0c67ddbd4d0e35420f066190402c789587e55d92a3": 1789967816.69929,
@@ -716,19 +717,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 44.5,
+        "base_score": 44.0,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 65.5
+        "final_score": 65.0
       },
-      "base_score": 44.5,
+      "base_score": 44.0,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 65.5,
+      "score": 65.0,
       "key": "6f2973d6180a424db388e76c72bda9c6766cb19c036c641c35a94575afaff0ed",
-      "importance": 65.5,
+      "importance": 65.0,
       "editorial_value": 50.0,
       "topics": [
         "models"
@@ -740,6 +741,44 @@
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | OPENROUTER: OPENROUTER_EMPTY_OR_INVALID_CONTENT | OPENAI: OPENAI_HTTP_429: {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/bill",
       "failure_count": 1,
       "next_retry_at": 1789972918
+    },
+    {
+      "region": "RUSSIA",
+      "title": "ФБР увеличила использование ИИ на 605% для предотвращения преступлений",
+      "link": "https://habr.com/ru/news/1084482/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1084482",
+      "desc": "Директор Федерального бюро расследований Каш Патель рассказал , что он ответственен за увеличение использования инструментов искусственного интеллекта в ведомстве на 605%. При законном использовании нейросети — это важнейший инструмент для обработки данных, заявил Патель. По его словам, эта технология может оказаться бесценной для защиты детей от шутинга в школах. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1789971240.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 6.0,
+        "event_concreteness": 13.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 43.0,
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 64.0
+      },
+      "base_score": 43.0,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 64.0,
+      "key": "cc4b6dfb33df842cb899f490dd3c0172ccfe2b6dcdfcda37890f7a141a8af169",
+      "importance": 64.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "security_regulation",
+        "tools"
+      ],
+      "audience_score": 7.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     },
     {
       "region": "WORLD",
@@ -870,99 +909,25 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 40.0,
+        "base_score": 39.5,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 58.0
+        "final_score": 57.5
       },
-      "base_score": 40.0,
+      "base_score": 39.5,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 58.0,
+      "score": 57.5,
       "key": "c95283fcca0ccf062102ee7ed9374a73d7b3732e79fe2bda4bc8e32a82a03a40",
-      "importance": 58.0,
+      "importance": 57.5,
       "editorial_value": 50.0,
       "topics": [
         "security_regulation"
       ],
       "audience_score": 6.0,
       "tier": "A"
-    },
-    {
-      "region": "WORLD",
-      "title": "Google releases Kotlin ADK 1.0 for AI agents, on-device capabilities - TechGig",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQN3R1MGZ3RVhFUm92dzFBU20yUnlIRi1WNXROdFUtWDlkdVBRVlliSTRvaFMxNTVGeEVIeEhUQkxZWFdOVEFiWWhMblJPYWJIN05RUEJMMnpRd19mb2Z5NGRrMlR0SDZsQ3YtMXVWWElJNTJIVXRxU19ObGhnRi1acWJ1RVZzeGxoaEZISktIUmRlTDBMN2p1V0pKeXZaQndmb2lyQ2EzcWfSAa4BQVVfeXFMT2JtdE5TdmJFV3hmaVNRZmFBYUlTYWlFMzFrZnduNTNmZ2Q4Uy1ud3FtbThwdDdnTVRQa2lYVVVhVlQ4b0dJaWdWTzR3VXpIX3IyNlRrbHk3NFdHN2RkNlpKMUoxa3NmNHI0RG1Xa1dBSFgxX1pZTjNzdnhzTzg0OUxrbmNkWDBzdFRXQ21sNXdxZDhQcjVYVjhGZWtUQUpXLTFoeTZtNFdKQ19sWWF3?oc=5",
-      "desc": "Google releases Kotlin ADK 1.0 for AI agents, on-device capabilities TechGig",
-      "source": "TechGig",
-      "time": 1789952014.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 10.0,
-        "event_concreteness": 13.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 44.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 44.0
-      },
-      "base_score": 44.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 44.0,
-      "key": "1bfa569db2239c6f421f164466b5562a3b57d9530f59734f07f443486d296f24",
-      "importance": 44.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents"
-      ],
-      "audience_score": null,
-      "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "ФБР увеличила использование ИИ на 605% для предотвращения преступлений",
-      "link": "https://habr.com/ru/news/1084482/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1084482",
-      "desc": "Директор Федерального бюро расследований Каш Патель рассказал , что он ответственен за увеличение использования инструментов искусственного интеллекта в ведомстве на 605%. При законном использовании нейросети — это важнейший инструмент для обработки данных, заявил Патель. По его словам, эта технология может оказаться бесценной для защиты детей от шутинга в школах. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1789971240.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 6.0,
-        "event_concreteness": 13.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 43.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 43.0
-      },
-      "base_score": 43.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 43.0,
-      "key": "cc4b6dfb33df842cb899f490dd3c0172ccfe2b6dcdfcda37890f7a141a8af169",
-      "importance": 43.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "security_regulation",
-        "tools"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
     },
     {
       "region": "WORLD",
@@ -1002,30 +967,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1789972618.945233,
+    "last_start_ts": 1789973104.932467,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1789972618.945233,
-    "last_success_ts": 1789972618.945233,
-    "last_candidates": 14,
-    "last_published": 0,
-    "queue_size": 8
+    "last_run_ts": 1789973104.932467,
+    "last_success_ts": 1789973104.932467,
+    "last_candidates": 0,
+    "last_published": 1,
+    "queue_size": 7
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1789976277.143024,
-      "reason": "The read operation timed out",
-      "updated_at": 1789972677.143025
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1789973104.8976088
     },
     "GROQ": {
-      "disabled_until": 1789976280.8181744,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1789972680.8181753
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1789973097.0489168
     },
     "OPENAI": {
-      "disabled_until": 1790059125.1551573,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1789972725.1551583
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1789973097.0489168
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1033,19 +998,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1789976323.8768368,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1789972723.8768382
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1789973097.0489168
     }
   },
   "stories": {
-    "8a0a9486e91cf6abd72b74f72072fac85e4db5015742bdebd6ab117fbb47697a": {
-      "time": 1789886457,
-      "title": "Американские военные чуть не атаковали китайский корабль из-за ошибочных разведданных, подготовленных с помощью ИИ",
-      "desc": "По информации CNN, тихоокеанское командование специальных операций США запланировало атаку, но потом отменило операцию против китайского корабля на Ближнем Востоке. Инцидент чуть не произошёл из-за ошибочных разведывательных данных, подготовленных для американских военных с помощью ИИ. В документах от нейросети утверждалось, что китайский корабль перевозит компоненты для программы создания ядерного оружия.. Незадолго до запланированной операции против корабля выяснилось, что разведданные от ИИ содержали неточности и вымышленные сведения. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "30cfb095833e88acb0fb15ede6a3208ed0556fbc62e3f6b10421e297963d08d6": {
       "time": 1789886939,
       "title": "Mark Zuckerberg 'confirms' technology industry is divided on AI regulation; tells OpenAI and Anthropic: Y - The Times of India",
@@ -1262,6 +1220,13 @@
       "desc": "Промышленность сменила модель внедрения ИИ в ожидании регулирования rbc.ru",
       "source": "rbc.ru",
       "region": "RUSSIA"
+    },
+    "1bfa569db2239c6f421f164466b5562a3b57d9530f59734f07f443486d296f24": {
+      "time": 1789973104,
+      "title": "Google releases Kotlin ADK 1.0 for AI agents, on-device capabilities - TechGig",
+      "desc": "Google releases Kotlin ADK 1.0 for AI agents, on-device capabilities TechGig",
+      "source": "TechGig",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
@@ -1271,7 +1236,6 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -1284,136 +1248,10 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789675022,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 84.73,
-      "candidates": 52,
-      "queue_before": 16,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 25,
-        "known_recent": 4,
-        "already_queued": 10,
-        "story_queue": 1,
-        "story_history": 5,
-        "added": 7,
-        "candidate_count": 52,
-        "admission_rate": 13.46,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 166,
-        "raw_items": 1305,
-        "source_counts": {
-          "TechCrunch AI": 8,
-          "VentureBeat AI": -1,
-          "The Verge AI": 5,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 28,
-          "CNews": 75,
-          "Euronews": 50
-        },
-        "score_filtered": 1211,
-        "quality_filtered": 33,
-        "story_dedup": 9,
-        "candidates": 52,
-        "candidate_rate": 0.0457,
-        "score_buckets": {
-          "0–39": 1122,
-          "40–49": 119,
-          "50–59": 57,
-          "60–69": 7,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 2,
-          "6": 7,
-          "7": 4,
-          "8": 2,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": "OPENROUTER",
-        "failovers": 2,
-        "failures": 4,
-        "blocked": 2,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1789707665,
       "status": "OK",
@@ -24532,11 +24370,99 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1789973104,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 9.94,
+      "candidates": 0,
+      "queue_before": 8,
+      "queue_after": 7,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/news/1084482/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1084482",
+            "image_url": "https://habr.com/share/publication/1084482/71e8add06e530fdc498fd3da40bddc73/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Показывает вектор развития корпоративной безопасности и необходимость внедрения предиктивных ИИ-систем в бизнес-процессы.",
+            "title": "ФБР увеличила использование ИИ на 605% для предотвращения преступлений",
+            "final_score": 64.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1789972618.945233,
-  "last_publish_ts": 1789971182.3853252,
+  "last_publish_ts": 1789973104.932467,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
