@@ -759,7 +759,11 @@
         "chips"
       ],
       "audience_score": 7.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1790015362,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1790015662
     },
     {
       "region": "WORLD",
@@ -797,7 +801,11 @@
         "security_regulation"
       ],
       "audience_score": 8.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1790015362,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1790015662
     },
     {
       "region": "RUSSIA",
@@ -1132,30 +1140,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790015098.3883903,
+    "last_start_ts": 1790015362.0918608,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790015098.3883903,
-    "last_success_ts": 1790015098.3883903,
-    "last_candidates": 32,
-    "last_published": 1,
+    "last_run_ts": 1790015362.0918608,
+    "last_success_ts": 1790015362.0918608,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 11
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790015150.0675948
+      "disabled_until": 1790018956.5634205,
+      "reason": "The read operation timed out",
+      "updated_at": 1790015356.5634224
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790013175.5470915
+      "disabled_until": 1790018960.3500984,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1790015360.3500998
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790013175.5470915
+      "disabled_until": 1790101766.1464393,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1790015366.146441
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1163,9 +1171,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790013175.5470915
+      "disabled_until": 1790018965.0820396,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1790015365.0820408
     }
   },
   "stories": {
@@ -1473,94 +1481,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789742710,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 15.37,
-      "candidates": 0,
-      "queue_before": 11,
-      "queue_after": 10,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/",
-            "image_url": "https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-1979406539.jpg?resize=1200,675",
-            "width": 1200,
-            "height": 675,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходим немедленный аудит безопасности доступа к внутренним репозиториям из-за появления инструментов автоматизированного взлома на базе LLM.",
-            "title": "Researchers used Anthropic’s Claude to hack into OpenAI",
-            "final_score": 79.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789742967,
       "status": "OK",
@@ -24589,6 +24509,81 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1790015362,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 29.67,
+      "candidates": 0,
+      "queue_before": 11,
+      "queue_after": 11,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 2,
+        "blocked": 14,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
