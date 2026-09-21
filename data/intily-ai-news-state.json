@@ -717,7 +717,8 @@
     "6e4a770ae0eec28282e08d3c3ea89031e8d8855452913157036ffc8ee333fdd8": 1790008150,
     "ec7c550433ea108f4e405244474d34cff8b86884699cbe2534c9c437b1489db5": 1790013179,
     "920fcdad91d1fa373f459119eae1c1c2c43759ed91d7f01464f88163e3cbe46a": 1790013428,
-    "c12c9a0fbcbd468a99f231e2d4494b13130efc65990f5e402ab7f6012a45db2f": 1790015098
+    "c12c9a0fbcbd468a99f231e2d4494b13130efc65990f5e402ab7f6012a45db2f": 1790015098,
+    "90df0e90ffdaaf184e8372c54f9d2be48ab9be7161a699a8a6290a3f624270fb": 1790016062
   },
   "known": {
     "fe80f6d8a6fb26dc083c6c088f111a0d4179212ea3f888b641062afd9cb66107": 1790011281.9548388,
@@ -931,19 +932,19 @@
         "novelty": 0.0,
         "source_quality": 4.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 42.5,
+        "base_score": 42.0,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 60.5
+        "final_score": 60.0
       },
-      "base_score": 42.5,
+      "base_score": 42.0,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 60.5,
+      "score": 60.0,
       "key": "fe80f6d8a6fb26dc083c6c088f111a0d4179212ea3f888b641062afd9cb66107",
-      "importance": 60.5,
+      "importance": 60.0,
       "editorial_value": 50.0,
       "topics": [
         "agents"
@@ -1103,67 +1104,33 @@
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
       "failure_count": 1,
       "next_retry_at": 1789999319
-    },
-    {
-      "region": "WORLD",
-      "title": "OpenAI Releases Proposal for International AI Safety Coordination - The Information",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQLVFNZmJaTWtvYXhOUU9ZaElFWmxYXzE3bXRxTVNxN2lrbkJfenhVb1c2dXUwOVJUbm5fdDNRUjB3bWdtQkNGeDFCdWlWQlhLT05tVExkaldoRHFyOXlyRE5waUV2ZDl6ajBKUDk1dVJTdzRKWW4tc3p2aUxhZXViOXRyVWV0WDBFaWg1T1ZidmY4bXRBM3NmXzZEM1RnbG55THFUMA?oc=5",
-      "desc": "OpenAI Releases Proposal for International AI Safety Coordination The Information",
-      "source": "The Information",
-      "time": 1790014350.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 9.0,
-        "event_concreteness": 15.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 1.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 47.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 47.0
-      },
-      "base_score": 47.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 47.0,
-      "key": "90df0e90ffdaaf184e8372c54f9d2be48ab9be7161a699a8a6290a3f624270fb",
-      "importance": 47.0,
-      "editorial_value": 50.0,
-      "topics": [],
-      "audience_score": null,
-      "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1790015362.0918608,
+    "last_start_ts": 1790016062.8740559,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790015362.0918608,
-    "last_success_ts": 1790015362.0918608,
+    "last_run_ts": 1790016062.8740559,
+    "last_success_ts": 1790016062.8740559,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 11
+    "last_published": 1,
+    "queue_size": 10
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1790018956.5634205,
-      "reason": "The read operation timed out",
-      "updated_at": 1790015356.5634224
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1790016062.812686
     },
     "GROQ": {
-      "disabled_until": 1790018960.3500984,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790015360.3500998
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1790016056.309124
     },
     "OPENAI": {
-      "disabled_until": 1790101766.1464393,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790015366.146441
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1790016056.309124
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1171,9 +1138,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1790018965.0820396,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790015365.0820408
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1790016056.309124
     }
   },
   "stories": {
@@ -1456,11 +1423,17 @@
       "desc": "Максмарт представила кейс ИИ-агентов в закупках на TNF 2026 companies.rbc.ru",
       "source": "companies.rbc.ru",
       "region": "RUSSIA"
+    },
+    "90df0e90ffdaaf184e8372c54f9d2be48ab9be7161a699a8a6290a3f624270fb": {
+      "time": 1790016062,
+      "title": "OpenAI Releases Proposal for International AI Safety Coordination - The Information",
+      "desc": "OpenAI Releases Proposal for International AI Safety Coordination The Information",
+      "source": "The Information",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1478,97 +1451,10 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789742967,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 26.02,
-      "candidates": 0,
-      "queue_before": 10,
-      "queue_after": 9,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Прогноз подтверждает долгосрочный тренд на автоматизацию процессов, требующий пересмотра стратегии найма и внедрения инструментов.",
-            "title": "AI Agent Market to Reach USD 179.8 Billion by 2034, Expanding at a 43.2% CAGR - openpr.com",
-            "final_score": 62.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789746062,
       "status": "OK",
@@ -24586,11 +24472,99 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1790016062,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 7.22,
+      "candidates": 0,
+      "queue_before": 11,
+      "queue_after": 10,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 403: Forbidden": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 403: Forbidden"
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 7.0,
+          "bonus_total": 21.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Риск ужесточения доступа к API и необходимость диверсификации технологического стека в сторону open-source.",
+            "title": "OpenAI Releases Proposal for International AI Safety Coordination - The Information",
+            "final_score": 68.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1790015098.3883903,
-  "last_publish_ts": 1790015098.3883903,
+  "last_publish_ts": 1790016062.8740559,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
