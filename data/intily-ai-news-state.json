@@ -752,7 +752,8 @@
     "1dcb5428fcfb9fb56a329b54ceb41b2316e529eeaab2703f90ce5a776623183d": 1790073661,
     "218f17a685e8062ceecd9e31d5847beb79452efcfd9e18baeafb93a14c1bcce1": 1790073898,
     "2f4de0974460f06f639bd3d7b2b1634642b4d86851e305585ba87775eff6e554": 1790074155,
-    "5810d698fa0a005d79ce77c09ac1d36a19ef20f682a9240964865835d10d246e": 1790074385
+    "5810d698fa0a005d79ce77c09ac1d36a19ef20f682a9240964865835d10d246e": 1790074385,
+    "b8ef7d04dc3b36e1296f24f7e27354c425331afdbebdde45389fe5fe8eeda86b": 1790075428
   },
   "known": {
     "966ad5f0692f2db6348364cf7656b1ee07cc38aaee09a1b3505d685327ee4182": 1790070058.0017009,
@@ -1092,64 +1093,28 @@
       "audience_score": 6.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "WORLD",
-      "title": "UN Secretary-General Welcomes Finnish-Norwegian Initiative on Frontier AI Regulation - Ratopati",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORmN4MjA3Nk5kcG10X3paUFI2WE9CUnRGZ0NISVlvdXRxZzVoQzZ2OFJnT1VucDZKYzk2cmpianJXeHNSOUdIOGFIYVZ5eHh3MnltZ3ZJeVFmZVlOVkIxTk14RlhxM0RqOThTU29QTVVGTmh5a3VHbUdMRzZENVo3MFRvTkQ?oc=5",
-      "desc": "UN Secretary-General Welcomes Finnish-Norwegian Initiative on Frontier AI Regulation Ratopati",
-      "source": "Ratopati",
-      "time": 1790072758.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 6.0,
-        "event_concreteness": 14.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 40.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 40.0
-      },
-      "base_score": 40.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 40.0,
-      "key": "b8ef7d04dc3b36e1296f24f7e27354c425331afdbebdde45389fe5fe8eeda86b",
-      "importance": 40.0,
-      "editorial_value": 46.0,
-      "topics": [
-        "security_regulation"
-      ],
-      "audience_score": null,
-      "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1790074385.1377115,
+    "last_start_ts": 1790075428.0944262,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790074385.1377115,
-    "last_success_ts": 1790074385.1377115,
+    "last_run_ts": 1790075428.0944262,
+    "last_success_ts": 1790075428.0944262,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 10
+    "queue_size": 9
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790074390.3234198
+      "disabled_until": 1790078958.14371,
+      "reason": "The read operation timed out",
+      "updated_at": 1790075358.1437125
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790065496.0966988
+      "disabled_until": 1790078961.2871025,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1790075361.2871046
     },
     "OPENAI": {
       "disabled_until": 0,
@@ -1164,7 +1129,7 @@
     "OPENROUTER": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1790065496.0966988
+      "updated_at": 1790075428.0487537
     }
   },
   "stories": {
@@ -1524,11 +1489,17 @@
       "desc": "Alibaba представила самый мощный в Китае ИИ-чип — на нем будут обучать новую модель Qwen Incrussia",
       "source": "Incrussia",
       "region": "RUSSIA"
+    },
+    "b8ef7d04dc3b36e1296f24f7e27354c425331afdbebdde45389fe5fe8eeda86b": {
+      "time": 1790075428,
+      "title": "UN Secretary-General Welcomes Finnish-Norwegian Initiative on Frontier AI Regulation - Ratopati",
+      "desc": "UN Secretary-General Welcomes Finnish-Norwegian Initiative on Frontier AI Regulation Ratopati",
+      "source": "Ratopati",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "RUSSIA",
@@ -1546,81 +1517,10 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789812568,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 30.6,
-      "candidates": 0,
-      "queue_before": 2,
-      "queue_after": 2,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1789813499,
       "status": "OK",
@@ -24525,11 +24425,99 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1790075428,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 91.59,
+      "candidates": 0,
+      "queue_before": 10,
+      "queue_after": 9,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://english.ratopati.com/story/80346/guterres-welcomes-call-for-ai-control",
+            "image_url": "https://npcdn.ratopati.com/media/news/gutres_89CyHsoP2P.webp",
+            "width": 800,
+            "height": 450,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 24.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Требует быстрой адаптации ИИ‑продуктов к строгим правилам",
+            "title": "UN Secretary-General Welcomes Finnish-Norwegian Initiative on Frontier AI Regulation - Ratopati",
+            "final_score": 64.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1790073898.0339499,
-  "last_publish_ts": 1790074385.1377115,
+  "last_publish_ts": 1790075428.0944262,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
