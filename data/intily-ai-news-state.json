@@ -765,7 +765,8 @@
     "cfccf49ff67cc72361533588b5abbcfd8eb96e6109da0d350866a88edb46c99c": 1790086420,
     "bcf94dc886d710d7a90acf8db3cde7f8d664e1968c3ed63bd644f6cd5c9ee83a": 1790090057,
     "dafb14609fa0970a593e7998f52b9441853b3643631b9174d3a8ea1ddc826509": 1790095542,
-    "dbf67be28ff9ed0e6ed67f99fe13d7aab171144b940b6098283e30caebdb6337": 1790096697
+    "dbf67be28ff9ed0e6ed67f99fe13d7aab171144b940b6098283e30caebdb6337": 1790096697,
+    "4547a5ed24b3d80ced57fac3402cf24c523a27a9d857a9b26256ce837b98d440": 1790099579
   },
   "known": {
     "dafb14609fa0970a593e7998f52b9441853b3643631b9174d3a8ea1ddc826509": 1790095282.0360286,
@@ -777,52 +778,15 @@
     "4547a5ed24b3d80ced57fac3402cf24c523a27a9d857a9b26256ce837b98d440": 1790097661.7367215,
     "ff52af6a3921d76134bd316840ae7d157d694e2defbe68de26dd7c789c1a8b08": 1790097661.7367215,
     "be880425dfdd3e18c223a25a9e7a20fe7f202d8f28465e2f63e6110299791814": 1790097661.7367215,
-    "8fdb5bd200ae20685f66c5c08ab1bb00e4ea3ffecd84da333ca2c36adefff1a9": 1790097661.7367215
+    "8fdb5bd200ae20685f66c5c08ab1bb00e4ea3ffecd84da333ca2c36adefff1a9": 1790097661.7367215,
+    "4894e4277043112366a8e8a4bad6af623cd9852209dc699afebf1f30e4188deb": 1790099579.963899,
+    "692652bc733f09eab33b8bfb99756ec61d89d7e1493816ac41c59bbc64f9c567": 1790099579.963899,
+    "fd832af03977127b1cbc9d7f280d97a60d3f9bfda2efebc0e4e53ffc488f9202": 1790099579.963899,
+    "47506acffdd876fa416eee149cd8a724cef7ccfb1fe7192a1351b93a0ef28ad0": 1790099579.963899,
+    "86154dab969d99c745f9069c7d5ae29104da3982d6673c7ae59d4558c3516a91": 1790099579.963899,
+    "a6efdbcf38f289305d82e4eb5077694db4f6eb23e1328063c315b9293cf94eee": 1790099579.963899
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Anthropic выпустила Claude Opus 5.5",
-      "link": "https://habr.com/ru/companies/bothub/news/1085334/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1085334",
-      "desc": "Anthropic представила Claude Opus 5.5 — первую модель новой линейки Claude 5.5. Компания делает ставку на длинные агентские задачи, программирование и computer use. По данным Anthropic, типичная стоимость работы снизилась на 40% относительно Opus 5 за счёт более низкой цены токенов и меньшего их расхода. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1790096277.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 16.0,
-        "event_concreteness": 17.5,
-        "practical_value": 5.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 63.5,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 87.5
-      },
-      "base_score": 63.5,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 87.5,
-      "key": "4547a5ed24b3d80ced57fac3402cf24c523a27a9d857a9b26256ce837b98d440",
-      "importance": 87.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "models",
-        "tools"
-      ],
-      "audience_score": 8.0,
-      "tier": "S",
-      "russia_weight_bonus": 0.0,
-      "last_failed_at": 1790099100,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 2,
-      "next_retry_at": 1790099700
-    },
     {
       "region": "WORLD",
       "title": "Andreessen Horowitz is launching an ‘academy’ with no homework and partnerships with Palantir, Google, and Meta",
@@ -1519,30 +1483,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790099100.5592701,
+    "last_start_ts": 1790099579.963899,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790099100.5592701,
-    "last_success_ts": 1790099100.5592701,
-    "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 20
+    "last_run_ts": 1790099579.963899,
+    "last_success_ts": 1790099579.963899,
+    "last_candidates": 50,
+    "last_published": 1,
+    "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1790102710.9500854,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1790099110.950087
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1790099647.1289244
     },
     "GROQ": {
-      "disabled_until": 1790102714.6580617,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790099114.6580637
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1790099579.6571329
     },
     "OPENAI": {
-      "disabled_until": 1790185522.5080154,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790099122.5080173
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1790099579.6571329
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1550,19 +1514,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1790102721.736259,
-      "reason": "OPENROUTER_HTTP_503: error code: 1102\n",
-      "updated_at": 1790099121.7362607
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1790099579.6571329
     }
   },
   "stories": {
-    "ec7c550433ea108f4e405244474d34cff8b86884699cbe2534c9c437b1489db5": {
-      "time": 1790013179,
-      "title": "Google Waited 4 Months to Reveal Gemini’s AI Breach [2026] - shattered.io",
-      "desc": "Google Waited 4 Months to Reveal Gemini’s AI Breach [2026] shattered.io",
-      "source": "shattered.io",
-      "region": "WORLD"
-    },
     "920fcdad91d1fa373f459119eae1c1c2c43759ed91d7f01464f88163e3cbe46a": {
       "time": 1790013428,
       "title": "Unit 42 раскрыла утечку учётных данных у ИИ-агентов AWS AgentCore - Pasquale Pillitteri",
@@ -1912,10 +1869,16 @@
       "desc": "GlowByte примет участие в конференции «Коннектед Ритейл Форум» (Connected Retail Forum), который пройдет 7–8 октября в Центре событий РБК. Форум посвящен дифференциации бизнес-моделей розничной торговли и конкуренции между ними. Тематика форума в этом году – перезапуск потребления и поиск эффективных бизнес-моделей в эпоху диктата потребителя. Деловая программа построена вокруг идеи, что деление на офлайн- и онлайн-каналы продаж больше не отражает реальность: клиентские пути изменились, а розничная торговля сегодня не просто закрывает потребности покупателя, но формирует их и предлагает готовые решения для сложных сценариев потребления. В числе тем деловой программы – перестройка стратегий ритейлеров и переход к платформенному управлению, дифференциация через идентичность и клиентский опыт вместо скидок, новая роль офлайн-магазина как пространства, формирующего спрос, категорийный менеджмент и ассортиментная стратегия, бесшовность клиентского пути между приложением, сайтом и магазином, монетизация и лояльность в мультиформатных сетях, баланс бренд-маркетинга и перформанса, а также применение агентного искусственного интеллекта в бизнесе ритейла на практических кейсах. Ожидается участие более 200 спикеров и свыше 1700 уникальных посетителей – представителей ритейл-бизнеса, разработчиков технологических решений и экспертов рынка. Компанию GlowByte на форуме представит Мария Толмачева, директор по развитию практики бизнес-консалтинга и клиентской аналитики (Marketing Service Provider) . Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "4547a5ed24b3d80ced57fac3402cf24c523a27a9d857a9b26256ce837b98d440": {
+      "time": 1790099579,
+      "title": "Anthropic выпустила Claude Opus 5.5",
+      "desc": "Anthropic представила Claude Opus 5.5 — первую модель новой линейки Claude 5.5. Компания делает ставку на длинные агентские задачи, программирование и computer use. По данным Anthropic, типичная стоимость работы снизилась на 40% относительно Opus 5 за счёт более низкой цены токенов и меньшего их расхода. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -1934,150 +1897,10 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789842774,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 46.49,
-      "candidates": 25,
-      "queue_before": 0,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 16,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 7,
-        "added": 2,
-        "candidate_count": 25,
-        "admission_rate": 8.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.linkedin.com/pulse/google-gemini-agent-breached-three-real-companies-dgfje",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.0,
-          "bonus_total": 72.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходимость немедленного пересмотра политик безопасности и прав доступа для внедряемых автономных ИИ-агентов.",
-            "title": "Google Gemini Agent Breached Three Real Companies After Escaping Test Environment - LinkedIn",
-            "final_score": 74.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 39,
-        "raw_items": 811,
-        "source_counts": {
-          "TechCrunch AI": 5,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 2,
-          "Habr AI/News": 11,
-          "CNews": 0,
-          "Euronews": 18
-        },
-        "score_filtered": 763,
-        "quality_filtered": 12,
-        "story_dedup": 11,
-        "candidates": 25,
-        "candidate_rate": 0.0324,
-        "score_buckets": {
-          "0–39": 724,
-          "40–49": 51,
-          "50–59": 33,
-          "60–69": 2,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789843979,
       "status": "OK",
@@ -24088,11 +23911,152 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1790099579,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 70.72,
+      "candidates": 50,
+      "queue_before": 20,
+      "queue_after": 19,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 20,
+        "known_recent": 3,
+        "already_queued": 10,
+        "story_queue": 5,
+        "story_history": 6,
+        "added": 6,
+        "candidate_count": 50,
+        "admission_rate": 12.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/companies/bothub/news/1085334/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1085334",
+            "image_url": "https://habr.com/share/publication/1085334/2f346a9c610add8acce1e092372e4b97/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 8.67,
+          "bonus_total": 78.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 3,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Снижение операционных расходов на 40% требует немедленного пересмотра бюджета на API и интеграции агентов в бизнес-процессы.",
+            "title": "Anthropic выпустила Claude Opus 5.5",
+            "final_score": 90.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 212,
+        "raw_items": 1453,
+        "source_counts": {
+          "TechCrunch AI": 8,
+          "VentureBeat AI": -1,
+          "The Verge AI": 4,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 9,
+          "Habr AI/News": 40,
+          "CNews": 101,
+          "Euronews": 50
+        },
+        "score_filtered": 1327,
+        "quality_filtered": 49,
+        "story_dedup": 27,
+        "candidates": 50,
+        "candidate_rate": 0.0403,
+        "score_buckets": {
+          "0–39": 1266,
+          "40–49": 108,
+          "50–59": 71,
+          "60–69": 6,
+          "70–79": 2,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 1,
+          "5": 3,
+          "6": 7,
+          "7": 3,
+          "8": 5,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1790097661.7367215,
-  "last_publish_ts": 1790096697.7373414,
+  "last_search_ts": 1790099579.963899,
+  "last_publish_ts": 1790099579.963899,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
