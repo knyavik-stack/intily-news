@@ -797,19 +797,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 55.5,
+        "base_score": 55.0,
         "audience_score": 8.0,
         "audience_bonus": 24.0,
-        "final_score": 79.5
+        "final_score": 79.0
       },
-      "base_score": 55.5,
+      "base_score": 55.0,
       "audience_bonus": 24.0,
       "score_stage": "final",
-      "score": 79.5,
+      "score": 79.0,
       "key": "dbf67be28ff9ed0e6ed67f99fe13d7aab171144b940b6098283e30caebdb6337",
-      "importance": 79.5,
+      "importance": 79.0,
       "editorial_value": 50.0,
       "topics": [
         "agents",
@@ -1519,30 +1519,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790091214.166267,
+    "last_start_ts": 1790091452.4717238,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790091214.166267,
-    "last_success_ts": 1790091214.166267,
+    "last_run_ts": 1790091452.4717238,
+    "last_success_ts": 1790091452.4717238,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1790094791.4383767,
+      "disabled_until": 1790095033.148623,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1790091191.438379
+      "updated_at": 1790091433.148625
     },
     "GROQ": {
-      "disabled_until": 1790094795.2956307,
+      "disabled_until": 1790095036.90752,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790091195.295633
+      "updated_at": 1790091436.9075215
     },
     "OPENAI": {
-      "disabled_until": 1790177613.9626558,
+      "disabled_until": 1790177852.3211925,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790091213.9626577
+      "updated_at": 1790091452.3211937
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1550,9 +1550,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1790094812.429197,
+      "disabled_until": 1790095051.042992,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790091212.4291987
+      "updated_at": 1790091451.0429935
     }
   },
   "stories": {
@@ -1937,147 +1937,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789828856,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 39.02,
-      "candidates": 25,
-      "queue_before": 1,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 17,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 7,
-        "added": 0,
-        "candidate_count": 25,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.theverge.com/podcast/997382/openai-microsoft-anthropic-elon-musk-cartel-ai-competition",
-            "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/DCD_2026-09-19_Kanter.jpg?quality=90&strip=all&crop=0%2C10.711631919237%2C100%2C78.576736161526&w=1200",
-            "width": 1200,
-            "height": 623,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.33,
-          "bonus_total": 66.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость учитывать регуляторные риски при выборе технологического стека и долгосрочном планировании архитектуры продукта.",
-            "title": "Does AI need an antitrust exemption so it doesn’t kill everyone????",
-            "final_score": 64.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 40,
-        "raw_items": 664,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 2,
-          "Habr AI/News": 13,
-          "CNews": 0,
-          "Euronews": 22
-        },
-        "score_filtered": 622,
-        "quality_filtered": 10,
-        "story_dedup": 7,
-        "candidates": 25,
-        "candidate_rate": 0.0401,
-        "score_buckets": {
-          "0–39": 588,
-          "40–49": 44,
-          "50–59": 29,
-          "60–69": 2,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 1,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789829335,
       "status": "OK",
@@ -24457,6 +24316,78 @@
       "business_reason": "no_eligible_item",
       "searched": false,
       "duration_sec": 25.7,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1790091452,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 34.34,
       "candidates": 0,
       "queue_before": 20,
       "queue_after": 20,
