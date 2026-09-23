@@ -1588,30 +1588,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790180959.750102,
+    "last_start_ts": 1790181425.9171653,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790180959.750102,
-    "last_success_ts": 1790180959.750102,
-    "last_candidates": 53,
+    "last_run_ts": 1790181425.9171653,
+    "last_success_ts": 1790181425.9171653,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1790184555.0139747,
+      "disabled_until": 1790185021.1149886,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1790180955.0139766
+      "updated_at": 1790181421.1149905
     },
     "GROQ": {
-      "disabled_until": 1790184558.3107681,
+      "disabled_until": 1790185025.0489588,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790180958.3107708
+      "updated_at": 1790181425.0489604
     },
     "OPENAI": {
-      "disabled_until": 1790267359.5569212,
+      "disabled_until": 1790267825.7634282,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790180959.5569239
+      "updated_at": 1790181425.7634294
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1619,9 +1619,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1790267358.502613,
+      "disabled_until": 1790267825.2426543,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790180958.5026152
+      "updated_at": 1790181425.2426558
     }
   },
   "stories": {
@@ -1929,145 +1929,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789930858,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 36.6,
-      "candidates": 13,
-      "queue_before": 1,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 7,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 5,
-        "added": 0,
-        "candidate_count": 13,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "jsonld_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "jsonld_image",
-            "source_url": "https://realnoevremya.ru/news/406815-cik-zafiksiroval-rost-kiberatak-na-8300-i-riski-primeneniya-ii",
-            "image_url": "https://realnoevremya.ru/uploads/mediateka/44/7f/2f2f101e04baa567.xl.jpg",
-            "width": 1500,
-            "height": 1000,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость срочного аудита систем защиты от ИИ-ассоциированных угроз для предотвращения утечек и атак.",
-            "title": "ЦИК зафиксировал рост кибератак на 8300 % и риски применения ИИ в информационных атаках - Реальное время",
-            "final_score": 70.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 31,
-        "raw_items": 834,
-        "source_counts": {
-          "TechCrunch AI": 4,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 3,
-          "Habr AI/News": 9,
-          "CNews": 0,
-          "Euronews": 13
-        },
-        "score_filtered": 801,
-        "quality_filtered": 13,
-        "story_dedup": 7,
-        "candidates": 13,
-        "candidate_rate": 0.0162,
-        "score_buckets": {
-          "0–39": 774,
-          "40–49": 40,
-          "50–59": 20,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789931334,
       "status": "OK",
@@ -22264,6 +22125,78 @@
         },
         "audience_stage": "post_editorial"
       },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1790181425,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 5.96,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
       "provider": {
         "attempts": [],
         "used": null,
