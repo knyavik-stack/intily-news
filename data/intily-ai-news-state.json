@@ -1553,20 +1553,20 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 44.0,
+        "base_score": 43.5,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 44.0
+        "final_score": 43.5
       },
-      "base_score": 44.0,
+      "base_score": 43.5,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 44.0,
+      "score": 43.5,
       "key": "f41a823408a5c35646148249fff8d86c0a600fc518e55a99fceac11fd780226a",
-      "importance": 44.0,
-      "editorial_value": 50.0,
+      "importance": 43.5,
+      "editorial_value": 49.5,
       "topics": [
         "agents"
       ],
@@ -1576,30 +1576,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790170776.1090474,
+    "last_start_ts": 1790170889.8554418,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790170776.1090474,
-    "last_success_ts": 1790170776.1090474,
+    "last_run_ts": 1790170889.8554418,
+    "last_success_ts": 1790170889.8554418,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1790174223.890324,
+      "disabled_until": 1790174465.1446774,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1790170623.8903265
+      "updated_at": 1790170865.1446798
     },
     "GROQ": {
-      "disabled_until": 1790174228.770898,
+      "disabled_until": 1790174468.468699,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790170628.7708998
+      "updated_at": 1790170868.4687002
     },
     "OPENAI": {
-      "disabled_until": 1790257175.892143,
+      "disabled_until": 1790257289.7480133,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790170775.8921452
+      "updated_at": 1790170889.748014
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1607,9 +1607,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1790174374.4395688,
+      "disabled_until": 1790174489.178367,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790170774.43957
+      "updated_at": 1790170889.1783686
     }
   },
   "stories": {
@@ -1931,94 +1931,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789915022,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 10.95,
-      "candidates": 0,
-      "queue_before": 2,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://inbusiness.kz/ru/news/opasnyj-ii-kak-dipfejki-i-nejroseti-kradut-milliardy-u-kazahstancev",
-            "image_url": "https://inbusiness.kz/uploads/2026-9/pLyN7Lt8.jpeg",
-            "width": 1280,
-            "height": 720,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходимость внедрения строгих протоколов верификации для защиты от атак социальной инженерии с использованием ИИ.",
-            "title": "Опасный ИИ: как дипфейки и нейросети крадут миллиарды у казахстанцев - Inbusiness.kz",
-            "final_score": 67.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789917894,
       "status": "OK",
@@ -22934,6 +22846,78 @@
             "title": "CBTS Unveils Blueprint for 100% Agentic Delivery After Scaling Anthropic Company-Wide, Giving Mid-Market Companies a Proven Path to AI-Fueled Growth - Business Wire",
             "final_score": 73.0
           }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 5,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1790170889,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 33.34,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
         },
         "queue_score_audit": {
           "pre_ai_below_final_threshold": 5,
