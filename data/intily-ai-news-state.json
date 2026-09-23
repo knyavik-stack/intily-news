@@ -879,10 +879,10 @@
       "audience_score": 7.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1790192706,
+      "last_failed_at": 1790193416,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1790193006
+      "failure_count": 2,
+      "next_retry_at": 1790194016
     },
     {
       "region": "WORLD",
@@ -920,10 +920,10 @@
       ],
       "audience_score": 8.0,
       "tier": "A",
-      "last_failed_at": 1790192706,
+      "last_failed_at": 1790193416,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 3,
-      "next_retry_at": 1790193906
+      "failure_count": 4,
+      "next_retry_at": 1790195816
     },
     {
       "region": "RUSSIA",
@@ -1604,30 +1604,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790192706.2736626,
+    "last_start_ts": 1790193416.1005757,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790192706.2736626,
-    "last_success_ts": 1790192706.2736626,
+    "last_run_ts": 1790193416.1005757,
+    "last_success_ts": 1790193416.1005757,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1790196310.2125568,
+      "disabled_until": 1790197017.7934237,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1790192710.2125585
+      "updated_at": 1790193417.793425
     },
     "GROQ": {
-      "disabled_until": 1790196312.26982,
+      "disabled_until": 1790197020.9848173,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790192712.269822
+      "updated_at": 1790193420.9848185
     },
     "OPENAI": {
-      "disabled_until": 1790279113.5494874,
+      "disabled_until": 1790279823.4028614,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790192713.5494885
+      "updated_at": 1790193423.402863
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1635,19 +1635,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1790279112.4376335,
+      "disabled_until": 1790279821.4417636,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790192712.4376354
+      "updated_at": 1790193421.4417648
     }
   },
   "stories": {
-    "4894e4277043112366a8e8a4bad6af623cd9852209dc699afebf1f30e4188deb": {
-      "time": 1790106312,
-      "title": "OpenAI has called on the U.S. to take the lead in global AI regulation: Will China agree to this? - Root-Nation.com",
-      "desc": "OpenAI has called on the U.S. to take the lead in global AI regulation: Will China agree to this? Root-Nation.com",
-      "source": "Root-Nation.com",
-      "region": "WORLD"
-    },
     "c85d7ec3c4d78f98ac2d096da72dffde6c7617b3546364c6051602cb6578c2f0": {
       "time": 1790139895,
       "title": "OpenAI releases GPT-6 Sol and Luna models, slashing API costs 50% or more - VentureBeat",
@@ -1882,96 +1875,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789976219,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 5.13,
-      "candidates": 0,
-      "queue_before": 3,
-      "queue_after": 2,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 400: Bad Request": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 400: Bad Request"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 5.0,
-          "bonus_total": 15.0,
-          "max_score": 5.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 5.0,
-            "bonus": 15.0,
-            "reason": "Новость носит обзорный характер без конкретных технических данных для немедленного внедрения.",
-            "title": "Apple iPhone 18 Pro Launch, Nvidia AI Servers, Musk Lawsuit Update - RS Web Solutions",
-            "final_score": 61.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789976940,
       "status": "OK",
@@ -21978,6 +21881,83 @@
             "title": "Meta's AI agent Muse draws 500,000 users in a week along with claims it copied OpenClaw - the-decoder.com",
             "final_score": 67.0
           }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1790193416,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 7.69,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
         },
         "queue_score_audit": {
           "pre_ai_below_final_threshold": 0,
