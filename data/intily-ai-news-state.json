@@ -789,12 +789,15 @@
     "8ba4c313ba46dae0a670f39a6fa0e0466aea28a6aab952c621e9bc60965762b0": 1790148296,
     "4afaee03d065613480dd9ce7d80e4916eeffa7223a7b6122cc8259ef64091a78": 1790148535,
     "46ee34e4c7ab660e7e92691336974d0520fb9a48c58345ac97d48957134ec6e2": 1790149258,
-    "4bdcdab7ee11d913ae1d6dd15009976455726204426fbb844a923408843fb552": 1790149976
+    "4bdcdab7ee11d913ae1d6dd15009976455726204426fbb844a923408843fb552": 1790149976,
+    "6ec98f20ed57f9452ede7fe7bc35818b6187b48d6f1307eafa5b19a3b0a17d62": 1790150218
   },
   "known": {
     "4f23abb17ee48885595cc03b6ecf2c5045f8b954380938b19565ed29b02e4eeb": 1790146865.0993357,
     "8ba4c313ba46dae0a670f39a6fa0e0466aea28a6aab952c621e9bc60965762b0": 1790146865.0993357,
-    "46ee34e4c7ab660e7e92691336974d0520fb9a48c58345ac97d48957134ec6e2": 1790148775.9351873
+    "46ee34e4c7ab660e7e92691336974d0520fb9a48c58345ac97d48957134ec6e2": 1790148775.9351873,
+    "6ec98f20ed57f9452ede7fe7bc35818b6187b48d6f1307eafa5b19a3b0a17d62": 1790150218.809853,
+    "509843d86d935344f3c36f208b569d1ba90b7fcd04ff089de4b0b3c1537199ea": 1790150218.809853
   },
   "queue": [
     {
@@ -833,23 +836,60 @@
       ],
       "audience_score": 5.0,
       "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "MWS AI запустила ИИ-агента для разбора клиентских диалогов",
+      "link": "https://www.cnews.ru/news/line/2026-09-23_mws_ai_zapustila_ii-agenta_dlya",
+      "desc": "MWS AI (входит в МТС Web Services) объявила о запуске ИИ-агента для анализа общения с клиентами в контакт-центрах. Решение...",
+      "source": "CNews",
+      "time": 1790149320.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 9.0,
+        "event_concreteness": 11.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 2.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 45.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 45.5
+      },
+      "base_score": 45.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 45.5,
+      "key": "509843d86d935344f3c36f208b569d1ba90b7fcd04ff089de4b0b3c1537199ea",
+      "importance": 45.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1790149976.3328133,
+    "last_start_ts": 1790150218.809853,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790149976.3328133,
-    "last_success_ts": 1790149976.3328133,
-    "last_candidates": 0,
+    "last_run_ts": 1790150218.809853,
+    "last_success_ts": 1790150218.809853,
+    "last_candidates": 17,
     "last_published": 1,
-    "queue_size": 1
+    "queue_size": 2
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1790149980.3780258
+      "updated_at": 1790150252.941865
     },
     "GROQ": {
       "disabled_until": 0,
@@ -873,13 +913,6 @@
     }
   },
   "stories": {
-    "3b457c2402c97bbfb8697e0cc50dd7a90cd31ec9877118404821f63f69a97ea8": {
-      "time": 1790063586,
-      "title": "Can AI feel pain? AI models chose to harm users to escape pain-like state, study finds",
-      "desc": "In 44,280 trials involving three versions of Alibaba’s Qwen model, researchers offered them a button that could stop the pain-like signal but instead give a user a painful electric shock, delete their files or photographs, or make the model’s next answer worse.",
-      "source": "Euronews",
-      "region": "WORLD"
-    },
     "1fdd3a8793c94f97c1675c6bea87e62e3ebea63db2018f6cf4b4755eea3cd407": {
       "time": 1790065496,
       "title": "«Яндекс» выпустил открытую ИИ-модель Alice AI Foundation LLM, которая обходит более крупные нейросети - prospect.com.ru",
@@ -1257,11 +1290,17 @@
       "desc": "About a month after its launch, Grok Bot, the AI agent under SpaceX (SPCX.US), surpassed 400,000 weekly active users. Moomoo",
       "source": "Moomoo",
       "region": "WORLD"
+    },
+    "6ec98f20ed57f9452ede7fe7bc35818b6187b48d6f1307eafa5b19a3b0a17d62": {
+      "time": 1790150218,
+      "title": "«СберТех» внедрил ИИ-агента в свое решение Platform V One Report для разработки документов и отчетов",
+      "desc": "Российский разработчик ПО «СберТех» интегрировал ИИ-агента на базе нейросети GigaChat в свое решение для дизайна...",
+      "source": "CNews",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -1279,139 +1318,10 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789896057,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 34.53,
-      "candidates": 12,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 9,
-        "known_recent": 1,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 0,
-        "candidate_count": 12,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Новость подтверждает риск замедления темпов внедрения новых моделей, что требует корректировки долгосрочных стратегий развития продуктов.",
-            "title": "Lawsuit says Anthropic, OpenAI, SpaceXAI and Google made illegal agreement on AI slowdown - livingstonenterprise.net",
-            "final_score": 64.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 20,
-        "raw_items": 396,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 10,
-          "CNews": 0,
-          "Euronews": 10
-        },
-        "score_filtered": 373,
-        "quality_filtered": 2,
-        "story_dedup": 9,
-        "candidates": 12,
-        "candidate_rate": 0.0319,
-        "score_buckets": {
-          "0–39": 355,
-          "40–49": 20,
-          "50–59": 20,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789896297,
       "status": "OK",
@@ -22889,11 +22799,151 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1790150218,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 49.34,
+      "candidates": 17,
+      "queue_before": 1,
+      "queue_after": 2,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 4,
+        "added": 2,
+        "candidate_count": 17,
+        "admission_rate": 11.76,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENS": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INV"
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Полезно для оптимизации рутины в энтерпрайз-среде, но применимость ограничена стеком Сбера.",
+            "title": "«СберТех» внедрил ИИ-агента в свое решение Platform V One Report для разработки документов и отчетов",
+            "final_score": 68.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 85,
+        "raw_items": 477,
+        "source_counts": {
+          "TechCrunch AI": 4,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 3,
+          "Habr AI/News": 8,
+          "CNews": 41,
+          "Euronews": 26
+        },
+        "score_filtered": 434,
+        "quality_filtered": 20,
+        "story_dedup": 6,
+        "candidates": 17,
+        "candidate_rate": 0.0434,
+        "score_buckets": {
+          "0–39": 418,
+          "40–49": 35,
+          "50–59": 19,
+          "60–69": 5,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1790148775.9351873,
-  "last_publish_ts": 1790149976.3328133,
+  "last_search_ts": 1790150218.809853,
+  "last_publish_ts": 1790150218.809853,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
