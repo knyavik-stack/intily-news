@@ -945,22 +945,22 @@
         "freshness": 2.0,
         "low_signal_penalty": 0.0,
         "base_score": 40.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 40.5
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 61.5
       },
       "base_score": 40.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 40.5,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 61.5,
       "key": "04e05d2f307cabf517aa11f6f5f9b695f6fab5963b3221918aae4ad09a300389",
-      "importance": 40.5,
+      "importance": 61.5,
       "editorial_value": 50.0,
       "topics": [
         "agents",
         "business"
       ],
-      "audience_score": null,
+      "audience_score": 7.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
     },
@@ -1001,30 +1001,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790155989.2300823,
+    "last_start_ts": 1790156283.2202656,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790155989.2300823,
-    "last_success_ts": 1790155989.2300823,
+    "last_run_ts": 1790156283.2202656,
+    "last_success_ts": 1790156283.2202656,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 5
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790155989.2113166
+      "disabled_until": 1790159838.1349742,
+      "reason": "The read operation timed out",
+      "updated_at": 1790156238.134977
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790149255.1034606
+      "disabled_until": 1790159841.2895803,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1790156241.2895827
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790149255.1034606
+      "disabled_until": 1790242683.2068377,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1790156283.2068393
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1032,9 +1032,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790149255.1034606
+      "disabled_until": 1790159881.9891143,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1790156281.9891157
     }
   },
   "stories": {
@@ -1440,136 +1440,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789899417,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 35.19,
-      "candidates": 13,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 11,
-        "known_recent": 1,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 0,
-        "candidate_count": 13,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Юридические риски и возможные ограничения доступа к технологиям требуют корректировки долгосрочных планов интеграции ИИ.",
-            "title": "Lawsuit says Anthropic, OpenAI, SpaceXAI and Google made illegal agreement on AI slowdown - livingstonenterprise.net",
-            "final_score": 64.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 22,
-        "raw_items": 402,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 9,
-          "CNews": 0,
-          "Euronews": 12
-        },
-        "score_filtered": 377,
-        "quality_filtered": 6,
-        "story_dedup": 6,
-        "candidates": 13,
-        "candidate_rate": 0.0342,
-        "score_buckets": {
-          "0–39": 360,
-          "40–49": 23,
-          "50–59": 18,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789901577,
       "status": "OK",
@@ -22965,6 +22835,84 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1790156283,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 65.2,
+      "candidates": 0,
+      "queue_before": 5,
+      "queue_after": 5,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 7.0,
+          "bonus_total": 21.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Новый ИИ-ассистент для разработчиков сокращает рутину и ускоряет циклы разработки, но требует оценки рисков облачной модели.",
+            "title": "GigaCode Desktop — мультиагентное приложение Сбербанка для управления жизненным циклом разработки продуктов — стало доступно бизнесу",
+            "final_score": 61.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
