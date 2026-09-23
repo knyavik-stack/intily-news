@@ -1193,30 +1193,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790160062.86297,
+    "last_start_ts": 1790160331.9541159,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790160062.86297,
-    "last_success_ts": 1790160062.86297,
+    "last_run_ts": 1790160331.9541159,
+    "last_success_ts": 1790160331.9541159,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 10
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790160062.8285675
+      "disabled_until": 1790163918.316351,
+      "reason": "The read operation timed out",
+      "updated_at": 1790160318.316353
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790157180.912009
+      "disabled_until": 1790163921.9077148,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1790160321.9077163
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790157180.912009
+      "disabled_until": 1790246731.9046526,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1790160331.9046543
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1224,19 +1224,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790157180.912009
+      "disabled_until": 1790163930.4236057,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1790160330.423607
     }
   },
   "stories": {
-    "218f17a685e8062ceecd9e31d5847beb79452efcfd9e18baeafb93a14c1bcce1": {
-      "time": 1790073898,
-      "title": "Anthropic, OpenAI Breaches Show Enterprises Must Assume Breach Mindset For Cybersecurity Going Forward - ibtimes.com",
-      "desc": "Anthropic, OpenAI Breaches Show Enterprises Must Assume Breach Mindset For Cybersecurity Going Forward ibtimes.com",
-      "source": "ibtimes.com",
-      "region": "WORLD"
-    },
     "2f4de0974460f06f639bd3d7b2b1634642b4d86851e305585ba87775eff6e554": {
       "time": 1790074155,
       "title": "Агент пишет быстрее, команда релизит медленнее: 30 дней с coding agent на реальном проекте - Хабр",
@@ -1611,136 +1604,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1789903733,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 33.85,
-      "candidates": 14,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 13,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 0,
-        "candidate_count": 14,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Юридические риски и возможные ограничения в доступе к новым моделям могут повлиять на долгосрочное планирование ИИ-инфраструктуры.",
-            "title": "Lawsuit says Anthropic, OpenAI, SpaceXAI and Google made illegal agreement on AI slowdown - livingstonenterprise.net",
-            "final_score": 64.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 26,
-        "raw_items": 424,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 3,
-          "Habr AI/News": 10,
-          "CNews": 0,
-          "Euronews": 13
-        },
-        "score_filtered": 395,
-        "quality_filtered": 7,
-        "story_dedup": 8,
-        "candidates": 14,
-        "candidate_rate": 0.0352,
-        "score_buckets": {
-          "0–39": 375,
-          "40–49": 27,
-          "50–59": 21,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789903976,
       "status": "OK",
@@ -22983,6 +22846,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1790160331,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 33.84,
+      "candidates": 0,
+      "queue_before": 10,
+      "queue_after": 10,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 5,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
