@@ -834,12 +834,6 @@
     "cbd5d55738a5ea89d10b26a0873c375cf4c18b6bfedaa0a15ab37350901e1bf5": 1790251505
   },
   "known": {
-    "aad32e64d7918d1ac0b01c58ec5f0fc6fc50696d6d42e27c16680e60eb9e99b4": 1790246488.7171571,
-    "1122e68fdbcb9d61c161338dae5d88412c787c6ce30a8852d783a15595eccd21": 1790246488.7171571,
-    "b5cf4e4f30dc146abe08af89127b48eb21e96db4aa4a1ff62eda80fb08c457f6": 1790246488.7171571,
-    "075ff5348c8f05979890a029086f994905af5b4807502f3a8f1bc0d51c612ed8": 1790246488.7171571,
-    "ee270c5bc8d903b6259e276e24e437b7b163acd34123472873eb1af0a785aaa4": 1790246488.7171571,
-    "35682ad302190355ec13b2f3bf2d20f2909276fabfcab39ed11bd81edd0cd85f": 1790246488.7171571,
     "9eaa1243fe641ee30a34a81a4c68d4d7b756e5500b573bcc78d58cc7a1f787cf": 1790249344.4022784,
     "cbd5d55738a5ea89d10b26a0873c375cf4c18b6bfedaa0a15ab37350901e1bf5": 1790249344.4022784,
     "899177b786447c5fdb4a6496059872edce20eea52447e5596d5391c1b010d765": 1790249344.4022784,
@@ -1570,30 +1564,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790251505.2612364,
+    "last_start_ts": 1790252027.0167716,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790251505.2612364,
-    "last_success_ts": 1790251505.2612364,
-    "last_candidates": 44,
-    "last_published": 1,
+    "last_run_ts": 1790252027.0167716,
+    "last_success_ts": 1790252027.0167716,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790251505.0226405
+      "disabled_until": 1790255604.162377,
+      "reason": "The read operation timed out",
+      "updated_at": 1790252004.1623793
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790251496.8955367
+      "disabled_until": 1790255607.374417,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1790252007.3744185
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790251496.8955367
+      "disabled_until": 1790338426.817565,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1790252026.8175664
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1601,26 +1595,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790251496.8955367
+      "disabled_until": 1790255625.866531,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1790252025.866532
     }
   },
   "stories": {
-    "bb9979e3c32aeafe5714a5eba5d0d06c82b5475d6a3f8015093e76d417eff9ae": {
-      "time": 1790165107,
-      "title": "Китайский регулятор начал проверку DeepSeek и Moonshot AI из‑за передачи данных пользователей в Claude",
-      "desc": "Главный китайский регулятор интернет‑пространства — Управление по вопросам киберпространства КНР — проводит проверку компаний DeepSeek и Moonshot AI. Их обвиняют в том, что они перенаправляют запросы пользователей и данные в модель Claude от компании Anthropic. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
-    "66e51063379a625531d3ec27c163d0a6f01daad01a0856c6728d47f1333caca7": {
-      "time": 1790165360,
-      "title": "After calls to slow down, Anthropic and OpenAI release new models - htxt.co.za",
-      "desc": "After calls to slow down, Anthropic and OpenAI release new models htxt.co.za",
-      "source": "htxt.co.za",
-      "region": "WORLD"
-    },
     "1038f11bf5957620c93695dcf543b16ab6948eb72a825b4e57f3e3ed12da3cae": {
       "time": 1790169552,
       "title": "Hitch запустил образовательный курс по внедрению ИИ в процессы разработки",
@@ -1848,146 +1828,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790013179,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 59.74,
-      "candidates": 33,
-      "queue_before": 12,
-      "queue_after": 12,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 17,
-        "known_recent": 0,
-        "already_queued": 10,
-        "story_queue": 1,
-        "story_history": 4,
-        "added": 1,
-        "candidate_count": 33,
-        "admission_rate": 3.03,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://shattered.io/google-gemini-ai-breach-disclosure-delay-2026/",
-            "image_url": "https://shattered.io/wp-content/uploads/2026/09/google-gemini-ai-breach-disclosure-delay-2026-1-1024x585.webp",
-            "width": 1024,
-            "height": 585,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.67,
-          "bonus_total": 69.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходим немедленный пересмотр политик безопасности и отказ от передачи чувствительных данных в публичные облачные модели.",
-            "title": "Google Waited 4 Months to Reveal Gemini’s AI Breach [2026] - shattered.io",
-            "final_score": 66.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 197,
-        "raw_items": 1482,
-        "source_counts": {
-          "TechCrunch AI": 5,
-          "VentureBeat AI": -1,
-          "The Verge AI": 4,
-          "OpenAI News": 3,
-          "Google DeepMind": 0,
-          "Hugging Face": 1,
-          "Ars Technica": 7,
-          "Habr AI/News": 40,
-          "CNews": 87,
-          "Euronews": 50
-        },
-        "score_filtered": 1402,
-        "quality_filtered": 38,
-        "story_dedup": 9,
-        "candidates": 33,
-        "candidate_rate": 0.0257,
-        "score_buckets": {
-          "0–39": 1309,
-          "40–49": 126,
-          "50–59": 42,
-          "60–69": 5,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 2,
-          "6": 2,
-          "7": 3,
-          "8": 3,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790013428,
       "status": "OK",
@@ -21777,6 +21617,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1790252027,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 43.31,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 6,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
