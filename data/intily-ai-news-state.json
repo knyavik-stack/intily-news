@@ -1447,30 +1447,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790245267.6391425,
+    "last_start_ts": 1790245515.9243085,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790245267.6391425,
-    "last_success_ts": 1790245267.6391425,
+    "last_run_ts": 1790245515.9243085,
+    "last_success_ts": 1790245515.9243085,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 16
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790245267.4988773
+      "disabled_until": 1790249098.150627,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1790245498.1506286
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790245258.6645894
+      "disabled_until": 1790249101.805587,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1790245501.8055885
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790245258.6645894
+      "disabled_until": 1790331915.8056345,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1790245515.8056366
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1478,9 +1478,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790245258.6645894
+      "disabled_until": 1790249114.6091807,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1790245514.6091821
     }
   },
   "stories": {
@@ -1711,97 +1711,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790005594,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 106.44,
-      "candidates": 0,
-      "queue_before": 10,
-      "queue_after": 9,
-      "published": 1,
-      "publish_attempts": 2,
-      "item_failures": 1,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/news/1084796/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1084796",
-            "image_url": "https://habr.com/share/publication/1084796/8acb16d02fd3e7067a98030dcfc31b83/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Прямое влияние на безопасность данных и выбор LLM-провайдера для продакшена.",
-            "title": "Google Waited 4 Months to Reveal Gemini’s AI Breach [2026] - shattered.io",
-            "final_score": 67.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 2,
-        "blocked": 6,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1790006973,
       "status": "OK",
@@ -21575,6 +21484,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1790245515,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 19.34,
+      "candidates": 0,
+      "queue_before": 16,
+      "queue_after": 16,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 5,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
