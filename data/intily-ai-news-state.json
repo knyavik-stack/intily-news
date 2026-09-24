@@ -838,17 +838,6 @@
     "b5ab73455b8aa5095c07774269fb54b5dbf066e962610407a17e1a56dd702f8b": 1790258909
   },
   "known": {
-    "a8a0bc12f7b96fcf1c40e67b011c89af814e14579f59e9ad0acf6b0fcc24413f": 1790267345.264528,
-    "40f8dc380c9e16e24d2feb9b53e29f691bbd24fdb3e1ebec165926bd9b024066": 1790267345.264528,
-    "4fd545afd8d4db7ed2818c4771c6cbf92beeb54a18737e2bcbe3471bb09d41cd": 1790267345.264528,
-    "e2e5804ed06f401ee4c90a05773820c7c19b17fcdc6ac51cea3f2d337bc02499": 1790267345.264528,
-    "96cb4ae7fbf9ed4c4ebf0650f01136eb73b400a57ef93444687ca8d0fc20f8b5": 1790267345.264528,
-    "3e0d80bff21a3c24dbfeacefcc2b887e9b38890f73e0c39481450c50c1865f5d": 1790267345.264528,
-    "2652e60106c4e77c4f9da823864192146bd683e07ec0725d8f09e9d4bb29cd45": 1790267345.264528,
-    "1815156384eee4c9ca827c9f437b9c8cc83a15a7270e62d5fa1232ac1bf4ede8": 1790267345.264528,
-    "e10c90a29ce6fef9fcedb5d255f4430ce8520283234616371693961d008401cc": 1790267345.264528,
-    "98a65563ff394bbec292dc4d7b289fc27f552833f5268368486d9abb97af8723": 1790267345.264528,
-    "3c82a55892a0175f168cf01eb67ee04067c0caf09bdb1cc61b48acc4e298a061": 1790267345.264528,
     "ed14b294250ecd2103e834a91f319fde422a87d75c4d2b91609cf19d1f330f9c": 1790269745.037309,
     "03512fb7542667f1d1e745aef1b5955cc4935d0aa72cac588b62831bd8ea7a23": 1790269745.037309,
     "7f802862184846b8b6ac8c7a8117c4092c5c040d60539fc3fdb037a9b7eb1432": 1790269745.037309,
@@ -1625,30 +1614,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790272621.4366636,
+    "last_start_ts": 1790273104.9396174,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790272621.4366636,
-    "last_success_ts": 1790272621.4366636,
+    "last_run_ts": 1790273104.9396174,
+    "last_success_ts": 1790273104.9396174,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1790276217.0713503,
+      "disabled_until": 1790276700.7924097,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1790272617.0713525
+      "updated_at": 1790273100.7924118
     },
     "GROQ": {
-      "disabled_until": 1790276220.4752202,
+      "disabled_until": 1790276703.1395574,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790272620.4752219
+      "updated_at": 1790273103.139559
     },
     "OPENAI": {
-      "disabled_until": 1790359021.2221713,
+      "disabled_until": 1790359504.7291133,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790272621.2221732
+      "updated_at": 1790273104.7291152
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1656,9 +1645,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1790359020.702891,
+      "disabled_until": 1790359503.4097874,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790272620.7028925
+      "updated_at": 1790273103.4097886
     }
   },
   "stories": {
@@ -1910,94 +1899,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790068623,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 8.16,
-      "candidates": 0,
-      "queue_before": 14,
-      "queue_after": 13,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://english.ahram.org.eg/NewsContentP/3/577144/Business/Zoho-launches-agentic-AI-capabilities-for-business.aspx",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость оценки интеграции агентных функций в текущие бизнес-процессы Zoho для оптимизации затрат.",
-            "title": "Zoho launches agentic AI capabilities for businesses, developers in MENA - Tech - Business - Ahram Online",
-            "final_score": 66.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790068871,
       "status": "OK",
@@ -21292,6 +21193,78 @@
       "business_reason": "no_eligible_item",
       "searched": false,
       "duration_sec": 5.51,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1790273104,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 5.6,
       "candidates": 0,
       "queue_before": 20,
       "queue_after": 20,
