@@ -838,17 +838,6 @@
     "b5ab73455b8aa5095c07774269fb54b5dbf066e962610407a17e1a56dd702f8b": 1790258909
   },
   "known": {
-    "c3cd2bfae58fb2c57114d6c2cdb56693217d3fc4a75a223256f067e0cb54c099": 1790257992.1822672,
-    "0b3f3361c371895c8906c5ea3ac06ff797ca5adeb35c1c1e58ae6597edc19246": 1790257992.1822672,
-    "354045a8d9ee6f6fdc74cad6170d0951764c32ba7c3b9a46c7973c97cf7d4270": 1790257992.1822672,
-    "683280f70e1ab4ed7a972826fe9ab34402972b56dc4f8435cf0088872512a599": 1790257992.1822672,
-    "fa87fe72393097dc0221d5f06af5b3c45484432b0422434ef006da5facb18a16": 1790257992.1822672,
-    "fca5430fe0d29d4871f2de5f256938f850f4b48a138403b92aabc6977ad51811": 1790257992.1822672,
-    "21efe4b7c0375a31b40bbb5d24f2568e18bc09b50f6bb7a8b9ee96f8c8f27dd7": 1790257992.1822672,
-    "3a7df12d751c5a2336f77fad7e17219001eaac19dcf19626b23bcfd292cc1e8a": 1790257992.1822672,
-    "26b7172ae8b9ee1349c4ef48d2803a5c008f8ea9d860052c7ff42e0817d93668": 1790257992.1822672,
-    "0586f7d10d5675acbfc8b23b4d434e67c1b7bdfebfc957dba77889fcbca33848": 1790257992.1822672,
-    "d81d18464bb7b7186c46f9ed844725c897d31c0931df4e100af77cec1f98dfa4": 1790257992.1822672,
     "a3c2af4bd55fc69f8442c7a0acd8f53a93f7d989da682e79000199d7a665d02f": 1790260658.5738642,
     "7276a88db880573ba681962307431bac14a7b7af5700409c7bf2eb688b239bff": 1790260658.5738642,
     "ed14b294250ecd2103e834a91f319fde422a87d75c4d2b91609cf19d1f330f9c": 1790260658.5738642,
@@ -1621,30 +1610,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790263265.5391414,
+    "last_start_ts": 1790263744.679675,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790263265.5391414,
-    "last_success_ts": 1790263265.5391414,
-    "last_candidates": 58,
+    "last_run_ts": 1790263744.679675,
+    "last_success_ts": 1790263744.679675,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1790266860.5449777,
+      "disabled_until": 1790267340.7350354,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1790263260.5449798
+      "updated_at": 1790263740.7350368
     },
     "GROQ": {
-      "disabled_until": 1790266864.0959852,
+      "disabled_until": 1790267343.8693638,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790263264.095987
+      "updated_at": 1790263743.8693647
     },
     "OPENAI": {
-      "disabled_until": 1790349665.3574636,
+      "disabled_until": 1790350144.489034,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790263265.3574653
+      "updated_at": 1790263744.4890358
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1652,9 +1641,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1790349664.3270185,
+      "disabled_until": 1790350144.0132551,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790263264.3270206
+      "updated_at": 1790263744.0132568
     }
   },
   "stories": {
@@ -1906,94 +1895,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790053746,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 7.84,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 16,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://habr.com/ru/news/1084838/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1084838",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Повышение комфорта и скорости работы в CLI для разработчиков, работающих с тяжелыми AI-процессами.",
-            "title": "Вышла версия Kitty Terminal 0.49",
-            "final_score": 65.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 14,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790054224,
       "status": "OK",
@@ -21675,6 +21576,78 @@
         },
         "audience_stage": "post_editorial"
       },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1790263744,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 4.73,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
       "provider": {
         "attempts": [],
         "used": null,
