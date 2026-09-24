@@ -858,7 +858,20 @@
     "1815156384eee4c9ca827c9f437b9c8cc83a15a7270e62d5fa1232ac1bf4ede8": 1790267345.264528,
     "e10c90a29ce6fef9fcedb5d255f4430ce8520283234616371693961d008401cc": 1790267345.264528,
     "98a65563ff394bbec292dc4d7b289fc27f552833f5268368486d9abb97af8723": 1790267345.264528,
-    "3c82a55892a0175f168cf01eb67ee04067c0caf09bdb1cc61b48acc4e298a061": 1790267345.264528
+    "3c82a55892a0175f168cf01eb67ee04067c0caf09bdb1cc61b48acc4e298a061": 1790267345.264528,
+    "ed14b294250ecd2103e834a91f319fde422a87d75c4d2b91609cf19d1f330f9c": 1790269745.037309,
+    "03512fb7542667f1d1e745aef1b5955cc4935d0aa72cac588b62831bd8ea7a23": 1790269745.037309,
+    "7f802862184846b8b6ac8c7a8117c4092c5c040d60539fc3fdb037a9b7eb1432": 1790269745.037309,
+    "683280f70e1ab4ed7a972826fe9ab34402972b56dc4f8435cf0088872512a599": 1790269745.037309,
+    "3dcd38e164020dc60fe12a4fbe06f283eafa78761347f6612ffdac76a7d77411": 1790269745.037309,
+    "b17a7b0d62d097038752ca66dba410a2dca6caeac1259c0e34403f3e1ca47d88": 1790269745.037309,
+    "0353a18f69163e149b9f656b89eea59d57c28ac55eac42cfb8fa85d24b293ff1": 1790269745.037309,
+    "866cd31eac4f9740c454f0baee63469c7bbaa629453333e437e3f099a04a7cd0": 1790269745.037309,
+    "497437691ae2a2e7918f4aa188a27169dd99fa136c4c3a4f6da8f942fc8e5887": 1790269745.037309,
+    "b085631d7990ff81be106e9709da986bfe817b4b7699478f6983d7e4392c29f4": 1790269745.037309,
+    "d81d18464bb7b7186c46f9ed844725c897d31c0931df4e100af77cec1f98dfa4": 1790269745.037309,
+    "9483219e4ddf8d59ca41ef5877efbdee6750d3121d1a0b00e70c6ec0d83d58fb": 1790269745.037309,
+    "3dd53f2fa24792037489bca3086f6e6de3404e6a13f894efd29aa77dea0ea810": 1790269745.037309
   },
   "queue": [
     {
@@ -1510,19 +1523,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 50.5,
+        "base_score": 50.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 50.5
+        "final_score": 50.0
       },
-      "base_score": 50.5,
+      "base_score": 50.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 50.5,
+      "score": 50.0,
       "key": "a8a0bc12f7b96fcf1c40e67b011c89af814e14579f59e9ad0acf6b0fcc24413f",
-      "importance": 50.5,
+      "importance": 50.0,
       "editorial_value": 50.0,
       "topics": [
         "business",
@@ -1607,30 +1620,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790268796.7653136,
+    "last_start_ts": 1790269745.037309,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790268796.7653136,
-    "last_success_ts": 1790268796.7653136,
-    "last_candidates": 0,
+    "last_run_ts": 1790269745.037309,
+    "last_success_ts": 1790269745.037309,
+    "last_candidates": 60,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1790272392.2308826,
+      "disabled_until": 1790273340.9989128,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1790268792.2308848
+      "updated_at": 1790269740.9989161
     },
     "GROQ": {
-      "disabled_until": 1790272395.4896848,
+      "disabled_until": 1790273344.16328,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790268795.4896863
+      "updated_at": 1790269744.1632824
     },
     "OPENAI": {
-      "disabled_until": 1790355196.5898073,
+      "disabled_until": 1790356144.8067455,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790268796.5898087
+      "updated_at": 1790269744.8067474
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1638,9 +1651,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1790355195.6772876,
+      "disabled_until": 1790356144.5203185,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790268795.6772892
+      "updated_at": 1790269744.5203202
     }
   },
   "stories": {
@@ -1892,89 +1905,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790064064,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 57.25,
-      "candidates": 0,
-      "queue_before": 9,
-      "queue_after": 9,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Потенциальное снижение стоимости облачных вычислений и альтернатива дефицитному железу Nvidia.",
-            "title": "China's Alibaba unveils new powerful chip and ambitious AI model plans - ABC News - Breaking News, Latest News and Videos",
-            "final_score": 65.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 12,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1790064542,
       "status": "OK",
@@ -21421,10 +21351,131 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1790269745,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 50.36,
+      "candidates": 60,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 14,
+        "already_queued": 14,
+        "story_queue": 1,
+        "story_history": 9,
+        "added": 13,
+        "candidate_count": 60,
+        "admission_rate": 21.67,
+        "dominant_block": "known_recent",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 232,
+        "raw_items": 1494,
+        "source_counts": {
+          "TechCrunch AI": 11,
+          "VentureBeat AI": -1,
+          "The Verge AI": 10,
+          "OpenAI News": 0,
+          "Google DeepMind": 1,
+          "Hugging Face": 1,
+          "Ars Technica": 4,
+          "Habr AI/News": 40,
+          "CNews": 115,
+          "Euronews": 50
+        },
+        "score_filtered": 1373,
+        "quality_filtered": 49,
+        "story_dedup": 12,
+        "candidates": 60,
+        "candidate_rate": 0.0475,
+        "score_buckets": {
+          "0–39": 1291,
+          "40–49": 127,
+          "50–59": 65,
+          "60–69": 11,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 1,
+          "5": 2,
+          "6": 6,
+          "7": 2,
+          "8": 5,
+          "9": 0,
+          "10": 1
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1790267345.264528,
+  "last_search_ts": 1790269745.037309,
   "last_publish_ts": 1790258909.2368479,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
