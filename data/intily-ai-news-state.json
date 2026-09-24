@@ -890,19 +890,19 @@
         "novelty": 0.0,
         "source_quality": 5.0,
         "evidence": 3.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 59.5,
+        "base_score": 59.0,
         "audience_score": 10.0,
         "audience_bonus": 30.0,
-        "final_score": 89.5
+        "final_score": 89.0
       },
-      "base_score": 59.5,
+      "base_score": 59.0,
       "audience_bonus": 30.0,
       "score_stage": "final",
-      "score": 89.5,
+      "score": 89.0,
       "key": "3933852be037a90032228c601271afd48cefd8bf0aeb6fea4c4340aaed67c730",
-      "importance": 89.5,
+      "importance": 89.0,
       "editorial_value": 50.0,
       "topics": [
         "business"
@@ -1620,30 +1620,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790270224.7312217,
+    "last_start_ts": 1790270703.3187242,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790270224.7312217,
-    "last_success_ts": 1790270224.7312217,
+    "last_run_ts": 1790270703.3187242,
+    "last_success_ts": 1790270703.3187242,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1790273819.9801848,
+      "disabled_until": 1790274298.8698995,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1790270219.9801867
+      "updated_at": 1790270698.8699014
     },
     "GROQ": {
-      "disabled_until": 1790273823.2761285,
+      "disabled_until": 1790274302.4779313,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790270223.2761302
+      "updated_at": 1790270702.4779327
     },
     "OPENAI": {
-      "disabled_until": 1790356624.6072023,
+      "disabled_until": 1790357103.1993725,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790270224.6072047
+      "updated_at": 1790270703.1993742
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1651,9 +1651,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1790356623.5429595,
+      "disabled_until": 1790357102.6604931,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790270223.5429614
+      "updated_at": 1790270702.660495
     }
   },
   "stories": {
@@ -1905,148 +1905,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790065496,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 45.63,
-      "candidates": 24,
-      "queue_before": 9,
-      "queue_after": 13,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 9,
-        "known_recent": 0,
-        "already_queued": 7,
-        "story_queue": 2,
-        "story_history": 1,
-        "added": 5,
-        "candidate_count": 24,
-        "admission_rate": 20.83,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.67,
-          "bonus_total": 78.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 3,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Появление мощной открытой модели позволяет снизить зависимость от зарубежных API и оптимизировать затраты на разработку.",
-            "title": "«Яндекс» выпустил открытую ИИ-модель Alice AI Foundation LLM, которая обходит более крупные нейросети - prospect.com.ru",
-            "final_score": 67.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 5,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 106,
-        "raw_items": 564,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 1,
-          "Ars Technica": 3,
-          "Habr AI/News": 17,
-          "CNews": 47,
-          "Euronews": 36
-        },
-        "score_filtered": 524,
-        "quality_filtered": 10,
-        "story_dedup": 6,
-        "candidates": 24,
-        "candidate_rate": 0.0524,
-        "score_buckets": {
-          "0–39": 492,
-          "40–49": 41,
-          "50–59": 30,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 1,
-          "6": 2,
-          "7": 3,
-          "8": 2,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 3,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790066474,
       "status": "OK",
@@ -21403,6 +21261,78 @@
       "business_reason": "no_eligible_item",
       "searched": false,
       "duration_sec": 5.48,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1790270703,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 5.88,
       "candidates": 0,
       "queue_before": 20,
       "queue_after": 20,
