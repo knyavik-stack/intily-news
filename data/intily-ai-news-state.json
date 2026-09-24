@@ -1491,13 +1491,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790228422.4445238,
+    "last_start_ts": 1790228561.8489485,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790228422.4445238,
-    "last_success_ts": 1790228422.4445238,
+    "last_run_ts": 1790228561.8489485,
+    "last_success_ts": 1790228561.8489485,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 18
   },
   "providers": {
@@ -1512,9 +1512,9 @@
       "updated_at": 1790228235.9220488
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790227983.0266976
+      "disabled_until": 1790314961.7105472,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1790228561.71055
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1522,19 +1522,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790228422.335855
+      "disabled_until": 1790232160.9361846,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1790228560.936187
     }
   },
   "stories": {
-    "29e802d481da69555b567f043c5e0fb338cf744b28a4be07e539b40c7a4b9cdb": {
-      "time": 1790142063,
-      "title": "Prime Focus announces $150 million investment in Brahma AI led by Multiples - businessupturn.com",
-      "desc": "Prime Focus announces $150 million investment in Brahma AI led by Multiples businessupturn.com",
-      "source": "businessupturn.com",
-      "region": "WORLD"
-    },
     "f833bb00119c6c97928c8c1c7fd76a0b9db1922234db5388a710c81d1bbf6823": {
       "time": 1790143026,
       "title": "Cyera Announces $400M Investment from Goldman Sachs to Build the Trust Layer for the Agentic Enterprise - AI Insider",
@@ -1769,143 +1762,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1789985109,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 48.4,
-      "candidates": 21,
-      "queue_before": 4,
-      "queue_after": 6,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 11,
-        "known_recent": 0,
-        "already_queued": 4,
-        "story_queue": 0,
-        "story_history": 3,
-        "added": 3,
-        "candidate_count": 21,
-        "admission_rate": 14.29,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.newsbytesapp.com/news/science/don-t-use-china-as-bogeyman-for-not-regulating-ai-microsoft/story",
-            "image_url": "https://i.cdn.newsbytesapp.com/images/l19020260921140211.jpeg",
-            "width": 1920,
-            "height": 1081,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость учитывать будущие регуляторные риски при планировании архитектуры и внедрении LLM-решений.",
-            "title": "Don't cite China's progress to forgo regulations: Microsoft's AI chief - NewsBytes",
-            "final_score": 62.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 117,
-        "raw_items": 797,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 23,
-          "CNews": 55,
-          "Euronews": 39
-        },
-        "score_filtered": 740,
-        "quality_filtered": 28,
-        "story_dedup": 8,
-        "candidates": 21,
-        "candidate_rate": 0.0309,
-        "score_buckets": {
-          "0–39": 703,
-          "40–49": 65,
-          "50–59": 26,
-          "60–69": 3,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 1,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1789986305,
       "status": "OK",
@@ -21809,6 +21665,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1790228561,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 104.46,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 18,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 14,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
