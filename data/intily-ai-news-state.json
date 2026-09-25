@@ -876,7 +876,8 @@
     "f1ea6b330756eca96ea79e9ec5b5a72ce14b626e51a826606182ed23a575426f": 1790352548,
     "792e85471fdb15d2b43df758cdfc3fa6a34a53c5996b190fe7192fd81f50079f": 1790353258,
     "1abf7b0fb87c1640bd0c2a6e9d3c7823f75af6d0fce4c22a9e41d2c75235ac01": 1790355422,
-    "90a67e6e624852f308058593300e9e924f899ae4b8fd330b09c059673adb4426": 1790355702
+    "90a67e6e624852f308058593300e9e924f899ae4b8fd330b09c059673adb4426": 1790355702,
+    "b0da7a1f5f0cd19ec8bf52ef6d85c2e108a550446c9c27040ada321364a65d48": 1790357097
   },
   "known": {
     "1abf7b0fb87c1640bd0c2a6e9d3c7823f75af6d0fce4c22a9e41d2c75235ac01": 1790353258.289284,
@@ -891,48 +892,6 @@
     "f8b913edb1f2b1ad40b81514832e335e2ddf08f7468d07761a434c0c9f808488": 1790355422.5278325
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Meta* делала ИИ-агента Muse* с оглядкой на OpenClaw, но для миллиардов людей - prospect.com.ru",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQUhyTHUwMWFuVlgzU0pVSGVXQzE0Nk1xMEJUeFRMaW1ycUlyVXc2SUlwNUpxUVNSWEY5YTZfUjN1TUZnRWZOMk1YV3VlUURETkpyc1BCYWpXMU5wRUI3bU5wLWg3cGlwd2JOeW5VTGgxSVlwZXBKQ2pVeVJHSlBXUVd2N0JLYW9NaktONWN1ZUJqanpGVnFFWjMwbTBwOXZPS1VSdWJoMkJIajBpZ1RMVWUxbWZ6UUh4?oc=5",
-      "desc": "Meta* делала ИИ-агента Muse* с оглядкой на OpenClaw, но для миллиардов людей prospect.com.ru",
-      "source": "prospect.com.ru",
-      "time": 1790326435.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 12.0,
-        "event_concreteness": 17.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 50.0,
-        "audience_score": 6.0,
-        "audience_bonus": 18.0,
-        "final_score": 68.0
-      },
-      "base_score": 50.0,
-      "audience_bonus": 18.0,
-      "score_stage": "final",
-      "score": 68.0,
-      "key": "b0da7a1f5f0cd19ec8bf52ef6d85c2e108a550446c9c27040ada321364a65d48",
-      "importance": 68.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "security_regulation"
-      ],
-      "audience_score": 6.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0,
-      "last_failed_at": 1790356858,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1790357158
-    },
     {
       "region": "RUSSIA",
       "title": "GitHub Copilot получил локальную изолированную среду для выполнения действий",
@@ -1529,30 +1488,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790356858.0879202,
+    "last_start_ts": 1790357097.8688529,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790356858.0879202,
-    "last_success_ts": 1790356858.0879202,
+    "last_run_ts": 1790357097.8688529,
+    "last_success_ts": 1790357097.8688529,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 17
+    "last_published": 1,
+    "queue_size": 16
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1790359274.38767,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1790355674.3876727
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1790357102.3288
     },
     "GROQ": {
-      "disabled_until": 1790359278.0688992,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790355678.068901
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1790357097.601911
     },
     "OPENAI": {
-      "disabled_until": 1790443264.8965938,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790356864.8965962
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1790357097.601911
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1560,9 +1519,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1790360463.861774,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790356863.8617756
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1790357097.601911
     }
   },
   "stories": {
@@ -1852,10 +1811,16 @@
       "desc": "Microsoft Launches Autopilot, the Copilot Agent That Works on Its Own Pasquale Pillitteri",
       "source": "Pasquale Pillitteri",
       "region": "WORLD"
+    },
+    "b0da7a1f5f0cd19ec8bf52ef6d85c2e108a550446c9c27040ada321364a65d48": {
+      "time": 1790357097,
+      "title": "Meta* делала ИИ-агента Muse* с оглядкой на OpenClaw, но для миллиардов людей - prospect.com.ru",
+      "desc": "Meta* делала ИИ-агента Muse* с оглядкой на OpenClaw, но для миллиардов людей prospect.com.ru",
+      "source": "prospect.com.ru",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -1874,99 +1839,10 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1790147581,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 10.77,
-      "candidates": 0,
-      "queue_before": 8,
-      "queue_after": 7,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 400: Bad Request": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 400: Bad Request"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Ужесточение регулирования потребует пересмотра стратегий безопасности и комплаенса для AI-бизнеса.",
-            "title": "Leaders push for stronger AI safeguards at UN as Trump touts 'Super Intelligence'",
-            "final_score": 66.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790148059,
       "status": "OK",
@@ -21287,11 +21163,101 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1790357097,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 7.16,
+      "candidates": 0,
+      "queue_before": 17,
+      "queue_after": 16,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 403: Forbidden": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 403: Forbidden"
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 7.0,
+          "bonus_total": 21.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Масштабирование ИИ-агентов Meta* создает новые стандарты автоматизации, к которым бизнесу придется адаптироваться.",
+            "title": "Meta* делала ИИ-агента Muse* с оглядкой на OpenClaw, но для миллиардов людей - prospect.com.ru",
+            "final_score": 71.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1790355422.5278325,
-  "last_publish_ts": 1790355702.3021297,
+  "last_publish_ts": 1790357097.8688529,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
