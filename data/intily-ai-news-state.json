@@ -980,19 +980,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 46.5,
+        "base_score": 46.0,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 64.5
+        "final_score": 64.0
       },
-      "base_score": 46.5,
+      "base_score": 46.0,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 64.5,
+      "score": 64.0,
       "key": "5c5a397b7d1f1aa210f1e540422f6a608adba7fbefa69d5412cd36101ba316c4",
-      "importance": 64.5,
+      "importance": 64.0,
       "editorial_value": 50.0,
       "topics": [],
       "audience_score": 6.0,
@@ -1588,13 +1588,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790341988.3113303,
+    "last_start_ts": 1790343429.6873245,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790341988.3113303,
-    "last_success_ts": 1790341988.3113303,
-    "last_candidates": 33,
-    "last_published": 1,
+    "last_run_ts": 1790343429.6873245,
+    "last_success_ts": 1790343429.6873245,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 19
   },
   "providers": {
@@ -1609,9 +1609,9 @@
       "updated_at": 1790342020.72491
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790341978.2311907
+      "disabled_until": 1790429829.5343664,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1790343429.5343688
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1619,9 +1619,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790342024.494071
+      "disabled_until": 1790347028.26779,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1790343428.2677925
     }
   },
   "stories": {
@@ -1887,94 +1887,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790103910,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 12.44,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 401: Unauthorized": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 401: Unauthorized"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Демонстрация прикладного внедрения ИИ в высоконагруженном финтехе дает ориентир для оптимизации бизнес-процессов.",
-            "title": "ЕДИНЫЙ ЦУПИС представил опыт внедрения ИИ на AgileDays FEST 2026 - companies.rbc.ru",
-            "final_score": 62.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790104137,
       "status": "OK",
@@ -21396,6 +21308,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1790343429,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 12.86,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 5,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
