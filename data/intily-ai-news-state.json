@@ -1102,21 +1102,21 @@
         "freshness": 2.0,
         "low_signal_penalty": 0.0,
         "base_score": 47.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 47.0
+        "audience_score": 5.0,
+        "audience_bonus": 15.0,
+        "final_score": 62.0
       },
       "base_score": 47.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 47.0,
+      "audience_bonus": 15.0,
+      "score_stage": "final",
+      "score": 62.0,
       "key": "a248c99cf07b7a5c8f3fa5e61a5eec74cf0f0dc887beeb24b87304b37284c642",
-      "importance": 47.0,
+      "importance": 62.0,
       "editorial_value": 50.0,
       "topics": [
         "models"
       ],
-      "audience_score": null,
+      "audience_score": 5.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
     },
@@ -1484,30 +1484,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790318467.7560022,
+    "last_start_ts": 1790319506.048823,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790318467.7560022,
-    "last_success_ts": 1790318467.7560022,
-    "last_candidates": 20,
+    "last_run_ts": 1790319506.048823,
+    "last_success_ts": 1790319506.048823,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 17
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1790322102.4673982,
+      "disabled_until": 1790323026.1476285,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1790318502.4673996
+      "updated_at": 1790319426.1476297
     },
     "GROQ": {
-      "disabled_until": 1790322105.4553823,
+      "disabled_until": 1790323029.4242716,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790318505.4553838
+      "updated_at": 1790319429.424273
     },
     "OPENAI": {
-      "disabled_until": 1790404912.534118,
+      "disabled_until": 1790405905.9008563,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790318512.5341198
+      "updated_at": 1790319505.9008574
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1515,19 +1515,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1790322111.1006775,
+      "disabled_until": 1790323105.0049896,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790318511.100679
+      "updated_at": 1790319505.0049913
     }
   },
   "stories": {
-    "c56aa1dcc7850093d3c4d701f583f2b2d47b406c2b7d71b5608b342823c71b58": {
-      "time": 1790232784,
-      "title": "2ГИС выпустил MCP-сервер для бизнеса",
-      "desc": "2ГИС выпустил MCP-сервер — программный компонент, который дает корпоративным ИИ-агентам прямой доступ к данным...",
-      "source": "CNews",
-      "region": "RUSSIA"
-    },
     "f8930b9bdca58687dc3f0484e96e910a7a9a4bb18fab224c13fd878c9fcb9779": {
       "time": 1790233276,
       "title": "JetBrains больше не хочет быть просто компанией про IDE",
@@ -1762,94 +1755,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790077993,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 27.36,
-      "candidates": 0,
-      "queue_before": 13,
-      "queue_after": 12,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENS": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "IMAGE_CANDIDATES_FAILED: html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INV"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 4.5,
-          "bonus_total": 27.0,
-          "max_score": 5.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 5.0,
-            "bonus": 15.0,
-            "reason": "Полезно для понимания кадрового резерва, но не меняет текущие бизнес-процессы или технологии.",
-            "title": "ИТ-холдинг «Т1» и Финансовый университет запустили программу подготовки специалистов по ИИ и машинному обучению",
-            "final_score": 62.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790078242,
       "status": "OK",
@@ -21233,6 +21138,84 @@
         "failovers": 0,
         "failures": 4,
         "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1790319506,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 88.29,
+      "candidates": 0,
+      "queue_before": 17,
+      "queue_after": 17,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 5.0,
+          "bonus_total": 15.0,
+          "max_score": 5.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 5.0,
+            "bonus": 15.0,
+            "reason": "Слух о цене не меняет текущие рабочие процессы, пока нет официального релиза и подтвержденных преимуществ тарифа.",
+            "title": "OpenAI может запустить ChatGPT Pro Max за $500 в месяц",
+            "final_score": 62.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 10,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
         "skipped_no_key": 0,
         "retries": 0
       },
