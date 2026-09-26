@@ -980,10 +980,10 @@
       "topics": [],
       "audience_score": 7.0,
       "tier": "A",
-      "last_failed_at": 1790448767,
-      "last_failure": "Expecting value: line 1 column 1 (char 0)",
-      "failure_count": 1,
-      "next_retry_at": 1790449067
+      "last_failed_at": 1790449756,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 2,
+      "next_retry_at": 1790450356
     },
     {
       "region": "RUSSIA",
@@ -1018,20 +1018,20 @@
       "topics": [],
       "audience_score": null,
       "tier": "A",
-      "russia_weight_bonus": 0.0,
-      "last_failed_at": 1790448767,
-      "last_failure": "Unterminated string starting at: line 4 column 14 (char 618)",
-      "failure_count": 1,
-      "next_retry_at": 1790449067
+      "last_failed_at": 1790449756,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 2,
+      "next_retry_at": 1790450356,
+      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1790448767.4150805,
+    "last_start_ts": 1790449756.5107388,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790448767.4150805,
-    "last_success_ts": 1790448767.4150805,
-    "last_candidates": 25,
+    "last_run_ts": 1790449756.5107388,
+    "last_success_ts": 1790449756.5107388,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 2
   },
@@ -1047,9 +1047,9 @@
       "updated_at": 1790448829.7952795
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790447084.9428139
+      "disabled_until": 1790536166.5252488,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1790449766.52525
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1057,33 +1057,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790448911.718436
+      "disabled_until": 1790453365.6870792,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1790449765.6870801
     }
   },
   "stories": {
-    "8008098d35a8c1d9d26f2adc559b4663d1d6555096d235918b26473c838abf50": {
-      "time": 1790362384,
-      "title": "Darktrace Launches Signal Labs to Research Risks of Enterprise AI Agents - konsulteer.com",
-      "desc": "Darktrace Launches Signal Labs to Research Risks of Enterprise AI Agents konsulteer.com",
-      "source": "konsulteer.com",
-      "region": "WORLD"
-    },
-    "7cb2d075624a6a248226b53ffb742568a2c4e19e2c783102e586a3c76b67161f": {
-      "time": 1790362866,
-      "title": "OpenAI Medicare breach ‘tip of the iceberg’ - AFR",
-      "desc": "OpenAI Medicare breach ‘tip of the iceberg’ AFR",
-      "source": "AFR",
-      "region": "WORLD"
-    },
-    "1acfb0407d8337f7e51cbc95c531bc24c4d9aa9f2e4a83eeaf6de90fb4184c92": {
-      "time": 1790363338,
-      "title": "ИИ-ботнет с функциями червя захватывает Docker-хосты. Признак атаки — неожиданная активность Telegram",
-      "desc": "Ботнет Carbonato, остававшийся незамеченным почти два года, не только создает контейнеры с доступом к хосту, но и устанавливает в них фреймворк Hermes.",
-      "source": "CNews",
-      "region": "RUSSIA"
-    },
     "d85b1764f4cc7b78ad7c7ad2324f7d345f7a299c1b62e42dc71c1cf7413ec3ea": {
       "time": 1790364061,
       "title": "Microsoft представила обновлённую версию Copilot — в одном приложении объединили чат, инструменты для кодинга и - VC.ru",
@@ -1472,96 +1451,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790238062,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 10.53,
-      "candidates": 0,
-      "queue_before": 11,
-      "queue_after": 10,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/companies/bothub/news/1085994/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1085994",
-            "image_url": "https://habr.com/share/publication/1085994/a95b48e9d7c04f161fc5e55480fa828a/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Трехкратное ускорение модели позволяет перевести многие процессы из асинхронных в real-time, что критично для UX и снижения затрат на API.",
-            "title": "Anthropic ускорила Claude в 3 раза за две недели",
-            "final_score": 72.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790238779,
       "status": "OK",
@@ -22464,6 +22353,81 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1790449756,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 41.5,
+      "candidates": 0,
+      "queue_before": 2,
+      "queue_after": 2,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 2,
+        "blocked": 14,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
