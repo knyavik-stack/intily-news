@@ -937,7 +937,6 @@
     "2cc70be1e01f6c97394f19962aa6c56d421304ea12a2872b4de6693af3b18f61": 1790441083
   },
   "known": {
-    "f37a427ca703e3691d5c92e43ffc0fd901e2d24bee0218cc3fca5bfa2c49cf09": 1790435835.8770938,
     "da0fc576543123d13365a1e41e1292ec11558cabd35a18ce4600fd77bda7c60e": 1790437007.401058,
     "43a76ba23abf0db0498f73868bce87b5a30c310905137b22b80df2e04e399b56": 1790437007.401058,
     "a817189aa53b8d28c8a0ac0c6ec5d201a25b9f39dcb513ca4f2542a046975f2c": 1790438688.9870894,
@@ -945,20 +944,20 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1790441083.079219,
+    "last_start_ts": 1790442288.2086549,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790441083.079219,
-    "last_success_ts": 1790441083.079219,
-    "last_candidates": 24,
-    "last_published": 1,
+    "last_run_ts": 1790442288.2086549,
+    "last_success_ts": 1790442288.2086549,
+    "last_candidates": 23,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1790441127.834515
+      "updated_at": 1790442320.3102484
     },
     "GROQ": {
       "disabled_until": 0,
@@ -982,20 +981,6 @@
     }
   },
   "stories": {
-    "1abf7b0fb87c1640bd0c2a6e9d3c7823f75af6d0fce4c22a9e41d2c75235ac01": {
-      "time": 1790355422,
-      "title": "For months, OpenAI’s agent swarms have been attacking online databases to find obscure facts",
-      "desc": "The latest unauthorized agent swarms were discovered by researchers.",
-      "source": "TechCrunch AI",
-      "region": "WORLD"
-    },
-    "90a67e6e624852f308058593300e9e924f899ae4b8fd330b09c059673adb4426": {
-      "time": 1790355702,
-      "title": "Microsoft Launches Autopilot, the Copilot Agent That Works on Its Own - Pasquale Pillitteri",
-      "desc": "Microsoft Launches Autopilot, the Copilot Agent That Works on Its Own Pasquale Pillitteri",
-      "source": "Pasquale Pillitteri",
-      "region": "WORLD"
-    },
     "b0da7a1f5f0cd19ec8bf52ef6d85c2e108a550446c9c27040ada321364a65d48": {
       "time": 1790357097,
       "title": "Meta* делала ИИ-агента Muse* с оглядкой на OpenClaw, но для миллиардов людей - prospect.com.ru",
@@ -1426,133 +1411,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790232584,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 72.22,
-      "candidates": 22,
-      "queue_before": 13,
-      "queue_after": 15,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 4,
-        "known_recent": 0,
-        "already_queued": 12,
-        "story_queue": 1,
-        "story_history": 3,
-        "added": 2,
-        "candidate_count": 22,
-        "admission_rate": 9.09,
-        "dominant_block": "already_queued",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Автоматизация поиска векторов атак через Frontier AI напрямую снижает риски инцидентов и меняет подход к кибербезопасности.",
-            "title": "Palo Alto Puts Frontier AI to Work Hunting Attack Paths - israeldefense.co.il",
-            "final_score": 64.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 5,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 64,
-        "raw_items": 455,
-        "source_counts": {
-          "TechCrunch AI": 5,
-          "VentureBeat AI": -1,
-          "The Verge AI": 7,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 8,
-          "Habr AI/News": 9,
-          "CNews": 15,
-          "Euronews": 20
-        },
-        "score_filtered": 397,
-        "quality_filtered": 21,
-        "story_dedup": 15,
-        "candidates": 22,
-        "candidate_rate": 0.0563,
-        "score_buckets": {
-          "0–39": 357,
-          "40–49": 60,
-          "50–59": 36,
-          "60–69": 2,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 1,
-          "6": 4,
-          "7": 2,
-          "8": 2,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1790232784,
       "status": "OK",
@@ -22228,10 +22086,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1790442288,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 32.28,
+      "candidates": 23,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 17,
+        "known_recent": 1,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 5,
+        "added": 0,
+        "candidate_count": 23,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходим немедленный пересмотр политики безопасности при передаче данных в облачные модели OpenAI.",
+            "title": "ИИ-агенты OpenAI допустили утечку в сеть 53 изображений пользователей ChatGPT - Эксперт",
+            "final_score": 74.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 36,
+        "raw_items": 806,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 10,
+          "CNews": 1,
+          "Euronews": 22
+        },
+        "score_filtered": 758,
+        "quality_filtered": 16,
+        "story_dedup": 9,
+        "candidates": 23,
+        "candidate_rate": 0.0299,
+        "score_buckets": {
+          "0–39": 724,
+          "40–49": 50,
+          "50–59": 28,
+          "60–69": 3,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1790441083.079219,
+  "last_search_ts": 1790442288.2086549,
   "last_publish_ts": 1790441083.079219,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
