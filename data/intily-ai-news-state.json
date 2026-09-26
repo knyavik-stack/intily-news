@@ -937,18 +937,17 @@
     "2cc70be1e01f6c97394f19962aa6c56d421304ea12a2872b4de6693af3b18f61": 1790441083
   },
   "known": {
-    "da0fc576543123d13365a1e41e1292ec11558cabd35a18ce4600fd77bda7c60e": 1790437007.401058,
-    "43a76ba23abf0db0498f73868bce87b5a30c310905137b22b80df2e04e399b56": 1790437007.401058,
     "a817189aa53b8d28c8a0ac0c6ec5d201a25b9f39dcb513ca4f2542a046975f2c": 1790438688.9870894,
-    "2cc70be1e01f6c97394f19962aa6c56d421304ea12a2872b4de6693af3b18f61": 1790441083.079219
+    "2cc70be1e01f6c97394f19962aa6c56d421304ea12a2872b4de6693af3b18f61": 1790441083.079219,
+    "da0fc576543123d13365a1e41e1292ec11558cabd35a18ce4600fd77bda7c60e": 1790442526.7707431
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1790442288.2086549,
+    "last_start_ts": 1790442526.7707431,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790442288.2086549,
-    "last_success_ts": 1790442288.2086549,
+    "last_run_ts": 1790442526.7707431,
+    "last_success_ts": 1790442526.7707431,
     "last_candidates": 23,
     "last_published": 0,
     "queue_size": 0
@@ -957,7 +956,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1790442320.3102484
+      "updated_at": 1790442563.5767653
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1411,94 +1410,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790232784,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 10.86,
-      "candidates": 0,
-      "queue_before": 15,
-      "queue_after": 14,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://operativmm.az/ru/post/glavy-openai-i-anthropic-prizvali-oon-regulirovat-ii/79226",
-            "image_url": "https://operativmm.az/storage/posts/openai-and-anthropic-chiefs-urge-global-ai-regulation-at-un-5e9abb.webp?v=1790229432",
-            "width": 1920,
-            "height": 1440,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Регулирование создаст высокие юридические и финансовые барьеры для разработки и внедрения собственных ИИ-решений.",
-            "title": "Главы OpenAI и Anthropic призвали ООН регулировать ИИ - Operativ Məlumat Mərkəzi",
-            "final_score": 66.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790233276,
       "status": "OK",
@@ -22216,10 +22127,141 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1790442526,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": true,
+      "duration_sec": 36.81,
+      "candidates": 23,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 1,
+      "item_failures": 1,
+      "admission": {
+        "published_key": 17,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 5,
+        "added": 1,
+        "candidate_count": 23,
+        "admission_rate": 4.35,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 6.0,
+          "bonus_total": 54.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 3.0,
+            "bonus": 9.0,
+            "reason": "Спекулятивный проект на ранней стадии без влияния на текущие бизнес-процессы или архитектуру ИИ.",
+            "title": "Google заявила о планах запустить на орбиту дата-центр для ИИ - rbc.ru",
+            "final_score": 51.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 37,
+        "raw_items": 804,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 10,
+          "CNews": 1,
+          "Euronews": 22
+        },
+        "score_filtered": 757,
+        "quality_filtered": 15,
+        "story_dedup": 9,
+        "candidates": 23,
+        "candidate_rate": 0.03,
+        "score_buckets": {
+          "0–39": 722,
+          "40–49": 50,
+          "50–59": 28,
+          "60–69": 3,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1790442288.2086549,
+  "last_search_ts": 1790442526.7707431,
   "last_publish_ts": 1790441083.079219,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
