@@ -971,16 +971,15 @@
     "256e75475cecdb7add0dbc400dd53f38a4fc834bce8b742cb547bd5300aae2ff": 1790520768
   },
   "known": {
-    "059c7b9abe208e547d3ae6f4f6328a15e1631e27ab435feeade1ec148e5bf39e": 1790520051.1600187,
     "256e75475cecdb7add0dbc400dd53f38a4fc834bce8b742cb547bd5300aae2ff": 1790520768.8330317
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1790524606.6939075,
+    "last_start_ts": 1790525566.0614781,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790524606.6939075,
-    "last_success_ts": 1790524606.6939075,
+    "last_run_ts": 1790525566.0614781,
+    "last_success_ts": 1790525566.0614781,
     "last_candidates": 17,
     "last_published": 0,
     "queue_size": 0
@@ -989,7 +988,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1790524637.547956
+      "updated_at": 1790525598.943716
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1013,13 +1012,6 @@
     }
   },
   "stories": {
-    "a817189aa53b8d28c8a0ac0c6ec5d201a25b9f39dcb513ca4f2542a046975f2c": {
-      "time": 1790438688,
-      "title": "Apple Settlement Alert: Millions of iPhone Users Could Claim Up to $95 After AI Lawsuit - en.econostrum.info",
-      "desc": "Apple Settlement Alert: Millions of iPhone Users Could Claim Up to $95 After AI Lawsuit en.econostrum.info",
-      "source": "en.econostrum.info",
-      "region": "WORLD"
-    },
     "2cc70be1e01f6c97394f19962aa6c56d421304ea12a2872b4de6693af3b18f61": {
       "time": 1790441083,
       "title": "OpenAI pauses training of its ‘most capable models’",
@@ -1289,94 +1281,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790312718,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 19.86,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
-            "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gemini-live-avatar-animated.png?quality=90&strip=all&crop=0%2C10.856319364173%2C94.893468926603%2C78.287361271654&w=1200",
-            "width": 1198,
-            "height": 631,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Технология визуализации аватаров пока ограничена Enterprise-сегментом и не несет немедленных изменений для большинства рабочих процессов.",
-            "title": "Gemini 3.8 Live with Live Avatar gives Google’s AI a face",
-            "final_score": 69.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 15,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790313432,
       "status": "OK",
@@ -24139,10 +24043,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1790525566,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 32.91,
+      "candidates": 17,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 14,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 0,
+        "candidate_count": 17,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходим срочный аудит безопасности при подключении LLM к внутренним базам данных.",
+            "title": "OpenAI AI Agent Breached Australian Medicare Portal, Govt Launches Inquiry - BW Businessworld",
+            "final_score": 76.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 43,
+        "raw_items": 753,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 11,
+          "CNews": 0,
+          "Euronews": 31
+        },
+        "score_filtered": 715,
+        "quality_filtered": 12,
+        "story_dedup": 9,
+        "candidates": 17,
+        "candidate_rate": 0.0239,
+        "score_buckets": {
+          "0–39": 684,
+          "40–49": 42,
+          "50–59": 25,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1790524606.6939075,
+  "last_search_ts": 1790525566.0614781,
   "last_publish_ts": 1790520768.8330317,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
