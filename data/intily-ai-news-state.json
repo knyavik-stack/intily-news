@@ -1085,19 +1085,19 @@
         "novelty": 0.0,
         "source_quality": 5.0,
         "evidence": 3.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 48.0,
+        "base_score": 47.5,
         "audience_score": 5.0,
         "audience_bonus": 15.0,
-        "final_score": 63.0
+        "final_score": 62.5
       },
-      "base_score": 48.0,
+      "base_score": 47.5,
       "audience_bonus": 15.0,
       "score_stage": "final",
-      "score": 63.0,
+      "score": 62.5,
       "key": "706ca991e9316d30b3b605489662281b360d1d426b1b400dec0bd8952d26db79",
-      "importance": 63.0,
+      "importance": 62.5,
       "editorial_value": 50.0,
       "topics": [],
       "audience_score": 5.0,
@@ -1545,30 +1545,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790599270.8426013,
+    "last_start_ts": 1790599984.6612961,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790599270.8426013,
-    "last_success_ts": 1790599270.8426013,
-    "last_candidates": 32,
+    "last_run_ts": 1790599984.6612961,
+    "last_success_ts": 1790599984.6612961,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 14
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1790602859.7421484,
+      "disabled_until": 1790603572.0965414,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1790599259.7421498
+      "updated_at": 1790599972.0965433
     },
     "GROQ": {
-      "disabled_until": 1790602862.1722558,
+      "disabled_until": 1790603575.0293062,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790599262.1722572
+      "updated_at": 1790599975.0293074
     },
     "OPENAI": {
-      "disabled_until": 1790685670.82474,
+      "disabled_until": 1790686384.56951,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790599270.8247416
+      "updated_at": 1790599984.5695114
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1576,26 +1576,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1790602869.326882,
+      "disabled_until": 1790603582.2527702,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790599269.3268838
+      "updated_at": 1790599982.2527716
     }
   },
   "stories": {
-    "5b1c4079a021ce48781be2b8d0ee0e1dce86b9988d1b6f2ac6777e55275d321b": {
-      "time": 1790513097,
-      "title": "OpenAI pauses work on top AI models after safeguard breach - Oman Observer",
-      "desc": "OpenAI pauses work on top AI models after safeguard breach Oman Observer",
-      "source": "Oman Observer",
-      "region": "WORLD"
-    },
-    "ed383634eee34c2725ef48ffddad6be26aa052678c2451b4a04f59dc1693e532": {
-      "time": 1790513335,
-      "title": "OpenAI AI Agents Access US Government Websites in Rogue Incidents - Dainik Jagran MP CG",
-      "desc": "OpenAI AI Agents Access US Government Websites in Rogue Incidents Dainik Jagran MP CG",
-      "source": "Dainik Jagran MP CG",
-      "region": "WORLD"
-    },
     "5467c2537e7a49f63d415ec2b85ae412e57cbc14d76b849f11c77b29e3ecd308": {
       "time": 1790514067,
       "title": "OpenAI, Anthropic CEOs summoned by Australia Senate over AI agent breach - inkl",
@@ -1991,81 +1977,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1790356858,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 6.99,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 17,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 2,
-        "blocked": 14,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1790357097,
       "status": "OK",
@@ -25367,6 +25278,78 @@
         },
         "audience_stage": "post_editorial"
       },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1790599984,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 14.98,
+      "candidates": 0,
+      "queue_before": 14,
+      "queue_after": 14,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 7,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
       "provider": {
         "attempts": [],
         "used": null,
