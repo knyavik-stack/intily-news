@@ -1386,30 +1386,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790598064.0402322,
+    "last_start_ts": 1790598327.5552554,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790598064.0402322,
-    "last_success_ts": 1790598064.0402322,
+    "last_run_ts": 1790598327.5552554,
+    "last_success_ts": 1790598327.5552554,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 10
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790598063.9871385
+      "disabled_until": 1790601887.9660113,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1790598287.966013
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790595651.113498
+      "disabled_until": 1790601891.1222436,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1790598291.1222448
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790595651.113498
+      "disabled_until": 1790684727.5232902,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1790598327.5232916
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1417,9 +1417,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790595651.113498
+      "disabled_until": 1790601926.1361191,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1790598326.1361206
     }
   },
   "stories": {
@@ -1839,146 +1839,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1790355422,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 67.42,
-      "candidates": 47,
-      "queue_before": 19,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 15,
-        "known_recent": 7,
-        "already_queued": 13,
-        "story_queue": 3,
-        "story_history": 8,
-        "added": 1,
-        "candidate_count": 47,
-        "admission_rate": 2.13,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts/",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.0,
-          "bonus_total": 72.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 3,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость срочного аудита безопасности БД из-за новой угрозы несанкционированного скрапинга автономными агентами.",
-            "title": "For months, OpenAI’s agent swarms have been attacking online databases to find obscure facts",
-            "final_score": 69.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 180,
-        "raw_items": 1421,
-        "source_counts": {
-          "TechCrunch AI": 7,
-          "VentureBeat AI": -1,
-          "The Verge AI": 5,
-          "OpenAI News": 1,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 34,
-          "CNews": 83,
-          "Euronews": 50
-        },
-        "score_filtered": 1316,
-        "quality_filtered": 41,
-        "story_dedup": 17,
-        "candidates": 47,
-        "candidate_rate": 0.0379,
-        "score_buckets": {
-          "0–39": 1243,
-          "40–49": 112,
-          "50–59": 57,
-          "60–69": 8,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 1,
-          "4": 0,
-          "5": 4,
-          "6": 9,
-          "7": 0,
-          "8": 3,
-          "9": 1,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790355702,
       "status": "OK",
@@ -25267,6 +25127,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1790598327,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 40.34,
+      "candidates": 0,
+      "queue_before": 10,
+      "queue_after": 10,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 4,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
