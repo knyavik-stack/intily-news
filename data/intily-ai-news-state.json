@@ -1777,30 +1777,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790611292.3559484,
+    "last_start_ts": 1790611559.9918299,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790611292.3559484,
-    "last_success_ts": 1790611292.3559484,
+    "last_run_ts": 1790611559.9918299,
+    "last_success_ts": 1790611559.9918299,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1790614867.8532217,
+      "disabled_until": 1790615088.9072115,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1790611267.853224
+      "updated_at": 1790611488.9072134
     },
     "GROQ": {
-      "disabled_until": 1790614870.9794736,
+      "disabled_until": 1790615093.227417,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790611270.9794757
+      "updated_at": 1790611493.227419
     },
     "OPENAI": {
-      "disabled_until": 1790697692.1583276,
+      "disabled_until": 1790697959.810087,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790611292.1583295
+      "updated_at": 1790611559.8100889
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1808,9 +1808,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1790614888.8025844,
+      "disabled_until": 1790615158.068385,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790611288.8025858
+      "updated_at": 1790611558.0683863
     }
   },
   "stories": {
@@ -2146,96 +2146,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1790362866,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 7.26,
-      "candidates": 0,
-      "queue_before": 15,
-      "queue_after": 14,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.afr.com/politics/federal/openai-medicare-breach-tip-of-the-iceberg-20260925-p610gj",
-            "image_url": "https://static.ffx.io/images/$zoom_0.1597%2C$multiply_4%2C$ratio_1.777778%2C$width_1059%2C$x_219%2C$y_169/t_crop_custom/c_scale%2Cw_800%2Cq_88%2Cf_jpg/t_afr_no_label_no_age_social_wm/c98b88d2710535fcdfcf739a10c8a0cbec62e6af",
-            "width": 1200,
-            "height": 628,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 9.0,
-          "bonus_total": 27.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходим немедленный аудит безопасности и ограничение передачи чувствительных данных в публичные LLM.",
-            "title": "OpenAI Medicare breach ‘tip of the iceberg’ - AFR",
-            "final_score": 67.8
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790363338,
       "status": "OK",
@@ -25422,6 +25332,78 @@
       "business_reason": "no_eligible_item",
       "searched": false,
       "duration_sec": 25.37,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 8,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1790611559,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 72.11,
       "candidates": 0,
       "queue_before": 20,
       "queue_after": 20,
