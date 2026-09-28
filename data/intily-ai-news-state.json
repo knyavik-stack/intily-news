@@ -1742,13 +1742,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790613994.7631326,
+    "last_start_ts": 1790614397.4297605,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790613994.7631326,
-    "last_success_ts": 1790613994.7631326,
+    "last_run_ts": 1790614397.4297605,
+    "last_success_ts": 1790614397.4297605,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 19
   },
   "providers": {
@@ -1763,9 +1763,9 @@
       "updated_at": 1790613895.9121683
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790613887.7458658
+      "disabled_until": 1790700797.250065,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1790614397.2500672
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1773,19 +1773,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790613994.649758
+      "disabled_until": 1790617996.0613482,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1790614396.06135
     }
   },
   "stories": {
-    "42a471bb2adbb30cc5ecdb9f3fba764a4d6bd3f096e09448ef44b65e04376642": {
-      "time": 1790527724,
-      "title": "OpenAI pauses AI training, launches ‘extensive’ review after multiple rogue agent incidents - Livemint",
-      "desc": "OpenAI pauses AI training, launches ‘extensive’ review after multiple rogue agent incidents Livemint",
-      "source": "Livemint",
-      "region": "WORLD"
-    },
     "997a909fc7486f207fe485427d9eb73620ff20934700982f2e945ea199fa3376": {
       "time": 1790528687,
       "title": "Why is Meta stock surging after Muse AI launch? How will the AI agent make money? | Hindustan Times - Hindustan Times",
@@ -2118,94 +2111,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1790365502,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 7.34,
-      "candidates": 0,
-      "queue_before": 13,
-      "queue_after": 12,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://finance.biggo.com/news/2f690f36-d7b4-4d4a-a6d9-1c899acd1866",
-            "image_url": "https://img.biggo.com/McKh53wMXJSXQVz7Y70g3fGpsDJ3GI5Qe0THai7StNg/fit/1200/0/sm/0/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTA5LzJmNjkwZjM2LWQ3YjQtNGQ0YS1hNmQ5LTFjODk5YWNkMTg2Nl8xNzkwMzYwNjQ5X2RlZmF1bHQuanBn.jpg",
-            "width": 1200,
-            "height": 675,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость немедленного аудита безопасности при передаче конфиденциальных данных в сторонние LLM.",
-            "title": "Israeli Startup Irregular Linked to String of Rogue AI Breaches at OpenAI, Meta, Google - finance.biggo.com",
-            "final_score": 66.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790365977,
       "status": "OK",
@@ -25400,6 +25305,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1790614397,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 30.94,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 7,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
