@@ -1147,19 +1147,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 50.5,
+        "base_score": 50.0,
         "audience_score": 8.0,
         "audience_bonus": 24.0,
-        "final_score": 74.5
+        "final_score": 74.0
       },
-      "base_score": 50.5,
+      "base_score": 50.0,
       "audience_bonus": 24.0,
       "score_stage": "final",
-      "score": 74.5,
+      "score": 74.0,
       "key": "114623bc13974c8b2a784b9fcb4b03f41fb152b7f123ff4cf7ddaf9a6eac3f9e",
-      "importance": 74.5,
+      "importance": 74.0,
       "editorial_value": 50.0,
       "topics": [
         "chips"
@@ -1417,19 +1417,19 @@
         "novelty": 0.0,
         "source_quality": 5.0,
         "evidence": 3.0,
-        "freshness": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 47.0,
+        "base_score": 46.5,
         "audience_score": 5.0,
         "audience_bonus": 15.0,
-        "final_score": 62.0
+        "final_score": 61.5
       },
-      "base_score": 47.0,
+      "base_score": 46.5,
       "audience_bonus": 15.0,
       "score_stage": "final",
-      "score": 62.0,
+      "score": 61.5,
       "key": "706ca991e9316d30b3b605489662281b360d1d426b1b400dec0bd8952d26db79",
-      "importance": 62.0,
+      "importance": 61.5,
       "editorial_value": 50.0,
       "topics": [],
       "audience_score": 5.0,
@@ -1727,30 +1727,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790617499.3852296,
+    "last_start_ts": 1790618039.6427648,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790617499.3852296,
-    "last_success_ts": 1790617499.3852296,
+    "last_run_ts": 1790618039.6427648,
+    "last_success_ts": 1790618039.6427648,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 18
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790617504.106729
+      "disabled_until": 1790621568.4336853,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1790617968.4336872
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790617487.5025895
+      "disabled_until": 1790621572.5806983,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1790617972.5807
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790617487.5025895
+      "disabled_until": 1790704439.4617808,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1790618039.4617827
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1758,26 +1758,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790617487.5025895
+      "disabled_until": 1790621638.345595,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1790618038.345596
     }
   },
   "stories": {
-    "17772fc29f48faf95b9c82dd3687afa82a474ed64e6693036a3242d114f6710f": {
-      "time": 1790531338,
-      "title": "OpenAI Agent DNS Incident + Microsoft Copilot Autopilot - The Neuron",
-      "desc": "OpenAI Agent DNS Incident + Microsoft Copilot Autopilot The Neuron",
-      "source": "The Neuron",
-      "region": "WORLD"
-    },
-    "08073a83fbb5632e21c133e17a365be549f9c9e7ddc1c58eacf797af8f52d3c3": {
-      "time": 1790531576,
-      "title": "Bill Gates calls for federal AI safeguards beyond industry self-regulation (OPENAI:Private) - Seeking Alpha",
-      "desc": "Bill Gates calls for federal AI safeguards beyond industry self-regulation (OPENAI:Private) Seeking Alpha",
-      "source": "Seeking Alpha",
-      "region": "WORLD"
-    },
     "63209a0fd8b07640eef1c64a451f78458f795db399bbb16213ee9fa0d1f09787": {
       "time": 1790531805,
       "title": "Билл Гейтс призвал Конгресс США принять законы, регулирующие ИИ - my.ua",
@@ -2089,96 +2075,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1790401280,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 13.37,
-      "candidates": 0,
-      "queue_before": 14,
-      "queue_after": 13,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.hpcwire.com/aiwire/2026/09/25/china-telecom-ai-releases-agentic-model-for-single-gpu-deployment/",
-            "image_url": "https://www.hpcwire.com/aiwire/wp-content/uploads/sites/3/2026/09/1-1.png",
-            "width": 1379,
-            "height": 582,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.0,
-          "bonus_total": 63.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Снижение требований к железу позволяет внедрять агентные системы без капитальных затрат на серверную инфраструктуру.",
-            "title": "China Telecom AI Releases Agentic Model for Single-GPU Deployment - HPCwire",
-            "final_score": 67.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 7,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790402005,
       "status": "OK",
@@ -25254,6 +25150,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1790618039,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 72.86,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 18,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 5,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
