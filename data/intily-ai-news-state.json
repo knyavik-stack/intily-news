@@ -1091,14 +1091,6 @@
     "73fc0de3d604255c0d7b94321c0db72eb2e9b03f0801f37063e92641e47a5551": 1790792928
   },
   "known": {
-    "db4051bad985ef8f134e079e5e45218bc390482024ae5f8d9718df7091172934": 1790789103.4710839,
-    "65562f939a88cf843a7cb6329d5f5fa1b77da2a5dd3aa85db5d024d38bcf1818": 1790789103.4710839,
-    "5f44247b78bacf7f422364d8b0fae9bad423927d1ce244b65c17fc43d4f2213a": 1790789103.4710839,
-    "e82e1632057d64e3ed94db032b4bd9d2a14e3f61a27d6d0a5ae9decde7911748": 1790789103.4710839,
-    "f89cfbe42fa4167e47025f18a6007a5549a4c9f43bf2e17f7bda4c2ea25b421e": 1790789103.4710839,
-    "b819fa05151ca0bc7a93b3cdc40d0d6b6718098d82f0f680d6fae150d712c0bc": 1790789103.4710839,
-    "a15be41436b4237a5604743f383c9e1c6f042456424ea039401c4ff36002bf9d": 1790789103.4710839,
-    "21eb4ce9d9f73d6541b9fdb01e0d4f60c94f392f96a278173a52941b768c5628": 1790789103.4710839,
     "ab193cfbbf2af934a9b268f6cd515c056cb0462dbc92cbd14a9e0813c7d9d7c6": 1790791490.1251738,
     "dec96d68ec10fb3b9bae46047b312c2df90be83ecfbd3e3c9722d12b5f34df39": 1790791490.1251738,
     "d5508c033bfcef5a0d438b46afdefe046682008fb5022043eff9529dfa6bd0e0": 1790791490.1251738,
@@ -1824,19 +1816,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 45.0,
+        "base_score": 44.5,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 45.0
+        "final_score": 44.5
       },
-      "base_score": 45.0,
+      "base_score": 44.5,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 45.0,
+      "score": 44.5,
       "key": "78cb841e787b83ce0ce721af9a8da6b78e1b5bfb25fdf07f97f8ee9072ca6da8",
-      "importance": 45.0,
+      "importance": 44.5,
       "editorial_value": 50.0,
       "topics": [
         "business"
@@ -1883,30 +1875,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790793649.6220708,
+    "last_start_ts": 1790794614.2280128,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790793649.6220708,
-    "last_success_ts": 1790793649.6220708,
-    "last_candidates": 60,
+    "last_run_ts": 1790794614.2280128,
+    "last_success_ts": 1790794614.2280128,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1790797283.5029058,
+      "disabled_until": 1790798208.7968369,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1790793683.5029082
+      "updated_at": 1790794608.7968392
     },
     "GROQ": {
-      "disabled_until": 1790797287.0114224,
+      "disabled_until": 1790798212.8610482,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790793687.011424
+      "updated_at": 1790794612.8610494
     },
     "OPENAI": {
-      "disabled_until": 1790880088.4032147,
+      "disabled_until": 1790881014.0386586,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790793688.4032164
+      "updated_at": 1790794614.03866
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1914,19 +1906,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1790880087.156349,
+      "disabled_until": 1790881013.0140133,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790793687.1563513
+      "updated_at": 1790794613.0140147
     }
   },
   "stories": {
-    "fa11830342156f4b934f080e06dbde044010e31faded6ae0e48999da6adeccb2": {
-      "time": 1790707502,
-      "title": "OpenAI представили GPT‑6.1 Sol с тарифами API в пять раз ниже, чем у Astra",
-      "desc": "OpenAI анонсировали GPT‑6.1 Sol — обновление GPT‑6 Sol для программирования, работы с документами и автоматизации задач. По оценкам компании, в ряде тестов модель приблизилась к GPT‑6 Astra. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "a0346d423f91fc14bd167845b288ea04ca8309332c04817ebb652534c1568d2e": {
       "time": 1790709180,
       "title": "OpenAI launches GPT-6.1 Sol, says it nearly matches GPT-6 Astra and costs less",
@@ -2217,96 +2202,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790531805,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 5.61,
-      "candidates": 0,
-      "queue_before": 2,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://my.ua/news/cluster/2026-09-27-bill-geits-prizval-kongress-ssha-priniat-zakony-reguliruiushchie-ii",
-            "image_url": "https://thumbor.my.ua/ID4R8_7ruuIG7EK5lNzQ9ctVKy8=/1200x630/smart/filters:format(jpeg)/https%3A%2F%2Fs3.eu-central-1.amazonaws.com%2Fmedia.my.ua%2Ffeed%2F30%2F4201e4dbd6bef51df8f2744eb0cf8351",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Законодательные инициативы в США задают глобальный тренд на комплаенс, который потребует пересмотра стратегий внедрения ИИ.",
-            "title": "Билл Гейтс призвал Конгресс США принять законы, регулирующие ИИ - my.ua",
-            "final_score": 61.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790532286,
       "status": "OK",
@@ -22529,6 +22424,78 @@
         "failovers": 0,
         "failures": 4,
         "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1790794614,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 6.49,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
         "skipped_no_key": 0,
         "retries": 0
       },
