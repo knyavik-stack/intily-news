@@ -1084,18 +1084,6 @@
     "fc10e885cffa339d3845443d285dfd07ab5fe5bd7eb3e599906b23e00990405a": 1790780103
   },
   "known": {
-    "a57f2e5a9ad33f86621743bc1b08f21abafb7488042696629d2d490025dfd690": 1790778348.3825915,
-    "fc10e885cffa339d3845443d285dfd07ab5fe5bd7eb3e599906b23e00990405a": 1790778348.3825915,
-    "1a8f9c3a33a589fcd18e2f474ad126975b59144bab8032d7abe235f4904b9126": 1790778348.3825915,
-    "d5508c033bfcef5a0d438b46afdefe046682008fb5022043eff9529dfa6bd0e0": 1790778348.3825915,
-    "acacd1ce7d74e170103bfdc6893a848c0266c9618654559c323c2e3b157e6769": 1790778348.3825915,
-    "41e946a1194120f79b80086c866e21e91c12dabc53decbad20b13ed2639b0a4a": 1790778348.3825915,
-    "f6f210916f2b22c22377e55d5f6c97c059f317e080b434c9aaf9d7451cd16285": 1790778348.3825915,
-    "d80c45e9524b665274d970dd6d9f8e2a3fb3adbd0e128683dc6ef395c01e8587": 1790778348.3825915,
-    "3d1fdd8c688b1c9ed074d0a029d926dc9084c3a825cabee65873ac1a7ddf44c5": 1790778348.3825915,
-    "fac6ab8760ef515fce1e8fb0b84841e281f72b2a7075e22976c6914b6e742524": 1790778348.3825915,
-    "d1d13d1e60e8b017d60933aa2ee9f3ff734f9e650b6de9e88ec1798ff4bf3c00": 1790778348.3825915,
-    "30d49bfbaa97aaa699ee8b59d3f8d5c78bbef3eb51808b153e20917b99326894": 1790778348.3825915,
     "2ce11f27ae054399847ca796cc2f8a1fd5bea57d5873e96ece661299c57741ad": 1790780738.902722,
     "f0e1e70051238df1aac3ca9e57ac6366a4e9676e2fd7b6fae71c03e5c174d608": 1790780738.902722,
     "dc3454b993dc765cefb2a45c1e6c11a33cd86141ba13b282175c2627ed7908a6": 1790780738.902722,
@@ -1876,30 +1864,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790782649.8873265,
+    "last_start_ts": 1790783826.5437155,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790782649.8873265,
-    "last_success_ts": 1790782649.8873265,
-    "last_candidates": 54,
+    "last_run_ts": 1790783826.5437155,
+    "last_success_ts": 1790783826.5437155,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1790786230.930069,
-      "reason": "The read operation timed out",
-      "updated_at": 1790782630.9300718
+      "disabled_until": 1790787409.5210953,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1790783809.5210974
     },
     "GROQ": {
-      "disabled_until": 1790786234.2228057,
+      "disabled_until": 1790787412.6837966,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790782634.2228076
+      "updated_at": 1790783812.6837983
     },
     "OPENAI": {
-      "disabled_until": 1790869049.688749,
+      "disabled_until": 1790870226.3328688,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790782649.6887505
+      "updated_at": 1790783826.332871
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1907,19 +1895,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1790786248.4551377,
+      "disabled_until": 1790787425.0300372,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790782648.4551394
+      "updated_at": 1790783825.030039
     }
   },
   "stories": {
-    "d3d57e113e878f4fa3ca9339e35f57c18ea0eb87fa59d4f6a8883a243295aa5d": {
-      "time": 1790697418,
-      "title": "Уязвимость OpenCode AI позволяет вредоносным веб-сайтам выполнять код на компьютерах разработчиков",
-      "desc": "В OpenCode, популярном open source ИИ-агенте для программирования, нашли уязвимость , позволяющую выполнять команды на компьютере разработчика через вредоносную веб-страницу. Согласно общедоступным данным npm, 82 уязвимых релиза были загружены более 647 000 раз в период с 17 по 23 сентября 2026 года. Схема атаки Агент поднимает на машине разработчика локальный API. Вредоносная страница отправляет запрос к этому API из браузера, а путаница с типом содержимого позволяет запросу пройти проверку. Эндпоинт обновления подставляет значение атакующего в команду пакетного менеджера, и код выполняется с правами разработчика. Никаких фишинговых вложений, достаточно открыть ссылку. Что из этого следует Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "be8e65651591ee4f7e7f9aa36d38c7ff5fd0794db5507aad33d95010367c2b16": {
       "time": 1790698132,
       "title": "Потребители в Европе перестали покупать оборудование ASML для производства чипов",
@@ -2217,136 +2198,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790521966,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 32.79,
-      "candidates": 18,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 14,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 4,
-        "added": 0,
-        "candidate_count": 18,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра политик безопасности и доступа к данным при внедрении ИИ-агентов в бизнес-процессы.",
-            "title": "OpenAI AI Agent Breached Australian Medicare Portal, Govt Launches Inquiry - BW Businessworld",
-            "final_score": 76.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 40,
-        "raw_items": 700,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 11,
-          "CNews": 0,
-          "Euronews": 28
-        },
-        "score_filtered": 665,
-        "quality_filtered": 9,
-        "story_dedup": 8,
-        "candidates": 18,
-        "candidate_rate": 0.0273,
-        "score_buckets": {
-          "0–39": 629,
-          "40–49": 44,
-          "50–59": 24,
-          "60–69": 3,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790522686,
       "status": "OK",
@@ -23075,6 +22926,78 @@
         "GEMINI": {
           "blocked": true,
           "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1790783826,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 18.13,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 4,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
         },
         "GROQ": {
           "blocked": true,
