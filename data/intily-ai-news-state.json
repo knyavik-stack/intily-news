@@ -1801,30 +1801,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790797274.5413182,
+    "last_start_ts": 1790797511.540378,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790797274.5413182,
-    "last_success_ts": 1790797274.5413182,
+    "last_run_ts": 1790797511.540378,
+    "last_success_ts": 1790797511.540378,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 18
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1790800869.624885,
-      "reason": "The read operation timed out",
-      "updated_at": 1790797269.6248872
+      "disabled_until": 1790801107.0208614,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1790797507.0208635
     },
     "GROQ": {
-      "disabled_until": 1790800873.0951147,
+      "disabled_until": 1790801110.5011294,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790797273.0951164
+      "updated_at": 1790797510.5011315
     },
     "OPENAI": {
-      "disabled_until": 1790883674.4517095,
+      "disabled_until": 1790883911.3798933,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790797274.4517112
+      "updated_at": 1790797511.3798947
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1832,9 +1832,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1790883673.3531344,
+      "disabled_until": 1790883910.6643853,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790797273.3531358
+      "updated_at": 1790797510.664387
     }
   },
   "stories": {
@@ -2142,145 +2142,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790539014,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 38.88,
-      "candidates": 26,
-      "queue_before": 1,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 18,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 6,
-        "added": 1,
-        "candidate_count": 26,
-        "admission_rate": 3.85,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/companies/bothub/news/1087112/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1087112",
-            "image_url": "https://habr.com/share/publication/1087112/3b5e2dd16582b9b706780169f0daa6b7/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 6.0,
-          "bonus_total": 36.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Появление автономных агентов требует пересмотра стратегии автоматизации рабочих процессов и оценки будущих операционных затрат.",
-            "title": "OpenAI может представить always-on агента на DevDay",
-            "final_score": 76.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 41,
-        "raw_items": 775,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 10,
-          "CNews": 0,
-          "Euronews": 28
-        },
-        "score_filtered": 726,
-        "quality_filtered": 15,
-        "story_dedup": 8,
-        "candidates": 26,
-        "candidate_rate": 0.0354,
-        "score_buckets": {
-          "0–39": 693,
-          "40–49": 47,
-          "50–59": 32,
-          "60–69": 3,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790572621,
       "status": "OK",
@@ -22214,6 +22075,78 @@
         "GEMINI": {
           "blocked": true,
           "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1790797511,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 21.26,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 18,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 5,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
         },
         "GROQ": {
           "blocked": true,
