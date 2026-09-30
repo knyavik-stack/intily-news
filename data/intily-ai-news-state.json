@@ -1253,19 +1253,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 42.5,
+        "base_score": 42.0,
         "audience_score": 8.0,
         "audience_bonus": 24.0,
-        "final_score": 66.5
+        "final_score": 66.0
       },
-      "base_score": 42.5,
+      "base_score": 42.0,
       "audience_bonus": 24.0,
       "score_stage": "final",
-      "score": 66.5,
+      "score": 66.0,
       "key": "91b015ec3b79d7ae79ae19c923af6b50bb157d333ba988dccb108dcfba4c3be1",
-      "importance": 66.5,
+      "importance": 66.0,
       "editorial_value": 50.0,
       "topics": [
         "agents",
@@ -1868,30 +1868,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790778348.3825915,
+    "last_start_ts": 1790778813.3465934,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790778348.3825915,
-    "last_success_ts": 1790778348.3825915,
-    "last_candidates": 47,
+    "last_run_ts": 1790778813.3465934,
+    "last_success_ts": 1790778813.3465934,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1790781898.962786,
+      "disabled_until": 1790782371.8907454,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1790778298.9627879
+      "updated_at": 1790778771.8907473
     },
     "GROQ": {
-      "disabled_until": 1790781902.0350235,
+      "disabled_until": 1790782378.3869402,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790778302.0350251
+      "updated_at": 1790778778.3869424
     },
     "OPENAI": {
-      "disabled_until": 1790864863.0604582,
+      "disabled_until": 1790865213.184716,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790778463.0604596
+      "updated_at": 1790778813.184718
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1899,19 +1899,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1790782061.9531431,
+      "disabled_until": 1790782412.281246,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790778461.9531446
+      "updated_at": 1790778812.2812486
     }
   },
   "stories": {
-    "fa6602248d83250a2bc3f88baa23080ce4eec2952b460c6867baf1d58801621a": {
-      "time": 1790692371,
-      "title": "​Safety Concerns Mount as Anthropic Discloses Cybersecurity Breaches - The420.in",
-      "desc": "​Safety Concerns Mount as Anthropic Discloses Cybersecurity Breaches The420.in",
-      "source": "The420.in",
-      "region": "WORLD"
-    },
     "71340efd7f1c8d0acc10d30ceb0c634ac0f4b183a13c8193cb56d65f900cc584": {
       "time": 1790694074,
       "title": "Meta’s Muse AI sent a YouTuber’s address to a stranger",
@@ -2223,96 +2216,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790519807,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 4.27,
-      "candidates": 0,
-      "queue_before": 2,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "IMAGE_NOT_FOUND": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "IMAGE_NOT_FOUND"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Регулирование напрямую повлияет на доступность инструментов и юридические риски при внедрении ИИ-решений.",
-            "title": "Anthropic и OpenAI заявили об угрозе ИИ и призвали к регулированию - techora.ru",
-            "final_score": 62.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790520051,
       "status": "OK",
@@ -23229,6 +23132,78 @@
         "failovers": 1,
         "failures": 2,
         "blocked": 10,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1790778813,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 43.37,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 6,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
         "skipped_no_key": 0,
         "retries": 0
       },
