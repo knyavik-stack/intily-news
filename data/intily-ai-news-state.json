@@ -1573,19 +1573,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 46.5,
+        "base_score": 46.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 46.5
+        "final_score": 46.0
       },
-      "base_score": 46.5,
+      "base_score": 46.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 46.5,
+      "score": 46.0,
       "key": "ba9e9777cc7074e1976d69135c2d66ce46f250f876295ca34035725ceb760ad4",
-      "importance": 46.5,
+      "importance": 46.0,
       "editorial_value": 50.0,
       "topics": [
         "chips"
@@ -1850,13 +1850,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790859749.8628972,
+    "last_start_ts": 1790860445.8324924,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790859749.8628972,
-    "last_success_ts": 1790859749.8628972,
-    "last_candidates": 37,
-    "last_published": 1,
+    "last_run_ts": 1790860445.8324924,
+    "last_success_ts": 1790860445.8324924,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 19
   },
   "providers": {
@@ -1871,9 +1871,9 @@
       "updated_at": 1790859668.7330883
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790856059.4863205
+      "disabled_until": 1790946845.6843755,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1790860445.6843777
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1881,9 +1881,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1790859749.712872
+      "disabled_until": 1790864044.2957537,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1790860444.2957556
     }
   },
   "stories": {
@@ -2219,133 +2219,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1790599270,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 55.14,
-      "candidates": 32,
-      "queue_before": 8,
-      "queue_after": 14,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 14,
-        "known_recent": 0,
-        "already_queued": 5,
-        "story_queue": 0,
-        "story_history": 7,
-        "added": 6,
-        "candidate_count": 32,
-        "admission_rate": 18.75,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 5.0,
-          "bonus_total": 15.0,
-          "max_score": 5.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 5.0,
-            "bonus": 15.0,
-            "reason": "Новость носит финансово-аналитический характер и не требует немедленных изменений в операционной деятельности или разработке.",
-            "title": "Nvidia buys back billions in stock: why, and why now? - Techzine Global",
-            "final_score": 61.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 7,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 165,
-        "raw_items": 1119,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 1,
-          "Ars Technica": 1,
-          "Habr AI/News": 31,
-          "CNews": 82,
-          "Euronews": 50
-        },
-        "score_filtered": 1011,
-        "quality_filtered": 45,
-        "story_dedup": 31,
-        "candidates": 32,
-        "candidate_rate": 0.0335,
-        "score_buckets": {
-          "0–39": 949,
-          "40–49": 106,
-          "50–59": 61,
-          "60–69": 3,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 2,
-          "6": 1,
-          "7": 3,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1790599984,
       "status": "OK",
@@ -22242,6 +22115,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1790860445,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 78.25,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 8,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
