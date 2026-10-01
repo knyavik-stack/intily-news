@@ -1122,7 +1122,8 @@
     "aad0dbfcccd1a56619d5e8d85b85275a3cca12a829dd3d5c6f726c53abefe05b": 1790859749,
     "b4bf72f8ac44b179f5a78110e7765ec336aabd51dfb9d07abe848f9cdd9ed7f5": 1790863267,
     "ba9e9777cc7074e1976d69135c2d66ce46f250f876295ca34035725ceb760ad4": 1790863496,
-    "47963512c20c7d6798fee72bed548de243cff3581ae96107e7321c2991076fd8": 1790868298
+    "47963512c20c7d6798fee72bed548de243cff3581ae96107e7321c2991076fd8": 1790868298,
+    "9a1f3749ceaa289814b73b0b50fda311d43061ce4070b94ea5a7ccadeda905d0": 1790871899
   },
   "known": {
     "47963512c20c7d6798fee72bed548de243cff3581ae96107e7321c2991076fd8": 1790867873.7252343,
@@ -1188,10 +1189,10 @@
       ],
       "audience_score": 10.0,
       "tier": "A",
-      "last_failed_at": 1790871754,
+      "last_failed_at": 1790871899,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | OPENROUTER: OPENROUTER_EMPTY_OR_INVALID_CONTENT | OPENAI: OPENAI_HTTP_429: {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/bill",
-      "failure_count": 3,
-      "next_retry_at": 1790872954
+      "failure_count": 4,
+      "next_retry_at": 1790874299
     },
     {
       "region": "RUSSIA",
@@ -1330,19 +1331,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 44.0,
+        "base_score": 43.5,
         "audience_score": 8.0,
         "audience_bonus": 24.0,
-        "final_score": 68.0
+        "final_score": 67.5
       },
-      "base_score": 44.0,
+      "base_score": 43.5,
       "audience_bonus": 24.0,
       "score_stage": "final",
-      "score": 68.0,
+      "score": 67.5,
       "key": "5b3005e59fe96bb3fd777da0c655e075e72f697d3f486f5585c0e23addb34459",
-      "importance": 68.0,
+      "importance": 67.5,
       "editorial_value": 50.0,
       "topics": [
         "models"
@@ -1531,6 +1532,44 @@
       "topics": [],
       "audience_score": 7.0,
       "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Главгосэкспертиза и эксперты России представили цифровые сервисы на форуме 100+ - Агентство новостей «Строительный бизнес»",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE81N1ZUOGhjYTBJWG9pYWNjX1JQWmYzYXJFbDB2UGNGOVBMOHNJMG56eFVDMHY3N0hFczdpeVRaRVplSUhTOEE?oc=5",
+      "desc": "Главгосэкспертиза и эксперты России представили цифровые сервисы на форуме 100+ Агентство новостей «Строительный бизнес»",
+      "source": "Агентство новостей «Строительный бизнес»",
+      "time": 1790866985.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 7.0,
+        "event_concreteness": 10.5,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 2.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 43.5,
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 61.5
+      },
+      "base_score": 43.5,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 61.5,
+      "key": "0599f3838d78e4c5beaaf10c0067dce41ab53f7d60680a0601212078c0ae2904",
+      "importance": 61.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "business"
+      ],
+      "audience_score": 6.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     },
     {
       "region": "WORLD",
@@ -1824,109 +1863,33 @@
       ],
       "audience_score": 4.0,
       "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Подготовлены три сценария развития российской мегакорпорации по производству чипов",
-      "link": "https://www.cnews.ru/news/top/2026-10-01_sber_predstavil_model_sprosa",
-      "desc": "В рамках подготовки стратегии «Объединенной микроэлектронной компании» Сбербанк представил отрасли модель спроса на микроэлектронику в России. Документ описывает три сценария развития рынка до 2036 года: базовый, консервативный и оптимистичный. Модель рассчитана в пластинах. Например, при базовом сценарии спрос на пластины вырастет с 0,8–1,0 млн до 1,6–1,8 млн штук.",
-      "source": "CNews",
-      "time": 1790867940.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 12.0,
-        "event_concreteness": 15.0,
-        "practical_value": 5.0,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 3.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 59.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 59.5
-      },
-      "base_score": 59.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 59.5,
-      "key": "9a1f3749ceaa289814b73b0b50fda311d43061ce4070b94ea5a7ccadeda905d0",
-      "importance": 59.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "chips",
-        "models"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Главгосэкспертиза и эксперты России представили цифровые сервисы на форуме 100+ - Агентство новостей «Строительный бизнес»",
-      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE81N1ZUOGhjYTBJWG9pYWNjX1JQWmYzYXJFbDB2UGNGOVBMOHNJMG56eFVDMHY3N0hFczdpeVRaRVplSUhTOEE?oc=5",
-      "desc": "Главгосэкспертиза и эксперты России представили цифровые сервисы на форуме 100+ Агентство новостей «Строительный бизнес»",
-      "source": "Агентство новостей «Строительный бизнес»",
-      "time": 1790866985.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 7.0,
-        "event_concreteness": 10.5,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 2.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 43.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 43.5
-      },
-      "base_score": 43.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 43.5,
-      "key": "0599f3838d78e4c5beaaf10c0067dce41ab53f7d60680a0601212078c0ae2904",
-      "importance": 43.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "business"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1790871754.5551324,
+    "last_start_ts": 1790871899.9527197,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790871754.5551324,
-    "last_success_ts": 1790871754.5551324,
-    "last_candidates": 49,
-    "last_published": 0,
-    "queue_size": 20
+    "last_run_ts": 1790871899.9527197,
+    "last_success_ts": 1790871899.9527197,
+    "last_candidates": 0,
+    "last_published": 1,
+    "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1790875266.2051847,
+      "disabled_until": 1790875500.7069476,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1790871666.2051864
+      "updated_at": 1790871900.7069497
     },
     "GROQ": {
-      "disabled_until": 1790875269.3349135,
+      "disabled_until": 1790875502.9874692,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790871669.3349154
+      "updated_at": 1790871902.9874709
     },
     "OPENAI": {
-      "disabled_until": 1790958216.9470367,
+      "disabled_until": 1790958341.8367515,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790871816.9470384
+      "updated_at": 1790871941.8367531
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1934,19 +1897,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1790875415.85798,
+      "disabled_until": 1790875540.5923827,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790871815.857982
+      "updated_at": 1790871940.5923843
     }
   },
   "stories": {
-    "a23534434a83efba4000f1ea039594e7711c7d4e35b96763bacc507e489830aa": {
-      "time": 1790785497,
-      "title": "Reasoning-версию GigaChat 3.5 теперь можно подключить в Evolution Foundation Models",
-      "desc": "Летом коммерческий доступ открыли к GigaChat 3.5 Ultra, теперь же в каталоге сервиса Evolution Foundation Models стала доступна версия отечественной нейросети с режимом рассуждений GigaChat 3.5 Reasoning. Модель ориентирована на задачи, связанные с бизнесом, финансами и юриспруденцией и подключается по OpenAI-совместимому API без самостоятельного развертывания инфраструктуры для инференса. Стоимость составляет 96 ₽ за 1 млн входных и 289 ₽ за 1 млн выходных токенов. GigaChat 3.5 Reasoning построена на той же архитектурной базе, что и уже доступная в сервисе GigaChat 3.5 Ultra. У обеих моделей 432 млрд параметров суммарно и около 28 млрд активных параметров на токен, гибридный механизм внимания MLA + GatedDeltaNet и контекстное окно до 262 тысяч токенов. Поэтому отличие новинки не в размере или длине контекста, а в способе дообучения и решения задач. Модель дополнительно дообучили с помощью online RL — обучения с подкреплением на решениях, которые она генерировала сама. Разработчики отдельно обучали шесть версий для разных классов задач: математики и естественных наук, генерации кода, работы с репозиториями, агентных сценариев, диалога и следования инструкциям. Для проверки применяли разные сигналы: от сверки финального ответа и запуска тестов до оценки состояния среды после вызова инструментов. Затем полученные навыки объединили в одной модели методом on-policy distillation. На опубликованных разработчиками тестах наиболее заметный прирост относительно GigaChat 3.5 Ultra Instruct получен в программировании, планировании и следовании инструкциям. Результат IFBench вырос с 43,66 до 77 баллов, Natural Plan — с 64 до 80,19, а LiveCodeBench v6 — с 56,2 до 85,4. Это сравнение показывает преимущество Reasoning в конкретных многошаговых задачах. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "0270b51bcf51686d072630082b4fabe2a916a3bb49ff79e7fc05897da3a179fb": {
       "time": 1790788138,
       "title": "OpenAI launches Dots: Persistent AI agents for developer workflows - TechGig",
@@ -2226,10 +2182,16 @@
       "desc": "Meta Takes Muse AI Agent to 200 Million Small Businesses as It Weighs Fees and Subscriptions to Cash In on AI International Business Times Australia",
       "source": "International Business Times Australia",
       "region": "WORLD"
+    },
+    "9a1f3749ceaa289814b73b0b50fda311d43061ce4070b94ea5a7ccadeda905d0": {
+      "time": 1790871899,
+      "title": "Подготовлены три сценария развития российской мегакорпорации по производству чипов",
+      "desc": "В рамках подготовки стратегии «Объединенной микроэлектронной компании» Сбербанк представил отрасли модель спроса на микроэлектронику в России. Документ описывает три сценария развития рынка до 2036 года: базовый, консервативный и оптимистичный. Модель рассчитана в пластинах. Например, при базовом сценарии спрос на пластины вырастет с 0,8–1,0 млн до 1,6–1,8 млн штук.",
+      "source": "CNews",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "RUSSIA",
@@ -2248,130 +2210,10 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1790612940,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 50.72,
-      "candidates": 58,
-      "queue_before": 20,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 14,
-        "known_recent": 10,
-        "already_queued": 12,
-        "story_queue": 7,
-        "story_history": 5,
-        "added": 10,
-        "candidate_count": 58,
-        "admission_rate": 17.24,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 7,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 196,
-        "raw_items": 1402,
-        "source_counts": {
-          "TechCrunch AI": 7,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 1,
-          "Ars Technica": 1,
-          "Habr AI/News": 40,
-          "CNews": 95,
-          "Euronews": 50
-        },
-        "score_filtered": 1257,
-        "quality_filtered": 43,
-        "story_dedup": 44,
-        "candidates": 58,
-        "candidate_rate": 0.0481,
-        "score_buckets": {
-          "0–39": 1171,
-          "40–49": 127,
-          "50–59": 92,
-          "60–69": 10,
-          "70–79": 2,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 3,
-          "6": 1,
-          "7": 5,
-          "8": 2,
-          "9": 1,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1790613428,
       "status": "OK",
@@ -22276,11 +22118,105 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1790871899,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 53.35,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 19,
+      "published": 1,
+      "publish_attempts": 2,
+      "item_failures": 1,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 401: HTTP Forbidden": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 401: HTTP Forbidden"
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 5.5,
+          "bonus_total": 33.0,
+          "max_score": 6.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Необходимость интеграции с госсервисами напрямую влияет на операционные процессы и затраты в строительном секторе.",
+            "title": "Главгосэкспертиза и эксперты России представили цифровые сервисы на форуме 100+ - Агентство новостей «Строительный бизнес»",
+            "final_score": 61.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "OPENROUTER",
+        "failovers": 2,
+        "failures": 4,
+        "blocked": 2,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1790871754.5551324,
-  "last_publish_ts": 1790868298.715809,
+  "last_publish_ts": 1790871899.9527197,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
