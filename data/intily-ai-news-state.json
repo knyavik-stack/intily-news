@@ -1807,30 +1807,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1790956148.9898984,
+    "last_start_ts": 1790956393.5773294,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1790956148.9898984,
-    "last_success_ts": 1790956148.9898984,
+    "last_run_ts": 1790956393.5773294,
+    "last_success_ts": 1790956393.5773294,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 17
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1790959738.2320514,
+      "disabled_until": 1790959974.972821,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1790956138.2320533
+      "updated_at": 1790956374.9728234
     },
     "GROQ": {
-      "disabled_until": 1790959741.708188,
+      "disabled_until": 1790959979.8527846,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790956141.7081907
+      "updated_at": 1790956379.852787
     },
     "OPENAI": {
-      "disabled_until": 1791042548.9264596,
+      "disabled_until": 1791042793.4555838,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1790956148.9264615
+      "updated_at": 1790956393.4555855
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1838,9 +1838,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1790959747.847955,
+      "disabled_until": 1790959992.8386974,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1790956147.8479567
+      "updated_at": 1790956392.8386996
     }
   },
   "stories": {
@@ -2162,127 +2162,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790697178,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 45.96,
-      "candidates": 76,
-      "queue_before": 19,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 11,
-        "known_recent": 27,
-        "already_queued": 13,
-        "story_queue": 3,
-        "story_history": 2,
-        "added": 20,
-        "candidate_count": 76,
-        "admission_rate": 26.32,
-        "dominant_block": "known_recent",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 206,
-        "raw_items": 1463,
-        "source_counts": {
-          "TechCrunch AI": 6,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 2,
-          "Ars Technica": 4,
-          "Habr AI/News": 40,
-          "CNews": 101,
-          "Euronews": 50
-        },
-        "score_filtered": 1313,
-        "quality_filtered": 37,
-        "story_dedup": 37,
-        "candidates": 76,
-        "candidate_rate": 0.0605,
-        "score_buckets": {
-          "0–39": 1215,
-          "40–49": 134,
-          "50–59": 98,
-          "60–69": 16,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 3,
-          "7": 7,
-          "8": 8,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1790697418,
       "status": "OK",
@@ -22311,6 +22190,78 @@
             "title": "Sony добавила нейросетевое улучшение графики на обычную PS5",
             "final_score": 57.0
           }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1790956393,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 26.07,
+      "candidates": 0,
+      "queue_before": 17,
+      "queue_after": 17,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
         },
         "queue_score_audit": {
           "pre_ai_below_final_threshold": 2,
