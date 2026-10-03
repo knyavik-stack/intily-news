@@ -1184,29 +1184,31 @@
     "e425c3d1edab260aa1c76f3bcc7cbbd55364e956da399b1d5e6bce3805bfb1d6": 1791007731,
     "1a5a83e604c0b5496add9700db6a19519f852595fa564b59fb9577c4a72713d3": 1791010129,
     "8c7c47c4537aebf6de1d3ec3f8d779c48ac8ce6c14359ea7b166e53b9d9efbcc": 1791016369,
-    "586820c88ee72a7ca72e96cb3cfc4d7e192941429664dde01d1837d56fbaf3fa": 1791016614
+    "586820c88ee72a7ca72e96cb3cfc4d7e192941429664dde01d1837d56fbaf3fa": 1791016614,
+    "2534557221c14fb65c5482176c88669c0918f1b87004a7cd76a8707d80199a0a": 1791018527
   },
   "known": {
     "f6f370a2fdfdd1c55512b071368add1b0f05dcebdb45dfd31df769bf31bfe8d8": 1791016369.697976,
     "8c7c47c4537aebf6de1d3ec3f8d779c48ac8ce6c14359ea7b166e53b9d9efbcc": 1791016369.697976,
-    "586820c88ee72a7ca72e96cb3cfc4d7e192941429664dde01d1837d56fbaf3fa": 1791016369.697976
+    "586820c88ee72a7ca72e96cb3cfc4d7e192941429664dde01d1837d56fbaf3fa": 1791016369.697976,
+    "2534557221c14fb65c5482176c88669c0918f1b87004a7cd76a8707d80199a0a": 1791018527.7835255
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791018288.8507028,
+    "last_start_ts": 1791018527.7835255,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791018288.8507028,
-    "last_success_ts": 1791018288.8507028,
+    "last_run_ts": 1791018527.7835255,
+    "last_success_ts": 1791018527.7835255,
     "last_candidates": 6,
-    "last_published": 0,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791018331.9614613
+      "updated_at": 1791018564.306227
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1523,6 +1525,13 @@
       "desc": "Tencent leases 100,000 AI chips from Oracle for $7 billion amid US export curbs ET Datacenters",
       "source": "ET Datacenters",
       "region": "WORLD"
+    },
+    "2534557221c14fb65c5482176c88669c0918f1b87004a7cd76a8707d80199a0a": {
+      "time": 1791018527,
+      "title": "Meta и OpenAI представили Jolly и dots, милых маскотов для ИИ-агентов - pasqualepillitteri.it",
+      "desc": "Meta и OpenAI представили Jolly и dots, милых маскотов для ИИ-агентов pasqualepillitteri.it",
+      "source": "pasqualepillitteri.it",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
@@ -1534,7 +1543,6 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1545,148 +1553,10 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1790760306,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 57.95,
-      "candidates": 36,
-      "queue_before": 16,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 12,
-        "known_recent": 2,
-        "already_queued": 13,
-        "story_queue": 2,
-        "story_history": 3,
-        "added": 4,
-        "candidate_count": 36,
-        "admission_rate": 11.11,
-        "dominant_block": "already_queued",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://habr.com/ru/news/1088398/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1088398",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 5.67,
-          "bonus_total": 51.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Технология пока экспериментальная, прямого влияния на текущие бизнес-процессы или разработку ПО нет.",
-            "title": "Microsoft представила ИИ‑систему Project Quine для ускорения открытия лекарств",
-            "final_score": 68.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 7,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 113,
-        "raw_items": 647,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 2,
-          "Habr AI/News": 19,
-          "CNews": 58,
-          "Euronews": 29
-        },
-        "score_filtered": 584,
-        "quality_filtered": 23,
-        "story_dedup": 4,
-        "candidates": 36,
-        "candidate_rate": 0.0674,
-        "score_buckets": {
-          "0–39": 542,
-          "40–49": 64,
-          "50–59": 33,
-          "60–69": 8,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 1,
-          "6": 4,
-          "7": 5,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790760608,
       "status": "OK",
@@ -22425,11 +22295,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791018527,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 37.89,
+      "candidates": 6,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 4,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 6,
+        "admission_rate": 16.67,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "Remote end closed connection without response": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "Remote end closed connection without response"
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 6.67,
+          "bonus_total": 60.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 5.0,
+            "bonus": 15.0,
+            "reason": "Это чисто косметическое изменение интерфейса, которое не влияет на архитектуру или бизнес-процессы.",
+            "title": "Meta и OpenAI представили Jolly и dots, милых маскотов для ИИ-агентов - pasqualepillitteri.it",
+            "final_score": 59.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 24,
+        "raw_items": 253,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 9,
+          "CNews": 0,
+          "Euronews": 11
+        },
+        "score_filtered": 234,
+        "quality_filtered": 9,
+        "story_dedup": 4,
+        "candidates": 6,
+        "candidate_rate": 0.0262,
+        "score_buckets": {
+          "0–39": 218,
+          "40–49": 25,
+          "50–59": 9,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791018288.8507028,
-  "last_publish_ts": 1791016614.8778765,
+  "last_search_ts": 1791018527.7835255,
+  "last_publish_ts": 1791018527.7835255,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
