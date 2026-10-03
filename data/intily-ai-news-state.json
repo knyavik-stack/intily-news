@@ -1212,20 +1212,20 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791054060.6584134,
+    "last_start_ts": 1791054526.8232524,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791054060.6584134,
-    "last_success_ts": 1791054060.6584134,
-    "last_candidates": 13,
-    "last_published": 1,
+    "last_run_ts": 1791054526.8232524,
+    "last_success_ts": 1791054526.8232524,
+    "last_candidates": 11,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791054137.519169
+      "updated_at": 1791054566.426022
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1249,13 +1249,6 @@
     }
   },
   "stories": {
-    "c25ea74fb4bdf12b28d8f0ff5a776400262336b5a8cc3581b4b1c3a7baa98df2": {
-      "time": 1790967669,
-      "title": "Google представила свою «хакерскую» модель Gemini 4 Argon для конкуренции с Claude Mythos и GPT Astra - prospect.com.ru",
-      "desc": "Google представила свою «хакерскую» модель Gemini 4 Argon для конкуренции с Claude Mythos и GPT Astra prospect.com.ru",
-      "source": "prospect.com.ru",
-      "region": "RUSSIA"
-    },
     "8e7fa30c42d897878e286e2dc14e54b0b92212f64a35b4b425de1ff9928b11e5": {
       "time": 1790968380,
       "title": "OpenAI’s Dot agent is enterprise software that can also order your dinner",
@@ -1490,94 +1483,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790798219,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 12.84,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "Remote end closed connection without response": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "Remote end closed connection without response"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 9.0,
-          "bonus_total": 54.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Необходим немедленный аудит прав доступа ИИ-агентов для предотвращения утечки конфиденциальных данных.",
-            "title": "Утечка через ИИ-агентов, 13 000 внутренних скриншотов 343 компаний оказались на GitHub - pasqualepillitteri.it",
-            "final_score": 75.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790830854,
       "status": "OK",
@@ -23848,10 +23753,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791054526,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 39.68,
+      "candidates": 11,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 7,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 4,
+        "added": 0,
+        "candidate_count": 11,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Необходимость пересмотра стратегии безопасности при интеграции внешних LLM в бизнес-процессы.",
+            "title": "An OpenAI safety employee has quit and is sounding the alarm",
+            "final_score": 67.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 31,
+        "raw_items": 760,
+        "source_counts": {
+          "TechCrunch AI": 3,
+          "VentureBeat AI": -1,
+          "The Verge AI": 3,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 9,
+          "CNews": 0,
+          "Euronews": 15
+        },
+        "score_filtered": 736,
+        "quality_filtered": 11,
+        "story_dedup": 2,
+        "candidates": 11,
+        "candidate_rate": 0.0151,
+        "score_buckets": {
+          "0–39": 698,
+          "40–49": 49,
+          "50–59": 13,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791054060.6584134,
+  "last_search_ts": 1791054526.8232524,
   "last_publish_ts": 1791054060.6584134,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
