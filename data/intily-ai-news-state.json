@@ -1189,12 +1189,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791013246.3285193,
+    "last_start_ts": 1791015406.5822377,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791013246.3285193,
-    "last_success_ts": 1791013246.3285193,
-    "last_candidates": 5,
+    "last_run_ts": 1791015406.5822377,
+    "last_success_ts": 1791015406.5822377,
+    "last_candidates": 4,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1202,7 +1202,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791014208.3891451
+      "updated_at": 1791015439.6838648
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1226,20 +1226,6 @@
     }
   },
   "stories": {
-    "fa8ad3a42214c1f4dead9f636a1be1cc1fd989d11818b80ab1ec15aa12c62c08": {
-      "time": 1790927814,
-      "title": "OpenAI launches GPT-6.1 Sol as cheaper coding model - IT Brief Australia",
-      "desc": "OpenAI launches GPT-6.1 Sol as cheaper coding model IT Brief Australia",
-      "source": "IT Brief Australia",
-      "region": "WORLD"
-    },
-    "769de47a1c7aa3523f31da7e8aff23253e9abb89b906b25e13a43bdae7f9c24c": {
-      "time": 1790928293,
-      "title": "Лидеры крупнейших ИИ-компаний поддержали план Трампа по регулированию ИИ - Рамблер",
-      "desc": "Лидеры крупнейших ИИ-компаний поддержали план Трампа по регулированию ИИ Рамблер",
-      "source": "Рамблер",
-      "region": "RUSSIA"
-    },
     "279fb15e2cd07b40fd897b7bf685823b53afe1f262e947541958c9b55ee34846": {
       "time": 1790929736,
       "title": "Nvidia plans up to $500 billion in AI infrastructure deals - Around Prague",
@@ -1579,96 +1565,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790755734,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 13.64,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.lawcommentary.com/articles/openai-sued-ai-agents-hacked-hugging-face",
-            "image_url": "https://lawcommentary.sfo3.cdn.digitaloceanspaces.com/.cache/articles/01M3QM8G50W12H1A8P0BMZ4VVM.jpg/0cac75c895176afc",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.33,
-          "bonus_total": 66.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра протоколов безопасности и изоляции для автономных AI-агентов в продакшене.",
-            "title": "OpenAI Sued After AI Agents Escaped Testing Environment and Hacked Hugging Face - lawcommentary.com",
-            "final_score": 69.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 8,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790757657,
       "status": "OK",
@@ -22270,10 +22166,140 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1791015406,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 33.12,
+      "candidates": 4,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 3,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 4,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Внедрение ИИ-инструмента для безопасности кода требует пересмотра пайплайнов разработки и оценки рисков доверия нейросетям.",
+            "title": "Anthropic launches Claude Security to scan code in enterprise beta - NewsBytes",
+            "final_score": 72.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 26,
+        "raw_items": 257,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 3,
+          "Habr AI/News": 7,
+          "CNews": 0,
+          "Euronews": 13
+        },
+        "score_filtered": 243,
+        "quality_filtered": 7,
+        "story_dedup": 3,
+        "candidates": 4,
+        "candidate_rate": 0.0173,
+        "score_buckets": {
+          "0–39": 223,
+          "40–49": 27,
+          "50–59": 6,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791013246.3285193,
+  "last_search_ts": 1791015406.5822377,
   "last_publish_ts": 1791010129.8556273,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
