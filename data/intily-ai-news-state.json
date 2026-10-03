@@ -1195,11 +1195,11 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791019488.089029,
+    "last_start_ts": 1791019728.4868484,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791019488.089029,
-    "last_success_ts": 1791019488.089029,
+    "last_run_ts": 1791019728.4868484,
+    "last_success_ts": 1791019728.4868484,
     "last_candidates": 5,
     "last_published": 0,
     "queue_size": 0
@@ -1208,7 +1208,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791019530.4581487
+      "updated_at": 1791019772.618131
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1232,13 +1232,6 @@
     }
   },
   "stories": {
-    "e323877bcdcf1758f5a21f7520939557f70cec5760135b20d3f386c2ce72b082": {
-      "time": 1790933328,
-      "title": "OpenAI представила технологию, которая должна удешевить ИИ-агентов - prospect.com.ru",
-      "desc": "OpenAI представила технологию, которая должна удешевить ИИ-агентов prospect.com.ru",
-      "source": "prospect.com.ru",
-      "region": "RUSSIA"
-    },
     "e35feb032c2579cdf4b62c82e8c82d2a59ae22cf70d46c7854a1d4fb4a701977": {
       "time": 1790934543,
       "title": "Регулятор США начал расследование рисков ИИ‑инструментов для потребителей и общественной безопасности",
@@ -1543,94 +1536,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1790765585,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 8.7,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.cnews.ru/news/top/2026-09-30_v_evrope_ostanovilos_razvitie",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 6.5,
-          "bonus_total": 39.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость пересмотра географии поставок и производственных цепочек для hardware-проектов.",
-            "title": "Европа больше не покупает новые литографы ASML. Новые заводы почти не строятся, имеющиеся закрывают",
-            "final_score": 69.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 7,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790765819,
       "status": "OK",
@@ -22471,10 +22376,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791019728,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 44.17,
+      "candidates": 5,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 2,
+        "known_recent": 1,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 5,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Автоматизация аудита безопасности кода напрямую снижает риски взлома и затраты на ручное тестирование.",
+            "title": "Anthropic launches Claude Security to scan code in enterprise beta - NewsBytes",
+            "final_score": 72.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 23,
+        "raw_items": 249,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 9,
+          "CNews": 0,
+          "Euronews": 12
+        },
+        "score_filtered": 235,
+        "quality_filtered": 5,
+        "story_dedup": 4,
+        "candidates": 5,
+        "candidate_rate": 0.0221,
+        "score_buckets": {
+          "0–39": 213,
+          "40–49": 27,
+          "50–59": 8,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791019488.089029,
+  "last_search_ts": 1791019728.4868484,
   "last_publish_ts": 1791018527.7835255,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
