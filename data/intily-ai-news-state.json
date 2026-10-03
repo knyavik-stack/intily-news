@@ -1190,11 +1190,11 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791012286.7661014,
+    "last_start_ts": 1791012527.3221362,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791012286.7661014,
-    "last_success_ts": 1791012286.7661014,
+    "last_run_ts": 1791012527.3221362,
+    "last_success_ts": 1791012527.3221362,
     "last_candidates": 5,
     "last_published": 0,
     "queue_size": 0
@@ -1203,7 +1203,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791012331.2786078
+      "updated_at": 1791012557.4596384
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1594,145 +1594,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790754297,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 55.81,
-      "candidates": 40,
-      "queue_before": 16,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 10,
-        "known_recent": 7,
-        "already_queued": 12,
-        "story_queue": 4,
-        "story_history": 2,
-        "added": 5,
-        "candidate_count": 40,
-        "admission_rate": 12.5,
-        "dominant_block": "already_queued",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/nvidia-bets-235-billion-on-itself-while-building-guardrails-for-the-ai/70201319",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.67,
-          "bonus_total": 69.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость учета новых протоколов безопасности при интеграции AI-агентов в бизнес-процессы.",
-            "title": "Nvidia Bets $235 Billion on Itself While Building Guardrails for the AI Agents It Unleashed - AD HOC NEWS",
-            "final_score": 70.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 12,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 75,
-        "raw_items": 616,
-        "source_counts": {
-          "TechCrunch AI": 4,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 4,
-          "Habr AI/News": 10,
-          "CNews": 32,
-          "Euronews": 22
-        },
-        "score_filtered": 549,
-        "quality_filtered": 24,
-        "story_dedup": 3,
-        "candidates": 40,
-        "candidate_rate": 0.0739,
-        "score_buckets": {
-          "0–39": 509,
-          "40–49": 63,
-          "50–59": 37,
-          "60–69": 7,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 0,
-          "6": 2,
-          "7": 1,
-          "8": 2,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790755017,
       "status": "OK",
@@ -22249,10 +22110,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791012527,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 30.16,
+      "candidates": 5,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 4,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 5,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Автоматизация аудита безопасности кода напрямую снижает риски инцидентов и затраты на ручное тестирование.",
+            "title": "Anthropic launches Claude Security to scan code in enterprise beta - NewsBytes",
+            "final_score": 72.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 28,
+        "raw_items": 271,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 4,
+          "Habr AI/News": 6,
+          "CNews": 0,
+          "Euronews": 14
+        },
+        "score_filtered": 257,
+        "quality_filtered": 6,
+        "story_dedup": 3,
+        "candidates": 5,
+        "candidate_rate": 0.0206,
+        "score_buckets": {
+          "0–39": 234,
+          "40–49": 29,
+          "50–59": 7,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791012286.7661014,
+  "last_search_ts": 1791012527.3221362,
   "last_publish_ts": 1791010129.8556273,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
