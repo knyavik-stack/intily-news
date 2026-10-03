@@ -1181,27 +1181,29 @@
     "8505ee32ceb361f4e4caa760e00ff39e79e18a169a62d4772773fd93862fa358": 1791003899,
     "058a664d5b28706377142ad92873744ab8ff9abe32929815cae8b0dfdeb1afb8": 1791004131,
     "6f530ac7237c5bae054ef38d4d9640215672ef595376e86b2c598d139fc54fe1": 1791004608,
-    "e425c3d1edab260aa1c76f3bcc7cbbd55364e956da399b1d5e6bce3805bfb1d6": 1791007731
+    "e425c3d1edab260aa1c76f3bcc7cbbd55364e956da399b1d5e6bce3805bfb1d6": 1791007731,
+    "1a5a83e604c0b5496add9700db6a19519f852595fa564b59fb9577c4a72713d3": 1791010129
   },
   "known": {
-    "e425c3d1edab260aa1c76f3bcc7cbbd55364e956da399b1d5e6bce3805bfb1d6": 1791007257.8036585
+    "e425c3d1edab260aa1c76f3bcc7cbbd55364e956da399b1d5e6bce3805bfb1d6": 1791007257.8036585,
+    "1a5a83e604c0b5496add9700db6a19519f852595fa564b59fb9577c4a72713d3": 1791010129.8556273
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791009168.6727464,
+    "last_start_ts": 1791010129.8556273,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791009168.6727464,
-    "last_success_ts": 1791009168.6727464,
-    "last_candidates": 4,
-    "last_published": 0,
+    "last_run_ts": 1791010129.8556273,
+    "last_success_ts": 1791010129.8556273,
+    "last_candidates": 6,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791009207.9103587
+      "updated_at": 1791010163.0690875
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1560,10 +1562,16 @@
       "desc": "Pervaziv AI Launches Cortex CLI, Bringing Enterprise Agentic AI to the Terminal El Paso Times",
       "source": "El Paso Times",
       "region": "WORLD"
+    },
+    "1a5a83e604c0b5496add9700db6a19519f852595fa564b59fb9577c4a72713d3": {
+      "time": 1791010129,
+      "title": "October 3rd tech news roundup: Windows 11 26H2 update released, Microsoft denies rumors about selling the Xbox brand, OpenAI launches Dots AI agents - FileHippo",
+      "desc": "October 3rd tech news roundup: Windows 11 26H2 update released, Microsoft denies rumors about selling the Xbox brand, OpenAI launches Dots AI agents FileHippo",
+      "source": "FileHippo",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1580,99 +1588,12 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790748297,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 11.93,
-      "candidates": 0,
-      "queue_before": 12,
-      "queue_after": 11,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 400: Bad Request": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 400: Bad Request"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 5.5,
-          "bonus_total": 33.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходимость интеграции автономных агентов в рабочие процессы для сохранения конкурентоспособности.",
-            "title": "OpenAI DevDay 2026: Dots Agents Launch, New Funding Talks - The Tech Buzz",
-            "final_score": 72.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790749985,
       "status": "OK",
@@ -22082,11 +22003,151 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791010129,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 37.95,
+      "candidates": 6,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 4,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 6,
+        "admission_rate": 16.67,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "html_img": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "html_img",
+            "source_url": "https://www.newsbytesapp.com/news/science/anthropic-launches-claude-security-to-scan-code-in-enterprise-beta/tldr",
+            "image_url": "https://i.cdn.newsbytesapp.com/images/l144_25461790985765.jpg",
+            "width": 1440,
+            "height": 823,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Автоматизация аудита безопасности кода напрямую снижает риски и затраты на разработку.",
+            "title": "Anthropic launches Claude Security to scan code in enterprise beta - NewsBytes",
+            "final_score": 73.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 27,
+        "raw_items": 302,
+        "source_counts": {
+          "TechCrunch AI": 3,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 6,
+          "Habr AI/News": 3,
+          "CNews": 0,
+          "Euronews": 13
+        },
+        "score_filtered": 285,
+        "quality_filtered": 8,
+        "story_dedup": 3,
+        "candidates": 6,
+        "candidate_rate": 0.0218,
+        "score_buckets": {
+          "0–39": 263,
+          "40–49": 30,
+          "50–59": 8,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791009168.6727464,
-  "last_publish_ts": 1791007731.557922,
+  "last_search_ts": 1791010129.8556273,
+  "last_publish_ts": 1791010129.8556273,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
