@@ -1235,12 +1235,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791120285.9458063,
+    "last_start_ts": 1791120765.7355568,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791120285.9458063,
-    "last_success_ts": 1791120285.9458063,
-    "last_candidates": 7,
+    "last_run_ts": 1791120765.7355568,
+    "last_success_ts": 1791120765.7355568,
+    "last_candidates": 8,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1248,7 +1248,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791120322.2143638
+      "updated_at": 1791120801.5031948
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1506,147 +1506,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790874288,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 63.29,
-      "candidates": 48,
-      "queue_before": 19,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 12,
-        "known_recent": 7,
-        "already_queued": 11,
-        "story_queue": 3,
-        "story_history": 4,
-        "added": 11,
-        "candidate_count": 48,
-        "admission_rate": 22.92,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 401: HTTP Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 401: HTTP Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.67,
-          "bonus_total": 69.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Оценка подтверждает необходимость немедленного пересмотра бюджета на ИИ-безопасность из-за роста рыночных рисков.",
-            "title": "AI cybersecurity startup Armadin valued at over $2.5 billion after new funding round - Reuters",
-            "final_score": 74.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 198,
-        "raw_items": 1461,
-        "source_counts": {
-          "TechCrunch AI": 6,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 1,
-          "Google DeepMind": -1,
-          "Hugging Face": 1,
-          "Ars Technica": 4,
-          "Habr AI/News": 40,
-          "CNews": 96,
-          "Euronews": 50
-        },
-        "score_filtered": 1329,
-        "quality_filtered": 58,
-        "story_dedup": 26,
-        "candidates": 48,
-        "candidate_rate": 0.038,
-        "score_buckets": {
-          "0–39": 1237,
-          "40–49": 145,
-          "50–59": 69,
-          "60–69": 10,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 0,
-          "6": 8,
-          "7": 3,
-          "8": 5,
-          "9": 1,
-          "10": 1
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790874532,
       "status": "OK",
@@ -25323,10 +25182,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791120765,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 35.81,
+      "candidates": 8,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 5,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 0,
+        "candidate_count": 8,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 5.5,
+          "bonus_total": 33.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 4.0,
+            "bonus": 12.0,
+            "reason": "Риск аппаратной блокировки при покупке б/у серверов или рабочих станций для обучения моделей.",
+            "title": "Пользователь Reddit купил подержанный процессор, который оказался заблокирован в Valorant",
+            "final_score": 62.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 33,
+        "raw_items": 551,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 14,
+          "CNews": 1,
+          "Euronews": 17
+        },
+        "score_filtered": 530,
+        "quality_filtered": 12,
+        "story_dedup": 1,
+        "candidates": 8,
+        "candidate_rate": 0.0154,
+        "score_buckets": {
+          "0–39": 516,
+          "40–49": 26,
+          "50–59": 6,
+          "60–69": 2,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791120285.9458063,
+  "last_search_ts": 1791120765.7355568,
   "last_publish_ts": 1791120051.133026,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
