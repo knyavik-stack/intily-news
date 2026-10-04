@@ -1217,16 +1217,15 @@
     "b91cc999c7ac4e6e350f1417c9644d4fabad6cbbe33d4f845fbd037501c67d62": 1791109244
   },
   "known": {
-    "7d3cb3e726ed8f837394b2c9cf45dbffafb14f0aca8f268fc195eb369cb7247c": 1791105169.4119742,
     "b91cc999c7ac4e6e350f1417c9644d4fabad6cbbe33d4f845fbd037501c67d62": 1791109244.5649357
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791110450.5751407,
+    "last_start_ts": 1791110688.3086405,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791110450.5751407,
-    "last_success_ts": 1791110450.5751407,
+    "last_run_ts": 1791110688.3086405,
+    "last_success_ts": 1791110688.3086405,
     "last_candidates": 8,
     "last_published": 0,
     "queue_size": 0
@@ -1235,7 +1234,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791110483.361446
+      "updated_at": 1791110727.9678352
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1486,94 +1485,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1790857499,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 16.98,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 400: Bad Request": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 400: Bad Request"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Новость важна для понимания ландшафта закрытых ИИ-решений, но прямого влияния на работу бизнеса пока нет.",
-            "title": "Google Gemini 4 Argon released to US government and trusted partners - Cybernews",
-            "final_score": 62.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 7,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790859749,
       "status": "OK",
@@ -24716,10 +24627,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791110688,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 39.68,
+      "candidates": 8,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 6,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 8,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Программа дает доступ к методологиям внедрения, но требует значительных ресурсов для реализации в малом бизнесе.",
+            "title": "Anthropic launches $100 million Claude Frontier Academy training program for enterprises - Neowin",
+            "final_score": 73.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 29,
+        "raw_items": 355,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 1,
+          "Ars Technica": 0,
+          "Habr AI/News": 13,
+          "CNews": 0,
+          "Euronews": 15
+        },
+        "score_filtered": 337,
+        "quality_filtered": 6,
+        "story_dedup": 4,
+        "candidates": 8,
+        "candidate_rate": 0.0245,
+        "score_buckets": {
+          "0–39": 323,
+          "40–49": 20,
+          "50–59": 9,
+          "60–69": 2,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791110450.5751407,
+  "last_search_ts": 1791110688.3086405,
   "last_publish_ts": 1791109244.5649357,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
