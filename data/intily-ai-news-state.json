@@ -1231,27 +1231,26 @@
     "669b822a285baf62e611a28136e80e226ce9ce980f20b34a4b247bfd298eef4f": 1791130847
   },
   "known": {
-    "5914223ee4da7f3fb760b9cd7061e74889cdd60a02e0f1d90ac5d3734254feac": 1791125568.6218398,
     "7dab97d19a8993e1a05f137f5577834dacf76ff32e592e29a05659b634e99ecd": 1791127009.1038997,
     "ff6c27bca5b42db1471be672bd6c44e20f90499ade9d91ac5de3310ad4c87d96": 1791129885.2991972,
     "669b822a285baf62e611a28136e80e226ce9ce980f20b34a4b247bfd298eef4f": 1791130847.8457963
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791130847.8457963,
+    "last_start_ts": 1791131328.949291,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791130847.8457963,
-    "last_success_ts": 1791130847.8457963,
-    "last_candidates": 13,
-    "last_published": 1,
+    "last_run_ts": 1791131328.949291,
+    "last_success_ts": 1791131328.949291,
+    "last_candidates": 12,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791130889.3741221
+      "updated_at": 1791131368.3122957
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1275,13 +1274,6 @@
     }
   },
   "stories": {
-    "0d55e0c277ec3c6d6f3abcd60f2e23b01f8e75ed4dbd37ec9bd9cb8dc2b93686": {
-      "time": 1791044448,
-      "title": "Meta launches open source Muse Gadgets project for custom AI hardware - Indian Television Dot Com",
-      "desc": "Meta launches open source Muse Gadgets project for custom AI hardware Indian Television Dot Com",
-      "source": "Indian Television Dot Com",
-      "region": "WORLD"
-    },
     "4c9b60ae79034d942484976372aa65fe44932452a04f2c036d9feb8d3f503e15": {
       "time": 1791045887,
       "title": "Businesses Face N100m Penalty, As FCCPC Plans AI Marketing Regulation - leadership.ng",
@@ -1509,127 +1501,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1790923973,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 35.72,
-      "candidates": 25,
-      "queue_before": 13,
-      "queue_after": 17,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 2,
-        "known_recent": 0,
-        "already_queued": 12,
-        "story_queue": 2,
-        "story_history": 5,
-        "added": 4,
-        "candidate_count": 25,
-        "admission_rate": 16.0,
-        "dominant_block": "already_queued",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 14,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 67,
-        "raw_items": 471,
-        "source_counts": {
-          "TechCrunch AI": 3,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 1,
-          "Ars Technica": 5,
-          "Habr AI/News": 13,
-          "CNews": 24,
-          "Euronews": 20
-        },
-        "score_filtered": 428,
-        "quality_filtered": 14,
-        "story_dedup": 4,
-        "candidates": 25,
-        "candidate_rate": 0.0619,
-        "score_buckets": {
-          "0–39": 401,
-          "40–49": 41,
-          "50–59": 27,
-          "60–69": 1,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 2,
-          "7": 1,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1790924242,
       "status": "OK",
@@ -25739,10 +25610,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791131328,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 39.38,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 12,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.5,
+          "bonus_total": 39.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Риск аппаратной блокировки при закупке б/у оборудования для инфраструктуры требует проверки истории железа.",
+            "title": "Пользователь Reddit купил подержанный процессор, который оказался заблокирован в Valorant",
+            "final_score": 68.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 39,
+        "raw_items": 679,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 13,
+          "CNews": 1,
+          "Euronews": 23
+        },
+        "score_filtered": 647,
+        "quality_filtered": 17,
+        "story_dedup": 3,
+        "candidates": 12,
+        "candidate_rate": 0.0187,
+        "score_buckets": {
+          "0–39": 629,
+          "40–49": 35,
+          "50–59": 13,
+          "60–69": 1,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791130847.8457963,
+  "last_search_ts": 1791131328.949291,
   "last_publish_ts": 1791130847.8457963,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
