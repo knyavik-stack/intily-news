@@ -1225,19 +1225,21 @@
     "27604e79b8c0d608fe1532bfd7b7b9b0c3321df43b89d966ef8be802d69acc90": 1791119094,
     "6029be9dc7e0ff624c5a8445128e1c720b9a912ef820007c0e2236c4d68f6aee": 1791119809,
     "b4b7537f1a3b2332b416df22019c8bf8a329f8dd554361f4b6b9db5c5ceb1827": 1791120051,
-    "5914223ee4da7f3fb760b9cd7061e74889cdd60a02e0f1d90ac5d3734254feac": 1791125568
+    "5914223ee4da7f3fb760b9cd7061e74889cdd60a02e0f1d90ac5d3734254feac": 1791125568,
+    "7dab97d19a8993e1a05f137f5577834dacf76ff32e592e29a05659b634e99ecd": 1791127009
   },
   "known": {
-    "5914223ee4da7f3fb760b9cd7061e74889cdd60a02e0f1d90ac5d3734254feac": 1791125568.6218398
+    "5914223ee4da7f3fb760b9cd7061e74889cdd60a02e0f1d90ac5d3734254feac": 1791125568.6218398,
+    "7dab97d19a8993e1a05f137f5577834dacf76ff32e592e29a05659b634e99ecd": 1791127009.1038997
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791125568.6218398,
+    "last_start_ts": 1791127009.1038997,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791125568.6218398,
-    "last_success_ts": 1791125568.6218398,
-    "last_candidates": 9,
+    "last_run_ts": 1791127009.1038997,
+    "last_success_ts": 1791127009.1038997,
+    "last_candidates": 10,
     "last_published": 1,
     "queue_size": 0
   },
@@ -1245,7 +1247,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791125617.7834265
+      "updated_at": 1791127059.0267248
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1478,10 +1480,16 @@
       "desc": "Nvidia-backed Reflection AI prepares first open-weight model launch Dealroom",
       "source": "Dealroom",
       "region": "WORLD"
+    },
+    "7dab97d19a8993e1a05f137f5577834dacf76ff32e592e29a05659b634e99ecd": {
+      "time": 1791127009,
+      "title": "What the Recent Frontier AI Incidents Mean for Security Leaders - GovTech",
+      "desc": "What the Recent Frontier AI Incidents Mean for Security Leaders GovTech",
+      "source": "GovTech",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "RUSSIA",
@@ -1499,136 +1507,11 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790878852,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 48.15,
-      "candidates": 51,
-      "queue_before": 17,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 14,
-        "known_recent": 10,
-        "already_queued": 11,
-        "story_queue": 2,
-        "story_history": 5,
-        "added": 9,
-        "candidate_count": 51,
-        "admission_rate": 17.65,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 193,
-        "raw_items": 1502,
-        "source_counts": {
-          "TechCrunch AI": 8,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 2,
-          "Google DeepMind": -1,
-          "Hugging Face": 1,
-          "Ars Technica": 4,
-          "Habr AI/News": 40,
-          "CNews": 85,
-          "Euronews": 50
-        },
-        "score_filtered": 1365,
-        "quality_filtered": 60,
-        "story_dedup": 26,
-        "candidates": 51,
-        "candidate_rate": 0.039,
-        "score_buckets": {
-          "0–39": 1262,
-          "40–49": 157,
-          "50–59": 74,
-          "60–69": 9,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 1,
-          "6": 8,
-          "7": 2,
-          "8": 5,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 4,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1790879352,
       "status": "OK",
@@ -25528,11 +25411,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791127009,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 52.61,
+      "candidates": 10,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 8,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 10,
+        "admission_rate": 10.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://www.govtech.com/blogs/lohrmann-on-cybersecurity/what-the-recent-frontier-ai-incidents-mean-for-security-leaders",
+            "image_url": "https://erepublic.brightspotcdn.com/dims4/default/857fa81/2147483647/strip/true/crop/3769x1832+0+151/resize/1440x700!/quality/90/?url=http%3A%2F%2Ferepublic-brightspot.s3.us-west-2.amazonaws.com%2F7a%2F33%2Fb4d586cb4af0ba1158803d3cda3b%2Fadobestock-610674886.jpeg",
+            "width": 1440,
+            "height": 700,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 6.67,
+          "bonus_total": 60.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Необходимость немедленного пересмотра протоколов безопасности при интеграции LLM в бизнес-процессы.",
+            "title": "What the Recent Frontier AI Incidents Mean for Security Leaders - GovTech",
+            "final_score": 70.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 38,
+        "raw_items": 642,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 15,
+          "CNews": 1,
+          "Euronews": 20
+        },
+        "score_filtered": 621,
+        "quality_filtered": 10,
+        "story_dedup": 1,
+        "candidates": 10,
+        "candidate_rate": 0.0166,
+        "score_buckets": {
+          "0–39": 601,
+          "40–49": 30,
+          "50–59": 9,
+          "60–69": 1,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791125568.6218398,
-  "last_publish_ts": 1791125568.6218398,
+  "last_search_ts": 1791127009.1038997,
+  "last_publish_ts": 1791127009.1038997,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
