@@ -1222,7 +1222,6 @@
     "896ad96c8b744a6ea614faa0f48d25b631224ce5f93017419331c862e25913af": 1791113092
   },
   "known": {
-    "b91cc999c7ac4e6e350f1417c9644d4fabad6cbbe33d4f845fbd037501c67d62": 1791109244.5649357,
     "7bb5e371fe263c9110d3852494cd5740f9d8fc0c4446bd486de20584e102bc71": 1791110926.907236,
     "eb8b8f5edfaad5a6f5603217b60dcdf971a7cd20f54fe23a7ee97fcd1a0d695c": 1791111657.6313481,
     "d1bd60dd87a84b5300c55e0b7f159e9fbdde20528c53cc355da2348cf884970d": 1791112364.5641577,
@@ -1231,11 +1230,11 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791114527.0611954,
+    "last_start_ts": 1791114771.5386188,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791114527.0611954,
-    "last_success_ts": 1791114527.0611954,
+    "last_run_ts": 1791114771.5386188,
+    "last_success_ts": 1791114771.5386188,
     "last_candidates": 10,
     "last_published": 0,
     "queue_size": 0
@@ -1244,7 +1243,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791114557.935264
+      "updated_at": 1791114804.0616388
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1509,127 +1508,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1790863768,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 72.49,
-      "candidates": 41,
-      "queue_before": 18,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 11,
-        "known_recent": 9,
-        "already_queued": 11,
-        "story_queue": 0,
-        "story_history": 4,
-        "added": 6,
-        "candidate_count": 41,
-        "admission_rate": 14.63,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 6,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 191,
-        "raw_items": 1301,
-        "source_counts": {
-          "TechCrunch AI": 3,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 2,
-          "Habr AI/News": 40,
-          "CNews": 96,
-          "Euronews": 50
-        },
-        "score_filtered": 1184,
-        "quality_filtered": 56,
-        "story_dedup": 20,
-        "candidates": 41,
-        "candidate_rate": 0.0369,
-        "score_buckets": {
-          "0–39": 1099,
-          "40–49": 136,
-          "50–59": 60,
-          "60–69": 6,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 0,
-          "6": 7,
-          "7": 3,
-          "8": 2,
-          "9": 0,
-          "10": 1
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1790864031,
       "status": "OK",
@@ -25080,10 +24958,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791114771,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 32.57,
+      "candidates": 10,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 8,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 10,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Программа дает прямой доступ к экспертизе Anthropic для внедрения LLM, что критично для масштабирования ИИ-решений в бизнесе.",
+            "title": "Anthropic launches $100 million Claude Frontier Academy training program for enterprises - Neowin",
+            "final_score": 73.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 31,
+        "raw_items": 387,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 14,
+          "CNews": 1,
+          "Euronews": 16
+        },
+        "score_filtered": 364,
+        "quality_filtered": 8,
+        "story_dedup": 5,
+        "candidates": 10,
+        "candidate_rate": 0.0281,
+        "score_buckets": {
+          "0–39": 350,
+          "40–49": 22,
+          "50–59": 12,
+          "60–69": 2,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791114527.0611954,
+  "last_search_ts": 1791114771.5386188,
   "last_publish_ts": 1791113092.5835981,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
