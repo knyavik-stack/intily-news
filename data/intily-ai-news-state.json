@@ -1224,29 +1224,28 @@
     "232ae62270af492efe0785ad22b26ffe02b8bdaf860843f5c788222399afab9e": 1791118858,
     "27604e79b8c0d608fe1532bfd7b7b9b0c3321df43b89d966ef8be802d69acc90": 1791119094,
     "6029be9dc7e0ff624c5a8445128e1c720b9a912ef820007c0e2236c4d68f6aee": 1791119809,
-    "b4b7537f1a3b2332b416df22019c8bf8a329f8dd554361f4b6b9db5c5ceb1827": 1791120051
+    "b4b7537f1a3b2332b416df22019c8bf8a329f8dd554361f4b6b9db5c5ceb1827": 1791120051,
+    "5914223ee4da7f3fb760b9cd7061e74889cdd60a02e0f1d90ac5d3734254feac": 1791125568
   },
   "known": {
-    "6029be9dc7e0ff624c5a8445128e1c720b9a912ef820007c0e2236c4d68f6aee": 1791118858.9838817,
-    "27604e79b8c0d608fe1532bfd7b7b9b0c3321df43b89d966ef8be802d69acc90": 1791118858.9838817,
-    "b4b7537f1a3b2332b416df22019c8bf8a329f8dd554361f4b6b9db5c5ceb1827": 1791119809.7545712
+    "5914223ee4da7f3fb760b9cd7061e74889cdd60a02e0f1d90ac5d3734254feac": 1791125568.6218398
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791122700.914509,
+    "last_start_ts": 1791125568.6218398,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791122700.914509,
-    "last_success_ts": 1791122700.914509,
-    "last_candidates": 7,
-    "last_published": 0,
+    "last_run_ts": 1791125568.6218398,
+    "last_success_ts": 1791125568.6218398,
+    "last_candidates": 9,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791122737.4840744
+      "updated_at": 1791125617.7834265
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1270,13 +1269,6 @@
     }
   },
   "stories": {
-    "04c2805bbe474e1958f3330dda3627b1059986dda49d2f1cf7b576f8fd600982": {
-      "time": 1791038925,
-      "title": "OpenAI Launches Dots AI Agents After Delaying Model Over Safety Concerns - BW Businessworld",
-      "desc": "OpenAI Launches Dots AI Agents After Delaying Model Over Safety Concerns BW Businessworld",
-      "source": "BW Businessworld",
-      "region": "WORLD"
-    },
     "88550e9b48a1d0176e01424c0e98e17f4042c73d38e7dadd0142eb18bfefa637": {
       "time": 1791041124,
       "title": "An OpenAI safety employee has quit and is sounding the alarm",
@@ -1479,10 +1471,16 @@
       "desc": "OpenAI faces new legal challenges as AI agent incidents trigger lawsuits, probes Firstpost",
       "source": "Firstpost",
       "region": "WORLD"
+    },
+    "5914223ee4da7f3fb760b9cd7061e74889cdd60a02e0f1d90ac5d3734254feac": {
+      "time": 1791125568,
+      "title": "Nvidia-backed Reflection AI prepares first open-weight model launch - Dealroom",
+      "desc": "Nvidia-backed Reflection AI prepares first open-weight model launch Dealroom",
+      "source": "Dealroom",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -1501,86 +1499,10 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790878130,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 28.18,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 17,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GROQ",
-          "OPENROUTER",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": "OPENROUTER",
-        "failovers": 1,
-        "failures": 3,
-        "blocked": 11,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1790878852,
       "status": "OK",
@@ -25465,11 +25387,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791125568,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 49.83,
+      "candidates": 9,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 6,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 1,
+        "candidate_count": 9,
+        "admission_rate": 11.11,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://app.dealroom.co/news/note/nvidia-backed-reflection-ai-prepares-first-open-weight-model-launch",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 6.67,
+          "bonus_total": 60.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Потенциальное появление новой мощной open-weight модели для локального хостинга и снижения зависимости от API.",
+            "title": "Nvidia-backed Reflection AI prepares first open-weight model launch - Dealroom",
+            "final_score": 63.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 37,
+        "raw_items": 654,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 15,
+          "CNews": 1,
+          "Euronews": 20
+        },
+        "score_filtered": 633,
+        "quality_filtered": 11,
+        "story_dedup": 1,
+        "candidates": 9,
+        "candidate_rate": 0.0146,
+        "score_buckets": {
+          "0–39": 613,
+          "40–49": 31,
+          "50–59": 8,
+          "60–69": 1,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791122700.914509,
-  "last_publish_ts": 1791120051.133026,
+  "last_search_ts": 1791125568.6218398,
+  "last_publish_ts": 1791125568.6218398,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
