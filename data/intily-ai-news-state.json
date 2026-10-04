@@ -1213,30 +1213,24 @@
     "9d223e43657b2c4ae4ca4eb87755b46a663fab39412e397d2ed5fad0444f7cc9": 1791095326
   },
   "known": {
-    "2a922803367193df95d9f848477f568bd5d89532adbb1597122cd1e61d787d83": 1791090288.5443423,
-    "8ad47ebcb893923214f9c998d4809eeef8a47baacb94b7d418d03daa4661e6db": 1791090288.5443423,
-    "a18e24e5dcc36a22d929b38eb0e61046c4f73d3e483c128a1516354694d1a973": 1791090288.5443423,
-    "b95bfa59f522f73955b6bc0fde2c448f75db1936f90c1f0fd8a8994f6ec45492": 1791090288.5443423,
-    "eb38a2b88e6b96cff73e3687d41e844a1fb9367129131ea84ee7bd2ca5137581": 1791090288.5443423,
-    "164497245837d974c7aa5c25c12332de83821724dddd5a3b552c233b5cbcb3fb": 1791090288.5443423,
     "9d223e43657b2c4ae4ca4eb87755b46a663fab39412e397d2ed5fad0444f7cc9": 1791095326.5116122
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791095326.5116122,
+    "last_start_ts": 1791095807.4394407,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791095326.5116122,
-    "last_success_ts": 1791095326.5116122,
+    "last_run_ts": 1791095807.4394407,
+    "last_success_ts": 1791095807.4394407,
     "last_candidates": 10,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791095378.2602732
+      "updated_at": 1791095850.1002984
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1487,96 +1481,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790839254,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 14.23,
-      "candidates": 0,
-      "queue_before": 13,
-      "queue_after": 12,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 6.0,
-          "bonus_total": 54.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость обновления стека инструментов для автоматизации сложных задач и удержания рыночных позиций.",
-            "title": "Google releases most advanced Gemini AI model - Financial Times",
-            "final_score": 70.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 6,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790839741,
       "status": "OK",
@@ -24038,10 +23942,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791095807,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 42.7,
+      "candidates": 10,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 7,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 0,
+        "candidate_count": 10,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Рост цен и риски поставок GPU напрямую влияют на бюджеты и стратегию развертывания AI-инфраструктуры.",
+            "title": "В США бизнесмена обвинили в контрабанде чипов Nvidia в Китай на $300 млн - rbc.ru",
+            "final_score": 72.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 15,
+        "raw_items": 290,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 1,
+          "Ars Technica": 1,
+          "Habr AI/News": 3,
+          "CNews": 0,
+          "Euronews": 9
+        },
+        "score_filtered": 275,
+        "quality_filtered": 2,
+        "story_dedup": 3,
+        "candidates": 10,
+        "candidate_rate": 0.0364,
+        "score_buckets": {
+          "0–39": 266,
+          "40–49": 11,
+          "50–59": 13,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791095326.5116122,
+  "last_search_ts": 1791095807.4394407,
   "last_publish_ts": 1791095326.5116122,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
