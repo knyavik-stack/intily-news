@@ -1247,7 +1247,6 @@
     "c5325d88471caa9ae791bd20e580a50622fff7af9dcc0e26a5c6d3a8c83b9fe2": 1791186778
   },
   "known": {
-    "cd5e0bcd6a88f94d77e9443647c12ca0311c2fda8fdba67ce554ad88d6380231": 1791181496.0350237,
     "00bddb1f789e49f2b590bed709acefcdc17f585bbd8bc07ac01666c028221319": 1791183653.1022065,
     "902c807b66dde03f36eac6e6df59f8baee0a166d067a2b6a548cfeea5bac047d": 1791183653.1022065,
     "72e710b06e127bf7d1e5ac6547585bfb399b76b2eeeb0eb4fd9f9377b836936f": 1791183653.1022065,
@@ -1405,13 +1404,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791186778.72515,
+    "last_start_ts": 1791187034.587732,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791186778.72515,
-    "last_success_ts": 1791186778.72515,
+    "last_run_ts": 1791187034.587732,
+    "last_success_ts": 1791187034.587732,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 4
   },
   "providers": {
@@ -1421,14 +1420,14 @@
       "updated_at": 1791186780.7539775
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791186783.8129718
+      "disabled_until": 1791190613.188985,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791187013.1889877
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791186769.474537
+      "disabled_until": 1791273434.5785787,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1791187034.57858
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1436,9 +1435,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791186769.474537
+      "disabled_until": 1791190633.533731,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791187033.533733
     }
   },
   "stories": {
@@ -1697,96 +1696,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1790949172,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 19.86,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 16,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://gigazine.net/gsc_news/en/20261002-pi-1-0/",
-            "image_url": "https://i.gzn.jp/img/2026/10/02/pi-1-0/00.png",
-            "width": 1074,
-            "height": 605,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Позволяет оптимизировать стек разработки за счет гибкого переключения моделей и стандартизации через MCP.",
-            "title": "The free and open-source AI coding tool 'Pi 1.0' has been officially released, adding MCP support and the ability to switch between multiple AI models. - GIGAZINE",
-            "final_score": 67.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1790949659,
       "status": "OK",
@@ -26562,6 +26471,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1791187034,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 24.39,
+      "candidates": 0,
+      "queue_before": 4,
+      "queue_after": 4,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
