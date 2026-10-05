@@ -1266,9 +1266,6 @@
     "2dc0eaf79ae2fa5ba19a6f41c4c8e9f65ce36bd3b33f09c23811761da7ed95c9": 1791207420
   },
   "known": {
-    "612606c2bec2a17e94cd30deb47bf0a861d774ecb44aad9df301930dce796bc8": 1791202139.3829706,
-    "4d69405a50f8d4aec88a0deb75da7ed3880416324f9c0702c5f4a775ba8c7949": 1791202139.3829706,
-    "ef032be0b16e52df18dc246f8fd0fc070bf225fe46c607870720ef6c804f6e21": 1791202139.3829706,
     "7b99bf8e9974d6bb89a9bca0247f4c7a04a3c67b969f120668800ba7e52b3b7e": 1791204341.3313813,
     "2dc0eaf79ae2fa5ba19a6f41c4c8e9f65ce36bd3b33f09c23811761da7ed95c9": 1791204341.3313813,
     "6b1b0e1300a7c31e3b42663bf41389a65e62aca0a47882f60fad473949e3a146": 1791204341.3313813,
@@ -1678,30 +1675,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791207420.0484283,
+    "last_start_ts": 1791207669.9129295,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791207420.0484283,
-    "last_success_ts": 1791207420.0484283,
+    "last_run_ts": 1791207669.9129295,
+    "last_success_ts": 1791207669.9129295,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 11
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791207424.6948593
+      "disabled_until": 1791211248.362118,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1791207648.3621202
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791207169.0605388
+      "disabled_until": 1791211252.1889157,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791207652.188918
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791207169.0605388
+      "disabled_until": 1791294069.8510993,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1791207669.8511007
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1709,9 +1706,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791207169.0605388
+      "disabled_until": 1791211267.9360924,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791207667.9360945
     }
   },
   "stories": {
@@ -2012,147 +2009,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791004608,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 54.35,
-      "candidates": 7,
-      "queue_before": 1,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 4,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 0,
-        "candidate_count": 7,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://stocktwits.com/news-articles/markets/equity/coin-stock-gains-over-3-coinbase-launches-platform-for-ai-agents-to-buy-sell-and-pay/cZKcGPLR72D",
-            "image_url": "https://news.stocktwits-cdn.com/large_Coinbase_stock_5d7a2c0923.webp",
-            "width": 1280,
-            "height": 853,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.0,
-          "bonus_total": 72.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 3,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость подготовки инфраструктуры безопасности для автономных финансовых операций ИИ-агентов.",
-            "title": "COIN Stock Gains Over 3% — Coinbase Launches Platform For AI Agents To Buy, Sell And Pay - Stocktwits",
-            "final_score": 65.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 32,
-        "raw_items": 348,
-        "source_counts": {
-          "TechCrunch AI": 7,
-          "VentureBeat AI": -1,
-          "The Verge AI": 4,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 10,
-          "Habr AI/News": 1,
-          "CNews": 0,
-          "Euronews": 10
-        },
-        "score_filtered": 327,
-        "quality_filtered": 9,
-        "story_dedup": 5,
-        "candidates": 7,
-        "candidate_rate": 0.0222,
-        "score_buckets": {
-          "0–39": 298,
-          "40–49": 38,
-          "50–59": 12,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791005086,
       "status": "OK",
@@ -26780,6 +26636,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1791207669,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 22.01,
+      "candidates": 0,
+      "queue_before": 11,
+      "queue_after": 11,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 4,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
