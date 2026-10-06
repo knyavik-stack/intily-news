@@ -1310,7 +1310,8 @@
     "5cec48793cbd0408df2d5b14484d89d46ad194efdc06d9d0a5e097ada1a08d48": 1791295747,
     "94c19d82aee3d217128de169b545c5d19036340939d3135416d5c1e5066baa5f": 1791296699,
     "a991d537f80aabe6a08239c4839046dc9025e931097be2f77b64758540a7747b": 1791298389,
-    "aa5209e3cd401e581770a109305dcb214b59a4d025efb5f2e63f0965dfd8bc05": 1791300314
+    "aa5209e3cd401e581770a109305dcb214b59a4d025efb5f2e63f0965dfd8bc05": 1791300314,
+    "3f1bc7b1a7a099a87730b4b5048da1372bce8d37533758ebc627dff84e8b1c9f": 1791301008
   },
   "known": {
     "861234b64a4e357fea8881c7cfb482314b562f085d2f71c382b1bcfc376d0d76": 1791297181.9932203,
@@ -1333,50 +1334,6 @@
     "66113aa5f94a6b1b296c339a7ab7cc154849c20d18049680779997ccf5e40539": 1791300083.5464118
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Mistral выпустила Le Chonk — открытую модель на 1,05 трлн параметров",
-      "link": "https://habr.com/ru/companies/bothub/news/1091178/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1091178",
-      "desc": "Le Chonk — мультимодальная MoE-модель на 1,05 трлн параметров, из которых при одном проходе активны 49 млрд. В модели также есть vision-энкодер на 1,6 млрд параметров. Модель уже доступна в public preview через API. Полные веса Mistral обещает выпустить 27 октября. Mistral делает ставку на агентное программирование, кибербезопасность, финансовые задачи, инженерные расчёты и работу с изображениями и технической документацией. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1791297300.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 13.0,
-        "event_concreteness": 15.5,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 56.5,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 80.5
-      },
-      "base_score": 56.5,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 80.5,
-      "key": "3f1bc7b1a7a099a87730b4b5048da1372bce8d37533758ebc627dff84e8b1c9f",
-      "importance": 80.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "models",
-        "security_regulation",
-        "tools"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0,
-      "last_failed_at": 1791300771,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1791301071
-    },
     {
       "region": "RUSSIA",
       "title": "Mistral представили Large 4 «Le Chonk» на 1 трлн параметров",
@@ -1471,19 +1428,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 2.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 47.0,
+        "base_score": 46.5,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 68.0
+        "final_score": 67.5
       },
-      "base_score": 47.0,
+      "base_score": 46.5,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 68.0,
+      "score": 67.5,
       "key": "a5468c4b741fe6256cd9e58d9b533d5d5dc9933757eb10716d4c6ab4b9f32fed",
-      "importance": 68.0,
+      "importance": 67.5,
       "editorial_value": 50.0,
       "topics": [
         "models"
@@ -2047,30 +2004,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791300771.926074,
+    "last_start_ts": 1791301008.695699,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791300771.926074,
-    "last_success_ts": 1791300771.926074,
+    "last_run_ts": 1791301008.695699,
+    "last_success_ts": 1791301008.695699,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 19
+    "last_published": 1,
+    "queue_size": 18
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1791304375.265283,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1791300775.2652848
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1791301015.4981506
     },
     "GROQ": {
-      "disabled_until": 1791304379.4101524,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791300779.4101536
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1791301008.3909237
     },
     "OPENAI": {
-      "disabled_until": 1791387189.7971764,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1791300789.797178
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1791301008.3909237
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2078,9 +2035,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1791304388.7549415,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791300788.7549427
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1791301008.3909237
     }
   },
   "stories": {
@@ -2398,11 +2355,17 @@
       "desc": "AI Agent Builds 14,338-Line Exploit and Escapes Google's KVM Sandbox in Security Challenge International Business Times, Singapore Edition",
       "source": "International Business Times, Singapore Edition",
       "region": "WORLD"
+    },
+    "3f1bc7b1a7a099a87730b4b5048da1372bce8d37533758ebc627dff84e8b1c9f": {
+      "time": 1791301008,
+      "title": "Mistral выпустила Le Chonk — открытую модель на 1,05 трлн параметров",
+      "desc": "Le Chonk — мультимодальная MoE-модель на 1,05 трлн параметров, из которых при одном проходе активны 49 млрд. В модели также есть vision-энкодер на 1,6 млрд параметров. Модель уже доступна в public preview через API. Полные веса Mistral обещает выпустить 27 октября. Mistral делает ставку на агентное программирование, кибербезопасность, финансовые задачи, инженерные расчёты и работу с изображениями и технической документацией. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -2420,139 +2383,10 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791102529,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 29.64,
-      "candidates": 9,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 7,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 0,
-        "candidate_count": 9,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Снижение рисков утечек и затрат на ручной аудит безопасности кода в enterprise-сегменте.",
-            "title": "Anthropic launches Claude Security AI for enterprise code scanning - NewsBytes",
-            "final_score": 72.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 15,
-        "raw_items": 309,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 1,
-          "Ars Technica": 0,
-          "Habr AI/News": 4,
-          "CNews": 0,
-          "Euronews": 10
-        },
-        "score_filtered": 294,
-        "quality_filtered": 2,
-        "story_dedup": 4,
-        "candidates": 9,
-        "candidate_rate": 0.0306,
-        "score_buckets": {
-          "0–39": 283,
-          "40–49": 13,
-          "50–59": 12,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791103009,
       "status": "OK",
@@ -24326,11 +24160,101 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1791301008,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 9.75,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 18,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/companies/bothub/news/1091178/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1091178",
+            "image_url": "https://habr.com/share/publication/1091178/fb9ae8cd594fbc186089719d5e384a08/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 24.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Открытый доступ к модели такого масштаба позволяет внедрять сложные агентные решения без зависимости от проприетарных API.",
+            "title": "Mistral выпустила Le Chonk — открытую модель на 1,05 трлн параметров",
+            "final_score": 80.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1791300083.5464118,
-  "last_publish_ts": 1791300314.2378664,
+  "last_publish_ts": 1791301008.695699,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
