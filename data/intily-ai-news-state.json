@@ -2078,30 +2078,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791383614.7002146,
+    "last_start_ts": 1791383821.7906349,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791383614.7002146,
-    "last_success_ts": 1791383614.7002146,
+    "last_run_ts": 1791383821.7906349,
+    "last_success_ts": 1791383821.7906349,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1791387170.5173068,
+      "disabled_until": 1791387411.781376,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1791383570.5173094
+      "updated_at": 1791383811.781378
     },
     "GROQ": {
-      "disabled_until": 1791387174.0039241,
+      "disabled_until": 1791387415.246729,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791383574.0039258
+      "updated_at": 1791383815.2467303
     },
     "OPENAI": {
-      "disabled_until": 1791470014.5096097,
+      "disabled_until": 1791470221.6005754,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1791383614.5096116
+      "updated_at": 1791383821.6005774
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2109,9 +2109,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1791387213.172397,
+      "disabled_until": 1791387421.069872,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791383613.1723988
+      "updated_at": 1791383821.0698733
     }
   },
   "stories": {
@@ -2419,147 +2419,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791179807,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 41.43,
-      "candidates": 10,
-      "queue_before": 1,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 6,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 1,
-        "candidate_count": 10,
-        "admission_rate": 10.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://thewincentral.com/anthropic-claude-5-5-new-model-rumor-ipo/",
-            "image_url": "https://thewincentral.com/wp-content/uploads/2026/10/fable-5.5.jpeg",
-            "width": 1564,
-            "height": 1006,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 6.67,
-          "bonus_total": 60.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 5.0,
-            "bonus": 15.0,
-            "reason": "Слухи о будущих моделях не требуют немедленных действий, но важны для долгосрочного планирования архитектуры.",
-            "title": "Anthropic May Have Another Big Claude 5.5 Model Waiting to Launch - thewincentral.com",
-            "final_score": 59.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 20,
-        "raw_items": 445,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 5,
-          "CNews": 2,
-          "Euronews": 10
-        },
-        "score_filtered": 423,
-        "quality_filtered": 7,
-        "story_dedup": 5,
-        "candidates": 10,
-        "candidate_rate": 0.0235,
-        "score_buckets": {
-          "0–39": 397,
-          "40–49": 33,
-          "50–59": 14,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 1,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791180286,
       "status": "OK",
@@ -22176,6 +22035,78 @@
       "business_reason": "no_eligible_item",
       "searched": false,
       "duration_sec": 46.07,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1791383821,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 10.73,
       "candidates": 0,
       "queue_before": 19,
       "queue_after": 19,
