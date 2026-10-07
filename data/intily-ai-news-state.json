@@ -2049,30 +2049,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791371101.7093573,
+    "last_start_ts": 1791371599.8821363,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791371101.7093573,
-    "last_success_ts": 1791371101.7093573,
-    "last_candidates": 31,
-    "last_published": 1,
+    "last_run_ts": 1791371599.8821363,
+    "last_success_ts": 1791371599.8821363,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791371145.9394045
+      "disabled_until": 1791375187.9559774,
+      "reason": "The read operation timed out",
+      "updated_at": 1791371587.9559803
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791371088.8257523
+      "disabled_until": 1791375191.34851,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791371591.3485115
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791371088.8257523
+      "disabled_until": 1791457999.7503572,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1791371599.75036
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2080,19 +2080,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791371088.8257523
+      "disabled_until": 1791375198.7904172,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791371598.7904186
     }
   },
   "stories": {
-    "eab03f7dd6f34b49eef89e57a5d0d3ccacb902baf57fcf8e4010c1562fb4a3f8": {
-      "time": 1791284938,
-      "title": "Google обновил рекомендации по использованию ИИ-контента для площадок",
-      "desc": "Google обновил официальный документ о работе с ИИ-контентом в поиске и впервые заговорил о критических требованиях : ручная проверка фактов и редактура перед публикацией теперь обязательны, а не рекомендуемы. Прошлый раз этот документ правили в октябре 2025-го, так что обновление само по себе событие ( Search Engine Roundtable, 2026 ). Параллельно активировалась вторая фаза сентябрьского спам-апдейта 2026 — 30 сентября, и аналитики уже связывают её именно с некачественным ИИ-контентом. И Google впервые прямым текстом описал причину: нейросеть не извлекает факты — она предсказывает вероятную последовательность слов по обучающим данным. То есть галлюцинации — это не глюк, а архитектурная особенность : модель не знает ответа, она достраивает статистически правдоподобное продолжение. Отсюда и требование человека на выходе — проверить то, что модель по своей природе проверить не может. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "c05eefdea0bd789b8ff570817f8ff623139a885094d0771ad029cf7610d78370": {
       "time": 1791285889,
       "title": "Wikimedia сообщила о сбое из‑за действий ИИ от OpenAI",
@@ -2432,147 +2425,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791130847,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 42.41,
-      "candidates": 13,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 11,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 1,
-        "candidate_count": 13,
-        "admission_rate": 7.69,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 5.67,
-          "bonus_total": 51.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Показывает тренд на внедрение ИИ в госсектор, что создает новые риски и возможности для автоматизации юридических процессов.",
-            "title": "Депутат Казахстана пишет законы с помощью ИИ и обучает модели - BeInCrypto",
-            "final_score": 58.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 41,
-        "raw_items": 681,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 13,
-          "CNews": 1,
-          "Euronews": 23
-        },
-        "score_filtered": 651,
-        "quality_filtered": 14,
-        "story_dedup": 3,
-        "candidates": 13,
-        "candidate_rate": 0.0203,
-        "score_buckets": {
-          "0–39": 630,
-          "40–49": 35,
-          "50–59": 14,
-          "60–69": 1,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791131328,
       "status": "OK",
@@ -22944,6 +22796,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1791371599,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 32.3,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 5,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
