@@ -1727,19 +1727,19 @@
         "novelty": 0.0,
         "source_quality": 5.0,
         "evidence": 2.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 40.0,
+        "base_score": 39.5,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 61.0
+        "final_score": 60.5
       },
-      "base_score": 40.0,
+      "base_score": 39.5,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 61.0,
+      "score": 60.5,
       "key": "36a38071009235ca54dcdbd40b22c7d35b662a25a04a8a81ab9769448d7e281a",
-      "importance": 61.0,
+      "importance": 60.5,
       "editorial_value": 50.0,
       "topics": [
         "tools"
@@ -2115,30 +2115,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791380230.3976653,
+    "last_start_ts": 1791380479.4974375,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791380230.3976653,
-    "last_success_ts": 1791380230.3976653,
+    "last_run_ts": 1791380479.4974375,
+    "last_success_ts": 1791380479.4974375,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1791383814.0663173,
+      "disabled_until": 1791384060.947065,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1791380214.0663195
+      "updated_at": 1791380460.9470665
     },
     "GROQ": {
-      "disabled_until": 1791383817.6211586,
+      "disabled_until": 1791384064.2653556,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791380217.6211605
+      "updated_at": 1791380464.265357
     },
     "OPENAI": {
-      "disabled_until": 1791466630.273846,
+      "disabled_until": 1791466879.3300726,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1791380230.273848
+      "updated_at": 1791380479.3300743
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2146,9 +2146,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1791383829.0067222,
+      "disabled_until": 1791384078.9024432,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791380229.0067244
+      "updated_at": 1791380478.9024458
     }
   },
   "stories": {
@@ -2463,145 +2463,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791142370,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 32.9,
-      "candidates": 15,
-      "queue_before": 1,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 13,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 0,
-        "candidate_count": 15,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://habr.com/ru/companies/selectel/news/1090074/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1090074",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Стабильность драйверов критична для бесперебойного обучения и инференса моделей на локальном железе.",
-            "title": "Обновления для Linux: NVIDIA исправляет сбои, а NTFS-3G закрывает уязвимости",
-            "final_score": 83.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 35,
-        "raw_items": 713,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 2,
-          "Habr AI/News": 12,
-          "CNews": 1,
-          "Euronews": 17
-        },
-        "score_filtered": 674,
-        "quality_filtered": 19,
-        "story_dedup": 5,
-        "candidates": 15,
-        "candidate_rate": 0.0221,
-        "score_buckets": {
-          "0–39": 650,
-          "40–49": 43,
-          "50–59": 18,
-          "60–69": 1,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791176456,
       "status": "OK",
@@ -22420,6 +22281,78 @@
             "title": "Google выпустила Nano Banana 2.1 — модель улучшила редактирование и консистентность",
             "final_score": 77.0
           }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1791380479,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 31.12,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
         },
         "queue_score_audit": {
           "pre_ai_below_final_threshold": 2,
