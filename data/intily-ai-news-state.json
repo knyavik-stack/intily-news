@@ -1391,8 +1391,6 @@
     "20f81cda88436ff8ca1174fc5b7c37c6bf8ea3565bbc067d1bea5b1a52ca7563": 1791456770
   },
   "known": {
-    "19e3b8b48c56f035274201ade8950a328fd2b8514ce28cc2362130f1e0888220": 1791451737.9274437,
-    "aaaab881e4b9c7fbc2affd19e4d4bf8ff13eee807ff7a640514b436a9feea02c": 1791451737.9274437,
     "dd3fbc490b29a66a02c0bdfd1a7f7d9a15d6e13b36889b09e939fc29f66d16e3": 1791454130.641591,
     "1a4cdd0e024d53412811342dfeb00e30d9ef05ad10ba25dd669724045f00ad80": 1791454130.641591,
     "afbae57afbe302a6b00624dd7ce07261286665869bc8094a1144167dc0c5fc0c": 1791454130.641591,
@@ -1401,7 +1399,9 @@
     "d4a7689e35dd3a6b7514044e0682942a2688587f4dfa1e5c10b57943dd4e9233": 1791454130.641591,
     "ee5c77516f1adff9c9f41b42027937da86c60c4ba2e206516aa35cca97281fbd": 1791454130.641591,
     "43d91a95843079c39216e4331b1649a762aec064b5fd8e9bf709d501ec356901": 1791456050.4422994,
-    "169d6ff26abbd583736c0427c43257aba77e6c07da0a90962fdf6eb74db34f89": 1791456050.4422994
+    "169d6ff26abbd583736c0427c43257aba77e6c07da0a90962fdf6eb74db34f89": 1791456050.4422994,
+    "9ad5cd8dbe4de51bff0cecee447aaad9e43e922ff7ed4ad14d06fda45f5ae198": 1791457969.3004098,
+    "104db832498636178214e528ab456283551d058cc582300ff6081ce0235e103e": 1791457969.3004098
   },
   "queue": [
     {
@@ -1532,62 +1532,24 @@
         "novelty": 0.0,
         "source_quality": 5.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 44.0,
+        "base_score": 43.5,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 65.0
+        "final_score": 64.5
       },
-      "base_score": 44.0,
+      "base_score": 43.5,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 65.0,
+      "score": 64.5,
       "key": "fbd47ac72eb1bb779e82c298fb2ea32e3abca48de77d66d262820a77f395afe2",
-      "importance": 65.0,
+      "importance": 64.5,
       "editorial_value": 50.0,
       "topics": [],
       "audience_score": 7.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "WORLD",
-      "title": "Sonata Software expands Microsoft partnership around enterprise AI and agentic technology - StartUp Beat",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNdUxjSS03Y0NhLWxYSnZEOWw3UTBkZGtwdFVuZXQ1bGxvdlhKSHhIOHZLRS1HRWNtQ3I4aHBhVjEwQ3FObm50UzZDSlhTcjNReFBwbzBWd0xfdzNGaW5VVDRpc3hNYWJBNU5OdTBKYnVmM01KV2JlWWc3SXJRcE9Da0I1N3hLVGJNZnUyUVpxd0hHVlQwTGhLc1dtLVk5Wm1IVlVpMXloXzExWlNYYkc3UUxEMVlNdTZlanQ4dg?oc=5",
-      "desc": "Sonata Software expands Microsoft partnership around enterprise AI and agentic technology StartUp Beat",
-      "source": "StartUp Beat",
-      "time": 1791414539.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 7.0,
-        "event_concreteness": 15.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 46.0,
-        "audience_score": 6.0,
-        "audience_bonus": 18.0,
-        "final_score": 64.0
-      },
-      "base_score": 46.0,
-      "audience_bonus": 18.0,
-      "score_stage": "final",
-      "score": 64.0,
-      "key": "497c3e6743dd4d71455864b427966678001e5b3f70e5fe04f99eb059469f964a",
-      "importance": 64.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "business",
-        "tools"
-      ],
-      "audience_score": 6.0,
-      "tier": "A"
     },
     {
       "region": "RUSSIA",
@@ -1953,33 +1915,108 @@
       "audience_score": 6.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Selectel выпустил серверную платформу на базе AMD EPYC 9005",
+      "link": "https://habr.com/ru/companies/selectel/news/1091680/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1091680",
+      "desc": "Selectel представляет новую двухсокетную серверную платформу на AMD собственной разработки, которая полностью готова для задач виртуализации, систем хранения и работы с GPU. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1791457597.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 9.0,
+        "event_concreteness": 11.5,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 2.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 47.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 47.5
+      },
+      "base_score": 47.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 47.5,
+      "key": "9ad5cd8dbe4de51bff0cecee447aaad9e43e922ff7ed4ad14d06fda45f5ae198",
+      "importance": 47.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "chips",
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "«Рамблер» запустил единого ИИ-помощника с полноценной мультиагентной системой «под капотом»",
+      "link": "https://www.cnews.ru/news/line/2026-10-08_rambler_zapustil_edinogo",
+      "desc": "«Рамблер» открывает новый формат взаимодействия с пользователями – вопросно-ответный: теперь можно не только...",
+      "source": "CNews",
+      "time": 1791457320.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 9.0,
+        "event_concreteness": 11.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 44.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 44.5
+      },
+      "base_score": 44.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 44.5,
+      "key": "104db832498636178214e528ab456283551d058cc582300ff6081ce0235e103e",
+      "importance": 44.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1791456770.5752742,
+    "last_start_ts": 1791457969.3004098,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791456770.5752742,
-    "last_success_ts": 1791456770.5752742,
-    "last_candidates": 0,
-    "last_published": 1,
-    "queue_size": 15
+    "last_run_ts": 1791457969.3004098,
+    "last_success_ts": 1791457969.3004098,
+    "last_candidates": 32,
+    "last_published": 0,
+    "queue_size": 16
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791456772.980418
+      "disabled_until": 1791461620.3478947,
+      "reason": "The read operation timed out",
+      "updated_at": 1791458020.347897
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791456528.7472122
+      "disabled_until": 1791461623.6034052,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791458023.6034071
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791456528.7472122
+      "disabled_until": 1791544478.2465427,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1791458078.2465448
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1987,19 +2024,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791456528.7472122
+      "disabled_until": 1791461676.9453042,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791458076.9453058
     }
   },
   "stories": {
-    "247ca4e60a7ebc0e2ba62cd62f59865e4f27d393cf23d36860dee9b3cd0f3993": {
-      "time": 1791371101,
-      "title": "Reuters: OpenAI и Anthropic приветствовали закон об отчетности за утечки данных - prospect.com.ru",
-      "desc": "Reuters: OpenAI и Anthropic приветствовали закон об отчетности за утечки данных prospect.com.ru",
-      "source": "prospect.com.ru",
-      "region": "RUSSIA"
-    },
     "df70b5dbe896097e14e32f9a55983edcf0edcd330fc314d1bd933dcea70de2cd": {
       "time": 1791371816,
       "title": "AI-агенты OpenAI обошли контроль и атаковали Wikimedia и Medicare - Techora.ru",
@@ -2360,97 +2390,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791216777,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 16.78,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 16,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.cnews.ru/news/line/2026-10-05_30_mlrd_slov_i_47_tyszaprosov",
-            "image_url": "https://www.cnews.ru/img/design2008/logocnews_f.png",
-            "width": 600,
-            "height": 315,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.33,
-          "bonus_total": 66.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Новый инструмент ускорит развертывание LLM и снизит затраты",
-            "title": "30 млрд слов и 47 тыс. запросов: как работает ИИ-инфраструктура «Думейт»",
-            "final_score": 73.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ"
-        ],
-        "used": "GROQ",
-        "failovers": 1,
-        "failures": 1,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791217980,
       "status": "OK",
@@ -22137,10 +22076,136 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791457969,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 109.68,
+      "candidates": 32,
+      "queue_before": 14,
+      "queue_after": 16,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 13,
+        "known_recent": 2,
+        "already_queued": 10,
+        "story_queue": 1,
+        "story_history": 4,
+        "added": 2,
+        "candidate_count": 32,
+        "admission_rate": 6.25,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 171,
+        "raw_items": 681,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 38,
+          "CNews": 89,
+          "Euronews": 43
+        },
+        "score_filtered": 606,
+        "quality_filtered": 32,
+        "story_dedup": 11,
+        "candidates": 32,
+        "candidate_rate": 0.0627,
+        "score_buckets": {
+          "0–39": 553,
+          "40–49": 83,
+          "50–59": 38,
+          "60–69": 7,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 1,
+          "7": 10,
+          "8": 2,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791456050.4422994,
+  "last_search_ts": 1791457969.3004098,
   "last_publish_ts": 1791456770.5752742,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
