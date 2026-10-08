@@ -1906,30 +1906,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791442138.3041103,
+    "last_start_ts": 1791442676.1797523,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791442138.3041103,
-    "last_success_ts": 1791442138.3041103,
+    "last_run_ts": 1791442676.1797523,
+    "last_success_ts": 1791442676.1797523,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 14
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791442138.201396
+      "disabled_until": 1791446264.1800983,
+      "reason": "The read operation timed out",
+      "updated_at": 1791442664.1801012
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791442131.0344546
+      "disabled_until": 1791446266.394468,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791442666.3944702
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791442131.0344546
+      "disabled_until": 1791529076.0944993,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1791442676.0945017
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1937,19 +1937,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791442131.0344546
+      "disabled_until": 1791446274.9918823,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791442674.991884
     }
   },
   "stories": {
-    "654d525832b877be4f71019b163acff846562a2c21028e8f91cbb970ed9b086f": {
-      "time": 1791355975,
-      "title": "OpenAI releases 372 groups of math results from unreleased frontier AI model - The Indian Express",
-      "desc": "OpenAI releases 372 groups of math results from unreleased frontier AI model The Indian Express",
-      "source": "The Indian Express",
-      "region": "WORLD"
-    },
     "6a5fef0bc1aa284fafed8ad62b02eafbf6835bc73e486306e8100a53ac9429ab": {
       "time": 1791357653,
       "title": "AI computing startup Lambda to raise $4B ahead of planned IPO",
@@ -2275,84 +2268,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791204784,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 15.65,
-      "candidates": 0,
-      "queue_before": 10,
-      "queue_after": 10,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра стратегии облачных расходов из-за монополизации мощностей гигантами.",
-            "title": "Amazon’s $8 Billion Nvidia Chip Plan Shows the Cost of the AI Boom - TechRepublic",
-            "final_score": 74.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 5,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1791205281,
       "status": "OK",
@@ -21869,6 +21784,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1791442676,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 32.22,
+      "candidates": 0,
+      "queue_before": 14,
+      "queue_after": 14,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 7,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
