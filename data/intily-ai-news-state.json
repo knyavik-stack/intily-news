@@ -1,6 +1,5 @@
 {
   "published": {
-    "dec1f230250ee4bc851ff13bd2b4a1ee45f06207b4e9fc680f090917c7c1089f": 1788943117,
     "9d30c12f8e74694ee7efeed323331e51f9a364fea1e615cea608871f5ddc2ca0": 1788943575,
     "e407ac9c064641886e342378d91410c2ecb135603d7c6250b672340490bd3f10": 1788944117,
     "907eb9280d41a1dc686b39e29f0d3d88f250e88252b908870878aa3cb37d866f": 1788944479,
@@ -1565,30 +1564,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791534564.4752123,
+    "last_start_ts": 1791535281.5763247,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791534564.4752123,
-    "last_success_ts": 1791534564.4752123,
+    "last_run_ts": 1791535281.5763247,
+    "last_success_ts": 1791535281.5763247,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 5
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1791538150.5165222,
+      "disabled_until": 1791538870.562351,
       "reason": "The read operation timed out",
-      "updated_at": 1791534550.5165257
+      "updated_at": 1791535270.5623538
     },
     "GROQ": {
-      "disabled_until": 1791538153.556136,
+      "disabled_until": 1791538874.1123865,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791534553.5561376
+      "updated_at": 1791535274.1123886
     },
     "OPENAI": {
-      "disabled_until": 1791620964.4616127,
+      "disabled_until": 1791621681.5625877,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1791534564.4616144
+      "updated_at": 1791535281.5625908
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1596,9 +1595,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1791538163.4857361,
+      "disabled_until": 1791538880.1702955,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791534563.485738
+      "updated_at": 1791535280.1702976
     }
   },
   "stories": {
@@ -2004,96 +2003,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791296699,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 20.33,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "html_img": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "html_img",
-            "source_url": "https://www.sphericalinsights.com/blogs/deutsche-telekom-targets-2.8-billion-in-savings-as-ai-and-automation-reshape-telecom-operations",
-            "image_url": "https://www.sphericalinsights.com/assets/img/spinnerr.gif",
-            "width": 256,
-            "height": 256,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.33,
-          "bonus_total": 66.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Демонстрация масштабируемого кейса по сокращению OPEX через AI, что требует пересмотра стратегии автоматизации в любом бизнесе.",
-            "title": "Deutsche Telekom Targets $2.8 Billion in Savings as AI and Automation Reshape Telecom Operations - Spherical Insights",
-            "final_score": 68.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791297181,
       "status": "OK",
@@ -21914,6 +21823,78 @@
       "business_reason": "no_eligible_item",
       "searched": false,
       "duration_sec": 34.08,
+      "candidates": 0,
+      "queue_before": 5,
+      "queue_after": 5,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1791535281,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 31.1,
       "candidates": 0,
       "queue_before": 5,
       "queue_after": 5,
