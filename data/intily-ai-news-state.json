@@ -1366,7 +1366,8 @@
     "591eb632bc7e9b86d8bfc5051d7494f7c4ed248560f568b987c0bd12b103a312": 1791539099,
     "d00129abf2c8f8b096c0c59360f73ea54f0eb0d9f3f077bab4ae207a23a0e908": 1791539339,
     "be8d67e623cc909f973ada6813e1ef15587213f64deb7816fa05a458255d9232": 1791539586,
-    "aefc1b142cdc0a689437479a69ae832d28fe961c84a7ac7bbdd06e61192ac0db": 1791539816
+    "aefc1b142cdc0a689437479a69ae832d28fe961c84a7ac7bbdd06e61192ac0db": 1791539816,
+    "3d47ff7312fe4428771be193c65ea19455e0dd6e2e6d793449b954bc2443f914": 1791540051
   },
   "known": {
     "d037d5a4c36f94b186d357dc043b5417c37844037207f064f2af7ddf4bdb9b66": 1791536724.4792469,
@@ -1383,41 +1384,6 @@
     "3d47ff7312fe4428771be193c65ea19455e0dd6e2e6d793449b954bc2443f914": 1791538857.6090953
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "ИИ в атаке и защите: итоги киберучений Standoff на форуме «Цифровые решения»",
-      "link": "https://www.cnews.ru/news/line/2026-10-09_ii_v_atake_i_zashchite_itogi",
-      "desc": "В рамках российского ИТ-форума «Цифровые решения» состоялись киберучения Standoff с участием команд ИБ ведущих отечественных...",
-      "source": "CNews",
-      "time": 1791536760.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 5.0,
-        "event_concreteness": 12.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 2.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 41.0,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 65.0
-      },
-      "base_score": 41.0,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 65.0,
-      "key": "3d47ff7312fe4428771be193c65ea19455e0dd6e2e6d793449b954bc2443f914",
-      "importance": 65.0,
-      "editorial_value": 50.0,
-      "topics": [],
-      "audience_score": 8.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "RUSSIA",
       "title": "Билайн представил на «Цифровых решениях» новых ИИ-агентов для бизнеса и государства",
@@ -1754,20 +1720,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791539816.4032915,
+    "last_start_ts": 1791540051.8298922,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791539816.4032915,
-    "last_success_ts": 1791539816.4032915,
+    "last_run_ts": 1791540051.8298922,
+    "last_success_ts": 1791540051.8298922,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 10
+    "queue_size": 9
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791539825.643216
+      "updated_at": 1791540054.1618807
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2196,6 +2162,13 @@
       "desc": "Компания OpenAI представила решения ряда давних математических задач, полученные с помощью ещё не выпущенной передовой модели искусственного интеллекта. Публикация включает 722 документа, сгруппированных по 372 тематическим направлениям. Однако математическое сообщество бойкотирует эти документы. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "3d47ff7312fe4428771be193c65ea19455e0dd6e2e6d793449b954bc2443f914": {
+      "time": 1791540051,
+      "title": "ИИ в атаке и защите: итоги киберучений Standoff на форуме «Цифровые решения»",
+      "desc": "В рамках российского ИТ-форума «Цифровые решения» состоялись киберучения Standoff с участием команд ИБ ведущих отечественных...",
+      "source": "CNews",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
@@ -2203,7 +2176,6 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -2215,102 +2187,13 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791301008,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 9.75,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/companies/bothub/news/1091178/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1091178",
-            "image_url": "https://habr.com/share/publication/1091178/fb9ae8cd594fbc186089719d5e384a08/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Открытый доступ к модели такого масштаба позволяет внедрять сложные агентные решения без зависимости от проприетарных API.",
-            "title": "Mistral выпустила Le Chonk — открытую модель на 1,05 трлн параметров",
-            "final_score": 80.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791301729,
       "status": "OK",
@@ -22224,11 +22107,101 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791540051,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 2.83,
+      "candidates": 0,
+      "queue_before": 10,
+      "queue_after": 9,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://www.cnews.ru/news/line/2026-10-09_ii_v_atake_i_zashchite_itogi",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 24.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость срочного пересмотра протоколов безопасности из-за возросшей скорости атак с применением ИИ.",
+            "title": "ИИ в атаке и защите: итоги киберучений Standoff на форуме «Цифровые решения»",
+            "final_score": 65.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1791538857.6090953,
-  "last_publish_ts": 1791539816.4032915,
+  "last_publish_ts": 1791540051.8298922,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
