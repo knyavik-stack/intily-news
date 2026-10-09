@@ -1373,13 +1373,6 @@
     "c382466f69537e2f0c73044bac7f72894f60a998d1e24562a111b79177828b6d": 1791533577
   },
   "known": {
-    "44cf9be1faa9304c867c5ca4f024b85ba5a04a2787bb1715215ba7f17f900a2f": 1791528531.2722948,
-    "c284468a436a25318279244422ea04d4ab92f4db87a8ab578649f92fd4a7b1e9": 1791528531.2722948,
-    "8350be22c4e7bdfb6c535ed1cc184c59c555b72b6a47fc2303b4612734cb205f": 1791528531.2722948,
-    "8b776aaccc39680e704ffbad7bd1797f09a437bdd5677d810719398c30a6abb0": 1791528531.2722948,
-    "f894309d6596b25fb18177c61807b5157b42ef3f5f9917187c28db3326a6207b": 1791528531.2722948,
-    "43c7fbbb93bdf80c66f5f7bc862f081b78726cfd9b386fbc8bcfd9ba8e1cf9ba": 1791528531.2722948,
-    "e6d3c2424ce364804f31bfcb0e951dfb1bf502fd3b2fa34e507988cecc6aa286": 1791528531.2722948,
     "c382466f69537e2f0c73044bac7f72894f60a998d1e24562a111b79177828b6d": 1791530709.6496015,
     "aefc1b142cdc0a689437479a69ae832d28fe961c84a7ac7bbdd06e61192ac0db": 1791533577.8577032
   },
@@ -1572,30 +1565,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791533577.8577032,
+    "last_start_ts": 1791534564.4752123,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791533577.8577032,
-    "last_success_ts": 1791533577.8577032,
-    "last_candidates": 21,
-    "last_published": 1,
+    "last_run_ts": 1791534564.4752123,
+    "last_success_ts": 1791534564.4752123,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 5
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791533577.8450024
+      "disabled_until": 1791538150.5165222,
+      "reason": "The read operation timed out",
+      "updated_at": 1791534550.5165257
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791529968.510995
+      "disabled_until": 1791538153.556136,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791534553.5561376
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791529968.510995
+      "disabled_until": 1791620964.4616127,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1791534564.4616144
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1603,19 +1596,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791529968.510995
+      "disabled_until": 1791538163.4857361,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791534563.485738
     }
   },
   "stories": {
-    "ed576b8e4c670a8a8718fdab4770b6f3c772dc429465496c1c3b74f9aa5b41f0": {
-      "time": 1791447423,
-      "title": "«Диасофт» представил российскую экосистему ИИ-разработки для крупных корпораций",
-      "desc": "Компания «Диасофт» на закрытом онлайн-показе представила новую ИИ-версию экосистемы для команд разработки – AI-Driven Digital Q . В ее основе – трехконтурная модель ИИ-разработки: Контур обнаружения (Discovery Loop), Контур замысла (Intent Loop) и Контур исполнения (Implementation Loop). Вместе они объединяют сбор требований, проектирование, генерацию и проверку кода, тестирование и выпуск продукта в единый производственный конвейер. В собственных проектах компании «Диасофт» конвейер уже сократил трудозатраты на треть, а соответствие кода требованиям превысило 99%. Распространенные на рынке подходы делят ИИ-разработку на два контура: постановку задачи (Intent Loop) и ее исполнение (Implementation Loop). «Диасофт» выделил в отдельный контур работу с требованиями заказчика (Discovery Loop): по опыту компании, именно на этом этапе теряется больше всего исходного смысла бизнес-задачи. В контуре обнаружения агенты собирают требования из документов, протоколов встреч и интервью и формируют сценарии использования. В контуре замысла формируется продуктовый замысел, при необходимости проектируется архитектура, а задача раскладывается по сервисам и сразу получает тест-кейсы. В контуре исполнения для каждого сервиса параллельно работают свои экземпляры агентов: от спецификации изменения до генерации кода, проверки и выпуска. При этом человек остается в процессе в ключевых точках и утверждает замысел, проверяет архитектуру и принимает решение в контрольных точках процесса разработки. «Главный актив теперь не код, а спецификация. Код можно перегенерировать за минуты, если спецификация точна. Поэтому мы вынесли работу с требованиями в отдельный контур и поставили автоматическую проверку на каждом переходе. Человек больше не пишет каждую строку. Человек отвечает за замысел и принимает результат», – отметил Юрий Дручинин , директор по производству «Диасофт». Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "9ec8c4069755e545450b8f74e22f93d4810cb577a9ec74b7b300d3b4b0524121": {
       "time": 1791452246,
       "title": "Компания «Фалькон Тех» внедрила «СерчИнформ КИБ» для защиты интеллектуальной собственности",
@@ -2018,89 +2004,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791296463,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 26.98,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 18,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Позволяет снизить капитальные затраты на инфраструктуру за счет повышения утилизации GPU.",
-            "title": "Обновленная версия Машины искусственного интеллекта Скала^р позволяет повысить загрузку GPU-ускорителей до 85%",
-            "final_score": 64.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 12,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1791296699,
       "status": "OK",
@@ -22001,6 +21904,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1791534564,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 34.08,
+      "candidates": 0,
+      "queue_before": 5,
+      "queue_after": 5,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
