@@ -1,7 +1,5 @@
 {
   "published": {
-    "31832160c5e348d4a489542040a51a530e7dbc43a0e08a097ce37d9a33b287ea": 1788951851,
-    "860bc64abb34db0b061c8b497f276633d906b9cfcb0c20416dfabf45ee646bbc": 1788952389,
     "803fc95cb4df7131aff3a3d3e62cfac1b83b08b49cd4178a9ccc9ad4754b068b": 1788955467,
     "6545582e4954f9875f1cf720cd468880b7605f793dfbf569b56224bfca0259c1": 1788955646,
     "1d86b704a17b1b951fc25df64a64d00458f1cae7ae6fb474e5c07c3d879e1633": 1788956351,
@@ -1370,9 +1368,6 @@
     "c284468a436a25318279244422ea04d4ab92f4db87a8ab578649f92fd4a7b1e9": 1791543173
   },
   "known": {
-    "6b94b85b015d287a69b6228a123f7e71d56a991aca37c81bd8439785656fb5ef": 1791538857.6090953,
-    "7c1252a4ab0cf2d867409ee6d361a8b91ee9e9884647c2a16d7dbebfc58ecdd8": 1791538857.6090953,
-    "3d47ff7312fe4428771be193c65ea19455e0dd6e2e6d793449b954bc2443f914": 1791538857.6090953,
     "262c815966467d754776d6bf40b22ae06c73cd0c171d785a648fb6f26ca30166": 1791541489.0963635,
     "73dc167f8e4cdd1dedff0d5cb73e0a88045e24c4032196f890691837858f0de0": 1791541489.0963635
   },
@@ -1541,19 +1536,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 41.0,
+        "base_score": 40.5,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 59.0
+        "final_score": 58.5
       },
-      "base_score": 41.0,
+      "base_score": 40.5,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 59.0,
+      "score": 58.5,
       "key": "7cc0554b8710e2de77e4fc904e96e2570f17e77327b12d62e2ed3caffe1a94a1",
-      "importance": 59.0,
+      "importance": 58.5,
       "editorial_value": 50.0,
       "topics": [],
       "audience_score": 6.0,
@@ -1562,13 +1557,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791543173.4924245,
+    "last_start_ts": 1791544609.2976189,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791543173.4924245,
-    "last_success_ts": 1791543173.4924245,
-    "last_candidates": 0,
-    "last_published": 1,
+    "last_run_ts": 1791544609.2976189,
+    "last_success_ts": 1791544609.2976189,
+    "last_candidates": 27,
+    "last_published": 0,
     "queue_size": 5
   },
   "providers": {
@@ -1578,14 +1573,14 @@
       "updated_at": 1791543193.551755
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791543196.3233113
+      "disabled_until": 1791548246.568037,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791544646.5680392
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791537168.0756166
+      "disabled_until": 1791631080.6309154,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1791544680.6309173
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1593,9 +1588,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791537168.0756166
+      "disabled_until": 1791548279.4836795,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791544679.4836817
     }
   },
   "stories": {
@@ -2036,90 +2031,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791303654,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 75.8,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 19,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 6.0,
-          "bonus_total": 18.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Необходимость мониторинга регуляторных рисков и возможных изменений в условиях ведения AI-бизнеса в РФ.",
-            "title": "Мишустин заявил о стимулировании разработок законом об ИИ - runet.news",
-            "final_score": 61.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": "OPENROUTER",
-        "failovers": 2,
-        "failures": 4,
-        "blocked": 10,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1791305092,
       "status": "OK",
@@ -22082,10 +21993,143 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791544609,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 71.49,
+      "candidates": 27,
+      "queue_before": 5,
+      "queue_after": 5,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 18,
+        "known_recent": 0,
+        "already_queued": 5,
+        "story_queue": 0,
+        "story_history": 4,
+        "added": 0,
+        "candidate_count": 27,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 6.0,
+          "bonus_total": 18.0,
+          "max_score": 6.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Policy change may require content moderation adjustments.",
+            "title": "Anthropic запретила пользователям жестоко обращаться с чат‑ботом Claude",
+            "final_score": 74.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 133,
+        "raw_items": 616,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 35,
+          "CNews": 50,
+          "Euronews": 46
+        },
+        "score_filtered": 544,
+        "quality_filtered": 39,
+        "story_dedup": 6,
+        "candidates": 27,
+        "candidate_rate": 0.0559,
+        "score_buckets": {
+          "0–39": 496,
+          "40–49": 83,
+          "50–59": 34,
+          "60–69": 3,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 2,
+          "7": 2,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GROQ",
+          "GROQ",
+          "OPENROUTER",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "OPENROUTER",
+        "failovers": 2,
+        "failures": 3,
+        "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791541489.0963635,
+  "last_search_ts": 1791544609.2976189,
   "last_publish_ts": 1791543173.4924245,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
