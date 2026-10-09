@@ -1431,7 +1431,11 @@
       ],
       "audience_score": 7.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1791526846,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1791527146
     },
     {
       "region": "WORLD",
@@ -1467,7 +1471,11 @@
         "models"
       ],
       "audience_score": 7.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1791526846,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1791527146
     },
     {
       "region": "WORLD",
@@ -1583,30 +1591,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791526607.4403164,
+    "last_start_ts": 1791526846.4200127,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791526607.4403164,
-    "last_success_ts": 1791526607.4403164,
+    "last_run_ts": 1791526846.4200127,
+    "last_success_ts": 1791526846.4200127,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 5
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791526611.0824418
+      "disabled_until": 1791530462.2042732,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1791526862.2042754
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791525888.357778
+      "disabled_until": 1791530465.8959916,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791526865.8959937
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791525888.357778
+      "disabled_until": 1791613272.1666393,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1791526872.1666412
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1614,19 +1622,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791525888.357778
+      "disabled_until": 1791530471.1254315,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791526871.1254332
     }
   },
   "stories": {
-    "dd2646ca390a370c7f3be838a774fe646d2d3beeb07752215e184abb87d18761": {
-      "time": 1791440251,
-      "title": "EmbeddingGemma 2 спустя сутки: что осталось от обещаний Google",
-      "desc": "6 октября Google DeepMind выпустила EmbeddingGemma 2 — компактную open-weight модель для embeddings, которая умеет работать не только с текстом и кодом, но и с изображениями, видео и аудио. Спустя сутки релиз уже появился в локальном стеке разработчиков, а первые сравнения показывают более неоднозначную картину, чем следует из формулировки Google о «лучшем в классе». Главная идея модели — собрать разные типы данных в единое 768-мерное пространство. Поэтому текстовый запрос можно сопоставлять с изображениями, аудио или видеокадрами без отдельной цепочки из speech-to-text, image captioning и нескольких embedding-моделей. Google рассчитывает таким образом упростить локальный семантический поиск, RAG, классификацию и маршрутизацию. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "c5d19f10d7df0038f11181fdb6fe8bf77d934f178588a659f04235c26ad1be11": {
       "time": 1791441174,
       "title": "Broadcom AI Growth Faces Customer Concentration Risk As Revenue Rises 221% - JournalArta",
@@ -2050,84 +2051,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791291454,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 44.84,
-      "candidates": 0,
-      "queue_before": 16,
-      "queue_after": 16,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Нужно пересмотреть риск‑менеджмент и политику ИИ в продукте",
-            "title": "Nvidia, Palantir, and Alphabet Are Sending Shockwaves Through Wall Street With This $17.5 Billion Warning - The Motley Fool",
-            "final_score": 67.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 9,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1791292139,
       "status": "OK",
@@ -21955,6 +21878,83 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1791526846,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 25.76,
+      "candidates": 0,
+      "queue_before": 5,
+      "queue_after": 5,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
