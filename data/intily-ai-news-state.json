@@ -1,6 +1,5 @@
 {
   "published": {
-    "873083c5a159b9a07593d60bd8b8aa9586c2d3adb982c63c0c82279ad99e75cf": 1789051168,
     "df94a68627d32bc781f296df9da1596f251332733d8a930ecf75225c3613bdfe": 1789052066,
     "bb0c6e9a299cf41c453ef4681f0f27582bd39c67798ab8d8100db7834c1558fb": 1789052253,
     "fc6d61172f3a3bb2ef4794a6612a1ebb670f2c688bc29d105a9061216679e7df": 1789052795,
@@ -1317,30 +1316,32 @@
     "2c91230d31d81310c62715055ca91845182b5b52fac2adc8dc1717e2bed68fce": 1791640143,
     "e6ffddf288d9cc45968947e468771cb86200d811413f8f066ac13761bff4ce91": 1791640369,
     "f50af0eca8083e6ca5373bbfc31fa7c10525d19ea35a170d2b2d3ab652607e89": 1791640855,
-    "59e9aa2f2fcdf884ed27f653071f26aa745171865a705b1a1bc56adcc546091b": 1791642048
+    "59e9aa2f2fcdf884ed27f653071f26aa745171865a705b1a1bc56adcc546091b": 1791642048,
+    "4f7dae522d96fffd5c6912bbae980252f0ffa262b8b78751d658c742da2f9336": 1791643967
   },
   "known": {
     "2c91230d31d81310c62715055ca91845182b5b52fac2adc8dc1717e2bed68fce": 1791638692.2216287,
     "e6ffddf288d9cc45968947e468771cb86200d811413f8f066ac13761bff4ce91": 1791638942.7093835,
     "f50af0eca8083e6ca5373bbfc31fa7c10525d19ea35a170d2b2d3ab652607e89": 1791640855.3699086,
-    "59e9aa2f2fcdf884ed27f653071f26aa745171865a705b1a1bc56adcc546091b": 1791642048.7563136
+    "59e9aa2f2fcdf884ed27f653071f26aa745171865a705b1a1bc56adcc546091b": 1791642048.7563136,
+    "4f7dae522d96fffd5c6912bbae980252f0ffa262b8b78751d658c742da2f9336": 1791643967.2749808
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791643008.105729,
+    "last_start_ts": 1791643967.2749808,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791643008.105729,
-    "last_success_ts": 1791643008.105729,
-    "last_candidates": 13,
-    "last_published": 0,
+    "last_run_ts": 1791643967.2749808,
+    "last_success_ts": 1791643967.2749808,
+    "last_candidates": 15,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791643050.6212003
+      "updated_at": 1791644008.3632832
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1364,13 +1365,6 @@
     }
   },
   "stories": {
-    "0e1dd542ea70c4d1315a83f03380a26ac2359fb362aacd29c28caaa35980b495": {
-      "time": 1791557349,
-      "title": "Выручка от импортозамещенных материалов для чипов за два года вырастет в 17 раз и достигнет 1,7 миллиарда",
-      "desc": "Выручка от импортозамещенных материалов для микроэлектроники в 2026 году достигнет 1,7 млрд рублей — в 17 раз больше, чем в 2024 г.",
-      "source": "CNews",
-      "region": "RUSSIA"
-    },
     "3cea4774fba29b559aa8e787be945a89008f589c51e0ac646a7e488a7ecd5dc6": {
       "time": 1791557584,
       "title": "OpenAI And Anthropic Are Preparing For A Potential Catastrophic AI Incident: Here Is Why - Times Now",
@@ -1657,10 +1651,16 @@
       "desc": "Anthropic Cuts Internet Access After AI Agents Exploit Websites ProPakistani",
       "source": "ProPakistani",
       "region": "WORLD"
+    },
+    "4f7dae522d96fffd5c6912bbae980252f0ffa262b8b78751d658c742da2f9336": {
+      "time": 1791643967,
+      "title": "Anthropic is cutting off its internal evaluations from the internet",
+      "desc": "After a recent spate of high-profile incidents in which AI agents escaped containment, Anthropic is cutting off internet access for all internal evaluations. In a report Friday, the company detailed \"unintended model actions,\" including submitting a false tip regarding an unsolved murder, that led to the decision. Although the impact of these behaviors was minimal […]",
+      "source": "The Verge AI",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -1679,146 +1679,10 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791401444,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 148.97,
-      "candidates": 68,
-      "queue_before": 17,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 19,
-        "known_recent": 22,
-        "already_queued": 12,
-        "story_queue": 2,
-        "story_history": 3,
-        "added": 10,
-        "candidate_count": 68,
-        "admission_rate": 14.71,
-        "dominant_block": "known_recent",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.theverge.com/tech/1007147/microsoft-surface-laptop-ultra-windows-event-everything-announced",
-            "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/lc-img-639ce71c-4af9-43a1-b5a1-34b6d8db35cc.jpeg?quality=90&strip=all&crop=0%2C10.745251402131%2C100%2C78.509497195739&w=1200",
-            "width": 1200,
-            "height": 624,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Готовое железо для локального AI-dev и inference без облака, меняет воркфлоу и расходы на GPU-часы.",
-            "title": "Everything announced at Microsoft’s Surface Laptop Ultra event",
-            "final_score": 71.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 7,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 213,
-        "raw_items": 1515,
-        "source_counts": {
-          "TechCrunch AI": 11,
-          "VentureBeat AI": -1,
-          "The Verge AI": 9,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 2,
-          "Ars Technica": 7,
-          "Habr AI/News": 40,
-          "CNews": 93,
-          "Euronews": 50
-        },
-        "score_filtered": 1387,
-        "quality_filtered": 46,
-        "story_dedup": 14,
-        "candidates": 68,
-        "candidate_rate": 0.0522,
-        "score_buckets": {
-          "0–39": 1297,
-          "40–49": 133,
-          "50–59": 78,
-          "60–69": 6,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 4,
-          "6": 3,
-          "7": 4,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791402053,
       "status": "OK",
@@ -22819,11 +22683,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791643967,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 41.51,
+      "candidates": 15,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 12,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 1,
+        "candidate_count": 15,
+        "admission_rate": 6.67,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 8.0,
+          "bonus_total": 72.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра протоколов безопасности и изоляции для AI-агентов в корпоративных средах.",
+            "title": "Anthropic is cutting off its internal evaluations from the internet",
+            "final_score": 74.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 35,
+        "raw_items": 631,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 15,
+          "CNews": 0,
+          "Euronews": 16
+        },
+        "score_filtered": 601,
+        "quality_filtered": 10,
+        "story_dedup": 5,
+        "candidates": 15,
+        "candidate_rate": 0.0252,
+        "score_buckets": {
+          "0–39": 569,
+          "40–49": 42,
+          "50–59": 16,
+          "60–69": 4,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791643008.105729,
-  "last_publish_ts": 1791642048.7563136,
+  "last_search_ts": 1791643967.2749808,
+  "last_publish_ts": 1791643967.2749808,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
