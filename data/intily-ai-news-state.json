@@ -1,8 +1,5 @@
 {
   "published": {
-    "0ec94d3b869cb6fe922135c86080c8fa8f41fec4b1cc8ed60cda0f981a75f9eb": 1789029928,
-    "0791e915d344df131702f7703bed7b0c2b42fbd8e50935335b355e2804206af7": 1789030288,
-    "f9c62b3024d112d7e2889c2c797bd7ef22159d670e30d7d0b694b33d531bdb3d": 1789030468,
     "e259d38c4fa51338e59253272e3c2190c803a5459abd1afe5a23f573b5331dd4": 1789030650,
     "8a051d104e91c832050e594652c7977233b672454619dfee9451c90501bd7be3": 1789030832,
     "b6e5fb6ac65617029f1c4dfaceb9b3548deceab4c2ffefcfbf12e3e759c444da": 1789031754,
@@ -1344,37 +1341,38 @@
     "98234053f293be9c6ed7df01d82b917647adc76797ac61350de11db93fb56e02": 1791618290,
     "9e54d214c18175380fe8eb6d47063d6da7ce3e2686c4c5275286a449bbb5e9e3": 1791619487,
     "3b4c8819a203621ce377c567ab5d153bdce2a4ba4d67c09744f1418920257b63": 1791619969,
-    "f45d824aa6e092c4d273eac1e6dcc5b0e0b443f909058917adfb048e7cf2ccff": 1791620205
+    "f45d824aa6e092c4d273eac1e6dcc5b0e0b443f909058917adfb048e7cf2ccff": 1791620205,
+    "9a9281772b13caf146f9b3fe2540495015aa882f5d792a550b52a91a1768be7d": 1791622609
   },
   "known": {
-    "f45d824aa6e092c4d273eac1e6dcc5b0e0b443f909058917adfb048e7cf2ccff": 1791617086.9950733
+    "9a9281772b13caf146f9b3fe2540495015aa882f5d792a550b52a91a1768be7d": 1791622609.8790374
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791621889.2753556,
+    "last_start_ts": 1791622609.8790374,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791621889.2753556,
-    "last_success_ts": 1791621889.2753556,
+    "last_run_ts": 1791622609.8790374,
+    "last_success_ts": 1791622609.8790374,
     "last_candidates": 9,
-    "last_published": 0,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1791625533.70721,
-      "reason": "The read operation timed out",
-      "updated_at": 1791621933.7072127
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1791622660.2886403
     },
     "GROQ": {
-      "disabled_until": 1791625536.6104317,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791621936.6104338
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1791622609.768062
     },
     "OPENAI": {
-      "disabled_until": 1791708350.5234015,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1791621950.523403
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1791622609.768062
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1382,9 +1380,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1791625549.6253142,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791621949.625316
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1791622609.768062
     }
   },
   "stories": {
@@ -1765,11 +1763,17 @@
       "desc": "Apple Hills Digital опубликовала исследование «Облачные сервисы для ИИ: серверы с GPU и AI/ML-платформы» Content-Review.com",
       "source": "Content-Review.com",
       "region": "RUSSIA"
+    },
+    "9a9281772b13caf146f9b3fe2540495015aa882f5d792a550b52a91a1768be7d": {
+      "time": 1791622609,
+      "title": "Anthropic и OpenAI готовятся к дню после атаки ИИ, сообщает Axios - Pasquale Pillitteri",
+      "desc": "Anthropic и OpenAI готовятся к дню после атаки ИИ, сообщает Axios Pasquale Pillitteri",
+      "source": "Pasquale Pillitteri",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1787,81 +1791,10 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791380479,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 31.12,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1791382136,
       "status": "OK",
@@ -22132,11 +22065,152 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1791622609,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 52.71,
+      "candidates": 9,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 8,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 1,
+        "candidate_count": 9,
+        "admission_rate": 11.11,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "Remote end closed connection without response": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "Remote end closed connection without response"
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.0,
+          "bonus_total": 63.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Необходимость пересмотра стратегии безопасности и диверсификации вендоров при использовании внешних LLM в критических бизнес-процессах.",
+            "title": "Anthropic и OpenAI готовятся к дню после атаки ИИ, сообщает Axios - Pasquale Pillitteri",
+            "final_score": 64.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 28,
+        "raw_items": 336,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 5,
+          "Habr AI/News": 10,
+          "CNews": 0,
+          "Euronews": 10
+        },
+        "score_filtered": 317,
+        "quality_filtered": 8,
+        "story_dedup": 2,
+        "candidates": 9,
+        "candidate_rate": 0.0292,
+        "score_buckets": {
+          "0–39": 295,
+          "40–49": 30,
+          "50–59": 9,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791621889.2753556,
-  "last_publish_ts": 1791620205.7191386,
+  "last_search_ts": 1791622609.8790374,
+  "last_publish_ts": 1791622609.8790374,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
