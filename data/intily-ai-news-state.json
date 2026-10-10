@@ -1,8 +1,5 @@
 {
   "published": {
-    "be0d413a6a6fcf06472112d877d8e818a669fcd7a9591e0cca7d70ff15c6c3eb": 1789049195,
-    "7f2e8f5d1f89165f44d2e2def1693720e3584b0916e6766a07763dacb8e35355": 1789049552,
-    "441963db657f984a21e68e6392946ea357ac26d12910b236b0cae8fc22e62419": 1789049907,
     "f3c39694b792a53628fbaa6b4defbc27941f40d9349085b2dbbbb52f7a2cb4c7": 1789050508,
     "873083c5a159b9a07593d60bd8b8aa9586c2d3adb982c63c0c82279ad99e75cf": 1789051168,
     "df94a68627d32bc781f296df9da1596f251332733d8a930ecf75225c3613bdfe": 1789052066,
@@ -1320,30 +1317,32 @@
     "a4dbd1a17b437deb262f0076c9c4a5393e8e341b274459258f6f808884cbc52a": 1791638692,
     "2c91230d31d81310c62715055ca91845182b5b52fac2adc8dc1717e2bed68fce": 1791640143,
     "e6ffddf288d9cc45968947e468771cb86200d811413f8f066ac13761bff4ce91": 1791640369,
-    "f50af0eca8083e6ca5373bbfc31fa7c10525d19ea35a170d2b2d3ab652607e89": 1791640855
+    "f50af0eca8083e6ca5373bbfc31fa7c10525d19ea35a170d2b2d3ab652607e89": 1791640855,
+    "59e9aa2f2fcdf884ed27f653071f26aa745171865a705b1a1bc56adcc546091b": 1791642048
   },
   "known": {
     "a4dbd1a17b437deb262f0076c9c4a5393e8e341b274459258f6f808884cbc52a": 1791637026.3870351,
     "2c91230d31d81310c62715055ca91845182b5b52fac2adc8dc1717e2bed68fce": 1791638692.2216287,
     "e6ffddf288d9cc45968947e468771cb86200d811413f8f066ac13761bff4ce91": 1791638942.7093835,
-    "f50af0eca8083e6ca5373bbfc31fa7c10525d19ea35a170d2b2d3ab652607e89": 1791640855.3699086
+    "f50af0eca8083e6ca5373bbfc31fa7c10525d19ea35a170d2b2d3ab652607e89": 1791640855.3699086,
+    "59e9aa2f2fcdf884ed27f653071f26aa745171865a705b1a1bc56adcc546091b": 1791642048.7563136
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791641088.6740735,
+    "last_start_ts": 1791642048.7563136,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791641088.6740735,
-    "last_success_ts": 1791641088.6740735,
+    "last_run_ts": 1791642048.7563136,
+    "last_success_ts": 1791642048.7563136,
     "last_candidates": 12,
-    "last_published": 0,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791641125.7472746
+      "updated_at": 1791642099.579344
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1367,13 +1366,6 @@
     }
   },
   "stories": {
-    "b68046c3957fe87d00491337dbdfcdabc198fb9df62be09413622772d3be6744": {
-      "time": 1791555413,
-      "title": "Anthropic: ИИ защищает криптопроекты от уязвимостей - Hash Telegraph",
-      "desc": "Anthropic: ИИ защищает криптопроекты от уязвимостей Hash Telegraph",
-      "source": "Hash Telegraph",
-      "region": "RUSSIA"
-    },
     "0e1dd542ea70c4d1315a83f03380a26ac2359fb362aacd29c28caaa35980b495": {
       "time": 1791557349,
       "title": "Выручка от импортозамещенных материалов для чипов за два года вырастет в 17 раз и достигнет 1,7 миллиарда",
@@ -1660,11 +1652,17 @@
       "desc": "stm32-gdbtest проверяет работающую прошивку на настоящей плате: Python-сценарии управляют GDB через SWD-отладчик, тестового кода в прошивке нет. Что нового: • skip(reason) — завершение неприменимого сценария с отдельным исходом и объяснением причины; • сохранение произвольных записей сценария, экспорт результатов и проверка целостности артефактов; • автономные HTML-отчёты с переключением темы и уровня подробности; • повторные циклы тестирования из подготовленного комплекта — без репозитория приложения на стенде; • backend st-util, обновлённая схема target.toml и доработки удалённого запуска через SSH; • новые примеры событий, интервалов, ожидания watchpoint, инъекций и работы с C++; • навык для ИИ-агентов: требование → сценарий → исходный FAIL → исправление прошивки → регрессия; • единое руководство локального CI, включая быстрые проверки в Docker под Windows. В аппаратных проверках участвовали F030, F103, F401, F411, F429 и AT32F403A; использовались Windows, Orange Pi 5 и GitHub Hardware CI. Для длительных серий F411/F030 через ST-LINK GDB Server сохраняется известное ограничение USB ERROR. При переходе с 0.3.0 требуется обновить конфигурацию и заменить удалённые методы API. Версия 0.4.1 дополняет документацию и навыки без изменения поведения 0.4.0. Выпуск 0.4.0 · Актуальный выпуск 0.4.1 Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "59e9aa2f2fcdf884ed27f653071f26aa745171865a705b1a1bc56adcc546091b": {
+      "time": 1791642048,
+      "title": "Anthropic Cuts Internet Access After AI Agents Exploit Websites - ProPakistani",
+      "desc": "Anthropic Cuts Internet Access After AI Agents Exploit Websites ProPakistani",
+      "source": "ProPakistani",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -1682,97 +1680,10 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791397762,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 33.41,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.konsulteer.com/article/openai-launches-decisions-api-to-bring-faster-ai-reasoning-into-enterprise-workflows",
-            "image_url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_6zyd3yhke38a9888q30x65enba/1a9289ebd65e4c62fe29a0f8cd4b7483_1789627526570.png",
-            "width": 1920,
-            "height": 1080,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Немедленное изменение рабочих процессов и продуктовых решений.",
-            "title": "OpenAI Launches Decisions API to Bring Faster AI Reasoning Into Enterprise Workflows - Konsulteer",
-            "final_score": 76.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791399313,
       "status": "OK",
@@ -22718,11 +22629,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791642048,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 51.61,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 1,
+        "candidate_count": 12,
+        "admission_rate": 8.33,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://propakistani.pk/2026/10/10/anthropic-cuts-internet-access-after-ai-agents-exploit-websites/",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 8.33,
+          "bonus_total": 75.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 3,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра протоколов безопасности при внедрении автономных ИИ-агентов в бизнес-процессы.",
+            "title": "Anthropic Cuts Internet Access After AI Agents Exploit Websites - ProPakistani",
+            "final_score": 68.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 32,
+        "raw_items": 596,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 15,
+          "CNews": 0,
+          "Euronews": 16
+        },
+        "score_filtered": 570,
+        "quality_filtered": 10,
+        "story_dedup": 4,
+        "candidates": 12,
+        "candidate_rate": 0.0213,
+        "score_buckets": {
+          "0–39": 538,
+          "40–49": 42,
+          "50–59": 14,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791641088.6740735,
-  "last_publish_ts": 1791640855.3699086,
+  "last_search_ts": 1791642048.7563136,
+  "last_publish_ts": 1791642048.7563136,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
