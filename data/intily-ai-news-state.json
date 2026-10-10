@@ -1,9 +1,5 @@
 {
   "published": {
-    "0f7432dc0e130715b06e5b26af230001bcc8fb82c00d6352bdf7038017a46493": 1789064209,
-    "6df6a2eda3b9b4179ac565d992298d5d093620ba707dfdb07a122e0ff59658af": 1789064453,
-    "583e279374a962164734672139f5582ff6d27e3e4858a8d04fd0a0b5161844e5": 1789064931,
-    "f643d9edb375db6a2738921c2b5c12f112525a516e2fe97f4482413f6915532e": 1789065169,
     "b7cbc095e8c783fa08216a347d332b5516931202d7199575a28985908b57b4ba": 1789065436,
     "ad5f37be4eb1daf453dcc1b9db803c425c31535d9d9edc896bf191d0483a9573": 1789065649,
     "132670d867df6283e4bba7c52eabfe7d81304287913b53ddfe9fcc738382034d": 1789066129,
@@ -1310,18 +1306,17 @@
     "b9aedbd22935896791717710cd92fedd76479d69aa92f5570f529d99e1ab0f0a": 1791655977
   },
   "known": {
-    "b68f836a1275137dcff3770609e5cfa4c99dfcb10c319bf25f0e33f97b770b72": 1791651652.1372128,
     "203c7e76fbb2f7fa6f9b80e2d21b02cdc3067c2d128de52231808a496f3430b6": 1791653811.5767367,
     "b9aedbd22935896791717710cd92fedd76479d69aa92f5570f529d99e1ab0f0a": 1791655724.0442598
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791656208.6304505,
+    "last_start_ts": 1791657405.8420117,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791656208.6304505,
-    "last_success_ts": 1791656208.6304505,
-    "last_candidates": 19,
+    "last_run_ts": 1791657405.8420117,
+    "last_success_ts": 1791657405.8420117,
+    "last_candidates": 18,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1329,7 +1324,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791656240.9455316
+      "updated_at": 1791657442.4318678
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1353,13 +1348,6 @@
     }
   },
   "stories": {
-    "1e1b8dc531587990b9785d854fe502ebbb8d3519b49b7d90f5cc0458c704dc7b": {
-      "time": 1791570057,
-      "title": "UK AI safety law to stop ‘loss of control’ over autonomous agents - The Times",
-      "desc": "UK AI safety law to stop ‘loss of control’ over autonomous agents The Times",
-      "source": "The Times",
-      "region": "WORLD"
-    },
     "e0d7923ebac22d308e1c159d188f2b700cc0da3dcf6b1b296a44bf630ebb6ce9": {
       "time": 1791571250,
       "title": "Nvidia and Broadcom Target Billions to Finance AI Compute Capacity - www.tokenpost.com",
@@ -1664,94 +1652,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791445258,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 12.78,
-      "candidates": 0,
-      "queue_before": 13,
-      "queue_after": 12,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://habr.com/ru/news/1091858/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1091858",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Риск изменения модели лицензирования данных и роста затрат на разработку ИИ-продуктов.",
-            "title": "Microsoft и OpenAI столкнулись с иском о нарушении авторских прав, поданным рядом американских медиакомпаний",
-            "final_score": 68.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791445747,
       "status": "OK",
@@ -23471,10 +23371,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791657405,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 36.62,
+      "candidates": 18,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 16,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 18,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Снижение стоимости API-запросов позволяет внедрить AI в высоконагруженные продукты с прямой экономией бюджета.",
+            "title": "Anthropic Launches Claude Haiku 5.5, Its Fastest and Lowest-Cost Small Model Yet - IT Voice Media",
+            "final_score": 77.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 32,
+        "raw_items": 803,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 11,
+          "CNews": 0,
+          "Euronews": 16
+        },
+        "score_filtered": 769,
+        "quality_filtered": 11,
+        "story_dedup": 5,
+        "candidates": 18,
+        "candidate_rate": 0.0233,
+        "score_buckets": {
+          "0–39": 730,
+          "40–49": 50,
+          "50–59": 21,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791656208.6304505,
+  "last_search_ts": 1791657405.8420117,
   "last_publish_ts": 1791655977.3659022,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
