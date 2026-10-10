@@ -1,7 +1,5 @@
 {
   "published": {
-    "df94a68627d32bc781f296df9da1596f251332733d8a930ecf75225c3613bdfe": 1789052066,
-    "bb0c6e9a299cf41c453ef4681f0f27582bd39c67798ab8d8100db7834c1558fb": 1789052253,
     "fc6d61172f3a3bb2ef4794a6612a1ebb670f2c688bc29d105a9061216679e7df": 1789052795,
     "9b1f8826684ad132ea87aebb5f7dc24a0b89bab90cd2e537519c63da313f7e3b": 1789053149,
     "1cb44d4b22c4bc708e681bbff773d9eec6e6cde88219fb84a2de8867dea42d1f": 1789053505,
@@ -1320,28 +1318,26 @@
     "4f7dae522d96fffd5c6912bbae980252f0ffa262b8b78751d658c742da2f9336": 1791643967
   },
   "known": {
-    "2c91230d31d81310c62715055ca91845182b5b52fac2adc8dc1717e2bed68fce": 1791638692.2216287,
-    "e6ffddf288d9cc45968947e468771cb86200d811413f8f066ac13761bff4ce91": 1791638942.7093835,
     "f50af0eca8083e6ca5373bbfc31fa7c10525d19ea35a170d2b2d3ab652607e89": 1791640855.3699086,
     "59e9aa2f2fcdf884ed27f653071f26aa745171865a705b1a1bc56adcc546091b": 1791642048.7563136,
     "4f7dae522d96fffd5c6912bbae980252f0ffa262b8b78751d658c742da2f9336": 1791643967.2749808
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791643967.2749808,
+    "last_start_ts": 1791644452.0325785,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791643967.2749808,
-    "last_success_ts": 1791643967.2749808,
+    "last_run_ts": 1791644452.0325785,
+    "last_success_ts": 1791644452.0325785,
     "last_candidates": 15,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791644008.3632832
+      "updated_at": 1791644490.7279482
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1365,13 +1361,6 @@
     }
   },
   "stories": {
-    "3cea4774fba29b559aa8e787be945a89008f589c51e0ac646a7e488a7ecd5dc6": {
-      "time": 1791557584,
-      "title": "OpenAI And Anthropic Are Preparing For A Potential Catastrophic AI Incident: Here Is Why - Times Now",
-      "desc": "OpenAI And Anthropic Are Preparing For A Potential Catastrophic AI Incident: Here Is Why Times Now",
-      "source": "Times Now",
-      "region": "WORLD"
-    },
     "735d40474fbba054b7f191b6fc7ae50cd987516a1bede794e88116e51d1a218f": {
       "time": 1791558077,
       "title": "Anthropic Launches Claude Haiku 5.5 With API Prices Starting at $0.10 - TechRepublic",
@@ -1683,78 +1672,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791402053,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 1.96,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 18,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 7,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1791402300,
       "status": "OK",
@@ -22824,10 +22741,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791644452,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 38.72,
+      "candidates": 15,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 13,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 15,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Необходимость пересмотра политик безопасности при внедрении ИИ-агентов в бизнес-процессы.",
+            "title": "AI agent makers are promising privacy — will they deliver?",
+            "final_score": 72.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 35,
+        "raw_items": 623,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 15,
+          "CNews": 0,
+          "Euronews": 16
+        },
+        "score_filtered": 594,
+        "quality_filtered": 10,
+        "story_dedup": 4,
+        "candidates": 15,
+        "candidate_rate": 0.0255,
+        "score_buckets": {
+          "0–39": 562,
+          "40–49": 42,
+          "50–59": 15,
+          "60–69": 4,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791643967.2749808,
+  "last_search_ts": 1791644452.0325785,
   "last_publish_ts": 1791643967.2749808,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
