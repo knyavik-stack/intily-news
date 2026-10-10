@@ -1319,20 +1319,22 @@
     "9202e240a54be6a81337788094eeceda345b5346a6f34d21a01d6045d4315346": 1791637026,
     "a4dbd1a17b437deb262f0076c9c4a5393e8e341b274459258f6f808884cbc52a": 1791638692,
     "2c91230d31d81310c62715055ca91845182b5b52fac2adc8dc1717e2bed68fce": 1791640143,
-    "e6ffddf288d9cc45968947e468771cb86200d811413f8f066ac13761bff4ce91": 1791640369
+    "e6ffddf288d9cc45968947e468771cb86200d811413f8f066ac13761bff4ce91": 1791640369,
+    "f50af0eca8083e6ca5373bbfc31fa7c10525d19ea35a170d2b2d3ab652607e89": 1791640855
   },
   "known": {
     "a4dbd1a17b437deb262f0076c9c4a5393e8e341b274459258f6f808884cbc52a": 1791637026.3870351,
     "2c91230d31d81310c62715055ca91845182b5b52fac2adc8dc1717e2bed68fce": 1791638692.2216287,
-    "e6ffddf288d9cc45968947e468771cb86200d811413f8f066ac13761bff4ce91": 1791638942.7093835
+    "e6ffddf288d9cc45968947e468771cb86200d811413f8f066ac13761bff4ce91": 1791638942.7093835,
+    "f50af0eca8083e6ca5373bbfc31fa7c10525d19ea35a170d2b2d3ab652607e89": 1791640855.3699086
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791640369.2631223,
+    "last_start_ts": 1791640855.3699086,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791640369.2631223,
-    "last_success_ts": 1791640369.2631223,
+    "last_run_ts": 1791640855.3699086,
+    "last_success_ts": 1791640855.3699086,
     "last_candidates": 12,
     "last_published": 1,
     "queue_size": 0
@@ -1341,7 +1343,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791640460.4338005
+      "updated_at": 1791640895.5030339
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1365,13 +1367,6 @@
     }
   },
   "stories": {
-    "7f70a9927cb45656778d7c7ddd63410da458ee2407faf8b4ec5a59a62e8d302a": {
-      "time": 1791554214,
-      "title": "Австралия пойдёт по пути техники безопасности: регулировать будут не список угроз, а качество процесса управления рисками ИИ - iXBT.com",
-      "desc": "Австралия пойдёт по пути техники безопасности: регулировать будут не список угроз, а качество процесса управления рисками ИИ iXBT.com",
-      "source": "iXBT.com",
-      "region": "RUSSIA"
-    },
     "b68046c3957fe87d00491337dbdfcdabc198fb9df62be09413622772d3be6744": {
       "time": 1791555413,
       "title": "Anthropic: ИИ защищает криптопроекты от уязвимостей - Hash Telegraph",
@@ -1658,12 +1653,18 @@
       "desc": "Meta claims billions in IRS tax credits for experimental AI data centers ET Datacenters",
       "source": "ET Datacenters",
       "region": "WORLD"
+    },
+    "f50af0eca8083e6ca5373bbfc31fa7c10525d19ea35a170d2b2d3ab652607e89": {
+      "time": 1791640855,
+      "title": "Вышел релиз stm32-gdbtest 0.4.1",
+      "desc": "stm32-gdbtest проверяет работающую прошивку на настоящей плате: Python-сценарии управляют GDB через SWD-отладчик, тестового кода в прошивке нет. Что нового: • skip(reason) — завершение неприменимого сценария с отдельным исходом и объяснением причины; • сохранение произвольных записей сценария, экспорт результатов и проверка целостности артефактов; • автономные HTML-отчёты с переключением темы и уровня подробности; • повторные циклы тестирования из подготовленного комплекта — без репозитория приложения на стенде; • backend st-util, обновлённая схема target.toml и доработки удалённого запуска через SSH; • новые примеры событий, интервалов, ожидания watchpoint, инъекций и работы с C++; • навык для ИИ-агентов: требование → сценарий → исходный FAIL → исправление прошивки → регрессия; • единое руководство локального CI, включая быстрые проверки в Docker под Windows. В аппаратных проверках участвовали F030, F103, F401, F411, F429 и AT32F403A; использовались Windows, Orange Pi 5 и GitHub Hardware CI. Для длительных серий F411/F030 через ST-LINK GDB Server сохраняется известное ограничение USB ERROR. При переходе с 0.3.0 требуется обновить конфигурацию и заменить удалённые методы API. Версия 0.4.1 дополняет документацию и навыки без изменения поведения 0.4.0. Выпуск 0.4.0 · Актуальный выпуск 0.4.1 Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -1680,152 +1681,10 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791397249,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 94.13,
-      "candidates": 65,
-      "queue_before": 15,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 17,
-        "known_recent": 6,
-        "already_queued": 9,
-        "story_queue": 1,
-        "story_history": 3,
-        "added": 29,
-        "candidate_count": 65,
-        "admission_rate": 44.62,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.theverge.com/tech/1006813/muse-ai-agent-ios-app-ipad-support",
-            "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/muse.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-            "width": 1200,
-            "height": 623,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Снижение затрат и повышение скорости модели",
-            "title": "Anthropic выпустили Claude Haiku 5.5: базовые тарифы снизились в десять раз",
-            "final_score": 79.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 232,
-        "raw_items": 1550,
-        "source_counts": {
-          "TechCrunch AI": 10,
-          "VentureBeat AI": -1,
-          "The Verge AI": 7,
-          "OpenAI News": 2,
-          "Google DeepMind": 0,
-          "Hugging Face": 2,
-          "Ars Technica": 7,
-          "Habr AI/News": 40,
-          "CNews": 114,
-          "Euronews": 50
-        },
-        "score_filtered": 1429,
-        "quality_filtered": 44,
-        "story_dedup": 12,
-        "candidates": 65,
-        "candidate_rate": 0.0493,
-        "score_buckets": {
-          "0–39": 1339,
-          "40–49": 129,
-          "50–59": 78,
-          "60–69": 4,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 4,
-          "6": 3,
-          "7": 6,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "GROQ",
-          "GROQ",
-          "OPENROUTER"
-        ],
-        "used": "OPENROUTER",
-        "failovers": 4,
-        "failures": 2,
-        "blocked": 2,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791397548,
       "status": "OK",
@@ -22660,11 +22519,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791640855,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 53.56,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 1,
+        "candidate_count": 12,
+        "admission_rate": 8.33,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/news/1092732/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1092732",
+            "image_url": "https://habr.com/share/publication/1092732/4430bb1d713b3ec3e2dac380ee1712c3/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 8.0,
+          "bonus_total": 72.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Существенное сокращение времени на QA и отладку встраиваемых систем за счет автоматизации через ИИ-агентов.",
+            "title": "Вышел релиз stm32-gdbtest 0.4.1",
+            "final_score": 67.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 31,
+        "raw_items": 588,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 15,
+          "CNews": 0,
+          "Euronews": 14
+        },
+        "score_filtered": 561,
+        "quality_filtered": 11,
+        "story_dedup": 4,
+        "candidates": 12,
+        "candidate_rate": 0.0215,
+        "score_buckets": {
+          "0–39": 525,
+          "40–49": 47,
+          "50–59": 13,
+          "60–69": 3,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791640369.2631223,
-  "last_publish_ts": 1791640369.2631223,
+  "last_search_ts": 1791640855.3699086,
+  "last_publish_ts": 1791640855.3699086,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
