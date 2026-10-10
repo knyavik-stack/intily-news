@@ -1350,7 +1350,9 @@
     "aaa24f84e24dfc2620dde1c0f6ffe0b44aea1d027f2eba4cb703419b95a3fa49": 1791616141,
     "18ff08e716c578a6cfbf223ace06f42443aa23eac571f83f1bfa14d0f53db0ab": 1791616609
   },
-  "known": {},
+  "known": {
+    "f45d824aa6e092c4d273eac1e6dcc5b0e0b443f909058917adfb048e7cf2ccff": 1791617086.9950733
+  },
   "queue": [
     {
       "region": "WORLD",
@@ -1386,7 +1388,11 @@
         "models"
       ],
       "audience_score": 8.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1791617086,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1791617386
     },
     {
       "region": "RUSSIA",
@@ -1423,7 +1429,11 @@
       ],
       "audience_score": 9.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1791617086,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1791617386
     },
     {
       "region": "RUSSIA",
@@ -1495,33 +1505,72 @@
       ],
       "audience_score": 8.0,
       "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Apple Hills Digital опубликовала исследование «Облачные сервисы для ИИ: серверы с GPU и AI/ML-платформы» - Content-Review.com",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5PT1FTcHpSa3JJcXRieFNTUHQ1QlJJRk5GWi1zeGIyYUp0bEJIeW1EQWw3R1pFTWJZMFVwZDllMy1LX0FNQ2VtXzFua0ttUzc2V29VMGFOSDFETmNMY0I00gFfQVVfeXFMTk9PUVNwelJrcklxdGJ4U1NQdDVCUklGTkZaLXN4YjJhSnRsQkh5bURBbDdHWkVNYlkwVXBkOWUzLUtfQU1DZW1fMW5rS21TNzZXb1UwYU5IMUROY0xjQjQ?oc=5",
+      "desc": "Apple Hills Digital опубликовала исследование «Облачные сервисы для ИИ: серверы с GPU и AI/ML-платформы» Content-Review.com",
+      "source": "Content-Review.com",
+      "time": 1791612532.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 7.0,
+        "event_concreteness": 12.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 2.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 41.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 41.0
+      },
+      "base_score": 41.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 41.0,
+      "key": "f45d824aa6e092c4d273eac1e6dcc5b0e0b443f909058917adfb048e7cf2ccff",
+      "importance": 41.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "chips",
+        "research",
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1791616609.7525532,
+    "last_start_ts": 1791617086.9950733,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791616609.7525532,
-    "last_success_ts": 1791616609.7525532,
-    "last_candidates": 0,
-    "last_published": 1,
-    "queue_size": 4
+    "last_run_ts": 1791617086.9950733,
+    "last_success_ts": 1791617086.9950733,
+    "last_candidates": 10,
+    "last_published": 0,
+    "queue_size": 5
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791616611.5141973
+      "disabled_until": 1791620754.3986948,
+      "reason": "The read operation timed out",
+      "updated_at": 1791617154.398697
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791608689.006966
+      "disabled_until": 1791620757.6784964,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791617157.6784976
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791608689.006966
+      "disabled_until": 1791703579.1727579,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1791617179.1727593
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1529,9 +1578,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791608689.006966
+      "disabled_until": 1791620777.1836798,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791617177.1836812
     }
   },
   "stories": {
@@ -1916,78 +1965,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791375009,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 83.44,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 18,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1791375415,
       "status": "OK",
@@ -22024,10 +22001,144 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791617086,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": true,
+      "duration_sec": 92.2,
+      "candidates": 10,
+      "queue_before": 4,
+      "queue_after": 5,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 5,
+        "known_recent": 0,
+        "already_queued": 4,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 1,
+        "candidate_count": 10,
+        "admission_rate": 10.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Прямая автоматизация рутины в Workspace требует пересмотра операционных процессов компании.",
+            "title": "Google launches enterprise AI agent for workspace automation with multi-platform integrations - Adgully.com",
+            "final_score": 75.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 26,
+        "raw_items": 332,
+        "source_counts": {
+          "TechCrunch AI": 3,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 7,
+          "Habr AI/News": 6,
+          "CNews": 0,
+          "Euronews": 9
+        },
+        "score_filtered": 308,
+        "quality_filtered": 11,
+        "story_dedup": 3,
+        "candidates": 10,
+        "candidate_rate": 0.0327,
+        "score_buckets": {
+          "0–39": 280,
+          "40–49": 39,
+          "50–59": 11,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 1,
+          "8": 2,
+          "9": 1,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791615175.1891558,
+  "last_search_ts": 1791617086.9950733,
   "last_publish_ts": 1791616609.7525532,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
