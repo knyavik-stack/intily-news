@@ -1,6 +1,5 @@
 {
   "published": {
-    "04db9d775b8bf35223f7aea3bdde92d4de3d88618dcee9e5b1b27bc85bf51360": 1789126603,
     "170e2ae3b549602c0e40900fbff8fabf4954db6d717e84d517fa4c9b543f79d8": 1789126853,
     "b7e3c8e06e25a41414ce03caa1b417e540e31a9e21c861223b4c1e31082af133": 1789127571,
     "8a3a5a5abc0cc77a34b9dc75fcc25d67842060949eee533fe8bbad7ba8c94729": 1789127803,
@@ -1284,7 +1283,8 @@
     "c0806f76d1b692b07e2f7e9d5907ad2a28f933c0a06a5b736e2a7ab1d1bbeb2a": 1791709490,
     "1ea12cb6dcbb416ee831561da8ec737528316a6b9060c924198c9abb59171e47": 1791710207,
     "3a53b457c81154f92617b138406b32abf593a8871df10acb35df7e3e1d710f0d": 1791714530,
-    "dd4b22f20232514b147b6252208dc9b8782775897fc81fa3c1ba3c6bab79ea7f": 1791717888
+    "dd4b22f20232514b147b6252208dc9b8782775897fc81fa3c1ba3c6bab79ea7f": 1791717888,
+    "43a705fd225ac8262bfbb6d0c4a1e61564000ce279e4daea39dfedcca69ae59a": 1791718625
   },
   "known": {
     "3a53b457c81154f92617b138406b32abf593a8871df10acb35df7e3e1d710f0d": 1791714530.9341428,
@@ -1293,42 +1293,6 @@
     "95cc795f04723d234e59ad1ce13db9d2fd4248bcacb412679dceea759d384867": 1791717888.4054759
   },
   "queue": [
-    {
-      "region": "WORLD",
-      "title": "US police criticise Anthropic after Claude AI submits false information about an unsolved murder",
-      "link": "https://www.euronews.com/2026/10/11/us-police-criticise-anthropic-after-claude-ai-submits-false-information-about-an-unsolved-",
-      "desc": "The US police called the delay in detecting and reporting the incident “unacceptable”, but said there was no indication of unauthorised access to their systems or compromised data.",
-      "source": "Euronews",
-      "time": 1791715542.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 8.0,
-        "event_concreteness": 15.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 4.0,
-        "evidence": 2.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 46.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 46.0
-      },
-      "base_score": 46.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 46.0,
-      "key": "43a705fd225ac8262bfbb6d0c4a1e61564000ce279e4daea39dfedcca69ae59a",
-      "importance": 46.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "models"
-      ],
-      "audience_score": null,
-      "tier": "A"
-    },
     {
       "region": "WORLD",
       "title": "The Sequence Radar - Issue 948: Last Week in AI: Billions in Funding, Hundreds of Papers, One Big Leap? - TheSequence | Jesus Rodriguez",
@@ -1348,37 +1312,37 @@
         "freshness": 2.0,
         "low_signal_penalty": 0.0,
         "base_score": 43.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 43.0
+        "audience_score": 5.0,
+        "audience_bonus": 15.0,
+        "final_score": 58.0
       },
       "base_score": 43.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 43.0,
+      "audience_bonus": 15.0,
+      "score_stage": "final",
+      "score": 58.0,
       "key": "95cc795f04723d234e59ad1ce13db9d2fd4248bcacb412679dceea759d384867",
-      "importance": 43.0,
+      "importance": 58.0,
       "editorial_value": 50.0,
       "topics": [],
-      "audience_score": null,
+      "audience_score": 5.0,
       "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1791717888.4054759,
+    "last_start_ts": 1791718625.2877824,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791717888.4054759,
-    "last_success_ts": 1791717888.4054759,
-    "last_candidates": 13,
+    "last_run_ts": 1791718625.2877824,
+    "last_success_ts": 1791718625.2877824,
+    "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 2
+    "queue_size": 1
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791717921.2217655
+      "updated_at": 1791718625.284537
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1660,10 +1624,16 @@
       "desc": "Microsoft CEO Satya Nadella flags risks of advanced AI models amid OpenAI agent incidents, calls for ‘emergency brake’ Livemint",
       "source": "Livemint",
       "region": "WORLD"
+    },
+    "43a705fd225ac8262bfbb6d0c4a1e61564000ce279e4daea39dfedcca69ae59a": {
+      "time": 1791718625,
+      "title": "US police criticise Anthropic after Claude AI submits false information about an unsolved murder",
+      "desc": "The US police called the delay in detecting and reporting the incident “unacceptable”, but said there was no indication of unauthorised access to their systems or compromised data.",
+      "source": "Euronews",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "WORLD",
@@ -1679,153 +1649,13 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791467806,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 66.67,
-      "candidates": 59,
-      "queue_before": 18,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 19,
-        "known_recent": 4,
-        "already_queued": 12,
-        "story_queue": 2,
-        "story_history": 4,
-        "added": 18,
-        "candidate_count": 59,
-        "admission_rate": 30.51,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://cryptobriefing.com/google-cloud-gemini-agents-enterprise/",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.67,
-          "bonus_total": 69.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Позволяет автоматизировать рутинные бизнес-процессы, снижая операционные расходы на персонал.",
-            "title": "Google Cloud unveils persistent Gemini Agents for enterprise tasks - Crypto Briefing",
-            "final_score": 68.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 198,
-        "raw_items": 1238,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 2,
-          "Habr AI/News": 40,
-          "CNews": 104,
-          "Euronews": 50
-        },
-        "score_filtered": 1114,
-        "quality_filtered": 45,
-        "story_dedup": 20,
-        "candidates": 59,
-        "candidate_rate": 0.0567,
-        "score_buckets": {
-          "0–39": 1030,
-          "40–49": 125,
-          "50–59": 72,
-          "60–69": 11,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 5,
-          "6": 2,
-          "7": 9,
-          "8": 2,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791468082,
       "status": "OK",
@@ -24280,11 +24110,99 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791718625,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 17.25,
+      "candidates": 0,
+      "queue_before": 2,
+      "queue_after": 1,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 403: Forbidden": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 403: Forbidden"
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.5,
+          "bonus_total": 39.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 5.0,
+            "bonus": 15.0,
+            "reason": "Обзор носит ознакомительный характер и не содержит конкретных технологических изменений для немедленного внедрения.",
+            "title": "The Sequence Radar - Issue 948: Last Week in AI: Billions in Funding, Hundreds of Papers, One Big Leap? - TheSequence | Jesus Rodriguez",
+            "final_score": 58.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1791717888.4054759,
-  "last_publish_ts": 1791717888.4054759,
+  "last_publish_ts": 1791718625.2877824,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
