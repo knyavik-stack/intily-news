@@ -1,7 +1,5 @@
 {
   "published": {
-    "997726e81a0bf6d0f924e8838c2a3bc0cfbbd21941c6ac90166b3cdf9da247d0": 1789151535,
-    "c10ef7ab9a45ec06f455f3197c24bda48365ebbd5d1055d9e5437883b9ace255": 1789151777,
     "86887edef345f6324491a8b6c5fec5e32c8ccd8f51337ac7917bc5daaf28d3fe": 1789153699,
     "a0a7d174f0ed7135b0a7b649ed26e4ee2f25a7d7e4a7fd2626457b7b546cb216": 1789156578,
     "a67b0c87d0e0c203a3e435c82d65e0c4dc487bca24663ec48516086b3e0f9094": 1789190457,
@@ -1264,27 +1262,29 @@
     "93fded3f40505dc6bae4f7848b73ca2af8251a716f48de03c36bdc2839bf1373": 1791738773,
     "c239c58c470c04074bdc0172f64e134584f6dcb7edce762a1e5b99458d778aae": 1791739014,
     "168cf6e2b03fe0158d257f537c46ccf8ecb5c378663ac8f1c4870d679c081993": 1791740932,
-    "df87fe7554249f5b6bbc215356fcbcb4e09996a2fd34d8a7832d6fc876be4d50": 1791741168
+    "df87fe7554249f5b6bbc215356fcbcb4e09996a2fd34d8a7832d6fc876be4d50": 1791741168,
+    "13969afa7183f701d65d9a5d6ea7f686116253b2a31103547fe8943999fb603a": 1791744049
   },
   "known": {
-    "168cf6e2b03fe0158d257f537c46ccf8ecb5c378663ac8f1c4870d679c081993": 1791740449.550046
+    "168cf6e2b03fe0158d257f537c46ccf8ecb5c378663ac8f1c4870d679c081993": 1791740449.550046,
+    "13969afa7183f701d65d9a5d6ea7f686116253b2a31103547fe8943999fb603a": 1791744049.6655254
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791743088.0537746,
+    "last_start_ts": 1791744049.6655254,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791743088.0537746,
-    "last_success_ts": 1791743088.0537746,
-    "last_candidates": 18,
-    "last_published": 0,
+    "last_run_ts": 1791744049.6655254,
+    "last_success_ts": 1791744049.6655254,
+    "last_candidates": 19,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791743123.8354814
+      "updated_at": 1791744104.606212
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1559,11 +1559,17 @@
       "desc": "AI Regulation Must Balance Safety With Innovation: Google DeepMind's Chief AI Readiness Officer NDTV Profit",
       "source": "NDTV Profit",
       "region": "WORLD"
+    },
+    "13969afa7183f701d65d9a5d6ea7f686116253b2a31103547fe8943999fb603a": {
+      "time": 1791744049,
+      "title": "Nvidia Weighs Buying Reflection AI, the $25 Billion Open-Weight Model Startup It Already Backs - TIKR.com",
+      "desc": "Nvidia Weighs Buying Reflection AI, the $25 Billion Open-Weight Model Startup It Already Backs TIKR.com",
+      "source": "TIKR.com",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1581,97 +1587,10 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791523255,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 7.91,
-      "candidates": 0,
-      "queue_before": 15,
-      "queue_after": 14,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://natlawreview.com/article/br-privacy-security-ai-download-october-2026",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 9.0,
-          "bonus_total": 54.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость срочного пересмотра комплаенс-стратегии для минимизации юридических рисков при внедрении ИИ.",
-            "title": "The BR Privacy, Security & AI Download: October 2026 - The National Law Review",
-            "final_score": 70.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 9,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791523976,
       "status": "OK",
@@ -24931,11 +24850,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791744049,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 55.57,
+      "candidates": 19,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 17,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 19,
+        "admission_rate": 5.26,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://www.tikr.com/blog/nvidia-weighs-buying-reflection-ai-the-25-billion-open-weight-model-startup-it-already-backs",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 8.67,
+          "bonus_total": 78.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 3,
+          "last": {
+            "score": 10.0,
+            "bonus": 30.0,
+            "reason": "Поглощение ключевого игрока открытых моделей напрямую влияет на долгосрочную стратегию выбора стека технологий и риски вендор-лока.",
+            "title": "Nvidia Weighs Buying Reflection AI, the $25 Billion Open-Weight Model Startup It Already Backs - TIKR.com",
+            "final_score": 75.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 42,
+        "raw_items": 806,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 12,
+          "CNews": 1,
+          "Euronews": 24
+        },
+        "score_filtered": 773,
+        "quality_filtered": 12,
+        "story_dedup": 2,
+        "candidates": 19,
+        "candidate_rate": 0.0249,
+        "score_buckets": {
+          "0–39": 736,
+          "40–49": 48,
+          "50–59": 21,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791743088.0537746,
-  "last_publish_ts": 1791741168.989225,
+  "last_search_ts": 1791744049.6655254,
+  "last_publish_ts": 1791744049.6655254,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
