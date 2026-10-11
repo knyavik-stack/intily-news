@@ -1,6 +1,5 @@
 {
   "published": {
-    "c834c0411c82cdb3d811c37fe0b35df4bc191668d4e03b8a25de9e2a379fedf1": 1789107890,
     "2116eb56157cb159a5c73ca1f72b6efb8d32ad869a08ade91a68fc015e95df47": 1789109365,
     "7c3f326d983053f073a081bb194b50c63998a7d1bbef5341d704883cc9a94a9f": 1789110761,
     "6ee71fa8f2eb3d75e80b6fd08a0b7e87bb5534a70a86dcbc020626011c54b1bf": 1789111478,
@@ -1314,12 +1313,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791698212.2089458,
+    "last_start_ts": 1791700130.6051378,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791698212.2089458,
-    "last_success_ts": 1791698212.2089458,
-    "last_candidates": 8,
+    "last_run_ts": 1791700130.6051378,
+    "last_success_ts": 1791700130.6051378,
+    "last_candidates": 9,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1327,7 +1326,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791698246.301047
+      "updated_at": 1791700163.649522
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1669,96 +1668,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791456536,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 12.82,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 16,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://habr.com/ru/companies/k2tech/news/1091972/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1091972",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 6.67,
-          "bonus_total": 60.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Полезный бенчмарк для оценки зрелости внедрения ИИ-аналитики в маркетинговых стратегиях.",
-            "title": "К2Тех поддержал развитие ИИ-практик в B2B ИТ-маркетинге на премии «Продвигай ИТ»",
-            "final_score": 72.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791456770,
       "status": "OK",
@@ -23689,10 +23598,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791700130,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 33.05,
+      "candidates": 9,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 9,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Показывает тренд на автоматизацию клиентского сервиса в финтехе, что влияет на стратегию внедрения ИИ в продажах.",
+            "title": "«СберСтрахование жизни» запустит ИИ-аватара инвестиционного советника в рамках инвестиционных инструментов - prospect.com.ru",
+            "final_score": 64.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 16,
+        "raw_items": 373,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 5,
+          "CNews": 0,
+          "Euronews": 7
+        },
+        "score_filtered": 353,
+        "quality_filtered": 7,
+        "story_dedup": 4,
+        "candidates": 9,
+        "candidate_rate": 0.0252,
+        "score_buckets": {
+          "0–39": 326,
+          "40–49": 33,
+          "50–59": 14,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791698212.2089458,
+  "last_search_ts": 1791700130.6051378,
   "last_publish_ts": 1791697972.042061,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
