@@ -1267,20 +1267,16 @@
     "df87fe7554249f5b6bbc215356fcbcb4e09996a2fd34d8a7832d6fc876be4d50": 1791741168
   },
   "known": {
-    "5756fc02c08d32da372d7fb8e67bce07482122e386e8d8caa543809a5e583d7c": 1791737568.4078233,
-    "93fded3f40505dc6bae4f7848b73ca2af8251a716f48de03c36bdc2839bf1373": 1791737568.4078233,
-    "c239c58c470c04074bdc0172f64e134584f6dcb7edce762a1e5b99458d778aae": 1791737568.4078233,
-    "df87fe7554249f5b6bbc215356fcbcb4e09996a2fd34d8a7832d6fc876be4d50": 1791737568.4078233,
     "168cf6e2b03fe0158d257f537c46ccf8ecb5c378663ac8f1c4870d679c081993": 1791740449.550046
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791742370.4311967,
+    "last_start_ts": 1791743088.0537746,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791742370.4311967,
-    "last_success_ts": 1791742370.4311967,
-    "last_candidates": 19,
+    "last_run_ts": 1791743088.0537746,
+    "last_success_ts": 1791743088.0537746,
+    "last_candidates": 18,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1288,7 +1284,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791742405.9050696
+      "updated_at": 1791743123.8354814
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1312,13 +1308,6 @@
     }
   },
   "stories": {
-    "b9aedbd22935896791717710cd92fedd76479d69aa92f5570f529d99e1ab0f0a": {
-      "time": 1791655977,
-      "title": "Nvidia-Backed Firmus Scraps $5 Billion IPO as Market Conditions Undermine Valuation - Tekedia",
-      "desc": "Nvidia-Backed Firmus Scraps $5 Billion IPO as Market Conditions Undermine Valuation Tekedia",
-      "source": "Tekedia",
-      "region": "WORLD"
-    },
     "01cd3069f825c2154ccfae6a2fbd1f461e5082034f85770a96e9f19862881c74": {
       "time": 1791659566,
       "title": "SoftBank Seeks $100 Billion From Gulf Investors for AI-Driven Acquisition Fund - news.lavx.hu",
@@ -1595,94 +1584,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791523016,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 11.01,
-      "candidates": 0,
-      "queue_before": 16,
-      "queue_after": 15,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.dongascience.com/en/news/80240",
-            "image_url": "https://image.dongascience.com/Photo/2026/10/17913552844013.png",
-            "width": 565,
-            "height": 378,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Необходимость критической проверки выводов ИИ в критически важных задачах.",
-            "title": "OpenAI releases 722 math breakthrough reports as critics question rigorous verification - DongA Science",
-            "final_score": 66.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 11,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791523255,
       "status": "OK",
@@ -24900,10 +24801,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791743088,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 35.8,
+      "candidates": 18,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 17,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 18,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра стратегии безопасности и зависимости от внешних API в связи с грядущим ужесточением контроля за ИИ-агентами.",
+            "title": "Microsoft CEO Satya Nadella flags risks of advanced AI models amid OpenAI agent incidents, calls for ‘emergency brake’ - Livemint",
+            "final_score": 73.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 39,
+        "raw_items": 798,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 12,
+          "CNews": 1,
+          "Euronews": 22
+        },
+        "score_filtered": 764,
+        "quality_filtered": 14,
+        "story_dedup": 2,
+        "candidates": 18,
+        "candidate_rate": 0.0237,
+        "score_buckets": {
+          "0–39": 729,
+          "40–49": 48,
+          "50–59": 20,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791742370.4311967,
+  "last_search_ts": 1791743088.0537746,
   "last_publish_ts": 1791741168.989225,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
