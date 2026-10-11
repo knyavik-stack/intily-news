@@ -1303,21 +1303,15 @@
     "bff26b8c8590f1495358fa0ef2b33c0c0d3d7482be952a6fff17a9454c34faaa": 1791697972
   },
   "known": {
-    "3437123ebce9d61b3905b26ef6b5534c451332feb495a4407cd7af6cd30d6ef8": 1791694850.1462812,
-    "91563b4785b95f2e37871db8bb0dd833e0276238980e7784ff57b0377bca24c3": 1791694850.1462812,
-    "869b6c039446b55ce5fe3f60510a540c97d56d06d85f89360948541b5eea7dc3": 1791694850.1462812,
-    "bff26b8c8590f1495358fa0ef2b33c0c0d3d7482be952a6fff17a9454c34faaa": 1791694850.1462812,
-    "a22ab67d9edf124439b182f18379141300239b1e360c5a9018aa231eb102b89a": 1791694850.1462812,
-    "66064fa10d8d0f7260de21f1856f06f2e4a5bb61b9311696275e07953bf03ea0": 1791694850.1462812,
     "b04f025bda54c835db5e1e45ed8c89ecb8c1474981a4b4f0b2ea5129c4439af8": 1791697011.266107
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791700130.6051378,
+    "last_start_ts": 1791701085.4408584,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791700130.6051378,
-    "last_success_ts": 1791700130.6051378,
+    "last_run_ts": 1791701085.4408584,
+    "last_success_ts": 1791701085.4408584,
     "last_candidates": 9,
     "last_published": 0,
     "queue_size": 0
@@ -1326,7 +1320,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791700163.649522
+      "updated_at": 1791701125.7160933
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1668,96 +1662,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791456770,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 5.14,
-      "candidates": 0,
-      "queue_before": 16,
-      "queue_after": 15,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.ibtimes.com.au/google-synthid-detector-identify-ai-generated-media-1876436",
-            "image_url": "https://d.ibtimes.com.au/en/full/1891653/artificial-intelligence-ai.jpg",
-            "width": 2400,
-            "height": 1500,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость внедрения протоколов верификации контента для защиты бренда от обвинений в использовании немаркированного ИИ.",
-            "title": "Google Launches SynthID Detector Worldwide So Anyone Can Check if Photos, Videos and Audio Were Made by AI - International Business Times Australia",
-            "final_score": 72.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791457969,
       "status": "OK",
@@ -23728,10 +23632,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791701085,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 40.28,
+      "candidates": 9,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 9,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.5,
+          "bonus_total": 39.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 5.0,
+            "bonus": 15.0,
+            "reason": "Показательный кейс автоматизации клиентского сервиса, но без влияния на технологический стек или бизнес-процессы профессионалов.",
+            "title": "«СберСтрахование жизни» запустит ИИ-аватара инвестиционного советника в рамках инвестиционных инструментов - prospect.com.ru",
+            "final_score": 61.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 15,
+        "raw_items": 375,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 4,
+          "CNews": 0,
+          "Euronews": 7
+        },
+        "score_filtered": 352,
+        "quality_filtered": 10,
+        "story_dedup": 4,
+        "candidates": 9,
+        "candidate_rate": 0.025,
+        "score_buckets": {
+          "0–39": 327,
+          "40–49": 34,
+          "50–59": 14,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791700130.6051378,
+  "last_search_ts": 1791701085.4408584,
   "last_publish_ts": 1791697972.042061,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
