@@ -1263,28 +1263,30 @@
     "bb5e72cf40769657f13ada4882ce149c307ac0b897818dc57269bce48d475411": 1791728930,
     "5a1cb8944ef6763a115570e5425371a0a2c2f645783148a7c296c3759097b5b4": 1791729889,
     "ffe4787c87171fe1b91cd061067211ad4a85def9702a9a844e5751f242699dfc": 1791732530,
-    "a4fcff9fab2d95f2e5ca368485dd59c5c1bb45db0e5ecd77c37c4149f592f857": 1791735649
+    "a4fcff9fab2d95f2e5ca368485dd59c5c1bb45db0e5ecd77c37c4149f592f857": 1791735649,
+    "f80d93893972c9de4e0ac7a47dab1dc0f2f645766d4ff6dc73a89d550e505fcc": 1791736849
   },
   "known": {
     "ffe4787c87171fe1b91cd061067211ad4a85def9702a9a844e5751f242699dfc": 1791732530.3804321,
-    "a4fcff9fab2d95f2e5ca368485dd59c5c1bb45db0e5ecd77c37c4149f592f857": 1791735649.0109358
+    "a4fcff9fab2d95f2e5ca368485dd59c5c1bb45db0e5ecd77c37c4149f592f857": 1791735649.0109358,
+    "f80d93893972c9de4e0ac7a47dab1dc0f2f645766d4ff6dc73a89d550e505fcc": 1791736849.576679
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791736128.5111148,
+    "last_start_ts": 1791736849.576679,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791736128.5111148,
-    "last_success_ts": 1791736128.5111148,
-    "last_candidates": 15,
-    "last_published": 0,
+    "last_run_ts": 1791736849.576679,
+    "last_success_ts": 1791736849.576679,
+    "last_candidates": 16,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791736163.4276428
+      "updated_at": 1791736888.417857
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1545,10 +1547,16 @@
       "desc": "Claude Exploited SQL Injection Flaws to Execute Commands on Real Servers CyberSecurityNews",
       "source": "CyberSecurityNews",
       "region": "WORLD"
+    },
+    "f80d93893972c9de4e0ac7a47dab1dc0f2f645766d4ff6dc73a89d550e505fcc": {
+      "time": 1791736849,
+      "title": "Anthropic выпустила ИИ-сканер уязвимостей для открытого кода: сильнейшие модели Claude будут бесплатно искать уязвимости - prospect.com.ru",
+      "desc": "Anthropic выпустила ИИ-сканер уязвимостей для открытого кода: сильнейшие модели Claude будут бесплатно искать уязвимости prospect.com.ru",
+      "source": "prospect.com.ru",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1567,142 +1575,10 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791484130,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 76.19,
-      "candidates": 74,
-      "queue_before": 17,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 26,
-        "known_recent": 19,
-        "already_queued": 11,
-        "story_queue": 0,
-        "story_history": 8,
-        "added": 10,
-        "candidate_count": 74,
-        "admission_rate": 13.51,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "AI can now help detect critical security flaws in industrial software.",
-            "title": "ИИ‑инструмент Positive Technologies помог найти опасную уязвимость в промышленной платформе FUXA",
-            "final_score": 80.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 230,
-        "raw_items": 1565,
-        "source_counts": {
-          "TechCrunch AI": 13,
-          "VentureBeat AI": -1,
-          "The Verge AI": 7,
-          "OpenAI News": 2,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 5,
-          "Habr AI/News": 40,
-          "CNews": 113,
-          "Euronews": 50
-        },
-        "score_filtered": 1409,
-        "quality_filtered": 59,
-        "story_dedup": 23,
-        "candidates": 74,
-        "candidate_rate": 0.0554,
-        "score_buckets": {
-          "0–39": 1285,
-          "40–49": 179,
-          "50–59": 86,
-          "60–69": 15,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 1,
-          "3": 0,
-          "4": 0,
-          "5": 4,
-          "6": 2,
-          "7": 10,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": "GROQ",
-        "failovers": 1,
-        "failures": 4,
-        "blocked": 5,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1791484659,
       "status": "OK",
@@ -24749,11 +24625,151 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791736849,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 39.82,
+      "candidates": 16,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 12,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 1,
+        "candidate_count": 16,
+        "admission_rate": 6.25,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://www.livemint.com/ai/microsoft-ceo-satya-nadella-flags-risks-of-advanced-ai-models-amid-openai-agent-incidents-calls-for-emergency-brake-11791711363046.html",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра стратегии безопасности и внедрения систем контроля для ИИ-агентов в корпоративной среде.",
+            "title": "Microsoft CEO Satya Nadella flags risks of advanced AI models amid OpenAI agent incidents, calls for ‘emergency brake’ - Livemint",
+            "final_score": 74.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 40,
+        "raw_items": 738,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 12,
+          "CNews": 1,
+          "Euronews": 25
+        },
+        "score_filtered": 707,
+        "quality_filtered": 11,
+        "story_dedup": 4,
+        "candidates": 16,
+        "candidate_rate": 0.0229,
+        "score_buckets": {
+          "0–39": 677,
+          "40–49": 40,
+          "50–59": 17,
+          "60–69": 4,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791736128.5111148,
-  "last_publish_ts": 1791735649.0109358,
+  "last_search_ts": 1791736849.576679,
+  "last_publish_ts": 1791736849.576679,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
