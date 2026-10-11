@@ -1,6 +1,5 @@
 {
   "published": {
-    "8ac592bdbefaafe0cf7459361c2878a15c46df0cdf392fd7e1aaf734cde80da7": 1789138152,
     "c4fd73096b42b8cf8a35ec09aa9798ea3415cff8f293c9dacc297e0dc51feb85": 1789138859,
     "abe54e9b32b0279392ee7dc15320fe989e89e932fe89263d547d723da5d151f9": 1789139081,
     "a40a0577baa23f055ecaac6a1128bc48486e87399c1e5be734a14712bee6d163": 1789139320,
@@ -1284,20 +1283,20 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791729889.6799443,
+    "last_start_ts": 1791730369.197756,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791729889.6799443,
-    "last_success_ts": 1791729889.6799443,
+    "last_run_ts": 1791730369.197756,
+    "last_success_ts": 1791730369.197756,
     "last_candidates": 15,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1791729930.9196892
+      "updated_at": 1791730406.4700565
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1321,13 +1320,6 @@
     }
   },
   "stories": {
-    "4f7dae522d96fffd5c6912bbae980252f0ffa262b8b78751d658c742da2f9336": {
-      "time": 1791643967,
-      "title": "Anthropic is cutting off its internal evaluations from the internet",
-      "desc": "After a recent spate of high-profile incidents in which AI agents escaped containment, Anthropic is cutting off internet access for all internal evaluations. In a report Friday, the company detailed \"unintended model actions,\" including submitting a false tip regarding an unsolved murder, that led to the decision. Although the impact of these behaviors was minimal […]",
-      "source": "The Verge AI",
-      "region": "WORLD"
-    },
     "2ef52af1629c85a753f9cfe81ef4beae173e24cbdd9d1c23d3fbe959370db796": {
       "time": 1791644689,
       "title": "Anthropic Launches Claude Haiku 5.5: Faster, Lower-Cost AI - IT Voice Media",
@@ -1604,141 +1596,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791476453,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": true,
-      "duration_sec": 85.28,
-      "candidates": 73,
-      "queue_before": 18,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 22,
-        "known_recent": 18,
-        "already_queued": 12,
-        "story_queue": 0,
-        "story_history": 8,
-        "added": 13,
-        "candidate_count": 73,
-        "admission_rate": 17.81,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Автоматизация кросс-платформенных задач напрямую сокращает потребность в ручном труде и меняет операционные процессы.",
-            "title": "Google is launching a one-stop Gemini agent for your work tasks",
-            "final_score": 78.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 218,
-        "raw_items": 1462,
-        "source_counts": {
-          "TechCrunch AI": 7,
-          "VentureBeat AI": -1,
-          "The Verge AI": 4,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 3,
-          "Habr AI/News": 40,
-          "CNews": 114,
-          "Euronews": 50
-        },
-        "score_filtered": 1307,
-        "quality_filtered": 57,
-        "story_dedup": 25,
-        "candidates": 73,
-        "candidate_rate": 0.0587,
-        "score_buckets": {
-          "0–39": 1198,
-          "40–49": 161,
-          "50–59": 86,
-          "60–69": 17,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 1,
-          "3": 0,
-          "4": 0,
-          "5": 6,
-          "6": 2,
-          "7": 9,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": "OPENROUTER",
-        "failovers": 4,
-        "failures": 4,
-        "blocked": 10,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1791476702,
       "status": "OK",
@@ -24397,10 +24254,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1791730369,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 37.3,
+      "candidates": 15,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 13,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 15,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 9.0,
+          "bonus_total": 54.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 10.0,
+            "bonus": 30.0,
+            "reason": "Сделка такого масштаба радикально меняет ландшафт доступных open-source инструментов и стратегию выбора вендора для AI-инфраструктуры.",
+            "title": "Nvidia may be planning for more stake or acquisition deal for $25 billion in open-source AI startup - The Times of India",
+            "final_score": 80.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 37,
+        "raw_items": 589,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 13,
+          "CNews": 1,
+          "Euronews": 21
+        },
+        "score_filtered": 558,
+        "quality_filtered": 12,
+        "story_dedup": 4,
+        "candidates": 15,
+        "candidate_rate": 0.0272,
+        "score_buckets": {
+          "0–39": 538,
+          "40–49": 29,
+          "50–59": 19,
+          "60–69": 3,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791729889.6799443,
+  "last_search_ts": 1791730369.197756,
   "last_publish_ts": 1791729889.6799443,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
