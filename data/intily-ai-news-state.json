@@ -1269,38 +1269,40 @@
     "04abe14aa7b13293b9b3988feffe048da67ead2f93414f3ea742922e3779771c": 1791725327,
     "c3c2379486901bafe7eb690db9e4c4b48c7894a82bd2af993ba74c554fcb3a1a": 1791727729,
     "bb5e72cf40769657f13ada4882ce149c307ac0b897818dc57269bce48d475411": 1791728930,
-    "5a1cb8944ef6763a115570e5425371a0a2c2f645783148a7c296c3759097b5b4": 1791729889
+    "5a1cb8944ef6763a115570e5425371a0a2c2f645783148a7c296c3759097b5b4": 1791729889,
+    "ffe4787c87171fe1b91cd061067211ad4a85def9702a9a844e5751f242699dfc": 1791732530
   },
   "known": {
     "bb5e72cf40769657f13ada4882ce149c307ac0b897818dc57269bce48d475411": 1791727729.9578037,
-    "5a1cb8944ef6763a115570e5425371a0a2c2f645783148a7c296c3759097b5b4": 1791729889.6799443
+    "5a1cb8944ef6763a115570e5425371a0a2c2f645783148a7c296c3759097b5b4": 1791729889.6799443,
+    "ffe4787c87171fe1b91cd061067211ad4a85def9702a9a844e5751f242699dfc": 1791732530.3804321
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1791732050.6255734,
+    "last_start_ts": 1791732530.3804321,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791732050.6255734,
-    "last_success_ts": 1791732050.6255734,
-    "last_candidates": 15,
-    "last_published": 0,
+    "last_run_ts": 1791732530.3804321,
+    "last_success_ts": 1791732530.3804321,
+    "last_candidates": 16,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1791735674.3186784,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1791732074.31868
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1791732569.3389988
     },
     "GROQ": {
-      "disabled_until": 1791735677.4286816,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791732077.4286835
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1791732530.1422837
     },
     "OPENAI": {
-      "disabled_until": 1791818497.5873218,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1791732097.5873234
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1791732530.1422837
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1308,9 +1310,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1791735696.4496908,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791732096.449693
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1791732530.1422837
     }
   },
   "stories": {
@@ -1558,10 +1560,16 @@
       "desc": "Is Okta (OKTA) Fully Priced On Its Yubico Partnership And AI Security Push? Simply Wall Street",
       "source": "Simply Wall Street",
       "region": "WORLD"
+    },
+    "ffe4787c87171fe1b91cd061067211ad4a85def9702a9a844e5751f242699dfc": {
+      "time": 1791732530,
+      "title": "AI agents breach industrial systems in Booz Allen tests, exposing critical infrastructure gaps - news.lavx.hu",
+      "desc": "AI agents breach industrial systems in Booz Allen tests, exposing critical infrastructure gaps news.lavx.hu",
+      "source": "news.lavx.hu",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -1580,153 +1588,10 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791478371,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 80.19,
-      "candidates": 72,
-      "queue_before": 18,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 24,
-        "known_recent": 22,
-        "already_queued": 12,
-        "story_queue": 0,
-        "story_history": 7,
-        "added": 7,
-        "candidate_count": 72,
-        "admission_rate": 9.72,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/news/1092134/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1092134",
-            "image_url": "https://habr.com/share/publication/1092134/398924826cc3c4c488fe824fdb99c7d4/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.0,
-          "bonus_total": 63.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 5.0,
-            "bonus": 15.0,
-            "reason": "Потребительский хард, слабо влияет на ИИ-работу профи",
-            "title": "Amazon представила планшеты Alexa с Google Play AI‑помощником Alexa+",
-            "final_score": 65.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 217,
-        "raw_items": 1495,
-        "source_counts": {
-          "TechCrunch AI": 7,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 3,
-          "Habr AI/News": 40,
-          "CNews": 114,
-          "Euronews": 50
-        },
-        "score_filtered": 1344,
-        "quality_filtered": 55,
-        "story_dedup": 24,
-        "candidates": 72,
-        "candidate_rate": 0.0563,
-        "score_buckets": {
-          "0–39": 1227,
-          "40–49": 167,
-          "50–59": 84,
-          "60–69": 17,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 1,
-          "3": 0,
-          "4": 0,
-          "5": 6,
-          "6": 2,
-          "7": 9,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENROUTER"
-        ],
-        "used": "OPENROUTER",
-        "failovers": 5,
-        "failures": 2,
-        "blocked": 2,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791479815,
       "status": "OK",
@@ -24500,11 +24365,152 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1791732530,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 47.9,
+      "candidates": 16,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 12,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 1,
+        "candidate_count": 16,
+        "admission_rate": 6.25,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://news.lavx.hu/article/ai-agents-breach-industrial-systems-in-booz-allen-tests-exposing-critical-infrastructure-gaps",
+            "image_url": "https://news.lavx.hu/api/media/file/ai-agents-breach-industrial-systems-in-booz-allen-tests-exposing-critical-infrastructure-gaps-1_1791720609822-1200x630.jpg",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 9.0,
+          "bonus_total": 81.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 3,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Необходим немедленный аудит безопасности систем управления из-за доказанной способности ИИ-агентов взламывать промышленные протоколы.",
+            "title": "AI agents breach industrial systems in Booz Allen tests, exposing critical infrastructure gaps - news.lavx.hu",
+            "final_score": 73.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 37,
+        "raw_items": 650,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 13,
+          "CNews": 1,
+          "Euronews": 21
+        },
+        "score_filtered": 618,
+        "quality_filtered": 12,
+        "story_dedup": 4,
+        "candidates": 16,
+        "candidate_rate": 0.0261,
+        "score_buckets": {
+          "0–39": 597,
+          "40–49": 31,
+          "50–59": 20,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1791732050.6255734,
-  "last_publish_ts": 1791729889.6799443,
+  "last_search_ts": 1791732530.3804321,
+  "last_publish_ts": 1791732530.3804321,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
