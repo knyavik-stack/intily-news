@@ -1,6 +1,5 @@
 {
   "published": {
-    "70a5c269877fd1f5d546f5be0165b4f12cabe5fa2fa32b07dfa9f98964717b30": 1789194767,
     "04ee5fc6eadb241edc7f52d04039a82c5a65df6190c3603ef8e99edc31c476b1": 1789195046,
     "bacb04ec8a2f98aa46958fdab8813c85fa69eaf51f5f6c3e9c07904ea5e9a152": 1789195489,
     "60dd4361468c5931e4f2820122dd710467dc3133ca6eb49b369970fbb5b17d9f": 1789198850,
@@ -2014,30 +2013,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791786539.5222135,
+    "last_start_ts": 1791786799.8797023,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791786539.5222135,
-    "last_success_ts": 1791786539.5222135,
-    "last_candidates": 27,
+    "last_run_ts": 1791786799.8797023,
+    "last_success_ts": 1791786799.8797023,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1791790129.4189022,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1791786529.4189043
+      "disabled_until": 1791790389.597795,
+      "reason": "The read operation timed out",
+      "updated_at": 1791786789.5977974
     },
     "GROQ": {
-      "disabled_until": 1791790131.7867022,
+      "disabled_until": 1791790393.0714316,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791786531.786704
+      "updated_at": 1791786793.0714333
     },
     "OPENAI": {
-      "disabled_until": 1791872939.4047668,
+      "disabled_until": 1791873199.7211242,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1791786539.4047685
+      "updated_at": 1791786799.7211256
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2045,9 +2044,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1791790138.2234879,
+      "disabled_until": 1791790398.9655058,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791786538.2234893
+      "updated_at": 1791786798.9655073
     }
   },
   "stories": {
@@ -2313,96 +2312,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791527086,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 3.07,
-      "candidates": 0,
-      "queue_before": 5,
-      "queue_after": 4,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://vc.ru/ai/3184422-daidzhest-ii-padeniye-doveriya-k-agentam",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость пересмотра стратегий внедрения ИИ-агентов из-за падения их надежности и роста затрат на инфраструктуру.",
-            "title": "Дайджест ИИ: Падение доверия к агентам в проде до 56%, контракты Helm.ai на $70 млн в робототехнике, твердотельные батареи QuantumScape для ЦОД, открытая модель JEV-27B-VL и альянс F-Secure с CUJO AI - VC.ru",
-            "final_score": 65.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791527570,
       "status": "OK",
@@ -25903,6 +25812,78 @@
         "GEMINI": {
           "blocked": true,
           "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1791786799,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 30.68,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 16,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
         },
         "GROQ": {
           "blocked": true,
