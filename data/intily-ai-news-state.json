@@ -1,6 +1,5 @@
 {
   "published": {
-    "b1cecf4e85c789aeb5780d6aabd494dda11a75e27fab0dfe26cd4d4d59eb61f5": 1789233169,
     "9d7a59ec1a45746a3848141807d7502d794528f503c753104301568d403f38ac": 1789302551,
     "1c5d78ca029f309709ddc287f833e0d42f23a629a93855e08a73f1e45f58906d": 1789302776,
     "0a29e7eed71d923674c0bcd8c0f844ebbe094428e777a70c78889c2184ad0133": 1789303973,
@@ -2026,30 +2025,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791824688.2024527,
+    "last_start_ts": 1791825197.7383444,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791824688.2024527,
-    "last_success_ts": 1791824688.2024527,
-    "last_candidates": 43,
+    "last_run_ts": 1791825197.7383444,
+    "last_success_ts": 1791825197.7383444,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1791828340.3929477,
+      "disabled_until": 1791828790.2653406,
       "reason": "The read operation timed out",
-      "updated_at": 1791824740.3929508
+      "updated_at": 1791825190.265343
     },
     "GROQ": {
-      "disabled_until": 1791828343.5432816,
+      "disabled_until": 1791828795.9298253,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791824743.5432832
+      "updated_at": 1791825195.9298272
     },
     "OPENAI": {
-      "disabled_until": 1791911144.9352138,
+      "disabled_until": 1791911597.5265255,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1791824744.9352157
+      "updated_at": 1791825197.5265272
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2057,19 +2056,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1791911143.9701798,
+      "disabled_until": 1791911596.1821697,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1791824743.9701815
+      "updated_at": 1791825196.1821704
     }
   },
   "stories": {
-    "93fded3f40505dc6bae4f7848b73ca2af8251a716f48de03c36bdc2839bf1373": {
-      "time": 1791738773,
-      "title": "Агенты OpenAI вносили правки в проекты Wikimedia и могли спровоцировать сбой - prospect.com.ru",
-      "desc": "Агенты OpenAI вносили правки в проекты Wikimedia и могли спровоцировать сбой prospect.com.ru",
-      "source": "prospect.com.ru",
-      "region": "RUSSIA"
-    },
     "c239c58c470c04074bdc0172f64e134584f6dcb7edce762a1e5b99458d778aae": {
       "time": 1791739014,
       "title": "Hack The Box Launches AI Range Enterprise Edition to Measure AI Agent Competence in Cybersecurity - Cybersecurity Insiders",
@@ -2360,94 +2352,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791609171,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 7.83,
-      "candidates": 0,
-      "queue_before": 11,
-      "queue_after": 10,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://prospect.com.ru/news/7083432/axios-anthropic-i-openai-modeliruyut-stsenarii-krupnogo-intsidenta-s-ii.html",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость пересмотра стратегии кибербезопасности и риск-менеджмента при интеграции LLM в бизнес-процессы.",
-            "title": "Axios: Anthropic и OpenAI моделируют сценарии крупного инцидента с ИИ - prospect.com.ru",
-            "final_score": 67.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 8,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791615175,
       "status": "OK",
@@ -25447,6 +25351,78 @@
         "failovers": 0,
         "failures": 4,
         "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1791825197,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 27.99,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
         "skipped_no_key": 0,
         "retries": 0
       },
