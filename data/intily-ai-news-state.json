@@ -1271,9 +1271,6 @@
     "ce9b73a887523d44ac9af844327a6d4e0978406b076c6672b4b1630e86a707b0": 1791819406
   },
   "known": {
-    "20d5735aed4f3c1ef6179de89671233fb1315df8ff63dbff9714eca896cff456": 1791814405.3623247,
-    "c92133949ff98f396ce56ab9e8ad818ab45319a5bbde4fca7197f752bbcbbc40": 1791814405.3623247,
-    "8780919bf9ebad353e6c53773d319b1d912bd06d8693b16529f29f47e6cd2692": 1791814405.3623247,
     "cfde79261f9024da91f3e30b4fe1ad40402ba3f936822883a1b1f7e3951a953e": 1791818493.5091794,
     "61d968b2e071fa603ff4f6389ca3c0301f724e0d4dadda4ecea47a301a5307a9": 1791818493.5091794,
     "5d084ba06138d021e25ae63378521519862ba4a7838340f7856a77436c14eed6": 1791818493.5091794,
@@ -1318,10 +1315,10 @@
       "audience_score": 8.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1791819648,
+      "last_failed_at": 1791819886,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 3,
-      "next_retry_at": 1791820848
+      "failure_count": 4,
+      "next_retry_at": 1791822286
     },
     {
       "region": "RUSSIA",
@@ -1359,10 +1356,10 @@
       "audience_score": 8.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1791819648,
+      "last_failed_at": 1791819886,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1791819948
+      "failure_count": 2,
+      "next_retry_at": 1791820486
     },
     {
       "region": "WORLD",
@@ -1990,30 +1987,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791819648.8313804,
+    "last_start_ts": 1791819886.784411,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791819648.8313804,
-    "last_success_ts": 1791819648.8313804,
+    "last_run_ts": 1791819886.784411,
+    "last_success_ts": 1791819886.784411,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1791823011.1813917,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1791819411.1813953
+      "disabled_until": 1791823506.9846132,
+      "reason": "The read operation timed out",
+      "updated_at": 1791819906.984615
     },
     "GROQ": {
-      "disabled_until": 1791823252.4051108,
+      "disabled_until": 1791823510.2822208,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791819652.4051123
+      "updated_at": 1791819910.2822223
     },
     "OPENAI": {
-      "disabled_until": 1791906064.662084,
+      "disabled_until": 1791906361.4100747,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1791819664.6620855
+      "updated_at": 1791819961.4100754
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2021,9 +2018,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1791823263.6702304,
+      "disabled_until": 1791823560.5012157,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791819663.670232
+      "updated_at": 1791819960.5012171
     }
   },
   "stories": {
@@ -2338,94 +2335,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791570057,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 22.73,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.thetimes.com/uk/technology-uk/article/uk-ai-safety-law-stop-loss-control-wbwp6ls6p",
-            "image_url": "https://www.thetimes.com/imageserver/image/3355ba94-3ab0-4082-a9ac-f3c557b6f775.jpg?strip=all&format=webp&crop=7008px%2C3942px%2C0px%2C365px&resize=1200",
-            "width": 1200,
-            "height": 675,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость учета правовых рисков и затрат на комплаенс при разработке автономных ИИ-систем.",
-            "title": "UK AI safety law to stop ‘loss of control’ over autonomous agents - The Times",
-            "final_score": 64.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791571250,
       "status": "OK",
@@ -25517,6 +25426,83 @@
         "GEMINI": {
           "blocked": true,
           "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1791819886,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 74.84,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
         },
         "GROQ": {
           "blocked": true,
