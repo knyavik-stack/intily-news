@@ -1,6 +1,5 @@
 {
   "published": {
-    "ebfaa4dc962ca12fbaff124f3f58b560a48c16e54b517178884d1f9b8942dcb2": 1789218771,
     "9dc72d9d2a64829d427a0f5bc9702e1ccd048c74143e7b477f3af2a02eb7bd6c": 1789219732,
     "ef50545febd0e1b85a3913ef18e4f8a637aeb608fbeaf240b32039ba7507f0f9": 1789221170,
     "151308f4dc67e096e7518d816886c456cf72c08d94af40d1abe4e1acfc70f303": 1789221890,
@@ -1490,19 +1489,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 45.0,
+        "base_score": 44.5,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 63.0
+        "final_score": 62.5
       },
-      "base_score": 45.0,
+      "base_score": 44.5,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 63.0,
+      "score": 62.5,
       "key": "b04790f11ca826853a3507b9818912d59fa22da3e09d7f327dda9edf44873ad1",
-      "importance": 63.0,
+      "importance": 62.5,
       "editorial_value": 50.0,
       "topics": [
         "security_regulation"
@@ -1888,20 +1887,20 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 40.5,
+        "base_score": 40.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 40.5
+        "final_score": 40.0
       },
-      "base_score": 40.5,
+      "base_score": 40.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 40.5,
+      "score": 40.0,
       "key": "5f1704bf1ec2748f999ebb50927f77020b0055e517b7dcd1c034b3ab02490102",
-      "importance": 40.5,
-      "editorial_value": 46.5,
+      "importance": 40.0,
+      "editorial_value": 46.0,
       "topics": [
         "research"
       ],
@@ -1910,30 +1909,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791810546.5775232,
+    "last_start_ts": 1791811286.476253,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791810546.5775232,
-    "last_success_ts": 1791810546.5775232,
+    "last_run_ts": 1791811286.476253,
+    "last_success_ts": 1791811286.476253,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 17
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791810551.8708887
+      "disabled_until": 1791814867.7016952,
+      "reason": "The read operation timed out",
+      "updated_at": 1791811267.7016978
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791810060.5098794
+      "disabled_until": 1791814871.0928044,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791811271.0928066
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791810060.5098794
+      "disabled_until": 1791897686.3905494,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1791811286.390551
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1941,26 +1940,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791810060.5098794
+      "disabled_until": 1791814885.1929455,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791811285.1929474
     }
   },
   "stories": {
-    "943426b5088d8a997f62cdc6e9ef1815890cec50294238420c31147de6b88d1b": {
-      "time": 1791724369,
-      "title": "NVIDIA backs Trump's AI mission with $1B investment in computing power, CEO promises Super Intelligence for \"America's scientists\" - AOL.com",
-      "desc": "NVIDIA backs Trump's AI mission with $1B investment in computing power, CEO promises Super Intelligence for \"America's scientists\" AOL.com",
-      "source": "AOL.com",
-      "region": "WORLD"
-    },
-    "5bc71937d66f28a4428e3d0b61b64e3b4b5de1bec68fb9ab4eeceb3944dff8fc": {
-      "time": 1791724607,
-      "title": "Microsoft может сэкономить $600 млн, заменив GPT и Claude на китайскую ИИ-модель Kimi K3 в Copilot - GoHa.Ru",
-      "desc": "Microsoft может сэкономить $600 млн, заменив GPT и Claude на китайскую ИИ-модель Kimi K3 в Copilot GoHa.Ru",
-      "source": "GoHa.Ru",
-      "region": "RUSSIA"
-    },
     "04abe14aa7b13293b9b3988feffe048da67ead2f93414f3ea742922e3779771c": {
       "time": 1791725327,
       "title": "«Яндекс» сообщил о новых сбоях в «Алисе AI» и умных устройствах: почему сбой у «Яндекс Станции» - URA.RU",
@@ -2293,146 +2278,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791555413,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 46.45,
-      "candidates": 43,
-      "queue_before": 14,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 23,
-        "known_recent": 0,
-        "already_queued": 11,
-        "story_queue": 1,
-        "story_history": 3,
-        "added": 5,
-        "candidate_count": 43,
-        "admission_rate": 11.63,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://hashtelegraph.com/anthropic-otkryla-kriptoproektam-dostup-k-neyroskaneru-uyazvimostey/",
-            "image_url": "https://hashtelegraph.com/cdn-r2/wp-content/uploads/2026/05/bug-vulnerability-search.jpg",
-            "width": 1200,
-            "height": 675,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 6.33,
-          "bonus_total": 57.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Снижает затраты на аудит безопасности, но требует ручной проверки из-за риска галлюцинаций модели.",
-            "title": "Anthropic: ИИ защищает криптопроекты от уязвимостей - Hash Telegraph",
-            "final_score": 62.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 6,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 156,
-        "raw_items": 1203,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 2,
-          "Habr AI/News": 40,
-          "CNews": 60,
-          "Euronews": 50
-        },
-        "score_filtered": 1092,
-        "quality_filtered": 48,
-        "story_dedup": 20,
-        "candidates": 43,
-        "candidate_rate": 0.0411,
-        "score_buckets": {
-          "0–39": 1012,
-          "40–49": 126,
-          "50–59": 60,
-          "60–69": 5,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 4,
-          "6": 3,
-          "7": 4,
-          "8": 2,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791557349,
       "status": "OK",
@@ -25756,6 +25601,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1791811286,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 39.05,
+      "candidates": 0,
+      "queue_before": 17,
+      "queue_after": 17,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
