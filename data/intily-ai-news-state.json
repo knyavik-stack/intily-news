@@ -1,6 +1,5 @@
 {
   "published": {
-    "325fbd003e7f23bdfc98eecd0b6339b1e5050d45dc7ae5132e4b13604cd35be0": 1789226928,
     "62892d4ecc1e1f4699e8af43d659f6ddad7cd2bc90e7f958269e59c630c4d93e": 1789227888,
     "ec89011ff067d307bbbe5b89bfce81b576ecee1ebf832f5d4cda1fa44fe81877": 1789230532,
     "15beceae14be13736669b9d0c42258ae8b16a5e177e0a0dce1fedbff94a45787": 1789230768,
@@ -2028,30 +2027,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791818702.9396014,
+    "last_start_ts": 1791818943.7711077,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791818702.9396014,
-    "last_success_ts": 1791818702.9396014,
+    "last_run_ts": 1791818943.7711077,
+    "last_success_ts": 1791818943.7711077,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1791822303.6752071,
+      "disabled_until": 1791822528.9598505,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1791818703.6752093
+      "updated_at": 1791818928.9598525
     },
     "GROQ": {
-      "disabled_until": 1791822307.388666,
+      "disabled_until": 1791822532.1388848,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791818707.3886678
+      "updated_at": 1791818932.1388865
     },
     "OPENAI": {
-      "disabled_until": 1791905168.8099692,
+      "disabled_until": 1791905343.622026,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1791818768.8099716
+      "updated_at": 1791818943.6220276
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2059,19 +2058,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1791822367.7417388,
+      "disabled_until": 1791822543.0153658,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791818767.7417414
+      "updated_at": 1791818943.0153675
     }
   },
   "stories": {
-    "ffe4787c87171fe1b91cd061067211ad4a85def9702a9a844e5751f242699dfc": {
-      "time": 1791732530,
-      "title": "AI agents breach industrial systems in Booz Allen tests, exposing critical infrastructure gaps - news.lavx.hu",
-      "desc": "AI agents breach industrial systems in Booz Allen tests, exposing critical infrastructure gaps news.lavx.hu",
-      "source": "news.lavx.hu",
-      "region": "WORLD"
-    },
     "a4fcff9fab2d95f2e5ca368485dd59c5c1bb45db0e5ecd77c37c4149f592f857": {
       "time": 1791735649,
       "title": "Claude Exploited SQL Injection Flaws to Execute Commands on Real Servers - CyberSecurityNews",
@@ -2376,94 +2368,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791564057,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 11.27,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://inkorr.com/en/google-predstavila-si-agenta-gemini-avtomaticne-planuvanna-vikonanna-zavdan-i-integracia-z-korporativnimi-sistemami-350141",
-            "image_url": "https://media.inkorr.com/uploads/2149c722aa730af2d11ae9e90bde43a5.jpg",
-            "width": 1920,
-            "height": 960,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Прямая возможность автоматизации операционных задач и оптимизации штата через интеграцию агентов в корпоративный софт.",
-            "title": "Google Unveils Gemini AI Agent: Streamlined Task Automation and Seamless Corporate System Integration - Inkorr",
-            "final_score": 70.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791567411,
       "status": "OK",
@@ -25686,6 +25590,78 @@
         "failovers": 0,
         "failures": 4,
         "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1791818943,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 16.94,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
         "skipped_no_key": 0,
         "retries": 0
       },
