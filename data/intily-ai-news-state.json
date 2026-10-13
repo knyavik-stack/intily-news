@@ -1,6 +1,5 @@
 {
   "published": {
-    "9d7a59ec1a45746a3848141807d7502d794528f503c753104301568d403f38ac": 1789302551,
     "1c5d78ca029f309709ddc287f833e0d42f23a629a93855e08a73f1e45f58906d": 1789302776,
     "0a29e7eed71d923674c0bcd8c0f844ebbe094428e777a70c78889c2184ad0133": 1789303973,
     "ab400b6f44bd0f7fd0aa2d95a83b69907fca3e37c0ad8d6fe7735877597c7267": 1789304971,
@@ -1304,7 +1303,8 @@
     "bdb7f2733cec5c148b16de7d9cf003342f4bd7adafffe534c0480017e254f5c2": 1791891419,
     "438c1cdb38b47213a261004232aec89cc0ecbdb49be4636957215592caa16a51": 1791893098,
     "751c0d9ebfcdfc23d56221cb9cd5fc6f7c89415a819507a3ab2da67ff3b8056a": 1791893581,
-    "ce4703accb2d8f092671758f5263e1bb3130b8cce5add08b826192ee937b97ca": 1791894306
+    "ce4703accb2d8f092671758f5263e1bb3130b8cce5add08b826192ee937b97ca": 1791894306,
+    "b72032bec3e3c22b63b06609581c34e43bdf25affcd18d1f41cf59b7b8a4919e": 1791894768
   },
   "known": {
     "afbbc085aa93f7854f30ac8fa6f44c12e6653da5e9a76cfe578801190316de5d": 1791889729.756708,
@@ -1331,46 +1331,6 @@
     "869c49b7de1a3c380a302038dec231c9d740e46ec998da8d1e8f95e72a96f6df": 1791893098.5154293
   },
   "queue": [
-    {
-      "region": "WORLD",
-      "title": "Braze launches AI tool to test billion customer mixes - IT Brief Australia",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPOGw5NnhkOUY1TDJBNlNTZm82RWZvUy12WTVFeDc3V3ItbXdNSGNiMlU4ZHNuYkE5bF9uSTBFOGl2djlWZkpLMFhFdzFMV0NxSzVESVA4ank4LWhFSUJNZkRQalB0N2V2QlpHbUhGUU01WENvSjFEcF9TR2dUSHplcGxoSl9aelpYY2c?oc=5",
-      "desc": "Braze launches AI tool to test billion customer mixes IT Brief Australia",
-      "source": "IT Brief Australia",
-      "time": 1791882000.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 9.0,
-        "event_concreteness": 12.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 46.0,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 70.0
-      },
-      "base_score": 46.0,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 70.0,
-      "key": "b72032bec3e3c22b63b06609581c34e43bdf25affcd18d1f41cf59b7b8a4919e",
-      "importance": 70.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "tools"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "last_failed_at": 1791894529,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1791894829
-    },
     {
       "region": "WORLD",
       "title": "New Plume Console Multiplies ISP Business Results by Putting AI Agents to Work on Cost to Serve, Churn Reduction and Revenue Growth - The Manila Times",
@@ -1963,30 +1923,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791894529.8482485,
+    "last_start_ts": 1791894768.9917772,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791894529.8482485,
-    "last_success_ts": 1791894529.8482485,
+    "last_run_ts": 1791894768.9917772,
+    "last_success_ts": 1791894768.9917772,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 17
+    "last_published": 1,
+    "queue_size": 16
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1791898150.0687857,
-      "reason": "The read operation timed out",
-      "updated_at": 1791894550.068788
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1791894773.7645223
     },
     "GROQ": {
-      "disabled_until": 1791898153.3239686,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791894553.3239703
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1791894768.728002
     },
     "OPENAI": {
-      "disabled_until": 1791980966.675568,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1791894566.67557
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1791894768.728002
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1994,9 +1954,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1791898165.4365065,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791894565.4365082
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1791894768.728002
     }
   },
   "stories": {
@@ -2321,11 +2281,17 @@
       "desc": "Samsung Asset Management Launches AI Agent-Focused ETF with 47% in Meta and Palantir BigGo Finance",
       "source": "BigGo Finance",
       "region": "WORLD"
+    },
+    "b72032bec3e3c22b63b06609581c34e43bdf25affcd18d1f41cf59b7b8a4919e": {
+      "time": 1791894768,
+      "title": "Braze launches AI tool to test billion customer mixes - IT Brief Australia",
+      "desc": "Braze launches AI tool to test billion customer mixes IT Brief Australia",
+      "source": "IT Brief Australia",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -2341,152 +2307,12 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791648052,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 44.98,
-      "candidates": 14,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 12,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 1,
-        "candidate_count": 14,
-        "admission_rate": 7.14,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.konsulteer.com/article/elastic-launches-alertzero-and-nightshift-ai-agents-for-security-and-observability",
-            "image_url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_6zyd3yhke38a9888q30x65enba/1a9289ebd65e4c62fe29a0f8cd4b7483_1789627526570.png",
-            "width": 1920,
-            "height": 1080,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.33,
-          "bonus_total": 75.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 3,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Прямая оптимизация операционных затрат на мониторинг и ускорение реакции на инциденты в инфраструктуре.",
-            "title": "Elastic Launches AlertZero and Nightshift AI Agents for Security and Observability - Konsulteer",
-            "final_score": 64.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 34,
-        "raw_items": 695,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 13,
-          "CNews": 0,
-          "Euronews": 18
-        },
-        "score_filtered": 666,
-        "quality_filtered": 10,
-        "story_dedup": 5,
-        "candidates": 14,
-        "candidate_rate": 0.0212,
-        "score_buckets": {
-          "0–39": 635,
-          "40–49": 41,
-          "50–59": 18,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791648529,
       "status": "OK",
@@ -24405,11 +24231,101 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1791894768,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 6.13,
+      "candidates": 0,
+      "queue_before": 17,
+      "queue_after": 16,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://itbrief.com.au/story/braze-launches-ai-tool-to-test-billion-customer-mixes",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 7.0,
+          "bonus_total": 21.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Инструмент дает конкретное преимущество в автоматизации маркетинговых тестов, снижая операционные затраты.",
+            "title": "Braze launches AI tool to test billion customer mixes - IT Brief Australia",
+            "final_score": 67.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1791893098.5154293,
-  "last_publish_ts": 1791894306.0235522,
+  "last_publish_ts": 1791894768.9917772,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
