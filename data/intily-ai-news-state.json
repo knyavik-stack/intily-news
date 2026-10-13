@@ -1,7 +1,5 @@
 {
   "published": {
-    "d49d01bd8c67350b40afa44015db269b208833d74a94805c39b065d9277d02db": 1789311890,
-    "12276396a67f8d4f587f56101f302f9af9f8aa3b48037f272af6e18ebf76df2c": 1789312125,
     "4d95092be26bf37133b316ede24aaa2cd8a558ecd37030fb6269a67faf3c77c9": 1789313599,
     "c708e6875c62908057fd6b5c762bff8c080a9b880fb039be7b8d6f890949547e": 1789314526,
     "58cc8f9c499c55bebd3fbb624a8b5d3d841f38dc6b7e4b1c2a07a8244767278e": 1789315290,
@@ -1303,16 +1301,6 @@
     "ffba94ac0902fd51d17ae3e12b4a0e9eff949fdb0af2dbd033a2cd4319b92898": 1791903665
   },
   "known": {
-    "c29b2383d3e88fde27cf340790df53fb26424bd4625d3565e339aeab2194ab81": 1791898882.0326371,
-    "01b30e83bd7ca6d42d865c45e415a4eb5fec4bc3ac7f8ed5a913ea6c190c04ab": 1791898882.0326371,
-    "a674dd971825f123ffc7086eec4c72bf834b5285ed643e18c2028d8889c1cb3b": 1791898882.0326371,
-    "6441c58024ffc9aeaf5d23c326245ff639702d70043802f4770fce03744a84da": 1791898882.0326371,
-    "4662b4bc34867cafdc4aef9401cf7b5405f85a61fb9d1d0fb993229c7a4f057d": 1791898882.0326371,
-    "7de9b7ede790a981527a9aa7690a41cf307617ee83538c1e5b9c564811112ddc": 1791898882.0326371,
-    "d1a911b9ee3b5039c18b0aa5e15ad995c6596a78e286086ad75eb09217de6569": 1791898882.0326371,
-    "d58b4e03e7f38313de68b27a0ba54595ab48b15955fdbc2fb8075ba0d6b2df22": 1791898882.0326371,
-    "7b52a2b08bc0d15c4db03dc845f0529fc0aa02c4327326a454bcb6ad81bfbb80": 1791898882.0326371,
-    "7c491356f6325de1f5c738b4d58f2278c78a9a9fa98fd7894bb757cfc3b3b3d1": 1791898882.0326371,
     "91eb0d7c5cf57d23c301a5129b9962897935b1cf10a7a010498eea56b4c84258": 1791901736.667503,
     "ffba94ac0902fd51d17ae3e12b4a0e9eff949fdb0af2dbd033a2cd4319b92898": 1791901736.667503,
     "4b347116b6cd630d065cf1a6de116c072357334f0a2a79034a3e16291b909376": 1791901736.667503,
@@ -1344,19 +1332,19 @@
         "novelty": 0.0,
         "source_quality": 4.0,
         "evidence": 3.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 48.5,
+        "base_score": 48.0,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 69.5
+        "final_score": 69.0
       },
-      "base_score": 48.5,
+      "base_score": 48.0,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 69.5,
+      "score": 69.0,
       "key": "91eb0d7c5cf57d23c301a5129b9962897935b1cf10a7a010498eea56b4c84258",
-      "importance": 69.5,
+      "importance": 69.0,
       "editorial_value": 50.0,
       "topics": [
         "models"
@@ -2031,13 +2019,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791903665.5237594,
+    "last_start_ts": 1791904629.1983786,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791903665.5237594,
-    "last_success_ts": 1791903665.5237594,
-    "last_candidates": 44,
-    "last_published": 1,
+    "last_run_ts": 1791904629.1983786,
+    "last_success_ts": 1791904629.1983786,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 19
   },
   "providers": {
@@ -2047,14 +2035,14 @@
       "updated_at": 1791903657.833129
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791903665.3757732
+      "disabled_until": 1791908211.7391295,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791904611.7391317
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791903655.1636631
+      "disabled_until": 1791991029.0154748,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1791904629.0154762
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2062,9 +2050,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791903655.1636631
+      "disabled_until": 1791908227.9307048,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791904627.930707
     }
   },
   "stories": {
@@ -2449,147 +2437,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791661728,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 59.11,
-      "candidates": 19,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 16,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 1,
-        "candidate_count": 19,
-        "admission_rate": 5.26,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.33,
-          "bonus_total": 66.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Показывает тренд на автоматизацию продаж, но для большинства специалистов это лишь подтверждение вектора развития рынка.",
-            "title": "«СберСтрахование жизни» запустит ИИ-аватара инвестиционного советника в рамках инвестиционных инструментов - prospect.com.ru",
-            "final_score": 65.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 30,
-        "raw_items": 759,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 9,
-          "CNews": 0,
-          "Euronews": 16
-        },
-        "score_filtered": 720,
-        "quality_filtered": 13,
-        "story_dedup": 7,
-        "candidates": 19,
-        "candidate_rate": 0.0261,
-        "score_buckets": {
-          "0–39": 688,
-          "40–49": 45,
-          "50–59": 24,
-          "60–69": 2,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791662206,
       "status": "OK",
@@ -23939,6 +23786,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1791904629,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 21.61,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
