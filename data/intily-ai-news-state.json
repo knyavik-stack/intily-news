@@ -1,6 +1,5 @@
 {
   "published": {
-    "d6a9a81dcd6c35691e1443648e22d74f1cdf030a694800514cf1e637eb52fcb6": 1789407391,
     "dffa32cb06d2038927e55038f46ffda5dcaa9f001f051437aead0215ccacb29f": 1789408834,
     "00e750acc5fb01cea27c672cd5c54a330ea17ee1f0a555d11fc3c8be158fa1b9": 1789409804,
     "ed773c9e5fcbd09e343694b2493553f3106fb90115de3cd7962562678d3d8905": 1789410030,
@@ -1454,19 +1453,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 2.0,
-        "freshness": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 41.5,
+        "base_score": 41.0,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 62.5
+        "final_score": 62.0
       },
-      "base_score": 41.5,
+      "base_score": 41.0,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 62.5,
+      "score": 62.0,
       "key": "d3f2a6dd187983c637b194fa49364c3ac3de5de6577cde5b7c9bd8922e1331e9",
-      "importance": 62.5,
+      "importance": 62.0,
       "editorial_value": 50.0,
       "topics": [
         "business",
@@ -2063,30 +2062,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791999170.1788394,
+    "last_start_ts": 1791999412.301439,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791999170.1788394,
-    "last_success_ts": 1791999170.1788394,
+    "last_run_ts": 1791999412.301439,
+    "last_success_ts": 1791999412.301439,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1792002759.0166676,
+      "disabled_until": 1792003001.7984602,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1791999159.0166695
+      "updated_at": 1791999401.7984622
     },
     "GROQ": {
-      "disabled_until": 1792002762.3770509,
+      "disabled_until": 1792003005.0406725,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791999162.3770523
+      "updated_at": 1791999405.040675
     },
     "OPENAI": {
-      "disabled_until": 1792085570.0461738,
+      "disabled_until": 1792085812.0425754,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1791999170.0461755
+      "updated_at": 1791999412.0425766
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2094,9 +2093,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1792002769.1014214,
+      "disabled_until": 1792003011.1071732,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791999169.101423
+      "updated_at": 1791999411.1071746
     }
   },
   "stories": {
@@ -2425,88 +2424,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791797592,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 46.68,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 19,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 6.5,
-          "bonus_total": 39.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 5.0,
-            "bonus": 15.0,
-            "reason": "No immediate regulatory change needed.",
-            "title": "EU says existing law can handle out-of-control AI model risks - 디지털투데이",
-            "final_score": 56.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 3,
-        "blocked": 13,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1791798074,
       "status": "OK",
@@ -22129,6 +22046,78 @@
       "business_reason": "no_eligible_item",
       "searched": false,
       "duration_sec": 11.92,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1791999412,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 12.64,
       "candidates": 0,
       "queue_before": 20,
       "queue_after": 20,
