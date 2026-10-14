@@ -2078,30 +2078,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791995318.0312612,
+    "last_start_ts": 1791995601.9962406,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791995318.0312612,
-    "last_success_ts": 1791995318.0312612,
-    "last_candidates": 64,
+    "last_run_ts": 1791995601.9962406,
+    "last_success_ts": 1791995601.9962406,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1791998954.3801703,
+      "disabled_until": 1791999159.1493003,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1791995354.3801727
+      "updated_at": 1791995559.1493027
     },
     "GROQ": {
-      "disabled_until": 1791998957.7908447,
+      "disabled_until": 1791999162.667895,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791995357.7908468
+      "updated_at": 1791995562.6678967
     },
     "OPENAI": {
-      "disabled_until": 1792081778.8927758,
+      "disabled_until": 1792082001.7282317,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1791995378.8927772
+      "updated_at": 1791995601.7282336
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2109,19 +2109,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1791998978.4235044,
+      "disabled_until": 1791999200.6338592,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1791995378.4235063
+      "updated_at": 1791995600.633861
     }
   },
   "stories": {
-    "eaca8adb13176822830c3da9e7ad11d1e8b8baee1d1e188132240d37596d8da2": {
-      "time": 1791909169,
-      "title": "Четвертый игрок на вершине. Что умеет Muse Wonder и сколько она стоит",
-      "desc": "12 октября Meta* Superintelligence Labs, ИИ-подразделение владельца Facebook и Instagram, выпустила две модели, Muse Wonder и Muse Wonder Full. Это первая попытка компании встать на уровень к OpenAI, Anthropic и Google. По независимому индексу Artificial Analysis, она удалась. Старшая версия набрала 56 баллов и уступила только Claude Opus 5.5 с его 58. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "629eb91bfc52ba1dfece89aeaf6306ff2545851c6ebcd1f9d70679fa994407a5": {
       "time": 1791912061,
       "title": "Google launches flagship AI model Gemini 4 Argon for developers, businesses - CNBC TV18",
@@ -2475,94 +2468,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791794480,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 31.78,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.jpost.com/business-and-innovation/tech-and-start-ups/article-911395",
-            "image_url": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/741529",
-            "width": 1280,
-            "height": 720,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.5,
-          "bonus_total": 51.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Сделка подтверждает тренд на интеграцию real-time генеративного видео в облачные платформы, что требует пересмотра стратегии видеопродакшена.",
-            "title": "Amazon nears $7 billion deal for Israeli AI startup Decart - The Jerusalem Post",
-            "final_score": 72.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 9,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791794726,
       "status": "OK",
@@ -22265,6 +22170,78 @@
         "failovers": 0,
         "failures": 4,
         "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1791995601,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 43.81,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
         "skipped_no_key": 0,
         "retries": 0
       },
