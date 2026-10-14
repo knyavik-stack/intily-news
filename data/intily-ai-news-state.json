@@ -1309,9 +1309,6 @@
     "6b36768ce95befe70f9580af3efb581161d3d680ec63b8c3d1a5c8d0ae94a76c": 1791967716
   },
   "known": {
-    "9ffb675b7c7630e3fb8061049d37d22238591e9595b1835af6ed20a0ac8772de": 1791962454.956851,
-    "5d4ccef4ddf078c719f23e9757779325acb1987dfeeb6d3b2f3bd6dfec859e10": 1791962454.956851,
-    "1e0c48187b4729a7a5f331955aaf71b77302b90f0bf6a2847f35d17653387725": 1791962454.956851,
     "f983fe80726d5caccd998736158de00dfbe4105ee8dc98a222ce3a92df36a6d2": 1791965327.3690906,
     "53c6a82c8432cf01f4673b50b411b24f5570651daabbb3490c44088f548ac96c": 1791965327.3690906,
     "70197c1b2f9b584b44a5991202c49f816cbb9c759b01d011082e8494fc98e096": 1791965327.3690906,
@@ -1904,30 +1901,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1791967716.2636976,
+    "last_start_ts": 1791968242.232417,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1791967716.2636976,
-    "last_success_ts": 1791967716.2636976,
-    "last_candidates": 26,
-    "last_published": 1,
+    "last_run_ts": 1791968242.232417,
+    "last_success_ts": 1791968242.232417,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 16
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791967761.252189
+      "disabled_until": 1791971800.3836079,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1791968200.3836095
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791963638.5852935
+      "disabled_until": 1791971802.520487,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791968202.5204885
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791963638.5852935
+      "disabled_until": 1792054642.1363523,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1791968242.1363535
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1935,19 +1932,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1791963638.5852935
+      "disabled_until": 1791971841.2844918,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1791968241.2844937
     }
   },
   "stories": {
-    "7f2c24146e1ced1038a6b1749358bc1e2c791a336e70fec1f2abe0e57398d840": {
-      "time": 1791881578,
-      "title": "Epic Games объявила о переходе на ИИ‑разработку и отложила релиз шутера по вселенной Disney",
-      "desc": "Epic Games отложила выпуск игры по вселенной Disney и объявила о необходимости «максимально ускорить внедрение ИИ». По данным Bloomberg, руководство распорядилось больше не использовать код, написанный вручную, при разработке проекта. Сообщается, что Epic Games несколько лет разрабатывает пока не анонсированный extraction‑шутер наподобие Marathon или ARC Raiders. Сотрудничество с Disney добавит в игру персонажей из вселенных Marvel и «Звёздных войн». Релиз проекта был запланирован на март 2027 года, однако сейчас он отложен, а сотрудников обязали активнее использовать ИИ‑инструменты для завершения разработки. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "542b9a6f28c437abad0179e6dffa44612826ef2d4fc8561dfcee07403d8e1375": {
       "time": 1791883259,
       "title": "85% ИБ-директоров Казахстана обеспокоены тем, как сотрудники используют ИИ. Российскому бизнесу указали на риск утечек через публичные нейросети - prospect.com.ru",
@@ -2336,136 +2326,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791733490,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 38.22,
-      "candidates": 14,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 11,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 3,
-        "added": 0,
-        "candidate_count": 14,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 9.0,
-          "bonus_total": 54.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Смена владельца ключевого open-source проекта напрямую влияет на технологический стек и риски вендор-лока.",
-            "title": "Nvidia may be planning for more stake or acquisition deal for $25 billion in open-source AI startup - The Times of India",
-            "final_score": 80.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 37,
-        "raw_items": 668,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 13,
-          "CNews": 1,
-          "Euronews": 21
-        },
-        "score_filtered": 638,
-        "quality_filtered": 12,
-        "story_dedup": 4,
-        "candidates": 14,
-        "candidate_rate": 0.0222,
-        "score_buckets": {
-          "0–39": 614,
-          "40–49": 34,
-          "50–59": 18,
-          "60–69": 2,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791733725,
       "status": "OK",
@@ -22700,6 +22560,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1791968242,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 43.46,
+      "candidates": 0,
+      "queue_before": 16,
+      "queue_after": 16,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 6,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
