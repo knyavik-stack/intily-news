@@ -1334,19 +1334,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 2.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 47.5,
+        "base_score": 47.0,
         "audience_score": 10.0,
         "audience_bonus": 30.0,
-        "final_score": 77.5
+        "final_score": 77.0
       },
-      "base_score": 47.5,
+      "base_score": 47.0,
       "audience_bonus": 30.0,
       "score_stage": "final",
-      "score": 77.5,
+      "score": 77.0,
       "key": "62e04171fbb168f417afe8e898c67ab9e895dbdb07aaef9bac63ae53b0e4d92d",
-      "importance": 77.5,
+      "importance": 77.0,
       "editorial_value": 50.0,
       "topics": [],
       "audience_score": 10.0,
@@ -1442,19 +1442,19 @@
         "freshness": 1.5,
         "low_signal_penalty": 0.0,
         "base_score": 45.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 45.5
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 63.5
       },
       "base_score": 45.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 45.5,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 63.5,
       "key": "e9fd8424089fa7bb756ff79d9a27fe07ff2b8aefdb01a56f6baf69eb43134c6f",
-      "importance": 45.5,
+      "importance": 63.5,
       "editorial_value": 50.0,
       "topics": [],
-      "audience_score": null,
+      "audience_score": 6.0,
       "tier": "A"
     },
     {
@@ -1859,30 +1859,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792041916.3649938,
+    "last_start_ts": 1792042652.859884,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792041916.3649938,
-    "last_success_ts": 1792041916.3649938,
+    "last_run_ts": 1792042652.859884,
+    "last_success_ts": 1792042652.859884,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 15
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1792045505.7037823,
+      "disabled_until": 1792046230.38029,
       "reason": "The read operation timed out",
-      "updated_at": 1792041905.703785
+      "updated_at": 1792042630.380293
     },
     "GROQ": {
-      "disabled_until": 1792045509.0735998,
+      "disabled_until": 1792046233.3122983,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792041909.0736012
+      "updated_at": 1792042633.3122995
     },
     "OPENAI": {
-      "disabled_until": 1792128316.2815692,
+      "disabled_until": 1792129052.759663,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792041916.281571
+      "updated_at": 1792042652.759665
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1890,26 +1890,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1792045515.602619,
+      "disabled_until": 1792046251.6225953,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792041915.6026206
+      "updated_at": 1792042651.6225972
     }
   },
   "stories": {
-    "18cdc9a39ff882bbd686d8674be7b66c6eef505a2caf9688fe6e60758b171aff": {
-      "time": 1791955722,
-      "title": "Microsoft announces its own AI chip to reduce costs. - Folha do Litoral News",
-      "desc": "Microsoft announces its own AI chip to reduce costs. Folha do Litoral News",
-      "source": "Folha do Litoral News",
-      "region": "WORLD"
-    },
-    "b64f04aa478c3e3b9e35d0db829da535e50677657d612145adffd95e45b155ef": {
-      "time": 1791956209,
-      "title": "HCLTech and Anthropic Forge Global Partnership to Build Enterprise AI Agents - BigGo Finance",
-      "desc": "HCLTech and Anthropic Forge Global Partnership to Build Enterprise AI Agents BigGo Finance",
-      "source": "BigGo Finance",
-      "region": "WORLD"
-    },
     "b494488310ffe45e789d669e47ca63fb610db5107a349f8db9b1691e7cd908fd": {
       "time": 1791958601,
       "title": "Security Vision на SOC Forum: кибероперации на скорости ИИ – без потери контроля",
@@ -2235,96 +2221,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791807653,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 12.35,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 16,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.cnews.ru/news/line/2026-10-12_voxys_predstavil_adaptivnye",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 6.33,
-          "bonus_total": 57.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Позволяет пересмотреть архитектуру безопасности и затраты на клиентский сервис при внедрении голосовых ИИ-решений.",
-            "title": "Voxys представил адаптивные модели развертывания голосовых роботов",
-            "final_score": 66.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791807891,
       "status": "OK",
@@ -21886,6 +21782,84 @@
         },
         "queue_score_audit": {
           "pre_ai_below_final_threshold": 12,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1792042652,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 54.11,
+      "candidates": 0,
+      "queue_before": 15,
+      "queue_after": 15,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 6.0,
+          "bonus_total": 18.0,
+          "max_score": 6.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Понимание кадрового состава помогает отслеживать вектор развития технологий, но не дает мгновенного рычага для изменения бизнес-процессов.",
+            "title": "When Stars Shine: Collective Portrait of Scientists Behind OpenAI’s 722 Publicly Released Papers - 36Kr",
+            "final_score": 63.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 11,
           "final_below_threshold": 0,
           "invariant_ok": true
         }
