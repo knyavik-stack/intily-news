@@ -1,6 +1,5 @@
 {
   "published": {
-    "1e3be71e7867de3be4d57379fb8327b82a7ee9c890abc1795e0e0950361b5a57": 1789452031,
     "a0d99d0ded3a697d17f4e33879eb6db41d6fdaca20497c90668f3db65c357835": 1789464798,
     "f76394d91b79b6776885c11ac9db6133f5c622e5ce4cb56907b84804f0b477c9": 1789465238,
     "b0eefa0baf79945636345aa6cb8fb27afc1a706792fa116f93185889ac12f7a4": 1789465953,
@@ -1484,19 +1483,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 45.5,
+        "base_score": 45.0,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 63.5
+        "final_score": 63.0
       },
-      "base_score": 45.5,
+      "base_score": 45.0,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 63.5,
+      "score": 63.0,
       "key": "e9fd8424089fa7bb756ff79d9a27fe07ff2b8aefdb01a56f6baf69eb43134c6f",
-      "importance": 63.5,
+      "importance": 63.0,
       "editorial_value": 50.0,
       "topics": [],
       "audience_score": 6.0,
@@ -1653,13 +1652,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792043826.2607968,
+    "last_start_ts": 1792044527.5305748,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792043826.2607968,
-    "last_success_ts": 1792043826.2607968,
+    "last_run_ts": 1792044527.5305748,
+    "last_success_ts": 1792044527.5305748,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 9
   },
   "providers": {
@@ -1669,14 +1668,14 @@
       "updated_at": 1792043820.298903
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792043826.2120025
+      "disabled_until": 1792048117.9121678,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792044517.9121697
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792042836.540953
+      "disabled_until": 1792130927.5088556,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1792044527.5088573
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1684,9 +1683,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792042836.540953
+      "disabled_until": 1792048126.2588792,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792044526.258881
     }
   },
   "stories": {
@@ -2043,96 +2042,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791810546,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 19.48,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "jsonld_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "jsonld_image",
-            "source_url": "https://theaiinsider.tech/2026/10/12/week-ahead-in-ai-report-of-decart-acquisition-by-amazon-nvidia-investment-in-reflection-talk-plus-will-super-intelligence-term-stick/",
-            "image_url": "https://theaiinsider.tech/wp-content/uploads/2025/06/AI-Insider-Week-Ahead-1.png",
-            "width": 1536,
-            "height": 1024,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 5.33,
-          "bonus_total": 48.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Слухи о сделках дают понимание рыночных приоритетов, но не требуют немедленных изменений в рабочих процессах.",
-            "title": "Week Ahead in AI: Report of Decart Acquisition by Amazon, Nvidia Investment in Reflection Talk, Plus Will 'Super Intelligence' Term Stick? - AI Insider",
-            "final_score": 66.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791811286,
       "status": "OK",
@@ -21713,6 +21622,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1792044527,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 13.19,
+      "candidates": 0,
+      "queue_before": 9,
+      "queue_after": 9,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
