@@ -1309,8 +1309,6 @@
     "8266ea2c02c26315c5b1b7de6a3b835abefaafdd45b3194666cfd5134fdc60f8": 1792052544
   },
   "known": {
-    "ab92b4eb7a0ca1a3500e3412b41c922a32532176e89b2fdd77666c2f560cb8ed": 1792047641.840684,
-    "bafcef8bfc3af33f9949d71813af1460cd81bf6d9fcbe0345474c25c3a65ae97": 1792047641.840684,
     "2d5962e4ba0ec148769b7392204dc3c802fc808362f6868a9067df965b5114f0": 1792049803.362447,
     "ed2d29da9a628bf18c000b18a07fd5682d19883c386f4551821ab989aac929ac": 1792049803.362447,
     "ee3abaa7ddbbb888a21ccf5a95a9429f491b5d43cc508a102030fb4508ded15b": 1792051959.7013624,
@@ -1755,13 +1753,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792052544.1334774,
+    "last_start_ts": 1792053173.5148923,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792052544.1334774,
-    "last_success_ts": 1792052544.1334774,
+    "last_run_ts": 1792053173.5148923,
+    "last_success_ts": 1792053173.5148923,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 12
   },
   "providers": {
@@ -1776,9 +1774,9 @@
       "updated_at": 1792052448.7490938
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792052441.4111407
+      "disabled_until": 1792139573.4815378,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1792053173.4815392
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1786,26 +1784,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792052544.076115
+      "disabled_until": 1792056772.3133419,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792053172.3133435
     }
   },
   "stories": {
-    "f983fe80726d5caccd998736158de00dfbe4105ee8dc98a222ce3a92df36a6d2": {
-      "time": 1791966297,
-      "title": "F6 — лидер по антифроду и защите от цифровых рисков по версии Kept",
-      "desc": "Компания F6, разработчик технологий для борьбы с киберпреступностью, названа лидером по направлениям антифрода (F6 Fraud Protection) и защиты от цифровых рисков (F6 Digital Risk Protection) в «Обзоре российского рынка кибербезопасности и прогнозе его развития» аудиторско‑консалтинговой компании Kept. F6 также вошла в топ-3 российских поставщиков решений для защиты от сложных и неизвестных киберугроз (F6 XDR), киберразведки (F6 Threat Intelligence) и управления поверхностью атаки (F6 Attack Surface Management). Согласно исследованию Kept , рынок кибербезопасности в России растет опережающими темпами как относительно российского ИТ‑рынка, так и мирового рынка ИБ. По оценкам аналитиков, в 2023–2025 годах ИБ‑рынок рос на 19,1% в год и достиг «в деньгах вендоров» 333 млрд руб., из которых в 2025 г. 240 млрд руб. пришлось на ИБ‑продукты. Крупнейшими сегментами в структуре российского рынка кибербезопасности в 2025 году оставались защита сети — 24%, защита инфраструктуры и конечных точек — 23%. На защиту приложений приходилось 10%, защиту данных — 9% и управление доступом — 5%. По прогнозам аналитиков Kept, в 2025–2031 гг. отрасль в России продолжит развиваться опережающими темпами относительно мирового рынка и будет расти в среднем на 14,8% в год, достигнув «в деньгах вендоров» 763 млрд рублей к 2031 году. Основными драйверами развития сферы ИБ названы ускоренный рост цифровых решений, в том числе технологий и продуктов ИИ, госрегулирование в отрасли, а также увеличение количества сложности кибератак. При этом аналитики отмечают, что спрос будет расти как на комплексные ИБ‑продукты, так и на отдельные решения. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
-    "17ba8bd0ec5cc2f1ec0fddfc071b264eaf4fcd51dc5228404e30b84a00efd269": {
-      "time": 1791966526,
-      "title": "Tech firms launch custom AI chips for data centre inference - ET Datacenters",
-      "desc": "Tech firms launch custom AI chips for data centre inference ET Datacenters",
-      "source": "ET Datacenters",
-      "region": "WORLD"
-    },
     "6b36768ce95befe70f9580af3efb581161d3d680ec63b8c3d1a5c8d0ae94a76c": {
       "time": 1791967716,
       "title": "EU’s AI rules face first enforcement test over lab incidents",
@@ -2145,78 +2129,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791818943,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 16.94,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1791819189,
       "status": "OK",
@@ -21950,6 +21862,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1792053173,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 17.95,
+      "candidates": 0,
+      "queue_before": 12,
+      "queue_after": 12,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
