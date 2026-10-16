@@ -2058,30 +2058,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792163844.8223124,
+    "last_start_ts": 1792164335.7866914,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792163844.8223124,
-    "last_success_ts": 1792163844.8223124,
-    "last_candidates": 36,
+    "last_run_ts": 1792164335.7866914,
+    "last_success_ts": 1792164335.7866914,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1792167433.6714725,
+      "disabled_until": 1792167919.0060515,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1792163833.6714747
+      "updated_at": 1792164319.0060537
     },
     "GROQ": {
-      "disabled_until": 1792167437.3939676,
+      "disabled_until": 1792167920.17609,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792163837.393969
+      "updated_at": 1792164320.176092
     },
     "OPENAI": {
-      "disabled_until": 1792250244.7110791,
+      "disabled_until": 1792250735.6029325,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792163844.7110813
+      "updated_at": 1792164335.6029341
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2089,9 +2089,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1792167443.4655762,
+      "disabled_until": 1792167935.0149035,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792163843.4655778
+      "updated_at": 1792164335.0149055
     }
   },
   "stories": {
@@ -2357,146 +2357,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791954048,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 42.27,
-      "candidates": 27,
-      "queue_before": 3,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 2,
-        "known_recent": 0,
-        "already_queued": 3,
-        "story_queue": 0,
-        "story_history": 5,
-        "added": 17,
-        "candidate_count": 27,
-        "admission_rate": 62.96,
-        "dominant_block": "story_history",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.kommersant.ru/doc/9025807",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.67,
-          "bonus_total": 69.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Появление мощной открытой альтернативы позволяет снизить затраты на генерацию контента и внедрить собственные решения без привязки к API.",
-            "title": "Запрещенная Meta выпустила мощные ИИ-модели под брендом Muse - Kommersant",
-            "final_score": 67.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 17,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 47,
-        "raw_items": 509,
-        "source_counts": {
-          "TechCrunch AI": 9,
-          "VentureBeat AI": -1,
-          "The Verge AI": 5,
-          "OpenAI News": 0,
-          "Google DeepMind": 2,
-          "Hugging Face": 1,
-          "Ars Technica": 7,
-          "Habr AI/News": 7,
-          "CNews": 8,
-          "Euronews": 8
-        },
-        "score_filtered": 464,
-        "quality_filtered": 10,
-        "story_dedup": 8,
-        "candidates": 27,
-        "candidate_rate": 0.0584,
-        "score_buckets": {
-          "0–39": 425,
-          "40–49": 49,
-          "50–59": 30,
-          "60–69": 5,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 1,
-          "7": 0,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791954280,
       "status": "OK",
@@ -22125,6 +21985,78 @@
         },
         "audience_stage": "post_editorial"
       },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1792164335,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 17.37,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 4,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
       "provider": {
         "attempts": [],
         "used": null,
