@@ -1,6 +1,5 @@
 {
   "published": {
-    "95bf021f4634ad38e425021707048e43a5ae33f603e80e1e9499400587268e35": 1789555975,
     "a60a00a3c1606b753e39e81dfe624c0c03fa094411c88b0f5bafe921b6857864": 1789557906,
     "80136bcf3979f0351400d09bd26621c1a200c86647e7d46232443fdfed71bf50": 1789558142,
     "48f5fbe331dec63b3d5e594ecadad30d650640ab318d296e0c0cc2b7f6159b9c": 1789559345,
@@ -1318,9 +1317,6 @@
     "985c84c1db2852bd95887faae9585712a80d3e83e3eb0a874f87e70188e98347": 1792147735
   },
   "known": {
-    "b25181398ef265d2467a4cffc0f93e79726f768799a023c21db9258a0646a635": 1792142449.5797484,
-    "b9ec5db9c024aebcd57a74888a0d12cc1348dedc1715ee87be309acd5bf45fc7": 1792142449.5797484,
-    "3f024f7bdb438f53308a47673128373f93b2e0cf4c1c1b6801c47c568ec5e64b": 1792142449.5797484,
     "acf1f7ea795b93ae15deffd07c4a96e9b92a5ceec29a09096567f11005e65521": 1792144873.8243084,
     "985c84c1db2852bd95887faae9585712a80d3e83e3eb0a874f87e70188e98347": 1792144873.8243084,
     "16ee2a38139a00b8e5d3ba5c0e60c9869c9422bf4c0b56bc2972a6b0da8e32d2": 1792144873.8243084,
@@ -1955,13 +1951,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792147735.5510483,
+    "last_start_ts": 1792148004.5810533,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792147735.5510483,
-    "last_success_ts": 1792147735.5510483,
-    "last_candidates": 23,
-    "last_published": 1,
+    "last_run_ts": 1792148004.5810533,
+    "last_success_ts": 1792148004.5810533,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 17
   },
   "providers": {
@@ -1976,9 +1972,9 @@
       "updated_at": 1792147770.0809581
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792147718.5360963
+      "disabled_until": 1792234404.4653523,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1792148004.465354
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1986,9 +1982,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792147846.3185675
+      "disabled_until": 1792151603.5483556,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792148003.5483577
     }
   },
   "stories": {
@@ -2359,84 +2355,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791910878,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 23.8,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость оценки новой модели для оптимизации текущих рабочих процессов и стека технологий.",
-            "title": "Google launches flagship AI model Gemini 4 Argon for developers, businesses - CNBC TV18",
-            "final_score": 79.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1791911386,
       "status": "OK",
@@ -22111,6 +22029,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1792148004,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 10.15,
+      "candidates": 0,
+      "queue_before": 17,
+      "queue_after": 17,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 5,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
