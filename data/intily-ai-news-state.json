@@ -1272,20 +1272,20 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792255000.9702861,
+    "last_start_ts": 1792255239.9216328,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792255000.9702861,
-    "last_success_ts": 1792255000.9702861,
+    "last_run_ts": 1792255239.9216328,
+    "last_success_ts": 1792255239.9216328,
     "last_candidates": 18,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792255038.60954
+      "updated_at": 1792255273.842595
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1564,84 +1564,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792041442,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 42.81,
-      "candidates": 0,
-      "queue_before": 15,
-      "queue_after": 15,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 10.0,
-          "bonus_total": 30.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Подтверждение прибыльности бизнес-модели ИИ-гиганта диктует необходимость пересмотра стратегии инвестиций и выбора инструментов для бизнеса.",
-            "title": "Anthropic Third-Quarter Revenue Rises to $16.8 Billion as It Achieves Adjusted Profitability: Can Its $2 Trillion IPO Valuation Stand the Test? - TradingKey",
-            "final_score": 77.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 13,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792041916,
       "status": "OK",
@@ -22856,10 +22778,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792255239,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 33.97,
+      "candidates": 18,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 13,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 5,
+        "added": 0,
+        "candidate_count": 18,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет объективно оценить пригодность AI-агентов для автоматизации офисных задач и снизить риски внедрения бесполезных решений.",
+            "title": "AI agents were given an office work exam: Sber released the open Cowork Bench benchmark - www1.ru",
+            "final_score": 69.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 41,
+        "raw_items": 812,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 16,
+          "CNews": 0,
+          "Euronews": 21
+        },
+        "score_filtered": 775,
+        "quality_filtered": 14,
+        "story_dedup": 5,
+        "candidates": 18,
+        "candidate_rate": 0.0233,
+        "score_buckets": {
+          "0–39": 729,
+          "40–49": 59,
+          "50–59": 24,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792255000.9702861,
+  "last_search_ts": 1792255239.9216328,
   "last_publish_ts": 1792255000.9702861,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
