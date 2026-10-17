@@ -1268,30 +1268,30 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792257641.8298686,
+    "last_start_ts": 1792258598.0850933,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792257641.8298686,
-    "last_success_ts": 1792257641.8298686,
+    "last_run_ts": 1792258598.0850933,
+    "last_success_ts": 1792258598.0850933,
     "last_candidates": 19,
     "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1792261288.3813443,
-      "reason": "The read operation timed out",
-      "updated_at": 1792257688.3813465
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1792258635.4015164
     },
     "GROQ": {
-      "disabled_until": 1792261291.508284,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792257691.5082862
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1792258598.0079677
     },
     "OPENAI": {
-      "disabled_until": 1792344096.6618829,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792257696.6618848
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1792258598.0079677
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1299,9 +1299,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1792261295.5549946,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792257695.5549963
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1792258598.0079677
     }
   },
   "stories": {
@@ -1560,145 +1560,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792043086,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 58.84,
-      "candidates": 16,
-      "queue_before": 12,
-      "queue_after": 11,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 4,
-        "known_recent": 0,
-        "already_queued": 12,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 16,
-        "admission_rate": 0.0,
-        "dominant_block": "already_queued",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.fortuneindia.com/technology/anthropic-revenue-jumps-45-to-168-billion-in-q3-as-ai-startup-eyes-ipo/164859",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.67,
-          "bonus_total": 69.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Рост выручки Anthropic подтверждает долгосрочную стабильность их API для внедрения в бизнес-процессы.",
-            "title": "Anthropic revenue jumps 45% to $16.8 billion in Q3 as AI startup eyes IPO - Fortune India",
-            "final_score": 76.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 5,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 55,
-        "raw_items": 474,
-        "source_counts": {
-          "TechCrunch AI": 6,
-          "VentureBeat AI": -1,
-          "The Verge AI": 5,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 8,
-          "Habr AI/News": 9,
-          "CNews": 11,
-          "Euronews": 16
-        },
-        "score_filtered": 428,
-        "quality_filtered": 29,
-        "story_dedup": 1,
-        "candidates": 16,
-        "candidate_rate": 0.0382,
-        "score_buckets": {
-          "0–39": 395,
-          "40–49": 62,
-          "50–59": 15,
-          "60–69": 2,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 1,
-          "7": 1,
-          "8": 2,
-          "9": 0,
-          "10": 1
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792043562,
       "status": "OK",
@@ -23044,10 +22905,140 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1792258598,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 37.35,
+      "candidates": 19,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 13,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 6,
+        "added": 0,
+        "candidate_count": 19,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет объективно оценивать пригодность ИИ-агентов для автоматизации рутины и экономить на внедрении нерабочих решений.",
+            "title": "AI agents were given an office work exam: Sber released the open Cowork Bench benchmark - www1.ru",
+            "final_score": 69.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 37,
+        "raw_items": 864,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 15,
+          "CNews": 0,
+          "Euronews": 18
+        },
+        "score_filtered": 818,
+        "quality_filtered": 18,
+        "story_dedup": 9,
+        "candidates": 19,
+        "candidate_rate": 0.023,
+        "score_buckets": {
+          "0–39": 773,
+          "40–49": 62,
+          "50–59": 25,
+          "60–69": 4,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792257641.8298686,
+  "last_search_ts": 1792258598.0850933,
   "last_publish_ts": 1792255000.9702861,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
