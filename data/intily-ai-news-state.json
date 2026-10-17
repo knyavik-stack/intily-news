@@ -1,6 +1,5 @@
 {
   "published": {
-    "1118f97dc60bf366aa6397eec36c2e42eb793dc071f93d71cfb3ee6f5fec5a87": 1789663980,
     "78cc10eca1452f199418bf969c9517532789c36c7a267d5d32369746708b653f": 1789664459,
     "f520044760655fb9154dfc62b391b438a0911f6aae5ed6891a105c7814a78dcf": 1789664699,
     "c97bc0bdea4c87432e108e197e18b5477fe0538fc7bd3b748e8700e7044ec04b": 1789667106,
@@ -1272,12 +1271,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792255960.7627287,
+    "last_start_ts": 1792256439.9925535,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792255960.7627287,
-    "last_success_ts": 1792255960.7627287,
-    "last_candidates": 17,
+    "last_run_ts": 1792256439.9925535,
+    "last_success_ts": 1792256439.9925535,
+    "last_candidates": 19,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1285,7 +1284,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792256003.7897232
+      "updated_at": 1792256474.2669282
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1564,84 +1563,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792042652,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 54.11,
-      "candidates": 0,
-      "queue_before": 15,
-      "queue_after": 15,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 6.0,
-          "bonus_total": 18.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Понимание кадрового состава помогает отслеживать вектор развития технологий, но не дает мгновенного рычага для изменения бизнес-процессов.",
-            "title": "When Stars Shine: Collective Portrait of Scientists Behind OpenAI’s 722 Publicly Released Papers - 36Kr",
-            "final_score": 63.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 11,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792042843,
       "status": "OK",
@@ -22960,10 +22881,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792256439,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 34.34,
+      "candidates": 19,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 13,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 6,
+        "added": 0,
+        "candidate_count": 19,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.5,
+          "bonus_total": 39.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет объективно тестировать и выбирать AI-агентов для автоматизации рутины, снижая риски внедрения бесполезных решений.",
+            "title": "AI agents were given an office work exam: Sber released the open Cowork Bench benchmark - www1.ru",
+            "final_score": 69.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 38,
+        "raw_items": 834,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 15,
+          "CNews": 0,
+          "Euronews": 19
+        },
+        "score_filtered": 786,
+        "quality_filtered": 20,
+        "story_dedup": 9,
+        "candidates": 19,
+        "candidate_rate": 0.0239,
+        "score_buckets": {
+          "0–39": 743,
+          "40–49": 62,
+          "50–59": 25,
+          "60–69": 4,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792255960.7627287,
+  "last_search_ts": 1792256439.9925535,
   "last_publish_ts": 1792255000.9702861,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
