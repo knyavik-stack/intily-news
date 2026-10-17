@@ -1,6 +1,5 @@
 {
   "published": {
-    "57ba65f9c97fdb3f7c2f9c7a6260f29550810735f36b3b43036a456691909e5f": 1789633254,
     "802de1e0c06183e1d734de129d104dc936da507953625481089acc63ad78a731": 1789633982,
     "9736d9925b3c520e8661e0342ac19608169b7641e01eaf8aea7e1d7b914f4aa9": 1789634935,
     "1d71e1b3bc94f98d198448076480be2dcb76d1604142d214c2ed30c47fb5240f": 1789635655,
@@ -1286,11 +1285,11 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792225000.9165437,
+    "last_start_ts": 1792225498.247207,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792225000.9165437,
-    "last_success_ts": 1792225000.9165437,
+    "last_run_ts": 1792225498.247207,
+    "last_success_ts": 1792225498.247207,
     "last_candidates": 11,
     "last_published": 0,
     "queue_size": 0
@@ -1299,17 +1298,17 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792225240.1491482
+      "updated_at": 1792225554.1990628
     },
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792225240.1491482
+      "updated_at": 1792225498.1577046
     },
     "OPENAI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792225240.1491482
+      "updated_at": 1792225498.1577046
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1319,7 +1318,7 @@
     "OPENROUTER": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792225240.1491482
+      "updated_at": 1792225498.1577046
     }
   },
   "stories": {
@@ -1515,139 +1514,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791982844,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 82.04,
-      "candidates": 42,
-      "queue_before": 16,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 16,
-        "known_recent": 8,
-        "already_queued": 10,
-        "story_queue": 0,
-        "story_history": 3,
-        "added": 5,
-        "candidate_count": 42,
-        "admission_rate": 11.9,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость учета ИБ-рисков при внедрении ИИ-решений для предотвращения финансовых и репутационных потерь.",
-            "title": "F6 — лидер по антифроду и защите от цифровых рисков по версии Kept",
-            "final_score": 82.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 168,
-        "raw_items": 1091,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 2,
-          "Habr AI/News": 34,
-          "CNews": 81,
-          "Euronews": 50
-        },
-        "score_filtered": 991,
-        "quality_filtered": 44,
-        "story_dedup": 14,
-        "candidates": 42,
-        "candidate_rate": 0.0455,
-        "score_buckets": {
-          "0–39": 924,
-          "40–49": 108,
-          "50–59": 51,
-          "60–69": 7,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 2,
-          "6": 4,
-          "7": 10,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 4,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1791983577,
       "status": "OK",
@@ -21203,10 +21069,140 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1792225498,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 55.98,
+      "candidates": 11,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 8,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 0,
+        "candidate_count": 11,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Потенциальное появление альтернативного поставщика GPU может снизить капитальные затраты на инфраструктуру в долгосрочной перспективе.",
+            "title": "US chip startup Bolt Graphics seeks $100 million funding, sidesteps AI battlefield to take on Nvidia and AMD - BigGo Finance",
+            "final_score": 68.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 17,
+        "raw_items": 317,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 2,
+          "CNews": 0,
+          "Euronews": 13
+        },
+        "score_filtered": 295,
+        "quality_filtered": 10,
+        "story_dedup": 1,
+        "candidates": 11,
+        "candidate_rate": 0.0367,
+        "score_buckets": {
+          "0–39": 279,
+          "40–49": 26,
+          "50–59": 11,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792225000.9165437,
+  "last_search_ts": 1792225498.247207,
   "last_publish_ts": 1792223797.4362037,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
