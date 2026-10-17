@@ -1262,27 +1262,29 @@
     "d8944efc2da5e0c41852b5d35ea07b31c9ed8a1916bedb8785c01e6d1aa10f5b": 1792244436,
     "700b31e805490ce3b9095db2a179a56e8e6a60211439832ae8f4e5d2c67e1097": 1792244921,
     "d2da59c7f8ae4b3f5a7346c26ba3b87226e8ccf420a2efc8d854c781cc5b8459": 1792245160,
-    "2623ae691941d18f9dfbae793f81e35bbeec5c8d70d5e8db9b7d81802858ade9": 1792248280
+    "2623ae691941d18f9dfbae793f81e35bbeec5c8d70d5e8db9b7d81802858ade9": 1792248280,
+    "a21e493d0e863abb047436dab07f58c9a180dc0dd440d274c624fb8b53d7c32d": 1792252122
   },
   "known": {
-    "2623ae691941d18f9dfbae793f81e35bbeec5c8d70d5e8db9b7d81802858ade9": 1792248280.0157604
+    "2623ae691941d18f9dfbae793f81e35bbeec5c8d70d5e8db9b7d81802858ade9": 1792248280.0157604,
+    "a21e493d0e863abb047436dab07f58c9a180dc0dd440d274c624fb8b53d7c32d": 1792252122.6434667
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792251879.5086956,
+    "last_start_ts": 1792252122.6434667,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792251879.5086956,
-    "last_success_ts": 1792251879.5086956,
-    "last_candidates": 15,
-    "last_published": 0,
+    "last_run_ts": 1792252122.6434667,
+    "last_success_ts": 1792252122.6434667,
+    "last_candidates": 17,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792251938.9040651
+      "updated_at": 1792252157.6901538
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1515,11 +1517,17 @@
       "desc": "The TechBeat: AI Coding Tip 039 - Write Your Own Zeroth Law (10/17/2026) HackerNoon",
       "source": "HackerNoon",
       "region": "WORLD"
+    },
+    "a21e493d0e863abb047436dab07f58c9a180dc0dd440d274c624fb8b53d7c32d": {
+      "time": 1792252122,
+      "title": "Why are mathematicians concerned about OpenAI’s AI solving problems that stumped researchers for years? - Livemint",
+      "desc": "Why are mathematicians concerned about OpenAI’s AI solving problems that stumped researchers for years? Livemint",
+      "source": "Livemint",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -1537,97 +1545,10 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792006848,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 8.2,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.theverge.com/ai-artificial-intelligence/1011311/the-ai-race-is-back-on",
-            "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STK255_Google_Gemini_A.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-            "width": 1200,
-            "height": 624,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Ускорение конкуренции вынуждает пересматривать стек технологий и следить за новыми релизами для сохранения эффективности.",
-            "title": "The AI race is back on",
-            "final_score": 66.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792007315,
       "status": "OK",
@@ -22647,11 +22568,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792252122,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 35.89,
+      "candidates": 17,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 5,
+        "added": 1,
+        "candidate_count": 17,
+        "admission_rate": 5.88,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://www.livemint.com/ai/why-are-mathematicians-concerned-about-openai-s-ai-solving-problems-that-stumped-researchers-for-years-11792242667461.html",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.67,
+          "bonus_total": 69.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра R&D процессов и оценки рисков автоматизации интеллектуального труда в ближайшей перспективе.",
+            "title": "Why are mathematicians concerned about OpenAI’s AI solving problems that stumped researchers for years? - Livemint",
+            "final_score": 64.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 41,
+        "raw_items": 769,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 17,
+          "CNews": 0,
+          "Euronews": 20
+        },
+        "score_filtered": 731,
+        "quality_filtered": 17,
+        "story_dedup": 4,
+        "candidates": 17,
+        "candidate_rate": 0.0234,
+        "score_buckets": {
+          "0–39": 686,
+          "40–49": 61,
+          "50–59": 22,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792251879.5086956,
-  "last_publish_ts": 1792248280.0157604,
+  "last_search_ts": 1792252122.6434667,
+  "last_publish_ts": 1792252122.6434667,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
