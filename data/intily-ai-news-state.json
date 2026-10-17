@@ -1276,30 +1276,30 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792246838.2277262,
+    "last_start_ts": 1792247080.5858984,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792246838.2277262,
-    "last_success_ts": 1792246838.2277262,
+    "last_run_ts": 1792247080.5858984,
+    "last_success_ts": 1792247080.5858984,
     "last_candidates": 15,
     "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1792249290.2778552,
-      "reason": "The read operation timed out",
-      "updated_at": 1792245690.277857
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1792247116.9132483
     },
     "GROQ": {
-      "disabled_until": 1792250469.2573922,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792246869.2573934
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1792247080.4938126
     },
     "OPENAI": {
-      "disabled_until": 1792333280.428743,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792246880.4287446
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1792247080.4938126
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1307,9 +1307,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1792250479.2666585,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792246879.2666607
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1792247080.4938126
     }
   },
   "stories": {
@@ -1540,96 +1540,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791999877,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 4.43,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft",
-            "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK438_CLIMATE_CHANGE_G.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-            "width": 1200,
-            "height": 624,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 6.0,
-          "bonus_total": 18.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Позволяет оптимизировать операционные процессы в логистике и агросекторе за счет более точного планирования.",
-            "title": "Microsoft has a new machine learning tool to improve weather forecasts",
-            "final_score": 68.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792002525,
       "status": "OK",
@@ -22343,10 +22253,140 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1792247080,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 36.37,
+      "candidates": 15,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 5,
+        "added": 0,
+        "candidate_count": 15,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Снижение стоимости и задержки API позволяет напрямую оптимизировать юнит-экономику AI-продуктов.",
+            "title": "DeepSeek обновила V4.1-Flash",
+            "final_score": 72.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 37,
+        "raw_items": 713,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 16,
+          "CNews": 0,
+          "Euronews": 18
+        },
+        "score_filtered": 672,
+        "quality_filtered": 21,
+        "story_dedup": 5,
+        "candidates": 15,
+        "candidate_rate": 0.0222,
+        "score_buckets": {
+          "0–39": 641,
+          "40–49": 52,
+          "50–59": 20,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792246838.2277262,
+  "last_search_ts": 1792247080.5858984,
   "last_publish_ts": 1792245160.655447,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
