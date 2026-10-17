@@ -1,6 +1,5 @@
 {
   "published": {
-    "aa592d6660053148cfafe4e3b0ec79add526464ec8261e6732815467a8e0474d": 1789631828,
     "62e86fdcde904b3f4ed62ada46aab9919b57266ca7f5263e007cb7ee31b4fd36": 1789632296,
     "8dd917a5bb7d0b1fc8e600b8a711eca35cd30a476378e64f4f640b97bf7cde98": 1789632776,
     "57ba65f9c97fdb3f7c2f9c7a6260f29550810735f36b3b43036a456691909e5f": 1789633254,
@@ -1289,20 +1288,20 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792223797.4362037,
+    "last_start_ts": 1792224038.9307263,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792223797.4362037,
-    "last_success_ts": 1792223797.4362037,
+    "last_run_ts": 1792224038.9307263,
+    "last_success_ts": 1792224038.9307263,
     "last_candidates": 12,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792223847.2282653
+      "updated_at": 1792224093.2629344
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1518,94 +1517,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791980450,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 17.59,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://arstechnica.com/tech-policy/2026/10/openai-google-pushing-new-ai-models-easily-tricked-into-making-nudes-researchers-say/",
-            "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/white-circle-red-team-1152x648.jpg",
-            "width": 1152,
-            "height": 648,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость внедрения дополнительных уровней фильтрации контента для защиты бизнес-приложений от репутационных рисков.",
-            "title": "OpenAI, Google pushing new AI models easily tricked into making nudes, researchers say",
-            "final_score": 74.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791980682,
       "status": "OK",
@@ -21087,10 +20998,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792224038,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 54.35,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 12,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Потенциальное снижение стоимости графического железа для рабочих станций и серверов в долгосрочной перспективе.",
+            "title": "US chip startup Bolt Graphics seeks $100 million funding, sidesteps AI battlefield to take on Nvidia and AMD - BigGo Finance",
+            "final_score": 69.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 18,
+        "raw_items": 312,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 2,
+          "CNews": 0,
+          "Euronews": 13
+        },
+        "score_filtered": 287,
+        "quality_filtered": 10,
+        "story_dedup": 3,
+        "candidates": 12,
+        "candidate_rate": 0.0408,
+        "score_buckets": {
+          "0–39": 272,
+          "40–49": 25,
+          "50–59": 14,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792223797.4362037,
+  "last_search_ts": 1792224038.9307263,
   "last_publish_ts": 1792223797.4362037,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
