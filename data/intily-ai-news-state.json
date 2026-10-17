@@ -1,6 +1,5 @@
 {
   "published": {
-    "1d71e1b3bc94f98d198448076480be2dcb76d1604142d214c2ed30c47fb5240f": 1789635655,
     "02461e899d2236d978ee2528c1ea3cdc5ba6d467672a19f0843d651b38af9e18": 1789635897,
     "75ba771d2fcdff95aedeb03dc885368427fd20285f238a95fb2dcc3f286deb8a": 1789636136,
     "93574baf7280e61dc4b1f8fa175bb2e151c5cc7291e8c6fae244305ee8002909": 1789636855,
@@ -1302,49 +1301,49 @@
         "freshness": 2.0,
         "low_signal_penalty": 0.0,
         "base_score": 40.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 40.5
+        "audience_score": 5.0,
+        "audience_bonus": 15.0,
+        "final_score": 55.5
       },
       "base_score": 40.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 40.5,
+      "audience_bonus": 15.0,
+      "score_stage": "final",
+      "score": 55.5,
       "key": "ce5a521a92e6bb5fbd95df98be13d73793ce42e263ed0e0c888672def30ee88c",
-      "importance": 40.5,
-      "editorial_value": 46.5,
+      "importance": 55.5,
+      "editorial_value": 50.0,
       "topics": [
         "robotics"
       ],
-      "audience_score": null,
+      "audience_score": 5.0,
       "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1792227403.2267416,
+    "last_start_ts": 1792227896.9923928,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792227403.2267416,
-    "last_success_ts": 1792227403.2267416,
-    "last_candidates": 14,
-    "last_published": 1,
+    "last_run_ts": 1792227896.9923928,
+    "last_success_ts": 1792227896.9923928,
+    "last_candidates": 13,
+    "last_published": 0,
     "queue_size": 1
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792227451.3732831
+      "disabled_until": 1792231549.4691417,
+      "reason": "The read operation timed out",
+      "updated_at": 1792227949.4691443
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792225498.1577046
+      "disabled_until": 1792231555.5247445,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792227955.5247464
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792225498.1577046
+      "disabled_until": 1792314382.3470087,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1792227982.3470104
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1352,9 +1351,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792225498.1577046
+      "disabled_until": 1792231581.0852609,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792227981.0852625
     }
   },
   "stories": {
@@ -1557,143 +1556,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791985724,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 41.13,
-      "candidates": 45,
-      "queue_before": 19,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 18,
-        "known_recent": 1,
-        "already_queued": 12,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 12,
-        "candidate_count": 45,
-        "admission_rate": 26.67,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.eu-startups.com/2026/10/flae-robotics-raises-over-e1-million-in-seed-funding-to-develop-its-ai-hospitality-agent/",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 5.5,
-          "bonus_total": 33.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Демонстрирует тренд на автоматизацию клиентского сервиса, требующий оценки целесообразности внедрения ИИ-агентов в бизнес-модель.",
-            "title": "FLÆ Robotics raises over €1 million in Seed funding to develop its AI hospitality agent - EU-Startups",
-            "final_score": 65.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 177,
-        "raw_items": 1200,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 1,
-          "Hugging Face": 0,
-          "Ars Technica": 3,
-          "Habr AI/News": 37,
-          "CNews": 85,
-          "Euronews": 50
-        },
-        "score_filtered": 1096,
-        "quality_filtered": 45,
-        "story_dedup": 14,
-        "candidates": 45,
-        "candidate_rate": 0.044,
-        "score_buckets": {
-          "0–39": 1008,
-          "40–49": 130,
-          "50–59": 54,
-          "60–69": 7,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 2,
-          "6": 4,
-          "7": 10,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791986700,
       "status": "OK",
@@ -21295,10 +21157,143 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792227896,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 99.35,
+      "candidates": 13,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 0,
+        "candidate_count": 13,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 5.0,
+          "bonus_total": 15.0,
+          "max_score": 5.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 5.0,
+            "bonus": 15.0,
+            "reason": "Прогноз высокого уровня без конкретных инструментов для немедленного внедрения в бизнес-процессы.",
+            "title": "Bailey: AI, robotics could reshape monetary policy - Breakingthenews.net",
+            "final_score": 55.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 15,
+        "raw_items": 335,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 2,
+          "CNews": 0,
+          "Euronews": 12
+        },
+        "score_filtered": 310,
+        "quality_filtered": 10,
+        "story_dedup": 2,
+        "candidates": 13,
+        "candidate_rate": 0.0406,
+        "score_buckets": {
+          "0–39": 294,
+          "40–49": 26,
+          "50–59": 14,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "GROQ",
+        "failovers": 1,
+        "failures": 4,
+        "blocked": 1,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792227403.2267416,
+  "last_search_ts": 1792227896.9923928,
   "last_publish_ts": 1792227403.2267416,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
