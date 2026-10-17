@@ -1262,19 +1262,21 @@
     "d2da59c7f8ae4b3f5a7346c26ba3b87226e8ccf420a2efc8d854c781cc5b8459": 1792245160,
     "2623ae691941d18f9dfbae793f81e35bbeec5c8d70d5e8db9b7d81802858ade9": 1792248280,
     "a21e493d0e863abb047436dab07f58c9a180dc0dd440d274c624fb8b53d7c32d": 1792252122,
-    "9a460d4cb6a6cf1b140d084bae7a232c66397e67a34355b9843ddcd9137e22c8": 1792254279
+    "9a460d4cb6a6cf1b140d084bae7a232c66397e67a34355b9843ddcd9137e22c8": 1792254279,
+    "3214e1e304ed11f4e79584c5804c538f249778b1620cde578c5eef66b6f90651": 1792255000
   },
   "known": {
     "a21e493d0e863abb047436dab07f58c9a180dc0dd440d274c624fb8b53d7c32d": 1792252122.6434667,
-    "9a460d4cb6a6cf1b140d084bae7a232c66397e67a34355b9843ddcd9137e22c8": 1792254279.0927975
+    "9a460d4cb6a6cf1b140d084bae7a232c66397e67a34355b9843ddcd9137e22c8": 1792254279.0927975,
+    "3214e1e304ed11f4e79584c5804c538f249778b1620cde578c5eef66b6f90651": 1792255000.9702861
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792254279.0927975,
+    "last_start_ts": 1792255000.9702861,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792254279.0927975,
-    "last_success_ts": 1792254279.0927975,
+    "last_run_ts": 1792255000.9702861,
+    "last_success_ts": 1792255000.9702861,
     "last_candidates": 18,
     "last_published": 1,
     "queue_size": 0
@@ -1283,7 +1285,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792254318.575698
+      "updated_at": 1792255038.60954
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1530,10 +1532,16 @@
       "desc": "Rogue AI Agents Breach Indian Companies Without Detection TechJuice",
       "source": "TechJuice",
       "region": "WORLD"
+    },
+    "3214e1e304ed11f4e79584c5804c538f249778b1620cde578c5eef66b6f90651": {
+      "time": 1792255000,
+      "title": "One decision that made Jensen Huang worth $185 billion: Nvidia nearly went bankrupt in 1996, then a risky - The Economic Times",
+      "desc": "One decision that made Jensen Huang worth $185 billion: Nvidia nearly went bankrupt in 1996, then a risky The Economic Times",
+      "source": "The Economic Times",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "RUSSIA",
@@ -1550,151 +1558,12 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792041161,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 37.86,
-      "candidates": 20,
-      "queue_before": 0,
-      "queue_after": 16,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 2,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 17,
-        "candidate_count": 20,
-        "admission_rate": 85.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость переоценки рисков использования LLM в продуктах из-за возможного ужесточения законодательства.",
-            "title": "Eight states sue OpenAI, saying ChatGPT isn’t safe for kids",
-            "final_score": 71.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 15,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 52,
-        "raw_items": 498,
-        "source_counts": {
-          "TechCrunch AI": 6,
-          "VentureBeat AI": -1,
-          "The Verge AI": 5,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 8,
-          "Habr AI/News": 8,
-          "CNews": 11,
-          "Euronews": 14
-        },
-        "score_filtered": 443,
-        "quality_filtered": 33,
-        "story_dedup": 2,
-        "candidates": 20,
-        "candidate_rate": 0.0448,
-        "score_buckets": {
-          "0–39": 408,
-          "40–49": 68,
-          "50–59": 20,
-          "60–69": 2,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792041442,
       "status": "OK",
@@ -22846,11 +22715,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792255000,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 39.54,
+      "candidates": 18,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 12,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 5,
+        "added": 1,
+        "candidate_count": 18,
+        "admission_rate": 5.56,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 400: Bad Request": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 400: Bad Request"
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 6.67,
+          "bonus_total": 60.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 5.0,
+            "bonus": 15.0,
+            "reason": "Это исторический кейс без прямой применимости к текущим операционным задачам или разработке.",
+            "title": "One decision that made Jensen Huang worth $185 billion: Nvidia nearly went bankrupt in 1996, then a risky - The Economic Times",
+            "final_score": 61.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 42,
+        "raw_items": 801,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 16,
+          "CNews": 0,
+          "Euronews": 22
+        },
+        "score_filtered": 760,
+        "quality_filtered": 17,
+        "story_dedup": 6,
+        "candidates": 18,
+        "candidate_rate": 0.0237,
+        "score_buckets": {
+          "0–39": 722,
+          "40–49": 54,
+          "50–59": 25,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792254279.0927975,
-  "last_publish_ts": 1792254279.0927975,
+  "last_search_ts": 1792255000.9702861,
+  "last_publish_ts": 1792255000.9702861,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
