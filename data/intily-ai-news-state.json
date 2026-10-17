@@ -1,7 +1,5 @@
 {
   "published": {
-    "385062c35a3e379a75cb9383be35971a149ab276fe3222b8b58cca2312a4320b": 1789657755,
-    "f89a659d96885f0623a5dd26f9e7b0ab555bddf0479082e24d26571cb234ea13": 1789658225,
     "e16fb325fda3ed65559ecbb58e00e17718e9bd125ba2b13cffee6779f8dd5803": 1789661825,
     "512e41c8105acad231c58e307185563f90b5329a1b10ed9a1fb383a2bfdf351f": 1789662056,
     "1118f97dc60bf366aa6397eec36c2e42eb793dc071f93d71cfb3ee6f5fec5a87": 1789663980,
@@ -1267,19 +1265,16 @@
     "2623ae691941d18f9dfbae793f81e35bbeec5c8d70d5e8db9b7d81802858ade9": 1792248280
   },
   "known": {
-    "d8944efc2da5e0c41852b5d35ea07b31c9ed8a1916bedb8785c01e6d1aa10f5b": 1792244436.8901532,
-    "700b31e805490ce3b9095db2a179a56e8e6a60211439832ae8f4e5d2c67e1097": 1792244921.1770453,
-    "d2da59c7f8ae4b3f5a7346c26ba3b87226e8ccf420a2efc8d854c781cc5b8459": 1792244921.1770453,
     "2623ae691941d18f9dfbae793f81e35bbeec5c8d70d5e8db9b7d81802858ade9": 1792248280.0157604
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792249720.8826337,
+    "last_start_ts": 1792251399.6529305,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792249720.8826337,
-    "last_success_ts": 1792249720.8826337,
-    "last_candidates": 15,
+    "last_run_ts": 1792251399.6529305,
+    "last_success_ts": 1792251399.6529305,
+    "last_candidates": 14,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1287,7 +1282,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792249763.0836756
+      "updated_at": 1792251436.1673408
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1545,84 +1540,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792005989,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 106.88,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 18,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Повышенный риск утечки ИИ-технологий и необходимость усиления кибербезопасности",
-            "title": "OpenAI accuses ex-employee of moving 100+ files tied to unreleased product - Crypto Briefing",
-            "final_score": 68.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792006130,
       "status": "OK",
@@ -22551,10 +22468,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792251399,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 36.54,
+      "candidates": 14,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 4,
+        "added": 0,
+        "candidate_count": 14,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет объективно сравнивать AI-агентов для автоматизации офисных процессов, экономя время на тестировании.",
+            "title": "AI agents were given an office work exam: Sber released the open Cowork Bench benchmark - www1.ru",
+            "final_score": 69.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 40,
+        "raw_items": 759,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 17,
+          "CNews": 0,
+          "Euronews": 19
+        },
+        "score_filtered": 724,
+        "quality_filtered": 17,
+        "story_dedup": 4,
+        "candidates": 14,
+        "candidate_rate": 0.0195,
+        "score_buckets": {
+          "0–39": 680,
+          "40–49": 60,
+          "50–59": 19,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792249720.8826337,
+  "last_search_ts": 1792251399.6529305,
   "last_publish_ts": 1792248280.0157604,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
