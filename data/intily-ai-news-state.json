@@ -1,6 +1,5 @@
 {
   "published": {
-    "cb4c05eabb072ad297b2beaa8b9e304243ed87e5b60d2205e097129b7aa29b3b": 1789623425,
     "563c3d75202bc9e9dc55b4276a1de4b55013af7bb07d1f4adee8f9540b975c89": 1789625586,
     "e433c5c807563fefdffbd6bb3b2a933dd462ccb4ecf5d7d2b25af55d067dd4c8": 1789625829,
     "76fb4599cc168c645f65a9544e8146a9bbedd6e950e4e25a36fa0ecc39554279": 1789626065,
@@ -1594,30 +1593,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792215169.9041638,
+    "last_start_ts": 1792215435.7881038,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792215169.9041638,
-    "last_success_ts": 1792215169.9041638,
-    "last_candidates": 12,
-    "last_published": 1,
+    "last_run_ts": 1792215435.7881038,
+    "last_success_ts": 1792215435.7881038,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 8
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792215169.8745909
+      "disabled_until": 1792219020.857969,
+      "reason": "The read operation timed out",
+      "updated_at": 1792215420.8579712
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792176795.0166814
+      "disabled_until": 1792219024.3395658,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792215424.3395674
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792176795.0166814
+      "disabled_until": 1792301835.7653296,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1792215435.7653317
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1625,9 +1624,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792176795.0166814
+      "disabled_until": 1792219034.6547964,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792215434.6547976
     }
   },
   "stories": {
@@ -1767,96 +1766,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1791971317,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 4.07,
-      "candidates": 0,
-      "queue_before": 13,
-      "queue_after": 12,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://mashable.com/tech/meta-launches-muse-wonder-ai-model-family",
-            "image_url": "https://helios-i.mashable.com/imagery/articles/02EiJHYtFl66ZGCPLLxJgk6/hero-image.fill.size_1200x675.v1791835618.jpg",
-            "width": 1200,
-            "height": 675,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Появление альтернативной мощной модели позволяет диверсифицировать стек технологий и снизить затраты на API.",
-            "title": "Meta launches Muse Wonder, catching OpenAI, Anthropic: How to try it, benchmark results - Mashable",
-            "final_score": 62.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1791971559,
       "status": "OK",
@@ -21352,6 +21261,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1792215435,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 35.04,
+      "candidates": 0,
+      "queue_before": 8,
+      "queue_after": 8,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 7,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
