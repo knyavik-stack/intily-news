@@ -1269,7 +1269,6 @@
     "d2da59c7f8ae4b3f5a7346c26ba3b87226e8ccf420a2efc8d854c781cc5b8459": 1792245160
   },
   "known": {
-    "7999947c85daac1515287f1dcc3e8306b46a749a547e3e66abcecd719549a1d6": 1792240843.6345844,
     "827a24f66fe70b36b5809ab1db1895b0251c18a68576729a5e45744374e43ee2": 1792243483.114476,
     "d8944efc2da5e0c41852b5d35ea07b31c9ed8a1916bedb8785c01e6d1aa10f5b": 1792244436.8901532,
     "700b31e805490ce3b9095db2a179a56e8e6a60211439832ae8f4e5d2c67e1097": 1792244921.1770453,
@@ -1277,12 +1276,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792245639.9840643,
+    "last_start_ts": 1792246838.2277262,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792245639.9840643,
-    "last_success_ts": 1792245639.9840643,
-    "last_candidates": 14,
+    "last_run_ts": 1792246838.2277262,
+    "last_success_ts": 1792246838.2277262,
+    "last_candidates": 15,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1293,14 +1292,14 @@
       "updated_at": 1792245690.277857
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792245692.0078835
+      "disabled_until": 1792250469.2573922,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792246869.2573934
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792240841.1102476
+      "disabled_until": 1792333280.428743,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1792246880.4287446
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1308,9 +1307,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792240841.1102476
+      "disabled_until": 1792250479.2666585,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792246879.2666607
     }
   },
   "stories": {
@@ -1541,138 +1540,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1791999649,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 63.89,
-      "candidates": 67,
-      "queue_before": 20,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 19,
-        "known_recent": 13,
-        "already_queued": 14,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 20,
-        "candidate_count": 67,
-        "admission_rate": 29.85,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Позволяет оптимизировать операционные риски и планирование для бизнесов, зависящих от климатических условий.",
-            "title": "Microsoft has a new machine learning tool to improve weather forecasts",
-            "final_score": 71.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 192,
-        "raw_items": 1477,
-        "source_counts": {
-          "TechCrunch AI": 6,
-          "VentureBeat AI": -1,
-          "The Verge AI": 7,
-          "OpenAI News": 2,
-          "Google DeepMind": -1,
-          "Hugging Face": 1,
-          "Ars Technica": 4,
-          "Habr AI/News": 40,
-          "CNews": 82,
-          "Euronews": 50
-        },
-        "score_filtered": 1337,
-        "quality_filtered": 51,
-        "story_dedup": 22,
-        "candidates": 67,
-        "candidate_rate": 0.0521,
-        "score_buckets": {
-          "0–39": 1229,
-          "40–49": 155,
-          "50–59": 85,
-          "60–69": 7,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 2,
-          "6": 5,
-          "7": 11,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 4,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1791999877,
       "status": "OK",
@@ -22351,10 +22218,135 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792246838,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 42.23,
+      "candidates": 15,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 5,
+        "added": 0,
+        "candidate_count": 15,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 37,
+        "raw_items": 705,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 16,
+          "CNews": 0,
+          "Euronews": 18
+        },
+        "score_filtered": 666,
+        "quality_filtered": 19,
+        "story_dedup": 5,
+        "candidates": 15,
+        "candidate_rate": 0.0225,
+        "score_buckets": {
+          "0–39": 632,
+          "40–49": 53,
+          "50–59": 20,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 3,
+        "blocked": 5,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792245639.9840643,
+  "last_search_ts": 1792246838.2277262,
   "last_publish_ts": 1792245160.655447,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
