@@ -1,7 +1,5 @@
 {
   "published": {
-    "e16fb325fda3ed65559ecbb58e00e17718e9bd125ba2b13cffee6779f8dd5803": 1789661825,
-    "512e41c8105acad231c58e307185563f90b5329a1b10ed9a1fb383a2bfdf351f": 1789662056,
     "1118f97dc60bf366aa6397eec36c2e42eb793dc071f93d71cfb3ee6f5fec5a87": 1789663980,
     "78cc10eca1452f199418bf969c9517532789c36c7a267d5d32369746708b653f": 1789664459,
     "f520044760655fb9154dfc62b391b438a0911f6aae5ed6891a105c7814a78dcf": 1789664699,
@@ -1263,28 +1261,29 @@
     "700b31e805490ce3b9095db2a179a56e8e6a60211439832ae8f4e5d2c67e1097": 1792244921,
     "d2da59c7f8ae4b3f5a7346c26ba3b87226e8ccf420a2efc8d854c781cc5b8459": 1792245160,
     "2623ae691941d18f9dfbae793f81e35bbeec5c8d70d5e8db9b7d81802858ade9": 1792248280,
-    "a21e493d0e863abb047436dab07f58c9a180dc0dd440d274c624fb8b53d7c32d": 1792252122
+    "a21e493d0e863abb047436dab07f58c9a180dc0dd440d274c624fb8b53d7c32d": 1792252122,
+    "9a460d4cb6a6cf1b140d084bae7a232c66397e67a34355b9843ddcd9137e22c8": 1792254279
   },
   "known": {
-    "2623ae691941d18f9dfbae793f81e35bbeec5c8d70d5e8db9b7d81802858ade9": 1792248280.0157604,
-    "a21e493d0e863abb047436dab07f58c9a180dc0dd440d274c624fb8b53d7c32d": 1792252122.6434667
+    "a21e493d0e863abb047436dab07f58c9a180dc0dd440d274c624fb8b53d7c32d": 1792252122.6434667,
+    "9a460d4cb6a6cf1b140d084bae7a232c66397e67a34355b9843ddcd9137e22c8": 1792254279.0927975
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792253557.4142497,
+    "last_start_ts": 1792254279.0927975,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792253557.4142497,
-    "last_success_ts": 1792253557.4142497,
-    "last_candidates": 15,
-    "last_published": 0,
+    "last_run_ts": 1792254279.0927975,
+    "last_success_ts": 1792254279.0927975,
+    "last_candidates": 18,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792253592.6029162
+      "updated_at": 1792254318.575698
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1524,10 +1523,16 @@
       "desc": "Why are mathematicians concerned about OpenAI’s AI solving problems that stumped researchers for years? Livemint",
       "source": "Livemint",
       "region": "WORLD"
+    },
+    "9a460d4cb6a6cf1b140d084bae7a232c66397e67a34355b9843ddcd9137e22c8": {
+      "time": 1792254279,
+      "title": "Rogue AI Agents Breach Indian Companies Without Detection - TechJuice",
+      "desc": "Rogue AI Agents Breach Indian Companies Without Detection TechJuice",
+      "source": "TechJuice",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -1545,100 +1550,11 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792007798,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 3.51,
-      "candidates": 0,
-      "queue_before": 16,
-      "queue_after": 15,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.theverge.com/ai-artificial-intelligence/1011311/the-ai-race-is-back-on",
-            "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STK255_Google_Gemini_A.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-            "width": 1200,
-            "height": 624,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость диверсификации технологического стека из-за высокой волатильности лидерства на рынке моделей.",
-            "title": "The AI race is back on",
-            "final_score": 69.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792041161,
       "status": "OK",
@@ -22789,11 +22705,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792254279,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 44.36,
+      "candidates": 18,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 12,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 5,
+        "added": 1,
+        "candidate_count": 18,
+        "admission_rate": 5.56,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 400: Bad Request": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 400: Bad Request"
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 8.0,
+          "bonus_total": 72.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Необходим немедленный пересмотр стратегии кибербезопасности из-за появления нового вектора атак через автономных ИИ-агентов.",
+            "title": "Rogue AI Agents Breach Indian Companies Without Detection - TechJuice",
+            "final_score": 68.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 42,
+        "raw_items": 802,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 17,
+          "CNews": 0,
+          "Euronews": 21
+        },
+        "score_filtered": 761,
+        "quality_filtered": 18,
+        "story_dedup": 5,
+        "candidates": 18,
+        "candidate_rate": 0.0237,
+        "score_buckets": {
+          "0–39": 718,
+          "40–49": 60,
+          "50–59": 24,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792253557.4142497,
-  "last_publish_ts": 1792252122.6434667,
+  "last_search_ts": 1792254279.0927975,
+  "last_publish_ts": 1792254279.0927975,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
