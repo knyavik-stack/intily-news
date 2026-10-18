@@ -1238,7 +1238,6 @@
     "e91db22143790feb668182ce8adf360d9bc246eec371f45e5c2cdfcf7a8900b9": 1792342358
   },
   "known": {
-    "a4841a10e7ea198d5619998f2b5307b9d6b61b3aa08e600de4ec6f853d04abb1": 1792337320.3155704,
     "1663ac38828cd9bb3f325927fc183ddcce9319b5f3c108ca182b73c5ffcd6a20": 1792338043.9215837,
     "f47bb6392a18eea639f004d9e064f918ddf63267e05a23ca21a8110c92b557a3": 1792339960.692034,
     "4e119142e545ba87428683e3171828002ff1c68b545ec0f740a2b03c426d68be": 1792339960.692034,
@@ -1248,11 +1247,11 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792342603.588656,
+    "last_start_ts": 1792342840.7634583,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792342603.588656,
-    "last_success_ts": 1792342603.588656,
+    "last_run_ts": 1792342840.7634583,
+    "last_success_ts": 1792342840.7634583,
     "last_candidates": 16,
     "last_published": 0,
     "queue_size": 0
@@ -1261,7 +1260,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792342643.145171
+      "updated_at": 1792342877.4732912
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1540,96 +1539,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792093475,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 2.37,
-      "candidates": 0,
-      "queue_before": 15,
-      "queue_after": 14,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://habr.com/ru/news/1094972/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1094972",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 6.0,
-          "bonus_total": 18.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Ускоряет прототипирование браузерных игр, снижая затраты на разработку MVP.",
-            "title": "Браузерный игровой движок LittleJS получил поддержку 3D‑рендера и редактор уровней",
-            "final_score": 62.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792093721,
       "status": "OK",
@@ -25018,10 +24927,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792342840,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 36.72,
+      "candidates": 16,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 16,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 16,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Необходимость пересмотра юридических рисков и SLA при интеграции сторонних LLM в критические бизнес-процессы.",
+            "title": "Anthropic proposes AI models can be blocked only if they risk $1 billion damage or 50 deaths - India Today",
+            "final_score": 68.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 42,
+        "raw_items": 754,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 15,
+          "CNews": 1,
+          "Euronews": 25
+        },
+        "score_filtered": 723,
+        "quality_filtered": 11,
+        "story_dedup": 4,
+        "candidates": 16,
+        "candidate_rate": 0.0225,
+        "score_buckets": {
+          "0–39": 695,
+          "40–49": 38,
+          "50–59": 20,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792342603.588656,
+  "last_search_ts": 1792342840.7634583,
   "last_publish_ts": 1792342358.4776754,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
