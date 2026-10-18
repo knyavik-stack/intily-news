@@ -1,7 +1,5 @@
 {
   "published": {
-    "c370400f527c415099c28e4fdb55a1c5cf45f9a395d2266b173576da4b0d514c": 1789718734,
-    "589e99cb0f755e0bab1c38e4b321ca6c1cf28b4154daff85bae50a98388a7165": 1789718934,
     "3adaef22087c3b2a2cda12b3512ea724acd12241105c7708020547791e91d914": 1789720855,
     "93d447a37e7eb26eef455506a93f89b6321202edbb1ec0bc32429f19a3f3309c": 1789722059,
     "7390a1beccbd4bb9576cbfa0cdec97ae5f149ee084b133310fc7ddf7ba309d4f": 1789724699,
@@ -1280,31 +1278,31 @@
         "freshness": 2.0,
         "low_signal_penalty": 0.0,
         "base_score": 43.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 43.0
+        "audience_score": 10.0,
+        "audience_bonus": 30.0,
+        "final_score": 73.0
       },
       "base_score": 43.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 43.0,
+      "audience_bonus": 30.0,
+      "score_stage": "final",
+      "score": 73.0,
       "key": "5147a1d653ff88ee64b9eac517738c5c17d26e1393faba6550a87c28ed22769f",
-      "importance": 43.0,
-      "editorial_value": 49.0,
+      "importance": 73.0,
+      "editorial_value": 50.0,
       "topics": [],
-      "audience_score": null,
+      "audience_score": 10.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1792310199.6943736,
+    "last_start_ts": 1792311161.8245454,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792310199.6943736,
-    "last_success_ts": 1792310199.6943736,
-    "last_candidates": 14,
-    "last_published": 1,
+    "last_run_ts": 1792311161.8245454,
+    "last_success_ts": 1792311161.8245454,
+    "last_candidates": 13,
+    "last_published": 0,
     "queue_size": 1
   },
   "providers": {
@@ -1314,14 +1312,14 @@
       "updated_at": 1792310249.9421606
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792310252.8463821
+      "disabled_until": 1792314796.8121583,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792311196.8121598
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792301325.085466
+      "disabled_until": 1792397606.0046299,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1792311206.0046318
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1329,9 +1327,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792301325.085466
+      "disabled_until": 1792314804.7421584,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792311204.742161
     }
   },
   "stories": {
@@ -1583,96 +1581,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1792060606,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 12.88,
-      "candidates": 0,
-      "queue_before": 12,
-      "queue_after": 11,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.foreignpolicyjournal.com/2026/10/15/meta-nasdaq-meta-launches-muse-wonder-ai-model-in-direct-challenge-to-anthropic-and-openai/",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 6.33,
-          "bonus_total": 57.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Появление альтернативной мощной модели расширяет возможности выбора вендора и оптимизации затрат на API.",
-            "title": "Meta (NASDAQ: META) Launches Muse Wonder AI Model In Direct Challenge To Anthropic And OpenAI - www.foreignpolicyjournal.com",
-            "final_score": 69.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792061317,
       "status": "OK",
@@ -23547,10 +23455,141 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792311161,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 46.86,
+      "candidates": 13,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 13,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 10.0,
+          "bonus_total": 30.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 10.0,
+            "bonus": 30.0,
+            "reason": "Нужно немедленно сменить ключи и усилить безопасность.",
+            "title": "Атака на OpenCode, под угрозой API-ключи OpenAI, Anthropic и Google - Pasquale Pillitteri",
+            "final_score": 73.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 15,
+        "raw_items": 348,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 5,
+          "CNews": 0,
+          "Euronews": 8
+        },
+        "score_filtered": 318,
+        "quality_filtered": 12,
+        "story_dedup": 5,
+        "candidates": 13,
+        "candidate_rate": 0.039,
+        "score_buckets": {
+          "0–39": 309,
+          "40–49": 21,
+          "50–59": 17,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 3,
+        "blocked": 5,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792310199.6943736,
+  "last_search_ts": 1792311161.8245454,
   "last_publish_ts": 1792310199.6943736,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
