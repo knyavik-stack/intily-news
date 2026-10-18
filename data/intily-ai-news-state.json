@@ -1,7 +1,5 @@
 {
   "published": {
-    "8e7a434f67801bcfb3223462a207bf4c46420c22e10f41160467050e2b7dd1f2": 1789759975,
-    "42fa8c9570ecdda31ec30f6879f32ace3b944da7d3121ae4e9fe07a932c7f5ec": 1789760697,
     "3bd96ea59d3e6ae415f5b1d83101b140728527cff0b4c52255fdf6b82dc7f67e": 1789794781,
     "69d0a06e6aedbb0362971ed1853730c545f1c89448ff06a6e5f515a13485041e": 1789795035,
     "1a13a2be28c7de33bdc8cc303b8f9e6eeb0aa0a04d78e72ef0a36929ec6f9686": 1789797423,
@@ -1229,13 +1227,15 @@
     "e3d05422d3415f9360d2ac9797cccc67185ded753ec1e1bf4dd3400a3ba0554c": 1792345720,
     "56bb1514d969a42715135a602b02c4202bc06da9bbea0eee9750118ca29e0746": 1792348124,
     "5b477cd1a14e3e73d791cda71eba8af7da21a676d341554504d02ef16e651398": 1792350762,
-    "2e387c4377115c376fe7491c288e29d8a1971f671fa320842076123097d8ccba": 1792351491
+    "2e387c4377115c376fe7491c288e29d8a1971f671fa320842076123097d8ccba": 1792351491,
+    "f975e0bb813b0213cea9990bdfe90c4571390a973d532129b4b53de9a203e083": 1792353428
   },
   "known": {
-    "56bb1514d969a42715135a602b02c4202bc06da9bbea0eee9750118ca29e0746": 1792347879.4650018,
     "5b477cd1a14e3e73d791cda71eba8af7da21a676d341554504d02ef16e651398": 1792350762.074323,
     "2e387c4377115c376fe7491c288e29d8a1971f671fa320842076123097d8ccba": 1792350762.074323,
-    "06de1fb205a0e7d1548585cfebd16012e1fd8cf4704f3f37d8e4cc060b503ae1": 1792350762.074323
+    "06de1fb205a0e7d1548585cfebd16012e1fd8cf4704f3f37d8e4cc060b503ae1": 1792350762.074323,
+    "f975e0bb813b0213cea9990bdfe90c4571390a973d532129b4b53de9a203e083": 1792353428.1712594,
+    "d0b2de91e9611ac05e4ae0a63edb144761a2b4389fc3d2592e8495c898c9e8f6": 1792353428.1712594
   },
   "queue": [
     {
@@ -1274,23 +1274,60 @@
       "audience_score": 6.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Утечка OpenAI, три модели aurora alpha появились в API без анонса - Pasquale Pillitteri",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPa1JHQ2NFdEcyLXFGQndaWW9PWXRYejRoQi1BREVEYmNVZ2hsa2R5SzFXejVwaUtnUE94TjN4ajFyQmZfeFVlYWM0eXpZQ0Q5TGYzRlg3eFhQemhBUzNGQmYzYzZHTkhrcjZQc0ZObFdrQkppaVJXY0pWR1pwUVc2WXhENjllaDlLSVpJb2RR?oc=5",
+      "desc": "Утечка OpenAI, три модели aurora alpha появились в API без анонса Pasquale Pillitteri",
+      "source": "Pasquale Pillitteri",
+      "time": 1792348375.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 11.0,
+        "event_concreteness": 16.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 48.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 48.0
+      },
+      "base_score": 48.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 48.0,
+      "key": "d0b2de91e9611ac05e4ae0a63edb144761a2b4389fc3d2592e8495c898c9e8f6",
+      "importance": 48.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "security_regulation"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1792351491.964024,
+    "last_start_ts": 1792353428.1712594,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792351491.964024,
-    "last_success_ts": 1792351491.964024,
-    "last_candidates": 0,
+    "last_run_ts": 1792353428.1712594,
+    "last_success_ts": 1792353428.1712594,
+    "last_candidates": 21,
     "last_published": 1,
-    "queue_size": 1
+    "queue_size": 2
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792351491.9613752
+      "updated_at": 1792353463.8352077
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1314,20 +1351,6 @@
     }
   },
   "stories": {
-    "8dcaa6159919ea463bd716d8e889da91ff4300aaa359d16ae01436f3405fab4c": {
-      "time": 1792265319,
-      "title": "OpenAI раскрыла 4 инцидента, модель использовала крипто-кошелёк, который ей не принадлежал - Pasquale Pillitteri",
-      "desc": "OpenAI раскрыла 4 инцидента, модель использовала крипто-кошелёк, который ей не принадлежал Pasquale Pillitteri",
-      "source": "Pasquale Pillitteri",
-      "region": "RUSSIA"
-    },
-    "13960cb4b52fb1cd9d9538a4c3d7ce41826fbaa46dd170eeb7ec75789c778c09": {
-      "time": 1792265562,
-      "title": "ChatGPT Slides Launches for Pro, Business and Enterprise, How It Works - Pasquale Pillitteri",
-      "desc": "ChatGPT Slides Launches for Pro, Business and Enterprise, How It Works Pasquale Pillitteri",
-      "source": "Pasquale Pillitteri",
-      "region": "WORLD"
-    },
     "e64b735dc949f7de064883abcc444724f07a2670041478b802296a2d397bebb2": {
       "time": 1792299641,
       "title": "Meta launches open AI model to compete with global rivals. - Vietnam.vn",
@@ -1558,10 +1581,16 @@
       "desc": "Anthropic решила научить нейросеть заключать сделки, как юристы РБК",
       "source": "РБК",
       "region": "RUSSIA"
+    },
+    "f975e0bb813b0213cea9990bdfe90c4571390a973d532129b4b53de9a203e083": {
+      "time": 1792353428,
+      "title": "Google выпустила Artemis, открытого ИИ-агента для телефонов Android - Pasquale Pillitteri",
+      "desc": "Google выпустила Artemis, открытого ИИ-агента для телефонов Android Pasquale Pillitteri",
+      "source": "Pasquale Pillitteri",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -1579,82 +1608,11 @@
     "WORLD",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1792131423,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 26.69,
-      "candidates": 0,
-      "queue_before": 12,
-      "queue_after": 12,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 8,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792131679,
       "status": "OK",
@@ -25349,11 +25307,151 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792353428,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 36.61,
+      "candidates": 21,
+      "queue_before": 1,
+      "queue_after": 2,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 16,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 2,
+        "candidate_count": 21,
+        "admission_rate": 9.52,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://pasqualepillitteri.it/ru/news/25438/google-artemis-otkrytyj-ii-agent-android-ru",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Открытый исходный код агента позволяет внедрять кастомную автоматизацию в мобильные продукты без привязки к проприетарным API.",
+            "title": "Google выпустила Artemis, открытого ИИ-агента для телефонов Android - Pasquale Pillitteri",
+            "final_score": 72.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 41,
+        "raw_items": 834,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 13,
+          "CNews": 1,
+          "Euronews": 24
+        },
+        "score_filtered": 782,
+        "quality_filtered": 16,
+        "story_dedup": 15,
+        "candidates": 21,
+        "candidate_rate": 0.0265,
+        "score_buckets": {
+          "0–39": 752,
+          "40–49": 45,
+          "50–59": 36,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792350762.074323,
-  "last_publish_ts": 1792351491.964024,
+  "last_search_ts": 1792353428.1712594,
+  "last_publish_ts": 1792353428.1712594,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
