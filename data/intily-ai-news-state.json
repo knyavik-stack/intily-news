@@ -1239,36 +1239,35 @@
     "badec4bcc8af64de8edf8a501fe34dc0f35f0f00518853c8f3c63d5740764ebb": 1792325322
   },
   "known": {
-    "6c7a9b3da4c86f35cb762e74557dee617f56f8726906d5a89d849ed2abac572b": 1792323880.644203,
     "ffe5e525c4ee61230d94d9fc737d57518925b8e87ad0b938ab738e6c0b2f81a0": 1792324844.4816895,
     "badec4bcc8af64de8edf8a501fe34dc0f35f0f00518853c8f3c63d5740764ebb": 1792324844.4816895
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792328921.1233492,
+    "last_start_ts": 1792329401.5017638,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792328921.1233492,
-    "last_success_ts": 1792328921.1233492,
+    "last_run_ts": 1792329401.5017638,
+    "last_success_ts": 1792329401.5017638,
     "last_candidates": 8,
     "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1792332565.5491621,
-      "reason": "The read operation timed out",
-      "updated_at": 1792328965.549165
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1792329431.1105695
     },
     "GROQ": {
-      "disabled_until": 1792332571.520667,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792328971.5206695
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1792329401.0387194
     },
     "OPENAI": {
-      "disabled_until": 1792415430.1263783,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792329030.1263802
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1792329401.0387194
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1276,9 +1275,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1792332629.040204,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792329029.0402052
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1792329401.0387194
     }
   },
   "stories": {
@@ -1523,96 +1522,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792076442,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 7.69,
-      "candidates": 0,
-      "queue_before": 15,
-      "queue_after": 14,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 400: Bad Request": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 400: Bad Request"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 6.0,
-          "bonus_total": 18.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Новости о судах и заводах важны для стратегии, но не требуют немедленной смены рабочих процессов.",
-            "title": "Top News Today: GlobalFoundries Plans Two US Fabs, Solvera Raises USD 6.3M, UK Internships Tighten, OpenAI Faces Lawsuits - Analytics Insight",
-            "final_score": 64.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792076680,
       "status": "OK",
@@ -24233,10 +24142,140 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1792329401,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 29.62,
+      "candidates": 8,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 8,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 8,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Задает юридические рамки ответственности, которые напрямую повлияют на комплаенс и риски при внедрении LLM.",
+            "title": "Anthropic proposes AI models can be blocked only if they risk $1 billion damage or 50 deaths - India Today",
+            "final_score": 69.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 28,
+        "raw_items": 550,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 10,
+          "CNews": 1,
+          "Euronews": 17
+        },
+        "score_filtered": 531,
+        "quality_filtered": 11,
+        "story_dedup": 0,
+        "candidates": 8,
+        "candidate_rate": 0.0153,
+        "score_buckets": {
+          "0–39": 514,
+          "40–49": 27,
+          "50–59": 8,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792328921.1233492,
+  "last_search_ts": 1792329401.5017638,
   "last_publish_ts": 1792325322.2026734,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
