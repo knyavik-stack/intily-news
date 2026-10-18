@@ -1235,7 +1235,8 @@
     "f47bb6392a18eea639f004d9e064f918ddf63267e05a23ca21a8110c92b557a3": 1792339960,
     "4e119142e545ba87428683e3171828002ff1c68b545ec0f740a2b03c426d68be": 1792340205,
     "bf04ac3dea68bf9e3ed0b132d8a4e22d3241dcca616c5e7757fb5dade4e72e01": 1792340682,
-    "fb940a293f22b67a4f0da8bab667ffd65b9755f79e208a957d570d01a799823b": 1792341161
+    "fb940a293f22b67a4f0da8bab667ffd65b9755f79e208a957d570d01a799823b": 1792341161,
+    "e91db22143790feb668182ce8adf360d9bc246eec371f45e5c2cdfcf7a8900b9": 1792342358
   },
   "known": {
     "a4841a10e7ea198d5619998f2b5307b9d6b61b3aa08e600de4ec6f853d04abb1": 1792337320.3155704,
@@ -1243,24 +1244,25 @@
     "f47bb6392a18eea639f004d9e064f918ddf63267e05a23ca21a8110c92b557a3": 1792339960.692034,
     "4e119142e545ba87428683e3171828002ff1c68b545ec0f740a2b03c426d68be": 1792339960.692034,
     "bf04ac3dea68bf9e3ed0b132d8a4e22d3241dcca616c5e7757fb5dade4e72e01": 1792340205.9625804,
-    "fb940a293f22b67a4f0da8bab667ffd65b9755f79e208a957d570d01a799823b": 1792341161.399786
+    "fb940a293f22b67a4f0da8bab667ffd65b9755f79e208a957d570d01a799823b": 1792341161.399786,
+    "e91db22143790feb668182ce8adf360d9bc246eec371f45e5c2cdfcf7a8900b9": 1792342358.4776754
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792341402.4316561,
+    "last_start_ts": 1792342358.4776754,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792341402.4316561,
-    "last_success_ts": 1792341402.4316561,
-    "last_candidates": 18,
-    "last_published": 0,
+    "last_run_ts": 1792342358.4776754,
+    "last_success_ts": 1792342358.4776754,
+    "last_candidates": 16,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792341435.3923447
+      "updated_at": 1792342401.2795706
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1507,10 +1509,16 @@
       "desc": "Закон об ИИ в РФ разделил модели на суверенные и национальные Techora.ru",
       "source": "Techora.ru",
       "region": "RUSSIA"
+    },
+    "e91db22143790feb668182ce8adf360d9bc246eec371f45e5c2cdfcf7a8900b9": {
+      "time": 1792342358,
+      "title": "Nvidia's AI Financing Model Is Spreading to Rivals, but Who Ultimately Pays? - Dr. Robert Castellano's Semiconductor Deep Dive Newsletter",
+      "desc": "Nvidia's AI Financing Model Is Spreading to Rivals, but Who Ultimately Pays? Dr. Robert Castellano's Semiconductor Deep Dive Newsletter",
+      "source": "Dr. Robert Castellano's Semiconductor Deep Dive Newsletter",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "RUSSIA",
@@ -1529,99 +1537,10 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792093009,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 23.43,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "jsonld_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "jsonld_image",
-            "source_url": "https://overclockers.ru/blog/Global_Chronicles/amp/266251/II-agent-Meta-sozdal-proekt-chipa-dlya-kriptovaljut-s-chastotoj-100-mln-ciklov-v-sekundu-vsego-za-2000",
-            "image_url": "https://overclockers.ru/st/r/1200/-/legacy/blog/430440/756848_O.png",
-            "width": 728,
-            "height": 486,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.0,
-          "bonus_total": 63.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Снижение стоимости проектирования чипов ускоряет создание кастомного железа для AI-инфраструктуры.",
-            "title": "ИИ-агент Meta* создал проект чипа для криптовалют с частотой 100 млн циклов в секунду всего за $2000 - Overclockers.ru",
-            "final_score": 70.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792093240,
       "status": "OK",
@@ -24919,11 +24838,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792342358,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 43.87,
+      "candidates": 16,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 15,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 1,
+        "candidate_count": 16,
+        "admission_rate": 6.25,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://drrobertcastellano.substack.com/p/nvidias-ai-financing-model-is-spreading",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.33,
+          "bonus_total": 66.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра стратегии закупок и оценки рисков контрагентов из-за надувающегося долгового пузыря в AI-инфраструктуре.",
+            "title": "Nvidia's AI Financing Model Is Spreading to Rivals, but Who Ultimately Pays? - Dr. Robert Castellano's Semiconductor Deep Dive Newsletter",
+            "final_score": 64.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 45,
+        "raw_items": 746,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 16,
+          "CNews": 1,
+          "Euronews": 27
+        },
+        "score_filtered": 712,
+        "quality_filtered": 14,
+        "story_dedup": 4,
+        "candidates": 16,
+        "candidate_rate": 0.0228,
+        "score_buckets": {
+          "0–39": 684,
+          "40–49": 41,
+          "50–59": 20,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792341402.4316561,
-  "last_publish_ts": 1792341161.399786,
+  "last_search_ts": 1792342358.4776754,
+  "last_publish_ts": 1792342358.4776754,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
