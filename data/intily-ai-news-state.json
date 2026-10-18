@@ -1241,20 +1241,20 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792345720.582591,
+    "last_start_ts": 1792346202.8338964,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792345720.582591,
-    "last_success_ts": 1792345720.582591,
-    "last_candidates": 19,
-    "last_published": 1,
+    "last_run_ts": 1792346202.8338964,
+    "last_success_ts": 1792346202.8338964,
+    "last_candidates": 18,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792345758.6049113
+      "updated_at": 1792346248.072258
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1540,146 +1540,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792127799,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 66.61,
-      "candidates": 19,
-      "queue_before": 1,
-      "queue_after": 13,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 4,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 13,
-        "candidate_count": 19,
-        "admission_rate": 68.42,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "<urlopen error timed out>": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "<urlopen error timed out>"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость адаптации архитектуры безопасности под новые ограничения корпоративных LLM.",
-            "title": "Google's 'Gemini 4 Argon' Launch Exposes Big Tech's Dual Strategy: Performance Rivalry Meets Security Control - BigGo Finance",
-            "final_score": 69.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 12,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 63,
-        "raw_items": 536,
-        "source_counts": {
-          "TechCrunch AI": 6,
-          "VentureBeat AI": -1,
-          "The Verge AI": 6,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 2,
-          "Ars Technica": 9,
-          "Habr AI/News": 10,
-          "CNews": 10,
-          "Euronews": 19
-        },
-        "score_filtered": 498,
-        "quality_filtered": 13,
-        "story_dedup": 6,
-        "candidates": 19,
-        "candidate_rate": 0.0402,
-        "score_buckets": {
-          "0–39": 448,
-          "40–49": 62,
-          "50–59": 25,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 1,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792128529,
       "status": "OK",
@@ -25145,10 +25005,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792346202,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 45.25,
+      "candidates": 18,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 18,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 18,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Формирование стандартов ответственности напрямую влияет на риски и стратегию внедрения ИИ-решений в бизнес.",
+            "title": "Anthropic proposes AI models can be blocked only if they risk $1 billion damage or 50 deaths - India Today",
+            "final_score": 71.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 42,
+        "raw_items": 789,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 15,
+          "CNews": 1,
+          "Euronews": 24
+        },
+        "score_filtered": 751,
+        "quality_filtered": 15,
+        "story_dedup": 5,
+        "candidates": 18,
+        "candidate_rate": 0.0241,
+        "score_buckets": {
+          "0–39": 718,
+          "40–49": 47,
+          "50–59": 23,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792345720.582591,
+  "last_search_ts": 1792346202.8338964,
   "last_publish_ts": 1792345720.582591,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
