@@ -1252,8 +1252,6 @@
     "fc1a0c88d712d47d1779fb7b266563d5ce9cf4f3d6995d271be0a1975b66a7b0": 1792310199
   },
   "known": {
-    "cad19757469b03dd5a01928a333d31408651ac84dc86b892be50db4922978c36": 1792306601.1374693,
-    "d6145e61659052561aca6218fb557531a86434d161a02a989e94168325b7d2e9": 1792306601.1374693,
     "4db6de98b07efce6019defb0cc238f441320ba3a62627703e0d586739e846486": 1792308038.644489,
     "fc1a0c88d712d47d1779fb7b266563d5ce9cf4f3d6995d271be0a1975b66a7b0": 1792310199.6943736,
     "5147a1d653ff88ee64b9eac517738c5c17d26e1393faba6550a87c28ed22769f": 1792310199.6943736
@@ -1296,30 +1294,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792311161.8245454,
+    "last_start_ts": 1792312364.3264844,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792311161.8245454,
-    "last_success_ts": 1792311161.8245454,
+    "last_run_ts": 1792312364.3264844,
+    "last_success_ts": 1792312364.3264844,
     "last_candidates": 13,
     "last_published": 0,
     "queue_size": 1
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1792313849.9421587,
+      "disabled_until": 1792315995.8538673,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1792310249.9421606
+      "updated_at": 1792312395.8538692
     },
     "GROQ": {
-      "disabled_until": 1792314796.8121583,
+      "disabled_until": 1792315998.8840015,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792311196.8121598
+      "updated_at": 1792312398.884003
     },
     "OPENAI": {
-      "disabled_until": 1792397606.0046299,
+      "disabled_until": 1792398822.8059437,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792311206.0046318
+      "updated_at": 1792312422.8059454
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1327,9 +1325,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1792314804.7421584,
+      "disabled_until": 1792316021.685188,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792311204.742161
+      "updated_at": 1792312421.6851895
     }
   },
   "stories": {
@@ -1581,146 +1579,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1792061317,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 38.08,
-      "candidates": 33,
-      "queue_before": 11,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 12,
-        "known_recent": 0,
-        "already_queued": 7,
-        "story_queue": 2,
-        "story_history": 5,
-        "added": 7,
-        "candidate_count": 33,
-        "admission_rate": 21.21,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://fortune.com/2026/10/15/anthropic-dual-use-ai-defends-oversight-singapore/",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.5,
-          "bonus_total": 51.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость учитывать риски блокировок и цензуры при выборе Anthropic в качестве провайдера для корпоративных решений.",
-            "title": "At Singapore launch, Anthropic defends its oversight of how customers use its model, citing AI’s ‘dual use’ risks - Fortune",
-            "final_score": 75.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 6,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 136,
-        "raw_items": 666,
-        "source_counts": {
-          "TechCrunch AI": 3,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 30,
-          "CNews": 57,
-          "Euronews": 45
-        },
-        "score_filtered": 601,
-        "quality_filtered": 26,
-        "story_dedup": 6,
-        "candidates": 33,
-        "candidate_rate": 0.0623,
-        "score_buckets": {
-          "0–39": 552,
-          "40–49": 73,
-          "50–59": 37,
-          "60–69": 3,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 2,
-          "6": 3,
-          "7": 4,
-          "8": 2,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792062049,
       "status": "OK",
@@ -23586,10 +23444,137 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1792312364,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 58.52,
+      "candidates": 13,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 13,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 16,
+        "raw_items": 335,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 5,
+          "CNews": 0,
+          "Euronews": 10
+        },
+        "score_filtered": 305,
+        "quality_filtered": 12,
+        "story_dedup": 5,
+        "candidates": 13,
+        "candidate_rate": 0.0408,
+        "score_buckets": {
+          "0–39": 297,
+          "40–49": 20,
+          "50–59": 17,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 1
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "OPENROUTER",
+        "failovers": 2,
+        "failures": 4,
+        "blocked": 2,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792311161.8245454,
+  "last_search_ts": 1792312364.3264844,
   "last_publish_ts": 1792310199.6943736,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
