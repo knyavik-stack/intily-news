@@ -1,6 +1,5 @@
 {
   "published": {
-    "7350f7a940632c3d2d3da529408d8b7bd0ba1db209ea16bb1ea10208262e1b83": 1789746062,
     "1f1367eeca89f7ac7b3e65ae839d4ee319dd66cd04815b943f007416365f0813": 1789747036,
     "adb7bc67c271a077a66e75e843d3e6f35f02faf15dfb8fe41bcdb5c72db01866": 1789747507,
     "2fb16520d2b1093b5e4c5154b2eaa64ba75da69fdaf92c1f74ae8b0e16d04040": 1789750383,
@@ -1237,27 +1236,26 @@
     "1663ac38828cd9bb3f325927fc183ddcce9319b5f3c108ca182b73c5ffcd6a20": 1792338043
   },
   "known": {
-    "3a5fe02d0f944424bbd33413cf8b9030e7f5ed38e2136ca037e90f82d004c5e6": 1792333241.9615514,
     "7c529a14333e11c02898971bd142211c9ebaaaff5f52c039f0681c0cdf1989b3": 1792335162.1670136,
     "a4841a10e7ea198d5619998f2b5307b9d6b61b3aa08e600de4ec6f853d04abb1": 1792337320.3155704,
     "1663ac38828cd9bb3f325927fc183ddcce9319b5f3c108ca182b73c5ffcd6a20": 1792338043.9215837
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792338043.9215837,
+    "last_start_ts": 1792338761.473917,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792338043.9215837,
-    "last_success_ts": 1792338043.9215837,
-    "last_candidates": 12,
-    "last_published": 1,
+    "last_run_ts": 1792338761.473917,
+    "last_success_ts": 1792338761.473917,
+    "last_candidates": 14,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792338084.5063748
+      "updated_at": 1792338799.5261827
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1281,13 +1279,6 @@
     }
   },
   "stories": {
-    "a21e493d0e863abb047436dab07f58c9a180dc0dd440d274c624fb8b53d7c32d": {
-      "time": 1792252122,
-      "title": "Why are mathematicians concerned about OpenAI’s AI solving problems that stumped researchers for years? - Livemint",
-      "desc": "Why are mathematicians concerned about OpenAI’s AI solving problems that stumped researchers for years? Livemint",
-      "source": "Livemint",
-      "region": "WORLD"
-    },
     "9a460d4cb6a6cf1b140d084bae7a232c66397e67a34355b9843ddcd9137e22c8": {
       "time": 1792254279,
       "title": "Rogue AI Agents Breach Indian Companies Without Detection - TechJuice",
@@ -1522,96 +1513,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792086278,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 8.2,
-      "candidates": 0,
-      "queue_before": 16,
-      "queue_after": 15,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://abn.agency/2026/10/15/putin-podderzhal-sozdanie-fondov-rosta-i-pryamyh-investiczij-v-rossii/",
-            "image_url": "https://abn.agency/wp-content/uploads/2023/12/3ubxthrlbmppphhijbf3zxzwjmxo1mmv.jpg",
-            "width": 1880,
-            "height": 1160,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Появление новых источников финансирования напрямую влияет на стратегию развития и бюджеты технологических проектов.",
-            "title": "Путин поддержал создание фондов роста и прямых инвестиций в России - Агентство Бизнес Новостей",
-            "final_score": 65.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792086759,
       "status": "OK",
@@ -24678,10 +24579,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792338761,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 38.06,
+      "candidates": 14,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 14,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 14,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Необходимость пересмотра стратегий управления рисками и комплаенса при внедрении LLM.",
+            "title": "Anthropic proposes AI models can be blocked only if they risk $1 billion damage or 50 deaths - India Today",
+            "final_score": 68.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 39,
+        "raw_items": 720,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 16,
+          "CNews": 1,
+          "Euronews": 22
+        },
+        "score_filtered": 694,
+        "quality_filtered": 11,
+        "story_dedup": 1,
+        "candidates": 14,
+        "candidate_rate": 0.0206,
+        "score_buckets": {
+          "0–39": 669,
+          "40–49": 35,
+          "50–59": 15,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792338043.9215837,
+  "last_search_ts": 1792338761.473917,
   "last_publish_ts": 1792338043.9215837,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
