@@ -1252,26 +1252,24 @@
     "8bd6bc58bf9eb39d762d8e754477f6791c10920b3c976331b3e548cc162d9609": 1792315001
   },
   "known": {
-    "fc1a0c88d712d47d1779fb7b266563d5ce9cf4f3d6995d271be0a1975b66a7b0": 1792310199.6943736,
-    "5147a1d653ff88ee64b9eac517738c5c17d26e1393faba6550a87c28ed22769f": 1792310199.6943736,
     "8bd6bc58bf9eb39d762d8e754477f6791c10920b3c976331b3e548cc162d9609": 1792313081.1274
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792315001.626414,
+    "last_start_ts": 1792315720.3055904,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792315001.626414,
-    "last_success_ts": 1792315001.626414,
+    "last_run_ts": 1792315720.3055904,
+    "last_success_ts": 1792315720.3055904,
     "last_candidates": 13,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792315033.782338
+      "updated_at": 1792315755.0557585
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1543,96 +1541,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792063006,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 25.06,
-      "candidates": 0,
-      "queue_before": 15,
-      "queue_after": 14,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.konsulteer.com/article/sbs-and-nvidia-launch-sovereign-ai-foundation-for-secure-banking-operations",
-            "image_url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_6zyd3yhke38a9888q30x65enba/1a9289ebd65e4c62fe29a0f8cd4b7483_1789627526570.png",
-            "width": 1920,
-            "height": 1080,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 5.33,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра архитектуры безопасности при внедрении LLM в банковских процессах.",
-            "title": "SBS and NVIDIA Launch Sovereign AI Foundation for Secure Banking Operations - Konsulteer",
-            "final_score": 68.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792063718,
       "status": "OK",
@@ -23638,10 +23546,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792315720,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 34.79,
+      "candidates": 13,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 12,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 13,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Необходимость пересмотра юридических рисков и SLA при внедрении сторонних LLM в бизнес-процессы.",
+            "title": "Anthropic proposes AI models can be blocked only if they risk $1 billion damage or 50 deaths - India Today",
+            "final_score": 70.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 15,
+        "raw_items": 365,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 5,
+          "CNews": 0,
+          "Euronews": 9
+        },
+        "score_filtered": 333,
+        "quality_filtered": 15,
+        "story_dedup": 4,
+        "candidates": 13,
+        "candidate_rate": 0.0371,
+        "score_buckets": {
+          "0–39": 324,
+          "40–49": 24,
+          "50–59": 16,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792315001.626414,
+  "last_search_ts": 1792315720.3055904,
   "last_publish_ts": 1792315001.626414,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
