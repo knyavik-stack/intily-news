@@ -1,9 +1,5 @@
 {
   "published": {
-    "915686d62f5f47c15c5a943e57321c0b018d88ad18fdba2f3f02a23487233cc2": 1789730456,
-    "821d8f94b56f079d33aa15c4c363bf9943582d500f9459505bd134fba8883afa": 1789730698,
-    "9f8327599be6f67fe1b69b2e303888430b9e1c2116c40f4f01d60d41411659a5": 1789730935,
-    "880b447a9b20616b2be66bf26526484a640cb5212224dc73b6c6b8d576223cf9": 1789731178,
     "b6e645b493014daeb6e6328e3ef6712812eee297044d2882095c7a0c2e842b85": 1789731898,
     "862b180eb8bdb0c47bc1f765669a9a1417aff535149083f80bb069bbfc1f02db": 1789733097,
     "b67ac8d43e3aeecce61ccbbeccf2222de05ac0059c6c2ca2c1a7b5d62264aa44": 1789735024,
@@ -1244,38 +1240,38 @@
     "5147a1d653ff88ee64b9eac517738c5c17d26e1393faba6550a87c28ed22769f": 1792313081,
     "8bd6bc58bf9eb39d762d8e754477f6791c10920b3c976331b3e548cc162d9609": 1792315001,
     "95abc412024e643e7cc429d9defddc784f941670abb1c96a25f0e8bea573a542": 1792317160,
-    "db9646e86edab7daafdfb1a5e8bf561bdf707d5da33ba436d95f970694fe56eb": 1792318599
+    "db9646e86edab7daafdfb1a5e8bf561bdf707d5da33ba436d95f970694fe56eb": 1792318599,
+    "6c7a9b3da4c86f35cb762e74557dee617f56f8726906d5a89d849ed2abac572b": 1792323880
   },
   "known": {
-    "95abc412024e643e7cc429d9defddc784f941670abb1c96a25f0e8bea573a542": 1792317160.280995,
-    "db9646e86edab7daafdfb1a5e8bf561bdf707d5da33ba436d95f970694fe56eb": 1792318119.8135467
+    "6c7a9b3da4c86f35cb762e74557dee617f56f8726906d5a89d849ed2abac572b": 1792323880.644203
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792322200.8661478,
+    "last_start_ts": 1792323880.644203,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792322200.8661478,
-    "last_success_ts": 1792322200.8661478,
-    "last_candidates": 14,
-    "last_published": 0,
+    "last_run_ts": 1792323880.644203,
+    "last_success_ts": 1792323880.644203,
+    "last_candidates": 12,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1792325852.1645708,
-      "reason": "The read operation timed out",
-      "updated_at": 1792322252.164573
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1792323917.9625099
     },
     "GROQ": {
-      "disabled_until": 1792325855.188926,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792322255.1889274
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1792323880.5503259
     },
     "OPENAI": {
-      "disabled_until": 1792408692.935881,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792322292.9358828
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1792323880.5503259
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1283,9 +1279,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1792325891.7314353,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792322291.7314367
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1792323880.5503259
     }
   },
   "stories": {
@@ -1505,10 +1501,16 @@
       "desc": "Злоумышленники, стоящие за кампанией GhostAction, скомпрометировали около 1 900 учетных записей GitHub. С их помощью они внедрили вредоносные процессы GitHub Actions более чем в 30 000 репозиториев. Цель — похитить токены CI/CD, ключи доступа к облакам и API-ключи ИИ-провайдеров. Пик активности пришелся на 8 и 9 октября. В общей сложности хакеры попытавшись извлечь 3 174 секрета. Как случилось и что делать →",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "6c7a9b3da4c86f35cb762e74557dee617f56f8726906d5a89d849ed2abac572b": {
+      "time": 1792323880,
+      "title": "Perplexity представила Photon — поисковый движок для ИИ-агентов с задержкой от 160 мс",
+      "desc": "Perplexity разработала Photon — собственный движок поиска и ранжирования веб-страниц, который теперь обслуживает поисковый конвейер компании. На его основе запустили быстрый режим Search API для ИИ-агентов: он снижает задержку и стоимость поиска, но немного уступает стандартному режиму по релевантности результатов. Photon заменил адаптированный open-source движок, который перестал справляться с растущим индексом и нагрузкой. По данным Perplexity, новый движок сократил задержку на 99-м перцентиле примерно с 800 до 65 мс. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -1527,146 +1529,10 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1792069727,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 40.43,
-      "candidates": 47,
-      "queue_before": 17,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 12,
-        "known_recent": 4,
-        "already_queued": 13,
-        "story_queue": 0,
-        "story_history": 8,
-        "added": 10,
-        "candidate_count": 47,
-        "admission_rate": 21.28,
-        "dominant_block": "already_queued",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.cybersecurity-insiders.com/what-the-hugging-face-incident-tells-us-about-deploying-ai-agents-safely/",
-            "image_url": "https://www.cybersecurity-insiders.com/wp-content/uploads/AI-Security_-Blue-Defense-Red-Threats.png",
-            "width": 1072,
-            "height": 603,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходимость немедленного аудита прав доступа и управления секретами для всех AI-агентов в продакшене.",
-            "title": "What the Hugging Face incident tells us about deploying AI agents safely - Cybersecurity Insiders",
-            "final_score": 69.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 5,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 164,
-        "raw_items": 1213,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 40,
-          "CNews": 69,
-          "Euronews": 50
-        },
-        "score_filtered": 1108,
-        "quality_filtered": 48,
-        "story_dedup": 10,
-        "candidates": 47,
-        "candidate_rate": 0.0448,
-        "score_buckets": {
-          "0–39": 1039,
-          "40–49": 115,
-          "50–59": 53,
-          "60–69": 6,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 3,
-          "6": 4,
-          "7": 4,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792069963,
       "status": "OK",
@@ -23945,11 +23811,151 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1792323880,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 38.72,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 12,
+        "admission_rate": 8.33,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://mashable.com/tech/google-launches-gemini-4-argon",
+            "image_url": "https://helios-i.mashable.com/imagery/articles/05vhp7rrUwA1N1olaNQef4H/hero-image.fill.size_1200x675.v1791916862.png",
+            "width": 1200,
+            "height": 675,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходима срочная оценка производительности новой модели для оптимизации затрат на API и обновления стека технологий.",
+            "title": "Google releases Gemini 4 Argon, its new frontier model: Benchmarks, how to try it, and pricing - Mashable",
+            "final_score": 74.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 24,
+        "raw_items": 425,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 7,
+          "CNews": 1,
+          "Euronews": 16
+        },
+        "score_filtered": 393,
+        "quality_filtered": 17,
+        "story_dedup": 3,
+        "candidates": 12,
+        "candidate_rate": 0.0299,
+        "score_buckets": {
+          "0–39": 382,
+          "40–49": 27,
+          "50–59": 14,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792322200.8661478,
-  "last_publish_ts": 1792318599.5228941,
+  "last_search_ts": 1792323880.644203,
+  "last_publish_ts": 1792323880.644203,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
