@@ -1,7 +1,5 @@
 {
   "published": {
-    "baa531f44887f027d0c4b6278adfd735990a97af44667ffecad93e494a8341b9": 1789739818,
-    "e0785eca8e8e9384f9566588e3f840bb910442ee65ce72dbcf1804b85b405304": 1789740548,
     "b2b9634a1215f58b1a4da68ffd4ef6f4983ed90046da96c8b9c2e1f757b36bf2": 1789742471,
     "b1bf3609ef39a0b9b9cb99fecd1ac7213dba253ef709d97c7ff17851cd329c76": 1789742710,
     "114a0e3c285d12ea0c99c1049207af78b24f9404d0f2d7bd0a751f0294827542": 1789742967,
@@ -1235,28 +1233,30 @@
     "ffe5e525c4ee61230d94d9fc737d57518925b8e87ad0b938ab738e6c0b2f81a0": 1792324844,
     "badec4bcc8af64de8edf8a501fe34dc0f35f0f00518853c8f3c63d5740764ebb": 1792325322,
     "61d00f6f2668b37fe5f6ffdd920047aedc7644beeb0eb1bbdaf60310075cb772": 1792330359,
-    "76e32636c28ad9d06453ee4ad1abe343e1cb9c8cda75a44908a3c6c8b09c9b0f": 1792330838
+    "76e32636c28ad9d06453ee4ad1abe343e1cb9c8cda75a44908a3c6c8b09c9b0f": 1792330838,
+    "3a5fe02d0f944424bbd33413cf8b9030e7f5ed38e2136ca037e90f82d004c5e6": 1792333241
   },
   "known": {
     "61d00f6f2668b37fe5f6ffdd920047aedc7644beeb0eb1bbdaf60310075cb772": 1792330120.919952,
-    "76e32636c28ad9d06453ee4ad1abe343e1cb9c8cda75a44908a3c6c8b09c9b0f": 1792330359.6365933
+    "76e32636c28ad9d06453ee4ad1abe343e1cb9c8cda75a44908a3c6c8b09c9b0f": 1792330359.6365933,
+    "3a5fe02d0f944424bbd33413cf8b9030e7f5ed38e2136ca037e90f82d004c5e6": 1792333241.9615514
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792331560.6848502,
+    "last_start_ts": 1792333241.9615514,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792331560.6848502,
-    "last_success_ts": 1792331560.6848502,
-    "last_candidates": 9,
-    "last_published": 0,
+    "last_run_ts": 1792333241.9615514,
+    "last_success_ts": 1792333241.9615514,
+    "last_candidates": 12,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792331591.956722
+      "updated_at": 1792333281.3062708
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1475,12 +1475,18 @@
       "desc": "Группа учёных из Шведского института оборонных исследований (FOI) представила систему , способную обнаружить скрытый пистолет (или другое короткоствольное огнестрельное оружие) с помощью сигналов Wi‑Fi. Решение позиционируется как альтернатива видеонаблюдению и металлодетекторам. Система под названием WiFireNet изучает информацию о состоянии канала (channel state information, CSI) — данные о том, как объект искажает сигналы Wi‑Fi. Анализ этих данных позволяет идентифицировать предмет. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "3a5fe02d0f944424bbd33413cf8b9030e7f5ed38e2136ca037e90f82d004c5e6": {
+      "time": 1792333241,
+      "title": "«Стоп-кран» для сверхразума: Anthropic написала закон для Конгресса - Электронная газета «Век»",
+      "desc": "«Стоп-кран» для сверхразума: Anthropic написала закон для Конгресса Электронная газета «Век»",
+      "source": "Электронная газета «Век»",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1497,101 +1503,10 @@
     "WORLD",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1792080787,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 42.53,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 2,
-      "item_failures": 1,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/companies/cloud_ru/news/1094868/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1094868",
-            "image_url": "https://habr.com/share/publication/1094868/21ed3d4d32cfd19a523529ccdddb728b/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Новые источники финансирования для AI‑стартапов",
-            "title": "Путин поддержал создание фондов роста и прямых инвестиций в России - Агентство Бизнес Новостей",
-            "final_score": 65.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 3,
-        "blocked": 5,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792082213,
       "status": "OK",
@@ -24392,11 +24307,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792333241,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 48.62,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 1,
+        "candidate_count": 12,
+        "admission_rate": 8.33,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "html_img": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "html_img",
+            "source_url": "https://wek.ru/stop-kran-dlya-sverxrazuma-anthropic-napisala-zakon-dlya-kongressa",
+            "image_url": "https://wek.ru/images/stop-kran-dlya-sverxrazuma-anthropic-napisala-zakon-dlya-kongressa.jpg",
+            "width": 1024,
+            "height": 679,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.33,
+          "bonus_total": 66.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Регулирование ограничит доступ к мощностям и усложнит юридический комплаенс для AI-проектов.",
+            "title": "«Стоп-кран» для сверхразума: Anthropic написала закон для Конгресса - Электронная газета «Век»",
+            "final_score": 63.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 33,
+        "raw_items": 587,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 14,
+          "CNews": 1,
+          "Euronews": 18
+        },
+        "score_filtered": 564,
+        "quality_filtered": 11,
+        "story_dedup": 0,
+        "candidates": 12,
+        "candidate_rate": 0.0217,
+        "score_buckets": {
+          "0–39": 543,
+          "40–49": 31,
+          "50–59": 12,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792331560.6848502,
-  "last_publish_ts": 1792330838.97416,
+  "last_search_ts": 1792333241.9615514,
+  "last_publish_ts": 1792333241.9615514,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
