@@ -1,6 +1,5 @@
 {
   "published": {
-    "7390a1beccbd4bb9576cbfa0cdec97ae5f149ee084b133310fc7ddf7ba309d4f": 1789724699,
     "e03f130aa5c6a35e76146b605f689ca402ed81d196a094c8c3e317662e4b1427": 1789725667,
     "02126116784680c3b77a038bbd092227d4a00e1aa8f4f5945212c3d69e4df3d2": 1789726385,
     "7909ad7f8a3d04d44835ae86d91cd75abf3936821b9990ea2d653929bcd5b315": 1789726619,
@@ -1249,27 +1248,29 @@
     "4db6de98b07efce6019defb0cc238f441320ba3a62627703e0d586739e846486": 1792308760,
     "fc1a0c88d712d47d1779fb7b266563d5ce9cf4f3d6995d271be0a1975b66a7b0": 1792310199,
     "5147a1d653ff88ee64b9eac517738c5c17d26e1393faba6550a87c28ed22769f": 1792313081,
-    "8bd6bc58bf9eb39d762d8e754477f6791c10920b3c976331b3e548cc162d9609": 1792315001
+    "8bd6bc58bf9eb39d762d8e754477f6791c10920b3c976331b3e548cc162d9609": 1792315001,
+    "95abc412024e643e7cc429d9defddc784f941670abb1c96a25f0e8bea573a542": 1792317160
   },
   "known": {
-    "8bd6bc58bf9eb39d762d8e754477f6791c10920b3c976331b3e548cc162d9609": 1792313081.1274
+    "8bd6bc58bf9eb39d762d8e754477f6791c10920b3c976331b3e548cc162d9609": 1792313081.1274,
+    "95abc412024e643e7cc429d9defddc784f941670abb1c96a25f0e8bea573a542": 1792317160.280995
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792316201.2981732,
+    "last_start_ts": 1792317160.280995,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792316201.2981732,
-    "last_success_ts": 1792316201.2981732,
-    "last_candidates": 13,
-    "last_published": 0,
+    "last_run_ts": 1792317160.280995,
+    "last_success_ts": 1792317160.280995,
+    "last_candidates": 14,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792316239.7633677
+      "updated_at": 1792317205.9155135
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1516,12 +1517,18 @@
       "desc": "Anthropic proposes AI models can be blocked only if they risk $1 billion damage or 50 deaths India Today",
       "source": "India Today",
       "region": "WORLD"
+    },
+    "95abc412024e643e7cc429d9defddc784f941670abb1c96a25f0e8bea573a542": {
+      "time": 1792317160,
+      "title": "Replit knocks Claude off the top spot: OpenAI becomes the default model, while Anthropic insists the partnership still stands - metla.mk",
+      "desc": "Replit knocks Claude off the top spot: OpenAI becomes the default model, while Anthropic insists the partnership still stands metla.mk",
+      "source": "metla.mk",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -1538,97 +1545,10 @@
     "WORLD",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792063966,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 14.25,
-      "candidates": 0,
-      "queue_before": 14,
-      "queue_after": 13,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://kubnews.ru/vlast/2026/10/15/gubernator-kubani-vstretilsya-s-rukovodstvom-natsionalnoy-assotsiatsii-agentstv-investitsiy-i-razvit/",
-            "image_url": "https://kubnews.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/814/1200_630_2/aibwfjidbsdsb6o2sya181lykls5fefj.webp",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 5.5,
-          "bonus_total": 33.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 3.0,
-            "bonus": 9.0,
-            "reason": "Новость не несет прикладной ценности для AI-специалистов, кроме общего понимания бюрократических процессов в регионах.",
-            "title": "Губернатор Кубани встретился с руководством Национальной ассоциации агентств инвестиций и развития - Новости Краснодара и Краснодарского края",
-            "final_score": 51.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792065398,
       "status": "OK",
@@ -23666,11 +23586,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792317160,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 48.8,
+      "candidates": 14,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 12,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 14,
+        "admission_rate": 7.14,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://metla.mk/en/news/replit-openai-anthropic/",
+            "image_url": "https://metla.mk/app/uploads/2026/10/mg-replit-openai-anthropic.webp",
+            "width": 1600,
+            "height": 874,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.0,
+          "bonus_total": 63.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Необходимость пересмотра выбора модели в пайплайнах разработки из-за смены вендора в популярных инструментах.",
+            "title": "Replit knocks Claude off the top spot: OpenAI becomes the default model, while Anthropic insists the partnership still stands - metla.mk",
+            "final_score": 63.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 15,
+        "raw_items": 366,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 5,
+          "CNews": 0,
+          "Euronews": 10
+        },
+        "score_filtered": 334,
+        "quality_filtered": 14,
+        "story_dedup": 4,
+        "candidates": 14,
+        "candidate_rate": 0.0399,
+        "score_buckets": {
+          "0–39": 325,
+          "40–49": 23,
+          "50–59": 17,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792316201.2981732,
-  "last_publish_ts": 1792315001.626414,
+  "last_search_ts": 1792317160.280995,
+  "last_publish_ts": 1792317160.280995,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
