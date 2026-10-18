@@ -1233,29 +1233,31 @@
     "76e32636c28ad9d06453ee4ad1abe343e1cb9c8cda75a44908a3c6c8b09c9b0f": 1792330838,
     "3a5fe02d0f944424bbd33413cf8b9030e7f5ed38e2136ca037e90f82d004c5e6": 1792333241,
     "7c529a14333e11c02898971bd142211c9ebaaaff5f52c039f0681c0cdf1989b3": 1792335162,
-    "a4841a10e7ea198d5619998f2b5307b9d6b61b3aa08e600de4ec6f853d04abb1": 1792337320
+    "a4841a10e7ea198d5619998f2b5307b9d6b61b3aa08e600de4ec6f853d04abb1": 1792337320,
+    "1663ac38828cd9bb3f325927fc183ddcce9319b5f3c108ca182b73c5ffcd6a20": 1792338043
   },
   "known": {
     "3a5fe02d0f944424bbd33413cf8b9030e7f5ed38e2136ca037e90f82d004c5e6": 1792333241.9615514,
     "7c529a14333e11c02898971bd142211c9ebaaaff5f52c039f0681c0cdf1989b3": 1792335162.1670136,
-    "a4841a10e7ea198d5619998f2b5307b9d6b61b3aa08e600de4ec6f853d04abb1": 1792337320.3155704
+    "a4841a10e7ea198d5619998f2b5307b9d6b61b3aa08e600de4ec6f853d04abb1": 1792337320.3155704,
+    "1663ac38828cd9bb3f325927fc183ddcce9319b5f3c108ca182b73c5ffcd6a20": 1792338043.9215837
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792337562.645417,
+    "last_start_ts": 1792338043.9215837,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792337562.645417,
-    "last_success_ts": 1792337562.645417,
-    "last_candidates": 13,
-    "last_published": 0,
+    "last_run_ts": 1792338043.9215837,
+    "last_success_ts": 1792338043.9215837,
+    "last_candidates": 12,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792337594.399217
+      "updated_at": 1792338084.5063748
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1488,10 +1490,16 @@
       "desc": "Nvidia is expected to capture about $700 billion of a $1.6 trillion AI capex boom Crypto Briefing",
       "source": "Crypto Briefing",
       "region": "WORLD"
+    },
+    "1663ac38828cd9bb3f325927fc183ddcce9319b5f3c108ca182b73c5ffcd6a20": {
+      "time": 1792338043,
+      "title": "Samsara Launches AI Agent Studio for Fleet & Operations - Commercial Carrier Journal",
+      "desc": "Samsara Launches AI Agent Studio for Fleet & Operations Commercial Carrier Journal",
+      "source": "Commercial Carrier Journal",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -1510,99 +1518,10 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792086043,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 4.66,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 16,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.citybiz.co/article/919085/band-launches-desktop-app-to-manage-multiple-ai-coding-agents-across-development-teams/",
-            "image_url": "https://www.citybiz.co/wp-content/uploads/2026/10/Band.jpg",
-            "width": 400,
-            "height": 225,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Оптимизация управления AI-агентами напрямую сокращает время на координацию разработки и снижает издержки на рутинные задачи.",
-            "title": "BAND Launches Desktop App to Manage Multiple AI Coding Agents Across Development Teams - citybiz",
-            "final_score": 65.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792086278,
       "status": "OK",
@@ -24618,11 +24537,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792338043,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 42.05,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 1,
+        "candidate_count": 12,
+        "admission_rate": 8.33,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 403: Forbidden": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 403: Forbidden"
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.33,
+          "bonus_total": 66.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Прямая возможность автоматизации операционных затрат в логистическом бизнесе через кастомных ИИ-агентов.",
+            "title": "Samsara Launches AI Agent Studio for Fleet & Operations - Commercial Carrier Journal",
+            "final_score": 66.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 7,
+        "direct_feed_errors": 3,
+        "direct_raw_items": 16,
+        "raw_items": 677,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 15,
+          "CNews": 1,
+          "Euronews": -1
+        },
+        "score_filtered": 655,
+        "quality_filtered": 10,
+        "story_dedup": 0,
+        "candidates": 12,
+        "candidate_rate": 0.0182,
+        "score_buckets": {
+          "0–39": 633,
+          "40–49": 31,
+          "50–59": 12,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792337562.645417,
-  "last_publish_ts": 1792337320.3155704,
+  "last_search_ts": 1792338043.9215837,
+  "last_publish_ts": 1792338043.9215837,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
