@@ -1230,7 +1230,8 @@
     "10f59ed0fc97ecc6f1fbb3ab61de21793b07187ac93260ecd9218ace619b9e1f": 1792388475,
     "a97fdd81ddfff618d55426b3f97ec666844562da3f988d655a703ff60a75f036": 1792389915,
     "5be87668839cccfd1de2f0dd16975f9b3aa2af8ccdecf7d1bffc99498a322dcc": 1792390390,
-    "918d880ed2af96222e2d2cf977e2ccad912a69a5033fdf90019c6d91841cc8a4": 1792390867
+    "918d880ed2af96222e2d2cf977e2ccad912a69a5033fdf90019c6d91841cc8a4": 1792390867,
+    "dd88a15f3a9b25c2d6a6f252d25ed2cab58b226e30444012a02389f5a1a6c1c9": 1792392068
   },
   "known": {
     "dd7dd57d83152e3ebf6121daa161f37fe384323ef0c5bf993e4e0b542a3890e3": 1792387269.2027142,
@@ -1241,7 +1242,9 @@
     "918d880ed2af96222e2d2cf977e2ccad912a69a5033fdf90019c6d91841cc8a4": 1792387269.2027142,
     "26426a724b24becfc1d65e5c2bdca3612f47f31f9e017eb4ecb4a594e83a4fda": 1792387269.2027142,
     "3307d8e2598e780bae1d10e83f529877d6941ff19dc350cb703f23ff2d498b5e": 1792387269.2027142,
-    "5be87668839cccfd1de2f0dd16975f9b3aa2af8ccdecf7d1bffc99498a322dcc": 1792389915.5898156
+    "5be87668839cccfd1de2f0dd16975f9b3aa2af8ccdecf7d1bffc99498a322dcc": 1792389915.5898156,
+    "dd88a15f3a9b25c2d6a6f252d25ed2cab58b226e30444012a02389f5a1a6c1c9": 1792392068.1812797,
+    "2e782a6fe5371ee1ff70043c977fd0e98943fa3da76a8e847707ec346d743100": 1792392068.1812797
   },
   "queue": [
     {
@@ -1385,23 +1388,58 @@
       ],
       "audience_score": 5.0,
       "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Apple ввела новые правила для App Store против интимных ИИ‑дипфейков",
+      "link": "https://habr.com/ru/news/1096018/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1096018",
+      "desc": "Apple обновила «Правила проверки приложений» (App Review Guidelines), внеся ряд изменений, направленных на усиление защиты от вредоносного контента и недобросовестных практик при модерации. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1792390051.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 8.0,
+        "event_concreteness": 13.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 2.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 43.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 43.5
+      },
+      "base_score": 43.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 43.5,
+      "key": "2e782a6fe5371ee1ff70043c977fd0e98943fa3da76a8e847707ec346d743100",
+      "importance": 43.5,
+      "editorial_value": 50.0,
+      "topics": [],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1792390867.2995586,
+    "last_start_ts": 1792392068.1812797,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792390867.2995586,
-    "last_success_ts": 1792390867.2995586,
-    "last_candidates": 0,
+    "last_run_ts": 1792392068.1812797,
+    "last_success_ts": 1792392068.1812797,
+    "last_candidates": 14,
     "last_published": 1,
-    "queue_size": 4
+    "queue_size": 5
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792390869.279456
+      "updated_at": 1792392103.6773832
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1662,11 +1700,17 @@
       "desc": "Anthropic Unveils Internal Employment Report: AI Agents Work 6x Longer Than Humans, Ushering in the \"Meta-Work Era\" 36Kr",
       "source": "36Kr",
       "region": "WORLD"
+    },
+    "dd88a15f3a9b25c2d6a6f252d25ed2cab58b226e30444012a02389f5a1a6c1c9": {
+      "time": 1792392068,
+      "title": "OpenAI запустила сайт с аппаратными проектами, созданными с помощью Codex",
+      "desc": "OpenAI запустила сайт с коллекцией аппаратных проектов, которые авторы разработали с помощью AI‑агента Codex. В каталоге представлено 20 проектов, инструкции для желающих их повторить и форма для отправки собственных разработок. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -1684,87 +1728,10 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1792138165,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 41.79,
-      "candidates": 0,
-      "queue_before": 14,
-      "queue_after": 14,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимый инструмент для минимизации рисков безопасности при промышленном внедрении LLM.",
-            "title": "Positive Technologies научила PT Application Firewall защищать ИИ-агентов и LLM от кибератак",
-            "final_score": 74.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 9,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792138852,
       "status": "OK",
@@ -25540,11 +25507,151 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792392068,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 36.57,
+      "candidates": 14,
+      "queue_before": 4,
+      "queue_after": 5,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 2,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 2,
+        "candidate_count": 14,
+        "admission_rate": 14.29,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://mashable.com/tech/google-launches-gemini-4-argon",
+            "image_url": "https://helios-i.mashable.com/imagery/articles/05vhp7rrUwA1N1olaNQef4H/hero-image.fill.size_1200x675.v1791916862.png",
+            "width": 1200,
+            "height": 675,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Необходим срочный аудит текущих LLM-решений для оптимизации стоимости и качества ответов.",
+            "title": "Google releases Gemini 4 Argon, its new frontier model: Benchmarks, how to try it, and pricing - Mashable",
+            "final_score": 78.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 37,
+        "raw_items": 508,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 9,
+          "CNews": 11,
+          "Euronews": 16
+        },
+        "score_filtered": 477,
+        "quality_filtered": 13,
+        "story_dedup": 4,
+        "candidates": 14,
+        "candidate_rate": 0.0297,
+        "score_buckets": {
+          "0–39": 450,
+          "40–49": 40,
+          "50–59": 16,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 1,
+          "7": 2,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792389915.5898156,
-  "last_publish_ts": 1792390867.2995586,
+  "last_search_ts": 1792392068.1812797,
+  "last_publish_ts": 1792392068.1812797,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
