@@ -1237,8 +1237,6 @@
     "f6c46088dcd9a21982c49271183615e6d58b304cb305ded414496bec489bc80c": 1792431667
   },
   "known": {
-    "132622741ed03819bc16181faa22e08ccc7ca3e913d3aae9e06c4faf386f0474": 1792427014.6431324,
-    "6a5058e68979415f3914b7497b5f0020c658cccb481262f82317509a888441eb": 1792427014.6431324,
     "93c7019be3ba4bd7267db76af9fb45682c29f3d807c50a51c9691afd527a7f55": 1792429044.8713448,
     "d13536884d411c17419b19fe5570caa53efa568458f53781c3405ecbf07b74ec": 1792429044.8713448,
     "c54f80b95335692207f0edf2af38e743e77b9c09ee858af4faeb09464690753c": 1792430956.1152046,
@@ -1282,10 +1280,10 @@
       "audience_score": 8.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1792432386,
+      "last_failed_at": 1792432630,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 5,
-      "next_retry_at": 1792437186
+      "failure_count": 6,
+      "next_retry_at": 1792442230
     },
     {
       "region": "WORLD",
@@ -1322,10 +1320,10 @@
       ],
       "audience_score": 10.0,
       "tier": "A",
-      "last_failed_at": 1792432386,
+      "last_failed_at": 1792432630,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1792432686
+      "failure_count": 2,
+      "next_retry_at": 1792433230
     },
     {
       "region": "RUSSIA",
@@ -1965,30 +1963,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792432386.976913,
+    "last_start_ts": 1792432630.7176507,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792432386.976913,
-    "last_success_ts": 1792432386.976913,
+    "last_run_ts": 1792432630.7176507,
+    "last_success_ts": 1792432630.7176507,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1792435268.676028,
+      "disabled_until": 1792436232.1061783,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1792431668.6760294
+      "updated_at": 1792432632.106181
     },
     "GROQ": {
-      "disabled_until": 1792435270.6744947,
+      "disabled_until": 1792436237.0516272,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792431670.6744957
+      "updated_at": 1792432637.0516295
     },
     "OPENAI": {
-      "disabled_until": 1792518804.6108987,
+      "disabled_until": 1792519088.9329212,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792432404.6109009
+      "updated_at": 1792432688.9329228
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1996,9 +1994,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1792436003.4182801,
+      "disabled_until": 1792436287.8916028,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792432403.4182823
+      "updated_at": 1792432687.8916044
     }
   },
   "stories": {
@@ -2334,96 +2332,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1792216608,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 28.22,
-      "candidates": 0,
-      "queue_before": 5,
-      "queue_after": 4,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "IMAGE_CANDIDATES_FAILED: og_image:IMAGE_CONTENT_TYPE_INVALID | og_image:IMAGE_CONTENT_TYPE_INVALID | og_image:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENS": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "IMAGE_CANDIDATES_FAILED: og_image:IMAGE_CONTENT_TYPE_INVALID | og_image:IMAGE_CONTENT_TYPE_INVALID | og_image:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INVALID | html_img:IMAGE_DIMENSIONS_INV"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.0,
-          "bonus_total": 72.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Законодательные инициативы такого уровня напрямую влияют на доступность API и стоимость разработки ИИ-продуктов в ближайшей перспективе.",
-            "title": "Politico: Anthropic представила Конгрессу США законопроект о контроле над ИИ - Kommersant",
-            "final_score": 70.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792216848,
       "status": "OK",
@@ -26903,6 +26811,83 @@
         "failovers": 0,
         "failures": 2,
         "blocked": 14,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1792432630,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 58.6,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
         "skipped_no_key": 0,
         "retries": 0
       },
