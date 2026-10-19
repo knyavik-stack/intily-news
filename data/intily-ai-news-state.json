@@ -1,7 +1,5 @@
 {
   "published": {
-    "c3e8af0a217e3259ed0849006b0e0048de239da338761401d835b73ddd0c8037": 1789825735,
-    "cb20eaad1299dc8d6e5e23122fa00aa47a187f334da95fac48f80b62959b0c5a": 1789826699,
     "93dfea9cba0894906ac192317f1bed03431b9fe8b37370b6e21145994e2b915d": 1789828390,
     "5d01a42f5c024d822d444329cf7233c6bdd6bf55f9dc96d1f5d731fc1bd6ee64": 1789828856,
     "defb6b730139907da51a0d7d57a677ac291a0a9eba45192c5ce89a7c3c8f693e": 1789829335,
@@ -1236,12 +1234,10 @@
     "0fc8097e5f484a10381e2c6079ad42404d9a19957a833486fcd44f4aef771a90": 1792413676,
     "285dbadd8c54cbf6ed901a3dc2b2ee4a8d80cb020f60d7883698726279716537": 1792414394,
     "f57a86c7c583af1af4f9ae168eb1a85fd167f189db523d2c0671700553169226": 1792415351,
-    "4953f0ab2d8badefcff2f8e85db1c80c5f1deb6e7ddb615c18e28309d6fe24d4": 1792415837
+    "4953f0ab2d8badefcff2f8e85db1c80c5f1deb6e7ddb615c18e28309d6fe24d4": 1792415837,
+    "05a14f18eaa2e1ca36f2e878602e484654301eb8dc1b1ab7886f09677d0b615c": 1792419707
   },
   "known": {
-    "285dbadd8c54cbf6ed901a3dc2b2ee4a8d80cb020f60d7883698726279716537": 1792413434.4270597,
-    "0fc8097e5f484a10381e2c6079ad42404d9a19957a833486fcd44f4aef771a90": 1792413434.4270597,
-    "5995029e0a26fec9a0de03dddae4a419732c074e01fc67885fc81fbcb54fe1e2": 1792413434.4270597,
     "4953f0ab2d8badefcff2f8e85db1c80c5f1deb6e7ddb615c18e28309d6fe24d4": 1792415351.610555,
     "8a75b1ba45f5ad134841d6794d306c5c5f8ebabb07a86de6fec3e5e5f4755627": 1792415351.610555,
     "0f33eebbcaad0c2933b816f08737c1a02c77b9ad84a2b9d352497ba21700fe5f": 1792415351.610555,
@@ -1250,7 +1246,11 @@
     "36a5859d144d56e103375b03232f908ce1c8c95760ec4bde9f544173bc5fbda9": 1792417270.1455476,
     "f82f359392e88a48361282a9d12b0b653b026e3e6d17e73de489eb2287b66f03": 1792417270.1455476,
     "809c916f5c6ff007db1c96530cad42f4c3a4932181d8071af975b1a175a1ff52": 1792417270.1455476,
-    "0ac8f42c3293e08054f9672f845e68f111e62fab8fbfe2c4127c8b0187d22963": 1792417270.1455476
+    "0ac8f42c3293e08054f9672f845e68f111e62fab8fbfe2c4127c8b0187d22963": 1792417270.1455476,
+    "783100537a5ad72222fd9509debbd5c785f3d519d457182858f1128fa4bb2f90": 1792419707.919041,
+    "fed9f924a15906ecf15444392de5ccce1f85fdc7323df33f3d351ba1b1ebe441": 1792419707.919041,
+    "473b1d29286ff54404ece4aa2ed1ad5fc1b8ff93a9035cd965007072b19b0456": 1792419707.919041,
+    "f9326319499542f2c3e88f43ecd9c89fa3022e6bdef20544519bf3e794fb6339": 1792419707.919041
   },
   "queue": [
     {
@@ -1290,7 +1290,11 @@
       ],
       "audience_score": 10.0,
       "tier": "S",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1792419707,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1792420007
     },
     {
       "region": "WORLD",
@@ -1459,19 +1463,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 2.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 40.5,
+        "base_score": 40.0,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 61.5
+        "final_score": 61.0
       },
-      "base_score": 40.5,
+      "base_score": 40.0,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 61.5,
+      "score": 61.0,
       "key": "0f33eebbcaad0c2933b816f08737c1a02c77b9ad84a2b9d352497ba21700fe5f",
-      "importance": 61.5,
+      "importance": 61.0,
       "editorial_value": 50.0,
       "topics": [
         "business"
@@ -1514,43 +1518,6 @@
       "tier": "A"
     },
     {
-      "region": "WORLD",
-      "title": "Exclusive | Nvidia-Backed Startup doubleAI Launches Model to Pare Cost of Compute - WSJ",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNODZ3djBBc0dFbnhMb2NnWk15VWNMRnFDMk90dUtJSWJQWGhPak41eGhDYVE0WEJONXRuMlZ6dDExLVZFR1dsSXhpQ05PbUdzdmRYeXMxN19zMlBBeDFyMnlXc1FQVnY2OEp2STRMSVp3YnQtc3FGQ050anJPVk1nWnZDSzQ2eHp2czZIQlhEWFlJblUtc1NfRTJYbFppMFB1YzJCYWoxNmExbVBzeEVn?oc=5",
-      "desc": "Exclusive | Nvidia-Backed Startup doubleAI Launches Model to Pare Cost of Compute WSJ",
-      "source": "WSJ",
-      "time": 1792411200.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 12.0,
-        "event_concreteness": 14.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 1.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 54.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 54.5
-      },
-      "base_score": 54.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 54.5,
-      "key": "05a14f18eaa2e1ca36f2e878602e484654301eb8dc1b1ab7886f09677d0b615c",
-      "importance": 54.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "chips",
-        "models"
-      ],
-      "audience_score": null,
-      "tier": "A"
-    },
-    {
       "region": "RUSSIA",
       "title": "MiniMax выпустили M3.1 Flash — в OpenCode ещё три дня бесплатно",
       "link": "https://habr.com/ru/news/1096300/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1096300",
@@ -1566,19 +1533,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 2.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 51.5,
+        "base_score": 51.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 51.5
+        "final_score": 51.0
       },
-      "base_score": 51.5,
+      "base_score": 51.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 51.5,
+      "score": 51.0,
       "key": "36a5859d144d56e103375b03232f908ce1c8c95760ec4bde9f544173bc5fbda9",
-      "importance": 51.5,
+      "importance": 51.0,
       "editorial_value": 50.0,
       "topics": [
         "agents",
@@ -1663,6 +1630,156 @@
     },
     {
       "region": "WORLD",
+      "title": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
+      "desc": "A hacker broke into more than 100 websites using an army of AI agents that mostly operated on their own, according to findings from the AI security firm Norforge. Though Norforge doesn't name the targets, Reuters reports that the victims included companies like John Deere, SharkNinja, and Cummins. Concerns over AI-powered cybersecurity breaches have grown […]",
+      "source": "The Verge AI",
+      "time": 1792418321.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 9.0,
+        "event_concreteness": 13.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 46.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 46.5
+      },
+      "base_score": 46.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 46.5,
+      "key": "783100537a5ad72222fd9509debbd5c785f3d519d457182858f1128fa4bb2f90",
+      "importance": 46.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "security_regulation"
+      ],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "The Verge: сайты начали закрывать доступ ИИ‑агентам",
+      "link": "https://habr.com/ru/news/1096332/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1096332",
+      "desc": "В последние недели пользователи сервисов Muse (разработчик Meta*), Grok (xAI), Dots (OpenAI) и Instinct столкнулись с блокировками: у ИИ‑агентов не получается выполнять задачи на различных сайтах. По данным The Verge, интернет‑ресурсы постепенно закрывают доступ для ИИ‑агентов. Так, компания Yelp предоставляет доступ к своему сайту только ИИ‑агентам, владельцы которых оплачивают программу лицензирования данных. Авиакомпания Delta Air Lines, в свою очередь, препятствует покупке билетов через ИИ‑агентов. Банк JPMorgan Chase и финансовая компания Charles Schwab также подтвердили, что блокируют доступ ИИ‑агентов из соображений безопасности. Сайты Cars.com и Amtrak также закрыты для систем искусственного интеллекта. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1792419499.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 13.0,
+        "event_concreteness": 0.0,
+        "practical_value": 6.5,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 44.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 44.5
+      },
+      "base_score": 44.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 44.5,
+      "key": "fed9f924a15906ecf15444392de5ccce1f85fdc7323df33f3d351ba1b1ebe441",
+      "importance": 44.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "security_regulation",
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "Accenture and Google Launch Gemini AI Agent Programme for US Federal Agencies - Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOTDFPMjNtUHVFbUZtUWJiN3VxNVJfYk0yY1VOYmZSN3NXbHR3SUZwNy1VcWxoZnJWdG93Mko3b254REp2REMwcFhydjExZEhZTTAtWGZUV1BmOUpJZWZ4SXFyZUR2d3k5U05uc0diRVJzNjVlN1JHNWVKM21wZ2xkYW43UWNTWVZ5ZHpaUnhwV09lcTZhN1dZV1hISU93Zw?oc=5",
+      "desc": "Accenture and Google Launch Gemini AI Agent Programme for US Federal Agencies Yahoo Finance",
+      "source": "Yahoo Finance",
+      "time": 1792417776.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 10.0,
+        "event_concreteness": 13.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 44.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 44.5
+      },
+      "base_score": 44.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 44.5,
+      "key": "473b1d29286ff54404ece4aa2ed1ad5fc1b8ff93a9035cd965007072b19b0456",
+      "importance": 44.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "models"
+      ],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
+      "region": "WORLD",
+      "title": "Figurobot Launches FR-NIA: A 11-inch Bionic AI Companion Robot Bringing Intelligent Interaction into Everyday Life - markets.businessinsider.com",
+      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNRFA4b2JIdVZIX0ZLcG1tbDItODB5ek5OSGtTYVd4Ymc1VjhramV6aE1Rd2hiN1l0Y2dMY0ZyXzJzSHJxVXhCMGtGc0FfbjI1YzZIcVZORVZzSjVLTlNHRWV5TWNCbTdGZ1plZVJ6dkNNbWo3NGdVb1RfNnA0ZzdQUTVhcXBKcGFXWF8wOThZWDJleXhXQndoUHo1SWVaSFJOaTEteFFSaUozRDU2MFNnM2MwMFJ4WElobDhwcVV3NlNmNVJQUEQwUzJKQ1JkdDd0ZGpBaWhuWGpZbm1zUVFOUlBjMGFRcDVMVXlvc3QzNWVNd19iVlRlWDY5SzNaZVlDUUE?oc=5",
+      "desc": "Figurobot Launches FR-NIA: A 11-inch Bionic AI Companion Robot Bringing Intelligent Interaction into Everyday Life markets.businessinsider.com",
+      "source": "markets.businessinsider.com",
+      "time": 1792396254.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 7.0,
+        "event_concreteness": 10.5,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 2.0,
+        "freshness": 0.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 42.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 42.5
+      },
+      "base_score": 42.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 42.5,
+      "key": "f9326319499542f2c3e88f43ecd9c89fa3022e6bdef20544519bf3e794fb6339",
+      "importance": 42.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "business",
+        "robotics"
+      ],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
+      "region": "WORLD",
       "title": "Microsoft unveils tools to monitor and corral rogue AI agents - GeekWire",
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSVpEMEJteFZjTTUwZnF2YjZ0eHhFV2JPajdoVUkyWENxY0FuLWh0TnZGYlgxbFkzV0tRTzdlWkVqOWwzWTF3Yi0zRVk4SDBCYUZ3UVM2TE9WR2FIWE1hQVVjd0s1djZveHd5OF9yZE13MUpPczhOV0pacFRrdy1meTgwUnZFQzljX0hZVWs5b1RjbGF6VUVn?oc=5",
       "desc": "Microsoft unveils tools to monitor and corral rogue AI agents GeekWire",
@@ -1677,19 +1794,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 41.5,
+        "base_score": 41.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 41.5
+        "final_score": 41.0
       },
-      "base_score": 41.5,
+      "base_score": 41.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 41.5,
+      "score": 41.0,
       "key": "0ac8f42c3293e08054f9672f845e68f111e62fab8fbfe2c4127c8b0187d22963",
-      "importance": 41.5,
+      "importance": 41.0,
       "editorial_value": 50.0,
       "topics": [
         "agents",
@@ -1700,30 +1817,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792417527.4306183,
+    "last_start_ts": 1792419707.919041,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792417527.4306183,
-    "last_success_ts": 1792417527.4306183,
-    "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 12
+    "last_run_ts": 1792419707.919041,
+    "last_success_ts": 1792419707.919041,
+    "last_candidates": 37,
+    "last_published": 1,
+    "queue_size": 15
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1792421106.529957,
+      "disabled_until": 1792423282.0457444,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1792417506.5299597
+      "updated_at": 1792419682.045746
     },
     "GROQ": {
-      "disabled_until": 1792421110.0860906,
+      "disabled_until": 1792423288.6608799,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792417510.0860922
+      "updated_at": 1792419688.660882
     },
     "OPENAI": {
-      "disabled_until": 1792503927.390621,
+      "disabled_until": 1792506146.739699,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792417527.3906224
+      "updated_at": 1792419746.7397015
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1731,19 +1848,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1792421126.0793095,
+      "disabled_until": 1792423345.664165,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792417526.0793116
+      "updated_at": 1792419745.6641667
     }
   },
   "stories": {
-    "3a5fe02d0f944424bbd33413cf8b9030e7f5ed38e2136ca037e90f82d004c5e6": {
-      "time": 1792333241,
-      "title": "«Стоп-кран» для сверхразума: Anthropic написала закон для Конгресса - Электронная газета «Век»",
-      "desc": "«Стоп-кран» для сверхразума: Anthropic написала закон для Конгресса Электронная газета «Век»",
-      "source": "Электронная газета «Век»",
-      "region": "RUSSIA"
-    },
     "7c529a14333e11c02898971bd142211c9ebaaaff5f52c039f0681c0cdf1989b3": {
       "time": 1792335162,
       "title": "Правовые рамки генеративного контента: почему локальная политика использования ИИ в компании защищает бизнес от утечек данных и штрафов регуляторов - zakon.ru",
@@ -2093,10 +2203,16 @@
       "desc": "Blue Language Labs Launches MyOS Business for AI Agents to Conduct Business Across Companies Business Wire",
       "source": "Business Wire",
       "region": "WORLD"
+    },
+    "05a14f18eaa2e1ca36f2e878602e484654301eb8dc1b1ab7886f09677d0b615c": {
+      "time": 1792419707,
+      "title": "Exclusive | Nvidia-Backed Startup doubleAI Launches Model to Pare Cost of Compute - WSJ",
+      "desc": "Exclusive | Nvidia-Backed Startup doubleAI Launches Model to Pare Cost of Compute WSJ",
+      "source": "WSJ",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "WORLD",
@@ -2115,81 +2231,10 @@
     "WORLD",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792169367,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 11.72,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 18,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792171128,
       "status": "OK",
@@ -26676,11 +26721,151 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1792419707,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 67.63,
+      "candidates": 37,
+      "queue_before": 12,
+      "queue_after": 15,
+      "published": 1,
+      "publish_attempts": 2,
+      "item_failures": 1,
+      "admission": {
+        "published_key": 19,
+        "known_recent": 0,
+        "already_queued": 8,
+        "story_queue": 0,
+        "story_history": 6,
+        "added": 4,
+        "candidate_count": 37,
+        "admission_rate": 10.81,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/companies/bothub/news/1096316/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1096316",
+            "image_url": "https://habr.com/share/publication/1096316/8b54043a4309f8a4304876368c67fd93/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 24.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Снижает затраты на обучение моделей",
+            "title": "Exclusive | Nvidia-Backed Startup doubleAI Launches Model to Pare Cost of Compute - WSJ",
+            "final_score": 78.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 8,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 169,
+        "raw_items": 1175,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 3,
+          "Habr AI/News": 39,
+          "CNews": 75,
+          "Euronews": 50
+        },
+        "score_filtered": 1092,
+        "quality_filtered": 35,
+        "story_dedup": 11,
+        "candidates": 37,
+        "candidate_rate": 0.0368,
+        "score_buckets": {
+          "0–39": 1039,
+          "40–49": 88,
+          "50–59": 41,
+          "60–69": 7,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 2,
+          "8": 2,
+          "9": 0,
+          "10": 1
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 2,
+        "blocked": 6,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792417270.1455476,
-  "last_publish_ts": 1792415837.6297503,
+  "last_search_ts": 1792419707.919041,
+  "last_publish_ts": 1792419707.919041,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
