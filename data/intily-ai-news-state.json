@@ -1852,30 +1852,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792422082.2708406,
+    "last_start_ts": 1792422658.7084386,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792422082.2708406,
-    "last_success_ts": 1792422082.2708406,
+    "last_run_ts": 1792422658.7084386,
+    "last_success_ts": 1792422658.7084386,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 16
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1792425669.056674,
+      "disabled_until": 1792426148.4550304,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1792422069.0566757
+      "updated_at": 1792422548.4550328
     },
     "GROQ": {
-      "disabled_until": 1792425673.6076384,
+      "disabled_until": 1792426151.8514132,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792422073.6076398
+      "updated_at": 1792422551.8514154
     },
     "OPENAI": {
-      "disabled_until": 1792508482.1235836,
+      "disabled_until": 1792509058.5587993,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792422082.1235855
+      "updated_at": 1792422658.5588017
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1883,9 +1883,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1792425681.0257175,
+      "disabled_until": 1792426257.591815,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792422081.025719
+      "updated_at": 1792422657.5918174
     }
   },
   "stories": {
@@ -2270,78 +2270,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792174170,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 15.21,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 5,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792175153,
       "status": "OK",
@@ -26835,6 +26763,78 @@
             "title": "CF-Canada.Net Introduces an AI Digital Adoption Initiative to Hel - The National Law Review",
             "final_score": 77.0
           }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 7,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1792422658,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 111.07,
+      "candidates": 0,
+      "queue_before": 16,
+      "queue_after": 16,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
         },
         "queue_score_audit": {
           "pre_ai_below_final_threshold": 7,
