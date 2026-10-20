@@ -1241,12 +1241,6 @@
     "e97e8d482e751550bdbef338186a15a80fc4dd56dd9b2ee1face0837f99e42a3": 1792520233
   },
   "known": {
-    "7220203a835bbd8daf9436cb58667fe9b25eb72f050abc0bf1ddc7ab438abaff": 1792516869.9362628,
-    "b855178818bafc63bf5d5fd61b868097fc5a1e178dfd93c2033e9ef722415f55": 1792516869.9362628,
-    "9eaccb0bf70ecff03a4e46776a109b2c02b72db379232d77d47e22ac6c8efebc": 1792516869.9362628,
-    "f568ba3d7e475c2a6e3f382447f4c7f9171848f6985347acaf347fa0afe9884c": 1792516869.9362628,
-    "e90ba710b85d274e358e0df6ef73e22c3a1678b541abf01c15723bb5e7879c32": 1792516869.9362628,
-    "30875574a9813b2afd1ec2da4bd9c07cb7717927aac0e0fd307f18fee6ec56c0": 1792516869.9362628,
     "e97e8d482e751550bdbef338186a15a80fc4dd56dd9b2ee1face0837f99e42a3": 1792520012.3564882,
     "e4cebb71299453de743ca666f08a99c6eeec5a68c2e6a54c88d94b8e7c183e63": 1792520012.3564882,
     "e86502971306deba6b96eef793fee588953928d54a81c1382dfa8569e928a149": 1792520012.3564882,
@@ -1997,30 +1991,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792522148.7981327,
+    "last_start_ts": 1792522412.7976506,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792522148.7981327,
-    "last_success_ts": 1792522148.7981327,
-    "last_candidates": 49,
+    "last_run_ts": 1792522412.7976506,
+    "last_success_ts": 1792522412.7976506,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1792525798.7685513,
-      "reason": "The read operation timed out",
-      "updated_at": 1792522198.7685537
+      "disabled_until": 1792525992.275923,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1792522392.275925
     },
     "GROQ": {
-      "disabled_until": 1792525805.5038435,
+      "disabled_until": 1792525995.8240309,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792522205.5038452
+      "updated_at": 1792522395.8240325
     },
     "OPENAI": {
-      "disabled_until": 1792608623.4303079,
+      "disabled_until": 1792608812.6135342,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792522223.4303093
+      "updated_at": 1792522412.6135356
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2028,9 +2022,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1792525821.5954173,
+      "disabled_until": 1792526012.1184294,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792522221.5954192
+      "updated_at": 1792522412.118431
     }
   },
   "stories": {
@@ -2310,146 +2304,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792315001,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 35.99,
-      "candidates": 13,
-      "queue_before": 1,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 11,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 0,
-        "candidate_count": 13,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.indiatoday.in/amp/technology/news/story/anthropic-proposes-ai-models-can-be-blocked-only-if-they-risk-1-billion-damage-or-50-deaths-3020086-2026-10-18",
-            "image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202610/anthropic-confirmed-that-it-has-restricted-internet-access-for-its-ai-models-during-evaluation-and-t-101314921-16x9.jpg?VersionId=5MBrsUb94SKjkLCAcXjzIPicpfX_XFvW",
-            "width": 1200,
-            "height": 675,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Установление регуляторных порогов напрямую влияет на комплаенс-стратегии и риски при внедрении Enterprise-решений.",
-            "title": "Anthropic proposes AI models can be blocked only if they risk $1 billion damage or 50 deaths - India Today",
-            "final_score": 70.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 15,
-        "raw_items": 354,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 5,
-          "CNews": 0,
-          "Euronews": 9
-        },
-        "score_filtered": 323,
-        "quality_filtered": 14,
-        "story_dedup": 4,
-        "candidates": 13,
-        "candidate_rate": 0.0383,
-        "score_buckets": {
-          "0–39": 314,
-          "40–49": 23,
-          "50–59": 16,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 1,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792315720,
       "status": "OK",
@@ -24302,6 +24156,78 @@
         "GEMINI": {
           "blocked": true,
           "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1792522412,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 23.9,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
         },
         "GROQ": {
           "blocked": true,
