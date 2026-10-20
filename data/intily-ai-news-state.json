@@ -1837,13 +1837,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792474874.528328,
+    "last_start_ts": 1792475138.4865634,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792474874.528328,
-    "last_success_ts": 1792474874.528328,
-    "last_candidates": 0,
-    "last_published": 1,
+    "last_run_ts": 1792475138.4865634,
+    "last_success_ts": 1792475138.4865634,
+    "last_candidates": 23,
+    "last_published": 0,
     "queue_size": 16
   },
   "providers": {
@@ -1853,14 +1853,14 @@
       "updated_at": 1792474869.9012597
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792474874.4495509
+      "disabled_until": 1792478713.8221757,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792475113.8221776
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792474863.9490948
+      "disabled_until": 1792561538.365824,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1792475138.365826
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1868,19 +1868,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792474863.9490948
+      "disabled_until": 1792478737.3068466,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792475137.3068485
     }
   },
   "stories": {
-    "10f59ed0fc97ecc6f1fbb3ab61de21793b07187ac93260ecd9218ace619b9e1f": {
-      "time": 1792388475,
-      "title": "SoftBank reportedly considering Allied Universal acquisition as AI and robotics strategy expands into security - Asia Pacific Security Magazine",
-      "desc": "SoftBank reportedly considering Allied Universal acquisition as AI and robotics strategy expands into security Asia Pacific Security Magazine",
-      "source": "Asia Pacific Security Magazine",
-      "region": "WORLD"
-    },
     "a97fdd81ddfff618d55426b3f97ec666844562da3f988d655a703ff60a75f036": {
       "time": 1792389915,
       "title": "Anthropic AI Ban Threshold: $1 Billion Harm Limit - Daily Beirut",
@@ -2199,127 +2192,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1792232933,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 46.76,
-      "candidates": 14,
-      "queue_before": 1,
-      "queue_after": 1,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 8,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 5,
-        "added": 0,
-        "candidate_count": 14,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 21,
-        "raw_items": 330,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 6,
-          "CNews": 0,
-          "Euronews": 15
-        },
-        "score_filtered": 304,
-        "quality_filtered": 8,
-        "story_dedup": 4,
-        "candidates": 14,
-        "candidate_rate": 0.0453,
-        "score_buckets": {
-          "0–39": 286,
-          "40–49": 26,
-          "50–59": 17,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792233170,
       "status": "OK",
@@ -26267,10 +26139,131 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792475138,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 57.07,
+      "candidates": 23,
+      "queue_before": 16,
+      "queue_after": 16,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 6,
+        "known_recent": 0,
+        "already_queued": 16,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 23,
+        "admission_rate": 0.0,
+        "dominant_block": "already_queued",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 15,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 49,
+        "raw_items": 520,
+        "source_counts": {
+          "TechCrunch AI": 9,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 7,
+          "Habr AI/News": 5,
+          "CNews": 6,
+          "Euronews": 20
+        },
+        "score_filtered": 494,
+        "quality_filtered": 1,
+        "story_dedup": 2,
+        "candidates": 23,
+        "candidate_rate": 0.0488,
+        "score_buckets": {
+          "0–39": 446,
+          "40–49": 49,
+          "50–59": 21,
+          "60–69": 4,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 1,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792473199.2550747,
+  "last_search_ts": 1792475138.4865634,
   "last_publish_ts": 1792474874.528328,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
