@@ -1,6 +1,5 @@
 {
   "published": {
-    "3c42cf408edb6df0eb09db86bf64e04fb8357a6ad36e34df886efcff938de9a4": 1789882146,
     "8a0a9486e91cf6abd72b74f72072fac85e4db5015742bdebd6ab117fbb47697a": 1789886457,
     "30cfb095833e88acb0fb15ede6a3208ed0556fbc62e3f6b10421e297963d08d6": 1789886939,
     "0e8f3647e937f1a290ae5c7785054ab2870cdde784af5f5c7b0074e0608b30f8": 1789887658,
@@ -1603,20 +1602,20 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 43.0,
+        "base_score": 42.5,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 43.0
+        "final_score": 42.5
       },
-      "base_score": 43.0,
+      "base_score": 42.5,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 43.0,
+      "score": 42.5,
       "key": "d5d95b2bd7bb718b96894fa017e9650d248277c57c2f09d6c94760d74f932bed",
-      "importance": 43.0,
-      "editorial_value": 49.0,
+      "importance": 42.5,
+      "editorial_value": 48.5,
       "topics": [],
       "audience_score": null,
       "tier": "A"
@@ -1910,13 +1909,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792473738.24487,
+    "last_start_ts": 1792474398.7933855,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792473738.24487,
-    "last_success_ts": 1792473738.24487,
+    "last_run_ts": 1792474398.7933855,
+    "last_success_ts": 1792474398.7933855,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 18
   },
   "providers": {
@@ -1931,9 +1930,9 @@
       "updated_at": 1792473232.2929957
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792473189.9763346
+      "disabled_until": 1792560798.6667943,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1792474398.6667962
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1941,19 +1940,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792473738.1076162
+      "disabled_until": 1792477997.671583,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792474397.6715848
     }
   },
   "stories": {
-    "dd7dd57d83152e3ebf6121daa161f37fe384323ef0c5bf993e4e0b542a3890e3": {
-      "time": 1792387513,
-      "title": "Hana Asset Management Launches U.S. AI Chip ETF With 25% Nvidia Weighting - Seoul Economic Daily",
-      "desc": "Hana Asset Management Launches U.S. AI Chip ETF With 25% Nvidia Weighting Seoul Economic Daily",
-      "source": "Seoul Economic Daily",
-      "region": "WORLD"
-    },
     "10f59ed0fc97ecc6f1fbb3ab61de21793b07187ac93260ecd9218ace619b9e1f": {
       "time": 1792388475,
       "title": "SoftBank reportedly considering Allied Universal acquisition as AI and robotics strategy expands into security - Asia Pacific Security Magazine",
@@ -2272,147 +2264,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792228122,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 42.15,
-      "candidates": 13,
-      "queue_before": 1,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 9,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 3,
-        "added": 0,
-        "candidate_count": 13,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://breakingthenews.net/Article/Bailey:-AI-robotics-could-reshape-monetary-policy/67338524",
-            "image_url": "https://cdn.ttweb.net/News/images/407926.jpg?preset=w800_q70",
-            "width": 800,
-            "height": 450,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 6.67,
-          "bonus_total": 60.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Прогноз регулятора указывает на будущие изменения в макроэкономической среде, влияющие на долгосрочное планирование бизнеса.",
-            "title": "Bailey: AI, robotics could reshape monetary policy - Breakingthenews.net",
-            "final_score": 58.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 15,
-        "raw_items": 331,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 2,
-          "CNews": 0,
-          "Euronews": 12
-        },
-        "score_filtered": 308,
-        "quality_filtered": 9,
-        "story_dedup": 1,
-        "candidates": 13,
-        "candidate_rate": 0.0411,
-        "score_buckets": {
-          "0–39": 289,
-          "40–49": 28,
-          "50–59": 13,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 1,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792232443,
       "status": "OK",
@@ -26462,6 +26313,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1792474398,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 12.16,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 18,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 17,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
