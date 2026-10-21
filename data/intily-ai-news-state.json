@@ -1243,9 +1243,6 @@
     "6294f0852a687c34ebdc442a76c92ca0905ceff4f6edc7e12642d21ce9518d46": 1792575441
   },
   "known": {
-    "d0b8d6319969352f6c6edd1059bdc27c8a4967ec3a4bef26ef900146d72c035b": 1792570260.000645,
-    "4967aa3df8af9d6be33122bbf1d1055570adb0476006c4bd539bc4998ab85f7a": 1792570260.000645,
-    "cff690ff6e2915dc78bea2968a27a08cdd9ea93d2adef1899e36ca2d48c71df1": 1792570260.000645,
     "6758a6b71f93ba766b115a9561086f630a2cab3e91ed5256da8c91dc7ab7319a": 1792572796.0391476,
     "f1b636a3df4716440ff95bf86c1ce6111234a2c5c1e1451d43faf43bf81c04d7": 1792572796.0391476,
     "adddcdb45555e9c3a65418e35b9775c45ff55b423349ed1941b0a32750082dbd": 1792572796.0391476,
@@ -1291,7 +1288,11 @@
         "models"
       ],
       "audience_score": 8.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1792575669,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | OPENROUTER: OPENROUTER_EMPTY_OR_INVALID_CONTENT | OPENAI: OPENAI_HTTP_429: {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/bill",
+      "failure_count": 1,
+      "next_retry_at": 1792575969
     },
     {
       "region": "RUSSIA",
@@ -1329,7 +1330,11 @@
       ],
       "audience_score": 7.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1792575669,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1792575969
     },
     {
       "region": "RUSSIA",
@@ -1589,30 +1594,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792575441.8352108,
+    "last_start_ts": 1792575669.744834,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792575441.8352108,
-    "last_success_ts": 1792575441.8352108,
+    "last_run_ts": 1792575669.744834,
+    "last_success_ts": 1792575669.744834,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 9
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792575459.2118359
+      "disabled_until": 1792579289.8490958,
+      "reason": "The read operation timed out",
+      "updated_at": 1792575689.849098
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792574710.063708
+      "disabled_until": 1792579292.888094,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792575692.8880954
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792574710.063708
+      "disabled_until": 1792662116.4068186,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1792575716.4068208
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1620,9 +1625,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792574710.063708
+      "disabled_until": 1792579315.5222316,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792575715.5222332
     }
   },
   "stories": {
@@ -1902,136 +1907,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1792336842,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 35.18,
-      "candidates": 11,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 11,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 11,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Установление юридических порогов ответственности напрямую влияет на стратегические риски и комплаенс-политику при внедрении ИИ-решений.",
-            "title": "Anthropic proposes AI models can be blocked only if they risk $1 billion damage or 50 deaths - India Today",
-            "final_score": 71.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 38,
-        "raw_items": 674,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 15,
-          "CNews": 1,
-          "Euronews": 22
-        },
-        "score_filtered": 652,
-        "quality_filtered": 11,
-        "story_dedup": 0,
-        "candidates": 11,
-        "candidate_rate": 0.0173,
-        "score_buckets": {
-          "0–39": 630,
-          "40–49": 32,
-          "50–59": 11,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792337320,
       "status": "OK",
@@ -22844,6 +22719,84 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1792575669,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 46.75,
+      "candidates": 0,
+      "queue_before": 9,
+      "queue_after": 9,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "OPENROUTER",
+        "failovers": 2,
+        "failures": 4,
+        "blocked": 10,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
