@@ -1969,30 +1969,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792610720.0548997,
+    "last_start_ts": 1792610963.1273053,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792610720.0548997,
-    "last_success_ts": 1792610720.0548997,
+    "last_run_ts": 1792610963.1273053,
+    "last_success_ts": 1792610963.1273053,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1792614312.598427,
+      "disabled_until": 1792614547.534584,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1792610712.598429
+      "updated_at": 1792610947.5345862
     },
     "GROQ": {
-      "disabled_until": 1792614319.2393217,
+      "disabled_until": 1792614550.7028844,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792610719.2393231
+      "updated_at": 1792610950.7028866
     },
     "OPENAI": {
-      "disabled_until": 1792697119.9256668,
+      "disabled_until": 1792697363.0512385,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792610719.925669
+      "updated_at": 1792610963.0512404
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2000,19 +2000,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1792697119.3793013,
+      "disabled_until": 1792697361.977105,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792610719.3793032
+      "updated_at": 1792610961.9771066
     }
   },
   "stories": {
-    "0249810127dcfa19bcfd835d927604267fbaab4c9cdc694675f2554644684ebf": {
-      "time": 1792524557,
-      "title": "Nvidia Reportedly Just Landed $35 Billion In Chip Orders From Chinese Companies. Here's Why That Could Be Great News for the Stock - Yahoo Finance",
-      "desc": "Nvidia Reportedly Just Landed $35 Billion In Chip Orders From Chinese Companies. Here's Why That Could Be Great News for the Stock Yahoo Finance",
-      "source": "Yahoo Finance",
-      "region": "WORLD"
-    },
     "1ecdccd5827a67c5591088c2dda24ad0cba00ad947f71d0e3494944759fd6299": {
       "time": 1792525524,
       "title": "Nvidia Faces Supply Gap as Chinese GPU Orders Exceed $35 Billion - www.tokenpost.com",
@@ -2261,147 +2254,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792410070,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 44.96,
-      "candidates": 26,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 22,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 3,
-        "added": 1,
-        "candidate_count": 26,
-        "admission_rate": 3.85,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 6.67,
-          "bonus_total": 60.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость пересмотра протоколов безопасности при интеграции LLM в бизнес-процессы.",
-            "title": "Эффективность не должна превращаться в уязвимость: применение ИИ в бизнес-процессах обсудили в рамках третьего бизнес-бранча с Андреем Масаловичем - Эксперт ЮГ",
-            "final_score": 68.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 147,
-        "raw_items": 895,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 32,
-          "CNews": 65,
-          "Euronews": 50
-        },
-        "score_filtered": 823,
-        "quality_filtered": 33,
-        "story_dedup": 13,
-        "candidates": 26,
-        "candidate_rate": 0.0348,
-        "score_buckets": {
-          "0–39": 771,
-          "40–49": 85,
-          "50–59": 35,
-          "60–69": 4,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792411268,
       "status": "OK",
@@ -21474,6 +21326,78 @@
             "title": "Oracle представляет студию с низким уровнем программирования для создания ИИ-агентов для конкретных отраслей - Unite.AI",
             "final_score": 69.0
           }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1792610963,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 17.3,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
         },
         "queue_score_audit": {
           "pre_ai_below_final_threshold": 1,
