@@ -1241,9 +1241,6 @@
     "6758a6b71f93ba766b115a9561086f630a2cab3e91ed5256da8c91dc7ab7319a": 1792573274
   },
   "known": {
-    "90a8410ae2f8139938dbc903438cadf283ca8f371b869d7bc0b2f961b624fe91": 1792567995.7186406,
-    "1629d687d6c3647f3c5458699b267aaf379c1284e6e13e85b1c14101f2b0a68b": 1792567995.7186406,
-    "60fd6fdf3e7cd3d0c17b14c3f64298e27df337144238c5345ee2749314883e4b": 1792567995.7186406,
     "d0b8d6319969352f6c6edd1059bdc27c8a4967ec3a4bef26ef900146d72c035b": 1792570260.000645,
     "4967aa3df8af9d6be33122bbf1d1055570adb0476006c4bd539bc4998ab85f7a": 1792570260.000645,
     "cff690ff6e2915dc78bea2968a27a08cdd9ea93d2adef1899e36ca2d48c71df1": 1792570260.000645,
@@ -1510,30 +1507,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792573274.6371872,
+    "last_start_ts": 1792573784.1686773,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792573274.6371872,
-    "last_success_ts": 1792573274.6371872,
+    "last_run_ts": 1792573784.1686773,
+    "last_success_ts": 1792573784.1686773,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 7
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792573274.6225855
+      "disabled_until": 1792577368.14091,
+      "reason": "The read operation timed out",
+      "updated_at": 1792573768.1409123
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792573264.121821
+      "disabled_until": 1792577371.6096947,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792573771.6096961
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792573264.121821
+      "disabled_until": 1792660184.1477952,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1792573784.1477966
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1541,19 +1538,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792573264.121821
+      "disabled_until": 1792577382.9465609,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792573782.9465625
     }
   },
   "stories": {
-    "8bd7eefd6e7e09380db2ee7cff3095da94da71640e32cb55dca7cf683e5e9f53": {
-      "time": 1792486876,
-      "title": "Claude Fable 5.5 может выйти до конца октября",
-      "desc": "Anthropic готовится выпустить новую модель с улучшенными способностями к рассуждению и интерпретации намерений пользователя. Возможно это будет Fable 5.5, но Anthropic официально её не анонсировала. Об этом сообщили The Information со ссылкой на человека, который уже тестировал новинку. Некоторые источники ожидают релиз до конца октября, но точная дата не подтверждена. По словам инсайдера, модель умеет лучше работать с неполными инструкциями и догадываться, какую задачу пользователь на самом деле хочет решить. Например, если попросить её исправить один баг, она может обнаружить целый класс похожих проблем и предложить устранить их все. Также отмечают, что модель лучше ищет нестандартные решения, чем просто воспроизводит типовые советы. В качестве примера приводится задача по анализу инвестиций, для которой модель предложила собственный алгоритм прогнозирования. Напомню, выход флагманской Claude Opus 5.5 состоялся 22 сентября, 7 октября релизнули Claude Sonnet 5.5 и Claude Haiku 5.5 . Верим инсайдерам? Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "c1fa9e2b2fe5527e933ae3843dc8bbc2636896fcbeaa90bf501a62e8fbcadea1": {
       "time": 1792487599,
       "title": "Робот в каждый дом: как стартап из Сан-Хосе получил инвестиции от BMW и OpenAI - Forbes.ru",
@@ -1830,147 +1820,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1792333241,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 48.62,
-      "candidates": 12,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 11,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 1,
-        "candidate_count": 12,
-        "admission_rate": 8.33,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "html_img": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "html_img",
-            "source_url": "https://wek.ru/stop-kran-dlya-sverxrazuma-anthropic-napisala-zakon-dlya-kongressa",
-            "image_url": "https://wek.ru/images/stop-kran-dlya-sverxrazuma-anthropic-napisala-zakon-dlya-kongressa.jpg",
-            "width": 1024,
-            "height": 679,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.33,
-          "bonus_total": 66.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Регулирование ограничит доступ к мощностям и усложнит юридический комплаенс для AI-проектов.",
-            "title": "«Стоп-кран» для сверхразума: Anthropic написала закон для Конгресса - Электронная газета «Век»",
-            "final_score": 63.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 33,
-        "raw_items": 587,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 14,
-          "CNews": 1,
-          "Euronews": 18
-        },
-        "score_filtered": 564,
-        "quality_filtered": 11,
-        "story_dedup": 0,
-        "candidates": 12,
-        "candidate_rate": 0.0217,
-        "score_buckets": {
-          "0–39": 543,
-          "40–49": 31,
-          "50–59": 12,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792333960,
       "status": "OK",
@@ -22925,6 +22774,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1792573784,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 36.14,
+      "candidates": 0,
+      "queue_before": 7,
+      "queue_after": 7,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
