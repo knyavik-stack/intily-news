@@ -2007,30 +2007,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792605681.8234794,
+    "last_start_ts": 1792605925.9041846,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792605681.8234794,
-    "last_success_ts": 1792605681.8234794,
-    "last_candidates": 59,
+    "last_run_ts": 1792605925.9041846,
+    "last_success_ts": 1792605925.9041846,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1792609271.5232887,
+      "disabled_until": 1792609511.0958533,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1792605671.5232906
+      "updated_at": 1792605911.095856
     },
     "GROQ": {
-      "disabled_until": 1792609276.7418783,
+      "disabled_until": 1792609514.421827,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792605676.7418816
+      "updated_at": 1792605914.4218295
     },
     "OPENAI": {
-      "disabled_until": 1792692081.6672282,
+      "disabled_until": 1792692325.7440329,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792605681.6672297
+      "updated_at": 1792605925.7440348
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2038,9 +2038,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1792609279.7439241,
-      "reason": "HTTP_429_RATE_LIMIT",
-      "updated_at": 1792605679.7439258
+      "disabled_until": 1792609525.1486876,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792605925.1486893
     }
   },
   "stories": {
@@ -2306,96 +2306,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792406947,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 4.22,
-      "candidates": 0,
-      "queue_before": 3,
-      "queue_after": 2,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.dv.ee/novosti/2026/10/19/ministr-jekonomiki-hochet-uskorit-prinjatie-zakona-ob-ii-agentah-kritiki-prizyvajut-k-ostorozhnosti",
-            "image_url": "https://static-img.aripaev.ee/?type=preview&uuid=0b0ba1c0-5b1c-5e86-a2bc-ca667a9b7c9f&width=1200&q=85",
-            "width": 1198,
-            "height": 738,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Введение правового регулирования агентов напрямую влияет на архитектуру систем и юридические риски бизнеса.",
-            "title": "Министр экономики хочет ускорить принятие закона об ИИ-агентах, критики призывают к осторожности - Деловые ведомости",
-            "final_score": 64.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792407426,
       "status": "OK",
@@ -21838,6 +21748,78 @@
         },
         "audience_stage": "post_editorial"
       },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1792605925,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 16.15,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 4,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
       "provider": {
         "attempts": [],
         "used": null,
