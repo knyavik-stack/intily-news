@@ -1,6 +1,5 @@
 {
   "published": {
-    "bcf94dc886d710d7a90acf8db3cde7f8d664e1968c3ed63bd644f6cd5c9ee83a": 1790090057,
     "dafb14609fa0970a593e7998f52b9441853b3643631b9174d3a8ea1ddc826509": 1790095542,
     "dbf67be28ff9ed0e6ed67f99fe13d7aab171144b940b6098283e30caebdb6337": 1790096697,
     "4547a5ed24b3d80ced57fac3402cf24c523a27a9d857a9b26256ce837b98d440": 1790099579,
@@ -1878,19 +1877,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 50.5,
+        "base_score": 50.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 50.5
+        "final_score": 50.0
       },
-      "base_score": 50.5,
+      "base_score": 50.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 50.5,
+      "score": 50.0,
       "key": "5b191557f0cb202ee79270f8f329c9cf2c5730053c52f745eee3b42d6f7a1911",
-      "importance": 50.5,
+      "importance": 50.0,
       "editorial_value": 50.0,
       "topics": [
         "agents",
@@ -1977,30 +1976,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792681490.1735926,
+    "last_start_ts": 1792682211.4325066,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792681490.1735926,
-    "last_success_ts": 1792681490.1735926,
-    "last_candidates": 49,
+    "last_run_ts": 1792682211.4325066,
+    "last_success_ts": 1792682211.4325066,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1792682203.2505786,
+      "disabled_until": 1792685806.586591,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1792678603.2505803
+      "updated_at": 1792682206.5865922
     },
     "GROQ": {
-      "disabled_until": 1792685129.8048763,
+      "disabled_until": 1792685810.1851077,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792681529.8048778
+      "updated_at": 1792682210.185109
     },
     "OPENAI": {
-      "disabled_until": 1792767938.4055488,
+      "disabled_until": 1792768611.3385303,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792681538.4055505
+      "updated_at": 1792682211.338531
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2008,9 +2007,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1792685137.4796083,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792681537.4796102
+      "disabled_until": 1792768610.374145,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1792682210.3741457
     }
   },
   "stories": {
@@ -2115,84 +2114,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792438388,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 30.75,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 18,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": "GROQ",
-        "failovers": 1,
-        "failures": 4,
-        "blocked": 9,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792439105,
       "status": "OK",
@@ -21299,6 +21220,78 @@
         "failovers": 0,
         "failures": 3,
         "blocked": 5,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1792682211,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 5.56,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
         "skipped_no_key": 0,
         "retries": 0
       },
