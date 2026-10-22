@@ -1,6 +1,5 @@
 {
   "published": {
-    "d503a6264392e2d4922474c2cc8130f5c60f43884cc61ce6ba363c7f6e1808ab": 1790079669,
     "30674264ef3fa521fb15267ab033b2e8551e8529c4fbde6323cd5c860b5108ef": 1790080391,
     "453c0a35bb1dd9866c55c89b400e2e02ab4aaa07885e110b4293043e7983e047": 1790082069,
     "ee9914a27f37f7f0899a4f4d618f1839f44d7518fce1a9edf94fbc5c2a0b2c0a": 1790082791,
@@ -1204,11 +1203,6 @@
     "d7fcbf9f2385b40c3888b31b79ef3750b728ee6bf46027bd70c4ba628f8b1785": 1792671417
   },
   "known": {
-    "5563fe1a958da440934b7caf5a5a3392d744658482b4adc7f39ebb12b48add73": 1792666256.7126853,
-    "b117f4df33ba998cf168ff006d94f18fee37bf7f2aa1dfb84c0cc0c533832a19": 1792666256.7126853,
-    "40479b3d4e471edcfa4daf1d48500b475ed571d5a27af08c365d1b7f4c08555d": 1792666256.7126853,
-    "6dedfca2e0ce3e8aa1dcf4ce00cd862b4a60e53743d8ce3be798c828e4866350": 1792666256.7126853,
-    "758ebe44fb47c6f3450c254949afc5ba6ea73972f009af1def919e60dffa34b7": 1792666256.7126853,
     "d7fcbf9f2385b40c3888b31b79ef3750b728ee6bf46027bd70c4ba628f8b1785": 1792671417.2514563,
     "3bea0a5c0aa4105757dac1cce706e78e69a0a3e3e2c09462f022d596befff3e0": 1792671417.2514563,
     "0ce38db1f62e847c1336a09902eea0858d984f412458364604e0cf3ffbdc34f2": 1792671417.2514563,
@@ -1947,13 +1941,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792671417.2514563,
+    "last_start_ts": 1792671904.6650827,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792671417.2514563,
-    "last_success_ts": 1792671417.2514563,
-    "last_candidates": 43,
-    "last_published": 1,
+    "last_run_ts": 1792671904.6650827,
+    "last_success_ts": 1792671904.6650827,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 19
   },
   "providers": {
@@ -1968,9 +1962,9 @@
       "updated_at": 1792671462.407959
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792671413.8804018
+      "disabled_until": 1792758304.5266128,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1792671904.5266147
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1978,9 +1972,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792671529.5407844
+      "disabled_until": 1792675503.1522121,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792671903.1522143
     }
   },
   "stories": {
@@ -2127,98 +2121,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792431667,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 15.97,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://habr.com/ru/companies/bothub/news/1096316/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1096316",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Material cost reduction in agent workflows makes adoption decision urgent now for product/ops leaders.",
-            "title": "MiniMax выпустила M3.1 Flash: веса откроют 23 октября",
-            "final_score": 80.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER"
-        ],
-        "used": "OPENROUTER",
-        "failovers": 2,
-        "failures": 2,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792432386,
       "status": "OK",
@@ -21278,6 +21180,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1792671904,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 12.43,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
