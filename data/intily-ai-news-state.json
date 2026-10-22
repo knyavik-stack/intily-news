@@ -1260,10 +1260,10 @@
       "audience_score": 8.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1792689411,
+      "last_failed_at": 1792689644,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 2,
-      "next_retry_at": 1792690011
+      "failure_count": 3,
+      "next_retry_at": 1792690844
     },
     {
       "region": "WORLD",
@@ -1303,10 +1303,10 @@
       ],
       "audience_score": 8.0,
       "tier": "A",
-      "last_failed_at": 1792689411,
+      "last_failed_at": 1792689644,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 2,
-      "next_retry_at": 1792690011
+      "failure_count": 3,
+      "next_retry_at": 1792690844
     },
     {
       "region": "RUSSIA",
@@ -1861,30 +1861,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792689411.910185,
+    "last_start_ts": 1792689644.3327417,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792689411.910185,
-    "last_success_ts": 1792689411.910185,
+    "last_run_ts": 1792689644.3327417,
+    "last_success_ts": 1792689644.3327417,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 17
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1792693017.7322307,
+      "disabled_until": 1792693244.8415232,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1792689417.7322323
+      "updated_at": 1792689644.841525
     },
     "GROQ": {
-      "disabled_until": 1792693021.4789696,
+      "disabled_until": 1792693250.018663,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792689421.4789712
+      "updated_at": 1792689650.0186644
     },
     "OPENAI": {
-      "disabled_until": 1792775821.9003046,
+      "disabled_until": 1792776052.4574454,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792689421.9003065
+      "updated_at": 1792689652.457447
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1892,9 +1892,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1792775821.6515243,
+      "disabled_until": 1792776051.349602,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792689421.6515257
+      "updated_at": 1792689651.3496037
     }
   },
   "stories": {
@@ -2020,94 +2020,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792478243,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 16.74,
-      "candidates": 0,
-      "queue_before": 13,
-      "queue_after": 12,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://news.az/news/why-is-openai-racing-to-raise-30-billion-before-anthropic-s-ipo",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 9.0,
-          "bonus_total": 54.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Необходимость пересмотра долгосрочной стратегии зависимости от API OpenAI из-за высокой волатильности их бизнес-модели.",
-            "title": "Why is OpenAI racing to raise $30 billion before Anthropic's IPO? - Latest news from Azerbaijan",
-            "final_score": 71.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 6,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792478477,
       "status": "OK",
@@ -21048,6 +20960,83 @@
       "business_reason": "all_attempted_items_failed",
       "searched": false,
       "duration_sec": 10.26,
+      "candidates": 0,
+      "queue_before": 17,
+      "queue_after": 17,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1792689644,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 8.26,
       "candidates": 0,
       "queue_before": 17,
       "queue_after": 17,
