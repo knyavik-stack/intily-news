@@ -1946,30 +1946,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792687990.0717235,
+    "last_start_ts": 1792688210.3307872,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792687990.0717235,
-    "last_success_ts": 1792687990.0717235,
-    "last_candidates": 56,
-    "last_published": 1,
+    "last_run_ts": 1792688210.3307872,
+    "last_success_ts": 1792688210.3307872,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792687989.9118917
+      "disabled_until": 1792691805.6525397,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1792688205.6525419
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792687966.6963446
+      "disabled_until": 1792691809.0427458,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792688209.042747
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792687966.6963446
+      "disabled_until": 1792774610.176874,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1792688210.1768758
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1977,9 +1977,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792687966.6963446
+      "disabled_until": 1792774609.189325,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1792688209.1893265
     }
   },
   "stories": {
@@ -2098,94 +2098,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792476356,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 54.57,
-      "candidates": 0,
-      "queue_before": 14,
-      "queue_after": 13,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.hpcwire.com/aiwire/2026/10/19/cognizant-and-google-cloud-expand-partnership-to-scale-enterprise-ai-agents/",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Позволяет развертывать мощные модели локально, радикально снижая риски утечки данных и затраты на API.",
-            "title": "Meta and Apple Bring 816-Billion-Parameter AI Model to Local Mac Studio Systems - Konsulteer",
-            "final_score": 69.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 11,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792477284,
       "status": "OK",
@@ -21251,6 +21163,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1792688210,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 5.48,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
