@@ -1277,10 +1277,10 @@
       ],
       "audience_score": 8.0,
       "tier": "A",
-      "last_failed_at": 1792649011,
+      "last_failed_at": 1792649342,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1792649311
+      "failure_count": 2,
+      "next_retry_at": 1792649942
     },
     {
       "region": "WORLD",
@@ -1320,10 +1320,10 @@
       ],
       "audience_score": 7.0,
       "tier": "A",
-      "last_failed_at": 1792649011,
+      "last_failed_at": 1792649342,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1792649311
+      "failure_count": 2,
+      "next_retry_at": 1792649942
     },
     {
       "region": "WORLD",
@@ -1450,19 +1450,19 @@
         "freshness": 1.0,
         "low_signal_penalty": 0.0,
         "base_score": 46.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 46.5
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 67.5
       },
       "base_score": 46.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 46.5,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 67.5,
       "key": "fae8f40e50541b72208a025bae3f61061a0b35d6d295b8b7f190000304a4f35b",
-      "importance": 46.5,
+      "importance": 67.5,
       "editorial_value": 50.0,
       "topics": [],
-      "audience_score": null,
+      "audience_score": 7.0,
       "tier": "A"
     },
     {
@@ -1484,22 +1484,22 @@
         "freshness": 0.5,
         "low_signal_penalty": 0.0,
         "base_score": 46.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 46.5
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 67.5
       },
       "base_score": 46.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 46.5,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 67.5,
       "key": "5dedfb5edebd3b01a39d28f4708116659f30495e55ef943458b65fe4fb91a7d1",
-      "importance": 46.5,
+      "importance": 67.5,
       "editorial_value": 50.0,
       "topics": [
         "models",
         "research"
       ],
-      "audience_score": null,
+      "audience_score": 7.0,
       "tier": "A"
     },
     {
@@ -1793,30 +1793,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792649011.4009469,
+    "last_start_ts": 1792649342.104093,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792649011.4009469,
-    "last_success_ts": 1792649011.4009469,
+    "last_run_ts": 1792649342.104093,
+    "last_success_ts": 1792649342.104093,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 15
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1792652465.6732833,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1792648865.673286
+      "disabled_until": 1792652963.579365,
+      "reason": "The read operation timed out",
+      "updated_at": 1792649363.5793698
     },
     "GROQ": {
-      "disabled_until": 1792652472.9878335,
+      "disabled_until": 1792652965.6227622,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792648872.9878356
+      "updated_at": 1792649365.6227646
     },
     "OPENAI": {
-      "disabled_until": 1792735417.4892778,
+      "disabled_until": 1792735781.979404,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792649017.4892802
+      "updated_at": 1792649381.9794059
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1824,19 +1824,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1792652616.484416,
+      "disabled_until": 1792652981.1942887,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792649016.4844174
+      "updated_at": 1792649381.1942904
     }
   },
   "stories": {
-    "a5dfc14b37606827d93c0ef7cc94fbfcce2e6560654c5c53c44e4b21ee0a6e96": {
-      "time": 1792562716,
-      "title": "Инвестиции в inference-чипы бьют рекорды: $4,18 млрд с начала года - Techora.ru",
-      "desc": "Инвестиции в inference-чипы бьют рекорды: $4,18 млрд с начала года Techora.ru",
-      "source": "Techora.ru",
-      "region": "RUSSIA"
-    },
     "cf326c10c2ea0c741bc4070836cd7e9c2a15f37f7f1ec79cf022dc560fd43e77": {
       "time": 1792563434,
       "title": "Critical Manufacturing Expands Industrial Operations Platform with Purpose-Built AI Agents - Process and Control Today",
@@ -2057,146 +2050,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1792415351,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 47.45,
-      "candidates": 34,
-      "queue_before": 6,
-      "queue_after": 8,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 22,
-        "known_recent": 0,
-        "already_queued": 5,
-        "story_queue": 0,
-        "story_history": 4,
-        "added": 3,
-        "candidate_count": 34,
-        "admission_rate": 8.82,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.33,
-          "bonus_total": 66.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость подготовки инфраструктуры и процессов к будущим жестким регуляторным требованиям в сфере ИИ.",
-            "title": "Anthropic подготовила законопроект о государственном контроле над мощным ИИ - prospect.com.ru",
-            "final_score": 65.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 157,
-        "raw_items": 1082,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 34,
-          "CNews": 71,
-          "Euronews": 50
-        },
-        "score_filtered": 1003,
-        "quality_filtered": 33,
-        "story_dedup": 12,
-        "candidates": 34,
-        "candidate_rate": 0.0368,
-        "score_buckets": {
-          "0–39": 952,
-          "40–49": 84,
-          "50–59": 41,
-          "60–69": 5,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 3,
-          "7": 0,
-          "8": 2,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792415837,
       "status": "OK",
@@ -21170,6 +21023,89 @@
         "GEMINI": {
           "blocked": true,
           "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1792649342,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 48.51,
+      "candidates": 0,
+      "queue_before": 15,
+      "queue_after": 15,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет оптимизировать затраты на разработку через внедрение инструментов самообучающегося кода.",
+            "title": "Recursive launches Flint, a laptop coding model it says was largely built by AI",
+            "final_score": 67.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 8,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
         },
         "GROQ": {
           "blocked": true,
