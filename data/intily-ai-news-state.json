@@ -1193,7 +1193,8 @@
     "989656e2d70d6f36212cbd0d760ba2bdf54c445ee796c174213359c9f899b4d4": 1792736936,
     "2a0469e5687bbc3e137613752767dbf509be81a32e9395f1ef24efcfdae8ea12": 1792737909,
     "b159efe9c70009cbad4ce62d10d09d486d7be257b34585a0cf4607df274c5174": 1792738141,
-    "50e2235dfe02cad923aeda7285e6b902e67f9203ec1f5e0ccd5a8cca6277e898": 1792738371
+    "50e2235dfe02cad923aeda7285e6b902e67f9203ec1f5e0ccd5a8cca6277e898": 1792738371,
+    "27f25d1a43c3c2fd9ce5304bb3860c28691b2b48583276ebfa4a4b8a0006e9dd": 1792738610
   },
   "known": {
     "6c856c3e310aba15c8a11d54815f4fc50738af2471a106f9954695500feef881": 1792733570.678059,
@@ -1222,43 +1223,6 @@
     "27d3c91431590c93306000e7a1414126e700c41971de24fc8b484fd007e4f477": 1792737909.147163
   },
   "queue": [
-    {
-      "region": "WORLD",
-      "title": "1Password launches a way for AI agents to log in on your behalf without seeing your password",
-      "link": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
-      "desc": "The new feature allows agents to log into a customer's personal accounts while still protecting the private credentials that secure those accounts.",
-      "source": "TechCrunch AI",
-      "time": 1792696029.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 7.0,
-        "event_concreteness": 10.5,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 2.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 42.5,
-        "audience_score": 9.0,
-        "audience_bonus": 27.0,
-        "final_score": 69.5
-      },
-      "base_score": 42.5,
-      "audience_bonus": 27.0,
-      "score_stage": "final",
-      "score": 69.5,
-      "key": "27f25d1a43c3c2fd9ce5304bb3860c28691b2b48583276ebfa4a4b8a0006e9dd",
-      "importance": 69.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "tools"
-      ],
-      "audience_score": 9.0,
-      "tier": "A"
-    },
     {
       "region": "RUSSIA",
       "title": "Китайский математик составил список из 1000 задач, способных бросить вызов ИИ",
@@ -1628,20 +1592,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792738371.0523727,
+    "last_start_ts": 1792738610.1279202,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792738371.0523727,
-    "last_success_ts": 1792738371.0523727,
+    "last_run_ts": 1792738610.1279202,
+    "last_success_ts": 1792738610.1279202,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 11
+    "queue_size": 10
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792738375.4924045
+      "updated_at": 1792738615.3057377
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1839,10 +1803,16 @@
       "desc": "Meta shares plunge 8% as soaring AI investment costs trigger tech stock selloff Latest news from Azerbaijan",
       "source": "Latest news from Azerbaijan",
       "region": "WORLD"
+    },
+    "27f25d1a43c3c2fd9ce5304bb3860c28691b2b48583276ebfa4a4b8a0006e9dd": {
+      "time": 1792738610,
+      "title": "1Password launches a way for AI agents to log in on your behalf without seeing your password",
+      "desc": "The new feature allows agents to log into a customer's personal accounts while still protecting the private credentials that secure those accounts.",
+      "source": "TechCrunch AI",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -1861,97 +1831,10 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792495282,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 15.68,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://finance.biggo.com/news/8e743bb7-130e-425d-bec7-c2a1a458718e",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Дефицит высокопроизводительных GPU напрямую влияет на стоимость и доступность инфраструктуры для обучения моделей.",
-            "title": "China's Big Three Tech Giants Snap Up Nvidia Chips. On a $35 Billion Order, They May Get Only a Tenth. - BigGo Finance",
-            "final_score": 71.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792496489,
       "status": "OK",
@@ -20941,11 +20824,101 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792738610,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 15.75,
+      "candidates": 0,
+      "queue_before": 11,
+      "queue_after": 10,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+            "image_url": "https://techcrunch.com/wp-content/uploads/2026/10/AI-agents.jpg?resize=1200,675",
+            "width": 1200,
+            "height": 675,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 5.0,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Снижает риски безопасности при внедрении ИИ-агентов в бизнес-процессы.",
+            "title": "1Password launches a way for AI agents to log in on your behalf without seeing your password",
+            "final_score": 66.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1792737909.147163,
-  "last_publish_ts": 1792738371.0523727,
+  "last_publish_ts": 1792738610.1279202,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
