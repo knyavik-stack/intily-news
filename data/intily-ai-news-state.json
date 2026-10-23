@@ -1,7 +1,5 @@
 {
   "published": {
-    "2ca1dfdf8c796913ca3c291e5b58417dcbeae9caf720b64631c6a61ac09a21fc": 1790154545,
-    "178ea5694d433d688fbf99042b05d249742b24f048ffd71a2b3183e9fc64ed0c": 1790155495,
     "d51b96f2ec808b00b26aa266e8b943324747d0068bf922563b601adfc3779a8e": 1790155989,
     "564a100660deeeb670e99f0ef34847ed19a244f74c8a3e96e3c14e73654745c2": 1790157184,
     "63f6adcd28c18c4a02214bf50adf6584bdc5e913e3fe2edba6da17b122f53b08": 1790159337,
@@ -1197,7 +1195,8 @@
     "27d3c91431590c93306000e7a1414126e700c41971de24fc8b484fd007e4f477": 1792745814,
     "3b761217cb8b9658413a9fb331db370b10f0c94f997ff980dd6e843ec937fd52": 1792746073,
     "7b9802062827cd3d587d7f7f9f43ad8ceed6436c8eb1d49ffb4fb09dd043eca4": 1792746293,
-    "6400ccdc83e46f1c18d906f209e58fe0d90b13fe2598d02ad223ba1494613ae9": 1792746536
+    "6400ccdc83e46f1c18d906f209e58fe0d90b13fe2598d02ad223ba1494613ae9": 1792746536,
+    "2ffd62385fb92ff1cfdf6c823408fc2600bac384e73f93d37fa458bab3d262ad": 1792747503
   },
   "known": {
     "de22998cb78c9fe57f1d312371a46e072f5577f85574fbabc36b3ebb0983978b": 1792742703.9666927,
@@ -1230,59 +1229,22 @@
         "freshness": 2.0,
         "low_signal_penalty": 0.0,
         "base_score": 41.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 41.5
+        "audience_score": 5.0,
+        "audience_bonus": 15.0,
+        "final_score": 56.5
       },
       "base_score": 41.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 41.5,
+      "audience_bonus": 15.0,
+      "score_stage": "final",
+      "score": 56.5,
       "key": "8379c15342f4a990dd3b3b2bd601746845840b38535d3224241b199c308ef89b",
-      "importance": 41.5,
+      "importance": 56.5,
       "editorial_value": 50.0,
       "topics": [
         "business"
       ],
-      "audience_score": null,
+      "audience_score": 5.0,
       "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "26–27 ноября пройдёт конференция для аналитиков, маркетологов и менеджеров цифровых продуктов «Матемаркетинг’26»",
-      "link": "https://habr.com/ru/news/1098018/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1098018",
-      "desc": "С 26 по 27 ноября 2026 года в Москве (кластер «Ломоносов» МГУ, Раменский бульвар, 1) в девятый раз пройдёт «Матемаркетинг» — техническая конференция для аналитиков, performance‑маркетологов и менеджеров цифровых продуктов. На мероприятии «Матемаркетинг’26» организаторы и участники обсудят, какие задачи уже можно поручить ИИ‑агентам, как контролировать качество их работы и как меняются требования к специалистам по данным. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1792739164.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 6.0,
-        "event_concreteness": 13.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 41.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 41.0
-      },
-      "base_score": 41.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 41.0,
-      "key": "2ffd62385fb92ff1cfdf6c823408fc2600bac384e73f93d37fa458bab3d262ad",
-      "importance": 41.0,
-      "editorial_value": 49.0,
-      "topics": [
-        "agents"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
     },
     {
       "region": "RUSSIA",
@@ -1321,20 +1283,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792746536.0405319,
+    "last_start_ts": 1792747503.7234395,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792746536.0405319,
-    "last_success_ts": 1792746536.0405319,
+    "last_run_ts": 1792747503.7234395,
+    "last_success_ts": 1792747503.7234395,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 3
+    "queue_size": 2
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792746536.0339656
+      "updated_at": 1792747503.7179918
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1630,10 +1592,16 @@
       "desc": "«Полный сервис»: OpenAI помогла найти уязвимости PHP, а теперь помогает проверить серверы Hash Telegraph",
       "source": "Hash Telegraph",
       "region": "RUSSIA"
+    },
+    "2ffd62385fb92ff1cfdf6c823408fc2600bac384e73f93d37fa458bab3d262ad": {
+      "time": 1792747503,
+      "title": "26–27 ноября пройдёт конференция для аналитиков, маркетологов и менеджеров цифровых продуктов «Матемаркетинг’26»",
+      "desc": "С 26 по 27 ноября 2026 года в Москве (кластер «Ломоносов» МГУ, Раменский бульвар, 1) в девятый раз пройдёт «Матемаркетинг» — техническая конференция для аналитиков, performance‑маркетологов и менеджеров цифровых продуктов. На мероприятии «Матемаркетинг’26» организаторы и участники обсудят, какие задачи уже можно поручить ИИ‑агентам, как контролировать качество их работы и как меняются требования к специалистам по данным. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "WORLD",
@@ -1651,82 +1619,11 @@
     "WORLD",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1792510167,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 17.16,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792511349,
       "status": "OK",
@@ -20694,11 +20591,99 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792747503,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 17.58,
+      "candidates": 0,
+      "queue_before": 3,
+      "queue_after": 2,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/news/1098018/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1098018",
+            "image_url": "https://habr.com/share/publication/1098018/97d6e59fc57d9431632bec3941d54d87/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.0,
+          "bonus_total": 36.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет оценить реальные риски замещения функций и методы контроля качества ИИ-агентов в маркетинговой аналитике.",
+            "title": "26–27 ноября пройдёт конференция для аналитиков, маркетологов и менеджеров цифровых продуктов «Матемаркетинг’26»",
+            "final_score": 62.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1792746293.7769158,
-  "last_publish_ts": 1792746536.0405319,
+  "last_publish_ts": 1792747503.7234395,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
