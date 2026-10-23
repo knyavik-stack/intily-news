@@ -1207,12 +1207,6 @@
     "c95916cff07aa09416497a4ba82a420bf6771988e027141cf21336d58f73aade": 1792776401
   },
   "known": {
-    "6ccc456eadbab024510b9c1960df5bd26037214fabf0acc8a40a9a82bbdb23ae": 1792771736.6793416,
-    "7515e72079fb946e673d590c939274dce7e322a85d3ee1dfe9e1a1f81fa7644c": 1792771736.6793416,
-    "335dcbc3b593ee562ee13d11a3b83c4a757e9a2ec7392bf03b47f44390aca6aa": 1792771736.6793416,
-    "5c8616b729648db9b87590dc2103f29e99894c7eb2bb90bc3046575dd3f4964d": 1792771736.6793416,
-    "2cfef2d0f82e7e81ada5e7cd5eae00622369bf845489d4081898d8c5dc0ca0f4": 1792771736.6793416,
-    "96cac467abb192ddfd19446048d1b3f1fb2ea5f8f8ed9a5086e890764350bce4": 1792771736.6793416,
     "c95916cff07aa09416497a4ba82a420bf6771988e027141cf21336d58f73aade": 1792773924.5969794,
     "9239c1e78c9e76f71537873ad3ea9d0b12f0cce63fbc8b9c9ffad353a48c733a": 1792775905.8324432,
     "3ab0bf30b9b152c1706e01cb2b7bfbfa015d0b5a78517c283c8792affd6ade60": 1792775905.8324432,
@@ -1488,19 +1482,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 41.0,
+        "base_score": 40.5,
         "audience_score": 8.0,
         "audience_bonus": 24.0,
-        "final_score": 65.0
+        "final_score": 64.5
       },
-      "base_score": 41.0,
+      "base_score": 40.5,
       "audience_bonus": 24.0,
       "score_stage": "final",
-      "score": 65.0,
+      "score": 64.5,
       "key": "6ab545db63b986d5b3a2fb31a2029457845e4823409f24239355a042b41d5e5e",
-      "importance": 65.0,
+      "importance": 64.5,
       "editorial_value": 50.0,
       "topics": [
         "tools"
@@ -1879,13 +1873,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792776401.9942658,
+    "last_start_ts": 1792777359.1624167,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792776401.9942658,
-    "last_success_ts": 1792776401.9942658,
+    "last_run_ts": 1792777359.1624167,
+    "last_success_ts": 1792777359.1624167,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 18
   },
   "providers": {
@@ -1900,9 +1894,9 @@
       "updated_at": 1792776316.747013
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792776288.2315052
+      "disabled_until": 1792863758.9788444,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1792777358.9788468
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1910,9 +1904,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792776401.846698
+      "disabled_until": 1792780958.0132656,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792777358.013268
     }
   },
   "stories": {
@@ -2262,146 +2256,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792570260,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 180.95,
-      "candidates": 20,
-      "queue_before": 4,
-      "queue_after": 6,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 12,
-        "known_recent": 0,
-        "already_queued": 4,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 3,
-        "candidate_count": 20,
-        "admission_rate": 15.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "The read operation timed out": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "The read operation timed out"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 10.0,
-          "bonus_total": 30.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Требует немедленного бюджетного и планового решения из‑за высокой стоимости и отдалённого релиза.",
-            "title": "Tuesday Labs представила домашнего робота‑дворецкого Voxel",
-            "final_score": 72.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 84,
-        "raw_items": 507,
-        "source_counts": {
-          "TechCrunch AI": 5,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 5,
-          "Habr AI/News": 14,
-          "CNews": 34,
-          "Euronews": 24
-        },
-        "score_filtered": 473,
-        "quality_filtered": 14,
-        "story_dedup": 0,
-        "candidates": 20,
-        "candidate_rate": 0.0473,
-        "score_buckets": {
-          "0–39": 440,
-          "40–49": 47,
-          "50–59": 18,
-          "60–69": 2,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 1,
-          "6": 0,
-          "7": 2,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "OPENROUTER",
-          "OPENROUTER"
-        ],
-        "used": "OPENROUTER",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 4,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792571629,
       "status": "OK",
@@ -21515,6 +21369,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1792777359,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 106.98,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 18,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
