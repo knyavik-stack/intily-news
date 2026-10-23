@@ -1200,7 +1200,6 @@
     "3e57bcfaf8876ef2db5e8064e55ccf12ac1936b6d83649efc975f5459e3c1452": 1792749416
   },
   "known": {
-    "e5dc3330190da131119e5c67363cfc3f832f2ab43b9c9cf717b9547bedfdb120": 1792744613.3640866,
     "7b9802062827cd3d587d7f7f9f43ad8ceed6436c8eb1d49ffb4fb09dd043eca4": 1792746293.7769158,
     "6400ccdc83e46f1c18d906f209e58fe0d90b13fe2598d02ad223ba1494613ae9": 1792746293.7769158,
     "8379c15342f4a990dd3b3b2bd601746845840b38535d3224241b199c308ef89b": 1792746293.7769158,
@@ -1210,12 +1209,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792749885.4278705,
+    "last_start_ts": 1792750125.8843799,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792749885.4278705,
-    "last_success_ts": 1792749885.4278705,
-    "last_candidates": 23,
+    "last_run_ts": 1792750125.8843799,
+    "last_success_ts": 1792750125.8843799,
+    "last_candidates": 21,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1223,7 +1222,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792749922.9665923
+      "updated_at": 1792750169.330658
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1558,96 +1557,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1792513990,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 28.64,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "<urlopen error _ssl.c:983: The handshake operation timed out>": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "<urlopen error _ssl.c:983: The handshake operation timed out>"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость срочного пересмотра юридических рисков и комплаенса для действующих AI-продуктов.",
-            "title": "Закон об ИИ: что важно знать бизнесу, разработчикам и всем пользователям - Рамблер",
-            "final_score": 73.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792514946,
       "status": "OK",
@@ -20744,10 +20653,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792750125,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 43.45,
+      "candidates": 21,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 21,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 21,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 9.0,
+          "bonus_total": 54.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Прямая угроза безопасности серверов требует немедленного аудита и патчинга инфраструктуры.",
+            "title": "ФСБ советует организациям отключать сайты из-за «дыры» в PHP",
+            "final_score": 80.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 125,
+        "raw_items": 591,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 1,
+          "Ars Technica": 2,
+          "Habr AI/News": 24,
+          "CNews": 58,
+          "Euronews": 37
+        },
+        "score_filtered": 542,
+        "quality_filtered": 23,
+        "story_dedup": 5,
+        "candidates": 21,
+        "candidate_rate": 0.0451,
+        "score_buckets": {
+          "0–39": 507,
+          "40–49": 58,
+          "50–59": 21,
+          "60–69": 4,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792749885.4278705,
+  "last_search_ts": 1792750125.8843799,
   "last_publish_ts": 1792749416.3646758,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
