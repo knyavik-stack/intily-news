@@ -1199,15 +1199,6 @@
     "4df31079316c893ef34aa0210319dd904737e7c33497cbda247a6eaf3d58014e": 1792758786
   },
   "known": {
-    "1932b3d26731e7249ba97cddba05ca25117d0d400a64fd9bc094816d5616cf91": 1792757327.6049812,
-    "4df31079316c893ef34aa0210319dd904737e7c33497cbda247a6eaf3d58014e": 1792757327.6049812,
-    "7fc897471a2cecd4a7cc360e06eb1c4e05e9717f901f763f73782f60c6899d02": 1792757327.6049812,
-    "1c30b798273be513bc8241efc616b7d1ddde93fd27d18cad108a00ed94346707": 1792757327.6049812,
-    "2ea1f923f14f40b262e81718ed99842a33667eff279e4515c1b703c0a4a538a0": 1792757327.6049812,
-    "30e1a1391b178bb2d2a9249d91d6ad5c9bbfa08779f3f8a0d6b095de75e68e93": 1792757327.6049812,
-    "6ab545db63b986d5b3a2fb31a2029457845e4823409f24239355a042b41d5e5e": 1792757327.6049812,
-    "e3e9743664488678c2db6b250b7a5c3a63ef35bcf5d9df16ff8ad1ad5d8b918c": 1792757327.6049812,
-    "b57412cd59a73926feae5e78f5819788270d70a2f30702f092cd34ef96234d81": 1792757327.6049812,
     "23b7e0d6f63221309265adad35c4b272e236331aee919603d22b7392825286d2": 1792759140.5694256,
     "7796bb8d341486e4870fae8b3aaa8cbd48b82f27f0253b27194aca08608893d3": 1792759140.5694256,
     "641f470f248b841e552edbc2a22634ee09fe3eee3f1f7c2e8f47c2f29eddb1b1": 1792762229.561412,
@@ -1249,7 +1240,11 @@
         "security_regulation"
       ],
       "audience_score": 9.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1792762865,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1792763165
     },
     {
       "region": "WORLD",
@@ -1284,10 +1279,10 @@
       "topics": [],
       "audience_score": 10.0,
       "tier": "A",
-      "last_failed_at": 1792751091,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | OPENROUTER: OPENROUTER_EMPTY_OR_INVALID_CONTENT | OPENAI: OPENAI_HTTP_429: {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/bill",
-      "failure_count": 1,
-      "next_retry_at": 1792751391
+      "last_failed_at": 1792762865,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 2,
+      "next_retry_at": 1792763465
     },
     {
       "region": "WORLD",
@@ -1380,21 +1375,21 @@
         "freshness": 1.5,
         "low_signal_penalty": 0.0,
         "base_score": 47.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 47.5
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 65.5
       },
       "base_score": 47.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 47.5,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 65.5,
       "key": "7796bb8d341486e4870fae8b3aaa8cbd48b82f27f0253b27194aca08608893d3",
-      "importance": 47.5,
+      "importance": 65.5,
       "editorial_value": 50.0,
       "topics": [
         "business"
       ],
-      "audience_score": null,
+      "audience_score": 6.0,
       "tier": "A"
     },
     {
@@ -1416,21 +1411,21 @@
         "freshness": 1.0,
         "low_signal_penalty": 0.0,
         "base_score": 43.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 43.5
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 64.5
       },
       "base_score": 43.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 43.5,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 64.5,
       "key": "641f470f248b841e552edbc2a22634ee09fe3eee3f1f7c2e8f47c2f29eddb1b1",
-      "importance": 43.5,
+      "importance": 64.5,
       "editorial_value": 50.0,
       "topics": [
         "business"
       ],
-      "audience_score": null,
+      "audience_score": 7.0,
       "tier": "A"
     },
     {
@@ -1689,30 +1684,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792762662.1720655,
+    "last_start_ts": 1792762865.0034425,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792762662.1720655,
-    "last_success_ts": 1792762662.1720655,
+    "last_run_ts": 1792762865.0034425,
+    "last_success_ts": 1792762865.0034425,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 13
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1792766246.9779615,
-      "reason": "The read operation timed out",
-      "updated_at": 1792762646.9779663
+      "disabled_until": 1792766466.3721738,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1792762866.3721757
     },
     "GROQ": {
-      "disabled_until": 1792766251.8047602,
+      "disabled_until": 1792766469.659829,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792762651.804762
+      "updated_at": 1792762869.659831
     },
     "OPENAI": {
-      "disabled_until": 1792849062.0939283,
+      "disabled_until": 1792849297.8508227,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792762662.09393
+      "updated_at": 1792762897.8508244
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1720,9 +1715,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1792766261.123659,
+      "disabled_until": 1792766496.6014962,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792762661.1236606
+      "updated_at": 1792762896.6014977
     }
   },
   "stories": {
@@ -2044,78 +2039,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792525299,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 29.87,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 17,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792525524,
       "status": "OK",
@@ -21273,6 +21196,89 @@
         "GEMINI": {
           "blocked": true,
           "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1792762865,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 45.41,
+      "candidates": 0,
+      "queue_before": 13,
+      "queue_after": 13,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.5,
+          "bonus_total": 39.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Появление специализированного консалтинга упрощает внедрение Claude в корпоративные процессы, снижая порог входа для бизнеса.",
+            "title": "Anthropic, Hg to launch European AI consultancy as firms expand enterprise services - Traders Union",
+            "final_score": 64.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 7,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
         },
         "GROQ": {
           "blocked": true,
