@@ -1223,30 +1223,30 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792871086.2595618,
+    "last_start_ts": 1792871562.773395,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792871086.2595618,
-    "last_success_ts": 1792871086.2595618,
-    "last_candidates": 17,
-    "last_published": 1,
+    "last_run_ts": 1792871562.773395,
+    "last_success_ts": 1792871562.773395,
+    "last_candidates": 15,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792871135.6347153
+      "disabled_until": 1792875211.1579285,
+      "reason": "The read operation timed out",
+      "updated_at": 1792871611.1579309
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792866286.0473623
+      "disabled_until": 1792875214.5313704,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792871614.5313728
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792866286.0473623
+      "disabled_until": 1792958023.728127,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1792871623.7281284
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1254,19 +1254,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792866286.0473623
+      "disabled_until": 1792875222.4535627,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792871622.4535646
     }
   },
   "stories": {
-    "4ea1c10a0266849f82c667ebd978f65ecddba76c0360c6f47431df715c98fbec": {
-      "time": 1792784706,
-      "title": "Neo4j Launches Context Engine to Give Enterprise AI Agents Shared Business Knowledge - Konsulteer",
-      "desc": "Neo4j Launches Context Engine to Give Enterprise AI Agents Shared Business Knowledge Konsulteer",
-      "source": "Konsulteer",
-      "region": "WORLD"
-    },
     "6c5a229828ca7fb2d142307385671096ca8a79ec8dc422b06d035a5b8ba71590": {
       "time": 1792785400,
       "title": "Moonshot AI launches Kimi K3.1 Pro, closing in on Claude Opus 5.5 in coding performance - Crypto Briefing",
@@ -1529,96 +1522,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792657737,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 19.64,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/companies/tantor/news/1097630/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1097630",
-            "image_url": "https://habr.com/share/publication/1097630/706d21e8fefc8875ad9f13cc11fea061/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.67,
-          "bonus_total": 69.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Позволяет существенно снизить TCO инфраструктуры для LLM-сервисов за счет оптимизации использования памяти.",
-            "title": "Представлен программно‑аппаратный AI KV‑cache offloading от «Тантор Лабс» с управлением в платформе «Боцман»",
-            "final_score": 75.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 8,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792658950,
       "status": "OK",
@@ -23083,10 +22986,136 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792871562,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 60.97,
+      "candidates": 15,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 13,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 15,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 35,
+        "raw_items": 680,
+        "source_counts": {
+          "TechCrunch AI": 4,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 10,
+          "CNews": 1,
+          "Euronews": 18
+        },
+        "score_filtered": 654,
+        "quality_filtered": 10,
+        "story_dedup": 1,
+        "candidates": 15,
+        "candidate_rate": 0.0233,
+        "score_buckets": {
+          "0–39": 624,
+          "40–49": 40,
+          "50–59": 16,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792871086.2595618,
+  "last_search_ts": 1792871562.773395,
   "last_publish_ts": 1792871086.2595618,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
