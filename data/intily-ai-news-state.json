@@ -1199,7 +1199,8 @@
     "b77226d170d5cd1d6cd3f7dab331c5964bb336449d6603e2e88e7b0fa898e133": 1792844932,
     "03a7a76552a25d2624edb1d787160a336ee903b2402301f5056423f2e90ac37c": 1792845168,
     "f9b06b00b095f4cfe8084aacc314f2d636f1a90e563e58f7bfe80401b2422bff": 1792845892,
-    "787dbcd33dcbd2f7b94645389c748665ee1f01300f5c3cae1ffc6464ca5c7db9": 1792846861
+    "787dbcd33dcbd2f7b94645389c748665ee1f01300f5c3cae1ffc6464ca5c7db9": 1792846861,
+    "ee64e98fc3066633b50c39789dc885ee868ab6d46ffbeeb5439706d4d1362479": 1792848526
   },
   "known": {
     "2dc3b9c7d9c05842ac89285dd91db57d9db22f6a178c950140f76f6dbc64f697": 1792844204.1218557,
@@ -1207,24 +1208,25 @@
     "787dbcd33dcbd2f7b94645389c748665ee1f01300f5c3cae1ffc6464ca5c7db9": 1792844204.1218557,
     "03a7a76552a25d2624edb1d787160a336ee903b2402301f5056423f2e90ac37c": 1792845168.4624248,
     "f9b06b00b095f4cfe8084aacc314f2d636f1a90e563e58f7bfe80401b2422bff": 1792845168.4624248,
-    "a9e4955e54b21365cd03f01500f6aca755d1073d1f158931922a0c0d1ef6cf66": 1792846126.036397
+    "a9e4955e54b21365cd03f01500f6aca755d1073d1f158931922a0c0d1ef6cf66": 1792846126.036397,
+    "ee64e98fc3066633b50c39789dc885ee868ab6d46ffbeeb5439706d4d1362479": 1792848526.232369
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792848291.5940597,
+    "last_start_ts": 1792848526.232369,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792848291.5940597,
-    "last_success_ts": 1792848291.5940597,
-    "last_candidates": 6,
-    "last_published": 0,
+    "last_run_ts": 1792848526.232369,
+    "last_success_ts": 1792848526.232369,
+    "last_candidates": 10,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792848322.7218041
+      "updated_at": 1792848572.292505
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1478,10 +1480,16 @@
       "desc": "Blockchainappsdeveloper Launches Halloween Deals With Up To 30% OFF On Blockchain, Crypto, AI, And Defi Development Menafn",
       "source": "Menafn",
       "region": "WORLD"
+    },
+    "ee64e98fc3066633b50c39789dc885ee868ab6d46ffbeeb5439706d4d1362479": {
+      "time": 1792848526,
+      "title": "Dan Bin's Q3 US Stock Holdings Get a Major Overhaul: 9.8 Billion Yuan Concentrated Bet on AI Core Leaders, New Stake in SpaceX, Apple Bought Back - BigGo Finance",
+      "desc": "Dan Bin's Q3 US Stock Holdings Get a Major Overhaul: 9.8 Billion Yuan Concentrated Bet on AI Core Leaders, New Stake in SpaceX, Apple Bought Back BigGo Finance",
+      "source": "BigGo Finance",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -1496,6 +1504,7 @@
     "WORLD",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -1503,78 +1512,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792598735,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 24.13,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792601603,
       "status": "OK",
@@ -21812,11 +21749,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792848526,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 47.02,
+      "candidates": 10,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 7,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 1,
+        "candidate_count": 10,
+        "admission_rate": 10.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://finance.biggo.com/news/c3d5f92d-fcf3-417d-9477-81fc4474d466",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.0,
+          "bonus_total": 63.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Понимание рыночных приоритетов крупных инвесторов помогает корректировать стратегическое планирование и оценку технологических трендов.",
+            "title": "Dan Bin's Q3 US Stock Holdings Get a Major Overhaul: 9.8 Billion Yuan Concentrated Bet on AI Core Leaders, New Stake in SpaceX, Apple Bought Back - BigGo Finance",
+            "final_score": 61.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 40,
+        "raw_items": 595,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 16,
+          "CNews": 0,
+          "Euronews": 22
+        },
+        "score_filtered": 579,
+        "quality_filtered": 6,
+        "story_dedup": 0,
+        "candidates": 10,
+        "candidate_rate": 0.018,
+        "score_buckets": {
+          "0–39": 556,
+          "40–49": 29,
+          "50–59": 9,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792848291.5940597,
-  "last_publish_ts": 1792846861.8916266,
+  "last_search_ts": 1792848526.232369,
+  "last_publish_ts": 1792848526.232369,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
