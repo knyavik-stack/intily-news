@@ -1201,37 +1201,39 @@
     "d863a3c70c7b4a22434ee6877a201bb25300cc612638c56006b7bccb2f6ec854": 1792825247,
     "e4cebb71299453de743ca666f08a99c6eeec5a68c2e6a54c88d94b8e7c183e63": 1792825486,
     "e2ae42838c4ca78606da6d497198bf994f1d92f40cd237803496bf75274757ec": 1792825968,
-    "c20f6cd09b1e6bb396fe70e7584f92fc29d681e7d0218cb953f12cbb716cd07c": 1792831965
+    "c20f6cd09b1e6bb396fe70e7584f92fc29d681e7d0218cb953f12cbb716cd07c": 1792831965,
+    "400a878800079a2a69e446837046646736a464ef9a2e35f4a5e6061c126df9c6": 1792836525
   },
   "known": {
-    "c20f6cd09b1e6bb396fe70e7584f92fc29d681e7d0218cb953f12cbb716cd07c": 1792831965.1868947
+    "c20f6cd09b1e6bb396fe70e7584f92fc29d681e7d0218cb953f12cbb716cd07c": 1792831965.1868947,
+    "400a878800079a2a69e446837046646736a464ef9a2e35f4a5e6061c126df9c6": 1792836525.3648016
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792835570.6026022,
+    "last_start_ts": 1792836525.3648016,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792835570.6026022,
-    "last_success_ts": 1792835570.6026022,
-    "last_candidates": 8,
-    "last_published": 0,
+    "last_run_ts": 1792836525.3648016,
+    "last_success_ts": 1792836525.3648016,
+    "last_candidates": 9,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1792839228.6281066,
-      "reason": "The read operation timed out",
-      "updated_at": 1792835628.6281087
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1792836571.780487
     },
     "GROQ": {
-      "disabled_until": 1792839232.0197105,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792835632.019712
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1792836525.2787976
     },
     "OPENAI": {
-      "disabled_until": 1792922037.4702396,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792835637.4702413
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1792836525.2787976
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1239,19 +1241,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1792839237.2429173,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792835637.2429187
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1792836525.2787976
     }
   },
   "stories": {
-    "3e57bcfaf8876ef2db5e8064e55ccf12ac1936b6d83649efc975f5459e3c1452": {
-      "time": 1792749416,
-      "title": "В СФ призвали создать единое правовое регулирование применения ИИ врачами - The World Inform",
-      "desc": "В СФ призвали создать единое правовое регулирование применения ИИ врачами The World Inform",
-      "source": "The World Inform",
-      "region": "RUSSIA"
-    },
     "bb339fb31bd4b49f7cdd002e40dfc41af4196c531e2dfd6e4239214c7779c450": {
       "time": 1792754221,
       "title": "Itglobal.com расширяет испытания ИИ-файрвола для защиты корпоративных данных и ИИ-агентов",
@@ -1468,11 +1463,17 @@
       "desc": "ИИ-агенты вновь пытались обойти изоляцию: OpenAI возобновила обучение моделей MY.UA",
       "source": "MY.UA",
       "region": "RUSSIA"
+    },
+    "400a878800079a2a69e446837046646736a464ef9a2e35f4a5e6061c126df9c6": {
+      "time": 1792836525,
+      "title": "Банки США стали блокируют ИИ‑агентов (которым клиенты сами отдали пароли)",
+      "desc": "Крупнейшие американские банки начали блокировать ИИ‑агентов, которые входят в интернет‑банкинг под учётными записями клиентов. Об этом написали примерно СМИ, обычно не упомянув «мелкую» подробность: пользователи передавали программам не специальные токены с ограниченными полномочиями, а полноценные банковские логины и пароли . Получив такой доступ, агент потенциально способен делать почти всё, что может сам владелец счёта, включая проведение платежей и изменение настроек. Причём передача учётных данных сторонним программам нередко прямо противоречит договору с банком. На первый взгляд банки поступают совершенно разумно. Но возникает другой вопрос: почему клиенту вообще приходится отдавать программе полный доступ, если современные банковские системы давно умеют разграничивать полномочия? Оказывается, в США такие механизмы существуют, но далеко не каждый клиент может самостоятельно выдать произвольному агенту отдельные права. А за технической проблемой обнаруживается старый конфликт между банками и независимыми финансовыми сервисами — конфликт, в котором на кону не только безопасность, но и довольно большие деньги. Посмотрим, что произошло, как американские банки организуют доступ сторонних программ, почему некоторые из них уже перекладывают ответственность за действия ИИ на пользователей - и при чём здесь российский ЦБ, который ещё в 2024 году обещал обязательное внедрение Open Banking с 2026-го. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1490,81 +1491,10 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1792590811,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 18.85,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792591273,
       "status": "OK",
@@ -21268,11 +21198,152 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1792836525,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 48.76,
+      "candidates": 9,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 6,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 1,
+        "candidate_count": 9,
+        "admission_rate": 11.11,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/news/1098872/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1098872",
+            "image_url": "https://habr.com/share/publication/1098872/c590213b238f285fbc4920868ef0cd59/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 8.0,
+          "bonus_total": 72.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 3,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Критический риск безопасности при интеграции ИИ-агентов с финансовыми данными требует немедленного пересмотра протоколов доступа.",
+            "title": "Банки США стали блокируют ИИ‑агентов (которым клиенты сами отдали пароли)",
+            "final_score": 67.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 30,
+        "raw_items": 269,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 15,
+          "CNews": 0,
+          "Euronews": 13
+        },
+        "score_filtered": 252,
+        "quality_filtered": 6,
+        "story_dedup": 2,
+        "candidates": 9,
+        "candidate_rate": 0.0377,
+        "score_buckets": {
+          "0–39": 237,
+          "40–49": 21,
+          "50–59": 11,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792835570.6026022,
-  "last_publish_ts": 1792831965.1868947,
+  "last_search_ts": 1792836525.3648016,
+  "last_publish_ts": 1792836525.3648016,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
