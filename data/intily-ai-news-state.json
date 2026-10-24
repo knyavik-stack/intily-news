@@ -1213,20 +1213,20 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792858377.398429,
+    "last_start_ts": 1792858856.4536889,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792858377.398429,
-    "last_success_ts": 1792858377.398429,
-    "last_candidates": 9,
-    "last_published": 1,
+    "last_run_ts": 1792858856.4536889,
+    "last_success_ts": 1792858856.4536889,
+    "last_candidates": 13,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792858422.057564
+      "updated_at": 1792858910.860751
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1250,13 +1250,6 @@
     }
   },
   "stories": {
-    "6ccc456eadbab024510b9c1960df5bd26037214fabf0acc8a40a9a82bbdb23ae": {
-      "time": 1792771983,
-      "title": "Z.ai раздаёт по 500 млн токенов GLM-5.3 и GLM-5.3-Flash в ZCode к Дню программиста",
-      "desc": "В ZCode, приложении Z.ai для разработки с AI-агентами, появилась акция 1024 Dev Day к китайскому Дню программиста 24 октября. Пользователям предлагают бесплатно получить пакет из 500 млн токенов для GLM-5.3 и GLM-5.3-Flash. В сообществе LINUX DO опубликованы скриншоты успешного получения бонуса . Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "c95916cff07aa09416497a4ba82a420bf6771988e027141cf21336d58f73aade": {
       "time": 1792776401,
       "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
@@ -1512,96 +1505,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792609511,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 15.51,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.stepsecurity.io/blog/opencode-security-breach",
-            "image_url": "https://cdn.prod.website-files.com/673b71f0790aabf30bd30bf8/6ad51391bd687f861305f022_OpenCode%20Breach%20Cover-selection.png",
-            "width": 3200,
-            "height": 1800,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Критическая угроза утечки API-ключей требует немедленного аудита безопасности инфраструктуры разработки.",
-            "title": "OpenCode Security Breach: Distillation Attack Hit Console Users With Linked AI Providers. How to Find OpenCode on Developer Machines and Respond - StepSecurity",
-            "final_score": 77.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792610231,
       "status": "OK",
@@ -22388,10 +22291,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792858856,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 54.45,
+      "candidates": 13,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 4,
+        "added": 0,
+        "candidate_count": 13,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет оптимизировать операционные процессы малого бизнеса через автоматизацию контроля задач.",
+            "title": "Workplace AI Agents: Anthropic Launches Claude Duet to Track Work for Small Businesses - Trend Hunter",
+            "final_score": 68.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 47,
+        "raw_items": 701,
+        "source_counts": {
+          "TechCrunch AI": 3,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 17,
+          "CNews": 0,
+          "Euronews": 25
+        },
+        "score_filtered": 676,
+        "quality_filtered": 9,
+        "story_dedup": 3,
+        "candidates": 13,
+        "candidate_rate": 0.0199,
+        "score_buckets": {
+          "0–39": 649,
+          "40–49": 36,
+          "50–59": 15,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792858377.398429,
+  "last_search_ts": 1792858856.4536889,
   "last_publish_ts": 1792858377.398429,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
