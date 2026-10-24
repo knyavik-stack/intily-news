@@ -1,6 +1,5 @@
 {
   "published": {
-    "ad78b965a383b9e3913df00a4883bfe5c96be0d100b5aa63ce7891c237e92f8c": 1790257742,
     "b5ab73455b8aa5095c07774269fb54b5dbf066e962610407a17e1a56dd702f8b": 1790258909,
     "bf89872aef13a4a7aec8acde87bf63d56df049909ef03194bbeee71c0f5a6e6c": 1790273834,
     "e5af9bfee4f90a0cef05daa6f21b4f335a3301d9952e95385e82c6b27dc39c34": 1790274790,
@@ -1203,9 +1202,6 @@
     "ee64e98fc3066633b50c39789dc885ee868ab6d46ffbeeb5439706d4d1362479": 1792848526
   },
   "known": {
-    "2dc3b9c7d9c05842ac89285dd91db57d9db22f6a178c950140f76f6dbc64f697": 1792844204.1218557,
-    "b77226d170d5cd1d6cd3f7dab331c5964bb336449d6603e2e88e7b0fa898e133": 1792844204.1218557,
-    "787dbcd33dcbd2f7b94645389c748665ee1f01300f5c3cae1ffc6464ca5c7db9": 1792844204.1218557,
     "03a7a76552a25d2624edb1d787160a336ee903b2402301f5056423f2e90ac37c": 1792845168.4624248,
     "f9b06b00b095f4cfe8084aacc314f2d636f1a90e563e58f7bfe80401b2422bff": 1792845168.4624248,
     "a9e4955e54b21365cd03f01500f6aca755d1073d1f158931922a0c0d1ef6cf66": 1792846126.036397,
@@ -1213,12 +1209,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792848767.9956634,
+    "last_start_ts": 1792850458.229433,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792848767.9956634,
-    "last_success_ts": 1792848767.9956634,
-    "last_candidates": 11,
+    "last_run_ts": 1792850458.229433,
+    "last_success_ts": 1792850458.229433,
+    "last_candidates": 10,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1226,7 +1222,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792848802.645624
+      "updated_at": 1792850498.0081122
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1250,13 +1246,6 @@
     }
   },
   "stories": {
-    "23b7e0d6f63221309265adad35c4b272e236331aee919603d22b7392825286d2": {
-      "time": 1792763111,
-      "title": "AI Driven Cyberattacks Expose Critical Internet Security Flaws - Demokratis.co.id",
-      "desc": "AI Driven Cyberattacks Expose Critical Internet Security Flaws Demokratis.co.id",
-      "source": "Demokratis.co.id",
-      "region": "WORLD"
-    },
     "40374e1636d8886234fcaf9a4c57ab292d85b1504f16fa82c60ec4aa02c3006e": {
       "time": 1792767670,
       "title": "Anthropic обновила Claude API впервые с 2023 года",
@@ -1512,78 +1501,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792602088,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 19.71,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792602555,
       "status": "OK",
@@ -21899,10 +21816,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792850458,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 39.87,
+      "candidates": 10,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 7,
+        "known_recent": 1,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 10,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.5,
+          "bonus_total": 51.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 10.0,
+            "bonus": 30.0,
+            "reason": "Изменение модели финансирования инфраструктуры напрямую влияет на капитальные затраты и стратегию закупок для любого AI-бизнеса.",
+            "title": "Nvidia's Huang Pitches Chips as Loan Collateral to Unlock $500 Billion for AI Buildout - BigGo Finance",
+            "final_score": 76.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 40,
+        "raw_items": 604,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 16,
+          "CNews": 0,
+          "Euronews": 22
+        },
+        "score_filtered": 590,
+        "quality_filtered": 4,
+        "story_dedup": 0,
+        "candidates": 10,
+        "candidate_rate": 0.0177,
+        "score_buckets": {
+          "0–39": 565,
+          "40–49": 29,
+          "50–59": 9,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792848767.9956634,
+  "last_search_ts": 1792850458.229433,
   "last_publish_ts": 1792848526.232369,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
