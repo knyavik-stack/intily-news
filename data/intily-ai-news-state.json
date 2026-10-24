@@ -1,7 +1,5 @@
 {
   "published": {
-    "65a108a56fbe310c4178effa325a0e73cf33361ac825a29a4b8402c75c86cb93": 1790227506,
-    "c6ce9d554504a465dbc790c441f2edaa3014017fe86b277849c650f6f6d38358": 1790227994,
     "cdf920d541c73aacd361c732f1b0ab951379cf8a5baf99bdd1d2cd73bec7a668": 1790228422,
     "ef2288f3d346dcf254cbd71a727bce154f97498f5cfacbc571df0f9f403842a9": 1790229423,
     "3e97c4cff8cc185250d4efce909ce8eeabd7abd473e56b132f2137ee1107d29b": 1790230147,
@@ -1481,30 +1479,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792818527.9837384,
+    "last_start_ts": 1792820000.2267137,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792818527.9837384,
-    "last_success_ts": 1792818527.9837384,
-    "last_candidates": 8,
-    "last_published": 1,
+    "last_run_ts": 1792820000.2267137,
+    "last_success_ts": 1792820000.2267137,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 7
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792818584.7366242
+      "disabled_until": 1792823585.1168942,
+      "reason": "The read operation timed out",
+      "updated_at": 1792819985.1168969
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792784688.340089
+      "disabled_until": 1792823587.1445088,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792819987.1445105
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792784688.340089
+      "disabled_until": 1792906400.1996028,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1792820000.1996045
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1512,19 +1510,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792784688.340089
+      "disabled_until": 1792823599.1097941,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792819999.109796
     }
   },
   "stories": {
-    "6c856c3e310aba15c8a11d54815f4fc50738af2471a106f9954695500feef881": {
-      "time": 1792733570,
-      "title": "Исследование: нейросеть Qwen пишет менее безопасный код для компаний из США и Гонконга, чем для китайских заказчиков",
-      "desc": "Китайская ИИ‑модель Qwen3-Coder от компании Alibaba создаёт менее безопасное ПО, если в задании указано, что продукт предназначен для заказчика из США или Гонконга, а не из Китая. К такому выводу пришли исследователи из ИБ‑стартапа Hirundo. Исследователи запустили общедоступные веса Qwen3-Coder на собственных серверах и поставили ей задачу разработать 2320 приложений. Как показали тесты, приложения, созданные для американского заказчика, были на 19% чаще уязвимыми для взлома. При создании приложений для гонконгских заказчиков вероятность взлома была на 28% выше. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "b95e685e6c06e00cf2496cb1afac33d96a5e6e744b90f8530146cb3c4c25cfe2": {
       "time": 1792734050,
       "title": "Sure, let’s smoosh SpaceX and Tesla together, who cares",
@@ -1906,147 +1897,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792576623,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 47.28,
-      "candidates": 30,
-      "queue_before": 7,
-      "queue_after": 11,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 16,
-        "known_recent": 0,
-        "already_queued": 7,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 5,
-        "candidate_count": 30,
-        "admission_rate": 16.67,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.cnews.ru/news/line/2026-10-21_tsifromed_vnedril_ii-konsultanta",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.0,
-          "bonus_total": 63.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Показывает реальный кейс внедрения RAG в enterprise-сегменте, что полезно для оценки эффективности автоматизации поддержки.",
-            "title": "«Цифромед» внедрил ИИ-консультанта на базе RAG-системы для автоматизации служб техподдержки",
-            "final_score": 61.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 5,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 108,
-        "raw_items": 626,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 2,
-          "Habr AI/News": 22,
-          "CNews": 46,
-          "Euronews": 34
-        },
-        "score_filtered": 573,
-        "quality_filtered": 19,
-        "story_dedup": 4,
-        "candidates": 30,
-        "candidate_rate": 0.0579,
-        "score_buckets": {
-          "0–39": 531,
-          "40–49": 59,
-          "50–59": 31,
-          "60–69": 5,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 2,
-          "6": 0,
-          "7": 5,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792577119,
       "status": "OK",
@@ -21282,6 +21132,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1792820000,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 35.22,
+      "candidates": 0,
+      "queue_before": 7,
+      "queue_after": 7,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 6,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
