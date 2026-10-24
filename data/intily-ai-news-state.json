@@ -1,6 +1,5 @@
 {
   "published": {
-    "b5ab73455b8aa5095c07774269fb54b5dbf066e962610407a17e1a56dd702f8b": 1790258909,
     "bf89872aef13a4a7aec8acde87bf63d56df049909ef03194bbeee71c0f5a6e6c": 1790273834,
     "e5af9bfee4f90a0cef05daa6f21b4f335a3301d9952e95385e82c6b27dc39c34": 1790274790,
     "3933852be037a90032228c601271afd48cefd8bf0aeb6fea4c4340aaed67c730": 1790275020,
@@ -1199,35 +1198,35 @@
     "03a7a76552a25d2624edb1d787160a336ee903b2402301f5056423f2e90ac37c": 1792845168,
     "f9b06b00b095f4cfe8084aacc314f2d636f1a90e563e58f7bfe80401b2422bff": 1792845892,
     "787dbcd33dcbd2f7b94645389c748665ee1f01300f5c3cae1ffc6464ca5c7db9": 1792846861,
-    "ee64e98fc3066633b50c39789dc885ee868ab6d46ffbeeb5439706d4d1362479": 1792848526
+    "ee64e98fc3066633b50c39789dc885ee868ab6d46ffbeeb5439706d4d1362479": 1792848526,
+    "e307d464e4c234d40f477f3b4a0c976abe09d4b2b25e62ce6866c4e24b24ac3e": 1792850924
   },
   "known": {
-    "03a7a76552a25d2624edb1d787160a336ee903b2402301f5056423f2e90ac37c": 1792845168.4624248,
-    "f9b06b00b095f4cfe8084aacc314f2d636f1a90e563e58f7bfe80401b2422bff": 1792845168.4624248,
     "a9e4955e54b21365cd03f01500f6aca755d1073d1f158931922a0c0d1ef6cf66": 1792846126.036397,
-    "ee64e98fc3066633b50c39789dc885ee868ab6d46ffbeeb5439706d4d1362479": 1792848526.232369
+    "ee64e98fc3066633b50c39789dc885ee868ab6d46ffbeeb5439706d4d1362479": 1792848526.232369,
+    "e307d464e4c234d40f477f3b4a0c976abe09d4b2b25e62ce6866c4e24b24ac3e": 1792850924.3296137
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792850458.229433,
+    "last_start_ts": 1792850924.3296137,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792850458.229433,
-    "last_success_ts": 1792850458.229433,
+    "last_run_ts": 1792850924.3296137,
+    "last_success_ts": 1792850924.3296137,
     "last_candidates": 10,
-    "last_published": 0,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792850498.0081122
+      "disabled_until": 1792854559.7565036,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1792850959.7565055
     },
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792846859.6526356
+      "updated_at": 1792850961.7134762
     },
     "OPENAI": {
       "disabled_until": 0,
@@ -1476,12 +1475,18 @@
       "desc": "Dan Bin's Q3 US Stock Holdings Get a Major Overhaul: 9.8 Billion Yuan Concentrated Bet on AI Core Leaders, New Stake in SpaceX, Apple Bought Back BigGo Finance",
       "source": "BigGo Finance",
       "region": "WORLD"
+    },
+    "e307d464e4c234d40f477f3b4a0c976abe09d4b2b25e62ce6866c4e24b24ac3e": {
+      "time": 1792850924,
+      "title": "Workplace AI Agents: Anthropic Launches Claude Duet to Track Work for Small Businesses - Trend Hunter",
+      "desc": "Workplace AI Agents: Anthropic Launches Claude Duet to Track Work for Small Businesses Trend Hunter",
+      "source": "Trend Hunter",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1493,6 +1498,7 @@
     "WORLD",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -1501,78 +1507,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792602555,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 5.33,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792602806,
       "status": "OK",
@@ -21946,11 +21880,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792850924,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 38.39,
+      "candidates": 10,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 6,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 1,
+        "candidate_count": 10,
+        "admission_rate": 10.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://www.trendhunter.com/trends/workplace-ai-agents",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "New tool can automate work tracking, boosting productivity.",
+            "title": "Workplace AI Agents: Anthropic Launches Claude Duet to Track Work for Small Businesses - Trend Hunter",
+            "final_score": 72.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 40,
+        "raw_items": 581,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 16,
+          "CNews": 0,
+          "Euronews": 22
+        },
+        "score_filtered": 567,
+        "quality_filtered": 4,
+        "story_dedup": 0,
+        "candidates": 10,
+        "candidate_rate": 0.0185,
+        "score_buckets": {
+          "0–39": 545,
+          "40–49": 26,
+          "50–59": 9,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GROQ"
+        ],
+        "used": "GROQ",
+        "failovers": 2,
+        "failures": 1,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792850458.229433,
-  "last_publish_ts": 1792848526.232369,
+  "last_search_ts": 1792850924.3296137,
+  "last_publish_ts": 1792850924.3296137,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
