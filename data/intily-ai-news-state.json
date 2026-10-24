@@ -1208,23 +1208,25 @@
     "65d970fb58844c86467874ae461540ab36305c694f389f12308fa8ccae0d5c3d": 1792866529,
     "1b38e8c3536aaba47ffd8dc44687bf490ea02c8647a8939a26917f422a315199": 1792868686,
     "b6b3e66342303dcd9ee8929af0065631140ecbe9a962b67c6ad1d70ab81e2902": 1792868930,
-    "7d9e1a511a2698691611651ba008be480d86c96f20f946ab1faecac1a78c845b": 1792870128
+    "7d9e1a511a2698691611651ba008be480d86c96f20f946ab1faecac1a78c845b": 1792870128,
+    "9d49c95e4fdd2cb4f8ac5cd3d6442275eb63e4827c727bc9c5dce4d3164f4df6": 1792870367
   },
   "known": {
     "8c730b765a7cf592cfd37d428ad15fade9cabfb68e550e3db381e24ece431e96": 1792866286.6132793,
     "65d970fb58844c86467874ae461540ab36305c694f389f12308fa8ccae0d5c3d": 1792866286.6132793,
     "1b38e8c3536aaba47ffd8dc44687bf490ea02c8647a8939a26917f422a315199": 1792868686.248661,
     "b6b3e66342303dcd9ee8929af0065631140ecbe9a962b67c6ad1d70ab81e2902": 1792868686.248661,
-    "7d9e1a511a2698691611651ba008be480d86c96f20f946ab1faecac1a78c845b": 1792870128.3663292
+    "7d9e1a511a2698691611651ba008be480d86c96f20f946ab1faecac1a78c845b": 1792870128.3663292,
+    "9d49c95e4fdd2cb4f8ac5cd3d6442275eb63e4827c727bc9c5dce4d3164f4df6": 1792870367.6310842
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1792870128.3663292,
+    "last_start_ts": 1792870367.6310842,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792870128.3663292,
-    "last_success_ts": 1792870128.3663292,
-    "last_candidates": 16,
+    "last_run_ts": 1792870367.6310842,
+    "last_success_ts": 1792870367.6310842,
+    "last_candidates": 17,
     "last_published": 1,
     "queue_size": 0
   },
@@ -1232,7 +1234,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792870191.316529
+      "updated_at": 1792870411.4688783
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1486,10 +1488,16 @@
       "desc": "Autonomous 'Skynet mode' agent hijacks AI models for 100,000-step attacks news.lavx.hu",
       "source": "news.lavx.hu",
       "region": "WORLD"
+    },
+    "9d49c95e4fdd2cb4f8ac5cd3d6442275eb63e4827c727bc9c5dce4d3164f4df6": {
+      "time": 1792870367,
+      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+      "desc": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+      "source": "TechCrunch AI",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -1508,92 +1516,10 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792651740,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 30.77,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 17,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Массовое принятие агентов требует пересмотра UX-стратегии и способов удержания аудитории в продуктах.",
-            "title": "Meta CEO Mark Zuckerberg says 10 million people have set up a Muse AI agent - Business Insider",
-            "final_score": 69.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 7,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 12,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792654420,
       "status": "OK",
@@ -22984,11 +22910,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792870367,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 44.46,
+      "candidates": 17,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 15,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 17,
+        "admission_rate": 5.88,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.33,
+          "bonus_total": 66.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Помогает избежать инвестиций в нежизнеспособные технологии и пересмотреть критерии выбора инструментов для бизнеса.",
+            "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+            "final_score": 59.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 38,
+        "raw_items": 706,
+        "source_counts": {
+          "TechCrunch AI": 4,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 11,
+          "CNews": 1,
+          "Euronews": 19
+        },
+        "score_filtered": 676,
+        "quality_filtered": 10,
+        "story_dedup": 3,
+        "candidates": 17,
+        "candidate_rate": 0.0254,
+        "score_buckets": {
+          "0–39": 644,
+          "40–49": 42,
+          "50–59": 20,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792870128.3663292,
-  "last_publish_ts": 1792870128.3663292,
+  "last_search_ts": 1792870367.6310842,
+  "last_publish_ts": 1792870367.6310842,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
