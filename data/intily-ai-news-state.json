@@ -1,6 +1,5 @@
 {
   "published": {
-    "b730ea7c183026eeb38557ff15298fe1f0133b9f4134d4fccf2f7f89569d5d75": 1790339338,
     "0ca86decbe53691095b058c090c458ba4f3fb4484d202fa1dadcc6736a92cbbc": 1790340579,
     "73c166453ab11e65a583263441b3eb51e052b007803edc62bb633cd12e8ec24d": 1790341988,
     "feb6a2667c2978870b32516288ff3ce3e8e6d68d52ba1ac97576df82200911a7": 1790347806,
@@ -1352,30 +1351,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792930445.0007112,
+    "last_start_ts": 1792931354.82343,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792930445.0007112,
-    "last_success_ts": 1792930445.0007112,
+    "last_run_ts": 1792931354.82343,
+    "last_success_ts": 1792931354.82343,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 4
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1792933987.3459585,
-      "reason": "The read operation timed out",
-      "updated_at": 1792930387.3459606
+      "disabled_until": 1792934928.2382674,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1792931328.2382693
     },
     "GROQ": {
-      "disabled_until": 1792933990.6520228,
+      "disabled_until": 1792934931.4630275,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792930390.6520245
+      "updated_at": 1792931331.4630287
     },
     "OPENAI": {
-      "disabled_until": 1793016844.9932702,
+      "disabled_until": 1793017754.813608,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792930444.9932728
+      "updated_at": 1792931354.8136098
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1383,26 +1382,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1792934044.6874676,
+      "disabled_until": 1792934953.9316766,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792930444.6874695
+      "updated_at": 1792931353.9316788
     }
   },
   "stories": {
-    "2dc3b9c7d9c05842ac89285dd91db57d9db22f6a178c950140f76f6dbc64f697": {
-      "time": 1792844204,
-      "title": "Japanese firms helped position India as an AI innovation hub, with 100+ companies establishing or expanding Global Capability Centres (GCCs) in the country, according to a Cushman & Wakefield report released on Wednesday. The centres are moving bey - Instagram",
-      "desc": "Japanese firms helped position India as an AI innovation hub, with 100+ companies establishing or expanding Global Capability Centres (GCCs) in the country, according to a Cushman & Wakefield report released on Wednesday. The centres are moving bey Instagram",
-      "source": "Instagram",
-      "region": "WORLD"
-    },
-    "b77226d170d5cd1d6cd3f7dab331c5964bb336449d6603e2e88e7b0fa898e133": {
-      "time": 1792844932,
-      "title": "1Password Surpasses $500 Million in Revenue as AI Agents Drive Growth - WSJ",
-      "desc": "1Password Surpasses $500 Million in Revenue as AI Agents Drive Growth WSJ",
-      "source": "WSJ",
-      "region": "WORLD"
-    },
     "03a7a76552a25d2624edb1d787160a336ee903b2402301f5056423f2e90ac37c": {
       "time": 1792845168,
       "title": "OpenAI resumes frontier AI training after security overhaul, discloses flaw in widely used software - The Indian Express",
@@ -1658,78 +1643,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1792688210,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 5.48,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 19,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792688686,
       "status": "OK",
@@ -24156,6 +24069,78 @@
         "GEMINI": {
           "blocked": true,
           "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1792931354,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 27.42,
+      "candidates": 0,
+      "queue_before": 4,
+      "queue_after": 4,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
         },
         "GROQ": {
           "blocked": true,
