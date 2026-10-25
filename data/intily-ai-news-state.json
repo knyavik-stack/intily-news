@@ -1,6 +1,5 @@
 {
   "published": {
-    "cae5e7cabd3f68307c2f36d613afb5f60a266764010190fca80f5c2cb5ebe73b": 1790321346,
     "b9f4a7546fae87a9bd59c58a41a06d988c27353e05a1706738515f5bb5ebf5bb": 1790322078,
     "101027742029a7a27497a63ccbfb08867cce36fb46b2bb8245258a27c281ee3f": 1790322544,
     "141ba64bfc0ffafea9723a69b04165d779f618c012363d731286abb2b5dc57ce": 1790324502,
@@ -1214,12 +1213,12 @@
   "known": {},
   "queue": [],
   "health": {
-    "last_start_ts": 1792913090.1776257,
+    "last_start_ts": 1792913807.1699123,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792913090.1776257,
-    "last_success_ts": 1792913090.1776257,
-    "last_candidates": 7,
+    "last_run_ts": 1792913807.1699123,
+    "last_success_ts": 1792913807.1699123,
+    "last_candidates": 8,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1227,7 +1226,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792913131.0318403
+      "updated_at": 1792913847.6123574
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1485,84 +1484,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792667358,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 36.97,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 19,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 6.0,
-          "bonus_total": 18.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Полезно для оценки зрелости отечественных решений в области робототехники и автоматизации процессов.",
-            "title": "Сбер представил модель GreenWAM, которая управляет роботами и предсказывает изменения окружающего мира - prospect.com.ru",
-            "final_score": 62.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792667588,
       "status": "OK",
@@ -23222,10 +23143,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792913807,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 40.45,
+      "candidates": 8,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 8,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 8,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.0,
+          "bonus_total": 36.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Демонстрация перехода крупного бизнеса к инхаус-разработке ИИ-агентов как стратегии выживания при слияниях.",
+            "title": "Synovus Is Building Its Own AI Agents in the Middle of a $117 Billion Merger - AIM Media House",
+            "final_score": 68.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 13,
+        "raw_items": 326,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 4,
+          "CNews": 0,
+          "Euronews": 8
+        },
+        "score_filtered": 305,
+        "quality_filtered": 10,
+        "story_dedup": 3,
+        "candidates": 8,
+        "candidate_rate": 0.0256,
+        "score_buckets": {
+          "0–39": 290,
+          "40–49": 25,
+          "50–59": 11,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792913090.1776257,
+  "last_search_ts": 1792913807.1699123,
   "last_publish_ts": 1792912368.7362354,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
