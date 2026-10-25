@@ -1206,25 +1206,28 @@
     "3b2db862dc05bb8b4bd5a1460ea919852dbcccb04eda1e9d0d570b75c4b3ba23": 1792910457,
     "b4eb23df67388282fe7cf4c5c39795c400ccc2d4d611db163d58fc9f5548cdf6": 1792910930,
     "4c6c34264b45ff98e8a6769cdabe45a7e6660690906f35e5999352a1624e032c": 1792911406,
-    "950228818ddd593dc670b4da95d75402158cea761c820a7f0d0199b9915bbffa": 1792912368
+    "950228818ddd593dc670b4da95d75402158cea761c820a7f0d0199b9915bbffa": 1792912368,
+    "acc5867106b55cbe59d23d0b83f7dc3c6e377ae7b68124e7d07fe675e522c793": 1792915967
   },
-  "known": {},
+  "known": {
+    "acc5867106b55cbe59d23d0b83f7dc3c6e377ae7b68124e7d07fe675e522c793": 1792915967.95351
+  },
   "queue": [],
   "health": {
-    "last_start_ts": 1792914767.0923407,
+    "last_start_ts": 1792915967.95351,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792914767.0923407,
-    "last_success_ts": 1792914767.0923407,
-    "last_candidates": 8,
-    "last_published": 0,
+    "last_run_ts": 1792915967.95351,
+    "last_success_ts": 1792915967.95351,
+    "last_candidates": 9,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792914804.6629455
+      "updated_at": 1792916019.732737
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1457,6 +1460,13 @@
       "desc": "Nvidia CEO Jensen Huang says US regulation pushed China’s domestic capabilities but America's technology The Times of India",
       "source": "The Times of India",
       "region": "WORLD"
+    },
+    "acc5867106b55cbe59d23d0b83f7dc3c6e377ae7b68124e7d07fe675e522c793": {
+      "time": 1792915967,
+      "title": "Elon’s $100B AI Bet, Anthropic’s Claude Duet, and the PHP Flaw Hiding in 70% of the Web | EP #305 - BigGo Finance",
+      "desc": "Elon’s $100B AI Bet, Anthropic’s Claude Duet, and the PHP Flaw Hiding in 70% of the Web | EP #305 BigGo Finance",
+      "source": "BigGo Finance",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
@@ -1468,7 +1478,6 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1479,91 +1488,10 @@
     "WORLD",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792672433,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 87.98,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 19,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 6.0,
-          "bonus_total": 18.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Полезно для понимания рисков утечки проприетарного кода, но инструмент пока экспериментальный.",
-            "title": "Разработчик Cloudflare создал язык программирования, который мешает нейросетям читать и писать код",
-            "final_score": 68.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "OPENROUTER",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": "OPENROUTER",
-        "failovers": 0,
-        "failures": 2,
-        "blocked": 12,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792673092,
       "status": "OK",
@@ -23364,11 +23292,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792915967,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 56.03,
+      "candidates": 9,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 8,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 1,
+        "candidate_count": 9,
+        "admission_rate": 11.11,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "html_img": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "html_img",
+            "source_url": "https://finance.biggo.com/podcast/538813728771b72c",
+            "image_url": "https://img.youtube.com/vi/LeSIe50WfLI/hqdefault.jpg",
+            "width": 480,
+            "height": 360,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.0,
+          "bonus_total": 63.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Критическая уязвимость в PHP требует немедленного аудита безопасности инфраструктуры.",
+            "title": "Elon’s $100B AI Bet, Anthropic’s Claude Duet, and the PHP Flaw Hiding in 70% of the Web | EP #305 - BigGo Finance",
+            "final_score": 68.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 12,
+        "raw_items": 325,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 4,
+          "CNews": 0,
+          "Euronews": 7
+        },
+        "score_filtered": 305,
+        "quality_filtered": 7,
+        "story_dedup": 4,
+        "candidates": 9,
+        "candidate_rate": 0.0288,
+        "score_buckets": {
+          "0–39": 292,
+          "40–49": 20,
+          "50–59": 13,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792914767.0923407,
-  "last_publish_ts": 1792912368.7362354,
+  "last_search_ts": 1792915967.95351,
+  "last_publish_ts": 1792915967.95351,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
