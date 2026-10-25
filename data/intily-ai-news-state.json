@@ -1312,22 +1312,22 @@
         "freshness": 1.5,
         "low_signal_penalty": 0.0,
         "base_score": 42.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 42.5
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 63.5
       },
       "base_score": 42.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 42.5,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 63.5,
       "key": "950228818ddd593dc670b4da95d75402158cea761c820a7f0d0199b9915bbffa",
-      "importance": 42.5,
+      "importance": 63.5,
       "editorial_value": 50.0,
       "topics": [
         "chips",
         "security_regulation"
       ],
-      "audience_score": null,
+      "audience_score": 7.0,
       "tier": "A"
     },
     {
@@ -1367,30 +1367,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792908537.5986218,
+    "last_start_ts": 1792908806.170851,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792908537.5986218,
-    "last_success_ts": 1792908537.5986218,
-    "last_candidates": 9,
-    "last_published": 1,
+    "last_run_ts": 1792908806.170851,
+    "last_success_ts": 1792908806.170851,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 4
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792908537.585768
+      "disabled_until": 1792912399.3928082,
+      "reason": "The read operation timed out",
+      "updated_at": 1792908799.3928099
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792905886.8265178
+      "disabled_until": 1792912402.7050323,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792908802.7050338
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792905886.8265178
+      "disabled_until": 1792995206.1649551,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1792908806.164957
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1398,9 +1398,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1792905886.8265178
+      "disabled_until": 1792912404.8527777,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1792908804.852779
     }
   },
   "stories": {
@@ -1652,143 +1652,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1792661336,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 51.14,
-      "candidates": 29,
-      "queue_before": 19,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 2,
-        "known_recent": 3,
-        "already_queued": 16,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 6,
-        "candidate_count": 29,
-        "admission_rate": 20.69,
-        "dominant_block": "already_queued",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.bbc.com/news/live/ckgel5xp2xv9t",
-            "image_url": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/01e7/live/9104afb0-cdee-11f1-97f7-a7674fb562de.jpg",
-            "width": 1200,
-            "height": 675,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 9.0,
-          "bonus_total": 54.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Критическая уязвимость требует немедленного обновления инфраструктуры для предотвращения взлома и потери данных.",
-            "title": "PHP: Global scramble to fix critical cyber-security flaws as many websites taken offline - follow live - BBC",
-            "final_score": 81.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 9,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 101,
-        "raw_items": 648,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 1,
-          "Ars Technica": 4,
-          "Habr AI/News": 22,
-          "CNews": 43,
-          "Euronews": 28
-        },
-        "score_filtered": 591,
-        "quality_filtered": 18,
-        "story_dedup": 10,
-        "candidates": 29,
-        "candidate_rate": 0.053,
-        "score_buckets": {
-          "0–39": 547,
-          "40–49": 60,
-          "50–59": 36,
-          "60–69": 5,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 1,
-          "7": 4,
-          "8": 3,
-          "9": 1,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792661579,
       "status": "OK",
@@ -23324,6 +23187,84 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1792908806,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 39.32,
+      "candidates": 0,
+      "queue_before": 4,
+      "queue_after": 4,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 7.0,
+          "bonus_total": 21.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Необходимость пересмотра стратегии закупок оборудования и оценки рисков цепочек поставок из-за геополитической нестабильности.",
+            "title": "Nvidia CEO Jensen Huang says US regulation pushed China’s domestic capabilities but America's technology - The Times of India",
+            "final_score": 63.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
