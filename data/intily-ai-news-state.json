@@ -1301,19 +1301,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 41.0,
+        "base_score": 40.5,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 62.0
+        "final_score": 61.5
       },
-      "base_score": 41.0,
+      "base_score": 40.5,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 62.0,
+      "score": 61.5,
       "key": "c9c7fb0376bc34eda8043371ad42ac939966f92f68a58cb4bdbd0eae060acbff",
-      "importance": 62.0,
+      "importance": 61.5,
       "editorial_value": 50.0,
       "topics": [
         "agents"
@@ -1428,30 +1428,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792946455.5092146,
+    "last_start_ts": 1792947228.578696,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792946455.5092146,
-    "last_success_ts": 1792946455.5092146,
-    "last_candidates": 0,
+    "last_run_ts": 1792947228.578696,
+    "last_success_ts": 1792947228.578696,
+    "last_candidates": 18,
     "last_published": 0,
     "queue_size": 6
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1792950057.59714,
+      "disabled_until": 1792950762.013723,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1792946457.5971427
+      "updated_at": 1792947162.0137236
     },
     "GROQ": {
-      "disabled_until": 1792950060.7152088,
+      "disabled_until": 1792950765.29032,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792946460.7152102
+      "updated_at": 1792947165.290321
     },
     "OPENAI": {
-      "disabled_until": 1793032874.0868227,
+      "disabled_until": 1793033667.7942338,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1792946474.0868242
+      "updated_at": 1792947267.794236
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1459,9 +1459,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1792950073.1785805,
+      "disabled_until": 1792950866.8220549,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1792946473.178582
+      "updated_at": 1792947266.8220565
     }
   },
   "stories": {
@@ -1727,96 +1727,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792736458,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 13.0,
-      "candidates": 0,
-      "queue_before": 16,
-      "queue_after": 15,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 9.0,
-          "bonus_total": 81.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 3,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходимость срочного аудита безопасности инфраструктуры с помощью ИИ-инструментов для предотвращения взломов.",
-            "title": "AI Uncovers Critical Cybersecurity Flaw in Internet - Nacionale",
-            "final_score": 72.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 7,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792736699,
       "status": "OK",
@@ -24254,10 +24164,134 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1792947228,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 106.07,
+      "candidates": 18,
+      "queue_before": 6,
+      "queue_after": 6,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 13,
+        "known_recent": 0,
+        "already_queued": 4,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 18,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 35,
+        "raw_items": 719,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 13,
+          "CNews": 0,
+          "Euronews": 19
+        },
+        "score_filtered": 689,
+        "quality_filtered": 7,
+        "story_dedup": 5,
+        "candidates": 18,
+        "candidate_rate": 0.0263,
+        "score_buckets": {
+          "0–39": 663,
+          "40–49": 33,
+          "50–59": 22,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 0,
+          "7": 1,
+          "8": 1,
+          "9": 1,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 2,
+        "blocked": 6,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1792944790.5818484,
+  "last_search_ts": 1792947228.578696,
   "last_publish_ts": 1792942857.8543463,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
