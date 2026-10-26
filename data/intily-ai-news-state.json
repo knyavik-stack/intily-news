@@ -1186,7 +1186,8 @@
     "0d9e773ad8bd4a86291a0be61cbdfc49f7ed2f3979a9828d0c4aa5abeedb70a8": 1792992057,
     "79bf230849826ebaaecc04ebd5db14733f0c056408a0fc430ff95c0a97e07408": 1792992302,
     "850c8137fe91a357bdfd54113408fd1af98e8f697f551f9931dc7e0d69566b3c": 1792993256,
-    "4418b17d60a9f7a320843a3223d5b645a40fb07b9629a194d02b2aa99aa65ed3": 1792994213
+    "4418b17d60a9f7a320843a3223d5b645a40fb07b9629a194d02b2aa99aa65ed3": 1792994213,
+    "cdc460baaee09c2c1578d665004efa8d2aa84fc069d9c598fd70ee79fdeea232": 1792994457
   },
   "known": {
     "3b0324f10d15b18ca952bf1be1b5574b676b005d8c5de1499b005887d6dd6677": 1792990863.524437,
@@ -1220,19 +1221,19 @@
         "novelty": 0.0,
         "source_quality": 4.0,
         "evidence": 2.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 52.0,
+        "base_score": 51.5,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 70.0
+        "final_score": 69.5
       },
-      "base_score": 52.0,
+      "base_score": 51.5,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 70.0,
+      "score": 69.5,
       "key": "20e4dc428bcfec000b3a2203fdb486f656f24d0886fda3b38dd7982b5fa6c02a",
-      "importance": 70.0,
+      "importance": 69.5,
       "editorial_value": 50.0,
       "topics": [
         "security_regulation"
@@ -1240,42 +1241,6 @@
       "audience_score": 6.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "WORLD",
-      "title": "SpaceX Secures $40 Billion Debt Financing for AI Chip Infrastructure - The Tech Buzz",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNLUFROUFqeFdpakUyUTF4UU1wUEdweUhIM2tISWN2d3RyY0JrQm5YMzQ2RTVQYWN1eDdvdnhHY0g3UVhlQllCOGdhZFJYS1U0U0pEUnRWU181YUlHQnY0U3Y1UWVkcTgwNHE1OGE4eVU3dlhJU0ZLRnZHUC1JdHp2eHFCY3ZaRi04OEZTcm1mVFo2YUp2SndpMngtRjdpMk9lUXc?oc=5",
-      "desc": "SpaceX Secures $40 Billion Debt Financing for AI Chip Infrastructure The Tech Buzz",
-      "source": "The Tech Buzz",
-      "time": 1792976760.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 9.0,
-        "event_concreteness": 10.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 40.0,
-        "audience_score": 10.0,
-        "audience_bonus": 30.0,
-        "final_score": 70.0
-      },
-      "base_score": 40.0,
-      "audience_bonus": 30.0,
-      "score_stage": "final",
-      "score": 70.0,
-      "key": "cdc460baaee09c2c1578d665004efa8d2aa84fc069d9c598fd70ee79fdeea232",
-      "importance": 70.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "chips"
-      ],
-      "audience_score": 10.0,
-      "tier": "A"
     },
     {
       "region": "WORLD",
@@ -1501,20 +1466,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1792994213.973614,
+    "last_start_ts": 1792994457.2973723,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1792994213.973614,
-    "last_success_ts": 1792994213.973614,
+    "last_run_ts": 1792994457.2973723,
+    "last_success_ts": 1792994457.2973723,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 8
+    "queue_size": 7
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1792994218.595014
+      "updated_at": 1792994460.3116152
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1754,10 +1719,16 @@
       "desc": "Weekly Market Wrap: Meta’s $145 billion AI bill hit chips — as Brent surged past $116 Mitrade",
       "source": "Mitrade",
       "region": "WORLD"
+    },
+    "cdc460baaee09c2c1578d665004efa8d2aa84fc069d9c598fd70ee79fdeea232": {
+      "time": 1792994457,
+      "title": "SpaceX Secures $40 Billion Debt Financing for AI Chip Infrastructure - The Tech Buzz",
+      "desc": "SpaceX Secures $40 Billion Debt Financing for AI Chip Infrastructure The Tech Buzz",
+      "source": "The Tech Buzz",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -1774,99 +1745,12 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792746536,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 13.09,
-      "candidates": 0,
-      "queue_before": 4,
-      "queue_after": 3,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://macaubusiness.com/wenge-ai-launches-enterprise-decision-ai-seminar-series-in-shenzhen/",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 6.0,
-          "bonus_total": 36.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 4.0,
-            "bonus": 12.0,
-            "reason": "Локальное маркетинговое мероприятие без прямой применимости для международного рынка.",
-            "title": "Wenge AI launches enterprise decision AI seminar series in Shenzhen - Macau Business",
-            "final_score": 53.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792747503,
       "status": "OK",
@@ -24244,11 +24128,101 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1792994457,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 3.94,
+      "candidates": 0,
+      "queue_before": 8,
+      "queue_after": 7,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://www.techbuzz.ai/articles/spacex-secures-40-billion-debt-financing-for-ai-chip-infrastructure",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 10.0,
+          "bonus_total": 30.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 10.0,
+            "bonus": 30.0,
+            "reason": "Масштабное перераспределение вычислительных мощностей неизбежно приведет к росту цен на облачные GPU и изменению стратегии закупок для любого AI-бизнеса.",
+            "title": "SpaceX Secures $40 Billion Debt Financing for AI Chip Infrastructure - The Tech Buzz",
+            "final_score": 70.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1792993013.9943228,
-  "last_publish_ts": 1792994213.973614,
+  "last_publish_ts": 1792994457.2973723,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
