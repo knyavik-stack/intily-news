@@ -1187,15 +1187,6 @@
     "36bfce845495a9a6c95ef5bd0599c8587e60723b94a7ed4aca0e5b5e6d3bd6f8": 1793030701
   },
   "known": {
-    "966370d415a6672986a90723e6e38dbc4157ea763f07f71675b95404bd68859c": 1793025422.613268,
-    "fef5b553cc22dbcb32d700f39bfc304a1d6aa12453f2f6313950162e285eb2ca": 1793025422.613268,
-    "1ad72ae60e9f39ec2125aa08baec7c626178c2914db5ef1841980e5f25ea3674": 1793025422.613268,
-    "9156477a186782318231a206d70a8249ad059428e65bc4e9ad66f3066f21b572": 1793025422.613268,
-    "8eed325fc7b2db95666c2d6e38dff369e01b12f1740a9d2c3715c8e71441def8": 1793025422.613268,
-    "b299eb421b5e748cba420b908d730564346f6b146c4da85cfbb4b7bcd9adaf77": 1793025422.613268,
-    "7edae23f97c81c0282d0712f29d105e1c332e5e62c581c40b0656ca531a07086": 1793025422.613268,
-    "dd65a3573df8ab6c253e4e41ce36d9384b858b97ed92d7f9e0ac625cb46dc6a7": 1793025422.613268,
-    "aa79797fdb95cefcebba5331aefb999b57218855951de746594e5cad69ee78e2": 1793025422.613268,
     "36bfce845495a9a6c95ef5bd0599c8587e60723b94a7ed4aca0e5b5e6d3bd6f8": 1793028557.7760074,
     "e4a562e717cb591dac96be5404ee9c955715c0f6fd079000b320926a152efd3b": 1793028557.7760074,
     "7288e89c97d5b386b5bb90457ee218a03379e74e461a216828b28b27915dcd80": 1793028557.7760074,
@@ -1876,13 +1867,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793030701.434978,
+    "last_start_ts": 1793030947.33646,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793030701.434978,
-    "last_success_ts": 1793030701.434978,
+    "last_run_ts": 1793030947.33646,
+    "last_success_ts": 1793030947.33646,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 18
   },
   "providers": {
@@ -1897,9 +1888,9 @@
       "updated_at": 1793030706.4773965
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793030453.5299785
+      "disabled_until": 1793117347.1621332,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1793030947.1621358
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1907,9 +1898,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793030750.6266522
+      "disabled_until": 1793034546.157463,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793030946.1574655
     }
   },
   "stories": {
@@ -2245,94 +2236,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1792784706,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 18.92,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 16,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://techora.ru/news/novaya-model-anthropic-prevzoshla-mythos-5-2026-10-23",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Повышение логической точности моделей позволяет снизить процент ошибок в клиентских и аналитических AI-системах.",
-            "title": "Новая модель Anthropic превзошла Mythos 5.1 по согласованности в британском тесте - Techora.ru",
-            "final_score": 61.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792785400,
       "status": "OK",
@@ -24643,6 +24546,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1793030947,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 16.03,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 18,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
