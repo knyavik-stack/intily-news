@@ -1188,7 +1188,8 @@
     "6418696ffa355de1a11ea7be233fb7531e67a97c1ff5e0031dad692f51f2c208": 1793009336,
     "21ed08d1a9bdd22a9783fa2e39509bc6b9ff531bfadc3afa7edc6ba12ee71a06": 1793009828,
     "21fa548bd4b2a50f526235432d1fc67fd99deb88fca853c7079f89a31a039a0f": 1793010053,
-    "874802a7c982c200ffafb6458783bb165f5a5550e57d1d83d17df4112a06272a": 1793011967
+    "874802a7c982c200ffafb6458783bb165f5a5550e57d1d83d17df4112a06272a": 1793011967,
+    "afe1ed8697ff6d723603a16ae4ffc3f0ec974821df2d48bdea0bde3a51bb8d44": 1793013170
   },
   "known": {
     "d94e0bf3b9b13e021f6300795f95155657fa77b9921f13629a1057262274fd2a": 1793008368.116513,
@@ -1291,19 +1292,19 @@
         "novelty": 0.0,
         "source_quality": 5.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 45.5,
+        "base_score": 45.0,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 63.5
+        "final_score": 63.0
       },
-      "base_score": 45.5,
+      "base_score": 45.0,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 63.5,
+      "score": 63.0,
       "key": "86566bb2e2189b300035657d4ae4565246eb1b425e9d8e6cc310cba0f4664294",
-      "importance": 63.5,
+      "importance": 63.0,
       "editorial_value": 50.0,
       "topics": [
         "agents",
@@ -1457,60 +1458,23 @@
       ],
       "audience_score": 5.0,
       "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Сервисам Google дали доступ к данным из Gmail и «Диска» для персонализации рекламы",
-      "link": "https://habr.com/ru/news/1099446/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1099446",
-      "desc": "Google обновила политику конфиденциальности: теперь сервисы компании могут использовать данные из Gmail, «Диска» и «Фото» для персонализации рекламы, если пользователь сам открыл к ним доступ через Search или Gemini. Изменение касается тех, кто разрешил сервисам Google, в том числе функции Personal Intelligence, обращаться к этим данным. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1793009854.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 10.0,
-        "event_concreteness": 14.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 49.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 49.0
-      },
-      "base_score": 49.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 49.0,
-      "key": "afe1ed8697ff6d723603a16ae4ffc3f0ec974821df2d48bdea0bde3a51bb8d44",
-      "importance": 49.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "models"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1793011967.1939154,
+    "last_start_ts": 1793013170.4416373,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793011967.1939154,
-    "last_success_ts": 1793011967.1939154,
-    "last_candidates": 26,
+    "last_run_ts": 1793013170.4416373,
+    "last_success_ts": 1793013170.4416373,
+    "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 8
+    "queue_size": 7
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1793012001.582113
+      "updated_at": 1793013170.4149544
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1534,13 +1498,6 @@
     }
   },
   "stories": {
-    "fef93ea749011439ad39c8e0ea1fca71025978349bc6e348209f59b898349559": {
-      "time": 1792926524,
-      "title": "Beyond GRC: DigitalXForce Pioneers AI-Powered Risk Operations with Global X-ROC™ Rollout - PR Newswire",
-      "desc": "Beyond GRC: DigitalXForce Pioneers AI-Powered Risk Operations with Global X-ROC™ Rollout PR Newswire",
-      "source": "PR Newswire",
-      "region": "WORLD"
-    },
     "a4cced089060c2b7e4630384d0b8e4f755954e2b2c117e18af28b50c086a51b7": {
       "time": 1792928933,
       "title": "1Password представила платформу for Agents для безопасного доступа ИИ-агентов к аккаунтам - Gosrf.ru",
@@ -1841,10 +1798,16 @@
       "desc": "Киберкомандование Армии США (ARCYBER) разрабатывает программу ECHOTRIBBLE по внедрению ИИ‑агентов, которые смогут самостоятельно находить и уничтожать цели в цифровой инфраструктуре противника. Согласно публичной заявке, которую обнаружило издание The Intercept, военным нужны модульные автономные ИИ‑агенты, которые смогут самостоятельно изучать IT‑инфраструктуру и нейтрализовать заданные угрозы или цели. При этом во внутренних документах программы задача указана яснее: ECHOTRIBBLE будет предназначена для проведения наступательных операций, а нейтрализация целей будет подразумевать их отключение или удаление из системы. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "afe1ed8697ff6d723603a16ae4ffc3f0ec974821df2d48bdea0bde3a51bb8d44": {
+      "time": 1793013170,
+      "title": "Сервисам Google дали доступ к данным из Gmail и «Диска» для персонализации рекламы",
+      "desc": "Google обновила политику конфиденциальности: теперь сервисы компании могут использовать данные из Gmail, «Диска» и «Фото» для персонализации рекламы, если пользователь сам открыл к ним доступ через Search или Gemini. Изменение касается тех, кто разрешил сервисам Google, в том числе функции Personal Intelligence, обращаться к этим данным. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -1863,92 +1826,10 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1792762865,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 45.41,
-      "candidates": 0,
-      "queue_before": 13,
-      "queue_after": 13,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 6.5,
-          "bonus_total": 39.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Появление специализированного консалтинга упрощает внедрение Claude в корпоративные процессы, снижая порог входа для бизнеса.",
-            "title": "Anthropic, Hg to launch European AI consultancy as firms expand enterprise services - Traders Union",
-            "final_score": 64.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 7,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 12,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792763111,
       "status": "OK",
@@ -24427,11 +24308,99 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793013170,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 24.42,
+      "candidates": 0,
+      "queue_before": 8,
+      "queue_after": 7,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/news/1099446/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1099446",
+            "image_url": "https://habr.com/share/publication/1099446/707e566c3bc23ef299aca9e79c1445b2/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 24.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходим немедленный аудит разрешений доступа к данным для корпоративных и личных аккаунтов из-за рисков утечки конфиденциальной информации.",
+            "title": "Сервисам Google дали доступ к данным из Gmail и «Диска» для персонализации рекламы",
+            "final_score": 73.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1793011967.1939154,
-  "last_publish_ts": 1793011967.1939154,
+  "last_publish_ts": 1793013170.4416373,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
