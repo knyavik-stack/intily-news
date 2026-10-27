@@ -1,6 +1,5 @@
 {
   "published": {
-    "059c7b9abe208e547d3ae6f4f6328a15e1631e27ab435feeade1ec148e5bf39e": 1790520289,
     "256e75475cecdb7add0dbc400dd53f38a4fc834bce8b742cb547bd5300aae2ff": 1790520768,
     "42a471bb2adbb30cc5ecdb9f3fba764a4d6bd3f096e09448ef44b65e04376642": 1790527724,
     "997a909fc7486f207fe485427d9eb73620ff20934700982f2e945ea199fa3376": 1790528687,
@@ -1948,30 +1947,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793112086.0681734,
+    "last_start_ts": 1793112545.5254555,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793112086.0681734,
-    "last_success_ts": 1793112086.0681734,
+    "last_run_ts": 1793112545.5254555,
+    "last_success_ts": 1793112545.5254555,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793115651.8552907,
+      "disabled_until": 1793116131.6736867,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1793112051.8552926
+      "updated_at": 1793112531.6736887
     },
     "GROQ": {
-      "disabled_until": 1793115655.7451549,
+      "disabled_until": 1793116136.9810889,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793112055.7451565
+      "updated_at": 1793112536.981091
     },
     "OPENAI": {
-      "disabled_until": 1793198485.8273416,
+      "disabled_until": 1793198945.2795925,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793112085.827343
+      "updated_at": 1793112545.2795947
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1979,9 +1978,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793115684.9225612,
+      "disabled_until": 1793116144.8121822,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793112084.9225628
+      "updated_at": 1793112544.8121836
     }
   },
   "stories": {
@@ -2282,94 +2281,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792907337,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 9.76,
-      "candidates": 0,
-      "queue_before": 6,
-      "queue_after": 5,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://prospect.com.ru/news/7121071/byvshij-rukovoditel-openai-zapustil-startap-dlya-sozdaniya-robotovhimikov.html",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость пересмотра стратегии R&D и автоматизации лабораторных процессов для сохранения конкурентоспособности.",
-            "title": "Бывший руководитель OpenAI запустил стартап для создания роботов-химиков - prospect.com.ru",
-            "final_score": 64.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792908537,
       "status": "OK",
@@ -22700,6 +22611,78 @@
       "business_reason": "no_eligible_item",
       "searched": false,
       "duration_sec": 35.14,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1793112545,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 14.89,
       "candidates": 0,
       "queue_before": 20,
       "queue_after": 20,
