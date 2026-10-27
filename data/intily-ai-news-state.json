@@ -1,7 +1,5 @@
 {
   "published": {
-    "c56a57367ef27ed6aeb46dadc45ddd3fd2ab53425b54c96e5634dae63cfe9fbb": 1790519807,
-    "f5e4771d988c244ebe7f35446ed6dc79fd6217e193f0f338518dcc7ad3a88013": 1790520051,
     "059c7b9abe208e547d3ae6f4f6328a15e1631e27ab435feeade1ec148e5bf39e": 1790520289,
     "256e75475cecdb7add0dbc400dd53f38a4fc834bce8b742cb547bd5300aae2ff": 1790520768,
     "42a471bb2adbb30cc5ecdb9f3fba764a4d6bd3f096e09448ef44b65e04376642": 1790527724,
@@ -1950,30 +1948,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793111805.1291742,
+    "last_start_ts": 1793112086.0681734,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793111805.1291742,
-    "last_success_ts": 1793111805.1291742,
-    "last_candidates": 44,
+    "last_run_ts": 1793112086.0681734,
+    "last_success_ts": 1793112086.0681734,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793114454.6356328,
+      "disabled_until": 1793115651.8552907,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1793110854.6356347
+      "updated_at": 1793112051.8552926
     },
     "GROQ": {
-      "disabled_until": 1793114458.1212194,
+      "disabled_until": 1793115655.7451549,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793110858.1212208
+      "updated_at": 1793112055.7451565
     },
     "OPENAI": {
-      "disabled_until": 1793198307.015696,
+      "disabled_until": 1793198485.8273416,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793111907.0156984
+      "updated_at": 1793112085.827343
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1981,19 +1979,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793115505.9137578,
+      "disabled_until": 1793115684.9225612,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793111905.9137597
+      "updated_at": 1793112084.9225628
     }
   },
   "stories": {
-    "b47813270d335149db9cd84097d133f666c2dd384fce4a7837ff9eac926e8acf": {
-      "time": 1793025422,
-      "title": "Anthropic files for Nasdaq IPO as revenue jumps to $16.3 billion - Investing.com",
-      "desc": "Anthropic files for Nasdaq IPO as revenue jumps to $16.3 billion Investing.com",
-      "source": "Investing.com",
-      "region": "WORLD"
-    },
     "966370d415a6672986a90723e6e38dbc4157ea763f07f71675b95404bd68859c": {
       "time": 1793030479,
       "title": "ANT IPO News - AI model developer Anthropic PBC files for an estimated $75 billion IPO, teeing up one of the largest-ever IPOs for mid-November - www.renaissancecapital.com",
@@ -2291,146 +2282,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792905886,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 35.21,
-      "candidates": 10,
-      "queue_before": 0,
-      "queue_after": 6,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 3,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 7,
-        "candidate_count": 10,
-        "admission_rate": 70.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 6.5,
-          "bonus_total": 39.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходимость немедленного пересмотра политики безопасности при работе с корпоративными данными в публичных AI-сервисах.",
-            "title": "Altman Warns of Escalating Cyber Crisis as OpenAI Grapples with Internal Breaches - Security Boulevard",
-            "final_score": 74.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 6,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 11,
-        "raw_items": 346,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 3,
-          "CNews": 0,
-          "Euronews": 5
-        },
-        "score_filtered": 323,
-        "quality_filtered": 10,
-        "story_dedup": 3,
-        "candidates": 10,
-        "candidate_rate": 0.0299,
-        "score_buckets": {
-          "0–39": 302,
-          "40–49": 31,
-          "50–59": 13,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792907337,
       "status": "OK",
@@ -22824,6 +22675,78 @@
         "failovers": 0,
         "failures": 2,
         "blocked": 8,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1793112086,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 35.14,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
         "skipped_no_key": 0,
         "retries": 0
       },
