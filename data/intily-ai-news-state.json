@@ -1,6 +1,5 @@
 {
   "published": {
-    "42a471bb2adbb30cc5ecdb9f3fba764a4d6bd3f096e09448ef44b65e04376642": 1790527724,
     "997a909fc7486f207fe485427d9eb73620ff20934700982f2e945ea199fa3376": 1790528687,
     "b5528c4bcc2eb41ef1b70955db697ac66b0c15b21d7e10b8de24ca1fb70f94c5": 1790530849,
     "17772fc29f48faf95b9c82dd3687afa82a474ed64e6693036a3242d114f6710f": 1790531338,
@@ -1195,14 +1194,6 @@
     "242efb20e4bec65d9128be5ee7643f9cb7f203532a6d8c069c6746fadaf114af": 1793118770
   },
   "known": {
-    "e90d8313fb7683e4e9f1e6e759816708cb68c48fb68c75cb35897ac91c42a008": 1793113747.3314226,
-    "8c29a23459aec64563476ab2339fb5dd4b768cdd3d6efc3418828268f4667370": 1793113747.3314226,
-    "8be4ef5a2c61a6054d16aca00ebb6016c925c81252b60ae2ba0bda6e547beb03": 1793113747.3314226,
-    "32f5a8e51b704fe0203e8d5c978fa9959431adc41f05e94aec2f79fe6fb35eb9": 1793113747.3314226,
-    "1f982f0a3025fa9f6d4abe223a0233f12ddf18c376bb342b6dbedcfc1a1ad8cf": 1793113747.3314226,
-    "70390670d067dfe329b78128d229cc78a7ad6470c6efaefc3de2b3d548587e1a": 1793113747.3314226,
-    "138b7da3895bd589c334915309c06e934bac738d922d46cc8c683cc3b9faaf82": 1793113747.3314226,
-    "77efbd4287bc7a0651a7cb636567dfb0a231a4d4b71e47c2b878e620be23fcea": 1793113747.3314226,
     "41527717545d8fb4c0494605071d847afbea96a857a839b9810944191784af06": 1793115656.5971828,
     "242efb20e4bec65d9128be5ee7643f9cb7f203532a6d8c069c6746fadaf114af": 1793115656.5971828,
     "885de3707191354383ce52af86464d2404636b784e5d7877882460262a0e0b6e": 1793115656.5971828,
@@ -1218,7 +1209,18 @@
     "34003e3e511085c13b43fb4c0c4969eea17128597cc911e9135db853c9563ab8": 1793117595.8094013,
     "5ed8b93897efc79ff067ff87070320bf0d39e51236a9ade7334e0cd4cdcc5be7": 1793117595.8094013,
     "cdb32160a3122eacfd2825aa852dd26907699c9f754262ca2df186ecf1d74c61": 1793117595.8094013,
-    "39b846da398ec702440b6f751f5798327b91719e8ac448a0bbb38854a70b411e": 1793117595.8094013
+    "39b846da398ec702440b6f751f5798327b91719e8ac448a0bbb38854a70b411e": 1793117595.8094013,
+    "29c2117b8465f53109e9b1c55028a36337aea3bc045afadb6b42c2a3c4248208": 1793119971.236198,
+    "0525952dcf036f794ce655f63bae03ac4313e414fbab3d4505c4b34a604abd17": 1793119971.236198,
+    "e90d8313fb7683e4e9f1e6e759816708cb68c48fb68c75cb35897ac91c42a008": 1793119971.236198,
+    "b40bf6b21607bf38d056c8413391c851d6adbec66d8dbe3d77d97e04253696fe": 1793119971.236198,
+    "8c29a23459aec64563476ab2339fb5dd4b768cdd3d6efc3418828268f4667370": 1793119971.236198,
+    "5d529cccd41d986aae382b2499ba4771d26cfea8018d89ab78be1c9e08b03013": 1793119971.236198,
+    "32f5a8e51b704fe0203e8d5c978fa9959431adc41f05e94aec2f79fe6fb35eb9": 1793119971.236198,
+    "1f982f0a3025fa9f6d4abe223a0233f12ddf18c376bb342b6dbedcfc1a1ad8cf": 1793119971.236198,
+    "3227ae1e07e6a7ff9de434c2220757ec88c60afb3fee5ea631f382028542da9d": 1793119971.236198,
+    "aacd081960bd6b08e78a5abde3a8510f91d84e088ede3ce9508ab6ff8bffeb97": 1793119971.236198,
+    "77efbd4287bc7a0651a7cb636567dfb0a231a4d4b71e47c2b878e620be23fcea": 1793119971.236198
   },
   "queue": [
     {
@@ -1256,10 +1258,10 @@
       ],
       "audience_score": 8.0,
       "tier": "A",
-      "last_failed_at": 1793118531,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 2,
-      "next_retry_at": 1793119131
+      "last_failed_at": 1793119971,
+      "last_failure": "Expecting value: line 1 column 1 (char 0)",
+      "failure_count": 3,
+      "next_retry_at": 1793121171
     },
     {
       "region": "WORLD",
@@ -1295,7 +1297,11 @@
         "research"
       ],
       "audience_score": 9.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1793119971,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1793120271
     },
     {
       "region": "RUSSIA",
@@ -1640,19 +1646,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 42.5,
+        "base_score": 42.0,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 63.5
+        "final_score": 63.0
       },
-      "base_score": 42.5,
+      "base_score": 42.0,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 63.5,
+      "score": 63.0,
       "key": "f0833e79a5a7dcd84da9dc8fc8265e7f71617dc7af7dc0853882ed4ce38f416e",
-      "importance": 63.5,
+      "importance": 63.0,
       "editorial_value": 50.0,
       "topics": [
         "business",
@@ -1677,19 +1683,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 41.5,
+        "base_score": 41.0,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 62.5
+        "final_score": 62.0
       },
-      "base_score": 41.5,
+      "base_score": 41.0,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 62.5,
+      "score": 62.0,
       "key": "474dc4f7a96bbeb087aa3710c90f9f27eadab1b96af1e414a11eb7bc6e68d52e",
-      "importance": 62.5,
+      "importance": 62.0,
       "editorial_value": 50.0,
       "topics": [
         "agents"
@@ -1770,33 +1776,214 @@
       "audience_score": 6.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "Google’s Genie 4 world model adds audio, more realistic worlds, and real-time steering",
+      "link": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+      "desc": "Google DeepMind released Genie 4, a world model with real-time audio, more realistic simulations, and mid-simulation text prompts, in research preview for trusted testers.",
+      "source": "TechCrunch AI",
+      "time": 1793118657.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 10.0,
+        "event_concreteness": 14.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 2.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 48.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 48.0
+      },
+      "base_score": 48.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 48.0,
+      "key": "29c2117b8465f53109e9b1c55028a36337aea3bc045afadb6b42c2a3c4248208",
+      "importance": 48.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "models",
+        "research"
+      ],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
+      "region": "WORLD",
+      "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+      "link": "https://openai.com/index/oracle-apps-in-chatgpt",
+      "desc": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.",
+      "source": "OpenAI News",
+      "time": 1793084400.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 7.0,
+        "event_concreteness": 15.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 2.0,
+        "freshness": 0.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 47.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 47.0
+      },
+      "base_score": 47.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 47.0,
+      "key": "0525952dcf036f794ce655f63bae03ac4313e414fbab3d4505c4b34a604abd17",
+      "importance": 47.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "applications",
+        "business",
+        "models"
+      ],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Apple представила iMac и MacBook Pro на M6",
+      "link": "https://habr.com/ru/news/1100184/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1100184",
+      "desc": "Apple обновила 24-дюймовый iMac и 14-дюймовый MacBook Pro . Оба устройства получили чип M6, поддержку Bluetooth 6 и Wi-Fi 7. Продажи начнутся в ноябре 2026 года. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1793112224.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 10.0,
+        "event_concreteness": 14.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 2.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 46.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 46.5
+      },
+      "base_score": 46.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 46.5,
+      "key": "e90d8313fb7683e4e9f1e6e759816708cb68c48fb68c75cb35897ac91c42a008",
+      "importance": 46.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "chips"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "Anthropic’s IPO Filing Reveals $80.7 Billion Loss Despite Surge in AI Revenue - Khaama Press",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE41ZGk0TXVyMkt3MUZ0czZxeHBIQUZ0Ti1kN0wyWXkwYkF1Y29hWHFTc3VDMzduQUhOQmFFY1B6N0lMeGR4STBxZzNKQlFTdmtJbWxjak1IbXB1QXhDNFkyWUd2bGtGT19sTk41NFVBekVtOWtlclpR?oc=5",
+      "desc": "Anthropic’s IPO Filing Reveals $80.7 Billion Loss Despite Surge in AI Revenue Khaama Press",
+      "source": "Khaama Press",
+      "time": 1793095463.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 9.0,
+        "event_concreteness": 13.5,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 0.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 45.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 45.5
+      },
+      "base_score": 45.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 45.5,
+      "key": "b40bf6b21607bf38d056c8413391c851d6adbec66d8dbe3d77d97e04253696fe",
+      "importance": 45.5,
+      "editorial_value": 50.0,
+      "topics": [],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
+      "region": "WORLD",
+      "title": "OpenAI’s Terra Launch Tests Frontier AI Pacing - https://streamlinefeed.co.ke/",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPUjVheXcxbmFGNUEwRHZOQi1EMk8wdEJaTThEUTY3Wk1lQlhjSVNaNmc4RlZ6d0FyX1djQUtIcEt6SFc5Q1h4TW9oN0JmUUdHTFhFaXNvMGVZei0wS2Z3UUFUalI0LXI3T193cUtEZ1lRb2xKUnVoSnpDd2NBVjBTb0ZtSngwZw?oc=5",
+      "desc": "OpenAI’s Terra Launch Tests Frontier AI Pacing https://streamlinefeed.co.ke/",
+      "source": "https://streamlinefeed.co.ke/",
+      "time": 1793105436.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 3.0,
+        "impact": 9.0,
+        "event_concreteness": 15.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 1.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 43.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 43.0
+      },
+      "base_score": 43.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 43.0,
+      "key": "8c29a23459aec64563476ab2339fb5dd4b768cdd3d6efc3418828268f4667370",
+      "importance": 43.0,
+      "editorial_value": 49.0,
+      "topics": [],
+      "audience_score": null,
+      "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1793118770.7165055,
+    "last_start_ts": 1793119971.236198,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793118770.7165055,
-    "last_success_ts": 1793118770.7165055,
-    "last_candidates": 0,
-    "last_published": 1,
-    "queue_size": 15
+    "last_run_ts": 1793119971.236198,
+    "last_success_ts": 1793119971.236198,
+    "last_candidates": 56,
+    "last_published": 0,
+    "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793118776.4951508
+      "disabled_until": 1793123642.7252042,
+      "reason": "The read operation timed out",
+      "updated_at": 1793120042.725207
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793118770.4518087
+      "disabled_until": 1793123650.0580502,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793120050.0580525
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793118770.4518087
+      "disabled_until": 1793206460.2373784,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1793120060.2373803
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1804,9 +1991,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793118770.4518087
+      "disabled_until": 1793123659.2822938,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793120059.2822955
     }
   },
   "stories": {
@@ -2121,136 +2308,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1792916449,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 38.26,
-      "candidates": 9,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 9,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 9,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 6.5,
-          "bonus_total": 39.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра стратегии автоматизации бизнес-процессов для сохранения конкурентоспособности.",
-            "title": "Synovus Is Building Its Own AI Agents in the Middle of a $117 Billion Merger - AIM Media House",
-            "final_score": 68.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 12,
-        "raw_items": 317,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 4,
-          "CNews": 0,
-          "Euronews": 7
-        },
-        "score_filtered": 293,
-        "quality_filtered": 11,
-        "story_dedup": 4,
-        "candidates": 9,
-        "candidate_rate": 0.0295,
-        "score_buckets": {
-          "0–39": 282,
-          "40–49": 22,
-          "50–59": 13,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1792917653,
       "status": "OK",
@@ -22198,10 +22255,146 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793119971,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": true,
+      "duration_sec": 89.35,
+      "candidates": 56,
+      "queue_before": 15,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 16,
+        "known_recent": 11,
+        "already_queued": 12,
+        "story_queue": 0,
+        "story_history": 6,
+        "added": 11,
+        "candidate_count": 56,
+        "admission_rate": 19.64,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.5,
+          "bonus_total": 39.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Двукратное снижение стоимости API при расширении функционала автоматизации интерфейсов требует немедленного пересмотра юнит-экономики AI-продуктов.",
+            "title": "GPT-6.1 Terra от OpenAI: автоматизация быстрее и дешевле",
+            "final_score": 84.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 5,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 108,
+        "raw_items": 1334,
+        "source_counts": {
+          "TechCrunch AI": 6,
+          "VentureBeat AI": -1,
+          "The Verge AI": 5,
+          "OpenAI News": 1,
+          "Google DeepMind": 1,
+          "Hugging Face": 1,
+          "Ars Technica": 4,
+          "Habr AI/News": 40,
+          "CNews": 0,
+          "Euronews": 50
+        },
+        "score_filtered": 1235,
+        "quality_filtered": 34,
+        "story_dedup": 9,
+        "candidates": 56,
+        "candidate_rate": 0.0457,
+        "score_buckets": {
+          "0–39": 1158,
+          "40–49": 110,
+          "50–59": 59,
+          "60–69": 6,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 6,
+          "8": 6,
+          "9": 1,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "GROQ",
+          "OPENROUTER",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "OPENROUTER",
+        "failovers": 5,
+        "failures": 4,
+        "blocked": 7,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793117595.8094013,
+  "last_search_ts": 1793119971.236198,
   "last_publish_ts": 1793118770.7165055,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
