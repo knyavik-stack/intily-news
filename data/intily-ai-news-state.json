@@ -1194,9 +1194,6 @@
     "75e9ef666d1c5ef75338e947cd1fd718a42b703a5669059e483ea5bb9fa24ddd": 1793199403
   },
   "known": {
-    "91bcc552676a0ec411a0d3dd3f6337f25f65d3f6fb409d0aec9946d26af97cd5": 1793199403.9079201,
-    "127d712a181d797c82de90a3701d64de4a1459bf31bf9d7c574625314722ec68": 1793199403.9079201,
-    "64fd45a8fc43a60c0eeb0f5dde2da7017b776c7e24909da4b6a4e4679a4cae98": 1793199403.9079201,
     "e7e6304f7547521d24cff8f31dbcbdbffbbe00d441438e9d862edce9151a0aa3": 1793202092.8493292,
     "17a5a16222e29b94e78aa9affa953cc9604ad827eb7145690b9bfb5e7062ebad": 1793202092.8493292,
     "39898c8e57b9b4328b136b3fad805ebe85c44cebe30a5633b558ab605e3aec52": 1793202092.8493292,
@@ -1232,19 +1229,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 47.5,
+        "base_score": 47.0,
         "audience_score": 8.0,
         "audience_bonus": 24.0,
-        "final_score": 71.5
+        "final_score": 71.0
       },
-      "base_score": 47.5,
+      "base_score": 47.0,
       "audience_bonus": 24.0,
       "score_stage": "final",
-      "score": 71.5,
+      "score": 71.0,
       "key": "0d9b369e36b8f1a14246d9d0b778f226ac986cf655bf31ab16761d7abb765519",
-      "importance": 71.5,
+      "importance": 71.0,
       "editorial_value": 50.0,
       "topics": [
         "chips"
@@ -1639,19 +1636,19 @@
         "novelty": 0.0,
         "source_quality": 4.0,
         "evidence": 3.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 41.5,
+        "base_score": 41.0,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 59.5
+        "final_score": 59.0
       },
-      "base_score": 41.5,
+      "base_score": 41.0,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 59.5,
+      "score": 59.0,
       "key": "a03c07e7d222c35e3e8df9af2cfdefe28fe25d58d2a41f707a013c02f2fd8829",
-      "importance": 59.5,
+      "importance": 59.0,
       "editorial_value": 50.0,
       "topics": [
         "research"
@@ -1929,19 +1926,19 @@
         "novelty": 0.0,
         "source_quality": 5.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 47.5,
+        "base_score": 47.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 47.5
+        "final_score": 47.0
       },
-      "base_score": 47.5,
+      "base_score": 47.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 47.5,
+      "score": 47.0,
       "key": "39898c8e57b9b4328b136b3fad805ebe85c44cebe30a5633b558ab605e3aec52",
-      "importance": 47.5,
+      "importance": 47.0,
       "editorial_value": 50.0,
       "topics": [
         "models",
@@ -1953,30 +1950,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793204213.0363393,
+    "last_start_ts": 1793205896.136744,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793204213.0363393,
-    "last_success_ts": 1793204213.0363393,
-    "last_candidates": 48,
+    "last_run_ts": 1793205896.136744,
+    "last_success_ts": 1793205896.136744,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793207796.4886873,
+      "disabled_until": 1793209484.101388,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1793204196.4886892
+      "updated_at": 1793205884.10139
     },
     "GROQ": {
-      "disabled_until": 1793207800.506064,
+      "disabled_until": 1793209487.5527773,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793204200.5060656
+      "updated_at": 1793205887.5527787
     },
     "OPENAI": {
-      "disabled_until": 1793290612.8522422,
+      "disabled_until": 1793292295.8958173,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793204212.852244
+      "updated_at": 1793205895.8958192
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1984,33 +1981,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793207811.8991995,
+      "disabled_until": 1793209494.7483459,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793204211.8992007
+      "updated_at": 1793205894.7483478
     }
   },
   "stories": {
-    "53896532549472d5d9027849efb57403005a41efbc63eb2a412eee76a7f78534": {
-      "time": 1793118070,
-      "title": "AvePoint says 88.4% of organizations had an AI-agent security incident in 12 months. Its platform governs agents. - Stock Titan",
-      "desc": "AvePoint says 88.4% of organizations had an AI-agent security incident in 12 months. Its platform governs agents. Stock Titan",
-      "source": "Stock Titan",
-      "region": "WORLD"
-    },
-    "41527717545d8fb4c0494605071d847afbea96a857a839b9810944191784af06": {
-      "time": 1793118288,
-      "title": "Bito представляет Governor: сокращение затрат на программирование с помощью контекстной информации и маршрутизации между моделями - Unite.AI",
-      "desc": "Bito представляет Governor: сокращение затрат на программирование с помощью контекстной информации и маршрутизации между моделями Unite.AI",
-      "source": "Unite.AI",
-      "region": "RUSSIA"
-    },
-    "242efb20e4bec65d9128be5ee7643f9cb7f203532a6d8c069c6746fadaf114af": {
-      "time": 1793118770,
-      "title": "Nvidia and TSMC post record revenues but stocks fall amid AI supply and cost risks. - Pluang",
-      "desc": "Nvidia and TSMC post record revenues but stocks fall amid AI supply and cost risks. Pluang",
-      "source": "Pluang",
-      "region": "WORLD"
-    },
     "29c2117b8465f53109e9b1c55028a36337aea3bc045afadb6b42c2a3c4248208": {
       "time": 1793121933,
       "title": "Google’s Genie 4 world model adds audio, more realistic worlds, and real-time steering",
@@ -2336,99 +2312,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1792992302,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 38.37,
-      "candidates": 0,
-      "queue_before": 7,
-      "queue_after": 6,
-      "published": 1,
-      "publish_attempts": 2,
-      "item_failures": 1,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.moneycontrol.com/world/elon-musk-s-spacex-closes-40-billion-debt-deal-to-buy-ai-chips-warns-of-neocloud-failures-article-14059627.html",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 9.0,
-          "bonus_total": 54.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра инструментов для анализа кода и оценки рисков блокировки рабочих аккаунтов.",
-            "title": "OpenAI и Anthropic ограничили использование своих ИИ-моделей для создания бесплатных клонов платного ПО",
-            "final_score": 64.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 4,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792993013,
       "status": "OK",
@@ -22294,6 +22177,78 @@
         },
         "audience_stage": "post_editorial"
       },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1793205896,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 12.78,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
       "provider": {
         "attempts": [],
         "used": null,
