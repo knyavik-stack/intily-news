@@ -1194,13 +1194,6 @@
     "41bba98e1ae912f0717246643ffefffa33d2a7eca89655f875e9e8faf9defe94": 1793195082
   },
   "known": {
-    "ab821fc1eb9d60429236efdbaf27ba76f2d14676ae61338c154a15f8cf7c5bff": 1793189801.5235362,
-    "3e4d64dddc42935583783e23294976787f77f28f7ccf6fe8d2c776f26c587871": 1793189801.5235362,
-    "268de8395e4a8443114f9f8ed489da9b110bfbc16d030aee8e1e0741a1aae2e8": 1793189801.5235362,
-    "c21c138ed623652996d82a9d5b3fb9d4813ae142a24ebdd5477c739533cbd642": 1793189801.5235362,
-    "2d711db499e91c820e209ee45c5658aac60cf109010c728cc9efa5706e2a8448": 1793189801.5235362,
-    "cd91c2975805246d1328ee64a1d26cb81979c2b4da99826278199dbfd71166c7": 1793189801.5235362,
-    "65c48e270ccf3cc73e61d171c1dc786a162728077e6ac363de956bb353822246": 1793189801.5235362,
     "3db2252856cd4869cda5e7bfbda612ee81f5d919ba61053bfc1a178a9cd73430": 1793191720.626849,
     "827f0895496f8747bbd42fcacc9094dfdd8934c73876955080f7374ffb1f25d2": 1793194118.2144287,
     "41bba98e1ae912f0717246643ffefffa33d2a7eca89655f875e9e8faf9defe94": 1793194118.2144287,
@@ -1788,30 +1781,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793195082.3758295,
+    "last_start_ts": 1793195826.6820567,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793195082.3758295,
-    "last_success_ts": 1793195082.3758295,
+    "last_run_ts": 1793195826.6820567,
+    "last_success_ts": 1793195826.6820567,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 16
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793195082.1982358
+      "disabled_until": 1793199411.5103843,
+      "reason": "The read operation timed out",
+      "updated_at": 1793195811.5103862
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793175151.4459212
+      "disabled_until": 1793199414.9452255,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793195814.9452271
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793175151.4459212
+      "disabled_until": 1793282226.5800505,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1793195826.5800521
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1819,19 +1812,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793175151.4459212
+      "disabled_until": 1793199424.4957263,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793195824.4957287
     }
   },
   "stories": {
-    "7a0f352a45c49607c6cb2d813fda0eff62d1c0ffc33126d035517d7c3c61571d": {
-      "time": 1793108688,
-      "title": "Canva выпустила Craft: нейросеть, которая сначала продумывает дизайн, а потом генерирует картинку",
-      "desc": "Canva представила Craft — первую собственную модель для генерации изображений. Её с нуля разработала команда Canva Research. Модель ориентирована на полноценные дизайн-макеты: с текстом, продуманной композицией и возможностью дальнейшего редактирования. Главная особенность Craft — двухэтапная архитектура. Сначала отдельная модель составляет план изображения: определяет расположение объектов, их масштаб, визуальную иерархию и положение текстовых блоков. Затем другая модель превращает этот план в готовую картинку. Благодаря этому результат будет меньше страдать от кривой типографики, нарушенных пропорций и объектов, которые оказываются совсем не там, где их просили разместить. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "03e16d5a70420c5a7126e8d4a42adc926bcbdb78b0cc72a69693333a43853560": {
       "time": 1793109665,
       "title": "Sony выплатила $50 000 за критическую уязвимость в PS5, которую нашли с помощью ИИ",
@@ -2213,83 +2199,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1792952924,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 22.87,
-      "candidates": 0,
-      "queue_before": 3,
-      "queue_after": 3,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 12,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1792953648,
       "status": "OK",
@@ -22210,6 +22119,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1793195826,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 35.46,
+      "candidates": 0,
+      "queue_before": 16,
+      "queue_after": 16,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
