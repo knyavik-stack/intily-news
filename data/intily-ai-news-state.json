@@ -1219,13 +1219,6 @@
     "d6cbc94789652131362bffa659f50c2c86aa975c7a918e65c9ac47aed73fb3b0": 1793297828
   },
   "known": {
-    "eb078f7f70e6108b34231f06440c30d4bf11797ec99cf4c7c8655bd1d1d49e95": 1793293035.7047944,
-    "d6821f4d3c5c527df2f6df83f58660824a345f44817e8fc316f4f7d412fb0b8a": 1793293035.7047944,
-    "a7ab3426230f29c7f95bc35ebaf1527dd68d9c3d706743008f21a99d08c1db40": 1793293035.7047944,
-    "be2083612abdf8223af9343d8bec92b78e58e3586f4b8312f379239a4c7182ec": 1793293035.7047944,
-    "6660527320bf2a33ad58b9074b86ce45e819d115c0976492ec96277134540e58": 1793293035.7047944,
-    "cc820896c8dc2259c34873e3efae773971bad229a083917ebc2d85f0f69fcff2": 1793293035.7047944,
-    "4feef2c334072b92b359de9483d38fda88f160bac7982f5dffd5077128a9418e": 1793293035.7047944,
     "f3a511bd70f2646715366aeec14d8346b2d1ac0b35f42ff847e96520e7310ac5": 1793295674.0356321,
     "8114a1f1f35044baf28b4adae3c9d4169983ee92707592fb394b55a603f968b9": 1793295674.0356321,
     "4f992fb7007e551298428e9c5bb250166b4aa353261b5a58d688357786448c94": 1793295674.0356321,
@@ -1275,7 +1268,11 @@
         "security_regulation"
       ],
       "audience_score": 8.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1793298546,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1793298846
     },
     {
       "region": "WORLD",
@@ -1312,10 +1309,10 @@
       ],
       "audience_score": 9.0,
       "tier": "A",
-      "last_failed_at": 1793286562,
+      "last_failed_at": 1793298546,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1793286862
+      "failure_count": 2,
+      "next_retry_at": 1793299146
     },
     {
       "region": "RUSSIA",
@@ -1913,13 +1910,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793297828.0451024,
+    "last_start_ts": 1793298546.3397837,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793297828.0451024,
-    "last_success_ts": 1793297828.0451024,
+    "last_run_ts": 1793298546.3397837,
+    "last_success_ts": 1793298546.3397837,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 18
   },
   "providers": {
@@ -1929,14 +1926,14 @@
       "updated_at": 1793297849.8236475
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793297854.776538
+      "disabled_until": 1793302149.8230922,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793298549.8230941
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793296622.0249445
+      "disabled_until": 1793384967.993616,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1793298567.9936602
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1944,9 +1941,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793296622.0249445
+      "disabled_until": 1793302166.6542153,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793298566.6542177
     }
   },
   "stories": {
@@ -2394,94 +2391,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793089736,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 13.29,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 16,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 400: Bad Request": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 400: Bad Request"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 9.0,
-          "bonus_total": 54.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Масштабные инвестиции Meta задают вектор развития всей индустрии и требуют пересмотра стратегии автоматизации бизнеса.",
-            "title": "Meta's $95 Billion Stock Issuance for AI - 조선일보",
-            "final_score": 70.8
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 5,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793090936,
       "status": "OK",
@@ -22359,6 +22268,82 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1793298546,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 22.01,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 18,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 3,
+        "blocked": 13,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
