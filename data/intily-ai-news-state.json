@@ -1,6 +1,5 @@
 {
   "published": {
-    "be8e65651591ee4f7e7f9aa36d38c7ff5fd0794db5507aad33d95010367c2b16": 1790698132,
     "643e0b55e979ba1f4a0420a5bc2d60b880bcd6f03ca4d42030386731acc61211": 1790699325,
     "efcfc0b70fb4971cf822d8cddeaa625f4945ddb5b4d28d22f8239cc23013ff27": 1790699816,
     "26e73a35f5e20912da46edf0f943463f88acc00609f61fc8129fb6f616cd8a2d": 1790700051,
@@ -1214,7 +1213,8 @@
     "70dbb9f25535cc07bcf690634ca47c555807963a34aef88a3270c1be08de74f2": 1793278877,
     "cf6e52cd0fc32bbeea8b8d0f273e1cc84bcfd1319c8f9e8ccb0a3ead4b559c86": 1793280080,
     "80da4ace981c80fd38cab199a9f3d4a0ad7731546f31bf3b8627343b6cb6e99c": 1793284167,
-    "e08889655a37dbca5e893e6f20b13f31085458a87c479872f5820be076871a3f": 1793289196
+    "e08889655a37dbca5e893e6f20b13f31085458a87c479872f5820be076871a3f": 1793289196,
+    "dee861d703a12fc269c2c200e29f793cfeef9c84fe7a9ac738944a9917200525": 1793290148
   },
   "known": {
     "e08889655a37dbca5e893e6f20b13f31085458a87c479872f5820be076871a3f": 1793286562.6489396,
@@ -1234,46 +1234,6 @@
     "afa0f1a98c29252304deff633256c1b296f63afd0f94ac5cf893058855be2143": 1793288971.5149422
   },
   "queue": [
-    {
-      "region": "WORLD",
-      "title": "Oracle launches AI security mesh with OpenAI to fix flaws - IT Brief UK",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNajB6YjNnaUk5bkZvOEhqNG96Vm5qZW14TjJxNTRTZUZISndCeV9wbWoxc0JZWVJ2Y1BkUnYzMmg0aXhuSnpORy1YUTNma1BpS2l5YzF4SWZMRnBkZVMtelk5bVkwazF6OXVYaUdXZER3cGl0Sl9QakpLUG4xYVBvOHBkNmoyMVh3SHJwTk9R?oc=5",
-      "desc": "Oracle launches AI security mesh with OpenAI to fix flaws IT Brief UK",
-      "source": "IT Brief UK",
-      "time": 1793288700.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 11.0,
-        "event_concreteness": 16.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 49.5,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 73.5
-      },
-      "base_score": 49.5,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 73.5,
-      "key": "dee861d703a12fc269c2c200e29f793cfeef9c84fe7a9ac738944a9917200525",
-      "importance": 73.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "security_regulation"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "last_failed_at": 1793289907,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 2,
-      "next_retry_at": 1793290507
-    },
     {
       "region": "RUSSIA",
       "title": "Anthropic добилась первых успехов в разработке лекарств при помощи Claude",
@@ -1958,30 +1918,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793289907.6894195,
+    "last_start_ts": 1793290148.4270864,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793289907.6894195,
-    "last_success_ts": 1793289907.6894195,
+    "last_run_ts": 1793290148.4270864,
+    "last_success_ts": 1793290148.4270864,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 19
+    "last_published": 1,
+    "queue_size": 18
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793293509.119154,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1793289909.1191554
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793290150.3080788
     },
     "GROQ": {
-      "disabled_until": 1793293512.5532215,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793289912.553223
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793290148.1218445
     },
     "OPENAI": {
-      "disabled_until": 1793376327.5490842,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793289927.5490856
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793290148.1218445
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1989,9 +1949,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793293526.5037572,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793289926.5037591
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793290148.1218445
     }
   },
   "stories": {
@@ -2365,10 +2325,16 @@
       "desc": "The French AI company says its Large 4 model offers advanced coding and cyber-defence capabilities and can be run on an organisation’s own computers and servers.",
       "source": "Euronews",
       "region": "WORLD"
+    },
+    "dee861d703a12fc269c2c200e29f793cfeef9c84fe7a9ac738944a9917200525": {
+      "time": 1793290148,
+      "title": "Oracle launches AI security mesh with OpenAI to fix flaws - IT Brief UK",
+      "desc": "Oracle launches AI security mesh with OpenAI to fix flaws IT Brief UK",
+      "source": "IT Brief UK",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -2387,148 +2353,10 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793082776,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 48.29,
-      "candidates": 20,
-      "queue_before": 17,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 1,
-        "known_recent": 0,
-        "already_queued": 15,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 4,
-        "candidate_count": 20,
-        "admission_rate": 20.0,
-        "dominant_block": "already_queued",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://habr.com/ru/news/1099746/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1099746",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 6.33,
-          "bonus_total": 57.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Внедрение методологии критически снижает риски безопасности при эксплуатации LLM-решений в бизнесе.",
-            "title": "OWASP выпустил GenAI Red Teaming Manual v1.0",
-            "final_score": 73.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 12,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 33,
-        "raw_items": 421,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 1,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 6,
-          "Habr AI/News": 9,
-          "CNews": 0,
-          "Euronews": 13
-        },
-        "score_filtered": 383,
-        "quality_filtered": 10,
-        "story_dedup": 8,
-        "candidates": 20,
-        "candidate_rate": 0.0515,
-        "score_buckets": {
-          "0–39": 355,
-          "40–49": 38,
-          "50–59": 23,
-          "60–69": 5,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 0,
-          "6": 1,
-          "7": 0,
-          "8": 2,
-          "9": 1,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793083275,
       "status": "OK",
@@ -22349,11 +22177,101 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1793290148,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 3.85,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 18,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 406: Not Acceptable": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 406: Not Acceptable"
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 7.0,
+          "bonus_total": 21.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Необходимость обновления протоколов безопасности при интеграции корпоративных ИИ-решений.",
+            "title": "Oracle launches AI security mesh with OpenAI to fix flaws - IT Brief UK",
+            "final_score": 70.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1793288971.5149422,
-  "last_publish_ts": 1793289196.8909752,
+  "last_publish_ts": 1793290148.4270864,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
