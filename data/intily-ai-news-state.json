@@ -1225,20 +1225,20 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1793352785.03531,
+    "last_start_ts": 1793353269.5540504,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793352785.03531,
-    "last_success_ts": 1793352785.03531,
+    "last_run_ts": 1793353269.5540504,
+    "last_success_ts": 1793353269.5540504,
     "last_candidates": 11,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1793352819.253977
+      "updated_at": 1793353310.3309982
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1262,13 +1262,6 @@
     }
   },
   "stories": {
-    "707ce56bb7082bbbc9dcc7c564c1654ac894d79386b5b686a31700812d8f480a": {
-      "time": 1793266862,
-      "title": "Prophecy Launches DataGPT, Bringing Enterprise Data Workflows to Claude, ChatGPT, and Copilot - HPCwire",
-      "desc": "Prophecy Launches DataGPT, Bringing Enterprise Data Workflows to Claude, ChatGPT, and Copilot HPCwire",
-      "source": "HPCwire",
-      "region": "WORLD"
-    },
     "5da14318945953b454c587471757ecd95b3f54c491cf1a85b7e2b09efde3609b": {
       "time": 1793267835,
       "title": "Ready Server Launches ReadyServer LLM API, Giving Every VPS Customer Private AI Inference at No Extra Cost - ANTARA News",
@@ -1657,96 +1650,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793109889,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 5.96,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.telecompaper.com/news/anthropic-agrees-usd-63-billion-lien-financing-to-lease-broadcom-ai-chips--1586947",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 10.0,
-          "bonus_total": 30.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Масштабные инвестиции в инфраструктуру подтверждают тренд на дефицит мощностей, что требует пересмотра стратегии закупок и выбора вендоров для бизнеса.",
-            "title": "Anthropic agrees USD 63 billion lien financing to lease Broadcom AI chips - Telecompaper",
-            "final_score": 77.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793110615,
       "status": "OK",
@@ -21831,10 +21734,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793353269,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 40.82,
+      "candidates": 11,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 11,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 9.0,
+          "bonus_total": 54.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 10.0,
+            "bonus": 30.0,
+            "reason": "Масштабные инвестиции Microsoft задают вектор развития всей экосистемы, требуя пересмотра стратегии автоматизации и затрат на ИИ-инструменты.",
+            "title": "Microsoft Plans US$25 Billion Bond Sale To Fund AI Expansion - BusinessToday Malaysia",
+            "final_score": 75.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 51,
+        "raw_items": 524,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 21,
+          "CNews": 0,
+          "Euronews": 26
+        },
+        "score_filtered": 491,
+        "quality_filtered": 16,
+        "story_dedup": 6,
+        "candidates": 11,
+        "candidate_rate": 0.0233,
+        "score_buckets": {
+          "0–39": 457,
+          "40–49": 50,
+          "50–59": 17,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793352785.03531,
+  "last_search_ts": 1793353269.5540504,
   "last_publish_ts": 1793352785.03531,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
