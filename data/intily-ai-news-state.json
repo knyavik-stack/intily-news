@@ -1217,28 +1217,30 @@
     "8bdc46d5ae4f9f76bf2fef9138a19e1d1adb62ea99f9a223a87d232ef0cc222a": 1793348945,
     "38d4ea3350a5ee0e86e6b745b185c18a6e07ec50cec17b901a54f81ba3f2b7c2": 1793349427,
     "e9de15778d693f817455965f10c1401404ca37173465b257c662c8adb75cbef4": 1793351585,
-    "d809151d4cc578e44171a144fa8990b62314d0ad478ee3fbbecc5521b45693b4": 1793352785
+    "d809151d4cc578e44171a144fa8990b62314d0ad478ee3fbbecc5521b45693b4": 1793352785,
+    "92116561d2aa262b1c6f462f6ec3d01424b58491876d55960b0107f64e14a03c": 1793353505
   },
   "known": {
     "8ea0fd789a2212ea1bc98793b8b4166a887e61c9f2c7f61e3ea04abb11116e2c": 1793348468.4014206,
-    "d809151d4cc578e44171a144fa8990b62314d0ad478ee3fbbecc5521b45693b4": 1793352785.03531
+    "d809151d4cc578e44171a144fa8990b62314d0ad478ee3fbbecc5521b45693b4": 1793352785.03531,
+    "92116561d2aa262b1c6f462f6ec3d01424b58491876d55960b0107f64e14a03c": 1793353505.7424536
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1793353269.5540504,
+    "last_start_ts": 1793353505.7424536,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793353269.5540504,
-    "last_success_ts": 1793353269.5540504,
-    "last_candidates": 11,
-    "last_published": 0,
+    "last_run_ts": 1793353505.7424536,
+    "last_success_ts": 1793353505.7424536,
+    "last_candidates": 12,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1793353310.3309982
+      "updated_at": 1793353545.1208217
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1625,11 +1627,17 @@
       "desc": "Is AI hurting Google's core business? Alphabet's $500 billion market rout explained Firstpost",
       "source": "Firstpost",
       "region": "WORLD"
+    },
+    "92116561d2aa262b1c6f462f6ec3d01424b58491876d55960b0107f64e14a03c": {
+      "time": 1793353505,
+      "title": "Value of Google parent Alphabet plunges by $500bn as AI fears rattle Wall Street - BBC",
+      "desc": "Value of Google parent Alphabet plunges by $500bn as AI fears rattle Wall Street BBC Nasdaq futures tumble as Amazon, Intel results deepen AI spending woes Reuters Alphabet Sheds Half a Trillion in Market Value in Stock’s Worst Day Ever WSJ Google’s $500bn bloodbath reflects the danger it faces from AI The Economist Google parent Alphabet suffers nearly $500B Wall Street wipeout amid AI spending fears Fox Business Alphabet shares record their worst day ever, shedding $500 billion in value NBC News",
+      "source": "BBC",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -1645,88 +1653,12 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793110615,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 44.94,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 18,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 12,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793110852,
       "status": "OK",
@@ -21864,11 +21796,151 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793353505,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 43.33,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 1,
+        "candidate_count": 12,
+        "admission_rate": 8.33,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://www.firstpost.com/business/google-alphabet-500-billion-market-value-loss-ai-spending-14056562.html",
+            "image_url": "https://images.firstpost.com/uploads/2026/10/Anthropic-logo-rep-Reuters-1-2026-10-91515b449f65ceb68a5f03040e4c26bf-1200x675.jpg?im=FitAndFill,width=1200,height=675",
+            "width": 1200,
+            "height": 675,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра стратегии привлечения трафика и монетизации в условиях доминирования AI-ответов.",
+            "title": "Is AI hurting Google's core business? Alphabet's $500 billion market rout explained - Firstpost",
+            "final_score": 71.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 51,
+        "raw_items": 515,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 21,
+          "CNews": 0,
+          "Euronews": 26
+        },
+        "score_filtered": 482,
+        "quality_filtered": 15,
+        "story_dedup": 6,
+        "candidates": 12,
+        "candidate_rate": 0.0259,
+        "score_buckets": {
+          "0–39": 448,
+          "40–49": 49,
+          "50–59": 17,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793353269.5540504,
-  "last_publish_ts": 1793352785.03531,
+  "last_search_ts": 1793353505.7424536,
+  "last_publish_ts": 1793353505.7424536,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
