@@ -1220,7 +1220,6 @@
     "c1ff48542d3f55388d12a4c955f247ed10bc32b3b270059b83633c42d9eb7459": 1793354703
   },
   "known": {
-    "d809151d4cc578e44171a144fa8990b62314d0ad478ee3fbbecc5521b45693b4": 1793352785.03531,
     "92116561d2aa262b1c6f462f6ec3d01424b58491876d55960b0107f64e14a03c": 1793353505.7424536,
     "f8d0b391074a5238308362d336e50411af1d9febf4b4f1cdb70c6502cf2ee63f": 1793354467.3837445,
     "c1ff48542d3f55388d12a4c955f247ed10bc32b3b270059b83633c42d9eb7459": 1793354467.3837445,
@@ -1246,22 +1245,22 @@
         "freshness": 0.5,
         "low_signal_penalty": 0.0,
         "base_score": 44.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 44.0
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 68.0
       },
       "base_score": 44.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 44.0,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 68.0,
       "key": "d9865579d35b95920d28c3de4caf4d91f074422869ea8a8cfd276302405bef5a",
-      "importance": 44.0,
+      "importance": 68.0,
       "editorial_value": 50.0,
       "topics": [
         "business",
         "tools"
       ],
-      "audience_score": null,
+      "audience_score": 8.0,
       "tier": "A",
       "last_failed_at": 1793356869,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
@@ -1270,30 +1269,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793357859.0835679,
+    "last_start_ts": 1793358303.2517269,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793357859.0835679,
-    "last_success_ts": 1793357859.0835679,
+    "last_run_ts": 1793358303.2517269,
+    "last_success_ts": 1793358303.2517269,
     "last_candidates": 14,
     "last_published": 0,
     "queue_size": 1
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793361441.296383,
+      "disabled_until": 1793361956.799731,
       "reason": "The read operation timed out",
-      "updated_at": 1793357841.2963855
+      "updated_at": 1793358356.799733
     },
     "GROQ": {
-      "disabled_until": 1793361444.5776,
+      "disabled_until": 1793361960.7688732,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793357844.577602
+      "updated_at": 1793358360.7688746
     },
     "OPENAI": {
-      "disabled_until": 1793444259.0829747,
+      "disabled_until": 1793444777.6088898,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793357859.0829766
+      "updated_at": 1793358377.608892
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1301,9 +1300,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793361458.2970948,
+      "disabled_until": 1793361977.1241965,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793357858.2970965
+      "updated_at": 1793358377.1241982
     }
   },
   "stories": {
@@ -1674,78 +1673,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793113028,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 18.38,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793113747,
       "status": "OK",
@@ -22118,10 +22045,143 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1793358303,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 76.42,
+      "candidates": 14,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 12,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 14,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 24.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Позволяет внедрить финансовый контроль за использованием API, предотвращая бесконтрольный рост затрат на ИИ-инструменты.",
+            "title": "Anthropic launches tools to track enterprise AI spending - TechGig",
+            "final_score": 68.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 63,
+        "raw_items": 598,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 25,
+          "CNews": 0,
+          "Euronews": 34
+        },
+        "score_filtered": 560,
+        "quality_filtered": 19,
+        "story_dedup": 5,
+        "candidates": 14,
+        "candidate_rate": 0.0262,
+        "score_buckets": {
+          "0–39": 512,
+          "40–49": 67,
+          "50–59": 18,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "OPENROUTER",
+        "failovers": 2,
+        "failures": 4,
+        "blocked": 2,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793357859.0835679,
+  "last_search_ts": 1793358303.2517269,
   "last_publish_ts": 1793354703.530509,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
