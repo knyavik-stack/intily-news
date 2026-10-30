@@ -1236,10 +1236,6 @@
     "c67ad07d68e93bd09fad31311b4b3c9e646e65e21fae8728f4a3b87203fcf80e": 1793376079
   },
   "known": {
-    "e9d34a6d3dde6c5ed8e07fa3afbe38942a9f26dbc54988e66467ee1aecf58cec": 1793371751.8886385,
-    "1a02677c86c431b53f2a82ab99fc83f79800751716dc42c90e756a7091841433": 1793371751.8886385,
-    "abb99aa5c78fd21f8db4f92e9794d24a85f41ec786c84936dc7968800f91bb9d": 1793371751.8886385,
-    "c67ad07d68e93bd09fad31311b4b3c9e646e65e21fae8728f4a3b87203fcf80e": 1793371751.8886385,
     "2707f8c3cc303c2989f75d3893f7c8c4e966c6c0d2150c12ecf25cce423dcb15": 1793373914.2772396,
     "5a09dde28ed50309e828ad881e91271723a8ffd598a513900f8ff2597507c7ea": 1793373914.2772396,
     "aefec4e8d6433df413b30133b65e4a51a373b4efa5bae45d5fea322651aae59b": 1793373914.2772396,
@@ -1285,10 +1281,10 @@
       "audience_score": 8.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1793376785,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GROQ: GROQ_EMPTY_OR_INVALID_CONTENT | OPENROUTER: OPENROUTER_EMPTY_OR_INVALID_CONTENT | OPENAI: OPENAI_HTTP_429: {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/b",
-      "failure_count": 1,
-      "next_retry_at": 1793377085
+      "last_failed_at": 1793377267,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 2,
+      "next_retry_at": 1793377867
     },
     {
       "region": "WORLD",
@@ -1325,10 +1321,10 @@
       ],
       "audience_score": 8.0,
       "tier": "A",
-      "last_failed_at": 1793376785,
+      "last_failed_at": 1793377267,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1793377085
+      "failure_count": 2,
+      "next_retry_at": 1793377867
     },
     {
       "region": "WORLD",
@@ -1346,19 +1342,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 41.5,
+        "base_score": 41.0,
         "audience_score": 8.0,
         "audience_bonus": 24.0,
-        "final_score": 65.5
+        "final_score": 65.0
       },
-      "base_score": 41.5,
+      "base_score": 41.0,
       "audience_bonus": 24.0,
       "score_stage": "final",
-      "score": 65.5,
+      "score": 65.0,
       "key": "a2d493270c1512794920cc8634e0d3d88b80966f0b246b5b5cd336535eaa4c73",
-      "importance": 65.5,
+      "importance": 65.0,
       "editorial_value": 50.0,
       "topics": [
         "agents"
@@ -1566,19 +1562,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 40.5,
+        "base_score": 40.0,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 61.5
+        "final_score": 61.0
       },
-      "base_score": 40.5,
+      "base_score": 40.0,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 61.5,
+      "score": 61.0,
       "key": "1c25d31f046721a0c9592e8afa7f8b3a796bc02dd8d2b1453e69964b1121ea95",
-      "importance": 61.5,
+      "importance": 61.0,
       "editorial_value": 50.0,
       "topics": [
         "agents"
@@ -1802,30 +1798,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793376785.2107756,
+    "last_start_ts": 1793377267.1883316,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793376785.2107756,
-    "last_success_ts": 1793376785.2107756,
+    "last_run_ts": 1793377267.1883316,
+    "last_success_ts": 1793377267.1883316,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 15
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793379701.9041355,
+      "disabled_until": 1793380887.3570018,
       "reason": "The read operation timed out",
-      "updated_at": 1793376101.9041386
+      "updated_at": 1793377287.3570035
     },
     "GROQ": {
-      "disabled_until": 1793380393.4293978,
+      "disabled_until": 1793380890.945211,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793376793.4293997
+      "updated_at": 1793377290.9452126
     },
     "OPENAI": {
-      "disabled_until": 1793463208.1981483,
+      "disabled_until": 1793463716.0727556,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793376808.1981502
+      "updated_at": 1793377316.072757
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1833,19 +1829,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793380407.0308301,
+      "disabled_until": 1793380914.5465357,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793376807.030832
+      "updated_at": 1793377314.5465376
     }
   },
   "stories": {
-    "99ab324bbd394366467e3dec3913c36b309d67554b18d1ccaa762f051d67ce7b": {
-      "time": 1793290627,
-      "title": "Anthropic добилась первых успехов в разработке лекарств при помощи Claude",
-      "desc": "Anthropic сообщила , что добилась первых успехов в разработке лекарств при помощи Claude. Компания заключила договоры с несколькими лабораториями и биотехнологическими компаниями, которые используют Claude в исследованиях в области лечения рака и аллергии, а также для оптимизации процессов. В Generate Biomedicines исследователи с помощью Claude Code переписали генетические инструкции для CAR‑T-клеточной терапии. В Divergence Labs Claude за месяц разработал 35 000 вариантов антител для лечения аллергии. Три из них в тестах показали себя лучше, чем стандартный лекарственный препарат. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "fffa81f8434c60f5083c6ec93a93c401f42c5a1a6553be26a6b27e4f19a7721d": {
       "time": 1793291835,
       "title": "What is Gemini 4 Carbon, Google’s new AI model for finding, fixing security flaws? - The Indian Express",
@@ -2262,94 +2251,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793166284,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 15.52,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://news.lavx.hu/article/nvidia-and-amd-commit-4-billion-to-meta-s-95-billion-ai-funding-push",
-            "image_url": "https://news.lavx.hu/api/media/file/nvidia-and-amd-commit-4-billion-to-metas-95-billion-ai-funding-push-1_1793160390255-1200x630.jpg",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Ограничение доступа к вычислительным ресурсам вынуждает пересматривать стратегию разработки в сторону использования готовых API вместо обучения собственных моделей.",
-            "title": "Nvidia and AMD commit $4 billion to Meta's $95 billion AI funding push - news.lavx.hu",
-            "final_score": 64.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 15,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793167000,
       "status": "OK",
@@ -22854,6 +22755,83 @@
         "failovers": 0,
         "failures": 3,
         "blocked": 10,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1793377267,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 49.07,
+      "candidates": 0,
+      "queue_before": 15,
+      "queue_after": 15,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
         "skipped_no_key": 0,
         "retries": 0
       },
