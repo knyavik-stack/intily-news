@@ -1225,34 +1225,77 @@
     "d809151d4cc578e44171a144fa8990b62314d0ad478ee3fbbecc5521b45693b4": 1793352785.03531,
     "92116561d2aa262b1c6f462f6ec3d01424b58491876d55960b0107f64e14a03c": 1793353505.7424536,
     "f8d0b391074a5238308362d336e50411af1d9febf4b4f1cdb70c6502cf2ee63f": 1793354467.3837445,
-    "c1ff48542d3f55388d12a4c955f247ed10bc32b3b270059b83633c42d9eb7459": 1793354467.3837445
+    "c1ff48542d3f55388d12a4c955f247ed10bc32b3b270059b83633c42d9eb7459": 1793354467.3837445,
+    "d9865579d35b95920d28c3de4caf4d91f074422869ea8a8cfd276302405bef5a": 1793356869.0507464
   },
-  "queue": [],
+  "queue": [
+    {
+      "region": "WORLD",
+      "title": "Anthropic launches tools to track enterprise AI spending - TechGig",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSUw5ODZfdlh2aXFfdlB0QTNpa2t1NzZscEl4dF81OVc5WU01MVJieDE5Wmk4b2tnWDhtTUdzbk1qZnpBWGw1MXVkMWhzeTZBa2didmZwX19QOWR4NUthRy1vUFl0ZEpHR0liUXRxNmFJLUY3cE9NeXVPaUd3eUxDN2JJT2tWNlloMEFQVC0wX2gzaU9lU2YxZWJn0gGfAUFVX3lxTE9ZWGNWQlBXYzhSWlJ3VW9yZ2F4YlNtQlkxVEhYY1pnUWM2Z0VOd0w3bU1LWW1vQU1fNXlvVDY5QWNKQkdCLVVVN3owVVhYMk5HbS1sOVlmbGZtTFIzaEVWbjZGYjZHRDEtcmlIS0lCOTVFM3d1SUpTbVM5cnN3cVNSQjdmWFp0SjN2RExaQ05jdWExeTFVaFR4UkRZQlV4aw?oc=5",
+      "desc": "Anthropic launches tools to track enterprise AI spending TechGig",
+      "source": "TechGig",
+      "time": 1793326414.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 7.0,
+        "event_concreteness": 13.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 0.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 44.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 44.0
+      },
+      "base_score": 44.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 44.0,
+      "key": "d9865579d35b95920d28c3de4caf4d91f074422869ea8a8cfd276302405bef5a",
+      "importance": 44.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "business",
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "last_failed_at": 1793356869,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1793357169
+    }
+  ],
   "health": {
-    "last_start_ts": 1793354703.530509,
+    "last_start_ts": 1793356869.0507464,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793354703.530509,
-    "last_success_ts": 1793354703.530509,
+    "last_run_ts": 1793356869.0507464,
+    "last_success_ts": 1793356869.0507464,
     "last_candidates": 14,
-    "last_published": 1,
-    "queue_size": 0
+    "last_published": 0,
+    "queue_size": 1
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793354738.5763707
+      "disabled_until": 1793360533.09433,
+      "reason": "The read operation timed out",
+      "updated_at": 1793356933.0943327
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793351585.7250266
+      "disabled_until": 1793360536.5799794,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793356936.5799809
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793351585.7250266
+      "disabled_until": 1793443352.2611454,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1793356952.2611475
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1260,47 +1303,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793351585.7250266
+      "disabled_until": 1793360551.2625413,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793356951.262543
     }
   },
   "stories": {
-    "224303e45359ee180ba1d6fd28d22282a688b93d32d23dd6465cec4aadf2bc1e": {
-      "time": 1793268551,
-      "title": "Разгадываем алгоритм блокировок Anthropic",
-      "desc": "На китайских форумах обсуждают предполагаемую систему блокировок Claude. Пользователи считают, что Anthropic оценивает аккаунты по набору факторов риска: от IP-адреса и истории платежей до способа регистрации и активности в сервисе. Когда подозрительных сигналов становится слишком много, аккаунт отправляется в бан. Пока это только гипотезы и догадки самих юзеров, попробуем в них разобраться. Одна из популярных теорий — система баллов, почти как кредитный рейтинг. Якобы каждый новый аккаунт получает стартовый запас доверия, который увеличивается или уменьшается в зависимости от действий пользователя. Если оценка падает ниже определённого порога, доступ блокируют. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
-    "8694680240fdc14e1aa838aec11fddc8abb60c24118553939070c41d346e1c66": {
-      "time": 1793268782,
-      "title": "Google DeepMind unveils Genie 4: Why Sundar Pichai calls it ‘our most realistic and interactive world model' - CNBC TV18",
-      "desc": "Google DeepMind unveils Genie 4: Why Sundar Pichai calls it ‘our most realistic and interactive world model' CNBC TV18",
-      "source": "CNBC TV18",
-      "region": "WORLD"
-    },
-    "5f9e623e3f6139ac7751a69d7c43af05ec7576c8aff43685e5ca74279ead242c": {
-      "time": 1793269267,
-      "title": "Наконец-то есть кому делегировать: MWS AI выпустила универсального ИИ-агента для офисной рутины",
-      "desc": "MWS AI (входит в МТС Web Services) запустила MWS AI Cowork — универсального ИИ-агента с чат-интерфейсом, который умеет не только болтать, но и выполнять офисные задачи. Ему можно поручить поиск информации, анализ файлов, сбор отчетов и прочие многоходовочки. В отличие от зарубежных аналогов MWS AI Cowork можно развернуть во внутреннем контуре компании поверх любой модели: от российских до зарубежных открытых разработок. Возможности агента определяются набором навыков — инструкций для выполнения типовых задач. Часть навыков входит в базовую комплектацию, к ним можно добавлять свои и делиться ими между отделами. Если каждое подразделение готовит отчет по одним и тем же правилам, почему бы не делать это автоматически? Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
-    "0ead3e241535bfa9d4e4f82a124876a461aa668518d8f85c156d70ad830aa31a": {
-      "time": 1793269995,
-      "title": "Anthropic Launches Claude Smart Reports for Enterprise AI Usage Monitoring - KuCoin",
-      "desc": "Anthropic Launches Claude Smart Reports for Enterprise AI Usage Monitoring KuCoin",
-      "source": "KuCoin",
-      "region": "WORLD"
-    },
-    "aa5df2e9f18f31bb54c4ee52998452470129d79c1b281eccac4ade55d4d6dad2": {
-      "time": 1793270232,
-      "title": "Valve ответила на критику пользователей по поводу низкокачественных ИИ‑игр в Steam",
-      "desc": "На последнем мероприятии Next Fest рекордное число инди‑студий представили свои последние демоверсии игр, доступные для ознакомления широкой публике. Однако не все остались довольны количеством участников. Разработчики и фанаты пожаловались на обилие игр и клонов, созданных с использованием инструментов искусственного интеллекта. Во время мероприятия Steam Indie Connect в Южной Корее представители бизнес‑команды Valve Том Джардино и Марк Уилкинсон ответили на вопросы, касающиеся ИИ‑игр. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "d27509307de3100d5734a88578d45202355850b2b7ec4842206b9c8f0c9cd1cc": {
       "time": 1793272387,
       "title": "Just AI запускает Jay Agents — универсальную ИИ-студию для создания агентов, приложений и автоматизации задач без кода",
@@ -1668,78 +1676,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793112086,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 35.14,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793112545,
       "status": "OK",
@@ -22001,10 +21937,144 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793356869,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": true,
+      "duration_sec": 83.22,
+      "candidates": 14,
+      "queue_before": 0,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 1,
+      "item_failures": 1,
+      "admission": {
+        "published_key": 12,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 14,
+        "admission_rate": 7.14,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра стратегий монетизации ИИ-продуктов из-за изменения экономики поискового трафика.",
+            "title": "Is AI hurting Google's core business? Alphabet's $500 billion market rout explained - Firstpost",
+            "final_score": 71.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 60,
+        "raw_items": 543,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 24,
+          "CNews": 0,
+          "Euronews": 33
+        },
+        "score_filtered": 507,
+        "quality_filtered": 16,
+        "story_dedup": 6,
+        "candidates": 14,
+        "candidate_rate": 0.029,
+        "score_buckets": {
+          "0–39": 468,
+          "40–49": 55,
+          "50–59": 19,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 4,
+        "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793354703.530509,
+  "last_search_ts": 1793356869.0507464,
   "last_publish_ts": 1793354703.530509,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
