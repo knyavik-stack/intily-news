@@ -1229,7 +1229,8 @@
     "29051bf7b7ce4badcd4a8a8e856b5d0b86c7fa9fa2b4fa3a738d3cb6b6c57446": 1793371279,
     "60bf67cf22f141cc859800baf0c13ada86171080f68e6cc25eb6fa635a6db9fb": 1793371751,
     "e9d34a6d3dde6c5ed8e07fa3afbe38942a9f26dbc54988e66467ee1aecf58cec": 1793372955,
-    "1a02677c86c431b53f2a82ab99fc83f79800751716dc42c90e756a7091841433": 1793373914
+    "1a02677c86c431b53f2a82ab99fc83f79800751716dc42c90e756a7091841433": 1793373914,
+    "2707f8c3cc303c2989f75d3893f7c8c4e966c6c0d2150c12ecf25cce423dcb15": 1793374156
   },
   "known": {
     "a0244e25ab9dad16be89a5ffb502610d43a12ebed57cacb1a157ea13d1deea7e": 1793369825.2875612,
@@ -1249,6 +1250,43 @@
     "9fc78f5c6dca381530be47c41d0e7003ca32e1a6c0c8021a06ae7123947b889e": 1793373914.2772396
   },
   "queue": [
+    {
+      "region": "RUSSIA",
+      "title": "К2 Кибербезопасность среди лидеров «Киберарены» GIS Days 2026",
+      "link": "https://habr.com/ru/companies/k2tech/news/1101844/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1101844",
+      "desc": "Команда аналитиков SOC К2 Кибербезопасности вновь показала себя одной из сильнейших команд защитников, заняв второе место на «Киберарене» GIS Days 2026. К2 Кибербезопасность выступала на стороне защитников (Blue Team) и отвечала за безопасность виртуального университета — типовой ИТ-инфраструктуры с пользовательским и серверным сегментами, DMZ, а также контуром разработки и управления. Команда провела расследования: веб-атаки; оставленные подрядчиком «чувствительные данные» на продуктивных сервисах; создание и загрузка Shell, латеральное перемещение на соседние сервера. В этом году отдельного внимания заслужили задачи с атаками на искусственный интеллект — К2 Кибербезопасность расследовала кейс ИИ-ассистента в почтовом клиенте, которого пытались заставить выдать чувствительную информацию. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1793373121.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 8.0,
+        "event_concreteness": 13.5,
+        "practical_value": 6.5,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 53.0,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 77.0
+      },
+      "base_score": 53.0,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 77.0,
+      "key": "5a09dde28ed50309e828ad881e91271723a8ffd598a513900f8ff2597507c7ea",
+      "importance": 77.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "security_regulation"
+      ],
+      "audience_score": 8.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
     {
       "region": "WORLD",
       "title": "Use AI, Test AI, Beat AI: How SafeBreach’s Purpose-Built AI Capabilities Power a Proactive Approach Designed to Combat the New Threat Landscape - Security Boulevard",
@@ -1647,81 +1685,6 @@
     },
     {
       "region": "RUSSIA",
-      "title": "CVE…432 — Go: Дистанционный root в Linux",
-      "link": "https://habr.com/ru/news/1101826/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1101826",
-      "desc": "Обнаружена (опять) весьма неприятная уязвимость ( CVE-2026-98 432 — CVSS 9.8 ): race condition / use-after-free в обработке TCP/IPv4, присутствующая в ядре аж с версии 4.4 . Anthropic с помощью экспериментальной модели Claude собрала полноценный zero-click exploit: удалённое выполнение произвольных команд от root без аутентификации. Для демонстрации использовался MPTCP listener. Эксплуатация заняла около 53 минут: обход KASLR, затем перехват управления ядром. Причин для паники нет есть : начиная с Go 1.24, MPTCP включается по умолчанию для TCP listeners на Linux . То есть приложение может использовать MPTCP, даже не подозревая об этом. Команда Go уже выпустила security advisory. Проверить слушателей можно через ss -Mntlp . Временно отключить MPTCP для Go-приложений — GODEBUG=multipathtcp=0 . Можно и патчить нельзя паниковать!",
-      "source": "Habr AI/News",
-      "time": 1793371642.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 12.0,
-        "event_concreteness": 17.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 54.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 54.5
-      },
-      "base_score": 54.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 54.5,
-      "key": "2707f8c3cc303c2989f75d3893f7c8c4e966c6c0d2150c12ecf25cce423dcb15",
-      "importance": 54.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "models",
-        "security_regulation"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "К2 Кибербезопасность среди лидеров «Киберарены» GIS Days 2026",
-      "link": "https://habr.com/ru/companies/k2tech/news/1101844/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1101844",
-      "desc": "Команда аналитиков SOC К2 Кибербезопасности вновь показала себя одной из сильнейших команд защитников, заняв второе место на «Киберарене» GIS Days 2026. К2 Кибербезопасность выступала на стороне защитников (Blue Team) и отвечала за безопасность виртуального университета — типовой ИТ-инфраструктуры с пользовательским и серверным сегментами, DMZ, а также контуром разработки и управления. Команда провела расследования: веб-атаки; оставленные подрядчиком «чувствительные данные» на продуктивных сервисах; создание и загрузка Shell, латеральное перемещение на соседние сервера. В этом году отдельного внимания заслужили задачи с атаками на искусственный интеллект — К2 Кибербезопасность расследовала кейс ИИ-ассистента в почтовом клиенте, которого пытались заставить выдать чувствительную информацию. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1793373121.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 8.0,
-        "event_concreteness": 13.5,
-        "practical_value": 6.5,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 53.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 53.0
-      },
-      "base_score": 53.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 53.0,
-      "key": "5a09dde28ed50309e828ad881e91271723a8ffd598a513900f8ff2597507c7ea",
-      "importance": 53.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "security_regulation"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
       "title": "Agility Robotics рассчитывает привлечь $465 млн валового капитала до завершения сделки с SPAC - Unite.AI",
       "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOSzhvVGNIV1BlREZlUWFTeDBzZWRlc0FSRjdMbGhnM2xuSk1JNVIwaUpWNzhvazVoVFRQM1dtdWtwdHV0WFFSNm5JaC1GVTF1ajM4eG5lN0pkUmd3OGQ4WGIxdTNlN3d3bV9mdl9HVFJrUTJMdWY2ZzRBX09JLTZhTjZtSXNJSWhXa2NEbHZ1T05scWV0SlRYNGo0R1o?oc=5",
       "desc": "Agility Robotics рассчитывает привлечь $465 млн валового капитала до завершения сделки с SPAC Unite.AI",
@@ -1868,20 +1831,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793373914.2772396,
+    "last_start_ts": 1793374156.3221996,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793373914.2772396,
-    "last_success_ts": 1793373914.2772396,
-    "last_candidates": 36,
+    "last_run_ts": 1793374156.3221996,
+    "last_success_ts": 1793374156.3221996,
+    "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 17
+    "queue_size": 16
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1793373954.129897
+      "updated_at": 1793374156.2558272
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2289,12 +2252,18 @@
       "desc": "Cognizant commits more than 25,000 professionals to OpenAI delivery as enterprises move frontier AI into production Press Release Hub",
       "source": "Press Release Hub",
       "region": "WORLD"
+    },
+    "2707f8c3cc303c2989f75d3893f7c8c4e966c6c0d2150c12ecf25cce423dcb15": {
+      "time": 1793374156,
+      "title": "CVE…432 — Go: Дистанционный root в Linux",
+      "desc": "Обнаружена (опять) весьма неприятная уязвимость ( CVE-2026-98 432 — CVSS 9.8 ): race condition / use-after-free в обработке TCP/IPv4, присутствующая в ядре аж с версии 4.4 . Anthropic с помощью экспериментальной модели Claude собрала полноценный zero-click exploit: удалённое выполнение произвольных команд от root без аутентификации. Для демонстрации использовался MPTCP listener. Эксплуатация заняла около 53 минут: обход KASLR, затем перехват управления ядром. Причин для паники нет есть : начиная с Go 1.24, MPTCP включается по умолчанию для TCP listeners на Linux . То есть приложение может использовать MPTCP, даже не подозревая об этом. Команда Go уже выпустила security advisory. Проверить слушателей можно через ss -Mntlp . Временно отключить MPTCP для Go-приложений — GODEBUG=multipathtcp=0 . Можно и патчить нельзя паниковать!",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -2311,97 +2280,10 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793128168,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 43.43,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-prepares-for-potential-usd2-trillion-ipo-valuation-after-reporting-billions-in-revenue-company-warns-ai-could-pose-catastrophic-existential-risks-to-humanity",
-            "image_url": "https://cdn.mos.cms.futurecdn.net/XL3SdCXJKQ5duBipYp56rG-1744-80.jpg",
-            "width": 1744,
-            "height": 981,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.5,
-          "bonus_total": 51.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Immediate strategic shift: Anthropic vs OpenAI competition intensifies, pricing pressure on LLM providers — switch vendor decision now actionable",
-            "title": "Anthropic prepares for potential $2 trillion IPO valuation after reporting billions in revenue — company warns AI could pose ‘catastrophic existential risks to humanity’ - Tom's Hardware",
-            "final_score": 72.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793128609,
       "status": "OK",
@@ -23017,11 +22899,99 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793374156,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 18.25,
+      "candidates": 0,
+      "queue_before": 17,
+      "queue_after": 16,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/companies/k2tech/news/1101844/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1101844",
+            "image_url": "https://habr.com/share/publication/1101844/eeadf58a360a783e3803b731b59ea0d0/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 9.0,
+          "bonus_total": 54.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость внедрения защиты ИИ-интерфейсов от атак на данные становится критическим бизнес-риском.",
+            "title": "К2 Кибербезопасность среди лидеров «Киберарены» GIS Days 2026",
+            "final_score": 77.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 4,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1793373914.2772396,
-  "last_publish_ts": 1793373914.2772396,
+  "last_publish_ts": 1793374156.3221996,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
