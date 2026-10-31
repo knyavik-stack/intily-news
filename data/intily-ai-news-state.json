@@ -1,6 +1,5 @@
 {
   "published": {
-    "5b3005e59fe96bb3fd777da0c655e075e72f697d3f486f5585c0e23addb34459": 1790879588,
     "30bb543611e520e940b6b29a2712e2a232d74c99bc1af4f67c32975761f077a7": 1790917971,
     "d7948521b2e854288384bd4d02b942a69b9ee7fdd79b714a984302b00543f783": 1790921575,
     "728345324e3f2608ab60d0d68235e80bb97898ea86c799e40d7915048247e155": 1790921835,
@@ -1241,20 +1240,20 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1793471561.8490858,
+    "last_start_ts": 1793471801.9999573,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793471561.8490858,
-    "last_success_ts": 1793471561.8490858,
+    "last_run_ts": 1793471801.9999573,
+    "last_success_ts": 1793471801.9999573,
     "last_candidates": 15,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1793471608.7011995
+      "updated_at": 1793471834.0200286
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1582,96 +1581,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793266144,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 3.75,
-      "candidates": 0,
-      "queue_before": 11,
-      "queue_after": 10,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 400: Bad Request": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 400: Bad Request"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Автоматизация аудита безопасности сокращает время на поиск уязвимостей и снижает риски при деплое.",
-            "title": "Google unveils Gemini 4 Carbon, boosting AI cybersecurity - TechGig",
-            "final_score": 64.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793266862,
       "status": "OK",
@@ -22746,10 +22655,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793471801,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 32.08,
+      "candidates": 15,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 12,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 0,
+        "candidate_count": 15,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.5,
+          "bonus_total": 51.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Стандартизация взаимодействия с ИИ-агентами критически ускоряет разработку и внедрение автоматизированных бизнес-процессов в мобильных приложениях.",
+            "title": "Google launches Android MCP in beta so apps can talk to AI agents - Pasquale Pillitteri",
+            "final_score": 72.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 25,
+        "raw_items": 853,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 7,
+          "CNews": 0,
+          "Euronews": 14
+        },
+        "score_filtered": 807,
+        "quality_filtered": 25,
+        "story_dedup": 6,
+        "candidates": 15,
+        "candidate_rate": 0.0181,
+        "score_buckets": {
+          "0–39": 780,
+          "40–49": 51,
+          "50–59": 19,
+          "60–69": 3,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793471561.8490858,
+  "last_search_ts": 1793471801.9999573,
   "last_publish_ts": 1793471561.8490858,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
