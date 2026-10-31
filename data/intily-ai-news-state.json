@@ -1,7 +1,5 @@
 {
   "published": {
-    "646b7471a60b2fe4598cf26da41d101a6e5d74416fa1294dfda7242c0095655e": 1790833739,
-    "d1fbe0ae786f150d6a76cd46cc77b492857c9b1f19b5f891889ac6a346204034": 1790833978,
     "1ab6f1e29f74376189558ca56fc372f31e518da9619b9fbf8e3fbe81a230c9d3": 1790835895,
     "9348f22ab7ac8f64d8479bd17166f49b9211b24fa3ff8de4c3dee03bc5899006": 1790836165,
     "6be395669d82ec3717c2d24579b0e3466bb80669f0b7a0227ec27a56a586b577": 1790836379,
@@ -1327,44 +1325,6 @@
       "russia_weight_bonus": 0.0
     },
     {
-      "region": "RUSSIA",
-      "title": "Gemini в школе, Google представил два исследования, но результаты тестов не растут - Pasquale Pillitteri",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVGRnY0UwLS14X0VBampUWFhrSktWaTE5YTQtWEdkR3QxY1l6VHU4aUVDMXZhbW80SkhkNmU1UV9Ycnp4Y1ZkR0kwRUFSNi1qcFEtZXVRQ18tY3VUZjVjcUw5OEQ1Q1lMaHV5MlRpUF9nM2tXbzhIclRMbjVHTjhSZEstYXFfT0xrUi0yZQ?oc=5",
-      "desc": "Gemini в школе, Google представил два исследования, но результаты тестов не растут Pasquale Pillitteri",
-      "source": "Pasquale Pillitteri",
-      "time": 1793382151.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 7.0,
-        "event_concreteness": 14.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 39.5,
-        "audience_score": 6.0,
-        "audience_bonus": 18.0,
-        "final_score": 57.5
-      },
-      "base_score": 39.5,
-      "audience_bonus": 18.0,
-      "score_stage": "final",
-      "score": 57.5,
-      "key": "322f5bb40e2ca6f368b9323b8dfb85e193422bec7d19a1fdbc474c4313866ee8",
-      "importance": 57.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "models",
-        "research"
-      ],
-      "audience_score": 6.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
       "region": "WORLD",
       "title": "Last-minute Halloween costumes for tech nerds",
       "link": "https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/",
@@ -1580,30 +1540,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793425256.4647448,
+    "last_start_ts": 1793426220.285327,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793425256.4647448,
-    "last_success_ts": 1793425256.4647448,
+    "last_run_ts": 1793426220.285327,
+    "last_success_ts": 1793426220.285327,
     "last_candidates": 0,
-    "last_published": 1,
-    "queue_size": 9
+    "last_published": 0,
+    "queue_size": 8
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793425267.378504
+      "disabled_until": 1793429807.2853334,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1793426207.2853355
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793425242.2991521
+      "disabled_until": 1793429810.3273492,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793426210.327351
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793425242.2991521
+      "disabled_until": 1793512620.2542062,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1793426220.2542071
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1611,26 +1571,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793425242.2991521
+      "disabled_until": 1793429819.0723376,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793426219.0723393
     }
   },
   "stories": {
-    "14013a14dc56f33de6215a64c65e2a09194712bc3c03e7c56acf1d9e600667ff": {
-      "time": 1793338874,
-      "title": "OpenAI-backed Thrive Holdings acquires ADT",
-      "desc": "OpenAI-backed Thrive Holdings is buying ADT in a $15.3 billion deal, with plans to bring AI to the home security business.",
-      "source": "TechCrunch AI",
-      "region": "WORLD"
-    },
-    "4d9992e6434fa31857eb220f4b87bf96b66fa3138d70d1296617af19ddfe163d": {
-      "time": 1793339591,
-      "title": "Serval triples valuation to $3 billion as businesses adopt AI workflow automation - ET CIO",
-      "desc": "Serval triples valuation to $3 billion as businesses adopt AI workflow automation ET CIO",
-      "source": "ET CIO",
-      "region": "WORLD"
-    },
     "9e250a6ec114543e7701acc6aea8fe445f578c2812eeecfdb80bedbcf70ddc9e": {
       "time": 1793340311,
       "title": "OpenAI and Microsoft leave embedded browser flaws unpatched in AI coding tools - news.lavx.hu",
@@ -2047,96 +1993,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793177547,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 4.37,
-      "candidates": 0,
-      "queue_before": 10,
-      "queue_after": 9,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://ict-online.ru/news/MWS-AI-vypustila-universal-nogo-II-agenta-dlya-resheniya-ofisnykh-zadach-v-perimetre-kompanii-334801",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Позволяет внедрить автоматизацию без рисков утечки данных в публичные облака.",
-            "title": "MWS AI выпустила универсального ИИ-агента для решения офисных задач в периметре компании - ICT-Online.ru",
-            "final_score": 64.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793178056,
       "status": "OK",
@@ -22789,6 +22645,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1793426220,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 14.01,
+      "candidates": 0,
+      "queue_before": 8,
+      "queue_after": 8,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 6,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
