@@ -1237,11 +1237,11 @@
   "known": {},
   "queue": [],
   "health": {
-    "last_start_ts": 1793474205.6835244,
+    "last_start_ts": 1793474442.5790706,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793474205.6835244,
-    "last_success_ts": 1793474205.6835244,
+    "last_run_ts": 1793474442.5790706,
+    "last_success_ts": 1793474442.5790706,
     "last_candidates": 15,
     "last_published": 0,
     "queue_size": 0
@@ -1250,7 +1250,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1793474237.5885236
+      "updated_at": 1793474479.2165463
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1274,13 +1274,6 @@
     }
   },
   "stories": {
-    "20d642ce9d65b675224241814369cf78a05ce604c58ac5ef8d65c4aadf02f172": {
-      "time": 1793387844,
-      "title": "Hon Hai Tech Day Debuts \"CoDoClaw\" Cross-Specialty AI Agent, Extending Sub-Micron Precision to High-End Medical Device Manufacturing - Mashdigi",
-      "desc": "Hon Hai Tech Day Debuts \"CoDoClaw\" Cross-Specialty AI Agent, Extending Sub-Micron Precision to High-End Medical Device Manufacturing Mashdigi",
-      "source": "Mashdigi",
-      "region": "WORLD"
-    },
     "8324c01b0b73708981c264348425caa0265fbc01ec60820343d3e6ef9bf6ba48": {
       "time": 1793389027,
       "title": "London’s Easol secures €26.78 million Series A extension as it launches AI agents for experience businesses - EU-Startups",
@@ -1557,146 +1550,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793269267,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 43.45,
-      "candidates": 26,
-      "queue_before": 7,
-      "queue_after": 14,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 9,
-        "known_recent": 0,
-        "already_queued": 4,
-        "story_queue": 2,
-        "story_history": 3,
-        "added": 8,
-        "candidate_count": 26,
-        "admission_rate": 30.77,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/companies/mts_ai/news/1101142/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1101142",
-            "image_url": "https://habr.com/share/publication/1101142/7d2cdfa07ab2d3179896ffb6ad4ea841/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Возможность внедрения локального ИИ-агента для автоматизации рутины без рисков утечки данных в облака.",
-            "title": "Наконец-то есть кому делегировать: MWS AI выпустила универсального ИИ-агента для офисной рутины",
-            "final_score": 75.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 6,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 72,
-        "raw_items": 569,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 2,
-          "Habr AI/News": 40,
-          "CNews": 0,
-          "Euronews": 28
-        },
-        "score_filtered": 516,
-        "quality_filtered": 17,
-        "story_dedup": 10,
-        "candidates": 26,
-        "candidate_rate": 0.0523,
-        "score_buckets": {
-          "0–39": 467,
-          "40–49": 66,
-          "50–59": 33,
-          "60–69": 3,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 1,
-          "4": 0,
-          "5": 1,
-          "6": 5,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793269775,
       "status": "OK",
@@ -22979,10 +22832,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793474442,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 36.67,
+      "candidates": 15,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 12,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 0,
+        "candidate_count": 15,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.5,
+          "bonus_total": 51.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Позволяет внедрять дешевую автоматизацию рутинных действий в интерфейсах ОС.",
+            "title": "Microsoft выпустила Mage-VL-Cowork, агент на 4B набирает 66% в OSWorld - Pasquale Pillitteri",
+            "final_score": 71.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 23,
+        "raw_items": 812,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 6,
+          "CNews": 0,
+          "Euronews": 13
+        },
+        "score_filtered": 771,
+        "quality_filtered": 21,
+        "story_dedup": 5,
+        "candidates": 15,
+        "candidate_rate": 0.019,
+        "score_buckets": {
+          "0–39": 751,
+          "40–49": 40,
+          "50–59": 18,
+          "60–69": 3,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793474205.6835244,
+  "last_search_ts": 1793474442.5790706,
   "last_publish_ts": 1793471561.8490858,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
