@@ -1432,19 +1432,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 47.0,
+        "base_score": 46.5,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 47.0
+        "final_score": 46.5
       },
-      "base_score": 47.0,
+      "base_score": 46.5,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 47.0,
+      "score": 46.5,
       "key": "940bc4125f965e48a6b5baf8aa77dff2be31dd794622549d63196067632a6e16",
-      "importance": 47.0,
+      "importance": 46.5,
       "editorial_value": 50.0,
       "topics": [
         "chips",
@@ -1456,30 +1456,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793456936.0250204,
+    "last_start_ts": 1793457904.7679372,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793456936.0250204,
-    "last_success_ts": 1793456936.0250204,
+    "last_run_ts": 1793457904.7679372,
+    "last_success_ts": 1793457904.7679372,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 6
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793460525.2328758,
+      "disabled_until": 1793461487.667112,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1793456925.2328775
+      "updated_at": 1793457887.6671145
     },
     "GROQ": {
-      "disabled_until": 1793460528.3854795,
+      "disabled_until": 1793461490.90572,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793456928.3854809
+      "updated_at": 1793457890.9057226
     },
     "OPENAI": {
-      "disabled_until": 1793543336.011957,
+      "disabled_until": 1793544304.7511835,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793456936.011959
+      "updated_at": 1793457904.7511854
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1487,19 +1487,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793460534.9376667,
+      "disabled_until": 1793461504.3766418,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793456934.9376683
+      "updated_at": 1793457904.3766434
     }
   },
   "stories": {
-    "29051bf7b7ce4badcd4a8a8e856b5d0b86c7fa9fa2b4fa3a738d3cb6b6c57446": {
-      "time": 1793371279,
-      "title": "Теневой ИИ и утечки данных: 4 шага защиты компании при внедрении ИИ-агентов - Т-Бизнес секреты",
-      "desc": "Теневой ИИ и утечки данных: 4 шага защиты компании при внедрении ИИ-агентов Т-Бизнес секреты",
-      "source": "Т-Бизнес секреты",
-      "region": "RUSSIA"
-    },
     "60bf67cf22f141cc859800baf0c13ada86171080f68e6cc25eb6fa635a6db9fb": {
       "time": 1793371751,
       "title": "Binghamton University Researchers Demonstrate LLM Backdoor Attacks on Robots and Develop PROTEA Defense - Cybersecurity Insiders",
@@ -1818,89 +1811,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793252954,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 41.7,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 17,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Упрощает внедрение Claude в корпоративную инфраструктуру, снижая технические риски для бизнеса.",
-            "title": "Anthropic joins phData funding for Claude implementation and enterprise data services - OpenTools",
-            "final_score": 66.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 11,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 12,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793253194,
       "status": "OK",
@@ -22807,6 +22717,78 @@
       "business_reason": "no_eligible_item",
       "searched": false,
       "duration_sec": 11.63,
+      "candidates": 0,
+      "queue_before": 6,
+      "queue_after": 6,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1793457904,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 17.52,
       "candidates": 0,
       "queue_before": 6,
       "queue_after": 6,
