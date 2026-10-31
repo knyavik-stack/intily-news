@@ -1,6 +1,5 @@
 {
   "published": {
-    "2370cf5945f1fc441947080b2a07fd2d69d31ad9491ca0bb75188e11e27f0b89": 1790876451,
     "6ea9731e768f9a120c1d1cbcc12ac9517490f5566c680d5a69b5d769ecee6097": 1790877422,
     "4eac4de42bd6fbbdf0bd5ef2ab9fea0d962f2397ffd36d583e1a6eecca15818f": 1790877665,
     "5b3005e59fe96bb3fd777da0c655e075e72f697d3f486f5585c0e23addb34459": 1790879588,
@@ -1355,30 +1354,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793467965.8608408,
+    "last_start_ts": 1793468480.6234312,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793467965.8608408,
-    "last_success_ts": 1793467965.8608408,
-    "last_candidates": 17,
+    "last_run_ts": 1793468480.6234312,
+    "last_success_ts": 1793468480.6234312,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 3
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793471618.8776026,
+      "disabled_until": 1793472069.5275898,
       "reason": "The read operation timed out",
-      "updated_at": 1793468018.8776054
+      "updated_at": 1793468469.5275931
     },
     "GROQ": {
-      "disabled_until": 1793471621.9094086,
+      "disabled_until": 1793472071.8259366,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793468021.9094107
+      "updated_at": 1793468471.825939
     },
     "OPENAI": {
-      "disabled_until": 1793554429.8716755,
+      "disabled_until": 1793554880.6195362,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793468029.871677
+      "updated_at": 1793468480.6195376
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1386,9 +1385,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793471628.7930748,
+      "disabled_until": 1793472079.6328142,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793468028.7930768
+      "updated_at": 1793468479.6328158
     }
   },
   "stories": {
@@ -1689,96 +1688,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793263508,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 16.47,
-      "candidates": 0,
-      "queue_before": 13,
-      "queue_after": 12,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://servernews.ru/1150585",
-            "image_url": "https://cdn.3dnews.ru/assets/external/illustrations/2026/10/28/1150585/sm.igor-omilaev-9XtKSci9crg-unsplash.800.jpg",
-            "width": 800,
-            "height": 450,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Снижение рисков при внедрении автономных ИИ-агентов в корпоративную инфраструктуру.",
-            "title": "IBM представила инструменты для контролируемого использования ИИ-агентов в бизнес-системах - 3DNews",
-            "final_score": 66.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793264471,
       "status": "OK",
@@ -22769,6 +22678,78 @@
         "failovers": 0,
         "failures": 4,
         "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1793468480,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 31.21,
+      "candidates": 0,
+      "queue_before": 3,
+      "queue_after": 3,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
         "skipped_no_key": 0,
         "retries": 0
       },
