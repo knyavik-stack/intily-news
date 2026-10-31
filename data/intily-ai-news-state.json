@@ -1,6 +1,5 @@
 {
   "published": {
-    "14b169d5c23bec150e2d8ec012edf05702482c50949e82af7b802d324eea3ded": 1790874288,
     "7b65a5fac54d2854edf7c6f20e8b312ea762358bdb9a36a088f56c9b9204e3b7": 1790875730,
     "2370cf5945f1fc441947080b2a07fd2d69d31ad9491ca0bb75188e11e27f0b89": 1790876451,
     "6ea9731e768f9a120c1d1cbcc12ac9517490f5566c680d5a69b5d769ecee6097": 1790877422,
@@ -1278,7 +1277,11 @@
       ],
       "audience_score": 8.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1793466525,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1793466825
     },
     {
       "region": "WORLD",
@@ -1313,37 +1316,37 @@
       "topics": [],
       "audience_score": 6.0,
       "tier": "A",
-      "last_failed_at": 1793462203,
+      "last_failed_at": 1793466525,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1793462503
+      "failure_count": 2,
+      "next_retry_at": 1793467125
     }
   ],
   "health": {
-    "last_start_ts": 1793466055.7099652,
+    "last_start_ts": 1793466525.6161265,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793466055.7099652,
-    "last_success_ts": 1793466055.7099652,
+    "last_run_ts": 1793466525.6161265,
+    "last_success_ts": 1793466525.6161265,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 2
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793466055.7042665
+      "disabled_until": 1793470134.625278,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1793466534.6252797
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793465566.1403458
+      "disabled_until": 1793470138.2413185,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793466538.2413218
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793465566.1403458
+      "disabled_until": 1793552949.452615,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1793466549.4526162
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1351,19 +1354,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793465566.1403458
+      "disabled_until": 1793470148.3267057,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793466548.326707
     }
   },
   "stories": {
-    "4a9dff4d2cc6af37fbb2843b2c52ee71d8f6ef72f9f41ffb862af4c3a2b249f5": {
-      "time": 1793379905,
-      "title": "Use AI, Test AI, Beat AI: How SafeBreach’s Purpose-Built AI Capabilities Power a Proactive Approach Designed to Combat the New Threat Landscape - Security Boulevard",
-      "desc": "Use AI, Test AI, Beat AI: How SafeBreach’s Purpose-Built AI Capabilities Power a Proactive Approach Designed to Combat the New Threat Landscape Security Boulevard",
-      "source": "Security Boulevard",
-      "region": "WORLD"
-    },
     "dda11676d8425af2be929c39c40ce462759b8e63fe2350c6c46e3f9524668f42": {
       "time": 1793380639,
       "title": "Mintive Tops 2.5 Million Daily Agent Calls as Enterprises Make AI Agent Identity a Security Priority - AiThority",
@@ -1661,96 +1657,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793261829,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 13.11,
-      "candidates": 0,
-      "queue_before": 14,
-      "queue_after": 13,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.techtimes.com/articles/329651/20261029/google-debuts-gemini-4-carbon-improved-coding-agentic-task-capabilities.htm",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.33,
-          "bonus_total": 66.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Улучшенные агентные возможности позволяют напрямую автоматизировать этапы разработки и сократить время на написание шаблонного кода.",
-            "title": "Google Debuts Gemini 4 Carbon: Improved Coding, Agentic Task Capabilities - Tech Times",
-            "final_score": 68.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793263025,
       "status": "OK",
@@ -22776,6 +22682,83 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1793466525,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 23.85,
+      "candidates": 0,
+      "queue_before": 2,
+      "queue_after": 2,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
