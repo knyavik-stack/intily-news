@@ -1234,18 +1234,15 @@
     "9e6b39ff8266cb6a32a423b72f919f68c5097463c834a9939ab14929db375018": 1793469886,
     "c3016a43719dff941f6cc19ec43078a1a229de0f77eb81af86bb8e3594ac113c": 1793471561
   },
-  "known": {
-    "21808957ec18666c10ebc5707cd083f4502c8004142b285b6ddeab2919cc21dc": 1793467965.8608408,
-    "c3016a43719dff941f6cc19ec43078a1a229de0f77eb81af86bb8e3594ac113c": 1793467965.8608408
-  },
+  "known": {},
   "queue": [],
   "health": {
-    "last_start_ts": 1793472765.023822,
+    "last_start_ts": 1793473485.4417734,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793472765.023822,
-    "last_success_ts": 1793472765.023822,
-    "last_candidates": 16,
+    "last_run_ts": 1793473485.4417734,
+    "last_success_ts": 1793473485.4417734,
+    "last_candidates": 14,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1253,7 +1250,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1793472796.7810118
+      "updated_at": 1793473530.7459075
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1277,13 +1274,6 @@
     }
   },
   "stories": {
-    "7a400405e3dc6056e42ddade88069d20d7ebcab2266a65135730fab102589a9a": {
-      "time": 1793386646,
-      "title": "OpenAI Just Announced Three Scientific Breakthroughs - Vocal",
-      "desc": "OpenAI Just Announced Three Scientific Breakthroughs Vocal",
-      "source": "Vocal",
-      "region": "WORLD"
-    },
     "20d642ce9d65b675224241814369cf78a05ce604c58ac5ef8d65c4aadf02f172": {
       "time": 1793387844,
       "title": "Hon Hai Tech Day Debuts \"CoDoClaw\" Cross-Specialty AI Agent, Extending Sub-Micron Precision to High-End Medical Device Manufacturing - Mashdigi",
@@ -1567,84 +1557,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793267623,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 36.85,
-      "candidates": 0,
-      "queue_before": 10,
-      "queue_after": 10,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Управление риском аккаунта при работе с Claude",
-            "title": "Разгадываем алгоритм блокировок Anthropic",
-            "final_score": 67.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793267835,
       "status": "OK",
@@ -22815,10 +22727,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793473485,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 45.43,
+      "candidates": 14,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 4,
+        "added": 0,
+        "candidate_count": 14,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.5,
+          "bonus_total": 51.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Позволяет внедрять дешевую автоматизацию десктопных задач без необходимости аренды мощных GPU.",
+            "title": "Microsoft выпустила Mage-VL-Cowork, агент на 4B набирает 66% в OSWorld - Pasquale Pillitteri",
+            "final_score": 71.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 23,
+        "raw_items": 770,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 6,
+          "CNews": 0,
+          "Euronews": 13
+        },
+        "score_filtered": 730,
+        "quality_filtered": 22,
+        "story_dedup": 4,
+        "candidates": 14,
+        "candidate_rate": 0.0187,
+        "score_buckets": {
+          "0–39": 708,
+          "40–49": 43,
+          "50–59": 17,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793472765.023822,
+  "last_search_ts": 1793473485.4417734,
   "last_publish_ts": 1793471561.8490858,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
