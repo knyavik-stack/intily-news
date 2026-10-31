@@ -1276,30 +1276,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793439663.768787,
+    "last_start_ts": 1793439942.0611289,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793439663.768787,
-    "last_success_ts": 1793439663.768787,
+    "last_run_ts": 1793439942.0611289,
+    "last_success_ts": 1793439942.0611289,
     "last_candidates": 10,
     "last_published": 0,
     "queue_size": 1
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793443250.4056783,
+      "disabled_until": 1793443488.6383727,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1793439650.4056804
+      "updated_at": 1793439888.6383748
     },
     "GROQ": {
-      "disabled_until": 1793443253.4617035,
+      "disabled_until": 1793443491.8299203,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793439653.4617054
+      "updated_at": 1793439891.8299227
     },
     "OPENAI": {
-      "disabled_until": 1793526063.7679105,
+      "disabled_until": 1793526342.0601704,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793439663.767912
+      "updated_at": 1793439942.0601723
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1307,19 +1307,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793443262.953933,
+      "disabled_until": 1793443541.7667704,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793439662.9539351
+      "updated_at": 1793439941.7667725
     }
   },
   "stories": {
-    "92116561d2aa262b1c6f462f6ec3d01424b58491876d55960b0107f64e14a03c": {
-      "time": 1793353505,
-      "title": "Value of Google parent Alphabet plunges by $500bn as AI fears rattle Wall Street - BBC",
-      "desc": "Value of Google parent Alphabet plunges by $500bn as AI fears rattle Wall Street BBC Nasdaq futures tumble as Amazon, Intel results deepen AI spending woes Reuters Alphabet Sheds Half a Trillion in Market Value in Stock’s Worst Day Ever WSJ Google’s $500bn bloodbath reflects the danger it faces from AI The Economist Google parent Alphabet suffers nearly $500B Wall Street wipeout amid AI spending fears Fox Business Alphabet shares record their worst day ever, shedding $500 billion in value NBC News",
-      "source": "BBC",
-      "region": "WORLD"
-    },
     "f8d0b391074a5238308362d336e50411af1d9febf4b4f1cdb70c6502cf2ee63f": {
       "time": 1793354467,
       "title": "Что можно поручить программному роботу: вебинар о PIX RPA 3 ноября",
@@ -1694,78 +1687,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793198466,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 26.25,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 5,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793199403,
       "status": "OK",
@@ -22463,10 +22384,131 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1793439942,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 78.69,
+      "candidates": 10,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 10,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 28,
+        "raw_items": 291,
+        "source_counts": {
+          "TechCrunch AI": 4,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 3,
+          "Habr AI/News": 8,
+          "CNews": 0,
+          "Euronews": 12
+        },
+        "score_filtered": 265,
+        "quality_filtered": 13,
+        "story_dedup": 3,
+        "candidates": 10,
+        "candidate_rate": 0.038,
+        "score_buckets": {
+          "0–39": 246,
+          "40–49": 31,
+          "50–59": 12,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793439663.768787,
+  "last_search_ts": 1793439942.0611289,
   "last_publish_ts": 1793437723.3546212,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
