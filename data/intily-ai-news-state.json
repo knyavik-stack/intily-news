@@ -1257,19 +1257,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 40.0,
+        "base_score": 39.5,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 58.0
+        "final_score": 57.5
       },
-      "base_score": 40.0,
+      "base_score": 39.5,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 58.0,
+      "score": 57.5,
       "key": "c3016a43719dff941f6cc19ec43078a1a229de0f77eb81af86bb8e3594ac113c",
-      "importance": 58.0,
+      "importance": 57.5,
       "editorial_value": 50.0,
       "topics": [
         "agents"
@@ -1279,30 +1279,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793469886.1431618,
+    "last_start_ts": 1793470607.6874983,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793469886.1431618,
-    "last_success_ts": 1793469886.1431618,
-    "last_candidates": 15,
-    "last_published": 1,
+    "last_run_ts": 1793470607.6874983,
+    "last_success_ts": 1793470607.6874983,
+    "last_candidates": 16,
+    "last_published": 0,
     "queue_size": 1
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793469931.6448667
+      "disabled_until": 1793474271.2064774,
+      "reason": "The read operation timed out",
+      "updated_at": 1793470671.2064805
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793469646.0005856
+      "disabled_until": 1793474274.37535,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793470674.375352
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793469646.0005856
+      "disabled_until": 1793557102.3146214,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1793470702.3146226
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1310,19 +1310,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793469646.0005856
+      "disabled_until": 1793474301.3654058,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793470701.3654077
     }
   },
   "stories": {
-    "a2d493270c1512794920cc8634e0d3d88b80966f0b246b5b5cd336535eaa4c73": {
-      "time": 1793383992,
-      "title": "BlueStacks Launches Full Android Desktop Optimized for AI Agents - TechBullion",
-      "desc": "BlueStacks Launches Full Android Desktop Optimized for AI Agents TechBullion",
-      "source": "TechBullion",
-      "region": "WORLD"
-    },
     "c720a734c8f02e7fbdaf8be5dc566105266e69c4bade501d51d1fe359e5157a8": {
       "time": 1793385664,
       "title": "AI robotics may need 10 million hours of interaction data to reach production-level capabilities: Goldman Sachs - Devdiscourse",
@@ -1620,96 +1613,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793265681,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 16.85,
-      "candidates": 0,
-      "queue_before": 13,
-      "queue_after": 12,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.business-standard.com/technology/tech-news/chinese-ai-model-completes-complex-cyberattacks-in-tests-raises-concerns-126102900488_1.html",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.67,
-          "bonus_total": 69.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходимость немедленного аудита систем безопасности из-за появления доступных инструментов для автоматизированного взлома.",
-            "title": "Chinese AI model completes complex cyberattacks in tests, raises concerns - Business Standard",
-            "final_score": 68.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793265901,
       "status": "OK",
@@ -22689,10 +22592,144 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793470607,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 94.71,
+      "candidates": 16,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 13,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 0,
+        "candidate_count": 16,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 9.0,
+          "bonus_total": 27.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Автоматизация поиска уязвимостей требует немедленного пересмотра процессов безопасности в разработке.",
+            "title": "Google представила Gemini 4 Carbon: новая ИИ-модель обнаруживает 88% уязвимостей в программном обеспечении - prospect.com.ru",
+            "final_score": 83.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 28,
+        "raw_items": 855,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 8,
+          "CNews": 0,
+          "Euronews": 16
+        },
+        "score_filtered": 809,
+        "quality_filtered": 25,
+        "story_dedup": 5,
+        "candidates": 16,
+        "candidate_rate": 0.0193,
+        "score_buckets": {
+          "0–39": 782,
+          "40–49": 51,
+          "50–59": 20,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "OPENROUTER",
+        "failovers": 3,
+        "failures": 4,
+        "blocked": 2,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793469886.1431618,
+  "last_search_ts": 1793470607.6874983,
   "last_publish_ts": 1793469886.1431618,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
