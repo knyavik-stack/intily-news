@@ -1239,63 +1239,22 @@
     "8075cfac346aeef2c790f280697b7b3b078945aad917153b170eeff28970737c": 1793435804.134909,
     "daeaf5794585cfc8456027efbc5f6dfa557738834c83c7e319d9a73425a88f02": 1793437723.3546212
   },
-  "queue": [
-    {
-      "region": "WORLD",
-      "title": "Last-minute Halloween costumes for tech nerds",
-      "link": "https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/",
-      "desc": "No Halloween costume? Just be a deceptively cute AI agent icon, a PHP vulnerability, or sleepy time Bryan Johnson.",
-      "source": "TechCrunch AI",
-      "time": 1793395619.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 7.0,
-        "event_concreteness": 13.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 44.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 44.0
-      },
-      "base_score": 44.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 44.0,
-      "key": "2bdf1b95ca022ba62c889b36df56322a085451307166841a095dc53ed0870e43",
-      "importance": 44.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "last_failed_at": 1793437248,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | OPENROUTER: OPENROUTER_EMPTY_OR_INVALID_CONTENT | OPENAI: OPENAI_HTTP_429: {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/bill",
-      "failure_count": 1,
-      "next_retry_at": 1793437548
-    }
-  ],
+  "queue": [],
   "health": {
-    "last_start_ts": 1793437723.3546212,
+    "last_start_ts": 1793437968.009807,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793437723.3546212,
-    "last_success_ts": 1793437723.3546212,
-    "last_candidates": 12,
-    "last_published": 1,
-    "queue_size": 1
+    "last_run_ts": 1793437968.009807,
+    "last_success_ts": 1793437968.009807,
+    "last_candidates": 11,
+    "last_published": 0,
+    "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1793437761.7989495
+      "updated_at": 1793438002.5497985
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1714,94 +1673,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793195082,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 10.27,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 16,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 400: Bad Request": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 400: Bad Request"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Высокие риски сопротивления пользователей замедляют внедрение AI-продуктов в европейском travel-секторе.",
-            "title": "Biometrics, AI and digital passports: Europeans ‘most cautious’ about travel technology, IATA survey finds",
-            "final_score": 60.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793195826,
       "status": "OK",
@@ -22332,10 +22203,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793437968,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": true,
+      "duration_sec": 36.53,
+      "candidates": 11,
+      "queue_before": 1,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 1,
+      "item_failures": 1,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 11,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 4.0,
+          "bonus_total": 36.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 2.0,
+            "bonus": 6.0,
+            "reason": "Развлекательный контент без практической ценности для бизнеса или разработки.",
+            "title": "Last-minute Halloween costumes for tech nerds",
+            "final_score": 50.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 29,
+        "raw_items": 310,
+        "source_counts": {
+          "TechCrunch AI": 6,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 4,
+          "Habr AI/News": 7,
+          "CNews": 0,
+          "Euronews": 11
+        },
+        "score_filtered": 280,
+        "quality_filtered": 16,
+        "story_dedup": 3,
+        "candidates": 11,
+        "candidate_rate": 0.0391,
+        "score_buckets": {
+          "0–39": 259,
+          "40–49": 35,
+          "50–59": 14,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793437723.3546212,
+  "last_search_ts": 1793437968.009807,
   "last_publish_ts": 1793437723.3546212,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
