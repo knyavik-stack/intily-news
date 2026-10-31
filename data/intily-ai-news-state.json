@@ -1228,7 +1228,8 @@
     "aa3a56f65753bdb45273e35261e4b7d9a2b0cfbcdd2a88da1dfa6362c8c1cc81": 1793450691,
     "afb15dcedc5c039e0857fb9c3d17fa1e6b231ce226f4824e5d72660bc9dcb709": 1793450933,
     "9e9dad568c0282df95b731d329064fddd3cf1b48943d4d226d427c2640747e06": 1793454054,
-    "86b6784097ff39ea289010d4f721e430d79ee5a7a2fb2fac5c36bd58b810b8e2": 1793454526
+    "86b6784097ff39ea289010d4f721e430d79ee5a7a2fb2fac5c36bd58b810b8e2": 1793454526,
+    "940bc4125f965e48a6b5baf8aa77dff2be31dd794622549d63196067632a6e16": 1793458378
   },
   "known": {
     "0b39e86a99b9b10533f04c014399bc7087c76c6013ee40c0a36c221d7169ec50": 1793454054.57973,
@@ -1415,71 +1416,33 @@
       "topics": [],
       "audience_score": 6.0,
       "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "США, Сингапур и Тайвань расследуют утечку секретов чипов Nvidia в Китай через экс-чиновницу Megaspeed - АНТИКОР",
-      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQbWJ3UVpjenlBai13dUFlZEdlYnluQ2FkOXd4NVB4bTdTV0h4RnVud3Z0Zi1lRWtyWnU2eHFIaE5PT09fRlg4UDNzeS1WTUNRMFNWeGlpUU9HLVI5LVhycHhWN0p3SGFuOWR2UnNkdVJ5ZS1EOTV2dFF5ZnlEa1hldFlxeHN4Tk9xZXpaN3Y2M1cyWFpKa2prdjZoQ25uLWpvQlJZSzN6R3dJREx0T0x2d25FS0ZBQXh0d3puakNoblBXRzFmTGlaWlBNTTFveGgwZWtVQWVzUmpUTUZxWUE?oc=5",
-      "desc": "США, Сингапур и Тайвань расследуют утечку секретов чипов Nvidia в Китай через экс-чиновницу Megaspeed АНТИКОР",
-      "source": "АНТИКОР",
-      "time": 1793446920.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 11.0,
-        "event_concreteness": 15.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 46.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 46.5
-      },
-      "base_score": 46.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 46.5,
-      "key": "940bc4125f965e48a6b5baf8aa77dff2be31dd794622549d63196067632a6e16",
-      "importance": 46.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "chips",
-        "security_regulation"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1793457904.7679372,
+    "last_start_ts": 1793458378.360201,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793457904.7679372,
-    "last_success_ts": 1793457904.7679372,
-    "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 6
+    "last_run_ts": 1793458378.360201,
+    "last_success_ts": 1793458378.360201,
+    "last_candidates": 17,
+    "last_published": 1,
+    "queue_size": 5
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793461487.667112,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1793457887.6671145
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793458412.008682
     },
     "GROQ": {
-      "disabled_until": 1793461490.90572,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793457890.9057226
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793458364.0946527
     },
     "OPENAI": {
-      "disabled_until": 1793544304.7511835,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793457904.7511854
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793458364.0946527
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1487,19 +1450,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793461504.3766418,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793457904.3766434
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793458364.0946527
     }
   },
   "stories": {
-    "60bf67cf22f141cc859800baf0c13ada86171080f68e6cc25eb6fa635a6db9fb": {
-      "time": 1793371751,
-      "title": "Binghamton University Researchers Demonstrate LLM Backdoor Attacks on Robots and Develop PROTEA Defense - Cybersecurity Insiders",
-      "desc": "Binghamton University Researchers Demonstrate LLM Backdoor Attacks on Robots and Develop PROTEA Defense Cybersecurity Insiders",
-      "source": "Cybersecurity Insiders",
-      "region": "WORLD"
-    },
     "e9d34a6d3dde6c5ed8e07fa3afbe38942a9f26dbc54988e66467ee1aecf58cec": {
       "time": 1793372955,
       "title": "UK probes Meta over 'exploitative' new terms for media as global pushback mounts",
@@ -1786,11 +1742,17 @@
       "desc": "Chainalysis Says AI Agent Attack Leaked Customer Data, Unrelated to Binance Incident BigGo Finance",
       "source": "BigGo Finance",
       "region": "WORLD"
+    },
+    "940bc4125f965e48a6b5baf8aa77dff2be31dd794622549d63196067632a6e16": {
+      "time": 1793458378,
+      "title": "США, Сингапур и Тайвань расследуют утечку секретов чипов Nvidia в Китай через экс-чиновницу Megaspeed - АНТИКОР",
+      "desc": "США, Сингапур и Тайвань расследуют утечку секретов чипов Nvidia в Китай через экс-чиновницу Megaspeed АНТИКОР",
+      "source": "АНТИКОР",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -1808,99 +1770,10 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793253194,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 13.2,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 16,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.33,
-          "bonus_total": 66.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Позволяет оптимизировать расходы на API и контролировать эффективность использования AI-инструментов разработчиками.",
-            "title": "Anthropic launches enterprise AI spending reports as coding tool adoption grows - Traders Union",
-            "final_score": 72.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 9,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793253681,
       "status": "OK",
@@ -22853,11 +22726,150 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1793458378,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 50.39,
+      "candidates": 17,
+      "queue_before": 6,
+      "queue_after": 5,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 4,
+        "story_queue": 2,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 17,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 403: Forbidden": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 403: Forbidden"
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.5,
+          "bonus_total": 51.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Необходимость срочного внедрения в CI/CD для снижения рисков взлома и оптимизации затрат на аудит безопасности.",
+            "title": "Google представила Gemini 4 Carbon: новая ИИ-модель обнаруживает 88% уязвимостей в программном обеспечении - prospect.com.ru",
+            "final_score": 83.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 29,
+        "raw_items": 736,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 11,
+          "CNews": 0,
+          "Euronews": 16
+        },
+        "score_filtered": 698,
+        "quality_filtered": 17,
+        "story_dedup": 4,
+        "candidates": 17,
+        "candidate_rate": 0.024,
+        "score_buckets": {
+          "0–39": 679,
+          "40–49": 35,
+          "50–59": 20,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1,
+          "7": 4,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793456203.305577,
-  "last_publish_ts": 1793454526.2788284,
+  "last_search_ts": 1793458378.360201,
+  "last_publish_ts": 1793458378.360201,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
