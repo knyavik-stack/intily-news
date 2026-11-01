@@ -1,7 +1,5 @@
 {
   "published": {
-    "d744df5514012f275f884361104810a6d77f06cf828511307354112c36d69e42": 1790926380,
-    "d5aadcc868a74409153c94e92706213d40371ac325ff3d36c64c02c376dcc09f": 1790926618,
     "fa8ad3a42214c1f4dead9f636a1be1cc1fd989d11818b80ab1ec15aa12c62c08": 1790927814,
     "769de47a1c7aa3523f31da7e8aff23253e9abb89b906b25e13a43bdae7f9c24c": 1790928293,
     "279fb15e2cd07b40fd897b7bf685823b53afe1f262e947541958c9b55ee34846": 1790929736,
@@ -1242,30 +1240,30 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1793518120.6820416,
+    "last_start_ts": 1793519562.6470146,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793518120.6820416,
-    "last_success_ts": 1793518120.6820416,
-    "last_candidates": 6,
+    "last_run_ts": 1793519562.6470146,
+    "last_success_ts": 1793519562.6470146,
+    "last_candidates": 4,
     "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793521754.191705,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1793518154.1917074
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793519604.1009216
     },
     "GROQ": {
-      "disabled_until": 1793521757.4114547,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793518157.411457
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793519562.5754795
     },
     "OPENAI": {
-      "disabled_until": 1793604564.7429593,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793518164.7429607
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793519562.5754795
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1273,26 +1271,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793521763.5595586,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793518163.5595605
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793519562.5754795
     }
   },
   "stories": {
-    "2feb5a5dc5c0404769369861fb54f2342e1e2c2ea64657f8e142a2fa133ce070": {
-      "time": 1793431727,
-      "title": "Vaani AI Research Launches Self-Serve Platform to Build and Deploy Voice AI Agents - Passionate In Marketing",
-      "desc": "Vaani AI Research Launches Self-Serve Platform to Build and Deploy Voice AI Agents Passionate In Marketing",
-      "source": "Passionate In Marketing",
-      "region": "WORLD"
-    },
-    "8639382222f38f0cb67d8b59d261eda0b44f058df611f47d0e7349d5d287f083": {
-      "time": 1793432446,
-      "title": "Браузерная игра «Один из восьми миллиардов» даёт пользователям возможность прожить чужую жизнь от рождения до смерти",
-      "desc": "Бесплатная браузерная игра «Один из восьми миллиардов» (1 in 8 Billion, написана с помощью ИИ Claude) предоставляет возможность за полтора часа прожить чужую случайную жизнь от рождения до смерти с возможностью выбора различных действий в процессе жизни. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "6d7ec64ec65e2e772e545a634479094f0f4e849c7ad07a389a5ebf6e57297501": {
       "time": 1793434859,
       "title": "ИИ ломает, ИИ ошибается, ИИ исправляется: как выглядит атака без человека - SecurityLab.ru",
@@ -1541,96 +1525,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793278877,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 19.82,
-      "candidates": 0,
-      "queue_before": 14,
-      "queue_after": 13,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.cnews.ru/news/line/2026-10-29_simpleone_predstavila_instrument",
-            "image_url": "https://www.cnews.ru/img/design2008/logocnews_f.png",
-            "width": 600,
-            "height": 315,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 5.67,
-          "bonus_total": 51.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Позволяет ускорить разработку внутренних инструментов, снижая зависимость от штатных разработчиков.",
-            "title": "SimpleOne представила инструмент ИИ-разработки для быстрого создания и доработки бизнес-приложений - CNews.ru",
-            "final_score": 68.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793279869,
       "status": "OK",
@@ -23324,10 +23218,140 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1793519562,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 41.46,
+      "candidates": 4,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 4,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 4,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Ускорение R&D процессов в биофарме и генетике для профильных специалистов.",
+            "title": "BITS Pilani Research Breakthrough: AI Tool DNAreader beats 14 existing models in predicting DNA-Binding Regions - Organiser",
+            "final_score": 64.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 18,
+        "raw_items": 303,
+        "source_counts": {
+          "TechCrunch AI": 3,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 6,
+          "CNews": 0,
+          "Euronews": 9
+        },
+        "score_filtered": 292,
+        "quality_filtered": 7,
+        "story_dedup": 0,
+        "candidates": 4,
+        "candidate_rate": 0.014,
+        "score_buckets": {
+          "0–39": 287,
+          "40–49": 12,
+          "50–59": 3,
+          "60–69": 0,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793518120.6820416,
+  "last_search_ts": 1793519562.6470146,
   "last_publish_ts": 1793514770.3075638,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
