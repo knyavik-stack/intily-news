@@ -1,6 +1,5 @@
 {
   "published": {
-    "c25ea74fb4bdf12b28d8f0ff5a776400262336b5a8cc3581b4b1c3a7baa98df2": 1790967669,
     "8e7fa30c42d897878e286e2dc14e54b0b92212f64a35b4b425de1ff9928b11e5": 1790968380,
     "119a8f91f3a449240df2c83da77f1196d1d7736ae5116fc8b484366172144574": 1790969091,
     "b6944fee9153b5953fa4d0ee96bb0d1e8c9b43665f8b720aa98280df34bbda8d": 1791003657,
@@ -1216,30 +1215,30 @@
   "known": {},
   "queue": [],
   "health": {
-    "last_start_ts": 1793559645.594133,
+    "last_start_ts": 1793560124.7067192,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793559645.594133,
-    "last_success_ts": 1793559645.594133,
-    "last_candidates": 12,
+    "last_run_ts": 1793560124.7067192,
+    "last_success_ts": 1793560124.7067192,
+    "last_candidates": 11,
     "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793563277.417666,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1793559677.417668
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793560169.1084323
     },
     "GROQ": {
-      "disabled_until": 1793563281.370454,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793559681.3704557
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793560124.509071
     },
     "OPENAI": {
-      "disabled_until": 1793646088.9246395,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793559688.924642
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793560124.509071
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1247,9 +1246,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793563287.8803756,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793559687.8803775
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793560124.509071
     }
   },
   "stories": {
@@ -1438,140 +1437,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793356869,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": true,
-      "duration_sec": 83.22,
-      "candidates": 14,
-      "queue_before": 0,
-      "queue_after": 1,
-      "published": 0,
-      "publish_attempts": 1,
-      "item_failures": 1,
-      "admission": {
-        "published_key": 12,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 1,
-        "candidate_count": 14,
-        "admission_rate": 7.14,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра стратегий монетизации ИИ-продуктов из-за изменения экономики поискового трафика.",
-            "title": "Is AI hurting Google's core business? Alphabet's $500 billion market rout explained - Firstpost",
-            "final_score": 71.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 60,
-        "raw_items": 543,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 24,
-          "CNews": 0,
-          "Euronews": 33
-        },
-        "score_filtered": 507,
-        "quality_filtered": 16,
-        "story_dedup": 6,
-        "candidates": 14,
-        "candidate_rate": 0.029,
-        "score_buckets": {
-          "0–39": 468,
-          "40–49": 55,
-          "50–59": 19,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 4,
-        "blocked": 4,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793357859,
       "status": "OK",
@@ -24595,10 +24460,140 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1793560124,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 44.46,
+      "candidates": 11,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 11,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.0,
+          "bonus_total": 36.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 5.0,
+            "bonus": 15.0,
+            "reason": "Удобный агрегатор контента, но не меняет бизнес-процессы или архитектуру разработки.",
+            "title": "Андрей Карпаты представил ИИ‑проект HackerTube — клон витрины YouTube только с видео с рекомендациями из Hacker News",
+            "final_score": 72.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 36,
+        "raw_items": 725,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 17,
+          "CNews": 0,
+          "Euronews": 19
+        },
+        "score_filtered": 697,
+        "quality_filtered": 14,
+        "story_dedup": 3,
+        "candidates": 11,
+        "candidate_rate": 0.016,
+        "score_buckets": {
+          "0–39": 669,
+          "40–49": 42,
+          "50–59": 12,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793559645.594133,
+  "last_search_ts": 1793560124.7067192,
   "last_publish_ts": 1793547894.440963,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
