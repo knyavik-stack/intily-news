@@ -1230,12 +1230,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1793533726.455936,
+    "last_start_ts": 1793534201.7827146,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793533726.455936,
-    "last_success_ts": 1793533726.455936,
-    "last_candidates": 7,
+    "last_run_ts": 1793534201.7827146,
+    "last_success_ts": 1793534201.7827146,
+    "last_candidates": 8,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1243,7 +1243,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1793533758.9449089
+      "updated_at": 1793534239.7590635
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1508,146 +1508,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793293035,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 57.12,
-      "candidates": 43,
-      "queue_before": 19,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 17,
-        "known_recent": 4,
-        "already_queued": 13,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 7,
-        "candidate_count": 43,
-        "admission_rate": 16.28,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.businesswire.com/news/home/20261029787855/en/Mintive-Tops-2.5-Million-Daily-Agent-Calls-as-Enterprises-Make-AI-Agent-Identity-a-Security-Priority",
-            "image_url": "https://mms.businesswire.com/media/20261029787855/en/2951420/22/mintive-wordmark-black_%281%29.jpg",
-            "width": 1024,
-            "height": 512,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.67,
-          "bonus_total": 78.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 3,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость внедрения систем идентификации ИИ-агентов для защиты от мошенничества и утечек данных.",
-            "title": "Mintive Tops 2.5 Million Daily Agent Calls as Enterprises Make AI Agent Identity a Security Priority - Business Wire",
-            "final_score": 72.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 103,
-        "raw_items": 1378,
-        "source_counts": {
-          "TechCrunch AI": 5,
-          "VentureBeat AI": -1,
-          "The Verge AI": 5,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 1,
-          "Ars Technica": 2,
-          "Habr AI/News": 40,
-          "CNews": 0,
-          "Euronews": 50
-        },
-        "score_filtered": 1285,
-        "quality_filtered": 38,
-        "story_dedup": 12,
-        "candidates": 43,
-        "candidate_rate": 0.0337,
-        "score_buckets": {
-          "0–39": 1197,
-          "40–49": 126,
-          "50–59": 50,
-          "60–69": 5,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 1,
-          "4": 1,
-          "5": 3,
-          "6": 4,
-          "7": 3,
-          "8": 5,
-          "9": 1,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793293745,
       "status": "OK",
@@ -23975,10 +23835,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793534201,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 37.98,
+      "candidates": 8,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 8,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 8,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Автоматизация поиска уязвимостей напрямую сокращает затраты на кибербезопасность и ускоряет цикл разработки.",
+            "title": "What is Gemini 4 Carbon, Google’s new AI model for finding, fixing security flaws? - The Indian Express",
+            "final_score": 71.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 27,
+        "raw_items": 404,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 14,
+          "CNews": 0,
+          "Euronews": 13
+        },
+        "score_filtered": 387,
+        "quality_filtered": 8,
+        "story_dedup": 1,
+        "candidates": 8,
+        "candidate_rate": 0.0212,
+        "score_buckets": {
+          "0–39": 374,
+          "40–49": 21,
+          "50–59": 8,
+          "60–69": 0,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793533726.455936,
+  "last_search_ts": 1793534201.7827146,
   "last_publish_ts": 1793533486.2678876,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
