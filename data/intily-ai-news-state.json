@@ -1,6 +1,5 @@
 {
   "published": {
-    "e2dbc5c9d49f9c5b6dd0b1ce7301fcd97d70ff96519b2cd323f3c347ea2da0d6": 1790952058,
     "0cffb86006f9ccd597f05f7a93e5b936fc768051ea46e9593d8855ab368a1ed5": 1790953278,
     "114bbd00cfcb3f4ae1b1a1e79fbc538f92088b39b653037a5a07517faa6bdcc5": 1790953488,
     "c09db5d1177aff020663a053b60506c5ce183c9ca4ac389c9f919748b4bf34c2": 1790953735,
@@ -1232,11 +1231,11 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1793544046.795935,
+    "last_start_ts": 1793544285.788687,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793544046.795935,
-    "last_success_ts": 1793544046.795935,
+    "last_run_ts": 1793544285.788687,
+    "last_success_ts": 1793544285.788687,
     "last_candidates": 13,
     "last_published": 0,
     "queue_size": 0
@@ -1245,7 +1244,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1793544079.2050464
+      "updated_at": 1793544323.6865072
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1531,145 +1530,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793338874,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 48.87,
-      "candidates": 20,
-      "queue_before": 16,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 3,
-        "known_recent": 0,
-        "already_queued": 11,
-        "story_queue": 2,
-        "story_history": 1,
-        "added": 3,
-        "candidate_count": 20,
-        "admission_rate": 15.0,
-        "dominant_block": "already_queued",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/",
-            "image_url": "https://techcrunch.com/wp-content/uploads/2026/10/ADT-logo.jpg?resize=1200,800",
-            "width": 1200,
-            "height": 800,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 6.0,
-          "bonus_total": 54.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость адаптации систем безопасности и IoT-продуктов под новые стандарты ИИ-аналитики.",
-            "title": "OpenAI-backed Thrive Holdings acquires ADT",
-            "final_score": 72.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 13,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 33,
-        "raw_items": 483,
-        "source_counts": {
-          "TechCrunch AI": 7,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 6,
-          "Habr AI/News": 8,
-          "CNews": 0,
-          "Euronews": 11
-        },
-        "score_filtered": 451,
-        "quality_filtered": 4,
-        "story_dedup": 8,
-        "candidates": 20,
-        "candidate_rate": 0.0444,
-        "score_buckets": {
-          "0–39": 421,
-          "40–49": 34,
-          "50–59": 27,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 1,
-          "6": 0,
-          "7": 2,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793339591,
       "status": "OK",
@@ -24331,10 +24191,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793544285,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 37.98,
+      "candidates": 13,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 13,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.5,
+          "bonus_total": 39.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Позволяет оптимизировать обучение и поиск профильного контента, но не меняет бизнес-процессы напрямую.",
+            "title": "Андрей Карпаты представил ИИ-проект HackerTube — клон YouTube только с видео с рекомендациями из Hacker News",
+            "final_score": 76.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 38,
+        "raw_items": 695,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 19,
+          "CNews": 0,
+          "Euronews": 19
+        },
+        "score_filtered": 668,
+        "quality_filtered": 11,
+        "story_dedup": 3,
+        "candidates": 13,
+        "candidate_rate": 0.0198,
+        "score_buckets": {
+          "0–39": 642,
+          "40–49": 37,
+          "50–59": 14,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793544046.795935,
+  "last_search_ts": 1793544285.788687,
   "last_publish_ts": 1793543565.8720508,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
