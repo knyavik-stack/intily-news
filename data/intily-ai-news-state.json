@@ -1,6 +1,5 @@
 {
   "published": {
-    "4c3bab370aa844620c253826c638d354174f589791fa84ba1925eace08b51633": 1790939575,
     "f222f00fb31692a5f6b79e5719f48592b995011c8f7cc29c9b67628a3deb5ca2": 1790940069,
     "a7716ff915a6defc3bc25c747c46c9bc1ab87c488b8b32b16eeb5d9da657aea8": 1790946539,
     "b7b1f7f4994dd958bc100f2f2c4db34d089194da1c1c2084f4aaf2f093a0b483": 1790947980,
@@ -1234,12 +1233,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1793531564.5580647,
+    "last_start_ts": 1793532047.6611948,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793531564.5580647,
-    "last_success_ts": 1793531564.5580647,
-    "last_candidates": 7,
+    "last_run_ts": 1793532047.6611948,
+    "last_success_ts": 1793532047.6611948,
+    "last_candidates": 8,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1247,7 +1246,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1793531603.994058
+      "updated_at": 1793532089.722711
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1512,96 +1511,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793290148,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 3.85,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 406: Not Acceptable": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 406: Not Acceptable"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость обновления протоколов безопасности при интеграции корпоративных ИИ-решений.",
-            "title": "Oracle launches AI security mesh with OpenAI to fix flaws - IT Brief UK",
-            "final_score": 70.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793290627,
       "status": "OK",
@@ -23794,10 +23703,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793532047,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 42.07,
+      "candidates": 8,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 7,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 8,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Появление доступных автономных агентов радикально снижает стоимость разработки и меняет требования к найму junior-разработчиков.",
+            "title": "DeepSeek launches autonomous coding agent to challenge Anthropic’s Claude Code By Investing.com - Investing.com Canada",
+            "final_score": 71.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 25,
+        "raw_items": 391,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 12,
+          "CNews": 0,
+          "Euronews": 13
+        },
+        "score_filtered": 371,
+        "quality_filtered": 12,
+        "story_dedup": 0,
+        "candidates": 8,
+        "candidate_rate": 0.0219,
+        "score_buckets": {
+          "0–39": 360,
+          "40–49": 23,
+          "50–59": 7,
+          "60–69": 0,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793531564.5580647,
+  "last_search_ts": 1793532047.6611948,
   "last_publish_ts": 1793528925.5464683,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
