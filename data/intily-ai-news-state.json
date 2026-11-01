@@ -1231,11 +1231,11 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1793545006.2892466,
+    "last_start_ts": 1793545242.3084881,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793545006.2892466,
-    "last_success_ts": 1793545006.2892466,
+    "last_run_ts": 1793545242.3084881,
+    "last_success_ts": 1793545242.3084881,
     "last_candidates": 12,
     "last_published": 0,
     "queue_size": 0
@@ -1244,7 +1244,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1793545048.5186846
+      "updated_at": 1793545278.9679177
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1268,13 +1268,6 @@
     }
   },
   "stories": {
-    "3e752c4900e94012a6d9e5297e78ec922aa951e16acbf1de4152e950be56ebf9": {
-      "time": 1793458842,
-      "title": "Soika Labs Launches Mockingjay Network, an Agentic AI Operating System That Lets Businesses Command Their Own AI Workforce - StreetInsider",
-      "desc": "Soika Labs Launches Mockingjay Network, an Agentic AI Operating System That Lets Businesses Command Their Own AI Workforce StreetInsider",
-      "source": "StreetInsider",
-      "region": "WORLD"
-    },
     "0b39e86a99b9b10533f04c014399bc7087c76c6013ee40c0a36c221d7169ec50": {
       "time": 1793460284,
       "title": "Ottawa’s investment in Cohere, RBC blocks personal AI agents and Cleveland-Cliffs’ plan to recall Stelco workers: Must-read business and investing stories - The Globe and Mail",
@@ -1523,96 +1516,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793340551,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 14.89,
-      "candidates": 0,
-      "queue_before": 15,
-      "queue_after": 14,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 400: Bad Request": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 400: Bad Request"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.0,
-          "bonus_total": 63.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость пересмотра протоколов безопасности при интеграции внешних LLM в продакшн.",
-            "title": "OpenAI upgrades AI safety monitoring after Hugging face incident, claims 30-hour early warning - Firstpost",
-            "final_score": 65.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 7,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793340792,
       "status": "OK",
@@ -24396,10 +24299,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793545242,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 36.7,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 12,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.5,
+          "bonus_total": 39.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Ускоряет поиск релевантного технического контента, но не меняет бизнес-процессы напрямую.",
+            "title": "Андрей Карпаты представил ИИ-проект HackerTube — клон YouTube только с видео с рекомендациями из Hacker News",
+            "final_score": 75.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 38,
+        "raw_items": 683,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 19,
+          "CNews": 0,
+          "Euronews": 19
+        },
+        "score_filtered": 656,
+        "quality_filtered": 12,
+        "story_dedup": 3,
+        "candidates": 12,
+        "candidate_rate": 0.0186,
+        "score_buckets": {
+          "0–39": 634,
+          "40–49": 34,
+          "50–59": 13,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793545006.2892466,
+  "last_search_ts": 1793545242.3084881,
   "last_publish_ts": 1793543565.8720508,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
