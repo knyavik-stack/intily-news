@@ -1228,20 +1228,20 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1793547894.440963,
+    "last_start_ts": 1793548844.4375799,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793547894.440963,
-    "last_success_ts": 1793547894.440963,
-    "last_candidates": 13,
-    "last_published": 1,
+    "last_run_ts": 1793548844.4375799,
+    "last_success_ts": 1793548844.4375799,
+    "last_candidates": 11,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1793547927.511701
+      "updated_at": 1793548881.6283102
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1499,143 +1499,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793343194,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 43.2,
-      "candidates": 16,
-      "queue_before": 10,
-      "queue_after": 10,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 6,
-        "known_recent": 0,
-        "already_queued": 6,
-        "story_queue": 0,
-        "story_history": 3,
-        "added": 1,
-        "candidate_count": 16,
-        "admission_rate": 6.25,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.hpcwire.com/aiwire/2026/10/29/monte-carlo-launches-bayes-an-ai-teammate-that-fixes-production-ai-agents-and-their-data/",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.5,
-          "bonus_total": 51.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Снижает операционные риски и затраты на поддержку AI-агентов в продакшене.",
-            "title": "Monte Carlo Launches Bayes, an AI Teammate That Fixes Production AI Agents and Their Data - HPCwire",
-            "final_score": 64.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 34,
-        "raw_items": 488,
-        "source_counts": {
-          "TechCrunch AI": 6,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 4,
-          "Habr AI/News": 10,
-          "CNews": 0,
-          "Euronews": 14
-        },
-        "score_filtered": 456,
-        "quality_filtered": 9,
-        "story_dedup": 7,
-        "candidates": 16,
-        "candidate_rate": 0.0352,
-        "score_buckets": {
-          "0–39": 430,
-          "40–49": 35,
-          "50–59": 22,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 1,
-          "6": 0,
-          "7": 5,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793344623,
       "status": "OK",
@@ -24488,10 +24351,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793548844,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 37.28,
+      "candidates": 11,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 11,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.0,
+          "bonus_total": 36.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 5.0,
+            "bonus": 15.0,
+            "reason": "Инструмент для курации контента, не влияющий на бизнес-процессы или разработку напрямую.",
+            "title": "Андрей Карпаты представил ИИ‑проект HackerTube — клон витрины YouTube только с видео с рекомендациями из Hacker News",
+            "final_score": 72.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 38,
+        "raw_items": 661,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 17,
+          "CNews": 0,
+          "Euronews": 21
+        },
+        "score_filtered": 637,
+        "quality_filtered": 12,
+        "story_dedup": 1,
+        "candidates": 11,
+        "candidate_rate": 0.0177,
+        "score_buckets": {
+          "0–39": 612,
+          "40–49": 37,
+          "50–59": 10,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793547894.440963,
+  "last_search_ts": 1793548844.4375799,
   "last_publish_ts": 1793547894.440963,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
