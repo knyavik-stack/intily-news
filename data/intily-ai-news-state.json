@@ -1,6 +1,5 @@
 {
   "published": {
-    "cd12f038c5683025296a44a5a4d11e5a51f0f81acf52f9e486153907b4808aad": 1790959966,
     "ebabd55ba931da22eec500b368b3bed51d790481484f501b07c2823c63ddfa7a": 1790961899,
     "cc47daa2c7176089b7734dd9e684c7f0d1fff30106a2a1b39e9b9e134a77d5be": 1790962622,
     "ebdc3ac166081ff2d72ea6a3db4dc6999acf08785fb36cee163ab8ebc3915654": 1790962861,
@@ -1218,17 +1217,15 @@
     "dc33f74c7858450fec6b77df84d83874d0ad9437a63ad9a2be06f083d42d5a22": 1793543565,
     "704c1410aedd1f5e8eaa468deb3eab07c5ba2ecdf6c3729bd77aa7f7625f2050": 1793547894
   },
-  "known": {
-    "704c1410aedd1f5e8eaa468deb3eab07c5ba2ecdf6c3729bd77aa7f7625f2050": 1793546922.1631732
-  },
+  "known": {},
   "queue": [],
   "health": {
-    "last_start_ts": 1793551962.4394526,
+    "last_start_ts": 1793552446.9181528,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793551962.4394526,
-    "last_success_ts": 1793551962.4394526,
-    "last_candidates": 12,
+    "last_run_ts": 1793552446.9181528,
+    "last_success_ts": 1793552446.9181528,
+    "last_candidates": 11,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1236,7 +1233,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1793552001.2732131
+      "updated_at": 1793552478.6570704
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1260,13 +1257,6 @@
     }
   },
   "stories": {
-    "e827ab1cce1c07fcee5dafa6e644668ae046a5ec82067c9569712220853a9f02": {
-      "time": 1793465568,
-      "title": "Tech Giants Burn Billions on AI as Chipmakers and Oil Firms Lead Global Cash - upday News",
-      "desc": "Tech Giants Burn Billions on AI as Chipmakers and Oil Firms Lead Global Cash upday News",
-      "source": "upday News",
-      "region": "WORLD"
-    },
     "47a4298af4b32c21c117a98bafbe1ee4b9045e98d1d80152dc8ca69d9b06b3b2": {
       "time": 1793466055,
       "title": "OpenAI Slashes Funding Target as AI Investment Cools - The Tech Buzz",
@@ -1487,96 +1477,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793348945,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 3.01,
-      "candidates": 0,
-      "queue_before": 3,
-      "queue_after": 2,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://vc.ru/ai/3224822-daidzhest-ii-suverenniy-ii-kanady-obnovlennyy-model-spec-ot-openai-rost-aws",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 6.0,
-          "bonus_total": 18.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Новости носят общеиндустриальный характер и не требуют немедленной смены стратегии для конкретного бизнеса.",
-            "title": "Дайджест ИИ: суверенный ИИ Канады на $1,6 млрд, обновленный Model Spec от OpenAI, взлет AWS - VC.ru",
-            "final_score": 59.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793349427,
       "status": "OK",
@@ -24617,10 +24517,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793552446,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 31.83,
+      "candidates": 11,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 8,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 0,
+        "candidate_count": 11,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.0,
+          "bonus_total": 36.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 5.0,
+            "bonus": 15.0,
+            "reason": "Удобный агрегатор для фильтрации контента, но не меняет бизнес-процессы или архитектуру разработки.",
+            "title": "Андрей Карпаты представил ИИ‑проект HackerTube — клон витрины YouTube только с видео с рекомендациями из Hacker News",
+            "final_score": 72.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 38,
+        "raw_items": 687,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 16,
+          "CNews": 0,
+          "Euronews": 22
+        },
+        "score_filtered": 660,
+        "quality_filtered": 15,
+        "story_dedup": 1,
+        "candidates": 11,
+        "candidate_rate": 0.0169,
+        "score_buckets": {
+          "0–39": 640,
+          "40–49": 35,
+          "50–59": 10,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793551962.4394526,
+  "last_search_ts": 1793552446.9181528,
   "last_publish_ts": 1793547894.440963,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
