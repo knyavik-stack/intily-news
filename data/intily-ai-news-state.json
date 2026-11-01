@@ -1223,17 +1223,16 @@
     "704c1410aedd1f5e8eaa468deb3eab07c5ba2ecdf6c3729bd77aa7f7625f2050": 1793547894
   },
   "known": {
-    "dc33f74c7858450fec6b77df84d83874d0ad9437a63ad9a2be06f083d42d5a22": 1793543565.8720508,
     "704c1410aedd1f5e8eaa468deb3eab07c5ba2ecdf6c3729bd77aa7f7625f2050": 1793546922.1631732
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1793548844.4375799,
+    "last_start_ts": 1793549084.9052644,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793548844.4375799,
-    "last_success_ts": 1793548844.4375799,
-    "last_candidates": 11,
+    "last_run_ts": 1793549084.9052644,
+    "last_success_ts": 1793549084.9052644,
+    "last_candidates": 13,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1241,7 +1240,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1793548881.6283102
+      "updated_at": 1793549124.239959
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1499,96 +1498,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793344623,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 4.74,
-      "candidates": 0,
-      "queue_before": 7,
-      "queue_after": 6,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/",
-            "image_url": "https://techcrunch.com/wp-content/uploads/2022/09/GettyImages-1415078085.jpg?resize=1200,721",
-            "width": 1200,
-            "height": 721,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Прогноз по капитальным затратам AWS напрямую влияет на стоимость облачной инфраструктуры для любого бизнеса.",
-            "title": "AWS will be a $1T business, Jassy says. But first, it will spend big.",
-            "final_score": 61.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793346061,
       "status": "OK",
@@ -24481,10 +24390,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793549084,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 39.41,
+      "candidates": 13,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 0,
+        "candidate_count": 13,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.0,
+          "bonus_total": 36.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 4.0,
+            "bonus": 12.0,
+            "reason": "Это удобный инструмент для фильтрации контента, но он не несет фундаментальных изменений в бизнес-процессы или разработку.",
+            "title": "Андрей Карпаты представил ИИ‑проект HackerTube — клон витрины YouTube только с видео с рекомендациями из Hacker News",
+            "final_score": 69.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 38,
+        "raw_items": 734,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 17,
+          "CNews": 0,
+          "Euronews": 21
+        },
+        "score_filtered": 707,
+        "quality_filtered": 12,
+        "story_dedup": 2,
+        "candidates": 13,
+        "candidate_rate": 0.0187,
+        "score_buckets": {
+          "0–39": 676,
+          "40–49": 43,
+          "50–59": 13,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793548844.4375799,
+  "last_search_ts": 1793549084.9052644,
   "last_publish_ts": 1793547894.440963,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
