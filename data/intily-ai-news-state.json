@@ -1,6 +1,5 @@
 {
   "published": {
-    "6f530ac7237c5bae054ef38d4d9640215672ef595376e86b2c598d139fc54fe1": 1791004608,
     "e425c3d1edab260aa1c76f3bcc7cbbd55364e956da399b1d5e6bce3805bfb1d6": 1791007731,
     "1a5a83e604c0b5496add9700db6a19519f852595fa564b59fb9577c4a72713d3": 1791010129,
     "8c7c47c4537aebf6de1d3ec3f8d779c48ac8ce6c14359ea7b166e53b9d9efbcc": 1791016369,
@@ -1207,13 +1206,15 @@
     "dc33f74c7858450fec6b77df84d83874d0ad9437a63ad9a2be06f083d42d5a22": 1793543565,
     "704c1410aedd1f5e8eaa468deb3eab07c5ba2ecdf6c3729bd77aa7f7625f2050": 1793547894,
     "ed9bb3c398cd16fef3f1e4428e109cf2749b1c915b674d82ba328d9c2206449c": 1793595647,
-    "2a8aeafdd3856528eabee2e3f66f679e38d8f39c6f3f675c24100377e3cfb48d": 1793596396
+    "2a8aeafdd3856528eabee2e3f66f679e38d8f39c6f3f675c24100377e3cfb48d": 1793596396,
+    "d92aea9df0187b31ea066e360195e26fddde2290501ca06fc4b06eb812042c11": 1793598049
   },
   "known": {
     "ed9bb3c398cd16fef3f1e4428e109cf2749b1c915b674d82ba328d9c2206449c": 1793595647.5760107,
     "2a8aeafdd3856528eabee2e3f66f679e38d8f39c6f3f675c24100377e3cfb48d": 1793595647.5760107,
     "18fbcfaafaa4821fd4bda62867401dbb8d82d739d5d5db0a8e774d2081c50dbd": 1793595647.5760107,
-    "753f512f5600828244cfe9d1caff0f8d5151df821e4b170026d74b83f43bc49b": 1793595647.5760107
+    "753f512f5600828244cfe9d1caff0f8d5151df821e4b170026d74b83f43bc49b": 1793595647.5760107,
+    "d92aea9df0187b31ea066e360195e26fddde2290501ca06fc4b06eb812042c11": 1793598049.0145075
   },
   "queue": [
     {
@@ -1272,32 +1273,32 @@
         "freshness": 1.5,
         "low_signal_penalty": 0.0,
         "base_score": 40.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 40.5
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 58.5
       },
       "base_score": 40.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 40.5,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 58.5,
       "key": "753f512f5600828244cfe9d1caff0f8d5151df821e4b170026d74b83f43bc49b",
-      "importance": 40.5,
+      "importance": 58.5,
       "editorial_value": 50.0,
       "topics": [
         "applications",
         "business"
       ],
-      "audience_score": null,
+      "audience_score": 6.0,
       "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1793596396.1186776,
+    "last_start_ts": 1793598049.0145075,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793596396.1186776,
-    "last_success_ts": 1793596396.1186776,
-    "last_candidates": 0,
+    "last_run_ts": 1793598049.0145075,
+    "last_success_ts": 1793598049.0145075,
+    "last_candidates": 6,
     "last_published": 1,
     "queue_size": 2
   },
@@ -1305,7 +1306,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1793596396.1129205
+      "updated_at": 1793598080.9627876
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1496,11 +1497,17 @@
       "desc": "Delaware weighs bill allowing AI agents to make business decisions Mezha.net",
       "source": "Mezha.net",
       "region": "WORLD"
+    },
+    "d92aea9df0187b31ea066e360195e26fddde2290501ca06fc4b06eb812042c11": {
+      "time": 1793598049,
+      "title": "Дайджест ИИ: сделка Aramco и HUMAIN на $2,6 млрд, инициатива Quad по чипам на $85 млн, экспортный рекорд Кореи - VC.ru",
+      "desc": "Дайджест ИИ: сделка Aramco и HUMAIN на $2,6 млрд, инициатива Quad по чипам на $85 млн, экспортный рекорд Кореи VC.ru",
+      "source": "VC.ru",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -1518,150 +1525,10 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793359506,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 57.83,
-      "candidates": 16,
-      "queue_before": 1,
-      "queue_after": 2,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 12,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 2,
-        "candidate_count": 16,
-        "admission_rate": 12.5,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 400: Bad Request": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 400: Bad Request"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.67,
-          "bonus_total": 69.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Позволяет предотвратить финансовые потери при масштабировании корпоративных ИИ-интеграций.",
-            "title": "Anthropic launches tools to track enterprise AI spending - TechGig",
-            "final_score": 68.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 67,
-        "raw_items": 547,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 26,
-          "CNews": 0,
-          "Euronews": 37
-        },
-        "score_filtered": 510,
-        "quality_filtered": 17,
-        "story_dedup": 4,
-        "candidates": 16,
-        "candidate_rate": 0.0333,
-        "score_buckets": {
-          "0–39": 471,
-          "40–49": 56,
-          "50–59": 19,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793361427,
       "status": "OK",
@@ -24648,11 +24515,150 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793598049,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 43.92,
+      "candidates": 6,
+      "queue_before": 2,
+      "queue_after": 2,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 2,
+        "known_recent": 0,
+        "already_queued": 2,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 6,
+        "admission_rate": 16.67,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://vc.ru/ai/3230058-sdelka-aramco-i-humain-initsiativa-quad-eksport-yuzhnoy-korei",
+            "image_url": "https://api.vc.ru/v2.9/cover/fb/c/3230058/1793598086/cover.jpg",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.0,
+          "bonus_total": 36.0,
+          "max_score": 6.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Понимание глобальных трендов инвестиций помогает корректировать долгосрочную стратегию закупок и выбора технологического стека.",
+            "title": "Дайджест ИИ: сделка Aramco и HUMAIN на $2,6 млрд, инициатива Quad по чипам на $85 млн, экспортный рекорд Кореи - VC.ru",
+            "final_score": 70.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 12,
+        "raw_items": 416,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 8,
+          "CNews": 0,
+          "Euronews": 2
+        },
+        "score_filtered": 404,
+        "quality_filtered": 5,
+        "story_dedup": 1,
+        "candidates": 6,
+        "candidate_rate": 0.0149,
+        "score_buckets": {
+          "0–39": 386,
+          "40–49": 23,
+          "50–59": 6,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 1,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793595647.5760107,
-  "last_publish_ts": 1793596396.1186776,
+  "last_search_ts": 1793598049.0145075,
+  "last_publish_ts": 1793598049.0145075,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
