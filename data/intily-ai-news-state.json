@@ -1224,14 +1224,6 @@
     "66f73585d2765db70ce3e2dade841e0c8af9cd19c4d612eb6d1065095e9452a8": 1793624452
   },
   "known": {
-    "82386c8870a04b3480a6501b1c98048de25b3d02b6288cc17507238e3a61466d": 1793622043.3528223,
-    "95bd585c0c7e15c27307569cf71ea3679b1c91563c443a0a29c6e5f744b8b458": 1793622043.3528223,
-    "e78353039d86b1cd35805e317fe925f08dac33a5393494761269f18de7e1dd97": 1793622043.3528223,
-    "d9d671e31a0ba6952a053b8f9199be33510aaf3a3e9812aa0bd0f769bb765424": 1793622043.3528223,
-    "7c7589de49e281c939d9720e718e1e56f7bf0947c5116ac8ae1d62ca84142698": 1793622043.3528223,
-    "d1ede23ed3ac15fafcd02b4797a2050c09171994a2f9ce0e53a157cef1ce93e9": 1793622043.3528223,
-    "0c36ea3b87f0b1cf61b7f9b3cae48dca3293e5f190cc4e2fc6a1e9099d8efbd4": 1793622043.3528223,
-    "c0d545f119ccd4dfb9677a2f5b4f2e29a0840db6518c28c399cc8198c98e9dac": 1793622043.3528223,
     "66f73585d2765db70ce3e2dade841e0c8af9cd19c4d612eb6d1065095e9452a8": 1793624005.6032546,
     "02772a9434b0058edde4fd6b5c3ccfea4202a254e909f04e59f039737998c12a": 1793627341.0015366,
     "b2a6492c0182c952fe4a592ef90d8eddd321c566a59500490f64b9afecfc5fc9": 1793627341.0015366,
@@ -1611,30 +1603,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793627341.0015366,
+    "last_start_ts": 1793627605.65436,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793627341.0015366,
-    "last_success_ts": 1793627341.0015366,
-    "last_candidates": 22,
+    "last_run_ts": 1793627605.65436,
+    "last_success_ts": 1793627605.65436,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 10
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793630983.6556222,
+      "disabled_until": 1793631167.3163273,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1793627383.6556242
+      "updated_at": 1793627567.3163304
     },
     "GROQ": {
-      "disabled_until": 1793630987.1813025,
+      "disabled_until": 1793631170.8735023,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793627387.1813052
+      "updated_at": 1793627570.8735044
     },
     "OPENAI": {
-      "disabled_until": 1793713796.305537,
+      "disabled_until": 1793714005.5982563,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793627396.3055394
+      "updated_at": 1793627605.5982583
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1642,19 +1634,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793630995.3200336,
+      "disabled_until": 1793631204.7126417,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793627395.3200352
+      "updated_at": 1793627604.7126436
     }
   },
   "stories": {
-    "293ae1d564ea8795c9936d3126623324e4d7c05e861d09b669e67f80c7faab0b": {
-      "time": 1793541165,
-      "title": "Google представила ИИ-агентов, которые проектируют ДНК и учатся в лаборатории - Pasquale Pillitteri",
-      "desc": "Google представила ИИ-агентов, которые проектируют ДНК и учатся в лаборатории Pasquale Pillitteri",
-      "source": "Pasquale Pillitteri",
-      "region": "RUSSIA"
-    },
     "9d18b43a574a9a0009c9da66c48d57d3314f4bfe0c2345298720ec5ea7cac196": {
       "time": 1793542363,
       "title": "Андрей Карпаты представил ИИ-проект HackerTube — клон YouTube только с видео с рекомендациями из Hacker News",
@@ -1917,78 +1902,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793426220,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 14.01,
-      "candidates": 0,
-      "queue_before": 8,
-      "queue_after": 8,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 6,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793427414,
       "status": "OK",
@@ -25525,6 +25438,78 @@
         "failovers": 0,
         "failures": 4,
         "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1793627605,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 38.91,
+      "candidates": 0,
+      "queue_before": 10,
+      "queue_after": 10,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 6,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
         "skipped_no_key": 0,
         "retries": 0
       },
