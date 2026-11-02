@@ -1212,23 +1212,25 @@
     "5ea185c8875ff3bebe20079d712602fd4846ba5ad38ca8001c8e73b77ca5eafb": 1793601163,
     "906a7af040086eb2cf5f3464384203a5ad4c4447ac925c175c26b7f1fe1b0a83": 1793603083,
     "c7a8fb305cd2c4e964e3316dec76e6dc485b308e637f472672b6c662bfb324ab": 1793603808,
-    "192a8c4d6f32a14a1c0922c7c998e00d59ede2a3b1abccc618761b0280db820b": 1793604298
+    "192a8c4d6f32a14a1c0922c7c998e00d59ede2a3b1abccc618761b0280db820b": 1793604298,
+    "69947f3bf2d5a1c1e6543e1e7b52af807633ac1a3250e413f9e3c799850a9be7": 1793604785
   },
   "known": {
     "d725274ed935fb647f59afb7de7b4e2758ba46a0abaf3c1be222050d7088d9be": 1793600444.037327,
     "5ea185c8875ff3bebe20079d712602fd4846ba5ad38ca8001c8e73b77ca5eafb": 1793601163.213185,
     "906a7af040086eb2cf5f3464384203a5ad4c4447ac925c175c26b7f1fe1b0a83": 1793602600.41501,
     "c7a8fb305cd2c4e964e3316dec76e6dc485b308e637f472672b6c662bfb324ab": 1793603083.7612293,
-    "192a8c4d6f32a14a1c0922c7c998e00d59ede2a3b1abccc618761b0280db820b": 1793603083.7612293
+    "192a8c4d6f32a14a1c0922c7c998e00d59ede2a3b1abccc618761b0280db820b": 1793603083.7612293,
+    "69947f3bf2d5a1c1e6543e1e7b52af807633ac1a3250e413f9e3c799850a9be7": 1793604785.644927
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1793604298.1405096,
+    "last_start_ts": 1793604785.644927,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793604298.1405096,
-    "last_success_ts": 1793604298.1405096,
-    "last_candidates": 9,
+    "last_run_ts": 1793604785.644927,
+    "last_success_ts": 1793604785.644927,
+    "last_candidates": 12,
     "last_published": 1,
     "queue_size": 0
   },
@@ -1236,7 +1238,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1793604357.3776627
+      "updated_at": 1793604826.9376242
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1441,10 +1443,16 @@
       "desc": "South Korea to pour billions into AI The Business Standard",
       "source": "The Business Standard",
       "region": "WORLD"
+    },
+    "69947f3bf2d5a1c1e6543e1e7b52af807633ac1a3250e413f9e3c799850a9be7": {
+      "time": 1793604785,
+      "title": "Meta Builds Muse AI Humanoid Robot: Shanghai Partner Bound by Chinese Intelligence Laws - Tech Times",
+      "desc": "Meta Builds Muse AI Humanoid Robot: Shanghai Partner Bound by Chinese Intelligence Laws Tech Times",
+      "source": "Tech Times",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1457,6 +1465,7 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -1466,89 +1475,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793368887,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 58.31,
-      "candidates": 0,
-      "queue_before": 9,
-      "queue_after": 9,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 5.0,
-          "bonus_total": 15.0,
-          "max_score": 5.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 5.0,
-            "bonus": 15.0,
-            "reason": "Спекулятивный финансовый инструмент не влияет на разработку или внедрение ИИ, а лишь создает риск потери капитала.",
-            "title": "BingX Launches Anthropic Pre-IPO Trading and 500,000 USDT Prize Pool - FF News",
-            "final_score": 55.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 12,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793369345,
       "status": "OK",
@@ -24815,11 +24741,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793604785,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 44.03,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 12,
+        "admission_rate": 8.33,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://www.techtimes.com/articles/329864/20261102/meta-builds-muse-ai-humanoid-robot-shanghai-partner-bound-chinese-intelligence-laws.htm",
+            "image_url": "https://d.techtimes.com/en/full/413548/meta.jpg",
+            "width": 1500,
+            "height": 1069,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 8.0,
+          "bonus_total": 72.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Риск компрометации корпоративных данных при интеграции оборудования с китайскими компонентами требует пересмотра политики безопасности.",
+            "title": "Meta Builds Muse AI Humanoid Robot: Shanghai Partner Bound by Chinese Intelligence Laws - Tech Times",
+            "final_score": 70.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 25,
+        "raw_items": 494,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 10,
+          "CNews": 0,
+          "Euronews": 13
+        },
+        "score_filtered": 475,
+        "quality_filtered": 5,
+        "story_dedup": 2,
+        "candidates": 12,
+        "candidate_rate": 0.0256,
+        "score_buckets": {
+          "0–39": 456,
+          "40–49": 24,
+          "50–59": 13,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793604298.1405096,
-  "last_publish_ts": 1793604298.1405096,
+  "last_search_ts": 1793604785.644927,
+  "last_publish_ts": 1793604785.644927,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
