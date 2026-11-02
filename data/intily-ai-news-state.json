@@ -1225,7 +1225,6 @@
     "02772a9434b0058edde4fd6b5c3ccfea4202a254e909f04e59f039737998c12a": 1793629258
   },
   "known": {
-    "66f73585d2765db70ce3e2dade841e0c8af9cd19c4d612eb6d1065095e9452a8": 1793624005.6032546,
     "02772a9434b0058edde4fd6b5c3ccfea4202a254e909f04e59f039737998c12a": 1793627341.0015366,
     "b2a6492c0182c952fe4a592ef90d8eddd321c566a59500490f64b9afecfc5fc9": 1793627341.0015366,
     "86045af150a6c84a03900da369149828d0ec6323b3c38a790aba6d3d3e3fcade": 1793627341.0015366,
@@ -1643,30 +1642,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793629258.0287142,
+    "last_start_ts": 1793630023.0792627,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793629258.0287142,
-    "last_success_ts": 1793629258.0287142,
-    "last_candidates": 21,
-    "last_published": 1,
+    "last_run_ts": 1793630023.0792627,
+    "last_success_ts": 1793630023.0792627,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 11
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793629257.9681184
+      "disabled_until": 1793633598.9667091,
+      "reason": "The read operation timed out",
+      "updated_at": 1793629998.9667122
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793629249.1660593
+      "disabled_until": 1793633602.856026,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793630002.8560278
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793629249.1660593
+      "disabled_until": 1793716423.0183842,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1793630023.0183856
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1674,19 +1673,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793629249.1660593
+      "disabled_until": 1793633621.9939466,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793630021.9939487
     }
   },
   "stories": {
-    "dc33f74c7858450fec6b77df84d83874d0ad9437a63ad9a2be06f083d42d5a22": {
-      "time": 1793543565,
-      "title": "Presentations.AI Launches White-Label AI Presentation Generator and Editable PowerPoint API for SaaS Companies, Agencies and AI Agents at $0.10 Per Slide With a 50% Launch Discount - GlobeNewswire",
-      "desc": "Presentations.AI Launches White-Label AI Presentation Generator and Editable PowerPoint API for SaaS Companies, Agencies and AI Agents at $0.10 Per Slide With a 50% Launch Discount GlobeNewswire",
-      "source": "GlobeNewswire",
-      "region": "WORLD"
-    },
     "704c1410aedd1f5e8eaa468deb3eab07c5ba2ecdf6c3729bd77aa7f7625f2050": {
       "time": 1793547894,
       "title": "OpenAI Raises Less Than Half of $30 Billion Target in Latest Round - WSJ",
@@ -1942,94 +1934,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793428139,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 15.2,
-      "candidates": 0,
-      "queue_before": 6,
-      "queue_after": 5,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/",
-            "image_url": "https://cdn.arstechnica.net/wp-content/uploads/2022/05/caution-tape-1000x648.jpeg",
-            "width": 1000,
-            "height": 648,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 5.5,
-          "bonus_total": 33.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходим немедленный аудит безопасности среды разработки и пересмотр доверия к сторонним плагинам.",
-            "title": "Anthropic VS code extension on Cursor backdoored for nearly 12 hours",
-            "final_score": 69.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793428384,
       "status": "OK",
@@ -25563,6 +25467,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1793630023,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 44.33,
+      "candidates": 0,
+      "queue_before": 11,
+      "queue_after": 11,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 6,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
