@@ -1213,31 +1213,33 @@
     "906a7af040086eb2cf5f3464384203a5ad4c4447ac925c175c26b7f1fe1b0a83": 1793603083,
     "c7a8fb305cd2c4e964e3316dec76e6dc485b308e637f472672b6c662bfb324ab": 1793603808,
     "192a8c4d6f32a14a1c0922c7c998e00d59ede2a3b1abccc618761b0280db820b": 1793604298,
-    "69947f3bf2d5a1c1e6543e1e7b52af807633ac1a3250e413f9e3c799850a9be7": 1793604785
+    "69947f3bf2d5a1c1e6543e1e7b52af807633ac1a3250e413f9e3c799850a9be7": 1793604785,
+    "de8d3001272a1e5581bcc8819a6fc845149c6eb48ffc3e7821afcfcaabd1323e": 1793606441
   },
   "known": {
     "5ea185c8875ff3bebe20079d712602fd4846ba5ad38ca8001c8e73b77ca5eafb": 1793601163.213185,
     "906a7af040086eb2cf5f3464384203a5ad4c4447ac925c175c26b7f1fe1b0a83": 1793602600.41501,
     "c7a8fb305cd2c4e964e3316dec76e6dc485b308e637f472672b6c662bfb324ab": 1793603083.7612293,
     "192a8c4d6f32a14a1c0922c7c998e00d59ede2a3b1abccc618761b0280db820b": 1793603083.7612293,
-    "69947f3bf2d5a1c1e6543e1e7b52af807633ac1a3250e413f9e3c799850a9be7": 1793604785.644927
+    "69947f3bf2d5a1c1e6543e1e7b52af807633ac1a3250e413f9e3c799850a9be7": 1793604785.644927,
+    "de8d3001272a1e5581bcc8819a6fc845149c6eb48ffc3e7821afcfcaabd1323e": 1793606441.974696
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1793606207.6889706,
+    "last_start_ts": 1793606441.974696,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793606207.6889706,
-    "last_success_ts": 1793606207.6889706,
-    "last_candidates": 11,
-    "last_published": 0,
+    "last_run_ts": 1793606441.974696,
+    "last_success_ts": 1793606441.974696,
+    "last_candidates": 10,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1793606249.9221637
+      "updated_at": 1793606486.406018
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1449,10 +1451,16 @@
       "desc": "Meta Builds Muse AI Humanoid Robot: Shanghai Partner Bound by Chinese Intelligence Laws Tech Times",
       "source": "Tech Times",
       "region": "WORLD"
+    },
+    "de8d3001272a1e5581bcc8819a6fc845149c6eb48ffc3e7821afcfcaabd1323e": {
+      "time": 1793606441,
+      "title": "Крупные ИИ‑компании договорились о едином запрете обучения ИИ в файле robots.txt",
+      "desc": "В Google совместно с такими крупными разработчиками ИИ, как OpenAI, Google, Microsoft и Anthropic, объявили о планах по внедрению в файл robots.txt единого механизма управления использованием контента для обучения. Это позволит владельцам веб‑сайтов задавать свои предпочтения в отношении машинного обучения сразу для нескольких разработчиков, выполнив настройку всего один раз. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -1471,151 +1479,10 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793369825,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 82.56,
-      "candidates": 29,
-      "queue_before": 7,
-      "queue_after": 12,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 17,
-        "known_recent": 0,
-        "already_queued": 5,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 6,
-        "candidate_count": 29,
-        "admission_rate": 20.69,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/companies/infostart/news/1101638/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1101638",
-            "image_url": "https://habr.com/share/publication/1101638/3f75de0cb206aa58b3779a4e1bb941c0/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 5.0,
-          "bonus_total": 30.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 4.0,
-            "bonus": 12.0,
-            "reason": "Вебинар по узкому RPA-инструменту, слабо касается современного AI/ML стека",
-            "title": "Что можно поручить программному роботу: вебинар о PIX RPA 3 ноября",
-            "final_score": 65.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 5,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 100,
-        "raw_items": 1127,
-        "source_counts": {
-          "TechCrunch AI": 4,
-          "VentureBeat AI": -1,
-          "The Verge AI": 4,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 5,
-          "Habr AI/News": 37,
-          "CNews": 0,
-          "Euronews": 50
-        },
-        "score_filtered": 1058,
-        "quality_filtered": 35,
-        "story_dedup": 5,
-        "candidates": 29,
-        "candidate_rate": 0.0282,
-        "score_buckets": {
-          "0–39": 1014,
-          "40–49": 79,
-          "50–59": 30,
-          "60–69": 4,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 3,
-          "6": 1,
-          "7": 1,
-          "8": 2,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER"
-        ],
-        "used": "OPENROUTER",
-        "failovers": 3,
-        "failures": 2,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793371040,
       "status": "OK",
@@ -24961,11 +24828,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793606441,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 44.92,
+      "candidates": 10,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 1,
+        "candidate_count": 10,
+        "admission_rate": 10.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://habr.com/ru/news/1102534/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1102534",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.0,
+          "bonus_total": 63.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет владельцам сайтов и SEO-специалистам централизованно защитить контент от обучения моделей, снижая риски утечки данных.",
+            "title": "Крупные ИИ‑компании договорились о едином запрете обучения ИИ в файле robots.txt",
+            "final_score": 62.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 30,
+        "raw_items": 503,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 13,
+          "CNews": 0,
+          "Euronews": 15
+        },
+        "score_filtered": 487,
+        "quality_filtered": 5,
+        "story_dedup": 1,
+        "candidates": 10,
+        "candidate_rate": 0.0211,
+        "score_buckets": {
+          "0–39": 460,
+          "40–49": 32,
+          "50–59": 10,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793606207.6889706,
-  "last_publish_ts": 1793604785.644927,
+  "last_search_ts": 1793606441.974696,
+  "last_publish_ts": 1793606441.974696,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
