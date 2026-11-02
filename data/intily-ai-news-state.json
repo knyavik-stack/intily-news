@@ -1,6 +1,5 @@
 {
   "published": {
-    "5d69e1336b5f9790a961a3e6e168705aa459d9ec7b28814e63c883e9fe6622aa": 1791025007,
     "58797106b191c6e1ed61a6903aa690d58bbc141332c4c8af17f833f0f3ba9f23": 1791026208,
     "7492fcac71ac15637f4ebf5f68d0f877acc3951e622348e15e22287e65587ebd": 1791026451,
     "176a9276499bb6d36cb99ee8464a725f49176b75d0cfde7ac989583d730ebb1a": 1791028858,
@@ -1310,30 +1309,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793616286.8327942,
+    "last_start_ts": 1793618015.4450498,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793616286.8327942,
-    "last_success_ts": 1793616286.8327942,
-    "last_candidates": 18,
-    "last_published": 1,
+    "last_run_ts": 1793618015.4450498,
+    "last_success_ts": 1793618015.4450498,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 2
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793616345.558616
+      "disabled_until": 1793621600.8664114,
+      "reason": "The read operation timed out",
+      "updated_at": 1793618000.8664138
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793613403.7062497
+      "disabled_until": 1793621604.492389,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793618004.4923909
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793613403.7062497
+      "disabled_until": 1793704415.4429975,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1793618015.4429991
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1341,9 +1340,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793613403.7062497
+      "disabled_until": 1793621614.297584,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793618014.2975876
     }
   },
   "stories": {
@@ -1602,147 +1601,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793379905,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 42.11,
-      "candidates": 40,
-      "queue_before": 13,
-      "queue_after": 15,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 26,
-        "known_recent": 0,
-        "already_queued": 10,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 3,
-        "candidate_count": 40,
-        "admission_rate": 7.5,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.0,
-          "bonus_total": 63.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость внедрения автоматизированного тестирования безопасности для защиты инфраструктуры от ИИ-атак.",
-            "title": "Use AI, Test AI, Beat AI: How SafeBreach’s Purpose-Built AI Capabilities Power a Proactive Approach Designed to Combat the New Threat Landscape - Security Boulevard",
-            "final_score": 66.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 106,
-        "raw_items": 1319,
-        "source_counts": {
-          "TechCrunch AI": 5,
-          "VentureBeat AI": -1,
-          "The Verge AI": 5,
-          "OpenAI News": 1,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 5,
-          "Habr AI/News": 40,
-          "CNews": 0,
-          "Euronews": 50
-        },
-        "score_filtered": 1240,
-        "quality_filtered": 36,
-        "story_dedup": 3,
-        "candidates": 40,
-        "candidate_rate": 0.033,
-        "score_buckets": {
-          "0–39": 1189,
-          "40–49": 86,
-          "50–59": 34,
-          "60–69": 10,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 3,
-          "6": 4,
-          "7": 3,
-          "8": 3,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793380639,
       "status": "OK",
@@ -25323,6 +25181,84 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1793618015,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 39.63,
+      "candidates": 0,
+      "queue_before": 2,
+      "queue_after": 2,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 4.0,
+          "bonus_total": 12.0,
+          "max_score": 4.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 4.0,
+            "bonus": 12.0,
+            "reason": "Новость носит общеобразовательный характер и не несет прямой прикладной ценности для бизнеса или разработки.",
+            "title": "\"Код человека\". На Национальном конкурсе \"Лістапада\" представлен фильм о будущем образования в эпоху ИИ - Новости Беларуси | БелТА",
+            "final_score": 52.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
