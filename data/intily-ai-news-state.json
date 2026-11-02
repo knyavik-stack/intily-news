@@ -1218,7 +1218,6 @@
     "12c5f4a7c5298ac94c650c9486accceb675041aef2023f94a2567a927f12a5ec": 1793609805
   },
   "known": {
-    "de8d3001272a1e5581bcc8819a6fc845149c6eb48ffc3e7821afcfcaabd1323e": 1793606441.974696,
     "39764a3a9c2c91ea269021ad1ef90e53df2f2b3667186f74be0eca179639feed": 1793608623.1731381,
     "769568e40ec9bd9181bf9b75551284ead94f75d7386cd9c74ab211d206ea0929": 1793608863.5469592,
     "2f1ca7407cd70aa391dda03d2fd89457f78bb443ced23966d853639939ffb4e6": 1793608863.5469592,
@@ -1263,7 +1262,11 @@
       ],
       "audience_score": 6.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1793612251,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1793612551
     },
     {
       "region": "RUSSIA",
@@ -1298,34 +1301,38 @@
       "topics": [],
       "audience_score": null,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1793612251,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1793612551
     }
   ],
   "health": {
-    "last_start_ts": 1793611767.039607,
+    "last_start_ts": 1793612251.6408343,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793611767.039607,
-    "last_success_ts": 1793611767.039607,
+    "last_run_ts": 1793612251.6408343,
+    "last_success_ts": 1793612251.6408343,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 2
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793615345.8139725,
-      "reason": "The read operation timed out",
-      "updated_at": 1793611745.8139756
+      "disabled_until": 1793615805.455755,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1793612205.455758
     },
     "GROQ": {
-      "disabled_until": 1793615352.3954012,
+      "disabled_until": 1793615809.2295024,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793611752.3954039
+      "updated_at": 1793612209.2295048
     },
     "OPENAI": {
-      "disabled_until": 1793698167.0374296,
+      "disabled_until": 1793698668.18408,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793611767.0374312
+      "updated_at": 1793612268.1840816
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1333,9 +1340,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793615366.02391,
+      "disabled_until": 1793615867.5720487,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793611766.0239124
+      "updated_at": 1793612267.5720506
     }
   },
   "stories": {
@@ -1580,96 +1587,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793375362,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 22.09,
-      "candidates": 0,
-      "queue_before": 15,
-      "queue_after": 14,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.33,
-          "bonus_total": 75.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Критический риск безопасности серверов требует немедленного аудита и обновления систем для предотвращения взлома.",
-            "title": "Linux Flaw Anthropic Exploited: Ubuntu, RHEL Unfixed 15 Days - FourWeekMBA",
-            "final_score": 72.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793375826,
       "status": "OK",
@@ -25245,6 +25162,81 @@
         "GEMINI": {
           "blocked": true,
           "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1793612251,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 65.08,
+      "candidates": 0,
+      "queue_before": 2,
+      "queue_after": 2,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 2,
+        "blocked": 14,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
         },
         "GROQ": {
           "blocked": true,
