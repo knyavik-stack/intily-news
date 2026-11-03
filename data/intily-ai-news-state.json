@@ -1232,10 +1232,6 @@
     "dc81718e9c62bea162571370581562b3de536ccb3133d0c651c9a725d998b779": 1793689003
   },
   "known": {
-    "4a27786d4f8ad6dec04ca34262af0d20d6bb418ed27b7d89726256b9a28e19ca": 1793684241.289052,
-    "d26acaecf1bdbc981674f93058ec7ae60d711a801ce7089f697ab7f214e81f45": 1793684241.289052,
-    "50035499b7cd75d4a463f4d677c546261a01a4bc5b12a6c3460201fd8b344741": 1793684241.289052,
-    "2cbbde75dc3bd414f1cdf2f584a316221eb9fbca4c798fa8a600fe373b07ead3": 1793684241.289052,
     "b85b92f1764d535a797f87840cff3a33867cf5184a7e3f9fa390e748faef3a93": 1793686371.712388,
     "ba3ad0fffb74afd4fffd2d7ccc1dcea64368b66333ea30fc111ce62de0769b09": 1793686371.712388,
     "212184e888afcb4dbaec94977eecac9db35b7111e9290c14a2046dc200a4c1e0": 1793686371.712388,
@@ -1475,19 +1471,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 44.5,
+        "base_score": 44.0,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 62.5
+        "final_score": 62.0
       },
-      "base_score": 44.5,
+      "base_score": 44.0,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 62.5,
+      "score": 62.0,
       "key": "24acb98f926466b5a17213965f02a7e14e4112b0bbe98e71dfa4fb264ad9454d",
-      "importance": 62.5,
+      "importance": 62.0,
       "editorial_value": 50.0,
       "topics": [
         "models"
@@ -1569,30 +1565,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793689003.5153692,
+    "last_start_ts": 1793689753.7477236,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793689003.5153692,
-    "last_success_ts": 1793689003.5153692,
+    "last_run_ts": 1793689753.7477236,
+    "last_success_ts": 1793689753.7477236,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 9
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793689003.483152
+      "disabled_until": 1793693335.4695418,
+      "reason": "The read operation timed out",
+      "updated_at": 1793689735.4695442
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793688996.598896
+      "disabled_until": 1793693339.5839632,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793689739.5839655
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793688996.598896
+      "disabled_until": 1793776153.7200594,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1793689753.7200608
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1600,19 +1596,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793688996.598896
+      "disabled_until": 1793693352.6803029,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793689752.680304
     }
   },
   "stories": {
-    "906a7af040086eb2cf5f3464384203a5ad4c4447ac925c175c26b7f1fe1b0a83": {
-      "time": 1793603083,
-      "title": "Vaani AI Research Launches Self-Serve Platform to Build and Deploy Voice AI Agents - CXOToday.com",
-      "desc": "Vaani AI Research Launches Self-Serve Platform to Build and Deploy Voice AI Agents CXOToday.com",
-      "source": "CXOToday.com",
-      "region": "WORLD"
-    },
     "c7a8fb305cd2c4e964e3316dec76e6dc485b308e637f472672b6c662bfb324ab": {
       "time": 1793603808,
       "title": "OpenAI’s Altman Travels to UAE to Sign Energy, Investment Deals - Bloomberg",
@@ -1966,78 +1955,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793456936,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 11.63,
-      "candidates": 0,
-      "queue_before": 6,
-      "queue_after": 6,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793457904,
       "status": "OK",
@@ -24962,6 +24879,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1793689753,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 38.42,
+      "candidates": 0,
+      "queue_before": 9,
+      "queue_after": 9,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
