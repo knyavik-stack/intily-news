@@ -1,7 +1,5 @@
 {
   "published": {
-    "eb38a2b88e6b96cff73e3687d41e844a1fb9367129131ea84ee7bd2ca5137581": 1791092700,
-    "164497245837d974c7aa5c25c12332de83821724dddd5a3b552c233b5cbcb3fb": 1791093406,
     "9d223e43657b2c4ae4ca4eb87755b46a663fab39412e397d2ed5fad0444f7cc9": 1791095326,
     "43270a93e20fc5105e163f3a63dd9420258bacd413926ed8070d8e75dce005ad": 1791098975,
     "bd02ed1edeb834bde67ad89312e815795b21a0241ff0bd76d1e32a8bcdf1ccbe": 1791101089,
@@ -1509,19 +1507,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 2.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 43.0,
+        "base_score": 42.5,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 43.0
+        "final_score": 42.5
       },
-      "base_score": 43.0,
+      "base_score": 42.5,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 43.0,
+      "score": 42.5,
       "key": "2cbbde75dc3bd414f1cdf2f584a316221eb9fbca4c798fa8a600fe373b07ead3",
-      "importance": 43.0,
+      "importance": 42.5,
       "editorial_value": 50.0,
       "topics": [],
       "audience_score": null,
@@ -1565,30 +1563,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793684241.289052,
+    "last_start_ts": 1793685666.8929217,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793684241.289052,
-    "last_success_ts": 1793684241.289052,
-    "last_candidates": 14,
+    "last_run_ts": 1793685666.8929217,
+    "last_success_ts": 1793685666.8929217,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 9
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793687824.9709783,
-      "reason": "The read operation timed out",
-      "updated_at": 1793684224.970981
+      "disabled_until": 1793689240.2914953,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1793685640.2914972
     },
     "GROQ": {
-      "disabled_until": 1793687828.1477892,
+      "disabled_until": 1793689244.5794892,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793684228.1477914
+      "updated_at": 1793685644.5794916
     },
     "OPENAI": {
-      "disabled_until": 1793770641.2790802,
+      "disabled_until": 1793772066.8532434,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793684241.279082
+      "updated_at": 1793685666.8532457
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1596,33 +1594,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793687840.1053078,
+      "disabled_until": 1793689265.7324467,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793684240.1053097
+      "updated_at": 1793685665.7324493
     }
   },
   "stories": {
-    "d92aea9df0187b31ea066e360195e26fddde2290501ca06fc4b06eb812042c11": {
-      "time": 1793598049,
-      "title": "Дайджест ИИ: сделка Aramco и HUMAIN на $2,6 млрд, инициатива Quad по чипам на $85 млн, экспортный рекорд Кореи - VC.ru",
-      "desc": "Дайджест ИИ: сделка Aramco и HUMAIN на $2,6 млрд, инициатива Quad по чипам на $85 млн, экспортный рекорд Кореи VC.ru",
-      "source": "VC.ru",
-      "region": "RUSSIA"
-    },
-    "18fbcfaafaa4821fd4bda62867401dbb8d82d739d5d5db0a8e774d2081c50dbd": {
-      "time": 1793598526,
-      "title": "AI Governance Risks Prompt Call for Urgent Australian Law Reform - Tech Business News",
-      "desc": "AI Governance Risks Prompt Call for Urgent Australian Law Reform Tech Business News",
-      "source": "Tech Business News",
-      "region": "WORLD"
-    },
-    "753f512f5600828244cfe9d1caff0f8d5151df821e4b170026d74b83f43bc49b": {
-      "time": 1793599005,
-      "title": "PressLogic Launches PL:ACADEMY to Mark Its 10th Anniversary, Opening a New Chapter in AI Education and Organisational Capability - Macau Business",
-      "desc": "PressLogic Launches PL:ACADEMY to Mark Its 10th Anniversary, Opening a New Chapter in AI Education and Organisational Capability Macau Business",
-      "source": "Macau Business",
-      "region": "WORLD"
-    },
     "d725274ed935fb647f59afb7de7b4e2758ba46a0abaf3c1be222050d7088d9be": {
       "time": 1793600444,
       "title": "Microsoft Cloud hits $63.9 billion as Copilot usage and AI agent adoption accelerate - EdTech Innovation Hub",
@@ -1955,78 +1932,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793449263,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 15.21,
-      "candidates": 0,
-      "queue_before": 6,
-      "queue_after": 6,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 6,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793449732,
       "status": "OK",
@@ -25000,6 +24905,78 @@
         "GEMINI": {
           "blocked": true,
           "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1793685666,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 27.5,
+      "candidates": 0,
+      "queue_before": 9,
+      "queue_after": 9,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 6,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
         },
         "GROQ": {
           "blocked": true,
