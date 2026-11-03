@@ -1,6 +1,5 @@
 {
   "published": {
-    "669b822a285baf62e611a28136e80e226ce9ce980f20b34a4b247bfd298eef4f": 1791130847,
     "a48906760d550b318f6c30d1b2b09b73ff0e18896b6d6553bcd14fa3ca8b0f6b": 1791135648,
     "8de2f21eb53a5ad8c47b5feb6b5b215c49df49487434626f8688dd0ff5112e66": 1791135892,
     "ccb23d7a3660376d81d3b99dc927df0a9b19d59ce25345a7ff1f402ddd1ea3e8": 1791140938,
@@ -1237,7 +1236,8 @@
     "d8861441cc5b63c35071209d6d8249929d2e745699c32e39d30bd238a68bdfd0": 1793713966,
     "14e91e6155bced504bebdee4c669c2e4b42c39702d86cb5558079c30034bc3a2": 1793714436,
     "74c9d2ab1682ead5eb98499ecd8120869d621f58388ba13d8e746e6f7aca94d2": 1793716844,
-    "2b099af3602c498078f5f5a2bcb4c2d6beaadc98c6a70797627a16ca79adc98d": 1793719987
+    "2b099af3602c498078f5f5a2bcb4c2d6beaadc98c6a70797627a16ca79adc98d": 1793719987,
+    "50d7cb20c11c6900c4431c0824be1e3caa7d073848a4f7698f3329cfe3d58338": 1793722858
   },
   "known": {
     "e7d4794bfa1f2fe7fd53111f2c9be6db5c02a04376fabfc0ea08d0723165b41e": 1793719015.4185872,
@@ -1255,47 +1255,40 @@
   },
   "queue": [
     {
-      "region": "RUSSIA",
-      "title": "В 42 GitHub-репозитория внедрили код для скрытой публикации вредоносных npm-пакетов",
-      "link": "https://habr.com/ru/companies/codescoring/news/1103232/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1103232",
-      "desc": "Исследователи JFrog обнаружили 42 сторонних GitHub-репозитория , подготовленных к запуску вредоносного кода в кампании testmetest. В них внедрили загрузчики скрытого издателя npm-пакетов и команды автозапуска для Claude Code, Cursor, Gemini CLI и VS Code. Несколькими днями ранее компания SafeDep сообщала об обнаружении червя , но на тот момент исследователи наблюдали его активность только на тестовых аккаунтах злоумышленника. Червь крадёт секреты и распространяется через пакеты и репозитории. Один из способов запуска использует файл сборки нативного модуля binding.gyp, поэтому отсутствие install-скрипта в package.json не гарантирует безопасную установку. Позднее появились варианты с нативной библиотекой Node.js, которую вызывает команда postinstall. Находка JFrog меняет оценку масштаба кампании. В репозиториях разработчиков и организаций команды в конфигурациях инструментов запускают файл .github/init.js . Например, для Claude Code использовано событие начала сессии, а для VS Code — задача при открытии папки. Вредоносный код может запуститься ещё до установки зависимостей. Загрузчики занимают около 13 МБ и не попадают в обычную поисковую выдачу GitHub. JFrog получила файлы через API деревьев и объектов Git. За десятью разными оболочками оказался одинаковый издатель пакетов. Он ищет токены, умеет использовать доверенную публикацию npm через GitHub Actions и добавлять вредоносный postinstall в выпускаемый пакет. Доверенная публикация npm привязывает выпуск к определённому репозиторию и workflow. Если злоумышленник получил возможность менять этот workflow, то проверка происхождения пакета сама по себе не остановит выпуск подменённого содержимого. Поэтому проверку зависимостей стоит дополнять контролем изменений конфигурации среды разработки и процесса выпуска. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1793713307.0,
+      "region": "WORLD",
+      "title": "UK likely to face AI-powered cyberattacks on critical infrastructure by 2028, cyber chief warns",
+      "link": "https://www.euronews.com/2026/11/03/uk-likely-to-face-ai-powered-cyberattacks-on-critical-infrastructure-by-2028-cyber-chief-w",
+      "desc": "Criminals and hostile states are increasingly using artificial intelligence to scale up cyber operations, with outdated technology leaving essential services exposed, the head of the UK's National Cyber Security Centre says.",
+      "source": "Euronews",
+      "time": 1793719239.0,
       "_score_components": {
         "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 9.0,
-        "event_concreteness": 10.5,
-        "practical_value": 8.0,
+        "ai_specificity": 5.5,
+        "impact": 8.0,
+        "event_concreteness": 14.5,
+        "practical_value": 3.0,
         "novelty": 0.0,
-        "source_quality": 2.0,
+        "source_quality": 4.0,
         "evidence": 3.0,
         "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 52.0,
-        "audience_score": 10.0,
-        "audience_bonus": 30.0,
-        "final_score": 82.0
+        "base_score": 51.5,
+        "audience_score": 9.0,
+        "audience_bonus": 27.0,
+        "final_score": 78.5
       },
-      "base_score": 52.0,
-      "audience_bonus": 30.0,
+      "base_score": 51.5,
+      "audience_bonus": 27.0,
       "score_stage": "final",
-      "score": 82.0,
-      "key": "50d7cb20c11c6900c4431c0824be1e3caa7d073848a4f7698f3329cfe3d58338",
-      "importance": 82.0,
+      "score": 78.5,
+      "key": "d6306f8da6ddb61d2e8081d3db784f8577b0592bfb5e10656326f439b98d5266",
+      "importance": 78.5,
       "editorial_value": 50.0,
       "topics": [
-        "models",
-        "security_regulation",
-        "tools"
+        "security_regulation"
       ],
-      "audience_score": 10.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0,
-      "last_failed_at": 1793721156,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 2,
-      "next_retry_at": 1793721756
+      "audience_score": 9.0,
+      "tier": "A"
     },
     {
       "region": "RUSSIA",
@@ -1920,69 +1913,33 @@
       ],
       "audience_score": 6.0,
       "tier": "A"
-    },
-    {
-      "region": "WORLD",
-      "title": "UK likely to face AI-powered cyberattacks on critical infrastructure by 2028, cyber chief warns",
-      "link": "https://www.euronews.com/2026/11/03/uk-likely-to-face-ai-powered-cyberattacks-on-critical-infrastructure-by-2028-cyber-chief-w",
-      "desc": "Criminals and hostile states are increasingly using artificial intelligence to scale up cyber operations, with outdated technology leaving essential services exposed, the head of the UK's National Cyber Security Centre says.",
-      "source": "Euronews",
-      "time": 1793719239.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 8.0,
-        "event_concreteness": 14.5,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 4.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 52.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 52.0
-      },
-      "base_score": 52.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 52.0,
-      "key": "d6306f8da6ddb61d2e8081d3db784f8577b0592bfb5e10656326f439b98d5266",
-      "importance": 52.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "security_regulation"
-      ],
-      "audience_score": null,
-      "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1793722404.8704944,
+    "last_start_ts": 1793722858.8106096,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793722404.8704944,
-    "last_success_ts": 1793722404.8704944,
+    "last_run_ts": 1793722858.8106096,
+    "last_success_ts": 1793722858.8106096,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 19
+    "last_published": 1,
+    "queue_size": 18
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793725980.5306063,
-      "reason": "The read operation timed out",
-      "updated_at": 1793722380.530609
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793722860.816119
     },
     "GROQ": {
-      "disabled_until": 1793725986.3927639,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793722386.3927658
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793722852.2037504
     },
     "OPENAI": {
-      "disabled_until": 1793808804.7262268,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793722404.7262285
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793722852.2037504
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1990,9 +1947,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793726003.3499584,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793722403.34996
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793722852.2037504
     }
   },
   "stories": {
@@ -2317,11 +2274,17 @@
       "desc": "Теперь можно попросить переписать веса другой нейросети просто сказав, что ты хочешь видеть. На днях исследователи из MIT CSAIL опубликовали технический отчет «Sparks of Weight-Space Programming». Языковая модель GPT-6 Astra от OpenAI читает веса другой нейросети, то есть числа, из которых складывается ее поведение, находит в них проблему и исправляет нужные значения напрямую, без обучения на данных. Так, у открытой модели Qwen3.5-0.8B от Alibaba исправили зацикливание в рассуждениях: изменив примерно 0,016% весов, модель подняла результат на MATH-500 с 7,9% до 48,1%. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "50d7cb20c11c6900c4431c0824be1e3caa7d073848a4f7698f3329cfe3d58338": {
+      "time": 1793722858,
+      "title": "В 42 GitHub-репозитория внедрили код для скрытой публикации вредоносных npm-пакетов",
+      "desc": "Исследователи JFrog обнаружили 42 сторонних GitHub-репозитория , подготовленных к запуску вредоносного кода в кампании testmetest. В них внедрили загрузчики скрытого издателя npm-пакетов и команды автозапуска для Claude Code, Cursor, Gemini CLI и VS Code. Несколькими днями ранее компания SafeDep сообщала об обнаружении червя , но на тот момент исследователи наблюдали его активность только на тестовых аккаунтах злоумышленника. Червь крадёт секреты и распространяется через пакеты и репозитории. Один из способов запуска использует файл сборки нативного модуля binding.gyp, поэтому отсутствие install-скрипта в package.json не гарантирует безопасную установку. Позднее появились варианты с нативной библиотекой Node.js, которую вызывает команда postinstall. Находка JFrog меняет оценку масштаба кампании. В репозиториях разработчиков и организаций команды в конфигурациях инструментов запускают файл .github/init.js . Например, для Claude Code использовано событие начала сессии, а для VS Code — задача при открытии папки. Вредоносный код может запуститься ещё до установки зависимостей. Загрузчики занимают около 13 МБ и не попадают в обычную поисковую выдачу GitHub. JFrog получила файлы через API деревьев и объектов Git. За десятью разными оболочками оказался одинаковый издатель пакетов. Он ищет токены, умеет использовать доверенную публикацию npm через GitHub Actions и добавлять вредоносный postinstall в выпускаемый пакет. Доверенная публикация npm привязывает выпуск к определённому репозиторию и workflow. Если злоумышленник получил возможность менять этот workflow, то проверка происхождения пакета сама по себе не остановит выпуск подменённого содержимого. Поэтому проверку зависимостей стоит дополнять контролем изменений конфигурации среды разработки и процесса выпуска. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -2338,151 +2301,11 @@
     "WORLD",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793522440,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 54.76,
-      "candidates": 5,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 4,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 1,
-        "candidate_count": 5,
-        "admission_rate": 20.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "Remote end closed connection without response": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "Remote end closed connection without response"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.33,
-          "bonus_total": 75.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 3,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Прямая угроза компрометации корпоративных учетных записей требует немедленного усиления мер безопасности.",
-            "title": "Поддельные приглашения Anthropic, фишинговая атака крадёт пароли Google и Microsoft - Pasquale Pillitteri",
-            "final_score": 70.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 15,
-        "raw_items": 286,
-        "source_counts": {
-          "TechCrunch AI": 3,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 4,
-          "CNews": 0,
-          "Euronews": 8
-        },
-        "score_filtered": 277,
-        "quality_filtered": 4,
-        "story_dedup": 0,
-        "candidates": 5,
-        "candidate_rate": 0.0185,
-        "score_buckets": {
-          "0–39": 271,
-          "40–49": 10,
-          "50–59": 4,
-          "60–69": 0,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793523161,
       "status": "OK",
@@ -24399,11 +24222,101 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1793722858,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 11.17,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 18,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/companies/codescoring/news/1103232/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1103232",
+            "image_url": "https://habr.com/share/publication/1103232/583a24b01d4f5774471947115f9d8309/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 9.5,
+          "bonus_total": 57.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 10.0,
+            "bonus": 30.0,
+            "reason": "Необходим немедленный аудит безопасности сред разработки и CI/CD пайплайнов для предотвращения кражи токенов.",
+            "title": "В 42 GitHub-репозитория внедрили код для скрытой публикации вредоносных npm-пакетов",
+            "final_score": 82.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1793721156.0037782,
-  "last_publish_ts": 1793719987.61557,
+  "last_publish_ts": 1793722858.8106096,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
