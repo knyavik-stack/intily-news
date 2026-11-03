@@ -1240,12 +1240,6 @@
     "dc56bbea10f89fc50e5ff1f3056ae1a8fb98a9b2c1c32647c9755bae465b3a08": 1793726451
   },
   "known": {
-    "dc56bbea10f89fc50e5ff1f3056ae1a8fb98a9b2c1c32647c9755bae465b3a08": 1793723563.7233818,
-    "6e35d0b065ee1dcfcf44d0d2853e896e156bc7311868e6441bbd3e5a2c24be7a": 1793723563.7233818,
-    "32630265bcddbf3bd2ffb8c102e9017d86bee795fe89ff78851eaf43d00e705d": 1793723563.7233818,
-    "1c8bd0dd12f8bb7ed7df0fd544d9397fdc6dce3152e99f8cd2b9249b857f13d7": 1793723563.7233818,
-    "24fb3f562ff9a639b9dc2a349301b2b3f27ed9e9945c4393033717f2f3923ae3": 1793723563.7233818,
-    "6fb6ad2baaab5d23e1172b5dec763954d0b1e0dea8b543e8c953f1fabda10d2b": 1793723563.7233818,
     "a1da4977b8c6f20d6dffa93e70b43058f1910b68a93f6710c419f7e6b1a98b90": 1793725959.4378684,
     "9f95c44e690d39eddd5eb14185a8e081729711651556625e55812fb939e63443": 1793725959.4378684,
     "b0abc442a0fb0bbd3627a67c79a452488307e6d3babb484bd7db42bbae8bec8f": 1793725959.4378684,
@@ -1295,10 +1289,10 @@
       "topics": [],
       "audience_score": 10.0,
       "tier": "A",
-      "last_failed_at": 1793728603,
-      "last_failure": "The read operation timed out",
-      "failure_count": 1,
-      "next_retry_at": 1793728903
+      "last_failed_at": 1793729580,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 2,
+      "next_retry_at": 1793730180
     },
     {
       "region": "RUSSIA",
@@ -1338,10 +1332,10 @@
       "audience_score": 8.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1793728603,
-      "last_failure": "The read operation timed out",
-      "failure_count": 1,
-      "next_retry_at": 1793728903
+      "last_failed_at": 1793729580,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 2,
+      "next_retry_at": 1793730180
     },
     {
       "region": "RUSSIA",
@@ -1549,19 +1543,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 44.5,
+        "base_score": 44.0,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 65.5
+        "final_score": 65.0
       },
-      "base_score": 44.5,
+      "base_score": 44.0,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 65.5,
+      "score": 65.0,
       "key": "e7d4794bfa1f2fe7fd53111f2c9be6db5c02a04376fabfc0ea08d0723165b41e",
-      "importance": 65.5,
+      "importance": 65.0,
       "editorial_value": 50.0,
       "topics": [
         "business",
@@ -2003,30 +1997,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793728603.199089,
+    "last_start_ts": 1793729580.8563063,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793728603.199089,
-    "last_success_ts": 1793728603.199089,
+    "last_run_ts": 1793729580.8563063,
+    "last_success_ts": 1793729580.8563063,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793728685.0064418
+      "disabled_until": 1793733201.045026,
+      "reason": "The read operation timed out",
+      "updated_at": 1793729601.045029
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793728600.746653
+      "disabled_until": 1793733204.9210508,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793729604.921053
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793728600.746653
+      "disabled_until": 1793816015.6055975,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1793729615.6055987
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2034,33 +2028,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793728600.746653
+      "disabled_until": 1793733214.573973,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793729614.573975
     }
   },
   "stories": {
-    "05eb0f2a02b2e40f53c08da1ab32642cea29ecab82f8064b6f101bc52560106a": {
-      "time": 1793642703,
-      "title": "LinearB Launches Agentic Studio to Help Engineering Leaders and AI Coding Agents Build Better Software Faster - citybiz",
-      "desc": "LinearB Launches Agentic Studio to Help Engineering Leaders and AI Coding Agents Build Better Software Faster citybiz",
-      "source": "citybiz",
-      "region": "WORLD"
-    },
-    "d07505e2483acc6e517daee0c817da2cefe1cac436b97b39bf8d881ab83d4318": {
-      "time": 1793642928,
-      "title": "The New York Times and other publications sue Brave web browser for AI scraping and bypassing paywalls",
-      "desc": "The New York Times and a group of other publications have filed lawsuits against the company that makes the Brave web browser over alleged unlawful scraping to train AI and also letting users bypass their paywalls, as reported by Reuters. According to a complaint filed by the companies that run New York Daily News, the […]",
-      "source": "The Verge AI",
-      "region": "WORLD"
-    },
-    "688706a440dc5628a33ae5a489cf1e0297f3c680ff3f7063324350fa0c01415a": {
-      "time": 1793643160,
-      "title": "The Week Ahead in AI: Upcoming Earnings Including Apple, AMD, Qualcomm, Plus Apple Intelligence Launches in China & Meta, Fourier Team for Research Humanoid - AI Insider",
-      "desc": "The Week Ahead in AI: Upcoming Earnings Including Apple, AMD, Qualcomm, Plus Apple Intelligence Launches in China & Meta, Fourier Team for Research Humanoid AI Insider",
-      "source": "AI Insider",
-      "region": "WORLD"
-    },
     "ca65e8e8cd1db07a879bdedfd7d211ea2e0d4f79f8ac87f10ddecabb6f064ed7": {
       "time": 1793643406,
       "title": "HCLTech launches AI agents to automate enterprise mainframe operations - ET CIO",
@@ -2365,136 +2338,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793529885,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 33.75,
-      "candidates": 6,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 6,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 6,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Появление более мощных автономных агентов требует пересмотра стека инструментов для автоматизации бизнес-процессов.",
-            "title": "DeepSeek Unveils Super-Agent To Gain Edge Over Anthropic - BW Businessworld",
-            "final_score": 68.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 19,
-        "raw_items": 365,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 8,
-          "CNews": 0,
-          "Euronews": 11
-        },
-        "score_filtered": 350,
-        "quality_filtered": 9,
-        "story_dedup": 0,
-        "candidates": 6,
-        "candidate_rate": 0.0173,
-        "score_buckets": {
-          "0–39": 338,
-          "40–49": 21,
-          "50–59": 5,
-          "60–69": 0,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793530364,
       "status": "OK",
@@ -24191,6 +24034,83 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1793729580,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 34.96,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
