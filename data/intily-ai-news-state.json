@@ -1592,30 +1592,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793797721.4915814,
+    "last_start_ts": 1793798004.387458,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793797721.4915814,
-    "last_success_ts": 1793797721.4915814,
-    "last_candidates": 16,
-    "last_published": 1,
+    "last_run_ts": 1793798004.387458,
+    "last_success_ts": 1793798004.387458,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 9
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793801356.944176,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1793797756.9441783
+      "disabled_until": 1793801578.2714224,
+      "reason": "The read operation timed out",
+      "updated_at": 1793797978.271425
     },
     "GROQ": {
-      "disabled_until": 1793801360.8819199,
+      "disabled_until": 1793801582.435143,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793797760.8819218
+      "updated_at": 1793797982.4351447
     },
     "OPENAI": {
-      "disabled_until": 1793884169.8560264,
+      "disabled_until": 1793884404.3510466,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793797769.856028
+      "updated_at": 1793798004.3510482
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1623,19 +1623,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793801368.8379672,
+      "disabled_until": 1793801603.8823032,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793797768.837969
+      "updated_at": 1793798003.8823056
     }
   },
   "stories": {
-    "6b7cfb601e1b1e1291d63a5d9885d906d4539e8423c68d5a1e111bab44090c26": {
-      "time": 1793711326,
-      "title": "Marvell покупает производителя оптических компонентов Lumentum за $115 млрд",
-      "desc": "Американская полупроводниковая компания Marvell Technology приобретает производителя оптических компонентов Lumentum за $115 млрд, что станет одним из крупнейших поглощений в технологической отрасли, пишет Reuters. Сделка объединит две компании, поддерживаемые Nvidia. Слияние должно помочь Marvell активнее конкурировать с Broadcom за инвестиции в сферу искусственного интеллекта. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "6ee52c4cd344a928d3d03f214ca47f9becaf3ea0070596b9c56c7a8f4070263a": {
       "time": 1793713246,
       "title": "Imperial robotics AI spinout Machenta breaks seed funding record raising £40 million - FelixOnline",
@@ -1919,96 +1912,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793598526,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 6.74,
-      "candidates": 0,
-      "queue_before": 2,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.techbusinessnews.com.au/news/ai-governance-risks-prompt-call-for-urgent-australian-law-reform/",
-            "image_url": "https://www.techbusinessnews.com.au/wp-content/uploads/2026/11/09e2fd73-feb3-4b2d-875e-b4be5beb6825.jpg",
-            "width": 1200,
-            "height": 800,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость подготовки к будущим комплаенс-рискам и юридической ответственности за работу ИИ-систем.",
-            "title": "AI Governance Risks Prompt Call for Urgent Australian Law Reform - Tech Business News",
-            "final_score": 63.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793599005,
       "status": "OK",
@@ -22281,6 +22184,78 @@
         "GEMINI": {
           "blocked": true,
           "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1793798004,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 46.25,
+      "candidates": 0,
+      "queue_before": 9,
+      "queue_after": 9,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
         },
         "GROQ": {
           "blocked": true,
