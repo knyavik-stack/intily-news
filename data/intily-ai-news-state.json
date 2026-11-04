@@ -1,6 +1,5 @@
 {
   "published": {
-    "6fb6bd8b238215351e79e2645c7c751f772164708d227018e593fd02c23ca3e3": 1791224927,
     "e43eab2957b66801414466332bc6b2b58eeeb6796bf0fd38b73d54e3d1e5f00d": 1791227351,
     "5c14ca034b508cac5ff4c6618351bac039111d79a0d7cd09ba6105205340842a": 1791263574,
     "cf3589eba1f1a2aa3b593fcee6436d90b4b090654030e0fb3ed0466f1729874d": 1791264780,
@@ -1237,7 +1236,6 @@
     "d11ea452341689e149f6effd9425264d43d365aa7f6a212fa7e818e3769c0486": 1793812361
   },
   "known": {
-    "6badf7b1335a300e3aed0e3fbdb288d520a8f64ad0ef1be29066a8104bb378eb": 1793811404.34929,
     "f12bd277ea780a735a670d418daf8f2af16b4d448665099d33979f34a630c96f": 1793813553.6693275
   },
   "queue": [
@@ -1621,30 +1619,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793816476.9892488,
+    "last_start_ts": 1793816940.5937397,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793816476.9892488,
-    "last_success_ts": 1793816476.9892488,
-    "last_candidates": 17,
+    "last_run_ts": 1793816940.5937397,
+    "last_success_ts": 1793816940.5937397,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 10
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793820064.614905,
-      "reason": "The read operation timed out",
-      "updated_at": 1793816464.6149077
+      "disabled_until": 1793820523.821903,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1793816923.821905
     },
     "GROQ": {
-      "disabled_until": 1793820067.9459689,
+      "disabled_until": 1793820527.2696862,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793816467.9459708
+      "updated_at": 1793816927.2696888
     },
     "OPENAI": {
-      "disabled_until": 1793902876.9536927,
+      "disabled_until": 1793903340.5472462,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793816476.953694
+      "updated_at": 1793816940.547248
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1652,9 +1650,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793820075.9877396,
+      "disabled_until": 1793820539.7394125,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793816475.9877412
+      "updated_at": 1793816939.7394145
     }
   },
   "stories": {
@@ -1941,96 +1939,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793615573,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 12.41,
-      "candidates": 0,
-      "queue_before": 3,
-      "queue_after": 2,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://habr.com/ru/news/1102630/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1102630",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.33,
-          "bonus_total": 66.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра стратегии автоматизации бэк-офиса и подготовки к юридической конкуренции с автономными агентами.",
-            "title": "В Делавэре ИИ‑агентам разрешат создавать и управлять компаниями",
-            "final_score": 68.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793615807,
       "status": "OK",
@@ -21433,6 +21341,78 @@
         "GEMINI": {
           "blocked": true,
           "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1793816940,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 18.56,
+      "candidates": 0,
+      "queue_before": 10,
+      "queue_after": 10,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
         },
         "GROQ": {
           "blocked": true,
