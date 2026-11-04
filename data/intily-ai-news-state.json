@@ -1239,7 +1239,8 @@
     "a1da4977b8c6f20d6dffa93e70b43058f1910b68a93f6710c419f7e6b1a98b90": 1793735336,
     "27bb107d0ba1095d13e40d87733eeda5fe3d1e51e62cd0ca7c8bbf2ef3eb4469": 1793735596,
     "b0abc442a0fb0bbd3627a67c79a452488307e6d3babb484bd7db42bbae8bec8f": 1793735832,
-    "416451ff0e386edde02ffb22f9ed9bd09ba8f20e4132b2659b081d0796c9cf7f": 1793768676
+    "416451ff0e386edde02ffb22f9ed9bd09ba8f20e4132b2659b081d0796c9cf7f": 1793768676,
+    "e238e9f5eafee93a283c964be25324369f4b9e55977686acc22e5bb463e30d5a": 1793769405
   },
   "known": {
     "416451ff0e386edde02ffb22f9ed9bd09ba8f20e4132b2659b081d0796c9cf7f": 1793768676.6349227,
@@ -1306,60 +1307,23 @@
         "freshness": 0.5,
         "low_signal_penalty": 0.0,
         "base_score": 42.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 42.0
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 63.0
       },
       "base_score": 42.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 42.0,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 63.0,
       "key": "3f4616efbc76d156264e06ae02f64784f9bd9112fa4ba12dcf21a39fee32efe1",
-      "importance": 42.0,
+      "importance": 63.0,
       "editorial_value": 50.0,
       "topics": [
         "agents",
         "applications"
       ],
-      "audience_score": null,
+      "audience_score": 7.0,
       "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Wells Fargo представил правила для ИИ-агентов, риск ложится на клиента - Pasquale Pillitteri",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4zS05Ob0dhbEdabDBDU3lKVzJhUFN4c25CSC1TSUdhU0VxQkRDcmxrR1FVVURqSGdHVXExN2ktNlN3aUNwcy1LdjMzM1VzejJBbFRIYWwxSEtfcnBKeGw3UjdDZzZ3VkwzbzNpQm12UU82R1VaTUxGQ19DRGQyN0U?oc=5",
-      "desc": "Wells Fargo представил правила для ИИ-агентов, риск ложится на клиента Pasquale Pillitteri",
-      "source": "Pasquale Pillitteri",
-      "time": 1793737009.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 10.0,
-        "event_concreteness": 11.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 42.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 42.0
-      },
-      "base_score": 42.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 42.0,
-      "key": "e238e9f5eafee93a283c964be25324369f4b9e55977686acc22e5bb463e30d5a",
-      "importance": 42.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
     },
     {
       "region": "WORLD",
@@ -1436,30 +1400,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793768932.1767404,
+    "last_start_ts": 1793769405.8763182,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793768932.1767404,
-    "last_success_ts": 1793768932.1767404,
+    "last_run_ts": 1793769405.8763182,
+    "last_success_ts": 1793769405.8763182,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 5
+    "last_published": 1,
+    "queue_size": 4
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793772525.0829067,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1793768925.0829093
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793769405.8655734
     },
     "GROQ": {
-      "disabled_until": 1793772528.8000448,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793768928.8000472
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793769398.4154825
     },
     "OPENAI": {
-      "disabled_until": 1793855332.1685147,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793768932.168517
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793769398.4154825
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1467,19 +1431,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793772531.1468594,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793768931.1468613
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793769398.4154825
     }
   },
   "stories": {
-    "ec615071436a61958d0ddd68e3a3cd28139227320b38ff1e5c0847396fc57697": {
-      "time": 1793682535,
-      "title": "Выпуск обновления FreeRDP 3.33",
-      "desc": "2 ноября 2026 года состоялся выпуск открытого проекта FreeRDP 3.33, включающий ​​поддержку Emscripten и WebAssembly (WASM), а также усиление мер безопасности в проекте из‑за распространения ИИ. Это реализация протокола удалённого рабочего стола Microsoft (Remote Desktop Protocol — RDP), опубликованная на GitHub под лицензией Apache License 2.0. Исходный код проекта написан на С и С++. Разработка решения ведётся более 15 лет. Стабильная версия FreeRDP 3.20 вышла в декабре 2025 года. Предыдущую версию решения представили в сентябре 2026 года. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "c3fbd22af3fbf6ff07babf9d9b3dcea562b85ec403c6766012ad166aa3ac697e": {
       "time": 1793683740,
       "title": "Google Launches Gemini 4 Carbon, Early Access for Cybersecurity Pros - RS Web Solutions",
@@ -1766,11 +1723,17 @@
       "desc": "PMDA представило принципы применения ИИ при разработке и регулировании лекарственных препаратов ФАРМПРОМ",
       "source": "ФАРМПРОМ",
       "region": "RUSSIA"
+    },
+    "e238e9f5eafee93a283c964be25324369f4b9e55977686acc22e5bb463e30d5a": {
+      "time": 1793769405,
+      "title": "Wells Fargo представил правила для ИИ-агентов, риск ложится на клиента - Pasquale Pillitteri",
+      "desc": "Wells Fargo представил правила для ИИ-агентов, риск ложится на клиента Pasquale Pillitteri",
+      "source": "Pasquale Pillitteri",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1788,135 +1751,10 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793534445,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 54.53,
-      "candidates": 9,
-      "queue_before": 0,
-      "queue_after": 1,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 7,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 1,
-        "candidate_count": 9,
-        "admission_rate": 11.11,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 28,
-        "raw_items": 556,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 15,
-          "CNews": 0,
-          "Euronews": 13
-        },
-        "score_filtered": 537,
-        "quality_filtered": 8,
-        "story_dedup": 2,
-        "candidates": 9,
-        "candidate_rate": 0.017,
-        "score_buckets": {
-          "0–39": 513,
-          "40–49": 32,
-          "50–59": 10,
-          "60–69": 0,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 4,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793534957,
       "status": "OK",
@@ -23306,11 +23144,99 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1793769405,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 8.64,
+      "candidates": 0,
+      "queue_before": 5,
+      "queue_after": 4,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "Remote end closed connection without response": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "Remote end closed connection without response"
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Необходимость пересмотра юридических рисков и условий использования ИИ-агентов в финансовых операциях.",
+            "title": "Wells Fargo представил правила для ИИ-агентов, риск ложится на клиента - Pasquale Pillitteri",
+            "final_score": 69.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1793768676.6349227,
-  "last_publish_ts": 1793768676.6349227,
+  "last_publish_ts": 1793769405.8763182,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
