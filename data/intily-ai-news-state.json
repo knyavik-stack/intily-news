@@ -1622,30 +1622,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793814775.7173681,
+    "last_start_ts": 1793815015.612888,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793814775.7173681,
-    "last_success_ts": 1793814775.7173681,
+    "last_run_ts": 1793815015.612888,
+    "last_success_ts": 1793815015.612888,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 10
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793818362.8931663,
+      "disabled_until": 1793818603.4094782,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1793814762.8931687
+      "updated_at": 1793815003.40948
     },
     "GROQ": {
-      "disabled_until": 1793818364.9819968,
+      "disabled_until": 1793818606.808246,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793814764.9819992
+      "updated_at": 1793815006.808248
     },
     "OPENAI": {
-      "disabled_until": 1793901175.6771767,
+      "disabled_until": 1793901415.571571,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793814775.6771784
+      "updated_at": 1793815015.5715735
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1653,9 +1653,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793818374.6986759,
+      "disabled_until": 1793818614.533512,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793814774.6986783
+      "updated_at": 1793815014.5335143
     }
   },
   "stories": {
@@ -1942,94 +1942,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793613415,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 14.36,
-      "candidates": 0,
-      "queue_before": 2,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 10.0,
-          "bonus_total": 30.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Необходимость пересмотра юнит-экономики продуктов, зависящих от API OpenAI, из-за вероятного роста цен.",
-            "title": "OpenAI сократила план привлечения до $20 миллиардов на фоне скепсиса инвесторов - prospect.com.ru",
-            "final_score": 71.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793614390,
       "status": "OK",
@@ -21432,6 +21344,78 @@
       "business_reason": "no_eligible_item",
       "searched": false,
       "duration_sec": 17.55,
+      "candidates": 0,
+      "queue_before": 10,
+      "queue_after": 10,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1793815015,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 13.51,
       "candidates": 0,
       "queue_before": 10,
       "queue_after": 10,
