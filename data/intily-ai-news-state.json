@@ -1622,30 +1622,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793815015.612888,
+    "last_start_ts": 1793815253.2047837,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793815015.612888,
-    "last_success_ts": 1793815015.612888,
+    "last_run_ts": 1793815253.2047837,
+    "last_success_ts": 1793815253.2047837,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 10
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793818603.4094782,
+      "disabled_until": 1793818839.3029513,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1793815003.40948
+      "updated_at": 1793815239.3029537
     },
     "GROQ": {
-      "disabled_until": 1793818606.808246,
+      "disabled_until": 1793818844.3086858,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793815006.808248
+      "updated_at": 1793815244.308688
     },
     "OPENAI": {
-      "disabled_until": 1793901415.571571,
+      "disabled_until": 1793901653.1586199,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793815015.5715735
+      "updated_at": 1793815253.1586218
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1653,9 +1653,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793818614.533512,
+      "disabled_until": 1793818852.5019403,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793815014.5335143
+      "updated_at": 1793815252.501942
     }
   },
   "stories": {
@@ -1942,147 +1942,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793614390,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 48.46,
-      "candidates": 15,
-      "queue_before": 1,
-      "queue_after": 4,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 8,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 4,
-        "candidate_count": 15,
-        "admission_rate": 26.67,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://abn.agency/2026/11/02/eksperty-oczenili-deficzit-investiczij-v-tehnologicheskie-kompanii-na-fone-zapuska-fondov-na-17-mlrd-rublej/",
-            "image_url": "https://abn.agency/wp-content/uploads/2026/07/59129_baltphoto_darya_ivanova-2-scaled.jpg",
-            "width": 2560,
-            "height": 1707,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.0,
-          "bonus_total": 72.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость пересмотра финансового планирования и стратегии привлечения капитала в условиях ограниченного рынка.",
-            "title": "Эксперты оценили дефицит инвестиций в технологические компании на фоне запуска фондов на 17 млрд рублей - Агентство Бизнес Новостей",
-            "final_score": 65.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 53,
-        "raw_items": 641,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 22,
-          "CNews": 0,
-          "Euronews": 31
-        },
-        "score_filtered": 613,
-        "quality_filtered": 12,
-        "story_dedup": 1,
-        "candidates": 15,
-        "candidate_rate": 0.0255,
-        "score_buckets": {
-          "0–39": 576,
-          "40–49": 49,
-          "50–59": 15,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 1,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793615330,
       "status": "OK",
@@ -21416,6 +21275,78 @@
       "business_reason": "no_eligible_item",
       "searched": false,
       "duration_sec": 13.51,
+      "candidates": 0,
+      "queue_before": 10,
+      "queue_after": 10,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1793815253,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 14.69,
       "candidates": 0,
       "queue_before": 10,
       "queue_after": 10,
