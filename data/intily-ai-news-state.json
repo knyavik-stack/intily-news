@@ -1,6 +1,5 @@
 {
   "published": {
-    "00bddb1f789e49f2b590bed709acefcdc17f585bbd8bc07ac01666c028221319": 1791184139,
     "72e710b06e127bf7d1e5ac6547585bfb399b76b2eeeb0eb4fd9f9377b836936f": 1791184610,
     "902c807b66dde03f36eac6e6df59f8baee0a166d067a2b6a548cfeea5bac047d": 1791185330,
     "c5325d88471caa9ae791bd20e580a50622fff7af9dcc0e26a5c6d3a8c83b9fe2": 1791186778,
@@ -1410,21 +1409,21 @@
         "freshness": 0.5,
         "low_signal_penalty": 0.0,
         "base_score": 40.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 40.5
+        "audience_score": 5.0,
+        "audience_bonus": 15.0,
+        "final_score": 55.5
       },
       "base_score": 40.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 40.5,
+      "audience_bonus": 15.0,
+      "score_stage": "final",
+      "score": 55.5,
       "key": "ccad6e39073948fc391adf0ab10c83ee6e7c94cdd3917c2f9a92b787dc0245fb",
-      "importance": 40.5,
-      "editorial_value": 46.5,
+      "importance": 55.5,
+      "editorial_value": 50.0,
       "topics": [
         "agents"
       ],
-      "audience_score": null,
+      "audience_score": 5.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
     },
@@ -1466,30 +1465,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793775465.344415,
+    "last_start_ts": 1793776161.6614673,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793775465.344415,
-    "last_success_ts": 1793775465.344415,
-    "last_candidates": 0,
+    "last_run_ts": 1793776161.6614673,
+    "last_success_ts": 1793776161.6614673,
+    "last_candidates": 9,
     "last_published": 0,
     "queue_size": 6
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793779019.1597834,
+      "disabled_until": 1793779738.4590752,
       "reason": "The read operation timed out",
-      "updated_at": 1793775419.1597867
+      "updated_at": 1793776138.4590778
     },
     "GROQ": {
-      "disabled_until": 1793779022.622454,
+      "disabled_until": 1793779742.1826103,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793775422.622456
+      "updated_at": 1793776142.1826124
     },
     "OPENAI": {
-      "disabled_until": 1793861865.3307157,
+      "disabled_until": 1793862561.647595,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793775465.3307178
+      "updated_at": 1793776161.6475968
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1497,9 +1496,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793779064.411819,
+      "disabled_until": 1793779760.833872,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793775464.4118211
+      "updated_at": 1793776160.833874
     }
   },
   "stories": {
@@ -1779,146 +1778,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793538046,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 39.58,
-      "candidates": 11,
-      "queue_before": 1,
-      "queue_after": 3,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 6,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 3,
-        "candidate_count": 11,
-        "admission_rate": 27.27,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 400: Bad Request": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 400: Bad Request"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.5,
-          "bonus_total": 51.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Необходимость пересмотра бизнес-моделей и стратегий привлечения капитала в условиях охлаждения рынка ИИ-инвестиций.",
-            "title": "OpenAI Cuts Funding Target to USD 20 Billion Amid AI Concerns - Analytics Insight",
-            "final_score": 76.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 33,
-        "raw_items": 629,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 17,
-          "CNews": 0,
-          "Euronews": 16
-        },
-        "score_filtered": 605,
-        "quality_filtered": 11,
-        "story_dedup": 2,
-        "candidates": 11,
-        "candidate_rate": 0.0185,
-        "score_buckets": {
-          "0–39": 579,
-          "40–49": 37,
-          "50–59": 12,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793538299,
       "status": "OK",
@@ -23249,10 +23108,137 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1793776161,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 69.16,
+      "candidates": 9,
+      "queue_before": 6,
+      "queue_after": 6,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 3,
+        "known_recent": 0,
+        "already_queued": 5,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 9,
+        "admission_rate": 0.0,
+        "dominant_block": "already_queued",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 5.0,
+          "bonus_total": 15.0,
+          "max_score": 5.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 5.0,
+            "bonus": 15.0,
+            "reason": "Информационный повод без цифр; прямое влияние на решения отсутствует, полезно только для мониторинга динамики площадки.",
+            "title": "«Яндекс» увеличил количество продавцов-партнеров в сервисах агентной и электронной коммерции - prospect.com.ru",
+            "final_score": 55.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 35,
+        "raw_items": 412,
+        "source_counts": {
+          "TechCrunch AI": 5,
+          "VentureBeat AI": -1,
+          "The Verge AI": 4,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 6,
+          "CNews": 0,
+          "Euronews": 18
+        },
+        "score_filtered": 385,
+        "quality_filtered": 16,
+        "story_dedup": 2,
+        "candidates": 9,
+        "candidate_rate": 0.0239,
+        "score_buckets": {
+          "0–39": 357,
+          "40–49": 43,
+          "50–59": 12,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 3,
+          "8": 1,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793773732.4061916,
+  "last_search_ts": 1793776161.6614673,
   "last_publish_ts": 1793773732.4061916,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
