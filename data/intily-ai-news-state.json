@@ -1274,7 +1274,11 @@
         "applications"
       ],
       "audience_score": 7.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1793778757,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1793779057
     },
     {
       "region": "WORLD",
@@ -1308,7 +1312,11 @@
       "editorial_value": 50.0,
       "topics": [],
       "audience_score": 7.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1793778757,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1793779057
     },
     {
       "region": "RUSSIA",
@@ -1349,30 +1357,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793778517.6246996,
+    "last_start_ts": 1793778757.1954772,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793778517.6246996,
-    "last_success_ts": 1793778517.6246996,
+    "last_run_ts": 1793778757.1954772,
+    "last_success_ts": 1793778757.1954772,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 3
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793778523.2767885
+      "disabled_until": 1793782377.2864254,
+      "reason": "The read operation timed out",
+      "updated_at": 1793778777.2864287
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793778283.837596
+      "disabled_until": 1793782380.5225794,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793778780.522582
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793778283.837596
+      "disabled_until": 1793865196.749914,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1793778796.7499151
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1380,9 +1388,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793778283.837596
+      "disabled_until": 1793782395.9708803,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793778795.9708815
     }
   },
   "stories": {
@@ -1669,136 +1677,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793540445,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 36.44,
-      "candidates": 11,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 9,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 0,
-        "candidate_count": 11,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.5,
-          "bonus_total": 51.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Необходимость пересмотра стратегии монетизации и оценки рисков в условиях охлаждения инвестиционного рынка ИИ.",
-            "title": "OpenAI Cuts Funding Target to USD 20 Billion Amid AI Concerns - Analytics Insight",
-            "final_score": 76.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 36,
-        "raw_items": 638,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 18,
-          "CNews": 0,
-          "Euronews": 18
-        },
-        "score_filtered": 613,
-        "quality_filtered": 12,
-        "story_dedup": 2,
-        "candidates": 11,
-        "candidate_rate": 0.0183,
-        "score_buckets": {
-          "0–39": 591,
-          "40–49": 34,
-          "50–59": 12,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793541165,
       "status": "OK",
@@ -23070,6 +22948,83 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1793778757,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 39.57,
+      "candidates": 0,
+      "queue_before": 3,
+      "queue_after": 3,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
