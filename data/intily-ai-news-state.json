@@ -1,7 +1,5 @@
 {
   "published": {
-    "72e710b06e127bf7d1e5ac6547585bfb399b76b2eeeb0eb4fd9f9377b836936f": 1791184610,
-    "902c807b66dde03f36eac6e6df59f8baee0a166d067a2b6a548cfeea5bac047d": 1791185330,
     "c5325d88471caa9ae791bd20e580a50622fff7af9dcc0e26a5c6d3a8c83b9fe2": 1791186778,
     "29bc50ac27790cfe61be36bfe7fa6e9570dff8fe26f43ca9f34210b2a43e5b0c": 1791187743,
     "52effc38f1bb7ffc237d13df09be5a5ec7c5df29caa8bf4057ff42bbcbdacc56": 1791189893,
@@ -1275,10 +1273,10 @@
       ],
       "audience_score": 7.0,
       "tier": "A",
-      "last_failed_at": 1793773732,
+      "last_failed_at": 1793777554,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1793774032
+      "failure_count": 2,
+      "next_retry_at": 1793778154
     },
     {
       "region": "WORLD",
@@ -1314,7 +1312,11 @@
         "chips"
       ],
       "audience_score": 8.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1793777554,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1793777854
     },
     {
       "region": "WORLD",
@@ -1426,30 +1428,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793776599.6899023,
+    "last_start_ts": 1793777554.0498202,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793776599.6899023,
-    "last_success_ts": 1793776599.6899023,
+    "last_run_ts": 1793777554.0498202,
+    "last_success_ts": 1793777554.0498202,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 5
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793776599.6769514
+      "disabled_until": 1793781174.1456554,
+      "reason": "The read operation timed out",
+      "updated_at": 1793777574.145658
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793776597.8787901
+      "disabled_until": 1793781177.2794166,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793777577.2794185
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793776597.8787901
+      "disabled_until": 1793863986.9238734,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1793777586.923875
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1457,26 +1459,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793776597.8787901
+      "disabled_until": 1793781186.0118084,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793777586.0118103
     }
   },
   "stories": {
-    "0d2f61ad401aa087f607b7a4a8451a0d9b27d71939a4bd210c41392ea83feb10": {
-      "time": 1793690200,
-      "title": "The AI optical interconnect sector witnesses an epic consolidation! The $115 billion super-merger receives endorsement from NVIDIA (NVDA.US) CEO Jensen Huang. - 富途牛牛",
-      "desc": "The AI optical interconnect sector witnesses an epic consolidation! The $115 billion super-merger receives endorsement from NVIDIA (NVDA.US) CEO Jensen Huang. 富途牛牛",
-      "source": "富途牛牛",
-      "region": "WORLD"
-    },
-    "bd21345b8a5446cf8dd40695ca74d3abc08ccc5c87e771f896a424ad7ab18374": {
-      "time": 1793690471,
-      "title": "В Британии спрогнозировали применение ИИ для атак на больницы и аэропорты - РБК",
-      "desc": "В Британии спрогнозировали применение ИИ для атак на больницы и аэропорты РБК",
-      "source": "РБК",
-      "region": "RUSSIA"
-    },
     "0b4038966b25b38ac4d07d99c8bd841b348a091826640d2eac655ff46a399da0": {
       "time": 1793693806,
       "title": "Anthropic’s $895.4 billion commitment to compute infrastructure expansion - KuCoin",
@@ -1746,96 +1734,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793539005,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 15.21,
-      "candidates": 0,
-      "queue_before": 2,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://progorod59.ru/ne-u-nas/view/deepseek-predstavila-avtonomnogo-ii-agenta-super-agent-dla-programmistov",
-            "image_url": "https://progorod59.ru/userfiles/t/1b2402177077dc4e2ca0f38f1548b93e.png",
-            "width": 800,
-            "height": 400,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Автономные агенты радикально меняют пайплайны разработки и требуют пересмотра процессов найма и продуктивности.",
-            "title": "DeepSeek представила автономного ИИ-агента Super-Agent для программистов - Про Город Пермь",
-            "final_score": 67.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793539242,
       "status": "OK",
@@ -23201,6 +23099,83 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1793777554,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 32.89,
+      "candidates": 0,
+      "queue_before": 5,
+      "queue_after": 5,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
