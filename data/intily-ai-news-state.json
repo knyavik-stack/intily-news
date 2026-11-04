@@ -1,6 +1,5 @@
 {
   "published": {
-    "6b1b0e1300a7c31e3b42663bf41389a65e62aca0a47882f60fad473949e3a146": 1791212699,
     "d109c814c2bcc948f74a20569e6e8e4b9913c28cec9229abeba7d38b6b287741": 1791214934,
     "96fcdf63ea6628865074d3b56e51e1ae97fba6b4a736d3d49fc9d31dd97a2d8d": 1791216777,
     "024e42c5335c8653f7bb345cef3c9dafaec666e027ec144ab0deb32e95b3d785": 1791220613,
@@ -1295,19 +1294,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 45.5,
+        "base_score": 45.0,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 66.5
+        "final_score": 66.0
       },
-      "base_score": 45.5,
+      "base_score": 45.0,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 66.5,
+      "score": 66.0,
       "key": "a1ac7b4b56e94612b9a7ad5412465c8e7ece9d04b4e5a620f725eb8acc0dbeca",
-      "importance": 66.5,
+      "importance": 66.0,
       "editorial_value": 50.0,
       "topics": [
         "chips"
@@ -1331,19 +1330,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 2.0,
-        "freshness": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 42.0,
+        "base_score": 41.5,
         "audience_score": 8.0,
         "audience_bonus": 24.0,
-        "final_score": 66.0
+        "final_score": 65.5
       },
-      "base_score": 42.0,
+      "base_score": 41.5,
       "audience_bonus": 24.0,
       "score_stage": "final",
-      "score": 66.0,
+      "score": 65.5,
       "key": "d9820397509055174dc513c2532e762048b4ad6d97ef89d66a6b83b59c2d503a",
-      "importance": 66.0,
+      "importance": 65.5,
       "editorial_value": 50.0,
       "topics": [],
       "audience_score": 8.0,
@@ -1685,30 +1684,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793804493.4444892,
+    "last_start_ts": 1793805425.4530663,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793804493.4444892,
-    "last_success_ts": 1793804493.4444892,
+    "last_run_ts": 1793805425.4530663,
+    "last_success_ts": 1793805425.4530663,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 12
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793808058.1194925,
-      "reason": "The read operation timed out",
-      "updated_at": 1793804458.1194954
+      "disabled_until": 1793809004.0547664,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1793805404.054768
     },
     "GROQ": {
-      "disabled_until": 1793808063.6843348,
+      "disabled_until": 1793809007.994822,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793804463.6843367
+      "updated_at": 1793805407.994825
     },
     "OPENAI": {
-      "disabled_until": 1793890893.3684044,
+      "disabled_until": 1793891825.3788638,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793804493.3684068
+      "updated_at": 1793805425.3788662
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1716,9 +1715,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793808092.4535935,
+      "disabled_until": 1793809024.2599864,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793804492.4535954
+      "updated_at": 1793805424.259988
     }
   },
   "stories": {
@@ -1984,140 +1983,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793602600,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": true,
-      "duration_sec": 87.45,
-      "candidates": 7,
-      "queue_before": 0,
-      "queue_after": 1,
-      "published": 0,
-      "publish_attempts": 1,
-      "item_failures": 1,
-      "admission": {
-        "published_key": 6,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 1,
-        "candidate_count": 7,
-        "admission_rate": 14.29,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Снижение операционных рисков и затрат на комплаенс через автоматизацию контроля безопасности.",
-            "title": "“AI Cross-Checks Risk Assessments Against Regulations” ... Pattern&N Expands Market With Industrial Safety AI Agent - 코리아스타트업포스트",
-            "final_score": 68.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 20,
-        "raw_items": 458,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 9,
-          "CNews": 0,
-          "Euronews": 9
-        },
-        "score_filtered": 444,
-        "quality_filtered": 6,
-        "story_dedup": 1,
-        "candidates": 7,
-        "candidate_rate": 0.016,
-        "score_buckets": {
-          "0–39": 425,
-          "40–49": 25,
-          "50–59": 7,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 4,
-        "blocked": 4,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793603083,
       "status": "OK",
@@ -22079,6 +21944,78 @@
         "GEMINI": {
           "blocked": true,
           "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1793805425,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 23.83,
+      "candidates": 0,
+      "queue_before": 12,
+      "queue_after": 12,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
         },
         "GROQ": {
           "blocked": true,
