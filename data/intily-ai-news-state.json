@@ -1,6 +1,5 @@
 {
   "published": {
-    "024e42c5335c8653f7bb345cef3c9dafaec666e027ec144ab0deb32e95b3d785": 1791220613,
     "2e3668ce9cdedf0217d5949029cceac4d0c1343fe264a79cec8e2fd877ef62b7": 1791222056,
     "20004aca0b9b7f6e93d98eae25485001f2e9e863905499fad63f3dfcedc02aaa": 1791223738,
     "6fb6bd8b238215351e79e2645c7c751f772164708d227018e593fd02c23ca3e3": 1791224927,
@@ -1240,9 +1239,6 @@
     "d11ea452341689e149f6effd9425264d43d365aa7f6a212fa7e818e3769c0486": 1793812361
   },
   "known": {
-    "2b48888a776e995d7df95b80435e796fe768a47e618f5bb64b378c15feabd54a": 1793807353.5192635,
-    "ef26700994fcfc0739d306861e99aa4377b472062ba0db51f30ea6d6a7f44e7b": 1793807353.5192635,
-    "8d89338e9e9f9d319c57b4930cb60655c3faa20cc8294dab3edd6e7bf1d854fa": 1793807353.5192635,
     "6badf7b1335a300e3aed0e3fbdb288d520a8f64ad0ef1be29066a8104bb378eb": 1793811404.34929
   },
   "queue": [
@@ -1280,7 +1276,11 @@
         "chips"
       ],
       "audience_score": 7.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1793813078,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1793813378
     },
     {
       "region": "RUSSIA",
@@ -1315,7 +1315,11 @@
       "topics": [],
       "audience_score": 8.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1793813078,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1793813378
     },
     {
       "region": "WORLD",
@@ -1449,19 +1453,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 48.0,
+        "base_score": 47.5,
         "audience_score": 5.0,
         "audience_bonus": 15.0,
-        "final_score": 63.0
+        "final_score": 62.5
       },
-      "base_score": 48.0,
+      "base_score": 47.5,
       "audience_bonus": 15.0,
       "score_stage": "final",
-      "score": 63.0,
+      "score": 62.5,
       "key": "9e69fc93834c57b743cf095e1be74415e0b60902645b0705f5a612d1fbe2484c",
-      "importance": 63.0,
+      "importance": 62.5,
       "editorial_value": 50.0,
       "topics": [
         "business"
@@ -1580,30 +1584,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793812361.211173,
+    "last_start_ts": 1793813078.2959192,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793812361.211173,
-    "last_success_ts": 1793812361.211173,
+    "last_run_ts": 1793813078.2959192,
+    "last_success_ts": 1793813078.2959192,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 9
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793812363.0537515
+      "disabled_until": 1793816698.3775327,
+      "reason": "The read operation timed out",
+      "updated_at": 1793813098.3775356
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793812116.1974428
+      "disabled_until": 1793816700.7673123,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793813100.7673142
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793812116.1974428
+      "disabled_until": 1793899513.201496,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1793813113.2014973
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1611,19 +1615,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793812116.1974428
+      "disabled_until": 1793816711.9168384,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793813111.9168408
     }
   },
   "stories": {
-    "dc56bbea10f89fc50e5ff1f3056ae1a8fb98a9b2c1c32647c9755bae465b3a08": {
-      "time": 1793726451,
-      "title": "Российский программист в одиночку создал «убийцу» успешных кибератак. Хакер даже не узнает, что украл",
-      "desc": "Российский разработчик Дмитрий Савченко запатентовал программный комплекс Hybra Mirage. Он призван спасать данные россиян от накрывших мир массовых атак ИИ-агентов. Когда агенты уже пробили все защиты, российское решение «растворит» данные переписок или банковских счетов на миллиарды измененных копий, каждая из которых будет выглядеть для нейросетей как верный вариант. Аналогичным образом решение позволит спасать информацию при потере доступа к устройствам. Эксперты считают, у архитектурной идеи «эпистемологической ловушки», реализованной в ИТ-решении, нет мировых аналогов и оно устойчиво даже к схеме «собери сейчас, расшифруй потом».",
-      "source": "CNews",
-      "region": "RUSSIA"
-    },
     "9f95c44e690d39eddd5eb14185a8e081729711651556625e55812fb939e63443": {
       "time": 1793730783,
       "title": "OpenAI Cuts Funding Target to $20 Billion at $1.25 Trillion Valuation - Tekedia",
@@ -1907,147 +1904,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793609805,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 46.62,
-      "candidates": 14,
-      "queue_before": 0,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 12,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 2,
-        "candidate_count": 14,
-        "admission_rate": 14.29,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://aimmediahouse.com/banking/mastercard-signs-partnership-with-openai-ceo-says-agentic-commerce-is-still-in-early-days",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.33,
-          "bonus_total": 66.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость интеграции автономных ИИ-агентов в платежные системы становится критическим конкурентным преимуществом.",
-            "title": "Mastercard Signs Partnership With OpenAI. CEO Says Agentic Commerce Is Still in \"Early Days.\" - AIM Media House",
-            "final_score": 66.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 40,
-        "raw_items": 616,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 17,
-          "CNews": 0,
-          "Euronews": 21
-        },
-        "score_filtered": 588,
-        "quality_filtered": 13,
-        "story_dedup": 1,
-        "candidates": 14,
-        "candidate_rate": 0.0243,
-        "score_buckets": {
-          "0–39": 558,
-          "40–49": 43,
-          "50–59": 14,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793610798,
       "status": "OK",
@@ -21576,6 +21432,83 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1793813078,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 34.99,
+      "candidates": 0,
+      "queue_before": 9,
+      "queue_after": 9,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
