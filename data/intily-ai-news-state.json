@@ -1,6 +1,5 @@
 {
   "published": {
-    "daa3be80006a0a5af9d100bd9cfcb4575a060777982e625e43540edc4680b42b": 1791265732,
     "2da6356005d9cffd54bda2482b4b6e352481f93961fd0f2274e7c93759a3880c": 1791265982,
     "80c6dea23c4a92d1792aa8193f4a208112c3e3c924eb1359bfd095a8d0f668fe": 1791266470,
     "32b18171198a7473b32a514058d782712bc0653b866e2fc4d9b9eb654ade8ae6": 1791266687,
@@ -1237,7 +1236,8 @@
     "bb845e4f6e525e33d546cad399cbb39b5498dd8f1a7c250cf49ec0f1971ccb51": 1793856036,
     "fdf5a78bb587bd517b2089f9b8af0382db34ed6216a59628563a0db8274a14c9": 1793856271,
     "14d627677bd93aa8926f5b774554cf2e915d0eaeaad7e91f55ccec6f1c5343d9": 1793857490,
-    "fbb78e87769f1a9024c9037bedbc27049819b8457f14748b7116d78e53a5fab0": 1793857713
+    "fbb78e87769f1a9024c9037bedbc27049819b8457f14748b7116d78e53a5fab0": 1793857713,
+    "5edcb054ae90db3b9a1f656a186ffa4deae34dd375111bd87e7cbbf7ac9bff59": 1793857955
   },
   "known": {
     "f670c1b01a5e3c46294c0ca1289922891a643b41883f382f1223964e0a68e811": 1793855066.5147707,
@@ -1290,7 +1290,11 @@
       "editorial_value": 50.0,
       "topics": [],
       "audience_score": 7.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1793857955,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1793858255
     },
     {
       "region": "WORLD",
@@ -1419,60 +1423,24 @@
         "freshness": 0.5,
         "low_signal_penalty": 0.0,
         "base_score": 42.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 42.0
+        "audience_score": 5.0,
+        "audience_bonus": 15.0,
+        "final_score": 57.0
       },
       "base_score": 42.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 42.0,
+      "audience_bonus": 15.0,
+      "score_stage": "final",
+      "score": 57.0,
       "key": "589cee898a548d0f8398cb1c745a10ef494ff90c318d4862b3f959d1e813a7cf",
-      "importance": 42.0,
+      "importance": 57.0,
       "editorial_value": 50.0,
       "topics": [
         "applications",
         "business"
       ],
-      "audience_score": null,
+      "audience_score": 5.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "WORLD",
-      "title": "Expedia Group testing OpenAI ad products as agentic partnership economics take shape - PhocusWire",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBwTDI4UGxvWksydW5lZWpFN1d0RXlrbnJydTBuS0RzTHFhQUgtVC1VclJXZkQtR1Njd3dPNkNfekJXWEhidWVNT3pUa19zWEFXVklwTDZrWktTaUZuNlprVkYzRkZrQlRBTnp2T3JoUW9vR3NtYkY3a2d3?oc=5",
-      "desc": "Expedia Group testing OpenAI ad products as agentic partnership economics take shape PhocusWire",
-      "source": "PhocusWire",
-      "time": 1793837726.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 7.0,
-        "event_concreteness": 15.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 41.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 41.0
-      },
-      "base_score": 41.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 41.0,
-      "key": "5edcb054ae90db3b9a1f656a186ffa4deae34dd375111bd87e7cbbf7ac9bff59",
-      "importance": 41.0,
-      "editorial_value": 47.0,
-      "topics": [
-        "agents"
-      ],
-      "audience_score": null,
-      "tier": "A"
     },
     {
       "region": "WORLD",
@@ -1657,30 +1625,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793857713.998414,
+    "last_start_ts": 1793857955.159099,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793857713.998414,
-    "last_success_ts": 1793857713.998414,
+    "last_run_ts": 1793857955.159099,
+    "last_success_ts": 1793857955.159099,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 11
+    "queue_size": 10
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793857718.6083474
+      "disabled_until": 1793861578.615839,
+      "reason": "The read operation timed out",
+      "updated_at": 1793857978.6158423
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793857465.62334
+      "disabled_until": 1793861582.2295814,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793857982.229584
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793857465.62334
+      "disabled_until": 1793944399.9737458,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1793857999.9737477
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1688,9 +1656,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793857465.62334
+      "disabled_until": 1793861598.894306,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793857998.8943079
     }
   },
   "stories": {
@@ -1959,13 +1927,19 @@
       "desc": "Anthropic’s $895 Billion Compute Gamble Casts Shadow Over Imminent $100 Billion IPO Foreign Policy Journal",
       "source": "Foreign Policy Journal",
       "region": "WORLD"
+    },
+    "5edcb054ae90db3b9a1f656a186ffa4deae34dd375111bd87e7cbbf7ac9bff59": {
+      "time": 1793857955,
+      "title": "Expedia Group testing OpenAI ad products as agentic partnership economics take shape - PhocusWire",
+      "desc": "Expedia Group testing OpenAI ad products as agentic partnership economics take shape PhocusWire",
+      "source": "PhocusWire",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1980,131 +1954,11 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793624005,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 59.05,
-      "candidates": 17,
-      "queue_before": 4,
-      "queue_after": 5,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 13,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 1,
-        "candidate_count": 17,
-        "admission_rate": 5.88,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 89,
-        "raw_items": 844,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 40,
-          "CNews": 0,
-          "Euronews": 49
-        },
-        "score_filtered": 802,
-        "quality_filtered": 22,
-        "story_dedup": 3,
-        "candidates": 17,
-        "candidate_rate": 0.0225,
-        "score_buckets": {
-          "0–39": 764,
-          "40–49": 59,
-          "50–59": 20,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 0,
-          "6": 0,
-          "7": 2,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793624239,
       "status": "OK",
@@ -21359,11 +21213,104 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793857955,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 52.29,
+      "candidates": 0,
+      "queue_before": 11,
+      "queue_after": 10,
+      "published": 1,
+      "publish_attempts": 2,
+      "item_failures": 1,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 403: Forbidden": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 403: Forbidden"
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.5,
+          "bonus_total": 39.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость адаптации маркетинговых стратегий под агентские модели продаж и новые рекламные форматы ИИ.",
+            "title": "Expedia Group testing OpenAI ad products as agentic partnership economics take shape - PhocusWire",
+            "final_score": 65.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 5,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1793857490.517559,
-  "last_publish_ts": 1793857713.998414,
+  "last_publish_ts": 1793857955.159099,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
