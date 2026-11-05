@@ -1,6 +1,5 @@
 {
   "published": {
-    "c9f72acb272ad6c87cac078d5ce7145faf77873840faa5c7aab2fcf040d92513": 1791269331,
     "c90d117f3b0eb7043a273a6d1e91fe9e7cfe1d453f3ce30a88a8faf2437d4432": 1791272451,
     "d09f713c07aa5c58d30ae8d802a7834d38bdddb8c2d1ba8182f75de93981d37e": 1791274137,
     "248050c1681a81b89b03fddd82513f2e342761b886fec82933b3b066db3d3e17": 1791275575,
@@ -1283,7 +1282,11 @@
         "business"
       ],
       "audience_score": 7.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1793861789,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1793862089
     },
     {
       "region": "WORLD",
@@ -1319,7 +1322,11 @@
         "robotics"
       ],
       "audience_score": 7.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1793861789,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1793862089
     },
     {
       "region": "RUSSIA",
@@ -1337,19 +1344,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 48.5,
+        "base_score": 48.0,
         "audience_score": 4.0,
         "audience_bonus": 12.0,
-        "final_score": 60.5
+        "final_score": 60.0
       },
-      "base_score": 48.5,
+      "base_score": 48.0,
       "audience_bonus": 12.0,
       "score_stage": "final",
-      "score": 60.5,
+      "score": 60.0,
       "key": "f6e7cd9fb6b5176c680a5db0a657972d2e7ab561a8a83b2425798ec179bc8108",
-      "importance": 60.5,
+      "importance": 60.0,
       "editorial_value": 50.0,
       "topics": [
         "chips",
@@ -1469,30 +1476,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793860829.263683,
+    "last_start_ts": 1793861789.1295047,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793860829.263683,
-    "last_success_ts": 1793860829.263683,
-    "last_candidates": 0,
-    "last_published": 1,
+    "last_run_ts": 1793861789.1295047,
+    "last_success_ts": 1793861789.1295047,
+    "last_candidates": 15,
+    "last_published": 0,
     "queue_size": 6
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793860831.2973852
+      "disabled_until": 1793865464.7836015,
+      "reason": "The read operation timed out",
+      "updated_at": 1793861864.7836044
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793858184.6440659
+      "disabled_until": 1793948270.1409612,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1793861870.1409628
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793858184.6440659
+      "disabled_until": 1793948285.251884,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1793861885.251885
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1500,9 +1507,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793858184.6440659
+      "disabled_until": 1793865483.7651608,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793861883.7651618
     }
   },
   "stories": {
@@ -1838,127 +1845,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793632886,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 68.35,
-      "candidates": 27,
-      "queue_before": 11,
-      "queue_after": 19,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 13,
-        "known_recent": 0,
-        "already_queued": 5,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 8,
-        "candidate_count": 27,
-        "admission_rate": 29.63,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 14,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 95,
-        "raw_items": 986,
-        "source_counts": {
-          "TechCrunch AI": 3,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 40,
-          "CNews": 0,
-          "Euronews": 50
-        },
-        "score_filtered": 931,
-        "quality_filtered": 24,
-        "story_dedup": 4,
-        "candidates": 27,
-        "candidate_rate": 0.0303,
-        "score_buckets": {
-          "0–39": 882,
-          "40–49": 72,
-          "50–59": 28,
-          "60–69": 4,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 0,
-          "6": 0,
-          "7": 4,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793633818,
       "status": "OK",
@@ -21203,10 +21089,144 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793861789,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": true,
+      "duration_sec": 96.16,
+      "candidates": 15,
+      "queue_before": 6,
+      "queue_after": 6,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 8,
+        "known_recent": 0,
+        "already_queued": 5,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 15,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.0,
+          "bonus_total": 36.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Новый инструмент для многозадачных ИИ‑агентов повышает эффективность разработки.",
+            "title": "Meta приобрела стартап Conductor для одновременного запуска нескольких ИИ-агентов при создании программ - NUR.KZ",
+            "final_score": 70.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 45,
+        "raw_items": 452,
+        "source_counts": {
+          "TechCrunch AI": 9,
+          "VentureBeat AI": -1,
+          "The Verge AI": 3,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 8,
+          "Habr AI/News": 9,
+          "CNews": -1,
+          "Euronews": 16
+        },
+        "score_filtered": 422,
+        "quality_filtered": 14,
+        "story_dedup": 1,
+        "candidates": 15,
+        "candidate_rate": 0.0369,
+        "score_buckets": {
+          "0–39": 387,
+          "40–49": 47,
+          "50–59": 18,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 1,
+          "5": 2,
+          "6": 1,
+          "7": 2,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "GROQ",
+        "failovers": 2,
+        "failures": 4,
+        "blocked": 13,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793859868.4945128,
+  "last_search_ts": 1793861789.1295047,
   "last_publish_ts": 1793860829.263683,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
