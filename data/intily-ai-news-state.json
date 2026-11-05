@@ -1249,7 +1249,8 @@
     "c9f9996808a9845bf55056c3c39b2b0014691dd1cd02b8c5b9ca8a2890db3800": 1793874037,
     "b04ef5dd757bb0786a505d19e67cff030ef6f65b677cf25816859403a8df189c": 1793874747,
     "f40a993b5e8c3cda51380231329f1dcb1bcfbae5a6ea822cca2036029e693c45": 1793874986,
-    "202a04f80c5f7e0d9aad79c55873f6fa24820c2233a3ff081dd9e3966b5ead60": 1793875947
+    "202a04f80c5f7e0d9aad79c55873f6fa24820c2233a3ff081dd9e3966b5ead60": 1793875947,
+    "87d42c6af3b405c3a0bf9bc4289fbb34b92ad0226e9e7194a05e98f8ba6abc74": 1793876675
   },
   "known": {
     "a4a0b8d44ceab866bafa3a153eb68c95c90a508f5adfa24e4eec9c72bfe7302f": 1793871623.517117,
@@ -1264,44 +1265,6 @@
     "1d174f1642163af5833c75a787844cc04a0e02bcad1d2804930a62eeeb69e2b0": 1793875947.3105564
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Исследование SimpleOne: более 80% команд разработки используют ИИ, но только четверть выпускают его результат в рабочую среду",
-      "link": "https://www.cnews.ru/news/line/2026-11-05_issledovanie_simpleone_bolee",
-      "desc": "Компания SimpleOne (направление прикладных бизнес-систем корпорации ITG) провела опрос специалистов, занятых разработкой...",
-      "source": "CNews",
-      "time": 1793875500.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 6.0,
-        "event_concreteness": 10.5,
-        "practical_value": 6.5,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 2.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 48.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 48.5
-      },
-      "base_score": 48.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 48.5,
-      "key": "87d42c6af3b405c3a0bf9bc4289fbb34b92ad0226e9e7194a05e98f8ba6abc74",
-      "importance": 48.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "business",
-        "research"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "WORLD",
       "title": "Setting a new standard for responsible AI infrastructure",
@@ -1321,37 +1284,37 @@
         "freshness": 0.5,
         "low_signal_penalty": 0.0,
         "base_score": 45.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 45.5
+        "audience_score": 5.0,
+        "audience_bonus": 15.0,
+        "final_score": 60.5
       },
       "base_score": 45.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 45.5,
+      "audience_bonus": 15.0,
+      "score_stage": "final",
+      "score": 60.5,
       "key": "1d174f1642163af5833c75a787844cc04a0e02bcad1d2804930a62eeeb69e2b0",
-      "importance": 45.5,
+      "importance": 60.5,
       "editorial_value": 50.0,
       "topics": [],
-      "audience_score": null,
+      "audience_score": 5.0,
       "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1793875947.3105564,
+    "last_start_ts": 1793876675.9704885,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793875947.3105564,
-    "last_success_ts": 1793875947.3105564,
-    "last_candidates": 24,
+    "last_run_ts": 1793876675.9704885,
+    "last_success_ts": 1793876675.9704885,
+    "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 2
+    "queue_size": 1
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1793875993.8051589
+      "updated_at": 1793876675.967809
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1375,20 +1338,6 @@
     }
   },
   "stories": {
-    "4a9ebae9287bc7cbf6b1bc12b2ba4389353977db92e3728621ea982cc081554d": {
-      "time": 1793789568,
-      "title": "Чилийский центр получил $2,5 млн на разработку ИИ-модели мирового океана - prospect.com.ru",
-      "desc": "Чилийский центр получил $2,5 млн на разработку ИИ-модели мирового океана prospect.com.ru",
-      "source": "prospect.com.ru",
-      "region": "RUSSIA"
-    },
-    "18ce1747b01cfce505fb22eeb076bc3f77df141b889982dbfb3f4647c2e8ab26": {
-      "time": 1793790040,
-      "title": "OpenAI представила Pando — бэкенд на основе Git для разработки с ИИ",
-      "desc": "Компания OpenAI представила собственный бэкенд для системы контроля версий Git под названием Pando, разработанный для работы в условиях массового использования ИИ-ассистентов. Новая инфраструктура сохраняет полную совместимость со стандартными инструментами Git, ежедневно обрабатывает около петабайта данных и сокращает задержку при отправке изменений почти в пять раз, решая проблему падения надежности традиционных серверов из-за резкого роста числа автоматических коммитов. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "79dd26a28d3ffd5de0e4c8e115298039c91f2623f993d31bfbab6e5ebee5fea1": {
       "time": 1793791724,
       "title": "Meta raises $15 billion through bond sale to fund AI infrastructure expansion - The Economic Times",
@@ -1773,10 +1722,16 @@
       "desc": "Britain beats Canada, India and New Zealand to take FOURTH place in AI study from Ayre Think Tank - as £95 billion cost of living bonus beckons PR Newswire UK",
       "source": "PR Newswire UK",
       "region": "WORLD"
+    },
+    "87d42c6af3b405c3a0bf9bc4289fbb34b92ad0226e9e7194a05e98f8ba6abc74": {
+      "time": 1793876675,
+      "title": "Исследование SimpleOne: более 80% команд разработки используют ИИ, но только четверть выпускают его результат в рабочую среду",
+      "desc": "Компания SimpleOne (направление прикладных бизнес-систем корпорации ITG) провела опрос специалистов, занятых разработкой...",
+      "source": "CNews",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -1795,97 +1750,10 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793646792,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 28.92,
-      "candidates": 0,
-      "queue_before": 15,
-      "queue_after": 14,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 400: Bad Request": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 400: Bad Request"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Shows high cost risk for AI projects.",
-            "title": "Anthropic made $33 billion in 9 months. So why is it reporting a $104 billion loss? What updated IPO filing reveals - Livemint",
-            "final_score": 63.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793647252,
       "status": "OK",
@@ -21502,11 +21370,99 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793876675,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 7.37,
+      "candidates": 0,
+      "queue_before": 2,
+      "queue_after": 1,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 403: Forbidden": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 403: Forbidden"
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.5,
+          "bonus_total": 39.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 5.0,
+            "bonus": 15.0,
+            "reason": "Это стратегический шум, который не меняет текущие процессы разработки или бизнес-модели для большинства специалистов.",
+            "title": "Setting a new standard for responsible AI infrastructure",
+            "final_score": 60.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1793875947.3105564,
-  "last_publish_ts": 1793875947.3105564,
+  "last_publish_ts": 1793876675.9704885,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
