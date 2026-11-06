@@ -1309,21 +1309,21 @@
         "freshness": 2.0,
         "low_signal_penalty": 0.0,
         "base_score": 44.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 44.5
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 68.5
       },
       "base_score": 44.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 44.5,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 68.5,
       "key": "a808df967dd98a7cc247c44671b65f7ebc386b16fa1a75d1ba2bccca589b377b",
-      "importance": 44.5,
+      "importance": 68.5,
       "editorial_value": 50.0,
       "topics": [
         "agents"
       ],
-      "audience_score": null,
+      "audience_score": 8.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
     },
@@ -1366,30 +1366,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793989960.2679105,
+    "last_start_ts": 1793990739.1476781,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793989960.2679105,
-    "last_success_ts": 1793989960.2679105,
-    "last_candidates": 28,
-    "last_published": 1,
+    "last_run_ts": 1793990739.1476781,
+    "last_success_ts": 1793990739.1476781,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 2
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793990001.0343156
+      "disabled_until": 1793994318.964464,
+      "reason": "The read operation timed out",
+      "updated_at": 1793990718.9644666
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793987321.589504
+      "disabled_until": 1793994323.9917374,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793990723.9917388
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793987321.589504
+      "disabled_until": 1794077139.145283,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1793990739.145285
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1397,19 +1397,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793987321.589504
+      "disabled_until": 1793994337.932465,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793990737.9324675
     }
   },
   "stories": {
-    "a8d68aa9cdeeee919ea500a5d099fe24f4e8d30b74dad1540ffefcacfd741d47": {
-      "time": 1793903564,
-      "title": "Shield AI To Hit $28.8 Billion Value With $5.3 Billion Radar Acquisition - Bloomberg.com",
-      "desc": "Shield AI To Hit $28.8 Billion Value With $5.3 Billion Radar Acquisition Bloomberg.com",
-      "source": "Bloomberg.com",
-      "region": "WORLD"
-    },
     "0cfdbca60f8844b60a9cc917e4cb65c81526db0ab9d506541e32905c33ee6394": {
       "time": 1793904523,
       "title": "OpenAI president Greg Brockman says company could be IPO ready in 2027",
@@ -1903,94 +1896,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793789568,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 9.82,
-      "candidates": 0,
-      "queue_before": 5,
-      "queue_after": 4,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 5.0,
-          "bonus_total": 15.0,
-          "max_score": 5.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 5.0,
-            "bonus": 15.0,
-            "reason": "Новость носит ознакомительный характер и не требует немедленных изменений в бизнес-процессах.",
-            "title": "Чилийский центр получил $2,5 млн на разработку ИИ-модели мирового океана - prospect.com.ru",
-            "final_score": 63.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793790040,
       "status": "OK",
@@ -22191,6 +22096,84 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1793990739,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 59.89,
+      "candidates": 0,
+      "queue_before": 2,
+      "queue_after": 2,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 24.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Позволяет компаниям безопасно внедрять LLM внутри своего контура, снижая риски утечки данных.",
+            "title": "Mistral представила в Studio управляемых агентов и on-premises - Pasquale Pillitteri",
+            "final_score": 68.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
