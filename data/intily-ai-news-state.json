@@ -1,6 +1,5 @@
 {
   "published": {
-    "2ced076c3cabc6ae63f726f3d752c9fe0947d2374099e15f3d9d6b0f69ef13e4": 1791393920,
     "3d6c102639d95e0a4002f07c332fc6176dca7f5661b9ba34987293db2469baeb": 1791394619,
     "628194bb4ad7c849f3f51458adfc399f4e48e7c61e520944ace325c8879f1014": 1791395330,
     "d7ba2c4534ccbff653843e83f815df8c3af71c3e75c22b861d76545f3b5fe748": 1791395568,
@@ -1474,30 +1473,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793985881.3413363,
+    "last_start_ts": 1793986119.7521718,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793985881.3413363,
-    "last_success_ts": 1793985881.3413363,
-    "last_candidates": 0,
-    "last_published": 1,
+    "last_run_ts": 1793986119.7521718,
+    "last_success_ts": 1793986119.7521718,
+    "last_candidates": 27,
+    "last_published": 0,
     "queue_size": 5
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793985885.5561483
+      "disabled_until": 1793989777.6085908,
+      "reason": "The read operation timed out",
+      "updated_at": 1793986177.608594
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793980119.0099363
+      "disabled_until": 1793989780.687472,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793986180.6874743
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793980119.0099363
+      "disabled_until": 1794072589.55262,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1793986189.5526214
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1505,9 +1504,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793980119.0099363
+      "disabled_until": 1793989788.5110278,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793986188.5110295
     }
   },
   "stories": {
@@ -1983,84 +1982,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793782645,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 46.28,
-      "candidates": 0,
-      "queue_before": 7,
-      "queue_after": 7,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость внедрения инструментов контроля безопасности для автономных ИИ-агентов в продакшене.",
-            "title": "CrowdStrike запустила «аварийный выключатель» для нейтрализации ИИ‑агентов",
-            "final_score": 73.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793784290,
       "status": "OK",
@@ -22238,10 +22159,144 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793986119,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 69.85,
+      "candidates": 27,
+      "queue_before": 5,
+      "queue_after": 5,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 26,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 1,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 27,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 7.0,
+          "bonus_total": 21.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Ускорение появления автономных AI-кодеров меняет требования к процессам разработки и контроля качества кода.",
+            "title": "OpenAI объявила о покупке разработчика инфраструктуры для хранения кода и инструментов для работы с Git",
+            "final_score": 75.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 156,
+        "raw_items": 1072,
+        "source_counts": {
+          "TechCrunch AI": 6,
+          "VentureBeat AI": -1,
+          "The Verge AI": 5,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 1,
+          "Ars Technica": 3,
+          "Habr AI/News": 40,
+          "CNews": 51,
+          "Euronews": 50
+        },
+        "score_filtered": 1018,
+        "quality_filtered": 26,
+        "story_dedup": 1,
+        "candidates": 27,
+        "candidate_rate": 0.0295,
+        "score_buckets": {
+          "0–39": 983,
+          "40–49": 60,
+          "50–59": 22,
+          "60–69": 7,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 4,
+          "7": 1,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 4,
+        "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1793984203.319394,
+  "last_search_ts": 1793986119.7521718,
   "last_publish_ts": 1793985881.3413363,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
