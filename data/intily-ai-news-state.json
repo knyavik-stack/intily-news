@@ -1,6 +1,5 @@
 {
   "published": {
-    "ab023beabfc6535aae3aaef8f82f724e27b07a40b2b14c11eca2cc9d3296e62c": 1791386936,
     "5765dbb3f2832ae102b858fed21703016aeb4ff031543159ecb2741cdab9ad78": 1791388368,
     "d6dbbac0cf0aeac0ec43fa101310a0152741b5fd1dc92d38af1c796462f2f2b7": 1791389828,
     "55d3a42973bd6b8074a05ec154406a9321a40f555bed32a079906e77447d1e53": 1791390046,
@@ -1555,13 +1554,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793978917.4882245,
+    "last_start_ts": 1793979183.4274452,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793978917.4882245,
-    "last_success_ts": 1793978917.4882245,
-    "last_candidates": 29,
-    "last_published": 1,
+    "last_run_ts": 1793979183.4274452,
+    "last_success_ts": 1793979183.4274452,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 7
   },
   "providers": {
@@ -1571,14 +1570,14 @@
       "updated_at": 1793978978.7318316
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793978979.9867086
+      "disabled_until": 1793982766.6340222,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793979166.6340241
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793977479.8456726
+      "disabled_until": 1794065583.4018233,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1793979183.4018252
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1586,26 +1585,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1793977479.8456726
+      "disabled_until": 1793982782.1673548,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1793979182.167358
     }
   },
   "stories": {
-    "2ee6cd6b2831a5f339dfe0a94a142bc37311fcd47e02b334db9be038316be247": {
-      "time": 1793892531,
-      "title": "OpenAI расширяет Codex — и приближается к рынку GitHub",
-      "desc": "OpenAI договорилась о приобретении Pierre Computer — разработчика инструментов для хранения и проверки кода. Компания сообщила о сделке, а 4 ноября опубликовала официальный анонс . После закрытия сделки OpenAI планирует перенести возможности Pierre Code Storage в Codex. Финансовые условия не раскрываются. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
-    "f65338c599e6689aab403bcdba1ff75b714f2e6f9958dac20c0384168793afda": {
-      "time": 1793892757,
-      "title": "1,206 AI Agents Form Secret Chatroom, Launch Cyberattack on Hugging Face - www.techtimes.co.uk",
-      "desc": "1,206 AI Agents Form Secret Chatroom, Launch Cyberattack on Hugging Face www.techtimes.co.uk",
-      "source": "www.techtimes.co.uk",
-      "region": "WORLD"
-    },
     "ce770d955eb3da446914c2d7e716619c1246fdde4b6ac43d64e5bd4c74cd1222": {
       "time": 1793893001,
       "title": "OpenAI could face Democratic investigation over Trump's $500 billion Stargate project after midterm results - UNILAD Tech",
@@ -2092,97 +2077,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793778998,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 22.17,
-      "candidates": 0,
-      "queue_before": 3,
-      "queue_after": 2,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.lohud.com/press-release/story/250300/keytomic-launches-mcp-server-ai-visibility-tracker-and-reddit-ai-agent-for-seo-automation/",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Новые инструменты SEO автоматизации повышают эффективность маркетинга",
-            "title": "Keytomic Launches MCP Server, AI Visibility Tracker, and Reddit AI Agent for SEO Automation - The Journal News | lohud.com",
-            "final_score": 63.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ"
-        ],
-        "used": "GROQ",
-        "failovers": 1,
-        "failures": 1,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793779240,
       "status": "OK",
@@ -22302,6 +22196,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1793979183,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 23.2,
+      "candidates": 0,
+      "queue_before": 7,
+      "queue_after": 7,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
