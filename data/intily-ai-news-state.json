@@ -1266,7 +1266,8 @@
     "f050f3fbc77f91f0a1c85845be8ff2f9f8e6426dbc9561c15a87bbc77bb08340": 1793959720,
     "2f607033c63e5520c07b35326708d753116e35beebec9e26de64ef626b9c0da1": 1793959968,
     "a0154902842441aa713670bdc158cb8b660ba3774ca4bd6b0c5bd33530cbdbac": 1793960204,
-    "dbe1c38d1addb9fca94ed3e8635aee6e3ce6ca1b2926f2be093824e39385516c": 1793960443
+    "dbe1c38d1addb9fca94ed3e8635aee6e3ce6ca1b2926f2be093824e39385516c": 1793960443,
+    "31eddb62d474e87539d2ea33d40a1535cb73c33b72bdb12804a98b6f86da7315": 1793962859
   },
   "known": {
     "159a2e681b05fb5aad80737f8d970932420de01357fcd6914a50786f716d7d2c": 1793957796.6056273,
@@ -1296,68 +1297,27 @@
         "freshness": 2.0,
         "low_signal_penalty": 0.0,
         "base_score": 42.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 42.5
+        "audience_score": 5.0,
+        "audience_bonus": 15.0,
+        "final_score": 57.5
       },
       "base_score": 42.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 42.5,
+      "audience_bonus": 15.0,
+      "score_stage": "final",
+      "score": 57.5,
       "key": "f9919ad3d6519e796f0edaa54b81c56c9add7714dda3fe797c8a5ce3e09e143e",
-      "importance": 42.5,
+      "importance": 57.5,
       "editorial_value": 50.0,
       "topics": [
         "agents"
       ],
-      "audience_score": null,
+      "audience_score": 5.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0,
       "last_failed_at": 1793962610,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
       "failure_count": 1,
-      "next_retry_at": 1793962910
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Законодательное регулирование ИИ: что изменилось, что изменится с 1 марта 2027 года. Судебная практика. - Клерк.ру",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA2Y0Q2RHVyazZoV0VneEp0Yk9OMmFDSkRFbG1lZFcxdFZacDVMWTVwVHhLSmdyVXBfQnRFN1ZBTnRvZTdXbkdJRDdUVTBheGtqSmpv?oc=5",
-      "desc": "Законодательное регулирование ИИ: что изменилось, что изменится с 1 марта 2027 года. Судебная практика. Клерк.ру",
-      "source": "Клерк.ру",
-      "time": 1793947680.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 7.0,
-        "event_concreteness": 12.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 41.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 41.0
-      },
-      "base_score": 41.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 41.0,
-      "key": "31eddb62d474e87539d2ea33d40a1535cb73c33b72bdb12804a98b6f86da7315",
-      "importance": 41.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "security_regulation"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0,
-      "last_failed_at": 1793962610,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1793962910
+      "next_retry_at": 1793962910,
+      "russia_weight_bonus": 0.0
     },
     {
       "region": "RUSSIA",
@@ -1398,30 +1358,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1793962610.3050666,
+    "last_start_ts": 1793962859.537815,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793962610.3050666,
-    "last_success_ts": 1793962610.3050666,
-    "last_candidates": 20,
-    "last_published": 0,
-    "queue_size": 3
+    "last_run_ts": 1793962859.537815,
+    "last_success_ts": 1793962859.537815,
+    "last_candidates": 0,
+    "last_published": 1,
+    "queue_size": 2
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1793966262.2706583,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1793962662.2706604
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793962859.531894
     },
     "GROQ": {
-      "disabled_until": 1793966266.0058882,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793962666.0058904
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793962839.9049509
     },
     "OPENAI": {
-      "disabled_until": 1794049073.2594776,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1793962673.2594793
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793962839.9049509
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1429,9 +1389,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1793966272.1248953,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1793962672.1248968
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1793962839.9049509
     }
   },
   "stories": {
@@ -1868,11 +1828,17 @@
       "desc": "OpenAI Eyes 2027 IPO as Enterprise Revenue Surges, Expanding AI Cybersecurity Push and Setting Out Election-Year Policy Vision AI Insider",
       "source": "AI Insider",
       "region": "WORLD"
+    },
+    "31eddb62d474e87539d2ea33d40a1535cb73c33b72bdb12804a98b6f86da7315": {
+      "time": 1793962859,
+      "title": "Законодательное регулирование ИИ: что изменилось, что изменится с 1 марта 2027 года. Судебная практика. - Клерк.ру",
+      "desc": "Законодательное регулирование ИИ: что изменилось, что изменится с 1 марта 2027 года. Судебная практика. Клерк.ру",
+      "source": "Клерк.ру",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -1890,87 +1856,10 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793724097,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 48.94,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 19,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра стратегии кибербезопасности из-за появления нового класса защиты от ИИ-атак.",
-            "title": "Российский программист в одиночку создал «убийцу» успешных кибератак. Хакер даже не узнает, что украл",
-            "final_score": 84.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793725959,
       "status": "OK",
@@ -22102,11 +21991,99 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1793962859,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 30.55,
+      "candidates": 0,
+      "queue_before": 3,
+      "queue_after": 2,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://www.klerk.ru/buh/articles/717004/",
+            "image_url": "https://www.klerk.ru/yindex.php/og?id=717004&entity=article",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Необходимость пересмотра юридической стратегии и ответственности за ИИ-решения до вступления закона в силу.",
+            "title": "Законодательное регулирование ИИ: что изменилось, что изменится с 1 марта 2027 года. Судебная практика. - Клерк.ру",
+            "final_score": 68.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1793962610.3050666,
-  "last_publish_ts": 1793960443.111536,
+  "last_publish_ts": 1793962859.537815,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
