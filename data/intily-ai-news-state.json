@@ -1271,7 +1271,8 @@
     "c3bd98b953a78fc9f7a7c01d63c2005b90f75fbaee0d506eba89519f228d5f66": 1793970762,
     "f36de1e986ceda0033658959c323739067b2180e82c9633e0a4725846924d7cc": 1793971509,
     "3a585c8d8ed1ca1df77e89c7899c6036e5164c01e374adce10769c6c501b0ea5": 1793972936,
-    "465e443712b6beeae28ff2827b423c63d5165b73e62fede24dd87b931daa12fb": 1793973406
+    "465e443712b6beeae28ff2827b423c63d5165b73e62fede24dd87b931daa12fb": 1793973406,
+    "383b6113c1de14c0b6ac6d708aec2af37b7a7aa073a79375422c197108a9c4b4": 1793974119
   },
   "known": {
     "f36de1e986ceda0033658959c323739067b2180e82c9633e0a4725846924d7cc": 1793970762.813522,
@@ -1283,43 +1284,6 @@
     "383b6113c1de14c0b6ac6d708aec2af37b7a7aa073a79375422c197108a9c4b4": 1793972691.7661076
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "DeepSeek V4.1 Flash появилась в Token Factory. Миллион токенов контекста без отправки данных за границу",
-      "link": "https://habr.com/ru/companies/selectel/news/1104594/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1104594",
-      "desc": "В каталоге Token Factory, сервиса Selectel для инференса с оплатой за токены, появилась DeepSeek V4.1 Flash . Это октябрьское обновление открытой модели китайской лаборатории DeepSeek, веса которого вышли 17 октября под лицензией MIT. Модель работает через тот же OpenAI-совместимый API, что и остальной каталог, а запросы обрабатываются в российских дата-центрах. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1793970739.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 7.0,
-        "event_concreteness": 13.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 42.5,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 66.5
-      },
-      "base_score": 42.5,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 66.5,
-      "key": "383b6113c1de14c0b6ac6d708aec2af37b7a7aa073a79375422c197108a9c4b4",
-      "importance": 66.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "models"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "WORLD",
       "title": "Edera Launches Hypervisor-Level Security Model That Keeps AI Agents From Holding Credentials - news.lavx.hu",
@@ -1414,40 +1378,40 @@
         "freshness": 1.5,
         "low_signal_penalty": 0.0,
         "base_score": 40.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 40.0
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 58.0
       },
       "base_score": 40.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 40.0,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 58.0,
       "key": "2f7dbafa3db68e12017aaa96b7132694057c6d5103625caef3a5538ded393e71",
-      "importance": 40.0,
-      "editorial_value": 46.0,
+      "importance": 58.0,
+      "editorial_value": 50.0,
       "topics": [
         "agents",
         "research"
       ],
-      "audience_score": null,
+      "audience_score": 6.0,
       "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1793973406.5613122,
+    "last_start_ts": 1793974119.4535167,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1793973406.5613122,
-    "last_success_ts": 1793973406.5613122,
+    "last_run_ts": 1793974119.4535167,
+    "last_success_ts": 1793974119.4535167,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 4
+    "queue_size": 3
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1793973411.702956
+      "updated_at": 1793974127.7940788
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1918,10 +1882,16 @@
       "desc": "10 000 автономных узлов, связанных в единую сеть, и две изолированные VM в центре: одна планирует, другая исполняет код в песочнице. Слева — ошибка 503 из утекшего API, справа — вихри Навье — Стокса. Вся архитектура скрытого релиза OpenAI — на одной схеме. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "383b6113c1de14c0b6ac6d708aec2af37b7a7aa073a79375422c197108a9c4b4": {
+      "time": 1793974119,
+      "title": "DeepSeek V4.1 Flash появилась в Token Factory. Миллион токенов контекста без отправки данных за границу",
+      "desc": "В каталоге Token Factory, сервиса Selectel для инференса с оплатой за токены, появилась DeepSeek V4.1 Flash . Это октябрьское обновление открытой модели китайской лаборатории DeepSeek, веса которого вышли 17 октября под лицензией MIT. Модель работает через тот же OpenAI-совместимый API, что и остальной каталог, а запросы обрабатываются в российских дата-центрах. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -1939,98 +1909,11 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793769405,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 8.64,
-      "candidates": 0,
-      "queue_before": 5,
-      "queue_after": 4,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "Remote end closed connection without response": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "Remote end closed connection without response"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходимость пересмотра юридических рисков и условий использования ИИ-агентов в финансовых операциях.",
-            "title": "Wells Fargo представил правила для ИИ-агентов, риск ложится на клиента - Pasquale Pillitteri",
-            "final_score": 69.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793771103,
       "status": "OK",
@@ -22148,11 +22031,101 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1793974119,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 22.74,
+      "candidates": 0,
+      "queue_before": 4,
+      "queue_after": 3,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/companies/selectel/news/1104594/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1104594",
+            "image_url": "https://habr.com/share/publication/1104594/cdab7dd5deab4b4a74648528a84a60b8/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Снижение рисков утечки данных и затрат на инференс при работе с большими контекстами в РФ.",
+            "title": "DeepSeek V4.1 Flash появилась в Token Factory. Миллион токенов контекста без отправки данных за границу",
+            "final_score": 66.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1793972691.7661076,
-  "last_publish_ts": 1793973406.5613122,
+  "last_publish_ts": 1793974119.4535167,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
