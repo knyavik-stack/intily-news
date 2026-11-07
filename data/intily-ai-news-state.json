@@ -1274,27 +1274,29 @@
     "0cfbee82ebb2b18d692d03f97e20cfacd91259236524e6e6504db600269c5bbf": 1794045154,
     "89f12c9d331b467698747892ab8c7a7230e2310fed3d487b03b6f3b198e1f8b2": 1794045634,
     "2239de0694894ab064aeeb272225fbe8f9b06fd0fddf8f94c3f461caf7168faa": 1794045879,
-    "777847746157ffdcb3165e22d5f0e8980abf6bf76b6dbf8ba2f5899732bedcdf": 1794051171
+    "777847746157ffdcb3165e22d5f0e8980abf6bf76b6dbf8ba2f5899732bedcdf": 1794051171,
+    "1ee046ded10eb9156a704a3be454f99e649ab436be194a4dcff4f181399d9ead": 1794052359
   },
   "known": {
-    "777847746157ffdcb3165e22d5f0e8980abf6bf76b6dbf8ba2f5899732bedcdf": 1794050676.2040226
+    "777847746157ffdcb3165e22d5f0e8980abf6bf76b6dbf8ba2f5899732bedcdf": 1794050676.2040226,
+    "1ee046ded10eb9156a704a3be454f99e649ab436be194a4dcff4f181399d9ead": 1794052359.1104283
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794051875.555732,
+    "last_start_ts": 1794052359.1104283,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794051875.555732,
-    "last_success_ts": 1794051875.555732,
-    "last_candidates": 8,
-    "last_published": 0,
+    "last_run_ts": 1794052359.1104283,
+    "last_success_ts": 1794052359.1104283,
+    "last_candidates": 7,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794051911.6762671
+      "updated_at": 1794052396.554113
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1318,13 +1320,6 @@
     }
   },
   "stories": {
-    "985c43ab29283501a25419893383748c4156d71ab7daa70fa9226a6545d91571": {
-      "time": 1793965486,
-      "title": "Big Tech's AI Free Ride Could Be Over: Democrats Prepare Subpoenas, Investigations and Tough New AI Laws - International Business Times, Singapore Edition",
-      "desc": "Big Tech's AI Free Ride Could Be Over: Democrats Prepare Subpoenas, Investigations and Tough New AI Laws International Business Times, Singapore Edition",
-      "source": "International Business Times, Singapore Edition",
-      "region": "WORLD"
-    },
     "38579c667b4898e2f26b12f90e4abf235c872223d448d1b3f05d7c80e3d327e1": {
       "time": 1793965961,
       "title": "Claude Dispatch Flaw Lets Malicious Browser Extensions Run Code on Connected Computers - CyberSecurityNews",
@@ -1709,11 +1704,17 @@
       "desc": "В последнем обновлении приложения Nvidia App появилась функция, позволяющая расставлять приоритеты в использовании ресурсов графического процессора между активными и фоновыми приложениями. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "1ee046ded10eb9156a704a3be454f99e649ab436be194a4dcff4f181399d9ead": {
+      "time": 1794052359,
+      "title": "Bloomberg узнал, что Microsoft свернула сделку с Oracle по ИИ-серверам - РБК",
+      "desc": "Bloomberg узнал, что Microsoft свернула сделку с Oracle по ИИ-серверам РБК",
+      "source": "РБК",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1726,6 +1727,7 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -1734,78 +1736,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793816940,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 18.56,
-      "candidates": 0,
-      "queue_before": 10,
-      "queue_after": 10,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793817437,
       "status": "OK",
@@ -22693,11 +22623,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794052359,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 38.3,
+      "candidates": 7,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 6,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 1,
+        "candidate_count": 7,
+        "admission_rate": 14.29,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 401: Unauthorized": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 401: Unauthorized"
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.33,
+          "bonus_total": 66.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Показывает риски зависимости от облачных провайдеров при планировании масштабируемой ИИ-инфраструктуры.",
+            "title": "Bloomberg узнал, что Microsoft свернула сделку с Oracle по ИИ-серверам - РБК",
+            "final_score": 61.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 26,
+        "raw_items": 321,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 10,
+          "CNews": 0,
+          "Euronews": 15
+        },
+        "score_filtered": 299,
+        "quality_filtered": 14,
+        "story_dedup": 1,
+        "candidates": 7,
+        "candidate_rate": 0.0237,
+        "score_buckets": {
+          "0–39": 285,
+          "40–49": 28,
+          "50–59": 8,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794051875.555732,
-  "last_publish_ts": 1794051171.1573286,
+  "last_search_ts": 1794052359.1104283,
+  "last_publish_ts": 1794052359.1104283,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
