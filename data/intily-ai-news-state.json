@@ -1,6 +1,5 @@
 {
   "published": {
-    "d6728b929ee1d299ff065ff86bad9df6fa566ba072ac13ebe4a12e9c519fcd06": 1791464476,
     "0839f43c505af0c782b4f1b68441d9e3b2c49c6e50f3aae532c2366a60aa1260": 1791465660,
     "a0667a55484f119c969f2b31a55fe2078278d1cff2e64628f943866a77f21661": 1791466619,
     "d5ed7d712aaece33a98bdfda3c9fce2059f4a5bfdf9bd97be8e5cecadde02263": 1791467806,
@@ -1286,20 +1285,20 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794056200.9766884,
+    "last_start_ts": 1794056674.8484747,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794056200.9766884,
-    "last_success_ts": 1794056200.9766884,
+    "last_run_ts": 1794056674.8484747,
+    "last_success_ts": 1794056674.8484747,
     "last_candidates": 5,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794056235.655862
+      "updated_at": 1794056708.5220804
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1739,146 +1738,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793855066,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 41.75,
-      "candidates": 17,
-      "queue_before": 0,
-      "queue_after": 13,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 1,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 14,
-        "candidate_count": 17,
-        "admission_rate": 82.35,
-        "dominant_block": "story_history",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "IMAGE_NOT_FOUND": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "IMAGE_NOT_FOUND"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Масштабирование мультиагентных систем радикально меняет требования к процессам разработки и найму инженеров.",
-            "title": "Meta приобрела стартап Conductor для одновременного запуска нескольких ИИ-агентов при создании программ - NUR.KZ",
-            "final_score": 71.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 13,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 53,
-        "raw_items": 472,
-        "source_counts": {
-          "TechCrunch AI": 10,
-          "VentureBeat AI": -1,
-          "The Verge AI": 6,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 1,
-          "Ars Technica": 9,
-          "Habr AI/News": 6,
-          "CNews": 7,
-          "Euronews": 14
-        },
-        "score_filtered": 438,
-        "quality_filtered": 14,
-        "story_dedup": 3,
-        "candidates": 17,
-        "candidate_rate": 0.0406,
-        "score_buckets": {
-          "0–39": 403,
-          "40–49": 47,
-          "50–59": 22,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793856036,
       "status": "OK",
@@ -23065,10 +22924,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794056674,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 33.68,
+      "candidates": 5,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 5,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 5,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.5,
+          "bonus_total": 39.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет пересмотреть стратегию автоматизации и избежать дорогих ошибок при оптимизации штата.",
+            "title": "Исследование: компании массово запускают процесс «ИИ‑рикошета»",
+            "final_score": 63.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 32,
+        "raw_items": 495,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 12,
+          "CNews": 0,
+          "Euronews": 16
+        },
+        "score_filtered": 476,
+        "quality_filtered": 14,
+        "story_dedup": 0,
+        "candidates": 5,
+        "candidate_rate": 0.0108,
+        "score_buckets": {
+          "0–39": 463,
+          "40–49": 27,
+          "50–59": 5,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794056200.9766884,
+  "last_search_ts": 1794056674.8484747,
   "last_publish_ts": 1794056200.9766884,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
