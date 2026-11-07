@@ -1,6 +1,5 @@
 {
   "published": {
-    "a2ecae7da8c677c2d9cf1be6f06776fa7dfe610ed297f2b9af7a0209ddf739ff": 1791445747,
     "fd64a70063e0de89e3e7132db21d0c7f8a26e514d6fc075b9c21abb9de1b5176": 1791447172,
     "ed576b8e4c670a8a8718fdab4770b6f3c772dc429465496c1c3b74f9aa5b41f0": 1791447423,
     "9ec8c4069755e545450b8f74e22f93d4810cb577a9ec74b7b300d3b4b0524121": 1791452246,
@@ -1321,7 +1320,11 @@
         "business"
       ],
       "audience_score": 8.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1794038202,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1794038502
     },
     {
       "region": "RUSSIA",
@@ -1358,7 +1361,11 @@
       ],
       "audience_score": 8.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1794038202,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1794038502
     },
     {
       "region": "WORLD",
@@ -1505,30 +1512,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794037723.968921,
+    "last_start_ts": 1794038202.635594,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794037723.968921,
-    "last_success_ts": 1794037723.968921,
+    "last_run_ts": 1794038202.635594,
+    "last_success_ts": 1794038202.635594,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 6
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794037728.4730046
+      "disabled_until": 1794041803.5359292,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1794038203.5359318
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794035079.0702634
+      "disabled_until": 1794041806.652839,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794038206.6528413
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794035079.0702634
+      "disabled_until": 1794124611.3914094,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794038211.3914115
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1536,19 +1543,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794035079.0702634
+      "disabled_until": 1794041810.4564319,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794038210.456433
     }
   },
   "stories": {
-    "64f6aac46dc205adf950d131e4c009029383934cc6e1f2588930cf7c6b82c6fb": {
-      "time": 1793951568,
-      "title": "US accuses trio of using AI to impersonate CEOs and lawyers to steal US$129 million - South China Morning Post",
-      "desc": "US accuses trio of using AI to impersonate CEOs and lawyers to steal US$129 million South China Morning Post",
-      "source": "South China Morning Post",
-      "region": "WORLD"
-    },
     "f19bea1469c094c1cbb3c2c646652b72b4d68021122ddea6683fd3c50a7fa6bc": {
       "time": 1793952519,
       "title": "Вышла версия Kitty Terminal 0.50",
@@ -2028,78 +2028,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793805425,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 23.83,
-      "candidates": 0,
-      "queue_before": 12,
-      "queue_after": 12,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793805919,
       "status": "OK",
@@ -22590,6 +22518,83 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1794038202,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 8.79,
+      "candidates": 0,
+      "queue_before": 6,
+      "queue_after": 6,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
