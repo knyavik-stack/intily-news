@@ -1,6 +1,5 @@
 {
   "published": {
-    "1bbdf4a3dbbae6fcc7a6c93a8c89b2e5c3e99390ee69414d992ff1edb1a57a6c": 1791469246,
     "45fb30f1cff1d7c2560e323d8f757b6d88e128d16ecd8e2adb733031bbca505f": 1791471682,
     "28bb3c5eced8b074b6a867769b5ecda0673af9a682a4868f7fbc22d738af143a": 1791472635,
     "ebf232c258fe2fbd801d454e6a47f2c56c62c79a0036117a1b5fd19771da7a03": 1791473823,
@@ -1284,12 +1283,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794061239.7037287,
+    "last_start_ts": 1794061479.5463538,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794061239.7037287,
-    "last_success_ts": 1794061239.7037287,
-    "last_candidates": 9,
+    "last_run_ts": 1794061479.5463538,
+    "last_success_ts": 1794061479.5463538,
+    "last_candidates": 8,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1297,7 +1296,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794061275.684168
+      "updated_at": 1794061524.0054178
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1321,13 +1320,6 @@
     }
   },
   "stories": {
-    "faddd913166ab11b99cbca61aaf836be425c347188662bc619621b2f94333161": {
-      "time": 1793974840,
-      "title": "Gemini Omni 1.2 Flash. Google впервые дает видеогенерации SLA и снижает цену до 0,07 $ за секунду",
-      "desc": "Google DeepMind выпустила Gemini Omni 1.2 Flash, новую версию своей модели для генерации и редактирования видео. И главное в релизе отнюдь не качество картинки. Семейство Omni впервые получает статус general availability, а секунда ролика в 720p стоит 0,07 $ — это на 30% дешевле предыдущей версии. А также приятным изменением является увеличение максимальной длительности видео с 10 до 15 секунд. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "56e1b9c756c662da7ee665f08318180461b6309e3fa502cd1ad11b62b2c2b763": {
       "time": 1793975825,
       "title": "Goldman and Apollo shop slices of SpaceX's $40 billion Nvidia chip lease to investors - MLQ.ai",
@@ -1723,145 +1715,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793859868,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 47.01,
-      "candidates": 17,
-      "queue_before": 8,
-      "queue_after": 9,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 8,
-        "known_recent": 0,
-        "already_queued": 6,
-        "story_queue": 1,
-        "story_history": 0,
-        "added": 2,
-        "candidate_count": 17,
-        "admission_rate": 11.76,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs/",
-            "image_url": "https://techcrunch.com/wp-content/uploads/2026/11/55593309776_55e4a08b03_o.jpg?resize=1200,800",
-            "width": 1200,
-            "height": 800,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость пересмотра стратегии выбора между проприетарными и открытыми моделями для минимизации рисков.",
-            "title": "Building on open source AI? Hugging Face’s policy chief on the costs, risks, and trade-offs",
-            "final_score": 70.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 54,
-        "raw_items": 477,
-        "source_counts": {
-          "TechCrunch AI": 10,
-          "VentureBeat AI": -1,
-          "The Verge AI": 4,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 8,
-          "Habr AI/News": 6,
-          "CNews": 10,
-          "Euronews": 16
-        },
-        "score_filtered": 444,
-        "quality_filtered": 14,
-        "story_dedup": 2,
-        "candidates": 17,
-        "candidate_rate": 0.0402,
-        "score_buckets": {
-          "0–39": 406,
-          "40–49": 49,
-          "50–59": 22,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 2,
-          "6": 1,
-          "7": 3,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793860110,
       "status": "OK",
@@ -23275,10 +23128,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794061479,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 44.47,
+      "candidates": 8,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 8,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 8,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.5,
+          "bonus_total": 39.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Сигнал о нестабильности инфраструктурных партнерств, требующий пересмотра стратегии закупок мощностей.",
+            "title": "Bloomberg узнал, что Microsoft свернула сделку с Oracle по ИИ-серверам - РБК",
+            "final_score": 62.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 33,
+        "raw_items": 595,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 13,
+          "CNews": 0,
+          "Euronews": 17
+        },
+        "score_filtered": 571,
+        "quality_filtered": 14,
+        "story_dedup": 2,
+        "candidates": 8,
+        "candidate_rate": 0.0142,
+        "score_buckets": {
+          "0–39": 553,
+          "40–49": 32,
+          "50–59": 10,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794061239.7037287,
+  "last_search_ts": 1794061479.5463538,
   "last_publish_ts": 1794060519.8341238,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
