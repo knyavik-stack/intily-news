@@ -1274,14 +1274,16 @@
     "8b132bdc7c9d39a3e0f4162395e81a2eea23b33e151dd9450e0c560f9ec5cedd": 1794054764,
     "c6f6da31a1e99fbf478eec467434c608a3c0aff82594c0b459f1a8e13340c196": 1794056200,
     "327490ead6f7da921cf6b02a5fc5f25a7bd61f421003568ff02a29e9624c01b3": 1794058844,
-    "09d2740602de957247c7becf3a4f5e1933e498ee1bb0fa4e9d4eac4f0b7041ee": 1794059086
+    "09d2740602de957247c7becf3a4f5e1933e498ee1bb0fa4e9d4eac4f0b7041ee": 1794059086,
+    "5db15df9275f5c1a84ac4c8a232c5e2dbb2d40d502b5cac43e382d148421227b": 1794059318
   },
   "known": {
     "8b132bdc7c9d39a3e0f4162395e81a2eea23b33e151dd9450e0c560f9ec5cedd": 1794054516.2478228,
     "c6f6da31a1e99fbf478eec467434c608a3c0aff82594c0b459f1a8e13340c196": 1794054764.114103,
     "d58138a6def6274cd8e384643645cf2a59292bbef20641fd1d14f2a0d3e8ad3e": 1794057882.5793731,
     "327490ead6f7da921cf6b02a5fc5f25a7bd61f421003568ff02a29e9624c01b3": 1794057882.5793731,
-    "09d2740602de957247c7becf3a4f5e1933e498ee1bb0fa4e9d4eac4f0b7041ee": 1794057882.5793731
+    "09d2740602de957247c7becf3a4f5e1933e498ee1bb0fa4e9d4eac4f0b7041ee": 1794057882.5793731,
+    "5db15df9275f5c1a84ac4c8a232c5e2dbb2d40d502b5cac43e382d148421227b": 1794059318.8167446
   },
   "queue": [
     {
@@ -1328,30 +1330,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794059086.8811061,
+    "last_start_ts": 1794059318.8167446,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794059086.8811061,
-    "last_success_ts": 1794059086.8811061,
-    "last_candidates": 0,
+    "last_run_ts": 1794059318.8167446,
+    "last_success_ts": 1794059318.8167446,
+    "last_candidates": 10,
     "last_published": 1,
     "queue_size": 1
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1794062706.9242284,
+      "disabled_until": 1794062968.7323546,
       "reason": "The read operation timed out",
-      "updated_at": 1794059106.9242315
+      "updated_at": 1794059368.7323573
     },
     "GROQ": {
-      "disabled_until": 1794062709.674664,
+      "disabled_until": 1794062970.969694,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794059109.674666
+      "updated_at": 1794059370.9696958
     },
     "OPENAI": {
-      "disabled_until": 1794145517.631578,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1794059117.6315794
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794059318.72618
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1359,9 +1361,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1794062716.5475328,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794059116.5475347
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794059386.3565712
     }
   },
   "stories": {
@@ -1756,12 +1758,18 @@
       "desc": "PSI announces a proof of the Aaronson-Ambainis conjecture using an Anthropic model Pasquale Pillitteri",
       "source": "Pasquale Pillitteri",
       "region": "WORLD"
+    },
+    "5db15df9275f5c1a84ac4c8a232c5e2dbb2d40d502b5cac43e382d148421227b": {
+      "time": 1794059318,
+      "title": "Microsoft's $1 billion Amsterdam data centre project faces protests over AI infrastructure costs- details inside - Livemint",
+      "desc": "Microsoft's $1 billion Amsterdam data centre project faces protests over AI infrastructure costs- details inside Livemint",
+      "source": "Livemint",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "WORLD",
@@ -1776,101 +1784,12 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793857713,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 13.56,
-      "candidates": 0,
-      "queue_before": 12,
-      "queue_after": 11,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.foreignpolicyjournal.com/2026/11/04/anthropics-895-billion-compute-gamble-casts-shadow-over-imminent-100-billion-ipo/",
-            "image_url": "https://www.foreignpolicyjournal.com/wp-content/uploads/2026/10/anthropic.jpg",
-            "width": 643,
-            "height": 476,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 5.33,
-          "bonus_total": 48.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость пересмотра стратегии инвестиций в ИИ-стартапы из-за перегретого рынка вычислений.",
-            "title": "Anthropic’s $895 Billion Compute Gamble Casts Shadow Over Imminent $100 Billion IPO - Foreign Policy Journal",
-            "final_score": 66.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 7,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793857955,
       "status": "OK",
@@ -23156,11 +23075,153 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1794059318,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 70.36,
+      "candidates": 10,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 8,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 1,
+        "candidate_count": 10,
+        "admission_rate": 10.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/news/1104856/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1104856",
+            "image_url": "https://habr.com/share/publication/1104856/4e245ffe9789dc3dc10ac6ad1f2c8763/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Конкретная настройка для смешанных нагрузок GPU — экономит время на настройке приоритетов вручную.",
+            "title": "В приложении Nvidia App появилась настройка приоритета GPU",
+            "final_score": 66.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 31,
+        "raw_items": 543,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 12,
+          "CNews": 0,
+          "Euronews": 16
+        },
+        "score_filtered": 521,
+        "quality_filtered": 12,
+        "story_dedup": 0,
+        "candidates": 10,
+        "candidate_rate": 0.0195,
+        "score_buckets": {
+          "0–39": 502,
+          "40–49": 31,
+          "50–59": 10,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER"
+        ],
+        "used": "OPENROUTER",
+        "failovers": 3,
+        "failures": 2,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794057882.5793731,
-  "last_publish_ts": 1794059086.8811061,
+  "last_search_ts": 1794059318.8167446,
+  "last_publish_ts": 1794059318.8167446,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
