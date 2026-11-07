@@ -1,6 +1,5 @@
 {
   "published": {
-    "d5ed7d712aaece33a98bdfda3c9fce2059f4a5bfdf9bd97be8e5cecadde02263": 1791467806,
     "797b96764b806b77f3ad9efcd566a389e912f6ce7d0d51372dd8503b5ca36b4f": 1791468301,
     "1bbdf4a3dbbae6fcc7a6c93a8c89b2e5c3e99390ee69414d992ff1edb1a57a6c": 1791469246,
     "45fb30f1cff1d7c2560e323d8f757b6d88e128d16ecd8e2adb733031bbca505f": 1791471682,
@@ -1278,8 +1277,6 @@
     "5db15df9275f5c1a84ac4c8a232c5e2dbb2d40d502b5cac43e382d148421227b": 1794059318
   },
   "known": {
-    "8b132bdc7c9d39a3e0f4162395e81a2eea23b33e151dd9450e0c560f9ec5cedd": 1794054516.2478228,
-    "c6f6da31a1e99fbf478eec467434c608a3c0aff82594c0b459f1a8e13340c196": 1794054764.114103,
     "d58138a6def6274cd8e384643645cf2a59292bbef20641fd1d14f2a0d3e8ad3e": 1794057882.5793731,
     "327490ead6f7da921cf6b02a5fc5f25a7bd61f421003568ff02a29e9624c01b3": 1794057882.5793731,
     "09d2740602de957247c7becf3a4f5e1933e498ee1bb0fa4e9d4eac4f0b7041ee": 1794057882.5793731,
@@ -1330,13 +1327,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794059318.8167446,
+    "last_start_ts": 1794060280.067506,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794059318.8167446,
-    "last_success_ts": 1794059318.8167446,
+    "last_run_ts": 1794060280.067506,
+    "last_success_ts": 1794060280.067506,
     "last_candidates": 10,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 1
   },
   "providers": {
@@ -1351,9 +1348,9 @@
       "updated_at": 1794059370.9696958
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794059318.72618
+      "disabled_until": 1794146729.5107615,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794060329.5107634
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1361,26 +1358,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794059386.3565712
+      "disabled_until": 1794063928.6082485,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794060328.6082509
     }
   },
   "stories": {
-    "3a585c8d8ed1ca1df77e89c7899c6036e5164c01e374adce10769c6c501b0ea5": {
-      "time": 1793972936,
-      "title": "ИИ-агенты OpenAI нашли почти 1000 уязвимостей в Linux. Проверка стоила $1,2 млн - dev.by",
-      "desc": "ИИ-агенты OpenAI нашли почти 1000 уязвимостей в Linux. Проверка стоила $1,2 млн dev.by",
-      "source": "dev.by",
-      "region": "RUSSIA"
-    },
-    "465e443712b6beeae28ff2827b423c63d5165b73e62fede24dd87b931daa12fb": {
-      "time": 1793973406,
-      "title": "Le GPT Fat, 10 000 агентов и задача Навье — Стокса",
-      "desc": "10 000 автономных узлов, связанных в единую сеть, и две изолированные VM в центре: одна планирует, другая исполняет код в песочнице. Слева — ошибка 503 из утекшего API, справа — вихри Навье — Стокса. Вся архитектура скрытого релиза OpenAI — на одной схеме. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "383b6113c1de14c0b6ac6d708aec2af37b7a7aa073a79375422c197108a9c4b4": {
       "time": 1793974119,
       "title": "DeepSeek V4.1 Flash появилась в Token Factory. Миллион токенов контекста без отправки данных за границу",
@@ -1790,99 +1773,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793857955,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 52.29,
-      "candidates": 0,
-      "queue_before": 11,
-      "queue_after": 10,
-      "published": 1,
-      "publish_attempts": 2,
-      "item_failures": 1,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 6.5,
-          "bonus_total": 39.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость адаптации маркетинговых стратегий под агентские модели продаж и новые рекламные форматы ИИ.",
-            "title": "Expedia Group testing OpenAI ad products as agentic partnership economics take shape - PhocusWire",
-            "final_score": 65.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 5,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 4,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793858191,
       "status": "OK",
@@ -23217,10 +23107,135 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794060280,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 49.45,
+      "candidates": 10,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 10,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 32,
+        "raw_items": 565,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 13,
+          "CNews": 0,
+          "Euronews": 17
+        },
+        "score_filtered": 538,
+        "quality_filtered": 14,
+        "story_dedup": 3,
+        "candidates": 10,
+        "candidate_rate": 0.0188,
+        "score_buckets": {
+          "0–39": 521,
+          "40–49": 31,
+          "50–59": 13,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "OPENROUTER",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "OPENROUTER",
+        "failovers": 0,
+        "failures": 2,
+        "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794059318.8167446,
+  "last_search_ts": 1794060280.067506,
   "last_publish_ts": 1794059318.8167446,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
