@@ -1276,50 +1276,13 @@
     "793782607b5ee48687c8ab0a27d678e0998e1e1c199a522fd3543a5a41b36871": 1794037020,
     "c9c9b572d7d7746e4c2d7d33b17e82a628d50e1e6f589cfa537c8b678945f234": 1794037723,
     "58b01f25f7f7926d896c9a52f0d40a81419b5c2352f82c85f6e69453b420e7db": 1794040359,
-    "b05e6a7aecafbbc0f40ba77369339a2a6e0fbcfce6e451cc46feea455d782b3b": 1794042041
+    "b05e6a7aecafbbc0f40ba77369339a2a6e0fbcfce6e451cc46feea455d782b3b": 1794042041,
+    "85c29daad15407b68eae4b6a5e40b26b39d5c641bdcf195ceadb6a772b2f8292": 1794043006
   },
   "known": {
     "0cfbee82ebb2b18d692d03f97e20cfacd91259236524e6e6504db600269c5bbf": 1794042041.805192
   },
   "queue": [
-    {
-      "region": "WORLD",
-      "title": "Europe needs Cold War-like deterrence for AI warfare, Poland says",
-      "link": "https://www.euronews.com/2026/11/07/europe-needs-cold-war-like-deterrence-for-ai-warfare-poland-says",
-      "desc": "The rise in AI-powered cyberattacks requires Europe to build a deterrence system similar to the one that prevented mutual destruction during the Cold War, Polish Deputy Minister Krzysztof Gawkowski has said.",
-      "source": "Euronews",
-      "time": 1794034856.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 5.0,
-        "event_concreteness": 12.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 4.0,
-        "evidence": 2.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 39.5,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 63.5
-      },
-      "base_score": 39.5,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 63.5,
-      "key": "85c29daad15407b68eae4b6a5e40b26b39d5c641bdcf195ceadb6a772b2f8292",
-      "importance": 63.5,
-      "editorial_value": 50.0,
-      "topics": [],
-      "audience_score": 8.0,
-      "tier": "A",
-      "last_failed_at": 1794042522,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1794042822
-    },
     {
       "region": "WORLD",
       "title": "Tough regulations ahead? Democrats set sight on AI tech giants after flipping Congress - Business Today",
@@ -1473,30 +1436,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794042522.2130773,
+    "last_start_ts": 1794043006.0923195,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794042522.2130773,
-    "last_success_ts": 1794042522.2130773,
+    "last_run_ts": 1794043006.0923195,
+    "last_success_ts": 1794043006.0923195,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 5
+    "last_published": 1,
+    "queue_size": 4
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1794046120.8460157,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1794042520.846018
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794043007.809972
     },
     "GROQ": {
-      "disabled_until": 1794046125.412467,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794042525.412469
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794043005.9870899
     },
     "OPENAI": {
-      "disabled_until": 1794128932.128133,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1794042532.1281352
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794043005.9870899
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1504,9 +1467,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1794046131.2405014,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794042531.2405033
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794043005.9870899
     }
   },
   "stories": {
@@ -1922,12 +1885,18 @@
       "desc": "Регулирование ИИ 2026 - почему правительства принимают новые законы Дзеркало тижня",
       "source": "Дзеркало тижня",
       "region": "RUSSIA"
+    },
+    "85c29daad15407b68eae4b6a5e40b26b39d5c641bdcf195ceadb6a772b2f8292": {
+      "time": 1794043006,
+      "title": "Europe needs Cold War-like deterrence for AI warfare, Poland says",
+      "desc": "The rise in AI-powered cyberattacks requires Europe to build a deterrence system similar to the one that prevented mutual destruction during the Cold War, Polish Deputy Minister Krzysztof Gawkowski has said.",
+      "source": "Euronews",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -1944,142 +1913,10 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793809475,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 76.58,
-      "candidates": 18,
-      "queue_before": 12,
-      "queue_after": 12,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 11,
-        "known_recent": 0,
-        "already_queued": 5,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 0,
-        "candidate_count": 18,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Снижение задержек и повышение надежности CI/CD пайплайнов при активном использовании ИИ-ассистентов.",
-            "title": "OpenAI представила Pando — бэкенд на основе Git для разработки с ИИ",
-            "final_score": 78.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 84,
-        "raw_items": 930,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 4,
-          "OpenAI News": 2,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 3,
-          "Habr AI/News": 23,
-          "CNews": 0,
-          "Euronews": 50
-        },
-        "score_filtered": 885,
-        "quality_filtered": 19,
-        "story_dedup": 8,
-        "candidates": 18,
-        "candidate_rate": 0.0213,
-        "score_buckets": {
-          "0–39": 821,
-          "40–49": 83,
-          "50–59": 23,
-          "60–69": 3,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 3,
-          "6": 0,
-          "7": 3,
-          "8": 6,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 4,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793810921,
       "status": "OK",
@@ -22567,11 +22404,101 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1794043006,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 4.02,
+      "candidates": 0,
+      "queue_before": 5,
+      "queue_after": 4,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 400: Bad Request": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 400: Bad Request"
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 24.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра бюджетов на кибербезопасность из-за роста сложности ИИ-атак.",
+            "title": "Europe needs Cold War-like deterrence for AI warfare, Poland says",
+            "final_score": 63.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1794042041.805192,
-  "last_publish_ts": 1794042041.805192,
+  "last_publish_ts": 1794043006.0923195,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
