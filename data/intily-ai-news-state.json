@@ -1273,7 +1273,8 @@
     "4351ef00f6e14e835f2837dc1e4bb47ac31666920c87fdda8e512b70f708dfed": 1794054516,
     "8b132bdc7c9d39a3e0f4162395e81a2eea23b33e151dd9450e0c560f9ec5cedd": 1794054764,
     "c6f6da31a1e99fbf478eec467434c608a3c0aff82594c0b459f1a8e13340c196": 1794056200,
-    "327490ead6f7da921cf6b02a5fc5f25a7bd61f421003568ff02a29e9624c01b3": 1794058844
+    "327490ead6f7da921cf6b02a5fc5f25a7bd61f421003568ff02a29e9624c01b3": 1794058844,
+    "09d2740602de957247c7becf3a4f5e1933e498ee1bb0fa4e9d4eac4f0b7041ee": 1794059086
   },
   "known": {
     "8b132bdc7c9d39a3e0f4162395e81a2eea23b33e151dd9450e0c560f9ec5cedd": 1794054516.2478228,
@@ -1319,70 +1320,38 @@
       ],
       "audience_score": 6.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "WORLD",
-      "title": "PSI announces a proof of the Aaronson-Ambainis conjecture using an Anthropic model - Pasquale Pillitteri",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZldhY2JKQ3lQWGRELUJ6VVZZTEVvNzFHOXJPeHZaYjRfNFRtTVpTd3VCbUVQblN4Q0hYWEpYaXhPS0xadkQ2dWZ4NjBzYzRiMTJPQ1BQRWo3dWYwSDQ2WDNIMlMzclBPNXJKTG5Oa3ptTUYwVVpCbkdqbktFUlVXdDZzNDVub1ZTdENUTzltTVlMcWlYVWJR?oc=5",
-      "desc": "PSI announces a proof of the Aaronson-Ambainis conjecture using an Anthropic model Pasquale Pillitteri",
-      "source": "Pasquale Pillitteri",
-      "time": 1794057353.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 7.0,
-        "event_concreteness": 13.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 40.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 40.0
-      },
-      "base_score": 40.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 40.0,
-      "key": "09d2740602de957247c7becf3a4f5e1933e498ee1bb0fa4e9d4eac4f0b7041ee",
-      "importance": 40.0,
-      "editorial_value": 46.0,
-      "topics": [
-        "models"
-      ],
-      "audience_score": null,
-      "tier": "A"
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1794059086,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1794059386
     }
   ],
   "health": {
-    "last_start_ts": 1794058844.854423,
+    "last_start_ts": 1794059086.8811061,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794058844.854423,
-    "last_success_ts": 1794058844.854423,
+    "last_run_ts": 1794059086.8811061,
+    "last_success_ts": 1794059086.8811061,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 2
+    "queue_size": 1
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794058844.8512776
+      "disabled_until": 1794062706.9242284,
+      "reason": "The read operation timed out",
+      "updated_at": 1794059106.9242315
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794058835.727679
+      "disabled_until": 1794062709.674664,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794059109.674666
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794058835.727679
+      "disabled_until": 1794145517.631578,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794059117.6315794
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1390,9 +1359,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794058835.727679
+      "disabled_until": 1794062716.5475328,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794059116.5475347
     }
   },
   "stories": {
@@ -1780,13 +1749,19 @@
       "desc": "SpaceX posts $14.58 billion quarter as AI revenue overtakes Starlink Crypto Briefing",
       "source": "Crypto Briefing",
       "region": "WORLD"
+    },
+    "09d2740602de957247c7becf3a4f5e1933e498ee1bb0fa4e9d4eac4f0b7041ee": {
+      "time": 1794059086,
+      "title": "PSI announces a proof of the Aaronson-Ambainis conjecture using an Anthropic model - Pasquale Pillitteri",
+      "desc": "PSI announces a proof of the Aaronson-Ambainis conjecture using an Anthropic model Pasquale Pillitteri",
+      "source": "Pasquale Pillitteri",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "WORLD",
@@ -1801,147 +1776,11 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793857490,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 54.42,
-      "candidates": 19,
-      "queue_before": 11,
-      "queue_after": 12,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 5,
-        "known_recent": 0,
-        "already_queued": 11,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 2,
-        "candidate_count": 19,
-        "admission_rate": 10.53,
-        "dominant_block": "already_queued",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://startupfortune.com/openais-ai-pipeline-turned-2308-linux-kernel-bugs-into-948-root-exploits/",
-            "image_url": "https://startupfortune.com/wp-content/uploads/2026/11/openai-linux-kernel-patch-the-planet.jpg",
-            "width": 1280,
-            "height": 720,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходим немедленный аудит безопасности и ускорение патчинга инфраструктуры из-за кратного роста скорости генерации эксплойтов.",
-            "title": "OpenAI's AI pipeline turned 2,308 Linux kernel bugs into 948 root exploits - Startup Fortune",
-            "final_score": 69.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 9,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 51,
-        "raw_items": 467,
-        "source_counts": {
-          "TechCrunch AI": 10,
-          "VentureBeat AI": -1,
-          "The Verge AI": 6,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 1,
-          "Ars Technica": 9,
-          "Habr AI/News": 6,
-          "CNews": 7,
-          "Euronews": 12
-        },
-        "score_filtered": 431,
-        "quality_filtered": 13,
-        "story_dedup": 4,
-        "candidates": 19,
-        "candidate_rate": 0.0457,
-        "score_buckets": {
-          "0–39": 397,
-          "40–49": 45,
-          "50–59": 25,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 2,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793857713,
       "status": "OK",
@@ -23224,11 +23063,104 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794059086,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 37.76,
+      "candidates": 0,
+      "queue_before": 2,
+      "queue_after": 1,
+      "published": 1,
+      "publish_attempts": 2,
+      "item_failures": 1,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://techora.ru/news/chlen-spch-raskritikovala-vnedrenie-ii-v-2026-11-07",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 6.0,
+          "bonus_total": 18.0,
+          "max_score": 6.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Демонстрирует потенциал ИИ как инструмента для решения сложных аналитических задач, но пока не меняет бизнес-процессы напрямую.",
+            "title": "PSI announces a proof of the Aaronson-Ambainis conjecture using an Anthropic model - Pasquale Pillitteri",
+            "final_score": 58.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1794057882.5793731,
-  "last_publish_ts": 1794058844.854423,
+  "last_publish_ts": 1794059086.8811061,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
