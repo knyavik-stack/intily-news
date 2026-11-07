@@ -1,7 +1,5 @@
 {
   "published": {
-    "ebf232c258fe2fbd801d454e6a47f2c56c62c79a0036117a1b5fd19771da7a03": 1791473823,
-    "b3e76cfdb1ae8194d02f9d722f2d77e34f724944eb7096e09a2a76ada3f41cb1": 1791474548,
     "912bd1032d8e167469ad09e3f1bd6b36a22ca6464dd9d9135c70e638a3ccf1a3": 1791475729,
     "af0d96cb2689ec6688d632b1bc1e14dc2980c4221e1d6a2752d78e868d9fa501": 1791476702,
     "b0224f999161ad450d217f4f8d071d6fcc965267431c7974c162c1d82f5221bf": 1791477411,
@@ -1281,11 +1279,11 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794065798.6162622,
+    "last_start_ts": 1794067238.554149,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794065798.6162622,
-    "last_success_ts": 1794065798.6162622,
+    "last_run_ts": 1794067238.554149,
+    "last_success_ts": 1794067238.554149,
     "last_candidates": 10,
     "last_published": 0,
     "queue_size": 0
@@ -1294,7 +1292,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794065830.765196
+      "updated_at": 1794067270.333764
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1318,13 +1316,6 @@
     }
   },
   "stories": {
-    "fdd7150e1d0b6519f2061ea509646cb58e96bb98841053a5c59dd12a4223dd43": {
-      "time": 1793980126,
-      "title": "Стоимость поиска проблем снизится: эксперт «Газинформсервиса» о появлении ИИ-модели для поиска уязвимостей от OpenAI - ICT-Online.ru",
-      "desc": "Стоимость поиска проблем снизится: эксперт «Газинформсервиса» о появлении ИИ-модели для поиска уязвимостей от OpenAI ICT-Online.ru",
-      "source": "ICT-Online.ru",
-      "region": "RUSSIA"
-    },
     "c250aa641f6c67b76982bad6804612b85bec317ccec1144f2b5915436ea8a900": {
       "time": 1793981323,
       "title": "Nvidia is providing billions of dollars to expand advanced AI chip-packaging capacity at a Taiwanese supp - The Times of India",
@@ -1685,96 +1676,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793862025,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 2.41,
-      "candidates": 0,
-      "queue_before": 6,
-      "queue_after": 5,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 6.0,
-          "bonus_total": 18.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Изменение ландшафта поставщиков инфраструктуры может повлиять на долгосрочные затраты на облачные вычисления.",
-            "title": "Qualcomm is betting big on data centers as smartphone sales sink",
-            "final_score": 58.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793862984,
       "status": "OK",
@@ -23366,10 +23267,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794067238,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 31.79,
+      "candidates": 10,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 10,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.5,
+          "bonus_total": 39.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Сигнал о нестабильности цепочек поставок ИИ-инфраструктуры, влияющий на планирование затрат на облачные вычисления.",
+            "title": "Bloomberg узнал, что Microsoft свернула сделку с Oracle по ИИ-серверам - РБК",
+            "final_score": 62.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 35,
+        "raw_items": 658,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 13,
+          "CNews": 0,
+          "Euronews": 19
+        },
+        "score_filtered": 632,
+        "quality_filtered": 13,
+        "story_dedup": 3,
+        "candidates": 10,
+        "candidate_rate": 0.0161,
+        "score_buckets": {
+          "0–39": 614,
+          "40–49": 31,
+          "50–59": 13,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794065798.6162622,
+  "last_search_ts": 1794067238.554149,
   "last_publish_ts": 1794065322.5829656,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
