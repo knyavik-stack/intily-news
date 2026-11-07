@@ -1270,38 +1270,40 @@
     "5db15df9275f5c1a84ac4c8a232c5e2dbb2d40d502b5cac43e382d148421227b": 1794059318,
     "d58138a6def6274cd8e384643645cf2a59292bbef20641fd1d14f2a0d3e8ad3e": 1794060519,
     "c4794d7875be53d7d57cfd23c448a20b1c8d540c6374d3bef59361a78117273e": 1794065078,
-    "856f802fe3aadc322c5ec6f7763f22e2c4169fda0059efebc708976320e58acb": 1794065322
+    "856f802fe3aadc322c5ec6f7763f22e2c4169fda0059efebc708976320e58acb": 1794065322,
+    "fa283997b85a64735fd670fca5d098638ec982f20ba15b6b6dff59e6566f13b6": 1794068438
   },
   "known": {
     "c4794d7875be53d7d57cfd23c448a20b1c8d540c6374d3bef59361a78117273e": 1794065078.6827612,
-    "856f802fe3aadc322c5ec6f7763f22e2c4169fda0059efebc708976320e58acb": 1794065078.6827612
+    "856f802fe3aadc322c5ec6f7763f22e2c4169fda0059efebc708976320e58acb": 1794065078.6827612,
+    "fa283997b85a64735fd670fca5d098638ec982f20ba15b6b6dff59e6566f13b6": 1794068438.74996
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794067959.8330324,
+    "last_start_ts": 1794068438.74996,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794067959.8330324,
-    "last_success_ts": 1794067959.8330324,
-    "last_candidates": 10,
-    "last_published": 0,
+    "last_run_ts": 1794068438.74996,
+    "last_success_ts": 1794068438.74996,
+    "last_candidates": 11,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1794071604.014227,
-      "reason": "The read operation timed out",
-      "updated_at": 1794068004.0142303
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794068470.0781767
     },
     "GROQ": {
-      "disabled_until": 1794071606.1000264,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794068006.1000285
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794068438.6639338
     },
     "OPENAI": {
-      "disabled_until": 1794154413.221157,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1794068013.2211595
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794068438.6639338
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1309,9 +1311,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1794071612.4354467,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794068012.435449
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794068438.6639338
     }
   },
   "stories": {
@@ -1643,10 +1645,16 @@
       "desc": "US approved Nvidia chip sales to China-linked firms The Jerusalem Post",
       "source": "The Jerusalem Post",
       "region": "WORLD"
+    },
+    "fa283997b85a64735fd670fca5d098638ec982f20ba15b6b6dff59e6566f13b6": {
+      "time": 1794068438,
+      "title": "The US let Nvidia sell chips to an empty office in China",
+      "desc": "Concerns are being raised that neither the Commerce Department nor Nvidia are doing their due diligence when it comes to vetting Chinese firms cleared to handle the company's H200 AI chips. According to The New York Times, New Matrix is on the list of approved firms, yet its offices are empty, \"a hollow gray shell […]",
+      "source": "The Verge AI",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -1664,150 +1672,11 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793863706,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 49.53,
-      "candidates": 15,
-      "queue_before": 4,
-      "queue_after": 4,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 8,
-        "known_recent": 0,
-        "already_queued": 4,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 1,
-        "candidate_count": 15,
-        "admission_rate": 6.67,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/news/1103694/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1103694",
-            "image_url": "https://habr.com/share/publication/1103694/41e8145151335e74ccfca6ef848fe802/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 5.5,
-          "bonus_total": 33.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 4.0,
-            "bonus": 12.0,
-            "reason": "Экспериментальная технология без текущего прикладного значения для бизнеса или разработки.",
-            "title": "Представлен открытый проект npu‑render — драйвер для отрисовки рабочего стола Windows 11 с помощью NPU вместо GPU",
-            "final_score": 60.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 72,
-        "raw_items": 486,
-        "source_counts": {
-          "TechCrunch AI": 9,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 7,
-          "Habr AI/News": 12,
-          "CNews": 19,
-          "Euronews": 22
-        },
-        "score_filtered": 449,
-        "quality_filtered": 21,
-        "story_dedup": 1,
-        "candidates": 15,
-        "candidate_rate": 0.0362,
-        "score_buckets": {
-          "0–39": 408,
-          "40–49": 59,
-          "50–59": 18,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 2,
-          "6": 1,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793863946,
       "status": "OK",
@@ -23425,11 +23294,151 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1794068438,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 32.01,
+      "candidates": 11,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 1,
+        "candidate_count": 11,
+        "admission_rate": 9.09,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Необходимость пересмотра рисков цепочек поставок и доступности высокопроизводительного железа для долгосрочного планирования инфраструктуры.",
+            "title": "The US let Nvidia sell chips to an empty office in China",
+            "final_score": 65.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 39,
+        "raw_items": 674,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 4,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 13,
+          "CNews": 0,
+          "Euronews": 20
+        },
+        "score_filtered": 647,
+        "quality_filtered": 12,
+        "story_dedup": 4,
+        "candidates": 11,
+        "candidate_rate": 0.0173,
+        "score_buckets": {
+          "0–39": 627,
+          "40–49": 32,
+          "50–59": 15,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794067959.8330324,
-  "last_publish_ts": 1794065322.5829656,
+  "last_search_ts": 1794068438.74996,
+  "last_publish_ts": 1794068438.74996,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
