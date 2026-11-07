@@ -1279,34 +1279,74 @@
   },
   "known": {
     "777847746157ffdcb3165e22d5f0e8980abf6bf76b6dbf8ba2f5899732bedcdf": 1794050676.2040226,
-    "1ee046ded10eb9156a704a3be454f99e649ab436be194a4dcff4f181399d9ead": 1794052359.1104283
+    "1ee046ded10eb9156a704a3be454f99e649ab436be194a4dcff4f181399d9ead": 1794052359.1104283,
+    "39abe25c7be9612717d3c3fe3f121f785240f6f17270fe4ee2aa2ebb8950ee04": 1794053079.649619
   },
-  "queue": [],
+  "queue": [
+    {
+      "region": "RUSSIA",
+      "title": "Исследование: компании массово запускают процесс «ИИ‑рикошета»",
+      "link": "https://habr.com/ru/news/1104866/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1104866",
+      "desc": "В этом году заголовки СМИ публиковали сообщения о сокращениях штата, связанных с внедрением искусственного интеллекта. Однако новые исследования показывают , что некоторые работодатели, возможно, пересматривают свои решения и меняют курс — эксперты называют эту тенденцию «ИИ‑откатом» (AI rebounding). Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794052673.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 4.0,
+        "event_concreteness": 9.0,
+        "practical_value": 6.5,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 43.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 43.0
+      },
+      "base_score": 43.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 43.0,
+      "key": "39abe25c7be9612717d3c3fe3f121f785240f6f17270fe4ee2aa2ebb8950ee04",
+      "importance": 43.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "business",
+        "research"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    }
+  ],
   "health": {
-    "last_start_ts": 1794052597.0446305,
+    "last_start_ts": 1794053079.649619,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794052597.0446305,
-    "last_success_ts": 1794052597.0446305,
-    "last_candidates": 7,
+    "last_run_ts": 1794053079.649619,
+    "last_success_ts": 1794053079.649619,
+    "last_candidates": 3,
     "last_published": 0,
-    "queue_size": 0
+    "queue_size": 1
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794052631.6959903
+      "disabled_until": 1794056726.851906,
+      "reason": "The read operation timed out",
+      "updated_at": 1794053126.8519123
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794051159.1587198
+      "disabled_until": 1794056730.2023344,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794053130.2023363
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794051159.1587198
+      "disabled_until": 1794139539.2211676,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794053139.2211695
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1314,9 +1354,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794051159.1587198
+      "disabled_until": 1794056738.1863997,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794053138.1864018
     }
   },
   "stories": {
@@ -1729,78 +1769,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793817905,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 26.86,
-      "candidates": 0,
-      "queue_before": 10,
-      "queue_after": 10,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793819567,
       "status": "OK",
@@ -22815,10 +22783,143 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794053079,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 59.62,
+      "candidates": 3,
+      "queue_before": 0,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 2,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 1,
+        "candidate_count": 3,
+        "admission_rate": 33.33,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 7.0,
+          "bonus_total": 21.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет избежать деградации производительности при одновременном запуске локальных ИИ-моделей и других ресурсоемких приложений.",
+            "title": "В приложении Nvidia App появилась настройка приоритета GPU",
+            "final_score": 66.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 27,
+        "raw_items": 431,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 11,
+          "CNews": 0,
+          "Euronews": 15
+        },
+        "score_filtered": 417,
+        "quality_filtered": 11,
+        "story_dedup": 0,
+        "candidates": 3,
+        "candidate_rate": 0.0074,
+        "score_buckets": {
+          "0–39": 402,
+          "40–49": 26,
+          "50–59": 3,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794052597.0446305,
+  "last_search_ts": 1794053079.649619,
   "last_publish_ts": 1794052359.1104283,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
