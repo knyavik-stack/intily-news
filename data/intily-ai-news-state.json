@@ -1283,20 +1283,20 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794052359.1104283,
+    "last_start_ts": 1794052597.0446305,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794052359.1104283,
-    "last_success_ts": 1794052359.1104283,
+    "last_run_ts": 1794052597.0446305,
+    "last_success_ts": 1794052597.0446305,
     "last_candidates": 7,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794052396.554113
+      "updated_at": 1794052631.6959903
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1320,13 +1320,6 @@
     }
   },
   "stories": {
-    "38579c667b4898e2f26b12f90e4abf235c872223d448d1b3f05d7c80e3d327e1": {
-      "time": 1793965961,
-      "title": "Claude Dispatch Flaw Lets Malicious Browser Extensions Run Code on Connected Computers - CyberSecurityNews",
-      "desc": "Claude Dispatch Flaw Lets Malicious Browser Extensions Run Code on Connected Computers CyberSecurityNews",
-      "source": "CyberSecurityNews",
-      "region": "WORLD"
-    },
     "973059b269eb22168023e7e49c1330eb92322229bef4097bd03b45ef76a9c56d": {
       "time": 1793966930,
       "title": "OpenAI объявила о покупке разработчика инфраструктуры для хранения кода и инструментов для работы с Git",
@@ -1736,78 +1729,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793817437,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 35.77,
-      "candidates": 0,
-      "queue_before": 10,
-      "queue_after": 10,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793817905,
       "status": "OK",
@@ -22764,10 +22685,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794052597,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 34.66,
+      "candidates": 7,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 7,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 7,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет избежать просадок производительности при запуске локальных AI-инструментов параллельно с другими задачами.",
+            "title": "В приложении Nvidia App появилась настройка приоритета GPU",
+            "final_score": 66.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 26,
+        "raw_items": 317,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 10,
+          "CNews": 0,
+          "Euronews": 15
+        },
+        "score_filtered": 298,
+        "quality_filtered": 11,
+        "story_dedup": 1,
+        "candidates": 7,
+        "candidate_rate": 0.0241,
+        "score_buckets": {
+          "0–39": 283,
+          "40–49": 26,
+          "50–59": 8,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794052359.1104283,
+  "last_search_ts": 1794052597.0446305,
   "last_publish_ts": 1794052359.1104283,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
