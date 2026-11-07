@@ -1,6 +1,5 @@
 {
   "published": {
-    "94959b9d4e536792df3ac7c39a6e44a1ac1314964279f7a7bd819eff01013608": 1791486302,
     "f4a37ada8648f119b6ea6ddfc68a8d378b4c73a2d915158d5fdca1bf0f9199fc": 1791488932,
     "eff7304b337b6bb379e2e74e9e6c52e0aec5d9417d841478642495fa6cb87639": 1791522056,
     "5fa355add128956813e0e293f136cceb72768a03c1a0ac626bffe216930e1cf0": 1791522777,
@@ -1271,12 +1270,12 @@
   "known": {},
   "queue": [],
   "health": {
-    "last_start_ts": 1794078276.9641545,
+    "last_start_ts": 1794078520.5405629,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794078276.9641545,
-    "last_success_ts": 1794078276.9641545,
-    "last_candidates": 13,
+    "last_run_ts": 1794078520.5405629,
+    "last_success_ts": 1794078520.5405629,
+    "last_candidates": 12,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1284,7 +1283,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794078312.4449694
+      "updated_at": 1794078552.5756464
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1308,13 +1307,6 @@
     }
   },
   "stories": {
-    "1b0cd955ce600bf24dcf51d2b3e5fa00c4d89b08b474e15bf6f8a673b305d379": {
-      "time": 1793992119,
-      "title": "OpenAI сбрасывает режим «размышлений» ChatGPT с High на Medium",
-      "desc": "В частности, пользователи сообщают о переключении с GPT-5.6 Sol High на GPT-6 Medium, несмотря на явно выбранную модель и уровень рассуждений. Жалобы поступают от пользователей веб-версии, Windows, macOS, Android и iOS. В июне 2026 года OpenAI обновила переключатель режимов: Thinking Standard стал Medium, Thinking Extended — High, а Thinking Light вообще убрали. Судя по обсуждению на форуме OpenAI, проблема сохранялась как минимум 2 ноября. Впрочем, наблюдается она и до сих пор. При этом официального объяснения причин самопроизвольного переключения в рассмотренных материалах нет. Особенно неприятно это для той категории платных подписчиков, которой нужны предсказуемое поведение и возможность самостоятельно управлять глубиной «рассуждений». В целом, можно было бы списать на сбой, но учитывая общий тренд, характер сбоя скорее системный. Жалобы пользователей на форуме OpenAI, 9 октября — 2 ноября 2026 года Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "07b362656aacaf1f67ac889eec7617cfce27df7fea37b4df8a94ed9ffae8ec39": {
       "time": 1793992360,
       "title": "JuvrixAI Launches No-Code AI Agent Platform on NEAR Protocol - CoinTrust",
@@ -1605,96 +1597,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793873066,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 2.8,
-      "candidates": 0,
-      "queue_before": 2,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://theaiinsider.tech/2026/11/05/china-blocks-softbanks-acquisition-of-abbs-robotics-division/",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость пересмотра логистики и рынков сбыта для компаний, зависящих от трансграничных сделок в сфере промышленного ИИ.",
-            "title": "China Blocks SoftBank’s Acquisition of ABB’s Robotics Division - AI Insider",
-            "final_score": 62.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793873301,
       "status": "OK",
@@ -23750,10 +23652,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794078520,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 32.04,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 12,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 12,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет точечно оптимизировать ресурсы GPU для локального запуска LLM и других AI-задач без конфликтов с системой.",
+            "title": "В приложении Nvidia App появилась настройка приоритета GPU",
+            "final_score": 65.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 30,
+        "raw_items": 717,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 4,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 9,
+          "CNews": 0,
+          "Euronews": 15
+        },
+        "score_filtered": 689,
+        "quality_filtered": 13,
+        "story_dedup": 3,
+        "candidates": 12,
+        "candidate_rate": 0.0175,
+        "score_buckets": {
+          "0–39": 670,
+          "40–49": 32,
+          "50–59": 15,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794078276.9641545,
+  "last_search_ts": 1794078520.5405629,
   "last_publish_ts": 1794072278.3620868,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
