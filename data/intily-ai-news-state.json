@@ -1,6 +1,5 @@
 {
   "published": {
-    "d16717392c94563016f9851a31e98e1dbb06c6aae39ee17b66008a9fca585475": 1791482477,
     "811ac7d0ef7322a1da1d9936a6e4fb22c7edee970bf2dcf728e51475f41d8c75": 1791484866,
     "84668004c415253ac13960e7e3b6a01322e76b736a63ac431c13a2ed4c5081c7": 1791486074,
     "94959b9d4e536792df3ac7c39a6e44a1ac1314964279f7a7bd819eff01013608": 1791486302,
@@ -1278,12 +1277,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794074438.9742677,
+    "last_start_ts": 1794074676.3482168,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794074438.9742677,
-    "last_success_ts": 1794074438.9742677,
-    "last_candidates": 13,
+    "last_run_ts": 1794074676.3482168,
+    "last_success_ts": 1794074676.3482168,
+    "last_candidates": 14,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1291,7 +1290,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794074471.2154734
+      "updated_at": 1794074716.1729946
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1647,96 +1646,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793870673,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 12.99,
-      "candidates": 0,
-      "queue_before": 3,
-      "queue_after": 2,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "IMAGE_NOT_FOUND": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "IMAGE_NOT_FOUND"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 6.67,
-          "bonus_total": 60.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость адаптации бизнес-процессов под новые стандарты трансграничной цифровой торговли.",
-            "title": "AI to boost global trade by 40 per cent; Singapore cited as regulatory model: WTO report - Singapore Economic Development Board (EDB)",
-            "final_score": 62.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793870909,
       "status": "OK",
@@ -23639,10 +23548,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794074676,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 39.83,
+      "candidates": 14,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 14,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 14,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет точнее управлять ресурсами GPU при запуске локальных моделей, снижая риск зависаний системы.",
+            "title": "В приложении Nvidia App появилась настройка приоритета GPU",
+            "final_score": 65.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 32,
+        "raw_items": 703,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 4,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 10,
+          "CNews": 0,
+          "Euronews": 16
+        },
+        "score_filtered": 672,
+        "quality_filtered": 14,
+        "story_dedup": 3,
+        "candidates": 14,
+        "candidate_rate": 0.0209,
+        "score_buckets": {
+          "0–39": 655,
+          "40–49": 31,
+          "50–59": 17,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794074438.9742677,
+  "last_search_ts": 1794074676.3482168,
   "last_publish_ts": 1794072278.3620868,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
