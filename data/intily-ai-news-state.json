@@ -1,6 +1,5 @@
 {
   "published": {
-    "190fb5072917c0575812e7ab57dcc4b7c2805b82843bc49116a070dd9bacde91": 1791553737,
     "7f70a9927cb45656778d7c7ddd63410da458ee2407faf8b4ec5a59a62e8d302a": 1791554214,
     "b68046c3957fe87d00491337dbdfcdabc198fb9df62be09413622772d3be6744": 1791555413,
     "0e1dd542ea70c4d1315a83f03380a26ac2359fb362aacd29c28caaa35980b495": 1791557349,
@@ -1235,7 +1234,8 @@
     "4428b28ae52b523554e35cc5c364bad9a017aa4ffdba51900fccc1e654ba5c95": 1794135665,
     "521bb36cd6c6d22f2af694fd6cd3c83f1110edb08d965502ade4a3f4f398d01e": 1794141183,
     "6215b05ff3d4ffe6179ee4adf073cd1fb84a7ccf3c271738eb0b0f929f5631c6": 1794143580,
-    "b9d309f075532ada7e0cc8c34d8b5c5a01542c51640f13008411c724fb7b7856": 1794145507
+    "b9d309f075532ada7e0cc8c34d8b5c5a01542c51640f13008411c724fb7b7856": 1794145507,
+    "e3cac26d16a873b18095bd7f0bf06f3ad374c07b758e7ed4a10386dbc78266a1": 1794145751
   },
   "known": {
     "521bb36cd6c6d22f2af694fd6cd3c83f1110edb08d965502ade4a3f4f398d01e": 1794141183.1522803,
@@ -1264,77 +1264,41 @@
         "freshness": 2.0,
         "low_signal_penalty": 0.0,
         "base_score": 42.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 42.0
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 60.0
       },
       "base_score": 42.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 42.0,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 60.0,
       "key": "070f4298b295cb23920eec609469fb946d68dc04e8d715b6ff1aa939263ad213",
-      "importance": 42.0,
+      "importance": 60.0,
       "editorial_value": 50.0,
       "topics": [
         "agents",
         "models"
       ],
-      "audience_score": null,
+      "audience_score": 6.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "WORLD",
-      "title": "2026 US midterms likely to reshape cybersecurity, AI policy - The News International",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQT0dNYWF5X0x6U29kWmMzS1ZnalBUMHdKVWxMdVlsbW9YbEhwWWxjeDI3cGNwejNOWnhSMFkyUFVBMlF6Y1hUTDF2QjJYSmhmd1hmNmlnR2ZWWThaUFlFbmZEU203ZjNsUUE2TDdPdGc0QzZEMUhFM0gyUFZMNENKS0Nlc3FLdlRkU3AzNGJQOUtQTnh5WXBjdXRlTS1HcHhacnfSAZ4BQVVfeXFMT0RXYWxmdkt5REVFdjlUZ3hLUkNfcDBZR0hOY0U4aVlYY2Zaak8tT1AwalZ4OC15bV9ET3NvWnlJLUY0QlhldTZTaENydGZRdHNJb0J0cVo1aDc1RWY0NWNLYlVVLVd3STVJYzc1eHJDNlRvdDBDZjlrUjVONllqdThNWHJuU1UxUFljRVRfNmtxVjN0S2M0V0cxTmJELXc?oc=5",
-      "desc": "2026 US midterms likely to reshape cybersecurity, AI policy The News International",
-      "source": "The News International",
-      "time": 1794136138.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 7.0,
-        "event_concreteness": 14.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 41.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 41.0
-      },
-      "base_score": 41.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 41.0,
-      "key": "e3cac26d16a873b18095bd7f0bf06f3ad374c07b758e7ed4a10386dbc78266a1",
-      "importance": 41.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "security_regulation"
-      ],
-      "audience_score": null,
-      "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1794145507.0780919,
+    "last_start_ts": 1794145751.6566691,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794145507.0780919,
-    "last_success_ts": 1794145507.0780919,
-    "last_candidates": 9,
+    "last_run_ts": 1794145751.6566691,
+    "last_success_ts": 1794145751.6566691,
+    "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 2
+    "queue_size": 1
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794145532.0151348
+      "updated_at": 1794145751.6540015
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1358,13 +1322,6 @@
     }
   },
   "stories": {
-    "5db15df9275f5c1a84ac4c8a232c5e2dbb2d40d502b5cac43e382d148421227b": {
-      "time": 1794059318,
-      "title": "Microsoft's $1 billion Amsterdam data centre project faces protests over AI infrastructure costs- details inside - Livemint",
-      "desc": "Microsoft's $1 billion Amsterdam data centre project faces protests over AI infrastructure costs- details inside Livemint",
-      "source": "Livemint",
-      "region": "WORLD"
-    },
     "d58138a6def6274cd8e384643645cf2a59292bbef20641fd1d14f2a0d3e8ad3e": {
       "time": 1794060519,
       "title": "Член СПЧ раскритиковала внедрение ИИ в законопроекты за нарушение Конституции - Techora.ru",
@@ -1511,12 +1468,18 @@
       "desc": "Anthropic's USD 3.4 Billion Power Deal to Fuel Its AI Data Centre Push Analytics Insight",
       "source": "Analytics Insight",
       "region": "WORLD"
+    },
+    "e3cac26d16a873b18095bd7f0bf06f3ad374c07b758e7ed4a10386dbc78266a1": {
+      "time": 1794145751,
+      "title": "2026 US midterms likely to reshape cybersecurity, AI policy - The News International",
+      "desc": "2026 US midterms likely to reshape cybersecurity, AI policy The News International",
+      "source": "The News International",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -1533,97 +1496,10 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793906445,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 7.82,
-      "candidates": 0,
-      "queue_before": 10,
-      "queue_after": 9,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.theverge.com/tech/1028015/meta-muse-ai-voice-mode-expressive-avatar",
-            "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKB394_MUSE_AI_CVIRGINIA_D.png?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200",
-            "width": 1200,
-            "height": 627,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра стратегии автоматизации клиентского сервиса и внедрения голосовых AI-интерфейсов.",
-            "title": "Muse has a voice mode now",
-            "final_score": 66.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793907160,
       "status": "OK",
@@ -24821,11 +24697,99 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794145751,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 8.77,
+      "candidates": 0,
+      "queue_before": 2,
+      "queue_after": 1,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://www.thenews.com.pk/latest/1422914-2026-us-midterms-likely-to-reshape-cybersecurity-ai-policy",
+            "image_url": "https://www.thenews.com.pk/assets/uploads/2026-11-08/1422914_041035_updates.jpg",
+            "width": 1200,
+            "height": 686,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.5,
+          "bonus_total": 39.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Необходимость мониторинга регуляторных рисков для международного бизнеса и разработки.",
+            "title": "2026 US midterms likely to reshape cybersecurity, AI policy - The News International",
+            "final_score": 62.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1794145507.0780919,
-  "last_publish_ts": 1794145507.0780919,
+  "last_publish_ts": 1794145751.6566691,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
