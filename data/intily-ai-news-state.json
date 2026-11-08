@@ -1234,14 +1234,14 @@
     "521bb36cd6c6d22f2af694fd6cd3c83f1110edb08d965502ade4a3f4f398d01e": 1794141183,
     "6215b05ff3d4ffe6179ee4adf073cd1fb84a7ccf3c271738eb0b0f929f5631c6": 1794143580,
     "b9d309f075532ada7e0cc8c34d8b5c5a01542c51640f13008411c724fb7b7856": 1794145507,
-    "e3cac26d16a873b18095bd7f0bf06f3ad374c07b758e7ed4a10386dbc78266a1": 1794145751
+    "e3cac26d16a873b18095bd7f0bf06f3ad374c07b758e7ed4a10386dbc78266a1": 1794145751,
+    "d3b3aed2cfe0ad4f70cb975d2286599198e1aa98a70e496c3d48670a77632c48": 1794146942
   },
   "known": {
-    "521bb36cd6c6d22f2af694fd6cd3c83f1110edb08d965502ade4a3f4f398d01e": 1794141183.1522803,
-    "6215b05ff3d4ffe6179ee4adf073cd1fb84a7ccf3c271738eb0b0f929f5631c6": 1794141183.1522803,
     "b9d309f075532ada7e0cc8c34d8b5c5a01542c51640f13008411c724fb7b7856": 1794143823.8109992,
     "070f4298b295cb23920eec609469fb946d68dc04e8d715b6ff1aa939263ad213": 1794145507.0780919,
-    "e3cac26d16a873b18095bd7f0bf06f3ad374c07b758e7ed4a10386dbc78266a1": 1794145507.0780919
+    "e3cac26d16a873b18095bd7f0bf06f3ad374c07b758e7ed4a10386dbc78266a1": 1794145507.0780919,
+    "d3b3aed2cfe0ad4f70cb975d2286599198e1aa98a70e496c3d48670a77632c48": 1794146942.72213
   },
   "queue": [
     {
@@ -1288,30 +1288,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794146464.2464628,
+    "last_start_ts": 1794146942.72213,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794146464.2464628,
-    "last_success_ts": 1794146464.2464628,
-    "last_candidates": 9,
-    "last_published": 0,
+    "last_run_ts": 1794146942.72213,
+    "last_success_ts": 1794146942.72213,
+    "last_candidates": 10,
+    "last_published": 1,
     "queue_size": 1
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1794150119.3269966,
-      "reason": "The read operation timed out",
-      "updated_at": 1794146519.327
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794146978.7283907
     },
     "GROQ": {
-      "disabled_until": 1794150126.6447845,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794146526.6447861
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794146942.633243
     },
     "OPENAI": {
-      "disabled_until": 1794232937.674461,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1794146537.674463
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794146942.633243
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1319,19 +1319,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1794150136.4278343,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794146536.427836
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794146942.633243
     }
   },
   "stories": {
-    "d58138a6def6274cd8e384643645cf2a59292bbef20641fd1d14f2a0d3e8ad3e": {
-      "time": 1794060519,
-      "title": "Член СПЧ раскритиковала внедрение ИИ в законопроекты за нарушение Конституции - Techora.ru",
-      "desc": "Член СПЧ раскритиковала внедрение ИИ в законопроекты за нарушение Конституции Techora.ru",
-      "source": "Techora.ru",
-      "region": "RUSSIA"
-    },
     "c4794d7875be53d7d57cfd23c448a20b1c8d540c6374d3bef59361a78117273e": {
       "time": 1794065078,
       "title": "Kravos AI Launches Public Beta of Its Enterprise-Grade AI Agent Infrastructure Platform - Dugout Philippines",
@@ -1478,11 +1471,17 @@
       "desc": "2026 US midterms likely to reshape cybersecurity, AI policy The News International",
       "source": "The News International",
       "region": "WORLD"
+    },
+    "d3b3aed2cfe0ad4f70cb975d2286599198e1aa98a70e496c3d48670a77632c48": {
+      "time": 1794146942,
+      "title": "DARPA wants AI to find hidden flaws in digital markets that adversaries could exploit to wreak economic havoc - Business Insider",
+      "desc": "DARPA wants AI to find hidden flaws in digital markets that adversaries could exploit to wreak economic havoc Business Insider",
+      "source": "Business Insider",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -1499,87 +1498,11 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793907400,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 30.78,
-      "candidates": 0,
-      "queue_before": 8,
-      "queue_after": 8,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 12,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793908114,
       "status": "OK",
@@ -24832,11 +24755,151 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1794146942,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 38.08,
+      "candidates": 10,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 8,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 1,
+        "candidate_count": 10,
+        "admission_rate": 10.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "Remote end closed connection without response": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "Remote end closed connection without response"
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Улучшение памяти агентов напрямую влияет на возможность автоматизации сложных многошаговых бизнес-задач.",
+            "title": "Claude dreaming, Anthropic представила тесты памяти агентов - Pasquale Pillitteri",
+            "final_score": 67.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 28,
+        "raw_items": 572,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 11,
+          "CNews": 0,
+          "Euronews": 16
+        },
+        "score_filtered": 551,
+        "quality_filtered": 9,
+        "story_dedup": 2,
+        "candidates": 10,
+        "candidate_rate": 0.0184,
+        "score_buckets": {
+          "0–39": 535,
+          "40–49": 25,
+          "50–59": 12,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794146464.2464628,
-  "last_publish_ts": 1794145751.6566691,
+  "last_search_ts": 1794146942.72213,
+  "last_publish_ts": 1794146942.72213,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
