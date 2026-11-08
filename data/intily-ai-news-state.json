@@ -1,6 +1,5 @@
 {
   "published": {
-    "b1b60e06dba766d3407fefb112bb949f26c337b520a1a33271e87be111138e95": 1791541489,
     "d8dcdfc8dc0bfe526a20af91d683b4af92bf138832583307b552cf8627675d69": 1791542221,
     "c284468a436a25318279244422ea04d4ab92f4db87a8ab578649f92fd4a7b1e9": 1791543173,
     "8350be22c4e7bdfb6c535ed1cc184c59c555b72b6a47fc2303b4612734cb205f": 1791545087,
@@ -1254,24 +1253,25 @@
     "ddc11da9170d88d6e9395be6d832421ae1b4c91b4f03d5700e7123131d7db3fa": 1794129903.2006986,
     "4251500d2abfcb7b31e203133941e637506467d55c3e191f8b2df6c4ba02ed43": 1794131344.009117,
     "53e6af7d84799f0fb4d4000853007d7c30348f5a8a4fd4bc59d729e8a7a8d4e4": 1794131824.8466618,
-    "2d44d41dd9dc504298a0271a95f28c9ea50f5fc7b14909979e7e02e2c775f5fd": 1794133024.6663399
+    "2d44d41dd9dc504298a0271a95f28c9ea50f5fc7b14909979e7e02e2c775f5fd": 1794133024.6663399,
+    "225398e17d7f4ed60d8cf2f0d1c3050a4364a57715e1a036462133bc464acaef": 1794133498.885656
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794133024.6663399,
+    "last_start_ts": 1794133498.885656,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794133024.6663399,
-    "last_success_ts": 1794133024.6663399,
-    "last_candidates": 7,
-    "last_published": 1,
+    "last_run_ts": 1794133498.885656,
+    "last_success_ts": 1794133498.885656,
+    "last_candidates": 8,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794133061.0050974
+      "updated_at": 1794133542.1412106
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1501,145 +1501,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793896367,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 41.72,
-      "candidates": 35,
-      "queue_before": 9,
-      "queue_after": 11,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 23,
-        "known_recent": 0,
-        "already_queued": 7,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 3,
-        "candidate_count": 35,
-        "admission_rate": 8.57,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.hpcwire.com/bigdatawire/this-just-in/salesforce-and-anthropic-launch-claudeforce-enterprise-ai-partnership/",
-            "image_url": "https://www.hpcwire.com/bigdatawire/wp-content/uploads/sites/2/2025/11/Salesforce-logo.png",
-            "width": 1200,
-            "height": 840,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.67,
-          "bonus_total": 69.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Прямая интеграция LLM в CRM меняет способы обработки лидов и автоматизации продаж для пользователей платформы.",
-            "title": "Salesforce and Anthropic Launch Claudeforce Enterprise AI Partnership - HPCwire",
-            "final_score": 70.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 6,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 197,
-        "raw_items": 1085,
-        "source_counts": {
-          "TechCrunch AI": 6,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 4,
-          "Habr AI/News": 40,
-          "CNews": 94,
-          "Euronews": 50
-        },
-        "score_filtered": 1009,
-        "quality_filtered": 36,
-        "story_dedup": 5,
-        "candidates": 35,
-        "candidate_rate": 0.0394,
-        "score_buckets": {
-          "0–39": 936,
-          "40–49": 106,
-          "50–59": 37,
-          "60–69": 6,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 1,
-          "6": 1,
-          "7": 1,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793896849,
       "status": "OK",
@@ -24391,10 +24252,141 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794133498,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": true,
+      "duration_sec": 43.26,
+      "candidates": 8,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 1,
+      "item_failures": 1,
+      "admission": {
+        "published_key": 7,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 1,
+        "candidate_count": 8,
+        "admission_rate": 12.5,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 6.0,
+          "bonus_total": 54.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 3.0,
+            "bonus": 9.0,
+            "reason": "Спекулятивный прогноз без прикладного влияния на текущие бизнес-процессы или разработку.",
+            "title": "Брокман из OpenAI представил прогноз, смерть может стать выбором - Pasquale Pillitteri",
+            "final_score": 49.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 18,
+        "raw_items": 336,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 8,
+          "CNews": 0,
+          "Euronews": 10
+        },
+        "score_filtered": 322,
+        "quality_filtered": 5,
+        "story_dedup": 1,
+        "candidates": 8,
+        "candidate_rate": 0.0252,
+        "score_buckets": {
+          "0–39": 314,
+          "40–49": 13,
+          "50–59": 9,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794133024.6663399,
+  "last_search_ts": 1794133498.885656,
   "last_publish_ts": 1794133024.6663399,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
