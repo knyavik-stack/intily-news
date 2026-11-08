@@ -1247,7 +1247,6 @@
     "4428b28ae52b523554e35cc5c364bad9a017aa4ffdba51900fccc1e654ba5c95": 1794135665
   },
   "known": {
-    "4251500d2abfcb7b31e203133941e637506467d55c3e191f8b2df6c4ba02ed43": 1794131344.009117,
     "53e6af7d84799f0fb4d4000853007d7c30348f5a8a4fd4bc59d729e8a7a8d4e4": 1794131824.8466618,
     "2d44d41dd9dc504298a0271a95f28c9ea50f5fc7b14909979e7e02e2c775f5fd": 1794133024.6663399,
     "225398e17d7f4ed60d8cf2f0d1c3050a4364a57715e1a036462133bc464acaef": 1794133498.885656,
@@ -1255,12 +1254,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794136382.9776938,
+    "last_start_ts": 1794136859.4118297,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794136382.9776938,
-    "last_success_ts": 1794136382.9776938,
-    "last_candidates": 8,
+    "last_run_ts": 1794136859.4118297,
+    "last_success_ts": 1794136859.4118297,
+    "last_candidates": 7,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1268,7 +1267,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794136412.7272422
+      "updated_at": 1794136895.6210265
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1505,96 +1504,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793900678,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 3.41,
-      "candidates": 0,
-      "queue_before": 8,
-      "queue_after": 7,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.konsulteer.com/article/cowboy-raises-5-million-and-launches-marketplace-for-autonomous-ai-agents",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Маркетплейс упрощает внедрение автономных агентов, снижая порог входа для автоматизации рутинных задач.",
-            "title": "Cowboy Raises $5 Million and Launches Marketplace for Autonomous AI Agents - Konsulteer",
-            "final_score": 63.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793901639,
       "status": "OK",
@@ -24501,10 +24410,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794136859,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 36.21,
+      "candidates": 7,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 7,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 7,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Улучшение памяти агентов напрямую влияет на возможность делегирования им многоэтапных бизнес-процессов.",
+            "title": "Claude dreaming, Anthropic представила тесты памяти агентов - Pasquale Pillitteri",
+            "final_score": 68.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 21,
+        "raw_items": 343,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 9,
+          "CNews": 0,
+          "Euronews": 12
+        },
+        "score_filtered": 329,
+        "quality_filtered": 7,
+        "story_dedup": 0,
+        "candidates": 7,
+        "candidate_rate": 0.0217,
+        "score_buckets": {
+          "0–39": 321,
+          "40–49": 15,
+          "50–59": 7,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794136382.9776938,
+  "last_search_ts": 1794136859.4118297,
   "last_publish_ts": 1794135665.9566054,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
