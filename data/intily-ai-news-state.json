@@ -1,6 +1,5 @@
 {
   "published": {
-    "b68046c3957fe87d00491337dbdfcdabc198fb9df62be09413622772d3be6744": 1791555413,
     "0e1dd542ea70c4d1315a83f03380a26ac2359fb362aacd29c28caaa35980b495": 1791557349,
     "3cea4774fba29b559aa8e787be945a89008f589c51e0ac646a7e488a7ecd5dc6": 1791557584,
     "735d40474fbba054b7f191b6fc7ae50cd987516a1bede794e88116e51d1a218f": 1791558077,
@@ -1288,30 +1287,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794146942.72213,
+    "last_start_ts": 1794147419.9880571,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794146942.72213,
-    "last_success_ts": 1794146942.72213,
+    "last_run_ts": 1794147419.9880571,
+    "last_success_ts": 1794147419.9880571,
     "last_candidates": 10,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 1
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794146978.7283907
+      "disabled_until": 1794151063.7722738,
+      "reason": "The read operation timed out",
+      "updated_at": 1794147463.7722764
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794146942.633243
+      "disabled_until": 1794151066.8310425,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794147466.831045
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794146942.633243
+      "disabled_until": 1794233873.197392,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794147473.1973937
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1319,9 +1318,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794146942.633243
+      "disabled_until": 1794151072.3273497,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794147472.3273513
     }
   },
   "stories": {
@@ -1503,147 +1502,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793908114,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 54.27,
-      "candidates": 44,
-      "queue_before": 8,
-      "queue_after": 12,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 33,
-        "known_recent": 0,
-        "already_queued": 3,
-        "story_queue": 1,
-        "story_history": 2,
-        "added": 5,
-        "candidate_count": 44,
-        "admission_rate": 11.36,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.theverge.com/tech/1028015/meta-muse-ai-voice-mode-expressive-avatar",
-            "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKB394_MUSE_AI_CVIRGINIA_D.png?dotviporig=true",
-            "width": 2040,
-            "height": 1334,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.67,
-          "bonus_total": 69.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Ускоряет внедрение голосовой автоматизации в клиентский сервис и меняет стандарты взаимодействия с ИИ-агентами.",
-            "title": "Muse has a voice mode now",
-            "final_score": 63.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 5,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 195,
-        "raw_items": 1206,
-        "source_counts": {
-          "TechCrunch AI": 11,
-          "VentureBeat AI": -1,
-          "The Verge AI": 8,
-          "OpenAI News": 1,
-          "Google DeepMind": 1,
-          "Hugging Face": 1,
-          "Ars Technica": 7,
-          "Habr AI/News": 40,
-          "CNews": 77,
-          "Euronews": 49
-        },
-        "score_filtered": 1120,
-        "quality_filtered": 34,
-        "story_dedup": 8,
-        "candidates": 44,
-        "candidate_rate": 0.0435,
-        "score_buckets": {
-          "0–39": 1040,
-          "40–49": 110,
-          "50–59": 47,
-          "60–69": 9,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 2,
-          "6": 3,
-          "7": 1,
-          "8": 2,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793908362,
       "status": "OK",
@@ -24895,10 +24753,136 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794147419,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 53.22,
+      "candidates": 10,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 10,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 28,
+        "raw_items": 574,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 11,
+          "CNews": 0,
+          "Euronews": 16
+        },
+        "score_filtered": 555,
+        "quality_filtered": 7,
+        "story_dedup": 2,
+        "candidates": 10,
+        "candidate_rate": 0.0183,
+        "score_buckets": {
+          "0–39": 536,
+          "40–49": 26,
+          "50–59": 12,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794146942.72213,
+  "last_search_ts": 1794147419.9880571,
   "last_publish_ts": 1794146942.72213,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
