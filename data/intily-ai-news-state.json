@@ -1,6 +1,5 @@
 {
   "published": {
-    "c382466f69537e2f0c73044bac7f72894f60a998d1e24562a111b79177828b6d": 1791533577,
     "d037d5a4c36f94b186d357dc043b5417c37844037207f064f2af7ddf4bdb9b66": 1791537176,
     "0ea2190fd45198bad8e410899eb219c2299b351ac4b1627024deb17f43166610": 1791538857,
     "591eb632bc7e9b86d8bfc5051d7494f7c4ed248560f568b987c0bd12b103a312": 1791539099,
@@ -1257,30 +1256,30 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794124381.2119484,
+    "last_start_ts": 1794126062.812538,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794124381.2119484,
-    "last_success_ts": 1794124381.2119484,
+    "last_run_ts": 1794126062.812538,
+    "last_success_ts": 1794126062.812538,
     "last_candidates": 3,
     "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1794128006.5452824,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1794124406.5452847
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794126096.525211
     },
     "GROQ": {
-      "disabled_until": 1794128009.7686758,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794124409.7686777
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794126062.6941757
     },
     "OPENAI": {
-      "disabled_until": 1794210813.167543,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1794124413.1675448
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794126062.6941757
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1288,9 +1287,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1794128012.1657417,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794124412.165743
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794126062.6941757
     }
   },
   "stories": {
@@ -1521,96 +1520,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793886759,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 10.97,
-      "candidates": 0,
-      "queue_before": 7,
-      "queue_after": 6,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/companies/click/news/1103962/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1103962",
-            "image_url": "https://habr.com/share/publication/1103962/0c710ea56628b79d7062e7a41401515f/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 6.0,
-          "bonus_total": 18.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Полезная прикладная информация по внедрению ИИ в маркетинг, но без конкретных технологических прорывов.",
-            "title": "В 2027 год без старых ошибок: пять мероприятий click.ru",
-            "final_score": 65.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793887960,
       "status": "OK",
@@ -24117,10 +24026,140 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1794126062,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 33.72,
+      "candidates": 3,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 3,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 3,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Позволяет внедрить системный подход к AI-кодингу, снижая риски хаотичной генерации кода в продакшене.",
+            "title": "Tessl launches software factory platform for AI coding agents - TechGig",
+            "final_score": 65.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 17,
+        "raw_items": 309,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 5,
+          "CNews": 0,
+          "Euronews": 10
+        },
+        "score_filtered": 302,
+        "quality_filtered": 4,
+        "story_dedup": 0,
+        "candidates": 3,
+        "candidate_rate": 0.0103,
+        "score_buckets": {
+          "0–39": 296,
+          "40–49": 10,
+          "50–59": 3,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794124381.2119484,
+  "last_search_ts": 1794126062.812538,
   "last_publish_ts": 1794123902.9001153,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
