@@ -1236,36 +1236,35 @@
     "3dd8c042868bfd85f8ce2533ca8625289fcdde0cdb0dc281a2f3a3ae730ad7a3": 1794150540
   },
   "known": {
-    "d3b3aed2cfe0ad4f70cb975d2286599198e1aa98a70e496c3d48670a77632c48": 1794146942.72213,
     "4e759b2a5f49ed1bcd8fe02ddf8b9c577d250008a9574fa04513a1341bb3ff1e": 1794149343.3798652,
     "3dd8c042868bfd85f8ce2533ca8625289fcdde0cdb0dc281a2f3a3ae730ad7a3": 1794150540.7330933
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794152223.7961292,
+    "last_start_ts": 1794152704.309785,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794152223.7961292,
-    "last_success_ts": 1794152223.7961292,
+    "last_run_ts": 1794152704.309785,
+    "last_success_ts": 1794152704.309785,
     "last_candidates": 11,
     "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1794155870.9374096,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1794152270.9374118
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794152745.4791975
     },
     "GROQ": {
-      "disabled_until": 1794155874.0606732,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794152274.060675
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794152704.200489
     },
     "OPENAI": {
-      "disabled_until": 1794238683.5137095,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1794152283.5137117
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794152704.200489
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1273,9 +1272,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1794155883.068816,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794152283.0688179
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794152704.200489
     }
   },
   "stories": {
@@ -1457,94 +1456,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793947969,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 11.56,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.reuters.com/technology/neocloud-firm-iren-tops-quarterly-revenue-estimates-shares-jump-2026-11-05/",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра стратегии облачных мощностей из-за срыва сроков поставки инфраструктуры.",
-            "title": "AI data center firm IREN delays Microsoft AI deliveries, plans $15 billion spending push - Reuters",
-            "final_score": 68.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 10,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793948448,
       "status": "OK",
@@ -25015,10 +24926,140 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1794152704,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 41.18,
+      "candidates": 11,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 1,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 11,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 5.0,
+          "bonus_total": 30.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Улучшение памяти агентов напрямую влияет на архитектуру автоматизации бизнес-процессов и выбор стека инструментов.",
+            "title": "Claude dreaming, Anthropic представила тесты памяти агентов - Pasquale Pillitteri",
+            "final_score": 67.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 35,
+        "raw_items": 625,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 14,
+          "CNews": 0,
+          "Euronews": 20
+        },
+        "score_filtered": 604,
+        "quality_filtered": 8,
+        "story_dedup": 2,
+        "candidates": 11,
+        "candidate_rate": 0.0186,
+        "score_buckets": {
+          "0–39": 578,
+          "40–49": 34,
+          "50–59": 13,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794152223.7961292,
+  "last_search_ts": 1794152704.309785,
   "last_publish_ts": 1794150540.7330933,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
