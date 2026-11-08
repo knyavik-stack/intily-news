@@ -1,6 +1,5 @@
 {
   "published": {
-    "7f70a9927cb45656778d7c7ddd63410da458ee2407faf8b4ec5a59a62e8d302a": 1791554214,
     "b68046c3957fe87d00491337dbdfcdabc198fb9df62be09413622772d3be6744": 1791555413,
     "0e1dd542ea70c4d1315a83f03380a26ac2359fb362aacd29c28caaa35980b495": 1791557349,
     "3cea4774fba29b559aa8e787be945a89008f589c51e0ac646a7e488a7ecd5dc6": 1791557584,
@@ -1281,34 +1280,38 @@
       ],
       "audience_score": 6.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1794146464,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1794146764
     }
   ],
   "health": {
-    "last_start_ts": 1794145751.6566691,
+    "last_start_ts": 1794146464.2464628,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794145751.6566691,
-    "last_success_ts": 1794145751.6566691,
-    "last_candidates": 0,
-    "last_published": 1,
+    "last_run_ts": 1794146464.2464628,
+    "last_success_ts": 1794146464.2464628,
+    "last_candidates": 9,
+    "last_published": 0,
     "queue_size": 1
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794145751.6540015
+      "disabled_until": 1794150119.3269966,
+      "reason": "The read operation timed out",
+      "updated_at": 1794146519.327
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794145504.3680205
+      "disabled_until": 1794150126.6447845,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794146526.6447861
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794145504.3680205
+      "disabled_until": 1794232937.674461,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794146537.674463
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1316,9 +1319,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794145504.3680205
+      "disabled_until": 1794150136.4278343,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794146536.427836
     }
   },
   "stories": {
@@ -1500,96 +1503,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793907160,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 4.73,
-      "candidates": 0,
-      "queue_before": 9,
-      "queue_after": 8,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/",
-            "image_url": "https://techcrunch.com/wp-content/uploads/2026/08/openai-daybreak.jpg?resize=1200,798",
-            "width": 1200,
-            "height": 798,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 6.0,
-          "bonus_total": 18.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Инструмент требует полевых испытаний и не дает мгновенного изменения в архитектуре безопасности.",
-            "title": "OpenAI released a new cybersecurity model. Is that enough?",
-            "final_score": 67.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793907400,
       "status": "OK",
@@ -24785,10 +24698,144 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794146464,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": true,
+      "duration_sec": 73.44,
+      "candidates": 9,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 1,
+      "item_failures": 1,
+      "admission": {
+        "published_key": 8,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 9,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 9.0,
+          "bonus_total": 54.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 10.0,
+            "bonus": 30.0,
+            "reason": "Need to reassess power budgets for AI workloads.",
+            "title": "Anthropic's USD 3.4 Billion Power Deal to Fuel Its AI Data Centre Push - Analytics Insight",
+            "final_score": 72.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 28,
+        "raw_items": 556,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 11,
+          "CNews": 0,
+          "Euronews": 16
+        },
+        "score_filtered": 537,
+        "quality_filtered": 8,
+        "story_dedup": 2,
+        "candidates": 9,
+        "candidate_rate": 0.017,
+        "score_buckets": {
+          "0–39": 521,
+          "40–49": 24,
+          "50–59": 11,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "GROQ",
+        "failovers": 2,
+        "failures": 4,
+        "blocked": 5,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794145507.0780919,
+  "last_search_ts": 1794146464.2464628,
   "last_publish_ts": 1794145751.6566691,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
