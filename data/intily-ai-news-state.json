@@ -1236,11 +1236,11 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794160863.5252774,
+    "last_start_ts": 1794161104.0606272,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794160863.5252774,
-    "last_success_ts": 1794160863.5252774,
+    "last_run_ts": 1794161104.0606272,
+    "last_success_ts": 1794161104.0606272,
     "last_candidates": 11,
     "last_published": 0,
     "queue_size": 0
@@ -1249,7 +1249,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794160898.5880406
+      "updated_at": 1794161135.7454348
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1437,147 +1437,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793954440,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 48.57,
-      "candidates": 20,
-      "queue_before": 7,
-      "queue_after": 7,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 10,
-        "known_recent": 0,
-        "already_queued": 6,
-        "story_queue": 1,
-        "story_history": 2,
-        "added": 1,
-        "candidate_count": 20,
-        "admission_rate": 5.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.cnews.ru/news/line/2026-11-06_ekspanta_voshla_v_kapital",
-            "image_url": "https://www.cnews.ru/img/design2008/logocnews_f.png",
-            "width": 600,
-            "height": 315,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 6.67,
-          "bonus_total": 60.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Сигнал о консолидации рынка AI-инструментов для управления проектами, требующий мониторинга новых возможностей автоматизации.",
-            "title": "«Экспанта» вошла в капитал разработчика AI-native платформы «Ирактис Трекер»",
-            "final_score": 64.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 68,
-        "raw_items": 412,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 7,
-          "Habr AI/News": 10,
-          "CNews": 29,
-          "Euronews": 17
-        },
-        "score_filtered": 370,
-        "quality_filtered": 16,
-        "story_dedup": 6,
-        "candidates": 20,
-        "candidate_rate": 0.0581,
-        "score_buckets": {
-          "0–39": 343,
-          "40–49": 41,
-          "50–59": 25,
-          "60–69": 2,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 2,
-          "7": 3,
-          "8": 2,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793954920,
       "status": "OK",
@@ -25361,10 +25220,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794161104,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 31.69,
+      "candidates": 11,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 11,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.0,
+          "bonus_total": 36.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 4.0,
+            "bonus": 12.0,
+            "reason": "Это скорее социальный протест и технический курьез, не несущий немедленных изменений в бизнес-процессах или архитектуре.",
+            "title": "Вышел открытый проект Ram Altman — скрипт, который отправляет главе OpenAI инфу, сколько памяти простаивает на ПК",
+            "final_score": 55.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 36,
+        "raw_items": 686,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 11,
+          "CNews": 0,
+          "Euronews": 23
+        },
+        "score_filtered": 667,
+        "quality_filtered": 8,
+        "story_dedup": 0,
+        "candidates": 11,
+        "candidate_rate": 0.0169,
+        "score_buckets": {
+          "0–39": 644,
+          "40–49": 31,
+          "50–59": 11,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794160863.5252774,
+  "last_search_ts": 1794161104.0606272,
   "last_publish_ts": 1794159179.9361255,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
