@@ -1,6 +1,5 @@
 {
   "published": {
-    "1e1b8dc531587990b9785d854fe502ebbb8d3519b49b7d90f5cc0458c704dc7b": 1791570057,
     "e0d7923ebac22d308e1c159d188f2b700cc0da3dcf6b1b296a44bf630ebb6ce9": 1791571250,
     "93896245597bb6106575b91ad77162f4c7e3ef54855748c6f4809e4e9075b84a": 1791571969,
     "d210eda91453b0024cb12a19eedd3179e4f3b49bbf6d646cac361e37436cda6c": 1791572931,
@@ -1228,27 +1227,29 @@
     "070f4298b295cb23920eec609469fb946d68dc04e8d715b6ff1aa939263ad213": 1794149343,
     "3dd8c042868bfd85f8ce2533ca8625289fcdde0cdb0dc281a2f3a3ae730ad7a3": 1794150540,
     "4e759b2a5f49ed1bcd8fe02ddf8b9c577d250008a9574fa04513a1341bb3ff1e": 1794155584,
-    "566188d49fc611a6579e3e7403608112a7bcb70155ff8043201767b00795492d": 1794159179
+    "566188d49fc611a6579e3e7403608112a7bcb70155ff8043201767b00795492d": 1794159179,
+    "134501dc3cc227392e8c9a00088e22866273982f0a8bc050d3c37b70231ced84": 1794162779
   },
   "known": {
-    "566188d49fc611a6579e3e7403608112a7bcb70155ff8043201767b00795492d": 1794159179.9361255
+    "566188d49fc611a6579e3e7403608112a7bcb70155ff8043201767b00795492d": 1794159179.9361255,
+    "134501dc3cc227392e8c9a00088e22866273982f0a8bc050d3c37b70231ced84": 1794162779.1891444
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794161580.9559658,
+    "last_start_ts": 1794162779.1891444,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794161580.9559658,
-    "last_success_ts": 1794161580.9559658,
-    "last_candidates": 11,
-    "last_published": 0,
+    "last_run_ts": 1794162779.1891444,
+    "last_success_ts": 1794162779.1891444,
+    "last_candidates": 12,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794161617.8822691
+      "updated_at": 1794162818.437943
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1411,6 +1412,13 @@
       "desc": "Suno is facing yet another pair of lawsuits. A group of rights holders of Elvis Presley's music and the publisher of some of Eminem's biggest records are suing the AI music company, claiming it illegally generates music and lyrics that mimic those artists. The lawyers in the Presley suit claim that Suno has violated Tennessee's […]",
       "source": "The Verge AI",
       "region": "WORLD"
+    },
+    "134501dc3cc227392e8c9a00088e22866273982f0a8bc050d3c37b70231ced84": {
+      "time": 1794162779,
+      "title": "OpenAI представила GPT-6 Cyber: модель обнаружила 948 уязвимостей Linux и получила критический уровень киберриска - prospect.com.ru",
+      "desc": "OpenAI представила GPT-6 Cyber: модель обнаружила 948 уязвимостей Linux и получила критический уровень киберриска prospect.com.ru",
+      "source": "prospect.com.ru",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
@@ -1419,7 +1427,6 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -1433,99 +1440,10 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793955157,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 15.28,
-      "candidates": 0,
-      "queue_before": 6,
-      "queue_after": 5,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.theverge.com/tech/1028412/airbnb-ai-travel-agent-q3-2026-earnings",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 6.0,
-          "bonus_total": 18.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Необходимость адаптации стратегий для travel-tech продуктов и сервисов под меняющийся UX планирования поездок.",
-            "title": "Airbnb is working on an AI travel agent",
-            "final_score": 61.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793955402,
       "status": "OK",
@@ -25389,11 +25307,151 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794162779,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 49.67,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 1,
+        "candidate_count": 12,
+        "admission_rate": 8.33,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+            "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/22202367/517216004.jpg?quality=90&strip=all&crop=0%2C3.4730210448443%2C100%2C41.13900448979&w=1200",
+            "width": 1200,
+            "height": 626,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 9.0,
+          "bonus_total": 54.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Высокий риск юридических претензий к продуктам, использующим генеративные модели, обученные на защищенных данных.",
+            "title": "Elvis and Eminem rights holders are suing Suno",
+            "final_score": 67.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 35,
+        "raw_items": 712,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 11,
+          "CNews": 0,
+          "Euronews": 22
+        },
+        "score_filtered": 691,
+        "quality_filtered": 9,
+        "story_dedup": 0,
+        "candidates": 12,
+        "candidate_rate": 0.0177,
+        "score_buckets": {
+          "0–39": 664,
+          "40–49": 36,
+          "50–59": 11,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794161580.9559658,
-  "last_publish_ts": 1794159179.9361255,
+  "last_search_ts": 1794162779.1891444,
+  "last_publish_ts": 1794162779.1891444,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
