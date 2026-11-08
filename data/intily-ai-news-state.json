@@ -1256,12 +1256,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794126538.4454052,
+    "last_start_ts": 1794127979.6147993,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794126538.4454052,
-    "last_success_ts": 1794126538.4454052,
-    "last_candidates": 2,
+    "last_run_ts": 1794127979.6147993,
+    "last_success_ts": 1794127979.6147993,
+    "last_candidates": 3,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1269,7 +1269,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794126582.8516002
+      "updated_at": 1794128018.334622
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1293,13 +1293,6 @@
     }
   },
   "stories": {
-    "58b01f25f7f7926d896c9a52f0d40a81419b5c2352f82c85f6e69453b420e7db": {
-      "time": 1794040359,
-      "title": "Kihan Launches Constitutional Computing to Bring Enforceable Authority to Enterprise AI Agents - HPCwire",
-      "desc": "Kihan Launches Constitutional Computing to Bring Enforceable Authority to Enterprise AI Agents HPCwire",
-      "source": "HPCwire",
-      "region": "WORLD"
-    },
     "b05e6a7aecafbbc0f40ba77369339a2a6e0fbcfce6e451cc46feea455d782b3b": {
       "time": 1794042041,
       "title": "Регулирование ИИ 2026 - почему правительства принимают новые законы - Дзеркало тижня",
@@ -1520,146 +1513,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793889879,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 47.37,
-      "candidates": 27,
-      "queue_before": 7,
-      "queue_after": 7,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 18,
-        "known_recent": 0,
-        "already_queued": 5,
-        "story_queue": 1,
-        "story_history": 2,
-        "added": 1,
-        "candidate_count": 27,
-        "admission_rate": 3.7,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/companies/selectel/news/1103984/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1103984",
-            "image_url": "https://habr.com/share/publication/1103984/5d3388ed15b1b8e33c37e09f48d7418b/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.33,
-          "bonus_total": 75.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 3,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Доступ к весам и методологии обучения позволяет внедрять агентные решения без затрат на API.",
-            "title": "Axion 1.0 — новый открытый агент на 35B с тремя миллиардами активных параметров",
-            "final_score": 68.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 187,
-        "raw_items": 1013,
-        "source_counts": {
-          "TechCrunch AI": 4,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 4,
-          "Habr AI/News": 40,
-          "CNews": 88,
-          "Euronews": 50
-        },
-        "score_filtered": 952,
-        "quality_filtered": 32,
-        "story_dedup": 2,
-        "candidates": 27,
-        "candidate_rate": 0.0327,
-        "score_buckets": {
-          "0–39": 884,
-          "40–49": 97,
-          "50–59": 26,
-          "60–69": 6,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 2,
-          "6": 1,
-          "7": 2,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793890600,
       "status": "OK",
@@ -24186,10 +24039,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794127979,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 38.72,
+      "candidates": 3,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 3,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 3,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра процессов разработки и внедрения AI-агентов для сохранения конкурентоспособности команды.",
+            "title": "Tessl launches software factory platform for AI coding agents - TechGig",
+            "final_score": 65.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 19,
+        "raw_items": 317,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 6,
+          "CNews": 0,
+          "Euronews": 11
+        },
+        "score_filtered": 310,
+        "quality_filtered": 4,
+        "story_dedup": 0,
+        "candidates": 3,
+        "candidate_rate": 0.0101,
+        "score_buckets": {
+          "0–39": 303,
+          "40–49": 11,
+          "50–59": 3,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794126538.4454052,
+  "last_search_ts": 1794127979.6147993,
   "last_publish_ts": 1794123902.9001153,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
