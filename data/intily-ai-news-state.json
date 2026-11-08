@@ -1259,19 +1259,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 2.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 42.0,
+        "base_score": 41.5,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 60.0
+        "final_score": 59.5
       },
-      "base_score": 42.0,
+      "base_score": 41.5,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 60.0,
+      "score": 59.5,
       "key": "070f4298b295cb23920eec609469fb946d68dc04e8d715b6ff1aa939263ad213",
-      "importance": 60.0,
+      "importance": 59.5,
       "editorial_value": 50.0,
       "topics": [
         "agents",
@@ -1287,30 +1287,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794147419.9880571,
+    "last_start_ts": 1794147660.0022528,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794147419.9880571,
-    "last_success_ts": 1794147419.9880571,
+    "last_run_ts": 1794147660.0022528,
+    "last_success_ts": 1794147660.0022528,
     "last_candidates": 10,
     "last_published": 0,
     "queue_size": 1
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1794151063.7722738,
+      "disabled_until": 1794151312.6132984,
       "reason": "The read operation timed out",
-      "updated_at": 1794147463.7722764
+      "updated_at": 1794147712.6133015
     },
     "GROQ": {
-      "disabled_until": 1794151066.8310425,
+      "disabled_until": 1794151316.1709223,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794147466.831045
+      "updated_at": 1794147716.1709244
     },
     "OPENAI": {
-      "disabled_until": 1794233873.197392,
+      "disabled_until": 1794234125.528194,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1794147473.1973937
+      "updated_at": 1794147725.5281963
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1318,9 +1318,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1794151072.3273497,
+      "disabled_until": 1794151324.538742,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794147472.3273513
+      "updated_at": 1794147724.5387442
     }
   },
   "stories": {
@@ -1502,94 +1502,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793908362,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 8.35,
-      "candidates": 0,
-      "queue_before": 12,
-      "queue_after": 11,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "IMAGE_NOT_FOUND": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "IMAGE_NOT_FOUND"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 6.0,
-          "bonus_total": 36.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Дефицит GPU напрямую влияет на стоимость облачных вычислений и доступность инфраструктуры для обучения моделей.",
-            "title": "Nvidia Reportedly Unable to Fulfill 99% of Massive $70 Billion AI GPU Order From Chinese Tech Giants - eTeknix",
-            "final_score": 71.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793941250,
       "status": "OK",
@@ -24879,10 +24791,143 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1794147660,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 65.53,
+      "candidates": 10,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 10,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 24.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра протоколов безопасности для финтех-продуктов и алгоритмических систем.",
+            "title": "DARPA wants AI to find hidden flaws in digital markets that adversaries could exploit to wreak economic havoc - Business Insider",
+            "final_score": 68.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 28,
+        "raw_items": 583,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 11,
+          "CNews": 0,
+          "Euronews": 16
+        },
+        "score_filtered": 563,
+        "quality_filtered": 8,
+        "story_dedup": 2,
+        "candidates": 10,
+        "candidate_rate": 0.018,
+        "score_buckets": {
+          "0–39": 544,
+          "40–49": 27,
+          "50–59": 12,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794147419.9880571,
+  "last_search_ts": 1794147660.0022528,
   "last_publish_ts": 1794146942.72213,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
