@@ -1229,35 +1229,34 @@
     "134501dc3cc227392e8c9a00088e22866273982f0a8bc050d3c37b70231ced84": 1794162779
   },
   "known": {
-    "566188d49fc611a6579e3e7403608112a7bcb70155ff8043201767b00795492d": 1794159179.9361255,
     "134501dc3cc227392e8c9a00088e22866273982f0a8bc050d3c37b70231ced84": 1794162779.1891444
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794164466.9312801,
+    "last_start_ts": 1794164701.8294165,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794164466.9312801,
-    "last_success_ts": 1794164466.9312801,
+    "last_run_ts": 1794164701.8294165,
+    "last_success_ts": 1794164701.8294165,
     "last_candidates": 11,
     "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794164508.9996216
+      "disabled_until": 1794168352.3235772,
+      "reason": "The read operation timed out",
+      "updated_at": 1794164752.3235812
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794159179.8578086
+      "disabled_until": 1794168358.4363327,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794164758.436335
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794159179.8578086
+      "disabled_until": 1794251165.282547,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794164765.2825499
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1265,9 +1264,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794159179.8578086
+      "disabled_until": 1794168364.167874,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794164764.167876
     }
   },
   "stories": {
@@ -1442,147 +1441,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793957796,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 49.18,
-      "candidates": 20,
-      "queue_before": 4,
-      "queue_after": 5,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 13,
-        "known_recent": 0,
-        "already_queued": 3,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 2,
-        "candidate_count": 20,
-        "admission_rate": 10.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 402: Payment Required": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 402: Payment Required"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.67,
-          "bonus_total": 69.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Прямая возможность оптимизации затрат и автоматизации критических бизнес-процессов в SAP-инфраструктуре.",
-            "title": "Artificio Launches Governed SAP AI Agents for Finance, Supply Chain, Manufacturing and IT Operations - The Des Moines Register",
-            "final_score": 66.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 47,
-        "raw_items": 435,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 6,
-          "Habr AI/News": 15,
-          "CNews": -1,
-          "Euronews": 21
-        },
-        "score_filtered": 402,
-        "quality_filtered": 8,
-        "story_dedup": 5,
-        "candidates": 20,
-        "candidate_rate": 0.0515,
-        "score_buckets": {
-          "0–39": 372,
-          "40–49": 36,
-          "50–59": 24,
-          "60–69": 2,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 2,
-          "7": 2,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793958286,
       "status": "OK",
@@ -25485,10 +25343,143 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794164701,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 63.46,
+      "candidates": 11,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 11,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 10.0,
+          "bonus_total": 30.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 10.0,
+            "bonus": 30.0,
+            "reason": "Немедленно пересмотреть безопасность и патчинг.",
+            "title": "OpenAI представила GPT-6 Cyber: модель обнаружила 948 уязвимостей Linux и получила критический уровень киберриска - prospect.com.ru",
+            "final_score": 85.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 33,
+        "raw_items": 711,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 10,
+          "CNews": 0,
+          "Euronews": 21
+        },
+        "score_filtered": 691,
+        "quality_filtered": 9,
+        "story_dedup": 0,
+        "candidates": 11,
+        "candidate_rate": 0.0162,
+        "score_buckets": {
+          "0–39": 660,
+          "40–49": 40,
+          "50–59": 10,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "GROQ",
+        "failovers": 1,
+        "failures": 4,
+        "blocked": 5,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794164466.9312801,
+  "last_search_ts": 1794164701.8294165,
   "last_publish_ts": 1794162779.1891444,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
