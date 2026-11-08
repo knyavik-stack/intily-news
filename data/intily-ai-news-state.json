@@ -1,6 +1,5 @@
 {
   "published": {
-    "e20b1197b09c6ae78db003893ad7a37f499336a2695a0739c40ebeed0a2141b0": 1791524713,
     "437aa262abb5c0e611f5f4734d8f2b8f06eb7e6b382558d6f195c0eb6eaf8629": 1791525172,
     "4531175742c800803ffe35bc5f6671a2d5977eac2fb65bb0b5dbd04896ee5b68": 1791525431,
     "d8a5e56b5ff59b1a61a982368a97d9f7f6c3d6fb9d1dc0d73490b70a085dbfca": 1791525888,
@@ -1260,28 +1259,30 @@
     "11f3d9dcbf8ab62287617fa622dc7e9bb6b34f0784adcd071c4f22f56f68c88f": 1794072039,
     "58e2f521451fd0b09b6f7a0627ebf85ea9d04bcfd3188471a3a8d31849ae4021": 1794072278,
     "ce530265c38725d8dd3f1453305f0881e58d7128b2ddb134f7cee61d15533e69": 1794114059,
-    "ca0ba39215e4beaf3bc3006c2d44fce3cb0722f964d5b72f5b40a3ae78b7c431": 1794114301
+    "ca0ba39215e4beaf3bc3006c2d44fce3cb0722f964d5b72f5b40a3ae78b7c431": 1794114301,
+    "379869a5070c9d5fcf157d7f3af3bff5475ff219445df4c6de68578fb877ec71": 1794116938
   },
   "known": {
     "ce530265c38725d8dd3f1453305f0881e58d7128b2ddb134f7cee61d15533e69": 1794114059.044066,
-    "ca0ba39215e4beaf3bc3006c2d44fce3cb0722f964d5b72f5b40a3ae78b7c431": 1794114059.044066
+    "ca0ba39215e4beaf3bc3006c2d44fce3cb0722f964d5b72f5b40a3ae78b7c431": 1794114059.044066,
+    "379869a5070c9d5fcf157d7f3af3bff5475ff219445df4c6de68578fb877ec71": 1794116938.5207942
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794116224.064277,
+    "last_start_ts": 1794116938.5207942,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794116224.064277,
-    "last_success_ts": 1794116224.064277,
-    "last_candidates": 2,
-    "last_published": 0,
+    "last_run_ts": 1794116938.5207942,
+    "last_success_ts": 1794116938.5207942,
+    "last_candidates": 3,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794116256.1371999
+      "updated_at": 1794116977.1960654
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1549,6 +1550,13 @@
       "desc": "Tessl launches software factory platform for AI coding agents TechGig",
       "source": "TechGig",
       "region": "WORLD"
+    },
+    "379869a5070c9d5fcf157d7f3af3bff5475ff219445df4c6de68578fb877ec71": {
+      "time": 1794116938,
+      "title": "OpenAI Raises $11 Billion at $1.25 Trillion Valuation Amid AI Market Pressure - entARABI",
+      "desc": "OpenAI Raises $11 Billion at $1.25 Trillion Valuation Amid AI Market Pressure entARABI",
+      "source": "entARABI",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
@@ -1558,7 +1566,6 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -1569,150 +1576,12 @@
     "WORLD",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793880753,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 35.5,
-      "candidates": 27,
-      "queue_before": 4,
-      "queue_after": 8,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 17,
-        "known_recent": 0,
-        "already_queued": 4,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 5,
-        "candidate_count": 27,
-        "admission_rate": 18.52,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/news/1103912/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1103912",
-            "image_url": "https://habr.com/share/publication/1103912/eb4e4d193f329330d222b8853eceb3e7/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.0,
-          "bonus_total": 63.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Оптимизация рабочего процесса при работе с множеством AI-агентов снижает когнитивную нагрузку и время переключения контекста.",
-            "title": "Microsoft анонсировала крупнейшее обновление Intelligent Terminal",
-            "final_score": 72.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 6,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 170,
-        "raw_items": 847,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 40,
-          "CNews": 75,
-          "Euronews": 50
-        },
-        "score_filtered": 789,
-        "quality_filtered": 27,
-        "story_dedup": 4,
-        "candidates": 27,
-        "candidate_rate": 0.0399,
-        "score_buckets": {
-          "0–39": 751,
-          "40–49": 61,
-          "50–59": 30,
-          "60–69": 5,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 1,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793880993,
       "status": "OK",
@@ -23951,11 +23820,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794116938,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 40.25,
+      "candidates": 3,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 2,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 1,
+        "candidate_count": 3,
+        "admission_rate": 33.33,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://entarabi.com/en/2026/11/openai-raises-11-billion-at-1-25-trillion-valuation-amid-ai-market-pressure-2/",
+            "image_url": "https://entarabi.com/wp-content/uploads/2026/08/OpenAI-1.webp",
+            "width": 1024,
+            "height": 681,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 8.67,
+          "bonus_total": 78.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 3,
+          "last": {
+            "score": 10.0,
+            "bonus": 30.0,
+            "reason": "Оценка компании подтверждает неизбежность доминирования OpenAI, требуя немедленной адаптации бизнес-стратегий под их API.",
+            "title": "OpenAI Raises $11 Billion at $1.25 Trillion Valuation Amid AI Market Pressure - entARABI",
+            "final_score": 71.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 10,
+        "raw_items": 300,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 3,
+          "CNews": 0,
+          "Euronews": 5
+        },
+        "score_filtered": 292,
+        "quality_filtered": 5,
+        "story_dedup": 0,
+        "candidates": 3,
+        "candidate_rate": 0.0103,
+        "score_buckets": {
+          "0–39": 286,
+          "40–49": 11,
+          "50–59": 3,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794116224.064277,
-  "last_publish_ts": 1794114301.1608977,
+  "last_search_ts": 1794116938.5207942,
+  "last_publish_ts": 1794116938.5207942,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
