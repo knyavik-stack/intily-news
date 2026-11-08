@@ -1,7 +1,5 @@
 {
   "published": {
-    "6bf1defb9868a658adf9d568d186d129df40c768708b2da4e76d81fd52709a3b": 1791573406,
-    "02e1fcbd636e227e7f9a5e11873b0109aaf77e6eab724df76bd226c5f0af5002": 1791574129,
     "ac81834da9443f61d1838f8b47254d4ac982333411997fdeb122f2aec8d58589": 1791608689,
     "bd56ff4ce2ea35eb95934c4ecbf20112d909ca975864021629531d72c5089a3c": 1791609171,
     "dae0a5efd55f9fbc0e4dd3d15891dd6482d5efd0db1d14720b2d4a4c12c2b1a4": 1791615175,
@@ -1225,27 +1223,29 @@
     "3dd8c042868bfd85f8ce2533ca8625289fcdde0cdb0dc281a2f3a3ae730ad7a3": 1794150540,
     "4e759b2a5f49ed1bcd8fe02ddf8b9c577d250008a9574fa04513a1341bb3ff1e": 1794155584,
     "566188d49fc611a6579e3e7403608112a7bcb70155ff8043201767b00795492d": 1794159179,
-    "134501dc3cc227392e8c9a00088e22866273982f0a8bc050d3c37b70231ced84": 1794162779
+    "134501dc3cc227392e8c9a00088e22866273982f0a8bc050d3c37b70231ced84": 1794162779,
+    "a375d717ddbf3334e200bc35a7bbd2b93e926e0e8cac536907de99cb286d955b": 1794166139
   },
   "known": {
-    "134501dc3cc227392e8c9a00088e22866273982f0a8bc050d3c37b70231ced84": 1794162779.1891444
+    "134501dc3cc227392e8c9a00088e22866273982f0a8bc050d3c37b70231ced84": 1794162779.1891444,
+    "a375d717ddbf3334e200bc35a7bbd2b93e926e0e8cac536907de99cb286d955b": 1794166139.346864
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794164944.2379231,
+    "last_start_ts": 1794166139.346864,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794164944.2379231,
-    "last_success_ts": 1794164944.2379231,
-    "last_candidates": 11,
-    "last_published": 0,
+    "last_run_ts": 1794166139.346864,
+    "last_success_ts": 1794166139.346864,
+    "last_candidates": 12,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794164975.9471385
+      "updated_at": 1794166177.8969314
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1415,6 +1415,13 @@
       "desc": "OpenAI представила GPT-6 Cyber: модель обнаружила 948 уязвимостей Linux и получила критический уровень киберриска prospect.com.ru",
       "source": "prospect.com.ru",
       "region": "RUSSIA"
+    },
+    "a375d717ddbf3334e200bc35a7bbd2b93e926e0e8cac536907de99cb286d955b": {
+      "time": 1794166139,
+      "title": "Apple is racing to make Siri more agentic",
+      "desc": "Bloomberg's Mark Gurman says CEO John Ternus is pressuring AI czar Craig Federighi to accelerate the Siri roadmap and deliver a powerful AI agent that can compete with OpenAI's Dots or Meta's Muse. While Federighi has delivered a functional version of Siri AI on an incredibly short timeline, the company has no illusions that it's […]",
+      "source": "The Verge AI",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
@@ -1422,7 +1429,6 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -1437,99 +1443,10 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793959002,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 32.89,
-      "candidates": 0,
-      "queue_before": 4,
-      "queue_after": 3,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "The read operation timed out": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "The read operation timed out"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 4.5,
-          "bonus_total": 27.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Показывает вектор автоматизации логистики, но для большинства специалистов это лишь косвенный рыночный сигнал.",
-            "title": "Студенты университета «Иннополис» будут работать над технологическими задачами для Ozon Tech",
-            "final_score": 62.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793959720,
       "status": "OK",
@@ -25517,11 +25434,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794166139,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 39.09,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 1,
+        "candidate_count": 12,
+        "admission_rate": 8.33,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 8.0,
+          "bonus_total": 72.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Смена стратегии Apple напрямую повлияет на возможности интеграции ИИ в iOS-продукты в ближайшем будущем.",
+            "title": "Apple is racing to make Siri more agentic",
+            "final_score": 60.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 34,
+        "raw_items": 707,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 10,
+          "CNews": 0,
+          "Euronews": 21
+        },
+        "score_filtered": 688,
+        "quality_filtered": 7,
+        "story_dedup": 0,
+        "candidates": 12,
+        "candidate_rate": 0.0178,
+        "score_buckets": {
+          "0–39": 659,
+          "40–49": 36,
+          "50–59": 11,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794164944.2379231,
-  "last_publish_ts": 1794162779.1891444,
+  "last_search_ts": 1794166139.346864,
+  "last_publish_ts": 1794166139.346864,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
