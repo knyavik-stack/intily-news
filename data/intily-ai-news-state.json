@@ -1,6 +1,5 @@
 {
   "published": {
-    "f86ab04cb78266b3f7bab32e742b580914cd493eb8975532e80f01990a51d489": 1791650926,
     "b68f836a1275137dcff3770609e5cfa4c99dfcb10c319bf25f0e33f97b770b72": 1791651652,
     "203c7e76fbb2f7fa6f9b80e2d21b02cdc3067c2d128de52231808a496f3430b6": 1791653811,
     "b9aedbd22935896791717710cd92fedd76479d69aa92f5570f529d99e1ab0f0a": 1791655977,
@@ -1241,7 +1240,8 @@
     "4a51b3e56585478bfe2b2edaafe28d73e1e2f82d92953d5473b5852bcda866ca": 1794240551,
     "423868a78877ba968f3c73f2f18e5dcb15a7c5eb14f363bafd17e5378359f8db": 1794241516,
     "dbc9166cb8f99430513acb476b3a29223b3a8f4125008fc006820083d21fff44": 1794241765,
-    "e6fbdb1e735c5edc2dc57ea0a1fd1f1cc25e990c820c55ce7bd6be7b79731159": 1794242008
+    "e6fbdb1e735c5edc2dc57ea0a1fd1f1cc25e990c820c55ce7bd6be7b79731159": 1794242008,
+    "b82b27b3a55ff0c72714bf8aee8d974f5b5c057a0c906f4578b33b02cd2709ac": 1794242955
   },
   "known": {
     "4a51b3e56585478bfe2b2edaafe28d73e1e2f82d92953d5473b5852bcda866ca": 1794239170.4906323,
@@ -1259,43 +1259,6 @@
     "91b32cf7eee6d50fa7a2e27551bb4af9b1c5a533b86140d852a967b8ecb5d430": 1794241516.1876419
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Синтетические плавки в ДСП-3: как сгенерировать данные и не обмануть себя",
-      "link": "https://habr.com/ru/articles/1105616/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1105616",
-      "desc": "Привет, Хабр! Эта история началась с того, что меня позвали пообщаться на тему работы в металлургическую компанию. Спросили коротко: «Готов?». Я оценил свои силы, масштаб задачи и ответил прямо — готов зайти сразу на позицию Head of AI, чтобы выстроить процесс от и до. И тут начался классический корпоративный футбол. Несмотря на предметный разговор, мне начали делать голову из-за отсутствия профильной вышки по программированию . Для суровой индустрии диплом оказался важнее реального опыта и понимания процессов. Поняв, что стандартным путем эту бюрократию не пробить, я решил пойти напролом: за пару недель собрать работающее MVP, показать товар лицом и жестко выделиться на фоне остальных кандидатов с «правильными» дипломами. Спойлер: красивого хэппи-энда не будет . Моё MVP до высшего руководства так и не донесли, а меня в итоге просто развернули на пороге. Но не пропадать же добру? Проект получился слишком интересным, чтобы просто похоронить его на жестком диске. Эта статья посвящена исключительно генератору. Мы разберем, как он устроен «под капотом», какие неочевидные ошибки я в нем допустил, и как проверить, что синтетика не врет сама себе. Обучение CatBoost и создание работающего микросервиса-советника мы оставим для второй части. Статья написана так, чтобы репозиторий вам не понадобился: весь код приведен прямо здесь, в том порядке, в котором его удобно читать и воспроизводить. Если вы захотите пропустить теоретические объяснения, в конце каждого раздела есть готовый рабочий фрагмент кода, который можно скопировать и запустить у себя. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794240774.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 6.0,
-        "event_concreteness": 12.5,
-        "practical_value": 6.5,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 49.5,
-        "audience_score": 7.0,
-        "audience_bonus": 21.0,
-        "final_score": 70.5
-      },
-      "base_score": 49.5,
-      "audience_bonus": 21.0,
-      "score_stage": "final",
-      "score": 70.5,
-      "key": "b82b27b3a55ff0c72714bf8aee8d974f5b5c057a0c906f4578b33b02cd2709ac",
-      "importance": 70.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "tools"
-      ],
-      "audience_score": 7.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "RUSSIA",
       "title": "В России запустили ИИ-агента для научных исследований с доступом к более 500 млн публикаций и патентов",
@@ -1409,6 +1372,81 @@
       "audience_score": 8.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "EDGE Sound Research raises $2 million to expand physical AI perception technology - Robotics & Automation News",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSjRtQnZ3RkN2LTZZTTZFZFRscjI0UllPcWd2dkllbUVuc245RXVwODJRR0lvS1lnZDB4cnc4V3lCSnRDOTRMLVE4bTVHblRyR3J4eDFTX0VoRm5HUzgySm56eHN2MnBkTWxhVXNuUnpGZ3FqcVYxc0hyb1Y4NWZ1VWdzeU1mcGJ3V19ESTR2aEFPT1pBLWV5YUJFZFVhay1iMVZUUUppN2s1Zm5nQk9UMVBpam9YSHNWUkFmY0Y4QmF0eUYxSGtpQ3VwUVM5ZGJKNGhR?oc=5",
+      "desc": "EDGE Sound Research raises $2 million to expand physical AI perception technology Robotics & Automation News",
+      "source": "Robotics & Automation News",
+      "time": 1794241107.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 9.0,
+        "event_concreteness": 11.5,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 46.0,
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 64.0
+      },
+      "base_score": 46.0,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 64.0,
+      "key": "11a9a09c24e3c22e43ceda6587476a722ce0b0f581e6402cad38b976933730f8",
+      "importance": 64.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "applications",
+        "research",
+        "robotics"
+      ],
+      "audience_score": 6.0,
+      "tier": "A"
+    },
+    {
+      "region": "WORLD",
+      "title": "Disney and Adobe are building generative AI tools together",
+      "link": "https://www.theverge.com/tech/1029773/disney-adobe-generative-ai-partnership",
+      "desc": "The Walt Disney Company has teamed up with Adobe to develop proprietary \"artist-led\" generative AI models to support Disney's production pipeline. The multiyear partnership was announced today at Adobe's MAX conference, and it will see Adobe providing Disney with early access to its latest technologies for everything from Disney's theme parks and cruise line to […]",
+      "source": "The Verge AI",
+      "time": 1794238736.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 4.0,
+        "event_concreteness": 13.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 43.0,
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 64.0
+      },
+      "base_score": 43.0,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 64.0,
+      "key": "cb704a41ee4bb8cac0d53e5b864a5ed0b0fe88275ca86f1a72a7233fb6f01e26",
+      "importance": 64.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "models",
+        "tools"
+      ],
+      "audience_score": 7.0,
+      "tier": "A"
     },
     {
       "region": "WORLD",
@@ -1778,81 +1816,6 @@
       "tier": "A"
     },
     {
-      "region": "WORLD",
-      "title": "EDGE Sound Research raises $2 million to expand physical AI perception technology - Robotics & Automation News",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSjRtQnZ3RkN2LTZZTTZFZFRscjI0UllPcWd2dkllbUVuc245RXVwODJRR0lvS1lnZDB4cnc4V3lCSnRDOTRMLVE4bTVHblRyR3J4eDFTX0VoRm5HUzgySm56eHN2MnBkTWxhVXNuUnpGZ3FqcVYxc0hyb1Y4NWZ1VWdzeU1mcGJ3V19ESTR2aEFPT1pBLWV5YUJFZFVhay1iMVZUUUppN2s1Zm5nQk9UMVBpam9YSHNWUkFmY0Y4QmF0eUYxSGtpQ3VwUVM5ZGJKNGhR?oc=5",
-      "desc": "EDGE Sound Research raises $2 million to expand physical AI perception technology Robotics & Automation News",
-      "source": "Robotics & Automation News",
-      "time": 1794241107.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 9.0,
-        "event_concreteness": 11.5,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 46.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 46.0
-      },
-      "base_score": 46.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 46.0,
-      "key": "11a9a09c24e3c22e43ceda6587476a722ce0b0f581e6402cad38b976933730f8",
-      "importance": 46.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "applications",
-        "research",
-        "robotics"
-      ],
-      "audience_score": null,
-      "tier": "A"
-    },
-    {
-      "region": "WORLD",
-      "title": "Disney and Adobe are building generative AI tools together",
-      "link": "https://www.theverge.com/tech/1029773/disney-adobe-generative-ai-partnership",
-      "desc": "The Walt Disney Company has teamed up with Adobe to develop proprietary \"artist-led\" generative AI models to support Disney's production pipeline. The multiyear partnership was announced today at Adobe's MAX conference, and it will see Adobe providing Disney with early access to its latest technologies for everything from Disney's theme parks and cruise line to […]",
-      "source": "The Verge AI",
-      "time": 1794238736.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 4.0,
-        "event_concreteness": 13.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 43.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 43.5
-      },
-      "base_score": 43.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 43.5,
-      "key": "cb704a41ee4bb8cac0d53e5b864a5ed0b0fe88275ca86f1a72a7233fb6f01e26",
-      "importance": 43.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "models",
-        "tools"
-      ],
-      "audience_score": null,
-      "tier": "A"
-    },
-    {
       "region": "RUSSIA",
       "title": "LLM на 100 миллиардов параметров в работе: DeepX представила 2-нм ИИ-ускоритель DX-M2 - Gagadget.com",
       "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQM0F3TDJMMUZ1TVVDT0J5TXN0QTRwb09xWExGeC1BcDlrS0kyNEdNNHF2dTZMRHp5UGo3ME1XTzJnTmNxX1hndlN6ZUtRamVzaTM0MVNFajJiMG1NdW5KOHZ6RmpzT25rd2NoM0F3bkpLOHdtLVgxbjUtLUxBS1Z5dUo3SUNKbXVRLXAtU2Y4S2c1QkN4aW5WWXRaQjlPb2tHMUxILTAyWnVCNl9xU0lBSDIzaUNWQTBsTXJyQXZOS28wNTk2ck85aHozN0hRLWNCU016UlRn0gHbAUFVX3lxTE1zQkdTbTVPOTV0RFFVb1UwZTh5cE44bHdQbS1UYy1iZmsyT25QOW1ndXo1a2U4WVJoeXc5STUySjlWeVFTNU05a1BURVJJaE1ENXJNSWdRWmhsWFowT1NZczNBRS13YUVYajdzWUc3UHZkUGhRX2xvUGJQaHZrNXJKOVI2aEF4R1JNdjc0UXdEZkZnTW5VU1FFNmVFQkl4RDkwM2lTMzlSTzA1dFg1a3ZXd1pqNEJHSmplS0IwMnBROXAyQ040OE5DVWVLbkZQUnJKbDNYNkZ5Qnc4Yw?oc=5",
@@ -1889,20 +1852,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794242008.3035576,
+    "last_start_ts": 1794242955.8074536,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794242008.3035576,
-    "last_success_ts": 1794242008.3035576,
+    "last_run_ts": 1794242955.8074536,
+    "last_success_ts": 1794242955.8074536,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 17
+    "queue_size": 16
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794242012.4341588
+      "updated_at": 1794242957.8095758
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2282,11 +2245,17 @@
       "desc": "Сбер переходит от точечных релизов к регулярному формату: теперь мы будем систематически публиковать дайджесты о новых инженерных решениях, которыми делимся в открытом доступе. Наша цель — сократить путь от внутренней разработки до практического применения в индустрии, передавая сообществу проверенные инструменты для решения реальных задач. В этом дайджесте Сбера — три инструмента, которые наши инженеры создали для практических задач и открывают для внешних команд: HG SDLC, Spring AI GigaChat и Schedulex. Разберём, где они могут пригодиться, как устроены и что учесть перед использованием. Как сохранить контекст между этапами разработки с ИИ-агентами? Как встроить GigaChat в Java-приложение? Как связать фоновую задачу с бизнес-транзакцией и восстановить работу после перезапуска? Каждое из решений отвечает на один из этих вопросов. Поехали! Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "b82b27b3a55ff0c72714bf8aee8d974f5b5c057a0c906f4578b33b02cd2709ac": {
+      "time": 1794242955,
+      "title": "Синтетические плавки в ДСП-3: как сгенерировать данные и не обмануть себя",
+      "desc": "Привет, Хабр! Эта история началась с того, что меня позвали пообщаться на тему работы в металлургическую компанию. Спросили коротко: «Готов?». Я оценил свои силы, масштаб задачи и ответил прямо — готов зайти сразу на позицию Head of AI, чтобы выстроить процесс от и до. И тут начался классический корпоративный футбол. Несмотря на предметный разговор, мне начали делать голову из-за отсутствия профильной вышки по программированию . Для суровой индустрии диплом оказался важнее реального опыта и понимания процессов. Поняв, что стандартным путем эту бюрократию не пробить, я решил пойти напролом: за пару недель собрать работающее MVP, показать товар лицом и жестко выделиться на фоне остальных кандидатов с «правильными» дипломами. Спойлер: красивого хэппи-энда не будет . Моё MVP до высшего руководства так и не донесли, а меня в итоге просто развернули на пороге. Но не пропадать же добру? Проект получился слишком интересным, чтобы просто похоронить его на жестком диске. Эта статья посвящена исключительно генератору. Мы разберем, как он устроен «под капотом», какие неочевидные ошибки я в нем допустил, и как проверить, что синтетика не врет сама себе. Обучение CatBoost и создание работающего микросервиса-советника мы оставим для второй части. Статья написана так, чтобы репозиторий вам не понадобился: весь код приведен прямо здесь, в том порядке, в котором его удобно читать и воспроизводить. Если вы захотите пропустить теоретические объяснения, в конце каждого раздела есть готовый рабочий фрагмент кода, который можно скопировать и запустить у себя. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "RUSSIA",
@@ -2304,99 +2273,10 @@
     "WORLD",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794036288,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 16.03,
-      "candidates": 0,
-      "queue_before": 8,
-      "queue_after": 7,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://3dnews.ru/1146653/spacexai-predstavila-grok-bot-komandu-iiagentov-kotorie-sami-raspredelyayut-zadachi-megdu-soboy",
-            "image_url": "https://cdn.3dnews.ru/assets/external/illustrations/2026/08/11/1146653/qwdqwdqdqd.jpg",
-            "width": 800,
-            "height": 518,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.0,
-          "bonus_total": 72.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 3,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Переход к мультиагентным системам требует пересмотра процессов делегирования и управления операционной эффективностью.",
-            "title": "SpaceXAI представила Grok Bot — команду ИИ-агентов, которые сами распределяют задачи между собой - 3DNews",
-            "final_score": 67.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794037020,
       "status": "OK",
@@ -26886,11 +26766,101 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794242955,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 15.03,
+      "candidates": 0,
+      "queue_before": 17,
+      "queue_after": 16,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://habr.com/ru/articles/1105616/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1105616",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 6.67,
+          "bonus_total": 60.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Практический гайд по валидации синтетических данных снижает риск обучения моделей на мусоре.",
+            "title": "Синтетические плавки в ДСП-3: как сгенерировать данные и не обмануть себя",
+            "final_score": 70.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1794241516.1876419,
-  "last_publish_ts": 1794242008.3035576,
+  "last_publish_ts": 1794242955.8074536,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
