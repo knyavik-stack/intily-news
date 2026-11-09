@@ -1236,7 +1236,8 @@
     "0c1cad6dd2bd6a27e438681d2f47e4ac4131668008843273072f45cc80cd4450": 1794217506,
     "bf897e7e72e99f7007bb9aed7dafc49596ee67406aea09f35adf3d62637e639f": 1794218468,
     "f6512b7f1292fae9da63782c095046a42c5e10437d957dfa5598abee3bd2fc1b": 1794218952,
-    "de5b2606a3372bdf80e43559a2bbed692a2b4168d16a30fe8f80ef8f660c0817": 1794219666
+    "de5b2606a3372bdf80e43559a2bbed692a2b4168d16a30fe8f80ef8f660c0817": 1794219666,
+    "743b5a138ab26816053bf75188f45530a2eef20a75b37843e055da8ec6db164d": 1794219910
   },
   "known": {
     "265b5c66a270e3c8092832ca1b56df345f5a6fc7bb8c600458fa34ff92106b1d": 1794215099.1373677,
@@ -1259,21 +1260,21 @@
   "queue": [
     {
       "region": "RUSSIA",
-      "title": "Я протестировал DeepSeek Harness и вот что у меня получилось",
-      "link": "https://habr.com/ru/articles/1104778/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1104778",
-      "desc": "Один промпт, 8 субагентов, 183 шага и 2 часа 43 минуты автономной работы. Столько потребовалось DeepSeek, чтобы собрать с нуля браузерную аркаду на React, TypeScript и Canvas. Самое интересное, что всё это происходило на подписке OpenCode Go за $10. А я в это время наблюдал, как агент самостоятельно разбирается с задачами, пишет код и проверяет результат. В этой статье расскажу, что представляет собой DeepSeek Harness, чем он отличается от обычных coding-агентов, как устроена его работа с кэшем и что в итоге удалось получить. Заодно покажу саму игру и несколько моментов, где без моего вмешательства всё-таки не обошлось. У меня была довольно простая идея: сделать браузерную игру для тренировки скорости печати. Чтобы с экрана летели слова, игрок набирал их на клавиатуре, стрелял по противникам, набирал очки и пытался не потерять все жизни. Что-то между тренажёром слепой печати и аркадным шутером. Но экспериментировать хотелось даже не столько с игрой, сколько с агентной разработкой. Я решил проверить, что получится, если взять относительно недорогую модель, дать ей нормальную среду для работы и поставить достаточно большую задачу. Не очередной список дел на React, а игру с графикой, звуком, игровой логикой и статистикой. Мой процесс выглядел так: Идея простыми словами → ChatGPT в обычном браузере → большой технический промпт → DeepSeek Harness → готовый проект. Никакого Codex на этапе составления промптов не было. Я обсуждал задумку с обычным ChatGPT на сайте, просил его продумать архитектуру, найти слабые места требований и собрать всё в внятное ТЗ. А реализовывал уже DeepSeek в Harness. Читать далее",
+      "title": "AI-агент с правами администратора: что уже умеют MCP-серверы в IAM",
+      "link": "https://habr.com/ru/articles/1105324/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1105324",
+      "desc": "Представьте обычную просьбу: «Создай пользователя, добавь его в группу Engineering и отзови доступ через неделю». Для AI-агента это одно предложение. Для IAM — несколько административных операций, каждая из которых может закончиться инцидентом. Я посмотрел, что поставщики IAM уже предлагают через Model Context Protocol. Хорошая новость: создание пользователей и изменение групп больше не выглядит фантастикой. Плохая: надпись «подтверждение человеком» сама по себе еще ничего не гарантирует. Важно, что именно подтвердил человек и может ли модель подменить операцию после этого. далее",
       "source": "Habr AI/News",
-      "time": 1794217208.0,
+      "time": 1794210376.0,
       "_score_components": {
         "relevance": 12.0,
         "ai_specificity": 6.0,
-        "impact": 9.0,
-        "event_concreteness": 14.0,
-        "practical_value": 6.5,
+        "impact": 12.0,
+        "event_concreteness": 15.0,
+        "practical_value": 3.0,
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
         "base_score": 54.5,
         "audience_score": 8.0,
@@ -1284,12 +1285,53 @@
       "audience_bonus": 24.0,
       "score_stage": "final",
       "score": 78.5,
-      "key": "743b5a138ab26816053bf75188f45530a2eef20a75b37843e055da8ec6db164d",
+      "key": "845156d138f92618d46bb0e5ebdb7592b1e9b332f7472e4eda7d931819bf23b0",
       "importance": 78.5,
       "editorial_value": 50.0,
       "topics": [
         "agents",
-        "models"
+        "models",
+        "security_regulation"
+      ],
+      "audience_score": 8.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "MLSecOps-скан: как найти все ИИ-активы в репозитории и проверить их до релиза",
+      "link": "https://habr.com/ru/companies/infera_security/articles/1105426/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1105426",
+      "desc": "С появлением ИИ вопрос «что у нас в проде» усложнился. Когда мы говорим о безопасности приложений, у нас уже есть устоявшийся набор инструментов: SAST смотрит на код, SCA на зависимости, Secrets на утечки ключей, DAST на работающее приложение. Но как только в продукте появляется ИИ-компонент (агент, модель, векторное хранилище, датасет), то привычные сканеры перестают отвечать на главный вопрос: из чего вообще состоит эта ИИ-система и какие у неё дефекты? ИИ-модель – это не просто файл с весами. Это адаптеры, промпты, MCP-серверы, конфигурации инференса, обучающие данные, ML-библиотеки, ноутбуки и пайплайны. Каждый из этих элементов – потенциальная точка отказа и потенциальный вектор атаки. И, что важнее, большинство из них никто не объявлял: они появились в репозитории «сами собой», и о них не знает ни CISO, ни AppSec-команда. В этой статье разберём, как MLSecOps-сканер , встроенный в INFERA AI.SafeCode, определяет состав ИИ-системы, какие дефекты он ищет и почему реестр ИИ-активов – это не бюрократия, а важный инструмент контроля в современных процессах разработки. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794219268.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 11.0,
+        "event_concreteness": 13.0,
+        "practical_value": 5.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 54.0,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 78.0
+      },
+      "base_score": 54.0,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 78.0,
+      "key": "90d9ec387df5a54491bc9e9fabffc2aa0f7876eee488a30b1aaa5280efe0e458",
+      "importance": 78.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "models",
+        "security_regulation",
+        "tools"
       ],
       "audience_score": 8.0,
       "tier": "A",
@@ -1328,85 +1370,6 @@
       "topics": [],
       "audience_score": 7.0,
       "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "AI-агент с правами администратора: что уже умеют MCP-серверы в IAM",
-      "link": "https://habr.com/ru/articles/1105324/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1105324",
-      "desc": "Представьте обычную просьбу: «Создай пользователя, добавь его в группу Engineering и отзови доступ через неделю». Для AI-агента это одно предложение. Для IAM — несколько административных операций, каждая из которых может закончиться инцидентом. Я посмотрел, что поставщики IAM уже предлагают через Model Context Protocol. Хорошая новость: создание пользователей и изменение групп больше не выглядит фантастикой. Плохая: надпись «подтверждение человеком» сама по себе еще ничего не гарантирует. Важно, что именно подтвердил человек и может ли модель подменить операцию после этого. далее",
-      "source": "Habr AI/News",
-      "time": 1794210376.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 12.0,
-        "event_concreteness": 15.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 54.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 54.5
-      },
-      "base_score": 54.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 54.5,
-      "key": "845156d138f92618d46bb0e5ebdb7592b1e9b332f7472e4eda7d931819bf23b0",
-      "importance": 54.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "models",
-        "security_regulation"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "MLSecOps-скан: как найти все ИИ-активы в репозитории и проверить их до релиза",
-      "link": "https://habr.com/ru/companies/infera_security/articles/1105426/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1105426",
-      "desc": "С появлением ИИ вопрос «что у нас в проде» усложнился. Когда мы говорим о безопасности приложений, у нас уже есть устоявшийся набор инструментов: SAST смотрит на код, SCA на зависимости, Secrets на утечки ключей, DAST на работающее приложение. Но как только в продукте появляется ИИ-компонент (агент, модель, векторное хранилище, датасет), то привычные сканеры перестают отвечать на главный вопрос: из чего вообще состоит эта ИИ-система и какие у неё дефекты? ИИ-модель – это не просто файл с весами. Это адаптеры, промпты, MCP-серверы, конфигурации инференса, обучающие данные, ML-библиотеки, ноутбуки и пайплайны. Каждый из этих элементов – потенциальная точка отказа и потенциальный вектор атаки. И, что важнее, большинство из них никто не объявлял: они появились в репозитории «сами собой», и о них не знает ни CISO, ни AppSec-команда. В этой статье разберём, как MLSecOps-сканер , встроенный в INFERA AI.SafeCode, определяет состав ИИ-системы, какие дефекты он ищет и почему реестр ИИ-активов – это не бюрократия, а важный инструмент контроля в современных процессах разработки. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794219268.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 11.0,
-        "event_concreteness": 13.0,
-        "practical_value": 5.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 54.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 54.0
-      },
-      "base_score": 54.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 54.0,
-      "key": "90d9ec387df5a54491bc9e9fabffc2aa0f7876eee488a30b1aaa5280efe0e458",
-      "importance": 54.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "models",
-        "security_regulation",
-        "tools"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
     },
     {
       "region": "RUSSIA",
@@ -1559,20 +1522,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794219666.999504,
+    "last_start_ts": 1794219910.6482627,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794219666.999504,
-    "last_success_ts": 1794219666.999504,
-    "last_candidates": 26,
+    "last_run_ts": 1794219910.6482627,
+    "last_success_ts": 1794219910.6482627,
+    "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 8
+    "queue_size": 7
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794219700.5810695
+      "updated_at": 1794219915.1852849
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1854,10 +1817,16 @@
       "desc": "«В этом коде может быть уязвимость» — неудобный результат проверки безопасности. Разработчику ещё предстоит выяснить, воспроизводится ли ошибка, какие права нужны атакующему и что изменится после исправления. Пока ответов нет, даже убедительный отчёт остаётся гипотезой. GPT-6 Cyber интересна именно попыткой пройти этот путь дальше: от подозрения к проверяемому результату. OpenAI представила модель 5 ноября 2026 года, но обсуждать её только как очередной релиз было бы упущением. Гораздо важнее понять, какую часть работы исследователя безопасности она берёт на себя — и почему впечатляющие результаты ещё не означают, что нейросети можно поручить любой взлом. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "743b5a138ab26816053bf75188f45530a2eef20a75b37843e055da8ec6db164d": {
+      "time": 1794219910,
+      "title": "Я протестировал DeepSeek Harness и вот что у меня получилось",
+      "desc": "Один промпт, 8 субагентов, 183 шага и 2 часа 43 минуты автономной работы. Столько потребовалось DeepSeek, чтобы собрать с нуля браузерную аркаду на React, TypeScript и Canvas. Самое интересное, что всё это происходило на подписке OpenCode Go за $10. А я в это время наблюдал, как агент самостоятельно разбирается с задачами, пишет код и проверяет результат. В этой статье расскажу, что представляет собой DeepSeek Harness, чем он отличается от обычных coding-агентов, как устроена его работа с кэшем и что в итоге удалось получить. Заодно покажу саму игру и несколько моментов, где без моего вмешательства всё-таки не обошлось. У меня была довольно простая идея: сделать браузерную игру для тренировки скорости печати. Чтобы с экрана летели слова, игрок набирал их на клавиатуре, стрелял по противникам, набирал очки и пытался не потерять все жизни. Что-то между тренажёром слепой печати и аркадным шутером. Но экспериментировать хотелось даже не столько с игрой, сколько с агентной разработкой. Я решил проверить, что получится, если взять относительно недорогую модель, дать ей нормальную среду для работы и поставить достаточно большую задачу. Не очередной список дел на React, а игру с графикой, звуком, игровой логикой и статистикой. Мой процесс выглядел так: Идея простыми словами → ChatGPT в обычном браузере → большой технический промпт → DeepSeek Harness → готовый проект. Никакого Codex на этапе составления промптов не было. Я обсуждал задумку с обычным ChatGPT на сайте, просил его продумать архитектуру, найти слабые места требований и собрать всё в внятное ТЗ. А реализовывал уже DeepSeek в Harness. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -1876,99 +1845,10 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793985881,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 5.45,
-      "candidates": 0,
-      "queue_before": 6,
-      "queue_after": 5,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 520: <none>": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 520: <none>"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра стратегии комплаенса и оценки рисков из-за грядущего ужесточения законодательства в сфере ИИ.",
-            "title": "UK stocks plunge 2% as fears of tighter US AI regulation trigger global selloff - Bilyonaryo Business",
-            "final_score": 65.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793986119,
       "status": "OK",
@@ -26630,11 +26510,101 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794219910,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 14.63,
+      "candidates": 0,
+      "queue_before": 8,
+      "queue_after": 7,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/articles/1104778/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1104778",
+            "image_url": "https://habr.com/share/publication/1104778/516ab0e515180324ad6bf9f8c4af7141/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 8.0,
+          "bonus_total": 72.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 3,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Демонстрация реальной эффективности автономных агентов для ускорения разработки и оптимизации затрат на IT-ресурсы.",
+            "title": "Я протестировал DeepSeek Harness и вот что у меня получилось",
+            "final_score": 78.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 4,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1794219666.999504,
-  "last_publish_ts": 1794219666.999504,
+  "last_publish_ts": 1794219910.6482627,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
