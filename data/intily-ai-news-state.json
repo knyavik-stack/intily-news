@@ -1,6 +1,5 @@
 {
   "published": {
-    "62046dcf045a26b8ee247703b4025abbe6f1b8577d12c570b6f4329bb1d553e6": 1791630051,
     "96f5e3a5695705e9845392ec5058661c01ae7f2125c28290f93058a0515d1013": 1791633169,
     "4e30d1f1e807b1aa5e6e936fe1e02737b68cc84b4bd81f5492ea5ce0f8943853": 1791633886,
     "3bfdf23dd76e6aa66d9746f974873793248f6bee4e48d393479de9292d56a45c": 1791634379,
@@ -1243,8 +1242,6 @@
     "04a7ca866ef95e30c8042d4bb8039f9767950aa4e76ce4a269bc73dd84ef95bd": 1794221586
   },
   "known": {
-    "08d7fbd74839a9e92cacbe495e590cf90ee228284da18c0621a892800f2a3d0b": 1794216304.6978993,
-    "0c1cad6dd2bd6a27e438681d2f47e4ac4131668008843273072f45cc80cd4450": 1794216304.6978993,
     "68e2fe2c3ae91987fa0495a9b54d7a5c9710fceb760c8e629c5f0d33f6be184d": 1794217078.7320814,
     "bf897e7e72e99f7007bb9aed7dafc49596ee67406aea09f35adf3d62637e639f": 1794218468.6900578,
     "aa45fbaa4700b7f90f2d171f07933bc828ed7a31c7453985051393587bfb9b97": 1794218468.6900578,
@@ -1275,19 +1272,19 @@
         "novelty": 0.0,
         "source_quality": 5.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 50.0,
+        "base_score": 49.5,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 68.0
+        "final_score": 67.5
       },
-      "base_score": 50.0,
+      "base_score": 49.5,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 68.0,
+      "score": 67.5,
       "key": "ca89e1cf943a662f370b552a79f134210ff800e8696aafaa694080281cef43d1",
-      "importance": 68.0,
+      "importance": 67.5,
       "editorial_value": 50.0,
       "topics": [
         "robotics",
@@ -1295,7 +1292,11 @@
       ],
       "audience_score": 6.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1794222062,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1794222362
     },
     {
       "region": "WORLD",
@@ -1329,7 +1330,11 @@
       "editorial_value": 50.0,
       "topics": [],
       "audience_score": 7.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1794222062,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1794222362
     },
     {
       "region": "RUSSIA",
@@ -1407,13 +1412,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794221586.221591,
+    "last_start_ts": 1794222062.1328847,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794221586.221591,
-    "last_success_ts": 1794221586.221591,
-    "last_candidates": 25,
-    "last_published": 1,
+    "last_run_ts": 1794222062.1328847,
+    "last_success_ts": 1794222062.1328847,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 4
   },
   "providers": {
@@ -1423,14 +1428,14 @@
       "updated_at": 1794221638.4903975
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794221643.2254376
+      "disabled_until": 1794225666.3422835,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794222066.3422852
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794217259.5972247
+      "disabled_until": 1794308482.8387442,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794222082.8387458
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1438,9 +1443,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794217259.5972247
+      "disabled_until": 1794225681.7163503,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794222081.716352
     }
   },
   "stories": {
@@ -1755,96 +1760,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793987800,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 5.67,
-      "candidates": 0,
-      "queue_before": 3,
-      "queue_after": 2,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.cnews.ru/news/top/2026-11-06_sotni_tysyach_defitsitnyh_gpu",
-            "image_url": "https://www.cnews.ru/img/design2008/logocnews_f.png",
-            "width": 600,
-            "height": 315,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Глобальный дефицит GPU напрямую влияет на стоимость и доступность вычислительных ресурсов для разработки AI-продуктов.",
-            "title": "Парадоксы мировой чиповой войны. Сотни тысяч дефицитных GPU Nvidia зависли в Гонконге. Власти Китая не дают добро на ввоз",
-            "final_score": 63.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793988754,
       "status": "OK",
@@ -26512,6 +26427,82 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1794222062,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 20.74,
+      "candidates": 0,
+      "queue_before": 4,
+      "queue_after": 4,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 3,
+        "blocked": 13,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
