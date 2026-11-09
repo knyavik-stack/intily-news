@@ -1235,13 +1235,10 @@
     "68e2fe2c3ae91987fa0495a9b54d7a5c9710fceb760c8e629c5f0d33f6be184d": 1794217261,
     "0c1cad6dd2bd6a27e438681d2f47e4ac4131668008843273072f45cc80cd4450": 1794217506,
     "bf897e7e72e99f7007bb9aed7dafc49596ee67406aea09f35adf3d62637e639f": 1794218468,
-    "f6512b7f1292fae9da63782c095046a42c5e10437d957dfa5598abee3bd2fc1b": 1794218952
+    "f6512b7f1292fae9da63782c095046a42c5e10437d957dfa5598abee3bd2fc1b": 1794218952,
+    "de5b2606a3372bdf80e43559a2bbed692a2b4168d16a30fe8f80ef8f660c0817": 1794219666
   },
   "known": {
-    "0c3daf3a13f01234b2c24934000592f28ba4082ecbee0e13d8c366ff8ae26b29": 1794214139.8740594,
-    "7b523cd318039d5c9a154482b42dc27aabe755e41fb013323d2ebcb5abb28d52": 1794214139.8740594,
-    "cc54ce35f10e36a03c290ab398764b34cfb7cd6c8ab585a8eeff1dea7a6fda1e": 1794214139.8740594,
-    "d7713d76e38af676dc6dec5cf30ed288b2bc957854aa6eac40e816ebf9aca6e9": 1794214139.8740594,
     "265b5c66a270e3c8092832ca1b56df345f5a6fc7bb8c600458fa34ff92106b1d": 1794215099.1373677,
     "f691ce68c87be4fbc1de8f69db5609b8f8692484b484f6405270a8e26a806783": 1794215099.1373677,
     "08d7fbd74839a9e92cacbe495e590cf90ee228284da18c0621a892800f2a3d0b": 1794216304.6978993,
@@ -1249,9 +1246,55 @@
     "68e2fe2c3ae91987fa0495a9b54d7a5c9710fceb760c8e629c5f0d33f6be184d": 1794217078.7320814,
     "bf897e7e72e99f7007bb9aed7dafc49596ee67406aea09f35adf3d62637e639f": 1794218468.6900578,
     "aa45fbaa4700b7f90f2d171f07933bc828ed7a31c7453985051393587bfb9b97": 1794218468.6900578,
-    "f6512b7f1292fae9da63782c095046a42c5e10437d957dfa5598abee3bd2fc1b": 1794218468.6900578
+    "f6512b7f1292fae9da63782c095046a42c5e10437d957dfa5598abee3bd2fc1b": 1794218468.6900578,
+    "de5b2606a3372bdf80e43559a2bbed692a2b4168d16a30fe8f80ef8f660c0817": 1794219666.999504,
+    "743b5a138ab26816053bf75188f45530a2eef20a75b37843e055da8ec6db164d": 1794219666.999504,
+    "845156d138f92618d46bb0e5ebdb7592b1e9b332f7472e4eda7d931819bf23b0": 1794219666.999504,
+    "90d9ec387df5a54491bc9e9fabffc2aa0f7876eee488a30b1aaa5280efe0e458": 1794219666.999504,
+    "ca89e1cf943a662f370b552a79f134210ff800e8696aafaa694080281cef43d1": 1794219666.999504,
+    "04a7ca866ef95e30c8042d4bb8039f9767950aa4e76ce4a269bc73dd84ef95bd": 1794219666.999504,
+    "743648d8cf4030ad806f3565e5012dae239a92c0fbb17fe0b0cac446d56d875a": 1794219666.999504,
+    "5b354e873e327d0992d88344a4e5312157e8bad2b4a957e5aa01ff30ebcfd265": 1794219666.999504
   },
   "queue": [
+    {
+      "region": "RUSSIA",
+      "title": "Я протестировал DeepSeek Harness и вот что у меня получилось",
+      "link": "https://habr.com/ru/articles/1104778/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1104778",
+      "desc": "Один промпт, 8 субагентов, 183 шага и 2 часа 43 минуты автономной работы. Столько потребовалось DeepSeek, чтобы собрать с нуля браузерную аркаду на React, TypeScript и Canvas. Самое интересное, что всё это происходило на подписке OpenCode Go за $10. А я в это время наблюдал, как агент самостоятельно разбирается с задачами, пишет код и проверяет результат. В этой статье расскажу, что представляет собой DeepSeek Harness, чем он отличается от обычных coding-агентов, как устроена его работа с кэшем и что в итоге удалось получить. Заодно покажу саму игру и несколько моментов, где без моего вмешательства всё-таки не обошлось. У меня была довольно простая идея: сделать браузерную игру для тренировки скорости печати. Чтобы с экрана летели слова, игрок набирал их на клавиатуре, стрелял по противникам, набирал очки и пытался не потерять все жизни. Что-то между тренажёром слепой печати и аркадным шутером. Но экспериментировать хотелось даже не столько с игрой, сколько с агентной разработкой. Я решил проверить, что получится, если взять относительно недорогую модель, дать ей нормальную среду для работы и поставить достаточно большую задачу. Не очередной список дел на React, а игру с графикой, звуком, игровой логикой и статистикой. Мой процесс выглядел так: Идея простыми словами → ChatGPT в обычном браузере → большой технический промпт → DeepSeek Harness → готовый проект. Никакого Codex на этапе составления промптов не было. Я обсуждал задумку с обычным ChatGPT на сайте, просил его продумать архитектуру, найти слабые места требований и собрать всё в внятное ТЗ. А реализовывал уже DeepSeek в Harness. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794217208.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 9.0,
+        "event_concreteness": 14.0,
+        "practical_value": 6.5,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 54.5,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 78.5
+      },
+      "base_score": 54.5,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 78.5,
+      "key": "743b5a138ab26816053bf75188f45530a2eef20a75b37843e055da8ec6db164d",
+      "importance": 78.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "models"
+      ],
+      "audience_score": 8.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
     {
       "region": "WORLD",
       "title": "Abu Dhabi, OpenAI launch world's first AI-native government initiative to speed up public services - Gulf News",
@@ -1285,23 +1328,251 @@
       "topics": [],
       "audience_score": 7.0,
       "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "AI-агент с правами администратора: что уже умеют MCP-серверы в IAM",
+      "link": "https://habr.com/ru/articles/1105324/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1105324",
+      "desc": "Представьте обычную просьбу: «Создай пользователя, добавь его в группу Engineering и отзови доступ через неделю». Для AI-агента это одно предложение. Для IAM — несколько административных операций, каждая из которых может закончиться инцидентом. Я посмотрел, что поставщики IAM уже предлагают через Model Context Protocol. Хорошая новость: создание пользователей и изменение групп больше не выглядит фантастикой. Плохая: надпись «подтверждение человеком» сама по себе еще ничего не гарантирует. Важно, что именно подтвердил человек и может ли модель подменить операцию после этого. далее",
+      "source": "Habr AI/News",
+      "time": 1794210376.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 12.0,
+        "event_concreteness": 15.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 54.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 54.5
+      },
+      "base_score": 54.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 54.5,
+      "key": "845156d138f92618d46bb0e5ebdb7592b1e9b332f7472e4eda7d931819bf23b0",
+      "importance": 54.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "models",
+        "security_regulation"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "MLSecOps-скан: как найти все ИИ-активы в репозитории и проверить их до релиза",
+      "link": "https://habr.com/ru/companies/infera_security/articles/1105426/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1105426",
+      "desc": "С появлением ИИ вопрос «что у нас в проде» усложнился. Когда мы говорим о безопасности приложений, у нас уже есть устоявшийся набор инструментов: SAST смотрит на код, SCA на зависимости, Secrets на утечки ключей, DAST на работающее приложение. Но как только в продукте появляется ИИ-компонент (агент, модель, векторное хранилище, датасет), то привычные сканеры перестают отвечать на главный вопрос: из чего вообще состоит эта ИИ-система и какие у неё дефекты? ИИ-модель – это не просто файл с весами. Это адаптеры, промпты, MCP-серверы, конфигурации инференса, обучающие данные, ML-библиотеки, ноутбуки и пайплайны. Каждый из этих элементов – потенциальная точка отказа и потенциальный вектор атаки. И, что важнее, большинство из них никто не объявлял: они появились в репозитории «сами собой», и о них не знает ни CISO, ни AppSec-команда. В этой статье разберём, как MLSecOps-сканер , встроенный в INFERA AI.SafeCode, определяет состав ИИ-системы, какие дефекты он ищет и почему реестр ИИ-активов – это не бюрократия, а важный инструмент контроля в современных процессах разработки. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794219268.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 11.0,
+        "event_concreteness": 13.0,
+        "practical_value": 5.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 54.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 54.0
+      },
+      "base_score": 54.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 54.0,
+      "key": "90d9ec387df5a54491bc9e9fabffc2aa0f7876eee488a30b1aaa5280efe0e458",
+      "importance": 54.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "models",
+        "security_regulation",
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Производитель из Уфы запустит роботизированный комплекс благодаря льготному финансированию",
+      "link": "https://www.cnews.ru/news/line/2026-11-09_proizvoditel_iz_ufy_zapustit",
+      "desc": "«МСП Банк» выделил 30 млн руб. по программе льготного кредитования предприятий станкостроения и робототехники...",
+      "source": "CNews",
+      "time": 1794218160.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 9.0,
+        "event_concreteness": 12.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 50.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 50.0
+      },
+      "base_score": 50.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 50.0,
+      "key": "ca89e1cf943a662f370b552a79f134210ff800e8696aafaa694080281cef43d1",
+      "importance": 50.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "robotics",
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Как расследовать косвенные промпт-инъекции в ИИ-агентах",
+      "link": "https://habr.com/ru/companies/ru_mts/articles/1101838/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1101838",
+      "desc": "В октябре на arXiv авторы из Университета Сунь Ятсена и Гонконгского университета науки и технологий выложили работу AgentTracer . Я ее прочитала и заодно прошлась по материалам Google, Microsoft и OWASP на ту же тему. О защите агентов от инъекций написано много, а вот о расследовании после того, как что-то пошло не так, — гораздо меньше. Поэтому мне захотелось поделиться с вами своими наблюдениями о том, как по журналам агента восстановить ход атаки и что для этого нужно заранее сохранять. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794208245.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 11.0,
+        "event_concreteness": 15.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 1.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 49.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 49.5
+      },
+      "base_score": 49.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 49.5,
+      "key": "04a7ca866ef95e30c8042d4bb8039f9767950aa4e76ce4a269bc73dd84ef95bd",
+      "importance": 49.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "От скрипта к трансформеру: как behavior cloning привёл нас к серебру Kaggriculture",
+      "link": "https://habr.com/ru/companies/sberbank/articles/1104646/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1104646",
+      "desc": "В детстве мы играли в «Весёлую ферму», а летом 2026 года увидели на Kaggle соревнование Kaggriculture . Здесь два агента ведут соседние фермы: выращивают урожай, держат скот и продают продукцию на общий рынок. Через 30 игровых дней побеждает тот, у кого больше денег. Мы из команды DS B2C Сбера. За два месяца проверили шесть подходов — от скрипта с правилами до трансформера на 20 млн параметров. Заняли 436-е место из 10 148 команд и получили серебро. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794214708.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 3.0,
+        "impact": 9.0,
+        "event_concreteness": 13.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 43.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 43.5
+      },
+      "base_score": 43.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 43.5,
+      "key": "743648d8cf4030ad806f3565e5012dae239a92c0fbb17fe0b0cac446d56d875a",
+      "importance": 43.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Пытаемся сделать лаборанта из локальной Qwen 3.8 на 16 ГБ VRAM",
+      "link": "https://habr.com/ru/articles/1105356/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1105356",
+      "desc": "В прошлой статье мы запустили локальную Qwen 3.8 на машине с одной картой RTX 5080 на 16 ГБ. На вопросах по лабораторному журналу она обошла даже Claude Opus 5.5. Но радость оказалась преждевременной, потому как поиск по базе — самая простая часть работы физика. Когда мы проверили модель ещё на двух стендах: в обратной задаче рентгеновской оптики (XRR) и за пультом вакуумной установки (ADS), результат сильно упал. Пришлось разбираться, почему при переходе от таблиц к физике и «железу» мелкая модель начинает сыпаться. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794213063.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 7.0,
+        "event_concreteness": 10.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 40.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 40.5
+      },
+      "base_score": 40.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 40.5,
+      "key": "5b354e873e327d0992d88344a4e5312157e8bad2b4a957e5aa01ff30ebcfd265",
+      "importance": 40.5,
+      "editorial_value": 48.5,
+      "topics": [
+        "models"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1794218952.396697,
+    "last_start_ts": 1794219666.999504,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794218952.396697,
-    "last_success_ts": 1794218952.396697,
-    "last_candidates": 0,
+    "last_run_ts": 1794219666.999504,
+    "last_success_ts": 1794219666.999504,
+    "last_candidates": 26,
     "last_published": 1,
-    "queue_size": 1
+    "queue_size": 8
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794218952.3944619
+      "updated_at": 1794219700.5810695
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1325,13 +1596,6 @@
     }
   },
   "stories": {
-    "2d44d41dd9dc504298a0271a95f28c9ea50f5fc7b14909979e7e02e2c775f5fd": {
-      "time": 1794133024,
-      "title": "DeepMind нашла две уязвимости в RSA на 1024 бита, 2048 бит остаётся защищённым - Pasquale Pillitteri",
-      "desc": "DeepMind нашла две уязвимости в RSA на 1024 бита, 2048 бит остаётся защищённым Pasquale Pillitteri",
-      "source": "Pasquale Pillitteri",
-      "region": "RUSSIA"
-    },
     "4428b28ae52b523554e35cc5c364bad9a017aa4ffdba51900fccc1e654ba5c95": {
       "time": 1794135665,
       "title": "Раздевающие приложения с ИИ. Какие работают, что умеют и что запрещено законом - SecurityLab.ru",
@@ -1583,10 +1847,16 @@
       "desc": "Nvidia launches investigation after reports CEO Jensen Huang was targeted in Chinese spy operation innovation-village.com",
       "source": "innovation-village.com",
       "region": "WORLD"
+    },
+    "de5b2606a3372bdf80e43559a2bbed692a2b4168d16a30fe8f80ef8f660c0817": {
+      "time": 1794219666,
+      "title": "GPT-6 Cyber: как «ИИ-хакер» ищет уязвимости в Linux и Firefox",
+      "desc": "«В этом коде может быть уязвимость» — неудобный результат проверки безопасности. Разработчику ещё предстоит выяснить, воспроизводится ли ошибка, какие права нужны атакующему и что изменится после исправления. Пока ответов нет, даже убедительный отчёт остаётся гипотезой. GPT-6 Cyber интересна именно попыткой пройти этот путь дальше: от подозрения к проверяемому результату. OpenAI представила модель 5 ноября 2026 года, но обсуждать её только как очередной релиз было бы упущением. Гораздо важнее понять, какую часть работы исследователя безопасности она берёт на себя — и почему впечатляющие результаты ещё не означают, что нейросети можно поручить любой взлом. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "RUSSIA",
@@ -1605,99 +1875,10 @@
     "WORLD",
     "RUSSIA",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793985398,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 8.06,
-      "candidates": 0,
-      "queue_before": 7,
-      "queue_after": 6,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.techrepublic.com/article/news-perplexity-teammates-ai-agents-pricing-features/",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Прямая возможность автоматизировать рутинные аналитические задачи и снизить операционные расходы.",
-            "title": "Perplexity Teammates Launches: How Its $200-a-Month AI Agents Work - TechRepublic",
-            "final_score": 68.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793985881,
       "status": "OK",
@@ -26309,11 +26490,151 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794219666,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 36.37,
+      "candidates": 26,
+      "queue_before": 1,
+      "queue_after": 8,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 15,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 8,
+        "candidate_count": 26,
+        "admission_rate": 30.77,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/articles/1104778/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1104778",
+            "image_url": "https://habr.com/share/publication/1104778/516ab0e515180324ad6bf9f8c4af7141/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Показывает реальную возможность делегирования разработки агентам, что требует пересмотра процессов найма и оценки стоимости создания MVP.",
+            "title": "Я протестировал DeepSeek Harness и вот что у меня получилось",
+            "final_score": 78.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 6,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 125,
+        "raw_items": 714,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 40,
+          "CNews": 51,
+          "Euronews": 32
+        },
+        "score_filtered": 664,
+        "quality_filtered": 23,
+        "story_dedup": 1,
+        "candidates": 26,
+        "candidate_rate": 0.0441,
+        "score_buckets": {
+          "0–39": 630,
+          "40–49": 55,
+          "50–59": 23,
+          "60–69": 6,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 1,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794218468.6900578,
-  "last_publish_ts": 1794218952.396697,
+  "last_search_ts": 1794219666.999504,
+  "last_publish_ts": 1794219666.999504,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
