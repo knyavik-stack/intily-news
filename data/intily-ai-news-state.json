@@ -1,6 +1,5 @@
 {
   "published": {
-    "dae0a5efd55f9fbc0e4dd3d15891dd6482d5efd0db1d14720b2d4a4c12c2b1a4": 1791615175,
     "78419817651c50b9d48bf355be33fcb57c80513b0447f95a66355cdd9077f191": 1791615685,
     "aaa24f84e24dfc2620dde1c0f6ffe0b44aea1d027f2eba4cb703419b95a3fa49": 1791616141,
     "18ff08e716c578a6cfbf223ace06f42443aa23eac571f83f1bfa14d0f53db0ab": 1791616609,
@@ -1236,20 +1235,20 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794206705.385305,
+    "last_start_ts": 1794207424.694744,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794206705.385305,
-    "last_success_ts": 1794206705.385305,
+    "last_run_ts": 1794207424.694744,
+    "last_success_ts": 1794207424.694744,
     "last_candidates": 8,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794206730.2040908
+      "updated_at": 1794207458.4421675
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1472,146 +1471,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793965961,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 38.17,
-      "candidates": 27,
-      "queue_before": 2,
-      "queue_after": 5,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 21,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 4,
-        "candidate_count": 27,
-        "admission_rate": 14.81,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "IMAGE_NOT_FOUND": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "IMAGE_NOT_FOUND"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 5.33,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Критическая уязвимость безопасности требует немедленной проверки рабочих браузеров и установленных расширений.",
-            "title": "Claude Dispatch Flaw Lets Malicious Browser Extensions Run Code on Connected Computers - CyberSecurityNews",
-            "final_score": 65.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 119,
-        "raw_items": 584,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 1,
-          "Ars Technica": 1,
-          "Habr AI/News": 31,
-          "CNews": 48,
-          "Euronews": 35
-        },
-        "score_filtered": 532,
-        "quality_filtered": 19,
-        "story_dedup": 6,
-        "candidates": 27,
-        "candidate_rate": 0.0581,
-        "score_buckets": {
-          "0–39": 502,
-          "40–49": 46,
-          "50–59": 32,
-          "60–69": 3,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793966695,
       "status": "OK",
@@ -25814,10 +25673,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794207424,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 33.8,
+      "candidates": 8,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 6,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 0,
+        "candidate_count": 8,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.5,
+          "bonus_total": 51.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Необходим немедленный аудит безопасности и внедрение ИИ-инструментов защиты, так как автоматизированные атаки стали реальностью.",
+            "title": "ИИ-агенты впервые полностью атаковали российскую компанию - Techora.ru",
+            "final_score": 73.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 30,
+        "raw_items": 458,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 3,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 5,
+          "CNews": 10,
+          "Euronews": 10
+        },
+        "score_filtered": 445,
+        "quality_filtered": 5,
+        "story_dedup": 0,
+        "candidates": 8,
+        "candidate_rate": 0.0187,
+        "score_buckets": {
+          "0–39": 430,
+          "40–49": 19,
+          "50–59": 9,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794206705.385305,
+  "last_search_ts": 1794207424.694744,
   "last_publish_ts": 1794206705.385305,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
