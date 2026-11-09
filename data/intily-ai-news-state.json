@@ -1,6 +1,5 @@
 {
   "published": {
-    "9202e240a54be6a81337788094eeceda345b5346a6f34d21a01d6045d4315346": 1791637026,
     "a4dbd1a17b437deb262f0076c9c4a5393e8e341b274459258f6f808884cbc52a": 1791638692,
     "2c91230d31d81310c62715055ca91845182b5b52fac2adc8dc1717e2bed68fce": 1791640143,
     "e6ffddf288d9cc45968947e468771cb86200d811413f8f066ac13761bff4ce91": 1791640369,
@@ -1244,7 +1243,6 @@
     "5b354e873e327d0992d88344a4e5312157e8bad2b4a957e5aa01ff30ebcfd265": 1794228539
   },
   "known": {
-    "eb80d798c01aedbb880654425cec367c49399d1e53f2a71eea5b42016daa5740": 1794223503.7131824,
     "51f5d4fe8bf900fedf363d9524ba6d304eea980741e9103b17604e36d00e8c4e": 1794226387.5277634,
     "b6944fee9153b5953fa4d0ee96bb0d1e8c9b43665f8b720aa98280df34bbda8d": 1794226387.5277634,
     "20c549a3ebee28b4c44d7df6da8bdb26dc10592889a5e37ff4882fc111337c9e": 1794226387.5277634,
@@ -1438,30 +1436,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794228539.4172668,
+    "last_start_ts": 1794229061.3746161,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794228539.4172668,
-    "last_success_ts": 1794228539.4172668,
-    "last_candidates": 24,
-    "last_published": 1,
+    "last_run_ts": 1794229061.3746161,
+    "last_success_ts": 1794229061.3746161,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 5
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794228583.4151719
+      "disabled_until": 1794232647.7542899,
+      "reason": "The read operation timed out",
+      "updated_at": 1794229047.7542927
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794228065.2514093
+      "disabled_until": 1794232651.3289194,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794229051.328921
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794228065.2514093
+      "disabled_until": 1794315461.3654203,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794229061.365422
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1469,9 +1467,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794228065.2514093
+      "disabled_until": 1794232660.4283092,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794229060.4283116
     }
   },
   "stories": {
@@ -1828,136 +1826,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793993554,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 40.57,
-      "candidates": 28,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 27,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 0,
-        "candidate_count": 28,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Упрощение интеграции AI в CI/CD процессы и повышение качества автогенерации кода для разработчиков.",
-            "title": "OpenAI объявила о покупке разработчика инфраструктуры для хранения кода и инструментов для работы с Git",
-            "final_score": 75.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 154,
-        "raw_items": 1151,
-        "source_counts": {
-          "TechCrunch AI": 8,
-          "VentureBeat AI": -1,
-          "The Verge AI": 6,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 1,
-          "Ars Technica": 9,
-          "Habr AI/News": 40,
-          "CNews": 39,
-          "Euronews": 50
-        },
-        "score_filtered": 1093,
-        "quality_filtered": 29,
-        "story_dedup": 1,
-        "candidates": 28,
-        "candidate_rate": 0.0281,
-        "score_buckets": {
-          "0–39": 1049,
-          "40–49": 72,
-          "50–59": 22,
-          "60–69": 8,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793994518,
       "status": "OK",
@@ -26434,6 +26302,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1794229061,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 33.73,
+      "candidates": 0,
+      "queue_before": 5,
+      "queue_after": 5,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
