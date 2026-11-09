@@ -1287,7 +1287,11 @@
         "business"
       ],
       "audience_score": 7.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1794227821,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1794228121
     },
     {
       "region": "RUSSIA",
@@ -1325,10 +1329,46 @@
       "audience_score": 7.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1794226387,
+      "last_failed_at": 1794227821,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1794226687
+      "failure_count": 2,
+      "next_retry_at": 1794228421
+    },
+    {
+      "region": "WORLD",
+      "title": "AI chip testing demands lift Taiwan's wafer testing specialist HTSI as October revenue surges 62% - digitimes",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNcDR1d3JFbkdtc0QzNkczaDAtbkhHRjJzN25Kb01JOTljZ0lxYnVNWWlMbmJaRnNXeGdmQlZqeEZOendqVHlVSS1xNGxBQTRhclBXY3J2UDBiWTVMaURLVFhsT0YwU3pTNFBJUHBoMm9ld0k1cmpqTk1uVVJDWFloeWJYYTVHZWRWcG9BQ3RtSlEyd1dnMlc3aTZ3dkY?oc=5",
+      "desc": "AI chip testing demands lift Taiwan's wafer testing specialist HTSI as October revenue surges 62% digitimes",
+      "source": "digitimes",
+      "time": 1794212514.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 6.0,
+        "event_concreteness": 10.5,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 1.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 40.0,
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 61.0
+      },
+      "base_score": 40.0,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 61.0,
+      "key": "de7e8c8c14bda6c99785c78ab9082d34cf43f617a458ca29c5a00f4fdc55392d",
+      "importance": 61.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "chips"
+      ],
+      "audience_score": 7.0,
+      "tier": "A"
     },
     {
       "region": "RUSSIA",
@@ -1400,69 +1440,33 @@
       ],
       "audience_score": 4.0,
       "tier": "A"
-    },
-    {
-      "region": "WORLD",
-      "title": "AI chip testing demands lift Taiwan's wafer testing specialist HTSI as October revenue surges 62% - digitimes",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNcDR1d3JFbkdtc0QzNkczaDAtbkhHRjJzN25Kb01JOTljZ0lxYnVNWWlMbmJaRnNXeGdmQlZqeEZOendqVHlVSS1xNGxBQTRhclBXY3J2UDBiWTVMaURLVFhsT0YwU3pTNFBJUHBoMm9ld0k1cmpqTk1uVVJDWFloeWJYYTVHZWRWcG9BQ3RtSlEyd1dnMlc3aTZ3dkY?oc=5",
-      "desc": "AI chip testing demands lift Taiwan's wafer testing specialist HTSI as October revenue surges 62% digitimes",
-      "source": "digitimes",
-      "time": 1794212514.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 6.0,
-        "event_concreteness": 10.5,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 40.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 40.0
-      },
-      "base_score": 40.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 40.0,
-      "key": "de7e8c8c14bda6c99785c78ab9082d34cf43f617a458ca29c5a00f4fdc55392d",
-      "importance": 40.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "chips"
-      ],
-      "audience_score": null,
-      "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1794227594.8314664,
+    "last_start_ts": 1794227821.19046,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794227594.8314664,
-    "last_success_ts": 1794227594.8314664,
+    "last_run_ts": 1794227821.19046,
+    "last_success_ts": 1794227821.19046,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 5
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794227600.3899508
+      "disabled_until": 1794231444.291321,
+      "reason": "The read operation timed out",
+      "updated_at": 1794227844.2913234
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794227104.7834616
+      "disabled_until": 1794231447.6206732,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794227847.6206753
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794227104.7834616
+      "disabled_until": 1794314257.2235503,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794227857.2235518
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1470,9 +1474,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794227104.7834616
+      "disabled_until": 1794231456.3150873,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794227856.315089
     }
   },
   "stories": {
@@ -1815,147 +1819,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1793992360,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 50.05,
-      "candidates": 28,
-      "queue_before": 1,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 26,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 0,
-        "candidate_count": 28,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.cointrust.com/market-news/juvrixai-launches-no-code-ai-agent-platform-on-near-protocol",
-            "image_url": "https://www.cointrust.com/wp-content/uploads/2021/01/near-protocol.jpg",
-            "width": 750,
-            "height": 375,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.0,
-          "bonus_total": 63.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Позволяет быстро тестировать гипотезы по автоматизации на блокчейне без найма дорогих разрабов.",
-            "title": "JuvrixAI Launches No-Code AI Agent Platform on NEAR Protocol - CoinTrust",
-            "final_score": 62.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 157,
-        "raw_items": 1157,
-        "source_counts": {
-          "TechCrunch AI": 8,
-          "VentureBeat AI": -1,
-          "The Verge AI": 6,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 1,
-          "Ars Technica": 9,
-          "Habr AI/News": 40,
-          "CNews": 42,
-          "Euronews": 50
-        },
-        "score_filtered": 1104,
-        "quality_filtered": 24,
-        "story_dedup": 1,
-        "candidates": 28,
-        "candidate_rate": 0.028,
-        "score_buckets": {
-          "0–39": 1057,
-          "40–49": 70,
-          "50–59": 22,
-          "60–69": 8,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 1,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1793992835,
       "status": "OK",
@@ -26508,6 +26371,89 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1794227821,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 37.97,
+      "candidates": 0,
+      "queue_before": 5,
+      "queue_after": 5,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 7.0,
+          "bonus_total": 21.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Сигнал о сохраняющемся дефиците мощностей для тестирования чипов, влияющем на сроки поставок и стоимость инфраструктуры.",
+            "title": "AI chip testing demands lift Taiwan's wafer testing specialist HTSI as October revenue surges 62% - digitimes",
+            "final_score": 61.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
