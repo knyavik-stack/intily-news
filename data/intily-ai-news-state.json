@@ -1238,7 +1238,8 @@
     "bc41d865a6bec729316bfb169784cc737ca4ab15635e14e9227b7c82886bf930": 1794235506,
     "99c7b151e3bc9ff280d0e3442d095a336db543642c939ad652a92e0fc13e88ab": 1794236244,
     "d354c190b8a112ac15dea881f3c3c738af5bd691b85cf7d34f164d66ff87f32d": 1794240070,
-    "4a51b3e56585478bfe2b2edaafe28d73e1e2f82d92953d5473b5852bcda866ca": 1794240551
+    "4a51b3e56585478bfe2b2edaafe28d73e1e2f82d92953d5473b5852bcda866ca": 1794240551,
+    "423868a78877ba968f3c73f2f18e5dcb15a7c5eb14f363bafd17e5378359f8db": 1794241516
   },
   "known": {
     "99c7b151e3bc9ff280d0e3442d095a336db543642c939ad652a92e0fc13e88ab": 1794236244.943753,
@@ -1249,45 +1250,17 @@
     "423868a78877ba968f3c73f2f18e5dcb15a7c5eb14f363bafd17e5378359f8db": 1794239170.4906323,
     "11ddd58ff1d5bcc04f53324764709242d989fc1d48e196e73c7b955ea1ae92df": 1794239170.4906323,
     "31f7ddb4aac1ed24b960011dbf29dc4a6d96b55c0e40e71084c0348d3247f95f": 1794239170.4906323,
-    "76d1353a4a15e1266f62451fdf83708b95917f0bc313887437f901b9d658e071": 1794239170.4906323
+    "76d1353a4a15e1266f62451fdf83708b95917f0bc313887437f901b9d658e071": 1794239170.4906323,
+    "e6fbdb1e735c5edc2dc57ea0a1fd1f1cc25e990c820c55ce7bd6be7b79731159": 1794241516.1876419,
+    "dbc9166cb8f99430513acb476b3a29223b3a8f4125008fc006820083d21fff44": 1794241516.1876419,
+    "b82b27b3a55ff0c72714bf8aee8d974f5b5c057a0c906f4578b33b02cd2709ac": 1794241516.1876419,
+    "ede9c6918a08d0a305269f9a2456e3e118a34f1e4fbe82ced781179e0c15a331": 1794241516.1876419,
+    "11a9a09c24e3c22e43ceda6587476a722ce0b0f581e6402cad38b976933730f8": 1794241516.1876419,
+    "cb704a41ee4bb8cac0d53e5b864a5ed0b0fe88275ca86f1a72a7233fb6f01e26": 1794241516.1876419,
+    "0c18c703a0a4d2c4cb5c0bb392646b227e4c8107947556fb448eb3d8f4a3d988": 1794241516.1876419,
+    "91b32cf7eee6d50fa7a2e27551bb4af9b1c5a533b86140d852a967b8ecb5d430": 1794241516.1876419
   },
   "queue": [
-    {
-      "region": "WORLD",
-      "title": "Toptal AI Launches, Delivers Frontier-grade AI With Open-weight Models and Full Data Ownership - ACROFAN USA",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1VYmVDbXdYX1NMRHVLclR3RFBhbzFDLVlETzVoNFNaUWVCR2xabUxzdUYtWGEyMElCb3FHWWp4LXJxci1JdUV6bWxZVHFsQTVmSmkwMGd6azVsSVhI?oc=5",
-      "desc": "Toptal AI Launches, Delivers Frontier-grade AI With Open-weight Models and Full Data Ownership ACROFAN USA",
-      "source": "ACROFAN USA",
-      "time": 1794238854.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 9.0,
-        "event_concreteness": 12.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 42.5,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 66.5
-      },
-      "base_score": 42.5,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 66.5,
-      "key": "423868a78877ba968f3c73f2f18e5dcb15a7c5eb14f363bafd17e5378359f8db",
-      "importance": 66.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "models"
-      ],
-      "audience_score": 8.0,
-      "tier": "A"
-    },
     {
       "region": "RUSSIA",
       "title": "ИИ-агенты не идентифицируют себя: 29 млн запросов Muse и блокировка Amazon - Techora.ru",
@@ -1320,6 +1293,44 @@
       "editorial_value": 50.0,
       "topics": [
         "agents"
+      ],
+      "audience_score": 8.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "gpu-unlock: как снять программный потолок FP16/BF16 на RTX 20/30/40 без перепрошивки",
+      "link": "https://habr.com/ru/articles/1105598/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1105598",
+      "desc": "У вас в компьютере может стоять видеокарта, которая считает вдвое медленнее, чем могла бы — просто потому, что производитель так решил в прошивке. Проект gpu-unlock от разработчика с ником Zagitta снимает этот лимит программно, на уровне ядра Linux, без патченого драйвера и без перепрошивки VBIOS. Дисклеймер сразу: сам я этот модуль не тестировал (в отличие от предыдущей статьи про Qwen3.8 на 1070, где все цифры — мои собственные замеры). Всё ниже — разбор репозитория и README проекта, с указанием, где цифры — заявления автора и коммьюнити, а не независимо проверенный бенчмарк. В чём суть ограничения NVIDIA разделяет линейку на гейминговые GeForce RTX и профессиональные/дата-центровые карты (Tesla, A100, H100 и т.д.) не только по цене, но и по пропускной способности тензорных ядер на FP16/BF16/TF32 с накоплением в FP32. Железо физически одно и то же (или очень близкое), но на потребительских картах эта математика искусственно урезана — чаще всего вдвое от паспортной пиковой скорости тензорных ядер. Для игр это не имеет значения — там этот режим почти не используется. А вот для локальных LLM, файнтюнинга, генерации изображений и видео — это именно то, что считает большую часть времени при обучении и на этапе prefill (обработка входного промпта). Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794238317.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 12.0,
+        "event_concreteness": 0.0,
+        "practical_value": 5.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 41.5,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 65.5
+      },
+      "base_score": 41.5,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 65.5,
+      "key": "76d1353a4a15e1266f62451fdf83708b95917f0bc313887437f901b9d658e071",
+      "importance": 65.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "chips",
+        "tools"
       ],
       "audience_score": 8.0,
       "tier": "A",
@@ -1360,6 +1371,43 @@
       ],
       "audience_score": 8.0,
       "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Российская логистическая компания автоматизировала расчет сложных цепочек поставок с помощью собственной ИИ-платформы",
+      "link": "https://www.cnews.ru/news/line/2026-11-09_rossijskaya_logisticheskaya",
+      "desc": "Таможенный представитель и мультимодальный оператор «Эврика-Логистик» выводит на рынок Evrika AI — платформу, которая...",
+      "source": "CNews",
+      "time": 1794236100.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 4.0,
+        "event_concreteness": 10.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 2.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 42.0,
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 63.0
+      },
+      "base_score": 42.0,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 63.0,
+      "key": "11ddd58ff1d5bcc04f53324764709242d989fc1d48e196e73c7b955ea1ae92df",
+      "importance": 63.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "tools"
+      ],
+      "audience_score": 7.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     },
     {
       "region": "WORLD",
@@ -1453,19 +1501,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 40.0,
+        "base_score": 39.5,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 61.0
+        "final_score": 60.5
       },
-      "base_score": 40.0,
+      "base_score": 39.5,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 61.0,
+      "score": 60.5,
       "key": "1e377ef726c432326dcc77f59c52ebd5021da4a0b58aff3fc6c3877468b348a6",
-      "importance": 61.0,
+      "importance": 60.5,
       "editorial_value": 50.0,
       "topics": [
         "agents"
@@ -1657,33 +1705,109 @@
     },
     {
       "region": "RUSSIA",
-      "title": "Российская логистическая компания автоматизировала расчет сложных цепочек поставок с помощью собственной ИИ-платформы",
-      "link": "https://www.cnews.ru/news/line/2026-11-09_rossijskaya_logisticheskaya",
-      "desc": "Таможенный представитель и мультимодальный оператор «Эврика-Логистик» выводит на рынок Evrika AI — платформу, которая...",
-      "source": "CNews",
-      "time": 1794236100.0,
+      "title": "OpenSource-дайджест Сбера: три решения от инженеров для инженеров",
+      "link": "https://habr.com/ru/companies/sberbank/articles/1104358/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1104358",
+      "desc": "Сбер переходит от точечных релизов к регулярному формату: теперь мы будем систематически публиковать дайджесты о новых инженерных решениях, которыми делимся в открытом доступе. Наша цель — сократить путь от внутренней разработки до практического применения в индустрии, передавая сообществу проверенные инструменты для решения реальных задач. В этом дайджесте Сбера — три инструмента, которые наши инженеры создали для практических задач и открывают для внешних команд: HG SDLC, Spring AI GigaChat и Schedulex. Разберём, где они могут пригодиться, как устроены и что учесть перед использованием. Как сохранить контекст между этапами разработки с ИИ-агентами? Как встроить GigaChat в Java-приложение? Как связать фоновую задачу с бизнес-транзакцией и восстановить работу после перезапуска? Каждое из решений отвечает на один из этих вопросов. Поехали! Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794232850.0,
       "_score_components": {
         "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 4.0,
-        "event_concreteness": 10.0,
-        "practical_value": 3.0,
+        "ai_specificity": 6.0,
+        "impact": 10.0,
+        "event_concreteness": 13.0,
+        "practical_value": 6.5,
         "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 2.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
         "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 42.0,
+        "base_score": 54.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 42.0
+        "final_score": 54.0
       },
-      "base_score": 42.0,
+      "base_score": 54.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 42.0,
-      "key": "11ddd58ff1d5bcc04f53324764709242d989fc1d48e196e73c7b955ea1ae92df",
-      "importance": 42.0,
+      "score": 54.0,
+      "key": "e6fbdb1e735c5edc2dc57ea0a1fd1f1cc25e990c820c55ce7bd6be7b79731159",
+      "importance": 54.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "applications",
+        "business",
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "Google DeepMind's AI agents cut the cost of two attacks on legacy 1024-bit RSA - MLQ.ai",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPLXdBd1g1T04yQjFRTTluZ2JpdXUtelBNbDJlRzRKTTlJMnd0aDRFNVZJcDluNHVoZlB2b09fRUo3eHRzWUZhY3RFQkJDcE54RkYxWUF5bEs4Z3RuZW9aUUFTSGotTjZxODJSY1JXaXRzdGNBdm5JRnJILVQ5MEFhU0hEQUFWVENfUVpIb096YzNzQXdwdExHV3pkYUJxZ2s?oc=5",
+      "desc": "Google DeepMind's AI agents cut the cost of two attacks on legacy 1024-bit RSA MLQ.ai",
+      "source": "MLQ.ai",
+      "time": 1794218496.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 10.0,
+        "event_concreteness": 16.5,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 0.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 50.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 50.5
+      },
+      "base_score": 50.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 50.5,
+      "key": "dbc9166cb8f99430513acb476b3a29223b3a8f4125008fc006820083d21fff44",
+      "importance": 50.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents"
+      ],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Синтетические плавки в ДСП-3: как сгенерировать данные и не обмануть себя",
+      "link": "https://habr.com/ru/articles/1105616/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1105616",
+      "desc": "Привет, Хабр! Эта история началась с того, что меня позвали пообщаться на тему работы в металлургическую компанию. Спросили коротко: «Готов?». Я оценил свои силы, масштаб задачи и ответил прямо — готов зайти сразу на позицию Head of AI, чтобы выстроить процесс от и до. И тут начался классический корпоративный футбол. Несмотря на предметный разговор, мне начали делать голову из-за отсутствия профильной вышки по программированию . Для суровой индустрии диплом оказался важнее реального опыта и понимания процессов. Поняв, что стандартным путем эту бюрократию не пробить, я решил пойти напролом: за пару недель собрать работающее MVP, показать товар лицом и жестко выделиться на фоне остальных кандидатов с «правильными» дипломами. Спойлер: красивого хэппи-энда не будет . Моё MVP до высшего руководства так и не донесли, а меня в итоге просто развернули на пороге. Но не пропадать же добру? Проект получился слишком интересным, чтобы просто похоронить его на жестком диске. Эта статья посвящена исключительно генератору. Мы разберем, как он устроен «под капотом», какие неочевидные ошибки я в нем допустил, и как проверить, что синтетика не врет сама себе. Обучение CatBoost и создание работающего микросервиса-советника мы оставим для второй части. Статья написана так, чтобы репозиторий вам не понадобился: весь код приведен прямо здесь, в том порядке, в котором его удобно читать и воспроизводить. Если вы захотите пропустить теоретические объяснения, в конце каждого раздела есть готовый рабочий фрагмент кода, который можно скопировать и запустить у себя. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794240774.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 6.0,
+        "event_concreteness": 12.5,
+        "practical_value": 6.5,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 49.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 49.5
+      },
+      "base_score": 49.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 49.5,
+      "key": "b82b27b3a55ff0c72714bf8aee8d974f5b5c057a0c906f4578b33b02cd2709ac",
+      "importance": 49.5,
       "editorial_value": 50.0,
       "topics": [
         "tools"
@@ -1694,36 +1818,37 @@
     },
     {
       "region": "RUSSIA",
-      "title": "gpu-unlock: как снять программный потолок FP16/BF16 на RTX 20/30/40 без перепрошивки",
-      "link": "https://habr.com/ru/articles/1105598/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1105598",
-      "desc": "У вас в компьютере может стоять видеокарта, которая считает вдвое медленнее, чем могла бы — просто потому, что производитель так решил в прошивке. Проект gpu-unlock от разработчика с ником Zagitta снимает этот лимит программно, на уровне ядра Linux, без патченого драйвера и без перепрошивки VBIOS. Дисклеймер сразу: сам я этот модуль не тестировал (в отличие от предыдущей статьи про Qwen3.8 на 1070, где все цифры — мои собственные замеры). Всё ниже — разбор репозитория и README проекта, с указанием, где цифры — заявления автора и коммьюнити, а не независимо проверенный бенчмарк. В чём суть ограничения NVIDIA разделяет линейку на гейминговые GeForce RTX и профессиональные/дата-центровые карты (Tesla, A100, H100 и т.д.) не только по цене, но и по пропускной способности тензорных ядер на FP16/BF16/TF32 с накоплением в FP32. Железо физически одно и то же (или очень близкое), но на потребительских картах эта математика искусственно урезана — чаще всего вдвое от паспортной пиковой скорости тензорных ядер. Для игр это не имеет значения — там этот режим почти не используется. А вот для локальных LLM, файнтюнинга, генерации изображений и видео — это именно то, что считает большую часть времени при обучении и на этапе prefill (обработка входного промпта). Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794238317.0,
+      "title": "В России запустили ИИ-агента для научных исследований с доступом к более 500 млн публикаций и патентов",
+      "link": "https://www.cnews.ru/news/line/2026-11-09_v_rossii_zapustili_ii-agenta",
+      "desc": "Российская интеллектуальная аналитическая платформа Inventorus запустила ИИ-агента «Никола», который самостоятельно...",
+      "source": "CNews",
+      "time": 1794240780.0,
       "_score_components": {
         "relevance": 12.0,
         "ai_specificity": 5.5,
-        "impact": 12.0,
-        "event_concreteness": 0.0,
-        "practical_value": 5.0,
+        "impact": 9.0,
+        "event_concreteness": 13.5,
+        "practical_value": 0.0,
         "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
+        "source_quality": 5.0,
+        "evidence": 1.0,
         "freshness": 2.0,
         "low_signal_penalty": 0.0,
-        "base_score": 41.5,
+        "base_score": 48.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 41.5
+        "final_score": 48.0
       },
-      "base_score": 41.5,
+      "base_score": 48.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 41.5,
-      "key": "76d1353a4a15e1266f62451fdf83708b95917f0bc313887437f901b9d658e071",
-      "importance": 41.5,
+      "score": 48.0,
+      "key": "ede9c6918a08d0a305269f9a2456e3e118a34f1e4fbe82ced781179e0c15a331",
+      "importance": 48.0,
       "editorial_value": 50.0,
       "topics": [
-        "chips",
+        "agents",
+        "research",
         "tools"
       ],
       "audience_score": null,
@@ -1732,57 +1857,130 @@
     },
     {
       "region": "WORLD",
-      "title": "Releases Next Generation of XT™, Advancing Its AI Platform-Enabled Enterprise Transformation Strategy - Business Wire",
-      "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQaG5WZVJTbENERGtMak5rUWFuTzlJY0ZVNTFWdWRSZUF3bkVqSjJKQmJXRzlZUmpDM0ZuUzliTS05YXdIa3J6cmFZQnJQVnVQRTRYanJ2QTVtWUttQTYtSFZ3VjRNQ2hUcWg4RE5vRmdfUzVua1U1Q1dSdnVYRjlVWUZ0ckVKU0pfOHBlcW9CaWN1cWFrYmFLZzNYRzFNVnZyVzdTSDRZLUNFcVZFUjhFRllFMWIwMHZuMGJKd184WC15Y0JCUzZoa1ZHRElMeHBYOW0taEUtcUdGOG5yR0RHZWJ5alpCQnIxMmFGaW9jOWFKVjUxdzVUXzFiSTJ0dHhJUGwzcg?oc=5",
-      "desc": "Releases Next Generation of XT™, Advancing Its AI Platform-Enabled Enterprise Transformation Strategy Business Wire",
-      "source": "Business Wire",
-      "time": 1794236400.0,
+      "title": "EDGE Sound Research raises $2 million to expand physical AI perception technology - Robotics & Automation News",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSjRtQnZ3RkN2LTZZTTZFZFRscjI0UllPcWd2dkllbUVuc245RXVwODJRR0lvS1lnZDB4cnc4V3lCSnRDOTRMLVE4bTVHblRyR3J4eDFTX0VoRm5HUzgySm56eHN2MnBkTWxhVXNuUnpGZ3FqcVYxc0hyb1Y4NWZ1VWdzeU1mcGJ3V19ESTR2aEFPT1pBLWV5YUJFZFVhay1iMVZUUUppN2s1Zm5nQk9UMVBpam9YSHNWUkFmY0Y4QmF0eUYxSGtpQ3VwUVM5ZGJKNGhR?oc=5",
+      "desc": "EDGE Sound Research raises $2 million to expand physical AI perception technology Robotics & Automation News",
+      "source": "Robotics & Automation News",
+      "time": 1794241107.0,
       "_score_components": {
         "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 4.0,
-        "event_concreteness": 10.0,
-        "practical_value": 5.0,
+        "ai_specificity": 5.5,
+        "impact": 9.0,
+        "event_concreteness": 11.5,
+        "practical_value": 3.0,
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 2.0,
         "low_signal_penalty": 0.0,
-        "base_score": 41.5,
+        "base_score": 46.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 41.5
+        "final_score": 46.0
       },
-      "base_score": 41.5,
+      "base_score": 46.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 41.5,
-      "key": "31f7ddb4aac1ed24b960011dbf29dc4a6d96b55c0e40e71084c0348d3247f95f",
-      "importance": 41.5,
+      "score": 46.0,
+      "key": "11a9a09c24e3c22e43ceda6587476a722ce0b0f581e6402cad38b976933730f8",
+      "importance": 46.0,
       "editorial_value": 50.0,
       "topics": [
-        "business",
+        "applications",
+        "research",
+        "robotics"
+      ],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
+      "region": "WORLD",
+      "title": "Disney and Adobe are building generative AI tools together",
+      "link": "https://www.theverge.com/tech/1029773/disney-adobe-generative-ai-partnership",
+      "desc": "The Walt Disney Company has teamed up with Adobe to develop proprietary \"artist-led\" generative AI models to support Disney's production pipeline. The multiyear partnership was announced today at Adobe's MAX conference, and it will see Adobe providing Disney with early access to its latest technologies for everything from Disney's theme parks and cruise line to […]",
+      "source": "The Verge AI",
+      "time": 1794238736.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 4.0,
+        "event_concreteness": 13.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 43.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 43.5
+      },
+      "base_score": 43.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 43.5,
+      "key": "cb704a41ee4bb8cac0d53e5b864a5ed0b0fe88275ca86f1a72a7233fb6f01e26",
+      "importance": 43.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "models",
         "tools"
       ],
       "audience_score": null,
       "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "LLM на 100 миллиардов параметров в работе: DeepX представила 2-нм ИИ-ускоритель DX-M2 - Gagadget.com",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQM0F3TDJMMUZ1TVVDT0J5TXN0QTRwb09xWExGeC1BcDlrS0kyNEdNNHF2dTZMRHp5UGo3ME1XTzJnTmNxX1hndlN6ZUtRamVzaTM0MVNFajJiMG1NdW5KOHZ6RmpzT25rd2NoM0F3bkpLOHdtLVgxbjUtLUxBS1Z5dUo3SUNKbXVRLXAtU2Y4S2c1QkN4aW5WWXRaQjlPb2tHMUxILTAyWnVCNl9xU0lBSDIzaUNWQTBsTXJyQXZOS28wNTk2ck85aHozN0hRLWNCU016UlRn0gHbAUFVX3lxTE1zQkdTbTVPOTV0RFFVb1UwZTh5cE44bHdQbS1UYy1iZmsyT25QOW1ndXo1a2U4WVJoeXc5STUySjlWeVFTNU05a1BURVJJaE1ENXJNSWdRWmhsWFowT1NZczNBRS13YUVYajdzWUc3UHZkUGhRX2xvUGJQaHZrNXJKOVI2aEF4R1JNdjc0UXdEZkZnTW5VU1FFNmVFQkl4RDkwM2lTMzlSTzA1dFg1a3ZXd1pqNEJHSmplS0IwMnBROXAyQ040OE5DVWVLbkZQUnJKbDNYNkZ5Qnc4Yw?oc=5",
+      "desc": "LLM на 100 миллиардов параметров в работе: DeepX представила 2-нм ИИ-ускоритель DX-M2 Gagadget.com",
+      "source": "Gagadget.com",
+      "time": 1794228300.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 9.0,
+        "event_concreteness": 12.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 1.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 42.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 42.0
+      },
+      "base_score": 42.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 42.0,
+      "key": "0c18c703a0a4d2c4cb5c0bb392646b227e4c8107947556fb448eb3d8f4a3d988",
+      "importance": 42.0,
+      "editorial_value": 50.0,
+      "topics": [],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1794240551.5231588,
+    "last_start_ts": 1794241516.1876419,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794240551.5231588,
-    "last_success_ts": 1794240551.5231588,
-    "last_candidates": 0,
+    "last_run_ts": 1794241516.1876419,
+    "last_success_ts": 1794241516.1876419,
+    "last_candidates": 37,
     "last_published": 1,
-    "queue_size": 14
+    "queue_size": 19
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794240556.440176
+      "updated_at": 1794241551.7072172
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2148,6 +2346,13 @@
       "desc": "Google Launches Two New 8th-Gen TPU Systems to Challenge NVIDIA in AI Chips Techiexpert.com",
       "source": "Techiexpert.com",
       "region": "WORLD"
+    },
+    "423868a78877ba968f3c73f2f18e5dcb15a7c5eb14f363bafd17e5378359f8db": {
+      "time": 1794241516,
+      "title": "Toptal AI Launches, Delivers Frontier-grade AI With Open-weight Models and Full Data Ownership - ACROFAN USA",
+      "desc": "Toptal AI Launches, Delivers Frontier-grade AI With Open-weight Models and Full Data Ownership ACROFAN USA",
+      "source": "ACROFAN USA",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
@@ -2155,7 +2360,6 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "RUSSIA",
@@ -2170,99 +2374,10 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
+    "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1794033170,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 10.23,
-      "candidates": 0,
-      "queue_before": 7,
-      "queue_after": 6,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.facebook.com/deutschewellenews/videos/concerns-that-newly-elected-us-leaders-will-increase-ai-regulation-sparked-a-mul/1098739236317493/",
-            "image_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t15.5256-10/892998434_1098739389650811_4305949913397823807_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=596eb7&_nc_ohc=vsyBHMNt_goQ7kNvwF4b-mq&_nc_oc=Adrcrnq_mEGorNUvtUg80ZjNhNzugyqmiqYJFB8Yq2umlAGVparLU6PiRFzSeMwC2ys&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&_nc_gid=JU9qjwn9imPJYfqCxWEt2A&_nc_ss=7b20f&oh=00_AQS9ICe-k5WvEA5EG9jdVxDD6POvEi0jG48w7LqF9NBaRA&oe=6AF48356",
-            "width": 1080,
-            "height": 1920,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра стратегии комплаенса и оценки рисков из-за возможного ужесточения законодательства.",
-            "title": "DW News. . Concerns that newly elected US leaders will increase AI regulation sparked a multi-trillion dollar market sell-off, wiping out billions in tech valuations and rattling investors. The sharp decline has renewed debate over the future of the AI boom and w - Facebook",
-            "final_score": 69.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794033640,
       "status": "OK",
@@ -26743,11 +26858,150 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794241516,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 48.85,
+      "candidates": 37,
+      "queue_before": 14,
+      "queue_after": 19,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 17,
+        "known_recent": 0,
+        "already_queued": 8,
+        "story_queue": 1,
+        "story_history": 3,
+        "added": 8,
+        "candidate_count": 37,
+        "admission_rate": 21.62,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.67,
+          "bonus_total": 69.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Позволяет внедрить мощные модели без передачи проприетарных данных сторонним провайдерам.",
+            "title": "Toptal AI Launches, Delivers Frontier-grade AI With Open-weight Models and Full Data Ownership - ACROFAN USA",
+            "final_score": 66.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 7,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 185,
+        "raw_items": 1117,
+        "source_counts": {
+          "TechCrunch AI": 3,
+          "VentureBeat AI": -1,
+          "The Verge AI": 4,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 2,
+          "Ars Technica": 4,
+          "Habr AI/News": 40,
+          "CNews": 82,
+          "Euronews": 50
+        },
+        "score_filtered": 1027,
+        "quality_filtered": 51,
+        "story_dedup": 2,
+        "candidates": 37,
+        "candidate_rate": 0.0397,
+        "score_buckets": {
+          "0–39": 981,
+          "40–49": 96,
+          "50–59": 36,
+          "60–69": 3,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 3,
+          "5": 0,
+          "6": 2,
+          "7": 2,
+          "8": 4,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794239170.4906323,
-  "last_publish_ts": 1794240551.5231588,
+  "last_search_ts": 1794241516.1876419,
+  "last_publish_ts": 1794241516.1876419,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
