@@ -1237,11 +1237,10 @@
     "bf897e7e72e99f7007bb9aed7dafc49596ee67406aea09f35adf3d62637e639f": 1794218468,
     "f6512b7f1292fae9da63782c095046a42c5e10437d957dfa5598abee3bd2fc1b": 1794218952,
     "de5b2606a3372bdf80e43559a2bbed692a2b4168d16a30fe8f80ef8f660c0817": 1794219666,
-    "743b5a138ab26816053bf75188f45530a2eef20a75b37843e055da8ec6db164d": 1794219910
+    "743b5a138ab26816053bf75188f45530a2eef20a75b37843e055da8ec6db164d": 1794219910,
+    "845156d138f92618d46bb0e5ebdb7592b1e9b332f7472e4eda7d931819bf23b0": 1794220633
   },
   "known": {
-    "265b5c66a270e3c8092832ca1b56df345f5a6fc7bb8c600458fa34ff92106b1d": 1794215099.1373677,
-    "f691ce68c87be4fbc1de8f69db5609b8f8692484b484f6405270a8e26a806783": 1794215099.1373677,
     "08d7fbd74839a9e92cacbe495e590cf90ee228284da18c0621a892800f2a3d0b": 1794216304.6978993,
     "0c1cad6dd2bd6a27e438681d2f47e4ac4131668008843273072f45cc80cd4450": 1794216304.6978993,
     "68e2fe2c3ae91987fa0495a9b54d7a5c9710fceb760c8e629c5f0d33f6be184d": 1794217078.7320814,
@@ -1258,45 +1257,6 @@
     "5b354e873e327d0992d88344a4e5312157e8bad2b4a957e5aa01ff30ebcfd265": 1794219666.999504
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "AI-агент с правами администратора: что уже умеют MCP-серверы в IAM",
-      "link": "https://habr.com/ru/articles/1105324/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1105324",
-      "desc": "Представьте обычную просьбу: «Создай пользователя, добавь его в группу Engineering и отзови доступ через неделю». Для AI-агента это одно предложение. Для IAM — несколько административных операций, каждая из которых может закончиться инцидентом. Я посмотрел, что поставщики IAM уже предлагают через Model Context Protocol. Хорошая новость: создание пользователей и изменение групп больше не выглядит фантастикой. Плохая: надпись «подтверждение человеком» сама по себе еще ничего не гарантирует. Важно, что именно подтвердил человек и может ли модель подменить операцию после этого. далее",
-      "source": "Habr AI/News",
-      "time": 1794210376.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 12.0,
-        "event_concreteness": 15.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 54.5,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 78.5
-      },
-      "base_score": 54.5,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 78.5,
-      "key": "845156d138f92618d46bb0e5ebdb7592b1e9b332f7472e4eda7d931819bf23b0",
-      "importance": 78.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "models",
-        "security_regulation"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "RUSSIA",
       "title": "MLSecOps-скан: как найти все ИИ-активы в репозитории и проверить их до релиза",
@@ -1338,6 +1298,81 @@
       "russia_weight_bonus": 0.0
     },
     {
+      "region": "RUSSIA",
+      "title": "Как расследовать косвенные промпт-инъекции в ИИ-агентах",
+      "link": "https://habr.com/ru/companies/ru_mts/articles/1101838/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1101838",
+      "desc": "В октябре на arXiv авторы из Университета Сунь Ятсена и Гонконгского университета науки и технологий выложили работу AgentTracer . Я ее прочитала и заодно прошлась по материалам Google, Microsoft и OWASP на ту же тему. О защите агентов от инъекций написано много, а вот о расследовании после того, как что-то пошло не так, — гораздо меньше. Поэтому мне захотелось поделиться с вами своими наблюдениями о том, как по журналам агента восстановить ход атаки и что для этого нужно заранее сохранять. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794208245.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 11.0,
+        "event_concreteness": 15.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 1.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 49.5,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 73.5
+      },
+      "base_score": 49.5,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 73.5,
+      "key": "04a7ca866ef95e30c8042d4bb8039f9767950aa4e76ce4a269bc73dd84ef95bd",
+      "importance": 73.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents"
+      ],
+      "audience_score": 8.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Производитель из Уфы запустит роботизированный комплекс благодаря льготному финансированию",
+      "link": "https://www.cnews.ru/news/line/2026-11-09_proizvoditel_iz_ufy_zapustit",
+      "desc": "«МСП Банк» выделил 30 млн руб. по программе льготного кредитования предприятий станкостроения и робототехники...",
+      "source": "CNews",
+      "time": 1794218160.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 9.0,
+        "event_concreteness": 12.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 50.0,
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 68.0
+      },
+      "base_score": 50.0,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 68.0,
+      "key": "ca89e1cf943a662f370b552a79f134210ff800e8696aafaa694080281cef43d1",
+      "importance": 68.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "robotics",
+        "tools"
+      ],
+      "audience_score": 6.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
       "region": "WORLD",
       "title": "Abu Dhabi, OpenAI launch world's first AI-native government initiative to speed up public services - Gulf News",
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMGlQTXhXRVNvXzBwdTZQb3NHODFvQTVNZGZSNXY0dFVIWlVXemhJX2s2MURHUlUxMEVObWpvTV9TYXQxbUZrSkU0S1JidGlJOHE0R3RFOERaeGliblJDWURqVWtfc09yWGs0NWtrb0R1UUxPY3k0UWJJWHpPd19zX0J6OTNiMGZyaWFncHU3R3NaMVhtMlZjQ3doeVJGV1RlNzN2SEZBS0tpUDk2Z0syZFhuVmNUa0IzWWN0TDFkWFVIVnNoVmZjQkhBVEZSY0pCbWZDV9IB5AFBVV95cUxPejFfbUZFbjItMkVQRnY4QkUzNzdGeEk2ZWoxYm1PYkdOYl8wMnBIalJUYl8xOU0xeVpEWnBIWk5GbGtISFRwS2pFZUFNblVsbzJZaWppNXFJVjJtUUluS3Rzb0tiUkJfRzNyclQ2cFVQS0FXeUJHdjZ1TFJGNjJaSE1SQW9IUTZqcnBscmlvRHZIWVpZV3VUNGVUajhFci10Q2pTSGJ6MnRHRTVOaEhwSFVqZGwxdzh4UUxkX1pTNEZ4YnY1WU5sREo0RERTd3RRNlBXNTVUbzJrcEU1STY5dkxWdXU?oc=5",
@@ -1370,81 +1405,6 @@
       "topics": [],
       "audience_score": 7.0,
       "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Производитель из Уфы запустит роботизированный комплекс благодаря льготному финансированию",
-      "link": "https://www.cnews.ru/news/line/2026-11-09_proizvoditel_iz_ufy_zapustit",
-      "desc": "«МСП Банк» выделил 30 млн руб. по программе льготного кредитования предприятий станкостроения и робототехники...",
-      "source": "CNews",
-      "time": 1794218160.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 9.0,
-        "event_concreteness": 12.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 1.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 50.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 50.0
-      },
-      "base_score": 50.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 50.0,
-      "key": "ca89e1cf943a662f370b552a79f134210ff800e8696aafaa694080281cef43d1",
-      "importance": 50.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "robotics",
-        "tools"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Как расследовать косвенные промпт-инъекции в ИИ-агентах",
-      "link": "https://habr.com/ru/companies/ru_mts/articles/1101838/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1101838",
-      "desc": "В октябре на arXiv авторы из Университета Сунь Ятсена и Гонконгского университета науки и технологий выложили работу AgentTracer . Я ее прочитала и заодно прошлась по материалам Google, Microsoft и OWASP на ту же тему. О защите агентов от инъекций написано много, а вот о расследовании после того, как что-то пошло не так, — гораздо меньше. Поэтому мне захотелось поделиться с вами своими наблюдениями о том, как по журналам агента восстановить ход атаки и что для этого нужно заранее сохранять. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794208245.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 11.0,
-        "event_concreteness": 15.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 49.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 49.5
-      },
-      "base_score": 49.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 49.5,
-      "key": "04a7ca866ef95e30c8042d4bb8039f9767950aa4e76ce4a269bc73dd84ef95bd",
-      "importance": 49.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
     },
     {
       "region": "RUSSIA",
@@ -1522,20 +1482,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794219910.6482627,
+    "last_start_ts": 1794220633.0011878,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794219910.6482627,
-    "last_success_ts": 1794219910.6482627,
+    "last_run_ts": 1794220633.0011878,
+    "last_success_ts": 1794220633.0011878,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 7
+    "queue_size": 6
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794219915.1852849
+      "updated_at": 1794220638.2325351
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1824,12 +1784,18 @@
       "desc": "Один промпт, 8 субагентов, 183 шага и 2 часа 43 минуты автономной работы. Столько потребовалось DeepSeek, чтобы собрать с нуля браузерную аркаду на React, TypeScript и Canvas. Самое интересное, что всё это происходило на подписке OpenCode Go за $10. А я в это время наблюдал, как агент самостоятельно разбирается с задачами, пишет код и проверяет результат. В этой статье расскажу, что представляет собой DeepSeek Harness, чем он отличается от обычных coding-агентов, как устроена его работа с кэшем и что в итоге удалось получить. Заодно покажу саму игру и несколько моментов, где без моего вмешательства всё-таки не обошлось. У меня была довольно простая идея: сделать браузерную игру для тренировки скорости печати. Чтобы с экрана летели слова, игрок набирал их на клавиатуре, стрелял по противникам, набирал очки и пытался не потерять все жизни. Что-то между тренажёром слепой печати и аркадным шутером. Но экспериментировать хотелось даже не столько с игрой, сколько с агентной разработкой. Я решил проверить, что получится, если взять относительно недорогую модель, дать ей нормальную среду для работы и поставить достаточно большую задачу. Не очередной список дел на React, а игру с графикой, звуком, игровой логикой и статистикой. Мой процесс выглядел так: Идея простыми словами → ChatGPT в обычном браузере → большой технический промпт → DeepSeek Harness → готовый проект. Никакого Codex на этапе составления промптов не было. Я обсуждал задумку с обычным ChatGPT на сайте, просил его продумать архитектуру, найти слабые места требований и собрать всё в внятное ТЗ. А реализовывал уже DeepSeek в Harness. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "845156d138f92618d46bb0e5ebdb7592b1e9b332f7472e4eda7d931819bf23b0": {
+      "time": 1794220633,
+      "title": "AI-агент с правами администратора: что уже умеют MCP-серверы в IAM",
+      "desc": "Представьте обычную просьбу: «Создай пользователя, добавь его в группу Engineering и отзови доступ через неделю». Для AI-агента это одно предложение. Для IAM — несколько административных операций, каждая из которых может закончиться инцидентом. Я посмотрел, что поставщики IAM уже предлагают через Model Context Protocol. Хорошая новость: создание пользователей и изменение групп больше не выглядит фантастикой. Плохая: надпись «подтверждение человеком» сама по себе еще ничего не гарантирует. Важно, что именно подтвердил человек и может ли модель подменить операцию после этого. далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -1845,144 +1811,11 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1793986119,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 69.85,
-      "candidates": 27,
-      "queue_before": 5,
-      "queue_after": 5,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 26,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 1,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 27,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Ускорение появления автономных AI-кодеров меняет требования к процессам разработки и контроля качества кода.",
-            "title": "OpenAI объявила о покупке разработчика инфраструктуры для хранения кода и инструментов для работы с Git",
-            "final_score": 75.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 156,
-        "raw_items": 1072,
-        "source_counts": {
-          "TechCrunch AI": 6,
-          "VentureBeat AI": -1,
-          "The Verge AI": 5,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 1,
-          "Ars Technica": 3,
-          "Habr AI/News": 40,
-          "CNews": 51,
-          "Euronews": 50
-        },
-        "score_filtered": 1018,
-        "quality_filtered": 26,
-        "story_dedup": 1,
-        "candidates": 27,
-        "candidate_rate": 0.0295,
-        "score_buckets": {
-          "0–39": 983,
-          "40–49": 60,
-          "50–59": 22,
-          "60–69": 7,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 4,
-          "7": 1,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 4,
-        "blocked": 4,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1793987321,
       "status": "OK",
@@ -26600,11 +26433,101 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794220633,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 21.53,
+      "candidates": 0,
+      "queue_before": 7,
+      "queue_after": 6,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/articles/1105324/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1105324",
+            "image_url": "https://habr.com/share/publication/1105324/f163cd1dd40bd6430e2e47ae2a8aee41/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.33,
+          "bonus_total": 66.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра протоколов безопасности при интеграции AI-агентов в инфраструктуру управления доступом.",
+            "title": "AI-агент с правами администратора: что уже умеют MCP-серверы в IAM",
+            "final_score": 78.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1794219666.999504,
-  "last_publish_ts": 1794219910.6482627,
+  "last_publish_ts": 1794220633.0011878,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
