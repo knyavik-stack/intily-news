@@ -1261,7 +1261,8 @@
     "d9279ffd090394137a95222d8876075bdf0de987c95939bb4ccfd0b4c209cfb9": 1794309921,
     "2010c962b5377fc2c11aae067a5d1b63ddd553108ab5edfcbdd7961d114c9306": 1794310390,
     "d0427af567dae6735b8edb89575249cc9218050381a7fdfdd901dfe96508906e": 1794310623,
-    "0a3c00e80fadfd6a122721fabc1099d6a25b39e68740893c6074f1bc425aee0d": 1794310862
+    "0a3c00e80fadfd6a122721fabc1099d6a25b39e68740893c6074f1bc425aee0d": 1794310862,
+    "bf6263a95eeec5831292b84e1c07097492f77db905c68ec89a5ef854b0334560": 1794311822
   },
   "known": {
     "b821fd3d8fbd7fe3a65685415bccd7a4ac43d1885a617e31d06b886090d482ad": 1794308238.3001978,
@@ -1279,43 +1280,6 @@
     "9ef230901e62cdcaa73b9ab48940c0c0c675f63591e63df6b65acaa9d87c52dc": 1794310139.698982
   },
   "queue": [
-    {
-      "region": "WORLD",
-      "title": "Meta Launches Muse Ember, Lightweight AI Model for Agent Execution - Analytics Insight",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOa3RJWXMxMFBud2c0NnBPVVBScFR2Qnh5ODFIckRNYUhGaWEyUGRVbGxreUs4MlR5TjZlQ3ZOMUtPWFlLR3lFM3RnQ2ZNejFHLUtnZ2lsRm1HWnpBUkZWTE1leVJBYS1OUC0wbUtHYXBPX2pvZElXbjJ4VENzYkZpc3IyNW5FNTA4eG1HYlc0T0JLSDQ0YVFNUzBveU1HSGFyVWZUY01n0gGzAUFVX3lxTE5XZW9Ra0p0T21IcWZsckZEYkt5NTdISVg5Q0JPM09ZMHhSRmR2YlNfOTU0Q2xQSkVPQVZidkdWLUxMdnk5dFJKQkZ4TlNabEZXTXNhWGVTRFVJdkdTeGpfc0d2ZjJJMzlSNEhvbzNHaDduM01aZkVQaWF0N2ZyelR6OTZiQkN0Zld4bnkzTjAyQnJxODAxeU1Td1l4MF8zRl9QSUJKVlVPa3FFTVB4RmM0M0hB?oc=5",
-      "desc": "Meta Launches Muse Ember, Lightweight AI Model for Agent Execution Analytics Insight",
-      "source": "Analytics Insight",
-      "time": 1794303000.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 10.0,
-        "event_concreteness": 13.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 45.0,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 69.0
-      },
-      "base_score": 45.0,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 69.0,
-      "key": "bf6263a95eeec5831292b84e1c07097492f77db905c68ec89a5ef854b0334560",
-      "importance": 69.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "models"
-      ],
-      "audience_score": 8.0,
-      "tier": "A"
-    },
     {
       "region": "WORLD",
       "title": "After AI agent breached government portal, Australia moves to put Big Tech under watchdog - Business Upturn",
@@ -1497,6 +1461,43 @@
         "tools"
       ],
       "audience_score": 6.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "mbSCADA — Modbus Poll на Rust: живые таблицы, аварии, вычисляемые тэги и один бинарник на ~6 МБ",
+      "link": "https://habr.com/ru/articles/1106060/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106060",
+      "desc": "Если вы хоть раз отлаживали датчик давления на насосной станции или читали регистры частотника через преобразователь USB-RS485, то почти наверняка держали в руках Modbus Poll. Удобная вещь: быстрый опрос регистров, наглядные таблицы. Но это Windows-only, это платно, и это всё-таки только опросчик - без наглядных схем для удобства пусконаладки и тестирования. Мне захотелось то же самое, но кроссплатформенное, локальное и с возможностью собрать себе маленький операторский экран: цветные аварийные строки, гейджи, окно закреплённых параметров, вычисляемые тэги. Так появился mbSCADA - open-source проект на чистом Rust с UI на Tauri 2 (в дальнейшем переедем на egui, чтобы выглядело более нативно). Проект пишется с помощью ИИ, поскольку я не прогер (каюсь), так что моих познаний в С и Python а так же в языках PLC будет недостаточно дабы кодить это собственными силами, однако я точно знаю что требуется мне от инструмента. Это clean-room реализация: мы не читали исходники Modbus Poll, но формат его конфигурационных файлов .mbp/.mbw поддерживаем byte-exact, чтобы ваши наработанные проекты импортировались без боли. Ниже — короткий тур по тому, что получилось, как это устроено внутри и где взять готовые сборки. Зачем ещё один опросчик В 80% бытовых задач интеграции нужен не монстр вроде полноценной SCADA, а «Modbus Poll с плюшками» - опросить десяток устройств, покрасить аварии, построить экран для оператора и выгрузить архив в CSV, который потом откроют в чём угодно. При этом требования к инструменту жёстче, чем кажется: он должен запускаться без установки (портабельные версии удобны и неприхотливы к устройству пользователя), не лезть в сеть (никакой телеметрии и облаков — просто нет) а еще собственно полноценно поддерживать Modbus как TCP так и RTU иначе вся затея не имеет смысла. Отсюда и формат проекта: один бинарник ~6 МБ, всё локально, проект — файл рядом. И да,проект принципиально открытый чтобы любой желающий мог пользоваться и при желании вносить свой вклад, лицензия - MIT. Собирается одним cargo build либо устанавливается через установщик / открывается AppImage. Совместимость с Modbus Poll: byte-exact импорт Поскольку на моем месте работы накопился большой багаж файлов Modbus Poll, то во избежании переписывания всего этого добра - работа с «родными» файлами Modbus Poll стала обязательным требованием. В репозитории живёт отдельный крейт mb-format, который парсит .mbp и .mbw и умеет обратную операцию: write(parse(bytes)) == bytes. Это свойство покрыто тестами и проверено на реальных файлах от Modbus Poll 10.5 — раундтрип байт в байт совпадает с оригиналом. Сохранённые mbSCADA-проекты остаются совместимыми с оригиналом — можно готовить конфигурацию на ноутбуке с Linux, а отдавать коллегам, которые продолжают жить в Modbus Poll. Опросы читаются все штатные: 01/02/03/04 (coil/discrete/input/holding), записи 05/06/0F/10. Поддержаны разрядности и порядки слов - включая u16_swapped (перестановка слов в 32-битных значениях) Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794309869.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 0.0,
+        "event_concreteness": 13.5,
+        "practical_value": 5.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 43.5,
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 64.5
+      },
+      "base_score": 43.5,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 64.5,
+      "key": "5405c7d7d8af1e1652e0f1328064b1f07e41d18899fa386e64356a2eb3c2e7f8",
+      "importance": 64.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "tools"
+      ],
+      "audience_score": 7.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
     },
@@ -1721,43 +1722,6 @@
       "russia_weight_bonus": 0.0
     },
     {
-      "region": "RUSSIA",
-      "title": "mbSCADA — Modbus Poll на Rust: живые таблицы, аварии, вычисляемые тэги и один бинарник на ~6 МБ",
-      "link": "https://habr.com/ru/articles/1106060/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106060",
-      "desc": "Если вы хоть раз отлаживали датчик давления на насосной станции или читали регистры частотника через преобразователь USB-RS485, то почти наверняка держали в руках Modbus Poll. Удобная вещь: быстрый опрос регистров, наглядные таблицы. Но это Windows-only, это платно, и это всё-таки только опросчик - без наглядных схем для удобства пусконаладки и тестирования. Мне захотелось то же самое, но кроссплатформенное, локальное и с возможностью собрать себе маленький операторский экран: цветные аварийные строки, гейджи, окно закреплённых параметров, вычисляемые тэги. Так появился mbSCADA - open-source проект на чистом Rust с UI на Tauri 2 (в дальнейшем переедем на egui, чтобы выглядело более нативно). Проект пишется с помощью ИИ, поскольку я не прогер (каюсь), так что моих познаний в С и Python а так же в языках PLC будет недостаточно дабы кодить это собственными силами, однако я точно знаю что требуется мне от инструмента. Это clean-room реализация: мы не читали исходники Modbus Poll, но формат его конфигурационных файлов .mbp/.mbw поддерживаем byte-exact, чтобы ваши наработанные проекты импортировались без боли. Ниже — короткий тур по тому, что получилось, как это устроено внутри и где взять готовые сборки. Зачем ещё один опросчик В 80% бытовых задач интеграции нужен не монстр вроде полноценной SCADA, а «Modbus Poll с плюшками» - опросить десяток устройств, покрасить аварии, построить экран для оператора и выгрузить архив в CSV, который потом откроют в чём угодно. При этом требования к инструменту жёстче, чем кажется: он должен запускаться без установки (портабельные версии удобны и неприхотливы к устройству пользователя), не лезть в сеть (никакой телеметрии и облаков — просто нет) а еще собственно полноценно поддерживать Modbus как TCP так и RTU иначе вся затея не имеет смысла. Отсюда и формат проекта: один бинарник ~6 МБ, всё локально, проект — файл рядом. И да,проект принципиально открытый чтобы любой желающий мог пользоваться и при желании вносить свой вклад, лицензия - MIT. Собирается одним cargo build либо устанавливается через установщик / открывается AppImage. Совместимость с Modbus Poll: byte-exact импорт Поскольку на моем месте работы накопился большой багаж файлов Modbus Poll, то во избежании переписывания всего этого добра - работа с «родными» файлами Modbus Poll стала обязательным требованием. В репозитории живёт отдельный крейт mb-format, который парсит .mbp и .mbw и умеет обратную операцию: write(parse(bytes)) == bytes. Это свойство покрыто тестами и проверено на реальных файлах от Modbus Poll 10.5 — раундтрип байт в байт совпадает с оригиналом. Сохранённые mbSCADA-проекты остаются совместимыми с оригиналом — можно готовить конфигурацию на ноутбуке с Linux, а отдавать коллегам, которые продолжают жить в Modbus Poll. Опросы читаются все штатные: 01/02/03/04 (coil/discrete/input/holding), записи 05/06/0F/10. Поддержаны разрядности и порядки слов - включая u16_swapped (перестановка слов в 32-битных значениях) Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794309869.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 0.0,
-        "event_concreteness": 13.5,
-        "practical_value": 5.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 43.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 43.5
-      },
-      "base_score": 43.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 43.5,
-      "key": "5405c7d7d8af1e1652e0f1328064b1f07e41d18899fa386e64356a2eb3c2e7f8",
-      "importance": 43.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "tools"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
       "region": "WORLD",
       "title": "Anthropic Unveils AI Models Commanding 1,000 Agents - 조선일보",
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOVHpmLWVHM1gxQ1lJWHZvZHh2RS11YXBndVlkQ3VGS19hX2lVakpEazkteTNUX3Z1eFczNjBjbTNNNEtWSE92Z256YnhNRkE5a2k0WEhxa2ZuSjBEUUpfYzJQMzBOZWlYSVp3QUZQTGFNMnhXV3R4X0IzcGlsMXJHdGJHZWFxbk84?oc=5",
@@ -1907,30 +1871,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794311349.474929,
+    "last_start_ts": 1794311822.6091704,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794311349.474929,
-    "last_success_ts": 1794311349.474929,
+    "last_run_ts": 1794311822.6091704,
+    "last_success_ts": 1794311822.6091704,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 17
+    "last_published": 1,
+    "queue_size": 16
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1794314936.8535051,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1794311336.8535073
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794311827.0350418
     },
     "GROQ": {
-      "disabled_until": 1794314940.2902308,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794311340.290233
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794311813.3764412
     },
     "OPENAI": {
-      "disabled_until": 1794397749.262797,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1794311349.262799
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794311813.3764412
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1938,9 +1902,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1794314948.3095527,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794311348.3095543
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794311813.3764412
     }
   },
   "stories": {
@@ -2342,12 +2306,18 @@
       "desc": "За окном то дождь, то первый снег — лучшее время остаться дома и разобраться с обновлениями. Тем более что новинок в октябре столько, что одной памяти на всех недостаточно. Поэтому мы выдали ее еще и AI-агентам. Релизов хватит на пару вечеров: видео в AI Gateway, дашборд расходов, стенды для pull request и серверы с видеокартами. А в Амстердаме тем временем закончился переезд. И это только первая половина всего, что было. Смотрим все по порядку ↓",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "bf6263a95eeec5831292b84e1c07097492f77db905c68ec89a5ef854b0334560": {
+      "time": 1794311822,
+      "title": "Meta Launches Muse Ember, Lightweight AI Model for Agent Execution - Analytics Insight",
+      "desc": "Meta Launches Muse Ember, Lightweight AI Model for Agent Execution Analytics Insight",
+      "source": "Analytics Insight",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -2364,139 +2334,10 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1794072999,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 33.55,
-      "candidates": 14,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 14,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 14,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Позволяет стабилизировать работу локальных AI-инструментов и избежать простоев при выполнении тяжелых задач.",
-            "title": "В приложении Nvidia App появилась настройка приоритета GPU",
-            "final_score": 65.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 37,
-        "raw_items": 703,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 4,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 2,
-          "Habr AI/News": 10,
-          "CNews": 0,
-          "Euronews": 21
-        },
-        "score_filtered": 674,
-        "quality_filtered": 11,
-        "story_dedup": 4,
-        "candidates": 14,
-        "candidate_rate": 0.021,
-        "score_buckets": {
-          "0–39": 649,
-          "40–49": 36,
-          "50–59": 17,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794073955,
       "status": "OK",
@@ -25667,11 +25508,101 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1794311822,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 15.16,
+      "candidates": 0,
+      "queue_before": 17,
+      "queue_after": 16,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 400: Bad Request": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 400: Bad Request"
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 5.67,
+          "bonus_total": 51.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Снижение требований к железу для агентских систем позволяет оптимизировать затраты на внедрение ИИ-автоматизации.",
+            "title": "Meta Launches Muse Ember, Lightweight AI Model for Agent Execution - Analytics Insight",
+            "final_score": 69.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 5,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1794310139.698982,
-  "last_publish_ts": 1794310862.183297,
+  "last_publish_ts": 1794311822.6091704,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
