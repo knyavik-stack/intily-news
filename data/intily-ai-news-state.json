@@ -1,6 +1,5 @@
 {
   "published": {
-    "c3c2379486901bafe7eb690db9e4c4b48c7894a82bd2af993ba74c554fcb3a1a": 1791727729,
     "bb5e72cf40769657f13ada4882ce149c307ac0b897818dc57269bce48d475411": 1791728930,
     "5a1cb8944ef6763a115570e5425371a0a2c2f645783148a7c296c3759097b5b4": 1791729889,
     "ffe4787c87171fe1b91cd061067211ad4a85def9702a9a844e5751f242699dfc": 1791732530,
@@ -1333,10 +1332,10 @@
       "audience_score": 8.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1794319492,
+      "last_failed_at": 1794319973,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 3,
-      "next_retry_at": 1794320692
+      "failure_count": 4,
+      "next_retry_at": 1794322373
     },
     {
       "region": "RUSSIA",
@@ -1376,10 +1375,10 @@
       "audience_score": 7.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1794319492,
+      "last_failed_at": 1794319973,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 4,
-      "next_retry_at": 1794321892
+      "failure_count": 5,
+      "next_retry_at": 1794324773
     },
     {
       "region": "RUSSIA",
@@ -2011,30 +2010,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794319492.1266,
+    "last_start_ts": 1794319973.2443404,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794319492.1266,
-    "last_success_ts": 1794319492.1266,
+    "last_run_ts": 1794319973.2443404,
+    "last_success_ts": 1794319973.2443404,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1794323112.38102,
+      "disabled_until": 1794323593.454693,
       "reason": "The read operation timed out",
-      "updated_at": 1794319512.3810227
+      "updated_at": 1794319993.454696
     },
     "GROQ": {
-      "disabled_until": 1794323114.539672,
+      "disabled_until": 1794323595.61676,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794319514.539674
+      "updated_at": 1794319995.6167622
     },
     "OPENAI": {
-      "disabled_until": 1794405922.7495618,
+      "disabled_until": 1794406399.4234617,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1794319522.749564
+      "updated_at": 1794319999.423463
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2042,9 +2041,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1794323122.5819454,
+      "disabled_until": 1794323598.3134313,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794319522.5819473
+      "updated_at": 1794319998.3134334
     }
   },
   "stories": {
@@ -2478,136 +2477,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794115023,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 42.8,
-      "candidates": 2,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 2,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 2,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Платформа позволяет радикально ускорить цикл разработки и снизить затраты на персонал при правильной интеграции.",
-            "title": "Tessl launches software factory platform for AI coding agents - TechGig",
-            "final_score": 66.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 9,
-        "raw_items": 296,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 2,
-          "CNews": 0,
-          "Euronews": 5
-        },
-        "score_filtered": 291,
-        "quality_filtered": 3,
-        "story_dedup": 0,
-        "candidates": 2,
-        "candidate_rate": 0.007,
-        "score_buckets": {
-          "0–39": 285,
-          "40–49": 9,
-          "50–59": 2,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794115259,
       "status": "OK",
@@ -25220,6 +25089,83 @@
       "business_reason": "all_attempted_items_failed",
       "searched": false,
       "duration_sec": 31.07,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1794319973,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 26.52,
       "candidates": 0,
       "queue_before": 19,
       "queue_after": 19,
