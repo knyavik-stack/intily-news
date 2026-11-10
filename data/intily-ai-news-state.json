@@ -1337,10 +1337,10 @@
       "audience_score": 7.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1794321184,
+      "last_failed_at": 1794321415,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 6,
-      "next_retry_at": 1794330784
+      "failure_count": 7,
+      "next_retry_at": 1794340615
     },
     {
       "region": "RUSSIA",
@@ -1378,10 +1378,10 @@
       "audience_score": 8.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1794316673,
+      "last_failed_at": 1794321415,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1794316973
+      "failure_count": 2,
+      "next_retry_at": 1794322015
     },
     {
       "region": "WORLD",
@@ -1913,19 +1913,19 @@
         "novelty": 0.0,
         "source_quality": 5.0,
         "evidence": 2.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 49.5,
+        "base_score": 49.0,
         "audience_score": 3.0,
         "audience_bonus": 9.0,
-        "final_score": 58.5
+        "final_score": 58.0
       },
-      "base_score": 49.5,
+      "base_score": 49.0,
       "audience_bonus": 9.0,
       "score_stage": "final",
-      "score": 58.5,
+      "score": 58.0,
       "key": "c097e98a7335ac144ac44d0901301af38507f0fc1fbf03aa1fe62ecb014e0c77",
-      "importance": 58.5,
+      "importance": 58.0,
       "editorial_value": 50.0,
       "topics": [
         "business",
@@ -1972,30 +1972,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794321184.6888387,
+    "last_start_ts": 1794321415.7183857,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794321184.6888387,
-    "last_success_ts": 1794321184.6888387,
+    "last_run_ts": 1794321415.7183857,
+    "last_success_ts": 1794321415.7183857,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 18
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1794324804.9397316,
+      "disabled_until": 1794325035.9925668,
       "reason": "The read operation timed out",
-      "updated_at": 1794321204.9397342
+      "updated_at": 1794321435.9925697
     },
     "GROQ": {
-      "disabled_until": 1794324808.4872081,
+      "disabled_until": 1794325040.5693297,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794321208.487211
+      "updated_at": 1794321440.5693316
     },
     "OPENAI": {
-      "disabled_until": 1794407622.7960854,
+      "disabled_until": 1794407852.8943777,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1794321222.7960868
+      "updated_at": 1794321452.8943794
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2003,9 +2003,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1794324821.9640892,
+      "disabled_until": 1794325052.2089472,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794321221.964091
+      "updated_at": 1794321452.208949
     }
   },
   "stories": {
@@ -2439,136 +2439,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1794117186,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 29.65,
-      "candidates": 3,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 3,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 3,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Платформа меняет подход к управлению жизненным циклом разработки через AI-агентов, требуя пересмотра пайплайнов.",
-            "title": "Tessl launches software factory platform for AI coding agents - TechGig",
-            "final_score": 65.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 10,
-        "raw_items": 299,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 3,
-          "CNews": 0,
-          "Euronews": 5
-        },
-        "score_filtered": 290,
-        "quality_filtered": 6,
-        "story_dedup": 0,
-        "candidates": 3,
-        "candidate_rate": 0.0104,
-        "score_buckets": {
-          "0–39": 285,
-          "40–49": 11,
-          "50–59": 3,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794117423,
       "status": "OK",
@@ -25084,6 +24954,83 @@
         "failovers": 0,
         "failures": 4,
         "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1794321415,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 37.54,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 18,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
         "skipped_no_key": 0,
         "retries": 0
       },
