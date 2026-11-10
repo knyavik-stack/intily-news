@@ -1246,7 +1246,8 @@
     "e927808e0e73e9982b2a439e6dd9f4e89ea9396a91f1a204374504750304633f": 1794253507,
     "c27f0ddef4d7645a34849ec874c81ef4356b8b8b1d1092575c34cf1633249a79": 1794253738,
     "cc1838ce4e1596b759e13ad0a13c399dc8c1e26f57d0c231658dacc27587b1d1": 1794253989,
-    "d7516b5b2eeadf727e7f190f2dba4789232f36cb328a0deec1b17f8f88e5419a": 1794254224
+    "d7516b5b2eeadf727e7f190f2dba4789232f36cb328a0deec1b17f8f88e5419a": 1794254224,
+    "1e611cdb04ddfa145aa5effe268ded055d807b04b6028348c8e2d69043307d96": 1794290471
   },
   "known": {
     "e1f2c16eecfe76e54a386de3d3838013c5776b81667c65c7697db7681244c0b2": 1794289980.6089592,
@@ -1290,62 +1291,24 @@
         "freshness": 0.5,
         "low_signal_penalty": 0.0,
         "base_score": 55.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 55.5
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 76.5
       },
       "base_score": 55.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 55.5,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 76.5,
       "key": "e1f2c16eecfe76e54a386de3d3838013c5776b81667c65c7697db7681244c0b2",
-      "importance": 55.5,
+      "importance": 76.5,
       "editorial_value": 50.0,
       "topics": [
         "business",
         "chips",
         "security_regulation"
       ],
-      "audience_score": null,
+      "audience_score": 7.0,
       "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Дайджест ИИ: старт роуд-шоу IPO Anthropic, прорыв UC Berkeley в робототехнике, раунд Nominal на $240 млн - VC.ru",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcm5teTZDZURPbjZvamVITm45ZDFoYlQ1Y1hJVy1feU9waERCNUoyT3FqN3Jvd1A0dUdwR19OYkJvcGo2UDZpMDItSWdRZzg2cjJYMHllQ1pNam9kbVJ1alRUR2RNSXl0Um9ydWZ2SXJLeWtidGFINXMwTjFRNHhFUHJmamhtOXpRX3R4ZXR5OFVWRS1l?oc=5",
-      "desc": "Дайджест ИИ: старт роуд-шоу IPO Anthropic, прорыв UC Berkeley в робототехнике, раунд Nominal на $240 млн VC.ru",
-      "source": "VC.ru",
-      "time": 1794287960.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 14.0,
-        "event_concreteness": 17.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 4.0,
-        "evidence": 1.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 55.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 55.0
-      },
-      "base_score": 55.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 55.0,
-      "key": "1e611cdb04ddfa145aa5effe268ded055d807b04b6028348c8e2d69043307d96",
-      "importance": 55.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "research",
-        "robotics"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
     },
     {
       "region": "WORLD",
@@ -2012,30 +1975,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794289980.6089592,
+    "last_start_ts": 1794290471.0625763,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794289980.6089592,
-    "last_success_ts": 1794289980.6089592,
-    "last_candidates": 29,
-    "last_published": 0,
-    "queue_size": 20
+    "last_run_ts": 1794290471.0625763,
+    "last_success_ts": 1794290471.0625763,
+    "last_candidates": 0,
+    "last_published": 1,
+    "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1794293623.6006162,
+      "disabled_until": 1794294066.4418104,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1794290023.6006181
+      "updated_at": 1794290466.4418128
     },
     "GROQ": {
-      "disabled_until": 1794293626.9694674,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794290026.969469
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794290470.8789017
     },
     "OPENAI": {
-      "disabled_until": 1794376461.0214553,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1794290061.0214567
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794290465.972062
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2043,9 +2006,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1794293659.8756156,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794290059.8756175
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794290465.972062
     }
   },
   "stories": {
@@ -2489,10 +2452,16 @@
       "desc": "В субботу НАСА объявило о заключении ряда контрактов и обновлении планов миссий, направленных на расширение возможностей программы создания лунной базы в области исследований, науки и инфраструктуры. Инвестиции позволят развивать коммерческую роботизированную доставку грузов, луноход PROMISE с ядерным источником энергии, услуги по запуску и орбитальной транспортировке, а также инфраструктуру на поверхности Луны. Совместно с американской промышленностью агентство работает над созданием постоянного присутствия человека в районе южного полюса Луны. НАСА представило эти новости на аэрокосмической выставке и авиашоу MAX POWER, проходивших в Космическом центре Кеннеди во Флориде. Чтобы укрепить сеть грузовых посадочных аппаратов, необходимых для обеспечения лунной базы, НАСА выбрало восемь компаний для следующего этапа инициативы CLPS (Commercial Lunar Payload Services, «Коммерческие услуги по доставке полезной нагрузки на Луну»). В рамках нового контракта CLPS 2 компании смогут конкурировать за будущие миссии по доставке грузов на поверхность Луны: Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "1e611cdb04ddfa145aa5effe268ded055d807b04b6028348c8e2d69043307d96": {
+      "time": 1794290471,
+      "title": "Дайджест ИИ: старт роуд-шоу IPO Anthropic, прорыв UC Berkeley в робототехнике, раунд Nominal на $240 млн - VC.ru",
+      "desc": "Дайджест ИИ: старт роуд-шоу IPO Anthropic, прорыв UC Berkeley в робототехнике, раунд Nominal на $240 млн VC.ru",
+      "source": "VC.ru",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -2509,137 +2478,12 @@
     "WORLD",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794050676,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 54.17,
-      "candidates": 10,
-      "queue_before": 0,
-      "queue_after": 1,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 8,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 1,
-        "candidate_count": 10,
-        "admission_rate": 10.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 24,
-        "raw_items": 310,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 9,
-          "CNews": 0,
-          "Euronews": 13
-        },
-        "score_filtered": 285,
-        "quality_filtered": 14,
-        "story_dedup": 1,
-        "candidates": 10,
-        "candidate_rate": 0.035,
-        "score_buckets": {
-          "0–39": 273,
-          "40–49": 26,
-          "50–59": 11,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 4,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1794051171,
       "status": "OK",
@@ -27097,11 +26941,99 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1794290471,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 18.61,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 19,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://vc.ru/ai/3245732-daidzhest-ii-ipo-anthropic-proryv-uc-berkeley-investitsii-nominal",
+            "image_url": "https://api.vc.ru/v2.9/cover/fb/c/3245732/1794290471/cover.jpg",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Новые возможности и конкуренция в AI-рынке",
+            "title": "Дайджест ИИ: старт роуд-шоу IPO Anthropic, прорыв UC Berkeley в робототехнике, раунд Nominal на $240 млн - VC.ru",
+            "final_score": 79.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 18,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1794289980.6089592,
-  "last_publish_ts": 1794254224.0713418,
+  "last_publish_ts": 1794290471.0625763,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
