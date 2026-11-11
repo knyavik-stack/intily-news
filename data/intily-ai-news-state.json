@@ -1274,10 +1274,6 @@
     "4f83ff280002ff46c4fa3c23ad6b35c49cbf01ad11fb8a4aae541e29225c7d65": 1794398219
   },
   "known": {
-    "c14be1a105dc2d337d35e6084ce3c87211df6f190366aec90320b0c7f02b3c02": 1794395819.4791834,
-    "4f83ff280002ff46c4fa3c23ad6b35c49cbf01ad11fb8a4aae541e29225c7d65": 1794395819.4791834,
-    "d4593a86e2b0e7e58f384c38f064bbb42b37f8d60b2cc60e5b70cb3823e21791": 1794395819.4791834,
-    "1b8d33c8234e89f4b48e2bcb19738430d92c253f4f87e80bd28350ae007a46a7": 1794395819.4791834,
     "406c5f5f50d3201075d499733eb541027dc767243104837f9434f25512bc48c7": 1794398219.081283,
     "5a876260392e05147d34ca195c33c5211f27dca0e3bdb9c1a33d9ae14c59bf69": 1794398219.081283,
     "6b74d3062f125e6855f5e59ade82e0dd720c8a23bf35dc7b7ab40f9ca3b049f5": 1794398219.081283,
@@ -1913,19 +1909,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 2.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 49.0,
+        "base_score": 48.5,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 49.0
+        "final_score": 48.5
       },
-      "base_score": 49.0,
+      "base_score": 48.5,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 49.0,
+      "score": 48.5,
       "key": "3d41d1bf45eeb707461c269519443fd21827f1994e2b9f995af8c191f562037b",
-      "importance": 49.0,
+      "importance": 48.5,
       "editorial_value": 50.0,
       "topics": [
         "models",
@@ -2045,30 +2041,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794400866.6361334,
+    "last_start_ts": 1794401357.9773777,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794400866.6361334,
-    "last_success_ts": 1794400866.6361334,
-    "last_candidates": 41,
+    "last_run_ts": 1794401357.9773777,
+    "last_success_ts": 1794401357.9773777,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1794404456.1075592,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1794400856.1075609
+      "disabled_until": 1794404948.518609,
+      "reason": "The read operation timed out",
+      "updated_at": 1794401348.5186114
     },
     "GROQ": {
-      "disabled_until": 1794404459.714395,
+      "disabled_until": 1794404952.220608,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794400859.7143967
+      "updated_at": 1794401352.2206094
     },
     "OPENAI": {
-      "disabled_until": 1794487266.536997,
+      "disabled_until": 1794487757.8615584,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1794400866.536999
+      "updated_at": 1794401357.86156
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2076,9 +2072,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1794404465.5490804,
+      "disabled_until": 1794404956.9704823,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794400865.5490818
+      "updated_at": 1794401356.9704843
     }
   },
   "stories": {
@@ -2491,145 +2487,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1794206705,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 27.82,
-      "candidates": 8,
-      "queue_before": 1,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 5,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 0,
-        "candidate_count": 8,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia",
-            "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2285784039.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-            "width": 1200,
-            "height": 624,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Риск санкций и дестабилизации ключевого поставщика чипов требует пересмотра стратегии закупок и оценки рисков.",
-            "title": "Here’s the full text of Jensen Huang’s memo to Nvidia",
-            "final_score": 72.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 27,
-        "raw_items": 462,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 4,
-          "CNews": 9,
-          "Euronews": 9
-        },
-        "score_filtered": 449,
-        "quality_filtered": 5,
-        "story_dedup": 0,
-        "candidates": 8,
-        "candidate_rate": 0.0184,
-        "score_buckets": {
-          "0–39": 437,
-          "40–49": 16,
-          "50–59": 9,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794207424,
       "status": "OK",
@@ -23004,6 +22861,78 @@
         "GEMINI": {
           "blocked": true,
           "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1794401357,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 29.87,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 10,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
         },
         "GROQ": {
           "blocked": true,
