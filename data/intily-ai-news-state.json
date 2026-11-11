@@ -1277,7 +1277,8 @@
     "682b6a38772562e402615686b41407498652819009e68e2524c313dd8183fbb6": 1794415949,
     "3d49a28a1104d48a0718cf89768ab0f7baff780c05d85add1f8b485f5c81c5fc": 1794417402,
     "e3e7de63d30b61d2acbfec1e6b50c30290f7b76ca82db8e86e5d5070716510df": 1794419310,
-    "b30ea189c49205e663c967bafd89719f5504da62733120eb8e3215bb06121ccb": 1794420528
+    "b30ea189c49205e663c967bafd89719f5504da62733120eb8e3215bb06121ccb": 1794420528,
+    "59567eb60730a4fdb1fcb5ff5d2f4e77f619e1be943554da24e592f636022259": 1794420752
   },
   "known": {
     "5620486f97183c2d79bd9c6f255e00d67288bcaf22e8b13fa47427a241c8107b": 1794415949.572878,
@@ -1934,59 +1935,23 @@
       "audience_score": 6.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "WORLD",
-      "title": "Anthropic Filing: Claude Exploit Score Up to 91% From 40% - FourWeekMBA",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQamlOeUF1anA2SG8yaG5KVzRUSHpSVWFsX0tpSUFiUWNocjFUd3hEYk1xNkVtSzNNZWhKVDFzMWt3anNraU43amVkOHdMNFRvc3hSOWQ2cVBwSGVjMFVEN3JLTWdvVTZrMHZaYjE4LTZTSk1YZjRvUDNRbzdZbkFvanFSRWxrZ0ZndHc?oc=5",
-      "desc": "Anthropic Filing: Claude Exploit Score Up to 91% From 40% FourWeekMBA",
-      "source": "FourWeekMBA",
-      "time": 1794386213.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 10.0,
-        "event_concreteness": 16.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 45.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 45.0
-      },
-      "base_score": 45.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 45.0,
-      "key": "59567eb60730a4fdb1fcb5ff5d2f4e77f619e1be943554da24e592f636022259",
-      "importance": 45.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "models"
-      ],
-      "audience_score": null,
-      "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1794420528.0526233,
+    "last_start_ts": 1794420752.3037648,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794420528.0526233,
-    "last_success_ts": 1794420528.0526233,
+    "last_run_ts": 1794420752.3037648,
+    "last_success_ts": 1794420752.3037648,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 18
+    "queue_size": 17
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794420531.8541458
+      "updated_at": 1794420752.2131858
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2408,13 +2373,19 @@
       "desc": "Всем привет! Меня зовут Кирилл, я больше десяти лет разрабатываю облака и инфраструктуру. Но последние пару месяцев в рамках R&D я достаточно много занимаюсь инференсом: платформами для него и оптимизацией всего, что вокруг, в частности проектом Serverless GPU с механиками примерно как у Modal или RunPod FlashBoot. Одна из самых болезненных вещей здесь - холодный старт моделей. Каждый MLOps инженер, кто ждал перезапуск пода с vLLM / SGLang по 30 минут знает о чем я говорю. Это особенно актуально, если вы делаете инференс на нескольких облачных провайдерах и спотовом GPU рынке, где может случиться прерывание vm или контейнера, так что способность быстро запускаться - must have в таких условиях. Хорошие новости - чтобы решить эту проблему около месяца назад я начал работу над open-source проектом warmctl , о нём сегодня в посте. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "59567eb60730a4fdb1fcb5ff5d2f4e77f619e1be943554da24e592f636022259": {
+      "time": 1794420752,
+      "title": "Anthropic Filing: Claude Exploit Score Up to 91% From 40% - FourWeekMBA",
+      "desc": "Anthropic Filing: Claude Exploit Score Up to 91% From 40% FourWeekMBA",
+      "source": "FourWeekMBA",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -2430,139 +2401,10 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1794217745,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 37.67,
-      "candidates": 21,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 18,
-        "known_recent": 1,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 0,
-        "candidate_count": 21,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Риск санкций и смены руководства Nvidia напрямую влияет на доступность и стоимость ИИ-железа для бизнеса.",
-            "title": "Here’s the full text of Jensen Huang’s memo to Nvidia",
-            "final_score": 72.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 101,
-        "raw_items": 664,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 29,
-          "CNews": 39,
-          "Euronews": 31
-        },
-        "score_filtered": 619,
-        "quality_filtered": 23,
-        "story_dedup": 1,
-        "candidates": 21,
-        "candidate_rate": 0.0373,
-        "score_buckets": {
-          "0–39": 594,
-          "40–49": 46,
-          "50–59": 23,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794218468,
       "status": "OK",
@@ -22597,11 +22439,99 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794420752,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 4.34,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 17,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 403: Forbidden": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 403: Forbidden"
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 9.0,
+          "bonus_total": 27.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Необходим немедленный пересмотр политики безопасности данных при использовании Claude в бизнес-процессах.",
+            "title": "Anthropic Filing: Claude Exploit Score Up to 91% From 40% - FourWeekMBA",
+            "final_score": 72.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1794419310.2644393,
-  "last_publish_ts": 1794420528.0526233,
+  "last_publish_ts": 1794420752.3037648,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
