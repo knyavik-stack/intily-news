@@ -1313,6 +1313,43 @@
   "queue": [
     {
       "region": "RUSSIA",
+      "title": "В Сбербанке создали компактную ИИ-модель, которая проверяет качество ответов других нейросетей",
+      "link": "https://www.cnews.ru/news/line/2026-11-11_v_sberbanke_sozdali_kompaktnuyu",
+      "desc": "Исследователи из управления экспериментальных систем машинного обучения Сбербанка представили Pollux — открытую...",
+      "source": "CNews",
+      "time": 1794410940.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 10.0,
+        "event_concreteness": 14.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 48.5,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 72.5
+      },
+      "base_score": 48.5,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 72.5,
+      "key": "6ece9268d5dd5e719f06d82b7159b66aa209f9277dd50bbdf3bf6403e11f091b",
+      "importance": 72.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "models"
+      ],
+      "audience_score": 8.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
       "title": "От промтов к спецификациям: как я организовал разработку автотестов с ИИ-агентами",
       "link": "https://habr.com/ru/companies/cloud_ru/articles/1106538/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106538",
       "desc": "Представим обычную задачу: нужно расширить покрытие REST API автотестами. Сейчас с такими задачами справляются ИИ-агенты: изучают существующий код, добавляют необходимые методы клиента, пишут тестовые сценарии и возвращают готовую реализацию. На первый взгляд все отлично. Тесты написаны, код аккуратный, а pytest успешно собирает новые проверки. Но означает ли это, что задача действительно выполнена? Не обязательно. Например, агент может проверить, что при некорректном запросе API возвращает HTTP 400, но не проверить структуру тела ошибки. Или убедиться, что запрос на удаление Git-тега завершился успешно, но не проверить, исчез ли тег из самого репозитория. Формально тесты есть. Возможно, они даже проходят. Но насколько им можно доверять? С этой проблемой я столкнулся, когда начинал активно делегировать ИИ-агентам разработку автотестов. В этой статье я покажу, как получилось организовать работу по методологии Specification-Driven Development (SDD), через фреймворк OpenSpec с помощью специализированных ИИ-агентов. Разберу реальные задачи по тестированию REST API и расскажу, почему успешный запуск тестов еще не означает, что тест не фигня. Материал преимущественно для тех, кто на «ты» с API, Python, pytest, тест-дизайном и базово использует LLM, но еще не разобрался с организацией работы через спецификации (SDD, OpenSpec), многоагентную оркестрацию и разделение ролей. Читать далее",
@@ -1942,43 +1979,6 @@
     },
     {
       "region": "RUSSIA",
-      "title": "В Сбербанке создали компактную ИИ-модель, которая проверяет качество ответов других нейросетей",
-      "link": "https://www.cnews.ru/news/line/2026-11-11_v_sberbanke_sozdali_kompaktnuyu",
-      "desc": "Исследователи из управления экспериментальных систем машинного обучения Сбербанка представили Pollux — открытую...",
-      "source": "CNews",
-      "time": 1794410940.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 10.0,
-        "event_concreteness": 14.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 1.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 48.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 48.5
-      },
-      "base_score": 48.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 48.5,
-      "key": "6ece9268d5dd5e719f06d82b7159b66aa209f9277dd50bbdf3bf6403e11f091b",
-      "importance": 48.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "models"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
       "title": "Google запустила ИИ-агента для клиник и страховых компаний - Medvestnik",
       "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSU54ZElNQlZvc09lWWhUbC1IX1FPWHhfM0p0YXRlZlpvQjh0enc4UmhJdjluNWJNQTRHaUpzZFZtV1pTTjVkMUdwbXlHZXBIZy1sMEVHc2VqWGhLeDVlbDJNXy1WdFRKX1Fnc2lsTkNUVGViaWdQNGNLVXhfOFJzYXVjOEpjME40eWp5b1ZacHJzb3UzSWFMUTZBVG5vdWQt?oc=5",
       "desc": "Google запустила ИИ-агента для клиник и страховых компаний Medvestnik",
@@ -2016,30 +2016,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794411654.8694246,
+    "last_start_ts": 1794411937.628026,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794411654.8694246,
-    "last_success_ts": 1794411654.8694246,
-    "last_candidates": 48,
-    "last_published": 1,
+    "last_run_ts": 1794411937.628026,
+    "last_success_ts": 1794411937.628026,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794411685.990489
+      "disabled_until": 1794415495.5359864,
+      "reason": "The read operation timed out",
+      "updated_at": 1794411895.535989
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794408308.966527
+      "disabled_until": 1794415502.065394,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794411902.065396
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794408308.966527
+      "disabled_until": 1794498337.5067317,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794411937.5067337
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2047,9 +2047,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794408308.966527
+      "disabled_until": 1794415536.4869838,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794411936.4869854
     }
   },
   "stories": {
@@ -2469,147 +2469,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794214139,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 47.47,
-      "candidates": 17,
-      "queue_before": 0,
-      "queue_after": 3,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 12,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 4,
-        "candidate_count": 17,
-        "admission_rate": 23.53,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/news/1105354/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1105354",
-            "image_url": "https://habr.com/share/publication/1105354/929013a335b5419dd41a211cc1c26421/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 6.67,
-          "bonus_total": 60.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 5.0,
-            "bonus": 15.0,
-            "reason": "Полезно для оценки рисков безопасности и чистоты кодовой базы в долгосрочной перспективе.",
-            "title": "Разработчики анонсировали свободную ОС без использования ИИ",
-            "final_score": 61.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 83,
-        "raw_items": 615,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 23,
-          "CNews": 29,
-          "Euronews": 28
-        },
-        "score_filtered": 578,
-        "quality_filtered": 17,
-        "story_dedup": 3,
-        "candidates": 17,
-        "candidate_rate": 0.032,
-        "score_buckets": {
-          "0–39": 557,
-          "40–49": 37,
-          "50–59": 20,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794214387,
       "status": "OK",
@@ -22743,6 +22602,84 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1794411937,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 62.38,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 24.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Позволяет оценивать качество ИИ и снижать риски.",
+            "title": "В Сбербанке создали компактную ИИ-модель, которая проверяет качество ответов других нейросетей",
+            "final_score": 72.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
