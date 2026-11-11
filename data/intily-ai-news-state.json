@@ -1345,7 +1345,11 @@
         "models"
       ],
       "audience_score": 7.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1794424590,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1794424890
     },
     {
       "region": "WORLD",
@@ -1382,7 +1386,11 @@
         "security_regulation"
       ],
       "audience_score": 8.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1794424590,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1794424890
     },
     {
       "region": "WORLD",
@@ -1662,19 +1670,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 42.5,
+        "base_score": 42.0,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 63.5
+        "final_score": 63.0
       },
-      "base_score": 42.5,
+      "base_score": 42.0,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 63.5,
+      "score": 63.0,
       "key": "02b14b4864ff186f6b1d2ec704e38d9ee1bbc278f9b9f88778e39406d25d6954",
-      "importance": 63.5,
+      "importance": 63.0,
       "editorial_value": 50.0,
       "topics": [
         "security_regulation"
@@ -1980,30 +1988,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794423638.4717617,
+    "last_start_ts": 1794424590.0050936,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794423638.4717617,
-    "last_success_ts": 1794423638.4717617,
+    "last_run_ts": 1794424590.0050936,
+    "last_success_ts": 1794424590.0050936,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 18
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794423638.3085356
+      "disabled_until": 1794428210.154769,
+      "reason": "The read operation timed out",
+      "updated_at": 1794424610.1547706
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794423151.1415439
+      "disabled_until": 1794428213.4515705,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794424613.451572
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794423151.1415439
+      "disabled_until": 1794511019.3963623,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794424619.3963628
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2011,19 +2019,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794423151.1415439
+      "disabled_until": 1794428218.2408762,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794424618.2408772
     }
   },
   "stories": {
-    "e20bb0b62ce9a7f768cef69855a655c82a9ac7225313e625311e53641ac04228": {
-      "time": 1794337255,
-      "title": "Anthropic выпустила новые модели Claude и показала созданную ИИ операционную систему - Kommersant",
-      "desc": "Anthropic выпустила новые модели Claude и показала созданную ИИ операционную систему Kommersant",
-      "source": "Kommersant",
-      "region": "RUSSIA"
-    },
     "a27eeb10cb0aed49fcb52f7f4037380af2535dd2f918ad33ef190d23e2ed7417": {
       "time": 1794338450,
       "title": "Meta* сделала свою самую маленькую модель рабочей лошадкой для агентов",
@@ -2454,96 +2455,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794220880,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 23.33,
-      "candidates": 0,
-      "queue_before": 6,
-      "queue_after": 5,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/companies/infera_security/articles/1105426/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1105426",
-            "image_url": "https://habr.com/share/publication/1105426/d21c7c97ea3f5f387b20920ecf9e6e99/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.0,
-          "bonus_total": 63.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость внедрения инструментов сканирования ИИ-активов для предотвращения критических уязвимостей в продакшене.",
-            "title": "MLSecOps-скан: как найти все ИИ-активы в репозитории и проверить их до релиза",
-            "final_score": 78.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794221586,
       "status": "OK",
@@ -22557,6 +22468,83 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1794424590,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 29.6,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 18,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
