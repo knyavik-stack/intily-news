@@ -1277,12 +1277,6 @@
     "7a71fb3fa06111662acf96637750789eb60f91323ecada87109b73b848f0a122": 1794384297
   },
   "known": {
-    "2eb5867a7264d7768e316302e4935e321ef2cd788ebc2aaa505e1a855f417b84": 1794379262.0530882,
-    "7a71fb3fa06111662acf96637750789eb60f91323ecada87109b73b848f0a122": 1794379262.0530882,
-    "4e8c9b0a629ffccc7999fcc5d9c415e76b12984648ec5da8c9be5f46aeb989f4": 1794379262.0530882,
-    "330769d1f4dadebf070e400319dc99143248230b2ce821fbe0408049398ebc18": 1794379262.0530882,
-    "7ea03593da85f0abb4ac4133bc60871fa395fe5d42bb074bb685c020481d7c33": 1794379262.0530882,
-    "52333539d6d12ab613ab589e8974d54ff0e31765ef0734e3d88c349549f24405": 1794379262.0530882,
     "fbda58356b732dd4c31504b9cab543df766d77e0408cc6bad2a417a0a13a478d": 1794382132.511888,
     "85d6eeb8e4b629cb3e3a3a6e4b896da9c5815574829b19ccd9bd041e897a16dc": 1794382132.511888,
     "5d31e33e579fd83b63668dfa596d7b7ef01513bdc05ff1d1fa309658ea8ed643": 1794384050.9685774,
@@ -1564,19 +1558,19 @@
         "novelty": 0.0,
         "source_quality": 5.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 40.5,
+        "base_score": 40.0,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 58.5
+        "final_score": 58.0
       },
-      "base_score": 40.5,
+      "base_score": 40.0,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 58.5,
+      "score": 58.0,
       "key": "5caaa78eaa792c511829bab57a4809ae0c8d32a9efb223e07ef7c7ca21745bd4",
-      "importance": 58.5,
+      "importance": 58.0,
       "editorial_value": 50.0,
       "topics": [
         "business",
@@ -1662,30 +1656,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794384297.4809372,
+    "last_start_ts": 1794384809.0132577,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794384297.4809372,
-    "last_success_ts": 1794384297.4809372,
+    "last_run_ts": 1794384809.0132577,
+    "last_success_ts": 1794384809.0132577,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 10
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794384302.9582846
+      "disabled_until": 1794388393.6968682,
+      "reason": "The read operation timed out",
+      "updated_at": 1794384793.6968708
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794383091.21774
+      "disabled_until": 1794388397.1241572,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794384797.1241593
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794383091.21774
+      "disabled_until": 1794471208.9691367,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794384808.9691377
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1693,9 +1687,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794383091.21774
+      "disabled_until": 1794388407.8575974,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794384807.8576
     }
   },
   "stories": {
@@ -2136,146 +2130,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1794155584,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 35.43,
-      "candidates": 11,
-      "queue_before": 1,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 10,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 11,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/news/1105096/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1105096",
-            "image_url": "https://habr.com/share/publication/1105096/ec01a9eb1e7265dfd3b3ae20a70b462e/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 2.67,
-          "bonus_total": 24.0,
-          "max_score": 4.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 4.0,
-            "bonus": 12.0,
-            "reason": "Это технический троллинг без практического влияния на бизнес-процессы или архитектуру разработки.",
-            "title": "Вышел открытый проект Ram Altman — скрипт, который отправляет главе OpenAI инфу, сколько памяти простаивает на ПК",
-            "final_score": 55.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 36,
-        "raw_items": 646,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 13,
-          "CNews": 0,
-          "Euronews": 22
-        },
-        "score_filtered": 623,
-        "quality_filtered": 10,
-        "story_dedup": 2,
-        "candidates": 11,
-        "candidate_rate": 0.018,
-        "score_buckets": {
-          "0–39": 598,
-          "40–49": 35,
-          "50–59": 13,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794157742,
       "status": "OK",
@@ -23379,6 +23233,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1794384809,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 35.48,
+      "candidates": 0,
+      "queue_before": 10,
+      "queue_after": 10,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
