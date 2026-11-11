@@ -1278,7 +1278,8 @@
     "b30ea189c49205e663c967bafd89719f5504da62733120eb8e3215bb06121ccb": 1794420528,
     "59567eb60730a4fdb1fcb5ff5d2f4e77f619e1be943554da24e592f636022259": 1794420752,
     "c43404f74e209fac6aa07aed7eb26f9ae5536de66c5d26e73af76f8309fcd934": 1794421230,
-    "729772643ef09c91498bb958657e7a8f7a52f66407dc901be4c2dadcad5b088e": 1794421720
+    "729772643ef09c91498bb958657e7a8f7a52f66407dc901be4c2dadcad5b088e": 1794421720,
+    "96faba2f10416cd25e99b3c87f7e096c359dedd20e695b0416fd12ab1fb55619": 1794423153
   },
   "known": {
     "b30ea189c49205e663c967bafd89719f5504da62733120eb8e3215bb06121ccb": 1794419310.2644393,
@@ -1298,7 +1299,14 @@
     "e5e74cbb55bef5c44f3ebd4e77fe2ec0509720925657a1d48c51a83092c697e8": 1794419310.2644393,
     "e128d7dfdcadcf227c3055d16228c80ffecdeeff3298cc3fd17d4a0cc6c875a1": 1794421230.4020782,
     "02b14b4864ff186f6b1d2ec704e38d9ee1bbc278f9b9f88778e39406d25d6954": 1794421230.4020782,
-    "2c4fcf420386a91536a8b9ca0bb8075cfb643571ba1fb2d33cd26d2dd0b068eb": 1794421230.4020782
+    "2c4fcf420386a91536a8b9ca0bb8075cfb643571ba1fb2d33cd26d2dd0b068eb": 1794421230.4020782,
+    "96faba2f10416cd25e99b3c87f7e096c359dedd20e695b0416fd12ab1fb55619": 1794423153.2642832,
+    "de01cd8088b5ce0af95961375255afaae60a67c84b01eda64b529c672eb7faf3": 1794423153.2642832,
+    "b2dba1d2becee462564c9ccc4a3c491aebaab3875838acb099edf5b8fce2b14c": 1794423153.2642832,
+    "0c513d46f10e968ca8d49925946be9680c4847eda4403385878326a8f6db8073": 1794423153.2642832,
+    "81ce6c4b438fc3200c5f9d1c7deabc95d96d4fa97eb074d01542891b80a3d973": 1794423153.2642832,
+    "1b8d33c8234e89f4b48e2bcb19738430d92c253f4f87e80bd28350ae007a46a7": 1794423153.2642832,
+    "129af4f0a41fc54432fca23643a1ef2d49f9e8ce7182d8786855eff01c94d435": 1794423153.2642832
   },
   "queue": [
     {
@@ -1562,6 +1570,46 @@
     },
     {
       "region": "RUSSIA",
+      "title": "Инфраструктура, управляемая стоимостью",
+      "link": "https://habr.com/ru/articles/1106812/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106812",
+      "desc": "Почему аренда GPU часто оказывается избыточной и как спроектировать модель оплаты в Infracost Типичная задача выглядит так - команда ML-платформы получает бюджет и, чтобы не зависеть от доступности мощностей, арендует GPU-кластер на год. Решение кажется разумным: цена за час ниже, чем у on-demand, очередей нет, инженеры спокойны, стоимость спрогнозирована и включена в бюджет. Через полгода кто-то из аудита видит, что кластер занят примерно треть времени, остальное время узлы стоят включёнными, ничего не обучают и при этом ровно так же стоят денег. Счёт приходит за все часы месяца, а полезная работа выполнена лишь в части из них. Важно, что никто в этой истории не ошибся в техническом смысле. Кластер настроен корректно, задания запускаются, модели обучаются. Ошибка архитектурная: стоимость инфраструктуры считалась как фиксированная строка бюджета, а не как функция реального профиля нагрузки. Мы привыкли проектировать надёжность через SLA, резервирование и отказоустойчивость, безопасность через модель угроз и контроль доступа. Стоимость же слишком часто остаётся побочным эффектом, который обнаруживается постфактум. Я предлагаю относиться к стоимости как к проектируемому свойству системы. Тезис простой: нагрузка на GPU при обучении моделей принципиально неравномерна, поэтому постоянная аренда мощностей с длинными обязательствами в большинстве случаев неоправданно дорога. Разумнее планировать не далее чем на месяц вперёд, выделять минимально необходимую базу под обязательство, а пики докупать по запросу. Решение при этом принимается не интуитивно, а по расчёту, причём расчёт делается на инфраструктуре, описанной как код. Инфраструктура управляется через контролируемые изменения и мы всегда имеем базу для расчёта стоимости и контроля изменений стоимости в ретроспективе. Одним из самых популярных инструментов такого контроля выступает Infracost. Такой подход я называю инфраструктурой, управляемой стоимостью (cost-driven infrastructure) и процесс пересмотра стоимости и её прогноза должен стать таким же регулярным процессом проекта как оценка техдолга или контроля дрейфа показателей. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794419507.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 10.0,
+        "event_concreteness": 0.0,
+        "practical_value": 6.5,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 41.0,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 65.0
+      },
+      "base_score": 41.0,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 65.0,
+      "key": "2c4fcf420386a91536a8b9ca0bb8075cfb643571ba1fb2d33cd26d2dd0b068eb",
+      "importance": 65.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "chips",
+        "models",
+        "security_regulation",
+        "tools"
+      ],
+      "audience_score": 8.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
       "title": "[Перевод] Чего действительно стоит бояться в ИИ: пять экспертов о безопасности и будущем технологий",
       "link": "https://habr.com/ru/companies/speshu_ai/articles/1106674/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106674",
       "desc": "Разговор о безопасности искусственного интеллекта всё чаще превращается в спор о конце света. Одни предупреждают о потере контроля над сверхразумными системами, другие считают такие прогнозы отвлечением от конкретных проблем. Но за разногласиями о будущем остаются вопросы, требующие решений уже сейчас: кому можно доверять управление критической инфраструктурой, как предотвратить опасные эксперименты и кто должен устанавливать допустимый уровень риска. WIRED поговорил со специалистами по инженерной безопасности, информатике, биотехнологиям и этике. Ниже — пять позиций из этого материала. Эксперты по-разному оценивают вероятность катастрофы, но каждый объясняет, какие угрозы считает наиболее серьёзными и что предлагает с ними делать. Читать далее",
@@ -1635,43 +1683,6 @@
     },
     {
       "region": "WORLD",
-      "title": "When AI Agents Lose Focus: What Google’s Research Means for Supply Chain Operations - Logistics Viewpoints",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSUw1V0ZHSlBIVndKT2pzdjM5bExOYmlBdkFoTUdITnVGUXhnSEhYaGlRWGIxMmhtZHkzeXhUSk4wb2I1cHAwVzJ5c25kR3VjT3dWUnJkSWVKWFR2cTctdVFxWHRoZ0ZLb2xvQnFJOUZHdkdvbVJQNzJVN0JRcE1NOXJ0YTFkTEQ1MDdOd0kyeDBnOW9BUEhuNjB6dFYtSTJyMFIyUGZxRUE2UG5IT1Y2Q1BvaVUyNGpNRHRKN3VOdDgyTDA?oc=5",
-      "desc": "When AI Agents Lose Focus: What Google’s Research Means for Supply Chain Operations Logistics Viewpoints",
-      "source": "Logistics Viewpoints",
-      "time": 1794401260.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 7.0,
-        "event_concreteness": 12.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 42.5,
-        "audience_score": 7.0,
-        "audience_bonus": 21.0,
-        "final_score": 63.5
-      },
-      "base_score": 42.5,
-      "audience_bonus": 21.0,
-      "score_stage": "final",
-      "score": 63.5,
-      "key": "54845e4346f378866c81b4fa52cbca0be76897c8e90e7b82e0d84f7b9148b9c8",
-      "importance": 63.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "research"
-      ],
-      "audience_score": 7.0,
-      "tier": "A"
-    },
-    {
-      "region": "WORLD",
       "title": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
       "desc": "Researchers at Google DeepMind have unveiled a new AI model designed to unravel how changes in our DNA affect different cells, giving scientists a more detailed view of a notoriously difficult problem that could hold important clues to the causes of disease - and point the way to new treatments. AlphaGenome 2 is the successor […]",
@@ -1705,6 +1716,43 @@
         "research"
       ],
       "audience_score": 6.0,
+      "tier": "A"
+    },
+    {
+      "region": "WORLD",
+      "title": "When AI Agents Lose Focus: What Google’s Research Means for Supply Chain Operations - Logistics Viewpoints",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSUw1V0ZHSlBIVndKT2pzdjM5bExOYmlBdkFoTUdITnVGUXhnSEhYaGlRWGIxMmhtZHkzeXhUSk4wb2I1cHAwVzJ5c25kR3VjT3dWUnJkSWVKWFR2cTctdVFxWHRoZ0ZLb2xvQnFJOUZHdkdvbVJQNzJVN0JRcE1NOXJ0YTFkTEQ1MDdOd0kyeDBnOW9BUEhuNjB6dFYtSTJyMFIyUGZxRUE2UG5IT1Y2Q1BvaVUyNGpNRHRKN3VOdDgyTDA?oc=5",
+      "desc": "When AI Agents Lose Focus: What Google’s Research Means for Supply Chain Operations Logistics Viewpoints",
+      "source": "Logistics Viewpoints",
+      "time": 1794401260.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 7.0,
+        "event_concreteness": 12.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 0.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 42.0,
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 63.0
+      },
+      "base_score": 42.0,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 63.0,
+      "key": "54845e4346f378866c81b4fa52cbca0be76897c8e90e7b82e0d84f7b9148b9c8",
+      "importance": 63.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "research"
+      ],
+      "audience_score": 7.0,
       "tier": "A"
     },
     {
@@ -1931,38 +1979,36 @@
     },
     {
       "region": "RUSSIA",
-      "title": "Инфраструктура, управляемая стоимостью",
-      "link": "https://habr.com/ru/articles/1106812/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106812",
-      "desc": "Почему аренда GPU часто оказывается избыточной и как спроектировать модель оплаты в Infracost Типичная задача выглядит так - команда ML-платформы получает бюджет и, чтобы не зависеть от доступности мощностей, арендует GPU-кластер на год. Решение кажется разумным: цена за час ниже, чем у on-demand, очередей нет, инженеры спокойны, стоимость спрогнозирована и включена в бюджет. Через полгода кто-то из аудита видит, что кластер занят примерно треть времени, остальное время узлы стоят включёнными, ничего не обучают и при этом ровно так же стоят денег. Счёт приходит за все часы месяца, а полезная работа выполнена лишь в части из них. Важно, что никто в этой истории не ошибся в техническом смысле. Кластер настроен корректно, задания запускаются, модели обучаются. Ошибка архитектурная: стоимость инфраструктуры считалась как фиксированная строка бюджета, а не как функция реального профиля нагрузки. Мы привыкли проектировать надёжность через SLA, резервирование и отказоустойчивость, безопасность через модель угроз и контроль доступа. Стоимость же слишком часто остаётся побочным эффектом, который обнаруживается постфактум. Я предлагаю относиться к стоимости как к проектируемому свойству системы. Тезис простой: нагрузка на GPU при обучении моделей принципиально неравномерна, поэтому постоянная аренда мощностей с длинными обязательствами в большинстве случаев неоправданно дорога. Разумнее планировать не далее чем на месяц вперёд, выделять минимально необходимую базу под обязательство, а пики докупать по запросу. Решение при этом принимается не интуитивно, а по расчёту, причём расчёт делается на инфраструктуре, описанной как код. Инфраструктура управляется через контролируемые изменения и мы всегда имеем базу для расчёта стоимости и контроля изменений стоимости в ретроспективе. Одним из самых популярных инструментов такого контроля выступает Infracost. Такой подход я называю инфраструктурой, управляемой стоимостью (cost-driven infrastructure) и процесс пересмотра стоимости и её прогноза должен стать таким же регулярным процессом проекта как оценка техдолга или контроля дрейфа показателей. Читать далее",
+      "title": "Anthropic ужесточила правила доступа к Claude для компаний из России",
+      "link": "https://habr.com/ru/articles/1106834/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106834",
+      "desc": "Американская Anthropic с 12 ноября вводит обновленную политику Supported Regions («Поддерживаемые регионы» — 1 и 2 ), которая блокирует доступ к чат-боту Claude для организаций, зарегистрированных в России или контролируемых российскими лицами, независимо от гражданства и местонахождения сотрудников. Ограничения распространяются на Claude.ai , Claude Code, API и модели, предоставляемые через облачные платформы и реселлеров. Ключевое изменение касается корпоративного контроля: запрет действует для компаний, прямо или косвенно находящихся под мажоритарным контролем лиц из неподдерживаемых юрисдикций, даже при регистрации в третьих странах. В документах Anthropic уточняется, что речь идет о разъяснении ранее действовавших правил, а не о совершенно новом запрете. Компания объясняет ужесточение подготовкой к IPO и необходимостью очистить выручку от клиентов, нарушающих региональную политику. Читать далее",
       "source": "Habr AI/News",
-      "time": 1794419507.0,
+      "time": 1794422101.0,
       "_score_components": {
         "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 10.0,
-        "event_concreteness": 0.0,
-        "practical_value": 6.5,
+        "ai_specificity": 5.5,
+        "impact": 9.0,
+        "event_concreteness": 15.0,
+        "practical_value": 5.0,
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
         "freshness": 2.0,
         "low_signal_penalty": 0.0,
-        "base_score": 41.5,
+        "base_score": 53.5,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 41.5
+        "final_score": 53.5
       },
-      "base_score": 41.5,
+      "base_score": 53.5,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 41.5,
-      "key": "2c4fcf420386a91536a8b9ca0bb8075cfb643571ba1fb2d33cd26d2dd0b068eb",
-      "importance": 41.5,
+      "score": 53.5,
+      "key": "de01cd8088b5ce0af95961375255afaae60a67c84b01eda64b529c672eb7faf3",
+      "importance": 53.5,
       "editorial_value": 50.0,
       "topics": [
-        "chips",
         "models",
-        "security_regulation",
         "tools"
       ],
       "audience_score": null,
@@ -1971,30 +2017,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794422451.1468387,
+    "last_start_ts": 1794423153.2642832,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794422451.1468387,
-    "last_success_ts": 1794422451.1468387,
-    "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 18
+    "last_run_ts": 1794423153.2642832,
+    "last_success_ts": 1794423153.2642832,
+    "last_candidates": 47,
+    "last_published": 1,
+    "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1794425323.1004589,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1794421723.100461
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794423189.1790144
     },
     "GROQ": {
-      "disabled_until": 1794426032.6382613,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794422432.6382644
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794423151.1415439
     },
     "OPENAI": {
-      "disabled_until": 1794508851.0396903,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1794422451.0396912
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794423151.1415439
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2002,9 +2048,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1794426049.6833332,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794422449.6833348
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794423151.1415439
     }
   },
   "stories": {
@@ -2420,10 +2466,16 @@
       "desc": "Google выпустила TPU 8tx и TPU 8i Max и впервые за год обновила линейку ИИ-чипов четырьмя моделями Runet.news",
       "source": "Runet.news",
       "region": "RUSSIA"
+    },
+    "96faba2f10416cd25e99b3c87f7e096c359dedd20e695b0416fd12ab1fb55619": {
+      "time": 1794423153,
+      "title": "Google открыл доступ к Gemini 4 Carbon: модель в 2–6 раз дешевле, чем Fable 5.2",
+      "desc": "Gemini 4 Carbon – флагманская ИИ-модель Google DeepMind, открытая для всех 10 ноября 2026 года. Модель специализируется на длинных агентных задачах: сложном программировании, кибербезопасности и научных исследованиях. В этом разборе – чем Carbon отличается от Gemini 4 Argon , что такое режим /swarm и как попробовать нейросеть из России без VPN и подписки за $100. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -2441,100 +2493,11 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794219910,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 14.63,
-      "candidates": 0,
-      "queue_before": 8,
-      "queue_after": 7,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/articles/1104778/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1104778",
-            "image_url": "https://habr.com/share/publication/1104778/516ab0e515180324ad6bf9f8c4af7141/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.0,
-          "bonus_total": 72.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 3,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Демонстрация реальной эффективности автономных агентов для ускорения разработки и оптимизации затрат на IT-ресурсы.",
-            "title": "Я протестировал DeepSeek Harness и вот что у меня получилось",
-            "final_score": 78.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794220633,
       "status": "OK",
@@ -22503,11 +22466,150 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1794423153,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 45.46,
+      "candidates": 47,
+      "queue_before": 18,
+      "queue_after": 19,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 14,
+        "known_recent": 10,
+        "already_queued": 8,
+        "story_queue": 0,
+        "story_history": 8,
+        "added": 7,
+        "candidate_count": 47,
+        "admission_rate": 14.89,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/companies/gptunnel/articles/1106822/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106822",
+            "image_url": "https://habr.com/share/publication/1106822/dfdc42e3d90026debae26b73ac855166/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.5,
+          "bonus_total": 51.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Существенное снижение стоимости API и агентных возможностей позволяет немедленно оптимизировать затраты на разработку и автоматизацию.",
+            "title": "Google открыл доступ к Gemini 4 Carbon: модель в 2–6 раз дешевле, чем Fable 5.2",
+            "final_score": 82.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 191,
+        "raw_items": 1252,
+        "source_counts": {
+          "TechCrunch AI": 5,
+          "VentureBeat AI": -1,
+          "The Verge AI": 3,
+          "OpenAI News": 2,
+          "Google DeepMind": 1,
+          "Hugging Face": 0,
+          "Ars Technica": 5,
+          "Habr AI/News": 40,
+          "CNews": 85,
+          "Euronews": 50
+        },
+        "score_filtered": 1136,
+        "quality_filtered": 53,
+        "story_dedup": 16,
+        "candidates": 47,
+        "candidate_rate": 0.0443,
+        "score_buckets": {
+          "0–39": 1073,
+          "40–49": 115,
+          "50–59": 57,
+          "60–69": 7,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 7,
+          "7": 6,
+          "8": 4,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794421230.4020782,
-  "last_publish_ts": 1794421720.1272776,
+  "last_search_ts": 1794423153.2642832,
+  "last_publish_ts": 1794423153.2642832,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
