@@ -1272,7 +1272,8 @@
     "85d6eeb8e4b629cb3e3a3a6e4b896da9c5815574829b19ccd9bd041e897a16dc": 1794383092,
     "fbda58356b732dd4c31504b9cab543df766d77e0408cc6bad2a417a0a13a478d": 1794383334,
     "d2a556f06c60053ab0e6ecc9e2c031a077405e14f00a0b049c1e5ebde88f82ed": 1794383572,
-    "e72b103d4bd4a6b08f9c0b969de889237753342b411abfd58c7a0e5f03f6f18e": 1794383813
+    "e72b103d4bd4a6b08f9c0b969de889237753342b411abfd58c7a0e5f03f6f18e": 1794383813,
+    "162b1d0db6c2ad655154aaa7f1e3517da702bb36c2088d12e4b4654f8a3425ee": 1794384050
   },
   "known": {
     "2eb5867a7264d7768e316302e4935e321ef2cd788ebc2aaa505e1a855f417b84": 1794379262.0530882,
@@ -1282,46 +1283,12 @@
     "7ea03593da85f0abb4ac4133bc60871fa395fe5d42bb074bb685c020481d7c33": 1794379262.0530882,
     "52333539d6d12ab613ab589e8974d54ff0e31765ef0734e3d88c349549f24405": 1794379262.0530882,
     "fbda58356b732dd4c31504b9cab543df766d77e0408cc6bad2a417a0a13a478d": 1794382132.511888,
-    "85d6eeb8e4b629cb3e3a3a6e4b896da9c5815574829b19ccd9bd041e897a16dc": 1794382132.511888
+    "85d6eeb8e4b629cb3e3a3a6e4b896da9c5815574829b19ccd9bd041e897a16dc": 1794382132.511888,
+    "5d31e33e579fd83b63668dfa596d7b7ef01513bdc05ff1d1fa309658ea8ed643": 1794384050.9685774,
+    "0c513d46f10e968ca8d49925946be9680c4847eda4403385878326a8f6db8073": 1794384050.9685774,
+    "111c937fce14b06572487717dbdfa72d7b91a8b7060702b9ea06ea7e3d3e7e19": 1794384050.9685774
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Живая карта мозга нейросети: 48 слоёв, 512 экспертов, одна GTX 1070 + Strata + Qwen3.8-Flash-Next",
-      "link": "https://habr.com/ru/articles/1106322/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106322",
-      "desc": "В прошлых двух статьях я рассказывал, как запустить Qwen3.8-Flash-Next (125 млрд параметров) на старом железе и как снять программный потолок FP16 на видеокартах. Обе статьи были про железо и про то, что можно взять готовое и заставить работать. Эта - другая. Я залез внутрь самого движка (Strata), построил живую визуализацию того, что он делает с экспертами модели под капотом, попробовал ответить на вопрос “а эксперты реально специализируются по темам?” - и на середине пути поймал себя на методологической ошибке, которая чуть не привела к красивому, но неверному выводу. Расскажу как есть, с цифрами и без приукрашивания. Что такое Strata и при чём тут эксперты Strata - движок инференса для MoE-моделей (Mixture-of-Experts): вместо одной плотной сети у модели есть десятки экспертов на каждый слой, и на каждый токен активируется лишь небольшое подмножество (top-K). У Qwen3.8-Flash-Next, с которой я работал всю эту серию статей, это 48 слоёв по 512 экспертов - то есть 24576 отдельных “узлов”, из которых на каждом шаге реально считает лишь небольшая часть. Проблема в том, что весь набор экспертов (сотни гигабайт) физически не влезает в 8ГБ VRAM моей GTX 1070. Strata решает это адаптивным кэшем: часть экспертов постоянно живёт в VRAM (самые “горячие”), остальные читаются из RAM или SSD по мере надобности, и кэш сам решает, кого держать резидентно, а кого вытеснять - на основе decayed-счётчика обращений к каждому эксперту. Вся эта механика раньше была для меня чёрным ящиком: я видел только агрегированные цифры в мониторинге (сколько экспертов в VRAM, hit rate). Захотелось увидеть её изнутри. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794361097.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 8.0,
-        "event_concreteness": 10.5,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 45.0,
-        "audience_score": 7.0,
-        "audience_bonus": 21.0,
-        "final_score": 66.0
-      },
-      "base_score": 45.0,
-      "audience_bonus": 21.0,
-      "score_stage": "final",
-      "score": 66.0,
-      "key": "162b1d0db6c2ad655154aaa7f1e3517da702bb36c2088d12e4b4654f8a3425ee",
-      "importance": 66.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "tools"
-      ],
-      "audience_score": 7.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "WORLD",
       "title": "Stock Market Today, Nov. 10: AMD Rises on Plan to Invest $2.5 Billion in Anthropic - The Globe and Mail",
@@ -1432,43 +1399,6 @@
     },
     {
       "region": "WORLD",
-      "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
-      "link": "https://huggingface.co/blog/qvac/botpsy",
-      "desc": "",
-      "source": "Hugging Face",
-      "time": 1794373276.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 9.0,
-        "event_concreteness": 10.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 0.3,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 40.3,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 64.3
-      },
-      "base_score": 40.3,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 64.3,
-      "key": "330769d1f4dadebf070e400319dc99143248230b2ce821fbe0408049398ebc18",
-      "importance": 64.3,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "models"
-      ],
-      "audience_score": 8.0,
-      "tier": "A"
-    },
-    {
-      "region": "WORLD",
       "title": "Anthropic launches AI office tools during IPO roadshow, challenging Microsoft Office - KuCoin",
       "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPYkNzSE9teDZmNDhjSWlkTGtnR1VvbDRRUE5ocGpMWi1PVlJyT0VfSjFuUHdkX0owQ0szWVlFV3ZsN0xaZ01keGRWNWtnWWVMbTNVck10UzhNNkZ1cVRiNzdXUHdhdDN1eFhiNkFzOHFHdTRCT2x2ZGZ0dzFHcW1fRGdVTzZuanNQVWd2S0oxaU4wZUlrNV80WWR3RGd6Mjl4U0tvaGFubXFFQnhjZFJrOV9FRS0xdHM?oc=5",
       "desc": "Anthropic launches AI office tools during IPO roadshow, challenging Microsoft Office KuCoin",
@@ -1535,6 +1465,43 @@
       "editorial_value": 50.0,
       "topics": [
         "agents"
+      ],
+      "audience_score": 8.0,
+      "tier": "A"
+    },
+    {
+      "region": "WORLD",
+      "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+      "link": "https://huggingface.co/blog/qvac/botpsy",
+      "desc": "",
+      "source": "Hugging Face",
+      "time": 1794373276.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 9.0,
+        "event_concreteness": 10.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 0.3,
+        "freshness": 1.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 39.8,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 63.8
+      },
+      "base_score": 39.8,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 63.8,
+      "key": "330769d1f4dadebf070e400319dc99143248230b2ce821fbe0408049398ebc18",
+      "importance": 63.8,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "models"
       ],
       "audience_score": 8.0,
       "tier": "A"
@@ -1613,23 +1580,135 @@
       "audience_score": 6.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Конец осени. Донастройка крипторегулирования? Цифровой рубль vs iPhone? Риски агентной экономики? - PLUSworld",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQbENlUXNYY0dOd1ZmMzYxQnpXMW5manJkYVMwZUFvTV81WVEwZjVrWUdwVVctTi1MMDIxTHlCQWVqdXF6TFZVN25MRG1HbFpSSnBWT01SWmxUVmdkUHVmZDhBOUYxbGtVTjRjbWE0N1ZuSGxEeG94WEQxOVZ1dEJVdU9Wb0E3cUIyTE1iMndPTmFPUDh4enk1eVRlWEFIZEVXc1pKTk54TkF3eTg1V2FoSU94RVVmRGQ2eFJOR0QydXNINXFzMlpOdXBWZWxxNXdDcmowQk9yTU12d3lOTjBVMQ?oc=5",
+      "desc": "Конец осени. Донастройка крипторегулирования? Цифровой рубль vs iPhone? Риски агентной экономики? PLUSworld",
+      "source": "PLUSworld",
+      "time": 1794382800.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 8.0,
+        "event_concreteness": 12.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 42.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 42.5
+      },
+      "base_score": 42.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 42.5,
+      "key": "5d31e33e579fd83b63668dfa596d7b7ef01513bdc05ff1d1fa309658ea8ed643",
+      "importance": 42.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "security_regulation"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Юные изобретатели представили робототехнические проекты с ИИ в музее «Атом» на ВДНХ",
+      "link": "https://www.cnews.ru/news/line/2026-11-10_yunye_izobretateli_predstavili",
+      "desc": "Работы презентовали ребята в возрасте от 12 до 18 лет из Москвы, Санкт-Петербурга, Казани, Омска и «атомных» городов. 7...",
+      "source": "CNews",
+      "time": 1794382560.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 7.0,
+        "event_concreteness": 10.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 2.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 42.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 42.5
+      },
+      "base_score": 42.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 42.5,
+      "key": "0c513d46f10e968ca8d49925946be9680c4847eda4403385878326a8f6db8073",
+      "importance": 42.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "robotics"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "Athena Secures $2.5M Pre-Seed From a16z Speedrun to Scale AI Agents for Commercial Real Estate Law - AI Insider",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOYlc2MlZTcWNlclVvOThtZXNHMktyTkRuLVl2VTBYdjl6ZEF2NmwwSWR0US12cWlZM0ZTMEdTV1hNbkxreHRnRHQ3XzhXdTNFc195UVI5aW5BZTFoRVVfeXhKU0RWYkV6VUg2SGlJcVJ6RzRZdkZobld5dnBjSVFEOW16UV81T3Jld2ZTUWVPZlYzWDF5YVRHU0pyT0luVkVHVUNwWWVhNG1aanNRVUpYRmF4S2tTNmpiNk9LdGN1VVlIdE0yWnVqOWRXZW1oSVg0?oc=5",
+      "desc": "Athena Secures $2.5M Pre-Seed From a16z Speedrun to Scale AI Agents for Commercial Real Estate Law AI Insider",
+      "source": "AI Insider",
+      "time": 1794383716.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 7.0,
+        "event_concreteness": 12.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 41.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 41.0
+      },
+      "base_score": 41.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 41.0,
+      "key": "111c937fce14b06572487717dbdfa72d7b91a8b7060702b9ea06ea7e3d3e7e19",
+      "importance": 41.0,
+      "editorial_value": 47.0,
+      "topics": [
+        "agents",
+        "security_regulation"
+      ],
+      "audience_score": null,
+      "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1794383813.0904677,
+    "last_start_ts": 1794384050.9685774,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794383813.0904677,
-    "last_success_ts": 1794383813.0904677,
-    "last_candidates": 0,
+    "last_run_ts": 1794384050.9685774,
+    "last_success_ts": 1794384050.9685774,
+    "last_candidates": 25,
     "last_published": 1,
-    "queue_size": 9
+    "queue_size": 11
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794383818.389397
+      "updated_at": 1794384095.5601923
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1653,13 +1732,6 @@
     }
   },
   "stories": {
-    "5d6b837878499c4c43d84c6a6cc4d70e9d94dc468d2411dc1ba347c2270c7e5c": {
-      "time": 1794297424,
-      "title": "Сотрудник облачного провайдера Railway попытался взломать инфраструктуру конкурента с помощью ИИ",
-      "desc": "Основатель облачной хостинг‑платформы Primcloud Джош Мандерс обвинил работника конкурирующей компании Railway в попытке взлома. По данным Мандерса, Джейк Разнер, сотрудник Railway, попытался проникнуть в инфраструктуру Primcloud. На заявление Мандерса отреагировал и генеральный директор Railway Джейк Купер, и сам сотрудник, который признал свою причастность к инциденту, однако отрицал злой умысел. По его словам, он тестировал автономные алгоритмы для создания аккаунтов на сторонних платформах, однако ИИ‑агент «зашёл слишком далеко». Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "86c8cc4b0023512821637a1b358a74920596098c7b63b0b6c42c6d75f99004a6": {
       "time": 1794297892,
       "title": "Исследование: во сколько обходится AI‑разработка сайта в зависимости от используемых JavaScript‑фреймворков",
@@ -2065,11 +2137,17 @@
       "desc": "TSMC to invest up to USD 1 billion in Anthropic, OpenAI The Economic Times",
       "source": "The Economic Times",
       "region": "WORLD"
+    },
+    "162b1d0db6c2ad655154aaa7f1e3517da702bb36c2088d12e4b4654f8a3425ee": {
+      "time": 1794384050,
+      "title": "Живая карта мозга нейросети: 48 слоёв, 512 экспертов, одна GTX 1070 + Strata + Qwen3.8-Flash-Next",
+      "desc": "В прошлых двух статьях я рассказывал, как запустить Qwen3.8-Flash-Next (125 млрд параметров) на старом железе и как снять программный потолок FP16 на видеокартах. Обе статьи были про железо и про то, что можно взять готовое и заставить работать. Эта - другая. Я залез внутрь самого движка (Strata), построил живую визуализацию того, что он делает с экспертами модели под капотом, попробовал ответить на вопрос “а эксперты реально специализируются по темам?” - и на середине пути поймал себя на методологической ошибке, которая чуть не привела к красивому, но неверному выводу. Расскажу как есть, с цифрами и без приукрашивания. Что такое Strata и при чём тут эксперты Strata - движок инференса для MoE-моделей (Mixture-of-Experts): вместо одной плотной сети у модели есть десятки экспертов на каждый слой, и на каждый токен активируется лишь небольшое подмножество (top-K). У Qwen3.8-Flash-Next, с которой я работал всю эту серию статей, это 48 слоёв по 512 экспертов - то есть 24576 отдельных “узлов”, из которых на каждом шаге реально считает лишь небольшая часть. Проблема в том, что весь набор экспертов (сотни гигабайт) физически не влезает в 8ГБ VRAM моей GTX 1070. Strata решает это адаптивным кэшем: часть экспертов постоянно живёт в VRAM (самые “горячие”), остальные читаются из RAM или SSD по мере надобности, и кэш сам решает, кого держать резидентно, а кого вытеснять - на основе decayed-счётчика обращений к каждому эксперту. Вся эта механика раньше была для меня чёрным ящиком: я видел только агрегированные цифры в мониторинге (сколько экспертов в VRAM, hit rate). Захотелось увидеть её изнутри. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -2087,139 +2165,10 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794154382,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 30.58,
-      "candidates": 11,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 10,
-        "known_recent": 1,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 11,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 5.0,
-          "bonus_total": 30.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Улучшение памяти агентов напрямую влияет на архитектуру автоматизации бизнес-процессов и качество интеграции LLM в продукты.",
-            "title": "Claude dreaming, Anthropic представила тесты памяти агентов - Pasquale Pillitteri",
-            "final_score": 67.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 36,
-        "raw_items": 639,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 14,
-          "CNews": 0,
-          "Euronews": 21
-        },
-        "score_filtered": 617,
-        "quality_filtered": 9,
-        "story_dedup": 2,
-        "candidates": 11,
-        "candidate_rate": 0.0182,
-        "score_buckets": {
-          "0–39": 593,
-          "40–49": 33,
-          "50–59": 13,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794155343,
       "status": "OK",
@@ -23360,11 +23309,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794384050,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 45.22,
+      "candidates": 25,
+      "queue_before": 9,
+      "queue_after": 11,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 12,
+        "known_recent": 0,
+        "already_queued": 6,
+        "story_queue": 0,
+        "story_history": 4,
+        "added": 3,
+        "candidate_count": 25,
+        "admission_rate": 12.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://habr.com/ru/articles/1106322/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106322",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.33,
+          "bonus_total": 66.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Дает глубокое понимание оптимизации инференса MoE, что критично для снижения затрат на инфраструктуру при работе с тяжелыми моделями.",
+            "title": "Живая карта мозга нейросети: 48 слоёв, 512 экспертов, одна GTX 1070 + Strata + Qwen3.8-Flash-Next",
+            "final_score": 63.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 102,
+        "raw_items": 520,
+        "source_counts": {
+          "TechCrunch AI": 3,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 2,
+          "Google DeepMind": 0,
+          "Hugging Face": 1,
+          "Ars Technica": 6,
+          "Habr AI/News": 40,
+          "CNews": 28,
+          "Euronews": 22
+        },
+        "score_filtered": 466,
+        "quality_filtered": 19,
+        "story_dedup": 10,
+        "candidates": 25,
+        "candidate_rate": 0.0598,
+        "score_buckets": {
+          "0–39": 423,
+          "40–49": 61,
+          "50–59": 31,
+          "60–69": 5,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 2,
+          "7": 2,
+          "8": 5,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794382132.511888,
-  "last_publish_ts": 1794383813.0904677,
+  "last_search_ts": 1794384050.9685774,
+  "last_publish_ts": 1794384050.9685774,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
