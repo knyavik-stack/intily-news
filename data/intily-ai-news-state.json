@@ -1656,30 +1656,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794384809.0132577,
+    "last_start_ts": 1794385281.006343,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794384809.0132577,
-    "last_success_ts": 1794384809.0132577,
+    "last_run_ts": 1794385281.006343,
+    "last_success_ts": 1794385281.006343,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 10
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1794388393.6968682,
+      "disabled_until": 1794388872.0093477,
       "reason": "The read operation timed out",
-      "updated_at": 1794384793.6968708
+      "updated_at": 1794385272.00935
     },
     "GROQ": {
-      "disabled_until": 1794388397.1241572,
+      "disabled_until": 1794388874.232509,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794384797.1241593
+      "updated_at": 1794385274.2325113
     },
     "OPENAI": {
-      "disabled_until": 1794471208.9691367,
+      "disabled_until": 1794471680.9722893,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1794384808.9691377
+      "updated_at": 1794385280.9722908
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1687,19 +1687,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1794388407.8575974,
+      "disabled_until": 1794388879.9718084,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794384807.8576
+      "updated_at": 1794385279.9718106
     }
   },
   "stories": {
-    "3b24ff43c07a194dfc1154e72f7df43959f969543b112200ac7afed58828024d": {
-      "time": 1794298855,
-      "title": "Smart2FA: 100% автономный 2FA-аутентификатор с нулевым разглашением (Zero-Knowledge)",
-      "desc": "Разбор Smart2FA (0xid Edition) 2FA-аутентификатора с открытым исходным кодом, локальным шифрованием AES-256, биометрией и поддержкой десктопа и мобильных устройств. Безопасность против удобства: дилемма аутентификации В современной цифровой инфраструктуре двухфакторная аутентификация (2FA) - один из наиболее эффективных способов предотвращения несанкционированного доступа к аккаунтам. Тем не менее большинство популярных приложений-аутентификаторов заставляют идти на нежелательные компромиссы: Риски централизованной облачной синхронизации: Хранение нешифрованных или управляемых провайдером токенов в проприетарных облаках расширяет поверхность атак, создает единую точку отказа и приводит к привязке к конкретной экосистеме (vendor lock-in). Избыточная телеметрия и трекинг: Многие коммерческие аутентификаторы собирают аналитику, идентификаторы устройств и метрики использования, нарушая приватность. Ограничения экспорта и платформенная привязка: Недостаточные возможности экспорта усложняют миграцию между платформами и увеличивают риск потери данных при смене устройства. Чтобы обеспечить полную автономию пользователей, максимальную защиту данных и высокую производительность, мы создали Smart2FA (0xid Edition) - открытый клиентский аутентификатор с архитектурой Zero-Knowledge, исключающий сбор телеметрии, минимизирующий системные уязвимости и выполненный в стильном индустриальном дизайне. Ключевая философия: Zero-Knowledge и принцип Local-First Архитектура Smart2FA базируется на трех основополагающих принципах: 100% Offline по умолчанию: Никаких бэкенд-сервисов, аналитики и внешних сетевых запросов. Криптографическая изоляция на стороне клиента: Все секреты остаются зашифрованными как на диске, так и в памяти до момента явной авторизации пользователем. Портативность и совместимость: Поддержка стандартных форматов RFC, мгновенный пакетный импорт и удобная кроссплатформенная работа: Web, Desktop (Tauri/Rust) и Mobile (Capacitor). Архитектура и функциональные возможности 1. Надежная криптографическая модель хранилища Smart2FA никогда не сохраняет мастер-PIN в открытом виде. Схема хранения и расшифровки обеспечивает надежную защиту от атак перебором и дампов локального хранилища: Жизненный цикл PIN в оперативной памяти: Расшифрованное состояние и рабочие секреты хранятся исключительно в энергозависимой оперативной памяти (RAM) в хранилище Pinia. Блокировка приложения, уход со страницы или ее перезагрузка мгновенно очищают память. Биометрическая аутентификация (WebAuthn): На поддерживаемых у Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "8b74fd022b0582c4def468d0a96394efad6d8c8c7757f750ea3ea1b91e84ce2f": {
       "time": 1794299093,
       "title": "Anthropic's New AI Can Design Hardware, Find Cybersecurity Flaws And Solve Physics Problems - Benzinga",
@@ -2130,133 +2123,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1794157742,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 65.65,
-      "candidates": 11,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 11,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 11,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 37,
-        "raw_items": 676,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 12,
-          "CNews": 0,
-          "Euronews": 24
-        },
-        "score_filtered": 650,
-        "quality_filtered": 13,
-        "story_dedup": 2,
-        "candidates": 11,
-        "candidate_rate": 0.0172,
-        "score_buckets": {
-          "0–39": 627,
-          "40–49": 36,
-          "50–59": 13,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": "GROQ",
-        "failovers": 1,
-        "failures": 4,
-        "blocked": 1,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1794159179,
       "status": "OK",
@@ -23243,6 +23109,78 @@
       "business_reason": "no_eligible_item",
       "searched": false,
       "duration_sec": 35.48,
+      "candidates": 0,
+      "queue_before": 10,
+      "queue_after": 10,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1794385281,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 29.11,
       "candidates": 0,
       "queue_before": 10,
       "queue_after": 10,
