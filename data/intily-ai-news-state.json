@@ -1,6 +1,5 @@
 {
   "published": {
-    "ce9b73a887523d44ac9af844327a6d4e0978406b076c6672b4b1630e86a707b0": 1791819406,
     "0c275861d8eda0290d6878ea16349b79103dd7419d38eee5c2d33656e168cb95": 1791823969,
     "61d968b2e071fa603ff4f6389ca3c0301f724e0d4dadda4ecea47a301a5307a9": 1791826392,
     "20d5735aed4f3c1ef6179de89671233fb1315df8ff63dbff9714eca896cff456": 1791826611,
@@ -1275,13 +1274,10 @@
     "5a876260392e05147d34ca195c33c5211f27dca0e3bdb9c1a33d9ae14c59bf69": 1794404922,
     "3d41d1bf45eeb707461c269519443fd21827f1994e2b9f995af8c191f562037b": 1794407559,
     "31617619dd94aef2dfdb042fc9db2d5071d4fb9d1566d309642211096c673b8d": 1794408322,
-    "ff000ba2664e0087095f8085b72af4cd9f7cb1fae49f96e2e1e4a082354e8e73": 1794409480
+    "ff000ba2664e0087095f8085b72af4cd9f7cb1fae49f96e2e1e4a082354e8e73": 1794409480,
+    "fe2833c834b487f1ed7ef95bebc7aeaa1a58f5cdda63d876cb22cdce8e0e71cd": 1794411654
   },
   "known": {
-    "ff000ba2664e0087095f8085b72af4cd9f7cb1fae49f96e2e1e4a082354e8e73": 1794405656.4108992,
-    "31617619dd94aef2dfdb042fc9db2d5071d4fb9d1566d309642211096c673b8d": 1794405656.4108992,
-    "f84bd14f5caa73f45f2967322d9ac8e0d43db1bc35df6859c6d80c5d339b530d": 1794405656.4108992,
-    "f6a9dafc94e1f7568601503efdef4dca64b4b8c295c0be2fd4a99ae8264ed7a2": 1794405656.4108992,
     "debb43f841b4d874200ee57544f5aebb5b95f941424b2278627ea92e93929551": 1794407559.7702453,
     "cf7c7a4c55764692da23e67b20b5b5623aaa835446a6a5eaabc1bc53d7f13a39": 1794407559.7702453,
     "59567eb60730a4fdb1fcb5ff5d2f4e77f619e1be943554da24e592f636022259": 1794407559.7702453,
@@ -1308,47 +1304,13 @@
     "81ce6c4b438fc3200c5f9d1c7deabc95d96d4fa97eb074d01542891b80a3d973": 1794409480.7137918,
     "0c513d46f10e968ca8d49925946be9680c4847eda4403385878326a8f6db8073": 1794409480.7137918,
     "1b8d33c8234e89f4b48e2bcb19738430d92c253f4f87e80bd28350ae007a46a7": 1794409480.7137918,
-    "129af4f0a41fc54432fca23643a1ef2d49f9e8ce7182d8786855eff01c94d435": 1794409480.7137918
+    "129af4f0a41fc54432fca23643a1ef2d49f9e8ce7182d8786855eff01c94d435": 1794409480.7137918,
+    "6ece9268d5dd5e719f06d82b7159b66aa209f9277dd50bbdf3bf6403e11f091b": 1794411654.8694246,
+    "3d49a28a1104d48a0718cf89768ab0f7baff780c05d85add1f8b485f5c81c5fc": 1794411654.8694246,
+    "6e502120fa33d65141be0293fdee8b086de9aaf251cb9e12691a82dd29acd5b7": 1794411654.8694246,
+    "3d749f06a9d94cf3feafef2a395b7d6d24f9135bf4159716117f2e5660e0eb22": 1794411654.8694246
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Агенту мало дать доступ к коду. Как мы перенесли процесс команды в хуки и гейты",
-      "link": "https://habr.com/ru/companies/avito/articles/1101500/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1101500",
-      "desc": "Привет! Меня зовут Валерий Почтарёв, я развиваю инструменты антифрода и отвечаю за систему контроля доступов пользователей в Авито. Этот материал будет полезен тем, кто внедряет агентов в разработку и упирается в то, что они забывают процессы. Спойлер: мы заставили агентов работать предсказуемо, когда перенесли контроль на уровень детерминированных runtime-ограничений. На старте кажется, что достаточно написать подробные инструкции в AGENTS.md, добавить правила про чистый код и обязательные тесты и дать агенту доступ к кодовой базе. Но в сложном контексте агент легко забывает или обходит текстовые правила в AGENTS.md. Чтобы он их не игнорировал, ему нужен командный слой контекста и жёсткие гейты в runtime, которые он физически не может обойти. Мы в команде Checks (Antifraud) собрали такой сетап — af-checks-context . Сейчас мы раскатываем его с моего личного использования на всю команду, чтобы быстро шарить контекст и автоматизировать процессные договорённости. Расскажу, на чём мы обожглись и почему в какой-то момент его пришлось почистить. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794399611.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 9.0,
-        "event_concreteness": 11.0,
-        "practical_value": 5.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 49.5,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 73.5
-      },
-      "base_score": 49.5,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 73.5,
-      "key": "fe2833c834b487f1ed7ef95bebc7aeaa1a58f5cdda63d876cb22cdce8e0e71cd",
-      "importance": 73.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "tools"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "RUSSIA",
       "title": "От промтов к спецификациям: как я организовал разработку автотестов с ИИ-агентами",
@@ -1365,19 +1327,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 49.0,
+        "base_score": 48.5,
         "audience_score": 8.0,
         "audience_bonus": 24.0,
-        "final_score": 73.0
+        "final_score": 72.5
       },
-      "base_score": 49.0,
+      "base_score": 48.5,
       "audience_bonus": 24.0,
       "score_stage": "final",
-      "score": 73.0,
+      "score": 72.5,
       "key": "debb43f841b4d874200ee57544f5aebb5b95f941424b2278627ea92e93929551",
-      "importance": 73.0,
+      "importance": 72.5,
       "editorial_value": 50.0,
       "topics": [
         "agents"
@@ -1438,19 +1400,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 2.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 47.5,
+        "base_score": 47.0,
         "audience_score": 8.0,
         "audience_bonus": 24.0,
-        "final_score": 71.5
+        "final_score": 71.0
       },
-      "base_score": 47.5,
+      "base_score": 47.0,
       "audience_bonus": 24.0,
       "score_stage": "final",
-      "score": 71.5,
+      "score": 71.0,
       "key": "e3e7de63d30b61d2acbfec1e6b50c30290f7b76ca82db8e86e5d5070716510df",
-      "importance": 71.5,
+      "importance": 71.0,
       "editorial_value": 50.0,
       "topics": [
         "chips"
@@ -1608,6 +1570,43 @@
     },
     {
       "region": "RUSSIA",
+      "title": "Создан «стоп-кран» для ChatGPT на случай его выхода из-под контроля. Он срабатывает с задержкой 35 секунд",
+      "link": "https://www.cnews.ru/news/top/2026-11-11_openai_sozdala_stop-kran_dlya",
+      "desc": "Компания OpenAI заявила, что уже развернута во всей исследовательской инфраструктуре новую систему экстренной остановки выполнения задач своими ИИ-моделями, которые не раз демонстрировали, что способны выйти из-под контроля. Срабатывает система за 35 секунд. Разработчики и сами понимают, что это очень долго. Они обещают доработать механизм.",
+      "source": "CNews",
+      "time": 1794404640.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 12.0,
+        "event_concreteness": 0.0,
+        "practical_value": 6.5,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 3.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 46.0,
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 67.0
+      },
+      "base_score": 46.0,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 67.0,
+      "key": "b471e7507b0abf07ce9befab34cc461e527c672cd7653ea42f63eaf43ef1d76c",
+      "importance": 67.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "models"
+      ],
+      "audience_score": 7.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
       "title": "[Перевод] Чего действительно стоит бояться в ИИ: пять экспертов о безопасности и будущем технологий",
       "link": "https://habr.com/ru/companies/speshu_ai/articles/1106674/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106674",
       "desc": "Разговор о безопасности искусственного интеллекта всё чаще превращается в спор о конце света. Одни предупреждают о потере контроля над сверхразумными системами, другие считают такие прогнозы отвлечением от конкретных проблем. Но за разногласиями о будущем остаются вопросы, требующие решений уже сейчас: кому можно доверять управление критической инфраструктурой, как предотвратить опасные эксперименты и кто должен устанавливать допустимый уровень риска. WIRED поговорил со специалистами по инженерной безопасности, информатике, биотехнологиям и этике. Ниже — пять позиций из этого материала. Эксперты по-разному оценивают вероятность катастрофы, но каждый объясняет, какие угрозы считает наиболее серьёзными и что предлагает с ними делать. Читать далее",
@@ -1642,6 +1641,43 @@
       "audience_score": 6.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+      "desc": "Researchers at Google DeepMind have unveiled a new AI model designed to unravel how changes in our DNA affect different cells, giving scientists a more detailed view of a notoriously difficult problem that could hold important clues to the causes of disease - and point the way to new treatments. AlphaGenome 2 is the successor […]",
+      "source": "The Verge AI",
+      "time": 1794409200.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 8.0,
+        "event_concreteness": 14.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 46.0,
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 64.0
+      },
+      "base_score": 46.0,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 64.0,
+      "key": "ab19fe7265dbb3ab62ee55d52337e6969064c0d915d94840b21ac7d140d68f39",
+      "importance": 64.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "models",
+        "research"
+      ],
+      "audience_score": 6.0,
+      "tier": "A"
     },
     {
       "region": "WORLD",
@@ -1719,43 +1755,6 @@
       "russia_weight_bonus": 0.0
     },
     {
-      "region": "RUSSIA",
-      "title": "В «Бюро 1440» провели тест связи через спутниковый абонентский терминал на Северном морском пути",
-      "link": "https://habr.com/ru/articles/1106456/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106456",
-      "desc": "Российская аэрокосмическая компания «Бюро 1440» (занимается разработкой низкоорбитальной спутниковой группировки и планирует предоставление услуг широкополосной передачи данных с глобальным покрытием, входит в «ИКС Холдинг») совместно с ФГБУ «ГлавСевморпуть», ФГУП «Атомфлот» (предприятия госкорпорации «Росатом») и Федеральным медико-биологическим агентством (ФМБА России) провела тесты спутниковой связи нового поколения в реальных условиях судоходства Севморпути. Система связи с ледоколом впервые была обеспечена спутниковой и наземной инфраструктурой «Бюро 1440». Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794388244.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 12.0,
-        "event_concreteness": 0.0,
-        "practical_value": 6.5,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 42.5,
-        "audience_score": 6.0,
-        "audience_bonus": 18.0,
-        "final_score": 60.5
-      },
-      "base_score": 42.5,
-      "audience_bonus": 18.0,
-      "score_stage": "final",
-      "score": 60.5,
-      "key": "f68ec25695efd3a4f76c46dc87d1a40c30d8f68bd1353dcc6a3cc4a11530e9ee",
-      "importance": 60.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents"
-      ],
-      "audience_score": 6.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
       "region": "WORLD",
       "title": "Athena Secures $2.5M Pre-Seed From a16z Speedrun to Scale AI Agents for Commercial Real Estate Law - AI Insider",
       "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOYlc2MlZTcWNlclVvOThtZXNHMktyTkRuLVl2VTBYdjl6ZEF2NmwwSWR0US12cWlZM0ZTMEdTV1hNbkxreHRnRHQ3XzhXdTNFc195UVI5aW5BZTFoRVVfeXhKU0RWYkV6VUg2SGlJcVJ6RzRZdkZobld5dnBjSVFEOW16UV81T3Jld2ZTUWVPZlYzWDF5YVRHU0pyT0luVkVHVUNwWWVhNG1aanNRVUpYRmF4S2tTNmpiNk9LdGN1VVlIdE0yWnVqOWRXZW1oSVg0?oc=5",
@@ -1791,6 +1790,43 @@
       ],
       "audience_score": 7.0,
       "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "В «Бюро 1440» провели тест связи через спутниковый абонентский терминал на Северном морском пути",
+      "link": "https://habr.com/ru/articles/1106456/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106456",
+      "desc": "Российская аэрокосмическая компания «Бюро 1440» (занимается разработкой низкоорбитальной спутниковой группировки и планирует предоставление услуг широкополосной передачи данных с глобальным покрытием, входит в «ИКС Холдинг») совместно с ФГБУ «ГлавСевморпуть», ФГУП «Атомфлот» (предприятия госкорпорации «Росатом») и Федеральным медико-биологическим агентством (ФМБА России) провела тесты спутниковой связи нового поколения в реальных условиях судоходства Севморпути. Система связи с ледоколом впервые была обеспечена спутниковой и наземной инфраструктурой «Бюро 1440». Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794388244.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 12.0,
+        "event_concreteness": 0.0,
+        "practical_value": 6.5,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 0.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 42.0,
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 60.0
+      },
+      "base_score": 42.0,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 60.0,
+      "key": "f68ec25695efd3a4f76c46dc87d1a40c30d8f68bd1353dcc6a3cc4a11530e9ee",
+      "importance": 60.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents"
+      ],
+      "audience_score": 6.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     },
     {
       "region": "RUSSIA",
@@ -1905,71 +1941,34 @@
       "russia_weight_bonus": 0.0
     },
     {
-      "region": "WORLD",
-      "title": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
-      "desc": "Researchers at Google DeepMind have unveiled a new AI model designed to unravel how changes in our DNA affect different cells, giving scientists a more detailed view of a notoriously difficult problem that could hold important clues to the causes of disease - and point the way to new treatments. AlphaGenome 2 is the successor […]",
-      "source": "The Verge AI",
-      "time": 1794409200.0,
+      "region": "RUSSIA",
+      "title": "В Сбербанке создали компактную ИИ-модель, которая проверяет качество ответов других нейросетей",
+      "link": "https://www.cnews.ru/news/line/2026-11-11_v_sberbanke_sozdali_kompaktnuyu",
+      "desc": "Исследователи из управления экспериментальных систем машинного обучения Сбербанка представили Pollux — открытую...",
+      "source": "CNews",
+      "time": 1794410940.0,
       "_score_components": {
         "relevance": 12.0,
         "ai_specificity": 4.5,
-        "impact": 8.0,
-        "event_concreteness": 14.5,
+        "impact": 10.0,
+        "event_concreteness": 14.0,
         "practical_value": 0.0,
         "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
+        "source_quality": 5.0,
+        "evidence": 1.0,
         "freshness": 2.0,
         "low_signal_penalty": 0.0,
-        "base_score": 46.0,
+        "base_score": 48.5,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 46.0
+        "final_score": 48.5
       },
-      "base_score": 46.0,
+      "base_score": 48.5,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 46.0,
-      "key": "ab19fe7265dbb3ab62ee55d52337e6969064c0d915d94840b21ac7d140d68f39",
-      "importance": 46.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "models",
-        "research"
-      ],
-      "audience_score": null,
-      "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Создан «стоп-кран» для ChatGPT на случай его выхода из-под контроля. Он срабатывает с задержкой 35 секунд",
-      "link": "https://www.cnews.ru/news/top/2026-11-11_openai_sozdala_stop-kran_dlya",
-      "desc": "Компания OpenAI заявила, что уже развернута во всей исследовательской инфраструктуре новую систему экстренной остановки выполнения задач своими ИИ-моделями, которые не раз демонстрировали, что способны выйти из-под контроля. Срабатывает система за 35 секунд. Разработчики и сами понимают, что это очень долго. Они обещают доработать механизм.",
-      "source": "CNews",
-      "time": 1794404640.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 12.0,
-        "event_concreteness": 0.0,
-        "practical_value": 6.5,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 3.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 46.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 46.0
-      },
-      "base_score": 46.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 46.0,
-      "key": "b471e7507b0abf07ce9befab34cc461e527c672cd7653ea42f63eaf43ef1d76c",
-      "importance": 46.0,
+      "score": 48.5,
+      "key": "6ece9268d5dd5e719f06d82b7159b66aa209f9277dd50bbdf3bf6403e11f091b",
+      "importance": 48.5,
       "editorial_value": 50.0,
       "topics": [
         "models"
@@ -1980,36 +1979,36 @@
     },
     {
       "region": "RUSSIA",
-      "title": "Какие GPU выбрать для обучения ИИ, инференса и работы с графикой: обзор возможностей Рег.облака",
-      "link": "https://habr.com/ru/companies/runity/articles/1106630/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106630",
-      "desc": "В публичном облаке Рег.облака теперь можно самостоятельно заказать серверы с NVIDIA H100 и RTX PRO 6000 Blackwell, оформить предзаказ NVIDIA H200 или подписаться на уведомление о появлении свободных GPU-ресурсов. В линейке Cloud GPU Pro представлены три ускорителя для разных вычислительных задач. Разберем, какой из них выбрать 👇🏻 Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794400624.0,
+      "title": "Google запустила ИИ-агента для клиник и страховых компаний - Medvestnik",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSU54ZElNQlZvc09lWWhUbC1IX1FPWHhfM0p0YXRlZlpvQjh0enc4UmhJdjluNWJNQTRHaUpzZFZtV1pTTjVkMUdwbXlHZXBIZy1sMEVHc2VqWGhLeDVlbDJNXy1WdFRKX1Fnc2lsTkNUVGViaWdQNGNLVXhfOFJzYXVjOEpjME40eWp5b1ZacHJzb3UzSWFMUTZBVG5vdWQt?oc=5",
+      "desc": "Google запустила ИИ-агента для клиник и страховых компаний Medvestnik",
+      "source": "Medvestnik",
+      "time": 1794410101.0,
       "_score_components": {
         "relevance": 12.0,
         "ai_specificity": 4.5,
         "impact": 10.0,
         "event_concreteness": 13.0,
-        "practical_value": 0.0,
+        "practical_value": 3.0,
         "novelty": 0.0,
         "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 1.5,
+        "evidence": 1.0,
+        "freshness": 2.0,
         "low_signal_penalty": 0.0,
-        "base_score": 46.0,
+        "base_score": 47.5,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 46.0
+        "final_score": 47.5
       },
-      "base_score": 46.0,
+      "base_score": 47.5,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 46.0,
-      "key": "bda5f3e11e738514406aff9b15a5892ee88db5a11d9a7ec714d6d72b06881560",
-      "importance": 46.0,
+      "score": 47.5,
+      "key": "3d49a28a1104d48a0718cf89768ab0f7baff780c05d85add1f8b485f5c81c5fc",
+      "importance": 47.5,
       "editorial_value": 50.0,
       "topics": [
-        "chips"
+        "agents"
       ],
       "audience_score": null,
       "tier": "A",
@@ -2017,11 +2016,11 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794409480.7137918,
+    "last_start_ts": 1794411654.8694246,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794409480.7137918,
-    "last_success_ts": 1794409480.7137918,
+    "last_run_ts": 1794411654.8694246,
+    "last_success_ts": 1794411654.8694246,
     "last_candidates": 48,
     "last_published": 1,
     "queue_size": 19
@@ -2030,7 +2029,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794409529.8808637
+      "updated_at": 1794411685.990489
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2054,13 +2053,6 @@
     }
   },
   "stories": {
-    "152e8bc32df9bc1752cb7a8ae880aa83c8aeb7efdfb5afff147d8e3a97faabab": {
-      "time": 1794325047,
-      "title": "Создаваемая микроэлектронная корпорация может купить новую фабрику у знаменитого создателя мобильных чипов",
-      "desc": "В рамках создания «Объединенной микроэлектронной корпорации» рассматривается возможность приобрести фабрику «Элко», принадлежащую разработчику мобильных процессоров НПЦ «ЭЛВИС». Покупка намечена на 2027 год, на который в проекте стратегии предусмотрено 170 млрд рублей. Фабрика обладает производственной площадкой в 1 га.",
-      "source": "CNews",
-      "region": "RUSSIA"
-    },
     "1af2246f6f689a427402c656b0d9bd498ef2ed33c4cca06f381d9493e8cda9e1": {
       "time": 1794325972,
       "title": "Cyberattacks threaten to make open-source AI a little less open, Hugging Face exec warns",
@@ -2445,6 +2437,13 @@
       "desc": "Trump says FBI is probing Nvidia CEO as chipmaker heads for $470 billion wipeout, exposing the US technology behind AI infrastructure across South Africa, Nigeria, Kenya, Egypt and Morocco Business Insider Africa",
       "source": "Business Insider Africa",
       "region": "WORLD"
+    },
+    "fe2833c834b487f1ed7ef95bebc7aeaa1a58f5cdda63d876cb22cdce8e0e71cd": {
+      "time": 1794411654,
+      "title": "Агенту мало дать доступ к коду. Как мы перенесли процесс команды в хуки и гейты",
+      "desc": "Привет! Меня зовут Валерий Почтарёв, я развиваю инструменты антифрода и отвечаю за систему контроля доступов пользователей в Авито. Этот материал будет полезен тем, кто внедряет агентов в разработку и упирается в то, что они забывают процессы. Спойлер: мы заставили агентов работать предсказуемо, когда перенесли контроль на уровень детерминированных runtime-ограничений. На старте кажется, что достаточно написать подробные инструкции в AGENTS.md, добавить правила про чистый код и обязательные тесты и дать агенту доступ к кодовой базе. Но в сложном контексте агент легко забывает или обходит текстовые правила в AGENTS.md. Чтобы он их не игнорировал, ему нужен командный слой контекста и жёсткие гейты в runtime, которые он физически не может обойти. Мы в команде Checks (Antifraud) собрали такой сетап — af-checks-context . Сейчас мы раскатываем его с моего личного использования на всю команду, чтобы быстро шарить контекст и автоматизировать процессные договорённости. Расскажу, на чём мы обожглись и почему в какой-то момент его пришлось почистить. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
@@ -2453,7 +2452,6 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "RUSSIA",
@@ -2467,90 +2465,10 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794213433,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 16.94,
-      "candidates": 0,
-      "queue_before": 2,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 4,
-          "average_score": 1.75,
-          "bonus_total": 21.0,
-          "max_score": 2.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 1.0,
-            "bonus": 3.0,
-            "reason": "Новость не имеет практического влияния на бизнес-процессы или технологии для профессионалов.",
-            "title": "AI, Cybersecurity and Cloud Computing Take Centre Stage as Manamela Launches Northlink Digital Hub - Central News South Africa",
-            "final_score": 43.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794214139,
       "status": "OK",
@@ -22688,11 +22606,150 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794411654,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 53.3,
+      "candidates": 48,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 19,
+        "already_queued": 9,
+        "story_queue": 0,
+        "story_history": 7,
+        "added": 4,
+        "candidate_count": 48,
+        "admission_rate": 8.33,
+        "dominant_block": "known_recent",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/companies/avito/articles/1101500/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1101500",
+            "image_url": "https://habr.com/share/publication/1101500/61a12ebad2957f13dc283ec743f867a9/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.0,
+          "bonus_total": 63.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Внедрение жестких runtime-ограничений для агентов критически снижает риск поломки продакшена при автоматизации разработки.",
+            "title": "Агенту мало дать доступ к коду. Как мы перенесли процесс команды в хуки и гейты",
+            "final_score": 73.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 199,
+        "raw_items": 1157,
+        "source_counts": {
+          "TechCrunch AI": 3,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 2,
+          "Google DeepMind": 1,
+          "Hugging Face": 1,
+          "Ars Technica": 1,
+          "Habr AI/News": 40,
+          "CNews": 99,
+          "Euronews": 50
+        },
+        "score_filtered": 1046,
+        "quality_filtered": 51,
+        "story_dedup": 12,
+        "candidates": 48,
+        "candidate_rate": 0.0501,
+        "score_buckets": {
+          "0–39": 981,
+          "40–49": 115,
+          "50–59": 57,
+          "60–69": 4,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 6,
+          "7": 4,
+          "8": 6,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794409480.7137918,
-  "last_publish_ts": 1794409480.7137918,
+  "last_search_ts": 1794411654.8694246,
+  "last_publish_ts": 1794411654.8694246,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
