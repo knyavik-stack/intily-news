@@ -1279,7 +1279,8 @@
     "b1755bb8ee863e256abad31b2f66144cc1ad9ce196433b88f611f522c2dac8d8": 1794389337,
     "d394174723954904e48823467ae1c52d78093915cb38c7b69bd84773ebfa41d9": 1794389820,
     "d1451a39af8f3d3845bc342bf38bc1bd4865239ba76ff21adf854d1836543567": 1794391021,
-    "73e09d1cf16b092b732b4a4855e3487cb05891ca8801c794a0b06eb42500301f": 1794391975
+    "73e09d1cf16b092b732b4a4855e3487cb05891ca8801c794a0b06eb42500301f": 1794391975,
+    "43278e4eb2f688ddb2afb8833b548ca1272f00531d8c3f24273953ffa69fb283": 1794392220
   },
   "known": {
     "443fc6e3f2166a36625aa0634aa310c5c005abca02ae4b51a4c3afc0793255c4": 1794388142.321393,
@@ -1293,44 +1294,6 @@
     "f68ec25695efd3a4f76c46dc87d1a40c30d8f68bd1353dcc6a3cc4a11530e9ee": 1794390551.0275354
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Автономный SDLC на AI-агентах: очередь задач, границы решений и контроль результата",
-      "link": "https://habr.com/ru/articles/1106472/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106472",
-      "desc": "Подключение нескольких AI-агентов к проекту ещё не делает разработку автономной. Можно разделить исполнителей по ролям, настроить специализированные промпты и автоматизировать написание кода, но при этом сохранить главную проблему: человек по-прежнему назначает каждую следующую задачу, контролирует переходы между этапами, проверяет результаты и решает, что делать дальше. Здесь возникает более интересный вопрос: можно ли делегировать AI-агентам не только исполнение, но и ответственность за управление производственным процессом — без потери контроля над качеством, ресурсами и критическими решениями? Один из вариантов решения — архитектура, в которой управляющий агент самостоятельно работает с бэклогом, учитывает зависимости и ограничения, назначает исполнителей, организует ревью и выбирает следующую задачу. Человек определяет стратегические цели и границы полномочий, а вмешивается преимущественно на контрольных точках и при возникновении исключений. Такой подход применяется при разработке Ghosts on the Side Job — кооперативной 2.5D игры на Unity. Производство включает программирование, создание графических материалов, сборку игровых локаций и тестирование. Координация этих направлений организована через специализированных AI-агентов и файловую систему управления задачами. При этом автономность ограничена вполне конкретными механизмами: контрактами задач, разделением полномочий, программными проверками и очередью решений, требующих участия человека. Состояние проекта сохраняется вне контекста модели, что позволяет продолжать работу после перезапуска сессии и создаёт основу для переноса процессов между моделями. Но самое интересное начинается там, где результат не соответствует ожиданиям. В статье разобран реальный производственный кейс: при создании игровой локации пришлось изменить не только способ реализации, но и сам порядок согласования работ. Вместо дальнейших доработок всей сцены был введён отдельный этап проверки методики на одной игровой камере. В материале — архитектура взаимодействия агентов, реальные конфигурации и контракты задач, границы автономных решений, пример изменения производственного процесса и ограничения подхода. Отдельно рассматривается цена такой организации: дополнительные токены, повторная загрузка контекста, стоимость ревью и необходимость измерять эффективность, а не предполагать её. Главный вопрос — не сколько задач способны выполнить AI-агенты, а как организовать процесс, в котором они самостоятельно принимают допустимые решения, а человек сохраняет контроль над результатом, не управляя каждым шагом. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794388579.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 12.0,
-        "event_concreteness": 0.0,
-        "practical_value": 8.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 45.0,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 69.0
-      },
-      "base_score": 45.0,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 69.0,
-      "key": "43278e4eb2f688ddb2afb8833b548ca1272f00531d8c3f24273953ffa69fb283",
-      "importance": 69.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "tools"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "RUSSIA",
       "title": "ZALA представила новую бортовую платформу «Арсенал»: интеллектуальный центр БПЛА",
@@ -1404,6 +1367,43 @@
       "audience_score": 8.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "Anthropic launches Claude Sheets and Meetings in a push into office software as Microsoft shares fall - MLQ.ai",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNLUpYVS0yMVE3cUdEWl95azhnUEJXa2Q5Q3F6QnF2WFNsMzlVRUFoMlZHN0F5STVDckhZWl9KV3BDT21rT1F4RW8yZEZXYk9JZ1VoMDB0MVJPTUtnQUZKeHpzbXA0VEdBNUx6bURuRndHaXFiOVJOVE9Ca2R6clBNU3J1ZW1iWU5XV0t2X3NlQkhIVFJ5eUFGVHFvZE5fZEEtRmF0Q29HQS1NdUVYY2VUZHZ0M0xmZ21zOE11R1pWOA?oc=5",
+      "desc": "Anthropic launches Claude Sheets and Meetings in a push into office software as Microsoft shares fall MLQ.ai",
+      "source": "MLQ.ai",
+      "time": 1794356272.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 7.0,
+        "event_concreteness": 13.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 0.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 40.0,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 64.0
+      },
+      "base_score": 40.0,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 64.0,
+      "key": "ffe5abed68225afe6f57737051f7aa41e6b67b950219cabe4b80e17c97728e6e",
+      "importance": 64.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "models",
+        "tools"
+      ],
+      "audience_score": 8.0,
+      "tier": "A"
     },
     {
       "region": "WORLD",
@@ -1811,60 +1811,23 @@
       "audience_score": null,
       "tier": "A",
       "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "WORLD",
-      "title": "Anthropic launches Claude Sheets and Meetings in a push into office software as Microsoft shares fall - MLQ.ai",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNLUpYVS0yMVE3cUdEWl95azhnUEJXa2Q5Q3F6QnF2WFNsMzlVRUFoMlZHN0F5STVDckhZWl9KV3BDT21rT1F4RW8yZEZXYk9JZ1VoMDB0MVJPTUtnQUZKeHpzbXA0VEdBNUx6bURuRndHaXFiOVJOVE9Ca2R6clBNU3J1ZW1iWU5XV0t2X3NlQkhIVFJ5eUFGVHFvZE5fZEEtRmF0Q29HQS1NdUVYY2VUZHZ0M0xmZ21zOE11R1pWOA?oc=5",
-      "desc": "Anthropic launches Claude Sheets and Meetings in a push into office software as Microsoft shares fall MLQ.ai",
-      "source": "MLQ.ai",
-      "time": 1794356272.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 7.0,
-        "event_concreteness": 13.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 40.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 40.0
-      },
-      "base_score": 40.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 40.0,
-      "key": "ffe5abed68225afe6f57737051f7aa41e6b67b950219cabe4b80e17c97728e6e",
-      "importance": 40.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "models",
-        "tools"
-      ],
-      "audience_score": null,
-      "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1794391975.1783273,
+    "last_start_ts": 1794392220.4038951,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794391975.1783273,
-    "last_success_ts": 1794391975.1783273,
+    "last_run_ts": 1794392220.4038951,
+    "last_success_ts": 1794392220.4038951,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 15
+    "queue_size": 14
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794391980.030877
+      "updated_at": 1794392225.6202824
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2314,10 +2277,16 @@
       "desc": "Google launches Gemini Robotics 2.5, says robots achieve 96% success rate India Today",
       "source": "India Today",
       "region": "WORLD"
+    },
+    "43278e4eb2f688ddb2afb8833b548ca1272f00531d8c3f24273953ffa69fb283": {
+      "time": 1794392220,
+      "title": "Автономный SDLC на AI-агентах: очередь задач, границы решений и контроль результата",
+      "desc": "Подключение нескольких AI-агентов к проекту ещё не делает разработку автономной. Можно разделить исполнителей по ролям, настроить специализированные промпты и автоматизировать написание кода, но при этом сохранить главную проблему: человек по-прежнему назначает каждую следующую задачу, контролирует переходы между этапами, проверяет результаты и решает, что делать дальше. Здесь возникает более интересный вопрос: можно ли делегировать AI-агентам не только исполнение, но и ответственность за управление производственным процессом — без потери контроля над качеством, ресурсами и критическими решениями? Один из вариантов решения — архитектура, в которой управляющий агент самостоятельно работает с бэклогом, учитывает зависимости и ограничения, назначает исполнителей, организует ревью и выбирает следующую задачу. Человек определяет стратегические цели и границы полномочий, а вмешивается преимущественно на контрольных точках и при возникновении исключений. Такой подход применяется при разработке Ghosts on the Side Job — кооперативной 2.5D игры на Unity. Производство включает программирование, создание графических материалов, сборку игровых локаций и тестирование. Координация этих направлений организована через специализированных AI-агентов и файловую систему управления задачами. При этом автономность ограничена вполне конкретными механизмами: контрактами задач, разделением полномочий, программными проверками и очередью решений, требующих участия человека. Состояние проекта сохраняется вне контекста модели, что позволяет продолжать работу после перезапуска сессии и создаёт основу для переноса процессов между моделями. Но самое интересное начинается там, где результат не соответствует ожиданиям. В статье разобран реальный производственный кейс: при создании игровой локации пришлось изменить не только способ реализации, но и сам порядок согласования работ. Вместо дальнейших доработок всей сцены был введён отдельный этап проверки методики на одной игровой камере. В материале — архитектура взаимодействия агентов, реальные конфигурации и контракты задач, границы автономных решений, пример изменения производственного процесса и ограничения подхода. Отдельно рассматривается цена такой организации: дополнительные токены, повторная загрузка контекста, стоимость ревью и необходимость измерять эффективность, а не предполагать её. Главный вопрос — не сколько задач способны выполнить AI-агенты, а как организовать процесс, в котором они самостоятельно принимают допустимые решения, а человек сохраняет контроль над результатом, не управляя каждым шагом. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -2336,139 +2305,10 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794167101,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 32.52,
-      "candidates": 12,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 12,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 12,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.5,
-          "bonus_total": 51.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Высокий риск блокировки или штрафов для продуктов, использующих генерацию музыки без лицензионной чистоты.",
-            "title": "Elvis and Eminem rights holders are suing Suno",
-            "final_score": 67.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 34,
-        "raw_items": 723,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 10,
-          "CNews": 0,
-          "Euronews": 21
-        },
-        "score_filtered": 701,
-        "quality_filtered": 10,
-        "story_dedup": 0,
-        "candidates": 12,
-        "candidate_rate": 0.0174,
-        "score_buckets": {
-          "0–39": 671,
-          "40–49": 40,
-          "50–59": 11,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794167345,
       "status": "OK",
@@ -23075,11 +22915,101 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794392220,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 12.5,
+      "candidates": 0,
+      "queue_before": 15,
+      "queue_after": 14,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://habr.com/ru/articles/1106472/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106472",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 6.33,
+          "bonus_total": 57.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Внедрение агентской архитектуры позволяет радикально снизить затраты на микроменеджмент в разработке ПО.",
+            "title": "Автономный SDLC на AI-агентах: очередь задач, границы решений и контроль результата",
+            "final_score": 68.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1794390551.0275354,
-  "last_publish_ts": 1794391975.1783273,
+  "last_publish_ts": 1794392220.4038951,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
