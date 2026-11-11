@@ -1277,7 +1277,8 @@
     "ff000ba2664e0087095f8085b72af4cd9f7cb1fae49f96e2e1e4a082354e8e73": 1794409480,
     "fe2833c834b487f1ed7ef95bebc7aeaa1a58f5cdda63d876cb22cdce8e0e71cd": 1794411654,
     "6ece9268d5dd5e719f06d82b7159b66aa209f9277dd50bbdf3bf6403e11f091b": 1794413316,
-    "8cc0239b0caffd2746e898683e164b0a80da0fe91e42f2fe54f403565fd9f298": 1794414280
+    "8cc0239b0caffd2746e898683e164b0a80da0fe91e42f2fe54f403565fd9f298": 1794414280,
+    "debb43f841b4d874200ee57544f5aebb5b95f941424b2278627ea92e93929551": 1794414759
   },
   "known": {
     "ab19fe7265dbb3ab62ee55d52337e6969064c0d915d94840b21ac7d140d68f39": 1794409480.7137918,
@@ -1311,43 +1312,6 @@
     "14eda26ee211ae62aea37bdb64c27f263e03d91f957aa21ae7b83d021004720d": 1794413558.4585154
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "От промтов к спецификациям: как я организовал разработку автотестов с ИИ-агентами",
-      "link": "https://habr.com/ru/companies/cloud_ru/articles/1106538/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106538",
-      "desc": "Представим обычную задачу: нужно расширить покрытие REST API автотестами. Сейчас с такими задачами справляются ИИ-агенты: изучают существующий код, добавляют необходимые методы клиента, пишут тестовые сценарии и возвращают готовую реализацию. На первый взгляд все отлично. Тесты написаны, код аккуратный, а pytest успешно собирает новые проверки. Но означает ли это, что задача действительно выполнена? Не обязательно. Например, агент может проверить, что при некорректном запросе API возвращает HTTP 400, но не проверить структуру тела ошибки. Или убедиться, что запрос на удаление Git-тега завершился успешно, но не проверить, исчез ли тег из самого репозитория. Формально тесты есть. Возможно, они даже проходят. Но насколько им можно доверять? С этой проблемой я столкнулся, когда начинал активно делегировать ИИ-агентам разработку автотестов. В этой статье я покажу, как получилось организовать работу по методологии Specification-Driven Development (SDD), через фреймворк OpenSpec с помощью специализированных ИИ-агентов. Разберу реальные задачи по тестированию REST API и расскажу, почему успешный запуск тестов еще не означает, что тест не фигня. Материал преимущественно для тех, кто на «ты» с API, Python, pytest, тест-дизайном и базово использует LLM, но еще не разобрался с организацией работы через спецификации (SDD, OpenSpec), многоагентную оркестрацию и разделение ролей. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794407121.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 10.0,
-        "event_concreteness": 11.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 48.5,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 72.5
-      },
-      "base_score": 48.5,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 72.5,
-      "key": "debb43f841b4d874200ee57544f5aebb5b95f941424b2278627ea92e93929551",
-      "importance": 72.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "WORLD",
       "title": "Australia to launch AI safety regulator after OpenAI’s breach of a government portal - Colorado Hometown Weekly",
@@ -2016,20 +1980,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794414280.3465533,
+    "last_start_ts": 1794414759.0896125,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794414280.3465533,
-    "last_success_ts": 1794414280.3465533,
+    "last_run_ts": 1794414759.0896125,
+    "last_success_ts": 1794414759.0896125,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 19
+    "queue_size": 18
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794414280.2210035
+      "updated_at": 1794414762.547419
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2437,12 +2401,18 @@
       "desc": "«Базис» представил платформу Basis Air для управления графическими ускорителями и ИИ-нагрузками. По оценке разработчика, решение повышает эффективность использования GPU более чем в два раза, позволяя сократить потребность в закупке оборудования. Продукт работает с разными инфраструктурными платформами и не требует обязательного использования другого ПО компании.",
       "source": "CNews",
       "region": "RUSSIA"
+    },
+    "debb43f841b4d874200ee57544f5aebb5b95f941424b2278627ea92e93929551": {
+      "time": 1794414759,
+      "title": "От промтов к спецификациям: как я организовал разработку автотестов с ИИ-агентами",
+      "desc": "Представим обычную задачу: нужно расширить покрытие REST API автотестами. Сейчас с такими задачами справляются ИИ-агенты: изучают существующий код, добавляют необходимые методы клиента, пишут тестовые сценарии и возвращают готовую реализацию. На первый взгляд все отлично. Тесты написаны, код аккуратный, а pytest успешно собирает новые проверки. Но означает ли это, что задача действительно выполнена? Не обязательно. Например, агент может проверить, что при некорректном запросе API возвращает HTTP 400, но не проверить структуру тела ошибки. Или убедиться, что запрос на удаление Git-тега завершился успешно, но не проверить, исчез ли тег из самого репозитория. Формально тесты есть. Возможно, они даже проходят. Но насколько им можно доверять? С этой проблемой я столкнулся, когда начинал активно делегировать ИИ-агентам разработку автотестов. В этой статье я покажу, как получилось организовать работу по методологии Specification-Driven Development (SDD), через фреймворк OpenSpec с помощью специализированных ИИ-агентов. Разберу реальные задачи по тестированию REST API и расскажу, почему успешный запуск тестов еще не означает, что тест не фигня. Материал преимущественно для тех, кто на «ты» с API, Python, pytest, тест-дизайном и базово использует LLM, но еще не разобрался с организацией работы через спецификации (SDD, OpenSpec), многоагентную оркестрацию и разделение ролей. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "RUSSIA",
@@ -2457,99 +2427,12 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794215587,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 10.58,
-      "candidates": 0,
-      "queue_before": 3,
-      "queue_after": 2,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.cnews.ru/news/line/2026-11-09_personalnyj_pomoshchnik_v",
-            "image_url": "https://www.cnews.ru/img/design2008/logocnews_f.png",
-            "width": 600,
-            "height": 315,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 6.5,
-          "bonus_total": 39.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Показывает тренд на внедрение LLM в e-commerce, но для профи это лишь очередной кейс автоматизации маркетинга.",
-            "title": "Персональный помощник в шопинге: «Ашан» запустил ИИ-ассистента «Клик» в «Макс»",
-            "final_score": 58.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794216062,
       "status": "OK",
@@ -22675,11 +22558,101 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794414759,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 4.39,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 18,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://habr.com/ru/companies/cloud_ru/articles/1106538/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106538",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 24.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Внедрение SDD и оркестрации агентов критически важно для предотвращения деградации качества кода при автоматизации тестирования.",
+            "title": "От промтов к спецификациям: как я организовал разработку автотестов с ИИ-агентами",
+            "final_score": 72.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1794413558.4585154,
-  "last_publish_ts": 1794414280.3465533,
+  "last_publish_ts": 1794414759.0896125,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
