@@ -1,6 +1,5 @@
 {
   "published": {
-    "dde36d5f8e3e417d01784553ed465c82bf3db8af9bea9188f657f4d3844b883b": 1791830230,
     "de84733e770e2dbd79bb3c1389201a1b85cf45043040e372b80d9a9e9779f745": 1791832871,
     "27e0edb1df5f6fde8c78be74a310505ca2aa51d171213e128f12f52e83a7eeab": 1791833107,
     "baa27e1c7d4c352cb0d4cd416a588d89054cd15563e4c3bd2819d09ba1405937": 1791834289,
@@ -1972,13 +1971,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794421720.1272776,
+    "last_start_ts": 1794422451.1468387,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794421720.1272776,
-    "last_success_ts": 1794421720.1272776,
+    "last_run_ts": 1794422451.1468387,
+    "last_success_ts": 1794422451.1468387,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 18
   },
   "providers": {
@@ -1988,14 +1987,14 @@
       "updated_at": 1794421723.100461
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794421726.4288142
+      "disabled_until": 1794426032.6382613,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794422432.6382644
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794420514.6606512
+      "disabled_until": 1794508851.0396903,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794422451.0396912
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2003,19 +2002,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794420514.6606512
+      "disabled_until": 1794426049.6833332,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794422449.6833348
     }
   },
   "stories": {
-    "f5dfb3768933a33ae85871b0a8f028e10be71c5bfdef33d0b240f66036fdbe15": {
-      "time": 1794335342,
-      "title": "OpenAI launches business profiles, AI agents for U.S. e-commerce firms - Traders Union",
-      "desc": "OpenAI launches business profiles, AI agents for U.S. e-commerce firms Traders Union",
-      "source": "Traders Union",
-      "region": "WORLD"
-    },
     "01c6f4fd27b613cfe598a40c51faa95a6775298b374cf5f98d7128d9bd7a9c1f": {
       "time": 1794336775,
       "title": "ChatGPT is getting verified AI ‘Business Agents’",
@@ -2453,146 +2445,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794219666,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 36.37,
-      "candidates": 26,
-      "queue_before": 1,
-      "queue_after": 8,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 15,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 8,
-        "candidate_count": 26,
-        "admission_rate": 30.77,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/articles/1104778/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1104778",
-            "image_url": "https://habr.com/share/publication/1104778/516ab0e515180324ad6bf9f8c4af7141/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Показывает реальную возможность делегирования разработки агентам, что требует пересмотра процессов найма и оценки стоимости создания MVP.",
-            "title": "Я протестировал DeepSeek Harness и вот что у меня получилось",
-            "final_score": 78.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 6,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 125,
-        "raw_items": 714,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 40,
-          "CNews": 51,
-          "Euronews": 32
-        },
-        "score_filtered": 664,
-        "quality_filtered": 23,
-        "story_dedup": 1,
-        "candidates": 26,
-        "candidate_rate": 0.0441,
-        "score_buckets": {
-          "0–39": 630,
-          "40–49": 55,
-          "50–59": 23,
-          "60–69": 6,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 1,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794219910,
       "status": "OK",
@@ -22577,6 +22429,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1794422451,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 22.21,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 18,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
