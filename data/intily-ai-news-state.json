@@ -1,6 +1,5 @@
 {
   "published": {
-    "c92133949ff98f396ce56ab9e8ad818ab45319a5bbde4fca7197f752bbcbbc40": 1791828291,
     "0d749272e23b014823ceaa97ce543db24abcec7ad09c00285842732bfb9f3d11": 1791829251,
     "dde36d5f8e3e417d01784553ed465c82bf3db8af9bea9188f657f4d3844b883b": 1791830230,
     "de84733e770e2dbd79bb3c1389201a1b85cf45043040e372b80d9a9e9779f745": 1791832871,
@@ -1277,7 +1276,8 @@
     "debb43f841b4d874200ee57544f5aebb5b95f941424b2278627ea92e93929551": 1794414759,
     "682b6a38772562e402615686b41407498652819009e68e2524c313dd8183fbb6": 1794415949,
     "3d49a28a1104d48a0718cf89768ab0f7baff780c05d85add1f8b485f5c81c5fc": 1794417402,
-    "e3e7de63d30b61d2acbfec1e6b50c30290f7b76ca82db8e86e5d5070716510df": 1794419310
+    "e3e7de63d30b61d2acbfec1e6b50c30290f7b76ca82db8e86e5d5070716510df": 1794419310,
+    "b30ea189c49205e663c967bafd89719f5504da62733120eb8e3215bb06121ccb": 1794420528
   },
   "known": {
     "5620486f97183c2d79bd9c6f255e00d67288bcaf22e8b13fa47427a241c8107b": 1794415949.572878,
@@ -1306,44 +1306,6 @@
     "e5e74cbb55bef5c44f3ebd4e77fe2ec0509720925657a1d48c51a83092c697e8": 1794419310.2644393
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Оптимизация холодного старта vLLM: собираем прогретый OCI образ Deepseek и GLM и запускаем за 30 секунд",
-      "link": "https://habr.com/ru/articles/1106794/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106794",
-      "desc": "Всем привет! Меня зовут Кирилл, я больше десяти лет разрабатываю облака и инфраструктуру. Но последние пару месяцев в рамках R&D я достаточно много занимаюсь инференсом: платформами для него и оптимизацией всего, что вокруг, в частности проектом Serverless GPU с механиками примерно как у Modal или RunPod FlashBoot. Одна из самых болезненных вещей здесь - холодный старт моделей. Каждый MLOps инженер, кто ждал перезапуск пода с vLLM / SGLang по 30 минут знает о чем я говорю. Это особенно актуально, если вы делаете инференс на нескольких облачных провайдерах и спотовом GPU рынке, где может случиться прерывание vm или контейнера, так что способность быстро запускаться - must have в таких условиях. Хорошие новости - чтобы решить эту проблему около месяца назад я начал работу над open-source проектом warmctl , о нём сегодня в посте. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794417693.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 8.0,
-        "event_concreteness": 10.5,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 46.5,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 70.5
-      },
-      "base_score": 46.5,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 70.5,
-      "key": "b30ea189c49205e663c967bafd89719f5504da62733120eb8e3215bb06121ccb",
-      "importance": 70.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "chips",
-        "tools"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "RUSSIA",
       "title": "Как устроен драйвер NVIDIA для карт-франкенштейнов: обход NVI2, WDDM 3.2 и запуск без тестового режима",
@@ -1380,6 +1342,43 @@
       "audience_score": 8.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "OpenAI Launches Control Room 'Kill Switch' for Rogue Agents - BankInfoSecurity",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdTUwR1FYbV94dXA4VzFROUZaNTd2RGlCSFVFQk1nM0VrM1hia3FINGVkMm5iY2pRbUNYanFWQ081TmllZ1l5emNxNWk5Vk5kdVVPcUxnaUJ4NU95NkxzZnJUU0J4dlZ6eF8zY0RIeVpxWEdoYlZLNUsyTGx0c08tbDVSRzd4UDhMeWE3Yy0tOHFHeXB2RmlBTGJPTHFGVm8?oc=5",
+      "desc": "OpenAI Launches Control Room 'Kill Switch' for Rogue Agents BankInfoSecurity",
+      "source": "BankInfoSecurity",
+      "time": 1794410348.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 11.0,
+        "event_concreteness": 13.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 46.0,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 70.0
+      },
+      "base_score": 46.0,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 70.0,
+      "key": "6e502120fa33d65141be0293fdee8b086de9aaf251cb9e12691a82dd29acd5b7",
+      "importance": 70.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "security_regulation"
+      ],
+      "audience_score": 8.0,
+      "tier": "A"
     },
     {
       "region": "RUSSIA",
@@ -1715,6 +1714,42 @@
       "tier": "A"
     },
     {
+      "region": "WORLD",
+      "title": "Zendesk launches public directory to help AI agents find A2A service options for customers | CX Network - CX Network",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNmVQQXU3OGpZZFp3WmZtWDROX3RjM2tYMjM3dk0yeVlKY2FHNWVhQ3FvZGZ2RzlZVnVsZ1E5Y3hLdHBZdGtRbHFTaXZSSGthUE9YMTh5d0k4UGpKTjJHY2JuVExxZE5jOTJQTEZuNUJRZlA5MkJ6bnltaVRCNnpUaDhad1VRY3MxWkp5eHMzMnZyY2s3V0tyRVpkWU9qRlVMNGU3U01SXzNMY3Z6WGdUaVp5Q1JoVzBrMVdJbWxTcmVFQlRWcDlIWEtvbmdPdEZiYS1ZU2YxRdIB3AFBVV95cUxNRmx2QUZ4Q1E2b1VBMUJRcmhSTUpTM1U2eVRiRm1LWGxEdnVkMVN1X2o0bXVtd3ZaMFFFTi1WQ2ZhdEpycnlJNUZqb3ZpODJISHNNc3JlNWJpVlFyYVUyZ201U2swU1hLNnZYUVdrWHZodUstQ0RGckdPYktiNHNtNW9IQlJnaVFFakZPZ3p6VWROQjBmVlM4T2Zvb1FlX3h4Slc5SGhlMjVrcEUzbTFzQ2ltUWJVenlfbjVlZDI2UWk5UkZFQ2JOTGJfZUpabWFjLVQ2ME5oQmdmZzNz?oc=5",
+      "desc": "Zendesk launches public directory to help AI agents find A2A service options for customers | CX Network CX Network",
+      "source": "CX Network",
+      "time": 1794399976.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 9.0,
+        "event_concreteness": 11.5,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 1.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 45.0,
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 63.0
+      },
+      "base_score": 45.0,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 63.0,
+      "key": "cf7c7a4c55764692da23e67b20b5b5623aaa835446a6a5eaabc1bc53d7f13a39",
+      "importance": 63.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents"
+      ],
+      "audience_score": 6.0,
+      "tier": "A"
+    },
+    {
       "region": "RUSSIA",
       "title": "Конец осени. Донастройка крипторегулирования? Цифровой рубль vs iPhone? Риски агентной экономики? - PLUSworld",
       "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQbENlUXNYY0dOd1ZmMzYxQnpXMW5manJkYVMwZUFvTV81WVEwZjVrWUdwVVctTi1MMDIxTHlCQWVqdXF6TFZVN25MRG1HbFpSSnBWT01SWmxUVmdkUHVmZDhBOUYxbGtVTjRjbWE0N1ZuSGxEeG94WEQxOVZ1dEJVdU9Wb0E3cUIyTE1iMndPTmFPUDh4enk1eVRlWEFIZEVXc1pKTk54TkF3eTg1V2FoSU94RVVmRGQ2eFJOR0QydXNINXFzMlpOdXBWZWxxNXdDcmowQk9yTU12d3lOTjBVMQ?oc=5",
@@ -1902,79 +1937,6 @@
     },
     {
       "region": "WORLD",
-      "title": "OpenAI Launches Control Room 'Kill Switch' for Rogue Agents - BankInfoSecurity",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPdTUwR1FYbV94dXA4VzFROUZaNTd2RGlCSFVFQk1nM0VrM1hia3FINGVkMm5iY2pRbUNYanFWQ081TmllZ1l5emNxNWk5Vk5kdVVPcUxnaUJ4NU95NkxzZnJUU0J4dlZ6eF8zY0RIeVpxWEdoYlZLNUsyTGx0c08tbDVSRzd4UDhMeWE3Yy0tOHFHeXB2RmlBTGJPTHFGVm8?oc=5",
-      "desc": "OpenAI Launches Control Room 'Kill Switch' for Rogue Agents BankInfoSecurity",
-      "source": "BankInfoSecurity",
-      "time": 1794410348.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 11.0,
-        "event_concreteness": 13.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 46.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 46.0
-      },
-      "base_score": 46.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 46.0,
-      "key": "6e502120fa33d65141be0293fdee8b086de9aaf251cb9e12691a82dd29acd5b7",
-      "importance": 46.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "security_regulation"
-      ],
-      "audience_score": null,
-      "tier": "A"
-    },
-    {
-      "region": "WORLD",
-      "title": "Zendesk launches public directory to help AI agents find A2A service options for customers | CX Network - CX Network",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPNmVQQXU3OGpZZFp3WmZtWDROX3RjM2tYMjM3dk0yeVlKY2FHNWVhQ3FvZGZ2RzlZVnVsZ1E5Y3hLdHBZdGtRbHFTaXZSSGthUE9YMTh5d0k4UGpKTjJHY2JuVExxZE5jOTJQTEZuNUJRZlA5MkJ6bnltaVRCNnpUaDhad1VRY3MxWkp5eHMzMnZyY2s3V0tyRVpkWU9qRlVMNGU3U01SXzNMY3Z6WGdUaVp5Q1JoVzBrMVdJbWxTcmVFQlRWcDlIWEtvbmdPdEZiYS1ZU2YxRdIB3AFBVV95cUxNRmx2QUZ4Q1E2b1VBMUJRcmhSTUpTM1U2eVRiRm1LWGxEdnVkMVN1X2o0bXVtd3ZaMFFFTi1WQ2ZhdEpycnlJNUZqb3ZpODJISHNNc3JlNWJpVlFyYVUyZ201U2swU1hLNnZYUVdrWHZodUstQ0RGckdPYktiNHNtNW9IQlJnaVFFakZPZ3p6VWROQjBmVlM4T2Zvb1FlX3h4Slc5SGhlMjVrcEUzbTFzQ2ltUWJVenlfbjVlZDI2UWk5UkZFQ2JOTGJfZUpabWFjLVQ2ME5oQmdmZzNz?oc=5",
-      "desc": "Zendesk launches public directory to help AI agents find A2A service options for customers | CX Network CX Network",
-      "source": "CX Network",
-      "time": 1794399976.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 9.0,
-        "event_concreteness": 11.5,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 45.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 45.0
-      },
-      "base_score": 45.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 45.0,
-      "key": "cf7c7a4c55764692da23e67b20b5b5623aaa835446a6a5eaabc1bc53d7f13a39",
-      "importance": 45.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents"
-      ],
-      "audience_score": null,
-      "tier": "A"
-    },
-    {
-      "region": "WORLD",
       "title": "Anthropic Filing: Claude Exploit Score Up to 91% From 40% - FourWeekMBA",
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQamlOeUF1anA2SG8yaG5KVzRUSHpSVWFsX0tpSUFiUWNocjFUd3hEYk1xNkVtSzNNZWhKVDFzMWt3anNraU43amVkOHdMNFRvc3hSOWQ2cVBwSGVjMFVEN3JLTWdvVTZrMHZaYjE4LTZTSk1YZjRvUDNRbzdZbkFvanFSRWxrZ0ZndHc?oc=5",
       "desc": "Anthropic Filing: Claude Exploit Score Up to 91% From 40% FourWeekMBA",
@@ -2011,30 +1973,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794420086.4907975,
+    "last_start_ts": 1794420528.0526233,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794420086.4907975,
-    "last_success_ts": 1794420086.4907975,
+    "last_run_ts": 1794420528.0526233,
+    "last_success_ts": 1794420528.0526233,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 19
+    "last_published": 1,
+    "queue_size": 18
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1794423663.8477626,
-      "reason": "The read operation timed out",
-      "updated_at": 1794420063.847766
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794420531.8541458
     },
     "GROQ": {
-      "disabled_until": 1794423667.5582445,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794420067.5582466
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794420514.6606512
     },
     "OPENAI": {
-      "disabled_until": 1794506486.3538418,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1794420086.3538437
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794420514.6606512
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2042,9 +2004,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1794423685.3475766,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794420085.3475785
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794420514.6606512
     }
   },
   "stories": {
@@ -2439,6 +2401,13 @@
       "desc": "【US Pre-Market】CoreWeave Jumps Over 16% on Plans to Issue Billions in GPU-Backed Debt; Nvidia Rebounds Over 4%, AMD, Micron Rise Over 6% TradingKey",
       "source": "TradingKey",
       "region": "WORLD"
+    },
+    "b30ea189c49205e663c967bafd89719f5504da62733120eb8e3215bb06121ccb": {
+      "time": 1794420528,
+      "title": "Оптимизация холодного старта vLLM: собираем прогретый OCI образ Deepseek и GLM и запускаем за 30 секунд",
+      "desc": "Всем привет! Меня зовут Кирилл, я больше десяти лет разрабатываю облака и инфраструктуру. Но последние пару месяцев в рамках R&D я достаточно много занимаюсь инференсом: платформами для него и оптимизацией всего, что вокруг, в частности проектом Serverless GPU с механиками примерно как у Modal или RunPod FlashBoot. Одна из самых болезненных вещей здесь - холодный старт моделей. Каждый MLOps инженер, кто ждал перезапуск пода с vLLM / SGLang по 30 минут знает о чем я говорю. Это особенно актуально, если вы делаете инференс на нескольких облачных провайдерах и спотовом GPU рынке, где может случиться прерывание vm или контейнера, так что способность быстро запускаться - must have в таких условиях. Хорошие новости - чтобы решить эту проблему около месяца назад я начал работу над open-source проектом warmctl , о нём сегодня в посте. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
@@ -2446,7 +2415,6 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -2461,150 +2429,10 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794217506,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 47.83,
-      "candidates": 21,
-      "queue_before": 1,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 17,
-        "known_recent": 1,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 0,
-        "candidate_count": 21,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.unite.ai/ru/nvidia-backs-point2-and-plans-three-more-korean-ai-startup-investments/",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.0,
-          "bonus_total": 63.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Инвестиционная экспансия NVIDIA меняет ландшафт доступных инструментов и конкурентную среду для ИИ-стартапов.",
-            "title": "NVIDIA поддерживает Point2 и планирует ещё три инвестиции в корейские ИИ-стартапы - Unite.AI",
-            "final_score": 62.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 100,
-        "raw_items": 657,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 29,
-          "CNews": 39,
-          "Euronews": 30
-        },
-        "score_filtered": 609,
-        "quality_filtered": 26,
-        "story_dedup": 1,
-        "candidates": 21,
-        "candidate_rate": 0.0377,
-        "score_buckets": {
-          "0–39": 589,
-          "40–49": 44,
-          "50–59": 23,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 1,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794217745,
       "status": "OK",
@@ -22679,11 +22507,101 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1794420528,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 29.03,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 18,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/articles/1106794/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106794",
+            "image_url": "https://habr.com/share/publication/1106794/bdeb6f138030da1e5e5c8e01e03658fd/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.33,
+          "bonus_total": 66.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Прямое сокращение времени простоя инфраструктуры и оптимизация затрат на облачные GPU.",
+            "title": "Оптимизация холодного старта vLLM: собираем прогретый OCI образ Deepseek и GLM и запускаем за 30 секунд",
+            "final_score": 70.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1794419310.2644393,
-  "last_publish_ts": 1794419310.2644393,
+  "last_publish_ts": 1794420528.0526233,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
