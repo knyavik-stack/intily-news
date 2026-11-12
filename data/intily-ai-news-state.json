@@ -1284,7 +1284,8 @@
     "54545a4027d0a3e12d441b96b5264324ede3c1a1eb7769972f9d6e49e3c87c57": 1794480534,
     "b90906720ed3f0c4c2f095e136ae10a43a5dbb2807dfd6ce7c0d7d9da52b7668": 1794481235,
     "7687e6e2fe51cdfa929b7dad320e5e91d1b8c00f29723202b479a5369402a142": 1794481473,
-    "6690411cf8d3eb757dd8102cfb1ec2ca2da62baaf0715fb83d746ad3f9586112": 1794481950
+    "6690411cf8d3eb757dd8102cfb1ec2ca2da62baaf0715fb83d746ad3f9586112": 1794481950,
+    "5b5278a1d4ea1644e5dc2d18edfbee10541ad527f23a6d838a53fe8a2d150673": 1794482195
   },
   "known": {
     "c4f518eada597065fe89e5444f140d9ab31760ebb39166f0404cfd5dbab09776": 1794478110.5718892,
@@ -1296,7 +1297,14 @@
     "7687e6e2fe51cdfa929b7dad320e5e91d1b8c00f29723202b479a5369402a142": 1794478110.5718892,
     "63ded305632998086efe990a26258bf473eff90b6b2fb05f6a1f43ca61054eef": 1794478110.5718892,
     "3345e2eec463bfa094b62115cfe97092dec883feeab80e4765597ed581cd85e7": 1794480295.1934881,
-    "5f0af7237d6237a7f8e25703ae181245255b4f03d40ddb781fe8a1ce5b50cc82": 1794480295.1934881
+    "5f0af7237d6237a7f8e25703ae181245255b4f03d40ddb781fe8a1ce5b50cc82": 1794480295.1934881,
+    "5b5278a1d4ea1644e5dc2d18edfbee10541ad527f23a6d838a53fe8a2d150673": 1794482195.9713788,
+    "2473b695ecb6f4ffb7b2472bc608adcad877e14946b39e0c5823679861661eb6": 1794482195.9713788,
+    "0b895a773a73ded6d28e54dcdb6254f03aa34638bc2497be770c57278491e178": 1794482195.9713788,
+    "a7f517e6e69f28d1aedc5496a286a4d35aed0863c6659fc0922ea6c10e1e2f43": 1794482195.9713788,
+    "e3c89fb4de6f080eeedb230bc4fa3b77a963b0ce629e8dad618934cab14b7ea5": 1794482195.9713788,
+    "3a0c32cf43eb5ef6394d9dc0e5a195c70806129387b1d26c3642041839a8b69f": 1794482195.9713788,
+    "225f56a885f31fc7757ce013ec51d827c6b338ce1634d2d5f41afd0693e36fe2": 1794482195.9713788
   },
   "queue": [
     {
@@ -1783,23 +1791,247 @@
       "audience_score": 5.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "HP выпустила настольный ПК на Linux по цене жилого дома",
+      "link": "https://www.cnews.ru/news/top/2026-11-12_nachalis_prodazhi_nastolnogo",
+      "desc": "HP выпустила настольный компьютер ZGX Fury G1n AI Station – полноценную рабочую станцию на ARM-платформе Nvidia, в которой полтерабайта сверхбыстрой оперативной памяти. Это ультимативное устройство в формате башенного системного блока, и стоит оно от 10,9 млн руб. – в российских регионах за эти деньги можно купить полноценный современный дом. В качестве операционной системы используется Ubuntu Linux.",
+      "source": "CNews",
+      "time": 1794477480.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 9.0,
+        "event_concreteness": 15.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 3.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 54.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 54.0
+      },
+      "base_score": 54.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 54.0,
+      "key": "2473b695ecb6f4ffb7b2472bc608adcad877e14946b39e0c5823679861661eb6",
+      "importance": 54.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "chips",
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "[Перевод] 594 млрд параметров, 68 часов предобучения и девять дней RL: как создавали Inkling 2 Small",
+      "link": "https://habr.com/ru/articles/1107068/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107068",
+      "desc": "5 ноября 2026 года Thinking Machines Lab представила Inkling 2 Small, мультимодальную языковую модель с 594 млрд параметров, из которых при обработке одного токена активируются около 17 млрд. В анонсе особенно выделялась скорость предобучения: 8,4 трлн токенов всего за 68 часов на оборудовании NVIDIA GB300 NVL72 с использованием четырехбитного формата NVFP4. Цифра выглядит необычно даже на фоне современных MoE-моделей. Но 68 часов относятся только к первому этапу подготовки Inkling 2 Small. Далее последовали еще три этапа обучения на дополнительных данных, а затем девятидневный Reinforcement Learning на 2048 GPU с более чем 17 млн траекторий. Получившаяся модель набрала Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794480743.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 12.0,
+        "event_concreteness": 15.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 52.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 52.0
+      },
+      "base_score": 52.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 52.0,
+      "key": "0b895a773a73ded6d28e54dcdb6254f03aa34638bc2497be770c57278491e178",
+      "importance": 52.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "chips",
+        "models"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "В Astra Automation ИИ-агенты могут запускать сценарии автоматизации",
+      "link": "https://www.cnews.ru/news/line/2026-11-12_v_astra_automation_ii-agenty_mogut",
+      "desc": "«Группа Астра» выпустила обновление платформы Astra Automation 2.1-upd1. В него вошел MCP-сервер, через который корпоративные...",
+      "source": "CNews",
+      "time": 1794477900.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 9.0,
+        "event_concreteness": 11.0,
+        "practical_value": 5.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 2.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 51.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 51.5
+      },
+      "base_score": 51.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 51.5,
+      "key": "a7f517e6e69f28d1aedc5496a286a4d35aed0863c6659fc0922ea6c10e1e2f43",
+      "importance": 51.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "applications",
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "OpenAI приобрела Odessia — туристический стартап, созданный основателем компании Sonder",
+      "link": "https://habr.com/ru/articles/1107064/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107064",
+      "desc": "OpenAI купила туристический стартап Odessia, созданный основателем компании Sonder Фрэнсисом Дэвидсон. Последний объявил о сделке и рассказал, что теперь работает в OpenAI, помогая лаборатории искусственного интеллекта разрабатывать продукты для будущего туристической отрасли. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794480602.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 3.0,
+        "impact": 7.0,
+        "event_concreteness": 16.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 48.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 48.0
+      },
+      "base_score": 48.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 48.0,
+      "key": "e3c89fb4de6f080eeedb230bc4fa3b77a963b0ce629e8dad618934cab14b7ea5",
+      "importance": 48.0,
+      "editorial_value": 50.0,
+      "topics": [],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "VK Tech выпустила новую версию платформы корпоративного ИИ VK AI Space",
+      "link": "https://www.cnews.ru/news/line/2026-11-12_vk_tech_vypustila_novuyu_versiyu",
+      "desc": "VK Tech выпустила новую версию платформы корпоративного ИИ VK AI Space. Версия VK AI Space 26.3 объединяет семь модулей для создания...",
+      "source": "CNews",
+      "time": 1794478860.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 7.0,
+        "event_concreteness": 13.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 2.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 45.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 45.5
+      },
+      "base_score": 45.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 45.5,
+      "key": "3a0c32cf43eb5ef6394d9dc0e5a195c70806129387b1d26c3642041839a8b69f",
+      "importance": 45.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Изолированный «думающий контур»: подключаем VSCode в виртуальной машине через Strata на хосте (с соксификацией)",
+      "link": "https://habr.com/ru/articles/1107070/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107070",
+      "desc": "Локальные языковые модели (LLM) и автономные агенты радикально ускорили работу с кодом. Но у полной автономии есть обратная сторона: когда вы даете нейросети права на выполнение команд в терминале, установку пакетов и запуск скриптов, вы фактически пускаете стажера с правами администратора в свою основную операционную систему. Эта проблема становится критической в трех сценариях: Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794481332.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 12.0,
+        "event_concreteness": 0.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 40.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 40.0
+      },
+      "base_score": 40.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 40.0,
+      "key": "225f56a885f31fc7757ce013ec51d827c6b338ce1634d2d5f41afd0693e36fe2",
+      "importance": 40.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1794481950.9622371,
+    "last_start_ts": 1794482195.9713788,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794481950.9622371,
-    "last_success_ts": 1794481950.9622371,
-    "last_candidates": 0,
+    "last_run_ts": 1794482195.9713788,
+    "last_success_ts": 1794482195.9713788,
+    "last_candidates": 32,
     "last_published": 1,
-    "queue_size": 13
+    "queue_size": 19
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794481952.8881927
+      "updated_at": 1794482241.5482748
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2214,12 +2446,18 @@
       "desc": "Microsoft получила патент на распределённое обучение моделей с использованием свободных GPU домашних ПК. Разбираем, как сервер делит вычислительный граф, сколько времени уходит на передачу активаций и что происходит с градиентом, когда исполнитель возвращает его после обновления весов. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "5b5278a1d4ea1644e5dc2d18edfbee10541ad527f23a6d838a53fe8a2d150673": {
+      "time": 1794482195,
+      "title": "Глава Минцифры на CNews FORUM: Для разработок с генеративным ИИ не будет ограничений при включении в Реестр российского ПО",
+      "desc": "90% российских ИТ-компаний, которые разрабатывают софт, уже активно используют генеративный ИИ, однако шквала заявок на включение в Реестр российского ПО таких продуктов еще не было. Об этом на CNews FORUM 12 ноября 2026 г. объявил глава Минцифры Максут Шадаев. Ограничений при включении таких продуктов в Реестр, даже если они разработаны с помощью зарубежных языковых моделей, регулятор не предусматривает. При этом Минцифры рассматривает меры поддержки, чтобы простимулировать российский бизнес использовать отечественные языковые модели.",
+      "source": "CNews",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -2234,151 +2472,12 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794251826,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 46.3,
-      "candidates": 38,
-      "queue_before": 14,
-      "queue_after": 16,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 26,
-        "known_recent": 0,
-        "already_queued": 5,
-        "story_queue": 1,
-        "story_history": 3,
-        "added": 3,
-        "candidate_count": 38,
-        "admission_rate": 7.89,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
-            "image_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_B.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-            "width": 1200,
-            "height": 624,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Повышение скорости и качества генерации кода напрямую сокращает время разработки и затраты на отладку.",
-            "title": "Anthropic launches new Claude Fable and Mythos 5.2 models",
-            "final_score": 76.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 183,
-        "raw_items": 1207,
-        "source_counts": {
-          "TechCrunch AI": 5,
-          "VentureBeat AI": -1,
-          "The Verge AI": 8,
-          "OpenAI News": 2,
-          "Google DeepMind": 0,
-          "Hugging Face": 2,
-          "Ars Technica": 5,
-          "Habr AI/News": 40,
-          "CNews": 71,
-          "Euronews": 50
-        },
-        "score_filtered": 1107,
-        "quality_filtered": 58,
-        "story_dedup": 4,
-        "candidates": 38,
-        "candidate_rate": 0.0371,
-        "score_buckets": {
-          "0–39": 1057,
-          "40–49": 106,
-          "50–59": 39,
-          "60–69": 5,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 3,
-          "5": 0,
-          "6": 4,
-          "7": 5,
-          "8": 2,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794252301,
       "status": "OK",
@@ -22186,11 +22285,151 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794482195,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 49.36,
+      "candidates": 32,
+      "queue_before": 13,
+      "queue_after": 19,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 14,
+        "known_recent": 0,
+        "already_queued": 9,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 7,
+        "candidate_count": 32,
+        "admission_rate": 21.88,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://www.cnews.ru/news/top/2026-11-12_claude_uhodit_iz_korporativnogo",
+            "image_url": "https://www.cnews.ru/img/design2008/logocnews_f.png",
+            "width": 600,
+            "height": 315,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.5,
+          "bonus_total": 51.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Необходима срочная миграция API-интеграций и пересмотр стека для предотвращения остановки бизнес-процессов.",
+            "title": "Мы запрещаем вам все. Claude перекрывает доступ к ИИ для компаний из России",
+            "final_score": 82.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 6,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 164,
+        "raw_items": 653,
+        "source_counts": {
+          "TechCrunch AI": 4,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 3,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 40,
+          "CNews": 76,
+          "Euronews": 41
+        },
+        "score_filtered": 580,
+        "quality_filtered": 34,
+        "story_dedup": 7,
+        "candidates": 32,
+        "candidate_rate": 0.0654,
+        "score_buckets": {
+          "0–39": 552,
+          "40–49": 59,
+          "50–59": 35,
+          "60–69": 7,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 7,
+          "7": 2,
+          "8": 2,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794480295.1934881,
-  "last_publish_ts": 1794481950.9622371,
+  "last_search_ts": 1794482195.9713788,
+  "last_publish_ts": 1794482195.9713788,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
