@@ -1,7 +1,5 @@
 {
   "published": {
-    "b72032bec3e3c22b63b06609581c34e43bdf25affcd18d1f41cf59b7b8a4919e": 1791894768,
-    "15bc2a3d63d26a01de6dca229cb2aca353e1fc1ceae2eb7aeede963fea9eef21": 1791895260,
     "28e8cdf04268e6bb43f143784943c23b1a680d7e89c216304b828f8deb5ad6fe": 1791895498,
     "ea945389ba873659cb528f0ac29f64229f502fe888c2cda19b572a3fcb47c1de": 1791895742,
     "ee42090723a334890e41dc2f3f596ce24871059e25a6680f190c615e4bc1d26d": 1791897181,
@@ -2016,30 +2014,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794486764.6309617,
+    "last_start_ts": 1794487272.5168436,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794486764.6309617,
-    "last_success_ts": 1794486764.6309617,
-    "last_candidates": 34,
-    "last_published": 1,
+    "last_run_ts": 1794487272.5168436,
+    "last_success_ts": 1794487272.5168436,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794486764.5127356
+      "disabled_until": 1794490853.8193927,
+      "reason": "The read operation timed out",
+      "updated_at": 1794487253.8193953
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794480517.2609053
+      "disabled_until": 1794490858.244117,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794487258.2441185
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794480517.2609053
+      "disabled_until": 1794573672.380638,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794487272.3806396
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2047,9 +2045,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794480517.2609053
+      "disabled_until": 1794490871.2132766,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794487271.2132785
     }
   },
   "stories": {
@@ -2469,96 +2467,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794253507,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 3.47,
-      "candidates": 0,
-      "queue_before": 14,
-      "queue_after": 13,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.techbuzz.ai/articles/google-unveils-tpu-8tx-and-8i-max-for-agentic-ai-workloads",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Снижение стоимости инференса для агентных систем позволяет масштабировать автоматизацию бизнес-процессов уже сейчас.",
-            "title": "Google Unveils TPU 8tx and 8i Max for Agentic AI Workloads - The Tech Buzz",
-            "final_score": 63.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794253738,
       "status": "OK",
@@ -22459,6 +22367,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1794487272,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 39.03,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 5,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
