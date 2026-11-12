@@ -1284,7 +1284,8 @@
     "f110ffb4c29590484809075ff0073a0c9cf4550915464b817f3b654e507779a9": 1794467320,
     "a94dc6c0118320ba781e5391bcf96619a103490a65d33ce5bddcc39d42022560": 1794468034,
     "f4d5db26452ceca0132468bfdd8cd4cabdd7eaf003298ed8efba2b016482495e": 1794468524,
-    "513d533628216e94bbe6db44afae7a48a0065702131f682e8692316a76184841": 1794469235
+    "513d533628216e94bbe6db44afae7a48a0065702131f682e8692316a76184841": 1794469235,
+    "c0892288d4aaca1fdb34242e196559b22ef39a30af29d4bce4adcc525d4e25e2": 1794469953
   },
   "known": {
     "4b96029e1423a2ea5d19c642fca06b9ddd3b693a205cf56c0fe29059780aab03": 1794465638.4696639,
@@ -1293,7 +1294,11 @@
     "16f4b174a8d689877d0ec53423e3a0edc73efbbe1ab00a9d5ac7d1f235155e2a": 1794465638.4696639,
     "a94dc6c0118320ba781e5391bcf96619a103490a65d33ce5bddcc39d42022560": 1794468034.6848204,
     "66d8efab04780705f072eae556955ac6dd8806653843312e75d05d838441aa45": 1794468034.6848204,
-    "513d533628216e94bbe6db44afae7a48a0065702131f682e8692316a76184841": 1794468034.6848204
+    "513d533628216e94bbe6db44afae7a48a0065702131f682e8692316a76184841": 1794468034.6848204,
+    "c0892288d4aaca1fdb34242e196559b22ef39a30af29d4bce4adcc525d4e25e2": 1794469953.7670007,
+    "b9fe6fedea8523419681a818760daa4db92cf7dc35ec9adda7163c06c8ce289b": 1794469953.7670007,
+    "54545a4027d0a3e12d441b96b5264324ede3c1a1eb7769972f9d6e49e3c87c57": 1794469953.7670007,
+    "2062e702f957ae1b0b327b82f3d4f6c49bdf8f6a960c53cee8f64f8cd28acb58": 1794469953.7670007
   },
   "queue": [
     {
@@ -1440,23 +1445,135 @@
       ],
       "audience_score": 5.0,
       "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "SDD: почему все туда идут и что там на самом деле",
+      "link": "https://habr.com/ru/articles/1106936/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106936",
+      "desc": "Привет, Хабр! Поехали! Spec-Driven Development (SDD) за год стал главным словом в разработке с агентами: AWS выпустил Kiro, GitHub — Spec Kit, появились OpenSpec и Tessl, доклады про SDD идут на каждой конференции. Идея простая → перед тем как агент пишет код, человек пишет спецификацию, и агент работает по ней, а не по чату из десяти сообщений. Озвучу интересный тезис → SDD в его нынешнем виде — это очередная инкарнация водопада, только артефакты теперь в markdown, а исполнитель — LLM. Разберу, почему все туда идут, что в SDD работает, где он ломается и какие есть альтернативы. Откуда хайп: старая теория под новую практику Любая новация в отрасль приходит по одному сценарию. Сначала появляется успешная практика → ИИ-copilot у разработчика, вайбкодинг у бизнеса. Практика работает, но её никто не понимает, и под неё достают старую теорию. Для агентной разработки такой теорией стал SDD: «сначала спецификация, потом код» — это ровно то, чему учили в 90-е. Теория работает плохо, и сквозь неё прорастает уже другая практика. Мы сейчас на второй стадии. Почему достали именно спецификации → потому что вайбкодинг упирается в предел. Пока задача на один промпт, контекст живёт в чате. Как только фича растягивается на дни и десятки сессий, агент теряет намерение, переписывает уже сделанное и уверенно делает не то. Одна строчка в тикете, которая раньше стоила десять минут недопонимания, теперь стоит три часа работы агента и убедительный PR с неправильной фичей. Отсюда естественная реакция → давайте всё запишем заранее. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794469741.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 9.0,
+        "event_concreteness": 11.0,
+        "practical_value": 5.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 50.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 50.0
+      },
+      "base_score": 50.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 50.0,
+      "key": "b9fe6fedea8523419681a818760daa4db92cf7dc35ec9adda7163c06c8ce289b",
+      "importance": 50.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "business"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "Anthropic Launches AI Office Suite: Next-Generation Intelligent Productivity Tool for Modern Workflows - 36Kr",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5kN0ZMMm45WlZCejBQTHVHSkxlWExlUXo0Ujlkam00SjdzT3NWSjlONzNXQ0x6OGcySFFIb0NQajR5blM5cTRYZ2hFUmYtck5ZTEpz?oc=5",
+      "desc": "Anthropic Launches AI Office Suite: Next-Generation Intelligent Productivity Tool for Modern Workflows 36Kr",
+      "source": "36Kr",
+      "time": 1794448219.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 7.0,
+        "event_concreteness": 13.5,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 0.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 45.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 45.0
+      },
+      "base_score": 45.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 45.0,
+      "key": "54545a4027d0a3e12d441b96b5264324ede3c1a1eb7769972f9d6e49e3c87c57",
+      "importance": 45.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Правительство РФ рассмотрит проект поправок в регулирование ИИ для правообладателей - УралБизнесКонсалтинг",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMWozbHBvX09LemNESzU2Y3owQUZaanFzSVBJRE50RVFmRmhrdDkwNHBxY190UG5QVGFtM19LdTVQU3I5LW5JNkMtdHkxLVNvUF9GZFc4aFpaMmtGamJyZzFqZC1CekFQMzFwcjJFTmJLZmlReEJDQ2g4aXc2WGlfRVVOaU54c3hjQUVEbjB0Y3BqQ2RRb19lNTJmNVdQdFJ6U0JXcS13OTdwYzBCam1Nc0VNMGt1QQ?oc=5",
+      "desc": "Правительство РФ рассмотрит проект поправок в регулирование ИИ для правообладателей УралБизнесКонсалтинг",
+      "source": "УралБизнесКонсалтинг",
+      "time": 1794464700.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 4.0,
+        "event_concreteness": 12.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 40.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 40.0
+      },
+      "base_score": 40.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 40.0,
+      "key": "2062e702f957ae1b0b327b82f3d4f6c49bdf8f6a960c53cee8f64f8cd28acb58",
+      "importance": 40.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "business",
+        "security_regulation"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1794469235.81854,
+    "last_start_ts": 1794469953.7670007,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794469235.81854,
-    "last_success_ts": 1794469235.81854,
-    "last_candidates": 0,
+    "last_run_ts": 1794469953.7670007,
+    "last_success_ts": 1794469953.7670007,
+    "last_candidates": 20,
     "last_published": 1,
-    "queue_size": 4
+    "queue_size": 7
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794469238.5956545
+      "updated_at": 1794469990.5640256
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1480,20 +1597,6 @@
     }
   },
   "stories": {
-    "85d6eeb8e4b629cb3e3a3a6e4b896da9c5815574829b19ccd9bd041e897a16dc": {
-      "time": 1794383092,
-      "title": "Claude Fable 5.2: подробный обзор новой модели",
-      "desc": "Вечер воскресенья, 9 ноября. Anthropic выкладывает анонс – и за одну но его просматривают 9,7 миллиона раз. Причина проста: Claude Fable 5.2 за 30 часов формализовал доказательство Великой теоремы Ферма так, что его шаг за шагом проверяет компьютер. Сотнями скоординированных агентов. А параллельно та же модель из пустой папки за восемь дней написала операционную систему – которая загружается на ноутбуке. В этой статье разберём, что это за нейросеть такая, чем Fable 5.2 отличается от Opus 5.5, GPT-6 и Gemini 4, почему бенчмарки врут (но не эти) и как писать промпты, чтобы модель не строила вам бюрократию на 87500 слов. С цифрами и пруфами, таблицами и графиками – поехали. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
-    "fbda58356b732dd4c31504b9cab543df766d77e0408cc6bad2a417a0a13a478d": {
-      "time": 1794383334,
-      "title": "Amazon представила устройства для патрулирования территории: домашнего дрона и ровера для бизнеса",
-      "desc": "Ring, дочерняя компания Amazon, представила линейку Ring Robotics. В неё вошли два устройства: домашний дрон с камерой и колёсный робот для патрулирования коммерческих объектов. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "d2a556f06c60053ab0e6ecc9e2c031a077405e14f00a0b049c1e5ebde88f82ed": {
       "time": 1794383572,
       "title": "OpenAI launches ChatGPT business features to challenge Google's advertising market - KuCoin",
@@ -1906,11 +2009,17 @@
       "desc": "Nebuly raises €18.95 million to help enterprises measure the real economic value of AI agents EU-Startups",
       "source": "EU-Startups",
       "region": "WORLD"
+    },
+    "c0892288d4aaca1fdb34242e196559b22ef39a30af29d4bce4adcc525d4e25e2": {
+      "time": 1794469953,
+      "title": "Мы запрещаем вам всё. Claude перекрывает доступ к ИИ для компаний из России",
+      "desc": "С 12 ноября 2026 г. Anthropic вводит обновленную политику Supported Regions: доступ к чат‑боту Claude (включая Claude.ai, Claude Code, API и ИИ-модели через облачные платформы и реселлеров) будет заблокирован для организаций, зарегистрированных в России либо контролируемых российскими лицами - даже если компания оформлена в третьей стране. В Anthropic называют это не новым запретом, а разъяснением прежних правил - меры связаны с подготовкой к IPO и необходимостью исключить из выручки клиентов, нарушающих региональную политику.",
+      "source": "CNews",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -1928,97 +2037,10 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794235291,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 23.11,
-      "candidates": 0,
-      "queue_before": 11,
-      "queue_after": 10,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://techora.ru/news/ii-agenty-ne-identifitsiruyut-sebya-29-2026-11-09",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Риск блокировки инфраструктуры требует немедленного пересмотра стратегии идентификации трафика ИИ-агентов.",
-            "title": "ИИ-агенты не идентифицируют себя: 29 млн запросов Muse и блокировка Amazon - Techora.ru",
-            "final_score": 66.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794235506,
       "status": "OK",
@@ -22034,11 +22056,151 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794469953,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 39.75,
+      "candidates": 20,
+      "queue_before": 4,
+      "queue_after": 7,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 12,
+        "known_recent": 0,
+        "already_queued": 3,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 4,
+        "candidate_count": 20,
+        "admission_rate": 20.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://www.cnews.ru/news/top/2026-11-12_claude_uhodit_iz_korporativnogo",
+            "image_url": "https://www.cnews.ru/img/design2008/logocnews_f.png",
+            "width": 600,
+            "height": 315,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.5,
+          "bonus_total": 51.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Критическая необходимость экстренной миграции API-интеграций для предотвращения остановки бизнес-процессов.",
+            "title": "Мы запрещаем вам всё. Claude перекрывает доступ к ИИ для компаний из России",
+            "final_score": 83.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 107,
+        "raw_items": 451,
+        "source_counts": {
+          "TechCrunch AI": 8,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 1,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 3,
+          "Habr AI/News": 39,
+          "CNews": 32,
+          "Euronews": 22
+        },
+        "score_filtered": 403,
+        "quality_filtered": 26,
+        "story_dedup": 2,
+        "candidates": 20,
+        "candidate_rate": 0.0581,
+        "score_buckets": {
+          "0–39": 387,
+          "40–49": 39,
+          "50–59": 20,
+          "60–69": 4,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 2,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794468034.6848204,
-  "last_publish_ts": 1794469235.81854,
+  "last_search_ts": 1794469953.7670007,
+  "last_publish_ts": 1794469953.7670007,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
