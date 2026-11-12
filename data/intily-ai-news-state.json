@@ -1,6 +1,5 @@
 {
   "published": {
-    "7f2c24146e1ced1038a6b1749358bc1e2c791a336e70fec1f2abe0e57398d840": 1791881578,
     "542b9a6f28c437abad0179e6dffa44612826ef2d4fc8561dfcee07403d8e1375": 1791883259,
     "100e2315900bc3feec0e34e85c7a6c8caac9613441fcf63afda331ccfba7d62c": 1791885656,
     "6b47d9354a7af4bf11d49c15f75b08d836ce69e6108ba232f24b5bc7ff492f43": 1791886137,
@@ -1286,9 +1285,6 @@
     "14c23b899686dfd9b299d1c5b1543123fe46da0d9ad1f91589036b25edf56ae1": 1794473170
   },
   "known": {
-    "a94dc6c0118320ba781e5391bcf96619a103490a65d33ce5bddcc39d42022560": 1794468034.6848204,
-    "66d8efab04780705f072eae556955ac6dd8806653843312e75d05d838441aa45": 1794468034.6848204,
-    "513d533628216e94bbe6db44afae7a48a0065702131f682e8692316a76184841": 1794468034.6848204,
     "c0892288d4aaca1fdb34242e196559b22ef39a30af29d4bce4adcc525d4e25e2": 1794469953.7670007,
     "b9fe6fedea8523419681a818760daa4db92cf7dc35ec9adda7163c06c8ce289b": 1794469953.7670007,
     "54545a4027d0a3e12d441b96b5264324ede3c1a1eb7769972f9d6e49e3c87c57": 1794469953.7670007,
@@ -1673,13 +1669,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794473170.4712255,
+    "last_start_ts": 1794473803.6767695,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794473170.4712255,
-    "last_success_ts": 1794473170.4712255,
+    "last_run_ts": 1794473803.6767695,
+    "last_success_ts": 1794473803.6767695,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 10
   },
   "providers": {
@@ -1694,9 +1690,9 @@
       "updated_at": 1794473100.0513175
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794472838.0683355
+      "disabled_until": 1794560203.6287582,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794473803.6287606
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1704,9 +1700,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794473170.4178658
+      "disabled_until": 1794477402.685314,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794473802.6853166
     }
   },
   "stories": {
@@ -2126,94 +2122,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794241765,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 21.76,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 403: Forbidden": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 403: Forbidden"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходим немедленный аудит и обновление криптографических стандартов в инфраструктуре компании для предотвращения утечек.",
-            "title": "Google DeepMind's AI agents cut the cost of two attacks on legacy 1024-bit RSA - MLQ.ai",
-            "final_score": 77.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 5,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794242008,
       "status": "OK",
@@ -22154,6 +22062,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1794473803,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 9.5,
+      "candidates": 0,
+      "queue_before": 10,
+      "queue_after": 10,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
