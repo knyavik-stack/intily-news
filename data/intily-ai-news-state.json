@@ -1,6 +1,5 @@
 {
   "published": {
-    "216636cd2578cc60853276066357b7fa4260c79e081dc9c87d5c7de3c0537a69": 1791873897,
     "64b5909786ea976668d984453e20c291f1ad057c526c68a1c7a20346358df39e": 1791874385,
     "09a241424beed725d70b1fa41b10c06cb39114add95b1e675713851dd15c6466": 1791874612,
     "c409827dca863165ecdaae09a14425d00c34dcc15d05d497292085416f9ffe3b": 1791875097,
@@ -1284,7 +1283,8 @@
     "262e6d03fa62851f069493e26db1244d72ff82681a0571f95c4c030e031dc21a": 1794461563,
     "7ad54fabfcd7c40258bf13a56f1474050ace821d57dbab6b3abc6065854d29df": 1794462044,
     "c208473e52be7d692dd7eead5c9613bff5cc3851915809a2e080200c5dc0014c": 1794462282,
-    "3021261bbb3f8130039d766885d133202919da8a08743b71905acdb31f152b8b": 1794465638
+    "3021261bbb3f8130039d766885d133202919da8a08743b71905acdb31f152b8b": 1794465638,
+    "4b96029e1423a2ea5d19c642fca06b9ddd3b693a205cf56c0fe29059780aab03": 1794466383
   },
   "known": {
     "c208473e52be7d692dd7eead5c9613bff5cc3851915809a2e080200c5dc0014c": 1794462044.3945205,
@@ -1295,6 +1295,43 @@
     "16f4b174a8d689877d0ec53423e3a0edc73efbbe1ab00a9d5ac7d1f235155e2a": 1794465638.4696639
   },
   "queue": [
+    {
+      "region": "RUSSIA",
+      "title": "Staffcop научился выявлять признаки внутренних угроз с помощью ИИ",
+      "link": "https://www.cnews.ru/news/line/2026-11-12_staffcop_nauchilsya_vyyavlyat_priznaki",
+      "desc": "Разработчики Staffcop (входит в экосистему для бизнеса «Контур») представили новый компонент Staffcop Semantic, который использует...",
+      "source": "CNews",
+      "time": 1794464040.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 7.0,
+        "event_concreteness": 10.0,
+        "practical_value": 5.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 2.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 48.5,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 72.5
+      },
+      "base_score": 48.5,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 72.5,
+      "key": "f110ffb4c29590484809075ff0073a0c9cf4550915464b817f3b654e507779a9",
+      "importance": 72.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "business"
+      ],
+      "audience_score": 8.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
     {
       "region": "RUSSIA",
       "title": "NAVER создаст логистическую компанию и запустит ИИ-агента на фоне снижения операционной прибыли - Unite.AI",
@@ -1311,19 +1348,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 43.5,
+        "base_score": 43.0,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 61.5
+        "final_score": 61.0
       },
-      "base_score": 43.5,
+      "base_score": 43.0,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 61.5,
+      "score": 61.0,
       "key": "440a93a72956a2f1032137e35d76ce3453e01d391b38903da1dc11da57dc1a79",
-      "importance": 61.5,
+      "importance": 61.0,
       "editorial_value": 50.0,
       "topics": [
         "agents"
@@ -1367,82 +1404,6 @@
       ],
       "audience_score": 5.0,
       "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Безопасность ИИ в продакшене: на что смотреть, прежде чем станет поздно",
-      "link": "https://habr.com/ru/articles/1106884/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106884",
-      "desc": "Приветствую всех читателей! Эта статья — расширенная версия моего доклада «Безопасность ИИ в продакшене: на что смотреть, прежде чем станет поздно». На доклад было 40 минут, поэтому многое пришлось сократить до одной фразы на слайде. Здесь я собрал то, что не влезло: примеры кода с исправлениями, подробности инцидентов, ссылки на первоисточники и ответы на вопросы, которые задают после выступления. Статья рассчитана на разработчиков уровня junior–middle, тимлидов и всех, кто пишет код вместе с AI-ассистентом: Cursor, GitHub Copilot, Claude Code, Gemini CLI и другими. Глубоких знаний в безопасности не нужно: каждый термин я сначала объясняю простыми словами, а примеры кода — на Python, но идеи переносятся на любой язык. Сразу обозначу границы: речь пойдёт про код, который мы пишем с помощью AI и выкатываем в прод, и про агентов, которые работают рядом с нами. Безопасность LLM-функций внутри продукта (чат-боты, RAG по данным клиентов) — отдельная большая тема, её я затрагиваю только краем. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794462050.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 11.0,
-        "event_concreteness": 13.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 51.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 51.5
-      },
-      "base_score": 51.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 51.5,
-      "key": "4b96029e1423a2ea5d19c642fca06b9ddd3b693a205cf56c0fe29059780aab03",
-      "importance": 51.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "models",
-        "security_regulation"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Staffcop научился выявлять признаки внутренних угроз с помощью ИИ",
-      "link": "https://www.cnews.ru/news/line/2026-11-12_staffcop_nauchilsya_vyyavlyat_priznaki",
-      "desc": "Разработчики Staffcop (входит в экосистему для бизнеса «Контур») представили новый компонент Staffcop Semantic, который использует...",
-      "source": "CNews",
-      "time": 1794464040.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 7.0,
-        "event_concreteness": 10.0,
-        "practical_value": 5.0,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 2.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 48.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 48.5
-      },
-      "base_score": 48.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 48.5,
-      "key": "f110ffb4c29590484809075ff0073a0c9cf4550915464b817f3b654e507779a9",
-      "importance": 48.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "business"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
     },
     {
       "region": "WORLD",
@@ -1556,20 +1517,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794465638.4696639,
+    "last_start_ts": 1794466383.9740887,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794465638.4696639,
-    "last_success_ts": 1794465638.4696639,
-    "last_candidates": 14,
+    "last_run_ts": 1794466383.9740887,
+    "last_success_ts": 1794466383.9740887,
+    "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 7
+    "queue_size": 6
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794465671.8179998
+      "updated_at": 1794466383.9508457
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1593,20 +1554,6 @@
     }
   },
   "stories": {
-    "fef32d7a214bb061c814d3b84e0d4a09eedbf7f90b496046f426983b26ba4252": {
-      "time": 1794379262,
-      "title": "Gilbert + Tobin rethinks the business of law with AI",
-      "desc": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
-      "source": "OpenAI News",
-      "region": "WORLD"
-    },
-    "64b68905b1bb3b1e29a49d2ce06ce88fe8f254a1149722e59973025b1d576e41": {
-      "time": 1794379981,
-      "title": "Bay AI launches with $50 million to secure enterprise AI agents - SC Media",
-      "desc": "Bay AI launches with $50 million to secure enterprise AI agents SC Media",
-      "source": "SC Media",
-      "region": "WORLD"
-    },
     "933d355440be3a5c0d6da13c9dc333b45277a1cdacfcab30d1b860ddd2dda126": {
       "time": 1794380221,
       "title": "Я написала промпт по‑русски. Два агента перестали искать решение в интернете",
@@ -2019,10 +1966,16 @@
       "desc": "The data center boom is running into serious real-world obstacles, from widespread local opposition and permitting delays to a scramble for electricity. Before those challenges even come into play, though, there’s a more basic problem: A lot of the projects being announced may never get built in the first place. With billions of dollars in AI infrastructure […]",
       "source": "TechCrunch AI",
       "region": "WORLD"
+    },
+    "4b96029e1423a2ea5d19c642fca06b9ddd3b693a205cf56c0fe29059780aab03": {
+      "time": 1794466383,
+      "title": "Безопасность ИИ в продакшене: на что смотреть, прежде чем станет поздно",
+      "desc": "Приветствую всех читателей! Эта статья — расширенная версия моего доклада «Безопасность ИИ в продакшене: на что смотреть, прежде чем станет поздно». На доклад было 40 минут, поэтому многое пришлось сократить до одной фразы на слайде. Здесь я собрал то, что не влезло: примеры кода с исправлениями, подробности инцидентов, ссылки на первоисточники и ответы на вопросы, которые задают после выступления. Статья рассчитана на разработчиков уровня junior–middle, тимлидов и всех, кто пишет код вместе с AI-ассистентом: Cursor, GitHub Copilot, Claude Code, Gemini CLI и другими. Глубоких знаний в безопасности не нужно: каждый термин я сначала объясняю простыми словами, а примеры кода — на Python, но идеи переносятся на любой язык. Сразу обозначу границы: речь пойдёт про код, который мы пишем с помощью AI и выкатываем в прод, и про агентов, которые работают рядом с нами. Безопасность LLM-функций внутри продукта (чат-боты, RAG по данным клиентов) — отдельная большая тема, её я затрагиваю только краем. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -2041,81 +1994,10 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794229061,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 33.73,
-      "candidates": 0,
-      "queue_before": 5,
-      "queue_after": 5,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1794229753,
       "status": "OK",
@@ -22165,11 +22047,99 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794466383,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 14.95,
+      "candidates": 0,
+      "queue_before": 7,
+      "queue_after": 6,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://www.cnews.ru/news/line/2026-11-12_staffcop_nauchilsya_vyyavlyat_priznaki",
+            "image_url": "https://www.cnews.ru/img/design2008/logocnews_f.png",
+            "width": 600,
+            "height": 315,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра политик информационной безопасности и коммуникаций из-за повышения точности выявления инсайдеров.",
+            "title": "Staffcop научился выявлять признаки внутренних угроз с помощью ИИ",
+            "final_score": 72.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1794465638.4696639,
-  "last_publish_ts": 1794465638.4696639,
+  "last_publish_ts": 1794466383.9740887,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
