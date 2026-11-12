@@ -1875,19 +1875,19 @@
         "novelty": 0.0,
         "source_quality": 4.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 48.5,
+        "base_score": 48.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 48.5
+        "final_score": 48.0
       },
-      "base_score": 48.5,
+      "base_score": 48.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 48.5,
+      "score": 48.0,
       "key": "edb7cdc1ec9b4250635559caecd900f7500d6f7f63a85fe63eccf85424122874",
-      "importance": 48.5,
+      "importance": 48.0,
       "editorial_value": 50.0,
       "topics": [
         "chips",
@@ -2010,30 +2010,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794503089.1337147,
+    "last_start_ts": 1794503830.1910598,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794503089.1337147,
-    "last_success_ts": 1794503089.1337147,
+    "last_run_ts": 1794503830.1910598,
+    "last_success_ts": 1794503830.1910598,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794503088.9786274
+      "disabled_until": 1794507417.453087,
+      "reason": "The read operation timed out",
+      "updated_at": 1794503817.4530907
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794503078.3615925
+      "disabled_until": 1794507420.8299189,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794503820.829921
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794503078.3615925
+      "disabled_until": 1794590229.9993758,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794503829.9993773
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2041,19 +2041,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794503078.3615925
+      "disabled_until": 1794507429.4629416,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794503829.4629436
     }
   },
   "stories": {
-    "3d49a28a1104d48a0718cf89768ab0f7baff780c05d85add1f8b485f5c81c5fc": {
-      "time": 1794417402,
-      "title": "Google запустила ИИ-агента для клиник и страховых компаний - Medvestnik",
-      "desc": "Google запустила ИИ-агента для клиник и страховых компаний Medvestnik",
-      "source": "Medvestnik",
-      "region": "RUSSIA"
-    },
     "e3e7de63d30b61d2acbfec1e6b50c30290f7b76ca82db8e86e5d5070716510df": {
       "time": 1794419310,
       "title": "【US Pre-Market】CoreWeave Jumps Over 16% on Plans to Issue Billions in GPU-Backed Debt; Nvidia Rebounds Over 4%, AMD, Micron Rise Over 6% - TradingKey",
@@ -2470,96 +2463,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794301011,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 13.89,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 16,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "Remote end closed connection without response": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "Remote end closed connection without response"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 5.67,
-          "bonus_total": 51.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость пересмотра политик безопасности при интеграции сторонних LLM в бизнес-процессы.",
-            "title": "Australia to introduce mandatory AI safety rules following security breach involving OpenAI agent - The Copenhagen Post",
-            "final_score": 69.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 8,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794303203,
       "status": "OK",
@@ -22415,6 +22318,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1794503830,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 33.18,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 4,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
