@@ -1,7 +1,5 @@
 {
   "published": {
-    "ca893810d2aa8264f16deebb2e7cee143215af4bb409738635c32d848e4c0903": 1791871501,
-    "8dd5a8debc9540d6ba0e0b0d0d96925bbc473a4b7073aeef724b2f6b0ef17273": 1791872937,
     "216636cd2578cc60853276066357b7fa4260c79e081dc9c87d5c7de3c0537a69": 1791873897,
     "64b5909786ea976668d984453e20c291f1ad057c526c68a1c7a20346358df39e": 1791874385,
     "09a241424beed725d70b1fa41b10c06cb39114add95b1e675713851dd15c6466": 1791874612,
@@ -1285,132 +1283,18 @@
     "dc1590be6b7f11167a43ab7ce66c10ffa793fd2b8c42ecadc391d104ed1d7aca": 1794461321,
     "262e6d03fa62851f069493e26db1244d72ff82681a0571f95c4c030e031dc21a": 1794461563,
     "7ad54fabfcd7c40258bf13a56f1474050ace821d57dbab6b3abc6065854d29df": 1794462044,
-    "c208473e52be7d692dd7eead5c9613bff5cc3851915809a2e080200c5dc0014c": 1794462282
+    "c208473e52be7d692dd7eead5c9613bff5cc3851915809a2e080200c5dc0014c": 1794462282,
+    "3021261bbb3f8130039d766885d133202919da8a08743b71905acdb31f152b8b": 1794465638
   },
   "known": {
-    "67f62e9f4bb83ce33ad1e30b096f8336d9a797ddf7167c51652b3c91009722aa": 1794459875.050026,
-    "3eb74a4b1969a8c1115053897a57275c09f6092bbb078b2fcc74c92826c89b3e": 1794459875.050026,
-    "440a93a72956a2f1032137e35d76ce3453e01d391b38903da1dc11da57dc1a79": 1794459875.050026,
-    "098a77a28c7b6fe0077001f3ea18b146a55f3b082f142ac04cfc664be7054343": 1794459875.050026,
-    "262e6d03fa62851f069493e26db1244d72ff82681a0571f95c4c030e031dc21a": 1794459875.050026,
-    "7aaf75d23afb95e00d7e24805f10613ebe9d19e3a94588690af6121ef16dd148": 1794459875.050026,
-    "dc1590be6b7f11167a43ab7ce66c10ffa793fd2b8c42ecadc391d104ed1d7aca": 1794459875.050026,
-    "3021261bbb3f8130039d766885d133202919da8a08743b71905acdb31f152b8b": 1794459875.050026,
-    "7ad54fabfcd7c40258bf13a56f1474050ace821d57dbab6b3abc6065854d29df": 1794459875.050026,
     "c208473e52be7d692dd7eead5c9613bff5cc3851915809a2e080200c5dc0014c": 1794462044.3945205,
-    "a18a0f155a9dc500a545661083e6649036ceaa8bc2ff154888d5efc3b16718c7": 1794462044.3945205
+    "a18a0f155a9dc500a545661083e6649036ceaa8bc2ff154888d5efc3b16718c7": 1794462044.3945205,
+    "4b96029e1423a2ea5d19c642fca06b9ddd3b693a205cf56c0fe29059780aab03": 1794465638.4696639,
+    "f110ffb4c29590484809075ff0073a0c9cf4550915464b817f3b654e507779a9": 1794465638.4696639,
+    "f4d5db26452ceca0132468bfdd8cd4cabdd7eaf003298ed8efba2b016482495e": 1794465638.4696639,
+    "16f4b174a8d689877d0ec53423e3a0edc73efbbe1ab00a9d5ac7d1f235155e2a": 1794465638.4696639
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Инфраструктура, управляемая стоимостью",
-      "link": "https://habr.com/ru/articles/1106812/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106812",
-      "desc": "Почему аренда GPU часто оказывается избыточной и как спроектировать модель оплаты в Infracost Типичная задача выглядит так - команда ML-платформы получает бюджет и, чтобы не зависеть от доступности мощностей, арендует GPU-кластер на год. Решение кажется разумным: цена за час ниже, чем у on-demand, очередей нет, инженеры спокойны, стоимость спрогнозирована и включена в бюджет. Через полгода кто-то из аудита видит, что кластер занят примерно треть времени, остальное время узлы стоят включёнными, ничего не обучают и при этом ровно так же стоят денег. Счёт приходит за все часы месяца, а полезная работа выполнена лишь в части из них. Важно, что никто в этой истории не ошибся в техническом смысле. Кластер настроен корректно, задания запускаются, модели обучаются. Ошибка архитектурная: стоимость инфраструктуры считалась как фиксированная строка бюджета, а не как функция реального профиля нагрузки. Мы привыкли проектировать надёжность через SLA, резервирование и отказоустойчивость, безопасность через модель угроз и контроль доступа. Стоимость же слишком часто остаётся побочным эффектом, который обнаруживается постфактум. Я предлагаю относиться к стоимости как к проектируемому свойству системы. Тезис простой: нагрузка на GPU при обучении моделей принципиально неравномерна, поэтому постоянная аренда мощностей с длинными обязательствами в большинстве случаев неоправданно дорога. Разумнее планировать не далее чем на месяц вперёд, выделять минимально необходимую базу под обязательство, а пики докупать по запросу. Решение при этом принимается не интуитивно, а по расчёту, причём расчёт делается на инфраструктуре, описанной как код. Инфраструктура управляется через контролируемые изменения и мы всегда имеем базу для расчёта стоимости и контроля изменений стоимости в ретроспективе. Одним из самых популярных инструментов такого контроля выступает Infracost. Такой подход я называю инфраструктурой, управляемой стоимостью (cost-driven infrastructure) и процесс пересмотра стоимости и её прогноза должен стать таким же регулярным процессом проекта как оценка техдолга или контроля дрейфа показателей. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794419507.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 10.0,
-        "event_concreteness": 0.0,
-        "practical_value": 6.5,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 40.0,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 64.0
-      },
-      "base_score": 40.0,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 64.0,
-      "key": "2c4fcf420386a91536a8b9ca0bb8075cfb643571ba1fb2d33cd26d2dd0b068eb",
-      "importance": 64.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "chips",
-        "models",
-        "security_regulation",
-        "tools"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "WORLD",
-      "title": "How backlash and red tape continue to slow data centers post-Blue Wave",
-      "link": "https://techcrunch.com/podcast/how-backlash-and-red-tape-continue-to-slow-data-centers-post-blue-wave/",
-      "desc": "The data center boom is running into serious real-world obstacles, from widespread local opposition and permitting delays to a scramble for electricity. Before those challenges even come into play, though, there’s a more basic problem: A lot of the projects being announced may never get built in the first place. With billions of dollars in AI infrastructure […]",
-      "source": "TechCrunch AI",
-      "time": 1794427334.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 7.0,
-        "event_concreteness": 12.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 42.0,
-        "audience_score": 7.0,
-        "audience_bonus": 21.0,
-        "final_score": 63.0
-      },
-      "base_score": 42.0,
-      "audience_bonus": 21.0,
-      "score_stage": "final",
-      "score": 63.0,
-      "key": "3021261bbb3f8130039d766885d133202919da8a08743b71905acdb31f152b8b",
-      "importance": 63.0,
-      "editorial_value": 50.0,
-      "topics": [],
-      "audience_score": 7.0,
-      "tier": "A"
-    },
-    {
-      "region": "WORLD",
-      "title": "Google, Meta And TikTok Oppose Indonesia’s Proposed AI Copyright Law Changes - The 420.in",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxORTlOSF8wSXpfLXNzeExKbEc1dWhNQzYwQ0dLNHFuQTNMd1hQb0VmX052dUtDTlBXR2ptZFZ3TndLbmlJc2ZLOGFEWnJuNXk0V25sOVNGQmdpcXlyRjdDZTVpZGxGelBsYWV2R1BvbjlLbXJLWGZhSUloUnVvUE45V3NmOHotYTVGOGZ4RmVQeThrUTRpeE9DZQ?oc=5",
-      "desc": "Google, Meta And TikTok Oppose Indonesia’s Proposed AI Copyright Law Changes The 420.in",
-      "source": "The 420.in",
-      "time": 1794420155.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 7.0,
-        "event_concreteness": 15.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 41.0,
-        "audience_score": 7.0,
-        "audience_bonus": 21.0,
-        "final_score": 62.0
-      },
-      "base_score": 41.0,
-      "audience_bonus": 21.0,
-      "score_stage": "final",
-      "score": 62.0,
-      "key": "02b14b4864ff186f6b1d2ec704e38d9ee1bbc278f9b9f88778e39406d25d6954",
-      "importance": 62.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "security_regulation"
-      ],
-      "audience_score": 7.0,
-      "tier": "A"
-    },
     {
       "region": "RUSSIA",
       "title": "NAVER создаст логистическую компанию и запустит ИИ-агента на фоне снижения операционной прибыли - Unite.AI",
@@ -1449,6 +1333,156 @@
       "russia_weight_bonus": 0.0
     },
     {
+      "region": "WORLD",
+      "title": "Ohio AI regulations likely to stall as lawmakers approach December deadline - WOWO",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUDh0RDhuR1B6M29BbHZ1N21RMzY1X01SQWpKNm5hTlZsbzE1TUg3Q3lwV25Fb0ZuZEZYOVNvcGtFdDl4SGtxNkM1RDQ0Y0ZfOUdoM3ZJUVpoZmhVVVdWM3NhZ1NxbjBDSmlzN2tjNThTRXJwUG5kTklxbEFsQW02YjJmNndqYmJoeEFIR1dmb0l4NTZJWXlOcA?oc=5",
+      "desc": "Ohio AI regulations likely to stall as lawmakers approach December deadline WOWO",
+      "source": "WOWO",
+      "time": 1794460679.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 7.0,
+        "event_concreteness": 12.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 40.0,
+        "audience_score": 5.0,
+        "audience_bonus": 15.0,
+        "final_score": 55.0
+      },
+      "base_score": 40.0,
+      "audience_bonus": 15.0,
+      "score_stage": "final",
+      "score": 55.0,
+      "key": "a18a0f155a9dc500a545661083e6649036ceaa8bc2ff154888d5efc3b16718c7",
+      "importance": 55.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "security_regulation"
+      ],
+      "audience_score": 5.0,
+      "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Безопасность ИИ в продакшене: на что смотреть, прежде чем станет поздно",
+      "link": "https://habr.com/ru/articles/1106884/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106884",
+      "desc": "Приветствую всех читателей! Эта статья — расширенная версия моего доклада «Безопасность ИИ в продакшене: на что смотреть, прежде чем станет поздно». На доклад было 40 минут, поэтому многое пришлось сократить до одной фразы на слайде. Здесь я собрал то, что не влезло: примеры кода с исправлениями, подробности инцидентов, ссылки на первоисточники и ответы на вопросы, которые задают после выступления. Статья рассчитана на разработчиков уровня junior–middle, тимлидов и всех, кто пишет код вместе с AI-ассистентом: Cursor, GitHub Copilot, Claude Code, Gemini CLI и другими. Глубоких знаний в безопасности не нужно: каждый термин я сначала объясняю простыми словами, а примеры кода — на Python, но идеи переносятся на любой язык. Сразу обозначу границы: речь пойдёт про код, который мы пишем с помощью AI и выкатываем в прод, и про агентов, которые работают рядом с нами. Безопасность LLM-функций внутри продукта (чат-боты, RAG по данным клиентов) — отдельная большая тема, её я затрагиваю только краем. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794462050.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 11.0,
+        "event_concreteness": 13.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 51.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 51.5
+      },
+      "base_score": 51.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 51.5,
+      "key": "4b96029e1423a2ea5d19c642fca06b9ddd3b693a205cf56c0fe29059780aab03",
+      "importance": 51.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "models",
+        "security_regulation"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Staffcop научился выявлять признаки внутренних угроз с помощью ИИ",
+      "link": "https://www.cnews.ru/news/line/2026-11-12_staffcop_nauchilsya_vyyavlyat_priznaki",
+      "desc": "Разработчики Staffcop (входит в экосистему для бизнеса «Контур») представили новый компонент Staffcop Semantic, который использует...",
+      "source": "CNews",
+      "time": 1794464040.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 7.0,
+        "event_concreteness": 10.0,
+        "practical_value": 5.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 2.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 48.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 48.5
+      },
+      "base_score": 48.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 48.5,
+      "key": "f110ffb4c29590484809075ff0073a0c9cf4550915464b817f3b654e507779a9",
+      "importance": 48.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "business"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "OpenAI launches business profiles on ChatGPT with AI agents - TechGig",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRmRIWnFWUTVVOXJJWm9MRmRXUjNyU3dEdWo4NDFKa19QMlRnbnVSanRhclE5cDZrODVjUnFzcEF1a0pVMTBJWmZLcUx4S0xTYXJlWU1TZTdIVVo1TVNPQ0NoZkFaSmlMM21sVGFZZUZrWEdpTDdhSWhVak9nbXA1aWJaMDhBUC1aejZIa2dsUkVZUXBrZ0hVNU44VDdnYzgyVVhZbXZ3?oc=5",
+      "desc": "OpenAI launches business profiles on ChatGPT with AI agents TechGig",
+      "source": "TechGig",
+      "time": 1794447813.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 10.0,
+        "event_concreteness": 13.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 1.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 47.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 47.5
+      },
+      "base_score": 47.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 47.5,
+      "key": "f4d5db26452ceca0132468bfdd8cd4cabdd7eaf003298ed8efba2b016482495e",
+      "importance": 47.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "business",
+        "models"
+      ],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
       "region": "RUSSIA",
       "title": "Google заявила о планах запустить на орбиту дата-центр для ИИ - РБК",
       "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUy1rUnBBQVRJc3NpYV9TRmttaWpWdnZLN3pwc3YwcFQxX3NUdGFvek1PY3ZldmcxSURhUko3d2c5OV9WTTZVQl93cnhoRVo2eUs2UGtmZExWQVhGaXpyZnNpZVZ0LVAyalBiSHRuRmsyVDZEM2VYcE5MaHdMcXMwQdIBiwFBVV95cUxOMHpKWUlWVUo5THZma2Z1aU1CMjVtcnJOT3RCemtLUmJkTEpIeFVJYi1KNUZ1X0llM1lCVHQ3c3F6SWtvZGZxSVV6RXM4Nm02WWN0RFpkakJ0ZS1fdW5yb0ZaXzZ3ay04X0tLcmpyX2ZXMERfZGRzaHRDcnd6ZkRaRzJPcHVORWIzQy0w?oc=5",
@@ -1485,56 +1519,57 @@
     },
     {
       "region": "WORLD",
-      "title": "Ohio AI regulations likely to stall as lawmakers approach December deadline - WOWO",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUDh0RDhuR1B6M29BbHZ1N21RMzY1X01SQWpKNm5hTlZsbzE1TUg3Q3lwV25Fb0ZuZEZYOVNvcGtFdDl4SGtxNkM1RDQ0Y0ZfOUdoM3ZJUVpoZmhVVVdWM3NhZ1NxbjBDSmlzN2tjNThTRXJwUG5kTklxbEFsQW02YjJmNndqYmJoeEFIR1dmb0l4NTZJWXlOcA?oc=5",
-      "desc": "Ohio AI regulations likely to stall as lawmakers approach December deadline WOWO",
-      "source": "WOWO",
-      "time": 1794460679.0,
+      "title": "NVIDIA and the Spy Who Loved Me: What Private Clients Should Know and Understand / Artificial Intelligence, Geopolitics and the Investment Case for NVIDIA - BM.GE",
+      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPTDhOZjNMSFRpUXNfOGtydkIweXdEUllieFVUbmp3emhoV2VQeTlCRmljX1NURDNyWGRpWXBZMnY1bkJ3bENfX3JNRzRHZWw2SjlPOTZCUXJMVFU5bXdMVGFkLXpJdnZUaGNYWUZHdVVDcHB3VWtJZlJxa3hvdEhzR1JxbThoWWRKQkhrakRjYllISVhDMnQ4WEFOd1RVZXNsd2FqMFVleXBKeW45T0dSS1MyMlNiUjhpOW92bm1LZUFxSTkteGR0YnFnMVlJS19oY09qLW5PU1JVdXlSUHRIdkphWThYdmZ0UEpGMk82RU1jMExqa3BkVnBVSU5QSjJqX3c?oc=5",
+      "desc": "NVIDIA and the Spy Who Loved Me: What Private Clients Should Know and Understand / Artificial Intelligence, Geopolitics and the Investment Case for NVIDIA BM.GE",
+      "source": "BM.GE",
+      "time": 1794463653.0,
       "_score_components": {
         "relevance": 12.0,
-        "ai_specificity": 4.5,
+        "ai_specificity": 3.0,
         "impact": 7.0,
         "event_concreteness": 12.0,
         "practical_value": 0.0,
         "novelty": 0.0,
         "source_quality": 2.0,
-        "evidence": 1.0,
+        "evidence": 2.0,
         "freshness": 2.0,
         "low_signal_penalty": 0.0,
-        "base_score": 40.5,
+        "base_score": 40.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 40.5
+        "final_score": 40.0
       },
-      "base_score": 40.5,
+      "base_score": 40.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 40.5,
-      "key": "a18a0f155a9dc500a545661083e6649036ceaa8bc2ff154888d5efc3b16718c7",
-      "importance": 40.5,
-      "editorial_value": 46.5,
+      "score": 40.0,
+      "key": "16f4b174a8d689877d0ec53423e3a0edc73efbbe1ab00a9d5ac7d1f235155e2a",
+      "importance": 40.0,
+      "editorial_value": 48.0,
       "topics": [
-        "security_regulation"
+        "business",
+        "chips"
       ],
       "audience_score": null,
       "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1794462282.8054323,
+    "last_start_ts": 1794465638.4696639,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794462282.8054323,
-    "last_success_ts": 1794462282.8054323,
-    "last_candidates": 0,
+    "last_run_ts": 1794465638.4696639,
+    "last_success_ts": 1794465638.4696639,
+    "last_candidates": 14,
     "last_published": 1,
-    "queue_size": 6
+    "queue_size": 7
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794462282.772315
+      "updated_at": 1794465671.8179998
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1558,27 +1593,6 @@
     }
   },
   "stories": {
-    "9102fea3b2aa7bd03a188b02aab9dcaa5f966ab19d7a01d9c755bef45083e8e3": {
-      "time": 1794376866,
-      "title": "OpenAI gives brands the keys to ChatGPT business profiles, launches AI agents and new advertising opportunities - Mi-3.com.au.",
-      "desc": "OpenAI gives brands the keys to ChatGPT business profiles, launches AI agents and new advertising opportunities Mi-3.com.au.",
-      "source": "Mi-3.com.au.",
-      "region": "WORLD"
-    },
-    "260e61a5e39ef79953a41e9a27b7eacb6cbb15f9f404034cd2ef5ff4467c9562": {
-      "time": 1794377335,
-      "title": "Inside Anthropic’s blockbuster IPO: What we know about the AI giant’s plans",
-      "desc": "Anthropic plans to raise up to $64 billion in its upcoming initial public offering, the artificial intelligence giant said in a filing on Tuesday, in a listing that could value the company at up to $1.4 trillion.",
-      "source": "Euronews",
-      "region": "WORLD"
-    },
-    "c246564f8c8f2be078a046ff005daaaf0dbbb088495f3fed2518000815ea9662": {
-      "time": 1794379018,
-      "title": "OpenAI lets businesses claim ChatGPT profiles and launch their own agents - The Next Web",
-      "desc": "OpenAI lets businesses claim ChatGPT profiles and launch their own agents The Next Web",
-      "source": "The Next Web",
-      "region": "WORLD"
-    },
     "fef32d7a214bb061c814d3b84e0d4a09eedbf7f90b496046f426983b26ba4252": {
       "time": 1794379262,
       "title": "Gilbert + Tobin rethinks the business of law with AI",
@@ -1998,10 +2012,16 @@
       "desc": "«Базис», российский разработчик ПО для управления динамической ИТ-инфраструктурой (входит в ГК «РТК-ЦОД»), представляет...",
       "source": "CNews",
       "region": "RUSSIA"
+    },
+    "3021261bbb3f8130039d766885d133202919da8a08743b71905acdb31f152b8b": {
+      "time": 1794465638,
+      "title": "How backlash and red tape continue to slow data centers post-Blue Wave",
+      "desc": "The data center boom is running into serious real-world obstacles, from widespread local opposition and permitting delays to a scramble for electricity. Before those challenges even come into play, though, there’s a more basic problem: A lot of the projects being announced may never get built in the first place. With billions of dollars in AI infrastructure […]",
+      "source": "TechCrunch AI",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "WORLD",
@@ -2020,150 +2040,10 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1794228539,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 46.33,
-      "candidates": 24,
-      "queue_before": 4,
-      "queue_after": 5,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 16,
-        "known_recent": 0,
-        "already_queued": 3,
-        "story_queue": 0,
-        "story_history": 3,
-        "added": 2,
-        "candidate_count": 24,
-        "admission_rate": 8.33,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/articles/1105356/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1105356",
-            "image_url": "https://habr.com/share/publication/1105356/286ad6ca6b505cc536eed8b67b3c8236/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.33,
-          "bonus_total": 66.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Показывает границы применимости малых моделей в автоматизации сложных технических процессов.",
-            "title": "Пытаемся сделать лаборанта из локальной Qwen 3.8 на 16 ГБ VRAM",
-            "final_score": 58.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 154,
-        "raw_items": 915,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 1,
-          "Ars Technica": 1,
-          "Habr AI/News": 40,
-          "CNews": 66,
-          "Euronews": 45
-        },
-        "score_filtered": 855,
-        "quality_filtered": 33,
-        "story_dedup": 3,
-        "candidates": 24,
-        "candidate_rate": 0.0315,
-        "score_buckets": {
-          "0–39": 819,
-          "40–49": 67,
-          "50–59": 26,
-          "60–69": 3,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 0,
-          "6": 1,
-          "7": 2,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794229061,
       "status": "OK",
@@ -22146,11 +22026,150 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794465638,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 41.51,
+      "candidates": 14,
+      "queue_before": 4,
+      "queue_after": 7,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 7,
+        "known_recent": 0,
+        "already_queued": 3,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 4,
+        "candidate_count": 14,
+        "admission_rate": 28.57,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://techcrunch.com/podcast/how-backlash-and-red-tape-continue-to-slow-data-centers-post-blue-wave/",
+            "image_url": "https://techcrunch.com/wp-content/uploads/2026/03/ASW-Chip_tour-servers.jpg?resize=1200,900",
+            "width": 1200,
+            "height": 900,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 5.0,
+          "bonus_total": 45.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Риск задержек в доступе к вычислительным мощностям требует пересмотра планов по масштабированию AI-продуктов.",
+            "title": "How backlash and red tape continue to slow data centers post-Blue Wave",
+            "final_score": 63.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 5,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 76,
+        "raw_items": 415,
+        "source_counts": {
+          "TechCrunch AI": 10,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 4,
+          "Habr AI/News": 28,
+          "CNews": 19,
+          "Euronews": 12
+        },
+        "score_filtered": 378,
+        "quality_filtered": 22,
+        "story_dedup": 1,
+        "candidates": 14,
+        "candidate_rate": 0.0413,
+        "score_buckets": {
+          "0–39": 358,
+          "40–49": 40,
+          "50–59": 16,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 1,
+          "7": 1,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794462044.3945205,
-  "last_publish_ts": 1794462282.8054323,
+  "last_search_ts": 1794465638.4696639,
+  "last_publish_ts": 1794465638.4696639,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
