@@ -1981,30 +1981,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794506682.6398208,
+    "last_start_ts": 1794506942.861551,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794506682.6398208,
-    "last_success_ts": 1794506682.6398208,
+    "last_run_ts": 1794506942.861551,
+    "last_success_ts": 1794506942.861551,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 18
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794506682.4750783
+      "disabled_until": 1794510535.700914,
+      "reason": "The read operation timed out",
+      "updated_at": 1794506935.7009172
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794504270.8562975
+      "disabled_until": 1794510539.4184237,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794506939.418426
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794504270.8562975
+      "disabled_until": 1794593342.7113132,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794506942.711315
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2012,19 +2012,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794504270.8562975
+      "disabled_until": 1794510541.7754226,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794506941.7754238
     }
   },
   "stories": {
-    "b30ea189c49205e663c967bafd89719f5504da62733120eb8e3215bb06121ccb": {
-      "time": 1794420528,
-      "title": "Оптимизация холодного старта vLLM: собираем прогретый OCI образ Deepseek и GLM и запускаем за 30 секунд",
-      "desc": "Всем привет! Меня зовут Кирилл, я больше десяти лет разрабатываю облака и инфраструктуру. Но последние пару месяцев в рамках R&D я достаточно много занимаюсь инференсом: платформами для него и оптимизацией всего, что вокруг, в частности проектом Serverless GPU с механиками примерно как у Modal или RunPod FlashBoot. Одна из самых болезненных вещей здесь - холодный старт моделей. Каждый MLOps инженер, кто ждал перезапуск пода с vLLM / SGLang по 30 минут знает о чем я говорю. Это особенно актуально, если вы делаете инференс на нескольких облачных провайдерах и спотовом GPU рынке, где может случиться прерывание vm или контейнера, так что способность быстро запускаться - must have в таких условиях. Хорошие новости - чтобы решить эту проблему около месяца назад я начал работу над open-source проектом warmctl , о нём сегодня в посте. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "59567eb60730a4fdb1fcb5ff5d2f4e77f619e1be943554da24e592f636022259": {
       "time": 1794420752,
       "title": "Anthropic Filing: Claude Exploit Score Up to 91% From 40% - FourWeekMBA",
@@ -2476,96 +2469,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1794306541,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 14.4,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 16,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/companies/angarasecurity/articles/1100036/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1100036",
-            "image_url": "https://habr.com/share/publication/1100036/625eeddfac5fc6359896739481aa1f5f/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 5.0,
-          "bonus_total": 45.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Повышение скорости анализа бинарного кода за счет интеграции LLM в рабочий процесс ИБ-специалиста.",
-            "title": "IDA + Codex. Реверс в каждый дом",
-            "final_score": 66.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 7,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794308238,
       "status": "OK",
@@ -22426,6 +22329,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1794506942,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 27.52,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 18,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
