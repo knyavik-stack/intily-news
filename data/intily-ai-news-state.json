@@ -1349,7 +1349,11 @@
         "tools"
       ],
       "audience_score": 8.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1794496590,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1794496890
     },
     {
       "region": "RUSSIA",
@@ -1384,7 +1388,11 @@
       "topics": [],
       "audience_score": 6.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1794496590,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1794496890
     },
     {
       "region": "RUSSIA",
@@ -1836,30 +1844,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794496361.3946033,
+    "last_start_ts": 1794496590.4149978,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794496361.3946033,
-    "last_success_ts": 1794496361.3946033,
+    "last_run_ts": 1794496590.4149978,
+    "last_success_ts": 1794496590.4149978,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 14
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794496366.8841572
+      "disabled_until": 1794500201.490772,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1794496601.4907746
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794488917.3312037
+      "disabled_until": 1794500206.1517808,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794496606.1517832
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794488917.3312037
+      "disabled_until": 1794583011.4226718,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794496611.4226737
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1867,9 +1875,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794488917.3312037
+      "disabled_until": 1794500210.3716269,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794496610.371629
     }
   },
   "stories": {
@@ -2324,96 +2332,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1794298855,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 24.45,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/articles/1105752/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1105752",
-            "image_url": "https://habr.com/share/publication/1105752/0d0d3089033e8d280fa79995a623816d/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.0,
-          "bonus_total": 72.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 3,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Снижение рисков компрометации аккаунтов через переход на локальное хранение 2FA-токенов.",
-            "title": "Smart2FA: 100% автономный 2FA-аутентификатор с нулевым разглашением (Zero-Knowledge)",
-            "final_score": 73.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 11,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794299093,
       "status": "OK",
@@ -22228,6 +22146,83 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1794496590,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 21.12,
+      "candidates": 0,
+      "queue_before": 14,
+      "queue_after": 14,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
