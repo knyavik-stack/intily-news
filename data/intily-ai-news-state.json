@@ -1295,7 +1295,8 @@
     "d9d8f6fc3dc694c669e108bd36f562a7e706f552aec81ad080145df836bdae7f": 1794579196,
     "9717374c01164fab7f37166a1fb09698ff68a9da33eb6d1f7d4746b3bd64ed91": 1794579395,
     "dbbba2252d4355beb7e7b492345cd4022bd3591711ee961592395feeb2d9bd14": 1794579636,
-    "d67e2da8f6dd939efb58876937d141ba024bd45dd9e53c5f9a0a2cbe2c10f78e": 1794584198
+    "d67e2da8f6dd939efb58876937d141ba024bd45dd9e53c5f9a0a2cbe2c10f78e": 1794584198,
+    "23509d7a084d46977e70ee2ee60d713225d913f479b9f3606d3dcff65e96f091": 1794585157
   },
   "known": {
     "d67e2da8f6dd939efb58876937d141ba024bd45dd9e53c5f9a0a2cbe2c10f78e": 1794581076.1751823,
@@ -1318,7 +1319,18 @@
     "e9764ef3726fdf31b3f1602e3b196faab46bd3687e7c3c4fb384a6acb99c27a3": 1794583006.7027984,
     "06862e407de7938c09a0a5a6fdbfb442932f76821d98d1c851c58cf7a40ec4a0": 1794583006.7027984,
     "8f4108d41006d553ffc9681bcea6034a5a1aba6a864856486785e8e755b80f4b": 1794583006.7027984,
-    "c9744587b041f8945a8f2a399ff418eb6caa4d3b73b07c31f8ceff6a8815c84e": 1794583006.7027984
+    "c9744587b041f8945a8f2a399ff418eb6caa4d3b73b07c31f8ceff6a8815c84e": 1794583006.7027984,
+    "23509d7a084d46977e70ee2ee60d713225d913f479b9f3606d3dcff65e96f091": 1794585157.7349365,
+    "2cd8c18820abc94418f78f2fbb6fda2847bdc6081e94adab1519d9aeda908854": 1794585157.7349365,
+    "020c47468ac9919fc9b7bef578fd0bbd97971dd563fd1dc56d61bce5d3f5f09e": 1794585157.7349365,
+    "2cb7bc45b6e719ab9c7278625e2eee2951ff73e16b23935dfbf35fb7073e497f": 1794585157.7349365,
+    "37836ca4d8fd82646a86bbf104ecbe791f0d5f09d7d89b6e548cf69c9c94bb2a": 1794585157.7349365,
+    "c447ba65d9e8d4b9954c3a44be9216a248b2427310c4dd2a35a51cfb7e164f43": 1794585157.7349365,
+    "87f87673fba6c5c0785e139ee015e986399f70e7c4a9ce869d2357207a1fec79": 1794585157.7349365,
+    "16decb2086e5fa130faf5aecce07b0d887be596ecca94e3c197037c5ff26f8ba": 1794585157.7349365,
+    "07d62babf419d815b94fb8582b80c9236b17420c000661f04dfd9841ea91601b": 1794585157.7349365,
+    "54d843e2f35462d85f1dde6017e071862c4080e165e59a201c0be2214ea1c84d": 1794585157.7349365,
+    "cf56731f6badb662aaa0ebcc89f1b3b20165f3d80952039d7ecf8efa3460dbd0": 1794585157.7349365
   },
   "queue": [
     {
@@ -2044,30 +2056,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794584682.470585,
+    "last_start_ts": 1794585157.7349365,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794584682.470585,
-    "last_success_ts": 1794584682.470585,
-    "last_candidates": 0,
-    "last_published": 0,
+    "last_run_ts": 1794585157.7349365,
+    "last_success_ts": 1794585157.7349365,
+    "last_candidates": 52,
+    "last_published": 1,
     "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1794587802.8531456,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1794584202.85315
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794585199.0293217
     },
     "GROQ": {
-      "disabled_until": 1794588285.889062,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794584685.8890636
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794585157.352324
     },
     "OPENAI": {
-      "disabled_until": 1794671092.18877,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1794584692.1887715
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794585157.352324
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2075,9 +2087,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1794588290.7900057,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794584690.790009
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794585157.352324
     }
   },
   "stories": {
@@ -2500,13 +2512,19 @@
       "desc": "Рассказываем, какие еще изменения произошли на платформах Cloud.ru за октябрь, и чем это может быть полезно. 🧠 AI Factory Evolution AI Agents — расширили работу с навыками ИИ-агентов: импорт из Git и каталога, управление версиями, оценка безопасности с присвоением уровня риска, подключение к EvoClaw и установка во внешние агенты. Evolution Managed RAG — добавили Confluence Data Center 8.5 как источник данных. Внедрили постобработку изображений через VLM для экстракторов с OCR — повышает качество распознавания. ☁️ Cloud.ru Evolution Evolution Artifact Registry — запустили зеркала реестров: источники из debian.org , ubuntu.com , pypi.org и других. Пока в тестировании, без тарификации. Evolution VPC — добавили пулы адресов VPC: диапазоны приватных IP для сервисов Cloud.ru Evolution. Помогают спланировать адресацию и изолировать ресурсы сервисов от вычислительных ресурсов. Evolution VPN — внедрили отказоустойчивый VPN-шлюз в разных зонах доступности для надежности соединения. Пока на стадии тестирования, без тарификации. Evolution Managed Kubernetes — добавили доступ через Magic Router при создании и редактировании кластера, чтобы у вас был еще один способ обмена трафиком между кластером и внешними сетями. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "23509d7a084d46977e70ee2ee60d713225d913f479b9f3606d3dcff65e96f091": {
+      "time": 1794585157,
+      "title": "Теперь ИИ-компании вкладывают миллиарды в генерацию энергии",
+      "desc": "Компания Anthropic заплатила OnePWR Solutions 3,4 млрд долларов . Раньше такие суммы фигурировали в поставках чипов, но на этот раз речь о газовых генераторах для выработки 1,7 ГВт мощности для дата-центров. По данным Financial Times, это крупнейшая разовая закупка энергооборудования ИИ-компанией. Мы уже привыкли к дефициту чипов для ИИ, особенно высокопроизводительной памяти и GPU, поставки которых расписаны до 2030 года. Теперь наступил черёд ресурсов для работы этих чипов. Текущие энергетические мощности США оказались очень ограничены, а запуск ИИ-центров вызывает протесты местных жителей, для которых стоимость энергии возрастает в разы, – поставщикам выгоднее продать её владельцам дата-центров. Сроки подключения к энергосетям растягиваются до того же 2030 года. Чтобы их сократить, ИИ-компании переключаются на автономную генерацию и даже закупают отработанные авиационные турбины. Показательно, что Anthropic выбирает не «зелёные» источники энергии, а газ и атомную энергию. Для работы дата-центров нужна постоянная энергия, недопустимо зависеть от облачности и силы ветра. А возможные штрафы за выбросы углерода станут лишь ещё одной строчкой в расходах. Такой же подход и у других ИИ-компаний: SpaceXSI Илона Маска использует газовые турбины для суперкомпьютеров серии Colossus в Теннесси и Миссисипи, Meta* развивает собственную газовую генерацию в Огайо. Microsoft, Amazon и Google перезапускают атомную энергетику США для получения постоянного источника энергии. Например, Google вложил более 4,4 млрд долларов в Constellation Energy для модернизации текущих АЭС и получения дополнительных 890 МВт мощностей в ближайшие 20 лет. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "WORLD",
@@ -2519,145 +2537,13 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794382132,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 41.71,
-      "candidates": 24,
-      "queue_before": 12,
-      "queue_after": 14,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 9,
-        "known_recent": 0,
-        "already_queued": 8,
-        "story_queue": 0,
-        "story_history": 5,
-        "added": 2,
-        "candidate_count": 24,
-        "admission_rate": 8.33,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 6.0,
-          "bonus_total": 18.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Автоматизация охраны снижает операционные расходы на персонал, но требует оценки рисков кибербезопасности.",
-            "title": "Amazon представила устройства для патрулирования территории: домашнего дрона и ровера для бизнеса",
-            "final_score": 72.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 96,
-        "raw_items": 496,
-        "source_counts": {
-          "TechCrunch AI": 3,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 2,
-          "Google DeepMind": 0,
-          "Hugging Face": 1,
-          "Ars Technica": 7,
-          "Habr AI/News": 40,
-          "CNews": 25,
-          "Euronews": 18
-        },
-        "score_filtered": 442,
-        "quality_filtered": 23,
-        "story_dedup": 7,
-        "candidates": 24,
-        "candidate_rate": 0.06,
-        "score_buckets": {
-          "0–39": 405,
-          "40–49": 60,
-          "50–59": 27,
-          "60–69": 4,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 3,
-          "7": 2,
-          "8": 7,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 4,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1794383092,
       "status": "OK",
@@ -22622,11 +22508,151 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1794585157,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 44.47,
+      "candidates": 52,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 13,
+        "known_recent": 17,
+        "already_queued": 6,
+        "story_queue": 0,
+        "story_history": 5,
+        "added": 11,
+        "candidate_count": 52,
+        "admission_rate": 21.15,
+        "dominant_block": "known_recent",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://habr.com/ru/companies/ruvds/articles/1107500/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107500",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость учитывать энергетические ограничения при планировании масштабируемых ИИ-инфраструктур и долгосрочных затрат.",
+            "title": "Теперь ИИ-компании вкладывают миллиарды в генерацию энергии",
+            "final_score": 80.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 198,
+        "raw_items": 1122,
+        "source_counts": {
+          "TechCrunch AI": 3,
+          "VentureBeat AI": -1,
+          "The Verge AI": 3,
+          "OpenAI News": 1,
+          "Google DeepMind": -1,
+          "Hugging Face": 1,
+          "Ars Technica": 6,
+          "Habr AI/News": 40,
+          "CNews": 94,
+          "Euronews": 50
+        },
+        "score_filtered": 1013,
+        "quality_filtered": 39,
+        "story_dedup": 18,
+        "candidates": 52,
+        "candidate_rate": 0.0563,
+        "score_buckets": {
+          "0–39": 950,
+          "40–49": 97,
+          "50–59": 61,
+          "60–69": 13,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0,
+          "5": 1,
+          "6": 6,
+          "7": 3,
+          "8": 7,
+          "9": 1,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794583006.7027984,
-  "last_publish_ts": 1794584198.0678394,
+  "last_search_ts": 1794585157.7349365,
+  "last_publish_ts": 1794585157.7349365,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
