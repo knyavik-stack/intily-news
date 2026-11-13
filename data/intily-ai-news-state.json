@@ -1,6 +1,5 @@
 {
   "published": {
-    "7848a87ccf9dd200f42f3bfb8e45e5b77bd6a50148fdbb457da1357e2730a779": 1791985724,
     "c94fe789c99e50470b626cbd42d9e28c922e4fb2f87e1ce999072d812566e58b": 1791993881,
     "eeae5aa7d887947bd66d351548d2241ec6ece8e31b566b74b46e563d90521044": 1791994360,
     "6c9965c6670b33144a27522f08ccda66b53d96699be9d4349d8fadca3a5ea540": 1791999877,
@@ -1327,6 +1326,45 @@
   },
   "queue": [
     {
+      "region": "RUSSIA",
+      "title": "В тысячи репозиториев GitHub внедрили скрипт для кражи токенов и ключей",
+      "link": "https://habr.com/ru/companies/codescoring/articles/1107564/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107564",
+      "desc": "11 ноября в реестре Packagist вышла версия 3.14.3 пакета digitalelvis/neuronai-studio , которую CodeScoring относит к вредоносным. Пакет нужен для визуальной сборки ИИ-агентов на Laravel. Команда npm install в каталоге этой версии запускает скрипт для кражи токенов и ключей . Тот же скрипт вредоносной кампании, получивший имя wfx , с 10 ноября внедряли в сценарии автоматической сборки GitHub Actions. К вечеру 12 ноября были найдены следы внедрения в 8 926 репозиториях на GitHub. Атакующий пользовался украденными токенами GitHub. Сначала он открывал запрос на изменение документации, чтобы проверить доступ к репозиторию. Затем от имени разработчика или бота отправлял коммит под видом обслуживания сборки. В одном из вариантов скрипт получал секреты и переменные, переданные ему из настроек GitHub Actions. Среди них могли быть ключи облачных сервисов и токены для публикации пакетов. После запуска атакующий откатывал коммит и удалял запись о запуске вместе с журналом. OX Security назвали 3.14.4 исправленной версией NeuronAI Studio . Но на момент 13 ноября эта версия также отмечена как вредоносная в базе знаний CodeScoring и в реестре Packagist . Те же отметки есть у 3.14.2 и 3.14.3. Перед обновлением обязательно проверьте статус выбранной версии в реестре. Чтобы обнаружить потенциальную компрометацию, необходимо проверить историю коммитов и запусков GitHub Actions с 10 ноября. Среди признаков атаки можно увидеть ветки под названием wfx-docs, коммиты ci: refresh build cache и пропуски в нумерации запусков рядом с подозрительными изменениями. При возможном запуске вредоноса отзовите токены и замените ключи, к которым у него был доступ. Проверьте и настройки доступа в облаке. Скрипт также пытался менять правила доверия для ролей AWS и добавлять учётные данные wfx-ci-* в Azure. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794575491.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 13.0,
+        "event_concreteness": 14.0,
+        "practical_value": 5.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 57.0,
+        "audience_score": 10.0,
+        "audience_bonus": 30.0,
+        "final_score": 87.0
+      },
+      "base_score": 57.0,
+      "audience_bonus": 30.0,
+      "score_stage": "final",
+      "score": 87.0,
+      "key": "9717374c01164fab7f37166a1fb09698ff68a9da33eb6d1f7d4746b3bd64ed91",
+      "importance": 87.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "business",
+        "security_regulation"
+      ],
+      "audience_score": 10.0,
+      "tier": "S",
+      "russia_weight_bonus": 0.0
+    },
+    {
       "region": "WORLD",
       "title": "How Shanghai fund manager Kang Wei introduced his wife Alice Huang to Jensen and built a $7.5 billion Nvidia AI GPU smuggling operation — Mistress's husband joked she was the Nvidia CEO's 'personal assistant' - Tom's Hardware",
       "link": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxNQmRWNjhNVjFRU2F1Y1NLcENjUnM0TDdfWEtieDB2Y2QzbXJVeTFnN3VTVWJaMl9aZUYycEZkaFNvREJpaUFsOWFnWUxnN05CcmNackV3YnRjd2Z0Tks5T0NCWXBFbXczS08wMm9JRTlMOXVIVUdJYmJ5RXcyMW1pMVQwbXY5cFhKWFBOS0duV1EwUl9LZWpyV2FPS0xPX1E2QVBhcWJSZlpFQ2phOWppQ2xkRVVJOFZld2E5SF8zZXZmZjRMTmtSb25jNTZUZVlVUThnOXBJWU8tMHRHNjJXX2RfLWdfelZnSFV2UkhwM0x2OE1wWHp3cGhLNzhRckZmMmJtdkNPWnlLWFlFSEdXQXZSTG4yU3lIUGM4TlIwaXdQdGZTM2tQVDUzWFJfT1BLWVR0ay1TN19qRG9uM3JvYUQ0MkpQdEEzQlZ5TnNUWFF2NzlRVTdXdGtn?oc=5",
@@ -1969,45 +2007,6 @@
     },
     {
       "region": "RUSSIA",
-      "title": "В тысячи репозиториев GitHub внедрили скрипт для кражи токенов и ключей",
-      "link": "https://habr.com/ru/companies/codescoring/articles/1107564/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107564",
-      "desc": "11 ноября в реестре Packagist вышла версия 3.14.3 пакета digitalelvis/neuronai-studio , которую CodeScoring относит к вредоносным. Пакет нужен для визуальной сборки ИИ-агентов на Laravel. Команда npm install в каталоге этой версии запускает скрипт для кражи токенов и ключей . Тот же скрипт вредоносной кампании, получивший имя wfx , с 10 ноября внедряли в сценарии автоматической сборки GitHub Actions. К вечеру 12 ноября были найдены следы внедрения в 8 926 репозиториях на GitHub. Атакующий пользовался украденными токенами GitHub. Сначала он открывал запрос на изменение документации, чтобы проверить доступ к репозиторию. Затем от имени разработчика или бота отправлял коммит под видом обслуживания сборки. В одном из вариантов скрипт получал секреты и переменные, переданные ему из настроек GitHub Actions. Среди них могли быть ключи облачных сервисов и токены для публикации пакетов. После запуска атакующий откатывал коммит и удалял запись о запуске вместе с журналом. OX Security назвали 3.14.4 исправленной версией NeuronAI Studio . Но на момент 13 ноября эта версия также отмечена как вредоносная в базе знаний CodeScoring и в реестре Packagist . Те же отметки есть у 3.14.2 и 3.14.3. Перед обновлением обязательно проверьте статус выбранной версии в реестре. Чтобы обнаружить потенциальную компрометацию, необходимо проверить историю коммитов и запусков GitHub Actions с 10 ноября. Среди признаков атаки можно увидеть ветки под названием wfx-docs, коммиты ci: refresh build cache и пропуски в нумерации запусков рядом с подозрительными изменениями. При возможном запуске вредоноса отзовите токены и замените ключи, к которым у него был доступ. Проверьте и настройки доступа в облаке. Скрипт также пытался менять правила доверия для ролей AWS и добавлять учётные данные wfx-ci-* в Azure. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794575491.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 13.0,
-        "event_concreteness": 14.0,
-        "practical_value": 5.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 57.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 57.0
-      },
-      "base_score": 57.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 57.0,
-      "key": "9717374c01164fab7f37166a1fb09698ff68a9da33eb6d1f7d4746b3bd64ed91",
-      "importance": 57.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "business",
-        "security_regulation"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
       "title": "[Перевод] Новый участник созвона — Claude: что умеет помощник Anthropic в Google Meet",
       "link": "https://habr.com/ru/companies/speshu_ai/articles/1107546/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107546",
       "desc": "Anthropic представила Claude Meetings — функцию, которая позволяет приглашать ИИ-помощника на видеовстречи. Во время разговора Claude может отвечать на вопросы, искать информацию в подключённых сервисах, создавать документы и доски для совместной работы. Участники смогут сразу редактировать подготовленные материалы, чтобы закончить встречу с согласованным черновиком. Бета-версия постепенно становится доступна подписчикам Claude Team и Enterprise. Первой поддерживаемой платформой стал Google Meet; интеграции с другими сервисами видеоконференций Anthropic обещает добавить позднее. Читать далее",
@@ -2087,30 +2086,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794577237.900143,
+    "last_start_ts": 1794577995.1910882,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794577237.900143,
-    "last_success_ts": 1794577237.900143,
-    "last_candidates": 48,
+    "last_run_ts": 1794577995.1910882,
+    "last_success_ts": 1794577995.1910882,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1794580892.731001,
+      "disabled_until": 1794581581.3574026,
       "reason": "The read operation timed out",
-      "updated_at": 1794577292.7310033
+      "updated_at": 1794577981.3574054
     },
     "GROQ": {
-      "disabled_until": 1794580896.1050649,
+      "disabled_until": 1794581585.1095293,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794577296.105067
+      "updated_at": 1794577985.1095312
     },
     "OPENAI": {
-      "disabled_until": 1794663702.7568836,
+      "disabled_until": 1794664394.9485197,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1794577302.7568858
+      "updated_at": 1794577994.9485211
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2118,19 +2117,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1794580901.765075,
+      "disabled_until": 1794581594.6896844,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794577301.7650769
+      "updated_at": 1794577994.6896863
     }
   },
   "stories": {
-    "b2281747fa9b07d042c7a39075fc3b263c5215a65fb676d6deeb85d9961aa43e": {
-      "time": 1794491315,
-      "title": "Виртуальные сотрудники и агенты на митапе «Русское техно 2»",
-      "desc": "У многих настроен свой локальный харнесс, другие работают в облаке. А что если развернуть харнесс на большую компанию? Как быть, если первого ответа агента приходится ждать почти 40 секунд? Что можно оптимизировать и к чему это приведет? Ладно, развернули и оптимизировали, но как подружить агентов с сотрудниками? И как оценить эффект от внедрения ИИ на уровне бизнеса? Я еще не настроил свой харнесс, и мне было интересно посмотреть на опыт других компаний. Поэтому пошел на митап MWS на эту тему. Сначала рассказали историю развития ИИ-агентов и базу: что такое обвязка вокруг модели. Потом был доклад про оптимизацию: в MWS все развернуто на Kubernetes и поддерживает OpenClaw и Hermes одновременно. Дальше руководители направлений обсуждали, как агенты работают вместе с сотрудниками. Напоследок был доклад про внедрение ИИ в организациях и оценку его эффекта. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "3cbaf6c49749cebb931ee37263f5e99f1ab8a0491893b4b5f043480ddeb29b10": {
       "time": 1794492039,
       "title": "Горизонтальное перемещение теперь поручают ИИ-агентам: четыре сценария развития атаки",
@@ -2596,94 +2588,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1794373507,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 18.05,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/articles/1106012/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106012",
-            "image_url": "https://habr.com/share/publication/1106012/d4333907490e20d1183012f8f4940a22/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Стандарт NIST станет обязательным требованием при аудите безопасности ИИ-продуктов и управлении рисками.",
-            "title": "Атаки на ИИ-агентов: разбираем проект таксономии NIST",
-            "final_score": 75.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 13,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794374701,
       "status": "OK",
@@ -22763,6 +22667,84 @@
         "failovers": 0,
         "failures": 4,
         "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1794577995,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 41.58,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 10.0,
+          "bonus_total": 30.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 10.0,
+            "bonus": 30.0,
+            "reason": "Критическая угроза безопасности требует немедленной ревизии всех токенов и ключей доступа в CI/CD пайплайнах.",
+            "title": "В тысячи репозиториев GitHub внедрили скрипт для кражи токенов и ключей",
+            "final_score": 87.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
         "skipped_no_key": 0,
         "retries": 0
       },
