@@ -1292,7 +1292,8 @@
     "4ef97f3e7589dd11bf1f6cfcf987f578a3e0bb3587ddfee797e0a8a774c0b485": 1794558283,
     "d92e17e8937de9d22f62047c085e4eb298c246b641d8a70cc31de2255c2a4f49": 1794558519,
     "fdf07a00ed47bf7af52f1e3c9b9de3c5b14df1f33908a63c898c13911557a599": 1794559237,
-    "15a85f6813da5e3400d8015e36df5020961c5bf8dbeb3164316c17ee616f7adf": 1794559962
+    "15a85f6813da5e3400d8015e36df5020961c5bf8dbeb3164316c17ee616f7adf": 1794559962,
+    "7987ed7ff5c5f68a0acce35d5f4f7cfc0be1fbec29a28c5a8ead1887ff13ca2d": 1794560207
   },
   "known": {
     "89e40703d57aaa69eb21c69328eb79add4ffe2676886f1d91348ebdcfe9d85cf": 1794556122.2187576,
@@ -1306,44 +1307,15 @@
     "7987ed7ff5c5f68a0acce35d5f4f7cfc0be1fbec29a28c5a8ead1887ff13ca2d": 1794558283.1844883,
     "fdf07a00ed47bf7af52f1e3c9b9de3c5b14df1f33908a63c898c13911557a599": 1794558283.1844883,
     "15a85f6813da5e3400d8015e36df5020961c5bf8dbeb3164316c17ee616f7adf": 1794558283.1844883,
-    "d3785efc24636a20a888b684912b77478b1dfa76b4453361af6915077abf6524": 1794558283.1844883
+    "d3785efc24636a20a888b684912b77478b1dfa76b4453361af6915077abf6524": 1794558283.1844883,
+    "f0cf528301cbe9c007f4e7f992ae8c98e0b2b3fac3804f225f96b903ddcb0409": 1794560207.0233302,
+    "709146dded28ab437da6ebf647393d898a428ed359fd1a6d30f59cabff407528": 1794560207.0233302,
+    "3066602724ed8820fdec3723026d4c221404ff7401ab68b80e0ba56813d4bc48": 1794560207.0233302,
+    "d865c2685ca329482cb8f9bf68cf6c0ea161a7e2822f99e50db1796a71d22b0d": 1794560207.0233302,
+    "4240e587d4bab6ce606c1241ec733a1d160cf7090deaf54716bc8f5a4bda7ea5": 1794560207.0233302,
+    "b2aed214fa95f32cf8f9458d3b10274f572026045def30e0f012485d5b6fb7bb": 1794560207.0233302
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Google пересмотрит процесс покупки данных авиакомпании Spirit Airlines для обучения ИИ",
-      "link": "https://habr.com/ru/articles/1107388/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107388",
-      "desc": "Google заключила соглашение с профсоюзом, представляющим интересы бортпроводников, в рамках процедуры банкротства авиакомпании Spirit Airlines. В документе прописан механизм, позволяющий отделять рабочие данные, созданные сотрудниками, от их персональной информации. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794557252.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 9.0,
-        "event_concreteness": 17.0,
-        "practical_value": 5.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 54.5,
-        "audience_score": 6.0,
-        "audience_bonus": 18.0,
-        "final_score": 72.5
-      },
-      "base_score": 54.5,
-      "audience_bonus": 18.0,
-      "score_stage": "final",
-      "score": 72.5,
-      "key": "7987ed7ff5c5f68a0acce35d5f4f7cfc0be1fbec29a28c5a8ead1887ff13ca2d",
-      "importance": 72.5,
-      "editorial_value": 50.0,
-      "topics": [],
-      "audience_score": 6.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "RUSSIA",
       "title": "Ladcraft запускает «Фабрику ИИ-процессов» для трансформации бизнеса",
@@ -1648,6 +1620,81 @@
     },
     {
       "region": "RUSSIA",
+      "title": "[Перевод] Mesh-узлы могут обойтись без микроконтроллера",
+      "link": "https://habr.com/ru/companies/ruvds/articles/1106564/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106564",
+      "desc": "Большинство устройств для mesh-сетей в своей основе представляют собой всего лишь микроконтроллер, подключённый к LoRa-чипу компании Semtech (подробнее об этом можно прочитать в моей предыдущей статье ). Конечно, некоторые производители добавляют GPS-модуль, клавиатуру и экран, но основные компоненты, по сути, эти два кирпичика Lego. Микроконтроллер отправляет LoRa-чипу команды вроде «передай эти байты на частоте 910 МГц», а тот их выполняет. Когда LoRa-чип принимает сообщение, он генерирует прерывание для микроконтроллера, сообщая: «Я получил твои байты. Забирай». Чтобы превратить такую связку в узел mesh-сети, достаточно написать для микроконтроллера код, определяющий формат кодирования пакетов, правила их пересылки и способ взаимодействия с клиентским приложением по Bluetooth. Попросите друга установить ту же прошивку, и вуаля: у вас есть собственная mesh-сеть. Именно по такой схеме я создал свою плату на базе LR2021. Если вы регулярно читаете мои статьи, то пока ничего нового я вам не рассказал. Но вот что действительно интересно: я выяснил, как избавиться от микроконтроллера. Ну, в некотором смысле. Впрочем, я забегаю вперёд. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794553286.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 9.0,
+        "event_concreteness": 11.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 46.0,
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 64.0
+      },
+      "base_score": 46.0,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 64.0,
+      "key": "42d1c30f2b0624dc71fa22696558f4ab013ffbab42216a7b85dfdb24fd231985",
+      "importance": 64.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "chips"
+      ],
+      "audience_score": 6.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Представлен открытый проект Shotput — инструмент для создания скриншотов на Mac",
+      "link": "https://habr.com/ru/articles/1107368/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107368",
+      "desc": "Разработчик Кешав Багааде вместе с Claude выпустил открытый проект Shotput . Это нативный инструмент для создания скриншотов в macOS, разработанный для максимально быстрого цикла действий: нажали кнопку мыши, выделили область — и вставили её в нужное приложение. А если на изображении нужно на что-то указать — можно добавить аннотации перед вставкой. Исходный код решения написан на Swift и TypeScript и опубликован на GitHub под лицензией MIT. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794554740.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 7.0,
+        "event_concreteness": 11.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 45.5,
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 63.5
+      },
+      "base_score": 45.5,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 63.5,
+      "key": "c9a1daaf7bbbc114922b274326985e58d19e5d5c9b0be3a2701ba50288aec335",
+      "importance": 63.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "models",
+        "tools"
+      ],
+      "audience_score": 6.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
       "title": "Второй день A&PM EVENT 2026: ИИ-инструменты, требования и практика",
       "link": "https://habr.com/ru/companies/infostart/articles/1107280/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107280",
       "desc": "13 ноября в Санкт-Петербурге продолжается INFOSTART A&PM EVENT 2026 - конференция для аналитиков, руководителей проектов и продуктовых команд 1С. В программе второго дня - практические занятия по проверке требований, созданию прототипов и применению ИИ в проектной работе. Конференция проходит в отеле «Космос Прибалтийская» и завершится 14 ноября. Читать далее",
@@ -1723,21 +1770,95 @@
     },
     {
       "region": "RUSSIA",
-      "title": "[Перевод] Mesh-узлы могут обойтись без микроконтроллера",
-      "link": "https://habr.com/ru/companies/ruvds/articles/1106564/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106564",
-      "desc": "Большинство устройств для mesh-сетей в своей основе представляют собой всего лишь микроконтроллер, подключённый к LoRa-чипу компании Semtech (подробнее об этом можно прочитать в моей предыдущей статье ). Конечно, некоторые производители добавляют GPS-модуль, клавиатуру и экран, но основные компоненты, по сути, эти два кирпичика Lego. Микроконтроллер отправляет LoRa-чипу команды вроде «передай эти байты на частоте 910 МГц», а тот их выполняет. Когда LoRa-чип принимает сообщение, он генерирует прерывание для микроконтроллера, сообщая: «Я получил твои байты. Забирай». Чтобы превратить такую связку в узел mesh-сети, достаточно написать для микроконтроллера код, определяющий формат кодирования пакетов, правила их пересылки и способ взаимодействия с клиентским приложением по Bluetooth. Попросите друга установить ту же прошивку, и вуаля: у вас есть собственная mesh-сеть. Именно по такой схеме я создал свою плату на базе LR2021. Если вы регулярно читаете мои статьи, то пока ничего нового я вам не рассказал. Но вот что действительно интересно: я выяснил, как избавиться от микроконтроллера. Ну, в некотором смысле. Впрочем, я забегаю вперёд. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794553286.0,
+      "title": "Yandex B2B Tech выпустила новое поколение речевых моделей для создания голосовых ИИ-агентов",
+      "link": "https://www.cnews.ru/news/line/2026-11-13_yandex_b2b_tech_vypustila_novoe",
+      "desc": "Голосовые ИИ-агенты на базе новых моделей Yandex AI Studio смогут вести более естественный диалог с пользователями и...",
+      "source": "CNews",
+      "time": 1794558180.0,
       "_score_components": {
         "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 9.0,
-        "event_concreteness": 11.0,
-        "practical_value": 3.0,
+        "ai_specificity": 5.5,
+        "impact": 12.0,
+        "event_concreteness": 14.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 52.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 52.0
+      },
+      "base_score": 52.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 52.0,
+      "key": "f0cf528301cbe9c007f4e7f992ae8c98e0b2b3fac3804f225f96b903ddcb0409",
+      "importance": 52.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "OpenAI's $15B Raise and $1.25T Valuation + Daybreak Security Launch - OpenTools",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNOGJtSVZ3c3RNbDVkdWR4bDAyQkhHZDg3ZnVNbElwZ1R2eGJYRFFtNENZR1ZZT25lYVhKSl9RNDJXWHBOUGNONkFYTkFMRGtVQTU0bnZrOFNHY01RUVBvakE5QUNYRjZGWF9JM1dDTk9sUFlIQTRZb0dXS18yTzk1RnRyY1BmdUc0T1Rz?oc=5",
+      "desc": "OpenAI's $15B Raise and $1.25T Valuation + Daybreak Security Launch OpenTools",
+      "source": "OpenTools",
+      "time": 1794557724.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 11.0,
+        "event_concreteness": 13.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 47.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 47.0
+      },
+      "base_score": 47.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 47.0,
+      "key": "709146dded28ab437da6ebf647393d898a428ed359fd1a6d30f59cabff407528",
+      "importance": 47.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "security_regulation",
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Как стартап пытается пустить микробизнес в интернет в обход разработчика",
+      "link": "https://habr.com/ru/articles/1107362/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107362",
+      "desc": "В этой статье расскажу про стартап AIruntime - сервис генерации сайтов или Telegram-ботов из чата с ИИ. На примере сервиса отлично видны грабли AI-driven разработки - стартапу пришлось столкнуться и с отсутствием гарантий результата, и с вопросами безопасности, и с бесконечными циклами проверки. По техничеке здесь все решаемо, и история AIruntime как раз пример того, как через новые инструменты можно решить массу проблем. Но интересно как встретит такой сервис тот самый микробизнес. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794559976.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 6.0,
+        "event_concreteness": 10.0,
+        "practical_value": 5.0,
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 1.5,
+        "freshness": 2.0,
         "low_signal_penalty": 0.0,
         "base_score": 46.0,
         "audience_score": null,
@@ -1748,48 +1869,12 @@
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
       "score": 46.0,
-      "key": "42d1c30f2b0624dc71fa22696558f4ab013ffbab42216a7b85dfdb24fd231985",
+      "key": "3066602724ed8820fdec3723026d4c221404ff7401ab68b80e0ba56813d4bc48",
       "importance": 46.0,
       "editorial_value": 50.0,
       "topics": [
-        "chips"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Представлен открытый проект Shotput — инструмент для создания скриншотов на Mac",
-      "link": "https://habr.com/ru/articles/1107368/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107368",
-      "desc": "Разработчик Кешав Багааде вместе с Claude выпустил открытый проект Shotput . Это нативный инструмент для создания скриншотов в macOS, разработанный для максимально быстрого цикла действий: нажали кнопку мыши, выделили область — и вставили её в нужное приложение. А если на изображении нужно на что-то указать — можно добавить аннотации перед вставкой. Исходный код решения написан на Swift и TypeScript и опубликован на GitHub под лицензией MIT. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794554740.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 7.0,
-        "event_concreteness": 11.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 45.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 45.5
-      },
-      "base_score": 45.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 45.5,
-      "key": "c9a1daaf7bbbc114922b274326985e58d19e5d5c9b0be3a2701ba50288aec335",
-      "importance": 45.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "models",
+        "business",
+        "security_regulation",
         "tools"
       ],
       "audience_score": null,
@@ -1812,19 +1897,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 44.0,
+        "base_score": 43.5,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 44.0
+        "final_score": 43.5
       },
-      "base_score": 44.0,
+      "base_score": 43.5,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 44.0,
+      "score": 43.5,
       "key": "d3785efc24636a20a888b684912b77478b1dfa76b4453361af6915077abf6524",
-      "importance": 44.0,
+      "importance": 43.5,
       "editorial_value": 50.0,
       "topics": [
         "agents",
@@ -1835,23 +1920,132 @@
       "audience_score": null,
       "tier": "A",
       "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Российский бизнес направляет ИТ-инвестиции на повышение эффективности и внедрение ИИ - IT Channel News",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5PeGtGaEs5bGZMYTZiRUpnNTNGaDVlRHFwRXZqZGY4SEFBZW1CSmVNUnMxNDh4UGNrdEZSNFBIXzJUMGdqbm02UEdLb0lhd2M1UWctVXVpZk5SdTIxWVhaaE9vZDd4T2c?oc=5",
+      "desc": "Российский бизнес направляет ИТ-инвестиции на повышение эффективности и внедрение ИИ IT Channel News",
+      "source": "IT Channel News",
+      "time": 1794517200.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 7.0,
+        "event_concreteness": 9.0,
+        "practical_value": 5.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 0.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 42.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 42.0
+      },
+      "base_score": 42.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 42.0,
+      "key": "d865c2685ca329482cb8f9bf68cf6c0ea161a7e2822f99e50db1796a71d22b0d",
+      "importance": 42.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "business"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "Google’s new Gemini model is better at understanding complicated questions",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
+      "desc": "Google says its new Gemini 4 Hydrogen model can give more helpful answers to complex questions, including \"questions with multiple parts, hard-to-understand typos, or highly specific requests.\" The new model can break down your questions and address each part in its responses. It's available starting today in search, the Gemini app, all tiers of Google […]",
+      "source": "The Verge AI",
+      "time": 1794520532.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 3.0,
+        "impact": 7.0,
+        "event_concreteness": 13.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 0.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 40.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 40.5
+      },
+      "base_score": 40.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 40.5,
+      "key": "4240e587d4bab6ce606c1241ec733a1d160cf7090deaf54716bc8f5a4bda7ea5",
+      "importance": 40.5,
+      "editorial_value": 48.5,
+      "topics": [
+        "models"
+      ],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
+      "region": "WORLD",
+      "title": "GPT-6.2 Did Not Ship: What OpenAI Launched on 12 Nov - OrcaRouter",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBtYWNLVVZkVF9fT1VmRHZWNVJCMGlIV3prZGFScUFYd3FzR1YyWjlzbzI4QVI0dmw2RFdiMy03a3NSd3FCZEFrOUlhbVJGSHRUVWx4Z1R4VGhyX2pmbVJJeWsxYVcxQXJZWDlxazhzRmhyUV9LSi1j?oc=5",
+      "desc": "GPT-6.2 Did Not Ship: What OpenAI Launched on 12 Nov OrcaRouter",
+      "source": "OrcaRouter",
+      "time": 1794552523.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 3.0,
+        "impact": 7.0,
+        "event_concreteness": 13.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 40.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 40.0
+      },
+      "base_score": 40.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 40.0,
+      "key": "b2aed214fa95f32cf8f9458d3b10274f572026045def30e0f012485d5b6fb7bb",
+      "importance": 40.0,
+      "editorial_value": 46.0,
+      "topics": [
+        "models"
+      ],
+      "audience_score": null,
+      "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1794559962.2547622,
+    "last_start_ts": 1794560207.0233302,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794559962.2547622,
-    "last_success_ts": 1794559962.2547622,
-    "last_candidates": 0,
+    "last_run_ts": 1794560207.0233302,
+    "last_success_ts": 1794560207.0233302,
+    "last_candidates": 29,
     "last_published": 1,
-    "queue_size": 14
+    "queue_size": 19
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794559971.676882
+      "updated_at": 1794560238.3570957
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2308,12 +2502,18 @@
       "desc": "Привет, Хабр! Меня зовут Дима Борщевский , я QA Engineer в Авито Товары и работаю в IT около десяти лет. В последнее время я разбираюсь, какую часть подготовки мобильных E2E-тестов можно передать ИИ-агенту без снижения требований к качеству. Сгенерировать несколько строк на Kotlin или Swift несложно. Сложнее получить изменение, которое использует инфраструктуру конкретного проекта, подготавливает воспроизводимые данные, проверяет результат каждого действия, компилируется и запускается. Обычного запроса в духе «напиши E2E-тест оформления заказа» для этого недостаточно. В статье я разберу подход, оформленный как универсальный скилл для мобильных E2E-тестов. Он поддерживает Android и iOS, но не навязывает общий фреймворк: источником правил остаётся целевой репозиторий. Материал будет полезен QA-инженерам и разработчикам, которые уже используют ИИ для работы с кодом и хотят получать от него проверяемый результат. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "7987ed7ff5c5f68a0acce35d5f4f7cfc0be1fbec29a28c5a8ead1887ff13ca2d": {
+      "time": 1794560207,
+      "title": "Google пересмотрит процесс покупки данных авиакомпании Spirit Airlines для обучения ИИ",
+      "desc": "Google заключила соглашение с профсоюзом, представляющим интересы бортпроводников, в рамках процедуры банкротства авиакомпании Spirit Airlines. В документе прописан механизм, позволяющий отделять рабочие данные, созданные сотрудниками, от их персональной информации. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -2330,91 +2530,10 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794325260,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 13.79,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 19,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 6.0,
-          "bonus_total": 18.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Регуляторные изменения могут повлиять на политику безопасности данных",
-            "title": "Australia Eyes Criminal Law Reforms After OpenAI Agent’s Shocking Government Website Breach – Here’s What We Know - The Sunday Guardian",
-            "final_score": 67.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 3,
-        "blocked": 13,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1794325972,
       "status": "OK",
@@ -22479,11 +22598,150 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794560207,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 42.5,
+      "candidates": 29,
+      "queue_before": 14,
+      "queue_after": 19,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 0,
+        "already_queued": 12,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 6,
+        "candidate_count": 29,
+        "admission_rate": 20.69,
+        "dominant_block": "already_queued",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://habr.com/ru/articles/1107388/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107388",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 6.0,
+          "bonus_total": 54.0,
+          "max_score": 6.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Создает юридический прецедент по очистке датасетов, что критично для комплаенса при обучении моделей на корпоративных данных.",
+            "title": "Google пересмотрит процесс покупки данных авиакомпании Spirit Airlines для обучения ИИ",
+            "final_score": 72.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 7,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 106,
+        "raw_items": 502,
+        "source_counts": {
+          "TechCrunch AI": 4,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 40,
+          "CNews": 36,
+          "Euronews": 23
+        },
+        "score_filtered": 451,
+        "quality_filtered": 19,
+        "story_dedup": 3,
+        "candidates": 29,
+        "candidate_rate": 0.0732,
+        "score_buckets": {
+          "0–39": 416,
+          "40–49": 51,
+          "50–59": 27,
+          "60–69": 8,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 1,
+          "5": 0,
+          "6": 2,
+          "7": 2,
+          "8": 6,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794558283.1844883,
-  "last_publish_ts": 1794559962.2547622,
+  "last_search_ts": 1794560207.0233302,
+  "last_publish_ts": 1794560207.0233302,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
