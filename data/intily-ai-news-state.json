@@ -1298,17 +1298,6 @@
     "d67e2da8f6dd939efb58876937d141ba024bd45dd9e53c5f9a0a2cbe2c10f78e": 1794584198
   },
   "known": {
-    "23509d7a084d46977e70ee2ee60d713225d913f479b9f3606d3dcff65e96f091": 1794579196.4656613,
-    "2cb7bc45b6e719ab9c7278625e2eee2951ff73e16b23935dfbf35fb7073e497f": 1794579196.4656613,
-    "2cd8c18820abc94418f78f2fbb6fda2847bdc6081e94adab1519d9aeda908854": 1794579196.4656613,
-    "c447ba65d9e8d4b9954c3a44be9216a248b2427310c4dd2a35a51cfb7e164f43": 1794579196.4656613,
-    "87f87673fba6c5c0785e139ee015e986399f70e7c4a9ce869d2357207a1fec79": 1794579196.4656613,
-    "c44e4c7bcfdc514f03b1b3b4854477a06bfc6957e8f51ccf921d94b3a0168d4d": 1794579196.4656613,
-    "c971129ecaab53712c696a51e5bcfff7ed08096191002c5f25b2bffa9938e5f0": 1794579196.4656613,
-    "07d62babf419d815b94fb8582b80c9236b17420c000661f04dfd9841ea91601b": 1794579196.4656613,
-    "cb57c8a9af478411ba58f5fe50d62a4312a9e452d8c645c7458ff5b493a54a3d": 1794579196.4656613,
-    "54d843e2f35462d85f1dde6017e071862c4080e165e59a201c0be2214ea1c84d": 1794579196.4656613,
-    "cf56731f6badb662aaa0ebcc89f1b3b20165f3d80952039d7ecf8efa3460dbd0": 1794579196.4656613,
     "d67e2da8f6dd939efb58876937d141ba024bd45dd9e53c5f9a0a2cbe2c10f78e": 1794581076.1751823,
     "b5d2cb66e8c261047e71881d994610954acc84de7ff3d564208cc5106ac12c97": 1794581076.1751823,
     "a26399b8d73ff153bbaeb6a2e09df0fd9db3f0b28d86ab349377d361a930a38f": 1794581076.1751823,
@@ -1367,10 +1356,10 @@
       ],
       "audience_score": 7.0,
       "tier": "A",
-      "last_failed_at": 1794583955,
+      "last_failed_at": 1794584682,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 4,
-      "next_retry_at": 1794586355
+      "failure_count": 5,
+      "next_retry_at": 1794589482
     },
     {
       "region": "WORLD",
@@ -1408,7 +1397,11 @@
         "tools"
       ],
       "audience_score": 8.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1794584682,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1794584982
     },
     {
       "region": "WORLD",
@@ -2051,13 +2044,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794584198.0678394,
+    "last_start_ts": 1794584682.470585,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794584198.0678394,
-    "last_success_ts": 1794584198.0678394,
+    "last_run_ts": 1794584682.470585,
+    "last_success_ts": 1794584682.470585,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 19
   },
   "providers": {
@@ -2067,14 +2060,14 @@
       "updated_at": 1794584202.85315
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794584206.0887344
+      "disabled_until": 1794588285.889062,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794584685.8890636
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794584197.6848292
+      "disabled_until": 1794671092.18877,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794584692.1887715
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2082,9 +2075,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794584197.6848292
+      "disabled_until": 1794588290.7900057,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794584690.790009
     }
   },
   "stories": {
@@ -2532,96 +2525,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794380942,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 15.46,
-      "candidates": 0,
-      "queue_before": 13,
-      "queue_after": 12,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://finance.biggo.com/news/3231ef4a-9635-4b2f-a66c-5446ec073b4c",
-            "image_url": "https://img.biggo.com/GXQGO9D3U6-JFcrySrzr3_U-DAodVTS4cdoE9s45nuQ/fit/1200/0/sm/0/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTExLzMyMzFlZjRhLTk2MzUtNGIyZi1hNjZjLTU0NDZlYzA3M2I0Y18xNzk0MzQ4MDA0X2RlZmF1bHQuanBn.jpg",
-            "width": 1200,
-            "height": 675,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.67,
-          "bonus_total": 69.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Автоматизация аудита безопасности снижает затраты на первичный анализ, но требует проверки результатов квалифицированными инженерами.",
-            "title": "Assured Launches Cybersecurity Risk Assessment Powered by Anthropic's \"Mythos 5.2\" - BigGo Finance",
-            "final_score": 67.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794382132,
       "status": "OK",
@@ -22641,6 +22544,82 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1794584682,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 10.08,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 3,
+        "blocked": 13,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
