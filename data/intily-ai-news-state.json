@@ -1,6 +1,5 @@
 {
   "published": {
-    "6b36768ce95befe70f9580af3efb581161d3d680ec63b8c3d1a5c8d0ae94a76c": 1791967716,
     "a11d2e8c29262cd0af12cca69f1e4edeee3141d5195cee41f7293dbdc9c7e93f": 1791968926,
     "fadb1b18f7e454e4a77bfd9dbc293e672af45ac91038473b01702df6d3a0cc35": 1791969647,
     "a6863d9e232cdc35724716a4c8293d16c22ad844b1b46dd6907e7046b22c9eae": 1791970123,
@@ -1292,7 +1291,8 @@
     "ab721da76c2e16a762d1b03c0d51b3edc8095d305fd924c4c584a22f2e637ba0": 1794556122,
     "4ef97f3e7589dd11bf1f6cfcf987f578a3e0bb3587ddfee797e0a8a774c0b485": 1794558283,
     "d92e17e8937de9d22f62047c085e4eb298c246b641d8a70cc31de2255c2a4f49": 1794558519,
-    "fdf07a00ed47bf7af52f1e3c9b9de3c5b14df1f33908a63c898c13911557a599": 1794559237
+    "fdf07a00ed47bf7af52f1e3c9b9de3c5b14df1f33908a63c898c13911557a599": 1794559237,
+    "15a85f6813da5e3400d8015e36df5020961c5bf8dbeb3164316c17ee616f7adf": 1794559962
   },
   "known": {
     "89e40703d57aaa69eb21c69328eb79add4ffe2676886f1d91348ebdcfe9d85cf": 1794556122.2187576,
@@ -1309,43 +1309,6 @@
     "d3785efc24636a20a888b684912b77478b1dfa76b4453361af6915077abf6524": 1794558283.1844883
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Как научить ИИ писать E2E-тесты для iOS и Android по стандартам проекта",
-      "link": "https://habr.com/ru/companies/avito/articles/1095268/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1095268",
-      "desc": "Привет, Хабр! Меня зовут Дима Борщевский , я QA Engineer в Авито Товары и работаю в IT около десяти лет. В последнее время я разбираюсь, какую часть подготовки мобильных E2E-тестов можно передать ИИ-агенту без снижения требований к качеству. Сгенерировать несколько строк на Kotlin или Swift несложно. Сложнее получить изменение, которое использует инфраструктуру конкретного проекта, подготавливает воспроизводимые данные, проверяет результат каждого действия, компилируется и запускается. Обычного запроса в духе «напиши E2E-тест оформления заказа» для этого недостаточно. В статье я разберу подход, оформленный как универсальный скилл для мобильных E2E-тестов. Он поддерживает Android и iOS, но не навязывает общий фреймворк: источником правил остаётся целевой репозиторий. Материал будет полезен QA-инженерам и разработчикам, которые уже используют ИИ для работы с кодом и хотят получать от него проверяемый результат. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794556677.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 7.0,
-        "event_concreteness": 12.5,
-        "practical_value": 6.5,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 51.0,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 75.0
-      },
-      "base_score": 51.0,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 75.0,
-      "key": "15a85f6813da5e3400d8015e36df5020961c5bf8dbeb3164316c17ee616f7adf",
-      "importance": 75.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "RUSSIA",
       "title": "Google пересмотрит процесс покупки данных авиакомпании Spirit Airlines для обучения ИИ",
@@ -1417,6 +1380,81 @@
         "tools"
       ],
       "audience_score": 7.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Поверхность атаки и AI Red Team: как смотреть на приложение глазами атакующего до релиза",
+      "link": "https://habr.com/ru/companies/infera_security/articles/1107378/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107378",
+      "desc": "Какие части приложения реально доступны атакующему и что произойдёт, если он доберётся до уязвимого участка? Поверхности атаки – это совокупность доступных извне интерфейсов, используемых технологий, API-методов, обработчиков и путей выполнения, через которые атакующий может воздействовать на приложение. Главное преимущество анализа поверхности атаки в том, что команда видит не только «что найдено», но и «что доступно», «каким путём» и «насколько это покрыто проверками». С появлением приложений на базе LLM добавился ещё один слой риска. У такой системы недостаточно проверить исходный код и инфраструктуру: нужно атаковать работающий AI-интерфейс , измерять устойчивость модели к нежелательным запросам, проверять качество ответов и отслеживать регрессии между версиями. AI Red Team добавляет поведенческий слой и проверяет не только конструкцию системы, но и её поведение под воздействием атакующих запросов . Он позволяет тестировать работающую систему, сравнивать версии по измеримым показателям и включать безопасность AI-функций в инженерный цикл, а не оставлять её разовой экспертной процедурой. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794555412.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 6.0,
+        "event_concreteness": 13.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 46.5,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 70.5
+      },
+      "base_score": 46.5,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 70.5,
+      "key": "60e87e491df81ec7573c6ff33b1596b37adfd9692e6f47f2e39d362333a6f77a",
+      "importance": 70.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "security_regulation"
+      ],
+      "audience_score": 8.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Claude теперь можно подключать к видеозвонкам в Google Meet",
+      "link": "https://habr.com/ru/articles/1107366/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107366",
+      "desc": "Anthropic запустила бета‑тест функции Claude Meetings, которая подключает Calude к видеозвонкам отдельным участником. Во время созвона агент следит за разговором, конспектирует и выполняет поручения прямо во время звонка. Пока есть поддержка только Google Meet. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794554430.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 10.0,
+        "event_concreteness": 13.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 46.0,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 70.0
+      },
+      "base_score": 46.0,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 70.0,
+      "key": "4644117760f809d455f1d08d42c6fae3ea33d043bb7fb71f008259a9c9b07829",
+      "importance": 70.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "models"
+      ],
+      "audience_score": 8.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
     },
@@ -1500,42 +1538,6 @@
     },
     {
       "region": "WORLD",
-      "title": "OpenAI launches security products, tells orgs they’re doomed if they don’t use them - The Register",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOWlRDS0FrQTVoOWtIT1JsRnJScy1vVzVGRnJOakd0bkllUHdTNkhJVzd3OWZ0X2FDb1g3cG1YOVM4Q1I0TW5tWGpBd21URFFaTDVkS1NNaVVxX19MVTY0dFlFZ055VVR2OWJNSkd2MXZ6NXBoMTVldGNEakNJbEd0TnAxa1loV1FWcjByWGpWVmpvc2o5VmJsR3Jlb0Q1QXBkcWtTVXg4ZHpETktma3R0Y3pVUEZPOE1meEdwS2R4NU96MUJiS0lDQnJ1NXZPTzMxdVE?oc=5",
-      "desc": "OpenAI launches security products, tells orgs they’re doomed if they don’t use them The Register",
-      "source": "The Register",
-      "time": 1794516525.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 11.0,
-        "event_concreteness": 13.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 1.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 47.0,
-        "audience_score": 7.0,
-        "audience_bonus": 21.0,
-        "final_score": 68.0
-      },
-      "base_score": 47.0,
-      "audience_bonus": 21.0,
-      "score_stage": "final",
-      "score": 68.0,
-      "key": "f7e15ff533cf590c7c1f20e51279436e4f9e5bf7b2712f45c2f8cb271fc5f07b",
-      "importance": 68.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "security_regulation"
-      ],
-      "audience_score": 7.0,
-      "tier": "A"
-    },
-    {
-      "region": "WORLD",
       "title": "Google launches Gemini 4 Hydrogen, targets faster AI workflows - The American Bazaar",
       "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeFZWTldPNDktREpkTG80NXBUcTBNb2dzV3pPdDRJb2FNb05YX0xCVnBEWWlnT1FORVoxbS05QnNGNXZ6MlNTZnVROHZfZ3RVMWs4WUdjbVc0ZlNNSHVybHlidXNyU2k2M1hyalVjcEFuOVZxRFI3ZWNmd3MwVmdZNDRLRVNxTWk4WU81eWlZeHo1cHNmRzczYXlENnRKODkwbFNybEhKdjFJZw?oc=5",
       "desc": "Google launches Gemini 4 Hydrogen, targets faster AI workflows The American Bazaar",
@@ -1569,41 +1571,6 @@
       ],
       "audience_score": 8.0,
       "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Google представил ИИ для поиска причин болезней в клетках и разработки лекарств - prospect.com.ru",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZV9iRThiMTlVYlduU2l0Slg5ajRVRFpEVi1ZT0FDbThhTm15TnpGSXNkT0t6aG95Yml3VUJuSmFVX21iYUhpeldkei1YOXhBMTFndDN3eE9nUUhxbUxjbG9HN09GVDgzU1NLN0lVVDg3NGZfSEJvVVVuN3lBQzJWNVlka244NEVxcGVpdzlzWk1WQUZOZW1WR05fVFRkLWJrLTZPVTZhVTVvTGVDZXZNM3F4ejJkNW1jdFMzdzRaTEg?oc=5",
-      "desc": "Google представил ИИ для поиска причин болезней в клетках и разработки лекарств prospect.com.ru",
-      "source": "prospect.com.ru",
-      "time": 1794516112.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 10.0,
-        "event_concreteness": 13.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 46.0,
-        "audience_score": 7.0,
-        "audience_bonus": 21.0,
-        "final_score": 67.0
-      },
-      "base_score": 46.0,
-      "audience_bonus": 21.0,
-      "score_stage": "final",
-      "score": 67.0,
-      "key": "df6962fc36011915d43f694125385d1ad00ff4eca31db5f1943279b7b8d2d6c0",
-      "importance": 67.0,
-      "editorial_value": 50.0,
-      "topics": [],
-      "audience_score": 7.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
     },
     {
       "region": "WORLD",
@@ -1756,81 +1723,6 @@
     },
     {
       "region": "RUSSIA",
-      "title": "Поверхность атаки и AI Red Team: как смотреть на приложение глазами атакующего до релиза",
-      "link": "https://habr.com/ru/companies/infera_security/articles/1107378/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107378",
-      "desc": "Какие части приложения реально доступны атакующему и что произойдёт, если он доберётся до уязвимого участка? Поверхности атаки – это совокупность доступных извне интерфейсов, используемых технологий, API-методов, обработчиков и путей выполнения, через которые атакующий может воздействовать на приложение. Главное преимущество анализа поверхности атаки в том, что команда видит не только «что найдено», но и «что доступно», «каким путём» и «насколько это покрыто проверками». С появлением приложений на базе LLM добавился ещё один слой риска. У такой системы недостаточно проверить исходный код и инфраструктуру: нужно атаковать работающий AI-интерфейс , измерять устойчивость модели к нежелательным запросам, проверять качество ответов и отслеживать регрессии между версиями. AI Red Team добавляет поведенческий слой и проверяет не только конструкцию системы, но и её поведение под воздействием атакующих запросов . Он позволяет тестировать работающую систему, сравнивать версии по измеримым показателям и включать безопасность AI-функций в инженерный цикл, а не оставлять её разовой экспертной процедурой. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794555412.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 6.0,
-        "event_concreteness": 13.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 46.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 46.5
-      },
-      "base_score": 46.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 46.5,
-      "key": "60e87e491df81ec7573c6ff33b1596b37adfd9692e6f47f2e39d362333a6f77a",
-      "importance": 46.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "security_regulation"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Claude теперь можно подключать к видеозвонкам в Google Meet",
-      "link": "https://habr.com/ru/articles/1107366/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107366",
-      "desc": "Anthropic запустила бета‑тест функции Claude Meetings, которая подключает Calude к видеозвонкам отдельным участником. Во время созвона агент следит за разговором, конспектирует и выполняет поручения прямо во время звонка. Пока есть поддержка только Google Meet. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794554430.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 10.0,
-        "event_concreteness": 13.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 46.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 46.0
-      },
-      "base_score": 46.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 46.0,
-      "key": "4644117760f809d455f1d08d42c6fae3ea33d043bb7fb71f008259a9c9b07829",
-      "importance": 46.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "models"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
       "title": "[Перевод] Mesh-узлы могут обойтись без микроконтроллера",
       "link": "https://habr.com/ru/companies/ruvds/articles/1106564/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1106564",
       "desc": "Большинство устройств для mesh-сетей в своей основе представляют собой всего лишь микроконтроллер, подключённый к LoRa-чипу компании Semtech (подробнее об этом можно прочитать в моей предыдущей статье ). Конечно, некоторые производители добавляют GPS-модуль, клавиатуру и экран, но основные компоненты, по сути, эти два кирпичика Lego. Микроконтроллер отправляет LoRa-чипу команды вроде «передай эти байты на частоте 910 МГц», а тот их выполняет. Когда LoRa-чип принимает сообщение, он генерирует прерывание для микроконтроллера, сообщая: «Я получил твои байты. Забирай». Чтобы превратить такую связку в узел mesh-сети, достаточно написать для микроконтроллера код, определяющий формат кодирования пакетов, правила их пересылки и способ взаимодействия с клиентским приложением по Bluetooth. Попросите друга установить ту же прошивку, и вуаля: у вас есть собственная mesh-сеть. Именно по такой схеме я создал свою плату на базе LR2021. Если вы регулярно читаете мои статьи, то пока ничего нового я вам не рассказал. Но вот что действительно интересно: я выяснил, как избавиться от микроконтроллера. Ну, в некотором смысле. Впрочем, я забегаю вперёд. Читать далее",
@@ -1946,20 +1838,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794559237.0109184,
+    "last_start_ts": 1794559962.2547622,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794559237.0109184,
-    "last_success_ts": 1794559237.0109184,
+    "last_run_ts": 1794559962.2547622,
+    "last_success_ts": 1794559962.2547622,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 17
+    "queue_size": 14
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794559236.8545887
+      "updated_at": 1794559971.676882
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1983,20 +1875,6 @@
     }
   },
   "stories": {
-    "b4723b350373f3920aaec8e87a917515c975b0c1ce38f4a39ecf45d26863dd20": {
-      "time": 1794472846,
-      "title": "APT StingyBasilisk: понеслась malware по трубам",
-      "desc": "В начале 2026 года наша команда расследования и реагирования на инциденты обнаружила сложную угрозу, исходящую от группировки, которую мы назвали StingyBasilisk и которая активна как минимум с апреля 2022 года. Злоумышленники продолжительное время удерживали контроль над скомпрометированной инфраструктурой, действуя скрытно и маскируясь под легитимные средства защиты, применяемые организацией. Исходный вектор заражения установить не удалось, но мы выявили развернутую сеть собственных агентов злоумышленника, управление которыми осуществлялось через именованные каналы Windows. APT-группировка StingyBasilisk применяла широкий набор техник сокрытия присутствия, что позволяет предположить шпионаж в качестве конечной цели атаки. Для закрепления на скомпрометированных хостах использовались COM Hijacking (для запуска SilentCOM) и Time Providers (для обеспечения персистентности TediousLoader). Перемещение внутри периметра выполнялось с использованием протокола SMB, а удаленный запуск — с помощью планировщика заданий Windows. Именно так с февраля 2026 года StingyBasilisk доставляла загрузчик CunningDoor. Все обнаруженные образцы ВПО представляли собой DLL-библиотеки, задача которых состояла в ожидании и исполнении полезной нагрузки в памяти процесса Windows. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
-    "14c23b899686dfd9b299d1c5b1543123fe46da0d9ad1f91589036b25edf56ae1": {
-      "time": 1794473170,
-      "title": "Кейс RED Security: как отличить ИИ от человека в автоматизированной кибератаке",
-      "desc": "Хабр, привет! На связи Никита Полосухин, ведущий аналитик центра мониторинга и реагирования на кибератаки RED Security SOC. В этом посте расскажу о недавней атаке на крупную российскую коммерческую компанию. В расследовании атаки участвовала наша команда. Атакующий прошел через цепочку уязвимостей внешнего и внутреннего периметра, полностью скомпрометировал домен организации — и все с помощью ИИ. Не буду разливать воду, сразу к делу. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "d6802f7a55932893a4890fccc77795123e86750e8e0e8000e75fcc397b5e24bd": {
       "time": 1794475964,
       "title": "OpenAI rebounds strongly as quarterly revenue surpasses $10 billion - Innovation Village",
@@ -2423,13 +2301,19 @@
       "desc": "OpenAI Launches Two AI Cybersecurity Tools to Automate Penetration Testing and Vulnerability Remediation CyberSecurityNews",
       "source": "CyberSecurityNews",
       "region": "WORLD"
+    },
+    "15a85f6813da5e3400d8015e36df5020961c5bf8dbeb3164316c17ee616f7adf": {
+      "time": 1794559962,
+      "title": "Как научить ИИ писать E2E-тесты для iOS и Android по стандартам проекта",
+      "desc": "Привет, Хабр! Меня зовут Дима Борщевский , я QA Engineer в Авито Товары и работаю в IT около десяти лет. В последнее время я разбираюсь, какую часть подготовки мобильных E2E-тестов можно передать ИИ-агенту без снижения требований к качеству. Сгенерировать несколько строк на Kotlin или Swift несложно. Сложнее получить изменение, которое использует инфраструктуру конкретного проекта, подготавливает воспроизводимые данные, проверяет результат каждого действия, компилируется и запускается. Обычного запроса в духе «напиши E2E-тест оформления заказа» для этого недостаточно. В статье я разберу подход, оформленный как универсальный скилл для мобильных E2E-тестов. Он поддерживает Android и iOS, но не навязывает общий фреймворк: источником правил остаётся целевой репозиторий. Материал будет полезен QA-инженерам и разработчикам, которые уже используют ИИ для работы с кодом и хотят получать от него проверяемый результат. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -2445,97 +2329,10 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794325047,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 29.09,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns/",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 6.5,
-          "bonus_total": 39.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Need to reassess security and access to open‑source models",
-            "title": "Cyberattacks threaten to make open-source AI a little less open, Hugging Face exec warns",
-            "final_score": 70.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794325260,
       "status": "OK",
@@ -22592,11 +22389,101 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794559962,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 21.1,
+      "candidates": 0,
+      "queue_before": 15,
+      "queue_after": 14,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/companies/avito/articles/1095268/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1095268",
+            "image_url": "https://habr.com/share/publication/1095268/9230fc6b2873cce087b66758688d928e/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 8.0,
+          "bonus_total": 72.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 3,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Позволяет внедрить конкретный метод автоматизации тестирования, снижая рутинную нагрузку на QA-инженеров.",
+            "title": "Как научить ИИ писать E2E-тесты для iOS и Android по стандартам проекта",
+            "final_score": 75.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1794558283.1844883,
-  "last_publish_ts": 1794559237.0109184,
+  "last_publish_ts": 1794559962.2547622,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
