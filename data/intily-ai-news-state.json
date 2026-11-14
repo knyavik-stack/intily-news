@@ -1342,7 +1342,11 @@
         "security_regulation"
       ],
       "audience_score": 5.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1794670379,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1794670679
     },
     {
       "region": "WORLD",
@@ -1360,25 +1364,29 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 39.5,
+        "base_score": 39.0,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 60.5
+        "final_score": 60.0
       },
-      "base_score": 39.5,
+      "base_score": 39.0,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 60.5,
+      "score": 60.0,
       "key": "9b8d4eee4bf9525c4faaa2d737501b6643f392d8104a3e6460b85bf2076b1884",
-      "importance": 60.5,
+      "importance": 60.0,
       "editorial_value": 50.0,
       "topics": [
         "models"
       ],
       "audience_score": 7.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1794670379,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1794670679
     },
     {
       "region": "WORLD",
@@ -1492,30 +1500,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794670145.1889687,
+    "last_start_ts": 1794670379.0163617,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794670145.1889687,
-    "last_success_ts": 1794670145.1889687,
+    "last_run_ts": 1794670379.0163617,
+    "last_success_ts": 1794670379.0163617,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 5
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794670145.181007
+      "disabled_until": 1794673999.116821,
+      "reason": "The read operation timed out",
+      "updated_at": 1794670399.1168232
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794670131.6335866
+      "disabled_until": 1794674002.1662204,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794670402.1662223
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794670131.6335866
+      "disabled_until": 1794756863.6636312,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794670463.6636326
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1523,9 +1531,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794670131.6335866
+      "disabled_until": 1794674062.643946,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794670462.643948
     }
   },
   "stories": {
@@ -1938,146 +1946,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1794469953,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 39.75,
-      "candidates": 20,
-      "queue_before": 4,
-      "queue_after": 7,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 12,
-        "known_recent": 0,
-        "already_queued": 3,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 4,
-        "candidate_count": 20,
-        "admission_rate": 20.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.cnews.ru/news/top/2026-11-12_claude_uhodit_iz_korporativnogo",
-            "image_url": "https://www.cnews.ru/img/design2008/logocnews_f.png",
-            "width": 600,
-            "height": 315,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.5,
-          "bonus_total": 51.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Критическая необходимость экстренной миграции API-интеграций для предотвращения остановки бизнес-процессов.",
-            "title": "Мы запрещаем вам всё. Claude перекрывает доступ к ИИ для компаний из России",
-            "final_score": 83.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 107,
-        "raw_items": 451,
-        "source_counts": {
-          "TechCrunch AI": 8,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 1,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 3,
-          "Habr AI/News": 39,
-          "CNews": 32,
-          "Euronews": 22
-        },
-        "score_filtered": 403,
-        "quality_filtered": 26,
-        "story_dedup": 2,
-        "candidates": 20,
-        "candidate_rate": 0.0581,
-        "score_buckets": {
-          "0–39": 387,
-          "40–49": 39,
-          "50–59": 20,
-          "60–69": 4,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 2,
-          "6": 2,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794470236,
       "status": "OK",
@@ -22571,6 +22439,83 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1794670379,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 84.68,
+      "candidates": 0,
+      "queue_before": 5,
+      "queue_after": 5,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
