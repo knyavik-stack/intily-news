@@ -1,6 +1,5 @@
 {
   "published": {
-    "c5b8cfdd295f89124301398557632862a37cbce4b390148ec070b282bffcb51a": 1792063966,
     "ab92b4eb7a0ca1a3500e3412b41c922a32532176e89b2fdd77666c2f560cb8ed": 1792065398,
     "46c0f03ef92943419362da4cc7268e7c0d8b1a4db0e5b713c23552c2a5474508": 1792067321,
     "5e5a9920f0cc5e91015713e08dd7651c1ae739ef5c044bf3d20654c6478befb1": 1792068766,
@@ -1298,22 +1297,23 @@
     "a75ce979f009f0ec6296e88a31ce0b501c7c1c54539d371450ff1d7444f158d2": 1794651179,
     "9cd308cf936e580b37246f08364bb8839f4eac2a784378d315b58404d59bb05d": 1794652619,
     "75ccf1ac8c4095ff46feb0f5f3ea2156a7eaf8ee6d3b2f4c1cc96e62d70301c5": 1794655499,
-    "14b4ebbb033736f185e7f7f7618a2df3cf6ad42277ae689aae3f710635f500b7": 1794655737
+    "14b4ebbb033736f185e7f7f7618a2df3cf6ad42277ae689aae3f710635f500b7": 1794655737,
+    "c91d1b4f3b972d90cafd9f5d1b9af97770857afe8c145035cfb457a7cb85b34d": 1794656219
   },
   "known": {
-    "fce2703bd44b82494bd88ec083e94af918f49b7053038f3b198741bd63293013": 1794650700.0009508,
     "a75ce979f009f0ec6296e88a31ce0b501c7c1c54539d371450ff1d7444f158d2": 1794651179.1936746,
     "9cd308cf936e580b37246f08364bb8839f4eac2a784378d315b58404d59bb05d": 1794652619.197134,
     "75ccf1ac8c4095ff46feb0f5f3ea2156a7eaf8ee6d3b2f4c1cc96e62d70301c5": 1794655499.371399,
-    "14b4ebbb033736f185e7f7f7618a2df3cf6ad42277ae689aae3f710635f500b7": 1794655737.2502983
+    "14b4ebbb033736f185e7f7f7618a2df3cf6ad42277ae689aae3f710635f500b7": 1794655737.2502983,
+    "c91d1b4f3b972d90cafd9f5d1b9af97770857afe8c145035cfb457a7cb85b34d": 1794656219.1204293
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794655737.2502983,
+    "last_start_ts": 1794656219.1204293,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794655737.2502983,
-    "last_success_ts": 1794655737.2502983,
+    "last_run_ts": 1794656219.1204293,
+    "last_success_ts": 1794656219.1204293,
     "last_candidates": 13,
     "last_published": 1,
     "queue_size": 0
@@ -1322,7 +1322,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794655773.9668376
+      "updated_at": 1794656253.863714
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1681,12 +1681,18 @@
       "desc": "Sundar Pichai Reported Alphabet's Cloud Revenue Grew 103% Last Quarter While the Gemini App Reached 1 Billion Monthly Users. Is Google Cloud Becoming a Bigger Growth Driver Than Search? Yahoo Finance",
       "source": "Yahoo Finance",
       "region": "WORLD"
+    },
+    "c91d1b4f3b972d90cafd9f5d1b9af97770857afe8c145035cfb457a7cb85b34d": {
+      "time": 1794656219,
+      "title": "OpenAI представила функцию ChatGPT Wallet для покупок с помощью ИИ",
+      "desc": "OpenAI анонсировала ChatGPT Wallet — новую платёжную функцию, позволяющую ИИ‑агентам совершать покупки от имени пользователей. Компания начала сотрудничать с такими крупными эмитентами карт, как American Express, Mastercard и Visa. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -1703,81 +1709,10 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794422451,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 22.21,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 18,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1794423153,
       "status": "OK",
@@ -22248,11 +22183,151 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794656219,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 35.47,
+      "candidates": 13,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 1,
+        "candidate_count": 13,
+        "admission_rate": 7.69,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://habr.com/ru/articles/1107818/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107818",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет точнее оценивать надежность моделей при выборе стека для автоматизации бизнес-задач.",
+            "title": "ИИ знает ответ на вопрос, но продолжает молчать: XYBench",
+            "final_score": 72.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 56,
+        "raw_items": 358,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 40,
+          "CNews": 0,
+          "Euronews": 14
+        },
+        "score_filtered": 324,
+        "quality_filtered": 10,
+        "story_dedup": 11,
+        "candidates": 13,
+        "candidate_rate": 0.043,
+        "score_buckets": {
+          "0–39": 299,
+          "40–49": 35,
+          "50–59": 22,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794655737.2502983,
-  "last_publish_ts": 1794655737.2502983,
+  "last_search_ts": 1794656219.1204293,
+  "last_publish_ts": 1794656219.1204293,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
