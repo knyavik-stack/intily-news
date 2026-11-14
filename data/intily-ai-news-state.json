@@ -1301,28 +1301,30 @@
     "4cd501e9452d708ab8f5a90f710573bf3030a9e3e2d108640e09e2571969da27": 1794649503,
     "d719e82d6bea80065bf49d0af12b34909b18855a0dc043de40c593f7115942e5": 1794649979,
     "9ef25c0aff6b84f14c076452dfdeed8a9dfc1377d55d57aab8426af3953068d2": 1794650456,
-    "fce2703bd44b82494bd88ec083e94af918f49b7053038f3b198741bd63293013": 1794650700
+    "fce2703bd44b82494bd88ec083e94af918f49b7053038f3b198741bd63293013": 1794650700,
+    "a75ce979f009f0ec6296e88a31ce0b501c7c1c54539d371450ff1d7444f158d2": 1794651179
   },
   "known": {
     "c6b8effdb366a2d4becb307628a66531c3d95bcc5b363f420b61b48715186443": 1794647331.528708,
-    "fce2703bd44b82494bd88ec083e94af918f49b7053038f3b198741bd63293013": 1794650700.0009508
+    "fce2703bd44b82494bd88ec083e94af918f49b7053038f3b198741bd63293013": 1794650700.0009508,
+    "a75ce979f009f0ec6296e88a31ce0b501c7c1c54539d371450ff1d7444f158d2": 1794651179.1936746
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794650936.2884467,
+    "last_start_ts": 1794651179.1936746,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794650936.2884467,
-    "last_success_ts": 1794650936.2884467,
-    "last_candidates": 13,
-    "last_published": 0,
+    "last_run_ts": 1794651179.1936746,
+    "last_success_ts": 1794651179.1936746,
+    "last_candidates": 14,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794650968.632405
+      "updated_at": 1794651210.5028305
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1709,10 +1711,16 @@
       "desc": "Apex Compute выпустила открытую бета-версию генератора кадров Apex Neural Rendering. Инструмент работает поверх прослойки OptiScaler, подменяет штатный вызов NVIDIA DLSS Frame Generation и позволяет запускать синтез промежуточных кадров на видеокартах GeForce RTX™, GeForce ® GTX 16, AMD Radeon™, Intel ® Arc™ и чипах Apple Silicon. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "a75ce979f009f0ec6296e88a31ce0b501c7c1c54539d371450ff1d7444f158d2": {
+      "time": 1794651179,
+      "title": "Представлен открытый проект Airgorah для проверки безопасности беспроводных компьютерных сетей",
+      "desc": "Разработчик Мартин Оливье совместно с Claude представил открытый проект Airgorah для проверки безопасности беспроводных компьютерных сетей на ПК с Linux. Решение написано на языке Rust, а для реализации графического интерфейса используется GTK4. Проект опубликован на GitHub под лицензией MIT. Утилита Airgorah умеет находить подключённые к роутеру устройства, перехватывать Wi-Fi-трафик и проверять надёжность паролей. Также решение может имитировать атаки злоумышленников, чтобы выявить слабые места сети. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -1728,153 +1736,13 @@
     "WORLD",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794415949,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 51.32,
-      "candidates": 48,
-      "queue_before": 18,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 9,
-        "known_recent": 12,
-        "already_queued": 9,
-        "story_queue": 0,
-        "story_history": 9,
-        "added": 9,
-        "candidate_count": 48,
-        "admission_rate": 18.75,
-        "dominant_block": "known_recent",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.coloradohometownweekly.com/2026/11/10/australia-ai-safety-regulator/",
-            "image_url": "https://www.coloradohometownweekly.com/wp-content/uploads/2026/11/Australia_Artificial_Intelligence__95_3.jpg?w=2000&h=1333",
-            "width": 2000,
-            "height": 1333,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.67,
-          "bonus_total": 78.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 3,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Ужесточение регуляторики требует пересмотра политики безопасности при интеграции сторонних LLM в бизнес-процессы.",
-            "title": "Australia to launch AI safety regulator after OpenAI’s breach of a government portal - Colorado Hometown Weekly",
-            "final_score": 72.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 201,
-        "raw_items": 1197,
-        "source_counts": {
-          "TechCrunch AI": 5,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 2,
-          "Google DeepMind": 1,
-          "Hugging Face": 1,
-          "Ars Technica": 2,
-          "Habr AI/News": 40,
-          "CNews": 97,
-          "Euronews": 50
-        },
-        "score_filtered": 1080,
-        "quality_filtered": 52,
-        "story_dedup": 17,
-        "candidates": 48,
-        "candidate_rate": 0.0482,
-        "score_buckets": {
-          "0–39": 1020,
-          "40–49": 111,
-          "50–59": 59,
-          "60–69": 7,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 7,
-          "7": 5,
-          "8": 6,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794417402,
       "status": "OK",
@@ -22051,11 +21919,151 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794651179,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 34.95,
+      "candidates": 14,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 1,
+        "candidate_count": 14,
+        "admission_rate": 7.14,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/companies/selectel/articles/1107638/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107638",
+            "image_url": "https://habr.com/share/publication/1107638/1a94eac60d57f8a34b4f0f499d279f2d/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет оптимизировать затраты на железо при разработке и тестировании графических AI-решений.",
+            "title": "Кроссплатформенная альтернатива генерации кадров NVIDIA DLSS с поддержкой видеокарт прошлых поколений",
+            "final_score": 69.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 55,
+        "raw_items": 377,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 40,
+          "CNews": 0,
+          "Euronews": 11
+        },
+        "score_filtered": 346,
+        "quality_filtered": 7,
+        "story_dedup": 10,
+        "candidates": 14,
+        "candidate_rate": 0.0435,
+        "score_buckets": {
+          "0–39": 320,
+          "40–49": 33,
+          "50–59": 23,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794650936.2884467,
-  "last_publish_ts": 1794650700.0009508,
+  "last_search_ts": 1794651179.1936746,
+  "last_publish_ts": 1794651179.1936746,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
