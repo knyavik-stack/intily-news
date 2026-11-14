@@ -1304,27 +1304,26 @@
     "9cd308cf936e580b37246f08364bb8839f4eac2a784378d315b58404d59bb05d": 1794652619
   },
   "known": {
-    "c6b8effdb366a2d4becb307628a66531c3d95bcc5b363f420b61b48715186443": 1794647331.528708,
     "fce2703bd44b82494bd88ec083e94af918f49b7053038f3b198741bd63293013": 1794650700.0009508,
     "a75ce979f009f0ec6296e88a31ce0b501c7c1c54539d371450ff1d7444f158d2": 1794651179.1936746,
     "9cd308cf936e580b37246f08364bb8839f4eac2a784378d315b58404d59bb05d": 1794652619.197134
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794652619.197134,
+    "last_start_ts": 1794653099.9483542,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794652619.197134,
-    "last_success_ts": 1794652619.197134,
-    "last_candidates": 13,
-    "last_published": 1,
+    "last_run_ts": 1794653099.9483542,
+    "last_success_ts": 1794653099.9483542,
+    "last_candidates": 12,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794652651.1454957
+      "updated_at": 1794653179.226758
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1348,13 +1347,6 @@
     }
   },
   "stories": {
-    "f68c6574bbf7b66cf5547630ba8b0eda471d5f2a33f61c355cdbca9db09ba963": {
-      "time": 1794566437,
-      "title": "[Перевод] Представляем Gemini 4 Hydrogen",
-      "desc": "Эта статья перевод оригинальной статьи « Introducing Gemini 4 Hydrogen ». Также я веду телеграм канал « Frontend по‑флотски », где рассказываю про интересные вещи из мира разработки интерфейсов и AI. Вступление Сегодня мы представляем Gemini 4 Hydrogen. Модель делает передовые возможности ИИ доступными каждому и обеспечивает скорость и эффективность для повседневной работы с кодом и агентных процессов. Наши передовые модели Gemini 4 Carbon и Gemini 4 Argon хорошо справляются с глубокими и длительными рассуждениями над самыми сложными задачами. Hydrogen же создана для быстрого выполнения разнообразных агентных задач. Мы также делаем Gemini 4 доступной всем пользователям Google AI Studio , Gemini API, Gemini для бизнеса , приложения Gemini и Google Поиска , а также платным подписчикам Google AI Pro и Ultra в Google Antigravity . Hydrogen превосходит Argon в Artificial Analysis Intelligence Index на стандартном высоком уровне рассуждений (51 против 50 и 54 на максимальном уровне xhigh), часто выполняя задачи быстрее моделей своего класса. Цена Gemini 4 Hydrogen одинакова для всего контекстного окна в 1 миллион токенов: 1,50 доллара за миллион входных и 7,50 доллара за миллион выходных токенов. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "29e7d2ac5fc7c80348fd94683dd2c110766c803689c3928630507e1ef3a0b611": {
       "time": 1794567400,
       "title": "Microsoft outage explained: what went wrong and is your data at risk?",
@@ -1750,84 +1742,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794420086,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 47.95,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 19,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Прямое сокращение времени простоя инфраструктуры и затрат на спотовые инстансы при деплое LLM.",
-            "title": "Оптимизация холодного старта vLLM: собираем прогретый OCI образ Deepseek и GLM и запускаем за 30 секунд",
-            "final_score": 70.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1794420528,
       "status": "OK",
@@ -22105,10 +22019,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794653099,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 79.36,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 0,
+        "candidate_count": 12,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет разработчикам и админам быстро проверить защищенность локальной сети без привлечения сторонних пентестеров.",
+            "title": "Представлен открытый проект Airgorah для проверки безопасности беспроводных компьютерных сетей",
+            "final_score": 71.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 55,
+        "raw_items": 377,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 40,
+          "CNews": 0,
+          "Euronews": 12
+        },
+        "score_filtered": 343,
+        "quality_filtered": 10,
+        "story_dedup": 12,
+        "candidates": 12,
+        "candidate_rate": 0.0373,
+        "score_buckets": {
+          "0–39": 323,
+          "40–49": 30,
+          "50–59": 22,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794652619.197134,
+  "last_search_ts": 1794653099.9483542,
   "last_publish_ts": 1794652619.197134,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
