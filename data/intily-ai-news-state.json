@@ -1297,10 +1297,10 @@
     "9cd308cf936e580b37246f08364bb8839f4eac2a784378d315b58404d59bb05d": 1794652619,
     "75ccf1ac8c4095ff46feb0f5f3ea2156a7eaf8ee6d3b2f4c1cc96e62d70301c5": 1794655499,
     "14b4ebbb033736f185e7f7f7618a2df3cf6ad42277ae689aae3f710635f500b7": 1794655737,
-    "c91d1b4f3b972d90cafd9f5d1b9af97770857afe8c145035cfb457a7cb85b34d": 1794656219
+    "c91d1b4f3b972d90cafd9f5d1b9af97770857afe8c145035cfb457a7cb85b34d": 1794656219,
+    "35a5d81418f09e702697caafc0df7e70834d1ada975511c34a1140f249859d5e": 1794658156
   },
   "known": {
-    "9cd308cf936e580b37246f08364bb8839f4eac2a784378d315b58404d59bb05d": 1794652619.197134,
     "75ccf1ac8c4095ff46feb0f5f3ea2156a7eaf8ee6d3b2f4c1cc96e62d70301c5": 1794655499.371399,
     "14b4ebbb033736f185e7f7f7618a2df3cf6ad42277ae689aae3f710635f500b7": 1794655737.2502983,
     "c91d1b4f3b972d90cafd9f5d1b9af97770857afe8c145035cfb457a7cb85b34d": 1794656219.1204293,
@@ -1314,43 +1314,6 @@
     "1e6401500ccf555f4a0bc42cd60197a1350aad5f824cb3adbd340c9046a0a7bb": 1794657660.615055
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "[Перевод] Как ускорить локальную LLM на 50% без покупки новой видеокарты",
-      "link": "https://habr.com/ru/articles/1107848/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107848",
-      "desc": "На GTC Berlin 2026 участники воркшопа NVIDIA смогли ускорить генерацию Qwen3-32B с 16,4 до 24,5 токена в секунду, не меняя оборудование. Для этого использовали FP8 вместо BF16. Общая пропускная способность тоже выросла, хотя и заметно меньше: с 639 до 719 токенов в секунду. Эксперимент проводили на Kubernetes-кластере с четырьмя NVIDIA A100 по 80 ГБ. У каждого участника был собственный кластер, на котором можно было разворачивать модели, менять конфигурацию и измерять производительность. Помимо квантизации, на занятии разбирали NVIDIA Dynamo, маршрутизацию запросов с учётом KV-кеша, автоматическое масштабирование и разделение prefill/decode между GPU. Материал основан на статье инженера Siim Tolk , опубликованной 4 ноября 2026 года. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794657335.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 12.0,
-        "event_concreteness": 13.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 50.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 50.0
-      },
-      "base_score": 50.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 50.0,
-      "key": "35a5d81418f09e702697caafc0df7e70834d1ada975511c34a1140f249859d5e",
-      "importance": 50.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "chips"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "WORLD",
       "title": "Ex-Nvidia CEO misled top lawyer on affair with Chinese businesswoman, sources say - electronics.economictimes.indiatimes.com",
@@ -1370,23 +1333,23 @@
         "freshness": 1.0,
         "low_signal_penalty": 0.0,
         "base_score": 46.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 46.5
+        "audience_score": 5.0,
+        "audience_bonus": 15.0,
+        "final_score": 61.5
       },
       "base_score": 46.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 46.5,
+      "audience_bonus": 15.0,
+      "score_stage": "final",
+      "score": 61.5,
       "key": "2050e9863748029a6be9e32d9d896771ee8694c12662be43d1c6968131e39bdb",
-      "importance": 46.5,
+      "importance": 61.5,
       "editorial_value": 50.0,
       "topics": [
         "business",
         "chips",
         "security_regulation"
       ],
-      "audience_score": null,
+      "audience_score": 5.0,
       "tier": "A"
     },
     {
@@ -1612,30 +1575,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794657660.615055,
+    "last_start_ts": 1794658156.3070376,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794657660.615055,
-    "last_success_ts": 1794657660.615055,
-    "last_candidates": 17,
-    "last_published": 0,
-    "queue_size": 8
+    "last_run_ts": 1794658156.3070376,
+    "last_success_ts": 1794658156.3070376,
+    "last_candidates": 0,
+    "last_published": 1,
+    "queue_size": 7
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1794661310.680552,
-      "reason": "The read operation timed out",
-      "updated_at": 1794657710.6805553
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794658156.282742
     },
     "GROQ": {
-      "disabled_until": 1794661314.122682,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794657714.1226842
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794658139.5349789
     },
     "OPENAI": {
-      "disabled_until": 1794744123.1379335,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1794657723.1379356
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794658139.5349789
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1643,9 +1606,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1794661322.3493454,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794657722.3493474
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794658139.5349789
     }
   },
   "stories": {
@@ -1984,11 +1947,17 @@
       "desc": "OpenAI анонсировала ChatGPT Wallet — новую платёжную функцию, позволяющую ИИ‑агентам совершать покупки от имени пользователей. Компания начала сотрудничать с такими крупными эмитентами карт, как American Express, Mastercard и Visa. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "35a5d81418f09e702697caafc0df7e70834d1ada975511c34a1140f249859d5e": {
+      "time": 1794658156,
+      "title": "[Перевод] Как ускорить локальную LLM на 50% без покупки новой видеокарты",
+      "desc": "На GTC Berlin 2026 участники воркшопа NVIDIA смогли ускорить генерацию Qwen3-32B с 16,4 до 24,5 токена в секунду, не меняя оборудование. Для этого использовали FP8 вместо BF16. Общая пропускная способность тоже выросла, хотя и заметно меньше: с 639 до 719 токенов в секунду. Эксперимент проводили на Kubernetes-кластере с четырьмя NVIDIA A100 по 80 ГБ. У каждого участника был собственный кластер, на котором можно было разворачивать модели, менять конфигурацию и измерять производительность. Помимо квантизации, на занятии разбирали NVIDIA Dynamo, маршрутизацию запросов с учётом KV-кеша, автоматическое масштабирование и разделение prefill/decode между GPU. Материал основан на статье инженера Siim Tolk , опубликованной 4 ноября 2026 года. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -2006,99 +1975,10 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794424835,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 11.74,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://technuter.com/breaking-news/adobe-and-google-deepen-partnership-to-bring-leading-ai-models-and-integrated-workflows-to-creatives-and-enterprises.html",
-            "image_url": "https://technuter.com/wp-content/uploads/2021/09/Adobe.jpg",
-            "width": 370,
-            "height": 344,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Прямая интеграция моделей в рабочий софт требует пересмотра пайплайнов производства контента для сохранения конкурентоспособности.",
-            "title": "Adobe and Google Deepen Partnership to Bring Leading AI Models and Integrated Workflows to Creatives and Enterprises - Technuter",
-            "final_score": 73.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794425789,
       "status": "OK",
@@ -22708,11 +22588,99 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1794658156,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 17.61,
+      "candidates": 0,
+      "queue_before": 8,
+      "queue_after": 7,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://electronics.economictimes.indiatimes.com/news/semiconductors/ex-nvidia-ceo-misled-top-lawyer-on-affair-with-chinese-businesswoman-sources-say/135820623",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.5,
+          "bonus_total": 39.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 5.0,
+            "bonus": 15.0,
+            "reason": "Событие носит репутационный характер и не несет прямых изменений в технологические процессы или бизнес-стратегии для AI-специалистов.",
+            "title": "Ex-Nvidia CEO misled top lawyer on affair with Chinese businesswoman, sources say - electronics.economictimes.indiatimes.com",
+            "final_score": 61.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 6,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1794657660.615055,
-  "last_publish_ts": 1794656219.1204293,
+  "last_publish_ts": 1794658156.3070376,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
