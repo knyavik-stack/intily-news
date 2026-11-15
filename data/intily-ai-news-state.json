@@ -1301,33 +1301,35 @@
     "f7eb103dc97d0b5dad79bb800c50566abdfd1abd19bacc16a2e05647f0ca2012": 1794750742,
     "54ec2a06acb55674ef062e37b6f7a975729d15461957a9c589fd8e3e528751f5": 1794750979,
     "5c6bbd83a970c6a9f27c3892fb62ebfb5bab67c14cb4ad22b0e09607d9c9ed1f": 1794751219,
-    "6c18de2eebe10a1c314cba7481573724e58afa08f38afae1e811550b0ff5f04e": 1794751464
+    "6c18de2eebe10a1c314cba7481573724e58afa08f38afae1e811550b0ff5f04e": 1794751464,
+    "77c1e7e9e8d54508aa0414edd7364344b64e989a3ec66ae06d01d86e875ee596": 1794752901
   },
   "known": {
     "f7eb103dc97d0b5dad79bb800c50566abdfd1abd19bacc16a2e05647f0ca2012": 1794748586.4194634,
-    "6c18de2eebe10a1c314cba7481573724e58afa08f38afae1e811550b0ff5f04e": 1794751219.4748805
+    "6c18de2eebe10a1c314cba7481573724e58afa08f38afae1e811550b0ff5f04e": 1794751219.4748805,
+    "77c1e7e9e8d54508aa0414edd7364344b64e989a3ec66ae06d01d86e875ee596": 1794752901.323005
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794752420.921426,
+    "last_start_ts": 1794752901.323005,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794752420.921426,
-    "last_success_ts": 1794752420.921426,
-    "last_candidates": 12,
-    "last_published": 0,
+    "last_run_ts": 1794752901.323005,
+    "last_success_ts": 1794752901.323005,
+    "last_candidates": 13,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794752460.8368843
+      "disabled_until": 1794756536.263582,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1794752936.2635841
     },
     "GROQ": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794750740.4763644
+      "updated_at": 1794752937.5636408
     },
     "OPENAI": {
       "disabled_until": 0,
@@ -1646,6 +1648,13 @@
       "desc": "ЦБ запустит ИИ-помощника для сравнения банковских продуктов в начале 2027 года. Первые полгода его внедрение будет добровольным iXBT.com",
       "source": "iXBT.com",
       "region": "RUSSIA"
+    },
+    "77c1e7e9e8d54508aa0414edd7364344b64e989a3ec66ae06d01d86e875ee596": {
+      "time": 1794752901,
+      "title": "Техническая документация как артефакт коммуникации",
+      "desc": "Ещё недавно техническую документацию в командах часто приходилось буквально проталкивать через строгие требования, так как разработчикам не хватало времени или желания писать и поддерживать её. С появлением AI-агентов документацию стало проще создавать — её стало больше, но пользы это не прибавило: документы часто генерируют для галочки или только ради контекста агента, забывая о людях. Документация — прежде всего инструмент коммуникации: она передаёт знания и договорённости между людьми и отделами. И агент стал ещё одним звеном этой цепочки, которому просто тоже нужны свои рабочие материалы. В статье показываю, как в наших командах устроена работа с документацией в этих безумных современных условиях. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
@@ -1654,7 +1663,6 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -1667,98 +1675,11 @@
     "WORLD",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794510760,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 8.68,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.unite.ai/anthropic-launches-claude-for-manufacturing-with-17-workflow-skills/",
-            "image_url": "https://www.unite.ai/wp-content/uploads/2026/11/anthropic-launches-claude-for-manufacturing-with-17-workflow-skills.jpg",
-            "width": 1920,
-            "height": 1080,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Позволяет автоматизировать специфические производственные задачи, снижая затраты на рутинный менеджмент.",
-            "title": "Anthropic Launches Claude for Manufacturing With 17 Workflow Skills - Unite.AI",
-            "final_score": 69.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 5,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794511479,
       "status": "OK",
@@ -23717,11 +23638,153 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794752901,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 49.73,
+      "candidates": 13,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 13,
+        "admission_rate": 7.69,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/articles/1108064/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1108064",
+            "image_url": "https://habr.com/share/publication/1108064/c1b641c7190f9c6df1e82f383656e807/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 8.0,
+          "bonus_total": 72.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 3,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Docs quality impacts product communication and risk.",
+            "title": "Техническая документация как артефакт коммуникации",
+            "final_score": 70.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 57,
+        "raw_items": 566,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 40,
+          "CNews": 0,
+          "Euronews": 15
+        },
+        "score_filtered": 541,
+        "quality_filtered": 9,
+        "story_dedup": 3,
+        "candidates": 13,
+        "candidate_rate": 0.0255,
+        "score_buckets": {
+          "0–39": 512,
+          "40–49": 38,
+          "50–59": 15,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI",
+          "GROQ"
+        ],
+        "used": "GROQ",
+        "failovers": 3,
+        "failures": 1,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794752420.921426,
-  "last_publish_ts": 1794751464.9015672,
+  "last_search_ts": 1794752901.323005,
+  "last_publish_ts": 1794752901.323005,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
