@@ -1305,27 +1305,29 @@
     "77c1e7e9e8d54508aa0414edd7364344b64e989a3ec66ae06d01d86e875ee596": 1794752901,
     "30c2e019fe483c9091b9a64d07919d2ac650ebfc09d6f88868d0cc88f3589d8d": 1794756502,
     "dc49839528758626cb3d65b82ed353830df19829a483696991afa606ee5fa70e": 1794758178,
-    "b1bbd5698daac63ad81c2a74e3738aca3f24f40452d9a3d64284a95740c9ebbf": 1794766339
+    "b1bbd5698daac63ad81c2a74e3738aca3f24f40452d9a3d64284a95740c9ebbf": 1794766339,
+    "6bf3cea5c1bcb135008477adab26f2339047c8a4187b9812c73e5a1daa809257": 1794766822
   },
   "known": {
-    "b1bbd5698daac63ad81c2a74e3738aca3f24f40452d9a3d64284a95740c9ebbf": 1794766339.7214754
+    "b1bbd5698daac63ad81c2a74e3738aca3f24f40452d9a3d64284a95740c9ebbf": 1794766339.7214754,
+    "6bf3cea5c1bcb135008477adab26f2339047c8a4187b9812c73e5a1daa809257": 1794766822.43448
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794766584.3071046,
+    "last_start_ts": 1794766822.43448,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794766584.3071046,
-    "last_success_ts": 1794766584.3071046,
-    "last_candidates": 16,
-    "last_published": 0,
+    "last_run_ts": 1794766822.43448,
+    "last_success_ts": 1794766822.43448,
+    "last_candidates": 15,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794766634.9662073
+      "updated_at": 1794766871.771658
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1586,11 +1588,17 @@
       "desc": "Google представила Gemini Robotics 2.5, гуманоид работает на заводе Mercedes Pasquale Pillitteri",
       "source": "Pasquale Pillitteri",
       "region": "RUSSIA"
+    },
+    "6bf3cea5c1bcb135008477adab26f2339047c8a4187b9812c73e5a1daa809257": {
+      "time": 1794766822,
+      "title": "Industrial AI Moves Past Pilot Stage: Four STAR Market Leaders Say Business Models Are Shifting to Subscriptions and Pay-for-Performance - BigGo Finance",
+      "desc": "Industrial AI Moves Past Pilot Stage: Four STAR Market Leaders Say Business Models Are Shifting to Subscriptions and Pay-for-Performance BigGo Finance",
+      "source": "BigGo Finance",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -1608,148 +1616,10 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1794562118,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 36.03,
-      "candidates": 27,
-      "queue_before": 15,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 10,
-        "known_recent": 0,
-        "already_queued": 10,
-        "story_queue": 1,
-        "story_history": 1,
-        "added": 5,
-        "candidate_count": 27,
-        "admission_rate": 18.52,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.cnews.ru/news/line/2026-11-13_yandex_b2b_tech_vypustila_novoe",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.0,
-          "bonus_total": 63.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Позволяет снизить операционные расходы на колл-центры за счет более качественной автоматизации диалогов.",
-            "title": "Yandex B2B Tech выпустила новое поколение речевых моделей для создания голосовых ИИ-агентов",
-            "final_score": 72.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 7,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 110,
-        "raw_items": 518,
-        "source_counts": {
-          "TechCrunch AI": 3,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 2,
-          "Habr AI/News": 40,
-          "CNews": 39,
-          "Euronews": 25
-        },
-        "score_filtered": 472,
-        "quality_filtered": 17,
-        "story_dedup": 2,
-        "candidates": 27,
-        "candidate_rate": 0.0662,
-        "score_buckets": {
-          "0–39": 434,
-          "40–49": 51,
-          "50–59": 26,
-          "60–69": 7,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 3,
-          "7": 2,
-          "8": 6,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794562604,
       "status": "OK",
@@ -24314,11 +24184,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794766822,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 62.69,
+      "candidates": 15,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 13,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 15,
+        "admission_rate": 6.67,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://finance.biggo.com/news/4cec5ae7-8d71-48dc-9f2c-ac6fb43e1237",
+            "image_url": "https://img.biggo.com/NqwlZoX8nqpCyOK5Z-NQdvZ7LLtpcSTXxhDh7GJKcuU/fit/1200/0/sm/0/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTExLzRjZWM1YWU3LThkNzEtNDhkYy05ZjJjLWFjNmZiNDNlMTIzN18xNzk0NzQ0NzQ2X2RlZmF1bHQuanBn.jpg",
+            "width": 1200,
+            "height": 675,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.67,
+          "bonus_total": 69.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра долгосрочных бюджетов и контрактов из-за смены модели монетизации промышленного ИИ.",
+            "title": "Industrial AI Moves Past Pilot Stage: Four STAR Market Leaders Say Business Models Are Shifting to Subscriptions and Pay-for-Performance - BigGo Finance",
+            "final_score": 65.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 66,
+        "raw_items": 708,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 40,
+          "CNews": 0,
+          "Euronews": 24
+        },
+        "score_filtered": 676,
+        "quality_filtered": 13,
+        "story_dedup": 4,
+        "candidates": 15,
+        "candidate_rate": 0.0234,
+        "score_buckets": {
+          "0–39": 639,
+          "40–49": 49,
+          "50–59": 17,
+          "60–69": 3,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794766584.3071046,
-  "last_publish_ts": 1794766339.7214754,
+  "last_search_ts": 1794766822.43448,
+  "last_publish_ts": 1794766822.43448,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
