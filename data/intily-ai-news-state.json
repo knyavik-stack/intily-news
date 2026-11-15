@@ -1301,12 +1301,12 @@
     "3d438e06309ef6ed595be9b4b56741ffeadda895b0397b43192088312c1ada17": 1794747384
   },
   "known": {
-    "bfa12e2e6821306c556788f4d313f09b8759e20f27988a9b3016818d0de27223": 1794742101.8413157,
     "b4867f8049e0587e8b52c4c62da6aa85e3d6f53ab6aa8c06c6cd21a47f5927af": 1794746179.0280223,
     "5c6bbd83a970c6a9f27c3892fb62ebfb5bab67c14cb4ad22b0e09607d9c9ed1f": 1794746179.0280223,
     "f3c837a23975d41eedf5aa5bac1eb52077ee55ff21d83d67b62556fbc9c81556": 1794746179.0280223,
     "3d438e06309ef6ed595be9b4b56741ffeadda895b0397b43192088312c1ada17": 1794746179.0280223,
-    "54ec2a06acb55674ef062e37b6f7a975729d15461957a9c589fd8e3e528751f5": 1794746179.0280223
+    "54ec2a06acb55674ef062e37b6f7a975729d15461957a9c589fd8e3e528751f5": 1794746179.0280223,
+    "f7eb103dc97d0b5dad79bb800c50566abdfd1abd19bacc16a2e05647f0ca2012": 1794748586.4194634
   },
   "queue": [
     {
@@ -1362,19 +1362,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 44.0,
+        "base_score": 43.5,
         "audience_score": 5.0,
         "audience_bonus": 15.0,
-        "final_score": 59.0
+        "final_score": 58.5
       },
-      "base_score": 44.0,
+      "base_score": 43.5,
       "audience_bonus": 15.0,
       "score_stage": "final",
-      "score": 59.0,
+      "score": 58.5,
       "key": "5c6bbd83a970c6a9f27c3892fb62ebfb5bab67c14cb4ad22b0e09607d9c9ed1f",
-      "importance": 59.0,
+      "importance": 58.5,
       "editorial_value": 50.0,
       "topics": [
         "robotics"
@@ -1382,33 +1382,67 @@
       "audience_score": 5.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "Exclusive | AI Startup LangChain More Than Doubles Its Valuation to $3 Billion - WSJ",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTTExQ3Y3Q3JBV2Z1WGtJbmpzZWdJbTV1UjlDZ21BenEzUWhOTW1pc2doRlhDRktWZFNDT1lhWjROcE9UZUQzQmQxRFBYZW9kYTBockNoUEtzWFhVbDBTb2pZNXFpSnAtU2tMRVdySzA5Y2d4bmY1WFhvQV9Fd3dTbHVmTFhNNXVxcEN2UXFrenhpUy1jdVJ0UHVUUTRpS2djV3lZZ185MXB3QQ?oc=5",
+      "desc": "Exclusive | AI Startup LangChain More Than Doubles Its Valuation to $3 Billion WSJ",
+      "source": "WSJ",
+      "time": 1794746597.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 6.0,
+        "event_concreteness": 10.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 41.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 41.0
+      },
+      "base_score": 41.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 41.0,
+      "key": "f7eb103dc97d0b5dad79bb800c50566abdfd1abd19bacc16a2e05647f0ca2012",
+      "importance": 41.0,
+      "editorial_value": 50.0,
+      "topics": [],
+      "audience_score": null,
+      "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1794747384.1827538,
+    "last_start_ts": 1794748586.4194634,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794747384.1827538,
-    "last_success_ts": 1794747384.1827538,
-    "last_candidates": 0,
-    "last_published": 1,
-    "queue_size": 2
+    "last_run_ts": 1794748586.4194634,
+    "last_success_ts": 1794748586.4194634,
+    "last_candidates": 12,
+    "last_published": 0,
+    "queue_size": 3
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794747384.1790388
+      "disabled_until": 1794752235.9245183,
+      "reason": "The read operation timed out",
+      "updated_at": 1794748635.9245212
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794740421.8878043
+      "disabled_until": 1794752237.8840902,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794748637.884092
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794740421.8878043
+      "disabled_until": 1794835044.453172,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794748644.4531739
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1416,33 +1450,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794740421.8878043
+      "disabled_until": 1794752243.5744562,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794748643.5744581
     }
   },
   "stories": {
-    "07d611b6fcc958f34b3ba37f2ea76a0d062c57be5f92da049a19f2ba6bcc396c": {
-      "time": 1794661031,
-      "title": "OpenAI, Microsoft и CrowdStrike представили конкурирующие решения для контроля над rogue AI-агентами - Cryptonews.net",
-      "desc": "OpenAI, Microsoft и CrowdStrike представили конкурирующие решения для контроля над rogue AI-агентами Cryptonews.net",
-      "source": "Cryptonews.net",
-      "region": "RUSSIA"
-    },
-    "f2ccc47f903ba4a374cfb36e0221cdd91c83b421c537b651afb74496f28b3571": {
-      "time": 1794661258,
-      "title": "OpenAI reassigns robotics researchers to other teams as general-purpose models might make specialized robotics AI unnecessary - the-decoder.com",
-      "desc": "OpenAI reassigns robotics researchers to other teams as general-purpose models might make specialized robotics AI unnecessary the-decoder.com",
-      "source": "the-decoder.com",
-      "region": "WORLD"
-    },
-    "af02c718ce85be3dea7e4e024b2af0bda0f3137515bab2c736c97ee6273a6318": {
-      "time": 1794661980,
-      "title": "Как в ответы ИИ попасть медицинскому сайту с комплаенсом",
-      "desc": "Одна из проблем для медицинских сайтов заключается в том, что описания процедур и состав препаратов затруднительно размещать на странице сайта, которая посвящена услуге. Особенно на лендинге, где довольно строгая структура, а тексты предельно лаконичны. Но таков закон. Комплаенс требуется для подтверждения легитимности самой клиники и методик, которые она использует. Если помещать блок комплаенса в видимую часть страницы, то это неминуемо приведет к “отказам” - быстрому уходу посетителя с сайта без прохода вглубь. Всё-таки люди приходят на сайт не для того, чтобы выяснить номер лицензии и насладиться чтением закона. Им чаще всего нужна именно услуга: название, что лечим, цена врач, отзывы. Поэтому заказчики сайтов и лендингов часто соглашаются на компромиссное решение, которое предлагают им разработчики: размещать блок комплаенса в футере либо над футером, причем в формате PDF. Это приводит к тому, что ИИ-краулеры просто не видят блок комплаенса либо присваивают ему низкий приоритет для вывода в рекомендациях. Соответственно, в ответ ИИ не попадает та часть сайта, которая должна подтверждать опыт, легальный статус клиники и безопасность процедуры. Но, как мне кажется, эту проблему несложно решить чисто технически: добавив в дизайн-макет javascript с кнопкой-баннером, которая при клике на ней открывает дополнительный блок комлаенса, закрытый до нажатия кнопки. Этот блок отлично видим и краулеру дата-центров ИИ, и инструментам мониторинга, который применяют регуляторы (Росздравнадзор, ФАС). Такой блок можно разместить в любой части лендинга или главной страницы сайта, даже в самом верху, в виде обычного HTML. В этом случае ему будет присвоен высокий приоритет. К тому же в верхнем блоке можно разместить и разметку медицинского учреждения с адресом, картой, лицензией и каталогом услуг (Shema.org, json). Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "2403fb70e23121dc9421e976d411e3ab96ebcaa51a1425c58fbdc7e697a18ff6": {
       "time": 1794664393,
       "title": "Сбер представил компактную ИИ-модель для проверки ответов нейросетей - prospect.com.ru",
@@ -1754,96 +1767,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1794508853,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 23.8,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/articles/1107064/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107064",
-            "image_url": "https://habr.com/share/publication/1107064/9b66a65da9f88e22837bb49590f98724/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.33,
-          "bonus_total": 66.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Сигнал о смене фокуса OpenAI на вертикальные рынки требует пересмотра стратегии для игроков в сфере TravelTech.",
-            "title": "OpenAI приобрела Odessia — туристический стартап, созданный основателем компании Sonder",
-            "final_score": 67.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794509069,
       "status": "OK",
@@ -23619,10 +23542,143 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794748586,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 58.08,
+      "candidates": 12,
+      "queue_before": 2,
+      "queue_after": 3,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 2,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 1,
+        "candidate_count": 12,
+        "admission_rate": 8.33,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 24.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра стратегии продаж и маркетинга в условиях перехода к агентной модели потребления.",
+            "title": "Маркетплейсам осталось два-три года? От платформенной экономики к агентской",
+            "final_score": 78.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 54,
+        "raw_items": 526,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 40,
+          "CNews": 0,
+          "Euronews": 12
+        },
+        "score_filtered": 500,
+        "quality_filtered": 12,
+        "story_dedup": 2,
+        "candidates": 12,
+        "candidate_rate": 0.0254,
+        "score_buckets": {
+          "0–39": 475,
+          "40–49": 36,
+          "50–59": 14,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 1,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794746179.0280223,
+  "last_search_ts": 1794748586.4194634,
   "last_publish_ts": 1794747384.1827538,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
