@@ -1307,35 +1307,34 @@
     "dc49839528758626cb3d65b82ed353830df19829a483696991afa606ee5fa70e": 1794758178
   },
   "known": {
-    "30c2e019fe483c9091b9a64d07919d2ac650ebfc09d6f88868d0cc88f3589d8d": 1794756502.3196,
     "dc49839528758626cb3d65b82ed353830df19829a483696991afa606ee5fa70e": 1794757698.0133922
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794761780.5460436,
+    "last_start_ts": 1794762501.8939514,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794761780.5460436,
-    "last_success_ts": 1794761780.5460436,
+    "last_run_ts": 1794762501.8939514,
+    "last_success_ts": 1794762501.8939514,
     "last_candidates": 13,
     "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794761812.69704
+      "disabled_until": 1794766145.215234,
+      "reason": "The read operation timed out",
+      "updated_at": 1794762545.2152371
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794761303.5771337
+      "disabled_until": 1794848950.4321423,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794762550.4321437
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794761303.5771337
+      "disabled_until": 1794848958.186857,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794762558.1868587
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1343,19 +1342,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794761303.5771337
+      "disabled_until": 1794766157.0698774,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794762557.0698795
     }
   },
   "stories": {
-    "9b8d4eee4bf9525c4faaa2d737501b6643f392d8104a3e6460b85bf2076b1884": {
-      "time": 1794675661,
-      "title": "Explained: How does OpenAI's newly launched ChatGPT Wallet work? - The Federal",
-      "desc": "Explained: How does OpenAI's newly launched ChatGPT Wallet work? The Federal",
-      "source": "The Federal",
-      "region": "WORLD"
-    },
     "21e42e54e86246741e101179dae46cdc1e0b62bfc5d50de745df618c21c1e654": {
       "time": 1794676861,
       "title": "Разработчик представил открытую USB‑плату с 3D‑лидаром для роботов и гаджетов",
@@ -1625,145 +1617,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794556122,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 39.19,
-      "candidates": 29,
-      "queue_before": 13,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 7,
-        "known_recent": 0,
-        "already_queued": 13,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 7,
-        "candidate_count": 29,
-        "admission_rate": 24.14,
-        "dominant_block": "already_queued",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/articles/1107346/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107346",
-            "image_url": "https://habr.com/share/publication/1107346/f38ac88c31d0fd944fe3c94548dcff2e/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 6.67,
-          "bonus_total": 60.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Показывает рабочий паттерн автоматизации дебага через AI-агентов, применимый в разработке ПО.",
-            "title": "Разработчики эмулятора UTM запустили базу совместимых игр с AI‑агентом для генерации патчей",
-            "final_score": 66.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 10,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 97,
-        "raw_items": 478,
-        "source_counts": {
-          "TechCrunch AI": 5,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 1,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 4,
-          "Habr AI/News": 40,
-          "CNews": 30,
-          "Euronews": 16
-        },
-        "score_filtered": 431,
-        "quality_filtered": 17,
-        "story_dedup": 1,
-        "candidates": 29,
-        "candidate_rate": 0.0761,
-        "score_buckets": {
-          "0–39": 395,
-          "40–49": 52,
-          "50–59": 26,
-          "60–69": 5,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 0,
-          "6": 0,
-          "7": 4,
-          "8": 3,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794558283,
       "status": "OK",
@@ -24185,10 +24038,138 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794762501,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 56.3,
+      "candidates": 13,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 12,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 13,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 65,
+        "raw_items": 664,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 40,
+          "CNews": 0,
+          "Euronews": 23
+        },
+        "score_filtered": 631,
+        "quality_filtered": 16,
+        "story_dedup": 4,
+        "candidates": 13,
+        "candidate_rate": 0.0217,
+        "score_buckets": {
+          "0–39": 605,
+          "40–49": 41,
+          "50–59": 15,
+          "60–69": 3,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "GROQ",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "GROQ",
+        "failovers": 2,
+        "failures": 4,
+        "blocked": 6,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794761780.5460436,
+  "last_search_ts": 1794762501.8939514,
   "last_publish_ts": 1794758178.8673885,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
