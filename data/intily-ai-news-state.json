@@ -1304,30 +1304,25 @@
     "6c18de2eebe10a1c314cba7481573724e58afa08f38afae1e811550b0ff5f04e": 1794751464
   },
   "known": {
-    "b4867f8049e0587e8b52c4c62da6aa85e3d6f53ab6aa8c06c6cd21a47f5927af": 1794746179.0280223,
-    "5c6bbd83a970c6a9f27c3892fb62ebfb5bab67c14cb4ad22b0e09607d9c9ed1f": 1794746179.0280223,
-    "f3c837a23975d41eedf5aa5bac1eb52077ee55ff21d83d67b62556fbc9c81556": 1794746179.0280223,
-    "3d438e06309ef6ed595be9b4b56741ffeadda895b0397b43192088312c1ada17": 1794746179.0280223,
-    "54ec2a06acb55674ef062e37b6f7a975729d15461957a9c589fd8e3e528751f5": 1794746179.0280223,
     "f7eb103dc97d0b5dad79bb800c50566abdfd1abd19bacc16a2e05647f0ca2012": 1794748586.4194634,
     "6c18de2eebe10a1c314cba7481573724e58afa08f38afae1e811550b0ff5f04e": 1794751219.4748805
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794751464.9015672,
+    "last_start_ts": 1794752420.921426,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794751464.9015672,
-    "last_success_ts": 1794751464.9015672,
-    "last_candidates": 13,
-    "last_published": 1,
+    "last_run_ts": 1794752420.921426,
+    "last_success_ts": 1794752420.921426,
+    "last_candidates": 12,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794751491.8001869
+      "updated_at": 1794752460.8368843
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1351,13 +1346,6 @@
     }
   },
   "stories": {
-    "41b3bae15e47ef6d8ba34a22c7eb1320deb7a8132c2ea6cb811903ef4f615ae5": {
-      "time": 1794665334,
-      "title": "WP назвала чиновника США, который запустил «падение» главы Nvidia Хуанга - РБК",
-      "desc": "WP назвала чиновника США, который запустил «падение» главы Nvidia Хуанга РБК",
-      "source": "РБК",
-      "region": "RUSSIA"
-    },
     "f52d07c99c9abab27a30230e5442e18310fb2035e21c259c2fff2809b328f304": {
       "time": 1794666779,
       "title": "LLM-беседа: явление пользователю: обзор экспериментов",
@@ -1683,147 +1671,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794510030,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 53.93,
-      "candidates": 41,
-      "queue_before": 13,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 17,
-        "known_recent": 1,
-        "already_queued": 10,
-        "story_queue": 0,
-        "story_history": 5,
-        "added": 8,
-        "candidate_count": 41,
-        "admission_rate": 19.51,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 400: Bad Request": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 400: Bad Request"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.67,
-          "bonus_total": 69.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Политическая неопределенность создает риски для трансграничных ИИ-продуктов и комплаенса.",
-            "title": "Trump's upgrade of US-led AI alliance runs into European resistance",
-            "final_score": 60.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 7,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 202,
-        "raw_items": 1330,
-        "source_counts": {
-          "TechCrunch AI": 13,
-          "VentureBeat AI": -1,
-          "The Verge AI": 9,
-          "OpenAI News": 1,
-          "Google DeepMind": 1,
-          "Hugging Face": 0,
-          "Ars Technica": 9,
-          "Habr AI/News": 40,
-          "CNews": 79,
-          "Euronews": 50
-        },
-        "score_filtered": 1231,
-        "quality_filtered": 42,
-        "story_dedup": 16,
-        "candidates": 41,
-        "candidate_rate": 0.0363,
-        "score_buckets": {
-          "0–39": 1156,
-          "40–49": 115,
-          "50–59": 51,
-          "60–69": 8,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 2,
-          "6": 8,
-          "7": 3,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794510760,
       "status": "OK",
@@ -23740,10 +23587,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794752420,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 39.93,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 12,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.0,
+          "bonus_total": 48.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Риск срыва поставок GPU требует немедленного пересмотра стратегий закупок и инфраструктурных планов для AI-бизнеса.",
+            "title": "Nvidia's bypass supply chain to China falters; $34 billion Southeast Asia data center investment at risk - 재경일보",
+            "final_score": 71.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 56,
+        "raw_items": 556,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 40,
+          "CNews": 0,
+          "Euronews": 14
+        },
+        "score_filtered": 528,
+        "quality_filtered": 13,
+        "story_dedup": 3,
+        "candidates": 12,
+        "candidate_rate": 0.024,
+        "score_buckets": {
+          "0–39": 502,
+          "40–49": 39,
+          "50–59": 14,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794751464.9015672,
+  "last_search_ts": 1794752420.921426,
   "last_publish_ts": 1794751464.9015672,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
