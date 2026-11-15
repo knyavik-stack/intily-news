@@ -1308,19 +1308,17 @@
     "955736f7ee03ad5fc6240590ee7aa14163000e6d8523ec7e577c00f8ef0eaa9c": 1794769220
   },
   "known": {
-    "b1bbd5698daac63ad81c2a74e3738aca3f24f40452d9a3d64284a95740c9ebbf": 1794766339.7214754,
-    "6bf3cea5c1bcb135008477adab26f2339047c8a4187b9812c73e5a1daa809257": 1794766822.43448,
     "245c3bdc4b7cdac462fd1a1b43a28110ca9a94183dec3c1cfee3db4b2b2e44e1": 1794768020.5086248,
     "38b6f92db5597aa9366b78fa713adfd51b4fc575398441318fbbfe5944668d53": 1794768020.5086248,
     "955736f7ee03ad5fc6240590ee7aa14163000e6d8523ec7e577c00f8ef0eaa9c": 1794769220.7713206
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794771617.6174157,
+    "last_start_ts": 1794772340.2356327,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794771617.6174157,
-    "last_success_ts": 1794771617.6174157,
+    "last_run_ts": 1794772340.2356327,
+    "last_success_ts": 1794772340.2356327,
     "last_candidates": 17,
     "last_published": 0,
     "queue_size": 0
@@ -1329,7 +1327,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794771657.7528296
+      "updated_at": 1794772372.2540588
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1594,96 +1592,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1794568849,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 13.31,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://prospect.com.ru/news/7167301/google-vypustila-bystruyu-iimodel-gemini-4-hydrogen-dlya-koda-i-agentskih-zadach.html",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.0,
-          "bonus_total": 72.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 3,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Повышение скорости разработки и автоматизации агентских задач напрямую влияет на производительность и стек инструментов.",
-            "title": "Google выпустила быструю ИИ-модель Gemini 4 Hydrogen для кода и агентских задач - prospect.com.ru",
-            "final_score": 68.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794569075,
       "status": "OK",
@@ -24633,10 +24541,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794772340,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 32.05,
+      "candidates": 17,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 16,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 17,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость адаптации маркетинговых стратегий под алгоритмический выбор ИИ-агентов вместо человеческого восприятия.",
+            "title": "Маркетплейсам осталось два-три года? От платформенной экономики к агентской",
+            "final_score": 77.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 64,
+        "raw_items": 745,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 40,
+          "CNews": 0,
+          "Euronews": 21
+        },
+        "score_filtered": 710,
+        "quality_filtered": 15,
+        "story_dedup": 3,
+        "candidates": 17,
+        "candidate_rate": 0.025,
+        "score_buckets": {
+          "0–39": 671,
+          "40–49": 54,
+          "50–59": 16,
+          "60–69": 4,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794771617.6174157,
+  "last_search_ts": 1794772340.2356327,
   "last_publish_ts": 1794769220.7713206,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
