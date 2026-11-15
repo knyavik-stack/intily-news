@@ -1,6 +1,5 @@
 {
   "published": {
-    "47e2297f02ddb0ae18ba6cc591655dcde9dbdb0ee96bb90279c4e932dec4fa69": 1792127799,
     "1499d5440658bd6282abf5ad8c70bd5230eea709a783d8681406369b268f06c7": 1792128529,
     "4cb3839f9e0e5ed9cab64a3bda4c3eeee9d20a8850f66e005da219f81edb2966": 1792128763,
     "2a5095d489f3047802d5db5a73149e9350cf5905885f776a0d4bdab41ace55dc": 1792134284,
@@ -1322,22 +1321,22 @@
         "freshness": 0.5,
         "low_signal_penalty": 0.0,
         "base_score": 45.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 45.5
+        "audience_score": 10.0,
+        "audience_bonus": 30.0,
+        "final_score": 75.5
       },
       "base_score": 45.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 45.5,
+      "audience_bonus": 30.0,
+      "score_stage": "final",
+      "score": 75.5,
       "key": "5e8734e09400059fc142e4fae40335505992f2e0968787e1fa22235598a48cd4",
-      "importance": 45.5,
+      "importance": 75.5,
       "editorial_value": 50.0,
       "topics": [
         "chips",
         "robotics"
       ],
-      "audience_score": null,
+      "audience_score": 10.0,
       "tier": "A"
     },
     {
@@ -1490,30 +1489,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794719342.4283307,
+    "last_start_ts": 1794720332.5848527,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794719342.4283307,
-    "last_success_ts": 1794719342.4283307,
-    "last_candidates": 12,
-    "last_published": 1,
+    "last_run_ts": 1794720332.5848527,
+    "last_success_ts": 1794720332.5848527,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 5
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794719382.503438
+      "disabled_until": 1794723922.5252829,
+      "reason": "The read operation timed out",
+      "updated_at": 1794720322.525285
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794680942.8672118
+      "disabled_until": 1794723925.8821733,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794720325.8821747
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794680942.8672118
+      "disabled_until": 1794806732.5743706,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794720332.574372
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1521,9 +1520,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794680942.8672118
+      "disabled_until": 1794723931.5651517,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794720331.5651536
     }
   },
   "stories": {
@@ -1908,94 +1907,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1794483645,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 17.49,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/articles/1107068/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107068",
-            "image_url": "https://habr.com/share/publication/1107068/cde40905e3803eb32f3ef138df1bd326/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Оптимизация обучения MoE-моделей снижает порог входа для внедрения высокопроизводительного ИИ в бизнес-процессы.",
-            "title": "[Перевод] 594 млрд параметров, 68 часов предобучения и девять дней RL: как создавали Inkling 2 Small",
-            "final_score": 76.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794486764,
       "status": "OK",
@@ -22701,6 +22612,84 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1794720332,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 35.1,
+      "candidates": 0,
+      "queue_before": 5,
+      "queue_after": 5,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 10.0,
+          "bonus_total": 30.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 10.0,
+            "bonus": 30.0,
+            "reason": "Необходимость пересмотра стратегии аппаратного обеспечения в пользу специализированных чипов для автоматизации.",
+            "title": "MetaX and UBTech's robot chip venture Xilect raises 500 million yuan - MLQ.ai",
+            "final_score": 75.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 4,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
