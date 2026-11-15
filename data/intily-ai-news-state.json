@@ -1312,12 +1312,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794759622.2865598,
+    "last_start_ts": 1794759864.208993,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794759622.2865598,
-    "last_success_ts": 1794759622.2865598,
-    "last_candidates": 14,
+    "last_run_ts": 1794759864.208993,
+    "last_success_ts": 1794759864.208993,
+    "last_candidates": 15,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1325,7 +1325,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794759655.368939
+      "updated_at": 1794759895.35762
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1646,127 +1646,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794551347,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 71.51,
-      "candidates": 31,
-      "queue_before": 14,
-      "queue_after": 17,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 8,
-        "known_recent": 5,
-        "already_queued": 12,
-        "story_queue": 1,
-        "story_history": 2,
-        "added": 3,
-        "candidate_count": 31,
-        "admission_rate": 9.68,
-        "dominant_block": "already_queued",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 8,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 84,
-        "raw_items": 460,
-        "source_counts": {
-          "TechCrunch AI": 8,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 1,
-          "Ars Technica": 8,
-          "Habr AI/News": 32,
-          "CNews": 17,
-          "Euronews": 15
-        },
-        "score_filtered": 410,
-        "quality_filtered": 16,
-        "story_dedup": 3,
-        "candidates": 31,
-        "candidate_rate": 0.0824,
-        "score_buckets": {
-          "0–39": 377,
-          "40–49": 48,
-          "50–59": 30,
-          "60–69": 5,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 2,
-          "6": 0,
-          "7": 5,
-          "8": 2,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1794552780,
       "status": "OK",
@@ -24019,10 +23898,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794759864,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 31.16,
+      "candidates": 15,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 14,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 15,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость адаптации стратегии продаж под ИИ-агентов вместо классического SEO и маркетплейсов.",
+            "title": "Маркетплейсам осталось два-три года? От платформенной экономики к агентской",
+            "final_score": 78.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 61,
+        "raw_items": 628,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 40,
+          "CNews": 0,
+          "Euronews": 19
+        },
+        "score_filtered": 599,
+        "quality_filtered": 11,
+        "story_dedup": 3,
+        "candidates": 15,
+        "candidate_rate": 0.0265,
+        "score_buckets": {
+          "0–39": 569,
+          "40–49": 41,
+          "50–59": 15,
+          "60–69": 3,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794759622.2865598,
+  "last_search_ts": 1794759864.208993,
   "last_publish_ts": 1794758178.8673885,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
