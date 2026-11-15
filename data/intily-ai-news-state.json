@@ -1306,30 +1306,30 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1794724381.8599243,
+    "last_start_ts": 1794724620.262856,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794724381.8599243,
-    "last_success_ts": 1794724381.8599243,
+    "last_run_ts": 1794724620.262856,
+    "last_success_ts": 1794724620.262856,
     "last_candidates": 8,
     "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1794727277.7700052,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1794723677.770006
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794724650.8663542
     },
     "GROQ": {
-      "disabled_until": 1794728013.741065,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794724413.741068
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794724620.15893
     },
     "OPENAI": {
-      "disabled_until": 1794810843.7458365,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1794724443.7458382
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794724620.15893
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1337,9 +1337,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1794728042.8059022,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794724442.8059046
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1794724620.15893
     }
   },
   "stories": {
@@ -1745,96 +1745,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1794489395,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 19.15,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/companies/ussc/articles/1107084/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107084",
-            "image_url": "https://habr.com/share/publication/1107084/b8030c4cb43f48bb6530855dc63127df/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходимость пересмотра стратегии безопасности при внедрении LLM в продакшн для предотвращения критических утечек.",
-            "title": "Безопасность ИИ-систем 2026. Часть 2: техники атак",
-            "final_score": 79.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794489872,
       "status": "OK",
@@ -22668,10 +22578,140 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1794724620,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 30.71,
+      "candidates": 8,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 5,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 0,
+        "candidate_count": 8,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 10.0,
+          "bonus_total": 60.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 10.0,
+            "bonus": 30.0,
+            "reason": "Прямое влияние на цепочки поставок и стоимость внедрения аппаратных ИИ-решений в ближайшем будущем.",
+            "title": "MetaX and UBTech's robot chip venture Xilect raises 500 million yuan - MLQ.ai",
+            "final_score": 75.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 22,
+        "raw_items": 274,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 15,
+          "CNews": 0,
+          "Euronews": 4
+        },
+        "score_filtered": 262,
+        "quality_filtered": 4,
+        "story_dedup": 0,
+        "candidates": 8,
+        "candidate_rate": 0.0317,
+        "score_buckets": {
+          "0–39": 248,
+          "40–49": 18,
+          "50–59": 8,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794724381.8599243,
+  "last_search_ts": 1794724620.262856,
   "last_publish_ts": 1794722940.8283532,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
