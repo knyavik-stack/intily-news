@@ -1311,7 +1311,8 @@
     "211879eae69a5da9506d17a032fe7b5de7008f0ee827fbfaefa0f76dc7e9976d": 1794817712,
     "a522cd2803f10e41b55d718648dc6725667f3e1547a538689f4ce2981e5d1c41": 1794818895,
     "7b367842d5937c5a30b30c8684f1575d2813eb6f08296f48028fa93cf977f688": 1794819385,
-    "ac04056c14d60a51b00bb02f0908d252eee5d99556abaebee3b4b707355630db": 1794821062
+    "ac04056c14d60a51b00bb02f0908d252eee5d99556abaebee3b4b707355630db": 1794821062,
+    "d45b4c8ff73d9c43fc78e3115edf37c8d9199eff751688c27d3486d2af75367b": 1794821794
   },
   "known": {
     "dab505889c4eefca956827ff9cb1adfdac5cb239871d4bc9438219ae76f49c8a": 1794816740.5951507,
@@ -1327,6 +1328,43 @@
     "c8a99bf0e6349a2d157593d13d5bf0044e3cba9f8e5bac77857a51d116755908": 1794821062.6072652
   },
   "queue": [
+    {
+      "region": "RUSSIA",
+      "title": "SimpleOne Ainergy позволяет передать рутинные операции ИИ-ассистенту",
+      "link": "https://www.cnews.ru/news/line/2026-11-16_simpleone_ainergy_pozvolyaet_peredat",
+      "desc": "SimpleOne (направление прикладных бизнес-систем корпорации ITG) выпустила обновление SimpleOne Ainergy 1.15 с универсальным ассистентом...",
+      "source": "CNews",
+      "time": 1794820380.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 4.0,
+        "event_concreteness": 10.0,
+        "practical_value": 5.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 2.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 45.5,
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 63.5
+      },
+      "base_score": 45.5,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 63.5,
+      "key": "e7cdb156bcd31e7402974fbf2ffb909a006978092925709a07445acdb7e45677",
+      "importance": 63.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "business"
+      ],
+      "audience_score": 6.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
     {
       "region": "RUSSIA",
       "title": "AI Resist List: список тех, кто бросает вызов ИИ",
@@ -1385,19 +1423,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 2.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 44.5,
+        "base_score": 44.0,
         "audience_score": 5.0,
         "audience_bonus": 15.0,
-        "final_score": 59.5
+        "final_score": 59.0
       },
-      "base_score": 44.5,
+      "base_score": 44.0,
       "audience_bonus": 15.0,
       "score_stage": "final",
-      "score": 59.5,
+      "score": 59.0,
       "key": "c743f7827aaafe8813475e868e14e4e5bedc2cc6319465ca65efa411d2633df1",
-      "importance": 59.5,
+      "importance": 59.0,
       "editorial_value": 50.0,
       "topics": [
         "applications",
@@ -1513,81 +1551,6 @@
       ],
       "audience_score": 4.0,
       "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "ИИ для создания контента: локальный линтер рискованных утверждений в Markdown",
-      "link": "https://habr.com/ru/articles/1108288/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1108288",
-      "desc": "У MLM-партнёра, который готовит ролик или текст для личной страницы, ИИ-черновик может незаметно превратить описание задания в обещание дохода. Это мешает конкретной работе: объяснить своё предложение и продолжить разговор без недоказанных результатов. Ниже технический способ подсветить такие места для автора и наставника; это самостоятельный учебный инструмент, а не заявленная функция какой-либо платформы. Проблема генеративного текста не обязательно в очевидной галлюцинации. Гораздо чаще редактор получает внешне гладкую фразу, в которой одновременно присутствуют проверяемый факт, неподтверждённое сравнение и обещание результата. Все три выглядят одинаково уверенно. Автоматическое исправление здесь опасно: новая модель способна заменить одно недоказанное утверждение другим. Вместо «ИИ проверяет ИИ» можно использовать более скромный и воспроизводимый механизм. Программа не определяет правду, а отмечает фрагменты, которые автор обязан проверить. Такой линтер не заменит редактора, зато даёт короткий список мест для ручного решения, а результат его работы можно воспроизвести на том же файле. Ниже минимальный вариант для Markdown. Он не требует внешнего API, не отправляет текст в сеть и не притворяется системой фактчекинга. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794821074.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 6.0,
-        "event_concreteness": 13.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 47.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 47.0
-      },
-      "base_score": 47.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 47.0,
-      "key": "d45b4c8ff73d9c43fc78e3115edf37c8d9199eff751688c27d3486d2af75367b",
-      "importance": 47.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "models",
-        "tools"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "SimpleOne Ainergy позволяет передать рутинные операции ИИ-ассистенту",
-      "link": "https://www.cnews.ru/news/line/2026-11-16_simpleone_ainergy_pozvolyaet_peredat",
-      "desc": "SimpleOne (направление прикладных бизнес-систем корпорации ITG) выпустила обновление SimpleOne Ainergy 1.15 с универсальным ассистентом...",
-      "source": "CNews",
-      "time": 1794820380.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 4.0,
-        "event_concreteness": 10.0,
-        "practical_value": 5.0,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 2.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 45.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 45.5
-      },
-      "base_score": 45.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 45.5,
-      "key": "e7cdb156bcd31e7402974fbf2ffb909a006978092925709a07445acdb7e45677",
-      "importance": 45.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "business"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
     },
     {
       "region": "WORLD",
@@ -1809,20 +1772,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794821062.6072652,
+    "last_start_ts": 1794821794.482086,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794821062.6072652,
-    "last_success_ts": 1794821062.6072652,
-    "last_candidates": 27,
+    "last_run_ts": 1794821794.482086,
+    "last_success_ts": 1794821794.482086,
+    "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 13
+    "queue_size": 12
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794821100.7484245
+      "updated_at": 1794821794.4238408
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1846,13 +1809,6 @@
     }
   },
   "stories": {
-    "61bf17d27611c2c0b778422c5a58407ceda6c1b73e108d4734895b382dae9e7a": {
-      "time": 1794734708,
-      "title": "ИИ-воскресенье: Nvidia без Хуанга, ChatGPT в поисках уязвимостей и роботы на заводах Mercedes-Benz - Mobile-review.com",
-      "desc": "ИИ-воскресенье: Nvidia без Хуанга, ChatGPT в поисках уязвимостей и роботы на заводах Mercedes-Benz Mobile-review.com",
-      "source": "Mobile-review.com",
-      "region": "RUSSIA"
-    },
     "45458532d28c750e5e3e1bd4d88ecd0e129a5fbd2da29768d930ad6037b9e953": {
       "time": 1794736379,
       "title": "Cloudflare открыла исходный код Kitesurf — браузерного движка для AI‑агентов",
@@ -2132,12 +2088,18 @@
       "desc": "Will Anthropic's IPO lead to better AI regulation? The Korea Times",
       "source": "The Korea Times",
       "region": "WORLD"
+    },
+    "d45b4c8ff73d9c43fc78e3115edf37c8d9199eff751688c27d3486d2af75367b": {
+      "time": 1794821794,
+      "title": "ИИ для создания контента: локальный линтер рискованных утверждений в Markdown",
+      "desc": "У MLM-партнёра, который готовит ролик или текст для личной страницы, ИИ-черновик может незаметно превратить описание задания в обещание дохода. Это мешает конкретной работе: объяснить своё предложение и продолжить разговор без недоказанных результатов. Ниже технический способ подсветить такие места для автора и наставника; это самостоятельный учебный инструмент, а не заявленная функция какой-либо платформы. Проблема генеративного текста не обязательно в очевидной галлюцинации. Гораздо чаще редактор получает внешне гладкую фразу, в которой одновременно присутствуют проверяемый факт, неподтверждённое сравнение и обещание результата. Все три выглядят одинаково уверенно. Автоматическое исправление здесь опасно: новая модель способна заменить одно недоказанное утверждение другим. Вместо «ИИ проверяет ИИ» можно использовать более скромный и воспроизводимый механизм. Программа не определяет правду, а отмечает фрагменты, которые автор обязан проверить. Такой линтер не заменит редактора, зато даёт короткий список мест для ручного решения, а результат его работы можно воспроизвести на том же файле. Ниже минимальный вариант для Markdown. Он не требует внешнего API, не отправляет текст в сеть и не притворяется системой фактчекинга. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -2154,149 +2116,10 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794587318,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 66.34,
-      "candidates": 57,
-      "queue_before": 17,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 13,
-        "known_recent": 26,
-        "already_queued": 4,
-        "story_queue": 2,
-        "story_history": 5,
-        "added": 7,
-        "candidate_count": 57,
-        "admission_rate": 12.28,
-        "dominant_block": "known_recent",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/articles/1107662/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107662",
-            "image_url": "https://habr.com/share/publication/1107662/abd2f9c5ccc1cb1f1596589935ddbdb2/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра стратегии доступа к AI-инструментам для минимизации рисков потери данных и подписки.",
-            "title": "Claude, VPN и KYC: что показали 193 анкеты пользователей",
-            "final_score": 82.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 193,
-        "raw_items": 1132,
-        "source_counts": {
-          "TechCrunch AI": 5,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 1,
-          "Google DeepMind": 0,
-          "Hugging Face": 1,
-          "Ars Technica": 6,
-          "Habr AI/News": 40,
-          "CNews": 90,
-          "Euronews": 50
-        },
-        "score_filtered": 1017,
-        "quality_filtered": 37,
-        "story_dedup": 21,
-        "candidates": 57,
-        "candidate_rate": 0.0607,
-        "score_buckets": {
-          "0–39": 954,
-          "40–49": 95,
-          "50–59": 68,
-          "60–69": 14,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 1,
-          "4": 0,
-          "5": 1,
-          "6": 6,
-          "7": 1,
-          "8": 7,
-          "9": 1,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794587800,
       "status": "OK",
@@ -25374,11 +25197,99 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794821794,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 11.38,
+      "candidates": 0,
+      "queue_before": 13,
+      "queue_after": 12,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://www.cnews.ru/news/line/2026-11-16_simpleone_ainergy_pozvolyaet_peredat",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 6.5,
+          "bonus_total": 39.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Позволяет оптимизировать внутренние бизнес-процессы, если компания уже использует экосистему SimpleOne.",
+            "title": "SimpleOne Ainergy позволяет передать рутинные операции ИИ-ассистенту",
+            "final_score": 63.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 6,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1794821062.6072652,
-  "last_publish_ts": 1794821062.6072652,
+  "last_publish_ts": 1794821794.482086,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
