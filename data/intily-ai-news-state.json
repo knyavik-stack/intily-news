@@ -1,7 +1,5 @@
 {
   "published": {
-    "0bd6e7ce1f9e2e5031ef03bb8ab9c340efe639a7e830a06e0fd108c7ca044674": 1792220929,
-    "0dbc1fd2306d45a3aab18a94ca68851bfcf21a160181847c780d9e20afcbf28e": 1792221641,
     "fe74e72021fce31d174dae6c253a4f0e53d4bbc07191db43a44ec5b5390c2dca": 1792223558,
     "f247406f2a6fcd5bfb3126b8330ea24d9b02f2d8e14ae7dc58d7510cfb3c23d5": 1792223797,
     "1ed4efa390253a9206fb9acfdf7d0e988c889ff1dec5726b5260aa4518791196": 1792227403,
@@ -1307,7 +1305,8 @@
     "c6783de9a0980272b737a2cfef2a29c0fa5430399526ee7cd28499ba49d12585": 1794811703,
     "f8a8a2ec2e88d76fc1e4d4511804bb57cba90e97481bb8fd2125d30def7345a4": 1794811949,
     "23aa2719ed388f6289416d8011e92fa743da82ce5f6fe72d2327cb098c666540": 1794812425,
-    "2b064a0e23c81f13eb4a5b066a2318bfa4bf5370fa0f79da04d0e7b9ab9be44d": 1794812660
+    "2b064a0e23c81f13eb4a5b066a2318bfa4bf5370fa0f79da04d0e7b9ab9be44d": 1794812660,
+    "d25650e3fdf5c9db07b33cfc5fde387fd4aace498b93df0bf965445b8ace29a4": 1794813863
   },
   "known": {
     "60f8f08ef1bc24d1ea7bcf53896e3e322fa5d4f703f5d02204d7e0f7b948f087": 1794809782.6018088,
@@ -1318,7 +1317,14 @@
     "f8a8a2ec2e88d76fc1e4d4511804bb57cba90e97481bb8fd2125d30def7345a4": 1794811703.9657214,
     "755044a922acfbccfaba81fe813f61dfd2097466125738ea40e031681c51aca6": 1794811703.9657214,
     "23aa2719ed388f6289416d8011e92fa743da82ce5f6fe72d2327cb098c666540": 1794811703.9657214,
-    "2b064a0e23c81f13eb4a5b066a2318bfa4bf5370fa0f79da04d0e7b9ab9be44d": 1794811703.9657214
+    "2b064a0e23c81f13eb4a5b066a2318bfa4bf5370fa0f79da04d0e7b9ab9be44d": 1794811703.9657214,
+    "d25650e3fdf5c9db07b33cfc5fde387fd4aace498b93df0bf965445b8ace29a4": 1794813863.8757138,
+    "b008e7070f9e88c218039a04c2a9d5ea436e9915a07930b3d72e289aa41df569": 1794813863.8757138,
+    "211879eae69a5da9506d17a032fe7b5de7008f0ee827fbfaefa0f76dc7e9976d": 1794813863.8757138,
+    "b87eb1225be3d1d7cdfca258b4c3abee5d8eed2e7a44a96ac2b7f9283ea2539f": 1794813863.8757138,
+    "7ea941cbadb002159523db15f5608ccc9a1e11d9f5b4bf8e1fea29214d365d78": 1794813863.8757138,
+    "ac04056c14d60a51b00bb02f0908d252eee5d99556abaebee3b4b707355630db": 1794813863.8757138,
+    "4fbb83aa88172786563372cdee9edcfa67be6b50295ef7d09a2327f978057493": 1794813863.8757138
   },
   "queue": [
     {
@@ -1337,19 +1343,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 48.5,
+        "base_score": 48.0,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 66.5
+        "final_score": 66.0
       },
-      "base_score": 48.5,
+      "base_score": 48.0,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 66.5,
+      "score": 66.0,
       "key": "755044a922acfbccfaba81fe813f61dfd2097466125738ea40e031681c51aca6",
-      "importance": 66.5,
+      "importance": 66.0,
       "editorial_value": 50.0,
       "topics": [
         "security_regulation"
@@ -1506,23 +1512,242 @@
       "topics": [],
       "audience_score": 6.0,
       "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Нейросеть на железе со свалки, или Как Bonsai 2 27B проиграла Qwen3 8B",
+      "link": "https://habr.com/ru/companies/ru_mts/articles/1107236/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107236",
+      "desc": "У меня было 8 гигабайт видеопамяти на старой майнинговой NVIDIA P104-100 семнадцатого года, древний i7-3770 родом из двенадцатого, знающий только AVX, ровно 15,5 гигабайта оперативной памяти, NVMe-накопитель и HDD — его взяли специально, чтобы замерить этот чертовски долгий старт. Не то чтобы все это было категорически необходимо для запуска нейросетей, но если уж начал собирать домашний стенд, к делу надо подходить серьезно. Единственное, что вызывало у меня опасение, — это телефоны. Мы находились где-то на краю пустыни технологического прогресса, когда железо начало плавиться... На деле все было гораздо скучнее. Для своего проекта я искал локальную модель, без облака, на железе, которое уже стоит под столом, и наткнулся на Bonsai 2 27B. Она обещала уместить модель класса 27B в 8 ГБ старой карты. Модель запустилась, но на реальных задачах обычная Qwen3 8B, которая помещается в те же 8 ГБ без форков и патчей, держалась на уровне, а местами оказывалась быстрее и стабильнее. Дальше разбираюсь, нужна ли Bonsai, если рядом есть 8B. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794813025.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 10.0,
+        "event_concreteness": 13.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 47.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 47.0
+      },
+      "base_score": 47.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 47.0,
+      "key": "b008e7070f9e88c218039a04c2a9d5ea436e9915a07930b3d72e289aa41df569",
+      "importance": 47.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "chips",
+        "models"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "«Росатом Интелмаш» представил подход к комплексной роботизации на научно-практической сессии «Прикладная робототехника в атомной отрасли» в НИЯУ МИФИ - Атомная энергия 2.0",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8yRHVfNUp5RmxXSVdLY0ZYMnRYaFVHeEdOajVDVkZsY1VtRkZ4QWNFTVVUYXVIS0JrcVRtQzQ2Yk5wcXBhOTZmVWQzamJSZkpoaXp6MXhfTkNZVk5CZWVTMg?oc=5",
+      "desc": "«Росатом Интелмаш» представил подход к комплексной роботизации на научно-практической сессии «Прикладная робототехника в атомной отрасли» в НИЯУ МИФИ Атомная энергия 2.0",
+      "source": "Атомная энергия 2.0",
+      "time": 1794811796.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 10.0,
+        "event_concreteness": 13.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 2.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 46.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 46.0
+      },
+      "base_score": 46.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 46.0,
+      "key": "211879eae69a5da9506d17a032fe7b5de7008f0ee827fbfaefa0f76dc7e9976d",
+      "importance": 46.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "robotics"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "Does OpenAI Need US Sign-Off to Launch a Model? 0 of 6 Rules - FourWeekMBA",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMUQybURKbzNDdE5VVmdnVXlzM0ZLMU4zbmI0RC1CTngzVDB4RmFoMjItZHRZdU5WNjVUTzFMOTluOFpBWENUS2QyTnhzdWZWQS1zNXM3bVBzT2ZfVl9Pa2IweTBrdHJSZnJpcHFWM1R2SjctWVhzSmQzU0lubEZUWDhxcGZ1aW5VR0tfeGU1eUo?oc=5",
+      "desc": "Does OpenAI Need US Sign-Off to Launch a Model? 0 of 6 Rules FourWeekMBA",
+      "source": "FourWeekMBA",
+      "time": 1794813329.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 10.0,
+        "event_concreteness": 13.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 45.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 45.0
+      },
+      "base_score": 45.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 45.0,
+      "key": "b87eb1225be3d1d7cdfca258b4c3abee5d8eed2e7a44a96ac2b7f9283ea2539f",
+      "importance": 45.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "models"
+      ],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
+      "region": "WORLD",
+      "title": "What should you have ready in case of a crisis? Ask the Euronews AI chatbot",
+      "link": "https://www.euronews.com/2026/11/16/what-should-you-have-ready-in-case-of-a-crisis-ask-the-euronews-ai-chatbot",
+      "desc": "New EU crisis guidelines want citizens ready for emergencies, especially the first 72 hours, as cyberattacks, infrastructure failures, and security threats grow. But what do they cover? Ask the Euronews AI chatbot.",
+      "source": "Euronews",
+      "time": 1794813345.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 6.0,
+        "event_concreteness": 12.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 4.0,
+        "evidence": 2.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 44.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 44.0
+      },
+      "base_score": 44.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 44.0,
+      "key": "7ea941cbadb002159523db15f5608ccc9a1e11d9f5b4bf8e1fea29214d365d78",
+      "importance": 44.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "security_regulation"
+      ],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
+      "region": "WORLD",
+      "title": "Will Anthropic's IPO lead to better AI regulation? - The Korea Times",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNTJWdG56cEJKTi1QWHZHR3FYNmJ0NmIxNnRkWm10QWt2X0hDYlg0dUR4bFlMRDdBTmR3SHN0RzVpNkQxZzV6WkNfUTFtVS01R3FfTzlJRmNtZzlwS2dkOTIwUTlOVVd2Y1JETFpOeC1iT1JhZjVhakJvZ0c2aTNYMkVkZmRVV1F0OGRCSnBfZk9wVlpIWmpKNGFjOW52ZFXSAZ8BQVVfeXFMTTUyVnRuenBCSk4tUFh2R0dxWDZidDZiMTZ0ZFptdEFrdl9IQ2JYNHVEeGxZTEQ3QU5kd0hzdEc1aTZEMWc1elpDX1ExbVUtNUdxX085SUZjbWc5cEtnZDkyMFE5TlVXdmNSRExaTngtYk9SYWY1YWpCb2dHNmkzWDJFZGZkVVdRdDhkQkpwX2ZPcFZaSFpqSjRhYzludmRV?oc=5",
+      "desc": "Will Anthropic's IPO lead to better AI regulation? The Korea Times",
+      "source": "The Korea Times",
+      "time": 1794805203.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 3.0,
+        "impact": 7.0,
+        "event_concreteness": 15.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 41.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 41.5
+      },
+      "base_score": 41.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 41.5,
+      "key": "ac04056c14d60a51b00bb02f0908d252eee5d99556abaebee3b4b707355630db",
+      "importance": 41.5,
+      "editorial_value": 47.5,
+      "topics": [
+        "security_regulation"
+      ],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
+      "region": "WORLD",
+      "title": "Flagship Pioneering Launches Flagship Origination Lab in London to Create AI-Native Platform Companies in the U.K. - PR Newswire",
+      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQZUh5c1ZYX3p2M0J1N3lQZjV4WER3UjBfSnQxOXo1ZHlkbUx6WmRtMkxjR0tiYUlfdm92YnNtVGx3Nnc1Nm1yNk4wVkNmT2tkeVpvWEthS0lvZW9odUNwYzZPaDNZNUNvOWx4Q00xZU1tUFZGNXRfeXNvMjRFQkRnd25odEU4Q3RxbXB6Wjg4LXZQeFU1T1FldElQWDZ4OFI4QmFLbl9tWmlPc1RzMXZjZDdmcFlsZk13SllCSHYxZFhLZmdOM1hVbTN1Mmtjc1JSbkE0NnJJUXlqeDlWeXc1bzgwWEZjUnQzSF93ekZ6OWl5MXBROGxrbmQyd2E?oc=5",
+      "desc": "Flagship Pioneering Launches Flagship Origination Lab in London to Create AI-Native Platform Companies in the U.K. PR Newswire",
+      "source": "PR Newswire",
+      "time": 1794812400.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 6.0,
+        "event_concreteness": 12.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 2.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 40.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 40.5
+      },
+      "base_score": 40.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 40.5,
+      "key": "4fbb83aa88172786563372cdee9edcfa67be6b50295ef7d09a2327f978057493",
+      "importance": 40.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1794812660.7439418,
+    "last_start_ts": 1794813863.8757138,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794812660.7439418,
-    "last_success_ts": 1794812660.7439418,
-    "last_candidates": 0,
+    "last_run_ts": 1794813863.8757138,
+    "last_success_ts": 1794813863.8757138,
+    "last_candidates": 22,
     "last_published": 1,
-    "queue_size": 5
+    "queue_size": 11
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794812676.0189414
+      "updated_at": 1794813894.904981
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1783,12 +2008,18 @@
       "desc": "Alibaba представила ИИ-модель Qwen4-Max с контекстом на миллион токенов Компьютерра",
       "source": "Компьютерра",
       "region": "RUSSIA"
+    },
+    "d25650e3fdf5c9db07b33cfc5fde387fd4aace498b93df0bf965445b8ace29a4": {
+      "time": 1794813863,
+      "title": "AI-агент + Proxyman MCP: автоматизируем API-моки при разработке iOS-приложений",
+      "desc": "Допустим, вы закончили разработку экрана, на котором нужно отображать несколько состояний подписки. Осталось проверить, что всё работает правильно. Открываете приложение, а на тестовом окружении есть только одна активная подписка. Ни пробного периода, ни приостановленных подписок. Feature flag, который включает новую логику, тоже выключен. Можно попросить бэкенд подготовить данные. Можно попробовать самостоятельно изменить состояние подписки через API. А можно открыть Proxyman и подменить ответ. Я обычно предпочитаю последний вариант, если задача сводится к проверке интерфейса. С одним состоянием проблем нет. Находишь запрос, сохраняешь ответ в JSON, меняешь пару полей и подключаешь Map Local. Но когда нужно проверить десяток комбинаций, процесс начинает раздражать. Особенно если для одного сценария приходится подменять несколько запросов. При этом почти все действия довольно механические. Нужно найти модель в проекте, понять, какие поля влияют на отображение, сопоставить их с API и подготовить нужный ответ. Возникла идея поручить эту работу AI-агенту. В статье разберём, как организовать такую автоматизацию с помощью OpenCode, Xcode MCP и Proxyman MCP. Заодно посмотрим, что агенту действительно можно доверить, а что пока лучше контролировать самостоятельно. Сразу оговорюсь: ниже не отчёт о результатах проведённого эксперимента, а пример реализации подхода. Конкретные возможности автоматизации зависят от подключённых MCP-серверов. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "RUSSIA",
@@ -1804,101 +2035,11 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794579636,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 26.69,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/companies/T1Holding/articles/1107428/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107428",
-            "image_url": "https://habr.com/share/publication/1107428/39eea23d5a016049ab4ed4ca0dfddad7/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Внедрение ИИ‑агентов повышает эффективность разработки",
-            "title": "От кода до развёртывания: что разработчики уже поручают ИИ-агентам, а что пока оставляют себе",
-            "final_score": 76.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ"
-        ],
-        "used": "GROQ",
-        "failovers": 1,
-        "failures": 1,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794580596,
       "status": "OK",
@@ -24913,11 +25054,151 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794813863,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 33.8,
+      "candidates": 22,
+      "queue_before": 5,
+      "queue_after": 11,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 4,
+        "story_queue": 1,
+        "story_history": 1,
+        "added": 7,
+        "candidate_count": 22,
+        "admission_rate": 31.82,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/articles/1108170/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1108170",
+            "image_url": "https://habr.com/share/publication/1108170/108b98967017074d915389466c01a9c3/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.5,
+          "bonus_total": 51.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Прямая автоматизация рабочих веб-интерфейсов радикально сокращает ручной труд в операционке.",
+            "title": "Opencode v2: браузер для агента, фоновые субагенты и реальная стоимость моделей",
+            "final_score": 81.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 6,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 87,
+        "raw_items": 529,
+        "source_counts": {
+          "TechCrunch AI": 4,
+          "VentureBeat AI": -1,
+          "The Verge AI": 2,
+          "OpenAI News": 2,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 40,
+          "CNews": 17,
+          "Euronews": 21
+        },
+        "score_filtered": 484,
+        "quality_filtered": 20,
+        "story_dedup": 3,
+        "candidates": 22,
+        "candidate_rate": 0.0498,
+        "score_buckets": {
+          "0–39": 448,
+          "40–49": 55,
+          "50–59": 22,
+          "60–69": 4,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 3,
+          "7": 2,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794811703.9657214,
-  "last_publish_ts": 1794812660.7439418,
+  "last_search_ts": 1794813863.8757138,
+  "last_publish_ts": 1794813863.8757138,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
