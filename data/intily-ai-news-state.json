@@ -1331,7 +1331,8 @@
     "489f00b527032ecc2ae375721111d6bea176fbdd140a1936ab10a5a9b11565d0": 1794911077,
     "60d388056b78ec4f35ddc304d27229bfdfb86887db34a959983bbe794b8fa911": 1794911315,
     "53d32bb98e81a2edd0baec040d7702cc85654abae2c27d61d4ca2ae8f56fc9d0": 1794912039,
-    "fe464da4bb5d370c040f983232d654452b5a91997de142bc15daa16463417e6f": 1794912275
+    "fe464da4bb5d370c040f983232d654452b5a91997de142bc15daa16463417e6f": 1794912275,
+    "e6e95bfc08dc0816518a436bb28b95b6763ac18f17075e5a8758ed851949b372": 1794912748
   },
   "known": {
     "a31467ac557c22d0bdc4f911a93c7958ba50df7d6fad6787e474c98d2af66b07": 1794908681.595399,
@@ -1343,47 +1344,12 @@
     "5303e5a75472be3999a333f36258e70da4c082bc67d2df760454a2748388304d": 1794908681.595399,
     "79a3e20abe2a1786ed0b9c25b29616fcd06fb334d4c07fc76955bdc8e2cc1259": 1794908681.595399,
     "489f00b527032ecc2ae375721111d6bea176fbdd140a1936ab10a5a9b11565d0": 1794910844.365472,
-    "60d388056b78ec4f35ddc304d27229bfdfb86887db34a959983bbe794b8fa911": 1794910844.365472
+    "60d388056b78ec4f35ddc304d27229bfdfb86887db34a959983bbe794b8fa911": 1794910844.365472,
+    "4139ed789deb54fe8010eccc250f76e427007ca910e792882fed65138e9d765f": 1794912748.577202,
+    "ae88c010e4ec11bf5fa6467b75016d8faea8c2da34e6110c880749e8fd0ec4e1": 1794912748.577202,
+    "b796f4c4d6739b125fba4ac25724ee07b9c516ab6020fe30f0786159800768c2": 1794912748.577202
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Apple добавляет индикатор приложений с расширенными правами — всё из-за распространения ИИ-агентов",
-      "link": "https://habr.com/ru/articles/1108706/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1108706",
-      "desc": "В вышедшей 16 ноября второй бета-версии macOS 27.3 появился новый индикатор в строке меню, показывающий приложения, которым разрешено управлять другими приложениями. И хотя это почти наверняка то, что мы с вами увидим в релизе (а его ждём примерно в середине декабря ), по сути, важен не индикатор, а грядущие, куда более существенные, изменения системы безопасности macOS. Apple пересматривает механизм выдачи расширенных разрешений , причём в качестве одной из причин называет распространение автономных ИИ-агентов . Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794902804.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 8.0,
-        "event_concreteness": 13.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 44.0,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 68.0
-      },
-      "base_score": 44.0,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 68.0,
-      "key": "e6e95bfc08dc0816518a436bb28b95b6763ac18f17075e5a8758ed851949b372",
-      "importance": 68.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "security_regulation"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "WORLD",
       "title": "Cassava Seeks $1 Billion for Nvidia Chips to Power AI in Africa - Bloomberg.com",
@@ -1863,23 +1829,136 @@
       ],
       "audience_score": 5.0,
       "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "От галлюцинаций LLM к ошибкам мультиагентных систем: как обнаруживать ошибки в системах искусственного интеллекта?",
+      "link": "https://habr.com/ru/companies/sberbank/articles/1104342/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1104342",
+      "desc": "Привет, Хабр! Меня зовут Максим Макаренко, я руковожу командой прикладных исследований в Sber AI Lab Сбера. Вместе с Юлией Беликовой, старшим исследователем из нашей команды, мы занимаемся новыми подходами к большим языковым моделям и ИИ-агентам: от памяти и рассуждений до надёжности, контроля и обнаружения ошибок. Одно из направлений нашей работы — разработка методов обнаружения и контроля ошибок в сложных ИИ-системах. По мере того как LLM переходят от обычных чат-ботов к RAG, памяти, инструментам и мультиагентным системам, меняется и сама задача проверки: уже недостаточно посмотреть только на финальный ответ, нужно понимать, где именно в цепочке рассуждений и действий могла возникнуть ошибка. В этой статье мы расскажем о двух наших работах — SIRIN и AutoJudge — и покажем, как задача обнаружения галлюцинаций постепенно превращается в более общую задачу контроля сложных ИИ-систем. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794910883.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 11.0,
+        "event_concreteness": 12.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 51.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 51.0
+      },
+      "base_score": 51.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 51.0,
+      "key": "4139ed789deb54fe8010eccc250f76e427007ca910e792882fed65138e9d765f",
+      "importance": 51.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "research",
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Калифорния судится с OpenAI: более 80 случаев выхода ШИ-агентов из-под контроля и атака на Hugging Face - Парламент.UA",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPQ0JZcWxrNmF2VFNuWktEUnM2aE51MzBFdzFKVksxLTVTRU5na19OcmhBamt4U1AwU3Q3NXdNYTdPTFRpWllpTGhCa25WVkh4d0Y1RHNzb0YwdkcwRjY1emJnRmxCU3psam10aHgteXJpaTJkZVVIbmk2OWc5Q0lRSDdfd0dvSFR4T0NGWDRYQ0E2d0l2a2RSNjVvVTI4bElTTlJyNjZiaG54TEJ6SGZfTjh0WF9mVlIyTDBvdjRJVkJBdUVTTE5qTHVMN1pFNUZvSVBR0gHbAUFVX3lxTE5HRV9kcjYwZUoya3JNUTAxZGpTdEZuUk9va28xcV9GR25sZVcyR2VpTTBjOHJRQ2hJNTdlMllheENvLUFZTE9UWlJxQV9zQmd0VDcxQ1FFZ3lUWVkxMHg4Sld2ZUxwVnBNVmZQVWZOWld1QkdHZWxrVk9McEVoNG9yazd2TEsxUFUxSERneTlETjd0eElKTDNTRWxwMmd5czlHNTN4X24wSlBzR1VlRy1PRWZTVUhFTnBnVFVtUUdRQ2xvdXRBZmhCUVBKcGZLZFAzNFFRQjZUVGQ5OA?oc=5",
+      "desc": "Калифорния судится с OpenAI: более 80 случаев выхода ШИ-агентов из-под контроля и атака на Hugging Face Парламент.UA",
+      "source": "Парламент.UA",
+      "time": 1794912420.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 8.0,
+        "event_concreteness": 15.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 45.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 45.0
+      },
+      "base_score": 45.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 45.0,
+      "key": "ae88c010e4ec11bf5fa6467b75016d8faea8c2da34e6110c880749e8fd0ec4e1",
+      "importance": 45.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "В ИТМО научились ускорять ИИ-системы глубокого поиска в шесть раз",
+      "link": "https://www.cnews.ru/news/line/2026-11-17_v_itmo_nauchilis_uskoryat",
+      "desc": "Ученые ИТМО разработали первую в России систему глубокого поиска на диффузионных языковых моделях — DiffResearch....",
+      "source": "CNews",
+      "time": 1794904800.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 7.0,
+        "event_concreteness": 9.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 1.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 43.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 43.0
+      },
+      "base_score": 43.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 43.0,
+      "key": "b796f4c4d6739b125fba4ac25724ee07b9c516ab6020fe30f0786159800768c2",
+      "importance": 43.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "research"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1794912275.513208,
+    "last_start_ts": 1794912748.577202,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794912275.513208,
-    "last_success_ts": 1794912275.513208,
-    "last_candidates": 0,
+    "last_run_ts": 1794912748.577202,
+    "last_success_ts": 1794912748.577202,
+    "last_candidates": 23,
     "last_published": 1,
-    "queue_size": 14
+    "queue_size": 16
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794912285.8553998
+      "updated_at": 1794912794.3795805
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2259,10 +2338,16 @@
       "desc": "Alibaba представила ИИ-модель Qwen4-Max для сложных научных задач и разработки видеоигр prospect.com.ru",
       "source": "prospect.com.ru",
       "region": "RUSSIA"
+    },
+    "e6e95bfc08dc0816518a436bb28b95b6763ac18f17075e5a8758ed851949b372": {
+      "time": 1794912748,
+      "title": "Apple добавляет индикатор приложений с расширенными правами — всё из-за распространения ИИ-агентов",
+      "desc": "В вышедшей 16 ноября второй бета-версии macOS 27.3 появился новый индикатор в строке меню, показывающий приложения, которым разрешено управлять другими приложениями. И хотя это почти наверняка то, что мы с вами увидим в релизе (а его ждём примерно в середине декабря ), по сути, важен не индикатор, а грядущие, куда более существенные, изменения системы безопасности macOS. Apple пересматривает механизм выдачи расширенных разрешений , причём в качестве одной из причин называет распространение автономных ИИ-агентов . Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "WORLD",
@@ -2280,150 +2365,11 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794661980,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 62.42,
-      "candidates": 22,
-      "queue_before": 5,
-      "queue_after": 8,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 10,
-        "known_recent": 0,
-        "already_queued": 5,
-        "story_queue": 0,
-        "story_history": 3,
-        "added": 4,
-        "candidate_count": 22,
-        "admission_rate": 18.18,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "The read operation timed out": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "The read operation timed out"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость адаптации бизнес-процессов и систем безопасности под автономные покупки ИИ-агентов.",
-            "title": "OpenAI представила функцию ChatGPT Wallet для покупок с помощью ИИ",
-            "final_score": 76.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 58,
-        "raw_items": 552,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 2,
-          "Habr AI/News": 40,
-          "CNews": 0,
-          "Euronews": 15
-        },
-        "score_filtered": 511,
-        "quality_filtered": 7,
-        "story_dedup": 12,
-        "candidates": 22,
-        "candidate_rate": 0.0445,
-        "score_buckets": {
-          "0–39": 493,
-          "40–49": 25,
-          "50–59": 31,
-          "60–69": 3,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 1,
-          "6": 1,
-          "7": 2,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794662976,
       "status": "OK",
@@ -25190,11 +25136,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794912748,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 49.29,
+      "candidates": 23,
+      "queue_before": 14,
+      "queue_after": 16,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 1,
+        "already_queued": 6,
+        "story_queue": 2,
+        "story_history": 0,
+        "added": 3,
+        "candidate_count": 23,
+        "admission_rate": 13.04,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/articles/1108706/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1108706",
+            "image_url": "https://habr.com/share/publication/1108706/3186cf850a4a459e8cf2aa59ab12e9a1/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.33,
+          "bonus_total": 66.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра архитектуры безопасности и прав доступа для ИИ-агентов в продуктах под macOS.",
+            "title": "Apple добавляет индикатор приложений с расширенными правами — всё из-за распространения ИИ-агентов",
+            "final_score": 68.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 63,
+        "query_errors": 1,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 147,
+        "raw_items": 603,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 1,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 40,
+          "CNews": 65,
+          "Euronews": 38
+        },
+        "score_filtered": 549,
+        "quality_filtered": 29,
+        "story_dedup": 2,
+        "candidates": 23,
+        "candidate_rate": 0.0504,
+        "score_buckets": {
+          "0–39": 513,
+          "40–49": 64,
+          "50–59": 21,
+          "60–69": 5,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 1,
+          "5": 3,
+          "6": 2,
+          "7": 7,
+          "8": 1,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794910844.365472,
-  "last_publish_ts": 1794912275.513208,
+  "last_search_ts": 1794912748.577202,
+  "last_publish_ts": 1794912748.577202,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
