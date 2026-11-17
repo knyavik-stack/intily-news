@@ -1,6 +1,5 @@
 {
   "published": {
-    "8bd6bc58bf9eb39d762d8e754477f6791c10920b3c976331b3e548cc162d9609": 1792315001,
     "95abc412024e643e7cc429d9defddc784f941670abb1c96a25f0e8bea573a542": 1792317160,
     "db9646e86edab7daafdfb1a5e8bf561bdf707d5da33ba436d95f970694fe56eb": 1792318599,
     "6c7a9b3da4c86f35cb762e74557dee617f56f8726906d5a89d849ed2abac572b": 1792323880,
@@ -1474,19 +1473,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 44.0,
+        "base_score": 43.5,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 65.0
+        "final_score": 64.5
       },
-      "base_score": 44.0,
+      "base_score": 43.5,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 65.0,
+      "score": 64.5,
       "key": "8bfa015d4c35d4b6c120a710f79be216d19eeb612ab9d57d45dd3d9fa9466bb5",
-      "importance": 65.0,
+      "importance": 64.5,
       "editorial_value": 50.0,
       "topics": [
         "models"
@@ -1959,19 +1958,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 40.5,
+        "base_score": 40.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 40.5
+        "final_score": 40.0
       },
-      "base_score": 40.5,
+      "base_score": 40.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 40.5,
+      "score": 40.0,
       "key": "3ceed21470e7c7ba397ae2582a7eb4fc17d06cbff3afdb7ecf5fdad52e8f22e2",
-      "importance": 40.5,
+      "importance": 40.0,
       "editorial_value": 50.0,
       "topics": [
         "security_regulation"
@@ -1982,30 +1981,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794906998.652378,
+    "last_start_ts": 1794907747.8627348,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794906998.652378,
-    "last_success_ts": 1794906998.652378,
+    "last_run_ts": 1794907747.8627348,
+    "last_success_ts": 1794907747.8627348,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 17
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794906998.4711874
+      "disabled_until": 1794911333.190859,
+      "reason": "The read operation timed out",
+      "updated_at": 1794907733.1908622
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794856563.7257035
+      "disabled_until": 1794911336.8911877,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794907736.89119
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794856563.7257035
+      "disabled_until": 1794994147.6304164,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1794907747.630418
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2013,19 +2012,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1794856563.7257035
+      "disabled_until": 1794911346.2357655,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1794907746.2357676
     }
   },
   "stories": {
-    "ac04056c14d60a51b00bb02f0908d252eee5d99556abaebee3b4b707355630db": {
-      "time": 1794821062,
-      "title": "Will Anthropic's IPO lead to better AI regulation? - The Korea Times",
-      "desc": "Will Anthropic's IPO lead to better AI regulation? The Korea Times",
-      "source": "The Korea Times",
-      "region": "WORLD"
-    },
     "d45b4c8ff73d9c43fc78e3115edf37c8d9199eff751688c27d3486d2af75367b": {
       "time": 1794822042,
       "title": "ИИ для создания контента: локальный линтер рискованных утверждений в Markdown",
@@ -2372,139 +2364,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794657660,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 62.9,
-      "candidates": 17,
-      "queue_before": 0,
-      "queue_after": 8,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 7,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 8,
-        "candidate_count": 17,
-        "admission_rate": 47.06,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость внедрения жестких лимитов и контроля доступа для ИИ-агентов в бизнес-процессах.",
-            "title": "OpenAI представила функцию ChatGPT Wallet для покупок с помощью ИИ",
-            "final_score": 76.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 8,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 56,
-        "raw_items": 469,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 40,
-          "CNews": 0,
-          "Euronews": 14
-        },
-        "score_filtered": 440,
-        "quality_filtered": 4,
-        "story_dedup": 8,
-        "candidates": 17,
-        "candidate_rate": 0.0412,
-        "score_buckets": {
-          "0–39": 419,
-          "40–49": 25,
-          "50–59": 22,
-          "60–69": 3,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 4,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1794658156,
       "status": "OK",
@@ -25258,6 +25117,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1794907747,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 35.18,
+      "candidates": 0,
+      "queue_before": 17,
+      "queue_after": 17,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 9,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
