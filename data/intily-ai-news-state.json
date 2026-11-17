@@ -1,7 +1,5 @@
 {
   "published": {
-    "bf04ac3dea68bf9e3ed0b132d8a4e22d3241dcca616c5e7757fb5dade4e72e01": 1792340682,
-    "fb940a293f22b67a4f0da8bab667ffd65b9755f79e208a957d570d01a799823b": 1792341161,
     "e91db22143790feb668182ce8adf360d9bc246eec371f45e5c2cdfcf7a8900b9": 1792342358,
     "e3d05422d3415f9360d2ac9797cccc67185ded753ec1e1bf4dd3400a3ba0554c": 1792345720,
     "56bb1514d969a42715135a602b02c4202bc06da9bbea0eee9750118ca29e0746": 1792348124,
@@ -2076,30 +2074,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794932493.9322655,
+    "last_start_ts": 1794933197.9123826,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794932493.9322655,
-    "last_success_ts": 1794932493.9322655,
+    "last_run_ts": 1794933197.9123826,
+    "last_success_ts": 1794933197.9123826,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1794935810.1125937,
-      "reason": "The read operation timed out",
-      "updated_at": 1794932210.1125963
+      "disabled_until": 1794936773.342406,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1794933173.3424087
     },
     "GROQ": {
-      "disabled_until": 1794936037.441289,
+      "disabled_until": 1794936776.4232357,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794932437.441291
+      "updated_at": 1794933176.423238
     },
     "OPENAI": {
-      "disabled_until": 1795018893.7191513,
+      "disabled_until": 1795019597.7675962,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1794932493.7191532
+      "updated_at": 1794933197.7675984
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2107,9 +2105,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1794936092.3284552,
+      "disabled_until": 1794936796.6886213,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1794932492.3284569
+      "updated_at": 1794933196.688624
     }
   },
   "stories": {
@@ -2529,147 +2527,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794683579,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 43.44,
-      "candidates": 26,
-      "queue_before": 1,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 22,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 4,
-        "added": 0,
-        "candidate_count": 26,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://news.lavx.hu/article/tendrils-compute-raises-30-million-to-challenge-cpu-and-gpu-chips",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 6.67,
-          "bonus_total": 60.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Потенциальное снижение стоимости инфраструктуры в долгосрочной перспективе, но пока нет готового продукта.",
-            "title": "Tendrils Compute raises $30 million to challenge CPU and GPU chips - news.lavx.hu",
-            "final_score": 57.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 59,
-        "raw_items": 801,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 2,
-          "Habr AI/News": 40,
-          "CNews": 0,
-          "Euronews": 13
-        },
-        "score_filtered": 744,
-        "quality_filtered": 12,
-        "story_dedup": 19,
-        "candidates": 26,
-        "candidate_rate": 0.035,
-        "score_buckets": {
-          "0–39": 713,
-          "40–49": 42,
-          "50–59": 43,
-          "60–69": 3,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 1,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794685019,
       "status": "OK",
@@ -25376,6 +25233,78 @@
         "GEMINI": {
           "blocked": true,
           "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1794933197,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 41.34,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
         },
         "GROQ": {
           "blocked": true,
