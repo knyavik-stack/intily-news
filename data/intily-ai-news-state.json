@@ -1,6 +1,5 @@
 {
   "published": {
-    "db9646e86edab7daafdfb1a5e8bf561bdf707d5da33ba436d95f970694fe56eb": 1792318599,
     "6c7a9b3da4c86f35cb762e74557dee617f56f8726906d5a89d849ed2abac572b": 1792323880,
     "ffe5e525c4ee61230d94d9fc737d57518925b8e87ad0b938ab738e6c0b2f81a0": 1792324844,
     "badec4bcc8af64de8edf8a501fe34dc0f35f0f00518853c8f3c63d5740764ebb": 1792325322,
@@ -1327,7 +1326,8 @@
     "b95c60d86967ad450ae51085a32ded06c54f898020a0f5897512b3763be13986": 1794906998,
     "67c2fbf5f0a3ca26d06ab5d4a5b310dce4c031bbd657d754c3ea85964385dfd0": 1794908681,
     "a31467ac557c22d0bdc4f911a93c7958ba50df7d6fad6787e474c98d2af66b07": 1794908930,
-    "7051b2af7236e7fc02151ef8206241881f4e0a0784f55130615bbe51032af4e0": 1794910370
+    "7051b2af7236e7fc02151ef8206241881f4e0a0784f55130615bbe51032af4e0": 1794910370,
+    "2d247fb0ba2876c12570f775f97fb9afc47312a80b4e1d50c4541ef15c0afbb5": 1794910844
   },
   "known": {
     "5d39b03b19436f64443fd6f7b78a72e749a0d4629068a1429ee4b32cdbd1ed15": 1794906516.7749588,
@@ -1341,47 +1341,11 @@
     "9d61ad66b9587ff6e90185ff65ca3ee3b1cbc3b3c31f5fddb21fb8fbc435717c": 1794908681.595399,
     "53d32bb98e81a2edd0baec040d7702cc85654abae2c27d61d4ca2ae8f56fc9d0": 1794908681.595399,
     "5303e5a75472be3999a333f36258e70da4c082bc67d2df760454a2748388304d": 1794908681.595399,
-    "79a3e20abe2a1786ed0b9c25b29616fcd06fb334d4c07fc76955bdc8e2cc1259": 1794908681.595399
+    "79a3e20abe2a1786ed0b9c25b29616fcd06fb334d4c07fc76955bdc8e2cc1259": 1794908681.595399,
+    "489f00b527032ecc2ae375721111d6bea176fbdd140a1936ab10a5a9b11565d0": 1794910844.365472,
+    "60d388056b78ec4f35ddc304d27229bfdfb86887db34a959983bbe794b8fa911": 1794910844.365472
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Как работают токены — снова махинации с лимитами",
-      "link": "https://habr.com/ru/companies/h3llo_cloud/articles/1105992/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1105992",
-      "desc": "OpenAI и Anthropic грешат одним — постоянно меняют лимиты, которые входят в подписки. Причём официально эти объёмы они не публикуют, а значит, могут крутить их как хотят. Устав от этой неразберихи, я решил, что хочу уменьшить расход токенов. При этом вряд ли я был первым с такой гениальной идеей. Для этого уже были инструменты. Я нашёл три основных — rtk, Headroom и ripwire. Всё завелось достаточно просто, я радовался тому, насколько дольше стало хватать токенов, ещё и друзьям писал — ставьте эти инструменты! И примерно два месяца так и жил. Потом я решил собрать отчёт, сколько же расходов у меня получилось в баксах. Как бы выразиться помягче, мне не очень понравилось то, что я увидел. Для понимания, я построил тестовый стенд, и на 30 задачах SWE-bench счёт с этой троицей вырос на 18%, ещё раз — вырос, не упал. На повторе моих реальных рабочих сессий — на 46%. rtk за всё время не сжал ни одного вызова из 3 452. ripwire агент тупо, попросту, мать его, не вызывал! Он не вызвал его ни разу! А Headroom одну мою сессию сделал дороже в 2.4 раза. От таких невероятных новостей мои глаза полезли на лоб, и я закопался в это дело ещё глубже. Это ещё и при том, что у rtk 84 тысячи звёзд на GitHub, у Headroom 77 тысяч, и оба обещают срезать токены на 60-90% и больше. Но самое смешное даже не это. 22 июля JetBrains опубликовали свой замер rtk. В этот же день авторы rtk тихо УДАЛИЛИ из README свою знаменитую таблицу «118 тысяч токенов → 24 тысячи». И в описании коммита сами назвали её выдуманной. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794899571.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 9.0,
-        "event_concreteness": 13.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 44.5,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 68.5
-      },
-      "base_score": 44.5,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 68.5,
-      "key": "2d247fb0ba2876c12570f775f97fb9afc47312a80b4e1d50c4541ef15c0afbb5",
-      "importance": 68.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "tools"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "RUSSIA",
       "title": "Alibaba представила ИИ-модель Qwen4-Max для сложных научных задач и разработки видеоигр - prospect.com.ru",
@@ -1605,6 +1569,44 @@
     },
     {
       "region": "RUSSIA",
+      "title": "«ИТ-Экспертиза» выпустила «Когнитум» 0.17 с механизмом согласования действий ИИ-агентов",
+      "link": "https://www.cnews.ru/news/line/2026-11-17_it-ekspertiza_vypustila",
+      "desc": "Группа компаний «ИТ-Экспертиза» выпустила версию 0.17 корпоративной платформы искусственного интеллекта «Когнитум»....",
+      "source": "CNews",
+      "time": 1794905520.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 7.0,
+        "event_concreteness": 10.5,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 1.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 45.5,
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 63.5
+      },
+      "base_score": 45.5,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 63.5,
+      "key": "0e8705274a888f457ab9b4a17bb50198994e0be775f5b483d4519082196f4219",
+      "importance": 63.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "tools"
+      ],
+      "audience_score": 6.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
       "title": "Релиз открытого проекта PaintFE 1.5 — портативного редактора изображений для Windows и macOS",
       "link": "https://habr.com/ru/articles/1108214/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1108214",
       "desc": "В середине ноября 2026 года разработчик Кайл Джексон представил обновление открытого проекта PaintFE 1.5.0 (Fе — это символ железа в периодической таблице, отсылка к каламбуру про Rust). Это портативный редактор изображений для Linux, Windows и macOS со слоями, градиентами, режимами наложения, фильтрами с поддержкой работы с GPU, скриптами и поддержкой анимированных GIF/APNG. Исходный код решения написан на Rust и опубликован на GitHub под лицензией MIT. Версия PaintFE 1.0 вышла в феврале 2026 года. Читать далее",
@@ -1714,6 +1716,42 @@
       "tier": "A"
     },
     {
+      "region": "WORLD",
+      "title": "AI cybersecurity startup reaches $1 billion valuation just three months after launch - NEWS.am TECH",
+      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBNY1JXczRyNEpUUUw4eEdkVGp0WmhweGU1OWtwN1NVUjlaQ3BhQ21QRURWQmRBWndlWHQyaTVLb3pZMTJyMTNaeA?oc=5",
+      "desc": "AI cybersecurity startup reaches $1 billion valuation just three months after launch NEWS.am TECH",
+      "source": "NEWS.am TECH",
+      "time": 1794907800.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 10.0,
+        "event_concreteness": 12.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 45.0,
+        "audience_score": 5.0,
+        "audience_bonus": 15.0,
+        "final_score": 60.0
+      },
+      "base_score": 45.0,
+      "audience_bonus": 15.0,
+      "score_stage": "final",
+      "score": 60.0,
+      "key": "9d61ad66b9587ff6e90185ff65ca3ee3b1cbc3b3c31f5fddb21fb8fbc435717c",
+      "importance": 60.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "security_regulation"
+      ],
+      "audience_score": 5.0,
+      "tier": "A"
+    },
+    {
       "region": "RUSSIA",
       "title": "Снова на Радаре: 16 подросших стартапов к трёхлетию площадки",
       "link": "https://habr.com/ru/companies/productradar/articles/1108510/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1108510",
@@ -1753,36 +1791,35 @@
     },
     {
       "region": "RUSSIA",
-      "title": "«ИТ-Экспертиза» выпустила «Когнитум» 0.17 с механизмом согласования действий ИИ-агентов",
-      "link": "https://www.cnews.ru/news/line/2026-11-17_it-ekspertiza_vypustila",
-      "desc": "Группа компаний «ИТ-Экспертиза» выпустила версию 0.17 корпоративной платформы искусственного интеллекта «Когнитум»....",
-      "source": "CNews",
-      "time": 1794905520.0,
+      "title": "Microsoft выпустила .NET 11 с C# 15, новым типом union и улучшениями для ИИ-разработки",
+      "link": "https://habr.com/ru/companies/selectel/articles/1108252/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1108252",
+      "desc": "Microsoft выпустила .NET 11 — новую версию открытой платформы для разработки приложений. Вместе с ней представлен C# 15, а также обновились ASP.NET Core, Entity Framework Core, .NET MAUI и другие компоненты. Сборки SDK и Runtime доступны для Windows, Linux и macOS. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794909639.0,
       "_score_components": {
         "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 7.0,
-        "event_concreteness": 10.5,
+        "ai_specificity": 6.0,
+        "impact": 10.0,
+        "event_concreteness": 14.5,
         "practical_value": 3.0,
         "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 1.0,
-        "freshness": 1.5,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
         "low_signal_penalty": 0.0,
-        "base_score": 45.5,
+        "base_score": 52.5,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 45.5
+        "final_score": 52.5
       },
-      "base_score": 45.5,
+      "base_score": 52.5,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 45.5,
-      "key": "0e8705274a888f457ab9b4a17bb50198994e0be775f5b483d4519082196f4219",
-      "importance": 45.5,
+      "score": 52.5,
+      "key": "489f00b527032ecc2ae375721111d6bea176fbdd140a1936ab10a5a9b11565d0",
+      "importance": 52.5,
       "editorial_value": 50.0,
       "topics": [
-        "agents",
         "tools"
       ],
       "audience_score": null,
@@ -1791,36 +1828,36 @@
     },
     {
       "region": "WORLD",
-      "title": "AI cybersecurity startup reaches $1 billion valuation just three months after launch - NEWS.am TECH",
-      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBNY1JXczRyNEpUUUw4eEdkVGp0WmhweGU1OWtwN1NVUjlaQ3BhQ21QRURWQmRBWndlWHQyaTVLb3pZMTJyMTNaeA?oc=5",
-      "desc": "AI cybersecurity startup reaches $1 billion valuation just three months after launch NEWS.am TECH",
-      "source": "NEWS.am TECH",
-      "time": 1794907800.0,
+      "title": "Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC - CNBC",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBvLUltN01zNnhQWHVEUWlEbWJoUXcyVjFlRUF0SU90cXZwU2FoT1J2NnNZTGthUjZOX1ozbHBaUnB3QVc2bl9LNHFEMDRiUXZJVEktNjRBUG81M0dpSzRKbFl5cjdNaXhGeHVIVDNDV2dITFVhZlBpME1n0gF_QVVfeXFMT3ZEaUU4Z1VBUm44S2Y3MmwyRlpsUjYyejJRTFlyMnU5aklRa3pGQW41MkRHb3RqTzh5a0l0dE9MbzdSeFpTRWlBajFvRllpa0VnX3RXUDJIR0tjUE1NOGsyazJRbEc1RGcyZmt5cGdwUUxjZXFYb252N2dUU1VWRQ?oc=5",
+      "desc": "Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC CNBC Trump admin. unveils new rule to deny China's access to U.S. AI chips Yahoo U.S. closes loophole that let Chinese companies use top AI chips through foreign data centers NBC News",
+      "source": "CNBC",
+      "time": 1794899255.0,
       "_score_components": {
         "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 10.0,
-        "event_concreteness": 12.5,
+        "ai_specificity": 4.5,
+        "impact": 8.0,
+        "event_concreteness": 13.0,
         "practical_value": 0.0,
         "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 2.0,
+        "source_quality": 5.0,
+        "evidence": 3.0,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 45.0,
+        "base_score": 46.5,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 45.0
+        "final_score": 46.5
       },
-      "base_score": 45.0,
+      "base_score": 46.5,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 45.0,
-      "key": "9d61ad66b9587ff6e90185ff65ca3ee3b1cbc3b3c31f5fddb21fb8fbc435717c",
-      "importance": 45.0,
+      "score": 46.5,
+      "key": "60d388056b78ec4f35ddc304d27229bfdfb86887db34a959983bbe794b8fa911",
+      "importance": 46.5,
       "editorial_value": 50.0,
       "topics": [
-        "security_regulation"
+        "chips"
       ],
       "audience_score": null,
       "tier": "A"
@@ -1953,20 +1990,20 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 43.0,
+        "base_score": 42.5,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 43.0
+        "final_score": 42.5
       },
-      "base_score": 43.0,
+      "base_score": 42.5,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 43.0,
+      "score": 42.5,
       "key": "53d32bb98e81a2edd0baec040d7702cc85654abae2c27d61d4ca2ae8f56fc9d0",
-      "importance": 43.0,
-      "editorial_value": 49.0,
+      "importance": 42.5,
+      "editorial_value": 48.5,
       "topics": [],
       "audience_score": null,
       "tier": "A",
@@ -1974,20 +2011,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794910370.5367305,
+    "last_start_ts": 1794910844.365472,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794910370.5367305,
-    "last_success_ts": 1794910370.5367305,
-    "last_candidates": 0,
+    "last_run_ts": 1794910844.365472,
+    "last_success_ts": 1794910844.365472,
+    "last_candidates": 24,
     "last_published": 1,
-    "queue_size": 17
+    "queue_size": 18
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794910370.3622189
+      "updated_at": 1794910884.5152926
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2332,10 +2369,16 @@
       "desc": "Калифорния подала в суд на OpenAI из-за атак ИИ-агентов: один из инцидентов затронул Hugging Face rb.ru",
       "source": "rb.ru",
       "region": "RUSSIA"
+    },
+    "2d247fb0ba2876c12570f775f97fb9afc47312a80b4e1d50c4541ef15c0afbb5": {
+      "time": 1794910844,
+      "title": "Как работают токены — снова махинации с лимитами",
+      "desc": "OpenAI и Anthropic грешат одним — постоянно меняют лимиты, которые входят в подписки. Причём официально эти объёмы они не публикуют, а значит, могут крутить их как хотят. Устав от этой неразберихи, я решил, что хочу уменьшить расход токенов. При этом вряд ли я был первым с такой гениальной идеей. Для этого уже были инструменты. Я нашёл три основных — rtk, Headroom и ripwire. Всё завелось достаточно просто, я радовался тому, насколько дольше стало хватать токенов, ещё и друзьям писал — ставьте эти инструменты! И примерно два месяца так и жил. Потом я решил собрать отчёт, сколько же расходов у меня получилось в баксах. Как бы выразиться помягче, мне не очень понравилось то, что я увидел. Для понимания, я построил тестовый стенд, и на 30 задачах SWE-bench счёт с этой троицей вырос на 18%, ещё раз — вырос, не упал. На повторе моих реальных рабочих сессий — на 46%. rtk за всё время не сжал ни одного вызова из 3 452. ripwire агент тупо, попросту, мать его, не вызывал! Он не вызвал его ни разу! А Headroom одну мою сессию сделал дороже в 2.4 раза. От таких невероятных новостей мои глаза полезли на лоб, и я закопался в это дело ещё глубже. Это ещё и при том, что у rtk 84 тысячи звёзд на GitHub, у Headroom 77 тысяч, и оба обещают срезать токены на 60-90% и больше. Но самое смешное даже не это. 22 июля JetBrains опубликовали свой замер rtk. В этот же день авторы rtk тихо УДАЛИЛИ из README свою знаменитую таблицу «118 тысяч токенов → 24 тысячи». И в описании коммита сами назвали её выдуманной. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -2349,6 +2392,7 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -2357,127 +2401,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794659843,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 55.11,
-      "candidates": 19,
-      "queue_before": 5,
-      "queue_after": 8,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 9,
-        "known_recent": 0,
-        "already_queued": 4,
-        "story_queue": 1,
-        "story_history": 2,
-        "added": 3,
-        "candidate_count": 19,
-        "admission_rate": 15.79,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 5,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 58,
-        "raw_items": 504,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 3,
-          "Habr AI/News": 40,
-          "CNews": 0,
-          "Euronews": 14
-        },
-        "score_filtered": 472,
-        "quality_filtered": 5,
-        "story_dedup": 8,
-        "candidates": 19,
-        "candidate_rate": 0.0426,
-        "score_buckets": {
-          "0–39": 452,
-          "40–49": 25,
-          "50–59": 24,
-          "60–69": 3,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 1,
-          "6": 0,
-          "7": 1,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1794660069,
       "status": "OK",
@@ -25235,11 +25158,150 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794910844,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 48.91,
+      "candidates": 24,
+      "queue_before": 17,
+      "queue_after": 18,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 3,
+        "already_queued": 7,
+        "story_queue": 2,
+        "story_history": 0,
+        "added": 2,
+        "candidate_count": 24,
+        "admission_rate": 8.33,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://habr.com/ru/companies/h3llo_cloud/articles/1105992/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1105992",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 6.33,
+          "bonus_total": 57.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость аудита текущих инструментов оптимизации затрат для предотвращения перерасхода бюджета.",
+            "title": "Как работают токены — снова махинации с лимитами",
+            "final_score": 68.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 6,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 138,
+        "raw_items": 597,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 1,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 40,
+          "CNews": 60,
+          "Euronews": 34
+        },
+        "score_filtered": 543,
+        "quality_filtered": 27,
+        "story_dedup": 3,
+        "candidates": 24,
+        "candidate_rate": 0.0523,
+        "score_buckets": {
+          "0–39": 500,
+          "40–49": 69,
+          "50–59": 24,
+          "60–69": 4,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 1,
+          "5": 2,
+          "6": 1,
+          "7": 6,
+          "8": 1,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1794908681.595399,
-  "last_publish_ts": 1794910370.5367305,
+  "last_search_ts": 1794910844.365472,
+  "last_publish_ts": 1794910844.365472,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
