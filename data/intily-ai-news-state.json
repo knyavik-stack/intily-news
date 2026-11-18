@@ -1,6 +1,5 @@
 {
   "published": {
-    "b9bbdb79384e3e6839143addabeac0cf93c670fcaaeadbddd567783608304eb7": 1792401671,
     "15081c964b568d62716b637045338dab57678082c158d009aaa9763997758930": 1792402868,
     "4d64c78f370d51ed848d8838be124ccd59ae3deb54d659eac606dc472ad542b1": 1792403122,
     "3225601b52e069ad7b826b131d9967035ae81a66286001bb503a63d4f692253c": 1792404787,
@@ -1352,7 +1351,8 @@
     "7983e7b180df2fde5ed180e9bffb1e7ade086e7a16ed20f10487b4e00c8f4e52": 1794991714,
     "d698e425b2b3fd7f90912179c7ac32f041ed7fa7ce24f5d4a02b0cd9878a35cd": 1794992193,
     "681d81e2c0efe0ec957430b620295a222783dd84bda22e98a29ca72d5ddc474c": 1794992929,
-    "25781c59cb031f2f059fa96e51f079c3843eaa9c46f5c3f7a6ed7e3e5fecff78": 1794993653
+    "25781c59cb031f2f059fa96e51f079c3843eaa9c46f5c3f7a6ed7e3e5fecff78": 1794993653,
+    "7a2c67219e9c845f0003667f7f844c4d953344620987fcbe6ca80973baf6bf1c": 1794993871
   },
   "known": {
     "fedaf325b8a63faea0630b07c721fa2b792a4903597e9471fc456cd1eb5a2bda": 1794990040.791561,
@@ -1365,43 +1365,6 @@
     "7a2c67219e9c845f0003667f7f844c4d953344620987fcbe6ca80973baf6bf1c": 1794992193.499615
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "OpenAI запускает ChatGPT для продаж на всех этапах сделки - Unite.AI",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORm5UbEo0WEdxNlZPazVqVUt3R1JfUENVRmVWLWVhd1NwUDFTQjJwZ3VYcFFXdVh1T0o3T2tEMkdwR3Z2eHFkazVVRldTX1RKVW1zYS1DUkJxNDVjYUFWNVZZV25aUXZvT2l5cmpaT3JfZFlodEl3MWMxV2FJZnNCSDVmWmNjTms?oc=5",
-      "desc": "OpenAI запускает ChatGPT для продаж на всех этапах сделки Unite.AI",
-      "source": "Unite.AI",
-      "time": 1794956283.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 7.0,
-        "event_concreteness": 15.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 40.5,
-        "audience_score": 9.0,
-        "audience_bonus": 27.0,
-        "final_score": 67.5
-      },
-      "base_score": 40.5,
-      "audience_bonus": 27.0,
-      "score_stage": "final",
-      "score": 67.5,
-      "key": "7a2c67219e9c845f0003667f7f844c4d953344620987fcbe6ca80973baf6bf1c",
-      "importance": 67.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "models"
-      ],
-      "audience_score": 9.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "WORLD",
       "title": "Nvidia’s Q3 earnings hit the mark, without mentioning the whole Jensen Huang thing",
@@ -1847,20 +1810,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794993653.199989,
+    "last_start_ts": 1794993871.293728,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794993653.199989,
-    "last_success_ts": 1794993653.199989,
+    "last_run_ts": 1794993871.293728,
+    "last_success_ts": 1794993871.293728,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 13
+    "queue_size": 12
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794993656.3295593
+      "updated_at": 1794993873.6825936
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2352,10 +2315,16 @@
       "desc": "California Sues OpenAI Over Rogue AI Agent Incidents, Calling Testing Practices a Public Danger AI Insider",
       "source": "AI Insider",
       "region": "WORLD"
+    },
+    "7a2c67219e9c845f0003667f7f844c4d953344620987fcbe6ca80973baf6bf1c": {
+      "time": 1794993871,
+      "title": "OpenAI запускает ChatGPT для продаж на всех этапах сделки - Unite.AI",
+      "desc": "OpenAI запускает ChatGPT для продаж на всех этапах сделки Unite.AI",
+      "source": "Unite.AI",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -2374,99 +2343,10 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794750979,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 18.53,
-      "candidates": 0,
-      "queue_before": 2,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://finance.biggo.com/news/777770f9-19f8-4cf6-8ac5-3cc551345ec7",
-            "image_url": "https://img.biggo.com/CIoEQj_Utax0YWQF20FE3w9GnGZ-QBKTzLVlERPP5Bw/fit/1200/0/sm/0/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTExLzc3Nzc3MGY5LTE5ZjgtNGNmNi04YWM1LTNjYzU1MTM0NWVjN18xNzk0NzMxOTA1X2RlZmF1bHQuanBn.jpg",
-            "width": 1200,
-            "height": 675,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 9.0,
-          "bonus_total": 27.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходим немедленный аудит безопасности всех используемых AI-расширений и API-ключей для предотвращения утечек данных.",
-            "title": "Cursor Confirms Breach: Stolen Fireworks AI Key Let Hackers Poison Claude Code Extension for Up to 5,000 Users - BigGo Finance",
-            "final_score": 67.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794751219,
       "status": "OK",
@@ -24113,11 +23993,101 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794993871,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 3.49,
+      "candidates": 0,
+      "queue_before": 13,
+      "queue_after": 12,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://www.unite.ai/ru/openai-launches-chatgpt-for-sales-across-the-deal-cycle/",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 24.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Прямая автоматизация воронки продаж требует пересмотра стратегии найма и внедрения ИИ-инструментов в CRM.",
+            "title": "OpenAI запускает ChatGPT для продаж на всех этапах сделки - Unite.AI",
+            "final_score": 64.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1794992193.499615,
-  "last_publish_ts": 1794993653.199989,
+  "last_publish_ts": 1794993871.293728,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
