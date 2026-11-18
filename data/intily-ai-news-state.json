@@ -1353,7 +1353,8 @@
     "a1564218b862b120753cc22e23963553dac5083aea4828bf5cc134e2726d472c": 1794996042,
     "b2ee7d655b281ca64f89abc75269e7e9b59bb7434ba39547b84853430d00be2e": 1794996527,
     "0e362af296b285a30a2147e93fd7208c826d7ae26ac7c46de48ad2880ea10986": 1794997010,
-    "a15fd3f8d759242e35e1f8a04ed3455dbde7ef66394900c6845974fa8e3dcf3b": 1794997727
+    "a15fd3f8d759242e35e1f8a04ed3455dbde7ef66394900c6845974fa8e3dcf3b": 1794997727,
+    "bd38d1d6f27792d26985c8cff0d974adf67ff09bb31755a97dfdf3864e0ff9b0": 1794997966
   },
   "known": {
     "b3d063a89aa19acf76898de60c967703c9cc591264abe90c9a69643b6ae1566e": 1794995798.692718,
@@ -1374,6 +1375,46 @@
     "cc484dd9fbaaba00ba238c44966796e15e5147426b4511083ac640fbcb409600": 1794997727.632937
   },
   "queue": [
+    {
+      "region": "RUSSIA",
+      "title": "Ускоряем работу агентов в Claude Code при использовании сторонних LLM",
+      "link": "https://habr.com/ru/articles/1109298/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1109298",
+      "desc": "Мой путь в агентскую разработку начался, как и у многих, с использования Claude Code. Но вот настал день, когда Антропики забанили аккаунт — и возникла необходимость переехать к другому провайдеру фронтирной LLM для разработки. Я попробовал Kimi, как раз в этот момент вышла новая K3.1 Pro у них. И в целом опыт оказался положительным — не почувствовал что эта модель заметно хуже Opus 5.5 на моих задачах. Да, она заметно дороже — меньше лимитов в подписке. Но вот что точно не понравилось — Kimi Code малофункциональна и неудобна в сравнении с Claude Code (я использую расширения для VS Code, так что речь только про них). Пока я не нашёл достойных альтернативных харнесов, решил использовать Kimi с Claude Code. Это довольно просто — достаточно поменять API-эндпоинт и имена моделей в настройках. В Claude Code я привык использовать режим Auto, в котором агенты получают разрешения на вызовы инструментов автоматически. Очень полезный и удобный режим, но в связке с Kimi он оказался узким горлышком. Проблема проявляется следующим образом: просишь агента запустить тесты или git push , и Claude Code замирает на какое-то время, иногда на минуты! Основная модель уже написала ответ, но инструмент не запускается: внутри есть второй LLM-вызов, который решает, безопасно ли действие. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1794996064.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 11.0,
+        "event_concreteness": 10.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 49.0,
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 70.0
+      },
+      "base_score": 49.0,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 70.0,
+      "key": "5e095e0cc986ccd8c1abac035eebf87b2f4de2ccb46ae8fa51ef695e5acdf048",
+      "importance": 70.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "models",
+        "security_regulation",
+        "tools"
+      ],
+      "audience_score": 7.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
     {
       "region": "RUSSIA",
       "title": "Безопасный вайбкодинг без ИТ-подготовки. Что продумать до первой строки кода",
@@ -1761,19 +1802,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 41.0,
+        "base_score": 40.5,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 59.0
+        "final_score": 58.5
       },
-      "base_score": 41.0,
+      "base_score": 40.5,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 59.0,
+      "score": 58.5,
       "key": "dd2671d5a66599380136ea50b0ae3952434c34c82dd17975a2e4906d07c02267",
-      "importance": 59.0,
+      "importance": 58.5,
       "editorial_value": 50.0,
       "topics": [
         "security_regulation"
@@ -1893,84 +1934,6 @@
       "tier": "A"
     },
     {
-      "region": "RUSSIA",
-      "title": "LLM впервые запустили на фотонном чипе: как Q.ANT и AMD скрестили оптику с GPU",
-      "link": "https://habr.com/ru/companies/selectel/articles/1109180/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1109180",
-      "desc": "Частая боль при работе современных языковых моделей — механизм внимания или self-attention. С ростом контекста он требует квадратично больше вычислений и раздувает KV-кэш в памяти видеокарты. Чтобы обойти это ограничение, немецкая компания Q.ANT привезла на конференцию SC26 в Чикаго демонстрацию гибридного инференса: часть слоев языковой модели перенесли с видеокарты AMD на фотонный сопроцессор NPU Gen 2+, который считает дискретное преобразование Фурье светом за один проход. Правда, в пресс-релизе компания поторопилась назвать свой запуск «первым в мире». Еще в апреле 2026 года полноценную LLM с помощью оптики запустил британский стартап Lumai на своем сервером Iris. Если Q.ANT использует плоские кремниевые волноводы, то британцы сделали акцент на трехмерную оптику — линзы и пучки света в свободном пространстве. На такой архитектуре они запустили модели уровня Llama 70B в реальном времени, экономя 90% энергии. Давайте разберемся, что за этим стоит. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794996001.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 13.0,
-        "event_concreteness": 14.0,
-        "practical_value": 5.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 57.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 57.0
-      },
-      "base_score": 57.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 57.0,
-      "key": "bd38d1d6f27792d26985c8cff0d974adf67ff09bb31755a97dfdf3864e0ff9b0",
-      "importance": 57.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "applications",
-        "chips"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Ускоряем работу агентов в Claude Code при использовании сторонних LLM",
-      "link": "https://habr.com/ru/articles/1109298/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1109298",
-      "desc": "Мой путь в агентскую разработку начался, как и у многих, с использования Claude Code. Но вот настал день, когда Антропики забанили аккаунт — и возникла необходимость переехать к другому провайдеру фронтирной LLM для разработки. Я попробовал Kimi, как раз в этот момент вышла новая K3.1 Pro у них. И в целом опыт оказался положительным — не почувствовал что эта модель заметно хуже Opus 5.5 на моих задачах. Да, она заметно дороже — меньше лимитов в подписке. Но вот что точно не понравилось — Kimi Code малофункциональна и неудобна в сравнении с Claude Code (я использую расширения для VS Code, так что речь только про них). Пока я не нашёл достойных альтернативных харнесов, решил использовать Kimi с Claude Code. Это довольно просто — достаточно поменять API-эндпоинт и имена моделей в настройках. В Claude Code я привык использовать режим Auto, в котором агенты получают разрешения на вызовы инструментов автоматически. Очень полезный и удобный режим, но в связке с Kimi он оказался узким горлышком. Проблема проявляется следующим образом: просишь агента запустить тесты или git push , и Claude Code замирает на какое-то время, иногда на минуты! Основная модель уже написала ответ, но инструмент не запускается: внутри есть второй LLM-вызов, который решает, безопасно ли действие. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1794996064.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 11.0,
-        "event_concreteness": 10.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 49.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 49.0
-      },
-      "base_score": 49.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 49.0,
-      "key": "5e095e0cc986ccd8c1abac035eebf87b2f4de2ccb46ae8fa51ef695e5acdf048",
-      "importance": 49.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "models",
-        "security_regulation",
-        "tools"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
       "region": "WORLD",
       "title": "[F-Code (9211.T) FY2026 Q3 Earnings Call] Japan's F-Code Posts 150% Revenue, 145% Operating Profit Growth but Holds Off on Full-Year Upgrade; Emphasizes Soundness of ¥13.3 Billion Goodwill and Balance with AI Front-Loaded Investment - finance.biggo.com",
       "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1oUnZMRDRhXzlIajlzdlZKdnpwU0lBS0Y5cmxTdTJwVDh4cVZlcWhjWW1DNE9nam5NU01RaHZ5Q185clhNR1pGZUhpSkxJRE1YX3NONXpnSWtQQ1lHUTliRw?oc=5",
@@ -2083,20 +2046,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794997727.632937,
+    "last_start_ts": 1794997966.5224392,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794997727.632937,
-    "last_success_ts": 1794997727.632937,
-    "last_candidates": 32,
+    "last_run_ts": 1794997966.5224392,
+    "last_success_ts": 1794997966.5224392,
+    "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 19
+    "queue_size": 18
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794997768.0951998
+      "updated_at": 1794997966.2888918
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2588,12 +2551,18 @@
       "desc": "Nvidia stops shipping US-approved AI chips to China Miami Herald",
       "source": "Miami Herald",
       "region": "WORLD"
+    },
+    "bd38d1d6f27792d26985c8cff0d974adf67ff09bb31755a97dfdf3864e0ff9b0": {
+      "time": 1794997966,
+      "title": "LLM впервые запустили на фотонном чипе: как Q.ANT и AMD скрестили оптику с GPU",
+      "desc": "Частая боль при работе современных языковых моделей — механизм внимания или self-attention. С ростом контекста он требует квадратично больше вычислений и раздувает KV-кэш в памяти видеокарты. Чтобы обойти это ограничение, немецкая компания Q.ANT привезла на конференцию SC26 в Чикаго демонстрацию гибридного инференса: часть слоев языковой модели перенесли с видеокарты AMD на фотонный сопроцессор NPU Gen 2+, который считает дискретное преобразование Фурье светом за один проход. Правда, в пресс-релизе компания поторопилась назвать свой запуск «первым в мире». Еще в апреле 2026 года полноценную LLM с помощью оптики запустил британский стартап Lumai на своем сервером Iris. Если Q.ANT использует плоские кремниевые волноводы, то британцы сделали акцент на трехмерную оптику — линзы и пучки света в свободном пространстве. На такой архитектуре они запустили модели уровня Llama 70B в реальном времени, экономя 90% энергии. Давайте разберемся, что за этим стоит. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -2610,139 +2579,10 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794753382,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 39.3,
-      "candidates": 13,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 12,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 0,
-        "candidate_count": 13,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Риск срыва поставок и роста цен на GPU напрямую влияет на бюджеты и сроки развертывания AI-инфраструктуры.",
-            "title": "Nvidia's bypass supply chain to China falters; $34 billion Southeast Asia data center investment at risk - 재경일보",
-            "final_score": 71.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 57,
-        "raw_items": 568,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 40,
-          "CNews": 0,
-          "Euronews": 15
-        },
-        "score_filtered": 540,
-        "quality_filtered": 12,
-        "story_dedup": 3,
-        "candidates": 13,
-        "candidate_rate": 0.0254,
-        "score_buckets": {
-          "0–39": 517,
-          "40–49": 35,
-          "50–59": 15,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794753857,
       "status": "OK",
@@ -24214,11 +24054,99 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794997966,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 18.39,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 18,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/articles/1109298/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1109298",
+            "image_url": "https://habr.com/share/publication/1109298/0e35379898fa29b15da455ffcb642be1/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет разработчикам избежать простоя при блокировках или смене провайдера LLM в агентских пайплайнах.",
+            "title": "Ускоряем работу агентов в Claude Code при использовании сторонних LLM",
+            "final_score": 70.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1794997727.632937,
-  "last_publish_ts": 1794997727.632937,
+  "last_publish_ts": 1794997966.5224392,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
