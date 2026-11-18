@@ -1896,19 +1896,19 @@
         "novelty": 0.0,
         "source_quality": 5.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 44.5,
+        "base_score": 44.0,
         "audience_score": 5.0,
         "audience_bonus": 15.0,
-        "final_score": 59.5
+        "final_score": 59.0
       },
-      "base_score": 44.5,
+      "base_score": 44.0,
       "audience_bonus": 15.0,
       "score_stage": "final",
-      "score": 59.5,
+      "score": 59.0,
       "key": "0a9a63c797f51b7be8ec7f6859aab5e788642f726db72d0542016bb09c6d0fc5",
-      "importance": 59.5,
+      "importance": 59.0,
       "editorial_value": 50.0,
       "topics": [],
       "audience_score": 5.0,
@@ -2063,13 +2063,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795020766.5870142,
+    "last_start_ts": 1795021001.9537714,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795020766.5870142,
-    "last_success_ts": 1795020766.5870142,
+    "last_run_ts": 1795021001.9537714,
+    "last_success_ts": 1795021001.9537714,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 18
   },
   "providers": {
@@ -2079,14 +2079,14 @@
       "updated_at": 1795020763.0927165
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795020766.4619935
+      "disabled_until": 1795024596.6647148,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795020996.6647167
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795020757.653364
+      "disabled_until": 1795107401.859443,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1795021001.8594444
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2094,9 +2094,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795020757.653364
+      "disabled_until": 1795024600.387427,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795021000.3874292
     }
   },
   "stories": {
@@ -2593,146 +2593,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1794811703,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 39.61,
-      "candidates": 16,
-      "queue_before": 4,
-      "queue_after": 8,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 7,
-        "known_recent": 0,
-        "already_queued": 3,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 5,
-        "candidate_count": 16,
-        "admission_rate": 31.25,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://finance.yahoo.com/technology/ai/articles/baba-stock-edges-lower-overnight-060258606.html",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.5,
-          "bonus_total": 51.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Прямое снижение операционных затрат на AI-инфраструктуру требует немедленного пересмотра стека технологий.",
-            "title": "BABA Stock Edges Lower Overnight: Alibaba Reportedly Launches Most-Advanced AI Model That Cuts Task Costs By 60% - Yahoo Finance",
-            "final_score": 77.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 67,
-        "raw_items": 479,
-        "source_counts": {
-          "TechCrunch AI": 4,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 2,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 33,
-          "CNews": 8,
-          "Euronews": 16
-        },
-        "score_filtered": 446,
-        "quality_filtered": 17,
-        "story_dedup": 0,
-        "candidates": 16,
-        "candidate_rate": 0.0388,
-        "score_buckets": {
-          "0–39": 417,
-          "40–49": 45,
-          "50–59": 14,
-          "60–69": 3,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 2,
-          "7": 2,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794811949,
       "status": "OK",
@@ -22911,6 +22771,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1795021001,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 8.88,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 18,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
