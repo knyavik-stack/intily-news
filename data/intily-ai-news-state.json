@@ -1355,7 +1355,8 @@
     "bd38d1d6f27792d26985c8cff0d974adf67ff09bb31755a97dfdf3864e0ff9b0": 1794997966,
     "e1d9fb58fd453694a8b31d93967bac599230d1828d3000ad8f661e09dcc3bff6": 1794998449,
     "19b29a63d00856f8f25442b64db62009be72a295dea320d86cd2f455f5152105": 1794998922,
-    "5e095e0cc986ccd8c1abac035eebf87b2f4de2ccb46ae8fa51ef695e5acdf048": 1794999167
+    "5e095e0cc986ccd8c1abac035eebf87b2f4de2ccb46ae8fa51ef695e5acdf048": 1794999167,
+    "1c14996488885fc0b412755510ceac59ffa9f08000aabf4e16a2190a3f1eadaf": 1794999393
   },
   "known": {
     "b3d063a89aa19acf76898de60c967703c9cc591264abe90c9a69643b6ae1566e": 1794995798.692718,
@@ -1376,42 +1377,6 @@
     "cc484dd9fbaaba00ba238c44966796e15e5147426b4511083ac640fbcb409600": 1794997727.632937
   },
   "queue": [
-    {
-      "region": "WORLD",
-      "title": "[F-Code (9211.T) FY2026 Q3 Earnings Call] Japan's F-Code Posts 150% Revenue, 145% Operating Profit Growth but Holds Off on Full-Year Upgrade; Emphasizes Soundness of ¥13.3 Billion Goodwill and Balance with AI Front-Loaded Investment - finance.biggo.com",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1oUnZMRDRhXzlIajlzdlZKdnpwU0lBS0Y5cmxTdTJwVDh4cVZlcWhjWW1DNE9nam5NU01RaHZ5Q185clhNR1pGZUhpSkxJRE1YX3NONXpnSWtQQ1lHUTliRw?oc=5",
-      "desc": "[F-Code (9211.T) FY2026 Q3 Earnings Call] Japan's F-Code Posts 150% Revenue, 145% Operating Profit Growth but Holds Off on Full-Year Upgrade; Emphasizes Soundness of ¥13.3 Billion Goodwill and Balance with AI Front-Loaded Investment finance.biggo.com",
-      "source": "finance.biggo.com",
-      "time": 1794996840.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 9.0,
-        "event_concreteness": 10.5,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 47.0,
-        "audience_score": 6.0,
-        "audience_bonus": 18.0,
-        "final_score": 65.0
-      },
-      "base_score": 47.0,
-      "audience_bonus": 18.0,
-      "score_stage": "final",
-      "score": 65.0,
-      "key": "1c14996488885fc0b412755510ceac59ffa9f08000aabf4e16a2190a3f1eadaf",
-      "importance": 65.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "business"
-      ],
-      "audience_score": 6.0,
-      "tier": "A"
-    },
     {
       "region": "RUSSIA",
       "title": "Безопасный вайбкодинг без ИТ-подготовки. Что продумать до первой строки кода",
@@ -1932,20 +1897,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1794999167.7127192,
+    "last_start_ts": 1794999393.3700578,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1794999167.7127192,
-    "last_success_ts": 1794999167.7127192,
+    "last_run_ts": 1794999393.3700578,
+    "last_success_ts": 1794999393.3700578,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 15
+    "queue_size": 14
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1794999169.886147
+      "updated_at": 1794999395.6021357
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2444,10 +2409,16 @@
       "desc": "Мой путь в агентскую разработку начался, как и у многих, с использования Claude Code. Но вот настал день, когда Антропики забанили аккаунт — и возникла необходимость переехать к другому провайдеру фронтирной LLM для разработки. Я попробовал Kimi, как раз в этот момент вышла новая K3.1 Pro у них. И в целом опыт оказался положительным — не почувствовал что эта модель заметно хуже Opus 5.5 на моих задачах. Да, она заметно дороже — меньше лимитов в подписке. Но вот что точно не понравилось — Kimi Code малофункциональна и неудобна в сравнении с Claude Code (я использую расширения для VS Code, так что речь только про них). Пока я не нашёл достойных альтернативных харнесов, решил использовать Kimi с Claude Code. Это довольно просто — достаточно поменять API-эндпоинт и имена моделей в настройках. В Claude Code я привык использовать режим Auto, в котором агенты получают разрешения на вызовы инструментов автоматически. Очень полезный и удобный режим, но в связке с Kimi он оказался узким горлышком. Проблема проявляется следующим образом: просишь агента запустить тесты или git push , и Claude Code замирает на какое-то время, иногда на минуты! Основная модель уже написала ответ, но инструмент не запускается: внутри есть второй LLM-вызов, который решает, безопасно ли действие. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "1c14996488885fc0b412755510ceac59ffa9f08000aabf4e16a2190a3f1eadaf": {
+      "time": 1794999393,
+      "title": "[F-Code (9211.T) FY2026 Q3 Earnings Call] Japan's F-Code Posts 150% Revenue, 145% Operating Profit Growth but Holds Off on Full-Year Upgrade; Emphasizes Soundness of ¥13.3 Billion Goodwill and Balance with AI Front-Loaded Investment - finance.biggo.com",
+      "desc": "[F-Code (9211.T) FY2026 Q3 Earnings Call] Japan's F-Code Posts 150% Revenue, 145% Operating Profit Growth but Holds Off on Full-Year Upgrade; Emphasizes Soundness of ¥13.3 Billion Goodwill and Balance with AI Front-Loaded Investment finance.biggo.com",
+      "source": "finance.biggo.com",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "RUSSIA",
@@ -2466,146 +2437,10 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1794758178,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 27.42,
-      "candidates": 14,
-      "queue_before": 1,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 12,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 0,
-        "candidate_count": 14,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://habr.com/ru/companies/bothub/articles/1108060/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1108060",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Переход к агентным архитектурам требует немедленного пересмотра стека автоматизации бизнес-процессов.",
-            "title": "ИИ за неделю — Claude Fable 5.2, Gemini и новые бенчмарки: 9–15 ноября",
-            "final_score": 81.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 61,
-        "raw_items": 617,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 40,
-          "CNews": 0,
-          "Euronews": 19
-        },
-        "score_filtered": 588,
-        "quality_filtered": 12,
-        "story_dedup": 3,
-        "candidates": 14,
-        "candidate_rate": 0.0252,
-        "score_buckets": {
-          "0–39": 560,
-          "40–49": 40,
-          "50–59": 14,
-          "60–69": 3,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794758660,
       "status": "OK",
@@ -23837,11 +23672,101 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1794999393,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 5.44,
+      "candidates": 0,
+      "queue_before": 15,
+      "queue_after": 14,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://finance.biggo.com/news/JP_9211.T_2026-11-18",
+            "image_url": "https://img.biggo.com/VBF0TCJVkFOA1bDgdPYwBQ-_bRvEa05fIVYJyJFkmog/fit/1200/0/sm/0/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2Vhcm5pbmdzX2NhcmQvMjAyNi0xMS9KUF85MjExLlRfMjAyNi0xMS0xOF8xNzk0OTk3MTQyLndlYnA.jpg",
+            "width": 1200,
+            "height": 671,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 6.0,
+          "bonus_total": 18.0,
+          "max_score": 6.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Показывает реальную модель распределения прибыли в AI-секторе для бизнеса.",
+            "title": "[F-Code (9211.T) FY2026 Q3 Earnings Call] Japan's F-Code Posts 150% Revenue, 145% Operating Profit Growth but Holds Off on Full-Year Upgrade; Emphasizes Soundness of ¥13.3 Billion Goodwill and Balance with AI Front-Loaded Investment - finance.biggo.com",
+            "final_score": 65.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1794997727.632937,
-  "last_publish_ts": 1794999167.7127192,
+  "last_publish_ts": 1794999393.3700578,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
