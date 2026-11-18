@@ -1357,7 +1357,8 @@
     "7e44c928501205115c80544f508bc035571a0f225c232df3a52463b8d8996bfb": 1795004436,
     "18391a42de38fce9e5c6a45bc1707d08c6dcaa35f5dbf4572b2c2f057b0b7081": 1795004676,
     "4290743675c2871ef7a4baa3cbebe5a5214034d0e658d790460eb7bcccaaa260": 1795004921,
-    "2e76283bd3c51c8754ae41b5dfbb5bfdcb2904dd64e044a81e923e732cb5fa30": 1795006112
+    "2e76283bd3c51c8754ae41b5dfbb5bfdcb2904dd64e044a81e923e732cb5fa30": 1795006112,
+    "ba9ea5baf7c1ac27f18d7bea8351c0ae031e04ffb1830deaa7784eaaf73aaede": 1795006376
   },
   "known": {
     "ac3f9dce8199d5dc9d504301671af8028deb8439cc3edbe13a76a0c43e4ec358": 1795003239.2652977,
@@ -1387,6 +1388,45 @@
     "4a42142ab7127855728a296e494650a75e576a0f30a28707fe9fbee3d70fb757": 1795006112.6451156
   },
   "queue": [
+    {
+      "region": "RUSSIA",
+      "title": "Мышеловка, коробок и трубкозуб: как учить мультимодальный ИИ мыслить по-человечески в 66 измерениях",
+      "link": "https://habr.com/ru/companies/ru_mts/articles/1107090/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107090",
+      "desc": "Начнем с небольшого эксперимента. Перед вами три картинки: мышеловка, спичечный коробок и трубкозуб. Какая из них лишняя? Задачка на пару секунд: первые два предмета сделал человек, а третий — живое существо. А теперь попробуем предложить то же самое мультимодальной нейросети. Шансы получить ответ, совпадающий с человеческим, окажутся не такими уж и большими. В эксперименте исследователей модели семейства Qwen3-VL при прямом опросе показывали результат от 37 до 41%. Для сравнения: случайный выбор в такой задаче дает 33,3%. Вы, конечно, возразите: нейросеть создавали не для игры в «Третий лишний». Она разбирает изображения, распознает объекты, работает с текстом и справляется с задачами посложнее. Да и результаты популярных мультимодальных бенчмарков у современных моделей вполне приличные. Только вот умение правильно отвечать на вопросы еще не значит, что модель видит мир так же, как мы. Она узнает и мышеловку, и коробок, и трубкозуба, но лишнее может выбрать по совсем другому признаку. И далеко не факт, что этот признак покажется нам логичным. Это и разбирают авторы исследования Aligning MLLMs with the Latent Structure of Human Cognition. Обычно мультимодальные большие языковые модели (MLLM) учат выдавать ответы, которые нравятся людям. Ученые предлагают встроить в процесс обучения реальные закономерности человеческого восприятия. Для этого исследователи взяли данные масштабного психофизического эксперимента, где миллионы человеческих суждений сведены к 66 смысловым измерениям, и построили на них фреймворк CogAlign. Его задача — изменить сам подход к обучению нейросетей: учить модель тем основаниям, по которым выбирает человек. Разберемся, как это устроено. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1795005895.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 9.0,
+        "event_concreteness": 14.5,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 51.0,
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 69.0
+      },
+      "base_score": 51.0,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 69.0,
+      "key": "7909f95245128b93bfce04b0cb919095ece448f81b98227f6c0fecd1b8c72271",
+      "importance": 69.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "models",
+        "research",
+        "security_regulation"
+      ],
+      "audience_score": 6.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
     {
       "region": "WORLD",
       "title": "OpenAI's GPT-6.2 Astra splits its early testers, and an OpenAI lead says the model changed in its last days before launch - MLQ.ai",
@@ -1905,83 +1945,6 @@
     },
     {
       "region": "RUSSIA",
-      "title": "Мышеловка, коробок и трубкозуб: как учить мультимодальный ИИ мыслить по-человечески в 66 измерениях",
-      "link": "https://habr.com/ru/companies/ru_mts/articles/1107090/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1107090",
-      "desc": "Начнем с небольшого эксперимента. Перед вами три картинки: мышеловка, спичечный коробок и трубкозуб. Какая из них лишняя? Задачка на пару секунд: первые два предмета сделал человек, а третий — живое существо. А теперь попробуем предложить то же самое мультимодальной нейросети. Шансы получить ответ, совпадающий с человеческим, окажутся не такими уж и большими. В эксперименте исследователей модели семейства Qwen3-VL при прямом опросе показывали результат от 37 до 41%. Для сравнения: случайный выбор в такой задаче дает 33,3%. Вы, конечно, возразите: нейросеть создавали не для игры в «Третий лишний». Она разбирает изображения, распознает объекты, работает с текстом и справляется с задачами посложнее. Да и результаты популярных мультимодальных бенчмарков у современных моделей вполне приличные. Только вот умение правильно отвечать на вопросы еще не значит, что модель видит мир так же, как мы. Она узнает и мышеловку, и коробок, и трубкозуба, но лишнее может выбрать по совсем другому признаку. И далеко не факт, что этот признак покажется нам логичным. Это и разбирают авторы исследования Aligning MLLMs with the Latent Structure of Human Cognition. Обычно мультимодальные большие языковые модели (MLLM) учат выдавать ответы, которые нравятся людям. Ученые предлагают встроить в процесс обучения реальные закономерности человеческого восприятия. Для этого исследователи взяли данные масштабного психофизического эксперимента, где миллионы человеческих суждений сведены к 66 смысловым измерениям, и построили на них фреймворк CogAlign. Его задача — изменить сам подход к обучению нейросетей: учить модель тем основаниям, по которым выбирает человек. Разберемся, как это устроено. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1795005895.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 9.0,
-        "event_concreteness": 14.5,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 51.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 51.0
-      },
-      "base_score": 51.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 51.0,
-      "key": "7909f95245128b93bfce04b0cb919095ece448f81b98227f6c0fecd1b8c72271",
-      "importance": 51.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "models",
-        "research",
-        "security_regulation"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "AI Awards 2026: премьера российской модели ГРОМ, ИИ-агенты в разработке и защита бизнеса от агентных атак - Эксперт ЮГ",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOcnB3dXBUOGdxOXNsSVpua04wQXdTNS0tR21SOUpQeW8yMU0teWNzakVQUTNSVFdWX0xPUVFNNk80NWZmTHFRdWxYbmItTDkwVFhOZzB3Ni1rQ1p4cEc0UDhrQXZ0VkxHR2lhV0ttLTlkRE9Qam9nOTZ2LTBmX3VJb2p5aFd0X0V6MGtmWTJmLXBFQlBkMGFseVZmN2VtWV9MaWpDeVlsczZCUmNUdGVuWWt2TXZ2VDNveTYzamxvSEIxM1lqQVow?oc=5",
-      "desc": "AI Awards 2026: премьера российской модели ГРОМ, ИИ-агенты в разработке и защита бизнеса от агентных атак Эксперт ЮГ",
-      "source": "Эксперт ЮГ",
-      "time": 1795005155.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 8.0,
-        "event_concreteness": 12.5,
-        "practical_value": 5.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 48.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 48.5
-      },
-      "base_score": 48.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 48.5,
-      "key": "ba9ea5baf7c1ac27f18d7bea8351c0ae031e04ffb1830deaa7784eaaf73aaede",
-      "importance": 48.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "business"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
       "title": "ИИ-агенты взломали Hugging Face",
       "link": "https://habr.com/ru/companies/speshu_ai/articles/1109420/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1109420",
       "desc": "В июле инженеры Hugging Face заметили странное несоответствие: цель вторжения выглядела узкой, но действий в системах компании было гораздо больше, чем требовалось для её достижения. Сначала инцидент не казался критическим. Именно масштаб активности заставил команду присмотреться к нему внимательнее. Читать далее",
@@ -2092,20 +2055,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795006112.6451156,
+    "last_start_ts": 1795006376.6622148,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795006112.6451156,
-    "last_success_ts": 1795006112.6451156,
-    "last_candidates": 40,
+    "last_run_ts": 1795006376.6622148,
+    "last_success_ts": 1795006376.6622148,
+    "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 19
+    "queue_size": 18
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795006163.0224314
+      "updated_at": 1795006376.4907665
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2129,13 +2092,6 @@
     }
   },
   "stories": {
-    "dc69aac7844842d33e6954175669429e803674db0a93b868081e763f4d2e3fa6": {
-      "time": 1794919721,
-      "title": "Nvidia board establishes National Security and Export Control Oversight Committee in wake of Jensen Huang scandal — group to work with independent law, national security, and trade compliance experts - Tom's Hardware",
-      "desc": "Nvidia board establishes National Security and Export Control Oversight Committee in wake of Jensen Huang scandal — group to work with independent law, national security, and trade compliance experts Tom's Hardware",
-      "source": "Tom's Hardware",
-      "region": "WORLD"
-    },
     "cab40e5bfe8ce86e66e3f64c2febaa3fdb91d5ef6598a49b7522425dd51b7dfb": {
       "time": 1794920202,
       "title": "Nvidia warned chip buyers that a proposed remote-access law could expose them to legal action, CNBC reports - MLQ.ai",
@@ -2611,12 +2567,18 @@
       "desc": "Команда исследовательской организации Answer.AI представила в открытом доступе платформу SolveIt. Инструмент создавали в первую очередь для внутренних исследовательских задач и работы с кодом. Наконец его перевели в стадию публичного доступа после двух лет закрытого бета-тестирования, в котором участвовали три тысячи пользователей, объединившихся в сообществе Discord. Регистрация на платформе бесплатна, а тарификация построена по модели оплаты фактически израсходованных вычислительных ресурсов. Разработчики открыли доступ к платформе на сайте solve.it.com . Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "ba9ea5baf7c1ac27f18d7bea8351c0ae031e04ffb1830deaa7784eaaf73aaede": {
+      "time": 1795006376,
+      "title": "AI Awards 2026: премьера российской модели ГРОМ, ИИ-агенты в разработке и защита бизнеса от агентных атак - Эксперт ЮГ",
+      "desc": "AI Awards 2026: премьера российской модели ГРОМ, ИИ-агенты в разработке и защита бизнеса от агентных атак Эксперт ЮГ",
+      "source": "Эксперт ЮГ",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -2633,139 +2595,10 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794763461,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 43.87,
-      "candidates": 14,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 13,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 0,
-        "candidate_count": 14,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра маркетинговой стратегии и каналов продаж в условиях перехода к агентной экономике.",
-            "title": "Маркетплейсам осталось два-три года? От платформенной экономики к агентской",
-            "final_score": 78.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 68,
-        "raw_items": 681,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 40,
-          "CNews": 0,
-          "Euronews": 26
-        },
-        "score_filtered": 649,
-        "quality_filtered": 14,
-        "story_dedup": 4,
-        "candidates": 14,
-        "candidate_rate": 0.0228,
-        "score_buckets": {
-          "0–39": 618,
-          "40–49": 44,
-          "50–59": 16,
-          "60–69": 3,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794764655,
       "status": "OK",
@@ -23706,11 +23539,99 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795006376,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 20.72,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 18,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 403: Forbidden": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 403: Forbidden"
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость внедрения защиты от ИИ-агентов становится критическим вопросом безопасности бизнеса.",
+            "title": "AI Awards 2026: премьера российской модели ГРОМ, ИИ-агенты в разработке и защита бизнеса от агентных атак - Эксперт ЮГ",
+            "final_score": 72.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1795006112.6451156,
-  "last_publish_ts": 1795006112.6451156,
+  "last_publish_ts": 1795006376.6622148,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
