@@ -1436,19 +1436,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 49.0,
+        "base_score": 48.5,
         "audience_score": 6.0,
         "audience_bonus": 18.0,
-        "final_score": 67.0
+        "final_score": 66.5
       },
-      "base_score": 49.0,
+      "base_score": 48.5,
       "audience_bonus": 18.0,
       "score_stage": "final",
-      "score": 67.0,
+      "score": 66.5,
       "key": "ef74257f47c3457a24ddf21d1f44237d3f48dc135c6b8750959803ddb61c7c6f",
-      "importance": 67.0,
+      "importance": 66.5,
       "editorial_value": 50.0,
       "topics": [
         "models"
@@ -1507,19 +1507,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 41.5,
+        "base_score": 41.0,
         "audience_score": 8.0,
         "audience_bonus": 24.0,
-        "final_score": 65.5
+        "final_score": 65.0
       },
-      "base_score": 41.5,
+      "base_score": 41.0,
       "audience_bonus": 24.0,
       "score_stage": "final",
-      "score": 65.5,
+      "score": 65.0,
       "key": "1cf666bfad351d621a762d1cb6961984bb3a30be7882b0a4663f14f97a44d2fd",
-      "importance": 65.5,
+      "importance": 65.0,
       "editorial_value": 50.0,
       "topics": [
         "business",
@@ -2008,30 +2008,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795082928.6895366,
+    "last_start_ts": 1795083422.848506,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795082928.6895366,
-    "last_success_ts": 1795082928.6895366,
-    "last_candidates": 25,
-    "last_published": 1,
+    "last_run_ts": 1795083422.848506,
+    "last_success_ts": 1795083422.848506,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 17
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795082928.5622857
+      "disabled_until": 1795087014.085526,
+      "reason": "The read operation timed out",
+      "updated_at": 1795083414.0855281
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795082918.8830159
+      "disabled_until": 1795087016.4961743,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795083416.4961765
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795082918.8830159
+      "disabled_until": 1795169822.7500515,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1795083422.7500532
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2039,19 +2039,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795082918.8830159
+      "disabled_until": 1795087021.9209747,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795083421.9209766
     }
   },
   "stories": {
-    "0e362af296b285a30a2147e93fd7208c826d7ae26ac7c46de48ad2880ea10986": {
-      "time": 1794997010,
-      "title": "Microsoft launches new AI models to challenge OpenAI and Anthropic: Details - Moneycontrol.com",
-      "desc": "Microsoft launches new AI models to challenge OpenAI and Anthropic: Details Moneycontrol.com",
-      "source": "Moneycontrol.com",
-      "region": "WORLD"
-    },
     "a15fd3f8d759242e35e1f8a04ed3455dbde7ef66394900c6845974fa8e3dcf3b": {
       "time": 1794997727,
       "title": "Nvidia stops shipping US-approved AI chips to China - Miami Herald",
@@ -2454,96 +2447,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794834739,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 5.6,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/articles/1108292/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1108292",
-            "image_url": "https://habr.com/share/publication/1108292/1d1488a178da08d1516925d02712a1c8/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 6.0,
-          "bonus_total": 18.0,
-          "max_score": 6.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Долгосрочный прогноз по автоматизации производства, требующий мониторинга рынка робототехники.",
-            "title": "Asus представила робота Gallop, предназначенного для использования на предприятиях по производству электроники",
-            "final_score": 67.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794835224,
       "status": "OK",
@@ -22845,6 +22748,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1795083422,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 29.0,
+      "candidates": 0,
+      "queue_before": 17,
+      "queue_after": 17,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 6,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
