@@ -1370,7 +1370,8 @@
     "0bc75294b9acf16a5e06420c4e6381e6889404e7b85e72ad4e325957276aa737": 1795069244,
     "32b224c896ba8b8791ad4c8e4f53bd4a31adc7bd0a3e1c7d9f08fa91f7e980c9": 1795070202,
     "e2eb3a4036a7d18ddab727a82722adcd881421a261bfad05e7760f5432e31a12": 1795070687,
-    "f796e96260b99a8db2bad274653cd97f73f3d2ec28ed4b7e8d69f815e1d6f1fa": 1795070926
+    "f796e96260b99a8db2bad274653cd97f73f3d2ec28ed4b7e8d69f815e1d6f1fa": 1795070926,
+    "1b908749a4c8ccd85998a3c5cfece9f04f47bae5513151c85b4b70c227b4f67d": 1795071163
   },
   "known": {
     "2c47d938c59382059388eceb45f07767415d516bb3836105762eefbb4e71f288": 1795065875.8075144,
@@ -1393,7 +1394,11 @@
     "73f3f024c837a0fc62d156c35e03b5cc897778a0bf3acffe2cc218d06b01f37e": 1795065875.8075144,
     "1b908749a4c8ccd85998a3c5cfece9f04f47bae5513151c85b4b70c227b4f67d": 1795065875.8075144,
     "32b224c896ba8b8791ad4c8e4f53bd4a31adc7bd0a3e1c7d9f08fa91f7e980c9": 1795069244.2965617,
-    "e2eb3a4036a7d18ddab727a82722adcd881421a261bfad05e7760f5432e31a12": 1795069244.2965617
+    "e2eb3a4036a7d18ddab727a82722adcd881421a261bfad05e7760f5432e31a12": 1795069244.2965617,
+    "80dbf253dfaaab319e0f00be7ba825062d69e8c8c913af1924d623fe7a1aa4d6": 1795071163.356679,
+    "120c12950cbb96152adccdd33b7a868417db308f6557e9504c5fbc80b3cf564d": 1795071163.356679,
+    "1cf666bfad351d621a762d1cb6961984bb3a30be7882b0a4663f14f97a44d2fd": 1795071163.356679,
+    "e7033c62aa6b90d61ca5d367f930ec5e78c38b77aeabb10ffaa10d73b104513e": 1795071163.356679
   },
   "queue": [
     {
@@ -1431,7 +1436,11 @@
         "security_regulation"
       ],
       "audience_score": 7.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1795071163,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | GROQ: GROQ_EMPTY_OR_INVALID_CONTENT | OPENROUTER: OPENROUTER_EMPTY_OR_INVALID_CONTENT | OPENAI: OPENAI_HTTP_429: {\n    \"error\": {\n        \"message\": \"You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/b",
+      "failure_count": 1,
+      "next_retry_at": 1795071463
     },
     {
       "region": "WORLD",
@@ -1538,6 +1547,43 @@
       "editorial_value": 50.0,
       "topics": [
         "models"
+      ],
+      "audience_score": 8.0,
+      "tier": "A"
+    },
+    {
+      "region": "WORLD",
+      "title": "Nvidia’s Annual GPU Upgrades Are Changing the HBM Investment Outlook - 24/7 Wall St.",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdGRxQWtwUVk2d0VkVGpBdTBGbnVjeHFzOEpiNDdBR056UFJxMXFiTVRCc09UdC13YldqMG84WVIybkE4RTV4M0NMdWtySE9EMjlxb20tS0ZTbnVxX0RRYzA1TjR5UktZV3VYVnBkakhxMllncmFEbE9QNFhBRFM0MVJmaVk2WGtoNS1tUUpJcXB2aUtHSFVRSVVkWV9wblF6M3pabU5ZcG5fVktTbjFnSnMwVUc?oc=5",
+      "desc": "Nvidia’s Annual GPU Upgrades Are Changing the HBM Investment Outlook 24/7 Wall St.",
+      "source": "24/7 Wall St.",
+      "time": 1795030740.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 10.0,
+        "event_concreteness": 12.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 0.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 42.5,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 66.5
+      },
+      "base_score": 42.5,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 66.5,
+      "key": "fa477423a58527ff6389da57c3627e403133d6584de2a0c3ab7c9df531e4c32f",
+      "importance": 66.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "business",
+        "chips"
       ],
       "audience_score": 8.0,
       "tier": "A"
@@ -1656,104 +1702,177 @@
       "russia_weight_bonus": 0.0
     },
     {
-      "region": "WORLD",
-      "title": "Nvidia’s Annual GPU Upgrades Are Changing the HBM Investment Outlook - 24/7 Wall St.",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdGRxQWtwUVk2d0VkVGpBdTBGbnVjeHFzOEpiNDdBR056UFJxMXFiTVRCc09UdC13YldqMG84WVIybkE4RTV4M0NMdWtySE9EMjlxb20tS0ZTbnVxX0RRYzA1TjR5UktZV3VYVnBkakhxMllncmFEbE9QNFhBRFM0MVJmaVk2WGtoNS1tUUpJcXB2aUtHSFVRSVVkWV9wblF6M3pabU5ZcG5fVktTbjFnSnMwVUc?oc=5",
-      "desc": "Nvidia’s Annual GPU Upgrades Are Changing the HBM Investment Outlook 24/7 Wall St.",
-      "source": "24/7 Wall St.",
-      "time": 1795030740.0,
+      "region": "RUSSIA",
+      "title": "BM25 и RAG: инженерный разбор от AI-архитектора",
+      "link": "https://habr.com/ru/companies/raft/articles/1109666/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1109666",
+      "desc": "Матчасть по BM25 уже много и подробно разбиралась в различных статьях: от Эвана Шварца на Хабре , где он объяснял вывод IDF из вероятностной модели Робертсона и Спарк-Джонс, в курсе Claude Academy на примере инцидента INC-2023-Q4-011 показали, почему семантический поиск теряет точные идентификаторы, а репозиторий Michael-JB/bm25 демонстрирует представление BM25 в виде разреженных эмбеддингов на Rust. Повторять смысла нет - источники выше. В этой статье посмотрим на BM25 со стороны продакшена как на структуру данных, разберём расхождения между популярными библиотеками, изучим по бенчмаркам его преимущества и ограничения, а также соберём пайплайн гибридизации и валидации. Примеры будут из поиска по юридическим документам (ака НейроЮрист). Из вводных стоит сразу зафиксировать четыре неочевидных свойства, которые напрямую влияют на продакшен. Скор BM25 - это не вероятность: он не нормирован и не сопоставим ни между разными коллекциями, ни внутри одной коллекции в разные моменты времени. При этом представление алгоритма в виде разреженного вектора с предвычисленными весами позволяет перенести расчёты на этап индексации. Обратная сторона такого подхода - чувствительность к глобальной статистике: при вставке и удалении документов средняя длина avgdl дрейфует, точность падает, поэтому при приблизительной оценке avgdl параметр b нужно снижать, а при полном отсутствии статистики — обнулять ( b = 0 ). Читать далее",
+      "source": "Habr AI/News",
+      "time": 1795069148.0,
       "_score_components": {
         "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 10.0,
-        "event_concreteness": 12.5,
+        "ai_specificity": 5.5,
+        "impact": 12.0,
+        "event_concreteness": 16.5,
         "practical_value": 0.0,
         "novelty": 0.0,
         "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 0.5,
+        "evidence": 3.0,
+        "freshness": 2.0,
         "low_signal_penalty": 0.0,
-        "base_score": 42.5,
+        "base_score": 53.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 42.5
+        "final_score": 53.0
       },
-      "base_score": 42.5,
+      "base_score": 53.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 42.5,
-      "key": "fa477423a58527ff6389da57c3627e403133d6584de2a0c3ab7c9df531e4c32f",
-      "importance": 42.5,
-      "editorial_value": 48.5,
+      "score": 53.0,
+      "key": "80dbf253dfaaab319e0f00be7ba825062d69e8c8c913af1924d623fe7a1aa4d6",
+      "importance": 53.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "models"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "[Перевод] Как ИИ-нагрузки меняют автомасштабирование в Kubernetes",
+      "link": "https://habr.com/ru/companies/vktech/articles/1109358/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1109358",
+      "desc": "Kubernetes обеспечивает работу значительной части контейнеризованного ПО в мире благодаря разделению обязанностей между двумя циклами управления, которым прежде редко требовалось взаимодействовать. Планировщик размещает поды на существующих узлах, а автоскейлер добавляет узлы, когда поды негде разместить. Десять лет такая архитектура работала хорошо: вычислительные ресурсы были в основном взаимозаменяемыми, и каждый цикл мог действовать, почти ничего не зная о решениях другого. ИИ-нагрузки и ускорители, на которых они выполняются, изменили условия. Для большинства задач такое разделение по-прежнему подходит, но темпы развития ИИ заставляют пересмотреть его ограничения. Проблема проявляется в ситуации, знакомой всем, кто работает с GPU: под не удаётся разместить, хотя доступные мощности кластера ещё не исчерпаны. Пока под ждёт, дорогостоящие ускорители могут простаивать. Первое предположение — в регионе закончились ресурсы, и иногда причина действительно в этом. Но бывает, что мощности доступны, а под всё равно остаётся в состоянии Pending: автоскейлер готов добавить узел, который планировщик не сможет использовать. Автоскейлер отвечает на вопрос, для которого его создали: нужно ли добавить узел. Однако сначала нужно понять, подходит ли конфигурация этого узла для нагрузки. Команда VK Tech перевела статью о том, какую часть проблемы сообщество уже решило, как планирует справиться с остальным и как автоскейлер сможет лучше учитывать работу планировщика. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1795069462.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 11.0,
+        "event_concreteness": 15.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 51.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 51.0
+      },
+      "base_score": 51.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 51.0,
+      "key": "120c12950cbb96152adccdd33b7a868417db308f6557e9504c5fbc80b3cf564d",
+      "importance": 51.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "chips",
+        "security_regulation"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "US tech outages linked to rush to fix AI-detected software vulnerabilities - Business Standard",
+      "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQR0lYQTRpN09lOW9aTXJUUlNKbVlpTUhQQjFmSlJ1RzFuRnN2VVF6MVdEXzBEc2cxNEl1MXZZSno3ZExTZTVZU2hNX2V4cElleHJUYkJzODdXbE9wcEI4ZGFvR3hkQVFmd2NXUFZzbzhNYk5RTUZBaTJUX3VvMWlKNUFwd3p5c3d2LUFrSGVEWnp3WGlBQW5sQXZ2MU9vNDVaeERzRW9LZ293cnA1QnVDMGl6ZXpNanNmdjVNRU1na0ZJazIyRDBPR3ZSd3h6d9IB0wFBVV95cUxOU1FkVlIxczI0cjB2Vkl3X0VEbWlJbGlFTXd0QW9EZS1fbFRwUExicTZMRkgyQWF0MGRzdkhjMV81eGVTekdGd0Y5SjdwY0c3RTdTenMxRkc1dGNwZWpfSW0zeFgxelRQbDBnMThKR2VjcWZEemZuTy04NUN4cm4xeUdZbUFGSk4wNUxKUVF0ei1lLU54NUVUSGxrSWVlNTlHaUlTYTBxeFh1YTFkYnV5YnVuNWJwdnZLZ1JoOWRFak94bGpRZ2NKdjA1bi1hYVVBZ3A4?oc=5",
+      "desc": "US tech outages linked to rush to fix AI-detected software vulnerabilities Business Standard",
+      "source": "Business Standard",
+      "time": 1795061680.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 5.0,
+        "event_concreteness": 12.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 42.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 42.0
+      },
+      "base_score": 42.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 42.0,
+      "key": "1cf666bfad351d621a762d1cb6961984bb3a30be7882b0a4663f14f97a44d2fd",
+      "importance": 42.0,
+      "editorial_value": 50.0,
       "topics": [
         "business",
-        "chips"
+        "tools"
       ],
       "audience_score": null,
       "tier": "A"
     },
     {
       "region": "WORLD",
-      "title": "Doubao Work's ARR Surpasses 2 Billion: AI Office Applications' Practical Value First Realized in Industrial Factories - 36Kr",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9VQ0pUa21JbGd0MnlPTUVLbnNZeHVhY2JiTUFYNEtwS3RkdHBqVER3TGpneFFFS0NJUVVYb3Z4S21NNF91SGVJbXQ4WVBvalUteGpJ?oc=5",
-      "desc": "Doubao Work's ARR Surpasses 2 Billion: AI Office Applications' Practical Value First Realized in Industrial Factories 36Kr",
-      "source": "36Kr",
-      "time": 1795055576.0,
+      "title": "Anthropic weighs upsizing IPO as demand tops $400 billion - news.lavx.hu",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQM0NzWUN0RFljc3c3Qk5WbGRiYnFzSHNYajBEOWYyd2tWd0hyMGlVTm5YbklwLWppSkZGdlMyUHB2dzF3TERDeUFtTlJ3aVhfcmFUSVBsMTlqdXFSR3BEQ0dWcE9KSFY1WHJmd2g1eEhrMUZPTWYxSlBDYnlsOHdGU21fN1VNZTNhRHpJN0hR?oc=5",
+      "desc": "Anthropic weighs upsizing IPO as demand tops $400 billion news.lavx.hu",
+      "source": "news.lavx.hu",
+      "time": 1795033617.0,
       "_score_components": {
         "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 6.0,
-        "event_concreteness": 11.5,
+        "ai_specificity": 3.0,
+        "impact": 9.0,
+        "event_concreteness": 13.5,
         "practical_value": 0.0,
         "novelty": 0.0,
         "source_quality": 2.0,
-        "evidence": 2.0,
-        "freshness": 1.0,
+        "evidence": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 40.5,
+        "base_score": 41.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 40.5
+        "final_score": 41.0
       },
-      "base_score": 40.5,
+      "base_score": 41.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 40.5,
-      "key": "1b908749a4c8ccd85998a3c5cfece9f04f47bae5513151c85b4b70c227b4f67d",
-      "importance": 40.5,
+      "score": 41.0,
+      "key": "e7033c62aa6b90d61ca5d367f930ec5e78c38b77aeabb10ffaa10d73b104513e",
+      "importance": 41.0,
       "editorial_value": 50.0,
-      "topics": [
-        "applications"
-      ],
+      "topics": [],
       "audience_score": null,
       "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1795070926.1709425,
+    "last_start_ts": 1795071163.356679,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795070926.1709425,
-    "last_success_ts": 1795070926.1709425,
-    "last_candidates": 0,
+    "last_run_ts": 1795071163.356679,
+    "last_success_ts": 1795071163.356679,
+    "last_candidates": 22,
     "last_published": 1,
-    "queue_size": 9
+    "queue_size": 12
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795070930.7461727
+      "disabled_until": 1795074761.759511,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1795071161.7595134
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795030600.8656516
+      "disabled_until": 1795074797.5468385,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795071197.54684
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795030600.8656516
+      "disabled_until": 1795157619.0787718,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1795071219.0787735
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1761,9 +1880,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795030600.8656516
+      "disabled_until": 1795074817.9346142,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795071217.9346159
     }
   },
   "stories": {
@@ -2207,6 +2326,13 @@
       "desc": "Anthropic US Stock Listing: 6x Oversubscription by Scrambling Institutional Investors, Retail Investors Prepare to Cash Out – Exposing a Staggering $900.9 Billion Hidden Risk 36Kr",
       "source": "36Kr",
       "region": "WORLD"
+    },
+    "1b908749a4c8ccd85998a3c5cfece9f04f47bae5513151c85b4b70c227b4f67d": {
+      "time": 1795071163,
+      "title": "Doubao Work's ARR Surpasses 2 Billion: AI Office Applications' Practical Value First Realized in Industrial Factories - 36Kr",
+      "desc": "Doubao Work's ARR Surpasses 2 Billion: AI Office Applications' Practical Value First Realized in Industrial Factories 36Kr",
+      "source": "36Kr",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
@@ -2214,7 +2340,6 @@
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -2228,98 +2353,11 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1794827310,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 16.1,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/articles/1108334/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1108334",
-            "image_url": "https://habr.com/share/publication/1108334/e9a043202cfc26e38c1d20cd81439b28/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Показывает вектор развития Apple в медицине, но для бизнеса пока нет готовых инструментов или API.",
-            "title": "Apple запустила приложение для изучения применения ИИ в вопросах здоровья",
-            "final_score": 70.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 9,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794827789,
       "status": "OK",
@@ -22469,11 +22507,153 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795071163,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 64.48,
+      "candidates": 22,
+      "queue_before": 9,
+      "queue_after": 12,
+      "published": 1,
+      "publish_attempts": 2,
+      "item_failures": 1,
+      "admission": {
+        "published_key": 8,
+        "known_recent": 0,
+        "already_queued": 9,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 4,
+        "candidate_count": 22,
+        "admission_rate": 18.18,
+        "dominant_block": "already_queued",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://cryptobriefing.com/openai-security-protocols-unreleased-model-weights/",
+            "image_url": "https://static.cryptobriefing.com/wp-content/uploads/2026/11/18150425/library-openai-locks-down-unreleased-model-weights-after-two-sec-800x450.jpg",
+            "width": 800,
+            "height": 450,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 9.0,
+          "bonus_total": 54.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 10.0,
+            "bonus": 30.0,
+            "reason": "Immediate impact on AI office adoption in manufacturing",
+            "title": "Doubao Work's ARR Surpasses 2 Billion: AI Office Applications' Practical Value First Realized in Industrial Factories - 36Kr",
+            "final_score": 70.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 4,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 63,
+        "query_errors": 1,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 100,
+        "raw_items": 477,
+        "source_counts": {
+          "TechCrunch AI": 11,
+          "VentureBeat AI": -1,
+          "The Verge AI": 4,
+          "OpenAI News": 0,
+          "Google DeepMind": 1,
+          "Hugging Face": 2,
+          "Ars Technica": 7,
+          "Habr AI/News": 30,
+          "CNews": 23,
+          "Euronews": 22
+        },
+        "score_filtered": 441,
+        "quality_filtered": 10,
+        "story_dedup": 4,
+        "candidates": 22,
+        "candidate_rate": 0.0584,
+        "score_buckets": {
+          "0–39": 401,
+          "40–49": 50,
+          "50–59": 18,
+          "60–69": 7,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 0,
+          "7": 4,
+          "8": 2,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GROQ",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "GROQ",
+        "failovers": 0,
+        "failures": 3,
+        "blocked": 2,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795069244.2965617,
-  "last_publish_ts": 1795070926.1709425,
+  "last_search_ts": 1795071163.356679,
+  "last_publish_ts": 1795071163.356679,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
