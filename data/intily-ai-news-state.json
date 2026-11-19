@@ -1,6 +1,5 @@
 {
   "published": {
-    "82472394750ff95c2cb641de572c84baf7af52551a61efc2f83e8fbdca226b2b": 1792508227,
     "66f1a20ed7e4effec75124beaf43b6a09c2453bb7fb653f253277bc188e8c97e": 1792513990,
     "d8f1de083d22eabf36e0a3adb2efe3a592d3118a2e8ad77298598537b1571080": 1792516161,
     "ce0385409822e323dedeea2a8b5438e18b20ca63099b934ee541295b2a8870dc": 1792516735,
@@ -1453,7 +1452,11 @@
       ],
       "audience_score": 7.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1795100456,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1795100756
     },
     {
       "region": "WORLD",
@@ -1489,7 +1492,11 @@
         "agents"
       ],
       "audience_score": 8.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1795100456,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1795100756
     },
     {
       "region": "RUSSIA",
@@ -2126,30 +2133,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795100208.2882228,
+    "last_start_ts": 1795100456.2127366,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795100208.2882228,
-    "last_success_ts": 1795100208.2882228,
-    "last_candidates": 59,
-    "last_published": 1,
+    "last_run_ts": 1795100456.2127366,
+    "last_success_ts": 1795100456.2127366,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795100263.5514133
+      "disabled_until": 1795104076.3796594,
+      "reason": "The read operation timed out",
+      "updated_at": 1795100476.3796623
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795097324.0993884
+      "disabled_until": 1795104080.2633913,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795100480.2633932
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795097324.0993884
+      "disabled_until": 1795186895.6566796,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1795100495.6566815
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2157,9 +2164,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795097324.0993884
+      "disabled_until": 1795104094.6441112,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795100494.6441133
     }
   },
   "stories": {
@@ -2551,94 +2558,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794895962,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 7.49,
-      "candidates": 0,
-      "queue_before": 9,
-      "queue_after": 8,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://inforesist.org/google-russkoyazychnye-hakery-osushhestvili-pervuyu-polnostyu-avtomatizirovannuyu-kiberataku-s-pomoshhyu-ii/amp/",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 9.5,
-          "bonus_total": 57.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходим немедленный пересмотр протоколов безопасности из-за появления автоматизированных векторов атак.",
-            "title": "Google: Русскоязычные хакеры осуществили первую полностью автоматизированную кибератаку с помощью ИИ - InfoResist",
-            "final_score": 68.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794896196,
       "status": "OK",
@@ -22743,6 +22662,83 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1795100456,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 39.68,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
