@@ -1452,10 +1452,10 @@
       ],
       "audience_score": 8.0,
       "tier": "A",
-      "last_failed_at": 1795100456,
+      "last_failed_at": 1795100928,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1795100756
+      "failure_count": 2,
+      "next_retry_at": 1795101528
     },
     {
       "region": "RUSSIA",
@@ -1493,10 +1493,10 @@
       "audience_score": 8.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1795091094,
+      "last_failed_at": 1795100928,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1795091394
+      "failure_count": 2,
+      "next_retry_at": 1795101528
     },
     {
       "region": "RUSSIA",
@@ -2092,30 +2092,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795100685.752504,
+    "last_start_ts": 1795100928.6862845,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795100685.752504,
-    "last_success_ts": 1795100685.752504,
+    "last_run_ts": 1795100928.6862845,
+    "last_success_ts": 1795100928.6862845,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 18
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795100694.201156
+      "disabled_until": 1795104529.5159032,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1795100929.5159051
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795100685.5251086
+      "disabled_until": 1795104532.7700608,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795100932.770063
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795100685.5251086
+      "disabled_until": 1795187343.375979,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1795100943.3759804
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2123,9 +2123,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795100685.5251086
+      "disabled_until": 1795104542.378547,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795100942.378549
     }
   },
   "stories": {
@@ -2524,147 +2524,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794896669,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 44.79,
-      "candidates": 11,
-      "queue_before": 7,
-      "queue_after": 8,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 5,
-        "known_recent": 0,
-        "already_queued": 3,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 2,
-        "candidate_count": 11,
-        "admission_rate": 18.18,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://en.bloomingbit.io/feed/news/124597",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.67,
-          "bonus_total": 78.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 3,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра протоколов безопасности и лимитов для автономных ИИ-агентов в бизнес-процессах.",
-            "title": "OpenAI Launches ChatGPT Wallet, Letting AI Agents Handle Payments - bloomingbit",
-            "final_score": 68.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 43,
-        "query_errors": 21,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 73,
-        "raw_items": 331,
-        "source_counts": {
-          "TechCrunch AI": 4,
-          "VentureBeat AI": -1,
-          "The Verge AI": 8,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 9,
-          "Habr AI/News": 28,
-          "CNews": 10,
-          "Euronews": 14
-        },
-        "score_filtered": 304,
-        "quality_filtered": 11,
-        "story_dedup": 5,
-        "candidates": 11,
-        "candidate_rate": 0.0426,
-        "score_buckets": {
-          "0–39": 282,
-          "40–49": 33,
-          "50–59": 14,
-          "60–69": 2,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 2,
-          "6": 0,
-          "7": 2,
-          "8": 2,
-          "9": 1,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794896920,
       "status": "OK",
@@ -22705,6 +22564,83 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1795100928,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 15.02,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 18,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
