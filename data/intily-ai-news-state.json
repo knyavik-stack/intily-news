@@ -2165,30 +2165,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795102369.2303987,
+    "last_start_ts": 1795102882.552647,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795102369.2303987,
-    "last_success_ts": 1795102369.2303987,
-    "last_candidates": 57,
+    "last_run_ts": 1795102882.552647,
+    "last_success_ts": 1795102882.552647,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795106031.4948814,
+      "disabled_until": 1795106471.3384128,
       "reason": "The read operation timed out",
-      "updated_at": 1795102431.4948843
+      "updated_at": 1795102871.3384166
     },
     "GROQ": {
-      "disabled_until": 1795106034.9108057,
+      "disabled_until": 1795106474.7019377,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795102434.910808
+      "updated_at": 1795102874.7019393
     },
     "OPENAI": {
-      "disabled_until": 1795188839.4650373,
+      "disabled_until": 1795189282.3628786,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795102439.465039
+      "updated_at": 1795102882.3628798
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2196,9 +2196,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795106038.2666655,
+      "disabled_until": 1795106481.2617495,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795102438.2666667
+      "updated_at": 1795102881.2617507
     }
   },
   "stories": {
@@ -2583,147 +2583,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794899073,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 42.64,
-      "candidates": 15,
-      "queue_before": 7,
-      "queue_after": 9,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 8,
-        "known_recent": 0,
-        "already_queued": 4,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 3,
-        "candidate_count": 15,
-        "admission_rate": 20.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://finance.biggo.com/news/b787037a-674a-4e94-a1e9-06d4aaf24007",
-            "image_url": "https://img.biggo.com/AKH8NIgFqd9oow2GdSBz6_f6JCiM6T34BjMwDcH9ZO8/fit/1200/0/sm/0/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTExL2I3ODcwMzdhLTY3NGEtNGU5NC1hMWU5LTA2ZDRhYWYyNDAwN18xNzk0ODY4ODMyX2RlZmF1bHQuanBn.jpg",
-            "width": 1200,
-            "height": 675,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 9.0,
-          "bonus_total": 81.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 3,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра стратегии закупок и оценки рисков цепочек поставок для бизнеса.",
-            "title": "AI Chip Investment Moves Beyond Nvidia to Components and Manufacturing Networks as Long-Term Supply Constraints Drive Stock Selection - BigGo Finance",
-            "final_score": 67.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 29,
-        "query_errors": 35,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 89,
-        "raw_items": 247,
-        "source_counts": {
-          "TechCrunch AI": 4,
-          "VentureBeat AI": -1,
-          "The Verge AI": 7,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 9,
-          "Habr AI/News": 35,
-          "CNews": 17,
-          "Euronews": 17
-        },
-        "score_filtered": 218,
-        "quality_filtered": 12,
-        "story_dedup": 2,
-        "candidates": 15,
-        "candidate_rate": 0.0949,
-        "score_buckets": {
-          "0–39": 200,
-          "40–49": 30,
-          "50–59": 15,
-          "60–69": 2,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 2,
-          "6": 0,
-          "7": 3,
-          "8": 2,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794899807,
       "status": "OK",
@@ -22729,6 +22588,78 @@
         "failovers": 1,
         "failures": 4,
         "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1795102882,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 31.67,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
         "skipped_no_key": 0,
         "retries": 0
       },
