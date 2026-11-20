@@ -1402,18 +1402,6 @@
     "6b3ab03b6cd49389c52a9b2936ef0f05383597f7d62a754644de68f1150fe12c": 1795191427
   },
   "known": {
-    "13a58ef6ee96c9c795655a4d0b014019da04c3bfb9e12c259a9f0db0110cc173": 1795186125.3754227,
-    "0d02ed73d9fac943a2c95cb8bbecbc013144420f11640d3f0aaa32539558b7c0": 1795186125.3754227,
-    "24ae5946a2733d91e9d39417984adeed8a9b775ac23cb26c47f6672292cc9312": 1795186125.3754227,
-    "e1c5bc0a4c88fdb1d3a27996ab543c78b08d85711951d786c5502e00fac6c2f2": 1795186125.3754227,
-    "ffed94a6e1712ba075fc40356f36432c4c6503d218273c108a37c359dd82e98a": 1795186125.3754227,
-    "fd1e0667bcf8145d689a3d24a2dbc677f7bde1a78482cf86e85fd91b7593c793": 1795186125.3754227,
-    "cad91f19ee7d4f513177d12eca9ba5340eabf7a4cf7be2763dd511f881e593bd": 1795186125.3754227,
-    "7077e20e376afa2097f31bd02ad974450b600ee0584e08f9c210b7e519fcdfa6": 1795186125.3754227,
-    "6394ea1455d7d44acabcd997164a9b8c66fd600f1d63bc6137c04a4f8345e2d7": 1795186125.3754227,
-    "f271058cc7b039be49c26a26f511c7e70ad8e88d88721411d079bff174146bff": 1795186125.3754227,
-    "655cb420badd0f709a97685d7b167b036204e44d375fa9f01e7bd696d2866f6e": 1795186125.3754227,
-    "6acf261a68ed7e1913cd08546e92da7158ff4e8647c9780d86bb7da0e9d1b2b1": 1795186125.3754227,
     "6a2e636628b7df977596a7e94edd41601676b629243c671d3fd37a2257a5bb95": 1795188048.9561129,
     "eb6274c09f4d991c6b5e584fe3e1089d4d29667de47577429a2a24c9b7554ab0": 1795188048.9561129,
     "ccc8272652e754222ee8552949e5f12f80a51f4367880ea387ac3264417a93c9": 1795188048.9561129,
@@ -1458,7 +1446,11 @@
       ],
       "audience_score": 7.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1795191894,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1795192194
     },
     {
       "region": "WORLD",
@@ -1494,7 +1486,11 @@
         "models"
       ],
       "audience_score": 7.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1795191894,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1795192194
     },
     {
       "region": "RUSSIA",
@@ -2058,30 +2054,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795191427.4314349,
+    "last_start_ts": 1795191894.8196344,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795191427.4314349,
-    "last_success_ts": 1795191427.4314349,
+    "last_run_ts": 1795191894.8196344,
+    "last_success_ts": 1795191894.8196344,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 17
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795191427.3160336
+      "disabled_until": 1795195515.0373998,
+      "reason": "The read operation timed out",
+      "updated_at": 1795191915.0374022
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795191414.8374057
+      "disabled_until": 1795195518.2606363,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795191918.2606382
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795191414.8374057
+      "disabled_until": 1795278338.990196,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1795191938.9901977
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2089,9 +2085,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795191414.8374057
+      "disabled_until": 1795195537.7608337,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795191937.7608356
     }
   },
   "stories": {
@@ -2511,96 +2507,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794988844,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 14.54,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.cnews.ru/news/line/2026-11-18_ii-agenty_nauchilis_sobirat",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.33,
-          "bonus_total": 75.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 3,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Существенное ускорение time-to-market для внедрения бизнес-логики и автоматизации рутинных задач.",
-            "title": "ИИ-агенты научились собирать рабочие процессы на SimpleOne по описанию в чате",
-            "final_score": 74.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794989085,
       "status": "OK",
@@ -22561,6 +22467,83 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1795191894,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 44.41,
+      "candidates": 0,
+      "queue_before": 17,
+      "queue_after": 17,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
