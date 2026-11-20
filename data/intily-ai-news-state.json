@@ -1383,7 +1383,8 @@
     "162890bfb0bf41aaa2edeb1849d4680d7a97ff55ad66c78a9d92584cff672274": 1795117735,
     "84e652bcafb686b3278f4b9aad668b0e9ec0537c13f1e3347a2f7938194498b2": 1795150853,
     "e40980c02de953891dde6b2348fb537e269ac4fabe4c5e1c385c94a7adcf19b5": 1795151337,
-    "54acebdd4684a3305821e415de2ddd0677496cf9ae9f8e08c35082a8e90ea729": 1795151808
+    "54acebdd4684a3305821e415de2ddd0677496cf9ae9f8e08c35082a8e90ea729": 1795151808,
+    "93231bb98020345525412151baeb503ac41d4923f4b2da1021b277f52f403044": 1795152298
   },
   "known": {
     "84e652bcafb686b3278f4b9aad668b0e9ec0537c13f1e3347a2f7938194498b2": 1795150853.8759916,
@@ -1406,37 +1407,36 @@
   "queue": [
     {
       "region": "RUSSIA",
-      "title": "Рой дронов держит строй без GPS: адаптивный консенсус и цена его точности",
-      "link": "https://habr.com/ru/articles/1110098/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1110098",
-      "desc": "Адаптивный закон настройки коэффициентов, который я взял из классической литературы по мультиагентным системам, удерживал строй роя из шести дронов лучше всех: при порыве ветра ошибка 0,36 м против 0,89 м у вручную настроенного регулятора. Но при этом 67 % времени хотя бы один аппарат работал на пределе тяги, а затраты на управление были в 3,5 раза выше. Коэффициенты регулятора подскакивали на каждом крупном манёвре и обратно уже не опускались. В статье разберу, откуда берётся этот эффект и как одна строчка в законе адаптации превращает его в управляемый компромисс между точностью и энергией. Текст написан по мотивам нашей с научным руководителем В. В. Семеновым статьи и является частью моей выпускной работы на кафедре инженерной кибернетики НИТУ «МИСИС». Читать далее",
+      "title": "Пайплайн «текст → голос» для эфира: как за день добавить игровые новости в рацию‑компаньон",
+      "link": "https://habr.com/ru/articles/1110068/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1110068",
+      "desc": "Делаю «Канал 15» — программу-компаньон для Euro Truck Simulator 2: восемнадцать выдуманных дальнобойщиков ведут радиоэфир у игрока, отвечают на речь, помнят игрока между рейсами. Файлы игры не трогаю — читаю телеметрию из общей памяти, голоса синтезирую заранее. В этой статье — как за один рабочий день в эфир добавились три механики: игровые новости дня, которые озвучивает персонаж-бухгалтерия, приветствия зрителей стримера и голосовая благодарность за донаты. Плюс то, чем это обернулось с точки зрения инфраструктуры. Постановка задачи Ограничения, из которых строилось решение: 1. Голоса синтезируются заранее. Никакого runtime-TTS: эфир должен работать офлайн, без интернета, с задержками на уровне «следующая реплика из колоды».Сейчас задаюсь вопросом о важности данного ограничения, но оно добавляет интереса. 2. Любой текст проходит ухо человека до озвучки. Пул реплик генерируется ИИ-помощниками, но в эфир попадает только одобренное и прослушанное. Это жёсткое правило проекта, а не рекомендация. . 3. Новые механики не должны ломать стабильную сборку. Релизная версия рации используется на стримах, поэтому всё новое выкатывается за флагами. Задача дня: дать эфиру актуальный повод для разговора и отвечать выдуманным донатерам голосом выдуманного персонажа, а не строкой в чате. Архитектура решения Сводка новостей читается \"бухгалтерией\" — персонаж, который и так шлёт игроку голосовые сообщения за любой «штраф», его голос под роль подходит. Комментарии к новости раздают сами водители. Донаты ловит отдельный детектор: скрипт опрашивает DonationAlerts либо аналог и по событию доната запускает заранее одобренную и озвученную благодарность. Читать далее",
       "source": "Habr AI/News",
-      "time": 1795124792.0,
+      "time": 1795114600.0,
       "_score_components": {
         "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 9.0,
-        "event_concreteness": 13.0,
-        "practical_value": 3.0,
+        "ai_specificity": 6.0,
+        "impact": 0.0,
+        "event_concreteness": 16.0,
+        "practical_value": 5.0,
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
         "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 48.0,
+        "base_score": 44.5,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 69.0
+        "final_score": 65.5
       },
-      "base_score": 48.0,
+      "base_score": 44.5,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 69.0,
-      "key": "93231bb98020345525412151baeb503ac41d4923f4b2da1021b277f52f403044",
-      "importance": 69.0,
+      "score": 65.5,
+      "key": "e8cdfd329b7b167eb29a23054317635cdef9826c8210dadc240173100631cd82",
+      "importance": 65.5,
       "editorial_value": 50.0,
       "topics": [
-        "agents",
-        "security_regulation"
+        "tools"
       ],
       "audience_score": 7.0,
       "tier": "A",
@@ -1481,6 +1481,44 @@
       "russia_weight_bonus": 0.0
     },
     {
+      "region": "RUSSIA",
+      "title": "Российский ИИ-сервис Zdorovyak.com импортозаместил MS Office: работа с документами, презентациями и таблицами перешла в браузер",
+      "link": "https://www.cnews.ru/news/line/2026-11-20_rossijskij_ii-servis_zdorovyak",
+      "desc": "Команда российской ИИ-платформы для бизнеса Zdorovyak.com представила обновление, которое берет на себя задачи привычного...",
+      "source": "CNews",
+      "time": 1795147620.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 4.0,
+        "event_concreteness": 11.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 2.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 44.0,
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 62.0
+      },
+      "base_score": 44.0,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 62.0,
+      "key": "ed746d8fa218bb8b8048e3fd1defe5b515589e3eb880537e8188cc036e4cbc2c",
+      "importance": 62.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "business",
+        "tools"
+      ],
+      "audience_score": 6.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
       "region": "WORLD",
       "title": "The seven people who left OpenAI to create Anthropic in 2021 now each hold stakes worth tens of billions of dollars after the company made its stock market debut. https://nyti.ms/3UNr8b8 - Facebook",
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPbjBLTkF6bEExUHI4WjhJdFpWQTdwMEM4ZFlUME5RREQ3WDk5TEhpeHctZngxNnVFaWp6WWdvdkl4Z2FkQjhwc0dkRndodjZfU0Z5SEJRX1M3QmEzLTRMODBoVXdOMU9sMm5SRXdyVDVxTWFzZkg4N19uNGRjVzBDUktKWVllel9fTUhRai1sQzNXLW9fNHA2NlhEeFFpbkdfbDJ4THAxcjVVTnhKSTU5TFNiYzZXelNfVHV0UXpiTHdUMUFxQ3RkSmhPeTk0MFBqT2Jqcg?oc=5",
@@ -1513,81 +1551,6 @@
       "topics": [],
       "audience_score": 5.0,
       "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Пайплайн «текст → голос» для эфира: как за день добавить игровые новости в рацию‑компаньон",
-      "link": "https://habr.com/ru/articles/1110068/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1110068",
-      "desc": "Делаю «Канал 15» — программу-компаньон для Euro Truck Simulator 2: восемнадцать выдуманных дальнобойщиков ведут радиоэфир у игрока, отвечают на речь, помнят игрока между рейсами. Файлы игры не трогаю — читаю телеметрию из общей памяти, голоса синтезирую заранее. В этой статье — как за один рабочий день в эфир добавились три механики: игровые новости дня, которые озвучивает персонаж-бухгалтерия, приветствия зрителей стримера и голосовая благодарность за донаты. Плюс то, чем это обернулось с точки зрения инфраструктуры. Постановка задачи Ограничения, из которых строилось решение: 1. Голоса синтезируются заранее. Никакого runtime-TTS: эфир должен работать офлайн, без интернета, с задержками на уровне «следующая реплика из колоды».Сейчас задаюсь вопросом о важности данного ограничения, но оно добавляет интереса. 2. Любой текст проходит ухо человека до озвучки. Пул реплик генерируется ИИ-помощниками, но в эфир попадает только одобренное и прослушанное. Это жёсткое правило проекта, а не рекомендация. . 3. Новые механики не должны ломать стабильную сборку. Релизная версия рации используется на стримах, поэтому всё новое выкатывается за флагами. Задача дня: дать эфиру актуальный повод для разговора и отвечать выдуманным донатерам голосом выдуманного персонажа, а не строкой в чате. Архитектура решения Сводка новостей читается \"бухгалтерией\" — персонаж, который и так шлёт игроку голосовые сообщения за любой «штраф», его голос под роль подходит. Комментарии к новости раздают сами водители. Донаты ловит отдельный детектор: скрипт опрашивает DonationAlerts либо аналог и по событию доната запускает заранее одобренную и озвученную благодарность. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1795114600.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 0.0,
-        "event_concreteness": 16.0,
-        "practical_value": 5.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 44.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 44.5
-      },
-      "base_score": 44.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 44.5,
-      "key": "e8cdfd329b7b167eb29a23054317635cdef9826c8210dadc240173100631cd82",
-      "importance": 44.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "tools"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Российский ИИ-сервис Zdorovyak.com импортозаместил MS Office: работа с документами, презентациями и таблицами перешла в браузер",
-      "link": "https://www.cnews.ru/news/line/2026-11-20_rossijskij_ii-servis_zdorovyak",
-      "desc": "Команда российской ИИ-платформы для бизнеса Zdorovyak.com представила обновление, которое берет на себя задачи привычного...",
-      "source": "CNews",
-      "time": 1795147620.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 4.0,
-        "event_concreteness": 11.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 2.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 44.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 44.0
-      },
-      "base_score": 44.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 44.0,
-      "key": "ed746d8fa218bb8b8048e3fd1defe5b515589e3eb880537e8188cc036e4cbc2c",
-      "importance": 44.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "business",
-        "tools"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
     },
     {
       "region": "WORLD",
@@ -1735,43 +1698,6 @@
     },
     {
       "region": "RUSSIA",
-      "title": "Google показала Gemini 4 Neon для написания наиболее устойчивых к атакам кодов - prospect.com.ru",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQeGNwM1NoTjNnei1XNTlVUEdlaWZXT2Y4OFJnLWh2U19YUmhBU0xMMmdGWkxtY09sNFNXR3YteVFkVVpXQlVEOGNKZFhuY01jYmlUcHQ1cnBRM0RFemQzcTFxb1dEaXBxNGgzVXYtU1dUUUtlQ2tjOWhmcTB2NFhIcEhveTJwX3h6dUd5a3dlcmY2ZTZFUGxEeVZtN0g0UXNRQ08wVDl2UmxDYlhlRmV4VGNMcUdJNjNBeTFEQkFnZWU?oc=5",
-      "desc": "Google показала Gemini 4 Neon для написания наиболее устойчивых к атакам кодов prospect.com.ru",
-      "source": "prospect.com.ru",
-      "time": 1795130405.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 8.0,
-        "event_concreteness": 15.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 42.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 42.5
-      },
-      "base_score": 42.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 42.5,
-      "key": "c6889911a746d3ff316fee4f44c38b8902b35752306b24fd18c5453bd85e5c11",
-      "importance": 42.5,
-      "editorial_value": 48.5,
-      "topics": [
-        "models"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
       "title": "Интеграция LED‑люстры в умный дом. Часть 2",
       "link": "https://habr.com/ru/articles/1110094/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1110094",
       "desc": "В первой части я рассказывал, как подружил с Home Assistant дешёвую LED-люстру с Алиэкспресса. Сниффер на nRF24, расшифровка протокола XN297, свой передатчик на ESP32 в чашке люстры, настенный Zigbee-выключатель вместо обычного. Закончилась она на грустной ноте: первая люстра работает идеально, вторая не работает вообще. Там же я пообещал: «Родной пульт ею управляет, значит, и мы сможем. Рано или поздно :-)». Спойлер: смогли. Но совсем не так, как я думал. А «рано или поздно» оказалось заметно ближе к «поздно». По дороге были новый радиомодуль, две недели ожидания, пайка, которая не хотела паяться, три ИИ-консультанта и одно приложение на телефоне, которое за десять минут сделало то, чего не смогли недели экспериментов. Дисклеймер из первой части в силе: всё, что касается 220 В, делайте при выключенном автомате в щитке. Первое может убить, второе — только ваши нервы. И перехватывайте и повторяйте радиосигналы только своих устройств. Читать далее",
@@ -1802,6 +1728,43 @@
       "editorial_value": 50.0,
       "topics": [
         "security_regulation"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Google показала Gemini 4 Neon для написания наиболее устойчивых к атакам кодов - prospect.com.ru",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQeGNwM1NoTjNnei1XNTlVUEdlaWZXT2Y4OFJnLWh2U19YUmhBU0xMMmdGWkxtY09sNFNXR3YteVFkVVpXQlVEOGNKZFhuY01jYmlUcHQ1cnBRM0RFemQzcTFxb1dEaXBxNGgzVXYtU1dUUUtlQ2tjOWhmcTB2NFhIcEhveTJwX3h6dUd5a3dlcmY2ZTZFUGxEeVZtN0g0UXNRQ08wVDl2UmxDYlhlRmV4VGNMcUdJNjNBeTFEQkFnZWU?oc=5",
+      "desc": "Google показала Gemini 4 Neon для написания наиболее устойчивых к атакам кодов prospect.com.ru",
+      "source": "prospect.com.ru",
+      "time": 1795130405.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 3.0,
+        "impact": 8.0,
+        "event_concreteness": 15.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 0.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 42.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 42.0
+      },
+      "base_score": 42.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 42.0,
+      "key": "c6889911a746d3ff316fee4f44c38b8902b35752306b24fd18c5453bd85e5c11",
+      "importance": 42.0,
+      "editorial_value": 48.0,
+      "topics": [
+        "models"
       ],
       "audience_score": null,
       "tier": "A",
@@ -1915,20 +1878,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795151808.6343615,
+    "last_start_ts": 1795152298.7859278,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795151808.6343615,
-    "last_success_ts": 1795151808.6343615,
+    "last_run_ts": 1795152298.7859278,
+    "last_success_ts": 1795152298.7859278,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 14
+    "queue_size": 13
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795151814.0820162
+      "updated_at": 1795152302.5705624
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1952,13 +1915,6 @@
     }
   },
   "stories": {
-    "2c47d938c59382059388eceb45f07767415d516bb3836105762eefbb4e71f288": {
-      "time": 1795065875,
-      "title": "Google представила Gemini 4 Neon — модель для кодинга и агентных задач",
-      "desc": "Google представила Gemini 4 Neon — новую модель в семействе Gemini 4. Она находится между Carbon, рассчитанной на сложные и продолжительные проекты, и Hydrogen, которая подходит для быстрых повседневных запросов. Neon ориентирована на задачи, где модели недостаточно просто сгенерировать ответ: нужно разобраться в контексте, использовать инструменты и выполнить несколько последовательных действий. Контекстное окно составляет 1 млн токенов, а глубину рассуждений можно регулировать с помощью четырёх уровней — от low до xhigh. В рейтинге Artificial Analysis Intelligence Index модель набрала 61 балл на уровне xhigh и заняла третье место. В Artificial Analysis Coding Agent Index она получила 58,6 балла и вышла на первую строчку. Среди других результатов — 65,2% в Terminal-Bench 4.1 и 46,2% в FrontierCode 2.0. Google также приводит результаты в прикладных сценариях: Neon показала высокие результаты в тестах на работу с юридическими и налоговыми задачами, а также на автоматизацию процессов через Zapier. В частности, в Zapier AutomationBench модель набрала 56,3%. Отдельное направление — кибербезопасность. Специализированная версия Gemini 4 Neon для защитных задач показала 90,5% в SEC-bench Pro и 76% на сложном уровне AutoBaxBench. Она предназначена для поиска уязвимостей, анализа рисков и помощи в исправлении проблем в коде. Доступ к этой версии планируют предоставлять проверенным специалистам через программу Fairwind. Gemini 4 Neon доступна через Gemini API и Google AI Studio. Стоимость составляет $3 за миллион входных токенов и $15 за миллион выходных. Для входных токенов из кэша действует сниженный тариф — $0,15 за миллион. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "1c6997fe0300e706283b85c4db98b30310ad4b2c7de450d9916578775b07d0c6": {
       "time": 1795066121,
       "title": "Google Unveils Gemini 4 Neon, a Cheaper Frontier Model Aimed at Coding and Enterprise Workloads - BigGo Finance",
@@ -2315,11 +2271,17 @@
       "desc": "Десять рабочих эксплойтов на 43 ИИ-агента. Представлен способ обойти все запреты без взлома самой модели SecurityLab.ru",
       "source": "SecurityLab.ru",
       "region": "RUSSIA"
+    },
+    "93231bb98020345525412151baeb503ac41d4923f4b2da1021b277f52f403044": {
+      "time": 1795152298,
+      "title": "Рой дронов держит строй без GPS: адаптивный консенсус и цена его точности",
+      "desc": "Адаптивный закон настройки коэффициентов, который я взял из классической литературы по мультиагентным системам, удерживал строй роя из шести дронов лучше всех: при порыве ветра ошибка 0,36 м против 0,89 м у вручную настроенного регулятора. Но при этом 67 % времени хотя бы один аппарат работал на пределе тяги, а затраты на управление были в 3,5 раза выше. Коэффициенты регулятора подскакивали на каждом крупном манёвре и обратно уже не опускались. В статье разберу, откуда берётся этот эффект и как одна строчка в законе адаптации превращает его в управляемый компромисс между точностью и энергией. Текст написан по мотивам нашей с научным руководителем В. В. Семеновым статьи и является частью моей выпускной работы на кафедре инженерной кибернетики НИТУ «МИСИС». Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -2337,99 +2299,10 @@
     "WORLD",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794917082,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 22.0,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 16,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://habr.com/ru/articles/1108844/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1108844",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.0,
-          "bonus_total": 72.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходимость срочного внедрения стратегии мульти-модельности для минимизации рисков остановки бизнес-процессов.",
-            "title": "Тебя засунули головой в окно машины. Водитель — Anthropic",
-            "final_score": 73.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794917319,
       "status": "OK",
@@ -22315,11 +22188,101 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795152298,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 16.59,
+      "candidates": 0,
+      "queue_before": 14,
+      "queue_after": 13,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/articles/1110098/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1110098",
+            "image_url": "https://habr.com/share/publication/1110098/b785d5e5ca25fba28971ae3722373723/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 6.33,
+          "bonus_total": 57.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Полезно для инженеров робототехники при выборе стратегии управления энергоэффективностью автономных систем.",
+            "title": "Рой дронов держит строй без GPS: адаптивный консенсус и цена его точности",
+            "final_score": 66.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 9,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1795150853.8759916,
-  "last_publish_ts": 1795151808.6343615,
+  "last_publish_ts": 1795152298.7859278,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
