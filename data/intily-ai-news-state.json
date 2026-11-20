@@ -1401,11 +1401,10 @@
     "3288c3da4adbaa16cbb880dd9c5d20a799b7582f4686047d39095306b6b8b676": 1795189488,
     "6b3ab03b6cd49389c52a9b2936ef0f05383597f7d62a754644de68f1150fe12c": 1795191427,
     "e1c5bc0a4c88fdb1d3a27996ab543c78b08d85711951d786c5502e00fac6c2f2": 1795194083,
-    "24ae5946a2733d91e9d39417984adeed8a9b775ac23cb26c47f6672292cc9312": 1795195732
+    "24ae5946a2733d91e9d39417984adeed8a9b775ac23cb26c47f6672292cc9312": 1795195732,
+    "b5fd2b83653f2c4fd98386b5934bba6517f579f29f2b24e27c3421733930b7a6": 1795196208
   },
   "known": {
-    "6b3ab03b6cd49389c52a9b2936ef0f05383597f7d62a754644de68f1150fe12c": 1795190451.2647386,
-    "9152de3711c464eaf6268a3aaa471c32b47cd021f9235d61808bae7447e43f61": 1795190451.2647386,
     "24ae5946a2733d91e9d39417984adeed8a9b775ac23cb26c47f6672292cc9312": 1795192370.3353038,
     "e1c5bc0a4c88fdb1d3a27996ab543c78b08d85711951d786c5502e00fac6c2f2": 1795192370.3353038,
     "2fb9d7a57b55629345912006d3998692008852d05b32c1f83d4e6842b0847445": 1795192370.3353038,
@@ -1417,51 +1416,10 @@
     "1bba50e8c20b9d33c19e7764a7b951f4f67181bf9b23aa1ba8b1d2b91961a710": 1795194317.589938,
     "c3623d800afc1fe34f95224d50dc7bfca9ba27feece8e9cfd3cab36a6378fdfa": 1795194317.589938,
     "921c76acdbb84cdea181c66c6962570c4bae17955e2feca59e4fb132b401bc6d": 1795194317.589938,
-    "730bf230b4a37e58e0f7e9e5ee8132cde44913b9fd01ee1f9f65efcce5d55b05": 1795194317.589938
+    "730bf230b4a37e58e0f7e9e5ee8132cde44913b9fd01ee1f9f65efcce5d55b05": 1795194317.589938,
+    "1042d8ef6118ef9f6802b5cf398e2740d2d2054e2329913789b0f18d99fc941a": 1795196208.4126265
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Сеть АНБ вывело из строя обновление PHP",
-      "link": "https://www.cnews.ru/news/top/2026-11-20_it-sboj_v_seti_anb_obnovlenie",
-      "desc": "Внутренняя сеть АНБ США не работает уже три дня. ИТ-сбой не связан с кибератакой: он возник после установки защитного обновления для устранения ИТ-уязвимости в PHP - из‑за этого часть серверов агентства вышла из строя. С 17 ноября 2026 г. часть сотрудников АНБ работает удаленно, но, по словам источников NBC, это не мешает основной деятельности ведомства - сбору разведывательных данных и обеспечению кибербезопасности.",
-      "source": "CNews",
-      "time": 1795166760.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 8.0,
-        "event_concreteness": 14.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 3.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 48.5,
-        "audience_score": 7.0,
-        "audience_bonus": 21.0,
-        "final_score": 69.5
-      },
-      "base_score": 48.5,
-      "audience_bonus": 21.0,
-      "score_stage": "final",
-      "score": 69.5,
-      "key": "b5fd2b83653f2c4fd98386b5934bba6517f579f29f2b24e27c3421733930b7a6",
-      "importance": 69.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "security_regulation"
-      ],
-      "audience_score": 7.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0,
-      "last_failed_at": 1795191894,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1795192194
-    },
     {
       "region": "RUSSIA",
       "title": "411 комментариев в pull request и другие задачи, которые мы отдали ИИ",
@@ -2138,15 +2096,52 @@
       "audience_score": 5.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Контекст-инжиниринг для кодинг-агента: что положить в контекст, а что оставить за его пределами",
+      "link": "https://habr.com/ru/companies/domate/articles/1110520/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1110520",
+      "desc": "Не гадать, а измерить Каждый, кто хоть раз давал кодинг-агенту задачу, поймет о чем речь. Хочется передать ему побольше: техническое задание, документацию на внешний API, правила команды, примеры готового кода. «На всякий случай добавлю ещё и это» — пожалуй, одно из самых распространённых действий. С инженерной точки зрения это анти-подход. Окно контекста конечно и лишняя информация не просто занимает место, она размывает внимание модели. Кроме этого, пересказ уже известных агенту данных почти никогда не даёт прироста качества. И тут возникает вопрос: как понять, какая часть контекста реально помогает в решении задачи, а какая является просто шумом? Я вместе с Дуэйд (doaid) постарался найти ответ на этот вопрос экспериментальным путем. Для эксперимента нашему кодинг-агенту ставилась реальная инженерная задача — разработка сервиса текстового поиска на Rust. А далее я добавлял контекст порциями, фиксируя, как каждая из них меняет план работы. Предлагаю посмотреть, что из этого вышло. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1795194151.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 7.0,
+        "event_concreteness": 9.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 43.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 43.5
+      },
+      "base_score": 43.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 43.5,
+      "key": "1042d8ef6118ef9f6802b5cf398e2740d2d2054e2329913789b0f18d99fc941a",
+      "importance": 43.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1795195732.4305499,
+    "last_start_ts": 1795196208.4126265,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795195732.4305499,
-    "last_success_ts": 1795195732.4305499,
-    "last_candidates": 0,
+    "last_run_ts": 1795196208.4126265,
+    "last_success_ts": 1795196208.4126265,
+    "last_candidates": 39,
     "last_published": 1,
     "queue_size": 19
   },
@@ -2154,7 +2149,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795195752.3748178
+      "updated_at": 1795196254.241231
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2562,6 +2557,13 @@
       "desc": "Asian Markets Tumble as Anthropic’s Record $81.3 Billion Nasdaq Debut Fails to Calm AI Bubble Fears The Daily Scrum News",
       "source": "The Daily Scrum News",
       "region": "WORLD"
+    },
+    "b5fd2b83653f2c4fd98386b5934bba6517f579f29f2b24e27c3421733930b7a6": {
+      "time": 1795196208,
+      "title": "Сеть АНБ вывело из строя обновление PHP",
+      "desc": "Внутренняя сеть АНБ США не работает уже три дня. ИТ-сбой не связан с кибератакой: он возник после установки защитного обновления для устранения ИТ-уязвимости в PHP - из‑за этого часть серверов агентства вышла из строя. С 17 ноября 2026 г. часть сотрудников АНБ работает удаленно, но, по словам источников NBC, это не мешает основной деятельности ведомства - сбору разведывательных данных и обеспечению кибербезопасности.",
+      "source": "CNews",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
@@ -2569,7 +2571,6 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "RUSSIA",
@@ -2584,99 +2585,10 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794991474,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 10.44,
-      "candidates": 0,
-      "queue_before": 15,
-      "queue_after": 14,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 400: Bad Request": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 400: Bad Request"
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 9.0,
-          "bonus_total": 27.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходимость пересмотра архитектуры безопасности и юридических рисков при внедрении автономных агентов.",
-            "title": "If Your AI Agent Breaks the Law, It's Your Problem - HackerNoon",
-            "final_score": 68.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794991714,
       "status": "OK",
@@ -22637,11 +22549,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795196208,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 59.96,
+      "candidates": 39,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 14,
+        "known_recent": 7,
+        "already_queued": 15,
+        "story_queue": 1,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 39,
+        "admission_rate": 2.56,
+        "dominant_block": "already_queued",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "IMAGE_CANDIDATES_FAILED: og_image:IMAGE_SOURCE_TOO_LARGE | og_image:IMAGE_SOURCE_TOO_LARGE | og_image:IMAGE_SOURCE_TOO_LARGE | html_img:IMAGE_CONTENT_TYPE_INVAL": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "IMAGE_CANDIDATES_FAILED: og_image:IMAGE_SOURCE_TOO_LARGE | og_image:IMAGE_SOURCE_TOO_LARGE | og_image:IMAGE_SOURCE_TOO_LARGE | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID | html_img:IMAGE_CONTENT_TYPE_INVALID |"
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.67,
+          "bonus_total": 69.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Напоминание о необходимости жесткого тестирования обновлений для предотвращения критических простоев инфраструктуры.",
+            "title": "Сеть АНБ вывело из строя обновление PHP",
+            "final_score": 72.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 62,
+        "query_errors": 2,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 187,
+        "raw_items": 1094,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 3,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 7,
+          "Habr AI/News": 40,
+          "CNews": 85,
+          "Euronews": 50
+        },
+        "score_filtered": 1019,
+        "quality_filtered": 34,
+        "story_dedup": 2,
+        "candidates": 39,
+        "candidate_rate": 0.043,
+        "score_buckets": {
+          "0–39": 970,
+          "40–49": 82,
+          "50–59": 36,
+          "60–69": 6,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 1,
+          "4": 0,
+          "5": 3,
+          "6": 5,
+          "7": 9,
+          "8": 1,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795194317.589938,
-  "last_publish_ts": 1795195732.4305499,
+  "last_search_ts": 1795196208.4126265,
+  "last_publish_ts": 1795196208.4126265,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
