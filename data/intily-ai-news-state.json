@@ -1395,7 +1395,8 @@
     "b2aa60267740994d0293b0401cfbf5b42fbc21b54a165fd5a51a18b9e9b64b8c": 1795175570,
     "fc5a9fc8b30e4e3e382d0b8f99bdcd8eb12ba670b9fc999c9ed8b0938803e257": 1795176284,
     "0acd3506ead8b3372f22b5a00453ea943ffc2fe2cc3066e1c078a46f15b1056d": 1795179421,
-    "b691e015c35705cabaa7a1b9c4db8f39dab4dffc2c9c82dfd8c5a20fc30666fc": 1795179896
+    "b691e015c35705cabaa7a1b9c4db8f39dab4dffc2c9c82dfd8c5a20fc30666fc": 1795179896,
+    "259d32793027361e656636f534f4c19055001e4146f75bd21381bdbf9c50ac24": 1795183741
   },
   "known": {
     "8f3c3d5849e92ebaf501ec5a7f8591dbe634f26c7662da3f377d742d655ea5e5": 1795179421.6706898,
@@ -1521,6 +1522,43 @@
       ],
       "audience_score": 10.0,
       "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "GPT-6.2 Astra и Sol разобрали 16 заявок на мерч к GTA VI. На Astra тот же JSON стоил вчетверо дороже",
+      "link": "https://habr.com/ru/articles/1110426/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1110426",
+      "desc": "В шапке заявки написано «GTA 6: 19.11». Ниже просят напечатать 40 футболок для участников и ещё 6 для команды. В карточке заказа должно появиться число 46. Первая шестёрка относится к игре, вторая к тиражу, а 19.11 стоит в названии чата. Вручную это разбирается за секунды. С автоматическим переносом в карточку интереснее: даже правильный JSON может содержать чужое число. Rockstar выпустила GTA VI на PlayStation 5 и Xbox Series X|S 19 ноября. За два дня до этого OpenAI представила GPT-6.2 Astra и Sol в ChatGPT Work, Codex и API. Релиз игры дал тему для 16 вымышленных заявок на мерч. Моделям достались версии макетов, даты, номера заказов и правки тиражей вперемешку с названиями технологий печати. Анонс Rockstar · Анонс OpenAI . Обе новые модели вернули 16 точных ответов из 16, как и предыдущая GPT-6.1 Sol. За одинаковый результат Astra стоила ровно вчетверо дороже новой Sol. При сравнении моделей важен масштаб задачи: здесь каждый вызов разбирал одно короткое сообщение, а ответ содержал всего три поля. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1795180550.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 10.0,
+        "event_concreteness": 14.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 49.0,
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 70.0
+      },
+      "base_score": 49.0,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 70.0,
+      "key": "3288c3da4adbaa16cbb880dd9c5d20a799b7582f4686047d39095306b6b8b676",
+      "importance": 70.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "models"
+      ],
+      "audience_score": 7.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     },
     {
       "region": "RUSSIA",
@@ -1969,84 +2007,6 @@
     },
     {
       "region": "RUSSIA",
-      "title": "Как правильно выбирать задачи для LLM и избегать архитектурных ошибок",
-      "link": "https://habr.com/ru/articles/1110442/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1110442",
-      "desc": "Эта статья - для двух категорий читателей. Первая - те, кто начинает внедрять LLM в рабочий проект. Демо уже работает, руководитель уже видел скриншоты, и теперь предстоит превратить это в систему, которая переживёт контакт с реальными пользователями, реальными данными и реальным бюджетом. Здесь собраны правила, которые помогают не переделывать архитектуру через два месяца. Вторая - те, кто уже глубоко погружён в тему. Вы разбираетесь в устройстве моделей, следите за релизами, умеете выжать качество из промпта и знаете, чем один режим вывода отличается от другого. И именно поэтому иногда теряете из виду простой вопрос: а должна ли модель вообще заниматься этой частью задачи? Умение настроить модель и умение определить её место в системе - разные навыки. Основная мысль текста: LLM - это переводчик между человеческим текстом и строгими структурами данных, а не ядро системы. Всё остальное - следствия этого правила. Если вы уже не согласны, возможно, вам не стоит читать дальше и стоит простить автору его субъективное мнение. Что будет в статье Четыре признака задач, где LLM действительно уместна. Шесть антипаттернов, которые чаще всего ломают внедрение. Принцип проектирования ответа модели, который можно проверить кодом перед тем как использовать. Пять разобранных примеров связки “LLM + программный код”: от безопасных запросов к базе до многоступенчатой проверки сумм в договорах и контроля ответов RAG над корпоративной базой знаний. Чек-лист из пяти пунктов, который можно приложить к ревью архитектуры. Чего в статье не будет Сравнений моделей, бенчмарков и обзоров фреймворков - всё это устареет быстрее, чем текст. Техник промптинга и рецептов “как лучше попросить”. Разбора устройства трансформеров, обучения и дообучения моделей. Пошаговой инструкции по построению поиска по базе знаний: выбор хранилища, нарезка документов, подбор моделей для поиска. Исчерпывающего каталога атак и способов защиты - здесь показан принцип, а не полный справочник по безопасности. Готовой библиотеки и репозитория с кодом. Об ожиданиях Это инженерный текст, а не научная публикация. Здесь нет доказательств каждого утверждения и ссылок на исследования. Часть формулировок намеренно категорична: правило, которое запоминается и применяется на ревью, полезнее точной, но неиспользуемой оговорки. Примеры упрощены до сути. Они показывают принцип, а не промышленный код: таймауты, повторы и логирование вы добавите сами, под свой стек. Правила описывают типичную ситуацию, а не все возможные. Если вы знаете частный случай, где рекомендация не работает, - скорее всего, так и есть. Это не повод выбрасывать правило, это повод знать его границы. Цель текста простая: чтобы после прочтения вы могли посмотреть на архитектуру своей системы и сказать - вот это отдаём модели, вот это оставляем коду, а вот здесь нужен валидатор, - и внятно объяснить, почему именно так. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1795182381.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 11.0,
-        "event_concreteness": 15.0,
-        "practical_value": 5.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 56.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 56.0
-      },
-      "base_score": 56.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 56.0,
-      "key": "259d32793027361e656636f534f4c19055001e4146f75bd21381bdbf9c50ac24",
-      "importance": 56.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "business",
-        "models",
-        "research",
-        "security_regulation",
-        "tools"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "GPT-6.2 Astra и Sol разобрали 16 заявок на мерч к GTA VI. На Astra тот же JSON стоил вчетверо дороже",
-      "link": "https://habr.com/ru/articles/1110426/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1110426",
-      "desc": "В шапке заявки написано «GTA 6: 19.11». Ниже просят напечатать 40 футболок для участников и ещё 6 для команды. В карточке заказа должно появиться число 46. Первая шестёрка относится к игре, вторая к тиражу, а 19.11 стоит в названии чата. Вручную это разбирается за секунды. С автоматическим переносом в карточку интереснее: даже правильный JSON может содержать чужое число. Rockstar выпустила GTA VI на PlayStation 5 и Xbox Series X|S 19 ноября. За два дня до этого OpenAI представила GPT-6.2 Astra и Sol в ChatGPT Work, Codex и API. Релиз игры дал тему для 16 вымышленных заявок на мерч. Моделям достались версии макетов, даты, номера заказов и правки тиражей вперемешку с названиями технологий печати. Анонс Rockstar · Анонс OpenAI . Обе новые модели вернули 16 точных ответов из 16, как и предыдущая GPT-6.1 Sol. За одинаковый результат Astra стоила ровно вчетверо дороже новой Sol. При сравнении моделей важен масштаб задачи: здесь каждый вызов разбирал одно короткое сообщение, а ответ содержал всего три поля. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1795180550.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 10.0,
-        "event_concreteness": 14.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 49.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 49.0
-      },
-      "base_score": 49.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 49.0,
-      "key": "3288c3da4adbaa16cbb880dd9c5d20a799b7582f4686047d39095306b6b8b676",
-      "importance": 49.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "models"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
       "title": "Сеть АНБ вывело из строя обновление PHP",
       "link": "https://www.cnews.ru/news/top/2026-11-20_it-sboj_v_seti_anb_obnovlenie",
       "desc": "Внутренняя сеть АНБ США не работает уже три дня. ИТ-сбой не связан с кибератакой: он возник после установки защитного обновления для устранения ИТ-уязвимости в PHP - из‑за этого часть серверов агентства вышла из строя. С 17 ноября 2026 г. часть сотрудников АНБ работает удаленно, но, по словам источников NBC, это не мешает основной деятельности ведомства - сбору разведывательных данных и обеспечению кибербезопасности.",
@@ -2135,19 +2095,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 43.5,
+        "base_score": 43.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 43.5
+        "final_score": 43.0
       },
-      "base_score": 43.5,
+      "base_score": 43.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 43.5,
+      "score": 43.0,
       "key": "95ad88e924634c540a5092c3126363e9c7ffc7438365c3e69877fa2809f6b13d",
-      "importance": 43.5,
+      "importance": 43.0,
       "editorial_value": 50.0,
       "topics": [
         "applications",
@@ -2160,30 +2120,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795183272.4762125,
+    "last_start_ts": 1795183741.0111682,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795183272.4762125,
-    "last_success_ts": 1795183272.4762125,
-    "last_candidates": 25,
-    "last_published": 0,
-    "queue_size": 20
+    "last_run_ts": 1795183741.0111682,
+    "last_success_ts": 1795183741.0111682,
+    "last_candidates": 0,
+    "last_published": 1,
+    "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795186850.9934154,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1795183250.9934175
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795183740.740439
     },
     "GROQ": {
-      "disabled_until": 1795186854.4798949,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795183254.479897
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795183728.395992
     },
     "OPENAI": {
-      "disabled_until": 1795269672.389168,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795183272.3891702
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795183728.395992
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2191,19 +2151,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795186871.2441368,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795183271.2441387
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795183728.395992
     }
   },
   "stories": {
-    "e6abf86f3e5ec82948cc0d8a96327e75fac5fb8ff15a7fde904dcccbe7ea2fbc": {
-      "time": 1795097331,
-      "title": "Anthropic IPO Debuts Today: Priced at $83, Raising $81.3 Billion to Set World's Largest IPO Record - TradingKey",
-      "desc": "Anthropic IPO Debuts Today: Priced at $83, Raising $81.3 Billion to Set World's Largest IPO Record TradingKey",
-      "source": "TradingKey",
-      "region": "WORLD"
-    },
     "db3c17c63d9d27c911cc5e057906893aa815f62a9902bbb33aa6bd0b2a3d350d": {
       "time": 1795100208,
       "title": "Вышел Gemini 4 Neon. Золотая середина, по мнению Google",
@@ -2553,10 +2506,16 @@
       "desc": "Google представила Gemini 4 Neon для сложных задач программирования, аналитики и научных исследований. В статье собраны результаты тестов, цены Gemini API и четыре демонстрации работы модели в Google Antigravity. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "259d32793027361e656636f534f4c19055001e4146f75bd21381bdbf9c50ac24": {
+      "time": 1795183741,
+      "title": "Как правильно выбирать задачи для LLM и избегать архитектурных ошибок",
+      "desc": "Эта статья - для двух категорий читателей. Первая - те, кто начинает внедрять LLM в рабочий проект. Демо уже работает, руководитель уже видел скриншоты, и теперь предстоит превратить это в систему, которая переживёт контакт с реальными пользователями, реальными данными и реальным бюджетом. Здесь собраны правила, которые помогают не переделывать архитектуру через два месяца. Вторая - те, кто уже глубоко погружён в тему. Вы разбираетесь в устройстве моделей, следите за релизами, умеете выжать качество из промпта и знаете, чем один режим вывода отличается от другого. И именно поэтому иногда теряете из виду простой вопрос: а должна ли модель вообще заниматься этой частью задачи? Умение настроить модель и умение определить её место в системе - разные навыки. Основная мысль текста: LLM - это переводчик между человеческим текстом и строгими структурами данных, а не ядро системы. Всё остальное - следствия этого правила. Если вы уже не согласны, возможно, вам не стоит читать дальше и стоит простить автору его субъективное мнение. Что будет в статье Четыре признака задач, где LLM действительно уместна. Шесть антипаттернов, которые чаще всего ломают внедрение. Принцип проектирования ответа модели, который можно проверить кодом перед тем как использовать. Пять разобранных примеров связки “LLM + программный код”: от безопасных запросов к базе до многоступенчатой проверки сумм в договорах и контроля ответов RAG над корпоративной базой знаний. Чек-лист из пяти пунктов, который можно приложить к ревью архитектуры. Чего в статье не будет Сравнений моделей, бенчмарков и обзоров фреймворков - всё это устареет быстрее, чем текст. Техник промптинга и рецептов “как лучше попросить”. Разбора устройства трансформеров, обучения и дообучения моделей. Пошаговой инструкции по построению поиска по базе знаний: выбор хранилища, нарезка документов, подбор моделей для поиска. Исчерпывающего каталога атак и способов защиты - здесь показан принцип, а не полный справочник по безопасности. Готовой библиотеки и репозитория с кодом. Об ожиданиях Это инженерный текст, а не научная публикация. Здесь нет доказательств каждого утверждения и ссылок на исследования. Часть формулировок намеренно категорична: правило, которое запоминается и применяется на ревью, полезнее точной, но неиспользуемой оговорки. Примеры упрощены до сути. Они показывают принцип, а не промышленный код: таймауты, повторы и логирование вы добавите сами, под свой стек. Правила описывают типичную ситуацию, а не все возможные. Если вы знаете частный случай, где рекомендация не работает, - скорее всего, так и есть. Это не повод выбрасывать правило, это повод знать его границы. Цель текста простая: чтобы после прочтения вы могли посмотреть на архитектуру своей системы и сказать - вот это отдаём модели, вот это оставляем коду, а вот здесь нужен валидатор, - и внятно объяснить, почему именно так. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -2575,97 +2534,10 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794980932,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 11.53,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.cnews.ru/news/line/2026-11-18_planum-platforma_podklyuchila",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Позволяет оптимизировать процессы финансового планирования через интеграцию ИИ-агентов в корпоративные системы.",
-            "title": "«Планум-Платформа» подключила ИИ-агентов к созданию моделей и управлению IBP-платформой",
-            "final_score": 67.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 13,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794981159,
       "status": "OK",
@@ -22636,11 +22508,99 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1795183741,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 15.04,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 19,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/articles/1110426/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1110426",
+            "image_url": "https://habr.com/share/publication/1110426/078655c99051ce26cc73c3a97e947aec/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет оптимизировать расходы на API при автоматизации рутинных задач обработки структурированных данных.",
+            "title": "GPT-6.2 Astra и Sol разобрали 16 заявок на мерч к GTA VI. На Astra тот же JSON стоил вчетверо дороже",
+            "final_score": 70.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1795183272.4762125,
-  "last_publish_ts": 1795179896.6936533,
+  "last_publish_ts": 1795183741.0111682,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
