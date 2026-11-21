@@ -1444,19 +1444,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 47.5,
+        "base_score": 47.0,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 68.5
+        "final_score": 68.0
       },
-      "base_score": 47.5,
+      "base_score": 47.0,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 68.5,
+      "score": 68.0,
       "key": "468841999d76730eb1fd76cc067c62e4ab327626acc72f98ed2e5a71225f597e",
-      "importance": 68.5,
+      "importance": 68.0,
       "editorial_value": 50.0,
       "topics": [],
       "audience_score": 7.0,
@@ -1664,19 +1664,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 40.5,
+        "base_score": 40.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 40.5
+        "final_score": 40.0
       },
-      "base_score": 40.5,
+      "base_score": 40.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 40.5,
+      "score": 40.0,
       "key": "b00e8daee215c3b8618610cc395c06f6705a9ca45f435589abfb1c2a45ee60b1",
-      "importance": 40.5,
+      "importance": 40.0,
       "editorial_value": 50.0,
       "topics": [
         "applications",
@@ -1724,30 +1724,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795240164.8406987,
+    "last_start_ts": 1795241398.6039453,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795240164.8406987,
-    "last_success_ts": 1795240164.8406987,
-    "last_candidates": 10,
-    "last_published": 1,
+    "last_run_ts": 1795241398.6039453,
+    "last_success_ts": 1795241398.6039453,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 8
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795240164.8170924
+      "disabled_until": 1795244978.4476285,
+      "reason": "The read operation timed out",
+      "updated_at": 1795241378.4476318
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795201005.0629847
+      "disabled_until": 1795244981.644671,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795241381.644673
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795201005.0629847
+      "disabled_until": 1795327798.5646002,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1795241398.5646021
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1755,19 +1755,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795201005.0629847
+      "disabled_until": 1795244997.4735467,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795241397.4735482
     }
   },
   "stories": {
-    "527ed8f68863ae52e19dc3dee4ffb985a32c7fc74be2a12645952920135477f1": {
-      "time": 1795154939,
-      "title": "В GPT‑6.2 для некоторых задач уже нужен KYC. Не станет ли это новым ограничением для обычных разработчиков?",
-      "desc": "17 ноября OpenAI представила GPT‑6.2 Astra и Sol . Новые модели стали сильнее в программировании и решении сложных задач, но вместе с ними появились дополнительные ограничения, о которых, подозреваю, знают далеко не все пользователи ChatGPT и Codex. Изучая документацию, обнаружил интересную деталь: для получения более свободного доступа к некоторым возможностям моделей в области кибербезопасности уже предусмотрены проверка личности, дополнительные требования безопасности и отдельное одобрение OpenAI. Речь не о том, что паспорт нужен для каждого запроса к GPT‑6.2. Модели доступны и без него, но с более строгими ограничениями. А вот возможность выполнять некоторые задачи с меньшим количеством отказов уже зависит не только от подписки. Причём у OpenAI существуют разные уровни доверенного доступа, а процесс получения разрешений устроен гораздо сложнее, чем просто отправка паспорта. Но не распространит ли OpenAI постепенно подобные проверки на другие категории задач, а затем и на обычных разработчиков? Учитывая собственный опыт блокировки оплаченного Claude Max 20x после проверки личности и недавние проблемы при работе с Codex, этот вопрос кажется мне далеко не праздным. Давайте разбираться. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "cce0f9284d6d8730742745d47baa165c7bfa744945e39e317715b2b135dc3d40": {
       "time": 1795155658,
       "title": "These tech outages are giving Y2K, AI agent style",
@@ -2191,96 +2184,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1794999167,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 2.99,
-      "candidates": 0,
-      "queue_before": 16,
-      "queue_after": 15,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://habr.com/ru/articles/1109298/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1109298",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Позволяет разработчикам избежать простоев при миграции на альтернативные LLM в агентских пайплайнах.",
-            "title": "Ускоряем работу агентов в Claude Code при использовании сторонних LLM",
-            "final_score": 70.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1794999393,
       "status": "OK",
@@ -22392,6 +22295,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1795241398,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 40.29,
+      "candidates": 0,
+      "queue_before": 8,
+      "queue_after": 8,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 6,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
