@@ -1434,14 +1434,13 @@
     "ae61957a4c9cfb291b4ede95a87ad5eb3192395a2ada677c7b1302a316134457": 1795263917
   },
   "known": {
-    "0f6239851752379dad57bdc5eb2ab004c30254b79a2050157d9193095419222b": 1795258633.555637,
-    "fae2b3440d32721dcd95a73961b73b53ffade51f528925887af142a43da9debc": 1795258633.555637,
-    "1f065df0ab0f0bde292db734dd0ad45b12bb4d1aabd4bdb5354a0fb4c4706cd2": 1795258633.555637,
-    "53d7ea0e4401cb213e81be2ead7885b849d068e0af18c991d7bfd7b9f9b393be": 1795258633.555637,
-    "af6a134f82d9782cb2edc22b89c842841e1ca6f649f434fa0b8609a4360ae46f": 1795258633.555637,
     "51815e25cc654aef0c36d7fab217b22390a51932b3db76a0a7bfbfa5e1d0a9eb": 1795262477.3343925,
     "258f2adb68e2a6b80e16f71a300fe8c95137af41b522ec31155f61b322a892b8": 1795262477.3343925,
-    "0111fd6eb80f0deb77de10a55b2ce489774207d5386241f2b3bdbf6016b38f47": 1795262477.3343925
+    "0111fd6eb80f0deb77de10a55b2ce489774207d5386241f2b3bdbf6016b38f47": 1795262477.3343925,
+    "fee0a02f7d97a860011047f8e62f86bc1a3758dd521617f566359a5b4a5838c7": 1795265119.9133222,
+    "1710b872aef38c46efd453a9550d49caa2b91e14a107d8ddd80abbdf224d1291": 1795265119.9133222,
+    "3e29a26005d1a181ed9b3b13948a3c927d371c77909a5215419be4d8b72a3bd5": 1795265119.9133222,
+    "ee6217d42ec105b576c9368cf6d7500c1d322eb6c51ca05a745a51a2a7bbd9dd": 1795265119.9133222
   },
   "queue": [
     {
@@ -1553,33 +1552,185 @@
       "audience_score": 5.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Как я перестал платить за токены и собрал локальный RAG на 72 000 чанков в SQLite",
+      "link": "https://habr.com/ru/articles/1110658/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1110658",
+      "desc": "Мне 22 года, я AI/ML-инженер и исследователь: закончил бакалавриат по прикладной информатике и защите информации в СГЭУ (2022–2026), а сейчас учусь в магистратуре Самарского университета им. Королёва (Аэрокос) на программе «Системы искусственного интеллекта». До этого успел поработать и руками (декоратором — собирал каркасы из бруса на площадках), и сисадмином 1С. Параллельно пишу софт для параметрического проектирования каркасов (Deckor), веду научку по гибридным нейросетям в медицине (НИР) и строю локальную инфраструктуру для мультиагентных систем. В какой-то момент передо мной встала классическая стена: проектов стало много, контекст в голове и в окне чата начал рассыпаться. Стандартный совет из интернета — «просто возьми LangChain, прикрути OpenAI API и залей векторную базу в Pinecone». Но у меня нет лишних денег, чтобы оплачивать каждый чих через API. Да и тащить в проект раздутые монструозные фреймворки ради банального поиска по своим же файлам дико не хотелось. Я решил собрать полностью локальное решение. Без внешних платных ключей, без облачных векторных БД, прямо на CPU и обычном SQLite. Ниже — разбор того, как это устроено, с какими граблями я столкнулся в процессе и почему в итоге классический RAG оказался нужен совсем не для того, о чем пишут в туториалах. К архитектуре",
+      "source": "Habr AI/News",
+      "time": 1795263588.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 10.0,
+        "event_concreteness": 15.5,
+        "practical_value": 6.5,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 57.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 57.0
+      },
+      "base_score": 57.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 57.0,
+      "key": "fee0a02f7d97a860011047f8e62f86bc1a3758dd521617f566359a5b4a5838c7",
+      "importance": 57.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "security_regulation",
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Вышел Spring Boot 4.2. Что поменяется, если просто обновить версию?",
+      "link": "https://habr.com/ru/companies/spring_aio/articles/1110666/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1110666",
+      "desc": "Всем привет! Меня зовут Михаил Поливаха, я технический лидер проекта Axelix , AI Native платформы для Java-разработки. 19 ноября вышел Spring Boot 4.2.0 . В нём появился AMQP 1.0, executable JAR-ы стали быстрее стартовать, а RestTemplate официально начал свой путь к удалению. Представьте, что у вас сервис на Boot 4.1, который работает с RabbitMQ. Вы обновляете версию Boot, открываете свой pom.xml , а там всё тот же spring-boot-starter-amqp . Казалось бы, чего тут проверять-то? Так вот, в 4.2 этот стартер подключает поддержку другого протокола, и так можно сломать продакшен . Давайте разберёмся, откуда это взялось, что ещё может поменяться при обычном обновлении и какие фичи в 4.2 я бы попробовал отдельно. За основу возьмём официальные release notes . Читать далее",
+      "source": "Habr AI/News",
+      "time": 1795264730.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 7.0,
+        "event_concreteness": 11.5,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 46.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 46.5
+      },
+      "base_score": 46.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 46.5,
+      "key": "1710b872aef38c46efd453a9550d49caa2b91e14a107d8ddd80abbdf224d1291",
+      "importance": 46.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Акции Nvidia рухнули на 14%, Nasdaq потерял 4 000 миллиардов за неделю - Pasquale Pillitteri",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQa0pXTlRNUHBmOHhPR2Ewc01Od1EtUDJSRFQwdy1jZHlRSDB1TW9HT19qeG9OVGdiVVAzY2JpR1ZaR1Z5OUpPb1BqWWQwTkloS1k1R01QcVVHZHNhU2x4QVpldU8tb1BSd3NRRDVZM1dqNkZpazBNMjBIbkhOQ01ZV3VjclRfdGY0UU5YYURMYW1BS2s1Y3E3WVBjY0g2VjZIUWc?oc=5",
+      "desc": "Акции Nvidia рухнули на 14%, Nasdaq потерял 4 000 миллиардов за неделю Pasquale Pillitteri",
+      "source": "Pasquale Pillitteri",
+      "time": 1795248799.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 3.0,
+        "impact": 9.0,
+        "event_concreteness": 13.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 1.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 41.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 41.5
+      },
+      "base_score": 41.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 41.5,
+      "key": "3e29a26005d1a181ed9b3b13948a3c927d371c77909a5215419be4d8b72a3bd5",
+      "importance": 41.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "chips"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Хайп-цикл Гартнера — это гегелевская триада. Что инженеру делать во впадине разочарования",
+      "link": "https://habr.com/ru/articles/1109036/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1109036",
+      "desc": "Продолжение цикла о философии техники Изначальная статья, самая интересная на мой вкус Зияющие алгоритмы, или Обезьяна с гранатой: почему нам нужен манометр, а не запрет ИИ , Вторая — о расцеплении тела, места и действия о расцеплении тела, места и действия — третья— о другом разрыве: между тем, что вы хотите видеть, и тем, что вам показывают.* Эта- четвертая, Эта — про рамку, в которую все три В любом споре о ИИ чате сейчас сходятся две позиции. Первая: «агенты через год закроют джунов, вопрос только в обвязке». Вторая: «пузырь, LLM — тупиковая ветвь, верните мне детерминированный код и здравый смысл». Спорят обычно яростно, потому что каждый уверен, что спорит о фактах. Он не о фактах. Он о том, как устроено всякое столкновение человека с новой техникой, и ему примерно двести лет. Обе позиции сформулированы задолго до электричества, обе имеют под собой реальные основания, и обе — односторонни. А кривая, которой консалтинг описывает хайп, — это не маркетинговая метафора. Это гегелевская триада, перерисованная в осях «ожидания / время». Дальше я покажу, откуда берётся эта кривая, почему впадина разочарования неизбежна структурно (а не из-за глупости инвесторов), и что конкретно означает «синтез» в инженерной практике. Спойлер: не «взвешенную позицию». 1. Две правды, которые не хотят знать друг о друге Тезис: техника освобождает Родословная почтенная. Торстейн Веблен ещё в начале XX века противопоставил «индустрию» и «бизнес»: инженеры производят, собственники извлекают. Его проект был прямой до наивности — «забастовка инженеров», паралич старого порядка и «совет технических специалистов», который наведёт эффективность и упразднит праздный класс. Утопия не состоялась, но её умеренная версия реализовалась: постиндустриальная теория Белла и Тоффлера описала общество, где управление отделяется от собственности, а человеческий капитал теснит остальные. И у этой позиции есть правда, которую технофобы систематически не замечают. Льюис Мэмфорд показал: при переходе от первобытности к древневосточным царствам прорыва в орудиях труда почти не было. Прорыв был в организации деятельности — и он дал города, ирригацию и пирамиды. Технология emancipates раньше, чем техника: мегамашина собиралась из людей, а не из железа. Второй пример, менее очевидный. Маркс, описывая ужасы машинного производства, фиксирует: машина сделала излишней мускульную силу, и это открыло дорогу более дешёвому женскому и детскому труду. Он видит здесь только эксплуатацию. Но у того же факта есть вторая сторона, которую он пропустил: женщина получила возможность зарабатывать сама . Это не «снижение безработицы», это экономическая предпосылка равноправия, которой в патриархальной аграрной семье не было и быть не могло. Тот же процесс, который одним слоем общества переживается как катастрофа, другим слоем открывает выход из многовековой зависимости. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1795262405.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 9.0,
+        "event_concreteness": 0.0,
+        "practical_value": 6.5,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 40.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 40.5
+      },
+      "base_score": 40.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 40.5,
+      "key": "ee6217d42ec105b576c9368cf6d7500c1d322eb6c51ca05a745a51a2a7bbd9dd",
+      "importance": 40.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "business",
+        "research"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1795263917.73053,
+    "last_start_ts": 1795265119.9133222,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795263917.73053,
-    "last_success_ts": 1795263917.73053,
-    "last_candidates": 0,
-    "last_published": 1,
-    "queue_size": 3
+    "last_run_ts": 1795265119.9133222,
+    "last_success_ts": 1795265119.9133222,
+    "last_candidates": 15,
+    "last_published": 0,
+    "queue_size": 7
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795263919.769137
+      "disabled_until": 1795268744.4086418,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1795265144.4086444
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795263439.4338384
+      "disabled_until": 1795351548.0295196,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1795265148.0295215
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795263439.4338384
+      "disabled_until": 1795351558.4616296,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1795265158.461632
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1587,9 +1738,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795263439.4338384
+      "disabled_until": 1795268757.2778647,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795265157.2778668
     }
   },
   "stories": {
@@ -1981,78 +2132,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795021001,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 8.88,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 18,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1795021958,
       "status": "OK",
@@ -22208,10 +22287,143 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795265119,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 39.03,
+      "candidates": 15,
+      "queue_before": 3,
+      "queue_after": 7,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 8,
+        "known_recent": 0,
+        "already_queued": 2,
+        "story_queue": 1,
+        "story_history": 0,
+        "added": 4,
+        "candidate_count": 15,
+        "admission_rate": 26.67,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 9.0,
+          "bonus_total": 27.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Нужно пересмотреть безопасность LLM и внедрить шлюз сейчас",
+            "title": "Почему защищенность LLM «as is» — иллюзия и нужен эшелонированный LLM Secure Gateway (Firewall, WAF)",
+            "final_score": 88.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 60,
+        "raw_items": 490,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 40,
+          "CNews": 0,
+          "Euronews": 19
+        },
+        "score_filtered": 466,
+        "quality_filtered": 7,
+        "story_dedup": 2,
+        "candidates": 15,
+        "candidate_rate": 0.0349,
+        "score_buckets": {
+          "0–39": 442,
+          "40–49": 30,
+          "50–59": 15,
+          "60–69": 2,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 2,
+          "6": 0,
+          "7": 1,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "GROQ",
+        "failovers": 1,
+        "failures": 4,
+        "blocked": 5,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795262477.3343925,
+  "last_search_ts": 1795265119.9133222,
   "last_publish_ts": 1795263917.73053,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
