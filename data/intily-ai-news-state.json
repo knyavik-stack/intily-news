@@ -1491,7 +1491,11 @@
       ],
       "audience_score": 7.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1795277120,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1795277420
     },
     {
       "region": "WORLD",
@@ -1528,7 +1532,11 @@
         "research"
       ],
       "audience_score": 4.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1795277120,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1795277420
     },
     {
       "region": "RUSSIA",
@@ -1698,52 +1706,52 @@
         "freshness": 2.0,
         "low_signal_penalty": 0.0,
         "base_score": 49.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 49.0
+        "audience_score": 2.0,
+        "audience_bonus": 6.0,
+        "final_score": 55.0
       },
       "base_score": 49.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 49.0,
+      "audience_bonus": 6.0,
+      "score_stage": "final",
+      "score": 55.0,
       "key": "7d87d8a864279d3ce8c9da8a0c1fb8589e0055e173ba70068244541be290f0d8",
-      "importance": 49.0,
+      "importance": 55.0,
       "editorial_value": 50.0,
       "topics": [
         "agents",
         "models",
         "security_regulation"
       ],
-      "audience_score": null,
+      "audience_score": 2.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1795276885.0395858,
+    "last_start_ts": 1795277120.2706928,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795276885.0395858,
-    "last_success_ts": 1795276885.0395858,
+    "last_run_ts": 1795277120.2706928,
+    "last_success_ts": 1795277120.2706928,
     "last_candidates": 0,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 7
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795276885.009759
+      "disabled_until": 1795280740.35274,
+      "reason": "The read operation timed out",
+      "updated_at": 1795277140.352743
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795272555.025093
+      "disabled_until": 1795280743.6295462,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795277143.629548
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795272555.025093
+      "disabled_until": 1795363550.7521977,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1795277150.7521992
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1751,9 +1759,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795272555.025093
+      "disabled_until": 1795280749.7741516,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795277149.7741532
     }
   },
   "stories": {
@@ -2173,94 +2181,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795070202,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 7.49,
-      "candidates": 0,
-      "queue_before": 13,
-      "queue_after": 12,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.euronews.com/2026/11/19/anthropics-record-ipo-lands-as-nvidia-suffers-its-worst-run-since-2008",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходима корректировка инвестиционной стратегии и оценки рисков цепочек поставок аппаратного обеспечения.",
-            "title": "Anthropic's record IPO lands as Nvidia suffers its worst run since 2008",
-            "final_score": 75.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 7,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795070687,
       "status": "OK",
@@ -22418,6 +22338,89 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1795277120,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 36.67,
+      "candidates": 0,
+      "queue_before": 7,
+      "queue_after": 7,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 2.0,
+          "bonus_total": 6.0,
+          "max_score": 2.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 2.0,
+            "bonus": 6.0,
+            "reason": "Технологический курьез без прикладного значения для бизнеса или разработки.",
+            "title": "Представлен ClawDOS — ИИ‑агент для написания кода в среде DOS",
+            "final_score": 55.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
