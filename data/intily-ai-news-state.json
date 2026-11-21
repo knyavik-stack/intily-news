@@ -1,6 +1,5 @@
 {
   "published": {
-    "2d2ec82f83751da714d210163dfd61230e8630167c20ec4aeb8dc056ce7eb646": 1792658950,
     "855968ce6eddc409807ceb9f99518382fc620998e22d1c7c35220e621c4087ce": 1792661336,
     "d941a6785142d56e98813b30003da44e325cc7e5684691137fbbb3bf62cc4686": 1792661579,
     "75d5c90da9cf3f1e41d7404c833cc74805e75df3a4c401f064d3132c6bc125f5": 1792663742,
@@ -1552,30 +1551,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795250717.9070654,
+    "last_start_ts": 1795251225.9975944,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795250717.9070654,
-    "last_success_ts": 1795250717.9070654,
-    "last_candidates": 15,
-    "last_published": 1,
+    "last_run_ts": 1795251225.9975944,
+    "last_success_ts": 1795251225.9975944,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 3
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795250756.9299123
+      "disabled_until": 1795254818.2559268,
+      "reason": "The read operation timed out",
+      "updated_at": 1795251218.2559307
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795243036.433684
+      "disabled_until": 1795254821.548707,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795251221.5487092
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795243036.433684
+      "disabled_until": 1795337625.991449,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1795251225.9914508
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1583,9 +1582,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795243036.433684
+      "disabled_until": 1795254825.0572593,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795251225.0572612
     }
   },
   "stories": {
@@ -2019,96 +2018,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795008764,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 32.61,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "The read operation timed out": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "The read operation timed out"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Критический риск комплаенса и ответственности при интеграции LLM в системы с потенциальным физическим воздействием.",
-            "title": "ИИ-модели OpenAI, Anthropic и Google при тестировании наводили дроны на скорую, сдающихся солдат и гражданских, их отмечали как военные цели",
-            "final_score": 80.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795009004,
       "status": "OK",
@@ -22215,6 +22124,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1795251225,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 27.8,
+      "candidates": 0,
+      "queue_before": 3,
+      "queue_after": 3,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
