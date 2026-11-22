@@ -1,8 +1,5 @@
 {
   "published": {
-    "2ffd62385fb92ff1cfdf6c823408fc2600bac384e73f93d37fa458bab3d262ad": 1792747503,
-    "8379c15342f4a990dd3b3b2bd601746845840b38535d3224241b199c308ef89b": 1792747733,
-    "c72bd3b669904ad562e6151c0b2fc4c8339e9a5e6cd915fb1154103ea305f4a6": 1792747975,
     "3e57bcfaf8876ef2db5e8064e55ccf12ac1936b6d83649efc975f5459e3c1452": 1792749416,
     "bb339fb31bd4b49f7cdd002e40dfc41af4196c531e2dfd6e4239214c7779c450": 1792754221,
     "b0b77fd70e5837c7e52872a75f5905cc3b1304c0b32928786c8e411d0baccc5a": 1792755178,
@@ -1445,19 +1442,17 @@
     "22f4bdea992ca78f5d91256768da9b40e3e47a311c29b80ef620b125d13cd945": 1795336393
   },
   "known": {
-    "4d4c53968ece4361326b63f7a18e0970d8ce9c7f75702ab890c44acc529fde35": 1795334455.5850961,
-    "ffe6db669786c67ba2ecef0887cb425c4b5ae358155138afc2bbbba9ede71ee4": 1795334455.5850961,
     "0389ec5854f599fbd41538aa940deff2c95c5be222340dd77280f82dbcc2b7af": 1795336129.658563,
     "22f4bdea992ca78f5d91256768da9b40e3e47a311c29b80ef620b125d13cd945": 1795336129.658563
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1795339254.6718853,
+    "last_start_ts": 1795339975.6044462,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795339254.6718853,
-    "last_success_ts": 1795339254.6718853,
-    "last_candidates": 10,
+    "last_run_ts": 1795339975.6044462,
+    "last_success_ts": 1795339975.6044462,
+    "last_candidates": 11,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1465,7 +1460,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795339289.0900705
+      "updated_at": 1795340015.175589
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1898,140 +1893,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795102369,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": true,
-      "duration_sec": 70.59,
-      "candidates": 57,
-      "queue_before": 18,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 12,
-        "known_recent": 20,
-        "already_queued": 10,
-        "story_queue": 0,
-        "story_history": 7,
-        "added": 8,
-        "candidate_count": 57,
-        "admission_rate": 14.04,
-        "dominant_block": "known_recent",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Снижает операционные риски утечек и затраты на ручное администрирование безопасности данных.",
-            "title": "СУБД Jatoba теперь использует ИИ для автоматического выявления персональных данных",
-            "final_score": 73.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 213,
-        "raw_items": 1171,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 4,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 3,
-          "Habr AI/News": 40,
-          "CNews": 114,
-          "Euronews": 50
-        },
-        "score_filtered": 1076,
-        "quality_filtered": 29,
-        "story_dedup": 9,
-        "candidates": 57,
-        "candidate_rate": 0.0595,
-        "score_buckets": {
-          "0–39": 995,
-          "40–49": 106,
-          "50–59": 64,
-          "60–69": 6,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 1,
-          "4": 0,
-          "5": 1,
-          "6": 6,
-          "7": 5,
-          "8": 5,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 4,
-        "blocked": 12,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1795102882,
       "status": "OK",
@@ -22907,10 +22768,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795339975,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 39.6,
+      "candidates": 11,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 11,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 9.0,
+          "bonus_total": 54.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Критическая зависимость инфраструктуры от одного поставщика создает высокие риски для планирования затрат и масштабирования.",
+            "title": "Вспоминаем, как NVIDIA стала мировым гигантом",
+            "final_score": 74.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 41,
+        "raw_items": 330,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 28,
+          "CNews": 0,
+          "Euronews": 11
+        },
+        "score_filtered": 311,
+        "quality_filtered": 7,
+        "story_dedup": 1,
+        "candidates": 11,
+        "candidate_rate": 0.0381,
+        "score_buckets": {
+          "0–39": 291,
+          "40–49": 27,
+          "50–59": 10,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795339254.6718853,
+  "last_search_ts": 1795339975.6044462,
   "last_publish_ts": 1795336393.2439437,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
