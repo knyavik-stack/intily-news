@@ -1,7 +1,5 @@
 {
   "published": {
-    "7b9802062827cd3d587d7f7f9f43ad8ceed6436c8eb1d49ffb4fb09dd043eca4": 1792746293,
-    "6400ccdc83e46f1c18d906f209e58fe0d90b13fe2598d02ad223ba1494613ae9": 1792746536,
     "2ffd62385fb92ff1cfdf6c823408fc2600bac384e73f93d37fa458bab3d262ad": 1792747503,
     "8379c15342f4a990dd3b3b2bd601746845840b38535d3224241b199c308ef89b": 1792747733,
     "c72bd3b669904ad562e6151c0b2fc4c8339e9a5e6cd915fb1154103ea305f4a6": 1792747975,
@@ -1454,12 +1452,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1795338073.4499338,
+    "last_start_ts": 1795338539.4118907,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795338073.4499338,
-    "last_success_ts": 1795338073.4499338,
-    "last_candidates": 10,
+    "last_run_ts": 1795338539.4118907,
+    "last_success_ts": 1795338539.4118907,
+    "last_candidates": 12,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1467,7 +1465,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795338110.838099
+      "updated_at": 1795338570.83281
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1491,13 +1489,6 @@
     }
   },
   "stories": {
-    "0da5dbbc3d79a4477715da4801a29474c3f6fa1c5e2bf2c629fad0c67ebfc68d": {
-      "time": 1795251687,
-      "title": "Создали общую базу знаний для продуктовой команды: разгрузили аналитиков и ускорили проверку гипотез",
-      "desc": "Привет, я Света Морозова — лид в одной из DS-команд Авито . Мы развиваем уровень сервиса: это показатель качества работы продавцов. Для этого ищем нарушения — например, когда продавец пишет в объявлении одну цену, а в переписке называет другую — и помогаем пользователям скорректировать поведение с помощью продуктовых механик. Над этим вместе работают аналитики, продакты, DS и разработчики. В работе часто возникают вопросы, которые хочется быстро проверить на данных. Например, на уровень сервиса влияет скорость ответов в чатах — отвечать желательно в течение 3 суток. И вот мы хотим выяснить: если изменить этот порог, скольких продавцов это затронет и как оценить влияние на бизнес? Такие относительно простые и разовые задачи могли бы решать сами продакты и DS. В Авито есть фокус на self-service аналитику: мы верим, что специалист должен разбираться и в смежных дисциплинах, особенно с помощью ИИ. Но по многим вопросам всё равно нужна помощь аналитика, например: - по каким формулам сейчас считаем параметры; - как выбрать источники данных; - какие есть ограничения для расчёта. Всё это увеличивает time-to-market даже небольшого исследования. В статье расскажу, как мы решили эту проблему: создали возможность для коллег проводить мини-исследования, разгрузили аналитиков и в целом ускорили проверку гипотез. Будет полезно DS-лидам и инженерам, у которых есть похожие трудности. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "a2e9b3a3c18e31a857b9ba59bf73c17b01ddcb1842019b635f15b2a191a6d904": {
       "time": 1795252399,
       "title": "Доказательство гипотезы Римана с помощью ИИ",
@@ -1914,146 +1905,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795100208,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 60.05,
-      "candidates": 59,
-      "queue_before": 19,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 11,
-        "known_recent": 4,
-        "already_queued": 11,
-        "story_queue": 0,
-        "story_history": 9,
-        "added": 24,
-        "candidate_count": 59,
-        "admission_rate": 40.68,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://habr.com/ru/companies/gaz-is/articles/1109898/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1109898",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.0,
-          "bonus_total": 48.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Снижает риски утечек и затраты на ручное маскирование данных в корпоративных СУБД.",
-            "title": "СУБД Jatoba теперь использует ИИ для автоматического выявления персональных данных",
-            "final_score": 76.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 63,
-        "query_errors": 1,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 210,
-        "raw_items": 1146,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 3,
-          "Habr AI/News": 40,
-          "CNews": 112,
-          "Euronews": 50
-        },
-        "score_filtered": 1047,
-        "quality_filtered": 31,
-        "story_dedup": 9,
-        "candidates": 59,
-        "candidate_rate": 0.063,
-        "score_buckets": {
-          "0–39": 968,
-          "40–49": 106,
-          "50–59": 66,
-          "60–69": 6,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 1,
-          "4": 0,
-          "5": 1,
-          "6": 6,
-          "7": 6,
-          "8": 5,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795100456,
       "status": "OK",
@@ -22787,10 +22638,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795338539,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 31.44,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 12,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Снижение стоимости инференса в AWS напрямую влияет на юнит-экономику любых ИИ-продуктов.",
+            "title": "Amazon Reportedly Near $7.5 Billion Deal to Acquire Decart, Taking Aim at Nvidia With AI Chip Efficiency Push - BigGo Finance",
+            "final_score": 67.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 40,
+        "raw_items": 306,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 26,
+          "CNews": 0,
+          "Euronews": 12
+        },
+        "score_filtered": 287,
+        "quality_filtered": 6,
+        "story_dedup": 1,
+        "candidates": 12,
+        "candidate_rate": 0.0451,
+        "score_buckets": {
+          "0–39": 265,
+          "40–49": 28,
+          "50–59": 12,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795338073.4499338,
+  "last_search_ts": 1795338539.4118907,
   "last_publish_ts": 1795336393.2439437,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
