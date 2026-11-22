@@ -1,6 +1,5 @@
 {
   "published": {
-    "9fd103250e4f24e20d5f2b26a66a4e8e438915cd005a5b09546a9f84bd3cbd98": 1792780128,
     "eb5710fe99a3dc0802097bbd18ceee3050f694953968c49884ab83fb54bce161": 1792781100,
     "7515e72079fb946e673d590c939274dce7e322a85d3ee1dfe9e1a1f81fa7644c": 1792781327,
     "1c30b798273be513bc8241efc616b7d1ddde93fd27d18cad108a00ed94346707": 1792781566,
@@ -1439,8 +1438,6 @@
     "249f7ba4ea9607021161882bdd577fca526de0ef8eeede5ad1f77e07fe7aa9a8": 1795371899
   },
   "known": {
-    "249f7ba4ea9607021161882bdd577fca526de0ef8eeede5ad1f77e07fe7aa9a8": 1795367100.2219484,
-    "204006b7bb0584abfeceb218daa8bf1807d55ac38b9e969a8e4d1bc4bb63b2e7": 1795367100.2219484,
     "e143b0b7dcbc85845ac4237bdfd9137f2979410e0d720c5984212cacc5b39062": 1795371899.1477911
   },
   "queue": [
@@ -1516,30 +1513,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795371899.1477911,
+    "last_start_ts": 1795372642.209592,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795371899.1477911,
-    "last_success_ts": 1795371899.1477911,
-    "last_candidates": 14,
-    "last_published": 1,
+    "last_run_ts": 1795372642.209592,
+    "last_success_ts": 1795372642.209592,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 2
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795371899.1463342
+      "disabled_until": 1795376228.4485805,
+      "reason": "The read operation timed out",
+      "updated_at": 1795372628.4485834
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795367094.8269382
+      "disabled_until": 1795376231.5417156,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795372631.5417175
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795367094.8269382
+      "disabled_until": 1795459042.2078252,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1795372642.2078266
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1547,19 +1544,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795367094.8269382
+      "disabled_until": 1795376241.1953847,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795372641.195387
     }
   },
   "stories": {
-    "15f7c9962c4c0f85656b958154ef32e1f83536eb39067699bd2eb9c3d5740def": {
-      "time": 1795285520,
-      "title": "Google Announces $5 Million Funding for IIT Kharagpur Advanced AI Research on Institute’s 75th Anniversary - Pragativadi",
-      "desc": "Google Announces $5 Million Funding for IIT Kharagpur Advanced AI Research on Institute’s 75th Anniversary Pragativadi",
-      "source": "Pragativadi",
-      "region": "WORLD"
-    },
     "ee6217d42ec105b576c9368cf6d7500c1d322eb6c51ca05a745a51a2a7bbd9dd": {
       "time": 1795286949,
       "title": "Хайп-цикл Гартнера — это гегелевская триада. Что инженеру делать во впадине разочарования",
@@ -1843,146 +1833,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795161646,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 36.41,
-      "candidates": 23,
-      "queue_before": 10,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 9,
-        "known_recent": 0,
-        "already_queued": 5,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 8,
-        "candidate_count": 23,
-        "admission_rate": 34.78,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://habr.com/ru/companies/ppr/articles/1110176/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1110176",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Прямая оптимизация процесса подготовки документации снижает трудозатраты аналитиков и ускоряет цикл разработки.",
-            "title": "Как AI-агент работает в конвейере требований",
-            "final_score": 77.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 7,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 46,
-        "query_errors": 18,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 119,
-        "raw_items": 402,
-        "source_counts": {
-          "TechCrunch AI": 5,
-          "VentureBeat AI": -1,
-          "The Verge AI": 4,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 4,
-          "Habr AI/News": 40,
-          "CNews": 40,
-          "Euronews": 26
-        },
-        "score_filtered": 363,
-        "quality_filtered": 15,
-        "story_dedup": 1,
-        "candidates": 23,
-        "candidate_rate": 0.0813,
-        "score_buckets": {
-          "0–39": 323,
-          "40–49": 54,
-          "50–59": 22,
-          "60–69": 3,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 3,
-          "6": 3,
-          "7": 1,
-          "8": 2,
-          "9": 1,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795162136,
       "status": "OK",
@@ -23933,6 +23783,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1795372642,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 33.84,
+      "candidates": 0,
+      "queue_before": 2,
+      "queue_after": 2,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
