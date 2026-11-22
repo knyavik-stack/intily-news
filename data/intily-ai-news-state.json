@@ -1,6 +1,5 @@
 {
   "published": {
-    "3e57bcfaf8876ef2db5e8064e55ccf12ac1936b6d83649efc975f5459e3c1452": 1792749416,
     "bb339fb31bd4b49f7cdd002e40dfc41af4196c531e2dfd6e4239214c7779c450": 1792754221,
     "b0b77fd70e5837c7e52872a75f5905cc3b1304c0b32928786c8e411d0baccc5a": 1792755178,
     "1932b3d26731e7249ba97cddba05ca25117d0d400a64fd9bc094816d5616cf91": 1792758539,
@@ -1440,21 +1439,21 @@
     "ffe6db669786c67ba2ecef0887cb425c4b5ae358155138afc2bbbba9ede71ee4": 1795334699,
     "0389ec5854f599fbd41538aa940deff2c95c5be222340dd77280f82dbcc2b7af": 1795336129,
     "22f4bdea992ca78f5d91256768da9b40e3e47a311c29b80ef620b125d13cd945": 1795336393,
-    "68845806541119c927401c2fea9d5e78e9cc321a2c429f21266264b39c85426c": 1795340456
+    "68845806541119c927401c2fea9d5e78e9cc321a2c429f21266264b39c85426c": 1795340456,
+    "6306ed4b8de3392dfa72a6528e858f303082dc6ea7616cf616262e40448fce28": 1795343088
   },
   "known": {
-    "0389ec5854f599fbd41538aa940deff2c95c5be222340dd77280f82dbcc2b7af": 1795336129.658563,
-    "22f4bdea992ca78f5d91256768da9b40e3e47a311c29b80ef620b125d13cd945": 1795336129.658563,
-    "68845806541119c927401c2fea9d5e78e9cc321a2c429f21266264b39c85426c": 1795340456.5179152
+    "68845806541119c927401c2fea9d5e78e9cc321a2c429f21266264b39c85426c": 1795340456.5179152,
+    "6306ed4b8de3392dfa72a6528e858f303082dc6ea7616cf616262e40448fce28": 1795343088.7857866
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1795340456.5179152,
+    "last_start_ts": 1795343088.7857866,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795340456.5179152,
-    "last_success_ts": 1795340456.5179152,
-    "last_candidates": 11,
+    "last_run_ts": 1795343088.7857866,
+    "last_success_ts": 1795343088.7857866,
+    "last_candidates": 13,
     "last_published": 1,
     "queue_size": 0
   },
@@ -1462,7 +1461,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795340507.2832434
+      "updated_at": 1795343131.584884
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1486,13 +1485,6 @@
     }
   },
   "stories": {
-    "b593f73efa9c67ee5f676f9f2bd9118dee8bd90c683118aba7b004fe4fb4c6cb": {
-      "time": 1795255991,
-      "title": "AI-оценка закупки на 50 млн ₽: как отделить извлечение условий от расчётов и решения об участии",
-      "desc": "Рассмотрим условную закупку на 50 млн ₽. Наивный AI-процесс выглядит так: загрузили документацию, спросили «выгодно ли участвовать?», получили связный текст и итоговую рекомендацию. Проблема в том, что ответ может соединять три разных класса информации: факты из документа, оценки компании и допущения самой модели. Внешне все три типа выглядят одинаково уверенно. Если не зафиксировать их происхождение, итоговое решение становится непроверяемым. Практически полезнее разделить систему на несколько операций: извлечение требований, валидация источников, детерминированный расчёт, анализ движения денежных средств, проверка рисков и утверждение решения ответственным сотрудником. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "11cf5f339a52690914e0411176f765bf733a6956bdc2368010a25c737abfe16c": {
       "time": 1795256956,
       "title": "SpaceX Sells $32 Billion Bonds for Nvidia Chips - Wisevoter",
@@ -1877,10 +1869,16 @@
       "desc": "Рейтинги языковых моделей обычно читают как турнирную таблицу. Для юридических задач это мало что дает: различия между соседними строками, как правило, меньше погрешности измерения, а надежность модели-судьи, которая выставляет оценки, почти никогда не проверяется. В ноябре я повторил срез Lexometrica Ground Truth - 15 моделей, 30 закрытых кейсов по практике Верховного Суда РФ, два LLM-судьи - и на этот раз проверял не только модели, но и судей. Ниже - дизайн исследования, результаты и то, что удалось измерить про LLM-as-a-Judge: согласие судей, смещение судьи-участника и вклад судьи в общую погрешность. Полная версия с расчетами выйдет препринтом. У замеров есть прикладная цель - в сервисе «неШемяка!» исход судебного спора прогнозируется по материалам дела пространным LLM-пайплайном. Модели в нем мы меняем на флагманские по мере их выхода, но дважды в год решили подтверждать выбор на собственном датасете. Предыдущий срез был в марте 2026 года, этот - в ноябре. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "6306ed4b8de3392dfa72a6528e858f303082dc6ea7616cf616262e40448fce28": {
+      "time": 1795343088,
+      "title": "OpenAI's research agents now finish 46% of two-to-four-hour tasks alone - PPC Land",
+      "desc": "OpenAI's research agents now finish 46% of two-to-four-hour tasks alone PPC Land",
+      "source": "PPC Land",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1899,81 +1897,10 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1795103358,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 29.83,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 19,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1795104072,
       "status": "OK",
@@ -22976,11 +22903,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795343088,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 43.87,
+      "candidates": 13,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 13,
+        "admission_rate": 7.69,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://ppc.land/openais-research-agents-now-finish-46-of-two-to-four-hour-tasks-alone/",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 8.67,
+          "bonus_total": 78.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 3,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра штатного расписания и автоматизации исследовательских процессов для сохранения конкурентоспособности.",
+            "title": "OpenAI's research agents now finish 46% of two-to-four-hour tasks alone - PPC Land",
+            "final_score": 66.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 46,
+        "raw_items": 364,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 32,
+          "CNews": 0,
+          "Euronews": 14
+        },
+        "score_filtered": 341,
+        "quality_filtered": 9,
+        "story_dedup": 1,
+        "candidates": 13,
+        "candidate_rate": 0.0409,
+        "score_buckets": {
+          "0–39": 322,
+          "40–49": 28,
+          "50–59": 12,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795340456.5179152,
-  "last_publish_ts": 1795340456.5179152,
+  "last_search_ts": 1795343088.7857866,
+  "last_publish_ts": 1795343088.7857866,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
