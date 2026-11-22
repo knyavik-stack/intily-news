@@ -1488,21 +1488,21 @@
         "freshness": 2.0,
         "low_signal_penalty": 0.0,
         "base_score": 47.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 47.0
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 68.0
       },
       "base_score": 47.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 47.0,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 68.0,
       "key": "a4426e84fd53d31d6edd949f5e03040811ac65401ef4ad33a6126f4fae6f3d1b",
-      "importance": 47.0,
+      "importance": 68.0,
       "editorial_value": 50.0,
       "topics": [
         "business"
       ],
-      "audience_score": null,
+      "audience_score": 7.0,
       "tier": "A"
     },
     {
@@ -1796,30 +1796,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795323912.9371254,
+    "last_start_ts": 1795324187.372134,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795323912.9371254,
-    "last_success_ts": 1795323912.9371254,
-    "last_candidates": 14,
-    "last_published": 1,
+    "last_run_ts": 1795324187.372134,
+    "last_success_ts": 1795324187.372134,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 9
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795323944.3429458
+      "disabled_until": 1795327763.4223132,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1795324163.4223154
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795284801.152208
+      "disabled_until": 1795327765.3017328,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795324165.301735
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795284801.152208
+      "disabled_until": 1795410587.338923,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1795324187.3389251
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1827,9 +1827,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795284801.152208
+      "disabled_until": 1795327786.2205253,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795324186.2205272
     }
   },
   "stories": {
@@ -2270,94 +2270,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1795085806,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 16.52,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/articles/1109822/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1109822",
-            "image_url": "https://habr.com/share/publication/1109822/57626e4d2241012cdc1fc7e631d66b16/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 9.5,
-          "bonus_total": 57.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходимость пересмотра стратегии SDLC для предотвращения деградации процессов из-за внедрения AI-инструментов.",
-            "title": "AI ускоряет написание кода. Почему это не гарантирует ускорения доставки?",
-            "final_score": 88.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 5,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795086047,
       "status": "OK",
@@ -22604,6 +22516,84 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1795324187,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 30.9,
+      "candidates": 0,
+      "queue_before": 9,
+      "queue_after": 9,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 7.0,
+          "bonus_total": 21.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Сделка может изменить цены и доступность генеративного видео в экосистеме Amazon, но пока это только переговоры.",
+            "title": "Amazon in advanced talks to buy AI startup Decart for $7.5 billion, report says - Business Upturn",
+            "final_score": 68.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 8,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
