@@ -1,9 +1,5 @@
 {
   "published": {
-    "2a0469e5687bbc3e137613752767dbf509be81a32e9395f1ef24efcfdae8ea12": 1792737909,
-    "b159efe9c70009cbad4ce62d10d09d486d7be257b34585a0cf4607df274c5174": 1792738141,
-    "50e2235dfe02cad923aeda7285e6b902e67f9203ec1f5e0ccd5a8cca6277e898": 1792738371,
-    "27f25d1a43c3c2fd9ce5304bb3860c28691b2b48583276ebfa4a4b8a0006e9dd": 1792738610,
     "a4092f17fe39fed6395c30c2a33eba465970777d97ba140ffd2a183ecd0cacb0": 1792739330,
     "0612598a3d6a7767b06ce5d0242b03aad41f70a27865a0ef8393026173b3c171": 1792739569,
     "33d5d0a6c707659a0dc3dbf42d380e3e1d47843cf5cd754b0549f8abebaa5769": 1792740531,
@@ -1464,12 +1460,12 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1795329893.4483337,
+    "last_start_ts": 1795330853.3810303,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795329893.4483337,
-    "last_success_ts": 1795329893.4483337,
-    "last_candidates": 12,
+    "last_run_ts": 1795330853.3810303,
+    "last_success_ts": 1795330853.3810303,
+    "last_candidates": 11,
     "last_published": 0,
     "queue_size": 0
   },
@@ -1477,7 +1473,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795329925.2768347
+      "updated_at": 1795330891.8591533
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1501,20 +1497,6 @@
     }
   },
   "stories": {
-    "a1a6fc65e8066f11cd9aa62ef00571d5a875d2ec98997f1891d6a394f3b7f394": {
-      "time": 1795243762,
-      "title": "\"Terminator\" of cyberattacks: The Chinese artificial intelligence tool that can turn even amateur hackers into a global threat - Gazeta Express",
-      "desc": "\"Terminator\" of cyberattacks: The Chinese artificial intelligence tool that can turn even amateur hackers into a global threat Gazeta Express",
-      "source": "Gazeta Express",
-      "region": "WORLD"
-    },
-    "468841999d76730eb1fd76cc067c62e4ab327626acc72f98ed2e5a71225f597e": {
-      "time": 1795244242,
-      "title": "Субботний венчур: рекордное IPO Anthropic и миллиардер во главе Acclaim AI - Forbes.ru",
-      "desc": "Субботний венчур: рекордное IPO Anthropic и миллиардер во главе Acclaim AI Forbes.ru",
-      "source": "Forbes.ru",
-      "region": "RUSSIA"
-    },
     "1161179dcee8f7a7b28d671b4474b8a5497c8ed2a98a16d0b07f9ac7c803c9b5": {
       "time": 1795245917,
       "title": "Когда ИИ ошибается убедительно: инженерия здравого смысла",
@@ -1973,96 +1955,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1795090616,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 13.73,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.bankinfosecurity.com/ai-agent-finds-critical-java-flaw-in-just-3-hours-a-33427",
-            "image_url": "https://ismg-cdn.nyc3.cdn.digitaloceanspaces.com/articles/ai-agent-finds-critical-java-flaw-in-just-3-hours-image_large-10-a-33427.jpg",
-            "width": 860,
-            "height": 520,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.67,
-          "bonus_total": 69.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходимость внедрения AI-инструментов для автоматизированного аудита безопасности кода для минимизации рисков взлома.",
-            "title": "AI Agent Finds Critical Java Flaw in Just 3 Hours - BankInfoSecurity",
-            "final_score": 74.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795091094,
       "status": "OK",
@@ -22426,10 +22318,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795330853,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 38.5,
+      "candidates": 11,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 11,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.5,
+          "bonus_total": 51.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Снижение стоимости инференса через оптимизацию железа напрямую влияет на юнит-экономику любого AI-продукта.",
+            "title": "Amazon Reportedly Near $7.5 Billion Deal to Acquire Decart, Taking Aim at Nvidia With AI Chip Efficiency Push - BigGo Finance",
+            "final_score": 71.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 34,
+        "raw_items": 276,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 19,
+          "CNews": 0,
+          "Euronews": 11
+        },
+        "score_filtered": 254,
+        "quality_filtered": 10,
+        "story_dedup": 1,
+        "candidates": 11,
+        "candidate_rate": 0.0455,
+        "score_buckets": {
+          "0–39": 237,
+          "40–49": 27,
+          "50–59": 11,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795329893.4483337,
+  "last_search_ts": 1795330853.3810303,
   "last_publish_ts": 1795329418.749233,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
