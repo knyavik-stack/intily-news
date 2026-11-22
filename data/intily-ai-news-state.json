@@ -1,6 +1,5 @@
 {
   "published": {
-    "d9573358b6854e63cea823053968a229292dad55e05d681738493b837407e613": 1792742703,
     "b8f45d5ae4b1b9c380dcce695cf53bf9fc4b0f10fbdb732e67bc9c284dbe21c6": 1792743411,
     "de22998cb78c9fe57f1d312371a46e072f5577f85574fbabc36b3ebb0983978b": 1792744377,
     "ec80870568b42a5c286203dc40d490872721dc18257f47eb6203d95294f0fe06": 1792744613,
@@ -1459,20 +1458,20 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1795334699.4654627,
+    "last_start_ts": 1795334933.5110404,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795334699.4654627,
-    "last_success_ts": 1795334699.4654627,
-    "last_candidates": 9,
-    "last_published": 1,
+    "last_run_ts": 1795334933.5110404,
+    "last_success_ts": 1795334933.5110404,
+    "last_candidates": 12,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795334725.4205692
+      "updated_at": 1795334965.4707284
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1940,96 +1939,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795093489,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 5.0,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/companies/h3llo_cloud/articles/1109868/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1109868",
-            "image_url": "https://habr.com/share/publication/1109868/1e338bd745a76a1803db82e4fac11a2d/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра стратегии внедрения LLM с акцентом на RAG и инженерный контроль вместо слепого доверия моделям.",
-            "title": "Я обеими руками за цифровизацию, но заменять живых людей нейронками пока рано",
-            "final_score": 72.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795094207,
       "status": "OK",
@@ -22598,10 +22507,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795334933,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 31.98,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 12,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Прямое влияние на будущую стоимость и архитектуру облачных ИИ-инфраструктур.",
+            "title": "Amazon Reportedly Near $7.5 Billion Deal to Acquire Decart, Taking Aim at Nvidia With AI Chip Efficiency Push - BigGo Finance",
+            "final_score": 71.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 40,
+        "raw_items": 307,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 25,
+          "CNews": 0,
+          "Euronews": 12
+        },
+        "score_filtered": 288,
+        "quality_filtered": 6,
+        "story_dedup": 1,
+        "candidates": 12,
+        "candidate_rate": 0.0449,
+        "score_buckets": {
+          "0–39": 269,
+          "40–49": 25,
+          "50–59": 12,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795334699.4654627,
+  "last_search_ts": 1795334933.5110404,
   "last_publish_ts": 1795334699.4654627,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
