@@ -1449,30 +1449,30 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1795358695.0489492,
+    "last_start_ts": 1795359176.0553646,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795358695.0489492,
-    "last_success_ts": 1795358695.0489492,
-    "last_candidates": 13,
+    "last_run_ts": 1795359176.0553646,
+    "last_success_ts": 1795359176.0553646,
+    "last_candidates": 14,
     "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795362322.6496937,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1795358722.6496964
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795359211.6145713
     },
     "GROQ": {
-      "disabled_until": 1795362325.5759964,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795358725.575999
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795359175.9518132
     },
     "OPENAI": {
-      "disabled_until": 1795445132.0738215,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795358732.073823
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795359175.9518132
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1480,19 +1480,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795362331.0463526,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795358731.0463545
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795359175.9518132
     }
   },
   "stories": {
-    "5d851cf37964b8a76482bc45230ecdcf40836ad33b18418564fbf844b057e044": {
-      "time": 1795272564,
-      "title": "Fortress.ai Launches AI-Native Command Platform to Address Critical Infrastructure Supply Chain Cyber Risks - Cybersecurity Insiders",
-      "desc": "Fortress.ai Launches AI-Native Command Platform to Address Critical Infrastructure Supply Chain Cyber Risks Cybersecurity Insiders",
-      "source": "Cybersecurity Insiders",
-      "region": "WORLD"
-    },
     "887546eeb1ec1b690a8d056e27bc13e5342a91bbbd3af8632b585ab64b75bec7": {
       "time": 1795273271,
       "title": "The AI race to fix security flaws could be making tech outages more common - NBC News",
@@ -1846,96 +1839,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795151808,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 13.61,
-      "candidates": 0,
-      "queue_before": 15,
-      "queue_after": 14,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 401: Unauthorized": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 401: Unauthorized"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 6.67,
-          "bonus_total": 60.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Необходим немедленный пересмотр стратегии безопасности и внедрение внешних фильтров для защиты ИИ-агентов от промпт-инъекций.",
-            "title": "Десять рабочих эксплойтов на 43 ИИ-агента. Представлен способ обойти все запреты без взлома самой модели - SecurityLab.ru",
-            "final_score": 74.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 11,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795152298,
       "status": "OK",
@@ -23671,10 +23574,140 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1795359176,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 35.69,
+      "candidates": 14,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 0,
+        "candidate_count": 14,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Позволяет оптимизировать выбор стека автоматизации и снизить операционные расходы через внедрение актуальных агентов.",
+            "title": "Best Personal AI Agents in 2026: OpenClaw, Hermes Agent, Gemini Spark and More, Compared on Memory, Security and Cost - MarkTechPost",
+            "final_score": 73.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 61,
+        "raw_items": 619,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 40,
+          "CNews": 0,
+          "Euronews": 19
+        },
+        "score_filtered": 593,
+        "quality_filtered": 9,
+        "story_dedup": 3,
+        "candidates": 14,
+        "candidate_rate": 0.0251,
+        "score_buckets": {
+          "0–39": 578,
+          "40–49": 24,
+          "50–59": 16,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795358695.0489492,
+  "last_search_ts": 1795359176.0553646,
   "last_publish_ts": 1795354612.5162132,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
