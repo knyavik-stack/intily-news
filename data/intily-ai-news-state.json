@@ -1,7 +1,5 @@
 {
   "published": {
-    "a4092f17fe39fed6395c30c2a33eba465970777d97ba140ffd2a183ecd0cacb0": 1792739330,
-    "0612598a3d6a7767b06ce5d0242b03aad41f70a27865a0ef8393026173b3c171": 1792739569,
     "33d5d0a6c707659a0dc3dbf42d380e3e1d47843cf5cd754b0549f8abebaa5769": 1792740531,
     "259f962d4c8b87d0f436896b7080be2d877a6491a2e6a4159b88a77c95f6faaa": 1792741972,
     "0f59744b9e1abd9983915447d6f12327d8fd812f5444b5a12f91def97b5ee120": 1792742207,
@@ -1452,28 +1450,29 @@
     "2561ebd9c74313f97e689aa9e16973b27466e92a6cc753206e95a5a1144b7003": 1795328449,
     "3f9b78d08016f0f900a7cb773c8825a35c0b3c3653b625403937559fd7e8e3aa": 1795328690,
     "acfb112f1d3eee73fa313b2666da5cd39a102e023b0bb2b6eec7ef6e1b10b9a8": 1795328933,
-    "9c4595a1742369fde02938592bfee6ac8d7119fbe9040dc4ee3ed1f3825e4524": 1795329418
+    "9c4595a1742369fde02938592bfee6ac8d7119fbe9040dc4ee3ed1f3825e4524": 1795329418,
+    "11ecd617ee4e763fea899015f3ee8ad62b6ea1155aae60dbfb37ae6787797aab": 1795332290
   },
   "known": {
-    "d68deeff11769f4e99750119cf7a330e6839824c742830cf149d136aef417598": 1795326797.8408036,
-    "acfb112f1d3eee73fa313b2666da5cd39a102e023b0bb2b6eec7ef6e1b10b9a8": 1795328690.3292692
+    "acfb112f1d3eee73fa313b2666da5cd39a102e023b0bb2b6eec7ef6e1b10b9a8": 1795328690.3292692,
+    "11ecd617ee4e763fea899015f3ee8ad62b6ea1155aae60dbfb37ae6787797aab": 1795332290.2233882
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1795330853.3810303,
+    "last_start_ts": 1795332290.2233882,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795330853.3810303,
-    "last_success_ts": 1795330853.3810303,
-    "last_candidates": 11,
-    "last_published": 0,
+    "last_run_ts": 1795332290.2233882,
+    "last_success_ts": 1795332290.2233882,
+    "last_candidates": 6,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795330891.8591533
+      "updated_at": 1795332333.3303359
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1930,10 +1929,16 @@
       "desc": "Why Canadian billionaire Kevin O’Leary thinks Anthropic could be the next Amazon The Times of India",
       "source": "The Times of India",
       "region": "WORLD"
+    },
+    "11ecd617ee4e763fea899015f3ee8ad62b6ea1155aae60dbfb37ae6787797aab": {
+      "time": 1795332290,
+      "title": "Data Centers in Orbit: Google Prepares AI Satellite Launch - hi-Tech.ua",
+      "desc": "Data Centers in Orbit: Google Prepares AI Satellite Launch hi-Tech.ua",
+      "source": "hi-Tech.ua",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -1951,87 +1956,11 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
+    "WORLD",
     "WORLD",
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1795091094,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 11.8,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 17,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 12,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1795091809,
       "status": "OK",
@@ -22448,11 +22377,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795332290,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 50.77,
+      "candidates": 6,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 4,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 6,
+        "admission_rate": 16.67,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "IMAGE_CANDIDATES_FAILED: og_image:IMAGE_CONTENT_TYPE_INVALID | og_image:IMAGE_CONTENT_TYPE_INVALID | og_image:IMAGE_CONTENT_TYPE_INVALID | jsonld_image:IMAGE_DI": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "IMAGE_CANDIDATES_FAILED: og_image:IMAGE_CONTENT_TYPE_INVALID | og_image:IMAGE_CONTENT_TYPE_INVALID | og_image:IMAGE_CONTENT_TYPE_INVALID | jsonld_image:IMAGE_DIMENSIONS_INVALID | jsonld_image:IMAGE_DIMENSIONS_INVALID | jsonld_image:IMAGE_DI"
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.67,
+          "bonus_total": 69.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "Технологический сдвиг в инфраструктуре, требующий мониторинга для долгосрочного планирования сетевых решений.",
+            "title": "Data Centers in Orbit: Google Prepares AI Satellite Launch - hi-Tech.ua",
+            "final_score": 58.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 62,
+        "query_errors": 2,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 37,
+        "raw_items": 271,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 22,
+          "CNews": 0,
+          "Euronews": 11
+        },
+        "score_filtered": 256,
+        "quality_filtered": 8,
+        "story_dedup": 1,
+        "candidates": 6,
+        "candidate_rate": 0.0256,
+        "score_buckets": {
+          "0–39": 240,
+          "40–49": 24,
+          "50–59": 7,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795330853.3810303,
-  "last_publish_ts": 1795329418.749233,
+  "last_search_ts": 1795332290.2233882,
+  "last_publish_ts": 1795332290.2233882,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
