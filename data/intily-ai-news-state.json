@@ -1,7 +1,5 @@
 {
   "published": {
-    "ec80870568b42a5c286203dc40d490872721dc18257f47eb6203d95294f0fe06": 1792744613,
-    "e5dc3330190da131119e5c67363cfc3f832f2ab43b9c9cf717b9547bedfdb120": 1792744902,
     "f6a279f7c299ef7b66c55968adb4d4d39f3a4700fa37f5f31e8157462687fc58": 1792745570,
     "27d3c91431590c93306000e7a1414126e700c41971de24fc8b484fd007e4f477": 1792745814,
     "3b761217cb8b9658413a9fb331db370b10f0c94f997ff980dd6e843ec937fd52": 1792746073,
@@ -1460,20 +1458,20 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1795336393.2439437,
+    "last_start_ts": 1795337338.6213038,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795336393.2439437,
-    "last_success_ts": 1795336393.2439437,
-    "last_candidates": 14,
-    "last_published": 1,
+    "last_run_ts": 1795337338.6213038,
+    "last_success_ts": 1795337338.6213038,
+    "last_candidates": 12,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795336418.9332795
+      "updated_at": 1795337385.4392502
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1497,13 +1495,6 @@
     }
   },
   "stories": {
-    "f8f06d6a1c265466bd9458fe074b11e018a01c1f53139e1e4f569fcac097fc4c": {
-      "time": 1795250717,
-      "title": "Как ИИ помогает восстанавливать старые игры с исходным кодом",
-      "desc": "О цифровом наследии игровой индустрии принято говорить с легкой грустью. По данным исследования Video Game History Foundation и Software Preservation Network за 2023 год, более 85% классических игр сегодня уже невозможно легально приобрести. У большинства игр 90-х и начала 2000-х годов исходный код утрачен. Остались лишь бинарники: дампы картриджей (ROM) и исполняемые файлы. Из них разработчикам и приходится восстанавливать логику. Энтузиасты нашли выход: они начали декомпилировать программы вручную, функцию за функцией. Это долгая и кропотливая работа, на одну игру нередко уходили годы. С 2025 года к задачам подключили LLM-агентов, благодаря чему сроки заметно сократились. В этой статье разберем, как устроена matching-декомпиляция, почему задача хорошо подходит для нейросетей и какие проекты уже удалось завершить. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "0da5dbbc3d79a4477715da4801a29474c3f6fa1c5e2bf2c629fad0c67ebfc68d": {
       "time": 1795251687,
       "title": "Создали общую базу знаний для продуктовой команды: разгрузили аналитиков и ускорили проверку гипотез",
@@ -1927,127 +1918,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795096146,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 39.39,
-      "candidates": 52,
-      "queue_before": 19,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 11,
-        "known_recent": 18,
-        "already_queued": 11,
-        "story_queue": 0,
-        "story_history": 5,
-        "added": 7,
-        "candidate_count": 52,
-        "admission_rate": 13.46,
-        "dominant_block": "known_recent",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 62,
-        "query_errors": 2,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 198,
-        "raw_items": 1071,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 2,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 2,
-          "Habr AI/News": 40,
-          "CNews": 104,
-          "Euronews": 50
-        },
-        "score_filtered": 982,
-        "quality_filtered": 29,
-        "story_dedup": 8,
-        "candidates": 52,
-        "candidate_rate": 0.0596,
-        "score_buckets": {
-          "0–39": 922,
-          "40–49": 86,
-          "50–59": 57,
-          "60–69": 6,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 1,
-          "4": 0,
-          "5": 1,
-          "6": 6,
-          "7": 6,
-          "8": 4,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1795097331,
       "status": "OK",
@@ -22749,10 +22619,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795337338,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 46.84,
+      "candidates": 12,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 11,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 12,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Снижение стоимости инференса на AWS напрямую влияет на юнит-экономику любого AI-продукта.",
+            "title": "Amazon Reportedly Near $7.5 Billion Deal to Acquire Decart, Taking Aim at Nvidia With AI Chip Efficiency Push - BigGo Finance",
+            "final_score": 70.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 40,
+        "raw_items": 297,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 26,
+          "CNews": 0,
+          "Euronews": 11
+        },
+        "score_filtered": 278,
+        "quality_filtered": 6,
+        "story_dedup": 1,
+        "candidates": 12,
+        "candidate_rate": 0.0467,
+        "score_buckets": {
+          "0–39": 258,
+          "40–49": 26,
+          "50–59": 12,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795336393.2439437,
+  "last_search_ts": 1795337338.6213038,
   "last_publish_ts": 1795336393.2439437,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
