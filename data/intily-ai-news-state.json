@@ -1439,28 +1439,30 @@
     "4d4c53968ece4361326b63f7a18e0970d8ce9c7f75702ab890c44acc529fde35": 1795334455,
     "ffe6db669786c67ba2ecef0887cb425c4b5ae358155138afc2bbbba9ede71ee4": 1795334699,
     "0389ec5854f599fbd41538aa940deff2c95c5be222340dd77280f82dbcc2b7af": 1795336129,
-    "22f4bdea992ca78f5d91256768da9b40e3e47a311c29b80ef620b125d13cd945": 1795336393
+    "22f4bdea992ca78f5d91256768da9b40e3e47a311c29b80ef620b125d13cd945": 1795336393,
+    "68845806541119c927401c2fea9d5e78e9cc321a2c429f21266264b39c85426c": 1795340456
   },
   "known": {
     "0389ec5854f599fbd41538aa940deff2c95c5be222340dd77280f82dbcc2b7af": 1795336129.658563,
-    "22f4bdea992ca78f5d91256768da9b40e3e47a311c29b80ef620b125d13cd945": 1795336129.658563
+    "22f4bdea992ca78f5d91256768da9b40e3e47a311c29b80ef620b125d13cd945": 1795336129.658563,
+    "68845806541119c927401c2fea9d5e78e9cc321a2c429f21266264b39c85426c": 1795340456.5179152
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1795339975.6044462,
+    "last_start_ts": 1795340456.5179152,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795339975.6044462,
-    "last_success_ts": 1795339975.6044462,
+    "last_run_ts": 1795340456.5179152,
+    "last_success_ts": 1795340456.5179152,
     "last_candidates": 11,
-    "last_published": 0,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795340015.175589
+      "updated_at": 1795340507.2832434
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1868,11 +1870,17 @@
       "desc": "Security and Privacy: российский ИИ распознал кибератаки лучше аналогов из США и КНР prospect.com.ru",
       "source": "prospect.com.ru",
       "region": "RUSSIA"
+    },
+    "68845806541119c927401c2fea9d5e78e9cc321a2c429f21266264b39c85426c": {
+      "time": 1795340456,
+      "title": "Lexometrica Ground Truth: 15 LLM на 30 кейсах по практике ВС РФ",
+      "desc": "Рейтинги языковых моделей обычно читают как турнирную таблицу. Для юридических задач это мало что дает: различия между соседними строками, как правило, меньше погрешности измерения, а надежность модели-судьи, которая выставляет оценки, почти никогда не проверяется. В ноябре я повторил срез Lexometrica Ground Truth - 15 моделей, 30 закрытых кейсов по практике Верховного Суда РФ, два LLM-судьи - и на этот раз проверял не только модели, но и судей. Ниже - дизайн исследования, результаты и то, что удалось измерить про LLM-as-a-Judge: согласие судей, смещение судьи-участника и вклад судьи в общую погрешность. Полная версия с расчетами выйдет препринтом. У замеров есть прикладная цель - в сервисе «неШемяка!» исход судебного спора прогнозируется по материалам дела пространным LLM-пайплайном. Модели в нем мы меняем на флагманские по мере их выхода, но дважды в год решили подтверждать выбор на собственном датасете. Предыдущий срез был в марте 2026 года, этот - в ноябре. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1887,84 +1895,13 @@
     "WORLD",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795102882,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 31.67,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1795103358,
       "status": "OK",
@@ -22898,11 +22835,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795340456,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 51.22,
+      "candidates": 11,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 9,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 11,
+        "admission_rate": 9.09,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://habr.com/ru/articles/1110824/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1110824",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 8.0,
+          "bonus_total": 72.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 3,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Позволяет оптимизировать выбор LLM для юридических продуктов и снизить риски ошибок в автоматизации правовых решений.",
+            "title": "Lexometrica Ground Truth: 15 LLM на 30 кейсах по практике ВС РФ",
+            "final_score": 65.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 61,
+        "query_errors": 3,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 41,
+        "raw_items": 316,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 29,
+          "CNews": 0,
+          "Euronews": 11
+        },
+        "score_filtered": 296,
+        "quality_filtered": 8,
+        "story_dedup": 1,
+        "candidates": 11,
+        "candidate_rate": 0.04,
+        "score_buckets": {
+          "0–39": 278,
+          "40–49": 26,
+          "50–59": 11,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795339975.6044462,
-  "last_publish_ts": 1795336393.2439437,
+  "last_search_ts": 1795340456.5179152,
+  "last_publish_ts": 1795340456.5179152,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
