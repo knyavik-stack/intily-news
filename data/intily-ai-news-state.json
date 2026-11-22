@@ -1435,29 +1435,31 @@
     "249f7ba4ea9607021161882bdd577fca526de0ef8eeede5ad1f77e07fe7aa9a8": 1795371899,
     "e143b0b7dcbc85845ac4237bdfd9137f2979410e0d720c5984212cacc5b39062": 1795373095,
     "204006b7bb0584abfeceb218daa8bf1807d55ac38b9e969a8e4d1bc4bb63b2e7": 1795374294,
-    "3dad6bc224ee4f30c864668c685012248f6ffa0b85558dcf49fc1491b3b694cc": 1795374784
+    "3dad6bc224ee4f30c864668c685012248f6ffa0b85558dcf49fc1491b3b694cc": 1795374784,
+    "84bca5d1d5ab42bc316385b770571874f5444cbdfb4af8b8eae6ba74232e1233": 1795375976
   },
   "known": {
     "e143b0b7dcbc85845ac4237bdfd9137f2979410e0d720c5984212cacc5b39062": 1795371899.1477911,
     "3dad6bc224ee4f30c864668c685012248f6ffa0b85558dcf49fc1491b3b694cc": 1795374294.8949108,
-    "bbb1c194fa0dc8a8cb4ef769155c9479fb4e00e83f2bfbd34bf9b30709867ed6": 1795374294.8949108
+    "bbb1c194fa0dc8a8cb4ef769155c9479fb4e00e83f2bfbd34bf9b30709867ed6": 1795374294.8949108,
+    "84bca5d1d5ab42bc316385b770571874f5444cbdfb4af8b8eae6ba74232e1233": 1795375976.5801902
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1795375255.0722768,
+    "last_start_ts": 1795375976.5801902,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795375255.0722768,
-    "last_success_ts": 1795375255.0722768,
-    "last_candidates": 13,
-    "last_published": 0,
+    "last_run_ts": 1795375976.5801902,
+    "last_success_ts": 1795375976.5801902,
+    "last_candidates": 16,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795375297.5578961
+      "updated_at": 1795376041.5285127
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1718,10 +1720,16 @@
       "desc": "Автоматизация с ИИ может быстро выдать результат и всё же потребовать настройки, проверки и ремонта. В октябре я заморозил сложную фабрику статей, столкнулся с падением ночного запуска после обновления Claude Code и добавил проверку дат для семейной афиши. Общих затрат на эти задачи я не считал, поэтому по отдельным эпизодам нельзя сказать, сколько времени автоматизация сэкономила или забрала. Можно разобрать, где именно возникла дополнительная работа и как учитывать её в следующем сравнении. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "84bca5d1d5ab42bc316385b770571874f5444cbdfb4af8b8eae6ba74232e1233": {
+      "time": 1795375976,
+      "title": "Способен ли ИИ разработать лекарство? OpenAI представила MedChemBench — тест из 99 задач по медицинской химии, приближенных к реальной деятельности специалистов - prospect.com.ru",
+      "desc": "Способен ли ИИ разработать лекарство? OpenAI представила MedChemBench — тест из 99 задач по медицинской химии, приближенных к реальной деятельности специалистов prospect.com.ru",
+      "source": "prospect.com.ru",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -1740,87 +1748,10 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795164805,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 36.66,
-      "candidates": 0,
-      "queue_before": 15,
-      "queue_after": 15,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 9.0,
-          "bonus_total": 27.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Нужно пересмотреть поставщиков и оценить риски безопасности.",
-            "title": "Over 30% Of Approved U.S. AI Chips, Including NVIDIA’s H200, Went To Pentagon-Listed Chinese Military Companies, House Committee Data Reveals - Wccftech",
-            "final_score": 73.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1795165013,
       "status": "OK",
@@ -23851,11 +23782,151 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795375976,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 65.99,
+      "candidates": 16,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 13,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 1,
+        "candidate_count": 16,
+        "admission_rate": 6.25,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://prospect.com.ru/news/7191058/sposoben-li-ii-razrabotat-lekarstvo-openai-predstavila-medchembench-test-iz-99-zadach-po-meditsinsko.html",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет оценить применимость текущих LLM для автоматизации R&D в фармсекторе и планировать интеграцию ИИ в исследовательские процессы.",
+            "title": "Способен ли ИИ разработать лекарство? OpenAI представила MedChemBench — тест из 99 задач по медицинской химии, приближенных к реальной деятельности специалистов - prospect.com.ru",
+            "final_score": 70.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 65,
+        "raw_items": 766,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 40,
+          "CNews": 0,
+          "Euronews": 22
+        },
+        "score_filtered": 731,
+        "quality_filtered": 17,
+        "story_dedup": 2,
+        "candidates": 16,
+        "candidate_rate": 0.0228,
+        "score_buckets": {
+          "0–39": 703,
+          "40–49": 45,
+          "50–59": 17,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795375255.0722768,
-  "last_publish_ts": 1795374784.9402885,
+  "last_search_ts": 1795375976.5801902,
+  "last_publish_ts": 1795375976.5801902,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
