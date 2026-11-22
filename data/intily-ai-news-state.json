@@ -1442,28 +1442,30 @@
     "e19c2ba77908d1ef238d5aba9c1ce54a2e72fb3575b169f86a78fcb966a44078": 1795348617,
     "4dae43048d88b04a0181efa507146bdf6b9a5a5694a8bdffb238d62d4b815fba": 1795350298,
     "14e96277f37a6a8d53d892e9880d713d6fb33a3702273844981bbb39410b1d47": 1795351024,
-    "801efc1322968b4e8d7e00c5ea7fcda7a559e8d3dd7e4808378a4e7eb65ea752": 1795352215
+    "801efc1322968b4e8d7e00c5ea7fcda7a559e8d3dd7e4808378a4e7eb65ea752": 1795352215,
+    "61ac2f43dc2b270825072163c0d9d42fec1a848b9d989b927632eab4d5c2507f": 1795354612
   },
   "known": {
     "14e96277f37a6a8d53d892e9880d713d6fb33a3702273844981bbb39410b1d47": 1795350298.095099,
-    "801efc1322968b4e8d7e00c5ea7fcda7a559e8d3dd7e4808378a4e7eb65ea752": 1795350298.095099
+    "801efc1322968b4e8d7e00c5ea7fcda7a559e8d3dd7e4808378a4e7eb65ea752": 1795350298.095099,
+    "61ac2f43dc2b270825072163c0d9d42fec1a848b9d989b927632eab4d5c2507f": 1795354612.5162132
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1795354130.4315908,
+    "last_start_ts": 1795354612.5162132,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795354130.4315908,
-    "last_success_ts": 1795354130.4315908,
-    "last_candidates": 12,
-    "last_published": 0,
+    "last_run_ts": 1795354612.5162132,
+    "last_success_ts": 1795354612.5162132,
+    "last_candidates": 13,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795354171.0126925
+      "updated_at": 1795354650.1461244
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1836,13 +1838,19 @@
       "desc": "Лучшие персональные ИИ-агенты 2026: сравнение Hermes, OpenClaw и Gemini Spark Techora.ru",
       "source": "Techora.ru",
       "region": "RUSSIA"
+    },
+    "61ac2f43dc2b270825072163c0d9d42fec1a848b9d989b927632eab4d5c2507f": {
+      "time": 1795354612,
+      "title": "Anthropic потребовалось бы 602 миллиарда долларов выручки в год, чтобы окупить вычислительные мощности - Pasquale Pillitteri",
+      "desc": "Anthropic потребовалось бы 602 миллиарда долларов выручки в год, чтобы окупить вычислительные мощности Pasquale Pillitteri",
+      "source": "Pasquale Pillitteri",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -1858,99 +1866,10 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795113887,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 9.69,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 18,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 400: Bad Request": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 400: Bad Request"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.5,
-          "bonus_total": 51.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Экстремальная оценка компании прямо влияет на доступность венчурного капитала и стратегическое планирование затрат в AI-секторе.",
-            "title": "US: Protesters warn of AI bubble as Anthropic makes stock market history",
-            "final_score": 79.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795114129,
       "status": "OK",
@@ -23384,11 +23303,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795354612,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 38.21,
+      "candidates": 13,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 1,
+        "candidate_count": 13,
+        "admission_rate": 7.69,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://pasqualepillitteri.it/ru/news/36033/anthropic-vyruchka-602-milliarda-dollarov-v-god-vychislitelnye-moshchnosti",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 8.33,
+          "bonus_total": 75.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 10.0,
+            "bonus": 30.0,
+            "reason": "Необходимость пересмотра стратегии зависимости от API Anthropic из-за риска резкого роста цен или закрытия сервиса.",
+            "title": "Anthropic потребовалось бы 602 миллиарда долларов выручки в год, чтобы окупить вычислительные мощности - Pasquale Pillitteri",
+            "final_score": 78.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 63,
+        "query_errors": 1,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 58,
+        "raw_items": 511,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 39,
+          "CNews": 0,
+          "Euronews": 18
+        },
+        "score_filtered": 490,
+        "quality_filtered": 5,
+        "story_dedup": 3,
+        "candidates": 13,
+        "candidate_rate": 0.0287,
+        "score_buckets": {
+          "0–39": 474,
+          "40–49": 21,
+          "50–59": 14,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795354130.4315908,
-  "last_publish_ts": 1795352215.9911692,
+  "last_search_ts": 1795354612.5162132,
+  "last_publish_ts": 1795354612.5162132,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
