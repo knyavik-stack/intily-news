@@ -1488,19 +1488,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 50.0,
+        "base_score": 49.5,
         "audience_score": 8.0,
         "audience_bonus": 24.0,
-        "final_score": 74.0
+        "final_score": 73.5
       },
-      "base_score": 50.0,
+      "base_score": 49.5,
       "audience_bonus": 24.0,
       "score_stage": "final",
-      "score": 74.0,
+      "score": 73.5,
       "key": "db7d0f3543abee74d04ddb37b4fa97600ae091801be787531c7458ef534a4df6",
-      "importance": 74.0,
+      "importance": 73.5,
       "editorial_value": 50.0,
       "topics": [
         "research"
@@ -1508,10 +1508,10 @@
       "audience_score": 8.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1795448937,
+      "last_failed_at": 1795449175,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 5,
-      "next_retry_at": 1795453737
+      "failure_count": 6,
+      "next_retry_at": 1795458775
     },
     {
       "region": "WORLD",
@@ -1548,10 +1548,10 @@
       ],
       "audience_score": 8.0,
       "tier": "A",
-      "last_failed_at": 1795448937,
+      "last_failed_at": 1795449175,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1795449237
+      "failure_count": 2,
+      "next_retry_at": 1795449775
     },
     {
       "region": "RUSSIA",
@@ -2099,30 +2099,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795448937.5930521,
+    "last_start_ts": 1795449175.4159822,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795448937.5930521,
-    "last_success_ts": 1795448937.5930521,
+    "last_run_ts": 1795449175.4159822,
+    "last_success_ts": 1795449175.4159822,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 17
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795452302.4593527,
+      "disabled_until": 1795452776.4620864,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1795448702.4593546
+      "updated_at": 1795449176.4620879
     },
     "GROQ": {
-      "disabled_until": 1795452542.0211856,
+      "disabled_until": 1795452778.5727985,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795448942.0211875
+      "updated_at": 1795449178.5728004
     },
     "OPENAI": {
-      "disabled_until": 1795535368.0264814,
+      "disabled_until": 1795535599.9677825,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795448968.0264833
+      "updated_at": 1795449199.9677842
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2130,9 +2130,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795452566.89676,
+      "disabled_until": 1795452798.8381233,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795448966.8967633
+      "updated_at": 1795449198.8381248
     }
   },
   "stories": {
@@ -2440,143 +2440,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795240164,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 42.59,
-      "candidates": 10,
-      "queue_before": 7,
-      "queue_after": 8,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 7,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 2,
-        "candidate_count": 10,
-        "admission_rate": 20.0,
-        "dominant_block": "already_queued",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "Remote end closed connection without response": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "Remote end closed connection without response"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 6.5,
-          "bonus_total": 39.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 4.0,
-            "bonus": 12.0,
-            "reason": "Это пока спекулятивный кейс, не имеющий прямого влияния на бизнес-процессы или архитектуру продуктов.",
-            "title": "Has Anthropic’s Claude Solved the Riemann Hypothesis? Inside a Potentially Historic Mathematical Breakthrough - Rebellion Research",
-            "final_score": 54.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 6,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 34,
-        "raw_items": 309,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 9,
-          "Habr AI/News": 18,
-          "CNews": 0,
-          "Euronews": 4
-        },
-        "score_filtered": 292,
-        "quality_filtered": 5,
-        "story_dedup": 2,
-        "candidates": 10,
-        "candidate_rate": 0.0364,
-        "score_buckets": {
-          "0–39": 272,
-          "40–49": 25,
-          "50–59": 12,
-          "60–69": 0,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 1,
-          "5": 0,
-          "6": 0,
-          "7": 1,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795241398,
       "status": "OK",
@@ -24374,6 +24237,83 @@
         "failovers": 0,
         "failures": 3,
         "blocked": 13,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1795449175,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 24.88,
+      "candidates": 0,
+      "queue_before": 17,
+      "queue_after": 17,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
         "skipped_no_key": 0,
         "retries": 0
       },
