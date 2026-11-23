@@ -2180,30 +2180,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795462368.7981374,
+    "last_start_ts": 1795462908.9008896,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795462368.7981374,
-    "last_success_ts": 1795462368.7981374,
-    "last_candidates": 55,
-    "last_published": 1,
+    "last_run_ts": 1795462908.9008896,
+    "last_success_ts": 1795462908.9008896,
+    "last_candidates": 0,
+    "last_published": 0,
     "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795462443.3242233
+      "disabled_until": 1795466475.910385,
+      "reason": "The read operation timed out",
+      "updated_at": 1795462875.9103878
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795461416.0818107
+      "disabled_until": 1795466479.038186,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795462879.0381877
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795461416.0818107
+      "disabled_until": 1795549308.7436066,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1795462908.7436085
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2211,19 +2211,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795461416.0818107
+      "disabled_until": 1795466507.6875331,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795462907.6875348
     }
   },
   "stories": {
-    "84bca5d1d5ab42bc316385b770571874f5444cbdfb4af8b8eae6ba74232e1233": {
-      "time": 1795375976,
-      "title": "Способен ли ИИ разработать лекарство? OpenAI представила MedChemBench — тест из 99 задач по медицинской химии, приближенных к реальной деятельности специалистов - prospect.com.ru",
-      "desc": "Способен ли ИИ разработать лекарство? OpenAI представила MedChemBench — тест из 99 задач по медицинской химии, приближенных к реальной деятельности специалистов prospect.com.ru",
-      "source": "prospect.com.ru",
-      "region": "RUSSIA"
-    },
     "4961fc4e8ea64573fa18d13c6a260b61089ca5e4f2e2ab6c16ae09ae71c55122": {
       "time": 1795410535,
       "title": "Anthropic launches Claude for Manufacturing to automate administrative and engineering workflows - Robotics & Automation News",
@@ -2514,84 +2507,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795253877,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 27.59,
-      "candidates": 0,
-      "queue_before": 4,
-      "queue_after": 4,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 10.0,
-          "bonus_total": 30.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Необходимость срочного пересмотра стратегии закупок вычислительных мощностей из-за дефицита GPU.",
-            "title": "SpaceX Sells $32 Billion Bonds for Nvidia Chips - Wisevoter",
-            "final_score": 76.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1795254105,
       "status": "OK",
@@ -24329,6 +24244,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1795462908,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 53.41,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
