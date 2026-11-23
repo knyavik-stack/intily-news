@@ -1512,10 +1512,10 @@
       "audience_score": 8.0,
       "tier": "S",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1795444380,
+      "last_failed_at": 1795444614,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 3,
-      "next_retry_at": 1795445580
+      "failure_count": 4,
+      "next_retry_at": 1795447014
     },
     {
       "region": "RUSSIA",
@@ -1553,10 +1553,10 @@
       "audience_score": 8.0,
       "tier": "A",
       "russia_weight_bonus": 0.0,
-      "last_failed_at": 1795444380,
+      "last_failed_at": 1795444614,
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 2,
-      "next_retry_at": 1795444980
+      "failure_count": 3,
+      "next_retry_at": 1795445814
     },
     {
       "region": "WORLD",
@@ -2176,30 +2176,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795444380.740892,
+    "last_start_ts": 1795444614.0822263,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795444380.740892,
-    "last_success_ts": 1795444380.740892,
+    "last_run_ts": 1795444614.0822263,
+    "last_success_ts": 1795444614.0822263,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795447981.2112474,
+      "disabled_until": 1795448215.0699139,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1795444381.2112494
+      "updated_at": 1795444615.0699162
     },
     "GROQ": {
-      "disabled_until": 1795447984.4979815,
+      "disabled_until": 1795448218.2659914,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795444384.4979835
+      "updated_at": 1795444618.2659938
     },
     "OPENAI": {
-      "disabled_until": 1795530797.1880944,
+      "disabled_until": 1795531028.2116568,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795444397.1880965
+      "updated_at": 1795444628.2116585
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2207,9 +2207,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795447996.1310358,
+      "disabled_until": 1795448227.2168186,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795444396.131038
+      "updated_at": 1795444627.2168205
     }
   },
   "stories": {
@@ -2510,96 +2510,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795201976,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 19.85,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "Remote end closed connection without response": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "Remote end closed connection without response"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.33,
-          "bonus_total": 75.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 3,
-          "last": {
-            "score": 9.0,
-            "bonus": 27.0,
-            "reason": "Прямая автоматизация интерфейсных задач требует немедленного пересмотра рабочих процессов и инструментов продуктивности.",
-            "title": "Google запустила computer use в Gemini для Mac, агент работает в фоне - Pasquale Pillitteri",
-            "final_score": 71.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795202928,
       "status": "OK",
@@ -24492,6 +24402,83 @@
       "business_reason": "all_attempted_items_failed",
       "searched": false,
       "duration_sec": 16.72,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 19,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 12,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1795444614,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 14.45,
       "candidates": 0,
       "queue_before": 19,
       "queue_after": 19,
