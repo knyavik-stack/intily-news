@@ -1435,14 +1435,18 @@
     "492f2deda49dcba88f58f091dc03d345cc1e3e9c318385a6d8f1c46839fd9d64": 1795418223,
     "b5bf3f139a8b26e24009d1c7d3adb3fe999747b91f72469683f4755dc13f9b3c": 1795418697,
     "6c7a66191f5fa1759e05e418dee997bbff89fe507abfe6b454e4e349a5d1c32e": 1795419653,
-    "fa38200694ba4e18f88827a548260fded3bd970d8f5ba0c417413e2b319fe63d": 1795422306
+    "fa38200694ba4e18f88827a548260fded3bd970d8f5ba0c417413e2b319fe63d": 1795422306,
+    "3a1f285f9a2c4955fc5635889fd0d17e5517c4a12607a12efb8e9ed563d5e1da": 1795423020
   },
   "known": {
     "492f2deda49dcba88f58f091dc03d345cc1e3e9c318385a6d8f1c46839fd9d64": 1795417980.9636765,
     "9f5ff578ed156e0328327549c61d5b196de8199302104efbe93b31838d1c0386": 1795417980.9636765,
     "fa38200694ba4e18f88827a548260fded3bd970d8f5ba0c417413e2b319fe63d": 1795420616.2960038,
     "97afdc75133296e578ffcd76598ad7adc4f171a2d8c4898ca6bb0cba797d4602": 1795420616.2960038,
-    "3a1f285f9a2c4955fc5635889fd0d17e5517c4a12607a12efb8e9ed563d5e1da": 1795420616.2960038
+    "3a1f285f9a2c4955fc5635889fd0d17e5517c4a12607a12efb8e9ed563d5e1da": 1795420616.2960038,
+    "3865c4bacda789b648983bd444071cad5889c7f618a5631dc19c762ae01f73e0": 1795423020.5068645,
+    "fb14b71f9fb216bb31362b33053ef755e99aafcf795a966c0f036a2e47623f1d": 1795423020.5068645,
+    "77acad396741dc7ed1cfebada4b7eccd616bc74157be3463a5e24e668604fd25": 1795423020.5068645
   },
   "queue": [
     {
@@ -1611,19 +1615,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 40.0,
+        "base_score": 39.5,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 61.0
+        "final_score": 60.5
       },
-      "base_score": 40.0,
+      "base_score": 39.5,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 61.0,
+      "score": 60.5,
       "key": "157451511e7afc4c2f977dd6869b79018fcd11a5e51ea1ae6081e864ab57bad6",
-      "importance": 61.0,
+      "importance": 60.5,
       "editorial_value": 50.0,
       "topics": [
         "chips"
@@ -1647,19 +1651,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 40.0,
+        "base_score": 39.5,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 61.0
+        "final_score": 60.5
       },
-      "base_score": 40.0,
+      "base_score": 39.5,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 61.0,
+      "score": 60.5,
       "key": "ef5a02ac6faaf0f649d049beaf6fbf2ebbea62c05d9d3c393a03f297dd22e7f7",
-      "importance": 61.0,
+      "importance": 60.5,
       "editorial_value": 50.0,
       "topics": [
         "chips"
@@ -1852,57 +1856,129 @@
     },
     {
       "region": "RUSSIA",
-      "title": "Когда «нормальный специалист» должен заменить целую систему",
-      "link": "https://habr.com/ru/articles/1109632/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1109632",
-      "desc": "Независимое исследование десяти вакансий в ИТ: почему коммерческие гибридные роли — самая уязвимая точка найма, и что ожидать от этого дальше Технических деталей нет; сложность — в теме найма, а не в технологиях. Что общего у вакансии «founding sales», менеджера по продажам на шесть направлений и AI Solutions Architect? Один и тот же ход мысли: «наймём нормального специалиста, и оно само пойдёт». Разобрала 10 вакансий и показываю, как этот паттерн переезжает из коммерческих ролей в технические. Читать ~20 минут, но в начале есть саммари за 5 минут — только выводы, без деталей . Внутри: таблица c описанием вакансий + аналитика, разбор асимметрии риска (чем вы рискуете, когда соглашаетесь на такие вакансии), чек-лист для кандидата как проверить, куда вы идете и что ожидать. Читать далее",
+      "title": "Documentation-Driven Development в Go: генерация кода из AsyncAPI, Protobuf, OpenAPI и JSON Schema",
+      "link": "https://habr.com/ru/companies/ru_mts/articles/1109848/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1109848",
+      "desc": "Привет, Хабр. Я Матвей Лихота, старший Go-разработчик в МТС Web Services. По моему опыту, чтобы ускорить разработку сервисов, многие обходятся без кодогенераторов и поручают ИИ писать межсервисное взаимодействие и не только. Расскажу, почему это может оказаться плохой идеей, и разберу кодогенераторы, которые помогут правильно автоматизировать работу со спецификациями, и объясню, какой из них в каком случае выбрать. Представим сервис, который принимает и отправляет HTTP- и RPC-запросы, поддерживает WebSocket-соединение и публикует события в Kafka. Каждому взаимодействию соответствует спецификация. Если команда пишет спецификации после реализации, их приходится сверять с обработчиками, структурами и настройками брокера, а когда код меняется, легко забыть их обновить. В подходе Documentation-Driven Development, или DDD, команда сначала согласует форматы запросов и типы данных в спецификациях, а потом пишет реализацию. Для интерфейсов этот порядок часто называют spec-first или contract-first. Готовые спецификации передают генератору, и он пишет Go-код с типами данных, сериализацией и десериализацией, серверными интерфейсами и клиентами. Примеры рассчитаны на Go-модуль example.com/service и запуск из его корня. Понадобятся Go 1.26 или новее, Node.js и protoc. Ресурсом в примерах называем произвольный объект сервиса с идентификатором, именем и номером версии. Читать далее",
       "source": "Habr AI/News",
-      "time": 1795417858.0,
+      "time": 1795420230.0,
       "_score_components": {
         "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 6.0,
-        "event_concreteness": 13.0,
-        "practical_value": 0.0,
+        "ai_specificity": 5.5,
+        "impact": 9.0,
+        "event_concreteness": 11.0,
+        "practical_value": 3.0,
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 1.5,
+        "freshness": 2.0,
         "low_signal_penalty": 0.0,
-        "base_score": 42.0,
+        "base_score": 47.5,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 42.0
+        "final_score": 47.5
       },
-      "base_score": 42.0,
+      "base_score": 47.5,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 42.0,
-      "key": "3a1f285f9a2c4955fc5635889fd0d17e5517c4a12607a12efb8e9ed563d5e1da",
-      "importance": 42.0,
+      "score": 47.5,
+      "key": "3865c4bacda789b648983bd444071cad5889c7f618a5631dc19c762ae01f73e0",
+      "importance": 47.5,
       "editorial_value": 50.0,
-      "topics": [
-        "research"
-      ],
+      "topics": [],
       "audience_score": null,
       "tier": "A",
       "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "Sovereign AI and National Security Strategic Investment Fund backing British autonomous defence systems firm - GOV.UK",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQMVd0d1pIejRXSFZEaGNMclpnTFg1ZlJFeUtSR3BVNGR2N1NYQUF5OEt3cm8yRVB0clJ5NjltRHZnaGRjck1LX2RWTXlYbm8xblpXN21CMjRmRG5ESHZSRXE2R1NpcnRnUDdqT0ktU3UwcG5xWXBrNmxTcXBQeEZrUU1Bemg1TlNLNXNDcjhfbkh5WmpDWFVyeVJpdG5QYjZ6MC11NGI2TkF2TzlhaE5XZFlkdDhaYkxxc2JtOV9GczB1SVZqdzN0RGVRYjdqUjVJOWVCcFZRVmVSRFk?oc=5",
+      "desc": "Sovereign AI and National Security Strategic Investment Fund backing British autonomous defence systems firm GOV.UK",
+      "source": "GOV.UK",
+      "time": 1795420925.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 10.0,
+        "event_concreteness": 11.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 42.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 42.5
+      },
+      "base_score": 42.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 42.5,
+      "key": "fb14b71f9fb216bb31362b33053ef755e99aafcf795a966c0f036a2e47623f1d",
+      "importance": 42.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "business",
+        "security_regulation"
+      ],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
+      "region": "WORLD",
+      "title": "FF EAI Robotics Ecosystem (FFR) Debuts Six Robots and Five Application Scenarios at Dubai Event, Opening a New Phase for Physical AI Commercialization in the Middle East - Al-Bawaba",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPcWR6RDFKX1FqVy0wdEN1YTFFOTY3ck05RG9Uem5hMzhNQl9aWEh5TUV0Z2k2dkd1YXJpQ2RjQjMyclllVG5VWEJoNkVnZjlZdWRWZ0t5SFE3eHh6czFTYWJ2V0RqOHNyX0JhS0daOFhXNXU2SktZMXFSRks1TlF3bGhqOWtna2VtcHl3dGR3?oc=5",
+      "desc": "FF EAI Robotics Ecosystem (FFR) Debuts Six Robots and Five Application Scenarios at Dubai Event, Opening a New Phase for Physical AI Commercialization in the Middle East Al-Bawaba",
+      "source": "Al-Bawaba",
+      "time": 1795422466.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 7.0,
+        "event_concreteness": 10.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 2.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 40.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 40.5
+      },
+      "base_score": 40.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 40.5,
+      "key": "77acad396741dc7ed1cfebada4b7eccd616bc74157be3463a5e24e668604fd25",
+      "importance": 40.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "applications",
+        "robotics"
+      ],
+      "audience_score": null,
+      "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1795422306.1522264,
+    "last_start_ts": 1795423020.5068645,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795422306.1522264,
-    "last_success_ts": 1795422306.1522264,
-    "last_candidates": 0,
+    "last_run_ts": 1795423020.5068645,
+    "last_success_ts": 1795423020.5068645,
+    "last_candidates": 21,
     "last_published": 1,
-    "queue_size": 12
+    "queue_size": 14
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795422306.0417955
+      "updated_at": 1795423053.4649816
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1926,20 +2002,6 @@
     }
   },
   "stories": {
-    "0389ec5854f599fbd41538aa940deff2c95c5be222340dd77280f82dbcc2b7af": {
-      "time": 1795336129,
-      "title": "Израильский инвестор заработал около миллиарда долларов на IPO Anthropic - NEWSru.co.il - NEWSru.co.il",
-      "desc": "Израильский инвестор заработал около миллиарда долларов на IPO Anthropic - NEWSru.co.il NEWSru.co.il",
-      "source": "NEWSru.co.il",
-      "region": "RUSSIA"
-    },
-    "22f4bdea992ca78f5d91256768da9b40e3e47a311c29b80ef620b125d13cd945": {
-      "time": 1795336393,
-      "title": "Security and Privacy: российский ИИ распознал кибератаки лучше аналогов из США и КНР - prospect.com.ru",
-      "desc": "Security and Privacy: российский ИИ распознал кибератаки лучше аналогов из США и КНР prospect.com.ru",
-      "source": "prospect.com.ru",
-      "region": "RUSSIA"
-    },
     "68845806541119c927401c2fea9d5e78e9cc321a2c429f21266264b39c85426c": {
       "time": 1795340456,
       "title": "Lexometrica Ground Truth: 15 LLM на 30 кейсах по практике ВС РФ",
@@ -2128,11 +2190,17 @@
       "desc": "Amazon Nears $7.5 Billion Acquisition of AI Startup Decart in Push to Challenge Nvidia citybiz",
       "source": "citybiz",
       "region": "WORLD"
+    },
+    "3a1f285f9a2c4955fc5635889fd0d17e5517c4a12607a12efb8e9ed563d5e1da": {
+      "time": 1795423020,
+      "title": "Когда «нормальный специалист» должен заменить целую систему",
+      "desc": "Независимое исследование десяти вакансий в ИТ: почему коммерческие гибридные роли — самая уязвимая точка найма, и что ожидать от этого дальше Технических деталей нет; сложность — в теме найма, а не в технологиях. Что общего у вакансии «founding sales», менеджера по продажам на шесть направлений и AI Solutions Architect? Один и тот же ход мысли: «наймём нормального специалиста, и оно само пойдёт». Разобрала 10 вакансий и показываю, как этот паттерн переезжает из коммерческих ролей в технические. Читать ~20 минут, но в начале есть саммари за 5 минут — только выводы, без деталей . Внутри: таблица c описанием вакансий + аналитика, разбор асимметрии риска (чем вы рискуете, когда соглашаетесь на такие вакансии), чек-лист для кандидата как проверить, куда вы идете и что ожидать. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -2150,99 +2218,10 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795175570,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 5.83,
-      "candidates": 0,
-      "queue_before": 13,
-      "queue_after": 12,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/articles/1110210/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1110210",
-            "image_url": "https://habr.com/share/publication/1110210/cca22696409efd3d173099c256545ce2/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Позволяет точно рассчитать бюджет на железо и избежать факапов при масштабировании LLM-сервисов.",
-            "title": "Сколько видеопамяти нужно LLM: считаем веса, KV-кэш и запас на одновременных пользователей",
-            "final_score": 65.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795176284,
       "status": "OK",
@@ -24251,11 +24230,150 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795423020,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 40.2,
+      "candidates": 21,
+      "queue_before": 12,
+      "queue_after": 14,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 10,
+        "known_recent": 0,
+        "already_queued": 8,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 3,
+        "candidate_count": 21,
+        "admission_rate": 14.29,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "html_img": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "html_img",
+            "source_url": "https://www.citybiz.co/article/937175/amazon-nears-7-5-billion-acquisition-of-ai-startup-decart-in-push-to-challenge-nvidia/",
+            "image_url": "https://www.citybiz.co/wp-content/uploads/2022/03/tedco-1024x377.jpg",
+            "width": 1024,
+            "height": 377,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 9.0,
+          "bonus_total": 54.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 10.0,
+            "bonus": 30.0,
+            "reason": "Сделка сигнализирует о смене архитектурного стека облачных вычислений, что напрямую влияет на выбор инфраструктуры для масштабируемых ИИ-проектов.",
+            "title": "Amazon Nears $7.5 Billion Acquisition of AI Startup Decart in Push to Challenge Nvidia - citybiz",
+            "final_score": 81.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 105,
+        "raw_items": 712,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 1,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 40,
+          "CNews": 32,
+          "Euronews": 30
+        },
+        "score_filtered": 666,
+        "quality_filtered": 20,
+        "story_dedup": 5,
+        "candidates": 21,
+        "candidate_rate": 0.0346,
+        "score_buckets": {
+          "0–39": 629,
+          "40–49": 55,
+          "50–59": 25,
+          "60–69": 3,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 1,
+          "3": 0,
+          "4": 1,
+          "5": 3,
+          "6": 1,
+          "7": 4,
+          "8": 1,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795420616.2960038,
-  "last_publish_ts": 1795422306.1522264,
+  "last_search_ts": 1795423020.5068645,
+  "last_publish_ts": 1795423020.5068645,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
