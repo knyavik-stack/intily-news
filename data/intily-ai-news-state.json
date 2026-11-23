@@ -1,6 +1,5 @@
 {
   "published": {
-    "1b38e8c3536aaba47ffd8dc44687bf490ea02c8647a8939a26917f422a315199": 1792868686,
     "b6b3e66342303dcd9ee8929af0065631140ecbe9a962b67c6ad1d70ab81e2902": 1792868930,
     "7d9e1a511a2698691611651ba008be480d86c96f20f946ab1faecac1a78c845b": 1792870128,
     "9d49c95e4fdd2cb4f8ac5cd3d6442275eb63e4827c727bc9c5dce4d3164f4df6": 1792870367,
@@ -1515,7 +1514,11 @@
       ],
       "audience_score": 10.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1795460720,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1795461020
     },
     {
       "region": "RUSSIA",
@@ -1553,7 +1556,11 @@
       ],
       "audience_score": 10.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0
+      "russia_weight_bonus": 0.0,
+      "last_failed_at": 1795460720,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1795461020
     },
     {
       "region": "WORLD",
@@ -1706,6 +1713,43 @@
       "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
       "failure_count": 3,
       "next_retry_at": 1795454703
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Т-Банк прислал чужую выписку: я обратился в суд с ИИ, и банк оштрафовали на 5000 рублей",
+      "link": "https://habr.com/ru/articles/1111106/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1111106",
+      "desc": "В июле 2025 года я запросил в чате Т-Банка стандартную выписку по своим счетам, а на почту получил PDF-файлы с финансовой жизнью незнакомого человека из другого региона. Поддержка посоветовала мне «проигнорировать и удалить письмо», за час дважды противоречила сама себе про мой емайл и трижды спрашивала, есть ли у меня свой бизнес вместо уделения серьезного внимания возникшей проблеме. Эта история полностью завершена в октябре 2026 года: пройдены обращения в официальные ведомства, две судебные инстанции и к приставам, 73 000 ₽ уже на моем счёте (включая 100% возврат 51 000 ₽ за юриста), банк был оштрафован на 5 000 ₽. В статье разбираю кейс как инженерную задачу: как работал с не специализированными нейросетями, где модели ошиблись и как вернуть гонорар представителя, чтобы не остаться в минусе. К разбору",
+      "source": "Habr AI/News",
+      "time": 1795443731.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 10.0,
+        "event_concreteness": 11.5,
+        "practical_value": 5.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 1.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 50.5,
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 68.5
+      },
+      "base_score": 50.5,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 68.5,
+      "key": "cec3d267059bbc5d6618ae5fc71b88143d82e637e3617f4c1fd9368f40e423a4",
+      "importance": 68.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "business"
+      ],
+      "audience_score": 6.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     },
     {
       "region": "RUSSIA",
@@ -2179,70 +2223,33 @@
       "topics": [],
       "audience_score": 5.0,
       "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Т-Банк прислал чужую выписку: я обратился в суд с ИИ, и банк оштрафовали на 5000 рублей",
-      "link": "https://habr.com/ru/articles/1111106/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1111106",
-      "desc": "В июле 2025 года я запросил в чате Т-Банка стандартную выписку по своим счетам, а на почту получил PDF-файлы с финансовой жизнью незнакомого человека из другого региона. Поддержка посоветовала мне «проигнорировать и удалить письмо», за час дважды противоречила сама себе про мой емайл и трижды спрашивала, есть ли у меня свой бизнес вместо уделения серьезного внимания возникшей проблеме. Эта история полностью завершена в октябре 2026 года: пройдены обращения в официальные ведомства, две судебные инстанции и к приставам, 73 000 ₽ уже на моем счёте (включая 100% возврат 51 000 ₽ за юриста), банк был оштрафован на 5 000 ₽. В статье разбираю кейс как инженерную задачу: как работал с не специализированными нейросетями, где модели ошиблись и как вернуть гонорар представителя, чтобы не остаться в минусе. К разбору",
-      "source": "Habr AI/News",
-      "time": 1795443731.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 10.0,
-        "event_concreteness": 11.5,
-        "practical_value": 5.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 50.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 50.5
-      },
-      "base_score": 50.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 50.5,
-      "key": "cec3d267059bbc5d6618ae5fc71b88143d82e637e3617f4c1fd9368f40e423a4",
-      "importance": 50.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "business"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1795460005.9574206,
+    "last_start_ts": 1795460720.1911001,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795460005.9574206,
-    "last_success_ts": 1795460005.9574206,
-    "last_candidates": 52,
+    "last_run_ts": 1795460720.1911001,
+    "last_success_ts": 1795460720.1911001,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795463594.2754798,
+      "disabled_until": 1795464316.9578202,
       "reason": "The read operation timed out",
-      "updated_at": 1795459994.2754824
+      "updated_at": 1795460716.957823
     },
     "GROQ": {
-      "disabled_until": 1795463600.3783662,
+      "disabled_until": 1795464323.5524836,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795460000.378368
+      "updated_at": 1795460723.5524855
     },
     "OPENAI": {
-      "disabled_until": 1795546405.7761292,
+      "disabled_until": 1795547135.0973892,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795460005.7761316
+      "updated_at": 1795460735.0973914
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2250,19 +2257,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795463604.8479857,
+      "disabled_until": 1795464334.0834856,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795460004.847988
+      "updated_at": 1795460734.0834877
     }
   },
   "stories": {
-    "204006b7bb0584abfeceb218daa8bf1807d55ac38b9e969a8e4d1bc4bb63b2e7": {
-      "time": 1795374294,
-      "title": "OpenAI strengthens AI safeguards, cuts reasoning extraction attack rates - TechGig",
-      "desc": "OpenAI strengthens AI safeguards, cuts reasoning extraction attack rates TechGig",
-      "source": "TechGig",
-      "region": "WORLD"
-    },
     "3dad6bc224ee4f30c864668c685012248f6ffa0b85558dcf49fc1491b3b694cc": {
       "time": 1795374784,
       "title": "Три моих кейса, где экономия времени с ИИ-автоматизациями обернулась постоянными переделками и фиксами",
@@ -2553,78 +2553,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795251225,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 27.8,
-      "candidates": 0,
-      "queue_before": 3,
-      "queue_after": 3,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1795251687,
       "status": "OK",
@@ -24347,6 +24275,88 @@
         "failovers": 0,
         "failures": 0,
         "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1795460720,
+      "status": "OK",
+      "business_result": "PUBLISH_FAILED",
+      "business_reason": "all_attempted_items_failed",
+      "searched": false,
+      "duration_sec": 38.37,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 2,
+      "item_failures": 2,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 6.0,
+          "bonus_total": 18.0,
+          "max_score": 6.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 6.0,
+            "bonus": 18.0,
+            "reason": "AI ошибки могут вызвать утечку данных и юридические расходы",
+            "title": "Т-Банк прислал чужую выписку: я обратился в суд с ИИ, и банк оштрафовали на 5000 рублей",
+            "final_score": 68.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 3,
+        "blocked": 13,
         "skipped_no_key": 0,
         "retries": 0
       },
