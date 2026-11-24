@@ -2222,30 +2222,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795528141.1567252,
+    "last_start_ts": 1795528630.5055099,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795528141.1567252,
-    "last_success_ts": 1795528141.1567252,
+    "last_run_ts": 1795528630.5055099,
+    "last_success_ts": 1795528630.5055099,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795531731.4389932,
+      "disabled_until": 1795532218.0570564,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1795528131.4389951
+      "updated_at": 1795528618.057059
     },
     "GROQ": {
-      "disabled_until": 1795531734.8557994,
+      "disabled_until": 1795532221.190671,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795528134.8558013
+      "updated_at": 1795528621.1906726
     },
     "OPENAI": {
-      "disabled_until": 1795614540.8768094,
+      "disabled_until": 1795615030.1499774,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795528140.876811
+      "updated_at": 1795528630.1499798
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2253,9 +2253,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795531739.7541296,
+      "disabled_until": 1795532229.2101588,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795528139.7541316
+      "updated_at": 1795528629.2101607
     }
   },
   "stories": {
@@ -2444,96 +2444,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795287678,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 3.0,
-      "candidates": 0,
-      "queue_before": 3,
-      "queue_after": 2,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.freepressjournal.in/amp/business/google-bets-big-on-indias-ai-future-with-5-million-for-iit-kharagpur-sundar-pichai-fuels-next-wave-of-innovation",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 5.0,
-          "bonus_total": 15.0,
-          "max_score": 5.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 5.0,
-            "bonus": 15.0,
-            "reason": "Новость носит стратегический характер для рынка труда, но не требует немедленных изменений в текущих бизнес-процессах.",
-            "title": "Google Bets Big On Indias AI Future With $5 Million For IIT Kharagpur, Sundar Pichai Fuels Next Wave Of - Free Press Journal",
-            "final_score": 57.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795287917,
       "status": "OK",
@@ -23912,6 +23822,78 @@
       "business_reason": "no_eligible_item",
       "searched": false,
       "duration_sec": 10.88,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1795528630,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 16.56,
       "candidates": 0,
       "queue_before": 20,
       "queue_after": 20,
