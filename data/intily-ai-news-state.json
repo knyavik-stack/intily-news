@@ -2191,30 +2191,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795505352.6098602,
+    "last_start_ts": 1795505842.3725722,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795505352.6098602,
-    "last_success_ts": 1795505352.6098602,
+    "last_run_ts": 1795505842.3725722,
+    "last_success_ts": 1795505842.3725722,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795508943.7610312,
+      "disabled_until": 1795509413.070877,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1795505343.761034
+      "updated_at": 1795505813.07088
     },
     "GROQ": {
-      "disabled_until": 1795508946.787045,
+      "disabled_until": 1795509416.407483,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795505346.7870476
+      "updated_at": 1795505816.4074855
     },
     "OPENAI": {
-      "disabled_until": 1795591752.4016275,
+      "disabled_until": 1795592242.2019448,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795505352.4016297
+      "updated_at": 1795505842.2019467
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2222,9 +2222,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795508951.5501559,
+      "disabled_until": 1795509441.4102845,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795505351.550158
+      "updated_at": 1795505841.4102862
     }
   },
   "stories": {
@@ -2483,94 +2483,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1795263449,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 10.86,
-      "candidates": 0,
-      "queue_before": 6,
-      "queue_after": 5,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://www.unite.ai/ru/iit-kharagpur-secures-5m-from-google-to-expand-campus-ai-work/",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 6.5,
-          "bonus_total": 39.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 5.0,
-            "bonus": 15.0,
-            "reason": "Новость носит ознакомительный характер об инвестиционных трендах и не требует немедленных изменений в бизнес-процессах.",
-            "title": "IIT Kharagpur привлекает от Google 5 млн долларов на расширение работ в области ИИ в кампусе - Unite.AI",
-            "final_score": 57.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795263684,
       "status": "OK",
@@ -24212,6 +24124,78 @@
             "title": "Сторонний код в Яндекс 360: как мы построили проверку безопасности плагинов с помощью AI",
             "final_score": 76.5
           }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 15,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1795505842,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 30.29,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
         },
         "queue_score_audit": {
           "pre_ai_below_final_threshold": 15,
