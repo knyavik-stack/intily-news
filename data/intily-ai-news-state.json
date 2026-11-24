@@ -1,6 +1,5 @@
 {
   "published": {
-    "950228818ddd593dc670b4da95d75402158cea761c820a7f0d0199b9915bbffa": 1792912368,
     "acc5867106b55cbe59d23d0b83f7dc3c6e377ae7b68124e7d07fe675e522c793": 1792915967,
     "bd75955369f568de08d4286f53bcc7182aa17171262e5f8cd0e0cc91c47416cf": 1792918608,
     "3c2b0374f27f777ff2ad135662806ed72db4d5c753468d040b3c65c66d6db896": 1792919089,
@@ -1440,16 +1439,20 @@
     "f3c879d6826833f1fe2be04e4dcd2b9a6061c9c3e38ec59706f8243f7b7e6de6": 1795500537
   },
   "known": {
-    "f3c879d6826833f1fe2be04e4dcd2b9a6061c9c3e38ec59706f8243f7b7e6de6": 1795498886.8019145,
-    "346a26c589ebb10b3f3be17bf93ebda94037c821f2510eccdd68061999de6597": 1795498886.8019145,
-    "7bc5066b606671c27d49a30697a028b4768ed790a5f05f28c7ab8ca52979f8de": 1795498886.8019145,
-    "b7c5fda8c12d075475c242f1cc2a0b70a1603c528c69fb3c77de078af08696b8": 1795498886.8019145,
-    "56276d0a842892121ae2e3655f331b7d0798e8e57c7d8042c79f9d3e99b2d2df": 1795498886.8019145,
     "4f908584057fd424c2e755597aabafc936d456a75ab97f8b9f79ee78a8b02b8d": 1795500801.2966444,
     "90ff53a1d5a3d952cf944d20f484c5604774e8a0a4110359a4e6a436ba4951a2": 1795503191.8720808,
     "545a273404ac50bb195eb6f09ed7b65c96e308c45613efaf5a5c1792571082c1": 1795503191.8720808,
     "50a1f0bb66adf881de8b88ef75c91d7114a2ddeb76b81e3f3b8ed3a0e5b3cc4e": 1795503191.8720808,
-    "bae0e21d9d3b5a3b5d4ea3830d8f4a5eaad692c8ca331b76b20b487ce44e548c": 1795503191.8720808
+    "bae0e21d9d3b5a3b5d4ea3830d8f4a5eaad692c8ca331b76b20b487ce44e548c": 1795503191.8720808,
+    "1a8f7c6231d31a8044133a3fe8198e4258005e11650512fe1bd0e75f545c9edf": 1795505125.8944163,
+    "a3ad91bf8ba8567ad00c45465f9f28ef8e7f6b89ab9a7cd6fd7c909e65dd36ee": 1795505125.8944163,
+    "906cf4f82e2fdeb2a644c3bdaacb8c16ee2d38d6b066e45aafe916abf157e225": 1795505125.8944163,
+    "9b2e587934eaf97ee3dbc63a7f785ad67de2b156692a17ac2bdba55835038940": 1795505125.8944163,
+    "b48142b209fa4bd7e89000a2c2d15140efc025111dd98214cfc70304d220ce93": 1795505125.8944163,
+    "88a6e802ae60a4f3ec083e525ebffb168ddc7171e1bf71b8389b50bd6199c92c": 1795505125.8944163,
+    "e380104388caaf259337fc3dc4221aba5a4a5f29b3a9111c85b9b4bd35eef9f0": 1795505125.8944163,
+    "459f5fc13c3aeab45a16ed511a864d6853109386050bb76b4bb1a0708d4c7e37": 1795505125.8944163,
+    "0209f2b84c8ba9ca9f94102f1d59796b19f77cdb704adb0a358c2a133fdcbdbd": 1795505125.8944163
   },
   "queue": [
     {
@@ -1598,6 +1601,233 @@
       ],
       "audience_score": 7.0,
       "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Сторонний код в Яндекс 360: как мы построили проверку безопасности плагинов с помощью AI",
+      "link": "https://habr.com/ru/companies/yandex/articles/1109776/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1109776",
+      "desc": "Недавно мы запустили общую платформу плагинов Яндекс 360. Теперь расширять продукт собственным кодом можно не только в Трекере, но и в других сервисах. Нам, команде безопасности, нужно проверять плагины для каждого из них: разбирать чужой код, зависимости и запрошенные доступы к данным. А после обновления плагина возвращаться к проверке. Читать каждый бандл целиком вручную трудно, поэтому ещё на этапе работы с плагинами в сервисах мы подключили к ревью AI‑агента. Вместе со статическими анализаторами и поиском секретов он помогает инженеру проверять разрешения, отслеживать передачу данных и разбирать потенциальные проблемы. По нашей практической оценке, на анализ отчёта и дополнительные вопросы теперь уходит около 10 минут, тогда как раньше ручное ревью занимало около часа. При этом выводы AI‑агента тоже приходится проверять: в статье покажу его полезную находку, и его рекомендацию, которая сломала бы функцию плагина. Привет, Хабр! Я Максим Гусев, старший инженер по информационной безопасности в Яндекс 360. Коллеги уже рассказывали, как устроена платформа плагинов Трекера : зачем понадобились расширения, как изолировали сторонний код и организовали доступ к API. Я расскажу, как мы построили процесс проверки плагинов: от заявки на модерацию до решения инженера ИБ. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1795503731.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 12.0,
+        "event_concreteness": 15.5,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 55.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 55.5
+      },
+      "base_score": 55.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 55.5,
+      "key": "1a8f7c6231d31a8044133a3fe8198e4258005e11650512fe1bd0e75f545c9edf",
+      "importance": 55.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "security_regulation",
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "180 миллиардов параметров на двух RTX 5090. Как Strata меня впечатлила, Astra разочаровала, а Claude просто исчез",
+      "link": "https://habr.com/ru/articles/1111470/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1111470",
+      "desc": "В октябре под моей статьёй про локальные модели читатель посоветовал заранее приготовить замену Claude на случай блокировки. Я ответил: если отключат, перейду на Codex. Через полтора месяца вместо оплаченной подписки я увидел «Organization disabled». Пришлось проверять свой ответ на практике. Для знакомства с Codex у меня была задача из продакшена. Java-сервис терял соединения, а я уже знал, какой тест отличает утечку от обычного таймаута. На двух RTX 5090 локальная Qwen с движком Strata поймала эту утечку в двух попытках из пяти. Облачная Astra за восемь минут нашла версию библиотеки с исправлением. Я открыл результаты её тестов — и вот тут наши с ней представления о законченном расследовании разошлись. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1795503658.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 12.0,
+        "event_concreteness": 15.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 52.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 52.5
+      },
+      "base_score": 52.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 52.5,
+      "key": "a3ad91bf8ba8567ad00c45465f9f28ef8e7f6b89ab9a7cd6fd7c909e65dd36ee",
+      "importance": 52.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "models",
+        "security_regulation"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "ИИ-платформа нового поколения объединяет сотрудников и ИИ-агентов в одном бизнес-процессе",
+      "link": "https://www.cnews.ru/news/line/2026-11-24_ii-platforma_novogo_pokoleniya",
+      "desc": "Компания «Вебпрактик AI» представила новое поколение корпоративных ИИ-платформ – «Артель AI». Решение заменяет...",
+      "source": "CNews",
+      "time": 1795503120.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 9.0,
+        "event_concreteness": 11.0,
+        "practical_value": 6.5,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 52.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 52.5
+      },
+      "base_score": 52.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 52.5,
+      "key": "906cf4f82e2fdeb2a644c3bdaacb8c16ee2d38d6b066e45aafe916abf157e225",
+      "importance": 52.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "business",
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Можно ли приучить ИИ-исследователей публиковать неудачи? Опыт шанхайской площадки ArchSpace",
+      "link": "https://habr.com/ru/companies/ru_mts/articles/1110586/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1110586",
+      "desc": "Привет, Хабр! Если вы когда-нибудь читали технические отчеты о новых моделях DeepSeek, Qwen или Kimi, то наверняка встречали в них абзац о том, какой блок архитектуры заменили и что это дало. Но вот о вариантах, которые попробовали до этого и отбросили, в отчетах почти ничего нет, а если индустрия и рассказывает о провалах, то обычно задним числом. Поэтому сторонний исследователь может потратить недели работы и тысячи GPU-часов на идею, которую кто-то давно проверил и списал. Команда InternLM, которая разрабатывает открытые языковые модели в Shanghai AI Laboratory, вместе с несколькими китайскими университетами решила это исправить. 12 ноября 2026-го они выложили на arXiv работу о площадке ArchSpace . Это открытый проект на GitHub, где архитектурные идеи для больших языковых моделей проверяют по единым правилам и записывают любой результат, в том числе неудачный. Саму площадку запустили 28 июля. Первый вердикт на ней не стал ни победой, ни провалом: новая архитектура обошла обычную меньше чем на две десятых процента, и идею закрыли. Конечно, вести исследования ИИ публично и на GitHub придумали не в Шанхае. С мая 2025-го Стэнфорд развивает открытую лабораторию Marin . Там каждый эксперимент заранее регистрируют как issue, реализуют через PR и не скрывают неудачные попытки. Но Marin открывает собственную разработку моделей, а ArchSpace принимает чужие архитектурные идеи и проверяет их. Далее разберу, как устроена площадка, что показали первые результаты и сколько нашлось желающих вынести свои идеи на открытую проверку. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1795504560.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 11.0,
+        "event_concreteness": 12.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 51.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 51.0
+      },
+      "base_score": 51.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 51.0,
+      "key": "9b2e587934eaf97ee3dbc63a7f785ad67de2b156692a17ac2bdba55835038940",
+      "importance": 51.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "chips",
+        "research"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "Europe Today: EU Commission proposes new round of sanctions against Russia",
+      "link": "https://www.euronews.com/2026/11/24/europe-today-eu-commission-proposes-new-round-of-sanctions-against-russia",
+      "desc": "If approved by member states, new round of EU sanctions will mark the 22nd EU sanctions package since February 2022. US chipmaker Nvidia reinstated Jensen Huang as president, chief executive and board member, effective immediately. After the announcement, the price for Nvidia shares skyrocketed.",
+      "source": "Euronews",
+      "time": 1795504110.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 3.0,
+        "impact": 9.0,
+        "event_concreteness": 17.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 4.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 50.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 50.0
+      },
+      "base_score": 50.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 50.0,
+      "key": "b48142b209fa4bd7e89000a2c2d15140efc025111dd98214cfc70304d220ce93",
+      "importance": 50.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "chips"
+      ],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Учебный курс с сюжетом: баг или фича?",
+      "link": "https://habr.com/ru/articles/1111594/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1111594",
+      "desc": "В предыдущей статье я рассказывала о том, как много общего в написании художественного произведения и в процессе разработки ПО, и упоминала, что создание моей книги берёт начало в курсе по тестированию для Stepik. Теперь пришло время рассказать и о самом курсе. И о том, зачем же в учебном материале вообще нужен сюжет. Тестирование – это ж для зануд, разве нет? Ну… в этом чуть позже разберёмся. А пока немного предыстории. Мне хотелось сделать бесплатный курс, с которого начнётся моя собственная линейка, – до этого я писала курсы только в соавторстве, как бы работая на других авторов. А этот курс должен был стать лично моим. Но бесплатные курсы часто бросают на старте, не доходя и до середины. А теория тестирования, если её рассказывать сухими формулировками из учебников, действительно довольно однообразна (как, впрочем, и любая наука, сжатая «до смысла»). И я сделала курс-приключение. Такой, где ученик постигает знания вместе с 14-летним подростком – Аланом, который попал на космический корабль в виртуальной реальности, а наставник у них обоих – ироничный летающий робот Окулус. Алан пробует и ошибается, Окулус язвит и объясняет, студент разбирается вместе с ними. Всем весело. На 21 ноября у курса 2 033 учащихся, 34 отзыва – все на пять звёзд – и 83 выданных сертификата, из них 65 с отличием. Ниже расскажу, как сюжет встраивается в учебный материал, как устроен тренажёр с нарочно сломанным софтом, где ИИ-Окулус проверяет баг-репорты и что показали данные – в том числе и не самые радужные. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1795504304.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 7.0,
+        "event_concreteness": 10.0,
+        "practical_value": 5.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 46.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 46.5
+      },
+      "base_score": 46.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 46.5,
+      "key": "88a6e802ae60a4f3ec083e525ebffb168ddc7171e1bf71b8389b50bd6199c92c",
+      "importance": 46.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "robotics"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     },
     {
       "region": "WORLD",
@@ -1818,6 +2048,41 @@
       "tier": "A"
     },
     {
+      "region": "RUSSIA",
+      "title": "«Яндекс» представил ИИ-устройство «Яндекс Пин» для замены секретаря - РБК",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9adWNEeE16VDU5N1NmVGtjcUU5SzZaVGlINThlRnhCUzRDV1FJNEN5dUtDRHVydGpEV3lwWUs4NEJHT1JGc3FFVF9nNDJOVi1vV1kxRkUyc2N0V3psV0VwRy1TRnRWS2pYem1sWHVrX21sNmNCdzJqMtIBcEFVX3lxTE9iaGRTTjllSVlPak8zV1VVTjNTdXYyTm1nYlRxQ04tZTdtdmJLQ29QWl9DVVRHMENsR2hmOHFGZzdBQXNBMEVXbkxYT0JOa1pIY1lsWklILUxpeGxfU1p1S3RiNkk4czNFWkpRX2ZpRUc?oc=5",
+      "desc": "«Яндекс» представил ИИ-устройство «Яндекс Пин» для замены секретаря РБК",
+      "source": "РБК",
+      "time": 1795503295.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 3.0,
+        "impact": 7.0,
+        "event_concreteness": 13.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 43.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 43.0
+      },
+      "base_score": 43.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 43.0,
+      "key": "e380104388caaf259337fc3dc4221aba5a4a5f29b3a9111c85b9b4bd35eef9f0",
+      "importance": 43.0,
+      "editorial_value": 50.0,
+      "topics": [],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
       "region": "WORLD",
       "title": "OpenAI and Cisco launch Shirudo to shield Linux systems before patches arrive - Business Upturn",
       "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQQlhKNjg1T2VqWDI1LTlLemRpRHJuTmhDTEllLVVtLWpzMURFQURuR3ZjZFp4YVBrZ0R1Vm9IRFczTmM5cXpLVnNwOTl0c1hjdHN1MW1PZ3djUlVkMWlxeEJ2dXZQSmV1YVBDaW1QYjByRjVLVWwzOHdoTDBRcDJERXZ2eWNfUWx2M2FSV1VBLWpLWUdJWUxNbmFRS2l2TnRXb3ZLbGF6N3RGeTRPaDZvUnJBeUJRMlU?oc=5",
@@ -1923,255 +2188,33 @@
       "audience_score": null,
       "tier": "A",
       "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "WORLD",
-      "title": "AI flags software security flaws. DXC experts verify them and rank what to fix. - Stock Titan",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZy1EXzREZGFleUFpREw3aXN2N1J1RFFkZmM2SDVEbm9UWmpKWml1NUljSmlyd1lrQkh2dUVDbjJ4enBUQmlIT3A3RXpQeFJWMnkzOEhYOFNGQldRdWlJbVY3Rl9BVnU0WVdlN2c0aGF6TDFQRWhBOU5ZaTltY2FILW5MQ05SMGdBbG5oajNpUFBta2diWDFqcUtYajMwRE05Tmp0ZERGSmppNUtkMDJ3Qk9WZS1Sb2c?oc=5",
-      "desc": "AI flags software security flaws. DXC experts verify them and rank what to fix. Stock Titan",
-      "source": "Stock Titan",
-      "time": 1795496460.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 8.0,
-        "event_concreteness": 12.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 42.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 42.0
-      },
-      "base_score": 42.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 42.0,
-      "key": "7bc5066b606671c27d49a30697a028b4768ed790a5f05f28c7ab8ca52979f8de",
-      "importance": 42.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "security_regulation",
-        "tools"
-      ],
-      "audience_score": null,
-      "tier": "A"
-    },
-    {
-      "region": "WORLD",
-      "title": "Claude AI can review pull requests and ship fixes on its own now",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
-      "desc": "Anthropic is launching some new Claude AI features to help software engineers ship code. As part of a new Claude Ship product being announced today, Claude now can review, fix, and approve pull requests. Engineers have already been able to take advantage of Claude's code review capabilities thanks to the Code Review feature, which was […]",
-      "source": "The Verge AI",
-      "time": 1795464000.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 7.0,
-        "event_concreteness": 13.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 42.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 42.0
-      },
-      "base_score": 42.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 42.0,
-      "key": "07fa8f7b96f98d51ed40deb4974e17cd3cdb5dca4f9484b598144cbd4009f499",
-      "importance": 42.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "models",
-        "tools"
-      ],
-      "audience_score": null,
-      "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Пять проектов за два дня: агенты ускорились, а узким горлышком стал я",
-      "link": "https://habr.com/ru/articles/1111474/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1111474",
-      "desc": "22 ноября, 10:28. Агент пушит в master недельный выпуск Cassandra Index - это мой пет-проект, который оценивает риск глобального конфликта по 46 критериям. 1005 новостей-кандидатов из RSS, индекс 66 из 100, 65 файлов в коммите, 981 зелёный тест. Сессия заняла около двух часов. К одиннадцати я всё ещё разбирался, что означает «покрытие 46 из 46», если 21 критерий закрыт измеренным нулём. Конвейер отработал, а вопросы к источникам, трактовке событий и формулировкам остались. За те же сутки в соседних каталогах появились: контур подтверждения задач в детском приложении, модель пенсионо-инвестиционных накоплений на следующие 15 лет, сравнение туров во Вьетнаме и оформленный пакет документов к судебному заседанию. Агенты не тормозили. Тормозил я. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1795496977.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 8.0,
-        "event_concreteness": 9.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 41.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 41.5
-      },
-      "base_score": 41.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 41.5,
-      "key": "b7c5fda8c12d075475c242f1cc2a0b70a1603c528c69fb3c77de078af08696b8",
-      "importance": 41.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "business",
-        "models"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "WORLD",
-      "title": "Amazon to buy Decart AI tech and talent in reported $7.5 billion deal - Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOb2dFQ3VYNUFMaWN3Yjh5R1FNTDE1Z19sSFRYT2o5b2dXOHNKV01hbEQ0TG9XYVJzZ1RxTzdhaHFHbEotZko4UEMtdGRjR3lHT3hPa1pnMXJnWUVpbi14ZjFGZDFCWVFadHNCc3hmaEpmSWxmSG5QN04tSkhJbkZKUGhIeHc0VFBDdGpETzBPb3JWMGM?oc=5",
-      "desc": "Amazon to buy Decart AI tech and talent in reported $7.5 billion deal Yahoo Finance",
-      "source": "Yahoo Finance",
-      "time": 1795483980.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 9.0,
-        "event_concreteness": 13.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 41.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 41.5
-      },
-      "base_score": 41.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 41.5,
-      "key": "e819fee0a4dcd8cc03fb368535129b02ecc1661d5717ed2535926714abc3c9bc",
-      "importance": 41.5,
-      "editorial_value": 50.0,
-      "topics": [],
-      "audience_score": null,
-      "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Anthropic представила Claude Ship: ИИ будет самостоятельно исправлять и одобрять изменения в коде - Overclockers.ru",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOVHNUNUxOaHBsd1Z0YWtJRjRmZHBWWWdIU1NzS1VWZ2FkZHZKdkxNNm1GUDJfU0xSZDNkUjF6WV9uMW96NGlFYU1JYnR1REx4TzdGWWxDMkpKMDhpOTYtdHROcmQ4UUZkZHpHSzVzcFBWTHNyLUtyM0lHOXVaMVk3cjhIRVQyZmoxQ2VUcnpVQWZVeFQya0hZNkxZRUZWRk1ySXBfdE1Qd0VDeHV2UDB4cGxVNW1EcjNYMy1VenNvcWl1T2tuVjNkMXJWalFqdG5OTHpsQVotcFc3SDRBSTNlTNIB3wFBVV95cUxOMExfdS1PZkxqcWdCWExNWThxVGZaOWVXNEJXVXRBSjN0UHJvUnk5dlNkNU5Za2xiWUJqem1oSW9hLU9faHpFdzVnWUJwU3BYRGtMR0JpekVoTWl3eDR3ZWFLNlJsUXRKVUV5eDhfNWhMN2RRWjFYUzdna0xXZU9CYVJMcVp5MGtHb3lUbGZRemFiQ2k2T09ENnM3bndWMWRGZHBsdGxad3hVRjh3MzhxY2NwTGR6cXJrSnlHQkphUm4xbi0xbmNDbmNRTnFiWTRqdXU2X1Q5MnVfVi1yUWRv?oc=5",
-      "desc": "Anthropic представила Claude Ship: ИИ будет самостоятельно исправлять и одобрять изменения в коде Overclockers.ru",
-      "source": "Overclockers.ru",
-      "time": 1795479660.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 7.0,
-        "event_concreteness": 16.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 41.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 41.5
-      },
-      "base_score": 41.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 41.5,
-      "key": "48f04a08d6393fc9273f05fad1854ec5ee8e07c2496e3ae0f200ce7cecd8b9a5",
-      "importance": 41.5,
-      "editorial_value": 47.5,
-      "topics": [
-        "models"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Я без рук, ИИ без рук: как сладкий кофе победил искусственный интеллект",
-      "link": "https://habr.com/ru/articles/1111500/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1111500",
-      "desc": "В тридевятом царстве, в тридесятом государстве жили-были нейросети заморские. Грозились они всех людей работы лишить, код за секунду писать, тексты слагать да миром править. И сидел перед ними я, с клавиатурой богатырской — Кейхроном К2, механикой аж за десять тысяч деревянных. Пиво моя механика в своё время пережила с честью, ибо пиво — напиток благородный, вода живая. А вот утренний сладкий кофе оказался зельем мёртвым. Пролился он на клавиши, и настала тьма... Привет, Хабр. Я, как обычно, сел усмирять агентов. Но первым залип пробел. Не умер, нет — залип. Нажимаешь — он думает. Отпускаешь — он ещё немного думает, а потом выдаёт то ни одного пробела, то три подряд, будто решает, стоит ли вообще разделять слова. Следом сдался Enter: стал отправлять сообщения, когда сам сочтёт нужным, а не когда я закончу мысль. Клавиатура обрела характер. Характер оказался скверный. Фирменный. И вот сижу я — владелец подписок на три нейросети, человек, который ещё вчера снисходительно объяснял коллегам, что писать код руками — прошлый век. Заморские и правда пишут код за секунду. Только сначала им надо сказать, какой именно. Буквами. С клавиатуры. Хотя, если честно, руки мои ничего, кроме пошлого, и не писали никогда. Коммиты типа «фикс фикса», комментарии в коде, которые стыдно показать джуну, и полные отчаяния послания агентам, где цензурными были только имена файлов. Но теперь даже на это клавиатуры нету. Хочу высказать ИИ всё, что о нём думаю, — а пробел залипает, и вместо крепкого словца выходит невнятное мычание одной строкой. Железный собеседник отвечает вежливо: «Не совсем понял ваш запрос. Уточните, пожалуйста». Пролить кофе",
-      "source": "Habr AI/News",
-      "time": 1795467055.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 7.0,
-        "event_concreteness": 12.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 41.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 41.0
-      },
-      "base_score": 41.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 41.0,
-      "key": "db70c219d40cae6585d22ef5de7c859a9e821e2a2edfdebcd783aee641de6bb8",
-      "importance": 41.0,
-      "editorial_value": 49.0,
-      "topics": [
-        "agents",
-        "security_regulation"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1795503918.1022272,
+    "last_start_ts": 1795505125.8944163,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795503918.1022272,
-    "last_success_ts": 1795503918.1022272,
-    "last_candidates": 0,
+    "last_run_ts": 1795505125.8944163,
+    "last_success_ts": 1795505125.8944163,
+    "last_candidates": 29,
     "last_published": 0,
-    "queue_size": 19
+    "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795507502.6241524,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1795503902.624155
+      "disabled_until": 1795508714.9657981,
+      "reason": "The read operation timed out",
+      "updated_at": 1795505114.9658003
     },
     "GROQ": {
-      "disabled_until": 1795507506.079614,
+      "disabled_until": 1795508718.2800333,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795503906.0796168
+      "updated_at": 1795505118.2800355
     },
     "OPENAI": {
-      "disabled_until": 1795590317.8365908,
+      "disabled_until": 1795591525.6264782,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795503917.8365927
+      "updated_at": 1795505125.62648
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2179,33 +2222,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795507517.048221,
+      "disabled_until": 1795508724.6385076,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795503917.0482228
+      "updated_at": 1795505124.638509
     }
   },
   "stories": {
-    "cd529b28d446cb29ea02493831169a4cc0da26ebb426b1b5118fe629ff26af1f": {
-      "time": 1795417980,
-      "title": "Bessent Defends Bank Resilience as Microsoft Warns of AI Outages - Limapagi",
-      "desc": "Bessent Defends Bank Resilience as Microsoft Warns of AI Outages Limapagi",
-      "source": "Limapagi",
-      "region": "WORLD"
-    },
-    "492f2deda49dcba88f58f091dc03d345cc1e3e9c318385a6d8f1c46839fd9d64": {
-      "time": 1795418223,
-      "title": "Почему 7% сессий съедают 74% токенов: экономика ИИ-агента на 518 сессиях",
-      "desc": "Я веду крупные проекты, и каждый разбиваю на задачи-процессы, а те — на подзадачи. Рутины в них всегда больше, чем хочется делать руками, поэтому её значительную часть я давно поручил ИИ-агенту в IDE — ассистенту, который живёт прямо в редакторе и работает с моими файлами. За последние 90 дней он поучаствовал в 23 задачах, девять из которых — крупные: писал черновики ТЗ по заметкам со встреч, парсил журналы, чинил скрипты, конвертировал таблицы, готовил протоколы. Работа, на которую раньше уходил вечер, стала занимать час. Но у этого ускорения есть цена, которую не видно в интерфейсе. Дневной лимит у меня был — 165 млн входных токенов (Мток). В конце октября счётчик расхода закрылся на 417 Мток — в 2.5 раза выше него (в деньгах конкретная сумма зависит от тарифа и модели). Почасовой разбор журнала показал неприятную деталь: больше трети сообщений за день были повторами уже сделанной работы. Агент крутился на одном месте, а я оплачивал каждый круг. После того дня я поднял локальный сервис поверх журнала агента и начал отслеживать расход так же, как расход топлива — входные токены против дневного лимита. За 90 дней накопилась статистика на 518 сессий, ~35 тысяч шагов и 10 026 Мток (10 млрд входных токенов). Главная цифра оказалась перекошенной: 38 сессий-гигантов (7%) доросли до 251+ шагов и съели 7 371 Мток — 74% всего входа . Медиана такого гиганта — 139 Мток (среднее — 194 Мток): одна затянувшаяся сессия обходится в 0.8 дневного лимита. Ниже — арифметика этого роста, SQL-запросы для проверки на своём журнале и правила, которые остановили ту самую «карусель». Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
-    "b5bf3f139a8b26e24009d1c7d3adb3fe999747b91f72469683f4755dc13f9b3c": {
-      "time": 1795418697,
-      "title": "Notable Capital, GIC and Baillie Gifford stack billions behind Anthropic ahead of IPO - Crypto Briefing",
-      "desc": "Notable Capital, GIC and Baillie Gifford stack billions behind Anthropic ahead of IPO Crypto Briefing",
-      "source": "Crypto Briefing",
-      "region": "WORLD"
-    },
     "6c7a66191f5fa1759e05e418dee997bbff89fe507abfe6b454e4e349a5d1c32e": {
       "time": 1795419653,
       "title": "Почему LLM не должна решать «участвовать в тендере»: проектируем проверяемый Go/No-Go pipeline",
@@ -2461,96 +2483,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1795261992,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 6.96,
-      "candidates": 0,
-      "queue_before": 4,
-      "queue_after": 3,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://wisevoter.com/world/us/2026/11/21/enterprise-coding-ai-spending-34-billion",
-            "image_url": "https://images.highwise.com/media/tech_artificial-intelligence.jpg",
-            "width": 1200,
-            "height": 1326,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 10.0,
-          "bonus_total": 30.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Необходимость срочной перестройки стратегии разработки и оценки рисков замещения кадров ИИ.",
-            "title": "Enterprise Coding AI Spending Hits $34 Billion - Wisevoter",
-            "final_score": 72.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795262477,
       "status": "OK",
@@ -24246,10 +24178,131 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1795505125,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 70.93,
+      "candidates": 29,
+      "queue_before": 19,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 2,
+        "known_recent": 2,
+        "already_queued": 14,
+        "story_queue": 1,
+        "story_history": 1,
+        "added": 9,
+        "candidate_count": 29,
+        "admission_rate": 31.03,
+        "dominant_block": "already_queued",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 15,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 63,
+        "query_errors": 1,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 98,
+        "raw_items": 568,
+        "source_counts": {
+          "TechCrunch AI": 5,
+          "VentureBeat AI": -1,
+          "The Verge AI": 6,
+          "OpenAI News": 1,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 6,
+          "Habr AI/News": 40,
+          "CNews": 24,
+          "Euronews": 16
+        },
+        "score_filtered": 510,
+        "quality_filtered": 24,
+        "story_dedup": 5,
+        "candidates": 29,
+        "candidate_rate": 0.0617,
+        "score_buckets": {
+          "0–39": 487,
+          "40–49": 47,
+          "50–59": 28,
+          "60–69": 6,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 1,
+          "8": 3,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795503191.8720808,
+  "last_search_ts": 1795505125.8944163,
   "last_publish_ts": 1795500537.471062,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
