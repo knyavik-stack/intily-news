@@ -1437,7 +1437,8 @@
     "c91bc3577ebf05da8b6363d8d75863d49ff0415a91d02f7e47c6ff043406f1e7": 1795497898,
     "f3c879d6826833f1fe2be04e4dcd2b9a6061c9c3e38ec59706f8243f7b7e6de6": 1795500537,
     "1a8f7c6231d31a8044133a3fe8198e4258005e11650512fe1bd0e75f545c9edf": 1795508462,
-    "a3ad91bf8ba8567ad00c45465f9f28ef8e7f6b89ab9a7cd6fd7c909e65dd36ee": 1795508938
+    "a3ad91bf8ba8567ad00c45465f9f28ef8e7f6b89ab9a7cd6fd7c909e65dd36ee": 1795508938,
+    "906cf4f82e2fdeb2a644c3bdaacb8c16ee2d38d6b066e45aafe916abf157e225": 1795510148
   },
   "known": {
     "1a8f7c6231d31a8044133a3fe8198e4258005e11650512fe1bd0e75f545c9edf": 1795505125.8944163,
@@ -1469,45 +1470,6 @@
     "50a1f0bb66adf881de8b88ef75c91d7114a2ddeb76b81e3f3b8ed3a0e5b3cc4e": 1795508938.9139237
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "ИИ-платформа нового поколения объединяет сотрудников и ИИ-агентов в одном бизнес-процессе",
-      "link": "https://www.cnews.ru/news/line/2026-11-24_ii-platforma_novogo_pokoleniya",
-      "desc": "Компания «Вебпрактик AI» представила новое поколение корпоративных ИИ-платформ – «Артель AI». Решение заменяет...",
-      "source": "CNews",
-      "time": 1795503120.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 9.0,
-        "event_concreteness": 11.0,
-        "practical_value": 6.5,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 1.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 52.0,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 76.0
-      },
-      "base_score": 52.0,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 76.0,
-      "key": "906cf4f82e2fdeb2a644c3bdaacb8c16ee2d38d6b066e45aafe916abf157e225",
-      "importance": 76.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "business",
-        "tools"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "WORLD",
       "title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
@@ -1731,6 +1693,44 @@
       "tier": "A"
     },
     {
+      "region": "RUSSIA",
+      "title": "От инверсии одного бита до чипов DDR5 — как устроена коррекция ошибок в оперативной памяти",
+      "link": "https://habr.com/ru/companies/selectel/articles/1111332/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1111332",
+      "desc": "Бывало ли у вас такое, что домашний ПК или «продовый» сервер ни с того ни с сего зависал или ловил BSOD, но после обычной перезагрузки продолжал работать как ни в чем не бывало? При этом диагностика не находила неисправностей, и вы, так и не найдя истинную причину сбоя, просто оставляли все как есть и пользовались устройством дальше. Задумывались ли вы, какие мелочи иногда могут влиять на такое поведение сервера? А вот и инженерам из Бельгии в мае 2003 года пришлось в этом разбираться. Виной всему занятная ситуация на выборах: число голосов, полученных Марией Виндефогель, превысило реальное количество пришедших избирателей ровно на 4 096. Было много вопросов, проверок. Проверили код программы электронного голосования (Бельгия — одна из первых стран, где его ввели) и изучили возможность хакерских атак. Однако разгадка оказалась куда интереснее. В двоичном коде ОЗУ количество голосов за кандидата хранилось в виде последовательности нулей и единиц. Из-за внешнего воздействия в 13-й позиции памяти значение бита самопроизвольно изменилось с нуля на единицу. Компьютер мгновенно прибавил к реальному результату голосования число 4 096. Такое явление называют Bit Flip (или же инверсия бита). Читать далее",
+      "source": "Habr AI/News",
+      "time": 1795507388.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 5.0,
+        "event_concreteness": 12.5,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 45.0,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 69.0
+      },
+      "base_score": 45.0,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 69.0,
+      "key": "c3655659560c586966ed7b044d09df09bf8d35dd13ba5170d3f504567358a574",
+      "importance": 69.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "chips",
+        "tools"
+      ],
+      "audience_score": 8.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
       "region": "WORLD",
       "title": "Levenza Acquires Fluid Inference, Launches Enterprise AI Agents Globally - Korea IT Times",
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1yNFVsb2Z4d3dFOWNSVjV4eWhqVkF1ZnhydVZnQkFwcGpFeHh5RnlIYUd1b0ZkVHFKTzY0dnJhN3JzQjNZT0NHUkFvRkk5MVlNWlc2dC1Kb1Z4TUpqV1RwZkU2b0psb0x5UU5jS2RzekQ?oc=5",
@@ -1805,6 +1805,44 @@
     },
     {
       "region": "RUSSIA",
+      "title": "ATOM заключила соглашения о кредитных линиях на 4,5 млрд иен для создания кластера GPU и подготовки гуманоидных роботов к серийному производству - Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNOFZvZ2V5N1VlRE0xczk1SnM4ME9sTWdNeVBEdmJXTzAtT280aWZsUnBpdzgtR3NOWTZyYUZOV2hBNmt0cWdBek9HSF96SUdRS0ZNaUtVeXhNUWpQYV92WG9DdmI4NGxUMzZ0cEgxNFVDb1h2RUY1MW5JM1ZMQlF6eS1aWFJrTGdBTDRVN2d0d00zWFQ0REE?oc=5",
+      "desc": "ATOM заключила соглашения о кредитных линиях на 4,5 млрд иен для создания кластера GPU и подготовки гуманоидных роботов к серийному производству Unite.AI",
+      "source": "Unite.AI",
+      "time": 1795505222.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 7.0,
+        "event_concreteness": 12.5,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 2.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 45.5,
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 66.5
+      },
+      "base_score": 45.5,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 66.5,
+      "key": "5ef3ca638ae33b937566d39d0e4092967ce1d8beb9dcf9ff8475f49ff72c39bb",
+      "importance": 66.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "chips",
+        "robotics"
+      ],
+      "audience_score": 7.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
       "title": "Учебный курс с сюжетом: баг или фича?",
       "link": "https://habr.com/ru/articles/1111594/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1111594",
       "desc": "В предыдущей статье я рассказывала о том, как много общего в написании художественного произведения и в процессе разработки ПО, и упоминала, что создание моей книги берёт начало в курсе по тестированию для Stepik. Теперь пришло время рассказать и о самом курсе. И о том, зачем же в учебном материале вообще нужен сюжет. Тестирование – это ж для зануд, разве нет? Ну… в этом чуть позже разберёмся. А пока немного предыстории. Мне хотелось сделать бесплатный курс, с которого начнётся моя собственная линейка, – до этого я писала курсы только в соавторстве, как бы работая на других авторов. А этот курс должен был стать лично моим. Но бесплатные курсы часто бросают на старте, не доходя и до середины. А теория тестирования, если её рассказывать сухими формулировками из учебников, действительно довольно однообразна (как, впрочем, и любая наука, сжатая «до смысла»). И я сделала курс-приключение. Такой, где ученик постигает знания вместе с 14-летним подростком – Аланом, который попал на космический корабль в виртуальной реальности, а наставник у них обоих – ироничный летающий робот Окулус. Алан пробует и ошибается, Окулус язвит и объясняет, студент разбирается вместе с ними. Всем весело. На 21 ноября у курса 2 033 учащихся, 34 отзыва – все на пять звёзд – и 83 выданных сертификата, из них 65 с отличием. Ниже расскажу, как сюжет встраивается в учебный материал, как устроен тренажёр с нарочно сломанным софтом, где ИИ-Окулус проверяет баг-репорты и что показали данные – в том числе и не самые радужные. Читать далее",
@@ -1876,82 +1914,6 @@
       "russia_weight_bonus": 0.0
     },
     {
-      "region": "RUSSIA",
-      "title": "ATOM заключила соглашения о кредитных линиях на 4,5 млрд иен для создания кластера GPU и подготовки гуманоидных роботов к серийному производству - Unite.AI",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNOFZvZ2V5N1VlRE0xczk1SnM4ME9sTWdNeVBEdmJXTzAtT280aWZsUnBpdzgtR3NOWTZyYUZOV2hBNmt0cWdBek9HSF96SUdRS0ZNaUtVeXhNUWpQYV92WG9DdmI4NGxUMzZ0cEgxNFVDb1h2RUY1MW5JM1ZMQlF6eS1aWFJrTGdBTDRVN2d0d00zWFQ0REE?oc=5",
-      "desc": "ATOM заключила соглашения о кредитных линиях на 4,5 млрд иен для создания кластера GPU и подготовки гуманоидных роботов к серийному производству Unite.AI",
-      "source": "Unite.AI",
-      "time": 1795505222.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 7.0,
-        "event_concreteness": 12.5,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 2.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 45.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 45.5
-      },
-      "base_score": 45.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 45.5,
-      "key": "5ef3ca638ae33b937566d39d0e4092967ce1d8beb9dcf9ff8475f49ff72c39bb",
-      "importance": 45.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "chips",
-        "robotics"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "От инверсии одного бита до чипов DDR5 — как устроена коррекция ошибок в оперативной памяти",
-      "link": "https://habr.com/ru/companies/selectel/articles/1111332/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1111332",
-      "desc": "Бывало ли у вас такое, что домашний ПК или «продовый» сервер ни с того ни с сего зависал или ловил BSOD, но после обычной перезагрузки продолжал работать как ни в чем не бывало? При этом диагностика не находила неисправностей, и вы, так и не найдя истинную причину сбоя, просто оставляли все как есть и пользовались устройством дальше. Задумывались ли вы, какие мелочи иногда могут влиять на такое поведение сервера? А вот и инженерам из Бельгии в мае 2003 года пришлось в этом разбираться. Виной всему занятная ситуация на выборах: число голосов, полученных Марией Виндефогель, превысило реальное количество пришедших избирателей ровно на 4 096. Было много вопросов, проверок. Проверили код программы электронного голосования (Бельгия — одна из первых стран, где его ввели) и изучили возможность хакерских атак. Однако разгадка оказалась куда интереснее. В двоичном коде ОЗУ количество голосов за кандидата хранилось в виде последовательности нулей и единиц. Из-за внешнего воздействия в 13-й позиции памяти значение бита самопроизвольно изменилось с нуля на единицу. Компьютер мгновенно прибавил к реальному результату голосования число 4 096. Такое явление называют Bit Flip (или же инверсия бита). Читать далее",
-      "source": "Habr AI/News",
-      "time": 1795507388.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 5.0,
-        "event_concreteness": 12.5,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 45.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 45.0
-      },
-      "base_score": 45.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 45.0,
-      "key": "c3655659560c586966ed7b044d09df09bf8d35dd13ba5170d3f504567358a574",
-      "importance": 45.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "chips",
-        "tools"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
       "region": "WORLD",
       "title": "Meta launches Muse in UK – the AI agent that can do your Christmas shopping - The Guardian",
       "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNYnNPV3c5WnFtTU5oUUFrMDU5ZXpxTWljNm9hZHhlUFFtNDBEclNETVF5RGc1ei04dlNPbGZLazJRLUEwMkdCbDZkckE1UUNBU1R3QkpYR3JORDZkNnJMckFCelFldldjRElLWmxLbllyNHU3cFQ2d1AwMGItU205eWhRZFF2WFd1MFdTbzVBNXBGdTdiVlhEaWVrZnZUN2V0SFpOSFFn?oc=5",
@@ -1983,43 +1945,6 @@
       "editorial_value": 50.0,
       "topics": [
         "agents"
-      ],
-      "audience_score": null,
-      "tier": "A"
-    },
-    {
-      "region": "WORLD",
-      "title": "Big Tech's 'De-Nvidia' Push Accelerates Even as Jensen Huang Returns; Amazon Buys AI Software Firm for approximately $7.4 Billion - BigGo Finance",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9jS3ZQX181UU4wWGZnM3RHQnR6TUhBTFNQODgxTWxyVWxQeGItVUNkcTN6R3p3VldFbmhvUFliZFRBMnpwemxHZjB2WjZfVWwxaTVhdXh4OTVXdWNBQjVDUGdIMjVRd04xbWROcDR4OGRJMVdDZWc?oc=5",
-      "desc": "Big Tech's 'De-Nvidia' Push Accelerates Even as Jensen Huang Returns; Amazon Buys AI Software Firm for approximately $7.4 Billion BigGo Finance",
-      "source": "BigGo Finance",
-      "time": 1795487760.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 9.0,
-        "event_concreteness": 13.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 2.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 44.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 44.0
-      },
-      "base_score": 44.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 44.0,
-      "key": "8844b6a81617d50c50127480419dda43f3adbf0e93af6d1e2030660cad321fe3",
-      "importance": 44.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "chips",
-        "tools"
       ],
       "audience_score": null,
       "tier": "A"
@@ -2058,6 +1983,43 @@
       "audience_score": null,
       "tier": "A",
       "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "Big Tech's 'De-Nvidia' Push Accelerates Even as Jensen Huang Returns; Amazon Buys AI Software Firm for approximately $7.4 Billion - BigGo Finance",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9jS3ZQX181UU4wWGZnM3RHQnR6TUhBTFNQODgxTWxyVWxQeGItVUNkcTN6R3p3VldFbmhvUFliZFRBMnpwemxHZjB2WjZfVWwxaTVhdXh4OTVXdWNBQjVDUGdIMjVRd04xbWROcDR4OGRJMVdDZWc?oc=5",
+      "desc": "Big Tech's 'De-Nvidia' Push Accelerates Even as Jensen Huang Returns; Amazon Buys AI Software Firm for approximately $7.4 Billion BigGo Finance",
+      "source": "BigGo Finance",
+      "time": 1795487760.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 9.0,
+        "event_concreteness": 13.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 2.0,
+        "freshness": 0.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 43.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 43.5
+      },
+      "base_score": 43.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 43.5,
+      "key": "8844b6a81617d50c50127480419dda43f3adbf0e93af6d1e2030660cad321fe3",
+      "importance": 43.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "chips",
+        "tools"
+      ],
+      "audience_score": null,
+      "tier": "A"
     },
     {
       "region": "WORLD",
@@ -2173,20 +2135,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795508938.9139237,
+    "last_start_ts": 1795510148.9498777,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795508938.9139237,
-    "last_success_ts": 1795508938.9139237,
-    "last_candidates": 36,
+    "last_run_ts": 1795510148.9498777,
+    "last_success_ts": 1795510148.9498777,
+    "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 19
+    "queue_size": 18
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795508980.9082994
+      "updated_at": 1795510151.5243893
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2210,13 +2172,6 @@
     }
   },
   "stories": {
-    "3a1f285f9a2c4955fc5635889fd0d17e5517c4a12607a12efb8e9ed563d5e1da": {
-      "time": 1795423020,
-      "title": "Когда «нормальный специалист» должен заменить целую систему",
-      "desc": "Независимое исследование десяти вакансий в ИТ: почему коммерческие гибридные роли — самая уязвимая точка найма, и что ожидать от этого дальше Технических деталей нет; сложность — в теме найма, а не в технологиях. Что общего у вакансии «founding sales», менеджера по продажам на шесть направлений и AI Solutions Architect? Один и тот же ход мысли: «наймём нормального специалиста, и оно само пойдёт». Разобрала 10 вакансий и показываю, как этот паттерн переезжает из коммерческих ролей в технические. Читать ~20 минут, но в начале есть саммари за 5 минут — только выводы, без деталей . Внутри: таблица c описанием вакансий + аналитика, разбор асимметрии риска (чем вы рискуете, когда соглашаетесь на такие вакансии), чек-лист для кандидата как проверить, куда вы идете и что ожидать. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "3865c4bacda789b648983bd444071cad5889c7f618a5631dc19c762ae01f73e0": {
       "time": 1795424465,
       "title": "Documentation-Driven Development в Go: генерация кода из AsyncAPI, Protobuf, OpenAPI и JSON Schema",
@@ -2440,10 +2395,16 @@
       "desc": "В октябре под моей статьёй про локальные модели читатель посоветовал заранее приготовить замену Claude на случай блокировки. Я ответил: если отключат, перейду на Codex. Через полтора месяца вместо оплаченной подписки я увидел «Organization disabled». Пришлось проверять свой ответ на практике. Для знакомства с Codex у меня была задача из продакшена. Java-сервис терял соединения, а я уже знал, какой тест отличает утечку от обычного таймаута. На двух RTX 5090 локальная Qwen с движком Strata поймала эту утечку в двух попытках из пяти. Облачная Astra за восемь минут нашла версию библиотеки с исправлением. Я открыл результаты её тестов — и вот тут наши с ней представления о законченном расследовании разошлись. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "906cf4f82e2fdeb2a644c3bdaacb8c16ee2d38d6b066e45aafe916abf157e225": {
+      "time": 1795510148,
+      "title": "ИИ-платформа нового поколения объединяет сотрудников и ИИ-агентов в одном бизнес-процессе",
+      "desc": "Компания «Вебпрактик AI» представила новое поколение корпоративных ИИ-платформ – «Артель AI». Решение заменяет...",
+      "source": "CNews",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -2461,151 +2422,11 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795267039,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 40.83,
-      "candidates": 18,
-      "queue_before": 5,
-      "queue_after": 7,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 9,
-        "known_recent": 0,
-        "already_queued": 5,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 3,
-        "candidate_count": 18,
-        "admission_rate": 16.67,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "Remote end closed connection without response": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "Remote end closed connection without response"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.33,
-          "bonus_total": 75.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 3,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра бюджетов и стратегий из-за возможного охлаждения рынка AI-инвестиций.",
-            "title": "Акции Nvidia рухнули на 14%, Nasdaq потерял 4 000 миллиардов за неделю - Pasquale Pillitteri",
-            "final_score": 65.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 63,
-        "query_errors": 1,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 60,
-        "raw_items": 532,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 40,
-          "CNews": 0,
-          "Euronews": 19
-        },
-        "score_filtered": 501,
-        "quality_filtered": 10,
-        "story_dedup": 3,
-        "candidates": 18,
-        "candidate_rate": 0.0381,
-        "score_buckets": {
-          "0–39": 479,
-          "40–49": 32,
-          "50–59": 18,
-          "60–69": 2,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 2,
-          "6": 1,
-          "7": 1,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795268246,
       "status": "OK",
@@ -24225,11 +24046,101 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795510148,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 18.29,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 18,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://www.cnews.ru/news/line/2026-11-24_ii-platforma_novogo_pokoleniya",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.33,
+          "bonus_total": 66.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет оценить готовность инструментов для автоматизации бизнес-процессов, но требует проверки на реальную эффективность.",
+            "title": "ИИ-платформа нового поколения объединяет сотрудников и ИИ-агентов в одном бизнес-процессе",
+            "final_score": 73.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 6,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1795508938.9139237,
-  "last_publish_ts": 1795508938.9139237,
+  "last_publish_ts": 1795510148.9498777,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
