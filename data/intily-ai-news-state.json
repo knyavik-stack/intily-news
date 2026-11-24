@@ -2163,19 +2163,19 @@
         "novelty": 0.0,
         "source_quality": 4.0,
         "evidence": 3.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 50.5,
+        "base_score": 50.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 50.5
+        "final_score": 50.0
       },
-      "base_score": 50.5,
+      "base_score": 50.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 50.5,
+      "score": 50.0,
       "key": "93db4a22f2c6296a79be1838538fd950491c267e97686fa3ad17f83cc2564557",
-      "importance": 50.5,
+      "importance": 50.0,
       "editorial_value": 50.0,
       "topics": [
         "chips"
@@ -2223,30 +2223,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795523589.9865642,
+    "last_start_ts": 1795524069.043075,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795523589.9865642,
-    "last_success_ts": 1795523589.9865642,
+    "last_run_ts": 1795524069.043075,
+    "last_success_ts": 1795524069.043075,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795527180.9599264,
+      "disabled_until": 1795527657.7255633,
       "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1795523580.95993
+      "updated_at": 1795524057.7255654
     },
     "GROQ": {
-      "disabled_until": 1795527184.3880534,
+      "disabled_until": 1795527660.8399756,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795523584.3880565
+      "updated_at": 1795524060.8399785
     },
     "OPENAI": {
-      "disabled_until": 1795609989.7250588,
+      "disabled_until": 1795610468.7616708,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795523589.7250617
+      "updated_at": 1795524068.761673
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2254,19 +2254,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795527189.5017042,
+      "disabled_until": 1795527667.856641,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795523589.5017073
+      "updated_at": 1795524067.8566427
     }
   },
   "stories": {
-    "14234eeb631736c7bac5f6046f5485455a5f565b3c5f21c2cb7394601d92a40d": {
-      "time": 1795437426,
-      "title": "Выбор GPU для ИИ-проекта: от MVP до продакшена под нагрузкой и гиперскейлинга",
-      "desc": "Хороший ИИ-продукт как для внутренних (корпоративных), так и для внешних пользователей решает конкретные проблемы, стоит недорого и, конечно же, не зависит от вендоров. Open-source модели дают свободу выбора и предсказуемость в работе, но требуют собственной инфраструктуры для запуска. Порой при расчёте нагрузки и требований к железу цифры получаются пугающими, и кажется, что проект нерентабельный. Но это ошибка, из-за которой проект может так и не увидеть свет. В этой статье на реальном примере запуска корпоративного ИИ-чата на базе Qwen3.5-122B-A10B-NVFP4 мы покажем, как тестировать и развивать ИИ-продукт на разных этапах разработки, постепенно наращивая инфраструктурные мощности так, чтобы расходы на содержание GPU были оправданы и невелики. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "b4eb1dbe827e82276491b7f6d99e3f7320b54b8b2ea9b17cff0b9e56920d9729": {
       "time": 1795437904,
       "title": "ГК «Солар»: в ИИ-сервисах на 200% выросло количество уязвимостей",
@@ -2466,94 +2459,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795283839,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 8.87,
-      "candidates": 0,
-      "queue_before": 9,
-      "queue_after": 8,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://finance.yahoo.com/technology/article/anthropic-engineers-warning-about-claude-code-explains-why-tech-outages-could-get-much-worse-110000573.html",
-            "image_url": "https://s.yimg.com/lo/mysterio/api/8f46197a3b63691467d7557acbe6d4a60231703c08c54a0acd2fe78d667a6906/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2026-02%2Fd74158d0-0778-11f1-99ad-572689e3b02e",
-            "width": 1200,
-            "height": 800,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость пересмотра протоколов безопасности и контроля доступа при внедрении AI-агентов в CI/CD процессы.",
-            "title": "Anthropic engineer's warning about Claude Code explains why tech outages could get much worse - Yahoo Finance",
-            "final_score": 65.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795284569,
       "status": "OK",
@@ -24041,6 +23946,78 @@
       "business_reason": "no_eligible_item",
       "searched": false,
       "duration_sec": 12.86,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 4,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1795524069,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 14.26,
       "candidates": 0,
       "queue_before": 20,
       "queue_after": 20,
