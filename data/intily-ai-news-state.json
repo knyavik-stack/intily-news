@@ -1,6 +1,5 @@
 {
   "published": {
-    "acc5867106b55cbe59d23d0b83f7dc3c6e377ae7b68124e7d07fe675e522c793": 1792915967,
     "bd75955369f568de08d4286f53bcc7182aa17171262e5f8cd0e0cc91c47416cf": 1792918608,
     "3c2b0374f27f777ff2ad135662806ed72db4d5c753468d040b3c65c66d6db896": 1792919089,
     "2059b8af2dd27986070a4c1ed7e3ae7ba0cfe5f17ca82fdeccf9be25c13b2782": 1792921250,
@@ -1436,7 +1435,8 @@
     "cd45c11501f7fcc395aa7ab211cba8e4a9b37c7a6824cb11b22c2e5a1534e19c": 1795496939,
     "df98e4bbe2da9f23f6aaf200b7c5e19a95f1bf2ca638f5d46dd0226cc3ff00de": 1795497661,
     "c91bc3577ebf05da8b6363d8d75863d49ff0415a91d02f7e47c6ff043406f1e7": 1795497898,
-    "f3c879d6826833f1fe2be04e4dcd2b9a6061c9c3e38ec59706f8243f7b7e6de6": 1795500537
+    "f3c879d6826833f1fe2be04e4dcd2b9a6061c9c3e38ec59706f8243f7b7e6de6": 1795500537,
+    "1a8f7c6231d31a8044133a3fe8198e4258005e11650512fe1bd0e75f545c9edf": 1795508462
   },
   "known": {
     "90ff53a1d5a3d952cf944d20f484c5604774e8a0a4110359a4e6a436ba4951a2": 1795503191.8720808,
@@ -1461,49 +1461,6 @@
     "c06174b3bbb229271b4305a09cc2eb49c71e5318623cdff65a2c2b39d3a5efac": 1795507028.028921
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Сторонний код в Яндекс 360: как мы построили проверку безопасности плагинов с помощью AI",
-      "link": "https://habr.com/ru/companies/yandex/articles/1109776/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1109776",
-      "desc": "Недавно мы запустили общую платформу плагинов Яндекс 360. Теперь расширять продукт собственным кодом можно не только в Трекере, но и в других сервисах. Нам, команде безопасности, нужно проверять плагины для каждого из них: разбирать чужой код, зависимости и запрошенные доступы к данным. А после обновления плагина возвращаться к проверке. Читать каждый бандл целиком вручную трудно, поэтому ещё на этапе работы с плагинами в сервисах мы подключили к ревью AI‑агента. Вместе со статическими анализаторами и поиском секретов он помогает инженеру проверять разрешения, отслеживать передачу данных и разбирать потенциальные проблемы. По нашей практической оценке, на анализ отчёта и дополнительные вопросы теперь уходит около 10 минут, тогда как раньше ручное ревью занимало около часа. При этом выводы AI‑агента тоже приходится проверять: в статье покажу его полезную находку, и его рекомендацию, которая сломала бы функцию плагина. Привет, Хабр! Я Максим Гусев, старший инженер по информационной безопасности в Яндекс 360. Коллеги уже рассказывали, как устроена платформа плагинов Трекера : зачем понадобились расширения, как изолировали сторонний код и организовали доступ к API. Я расскажу, как мы построили процесс проверки плагинов: от заявки на модерацию до решения инженера ИБ. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1795503731.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 12.0,
-        "event_concreteness": 15.5,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 55.0,
-        "audience_score": 7.0,
-        "audience_bonus": 21.0,
-        "final_score": 76.0
-      },
-      "base_score": 55.0,
-      "audience_bonus": 21.0,
-      "score_stage": "final",
-      "score": 76.0,
-      "key": "1a8f7c6231d31a8044133a3fe8198e4258005e11650512fe1bd0e75f545c9edf",
-      "importance": 76.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "security_regulation",
-        "tools"
-      ],
-      "audience_score": 7.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0,
-      "last_failed_at": 1795507028,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1795507328
-    },
     {
       "region": "RUSSIA",
       "title": "180 миллиардов параметров на двух RTX 5090. Как Strata меня впечатлила, Astra разочаровала, а Claude просто исчез",
@@ -1586,6 +1543,43 @@
       "russia_weight_bonus": 0.0
     },
     {
+      "region": "RUSSIA",
+      "title": "Android-троян RatHat с ИИ атакует Россию и Беларусь: как мошенники используют Google Gemini - Carexpo.ru_ все авто на одном сайте",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWmhFZWowWFF2LUVqbE5jZWZYRkQteUFnZXFORGd6ZVhuSXd5XzE2SFNhV0p5VFdmM29xblFyQTV0UFBCX1MwZW9EN2NETjlVenk2T18tVHo3VHVsTnpqeUhEak1YbGNxNHFoQnlfNTJFSUszTU9oSDEwOFFxWXUxanFXVnJ4UzZkTVk4SmpBRk85R05uWGloTDFmMC1laHRCRkk0UEtqNVA4WEJReUFjTUdJUllpNmlXTTB1VA?oc=5",
+      "desc": "Android-троян RatHat с ИИ атакует Россию и Беларусь: как мошенники используют Google Gemini Carexpo.ru_ все авто на одном сайте",
+      "source": "Carexpo.ru_ все авто на одном сайте",
+      "time": 1795505367.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 8.0,
+        "event_concreteness": 15.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 2.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 48.5,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 72.5
+      },
+      "base_score": 48.5,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 72.5,
+      "key": "bb29902ff489aa83eff54b0decb51b6720465b8778c5fa5db977a710a9a03060",
+      "importance": 72.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "models"
+      ],
+      "audience_score": 8.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
       "region": "WORLD",
       "title": "Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes",
       "link": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
@@ -1639,19 +1633,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 51.0,
+        "base_score": 50.5,
         "audience_score": 7.0,
         "audience_bonus": 21.0,
-        "final_score": 72.0
+        "final_score": 71.5
       },
-      "base_score": 51.0,
+      "base_score": 50.5,
       "audience_bonus": 21.0,
       "score_stage": "final",
-      "score": 72.0,
+      "score": 71.5,
       "key": "9b2e587934eaf97ee3dbc63a7f785ad67de2b156692a17ac2bdba55835038940",
-      "importance": 72.0,
+      "importance": 71.5,
       "editorial_value": 50.0,
       "topics": [
         "chips",
@@ -1808,43 +1802,6 @@
     },
     {
       "region": "RUSSIA",
-      "title": "Android-троян RatHat с ИИ атакует Россию и Беларусь: как мошенники используют Google Gemini - Carexpo.ru_ все авто на одном сайте",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWmhFZWowWFF2LUVqbE5jZWZYRkQteUFnZXFORGd6ZVhuSXd5XzE2SFNhV0p5VFdmM29xblFyQTV0UFBCX1MwZW9EN2NETjlVenk2T18tVHo3VHVsTnpqeUhEak1YbGNxNHFoQnlfNTJFSUszTU9oSDEwOFFxWXUxanFXVnJ4UzZkTVk4SmpBRk85R05uWGloTDFmMC1laHRCRkk0UEtqNVA4WEJReUFjTUdJUllpNmlXTTB1VA?oc=5",
-      "desc": "Android-троян RatHat с ИИ атакует Россию и Беларусь: как мошенники используют Google Gemini Carexpo.ru_ все авто на одном сайте",
-      "source": "Carexpo.ru_ все авто на одном сайте",
-      "time": 1795505367.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 8.0,
-        "event_concreteness": 15.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 2.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 48.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 48.5
-      },
-      "base_score": 48.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 48.5,
-      "key": "bb29902ff489aa83eff54b0decb51b6720465b8778c5fa5db977a710a9a03060",
-      "importance": 48.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "models"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
       "title": "Учебный курс с сюжетом: баг или фича?",
       "link": "https://habr.com/ru/articles/1111594/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1111594",
       "desc": "В предыдущей статье я рассказывала о том, как много общего в написании художественного произведения и в процессе разработки ПО, и упоминала, что создание моей книги берёт начало в курсе по тестированию для Stepik. Теперь пришло время рассказать и о самом курсе. И о том, зачем же в учебном материале вообще нужен сюжет. Тестирование – это ж для зануд, разве нет? Ну… в этом чуть позже разберёмся. А пока немного предыстории. Мне хотелось сделать бесплатный курс, с которого начнётся моя собственная линейка, – до этого я писала курсы только в соавторстве, как бы работая на других авторов. А этот курс должен был стать лично моим. Но бесплатные курсы часто бросают на старте, не доходя и до середины. А теория тестирования, если её рассказывать сухими формулировками из учебников, действительно довольно однообразна (как, впрочем, и любая наука, сжатая «до смысла»). И я сделала курс-приключение. Такой, где ученик постигает знания вместе с 14-летним подростком – Аланом, который попал на космический корабль в виртуальной реальности, а наставник у них обоих – ироничный летающий робот Окулус. Алан пробует и ошибается, Окулус язвит и объясняет, студент разбирается вместе с ними. Всем весело. На 21 ноября у курса 2 033 учащихся, 34 отзыва – все на пять звёзд – и 83 выданных сертификата, из них 65 с отличием. Ниже расскажу, как сюжет встраивается в учебный материал, как устроен тренажёр с нарочно сломанным софтом, где ИИ-Окулус проверяет баг-репорты и что показали данные – в том числе и не самые радужные. Читать далее",
@@ -1859,24 +1816,24 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 46.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 46.5
+        "base_score": 46.0,
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 64.0
       },
-      "base_score": 46.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 46.5,
+      "base_score": 46.0,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 64.0,
       "key": "88a6e802ae60a4f3ec083e525ebffb168ddc7171e1bf71b8389b50bd6199c92c",
-      "importance": 46.5,
+      "importance": 64.0,
       "editorial_value": 50.0,
       "topics": [
         "robotics"
       ],
-      "audience_score": null,
+      "audience_score": 6.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
     },
@@ -2209,30 +2166,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795507748.592393,
+    "last_start_ts": 1795508462.4693625,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795507748.592393,
-    "last_success_ts": 1795507748.592393,
+    "last_run_ts": 1795508462.4693625,
+    "last_success_ts": 1795508462.4693625,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 20
+    "last_published": 1,
+    "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795511333.495832,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1795507733.4958346
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795508475.1675444
     },
     "GROQ": {
-      "disabled_until": 1795511337.9214222,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795507737.9214244
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795508451.1610563
     },
     "OPENAI": {
-      "disabled_until": 1795594148.423318,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795507748.4233198
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795508451.1610563
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2240,9 +2197,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795511347.4632573,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795507747.4632592
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795508451.1610563
     }
   },
   "stories": {
@@ -2469,12 +2426,18 @@
       "desc": "US banks tighten controls on in-house AI agents after OpenAI security incidents Business Upturn",
       "source": "Business Upturn",
       "region": "WORLD"
+    },
+    "1a8f7c6231d31a8044133a3fe8198e4258005e11650512fe1bd0e75f545c9edf": {
+      "time": 1795508462,
+      "title": "Сторонний код в Яндекс 360: как мы построили проверку безопасности плагинов с помощью AI",
+      "desc": "Недавно мы запустили общую платформу плагинов Яндекс 360. Теперь расширять продукт собственным кодом можно не только в Трекере, но и в других сервисах. Нам, команде безопасности, нужно проверять плагины для каждого из них: разбирать чужой код, зависимости и запрошенные доступы к данным. А после обновления плагина возвращаться к проверке. Читать каждый бандл целиком вручную трудно, поэтому ещё на этапе работы с плагинами в сервисах мы подключили к ревью AI‑агента. Вместе со статическими анализаторами и поиском секретов он помогает инженеру проверять разрешения, отслеживать передачу данных и разбирать потенциальные проблемы. По нашей практической оценке, на анализ отчёта и дополнительные вопросы теперь уходит около 10 минут, тогда как раньше ручное ревью занимало около часа. При этом выводы AI‑агента тоже приходится проверять: в статье покажу его полезную находку, и его рекомендацию, которая сломала бы функцию плагина. Привет, Хабр! Я Максим Гусев, старший инженер по информационной безопасности в Яндекс 360. Коллеги уже рассказывали, как устроена платформа плагинов Трекера : зачем понадобились расширения, как изолировали сторонний код и организовали доступ к API. Я расскажу, как мы построили процесс проверки плагинов: от заявки на модерацию до решения инженера ИБ. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "WORLD",
@@ -2491,99 +2454,10 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795266325,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 13.88,
-      "candidates": 0,
-      "queue_before": 7,
-      "queue_after": 6,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/articles/1110658/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1110658",
-            "image_url": "https://habr.com/share/publication/1110658/2342a4f9c2652971d6327f5b37349aec/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 8.0,
-          "bonus_total": 72.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 3,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Позволяет разработчикам снизить операционные расходы на инфраструктуру RAG и избежать зависимости от внешних API.",
-            "title": "Как я перестал платить за токены и собрал локальный RAG на 72 000 чанков в SQLite",
-            "final_score": 81.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795266793,
       "status": "OK",
@@ -24205,11 +24079,101 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1795508462,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 26.98,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 19,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/companies/yandex/articles/1109776/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1109776",
+            "image_url": "https://habr.com/share/publication/1109776/0a637ac5f09d59987edc4e7fd02b4998/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.33,
+          "bonus_total": 66.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Демонстрация реального кейса внедрения AI в процесс безопасности с оценкой эффективности и рисков ошибок модели.",
+            "title": "Сторонний код в Яндекс 360: как мы построили проверку безопасности плагинов с помощью AI",
+            "final_score": 79.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 9,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1795507028.028921,
-  "last_publish_ts": 1795500537.471062,
+  "last_publish_ts": 1795508462.4693625,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
