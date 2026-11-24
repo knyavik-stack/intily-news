@@ -1439,7 +1439,6 @@
     "f3c879d6826833f1fe2be04e4dcd2b9a6061c9c3e38ec59706f8243f7b7e6de6": 1795500537
   },
   "known": {
-    "4f908584057fd424c2e755597aabafc936d456a75ab97f8b9f79ee78a8b02b8d": 1795500801.2966444,
     "90ff53a1d5a3d952cf944d20f484c5604774e8a0a4110359a4e6a436ba4951a2": 1795503191.8720808,
     "545a273404ac50bb195eb6f09ed7b65c96e308c45613efaf5a5c1792571082c1": 1795503191.8720808,
     "50a1f0bb66adf881de8b88ef75c91d7114a2ddeb76b81e3f3b8ed3a0e5b3cc4e": 1795503191.8720808,
@@ -2191,30 +2190,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795506078.5217426,
+    "last_start_ts": 1795506566.2953556,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795506078.5217426,
-    "last_success_ts": 1795506078.5217426,
+    "last_run_ts": 1795506566.2953556,
+    "last_success_ts": 1795506566.2953556,
     "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795509653.6219814,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1795506053.6219838
+      "disabled_until": 1795510151.7347229,
+      "reason": "The read operation timed out",
+      "updated_at": 1795506551.7347255
     },
     "GROQ": {
-      "disabled_until": 1795509656.7651575,
+      "disabled_until": 1795510154.8724277,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795506056.7651594
+      "updated_at": 1795506554.8724296
     },
     "OPENAI": {
-      "disabled_until": 1795592478.29893,
+      "disabled_until": 1795592966.1254983,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795506078.2989314
+      "updated_at": 1795506566.1255007
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2222,9 +2221,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795509677.4688094,
+      "disabled_until": 1795510165.2717142,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795506077.468811
+      "updated_at": 1795506565.2717164
     }
   },
   "stories": {
@@ -2476,96 +2475,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1795263917,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 4.24,
-      "candidates": 0,
-      "queue_before": 4,
-      "queue_after": 3,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/companies/selectel/articles/1110070/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1110070",
-            "image_url": "https://habr.com/share/publication/1110070/c3e098559dd97afd04a847de47c67f7a/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 7.0,
-          "bonus_total": 21.0,
-          "max_score": 7.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость долгосрочного планирования инфраструктурных затрат под будущие требования ИИ-моделей.",
-            "title": "JEDEC анонсировали первые параметры DDR6: чем она отличается от DDR5 и где это будет заметно",
-            "final_score": 63.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795265119,
       "status": "OK",
@@ -24198,6 +24107,78 @@
         "GEMINI": {
           "blocked": true,
           "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1795506566,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 34.94,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 14,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
         },
         "GROQ": {
           "blocked": true,
