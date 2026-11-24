@@ -1,6 +1,5 @@
 {
   "published": {
-    "535f9e84755d2a8f0537b7e16a8f07e843b0b7fc05154c4405589db1e9e0e02c": 1792931575,
     "ff36651d35d2fe08f8e93b389beb488313c13e5ee10c67ea56d11c15454d02a7": 1792933498,
     "d4cc5bd874dd3828b249061ba02679c159e65ebca866f7aa44019051c1d83acc": 1792934695,
     "eb48420d35628443681554db0c98acca72f7d4705324873aa8dfc7a77034a22c": 1792934935,
@@ -2224,30 +2223,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795523389.0251427,
+    "last_start_ts": 1795523589.9865642,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795523389.0251427,
-    "last_success_ts": 1795523389.0251427,
-    "last_candidates": 38,
+    "last_run_ts": 1795523589.9865642,
+    "last_success_ts": 1795523589.9865642,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795526961.9660628,
-      "reason": "The read operation timed out",
-      "updated_at": 1795523361.966066
+      "disabled_until": 1795527180.9599264,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1795523580.95993
     },
     "GROQ": {
-      "disabled_until": 1795526965.7559137,
+      "disabled_until": 1795527184.3880534,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795523365.7559159
+      "updated_at": 1795523584.3880565
     },
     "OPENAI": {
-      "disabled_until": 1795609788.9134984,
+      "disabled_until": 1795609989.7250588,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795523388.9135
+      "updated_at": 1795523589.7250617
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2255,9 +2254,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795526988.3937013,
+      "disabled_until": 1795527189.5017042,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795523388.3937027
+      "updated_at": 1795523589.5017073
     }
   },
   "stories": {
@@ -2467,94 +2466,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795283363,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 9.43,
-      "candidates": 0,
-      "queue_before": 10,
-      "queue_after": 9,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://news.lavx.hu/article/clawdos-runs-an-ai-coding-agent-on-a-1981-ibm-pc-xt",
-            "image_url": "https://news.lavx.hu/api/media/file/clawdos-runs-an-ai-coding-agent-on-a-1981-ibm-pc-xt_gen_1795280299944-1200x630.jpg",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 4.0,
-          "bonus_total": 24.0,
-          "max_score": 4.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 4.0,
-            "bonus": 12.0,
-            "reason": "Технический курьез без прямого влияния на бизнес-процессы или разработку.",
-            "title": "ClawDOS Runs an AI Coding Agent on a 1981 IBM PC XT - news.lavx.hu",
-            "final_score": 57.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795283839,
       "status": "OK",
@@ -24112,6 +24023,78 @@
         "GEMINI": {
           "blocked": true,
           "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1795523589,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 12.86,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 4,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
         },
         "GROQ": {
           "blocked": true,
