@@ -1433,7 +1433,8 @@
     "41043d3a457c66f9de6f29f579caae3565f21cdb08cf6461ba2c3493919a91cd": 1795548300,
     "af5dab380513f2b5eae115352bfee5fc5ff60ce5e8c227b9d4abfc0293cdfde6": 1795549016,
     "6be5802bbd0b63bda9beab0ac4582f1f0a0d65154ec8e99b8f4c24414d7fa9b2": 1795549284,
-    "03b50abd80a50a7595bfd46957651dfa98c4762e048485e309484ad556c66440": 1795549508
+    "03b50abd80a50a7595bfd46957651dfa98c4762e048485e309484ad556c66440": 1795549508,
+    "7b429be0c01134eb88471d6847d5792bd3edf786c0453fe84017cf06f99623ee": 1795550211
   },
   "known": {
     "46715be76cb6b4ab3fd0992f6c45320b113e078dbe66eb73aa4e6f3811355af6": 1795545181.0644825,
@@ -1487,47 +1488,6 @@
     "6b6d118bec1a1088cf31607b605be002f51b9cf72b96354625a545a9152f97f6": 1795549016.8744168
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "CCE: пытаюсь научить coding‑агента не забывать задачу после compaction",
-      "link": "https://habr.com/ru/articles/1111838/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1111838",
-      "desc": "Code Context Engine, Pi, SQLite, Tree-sitter, локальные LLM и несколько экспериментов, которые пошли не по плану. С чего всё началось Я использую локальные языковые модели для своих задач, автоматизации и скриптов. Но в голове постоянно крутилась мысль что можно больше. Решил попробовать использовать локальные модели в разработке больших проектов. В процессе тестов довольно быстро столкнулся с проблемой - сначала подробно объясняешь задачу: что нужно изменить, какие ограничения соблюдать, какие данные нельзя трогать и какой результат считать приемлемым. Потом агент читает код, вызывает инструменты, что-то исправляет, запускает тесты… И после очередного сжатия контекста выясняется, что название задачи он ещё помнит, а половина исходных требований потерялась. Или другой вариант: агент уверенно ссылается на старый успешный тест, хотя после него уже успел изменить исходники. Иногда модель начинает повторно изучать уже исследованные файлы. Иногда возвращается к давно закрытым вопросам. А иногда уверенно заявляет, что задача выполнена, хотя тесты показывают обратное. Вдоволь намучавшись, пришёл к вопросу как это поправить, перепробовал много решений, ту ду листы, напоминалки для агентов, rag и прочие шаманства. Далее появилась идея - попробовать разобраться с этим не через ещё один системный промпт, а через отдельное хранение требований, истории и проверяемого состояния задачи. Так появился проект Code Context Engine (CCE). Сейчас это 0.1.0-alpha.1: TypeScript, локальная работа, пакеты в npm и первый полноценный адаптер для Pi. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1795527180.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 8.0,
-        "event_concreteness": 13.0,
-        "practical_value": 8.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 52.5,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 76.5
-      },
-      "base_score": 52.5,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 76.5,
-      "key": "7b429be0c01134eb88471d6847d5792bd3edf786c0453fe84017cf06f99623ee",
-      "importance": 76.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "applications",
-        "models",
-        "research",
-        "tools"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "RUSSIA",
       "title": "Claude без минификации: device id, Hardware UUID и новый аккаунт на старом Mac",
@@ -1747,6 +1707,42 @@
         "security_regulation"
       ],
       "audience_score": 7.0,
+      "tier": "A"
+    },
+    {
+      "region": "WORLD",
+      "title": "Amazon's Reported $7.5 Billion AI Deal Could Challenge Nvidia's Chip Dominance - Coinpaper",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPckJrMHV5eWdkUWNIcWl6Qk1ROFVkaC11WW92b1R1UTVBXzBGelJEZWtlemtQZXNRQ2tYT0IzbVl0OUhDWHA4bFo0VlZGcmFrdlloUUU4M2VkWjdGR05xTWw4YWJzN3h4dnRTdnRTMUJVUmVCS3lNNzJBM2tWTlY0TU13SUNXQ2RkYmtjX05teVE4RlZYLVFQZVMtcTJUNmdLTnd2R19IRlU?oc=5",
+      "desc": "Amazon's Reported $7.5 Billion AI Deal Could Challenge Nvidia's Chip Dominance Coinpaper",
+      "source": "Coinpaper",
+      "time": 1795528751.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 12.0,
+        "event_concreteness": 14.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 1.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 47.0,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 71.0
+      },
+      "base_score": 47.0,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 71.0,
+      "key": "ea8f8517d7e391744ea54c23408d32d1e8dbc98c5bf18f6d152b7c985738fa93",
+      "importance": 71.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "chips"
+      ],
+      "audience_score": 8.0,
       "tier": "A"
     },
     {
@@ -2085,59 +2081,23 @@
       "audience_score": 4.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "WORLD",
-      "title": "Amazon's Reported $7.5 Billion AI Deal Could Challenge Nvidia's Chip Dominance - Coinpaper",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPckJrMHV5eWdkUWNIcWl6Qk1ROFVkaC11WW92b1R1UTVBXzBGelJEZWtlemtQZXNRQ2tYT0IzbVl0OUhDWHA4bFo0VlZGcmFrdlloUUU4M2VkWjdGR05xTWw4YWJzN3h4dnRTdnRTMUJVUmVCS3lNNzJBM2tWTlY0TU13SUNXQ2RkYmtjX05teVE4RlZYLVFQZVMtcTJUNmdLTnd2R19IRlU?oc=5",
-      "desc": "Amazon's Reported $7.5 Billion AI Deal Could Challenge Nvidia's Chip Dominance Coinpaper",
-      "source": "Coinpaper",
-      "time": 1795528751.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 12.0,
-        "event_concreteness": 14.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 47.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 47.0
-      },
-      "base_score": 47.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 47.0,
-      "key": "ea8f8517d7e391744ea54c23408d32d1e8dbc98c5bf18f6d152b7c985738fa93",
-      "importance": 47.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "chips"
-      ],
-      "audience_score": null,
-      "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1795549508.9117777,
+    "last_start_ts": 1795550211.962357,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795549508.9117777,
-    "last_success_ts": 1795549508.9117777,
+    "last_run_ts": 1795550211.962357,
+    "last_success_ts": 1795550211.962357,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 17
+    "queue_size": 16
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795549522.979426
+      "updated_at": 1795550223.2784393
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2307,10 +2267,16 @@
       "desc": "Меня зовут Петр Воронин, я владелец трех магазинов Oh My Geek в Астрахани с выручкой 3–4 млн рублей в месяц. До недавнего времени в программировании я ничего не понимал. Но с помощью ИИ научился самостоятельно создавать программы, которые помогают управлять бизнесом. Расскажу, как мне это удалось и какие задачи теперь решаю без разработчиков. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "7b429be0c01134eb88471d6847d5792bd3edf786c0453fe84017cf06f99623ee": {
+      "time": 1795550211,
+      "title": "CCE: пытаюсь научить coding‑агента не забывать задачу после compaction",
+      "desc": "Code Context Engine, Pi, SQLite, Tree-sitter, локальные LLM и несколько экспериментов, которые пошли не по плану. С чего всё началось Я использую локальные языковые модели для своих задач, автоматизации и скриптов. Но в голове постоянно крутилась мысль что можно больше. Решил попробовать использовать локальные модели в разработке больших проектов. В процессе тестов довольно быстро столкнулся с проблемой - сначала подробно объясняешь задачу: что нужно изменить, какие ограничения соблюдать, какие данные нельзя трогать и какой результат считать приемлемым. Потом агент читает код, вызывает инструменты, что-то исправляет, запускает тесты… И после очередного сжатия контекста выясняется, что название задачи он ещё помнит, а половина исходных требований потерялась. Или другой вариант: агент уверенно ссылается на старый успешный тест, хотя после него уже успел изменить исходники. Иногда модель начинает повторно изучать уже исследованные файлы. Иногда возвращается к давно закрытым вопросам. А иногда уверенно заявляет, что задача выполнена, хотя тесты показывают обратное. Вдоволь намучавшись, пришёл к вопросу как это поправить, перепробовал много решений, ту ду листы, напоминалки для агентов, rag и прочие шаманства. Далее появилась идея - попробовать разобраться с этим не через ещё один системный промпт, а через отдельное хранение требований, истории и проверяемого состояния задачи. Так появился проект Code Context Engine (CCE). Сейчас это 0.1.0-alpha.1: TypeScript, локальная работа, пакеты в npm и первый полноценный адаптер для Pi. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -2324,6 +2290,7 @@
     "WORLD",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -2332,145 +2299,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795336393,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 32.64,
-      "candidates": 14,
-      "queue_before": 1,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 12,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 0,
-        "candidate_count": 14,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://ascendants.in/business-stories/amazon-7-5-billion-decart-acquisition-ai-chips-nvidia-aws/",
-            "image_url": "https://ascendants.in/wp-content/uploads/2026/11/amazon.jpg",
-            "width": 1600,
-            "height": 900,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 9.0,
-          "bonus_total": 54.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Снижение зависимости от Nvidia и потенциальное удешевление облачных вычислений напрямую влияют на бюджеты и архитектуру ИИ-проектов.",
-            "title": "Amazon Nears $7.5 Billion Decart Acquisition to Challenge Nvidia in AI Chips - https://ascendants.in/",
-            "final_score": 81.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 39,
-        "raw_items": 297,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 25,
-          "CNews": 0,
-          "Euronews": 11
-        },
-        "score_filtered": 276,
-        "quality_filtered": 6,
-        "story_dedup": 1,
-        "candidates": 14,
-        "candidate_rate": 0.0543,
-        "score_buckets": {
-          "0–39": 257,
-          "40–49": 25,
-          "50–59": 13,
-          "60–69": 2,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795337338,
       "status": "OK",
@@ -23185,11 +23013,101 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795550211,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 15.92,
+      "candidates": 0,
+      "queue_before": 17,
+      "queue_after": 16,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://habr.com/ru/articles/1111838/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1111838",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Позволяет разработчикам повысить надежность AI-агентов, снижая количество ошибок при автоматизации кодинга.",
+            "title": "CCE: пытаюсь научить coding‑агента не забывать задачу после compaction",
+            "final_score": 73.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1795549016.8744168,
-  "last_publish_ts": 1795549508.9117777,
+  "last_publish_ts": 1795550211.962357,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
