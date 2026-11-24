@@ -2210,19 +2210,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 53.5,
+        "base_score": 53.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 53.5
+        "final_score": 53.0
       },
-      "base_score": 53.5,
+      "base_score": 53.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 53.5,
+      "score": 53.0,
       "key": "065b14579c939b344e7768fe15a624b358a31aae7f540b1a3dc0b30803e97692",
-      "importance": 53.5,
+      "importance": 53.0,
       "editorial_value": 50.0,
       "topics": [
         "models"
@@ -2233,30 +2233,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795535855.5018754,
+    "last_start_ts": 1795536071.599636,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795535855.5018754,
-    "last_success_ts": 1795535855.5018754,
-    "last_candidates": 57,
+    "last_run_ts": 1795536071.599636,
+    "last_success_ts": 1795536071.599636,
+    "last_candidates": 0,
     "last_published": 0,
     "queue_size": 20
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795539433.423741,
-      "reason": "The read operation timed out",
-      "updated_at": 1795535833.4237437
+      "disabled_until": 1795539654.775968,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1795536054.77597
     },
     "GROQ": {
-      "disabled_until": 1795539439.7520216,
+      "disabled_until": 1795539656.7693303,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795535839.7520235
+      "updated_at": 1795536056.7693322
     },
     "OPENAI": {
-      "disabled_until": 1795622255.185287,
+      "disabled_until": 1795622471.2325525,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795535855.1852884
+      "updated_at": 1795536071.2325542
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2264,9 +2264,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795539454.2259684,
+      "disabled_until": 1795539670.0910707,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795535854.2259707
+      "updated_at": 1795536070.0910726
     }
   },
   "stories": {
@@ -2427,146 +2427,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795323912,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 36.13,
-      "candidates": 14,
-      "queue_before": 0,
-      "queue_after": 9,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 3,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 10,
-        "candidate_count": 14,
-        "admission_rate": 71.43,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://finance.biggo.com/news/d1c8ea34-0089-4b85-873b-ca4461c76924",
-            "image_url": "https://img.biggo.com/kffqXvJoiWkAbuSqIDZI_67TFXxVNPO-x0ng7ANRNkM/fit/1200/0/sm/0/aHR0cHM6Ly9pbWcuYmdvLm9uZS9uZXdzLWltYWdlL2FpX2dlbmVyYXRlZC8yMDI2LTExL2QxYzhlYTM0LTAwODktNGI4NS04NzNiLWNhNDQ2MWM3NjkyNF8xNzk1MzE0NjQ5X2RlZmF1bHQuanBn.jpg",
-            "width": 1200,
-            "height": 675,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.5,
-          "bonus_total": 51.0,
-          "max_score": 9.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Снижение стоимости облачных вычислений и изменение конкурентной среды на рынке AI-железа напрямую влияет на затраты бизнеса.",
-            "title": "Amazon Reportedly Near $7.5 Billion Deal to Acquire Decart, Taking Aim at Nvidia With AI Chip Efficiency Push - BigGo Finance",
-            "final_score": 71.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 9,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 30,
-        "raw_items": 314,
-        "source_counts": {
-          "TechCrunch AI": 2,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 19,
-          "CNews": 0,
-          "Euronews": 7
-        },
-        "score_filtered": 291,
-        "quality_filtered": 8,
-        "story_dedup": 1,
-        "candidates": 14,
-        "candidate_rate": 0.0493,
-        "score_buckets": {
-          "0–39": 276,
-          "40–49": 23,
-          "50–59": 14,
-          "60–69": 1,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795324187,
       "status": "OK",
@@ -23829,6 +23689,78 @@
         "GEMINI": {
           "blocked": true,
           "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
+    },
+    {
+      "ts": 1795536071,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 19.28,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 20,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
         },
         "GROQ": {
           "blocked": true,
