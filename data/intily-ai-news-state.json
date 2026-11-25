@@ -1,6 +1,5 @@
 {
   "published": {
-    "e3112a0fe10901f63da9a0bf74a1c124cd35c0dc9a2ec41550430c302493766d": 1793004289,
     "92c729f9456a78f803dd3af0f4a25a412dcc53c48117e29d5c7a1f62f302cf6c": 1793005262,
     "965d9a3a34ecc45e18bee91aac5a5d285ef7a0ef614c51efbda731ad5226e7f9": 1793005494,
     "9730b969856fecb55b5bdf14e5c1b2dc2366e5d061b7a19388d5d6ae03e057f5": 1793006692,
@@ -1424,13 +1423,10 @@
     "bf2241c4912cb1d9048bfa508deb5f1b307659bc1a2605b19814194906c29483": 1795593647,
     "0899a84e1073e64085a4190c24141d2fce53cfad20f8554b9cf67874d3d30f80": 1795595556,
     "6ac814a86429f0f01e871588b0865a8e5f790ad4167308647abb6620ff7fc0cf": 1795595804,
-    "0ba35495a505714780bc0d75fa742834ac13f810791187b0fe81c4d25ba03ee5": 1795596035
+    "0ba35495a505714780bc0d75fa742834ac13f810791187b0fe81c4d25ba03ee5": 1795596035,
+    "e64dd6493871ffa1024a15a046e902cbf2a67a45b6d954fe86ce291c958b3ee0": 1795596515
   },
   "known": {
-    "853ff918e1d10a7686b519113eeb459c09fc0694c71aa99b30bdac4dc1e3d688": 1795590994.0136967,
-    "039ec387b92c69c207f180b4b921c3d2728bb64110c6f24ea5088379e7cf34e2": 1795590994.0136967,
-    "bf2241c4912cb1d9048bfa508deb5f1b307659bc1a2605b19814194906c29483": 1795590994.0136967,
-    "6a4fbbda3276e7f2f73df50ad7ef15814f745b4168ddc896dab2450e9d33d00d": 1795590994.0136967,
     "15ce75003818f0b8561399aa9d0c1f3d26d6dc4f814ec537d8f1ab70fc5f021d": 1795593647.8480065,
     "f0d7a3114cb5d6a7d219ecc5d552e0bf1fa1d0e8c576690dd09ab79f483ce776": 1795593647.8480065,
     "b4df18fcb8e8a77a13f544d4cd92961990bb88be0cc3e0fc90c44f488bb3177d": 1795593647.8480065,
@@ -1444,44 +1440,6 @@
     "e61824417996cdccbbb41c76986ef8968e9e30fb5f9610639ad7165d73dbb946": 1795595556.437125
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Оптимизация инференса LLM: как работают технологии Speculative Decoding и PagedAttention",
-      "link": "https://habr.com/ru/companies/selectel/articles/1112066/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1112066",
-      "desc": "Когда LLM отвечает пользователю, текст обычно появляется постепенно. Модель выбирает следующий токен — например, слово, часть слова или знак препинания — и переходит к следующему. Для каждого нового токена ей нужен контекст запроса и уже написанной части ответа. Чем длиннее контекст и чем больше запросов выполняется одновременно, тем больше промежуточных данных приходится хранить в видеопамяти. PagedAttention помогает экономнее выделять память под промежуточные данные. Speculative Decoding меняет порядок генерации: небольшая модель предлагает несколько токенов, а основная проверяет их вместе. Если предложения подходят, ответ продвигается сразу на несколько токенов. Это может сократить число обращений к основной модели, но добавляет работу по подготовке черновика. Начнем с того, как модель обрабатывает запрос и зачем ей KV-кэш. Затем разберем размещение этого кэша в памяти и правила проверки черновика. В экспериментальной части сравним обычную генерацию и спекуляцию на одной GPU с моделями Qwen3-8B и Qwen3-0.6B: измерим скорость, задержки и расход памяти. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1795593646.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 9.0,
-        "event_concreteness": 10.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 47.0,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 71.0
-      },
-      "base_score": 47.0,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 71.0,
-      "key": "e64dd6493871ffa1024a15a046e902cbf2a67a45b6d954fe86ce291c958b3ee0",
-      "importance": 71.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "chips",
-        "models"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
     {
       "region": "RUSSIA",
       "title": "Почему одинаковые вопросы к LLM дают разные ответы, и как с этим жить?",
@@ -1595,6 +1553,43 @@
       "tier": "A"
     },
     {
+      "region": "RUSSIA",
+      "title": "Bi.Zone EDR расширяет возможности: защита macOS, выявление ИИ-агентов и обновление Deception",
+      "link": "https://www.cnews.ru/news/line/2026-11-25_bizone_edr_rasshiryaet_vozmozhnosti",
+      "desc": "Среди ключевых изменений в новой версии — сетевая изоляция и самозащита агента для macOS, интеграция ИИ-помощника...",
+      "source": "CNews",
+      "time": 1795594680.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 4.0,
+        "event_concreteness": 10.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 41.5,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 65.5
+      },
+      "base_score": 41.5,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 65.5,
+      "key": "703a55732ddf9dacfddfa813a956bdeadefd297d99b0cc79b67d229d37d8bd66",
+      "importance": 65.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents"
+      ],
+      "audience_score": 8.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
       "region": "WORLD",
       "title": "Anthropic study of 58 business customers finds top-down AI rollouts raise surveillance fears and worker resistance - MLQ.ai",
       "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxONWh0Yy16U0Z4aDNvYTQ0Q08zaE0zZEVjWElSdi1JVWVQaVA2YmJadGxqNkUybXVtWGRWX0dEYzFDMHFMaXJqaFVqMHhGV3ZUS014MVhUZjFOWDdVSi0wT1Bva3pmaUlHMFdhbEJqVVA3Q2tJTW9GM1dzbEpieC1OV2dGOVhpMlpmb2xWakVkQU1wS1hJZ2lrenUydmppTnlYNkpJbjNEU2ZKUnZlNzdEc3ZhMllQd2FJUDU5cW9VaGk5VGJDbTVoWVBQQlI1cFdH?oc=5",
@@ -1663,40 +1658,6 @@
       "topics": [
         "security_regulation"
       ],
-      "audience_score": 7.0,
-      "tier": "A"
-    },
-    {
-      "region": "WORLD",
-      "title": "Anthropic shares tumble below $83 IPO price, on track to lose nearly $200 billion in value - Reuters",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMHBNOVY5RDc1NmxUUjNnZkNhLWROQkhUOFZpVmQ0SEI0UG9aSUpTTjhpV3EydTNkdW8xYm1KOWF6OXg2Z3BMaUJCWTE3WnFCM0hCZGNuQ3ZKUklsYUROVWQzdExOamNKVlJLRTgwYWpoYVdOUjlDY0pxTmxZajlvckJ4cHc0TG1hbW1ZUkszaDZ2M2Rvd3RqTWRFaVRENXVWT0pr?oc=5",
-      "desc": "Anthropic shares tumble below $83 IPO price, on track to lose nearly $200 billion in value Reuters",
-      "source": "Reuters",
-      "time": 1795553276.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 9.0,
-        "event_concreteness": 13.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 1.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 44.0,
-        "audience_score": 7.0,
-        "audience_bonus": 21.0,
-        "final_score": 65.0
-      },
-      "base_score": 44.0,
-      "audience_bonus": 21.0,
-      "score_stage": "final",
-      "score": 65.0,
-      "key": "ebf225a85784b859cdb45af283bbbbeae4f27341e5966bd2502f9b6cdb7ee67a",
-      "importance": 65.0,
-      "editorial_value": 50.0,
-      "topics": [],
       "audience_score": 7.0,
       "tier": "A"
     },
@@ -1868,57 +1829,20 @@
         "freshness": 0.5,
         "low_signal_penalty": 0.0,
         "base_score": 43.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 43.0
+        "audience_score": 5.0,
+        "audience_bonus": 15.0,
+        "final_score": 58.0
       },
       "base_score": 43.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 43.0,
+      "audience_bonus": 15.0,
+      "score_stage": "final",
+      "score": 58.0,
       "key": "799f1cfc25125338b98069d72504e7922852887bc878b1006a4ef2ed1692890f",
-      "importance": 43.0,
-      "editorial_value": 49.0,
-      "topics": [],
-      "audience_score": null,
-      "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Bi.Zone EDR расширяет возможности: защита macOS, выявление ИИ-агентов и обновление Deception",
-      "link": "https://www.cnews.ru/news/line/2026-11-25_bizone_edr_rasshiryaet_vozmozhnosti",
-      "desc": "Среди ключевых изменений в новой версии — сетевая изоляция и самозащита агента для macOS, интеграция ИИ-помощника...",
-      "source": "CNews",
-      "time": 1795594680.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 4.0,
-        "event_concreteness": 10.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 1.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 41.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 41.5
-      },
-      "base_score": 41.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 41.5,
-      "key": "703a55732ddf9dacfddfa813a956bdeadefd297d99b0cc79b67d229d37d8bd66",
-      "importance": 41.5,
+      "importance": 58.0,
       "editorial_value": 50.0,
-      "topics": [
-        "agents"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
+      "topics": [],
+      "audience_score": 5.0,
+      "tier": "A"
     },
     {
       "region": "RUSSIA",
@@ -2066,20 +1990,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795596035.2927332,
+    "last_start_ts": 1795596515.1410139,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795596035.2927332,
-    "last_success_ts": 1795596035.2927332,
+    "last_run_ts": 1795596515.1410139,
+    "last_success_ts": 1795596515.1410139,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 17
+    "queue_size": 15
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795596039.6976447
+      "updated_at": 1795596519.6881733
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2284,12 +2208,18 @@
       "desc": "Is Anthropic Still a Winner Long-Term After IPO Breach NAI500",
       "source": "NAI500",
       "region": "WORLD"
+    },
+    "e64dd6493871ffa1024a15a046e902cbf2a67a45b6d954fe86ce291c958b3ee0": {
+      "time": 1795596515,
+      "title": "Оптимизация инференса LLM: как работают технологии Speculative Decoding и PagedAttention",
+      "desc": "Когда LLM отвечает пользователю, текст обычно появляется постепенно. Модель выбирает следующий токен — например, слово, часть слова или знак препинания — и переходит к следующему. Для каждого нового токена ей нужен контекст запроса и уже написанной части ответа. Чем длиннее контекст и чем больше запросов выполняется одновременно, тем больше промежуточных данных приходится хранить в видеопамяти. PagedAttention помогает экономнее выделять память под промежуточные данные. Speculative Decoding меняет порядок генерации: небольшая модель предлагает несколько токенов, а основная проверяет их вместе. Если предложения подходят, ответ продвигается сразу на несколько токенов. Это может сократить число обращений к основной модели, но добавляет работу по подготовке черновика. Начнем с того, как модель обрабатывает запрос и зачем ей KV-кэш. Затем разберем размещение этого кэша в памяти и правила проверки черновика. В экспериментальной части сравним обычную генерацию и спекуляцию на одной GPU с моделями Qwen3-8B и Qwen3-0.6B: измерим скорость, задержки и расход памяти. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -2306,149 +2236,10 @@
     "RUSSIA",
     "WORLD",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795348617,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 33.42,
-      "candidates": 16,
-      "queue_before": 0,
-      "queue_after": 1,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 14,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 2,
-        "candidate_count": 16,
-        "admission_rate": 12.5,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "ARTICLE_SOURCE_UNRESOLVED": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "ARTICLE_SOURCE_UNRESOLVED"
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 8.5,
-          "bonus_total": 51.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Смена поставщика инфраструктуры и потенциальное снижение затрат на обучение моделей напрямую влияют на архитектурные решения и бюджеты компаний.",
-            "title": "Amazon Nears $7.5 Billion Decart Acquisition to Challenge Nvidia in AI Chips - https://ascendants.in/",
-            "final_score": 80.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 53,
-        "raw_items": 383,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 36,
-          "CNews": 0,
-          "Euronews": 17
-        },
-        "score_filtered": 359,
-        "quality_filtered": 6,
-        "story_dedup": 2,
-        "candidates": 16,
-        "candidate_rate": 0.0485,
-        "score_buckets": {
-          "0–39": 339,
-          "40–49": 26,
-          "50–59": 13,
-          "60–69": 5,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795350298,
       "status": "OK",
@@ -22763,11 +22554,101 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795596515,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 14.97,
+      "candidates": 0,
+      "queue_before": 16,
+      "queue_after": 15,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/companies/selectel/articles/1112066/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1112066",
+            "image_url": "https://habr.com/share/publication/1112066/811228c8a8e9f62ed00a83ebed4c2470/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.0,
+          "bonus_total": 63.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Позволяет снизить затраты на GPU и ускорить время отклика продакшн-сервисов.",
+            "title": "Оптимизация инференса LLM: как работают технологии Speculative Decoding и PagedAttention",
+            "final_score": 71.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 4,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1795595556.437125,
-  "last_publish_ts": 1795596035.2927332,
+  "last_publish_ts": 1795596515.1410139,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
