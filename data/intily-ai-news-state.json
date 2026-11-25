@@ -1423,7 +1423,8 @@
     "853ff918e1d10a7686b519113eeb459c09fc0694c71aa99b30bdac4dc1e3d688": 1795591707,
     "bf2241c4912cb1d9048bfa508deb5f1b307659bc1a2605b19814194906c29483": 1795593647,
     "0899a84e1073e64085a4190c24141d2fce53cfad20f8554b9cf67874d3d30f80": 1795595556,
-    "6ac814a86429f0f01e871588b0865a8e5f790ad4167308647abb6620ff7fc0cf": 1795595804
+    "6ac814a86429f0f01e871588b0865a8e5f790ad4167308647abb6620ff7fc0cf": 1795595804,
+    "0ba35495a505714780bc0d75fa742834ac13f810791187b0fe81c4d25ba03ee5": 1795596035
   },
   "known": {
     "853ff918e1d10a7686b519113eeb459c09fc0694c71aa99b30bdac4dc1e3d688": 1795590994.0136967,
@@ -1443,46 +1444,6 @@
     "e61824417996cdccbbb41c76986ef8968e9e30fb5f9610639ad7165d73dbb946": 1795595556.437125
   },
   "queue": [
-    {
-      "region": "WORLD",
-      "title": "Is Anthropic Still a Winner Long-Term After IPO Breach - NAI500",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMDNIWkJoeVRMcFNzS3dFNFZldzFyb09KUDR5M2NsTTVnTlNFcEREVUExdEVDU0RGTTdYT2ktMGhVZGQxSEVVRDg0ZV9CV2lGaWw2T1Rvdm5UeHJJWTdrMU1rY0lHLTFnQTJ0T0dVT1IxRFFUSks4eEZTTHNpaEc4dDVjTEl1N1dnbWYyWkFTbkc?oc=5",
-      "desc": "Is Anthropic Still a Winner Long-Term After IPO Breach NAI500",
-      "source": "NAI500",
-      "time": 1795569012.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 8.0,
-        "event_concreteness": 15.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 42.0,
-        "audience_score": 10.0,
-        "audience_bonus": 30.0,
-        "final_score": 72.0
-      },
-      "base_score": 42.0,
-      "audience_bonus": 30.0,
-      "score_stage": "final",
-      "score": 72.0,
-      "key": "0ba35495a505714780bc0d75fa742834ac13f810791187b0fe81c4d25ba03ee5",
-      "importance": 72.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "security_regulation"
-      ],
-      "audience_score": 10.0,
-      "tier": "A",
-      "last_failed_at": 1795595556,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1795595856
-    },
     {
       "region": "RUSSIA",
       "title": "Оптимизация инференса LLM: как работают технологии Speculative Decoding и PagedAttention",
@@ -1516,6 +1477,46 @@
       "topics": [
         "chips",
         "models"
+      ],
+      "audience_score": 8.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Почему одинаковые вопросы к LLM дают разные ответы, и как с этим жить?",
+      "link": "https://habr.com/ru/companies/timeweb/articles/1101040/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1101040",
+      "desc": "Ты отправляешь модели один и тот же вопрос два раза. В первый раз получаешь нормальный ответ. Во второй раз модель начинает путаться, придумывать откровенный бред или вообще отказывается отвечать, хотя запрос ты никак не менял. Странно? На самом деле нет. В LLM один и тот же запрос может привести к разным ответам, и причины начинаются задолго до того, как модель выберет следующий токен. И для разработчика это становится особенно заметно, когда один вызов связан с другим. Даже небольшое расхождение в начале может превратиться в совершенно другой результат для всей цепочки, когда первый ответ уходит следующему агенту, инструмент возвращает данные, потом ещё одна модель принимает решение. Почему это происходит, можно ли измерить склонность модели противоречить самой себе и как добиться воспроизводимых ответов? Разберёмся прямо сейчас на примерах исследований и инженерных решений. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1795593947.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 7.0,
+        "event_concreteness": 9.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 44.0,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 68.0
+      },
+      "base_score": 44.0,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 68.0,
+      "key": "ee87fddd073eee3acd15eac52d66d1f6f08ca566b3f83e64e12951234c797cea",
+      "importance": 68.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "models",
+        "research",
+        "tools"
       ],
       "audience_score": 8.0,
       "tier": "A",
@@ -1667,6 +1668,40 @@
     },
     {
       "region": "WORLD",
+      "title": "Anthropic shares tumble below $83 IPO price, on track to lose nearly $200 billion in value - Reuters",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMHBNOVY5RDc1NmxUUjNnZkNhLWROQkhUOFZpVmQ0SEI0UG9aSUpTTjhpV3EydTNkdW8xYm1KOWF6OXg2Z3BMaUJCWTE3WnFCM0hCZGNuQ3ZKUklsYUROVWQzdExOamNKVlJLRTgwYWpoYVdOUjlDY0pxTmxZajlvckJ4cHc0TG1hbW1ZUkszaDZ2M2Rvd3RqTWRFaVRENXVWT0pr?oc=5",
+      "desc": "Anthropic shares tumble below $83 IPO price, on track to lose nearly $200 billion in value Reuters",
+      "source": "Reuters",
+      "time": 1795553276.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 3.0,
+        "impact": 9.0,
+        "event_concreteness": 13.5,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 1.0,
+        "freshness": 0.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 44.0,
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 65.0
+      },
+      "base_score": 44.0,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 65.0,
+      "key": "ebf225a85784b859cdb45af283bbbbeae4f27341e5966bd2502f9b6cdb7ee67a",
+      "importance": 65.0,
+      "editorial_value": 50.0,
+      "topics": [],
+      "audience_score": 7.0,
+      "tier": "A"
+    },
+    {
+      "region": "WORLD",
       "title": "Even the best AI agents struggle with everyday life",
       "link": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/",
       "desc": "As millions embrace personal AI assistants, a new benchmark reveals that even the most advanced AI models struggle to complete everyday tasks reliably and safely without introducing potential new problems.",
@@ -1813,80 +1848,6 @@
       "audience_score": 5.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Почему одинаковые вопросы к LLM дают разные ответы, и как с этим жить?",
-      "link": "https://habr.com/ru/companies/timeweb/articles/1101040/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1101040",
-      "desc": "Ты отправляешь модели один и тот же вопрос два раза. В первый раз получаешь нормальный ответ. Во второй раз модель начинает путаться, придумывать откровенный бред или вообще отказывается отвечать, хотя запрос ты никак не менял. Странно? На самом деле нет. В LLM один и тот же запрос может привести к разным ответам, и причины начинаются задолго до того, как модель выберет следующий токен. И для разработчика это становится особенно заметно, когда один вызов связан с другим. Даже небольшое расхождение в начале может превратиться в совершенно другой результат для всей цепочки, когда первый ответ уходит следующему агенту, инструмент возвращает данные, потом ещё одна модель принимает решение. Почему это происходит, можно ли измерить склонность модели противоречить самой себе и как добиться воспроизводимых ответов? Разберёмся прямо сейчас на примерах исследований и инженерных решений. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1795593947.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 7.0,
-        "event_concreteness": 9.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 44.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 44.0
-      },
-      "base_score": 44.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 44.0,
-      "key": "ee87fddd073eee3acd15eac52d66d1f6f08ca566b3f83e64e12951234c797cea",
-      "importance": 44.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "models",
-        "research",
-        "tools"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "WORLD",
-      "title": "Anthropic shares tumble below $83 IPO price, on track to lose nearly $200 billion in value - Reuters",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMHBNOVY5RDc1NmxUUjNnZkNhLWROQkhUOFZpVmQ0SEI0UG9aSUpTTjhpV3EydTNkdW8xYm1KOWF6OXg2Z3BMaUJCWTE3WnFCM0hCZGNuQ3ZKUklsYUROVWQzdExOamNKVlJLRTgwYWpoYVdOUjlDY0pxTmxZajlvckJ4cHc0TG1hbW1ZUkszaDZ2M2Rvd3RqTWRFaVRENXVWT0pr?oc=5",
-      "desc": "Anthropic shares tumble below $83 IPO price, on track to lose nearly $200 billion in value Reuters",
-      "source": "Reuters",
-      "time": 1795553276.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 3.0,
-        "impact": 9.0,
-        "event_concreteness": 13.5,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 1.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 44.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 44.0
-      },
-      "base_score": 44.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 44.0,
-      "key": "ebf225a85784b859cdb45af283bbbbeae4f27341e5966bd2502f9b6cdb7ee67a",
-      "importance": 44.0,
-      "editorial_value": 50.0,
-      "topics": [],
-      "audience_score": null,
-      "tier": "A"
     },
     {
       "region": "WORLD",
@@ -2105,20 +2066,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795595804.0761335,
+    "last_start_ts": 1795596035.2927332,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795595804.0761335,
-    "last_success_ts": 1795595804.0761335,
+    "last_run_ts": 1795596035.2927332,
+    "last_success_ts": 1795596035.2927332,
     "last_candidates": 0,
     "last_published": 1,
-    "queue_size": 18
+    "queue_size": 17
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795595803.805437
+      "updated_at": 1795596039.6976447
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2316,10 +2277,16 @@
       "desc": "Бенджамин Скус решил проверить, сможет ли научная работа, созданная искусственным интеллектом, сойти за настоящую. У науки возникла проблема со спамом. И фильтры, призванные с ним бороться, уже не справляются. Судя по многочисленным сообщениям, научные публикации захлёстывает так называемый нейрослоп: низкокачественный контент, массово производимый с помощью искусственного интеллекта. По оценкам , к 2025 году в 57% всех опубликованных научных статей обнаруживались признаки влияния больших языковых моделей (LLM). Это огромный скачок по сравнению с 12% в 2023 году. Более того, выяснилось , что в 2025 году свыше 12% рецензий в журнале Nature Communications были полностью сгенерированы искусственным интеллектом. Учитывая, что в 2025 году лишь одна из каждых 40 статей со статистическими признаками использования ИИ содержала официальное уведомление об этом, приведённые цифры, вероятно, сильно недооценивают нынешние масштабы применения языковых моделей. Разумеется, признаки использования ИИ не обязательно означают, что статья представляет собой низкокачественный контент. Но, согласно некоторым оценкам, ежегодно выпускаются сотни тысяч поддельных научных публикаций, зачастую созданных с помощью ИИ. «Под угрозой находится не только научная литература, но и вся наука в целом, — предупреждает Аманда Сулиц , менеджер IEEE по вопросам добросовестности исследований. — нейрослоп полностью подрывает доверие к науке и ко всем научным процедурам, которые мы создавали на протяжении столетий». Однако статистика и заявления о том, что проблема приобрела огромные масштабы и, возможно, даже угрожает самому существованию науки, не позволяют в полной мере осознать происходящее. Насколько легко с помощью ИИ создать убедительную, но полностью фальшивую научную статью? И располагают ли издательства инструментами, позволяющими не допускать нейрослоп в научную литературу, не увеличивая при этом нагрузку на и без того перегруженных рецензентов, которые выполняют свою работу добровольно? Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "0ba35495a505714780bc0d75fa742834ac13f810791187b0fe81c4d25ba03ee5": {
+      "time": 1795596035,
+      "title": "Is Anthropic Still a Winner Long-Term After IPO Breach - NAI500",
+      "desc": "Is Anthropic Still a Winner Long-Term After IPO Breach NAI500",
+      "source": "NAI500",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "WORLD",
@@ -2338,148 +2305,10 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1795347420,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 35.52,
-      "candidates": 15,
-      "queue_before": 1,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 14,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 15,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://ascendants.in/business-stories/amazon-7-5-billion-decart-acquisition-ai-chips-nvidia-aws/",
-            "image_url": "https://ascendants.in/wp-content/uploads/2026/11/amazon.jpg",
-            "width": 1600,
-            "height": 900,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 9.5,
-          "bonus_total": 57.0,
-          "max_score": 10.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 10.0,
-            "bonus": 30.0,
-            "reason": "Смена поставщика железа и снижение затрат на инфраструктуру напрямую влияют на операционную стратегию любого AI-бизнеса.",
-            "title": "Amazon Nears $7.5 Billion Decart Acquisition to Challenge Nvidia in AI Chips - https://ascendants.in/",
-            "final_score": 81.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 59,
-        "query_errors": 5,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 53,
-        "raw_items": 347,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 0,
-          "Habr AI/News": 36,
-          "CNews": 0,
-          "Euronews": 17
-        },
-        "score_filtered": 323,
-        "quality_filtered": 7,
-        "story_dedup": 2,
-        "candidates": 15,
-        "candidate_rate": 0.051,
-        "score_buckets": {
-          "0–39": 308,
-          "40–49": 22,
-          "50–59": 13,
-          "60–69": 4,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795348617,
       "status": "OK",
@@ -22844,11 +22673,101 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795596035,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 24.99,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 17,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "The read operation timed out": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "The read operation timed out"
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.33,
+          "bonus_total": 66.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Оценка рыночной устойчивости ключевого вендора LLM важна для планирования стека технологий.",
+            "title": "Is Anthropic Still a Winner Long-Term After IPO Breach - NAI500",
+            "final_score": 63.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 6,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1795595556.437125,
-  "last_publish_ts": 1795595804.0761335,
+  "last_publish_ts": 1795596035.2927332,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
