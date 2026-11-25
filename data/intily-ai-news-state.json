@@ -1,6 +1,5 @@
 {
   "published": {
-    "9730b969856fecb55b5bdf14e5c1b2dc2366e5d061b7a19388d5d6ae03e057f5": 1793006692,
     "d94e0bf3b9b13e021f6300795f95155657fa77b9921f13629a1057262274fd2a": 1793008368,
     "6418696ffa355de1a11ea7be233fb7531e67a97c1ff5e0031dad692f51f2c208": 1793009336,
     "21ed08d1a9bdd22a9783fa2e39509bc6b9ff531bfadc3afa7edc6ba12ee71a06": 1793009828,
@@ -1422,7 +1421,8 @@
     "0899a84e1073e64085a4190c24141d2fce53cfad20f8554b9cf67874d3d30f80": 1795595556,
     "6ac814a86429f0f01e871588b0865a8e5f790ad4167308647abb6620ff7fc0cf": 1795595804,
     "0ba35495a505714780bc0d75fa742834ac13f810791187b0fe81c4d25ba03ee5": 1795596035,
-    "e64dd6493871ffa1024a15a046e902cbf2a67a45b6d954fe86ce291c958b3ee0": 1795596515
+    "e64dd6493871ffa1024a15a046e902cbf2a67a45b6d954fe86ce291c958b3ee0": 1795596515,
+    "38fba0cd202bf317b93a884a20cfa11de99c794a1ede2d1c829cc39a6a4b3a41": 1795598694
   },
   "known": {
     "15ce75003818f0b8561399aa9d0c1f3d26d6dc4f814ec537d8f1ab70fc5f021d": 1795593647.8480065,
@@ -1444,6 +1444,44 @@
     "a6e9ad24d2972fe644b1eff8305c8a9cf88498ae5bd26e5e68f92e87026bb17c": 1795598199.7199993
   },
   "queue": [
+    {
+      "region": "RUSSIA",
+      "title": "Внедрили LLM модель на промышленное предприятие. В чем сложности и какие первые результаты?",
+      "link": "https://habr.com/ru/articles/1112106/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1112106",
+      "desc": "В этом году я согласовал с одним из моих ключевых партнеров пилотное внедрение LLM модели на предприятие. Входные условия были такие: решение должно быть ON-Premise без выхода в интернет, работать модель должна с конфиденциальными данными с соблюдением NDA. Функционал модели: - Быстрый сбор информации по нормативным документам предприятия - формирование новых нормативных документов по текстовому описанию - формирование порядка действий персонала при описании нештатной или любой другой ситуации. В качестве базовой модели выбрал Gemma 4 на 26 млрд. параметров, запускал модель локально через Ollama. Видеокарту для сервера взяли на 24 GB GDDR6. Модель способна работать On-Premise и хорошо подходит для базовых задач работы с документами. Для обучения мы построил RAG-контур, который анализирует документы, разбивает, индексирует. Веса базовой модели при этом не меняются. Fine-tuning рассматриваю как следующий этап разработки и обучения модели. Задача выглядела сложной, но интересной и я оперативно взялся за работу. В чем встретил сложности? 1) Исходные данные нормативные документы предприятия были в разных форматах где то Word, где то сканированые документы в формате PDF. Часть из них выглядела как проектная документация, то есть на листе А4 была рамка с подписью \"проверил, разработал, ГИП\" и для индесирования документов и для базового обучения модели это оказалось сложным моментом. 80% документов она распознала нормально, но 20% пришлось преобразовывать в нужный формат вручную.Когда 20% документов некорректно распознана и соответственно ответы по ним неверные это стоп фактор к приемке системы Читать далее",
+      "source": "Habr AI/News",
+      "time": 1795596809.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 12.0,
+        "event_concreteness": 15.0,
+        "practical_value": 5.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 57.0,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 81.0
+      },
+      "base_score": 57.0,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 81.0,
+      "key": "d1fe9bac0ded34920a4daea9feb74a7ac8a3eb393f346ee644c5e56a504b3963",
+      "importance": 81.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "business",
+        "models"
+      ],
+      "audience_score": 8.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
     {
       "region": "RUSSIA",
       "title": "Почему одинаковые вопросы к LLM дают разные ответы, и как с этим жить?",
@@ -1566,43 +1604,6 @@
     },
     {
       "region": "RUSSIA",
-      "title": "Bi.Zone EDR расширяет возможности: защита macOS, выявление ИИ-агентов и обновление Deception",
-      "link": "https://www.cnews.ru/news/line/2026-11-25_bizone_edr_rasshiryaet_vozmozhnosti",
-      "desc": "Среди ключевых изменений в новой версии — сетевая изоляция и самозащита агента для macOS, интеграция ИИ-помощника...",
-      "source": "CNews",
-      "time": 1795594680.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 4.0,
-        "event_concreteness": 10.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 5.0,
-        "evidence": 1.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 41.5,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 65.5
-      },
-      "base_score": 41.5,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 65.5,
-      "key": "703a55732ddf9dacfddfa813a956bdeadefd297d99b0cc79b67d229d37d8bd66",
-      "importance": 65.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
       "title": "Надоело платить за нейронки? Google запустила портал для тех, кто хочет свой ИИ на компьютере - VC.ru",
       "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQUDBndGQybU5ONk9id1NmaU9oUWM1U0FrYXhwR3BXeFFPMzhkXzYtbjJ2c3Y2QVVtVkdkanVGTEVDNjdNSVpYSzJ4RnEzeTZvWDUxT1pUNzFzMG1QMEdvOXY0Uk02eng3Q2kwVXlva3ZVcS0zRWppUDVIWE1ka1J4RTV1ZmxQQ3cxVTNSdU1VX1NlUzQ?oc=5",
       "desc": "Надоело платить за нейронки? Google запустила портал для тех, кто хочет свой ИИ на компьютере VC.ru",
@@ -1671,6 +1672,43 @@
       ],
       "audience_score": 8.0,
       "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Bi.Zone EDR расширяет возможности: защита macOS, выявление ИИ-агентов и обновление Deception",
+      "link": "https://www.cnews.ru/news/line/2026-11-25_bizone_edr_rasshiryaet_vozmozhnosti",
+      "desc": "Среди ключевых изменений в новой версии — сетевая изоляция и самозащита агента для macOS, интеграция ИИ-помощника...",
+      "source": "CNews",
+      "time": 1795594680.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 4.0,
+        "event_concreteness": 10.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 5.0,
+        "evidence": 1.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 41.0,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 65.0
+      },
+      "base_score": 41.0,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 65.0,
+      "key": "703a55732ddf9dacfddfa813a956bdeadefd297d99b0cc79b67d229d37d8bd66",
+      "importance": 65.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents"
+      ],
+      "audience_score": 8.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     },
     {
       "region": "WORLD",
@@ -1929,81 +1967,6 @@
       "tier": "A"
     },
     {
-      "region": "RUSSIA",
-      "title": "Внедрили LLM модель на промышленное предприятие. В чем сложности и какие первые результаты?",
-      "link": "https://habr.com/ru/articles/1112106/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1112106",
-      "desc": "В этом году я согласовал с одним из моих ключевых партнеров пилотное внедрение LLM модели на предприятие. Входные условия были такие: решение должно быть ON-Premise без выхода в интернет, работать модель должна с конфиденциальными данными с соблюдением NDA. Функционал модели: - Быстрый сбор информации по нормативным документам предприятия - формирование новых нормативных документов по текстовому описанию - формирование порядка действий персонала при описании нештатной или любой другой ситуации. В качестве базовой модели выбрал Gemma 4 на 26 млрд. параметров, запускал модель локально через Ollama. Видеокарту для сервера взяли на 24 GB GDDR6. Модель способна работать On-Premise и хорошо подходит для базовых задач работы с документами. Для обучения мы построил RAG-контур, который анализирует документы, разбивает, индексирует. Веса базовой модели при этом не меняются. Fine-tuning рассматриваю как следующий этап разработки и обучения модели. Задача выглядела сложной, но интересной и я оперативно взялся за работу. В чем встретил сложности? 1) Исходные данные нормативные документы предприятия были в разных форматах где то Word, где то сканированые документы в формате PDF. Часть из них выглядела как проектная документация, то есть на листе А4 была рамка с подписью \"проверил, разработал, ГИП\" и для индесирования документов и для базового обучения модели это оказалось сложным моментом. 80% документов она распознала нормально, но 20% пришлось преобразовывать в нужный формат вручную.Когда 20% документов некорректно распознана и соответственно ответы по ним неверные это стоп фактор к приемке системы Читать далее",
-      "source": "Habr AI/News",
-      "time": 1795596809.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 12.0,
-        "event_concreteness": 15.0,
-        "practical_value": 5.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 57.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 57.0
-      },
-      "base_score": 57.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 57.0,
-      "key": "d1fe9bac0ded34920a4daea9feb74a7ac8a3eb393f346ee644c5e56a504b3963",
-      "importance": 57.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "business",
-        "models"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "[Перевод] Что, если эти модели вообще нельзя безопасно использовать? О чём спорят в OpenAI и Anthropic",
-      "link": "https://habr.com/ru/companies/speshu_ai/articles/1112112/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1112112",
-      "desc": "Обычно перед выпуском новой модели разработчикам нужно решить, готова ли она к работе с пользователями. В OpenAI и Anthropic обсуждают другой вопрос: что делать, если исследовательская версия уже заметно сильнее публичной, а надёжного способа контролировать её поведение пока нет? По данным Axios , часть сотрудников сомневается, что таким моделям можно открывать широкий доступ. Некоторые ставят вопрос жёстче: стоит ли начинать обучение следующего поколения, пока не разобрались с нынешним. О решении остановить обучение или отменить релизы ни одна из компаний не объявляла . Читать далее",
-      "source": "Habr AI/News",
-      "time": 1795597145.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 13.0,
-        "event_concreteness": 14.0,
-        "practical_value": 5.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 56.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 56.5
-      },
-      "base_score": 56.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 56.5,
-      "key": "38fba0cd202bf317b93a884a20cfa11de99c794a1ede2d1c829cc39a6a4b3a41",
-      "importance": 56.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "security_regulation"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
       "region": "WORLD",
       "title": "Victor Vauss Launches Private AI Implementation Services to Put Enterprise AI Back Under Control - AiThority",
       "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPQ3UxZU5hT0ZBcGd5QVZ2RFJOWEEyaVFSQ0JjZ2l4ZV9WZDdWeG1nX1N0a2YwOHB4TDZ6cWNBejlPWTlHQkUzSFBZQm5ZZ2RIc1lia3VSTU85RllTenZMaDdTUHl6N0xudmFTXzdCcnUxREJ5Y19odjZDcFo4cUdRZkRlbXJ2bkVBbm5zaHRKRGRNMUdaeGEwMFZoVjJyWGVrdnV0VWlTVW0tVDZLZjhteWt0N19YME1rU1lvYjlSMDVEcW1wMVd0ZkFmODN5RW1HREE?oc=5",
@@ -2186,30 +2149,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795598199.7199993,
+    "last_start_ts": 1795598694.5135684,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795598199.7199993,
-    "last_success_ts": 1795598199.7199993,
-    "last_candidates": 27,
-    "last_published": 0,
-    "queue_size": 20
+    "last_run_ts": 1795598694.5135684,
+    "last_success_ts": 1795598694.5135684,
+    "last_candidates": 0,
+    "last_published": 1,
+    "queue_size": 19
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795601787.0230756,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1795598187.023078
+      "disabled_until": 1795602292.8835697,
+      "reason": "The read operation timed out",
+      "updated_at": 1795598692.8835738
     },
     "GROQ": {
-      "disabled_until": 1795601789.9969327,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795598189.9969351
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795598694.3448417
     },
     "OPENAI": {
-      "disabled_until": 1795684599.5636609,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795598199.5636625
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795598666.1296349
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2217,19 +2180,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795601798.49101,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795598198.4910119
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795598666.1296349
     }
   },
   "stories": {
-    "d2c3a802db61cc887ada6203db086a6c557d0413db28de802bedc9e6fcb2cba9": {
-      "time": 1795512065,
-      "title": "Живая шляпа: злоумышленники тестируют на российских пользователях новый Android-троян с ИИ на борту – RatHat",
-      "desc": "В сентябре 2026 года специалисты департамента противодействия финансовому мошенничеству (Fraud Protection) компании F6 зафиксировали распространение с помощью фишинговых веб-сайтов нового вредоносного приложения для Android-устройств RatHat . Это новый троян удалённого доступа, в котором активно используется ИИ – модель Gemini от Google. Впервые об этом трояне сообщили исследователи компании Zimperium. Для России статус новой угрозы, нацеленной на пользователей финансовых сервисов, довольно быстро сменился с «вероятной» на «ожидаемую». В октябре 2026 года департамент F6 Fraud Protection зафиксировал около 10 скомпрометированных мобильных устройств в России и Беларуси, на которых был установлен RatHat. Может показаться, что это всего лишь единичные случаи. Но именно так обычно начинаются кампании с использованием новых видов вредоносного ПО для Android, которое киберпреступники используют для атак на банковских клиентов. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "bb29902ff489aa83eff54b0decb51b6720465b8778c5fa5db977a710a9a03060": {
       "time": 1795514945,
       "title": "Android-троян RatHat с ИИ атакует Россию и Беларусь: как мошенники используют Google Gemini - Carexpo.ru_ все авто на одном сайте",
@@ -2404,11 +2360,17 @@
       "desc": "Когда LLM отвечает пользователю, текст обычно появляется постепенно. Модель выбирает следующий токен — например, слово, часть слова или знак препинания — и переходит к следующему. Для каждого нового токена ей нужен контекст запроса и уже написанной части ответа. Чем длиннее контекст и чем больше запросов выполняется одновременно, тем больше промежуточных данных приходится хранить в видеопамяти. PagedAttention помогает экономнее выделять память под промежуточные данные. Speculative Decoding меняет порядок генерации: небольшая модель предлагает несколько токенов, а основная проверяет их вместе. Если предложения подходят, ответ продвигается сразу на несколько токенов. Это может сократить число обращений к основной модели, но добавляет работу по подготовке черновика. Начнем с того, как модель обрабатывает запрос и зачем ей KV-кэш. Затем разберем размещение этого кэша в памяти и правила проверки черновика. В экспериментальной части сравним обычную генерацию и спекуляцию на одной GPU с моделями Qwen3-8B и Qwen3-0.6B: измерим скорость, задержки и расход памяти. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "38fba0cd202bf317b93a884a20cfa11de99c794a1ede2d1c829cc39a6a4b3a41": {
+      "time": 1795598694,
+      "title": "[Перевод] Что, если эти модели вообще нельзя безопасно использовать? О чём спорят в OpenAI и Anthropic",
+      "desc": "Обычно перед выпуском новой модели разработчикам нужно решить, готова ли она к работе с пользователями. В OpenAI и Anthropic обсуждают другой вопрос: что делать, если исследовательская версия уже заметно сильнее публичной, а надёжного способа контролировать её поведение пока нет? По данным Axios , часть сотрудников сомневается, что таким моделям можно открывать широкий доступ. Некоторые ставят вопрос жёстче: стоит ли начинать обучение следующего поколения, пока не разобрались с нынешним. О решении остановить обучение или отменить релизы ни одна из компаний не объявляла . Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -2426,150 +2388,10 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795352215,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 39.16,
-      "candidates": 11,
-      "queue_before": 1,
-      "queue_after": 0,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 9,
-        "known_recent": 0,
-        "already_queued": 1,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 0,
-        "candidate_count": 11,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "IMAGE_NOT_FOUND": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "IMAGE_NOT_FOUND"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.67,
-          "bonus_total": 69.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Позволяет выбрать эффективный инструмент для автоматизации бизнес-процессов и снижения операционных затрат.",
-            "title": "Лучшие персональные ИИ-агенты 2026: сравнение Hermes, OpenClaw и Gemini Spark - Techora.ru",
-            "final_score": 64.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 8,
-        "direct_feed_errors": 2,
-        "direct_raw_items": 55,
-        "raw_items": 447,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": -1,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 36,
-          "CNews": 0,
-          "Euronews": 18
-        },
-        "score_filtered": 427,
-        "quality_filtered": 6,
-        "story_dedup": 3,
-        "candidates": 11,
-        "candidate_rate": 0.0281,
-        "score_buckets": {
-          "0–39": 411,
-          "40–49": 22,
-          "50–59": 10,
-          "60–69": 4,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 1,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 2,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795353176,
       "status": "OK",
@@ -22810,11 +22632,99 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1795598694,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 30.3,
+      "candidates": 0,
+      "queue_before": 20,
+      "queue_after": 19,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/companies/speshu_ai/articles/1112112/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1112112",
+            "image_url": "https://habr.com/share/publication/1112112/6cc7deec228daabf26778d02fb891c3e/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 9.0,
+          "bonus_total": 54.0,
+          "max_score": 10.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 10.0,
+            "bonus": 30.0,
+            "reason": "Решения влияют на безопасность и доступность ИИ для вашего продукта.",
+            "title": "[Перевод] Что, если эти модели вообще нельзя безопасно использовать? О чём спорят в OpenAI и Anthropic",
+            "final_score": 86.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 5,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1795598199.7199993,
-  "last_publish_ts": 1795596515.1410139,
+  "last_publish_ts": 1795598694.5135684,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
