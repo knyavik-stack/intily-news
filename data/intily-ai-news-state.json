@@ -1423,7 +1423,8 @@
     "0ba35495a505714780bc0d75fa742834ac13f810791187b0fe81c4d25ba03ee5": 1795596035,
     "e64dd6493871ffa1024a15a046e902cbf2a67a45b6d954fe86ce291c958b3ee0": 1795596515,
     "38fba0cd202bf317b93a884a20cfa11de99c794a1ede2d1c829cc39a6a4b3a41": 1795598694,
-    "d1fe9bac0ded34920a4daea9feb74a7ac8a3eb393f346ee644c5e56a504b3963": 1795599160
+    "d1fe9bac0ded34920a4daea9feb74a7ac8a3eb393f346ee644c5e56a504b3963": 1795599160,
+    "ee87fddd073eee3acd15eac52d66d1f6f08ca566b3f83e64e12951234c797cea": 1795600112
   },
   "known": {
     "6ac814a86429f0f01e871588b0865a8e5f790ad4167308647abb6620ff7fc0cf": 1795595556.437125,
@@ -1439,93 +1440,13 @@
     "a3273601d1694f2dec1734cd9308fe85921653fd776c4f075a204527ad3711f1": 1795598199.7199993,
     "bc26fbad23896e7d96582d2343d93c2cdfc91d4b02a64f752fde4b96a6ed63e8": 1795598199.7199993,
     "e347752a1b309755c005b18dfdd28daa98411e65849ea462b8f804267561dfc4": 1795598199.7199993,
-    "a6e9ad24d2972fe644b1eff8305c8a9cf88498ae5bd26e5e68f92e87026bb17c": 1795598199.7199993
+    "a6e9ad24d2972fe644b1eff8305c8a9cf88498ae5bd26e5e68f92e87026bb17c": 1795598199.7199993,
+    "c6753063b4cafd12c956b72097cb4daf062c44e220031e716e7c2498a6962dad": 1795600112.352132,
+    "eb0a734c3664de5b4ced214072e6c0cb2e91f7305c195ea5c727a40a7b43ff92": 1795600112.352132,
+    "35c97c5ed0b3544d583cfa51bb2f98dfc3f55411ffb00a6ef350009efca09105": 1795600112.352132,
+    "f2757ce68d75c9a79873b506d4b0620c8c8cfdd274f3a01af797f2f804ed8b54": 1795600112.352132
   },
   "queue": [
-    {
-      "region": "RUSSIA",
-      "title": "Почему одинаковые вопросы к LLM дают разные ответы, и как с этим жить?",
-      "link": "https://habr.com/ru/companies/timeweb/articles/1101040/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1101040",
-      "desc": "Ты отправляешь модели один и тот же вопрос два раза. В первый раз получаешь нормальный ответ. Во второй раз модель начинает путаться, придумывать откровенный бред или вообще отказывается отвечать, хотя запрос ты никак не менял. Странно? На самом деле нет. В LLM один и тот же запрос может привести к разным ответам, и причины начинаются задолго до того, как модель выберет следующий токен. И для разработчика это становится особенно заметно, когда один вызов связан с другим. Даже небольшое расхождение в начале может превратиться в совершенно другой результат для всей цепочки, когда первый ответ уходит следующему агенту, инструмент возвращает данные, потом ещё одна модель принимает решение. Почему это происходит, можно ли измерить склонность модели противоречить самой себе и как добиться воспроизводимых ответов? Разберёмся прямо сейчас на примерах исследований и инженерных решений. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1795593947.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 7.0,
-        "event_concreteness": 9.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 43.5,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 67.5
-      },
-      "base_score": 43.5,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 67.5,
-      "key": "ee87fddd073eee3acd15eac52d66d1f6f08ca566b3f83e64e12951234c797cea",
-      "importance": 67.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "models",
-        "research",
-        "tools"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0,
-      "last_failed_at": 1795597001,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1795597301
-    },
-    {
-      "region": "WORLD",
-      "title": "OpenAI and Anthropic staff warn AI models too powerful for release - TechGig",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVFlhTzBwVnZiNXBWblRYSFBPeWZtVzR1ZUc1dTFqRldXTzJSbmFlLTl3TEVYOTF0Y0NVWjJWcFpGTXRDUWtQdmFibi00SEMySll4Vi10OEljb1NBMlBBZmxSMkE5MzN3S3NSWE44ZTk1TXBIMkk3NUNxUXlwbDlCSzJyZkNfWHd0ai10aS13ZWIxaEh1NnVzVk5QYTAtRGNJR3JLTFFqV3FpZ0VJVXlF0gG0AUFVX3lxTFB6UFpkbGF2UlZKZFZhYnd0bGNCSDhtRldHeEVGMjdFSzIwMnM0dS1vMnk1WkJJUDBPZ2NUZm5XS1ZyTGdSN0pjOGRhTnFKZ0FuVFNQSElySzR4N3Q2RzFjQ2dGZUJaSW1mUlZnOHZzd3N4TDd6YjVOWHh6OTFobklXRktmQTZXM0JDanp3dXdMLXc2OWpNU3YzeG1VeUN4elVkWllJOGxqeVRRTUpTQVI2M3E3SQ?oc=5",
-      "desc": "OpenAI and Anthropic staff warn AI models too powerful for release TechGig",
-      "source": "TechGig",
-      "time": 1795577660.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 10.0,
-        "event_concreteness": 13.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 43.5,
-        "audience_score": 8.0,
-        "audience_bonus": 24.0,
-        "final_score": 67.5
-      },
-      "base_score": 43.5,
-      "audience_bonus": 24.0,
-      "score_stage": "final",
-      "score": 67.5,
-      "key": "e67f873df7d73c3f55c1521db4d318cad499d9110b84e0fc428d27e6726710f3",
-      "importance": 67.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "models"
-      ],
-      "audience_score": 8.0,
-      "tier": "A",
-      "last_failed_at": 1795597001,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1795597301
-    },
     {
       "region": "WORLD",
       "title": "Google releases Gemini 4 Neon for paid users and developers - NetNewsLedger",
@@ -1564,39 +1485,43 @@
     },
     {
       "region": "WORLD",
-      "title": "Victor Vauss Launches Private AI Implementation Services to Put Enterprise AI Back Under Control - AiThority",
-      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPQ3UxZU5hT0ZBcGd5QVZ2RFJOWEEyaVFSQ0JjZ2l4ZV9WZDdWeG1nX1N0a2YwOHB4TDZ6cWNBejlPWTlHQkUzSFBZQm5ZZ2RIc1lia3VSTU85RllTenZMaDdTUHl6N0xudmFTXzdCcnUxREJ5Y19odjZDcFo4cUdRZkRlbXJ2bkVBbm5zaHRKRGRNMUdaeGEwMFZoVjJyWGVrdnV0VWlTVW0tVDZLZjhteWt0N19YME1rU1lvYjlSMDVEcW1wMVd0ZkFmODN5RW1HREE?oc=5",
-      "desc": "Victor Vauss Launches Private AI Implementation Services to Put Enterprise AI Back Under Control AiThority",
-      "source": "AiThority",
-      "time": 1795595800.0,
+      "title": "OpenAI and Anthropic staff warn AI models too powerful for release - TechGig",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVFlhTzBwVnZiNXBWblRYSFBPeWZtVzR1ZUc1dTFqRldXTzJSbmFlLTl3TEVYOTF0Y0NVWjJWcFpGTXRDUWtQdmFibi00SEMySll4Vi10OEljb1NBMlBBZmxSMkE5MzN3S3NSWE44ZTk1TXBIMkk3NUNxUXlwbDlCSzJyZkNfWHd0ai10aS13ZWIxaEh1NnVzVk5QYTAtRGNJR3JLTFFqV3FpZ0VJVXlF0gG0AUFVX3lxTFB6UFpkbGF2UlZKZFZhYnd0bGNCSDhtRldHeEVGMjdFSzIwMnM0dS1vMnk1WkJJUDBPZ2NUZm5XS1ZyTGdSN0pjOGRhTnFKZ0FuVFNQSElySzR4N3Q2RzFjQ2dGZUJaSW1mUlZnOHZzd3N4TDd6YjVOWHh6OTFobklXRktmQTZXM0JDanp3dXdMLXc2OWpNU3YzeG1VeUN4elVkWllJOGxqeVRRTUpTQVI2M3E3SQ?oc=5",
+      "desc": "OpenAI and Anthropic staff warn AI models too powerful for release TechGig",
+      "source": "TechGig",
+      "time": 1795577660.0,
       "_score_components": {
         "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 4.0,
-        "event_concreteness": 10.0,
-        "practical_value": 5.0,
+        "ai_specificity": 4.5,
+        "impact": 10.0,
+        "event_concreteness": 13.0,
+        "practical_value": 0.0,
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 2.0,
+        "freshness": 0.5,
         "low_signal_penalty": 0.0,
-        "base_score": 41.5,
+        "base_score": 43.0,
         "audience_score": 8.0,
         "audience_bonus": 24.0,
-        "final_score": 65.5
+        "final_score": 67.0
       },
-      "base_score": 41.5,
+      "base_score": 43.0,
       "audience_bonus": 24.0,
       "score_stage": "final",
-      "score": 65.5,
-      "key": "a3273601d1694f2dec1734cd9308fe85921653fd776c4f075a204527ad3711f1",
-      "importance": 65.5,
+      "score": 67.0,
+      "key": "e67f873df7d73c3f55c1521db4d318cad499d9110b84e0fc428d27e6726710f3",
+      "importance": 67.0,
       "editorial_value": 50.0,
       "topics": [
-        "business"
+        "models"
       ],
       "audience_score": 8.0,
-      "tier": "A"
+      "tier": "A",
+      "last_failed_at": 1795597001,
+      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
+      "failure_count": 1,
+      "next_retry_at": 1795597301
     },
     {
       "region": "RUSSIA",
@@ -1662,6 +1587,42 @@
       "score": 65.5,
       "key": "8e8e726601cb6c7381c0847201a67fad501ce34e95c7bd303a41e0880b3fa493",
       "importance": 65.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "business"
+      ],
+      "audience_score": 8.0,
+      "tier": "A"
+    },
+    {
+      "region": "WORLD",
+      "title": "Victor Vauss Launches Private AI Implementation Services to Put Enterprise AI Back Under Control - AiThority",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPQ3UxZU5hT0ZBcGd5QVZ2RFJOWEEyaVFSQ0JjZ2l4ZV9WZDdWeG1nX1N0a2YwOHB4TDZ6cWNBejlPWTlHQkUzSFBZQm5ZZ2RIc1lia3VSTU85RllTenZMaDdTUHl6N0xudmFTXzdCcnUxREJ5Y19odjZDcFo4cUdRZkRlbXJ2bkVBbm5zaHRKRGRNMUdaeGEwMFZoVjJyWGVrdnV0VWlTVW0tVDZLZjhteWt0N19YME1rU1lvYjlSMDVEcW1wMVd0ZkFmODN5RW1HREE?oc=5",
+      "desc": "Victor Vauss Launches Private AI Implementation Services to Put Enterprise AI Back Under Control AiThority",
+      "source": "AiThority",
+      "time": 1795595800.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 4.0,
+        "event_concreteness": 10.0,
+        "practical_value": 5.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 41.0,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 65.0
+      },
+      "base_score": 41.0,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 65.0,
+      "key": "a3273601d1694f2dec1734cd9308fe85921653fd776c4f075a204527ad3711f1",
+      "importance": 65.0,
       "editorial_value": 50.0,
       "topics": [
         "business"
@@ -1743,43 +1704,6 @@
       "tier": "A"
     },
     {
-      "region": "WORLD",
-      "title": "Even the best AI agents struggle with everyday life",
-      "link": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/",
-      "desc": "As millions embrace personal AI assistants, a new benchmark reveals that even the most advanced AI models struggle to complete everyday tasks reliably and safely without introducing potential new problems.",
-      "source": "TechCrunch AI",
-      "time": 1795556009.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 10.0,
-        "event_concreteness": 10.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 2.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 42.0,
-        "audience_score": 7.0,
-        "audience_bonus": 21.0,
-        "final_score": 63.0
-      },
-      "base_score": 42.0,
-      "audience_bonus": 21.0,
-      "score_stage": "final",
-      "score": 63.0,
-      "key": "c3fdfd326bdbfa5e46de23ce75386a5f9bd9302eabccd66641d4af434136f135",
-      "importance": 63.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "models"
-      ],
-      "audience_score": 7.0,
-      "tier": "A"
-    },
-    {
       "region": "RUSSIA",
       "title": "Поиск решений для защиты от ИИ-атак и обеспечения суверенитета в сфере кибербезопасности… проводится семинар для представителей промышленности, науки и исследовательских институтов - 재경일보",
       "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBTWVRDNTB3RmJRUzFWNVlMTnhiQkxfaTRNZFlkR3RRMjVmdlN2ZWFBN2xlOFpPOXZCSGZwZEpZRF8zVXRIdVAxOEpqbUNPYm9TSUZEWDNaeE8tSGhhazhOWlJ3?oc=5",
@@ -1855,6 +1779,40 @@
     },
     {
       "region": "WORLD",
+      "title": "ABB launches world’s first intelligent low-voltage motor as it targets AI-driven industrial operations - Indian Chemical News",
+      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPcWZuZ19nS1BtRjR3UHd1Yy1LOVJEM3AzeVZSTGtTYUNTeDY5SWVrSnlBUUJ6TzMtZWZSN0FpenR0dmFhbjVmc3hBNUwwOVpIUC1aM1Jzb3F5OVAxS2pVQVphemMtQnJ5Wk5faEthY0E2UUpWYkhDRG55VjQ4MThRZkR0eGN2VWpqckxnTGRQQkdNRF9VdmdQZ1hmeHV1cE9GakNweXlCNzdxYXJPVmlWNnhTZERuN3RKZjRYeUpKVlJkS3pFODY5YmxDNE5LVEhaRlRWUldJNGNIUlRDSmtRNW5fR2JNUkRG0gHvAUFVX3lxTFBLWnhySURaQ20tSHllYVFyOWxtMlRuUUplZF9yT09CZEJWZHJ5Q0lJVUlrRWVjVVlBUUhCUjF2QTZ4a0xDNHFvNGNwbU01cC1taHVycFM2WjdpVTRrejdmV3Zsd3MyNURRVm95WkVYMGxlN1hfUjM2YXZCajFwUHZPelRXN1BXRGo1NGdQV01FRUtsTjVUSVVKb1B3VzFxU3dzcFhOMlljOGtFWjVBQURnTEduWnl1cXdMeEVURm5FVElXQlJHWHpZRTBMUTNyLW1KZHJ1ck5lYm8xOEdzOGpSYndsNkNpNndZSjllZk93?oc=5",
+      "desc": "ABB launches world’s first intelligent low-voltage motor as it targets AI-driven industrial operations Indian Chemical News",
+      "source": "Indian Chemical News",
+      "time": 1795582876.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 4.0,
+        "event_concreteness": 11.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 2.0,
+        "freshness": 1.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 41.0,
+        "audience_score": 7.0,
+        "audience_bonus": 21.0,
+        "final_score": 62.0
+      },
+      "base_score": 41.0,
+      "audience_bonus": 21.0,
+      "score_stage": "final",
+      "score": 62.0,
+      "key": "15ce75003818f0b8561399aa9d0c1f3d26d6dc4f814ec537d8f1ab70fc5f021d",
+      "importance": 62.0,
+      "editorial_value": 50.0,
+      "topics": [],
+      "audience_score": 7.0,
+      "tier": "A"
+    },
+    {
+      "region": "WORLD",
       "title": "Sany Group Debuts AI Agents and Embodied Heavy-Load Robot Platform, Electric Products Exceed 80% of Display - BigGo Finance",
       "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1xb1ppbGk3MjhQcm9VZFlxX0pMXzVlRVlZUzBodlpFMUUyM2lDMGtwOGxxanRCYnJhOEczc21YQXBRdUpCR0w5VEJYN2tXMTF4ZUMwZmNqRU96VlpfN1N6V0tvR0Fqc0lGQ19FVmcxakJHU2xGeXc?oc=5",
       "desc": "Sany Group Debuts AI Agents and Embodied Heavy-Load Robot Platform, Electric Products Exceed 80% of Display BigGo Finance",
@@ -1892,43 +1850,6 @@
       "tier": "A"
     },
     {
-      "region": "RUSSIA",
-      "title": "Maple привлекла $5,3 млн в посевном раунде на разработку облачного ИИ-агента с акцентом на конфиденциальность - Unite.AI",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMDlmekozeUd5cEtJT3Z2MF8yclFJZmk3b3F4N19kRHVVUFFEUm1uQmZqX2FnRTlrcGNMYTJ1MGZSU2R3SlRmOFhadnI0QnNyVU9GZDFSbzRKQ0lPXzd4T0ZZT0dUdlJybXlMNnlGN255NXVaRXRsdWplYmJZTGNneDFwQzM3cXR0czRNQ0RhRUFIUUE?oc=5",
-      "desc": "Maple привлекла $5,3 млн в посевном раунде на разработку облачного ИИ-агента с акцентом на конфиденциальность Unite.AI",
-      "source": "Unite.AI",
-      "time": 1795556771.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 10.0,
-        "event_concreteness": 10.5,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 44.5,
-        "audience_score": 5.0,
-        "audience_bonus": 15.0,
-        "final_score": 59.5
-      },
-      "base_score": 44.5,
-      "audience_bonus": 15.0,
-      "score_stage": "final",
-      "score": 59.5,
-      "key": "52969671c4098e06a5bbfc5539ad431b558391e5a09e1a8e5bfee7d23f2a392a",
-      "importance": 59.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents"
-      ],
-      "audience_score": 5.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
       "region": "WORLD",
       "title": "Three xAI Co-Founders Who Left Musk Launch 'Future-Predicting AI' Startup Epochal… A $100 Million Bet - BigGo Finance",
       "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBQVDZNLW1WLTNmdW1LR25vRzc3SlJ0RE5YNGd6WHpvYkh2TXJnZDRyRlFXUFluVWZZQ044YW02SW9qMU1xYVBoSWlSVGNSZ1dEVzZNUUJQbU9LU0p6TVJVN1dJMFhrSkJCQmk4Z00zVERFeFNMZ2c?oc=5",
@@ -1964,37 +1885,36 @@
     },
     {
       "region": "RUSSIA",
-      "title": "Spektr и Энергия+ составили рейтинг российских промышленных колледжей",
-      "link": "https://habr.com/ru/companies/dalee_group/articles/1112046/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1112046",
-      "desc": "Исследовательское агентство Spektr (в группе Далее) и онлайн-медиа Энергия+ составили рейтинг промышленных колледжей России . В методологии рейтинга учитываются доступность образования и реальные перспективы трудоустройства для выпускников. Цель составления рейтинга — оценка способности колледжей и техникумов обеспечивать выпускникам эффективный старт профессиональной карьеры в промышленности, исходя из условий получения образования и результатов его практического применения. Читать далее",
+      "title": "Агент убил сам себя, кавычка сломала дашборд, а мы потеряли первую версию: как мы делали мигратор BI-отчетов Morphism AI",
+      "link": "https://habr.com/ru/companies/glowbyte/articles/1112128/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1112128",
+      "desc": "Однажды один из наших агентов-разработчиков запустил команду pkill -f и убил сам себя. Команда нашла среди подходящих процессов оболочку, в которой он работал, и завершила ее вместе с собой. Агент признал ошибку, ничего страшного не произошло, а в правила проекта добавили запрет. Это была самая безобидная потеря за время работы над Morphism AI. О том, что случилось с первой версией, я расскажу ниже, но по порядку. Я ушел в отпуск, когда мы только разбирали Power BI по метаданным и писали для этого скрипты. Вернулся к готовому мигратору. Он работал и с Qlik, и с Power BI, данные парсились и проходили через него от начала до конца. Мне показалось, что все случилось внезапно. Но, конечно, это лишь ощущения: в действительности ничего внезапного там не было. За готовым мигратором стояли годы поисков, прототип, перебор вариантов для FineBI, проверка на тысяче дашбордов и первая версия, которая сгорела вместе с окружением. Узнать всю правду о Morphism AI",
       "source": "Habr AI/News",
-      "time": 1795588818.0,
+      "time": 1795598040.0,
       "_score_components": {
         "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 4.0,
-        "event_concreteness": 10.0,
-        "practical_value": 3.0,
+        "ai_specificity": 6.0,
+        "impact": 7.0,
+        "event_concreteness": 11.0,
+        "practical_value": 5.0,
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
-        "freshness": 1.5,
+        "freshness": 2.0,
         "low_signal_penalty": 0.0,
-        "base_score": 41.0,
+        "base_score": 48.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 41.0
+        "final_score": 48.0
       },
-      "base_score": 41.0,
+      "base_score": 48.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 41.0,
-      "key": "c6a4af57c507d6088d14656b840f6281e972dc6560216df9652331e7e7f8395b",
-      "importance": 41.0,
+      "score": 48.0,
+      "key": "c6753063b4cafd12c956b72097cb4daf062c44e220031e716e7c2498a6962dad",
+      "importance": 48.0,
       "editorial_value": 50.0,
       "topics": [
-        "agents",
-        "applications"
+        "agents"
       ],
       "audience_score": null,
       "tier": "A",
@@ -2002,37 +1922,77 @@
     },
     {
       "region": "WORLD",
-      "title": "ABB launches world’s first intelligent low-voltage motor as it targets AI-driven industrial operations - Indian Chemical News",
-      "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPcWZuZ19nS1BtRjR3UHd1Yy1LOVJEM3AzeVZSTGtTYUNTeDY5SWVrSnlBUUJ6TzMtZWZSN0FpenR0dmFhbjVmc3hBNUwwOVpIUC1aM1Jzb3F5OVAxS2pVQVphemMtQnJ5Wk5faEthY0E2UUpWYkhDRG55VjQ4MThRZkR0eGN2VWpqckxnTGRQQkdNRF9VdmdQZ1hmeHV1cE9GakNweXlCNzdxYXJPVmlWNnhTZERuN3RKZjRYeUpKVlJkS3pFODY5YmxDNE5LVEhaRlRWUldJNGNIUlRDSmtRNW5fR2JNUkRG0gHvAUFVX3lxTFBLWnhySURaQ20tSHllYVFyOWxtMlRuUUplZF9yT09CZEJWZHJ5Q0lJVUlrRWVjVVlBUUhCUjF2QTZ4a0xDNHFvNGNwbU01cC1taHVycFM2WjdpVTRrejdmV3Zsd3MyNURRVm95WkVYMGxlN1hfUjM2YXZCajFwUHZPelRXN1BXRGo1NGdQV01FRUtsTjVUSVVKb1B3VzFxU3dzcFhOMlljOGtFWjVBQURnTEduWnl1cXdMeEVURm5FVElXQlJHWHpZRTBMUTNyLW1KZHJ1ck5lYm8xOEdzOGpSYndsNkNpNndZSjllZk93?oc=5",
-      "desc": "ABB launches world’s first intelligent low-voltage motor as it targets AI-driven industrial operations Indian Chemical News",
-      "source": "Indian Chemical News",
-      "time": 1795582876.0,
+      "title": "Anthropic and OpenAI Staff Doubt Unreleased AI Models Can Ship Safely; Internal Use Is No Fix - Tech Times",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQN2JzdG1zUnpRU2xwa1d5dklpUjdSSlhGN3pwVURMbFVTN0Y5Y2VIdlRnOU1RS0ZHXzBmeWZZRU5MYTRjS29VRWx0V05OT2Q3bWFUeUdFUTVmZW1waEpuVmV4N2ZWZVBEdWhLQjZoZl96cXpaQmsyd2o5NGdIZDkzT1BxLXBJcWRhNVdqWWVxUWtEdldrYjROTEhEVm1fc1N4SnJRc3J6Z29PWWk4N215Y196cTg4b2JhREo0T1ZtZEFKaUV1eUNseVlKeEEzRjJYSGVNQUstMA?oc=5",
+      "desc": "Anthropic and OpenAI Staff Doubt Unreleased AI Models Can Ship Safely; Internal Use Is No Fix Tech Times",
+      "source": "Tech Times",
+      "time": 1795599615.0,
       "_score_components": {
         "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 4.0,
-        "event_concreteness": 11.0,
-        "practical_value": 3.0,
+        "ai_specificity": 5.5,
+        "impact": 10.0,
+        "event_concreteness": 13.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 45.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 45.5
+      },
+      "base_score": 45.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 45.5,
+      "key": "eb0a734c3664de5b4ced214072e6c0cb2e91f7305c195ea5c727a40a7b43ff92",
+      "importance": 45.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "models"
+      ],
+      "audience_score": null,
+      "tier": "A"
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Релиз aish 0.4: безопасный shell и копирование вывода",
+      "link": "https://habr.com/ru/companies/selectel/articles/1111396/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1111396",
+      "desc": "Команда SELECTOS выпустила версию 0.4 ИИ-агента aish. В обновлении добавили систему разрешений на уровне команд и возможность копирования вывода из терминальной части. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1795598186.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 8.0,
+        "event_concreteness": 10.5,
+        "practical_value": 0.0,
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 2.0,
-        "freshness": 1.0,
+        "freshness": 2.0,
         "low_signal_penalty": 0.0,
-        "base_score": 41.0,
+        "base_score": 42.0,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 41.0
+        "final_score": 42.0
       },
-      "base_score": 41.0,
+      "base_score": 42.0,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 41.0,
-      "key": "15ce75003818f0b8561399aa9d0c1f3d26d6dc4f814ec537d8f1ab70fc5f021d",
-      "importance": 41.0,
+      "score": 42.0,
+      "key": "35c97c5ed0b3544d583cfa51bb2f98dfc3f55411ffb00a6ef350009efca09105",
+      "importance": 42.0,
       "editorial_value": 50.0,
-      "topics": [],
+      "topics": [
+        "agents",
+        "security_regulation"
+      ],
       "audience_score": null,
-      "tier": "A"
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     },
     {
       "region": "RUSSIA",
@@ -2066,6 +2026,44 @@
       "editorial_value": 49.0,
       "topics": [
         "security_regulation"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Spektr и Энергия+ составили рейтинг российских промышленных колледжей",
+      "link": "https://habr.com/ru/companies/dalee_group/articles/1112046/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1112046",
+      "desc": "Исследовательское агентство Spektr (в группе Далее) и онлайн-медиа Энергия+ составили рейтинг промышленных колледжей России . В методологии рейтинга учитываются доступность образования и реальные перспективы трудоустройства для выпускников. Цель составления рейтинга — оценка способности колледжей и техникумов обеспечивать выпускникам эффективный старт профессиональной карьеры в промышленности, исходя из условий получения образования и результатов его практического применения. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1795588818.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 4.0,
+        "event_concreteness": 10.0,
+        "practical_value": 3.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 1.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 40.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 40.5
+      },
+      "base_score": 40.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 40.5,
+      "key": "c6a4af57c507d6088d14656b840f6281e972dc6560216df9652331e7e7f8395b",
+      "importance": 40.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "applications"
       ],
       "audience_score": null,
       "tier": "A",
@@ -2106,23 +2104,59 @@
       ],
       "audience_score": null,
       "tier": "A"
+    },
+    {
+      "region": "WORLD",
+      "title": "Google Launches Momentum Initiative to Back Indian Startups With AI, Gemini and Cloud Infrastructure - Convergence Now",
+      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQbENkeWVIaFRzb2VxR0ZIbkllSTVVai0tRExrWnppdVQyMVgwMDAzaU9EY3VwdnJkeDFDdlVCdWZYeDJKMTJjaW55R3BrXzgzRlRyQ0dLSXd5TGV1U1g5eF8xUmJYalE3RXlWcGRVRjJiOGhVN2UybV9WZG96YlI2dEFMUVpvenpQbXlUR0J6MEhUd09JdURWaUJoV2M1T0xua0JoNFRQMEdDVV9fdnVTMGtHRkxPeXFFbDdxSDRoY1BfNFRLdmFfS0ctUzZ4RUFCN1ZSMm9nNA?oc=5",
+      "desc": "Google Launches Momentum Initiative to Back Indian Startups With AI, Gemini and Cloud Infrastructure Convergence Now",
+      "source": "Convergence Now",
+      "time": 1795599008.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 3.0,
+        "impact": 7.0,
+        "event_concreteness": 13.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 40.0,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 40.0
+      },
+      "base_score": 40.0,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 40.0,
+      "key": "f2757ce68d75c9a79873b506d4b0620c8c8cfdd274f3a01af797f2f804ed8b54",
+      "importance": 40.0,
+      "editorial_value": 46.0,
+      "topics": [
+        "models"
+      ],
+      "audience_score": null,
+      "tier": "A"
     }
   ],
   "health": {
-    "last_start_ts": 1795599160.2446942,
+    "last_start_ts": 1795600112.352132,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795599160.2446942,
-    "last_success_ts": 1795599160.2446942,
-    "last_candidates": 0,
+    "last_run_ts": 1795600112.352132,
+    "last_success_ts": 1795600112.352132,
+    "last_candidates": 20,
     "last_published": 1,
-    "queue_size": 18
+    "queue_size": 19
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795599167.2100675
+      "updated_at": 1795600157.0832577
     },
     "GROQ": {
       "disabled_until": 0,
@@ -2334,6 +2368,13 @@
       "desc": "В этом году я согласовал с одним из моих ключевых партнеров пилотное внедрение LLM модели на предприятие. Входные условия были такие: решение должно быть ON-Premise без выхода в интернет, работать модель должна с конфиденциальными данными с соблюдением NDA. Функционал модели: - Быстрый сбор информации по нормативным документам предприятия - формирование новых нормативных документов по текстовому описанию - формирование порядка действий персонала при описании нештатной или любой другой ситуации. В качестве базовой модели выбрал Gemma 4 на 26 млрд. параметров, запускал модель локально через Ollama. Видеокарту для сервера взяли на 24 GB GDDR6. Модель способна работать On-Premise и хорошо подходит для базовых задач работы с документами. Для обучения мы построил RAG-контур, который анализирует документы, разбивает, индексирует. Веса базовой модели при этом не меняются. Fine-tuning рассматриваю как следующий этап разработки и обучения модели. Задача выглядела сложной, но интересной и я оперативно взялся за работу. В чем встретил сложности? 1) Исходные данные нормативные документы предприятия были в разных форматах где то Word, где то сканированые документы в формате PDF. Часть из них выглядела как проектная документация, то есть на листе А4 была рамка с подписью \"проверил, разработал, ГИП\" и для индесирования документов и для базового обучения модели это оказалось сложным моментом. 80% документов она распознала нормально, но 20% пришлось преобразовывать в нужный формат вручную.Когда 20% документов некорректно распознана и соответственно ответы по ним неверные это стоп фактор к приемке системы Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "ee87fddd073eee3acd15eac52d66d1f6f08ca566b3f83e64e12951234c797cea": {
+      "time": 1795600112,
+      "title": "Почему одинаковые вопросы к LLM дают разные ответы, и как с этим жить?",
+      "desc": "Ты отправляешь модели один и тот же вопрос два раза. В первый раз получаешь нормальный ответ. Во второй раз модель начинает путаться, придумывать откровенный бред или вообще отказывается отвечать, хотя запрос ты никак не менял. Странно? На самом деле нет. В LLM один и тот же запрос может привести к разным ответам, и причины начинаются задолго до того, как модель выберет следующий токен. И для разработчика это становится особенно заметно, когда один вызов связан с другим. Даже небольшое расхождение в начале может превратиться в совершенно другой результат для всей цепочки, когда первый ответ уходит следующему агенту, инструмент возвращает данные, потом ещё одна модель принимает решение. Почему это происходит, можно ли измерить склонность модели противоречить самой себе и как добиться воспроизводимых ответов? Разберёмся прямо сейчас на примерах исследований и инженерных решений. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
@@ -2343,7 +2384,6 @@
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "WORLD",
@@ -2354,141 +2394,12 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795354130,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "admission_blocked_published_key",
-      "searched": true,
-      "duration_sec": 40.64,
-      "candidates": 12,
-      "queue_before": 0,
-      "queue_after": 0,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 10,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 2,
-        "added": 0,
-        "candidate_count": 12,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость выбора стека AI-агентов напрямую влияет на операционные затраты и автоматизацию бизнес-процессов.",
-            "title": "Best Personal AI Agents in 2026: OpenClaw, Hermes Agent, Gemini Spark and More, Compared on Memory, Security and Cost - MarkTechPost",
-            "final_score": 74.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 59,
-        "raw_items": 517,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 0,
-          "Ars Technica": 1,
-          "Habr AI/News": 39,
-          "CNews": 0,
-          "Euronews": 18
-        },
-        "score_filtered": 498,
-        "quality_filtered": 4,
-        "story_dedup": 3,
-        "candidates": 12,
-        "candidate_rate": 0.0262,
-        "score_buckets": {
-          "0–39": 480,
-          "40–49": 22,
-          "50–59": 11,
-          "60–69": 4,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 0,
-          "6": 0,
-          "7": 0,
-          "8": 0,
-          "9": 0,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795354612,
       "status": "OK",
@@ -22586,11 +22497,150 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795600112,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 56.89,
+      "candidates": 20,
+      "queue_before": 16,
+      "queue_after": 19,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 7,
+        "known_recent": 0,
+        "already_queued": 9,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 4,
+        "candidate_count": 20,
+        "admission_rate": 20.0,
+        "dominant_block": "already_queued",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://habr.com/ru/companies/timeweb/articles/1101040/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1101040",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 6.33,
+          "bonus_total": 57.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Критически важно для проектирования надежных AI-систем и предотвращения ошибок в цепочках агентов.",
+            "title": "Почему одинаковые вопросы к LLM дают разные ответы, и как с этим жить?",
+            "final_score": 67.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 7,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 122,
+        "raw_items": 619,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 2,
+          "Habr AI/News": 40,
+          "CNews": 52,
+          "Euronews": 26
+        },
+        "score_filtered": 573,
+        "quality_filtered": 26,
+        "story_dedup": 0,
+        "candidates": 20,
+        "candidate_rate": 0.0402,
+        "score_buckets": {
+          "0–39": 536,
+          "40–49": 63,
+          "50–59": 16,
+          "60–69": 4,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 2,
+          "7": 3,
+          "8": 6,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795598199.7199993,
-  "last_publish_ts": 1795599160.2446942,
+  "last_search_ts": 1795600112.352132,
+  "last_publish_ts": 1795600112.352132,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
