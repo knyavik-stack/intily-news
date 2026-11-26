@@ -1,6 +1,5 @@
 {
   "published": {
-    "c9e1c2c27f6b113cf7825165f7c0e2b6c1048d5be1c0746965ebb2a1de4ae0f0": 1793129818,
     "2cdf77b7a8c4e9db0623ea2ea7c48d0751272cc79144e84555f90f970c51ab6c": 1793131027,
     "a6249e038886976ccec05d7ff39dead1d6aa6e9f031e7fd97a999bb454180d4c": 1793163644,
     "e89eb3cfba796ad1293d7d672afad7e8998b07eda9013a568c19d4aa146ad4d8": 1793165565,
@@ -1572,44 +1571,6 @@
     },
     {
       "region": "RUSSIA",
-      "title": "Чем пахнет безопасность? Учим муху-дрозофилу нюхать SOC-алерты",
-      "link": "https://habr.com/ru/companies/pt/articles/1090712/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1090712",
-      "desc": "Многие слышали про ученых, которые оцифровали мозг мухи-дрозофилы и выложили модель из 166 тыс нейронов на гитхаб . Многие думали, что моделью заинтересуются другие ученые биологи и нейрофизиологи, но в дело вступили обычные разработчики. Моделям мушиного мозга нашли работу в играх (муха играет в DOOM) , музыке, торговать криптой и даже водить машину (FlyHard) . В конкурсе BlueSec (подробнее о конкурсе на Хабре) я решил проверить, нельзя ли доверить такой модели мозга дрозофилы ещё и расследование SOC-алертов. Мозг мухи устроен довольно сложно, ниже я сознательно упрощаю биологию. Это не попытка симулировать ВЕСЬ мозг мухи. К сожалению, сделать универсального SOC‑аналитика, который думает как дрозофила не получилось. Зато получился полезный эксперимент: 512 Kenyon‑клеток, несколько десятков активных нейронов на шаг, небольшой выходной слой и веса размером в десятки килобайт, решающий задачу лучше многих, гораздо более тяжелых решений на базе LLM. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1795678376.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 8.0,
-        "event_concreteness": 9.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 0.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 43.0,
-        "audience_score": 7.0,
-        "audience_bonus": 21.0,
-        "final_score": 64.0
-      },
-      "base_score": 43.0,
-      "audience_bonus": 21.0,
-      "score_stage": "final",
-      "score": 64.0,
-      "key": "4ddd88ac0f784ea0d35819326c84458f450c9440e6e029c496a8a1ac8230a440",
-      "importance": 64.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "models",
-        "security_regulation"
-      ],
-      "audience_score": 7.0,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
       "title": "Итак, вы создали виртуальную машину: что дальше? Жизненный путь ВМ по уровням платформы",
       "link": "https://habr.com/ru/companies/rubytech/articles/1112576/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1112576",
       "desc": "Нажать «Создать ВМ» — дело нехитрое. Но за этой кнопкой стоит цепочка, в которой участвуют веб-интерфейс, оркестратор, агент на хосте, libvirt, KVM, QEMU и хранилище. Под катом — проживаем с одной виртуальной машиной всю ее жизнь (от создания до удаления) и разбираем, какой уровень платформы за что отвечает на каждом этапе и где обычно прячутся сюрпризы. Будет все — развитие и взросление, потомство, сложности, болезни, гордый выход на пенсию и многое другое. Ведь если представить себе виртуалку как самолет, то должны качественно выполняться сразу несколько этапов: преднастройка перед полетом, возможность задать первичные параметры, обеспечение безопасного взлета на чистой ВПП, мониторинг всех систем во время полета с возможностью что-то быстро пофиксить, заход на посадку и движение по рулежной дорожке в ангар. Читать далее",
@@ -2117,14 +2078,14 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795721350.0036917,
+    "last_start_ts": 1795722077.0337427,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795721350.0036917,
-    "last_success_ts": 1795721350.0036917,
-    "last_candidates": 31,
-    "last_published": 1,
-    "queue_size": 19
+    "last_run_ts": 1795722077.0337427,
+    "last_success_ts": 1795722077.0337427,
+    "last_candidates": 0,
+    "last_published": 0,
+    "queue_size": 18
   },
   "providers": {
     "GEMINI": {
@@ -2133,14 +2094,14 @@
       "updated_at": 1795721397.5831642
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795721399.630322
+      "disabled_until": 1795725661.608626,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795722061.6086283
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795721343.1127923
+      "disabled_until": 1795808476.902371,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1795722076.9023724
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2148,9 +2109,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795721343.1127923
+      "disabled_until": 1795725676.044972,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795722076.044974
     }
   },
   "stories": {
@@ -2423,94 +2384,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1795496939,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 13.04,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://www.koreaittimes.com/news/articleView.html?idxno=159416",
-            "image_url": "https://www.koreaittimes.com/news/thumbnail/202611/159416_109030_5513_v150.jpg",
-            "width": 300,
-            "height": 168,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость пересмотра стратегии автоматизации бизнес-процессов для сохранения конкурентоспособности.",
-            "title": "Levenza Acquires Fluid Inference, Launches Enterprise AI Agents Globally - Korea IT Times",
-            "final_score": 70.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 18,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795497661,
       "status": "OK",
@@ -21733,6 +21606,78 @@
         "OPENAI": {
           "blocked": false,
           "reason": ""
+        }
+      }
+    },
+    {
+      "ts": 1795722077,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": false,
+      "duration_sec": 18.73,
+      "candidates": 0,
+      "queue_before": 18,
+      "queue_after": 18,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 6,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
     }
