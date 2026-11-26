@@ -1,6 +1,5 @@
 {
   "published": {
-    "185165a0129f69f74f8dbfa6c81f58774d5118952d69383f9578545239c544b1": 1793087579,
     "7b2f7fc64d29b4c51efb9e1b68dba721e3b7a6a1d4dec3bf1878254b828df155": 1793088536,
     "8bf5045da6109db8719afdfd30188f369022bea0a13fe4c3d5bc7d939a18e5b1": 1793088778,
     "6891404b12f97967a8b33c6f26a377217784ab115a2a27c7570e59facf3048df": 1793089255,
@@ -1405,7 +1404,8 @@
     "69319c8e3c2db2c3aa5ea17d792a02a46892db7a888225d53cffbf10eb8562a8": 1795672835,
     "c766f492f691977cf04b2eb238073a04a04c0b8d2fdc70563df1c7a1cddc9eab": 1795674998,
     "1116bce7640d7af96d7a98cc4531e8b2b21601f96aee0c8bbb78e3493152de59": 1795675231,
-    "ca6af3abe16c34eb93702b19a3ef81dfc12263209ae5bde8179a68508d21101c": 1795675465
+    "ca6af3abe16c34eb93702b19a3ef81dfc12263209ae5bde8179a68508d21101c": 1795675465,
+    "43eb4003c84ee53bc0c02c472a2b39b885a3fde9bac54a2e4e5270e8f4f12f42": 1795679791
   },
   "known": {
     "5a574ab9009874e0daa61da83ae6cf6eb646563ccac15b13dac1b2daa8accab8": 1795674998.2332907,
@@ -1421,46 +1421,80 @@
   "queue": [
     {
       "region": "RUSSIA",
-      "title": "ИИ-тренды 2027–2030: локальный инференс, неязыковые модели и агентный слой в классическом ПО",
-      "link": "https://habr.com/ru/companies/lansoft_career/articles/1112508/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1112508",
-      "desc": "Искусственный интеллект влияет на все отрасли и рынки. Меняются бизнес-модели, рабочие процессы и требования к инфраструктуре. Изменения происходят настолько быстро, что привычного горизонта технологического планирования уже недостаточно. Если раньше форсайт можно было проводить с большими интервалами, то теперь отслеживать технологические сдвиги, вызванные ИИ, и оценивать их последствия для бизнеса приходится постоянно. В 2026 году вопрос «какая модель умнее» почти потерял практический смысл: лидеры публичных бенчмарков сравнялись, тесты приближаются к насыщению, а прозрачность выпусков падает. Значимее стали другие вопросы: где выполняется инференс, кто и как проверяет результат агента, что уже требуют регуляторы. Ниже пять трендов горизонта 2027–2030 годов; каждый факт с источником, прогнозы помечены. Срез данных – 25 ноября 2026 года. Читать далее",
+      "title": "[Перевод] Можно ли программировать веса нейросети с помощью линейного программирования?",
+      "link": "https://habr.com/ru/articles/1108982/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1108982",
+      "desc": "Недавно лаборатория MIT CSAIL опубликовала статью Sparks of Weight-Space Programming . В ней авторы описывают, как по исходным весам небольшой нейросети GPT-6 Astra могла определить, в какую игру её обучали играть. А получив только правила игры, она могла с нуля написать веса небольшой нейросети и обыграть сети, обученные с помощью PPO на протяжении 100 миллионов шагов. Ей не понадобилось никаких градиентов и циклов обучения, только рассуждения о том, какие вычисления выполняют заданные веса. Этот подход авторы назвали программированием в пространстве весов ( weight-space programming ). В другом эксперименте Astra попросили улучшить математические способности модели Qwen3.5-0.8B, изменив её веса. Astra изменила всего 0,016 процента весов, но точность на тесте MATH-500 выросла с 7,9 до 48,1 процента. Изучив изменения, внесённые Astra, я понял, что большую часть поиска она фактически выполняла методом проб и ошибок, решая задачу линейного программирования. На то, чтобы выбрать, какие веса изменить и насколько, у неё ушло около восьми часов и 28 прямых проходов. Пара решений задачи линейного программирования (примерно по минуте каждое) позволяет добиться того же результата, изменив в восемь раз меньше весов. В этой статье я разберу внесённые изменения, объясню, почему эту задачу можно представить как задачу линейного программирования, и расскажу, что это говорит о самом способе исправления модели. Читать далее",
       "source": "Habr AI/News",
-      "time": 1795676513.0,
+      "time": 1795677741.0,
       "_score_components": {
         "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 9.0,
-        "event_concreteness": 13.5,
-        "practical_value": 6.5,
+        "ai_specificity": 5.5,
+        "impact": 11.0,
+        "event_concreteness": 14.0,
+        "practical_value": 3.0,
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 3.0,
         "freshness": 2.0,
         "low_signal_penalty": 0.0,
-        "base_score": 54.0,
+        "base_score": 52.5,
         "audience_score": 8.0,
         "audience_bonus": 24.0,
-        "final_score": 78.0
+        "final_score": 76.5
       },
-      "base_score": 54.0,
+      "base_score": 52.5,
       "audience_bonus": 24.0,
       "score_stage": "final",
-      "score": 78.0,
-      "key": "43eb4003c84ee53bc0c02c472a2b39b885a3fde9bac54a2e4e5270e8f4f12f42",
-      "importance": 78.0,
+      "score": 76.5,
+      "key": "9fd31bbcf1cae57622cc3c9aade8ae9a9e7ce78904dc0bb4b9c08bb25dc33ac6",
+      "importance": 76.5,
       "editorial_value": 50.0,
       "topics": [
-        "agents",
-        "business",
-        "models"
+        "models",
+        "tools"
       ],
       "audience_score": 8.0,
       "tier": "A",
-      "russia_weight_bonus": 0.0,
-      "last_failed_at": 1795678389,
-      "last_failure": "AI_PROVIDERS_UNAVAILABLE | ",
-      "failure_count": 1,
-      "next_retry_at": 1795678689
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "RUSSIA",
+      "title": "Холодный GOFFEE: как группировка вернулась к атаке спустя полтора года",
+      "link": "https://habr.com/ru/companies/ru_mts/articles/1112274/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1112274",
+      "desc": "Привет, Хабр! На связи Никита Полосухин и Илья Панов — ведущие аналитики центра мониторинга и реагирования на кибератаки RED Security SOC. Сегодня мы расскажем о группировке GOFFEE. В представлении она, кажется, не нуждается: эти злоумышленники атакуют российские компании уже несколько лет. В этом году мы столкнулись с их очередной атакой. Как показало расследование RED Security SOC, группировка проникла в инфраструктуру компании-жертвы еще в 2024 году, закрепившись на компьютере бухгалтера. Спустя полтора года, в августе 2026-го, сохранившийся PowerShell-агент вновь проявил активность. Он выполнил разведку, после чего операторы установили дополнительный имплант через перехват COM-объекта. В этом посте подробно разберем цепочку атаки и два разных инструмента на базе Mythic, которые использовала группировка. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1795677355.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 6.0,
+        "impact": 9.0,
+        "event_concreteness": 13.0,
+        "practical_value": 5.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 52.0,
+        "audience_score": 8.0,
+        "audience_bonus": 24.0,
+        "final_score": 76.0
+      },
+      "base_score": 52.0,
+      "audience_bonus": 24.0,
+      "score_stage": "final",
+      "score": 76.0,
+      "key": "616763b57e62fe3fc336c3760fc331f586a774acc348c647a3f6702663e72353",
+      "importance": 76.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "security_regulation",
+        "tools"
+      ],
+      "audience_score": 8.0,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
     },
     {
       "region": "WORLD",
@@ -1595,19 +1629,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 1.0,
-        "freshness": 1.5,
+        "freshness": 1.0,
         "low_signal_penalty": 0.0,
-        "base_score": 42.0,
+        "base_score": 41.5,
         "audience_score": 8.0,
         "audience_bonus": 24.0,
-        "final_score": 66.0
+        "final_score": 65.5
       },
-      "base_score": 42.0,
+      "base_score": 41.5,
       "audience_bonus": 24.0,
       "score_stage": "final",
-      "score": 66.0,
+      "score": 65.5,
       "key": "8dc48cf778d787da9fa581f22ccdaa9db64991dc229a04e85e68f3bb7b803213",
-      "importance": 66.0,
+      "importance": 65.5,
       "editorial_value": 50.0,
       "topics": [
         "chips"
@@ -1762,83 +1796,6 @@
     },
     {
       "region": "RUSSIA",
-      "title": "[Перевод] Можно ли программировать веса нейросети с помощью линейного программирования?",
-      "link": "https://habr.com/ru/articles/1108982/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1108982",
-      "desc": "Недавно лаборатория MIT CSAIL опубликовала статью Sparks of Weight-Space Programming . В ней авторы описывают, как по исходным весам небольшой нейросети GPT-6 Astra могла определить, в какую игру её обучали играть. А получив только правила игры, она могла с нуля написать веса небольшой нейросети и обыграть сети, обученные с помощью PPO на протяжении 100 миллионов шагов. Ей не понадобилось никаких градиентов и циклов обучения, только рассуждения о том, какие вычисления выполняют заданные веса. Этот подход авторы назвали программированием в пространстве весов ( weight-space programming ). В другом эксперименте Astra попросили улучшить математические способности модели Qwen3.5-0.8B, изменив её веса. Astra изменила всего 0,016 процента весов, но точность на тесте MATH-500 выросла с 7,9 до 48,1 процента. Изучив изменения, внесённые Astra, я понял, что большую часть поиска она фактически выполняла методом проб и ошибок, решая задачу линейного программирования. На то, чтобы выбрать, какие веса изменить и насколько, у неё ушло около восьми часов и 28 прямых проходов. Пара решений задачи линейного программирования (примерно по минуте каждое) позволяет добиться того же результата, изменив в восемь раз меньше весов. В этой статье я разберу внесённые изменения, объясню, почему эту задачу можно представить как задачу линейного программирования, и расскажу, что это говорит о самом способе исправления модели. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1795677741.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 11.0,
-        "event_concreteness": 14.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 52.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 52.5
-      },
-      "base_score": 52.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 52.5,
-      "key": "9fd31bbcf1cae57622cc3c9aade8ae9a9e7ce78904dc0bb4b9c08bb25dc33ac6",
-      "importance": 52.5,
-      "editorial_value": 50.0,
-      "topics": [
-        "models",
-        "tools"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Холодный GOFFEE: как группировка вернулась к атаке спустя полтора года",
-      "link": "https://habr.com/ru/companies/ru_mts/articles/1112274/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1112274",
-      "desc": "Привет, Хабр! На связи Никита Полосухин и Илья Панов — ведущие аналитики центра мониторинга и реагирования на кибератаки RED Security SOC. Сегодня мы расскажем о группировке GOFFEE. В представлении она, кажется, не нуждается: эти злоумышленники атакуют российские компании уже несколько лет. В этом году мы столкнулись с их очередной атакой. Как показало расследование RED Security SOC, группировка проникла в инфраструктуру компании-жертвы еще в 2024 году, закрепившись на компьютере бухгалтера. Спустя полтора года, в августе 2026-го, сохранившийся PowerShell-агент вновь проявил активность. Он выполнил разведку, после чего операторы установили дополнительный имплант через перехват COM-объекта. В этом посте подробно разберем цепочку атаки и два разных инструмента на базе Mythic, которые использовала группировка. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1795677355.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 9.0,
-        "event_concreteness": 13.0,
-        "practical_value": 5.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 52.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 52.0
-      },
-      "base_score": 52.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 52.0,
-      "key": "616763b57e62fe3fc336c3760fc331f586a774acc348c647a3f6702663e72353",
-      "importance": 52.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "security_regulation",
-        "tools"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
       "title": "Чем пахнет безопасность? Учим муху-дрозофилу нюхать SOC-алерты",
       "link": "https://habr.com/ru/companies/pt/articles/1090712/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1090712",
       "desc": "Многие слышали про ученых, которые оцифровали мозг мухи-дрозофилы и выложили модель из 166 тыс нейронов на гитхаб . Многие думали, что моделью заинтересуются другие ученые биологи и нейрофизиологи, но в дело вступили обычные разработчики. Моделям мушиного мозга нашли работу в играх (муха играет в DOOM) , музыке, торговать криптой и даже водить машину (FlyHard) . В конкурсе BlueSec (подробнее о конкурсе на Хабре) я решил проверить, нельзя ли доверить такой модели мозга дрозофилы ещё и расследование SOC-алертов. Мозг мухи устроен довольно сложно, ниже я сознательно упрощаю биологию. Это не попытка симулировать ВЕСЬ мозг мухи. К сожалению, сделать универсального SOC‑аналитика, который думает как дрозофила не получилось. Зато получился полезный эксперимент: 512 Kenyon‑клеток, несколько десятков активных нейронов на шаг, небольшой выходной слой и веса размером в десятки килобайт, решающий задачу лучше многих, гораздо более тяжелых решений на базе LLM. Читать далее",
@@ -1987,30 +1944,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795679573.6055417,
+    "last_start_ts": 1795679791.7834117,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795679573.6055417,
-    "last_success_ts": 1795679573.6055417,
-    "last_candidates": 16,
-    "last_published": 0,
-    "queue_size": 15
+    "last_run_ts": 1795679791.7834117,
+    "last_success_ts": 1795679791.7834117,
+    "last_candidates": 0,
+    "last_published": 1,
+    "queue_size": 14
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795683164.4440265,
-      "reason": "The read operation timed out",
-      "updated_at": 1795679564.4440286
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795679798.03942
     },
     "GROQ": {
-      "disabled_until": 1795683167.9713583,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795679567.97136
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795679785.0110703
     },
     "OPENAI": {
-      "disabled_until": 1795765973.5513992,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795679573.551401
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795679785.0110703
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2018,9 +1975,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795683173.362411,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795679573.362414
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795679785.0110703
     }
   },
   "stories": {
@@ -2170,10 +2127,16 @@
       "desc": "Claude Plugin Store Launches with Over 10,000 Plugins as Anthropic Makes Another Play for the Agent-Era Distribution Gateway BigGo Finance",
       "source": "BigGo Finance",
       "region": "WORLD"
+    },
+    "43eb4003c84ee53bc0c02c472a2b39b885a3fde9bac54a2e4e5270e8f4f12f42": {
+      "time": 1795679791,
+      "title": "ИИ-тренды 2027–2030: локальный инференс, неязыковые модели и агентный слой в классическом ПО",
+      "desc": "Искусственный интеллект влияет на все отрасли и рынки. Меняются бизнес-модели, рабочие процессы и требования к инфраструктуре. Изменения происходят настолько быстро, что привычного горизонта технологического планирования уже недостаточно. Если раньше форсайт можно было проводить с большими интервалами, то теперь отслеживать технологические сдвиги, вызванные ИИ, и оценивать их последствия для бизнеса приходится постоянно. В 2026 году вопрос «какая модель умнее» почти потерял практический смысл: лидеры публичных бенчмарков сравнялись, тесты приближаются к насыщению, а прозрачность выпусков падает. Значимее стали другие вопросы: где выполняется инференс, кто и как проверяет результат агента, что уже требуют регуляторы. Ниже пять трендов горизонта 2027–2030 годов; каждый факт с источником, прогнозы помечены. Срез данных – 25 ноября 2026 года. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -2192,99 +2155,10 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795428064,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 15.05,
-      "candidates": 0,
-      "queue_before": 13,
-      "queue_after": 12,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/articles/1111110/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1111110",
-            "image_url": "https://habr.com/share/publication/1111110/1b14ddf04a5a7cf58555cdc67143844f/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 6.67,
-          "bonus_total": 60.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 7.0,
-            "bonus": 21.0,
-            "reason": "Необходимость пересмотра методов автоматизации сбора данных из мессенджеров для бизнес-аналитики.",
-            "title": "Signal ограничил создание скриншотов из‑за ИИ‑агентов",
-            "final_score": 66.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795428297,
       "status": "OK",
@@ -21364,11 +21238,101 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1795679791,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 16.53,
+      "candidates": 0,
+      "queue_before": 15,
+      "queue_after": 14,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/companies/lansoft_career/articles/1112508/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1112508",
+            "image_url": "https://habr.com/share/publication/1112508/23c0c115f26e68ae45bf6d7ec0841e78/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 8.33,
+          "bonus_total": 75.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 3,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Необходимость пересмотра инфраструктуры и перехода на локальный инференс для снижения рисков и затрат.",
+            "title": "ИИ-тренды 2027–2030: локальный инференс, неязыковые модели и агентный слой в классическом ПО",
+            "final_score": 81.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 4,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1795679573.6055417,
-  "last_publish_ts": 1795675465.9250007,
+  "last_publish_ts": 1795679791.7834117,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
