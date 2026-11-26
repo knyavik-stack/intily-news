@@ -1400,15 +1400,10 @@
     "b59acb234ab72f747bbdc79e03edf111a71b6dd061ff2d8bd5a7ed4d0dcda979": 1795697792,
     "7101bb9ed9ba71daf546b03a7da78c6b3b4b5cf7950fde153537fb81819f2100": 1795698990,
     "884fd8aa953e8d36c30409bb2f004df19c25a8398ae989f5b03a0d612fd63e57": 1795699230,
-    "fe269a20717f25268aecd630a4321c111409843283716d0bae047663e1b2701d": 1795701379
+    "fe269a20717f25268aecd630a4321c111409843283716d0bae047663e1b2701d": 1795701379,
+    "e1df3985bb932c8e7d8f3748055e5a3f54cd8778568229b9df687ed953085d50": 1795702597
   },
   "known": {
-    "d687b1e5500e597790e9dadda8a5ad09342cb3c5590303c2e18be108af7a078c": 1795697068.7640245,
-    "b448ba31fc5735f89c4a8c3c61ae6f4d6c61a96906f2fef1e2c5aab9af037261": 1795697068.7640245,
-    "87c6778409f0600de89a2579d7b6b4f43de787fb4a3ed7236bf4967aaff77009": 1795697068.7640245,
-    "2307ec584c0f9ab80d0aa4ea83ead9b16adcf5cb9dc6e86b33f66c4c82149e19": 1795697068.7640245,
-    "9154986ced7fa29702d3fc732ffbad4de2657e7acc1dded1a847f50bd92a7dfa": 1795697068.7640245,
-    "a7e6f1d354b16e8fd49e9a5efdf51b7e0932a98413d21d9cf5eaabd217c97242": 1795697068.7640245,
     "884fd8aa953e8d36c30409bb2f004df19c25a8398ae989f5b03a0d612fd63e57": 1795698990.8148549,
     "b10b0e4f0899b169981749a79576fa4becc9bfb44edc5c7bbdbaf160f3f9ff6d": 1795698990.8148549,
     "2552cff43819c1315694db0efe1d47519e62bf02a936bd3516811d9bb5ee1c9d": 1795698990.8148549,
@@ -2097,72 +2092,33 @@
       "audience_score": 5.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "RUSSIA",
-      "title": "Русский ModernBERT: предобучение и постобучение",
-      "link": "https://habr.com/ru/companies/mts_ai/articles/1112532/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1112532",
-      "desc": "Привет, Хабр! Меня зовут Антон Кабаев, технический лидер Центра обработки естественного языка MWS AI. В этой статье мы расскажем, как обучали две модели ModernBERT для русского языка. Русскоязычный энкодер можно обучить с нуля, а можно взять готовую мультиязычную модель и заменить ей словарь. Мы попробовали оба пути. BERT — языковая модель-энкодер. Она превращает текст в векторы, по которым можно классифицировать тексты, искать похожие фразы или ранжировать документы. При обучении BERT часть токенов скрывают. В предложении «Поезд отправляется с [MASK] платформы» модель должна восстановить пропуск по словам слева и справа. На множестве таких примеров энкодер усваивает закономерности языка и факты о мире. Так проходит предобучение. А что будет, если уже обученному энкодеру сменить упражнение и учить его дальше? Мы сделали два русскоязычных ModernBERT разного размера. Small примерно на 35 млн параметров обучили с нуля, а base получили из мультиязычного mmBERT. Для сравнения взяли открытые модели российского разработчика того же размера, RuModernBERT-small и RuModernBERT-base . Постобучение попробовали на обеих своих моделях и на готовой base-модели российского разработчика. Больше всех выиграла как раз она: средняя точность на семи задачах RussianSuperGLUE выросла с 70,88 до 74,12%. Расскажем, как обучали энкодеры, что изменилось после постобучения и почему выбор модели зависит от того, как вы собираетесь ее использовать. Читать далее",
-      "source": "Habr AI/News",
-      "time": 1795700407.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 6.0,
-        "impact": 9.0,
-        "event_concreteness": 14.0,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 51.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 51.0
-      },
-      "base_score": 51.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 51.0,
-      "key": "e1df3985bb932c8e7d8f3748055e5a3f54cd8778568229b9df687ed953085d50",
-      "importance": 51.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "models",
-        "security_regulation",
-        "tools"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
     }
   ],
   "health": {
-    "last_start_ts": 1795702114.8124409,
+    "last_start_ts": 1795702597.0592887,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795702114.8124409,
-    "last_success_ts": 1795702114.8124409,
+    "last_run_ts": 1795702597.0592887,
+    "last_success_ts": 1795702597.0592887,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 19
+    "last_published": 1,
+    "queue_size": 18
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795705021.6734324,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1795701421.6734343
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795702596.9632647
     },
     "GROQ": {
-      "disabled_until": 1795705704.1217499,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795702104.121752
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795702579.425283
     },
     "OPENAI": {
-      "disabled_until": 1795788514.699231,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795702114.6992326
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795702579.425283
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -2170,9 +2126,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795705713.6588311,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795702113.6588337
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795702579.425283
     }
   },
   "stories": {
@@ -2336,10 +2292,16 @@
       "desc": "Компания Thinkmine выпустила в предварительном доступе язык программирования общего назначения Kobo для экосистемы .NET. Разработчики связывают появление языка с распространением агентной разработки и генерации кода по спецификациям. Проект ориентирован на совместную разработку людьми и ИИ-агентами и на данный момент находится на ранней стадии, поэтому синтаксис еще может изменяться. Авторы сформулировали четыре принципа проектирования: нативная поддержка ИИ, согласованность объявлений, опора на готовый рантайм и самодокументирование. Вместо сторонних библиотек для работы с моделями разработчики добавили языковые конструкции для промптов и инструментов. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "e1df3985bb932c8e7d8f3748055e5a3f54cd8778568229b9df687ed953085d50": {
+      "time": 1795702597,
+      "title": "Русский ModernBERT: предобучение и постобучение",
+      "desc": "Привет, Хабр! Меня зовут Антон Кабаев, технический лидер Центра обработки естественного языка MWS AI. В этой статье мы расскажем, как обучали две модели ModernBERT для русского языка. Русскоязычный энкодер можно обучить с нуля, а можно взять готовую мультиязычную модель и заменить ей словарь. Мы попробовали оба пути. BERT — языковая модель-энкодер. Она превращает текст в векторы, по которым можно классифицировать тексты, искать похожие фразы или ранжировать документы. При обучении BERT часть токенов скрывают. В предложении «Поезд отправляется с [MASK] платформы» модель должна восстановить пропуск по словам слева и справа. На множестве таких примеров энкодер усваивает закономерности языка и факты о мире. Так проходит предобучение. А что будет, если уже обученному энкодеру сменить упражнение и учить его дальше? Мы сделали два русскоязычных ModernBERT разного размера. Small примерно на 35 млн параметров обучили с нуля, а base получили из мультиязычного mmBERT. Для сравнения взяли открытые модели российского разработчика того же размера, RuModernBERT-small и RuModernBERT-base . Постобучение попробовали на обеих своих моделях и на готовой base-модели российского разработчика. Больше всех выиграла как раз она: средняя точность на семи задачах RussianSuperGLUE выросла с 70,88 до 74,12%. Расскажем, как обучали энкодеры, что изменилось после постобучения и почему выбор модели зависит от того, как вы собираетесь ее использовать. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "WORLD",
     "RUSSIA",
@@ -2358,86 +2320,10 @@
     "WORLD",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795449175,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": false,
-      "duration_sec": 24.88,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 17,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": null,
-        "failovers": 0,
-        "failures": 4,
-        "blocked": 12,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1795449415,
       "status": "OK",
@@ -21595,11 +21481,99 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1795702597,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 19.89,
+      "candidates": 0,
+      "queue_before": 19,
+      "queue_after": 18,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/companies/mts_ai/articles/1112532/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1112532",
+            "image_url": "https://habr.com/share/publication/1112532/bb62821e8ede4a07ae424313a2ce5a38/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 7.0,
+          "bonus_total": 21.0,
+          "max_score": 7.0,
+          "high_fit_8_10": 0,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Дает конкретный метод улучшения точности NLP-моделей для прикладных задач классификации и ранжирования.",
+            "title": "Русский ModernBERT: предобучение и постобучение",
+            "final_score": 72.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1795701379.7500877,
-  "last_publish_ts": 1795701379.7500877,
+  "last_publish_ts": 1795702597.0592887,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
