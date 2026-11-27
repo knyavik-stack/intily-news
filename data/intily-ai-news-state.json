@@ -1399,7 +1399,8 @@
     "bdcc87273766d85125b9cd79a191fc2fb71af46a7d5a64d4a47f89dff5947b0b": 1795713184,
     "71768b1eeb082d869d1e350485d45142bcdf67cb3389ae52e7523d5a6a7c2889": 1795715815,
     "e4e8acd94418037f840ee794ec2d3481b7a480a1b2796641768c2fb8f585c31a": 1795721350,
-    "46d2e0cfa6c54810d995e24f416333a75079ba7b2185ea85c867423424c67668": 1795722552
+    "46d2e0cfa6c54810d995e24f416333a75079ba7b2185ea85c867423424c67668": 1795722552,
+    "30ee2c5a3232736dbee62b254d800e591299827d6c72620345a848c5fbd96063": 1795757347
   },
   "known": {
     "30ee2c5a3232736dbee62b254d800e591299827d6c72620345a848c5fbd96063": 1795755931.896166,
@@ -1428,62 +1429,24 @@
         "freshness": 0.5,
         "low_signal_penalty": 0.0,
         "base_score": 46.5,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 46.5
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 64.5
       },
       "base_score": 46.5,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 46.5,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 64.5,
       "key": "8c13f5e41b8d3ec5578748f0ab1052e8a663310e991033bbcb4c7a0cd7cf9b01",
-      "importance": 46.5,
+      "importance": 64.5,
       "editorial_value": 50.0,
       "topics": [
         "agents",
         "security_regulation"
       ],
-      "audience_score": null,
+      "audience_score": 6.0,
       "tier": "A",
       "russia_weight_bonus": 0.0
-    },
-    {
-      "region": "WORLD",
-      "title": "Anthropic research reveals AI agent sandbox security risks - Tech Wire Asia",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRk8xbUpzWkpwTHRqLV9EcEN3cUl3T0RVQVpYWXBxRDhjdFpMVjd3cnBEMXQ3ZmNtRmtnUkZCSXhjSXFPdzR1MGp2SElZdUdEOEFkWTlIQXptWHJJYmxwaC1BWS1hcFREeFp4NnVHbE9BQXY2ZzNjbU5Ea0VfVW9LWQ?oc=5",
-      "desc": "Anthropic research reveals AI agent sandbox security risks Tech Wire Asia",
-      "source": "Tech Wire Asia",
-      "time": 1795752732.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 12.0,
-        "event_concreteness": 12.0,
-        "practical_value": 0.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 1.0,
-        "freshness": 1.5,
-        "low_signal_penalty": 0.0,
-        "base_score": 46.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 46.0
-      },
-      "base_score": 46.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 46.0,
-      "key": "30ee2c5a3232736dbee62b254d800e591299827d6c72620345a848c5fbd96063",
-      "importance": 46.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "research",
-        "security_regulation"
-      ],
-      "audience_score": null,
-      "tier": "A"
     },
     {
       "region": "RUSSIA",
@@ -1596,30 +1559,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795756890.830666,
+    "last_start_ts": 1795757347.7512212,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795756890.830666,
-    "last_success_ts": 1795756890.830666,
+    "last_run_ts": 1795757347.7512212,
+    "last_success_ts": 1795757347.7512212,
     "last_candidates": 0,
-    "last_published": 0,
-    "queue_size": 5
+    "last_published": 1,
+    "queue_size": 4
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795760481.5537715,
-      "reason": "The read operation timed out",
-      "updated_at": 1795756881.5537744
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795757347.7334661
     },
     "GROQ": {
-      "disabled_until": 1795760484.5803804,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795756884.580382
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795757340.9274774
     },
     "OPENAI": {
-      "disabled_until": 1795843290.8163316,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795756890.816333
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795757340.9274774
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1627,9 +1590,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795760489.7790582,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795756889.77906
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795757340.9274774
     }
   },
   "stories": {
@@ -1877,12 +1840,18 @@
       "desc": "Скриншоты интерфейсов, сгенерированных нейросетями у крупных брендов, вызывают закономерный вопрос: неужели в компаниях с миллиардными бюджетами закончились дизайнеры и тестировщики? К сожалению, во многих случаях это недалеко от истины. Проблема не в том, что ИИ «не умеет» рисовать кнопки. Проблема в том, что процесс производства интерфейсов был перестроен вокруг возможностей ИИ, а не вокруг потребностей пользователя. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "30ee2c5a3232736dbee62b254d800e591299827d6c72620345a848c5fbd96063": {
+      "time": 1795757347,
+      "title": "Anthropic research reveals AI agent sandbox security risks - Tech Wire Asia",
+      "desc": "Anthropic research reveals AI agent sandbox security risks Tech Wire Asia",
+      "source": "Tech Wire Asia",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "WORLD",
@@ -1899,81 +1868,10 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1795499594,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 28.39,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 16,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1795500537,
       "status": "OK",
@@ -21176,11 +21074,99 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1795757347,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": false,
+      "duration_sec": 8.08,
+      "candidates": 0,
+      "queue_before": 5,
+      "queue_after": 4,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 0,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 0,
+        "added": 0,
+        "candidate_count": 0,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 502: Bad Gateway": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 502: Bad Gateway"
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.5,
+          "bonus_total": 45.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Необходим немедленный аудит безопасности при интеграции ИИ-агентов для предотвращения утечек и несанкционированного доступа.",
+            "title": "Anthropic research reveals AI agent sandbox security risks - Tech Wire Asia",
+            "final_score": 73.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 3,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {},
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
   "last_search_ts": 1795755931.896166,
-  "last_publish_ts": 1795722552.0349221,
+  "last_publish_ts": 1795757347.7512212,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
