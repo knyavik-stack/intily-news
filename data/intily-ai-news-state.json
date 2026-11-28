@@ -1,6 +1,5 @@
 {
   "published": {
-    "0156060208ed3d61c4dfd7bea2f26f79b872da598426b9d4d2d562595ac95a14": 1793265180,
     "cbe4e3983f6ca6041d8c3474809c73871a54e4bd156658798e0bf71a002c5151": 1793265436,
     "79bf4a64c085b43aee7102191cdee6c85406c2630a155c23fd8aa70ee38c20b4": 1793265681,
     "006fd7b877669e626e027cbec9fd2c0478b23555eb9ff5a16e642ee896f01f07": 1793265901,
@@ -1406,11 +1405,11 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1795856943.438742,
+    "last_start_ts": 1795857188.0315635,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795856943.438742,
-    "last_success_ts": 1795856943.438742,
+    "last_run_ts": 1795857188.0315635,
+    "last_success_ts": 1795857188.0315635,
     "last_candidates": 7,
     "last_published": 0,
     "queue_size": 0
@@ -1419,7 +1418,7 @@
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795856981.2403772
+      "updated_at": 1795857224.065483
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1443,13 +1442,6 @@
     }
   },
   "stories": {
-    "4818205ce8d967de95df76a151cd7d0d083d1403c794f23dcf2b5d0385d8b49c": {
-      "time": 1795770782,
-      "title": "Созданные с помощью ИИ антительные молекулы для лекарства против Альцгеймера прошли первые лабораторные тесты",
-      "desc": "Институт AIRI и «Р-Фарм» при поддержке индустрии здоровья Сбербанка представили первые экспериментальные результаты...",
-      "source": "CNews",
-      "region": "RUSSIA"
-    },
     "3be09e92c4a2f27923c5730eb4c3e0a3523176a718139bca2ad0ec030ef0c3ec": {
       "time": 1795771748,
       "title": "Путин предложил создавать государственно-частные партнерства для ускоренного строительства ЦОД",
@@ -1796,96 +1788,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1795613072,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 14.41,
-      "candidates": 0,
-      "queue_before": 18,
-      "queue_after": 17,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 1,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 1,
-          "fallback_reasons": {
-            "HTTP Error 400: Bad Request": 1
-          },
-          "sources": {},
-          "last": {
-            "status": "fallback_text",
-            "method": null,
-            "source_url": null,
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": "HTTP Error 400: Bad Request"
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 6.67,
-          "bonus_total": 60.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Прямая интеграция LLM в CI/CD и рабочие процессы разработки ускоряет написание кода и меняет требования к навыкам инженеров.",
-            "title": "Anthropic launches Claude Ship beta to support developer workflows - Verdict",
-            "final_score": 70.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795613341,
       "status": "OK",
@@ -21889,10 +21791,140 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795857188,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 36.05,
+      "candidates": 7,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 6,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 7,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.5,
+          "bonus_total": 51.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Необходимость срочного аудита безопасности систем из-за доказанной уязвимости перед автономными ИИ-агентами.",
+            "title": "ИИ-агенты взломали критическую инфраструктуру Швейцарии: успешными оказались 2 из 3 атак - prospect.com.ru",
+            "final_score": 72.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 49,
+        "raw_items": 342,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 35,
+          "CNews": 0,
+          "Euronews": 14
+        },
+        "score_filtered": 319,
+        "quality_filtered": 13,
+        "story_dedup": 3,
+        "candidates": 7,
+        "candidate_rate": 0.0239,
+        "score_buckets": {
+          "0–39": 303,
+          "40–49": 28,
+          "50–59": 10,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795856943.438742,
+  "last_search_ts": 1795857188.0315635,
   "last_publish_ts": 1795855504.59081,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
