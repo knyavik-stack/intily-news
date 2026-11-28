@@ -1,6 +1,5 @@
 {
   "published": {
-    "707ce56bb7082bbbc9dcc7c564c1654ac894d79386b5b686a31700812d8f480a": 1793266862,
     "5da14318945953b454c587471757ecd95b3f54c491cf1a85b7e2b09efde3609b": 1793267835,
     "224303e45359ee180ba1d6fd28d22282a688b93d32d23dd6465cec4aadf2bc1e": 1793268551,
     "8694680240fdc14e1aa838aec11fddc8abb60c24118553939070c41d346e1c66": 1793268782,
@@ -1394,27 +1393,29 @@
     "80ceffc107ffa66416fee4742e9a520350edf741478983910a4b862358b9086a": 1795846626,
     "f21991e14d3573dd3fca5c9a842220df31ffb171314c9df0a88472a158ab52b7": 1795847829,
     "612d0b749012a82b30d6fa213da93f2d782f065760a1ab21337d0bdce2f5e09a": 1795848066,
-    "f2b20ad665241c0a0b70c4b75605ac86d4476fd99bd552d02709c1d5aa2dd214": 1795855504
+    "f2b20ad665241c0a0b70c4b75605ac86d4476fd99bd552d02709c1d5aa2dd214": 1795855504,
+    "5982b299b702174e52c6d444bb56659d883e612010280d2acc2477b9dcc210be": 1795859582
   },
   "known": {
-    "f2b20ad665241c0a0b70c4b75605ac86d4476fd99bd552d02709c1d5aa2dd214": 1795854306.3510187
+    "f2b20ad665241c0a0b70c4b75605ac86d4476fd99bd552d02709c1d5aa2dd214": 1795854306.3510187,
+    "5982b299b702174e52c6d444bb56659d883e612010280d2acc2477b9dcc210be": 1795859582.3119435
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1795858381.538213,
+    "last_start_ts": 1795859582.3119435,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795858381.538213,
-    "last_success_ts": 1795858381.538213,
-    "last_candidates": 5,
-    "last_published": 0,
+    "last_run_ts": 1795859582.3119435,
+    "last_success_ts": 1795859582.3119435,
+    "last_candidates": 7,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795858421.1685445
+      "updated_at": 1795859625.8040483
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1752,12 +1753,18 @@
       "desc": "Google launches Humanity's First Exam to test AI on easy questions Pasquale Pillitteri",
       "source": "Pasquale Pillitteri",
       "region": "WORLD"
+    },
+    "5982b299b702174e52c6d444bb56659d883e612010280d2acc2477b9dcc210be": {
+      "time": 1795859582,
+      "title": "ИИ‑агенты стали управлять частью вычислительных мощностей DeepMind для экспериментов с Gemini",
+      "desc": "Google DeepMind предоставляет ИИ‑агентам возможность самостоятельно проводить эксперименты для создания следующей версии модели Gemini. Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "RUSSIA",
@@ -1774,144 +1781,10 @@
     "WORLD",
     "RUSSIA",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795613782,
-      "status": "OK",
-      "business_result": "PUBLISH_FAILED",
-      "business_reason": "all_attempted_items_failed",
-      "searched": true,
-      "duration_sec": 136.85,
-      "candidates": 16,
-      "queue_before": 17,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 2,
-      "item_failures": 2,
-      "admission": {
-        "published_key": 5,
-        "known_recent": 2,
-        "already_queued": 5,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 4,
-        "candidate_count": 16,
-        "admission_rate": 25.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.0,
-          "bonus_total": 42.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 6.0,
-            "bonus": 18.0,
-            "reason": "Позволяет оптимизировать рутинные процессы документооборота, но требует интеграции в существующую экосистему LDM.",
-            "title": "ИИ-модуль LDM.AiDo ускоряет разработку бизнес-приложений и оптимизирует обработку документов",
-            "final_score": 66.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 61,
-        "query_errors": 3,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 190,
-        "raw_items": 1152,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 1,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 1,
-          "Ars Technica": 1,
-          "Habr AI/News": 40,
-          "CNews": 96,
-          "Euronews": 50
-        },
-        "score_filtered": 1092,
-        "quality_filtered": 38,
-        "story_dedup": 6,
-        "candidates": 16,
-        "candidate_rate": 0.0166,
-        "score_buckets": {
-          "0–39": 1030,
-          "40–49": 98,
-          "50–59": 23,
-          "60–69": 0,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 3,
-          "6": 5,
-          "7": 3,
-          "8": 5,
-          "9": 1,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI",
-          "GEMINI",
-          "GROQ",
-          "OPENROUTER",
-          "OPENROUTER",
-          "OPENAI"
-        ],
-        "used": "OPENROUTER",
-        "failovers": 4,
-        "failures": 4,
-        "blocked": 10,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1795614296,
       "status": "OK",
@@ -22013,11 +21886,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795859582,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 46.23,
+      "candidates": 7,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 4,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 1,
+        "candidate_count": 7,
+        "admission_rate": 14.29,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "og_image": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": "og_image",
+            "source_url": "https://habr.com/ru/articles/1113502/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1113502",
+            "image_url": "https://habr.com/share/publication/1113502/7b1c60505214b82f9552803cdea75803/",
+            "width": 1200,
+            "height": 630,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 8.33,
+          "bonus_total": 75.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 3,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Ускорение цикла разработки моделей Gemini задает новый стандарт эффективности, требующий пересмотра подходов к автоматизации R&D.",
+            "title": "ИИ‑агенты стали управлять частью вычислительных мощностей DeepMind для экспериментов с Gemini",
+            "final_score": 68.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 48,
+        "raw_items": 321,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 35,
+          "CNews": 0,
+          "Euronews": 13
+        },
+        "score_filtered": 299,
+        "quality_filtered": 13,
+        "story_dedup": 2,
+        "candidates": 7,
+        "candidate_rate": 0.0256,
+        "score_buckets": {
+          "0–39": 290,
+          "40–49": 21,
+          "50–59": 10,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795858381.538213,
-  "last_publish_ts": 1795855504.59081,
+  "last_search_ts": 1795859582.3119435,
+  "last_publish_ts": 1795859582.3119435,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
