@@ -1,8 +1,5 @@
 {
   "published": {
-    "4151bd52b491c6c8f9b116788f2565491ee5265b8ab6ce05bcd266079b617188": 1793277421,
-    "1eab3e36ce87bc5797232c164ed054fc60e6011e92f4fab797a29214b06746a5": 1793277676,
-    "890684c8116c5ac8284c2d087f864aff2c7d9b1dbabe0a9583487bd2229f019b": 1793277916,
     "70dbb9f25535cc07bcf690634ca47c555807963a34aef88a3270c1be08de74f2": 1793278877,
     "cf6e52cd0fc32bbeea8b8d0f273e1cc84bcfd1319c8f9e8ccb0a3ead4b559c86": 1793280080,
     "80da4ace981c80fd38cab199a9f3d4a0ad7731546f31bf3b8627343b6cb6e99c": 1793284167,
@@ -1410,19 +1407,19 @@
         "novelty": 0.0,
         "source_quality": 2.0,
         "evidence": 2.0,
-        "freshness": 2.0,
+        "freshness": 1.5,
         "low_signal_penalty": 0.0,
-        "base_score": 40.5,
+        "base_score": 40.0,
         "audience_score": 5.0,
         "audience_bonus": 15.0,
-        "final_score": 55.5
+        "final_score": 55.0
       },
-      "base_score": 40.5,
+      "base_score": 40.0,
       "audience_bonus": 15.0,
       "score_stage": "final",
-      "score": 55.5,
+      "score": 55.0,
       "key": "27dce7b8e405a1fb816a007a0ddab94da17f54e8b7937059cd4276345f9b8e70",
-      "importance": 55.5,
+      "importance": 55.0,
       "editorial_value": 50.0,
       "topics": [
         "business"
@@ -1432,13 +1429,13 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795869217.287259,
+    "last_start_ts": 1795870624.0799916,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795869217.287259,
-    "last_success_ts": 1795869217.287259,
-    "last_candidates": 0,
-    "last_published": 1,
+    "last_run_ts": 1795870624.0799916,
+    "last_success_ts": 1795870624.0799916,
+    "last_candidates": 7,
+    "last_published": 0,
     "queue_size": 1
   },
   "providers": {
@@ -1453,9 +1450,9 @@
       "updated_at": 1795869210.755955
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795869182.5194895
+      "disabled_until": 1795957056.3778794,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1795870656.3778818
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1463,19 +1460,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795869217.2848933
+      "disabled_until": 1795874255.456376,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795870655.4563782
     }
   },
   "stories": {
-    "0cfcc1d09073083118042eaf6c919a7c41f737dcaada53ec232e7128a4c59be0": {
-      "time": 1795783751,
-      "title": "ИИ в информационной безопасности: какие задачи стоит автоматизировать и где нужен человек",
-      "desc": "Утро аналитика SOC начинается с очереди оповещений: подозрительные входы, обращения к незнакомым адресам, срабатывания средств защиты. Часть из них — ложные срабатывания и безвредные действия. По каждому событию нужно собрать контекст, понять причину и решить, требуется ли вмешательство. По мере развития цифровой инфраструктуры растут объем и сложность анализируемых данных. Это повышает требования к инструментам мониторинга, аналитики и реагирования на события информационной безопасности. В сентябре 2026 года Check Point Research фиксировал в среднем на 48% больше кибератак на одну организацию в неделю, чем в сентябре 2025 года. В исследовании ISACA State of Cybersecurity 2026 52% опрошенных специалистов ИБ назвали чрезмерную нагрузку или завышенные ожидания одним из источников стресса. Развитие инструментов автоматизации становится одним из способов повысить эффективность работы специалистов. В том числе за счет искусственного интеллекта, который помогает анализировать большие объемы информации, систематизировать данные и сокращать количество повторяющихся операций. В Билайне команда AI Security работает над интеграцией ИИ в процессы информационной безопасности, чтобы специалисты могли быстрее получать необходимый контекст и уделять больше внимания экспертным задачам. Сегодня разберемся, где такие технологии уже применяются на рынке и как грамотно распределить работу между обычным кодом, моделью и человеком. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "0b0d7893fffedc67ed06ccb4fd23b7e33f160f5da6e55710799de7b17de0d2ef": {
       "time": 1795784467,
       "title": "Почему AI-агенту недостаточно доступа к данным: зачем компании контекстная платформа",
@@ -1794,127 +1784,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1795626761,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": true,
-      "duration_sec": 36.85,
-      "candidates": 25,
-      "queue_before": 19,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 4,
-        "known_recent": 7,
-        "already_queued": 9,
-        "story_queue": 1,
-        "story_history": 1,
-        "added": 3,
-        "candidate_count": 25,
-        "admission_rate": 12.0,
-        "dominant_block": "already_queued",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 4,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 63,
-        "query_errors": 1,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 197,
-        "raw_items": 1272,
-        "source_counts": {
-          "TechCrunch AI": 3,
-          "VentureBeat AI": -1,
-          "The Verge AI": 3,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 1,
-          "Ars Technica": 5,
-          "Habr AI/News": 40,
-          "CNews": 95,
-          "Euronews": 50
-        },
-        "score_filtered": 1201,
-        "quality_filtered": 41,
-        "story_dedup": 5,
-        "candidates": 25,
-        "candidate_rate": 0.0233,
-        "score_buckets": {
-          "0–39": 1126,
-          "40–49": 113,
-          "50–59": 31,
-          "60–69": 2,
-          "70–79": 0,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 2,
-          "6": 5,
-          "7": 2,
-          "8": 5,
-          "9": 1,
-          "10": 1
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1795627005,
       "status": "OK",
@@ -22368,10 +22237,134 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795870624,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 32.33,
+      "candidates": 7,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 5,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 7,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 58,
+        "raw_items": 571,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 40,
+          "CNews": 0,
+          "Euronews": 17
+        },
+        "score_filtered": 553,
+        "quality_filtered": 7,
+        "story_dedup": 4,
+        "candidates": 7,
+        "candidate_rate": 0.0136,
+        "score_buckets": {
+          "0–39": 527,
+          "40–49": 32,
+          "50–59": 10,
+          "60–69": 2,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 1,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": null,
+        "failovers": 0,
+        "failures": 2,
+        "blocked": 6,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795867521.0374186,
+  "last_search_ts": 1795870624.0799916,
   "last_publish_ts": 1795869217.287259,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
