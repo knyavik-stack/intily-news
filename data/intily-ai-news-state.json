@@ -1,7 +1,5 @@
 {
   "published": {
-    "8114a1f1f35044baf28b4adae3c9d4169983ee92707592fb394b55a603f968b9": 1793299028,
-    "acfeca8d3b3d8194131c6ce131cd71c22600bc9cf16b005e9b3a9d1aec8bb8be": 1793299745,
     "d6821f4d3c5c527df2f6df83f58660824a345f44817e8fc316f4f7d412fb0b8a": 1793301459,
     "b4e82d6d99be173d0b4818f2ceb7d0782ba317ed7856baf3a65fd0180fe26f22": 1793336714,
     "45e7e5327c5e441c8ccbc731cd04be575d57a4167e4c9a60d828f8f6c601b9f5": 1793337202,
@@ -1384,40 +1382,42 @@
     "9bc00307fcd690821b4952725d3ad9f56d20bf2cf3079cd53af36bfa2d120d53": 1795888386,
     "7292c38ec320ed0793f7fb189f943de65aa0899205b4c54b088c71102f433c39": 1795889382,
     "0802cb83e747213953b899eca521401a15f46eb89ff642e1648c3269a57b0164": 1795890546,
-    "567ab8532427ec55c7fc19f1b5dd6c2581812d8019819c33aea41e9d23356729": 1795890789
+    "567ab8532427ec55c7fc19f1b5dd6c2581812d8019819c33aea41e9d23356729": 1795890789,
+    "d7cfd9338fa8c351fe39143ced9ac6bb26dbc4737a2a427b0e47df0ae17c94c3": 1795891984
   },
   "known": {
     "9bc00307fcd690821b4952725d3ad9f56d20bf2cf3079cd53af36bfa2d120d53": 1795888386.0765696,
     "7292c38ec320ed0793f7fb189f943de65aa0899205b4c54b088c71102f433c39": 1795888865.7216833,
     "0802cb83e747213953b899eca521401a15f46eb89ff642e1648c3269a57b0164": 1795889382.3045511,
-    "567ab8532427ec55c7fc19f1b5dd6c2581812d8019819c33aea41e9d23356729": 1795890546.467666
+    "567ab8532427ec55c7fc19f1b5dd6c2581812d8019819c33aea41e9d23356729": 1795890546.467666,
+    "d7cfd9338fa8c351fe39143ced9ac6bb26dbc4737a2a427b0e47df0ae17c94c3": 1795891984.8241184
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1795891024.5825825,
+    "last_start_ts": 1795891984.8241184,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795891024.5825825,
-    "last_success_ts": 1795891024.5825825,
-    "last_candidates": 16,
-    "last_published": 0,
+    "last_run_ts": 1795891984.8241184,
+    "last_success_ts": 1795891984.8241184,
+    "last_candidates": 17,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795894655.391794,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1795891055.3917959
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795892022.6319153
     },
     "GROQ": {
-      "disabled_until": 1795894658.8846273,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795891058.8846295
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795891984.7198915
     },
     "OPENAI": {
-      "disabled_until": 1795977464.1467843,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795891064.146786
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795891984.7198915
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1425,19 +1425,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795894663.1876557,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795891063.1876583
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795891984.7198915
     }
   },
   "stories": {
-    "1965281448e793d36ac02162c4fc3043aa4d7b26a0a9a095fba6f368dc2496ba": {
-      "time": 1795804861,
-      "title": "ИИ-агент в облаке: как запустить и сколько это стоит - РБК",
-      "desc": "ИИ-агент в облаке: как запустить и сколько это стоит РБК",
-      "source": "РБК",
-      "region": "RUSSIA"
-    },
     "7676d872ee977f8de5a74aab459f80417c2b37873dcffb80c65bbf815ac99fb5": {
       "time": 1795805598,
       "title": "ИИ атакует: В Швейцарии зафиксировали первые кибератаки с помощью ИИ-агента - SecurityLab.ru",
@@ -1682,13 +1675,19 @@
       "desc": "ИИ-агенты впервые провели сделку между российской и индийской компаниями prospect.com.ru",
       "source": "prospect.com.ru",
       "region": "RUSSIA"
+    },
+    "d7cfd9338fa8c351fe39143ced9ac6bb26dbc4737a2a427b0e47df0ae17c94c3": {
+      "time": 1795891984,
+      "title": "ProCogia Recognized Amongst the Top AI Innovators in Canada’s Landmark $1 Billion Initiative - The Detroit News",
+      "desc": "ProCogia Recognized Amongst the Top AI Innovators in Canada’s Landmark $1 Billion Initiative The Detroit News",
+      "source": "The Detroit News",
+      "region": "WORLD"
     }
   },
   "publication_regions": [
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "WORLD",
     "RUSSIA",
@@ -1704,99 +1703,10 @@
     "WORLD",
     "WORLD",
     "RUSSIA",
-    "RUSSIA"
+    "RUSSIA",
+    "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1795681225,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": false,
-      "duration_sec": 2.55,
-      "candidates": 0,
-      "queue_before": 11,
-      "queue_after": 10,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "unknown": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": null,
-            "source_url": "https://wisevoter.com/world/2026/11/25/google-deepmind-gemini-robotics-2-5-model",
-            "image_url": null,
-            "width": null,
-            "height": null,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 8.0,
-          "bonus_total": 24.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость адаптации производственных процессов под новые возможности управления роботами через LLM.",
-            "title": "Google DeepMind Unveils Gemini Robotics 2.5 Model - Wisevoter",
-            "final_score": 68.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 0,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795682186,
       "status": "OK",
@@ -23254,11 +23164,152 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1795891984,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 38.39,
+      "candidates": 17,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 15,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 17,
+        "admission_rate": 5.88,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "HTTP Error 402: Payment Required": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "HTTP Error 402: Payment Required"
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 7.0,
+          "bonus_total": 63.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 5.0,
+            "bonus": 15.0,
+            "reason": "Новость носит ознакомительный характер о распределении госбюджета, не давая прямых инструментов для внедрения.",
+            "title": "ProCogia Recognized Amongst the Top AI Innovators in Canada’s Landmark $1 Billion Initiative - The Detroit News",
+            "final_score": 56.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 68,
+        "raw_items": 815,
+        "source_counts": {
+          "TechCrunch AI": 2,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 40,
+          "CNews": 0,
+          "Euronews": 25
+        },
+        "score_filtered": 785,
+        "quality_filtered": 5,
+        "story_dedup": 8,
+        "candidates": 17,
+        "candidate_rate": 0.0228,
+        "score_buckets": {
+          "0–39": 763,
+          "40–49": 27,
+          "50–59": 20,
+          "60–69": 4,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795891024.5825825,
-  "last_publish_ts": 1795890789.202534,
+  "last_search_ts": 1795891984.8241184,
+  "last_publish_ts": 1795891984.8241184,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
