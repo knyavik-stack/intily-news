@@ -1382,17 +1382,56 @@
     "3a74063df5cb80cab01ea462165b51326e62d498bdf6b8d4080bafdd93031efa": 1795867025,
     "eed2afdc8c5646df3de33a3fef092077279f5f77d9cfe6377cc9c0067d84f7ad": 1795869217,
     "27dce7b8e405a1fb816a007a0ddab94da17f54e8b7937059cd4276345f9b8e70": 1795870865,
-    "60054e5ee671046c44dcf00077bd42af3314c6e4f944e2465c3df4f50b610698": 1795872804
+    "60054e5ee671046c44dcf00077bd42af3314c6e4f944e2465c3df4f50b610698": 1795872804,
+    "e97dc9c745f73a411582ae2833c16faf4257d902d726a2c86ade78ffb4a30047": 1795875433
   },
   "known": {
-    "eed2afdc8c5646df3de33a3fef092077279f5f77d9cfe6377cc9c0067d84f7ad": 1795867521.0374186,
     "8f78faa43ef02fdf055e968e0ef0ca900e2c0475125b9c94a8918736705260a6": 1795870865.7462902,
     "60054e5ee671046c44dcf00077bd42af3314c6e4f944e2465c3df4f50b610698": 1795872804.7468514,
     "2d88cabd5baae2ff29102fc91cbdfb07c23828c29c30cc72c96aadcfc8d0c9bc": 1795872804.7468514,
     "e97dc9c745f73a411582ae2833c16faf4257d902d726a2c86ade78ffb4a30047": 1795872804.7468514,
-    "5764165e10fdc819e50a18ad98f8a8cd142f38af9877766f4763076c89b0e1a1": 1795872804.7468514
+    "5764165e10fdc819e50a18ad98f8a8cd142f38af9877766f4763076c89b0e1a1": 1795872804.7468514,
+    "198df35a2940779dd18fd07ccef824c33da5c551cf1e5d505a83cfce259e871b": 1795875433.9643302,
+    "2977b8fec0f7e3b26112139bc35364f9b160edd9e84b331a0a1b7b1cc797559b": 1795875433.9643302
   },
   "queue": [
+    {
+      "region": "WORLD",
+      "title": "OpenAI and Apple accuse each other of committing trade secret theft, OpenAI countersues",
+      "link": "https://www.euronews.com/2026/11/28/openai-and-apple-accuse-each-other-of-committing-trade-secret-theft-openai-countersues",
+      "desc": "OpenAI accuses Apple of stealing trade secrets through a former employee, months after Apple has launched a similar lawsuit against the ChatGPT provider.",
+      "source": "Euronews",
+      "time": 1795871125.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 4.5,
+        "impact": 10.0,
+        "event_concreteness": 16.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 4.0,
+        "evidence": 2.0,
+        "freshness": 1.5,
+        "low_signal_penalty": 0.0,
+        "base_score": 50.0,
+        "audience_score": 6.0,
+        "audience_bonus": 18.0,
+        "final_score": 68.0
+      },
+      "base_score": 50.0,
+      "audience_bonus": 18.0,
+      "score_stage": "final",
+      "score": 68.0,
+      "key": "2d88cabd5baae2ff29102fc91cbdfb07c23828c29c30cc72c96aadcfc8d0c9bc",
+      "importance": 68.0,
+      "editorial_value": 50.0,
+      "topics": [
+        "models",
+        "security_regulation"
+      ],
+      "audience_score": 6.0,
+      "tier": "A"
+    },
     {
       "region": "WORLD",
       "title": "Anthropic Introduces Claude Ship to Review, Fix, and Approve Pull Requests by Policy - infoq.com",
@@ -1430,34 +1469,74 @@
       "tier": "A"
     },
     {
-      "region": "WORLD",
-      "title": "OpenAI and Apple accuse each other of committing trade secret theft, OpenAI countersues",
-      "link": "https://www.euronews.com/2026/11/28/openai-and-apple-accuse-each-other-of-committing-trade-secret-theft-openai-countersues",
-      "desc": "OpenAI accuses Apple of stealing trade secrets through a former employee, months after Apple has launched a similar lawsuit against the ChatGPT provider.",
-      "source": "Euronews",
-      "time": 1795871125.0,
+      "region": "RUSSIA",
+      "title": "Квест на 192 гигабайта RAM: как заставить Windows 11 и VirtualBox отдать всю RAM под локальный ИИ и “зоопарк” агентов",
+      "link": "https://habr.com/ru/articles/1113562/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1113562",
+      "desc": "Представьте ситуацию: у вас под рукой рабочая станция мечты. Внутри - свежий i9 Core Ultra (285K), профессиональная видеокарта NVIDIA RTX 4000 Ada / Blackwell (24 ГБ VRAM), два скоростных Samsung 990 Pro по 2 ТБ и “барские” (но ещё не “царские”) 192 ГБ оперативной памяти DDR5. Казалось бы, с таким запасом ОЗУ о слове «нехватка памяти» можно было забыть лет на пять. Но стоило построить на этой машине локальный стенд для автономных ИИ-агентов, как Windows 11 и VirtualBox устроили настоящий технический детектив: при 30+ гигабайтах формально свободной памяти гипервизор наотрез отказывался запускать новые виртуальные машины. Рассказываю, как проходил этот квест, почему отключение файла подкачки на 192 ГБ ОЗУ оказалось ловушкой и как короткий вызов недокументированной функции ядра ntdll.dll решил проблему без потери производительности. Уровень 1. Архитектура стенда и завязка сюжета. Железо выбиралось под конкретную задачу: полностью локальная, автономная среда разработки с ИИ-агентами без утечки кода в облака. • Хост (Windows 11): на нём в среде Strata крутится одна тяжелая локальная модель - Qwen 3.8 Unsloth Q8 (в “правильной” редакции), расшаренная по локальной сети в режиме OpenAI Compatible API. • Виртуальные машины (VirtualBox): несколько изолированных сред на базе Windows 11 и Kali Linux, внутри которых развёрнуты VS Code + Cline и Hermes Agent. Агенты одновременно дёргают локальный API хоста, пишут код, запускают тесты, пентестят, парсят окружение и дружно познают мир. Чтобы агенты не толкались локтями, виртуалок нужно много, а памяти, как уже было сказано ранее -192 ГБ. Файл подкачки по старой привычке «у меня много ОЗУ, зачем насиловать SSD» был полностью отключен. Читать далее",
+      "source": "Habr AI/News",
+      "time": 1795875418.0,
       "_score_components": {
         "relevance": 12.0,
-        "ai_specificity": 4.5,
-        "impact": 10.0,
-        "event_concreteness": 16.0,
-        "practical_value": 0.0,
+        "ai_specificity": 6.0,
+        "impact": 16.0,
+        "event_concreteness": 17.5,
+        "practical_value": 3.0,
         "novelty": 0.0,
-        "source_quality": 4.0,
-        "evidence": 2.0,
+        "source_quality": 2.0,
+        "evidence": 3.0,
         "freshness": 2.0,
         "low_signal_penalty": 0.0,
-        "base_score": 50.5,
+        "base_score": 61.5,
         "audience_score": null,
         "audience_bonus": 0.0,
-        "final_score": 50.5
+        "final_score": 61.5
       },
-      "base_score": 50.5,
+      "base_score": 61.5,
       "audience_bonus": 0.0,
       "score_stage": "pre_ai",
-      "score": 50.5,
-      "key": "2d88cabd5baae2ff29102fc91cbdfb07c23828c29c30cc72c96aadcfc8d0c9bc",
-      "importance": 50.5,
+      "score": 61.5,
+      "key": "198df35a2940779dd18fd07ccef824c33da5c551cf1e5d505a83cfce259e871b",
+      "importance": 61.5,
+      "editorial_value": 50.0,
+      "topics": [
+        "agents",
+        "chips",
+        "models",
+        "security_regulation"
+      ],
+      "audience_score": null,
+      "tier": "A",
+      "russia_weight_bonus": 0.0
+    },
+    {
+      "region": "WORLD",
+      "title": "Sakana AI’s CEO says its homegrown models are about more than Japan’s national security",
+      "link": "https://techcrunch.com/2026/11/28/sakana-ais-ceo-says-its-homegrown-models-are-about-more-than-japans-national-security/",
+      "desc": "Sakana AI aims to strengthen Japan’s industrial competitiveness with homegrown AI models.",
+      "source": "TechCrunch AI",
+      "time": 1795874400.0,
+      "_score_components": {
+        "relevance": 12.0,
+        "ai_specificity": 5.5,
+        "impact": 10.0,
+        "event_concreteness": 11.0,
+        "practical_value": 0.0,
+        "novelty": 0.0,
+        "source_quality": 2.0,
+        "evidence": 1.0,
+        "freshness": 2.0,
+        "low_signal_penalty": 0.0,
+        "base_score": 43.5,
+        "audience_score": null,
+        "audience_bonus": 0.0,
+        "final_score": 43.5
+      },
+      "base_score": 43.5,
+      "audience_bonus": 0.0,
+      "score_stage": "pre_ai",
+      "score": 43.5,
+      "key": "2977b8fec0f7e3b26112139bc35364f9b160edd9e84b331a0a1b7b1cc797559b",
+      "importance": 43.5,
       "editorial_value": 50.0,
       "topics": [
         "models",
@@ -1465,44 +1544,6 @@
       ],
       "audience_score": null,
       "tier": "A"
-    },
-    {
-      "region": "RUSSIA",
-      "title": "[Перевод] 64 PR до обеда: как ИИ‑агенты ускорили разработку, а я стал узким местом",
-      "link": "https://habr.com/ru/companies/otus/articles/1108096/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1108096",
-      "desc": "64 пулл-реквеста за два часа — впечатляющий результат работы ИИ‑агентов. Но чем быстрее агенты пишут и объединяют код, тем острее становится вопрос контроля качества: как убедиться, что изменения действительно готовы к релизу? Рассмотрим опыт организации параллельной разработки с помощью 11 агентов Claude Code в трёх проектах, разберём ошибки, проблемы ревью и ограничения автоматизированного тестирования. А также выясним, почему человек может стать главным узким местом в агентной разработке. Читать про эксперимент",
-      "source": "Habr AI/News",
-      "time": 1795871128.0,
-      "_score_components": {
-        "relevance": 12.0,
-        "ai_specificity": 5.5,
-        "impact": 8.0,
-        "event_concreteness": 11.5,
-        "practical_value": 3.0,
-        "novelty": 0.0,
-        "source_quality": 2.0,
-        "evidence": 3.0,
-        "freshness": 2.0,
-        "low_signal_penalty": 0.0,
-        "base_score": 47.0,
-        "audience_score": null,
-        "audience_bonus": 0.0,
-        "final_score": 47.0
-      },
-      "base_score": 47.0,
-      "audience_bonus": 0.0,
-      "score_stage": "pre_ai",
-      "score": 47.0,
-      "key": "e97dc9c745f73a411582ae2833c16faf4257d902d726a2c86ade78ffb4a30047",
-      "importance": 47.0,
-      "editorial_value": 50.0,
-      "topics": [
-        "agents",
-        "models"
-      ],
-      "audience_score": null,
-      "tier": "A",
-      "russia_weight_bonus": 0.0
     },
     {
       "region": "RUSSIA",
@@ -1541,20 +1582,20 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795872804.7468514,
+    "last_start_ts": 1795875433.9643302,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795872804.7468514,
-    "last_success_ts": 1795872804.7468514,
-    "last_candidates": 12,
+    "last_run_ts": 1795875433.9643302,
+    "last_success_ts": 1795875433.9643302,
+    "last_candidates": 13,
     "last_published": 1,
-    "queue_size": 4
+    "queue_size": 5
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795872830.280034
+      "updated_at": 1795875433.9581227
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1578,27 +1619,6 @@
     }
   },
   "stories": {
-    "bf47918d7453b6994dcb340e49b730b54413a754a6ac3fdff59c0af14301272c": {
-      "time": 1795786857,
-      "title": "«Управление бизнесом в эпоху агентной экономики»: Сбер выпустил бизнес-гайд о внедрении ИИ-агентов - prospect.com.ru",
-      "desc": "«Управление бизнесом в эпоху агентной экономики»: Сбер выпустил бизнес-гайд о внедрении ИИ-агентов prospect.com.ru",
-      "source": "prospect.com.ru",
-      "region": "RUSSIA"
-    },
-    "4231860dabee5a659cb8278c0fcdbf5efac416b82d91874e6bf9f9fef5a5829d": {
-      "time": 1795787596,
-      "title": "Минцифры предложило правила для развития ИИ в России",
-      "desc": "Минцифры совместно с представителями отрасли разработало пакет документов о регулировании и развитии больших...",
-      "source": "CNews",
-      "region": "RUSSIA"
-    },
-    "7c1d921484801354ba016fee0b8f7e9bf2d9e9cf1420460d5a044df199fab6ea": {
-      "time": 1795788777,
-      "title": "ИИ-агенты взломали критическую инфраструктуру Швейцарии: успешными оказались 2 из 3 атак - iXBT.com",
-      "desc": "ИИ-агенты взломали критическую инфраструктуру Швейцарии: успешными оказались 2 из 3 атак iXBT.com",
-      "source": "iXBT.com",
-      "region": "RUSSIA"
-    },
     "e4425fc98744131e7bc551628f199f43e64f642c57cd8bb00c68dc8238c575e7": {
       "time": 1795789990,
       "title": "Сбербанк научил ИИ находить ошибки цифровой доступности в сотни раз быстрее человека",
@@ -1871,10 +1891,16 @@
       "desc": "Интересный проект, как рог изобилия. Чем больше делаешь, тем больше идей. Одну фичу запустил — увидел ещё три, которые сделали продукт полезнее. Вместе с идеями росло и количество чатов. Ловишь себя в какой-то момент, что похож на того волка из игры про ловлю яиц. Отвлекся и …. Тогда я начал собирать процесс, в котором агенты доводят задачи от постановки до слияния PR. Дальше история, как я к этому пришёл и во что обошлась попытка доверить агентам разработку. Всё началось с Excel Я двадцать лет работаю в IT, занимаюсь управлением и развитием проектов. Когда-то сам писал на PHP, но основная работа у меня другая. Я ставлю задачи, смотрю результат и отвечаю за то, что в итоге получает пользователь. Как руководитель - часто занимаюсь наймом. А для того, чтобы точно взять к себе в команду нужно человека я пользуюсь тестом DISC. В какой-то момент я просто понял, что это отличный инструмент – еще один взгляд на кандидата. На вакансию могло откликнуться 30–40 человек. Я разбирал результаты теста в Excel – переносил графики в PowerPoint тк шкалы не поддаются формулам. И занимался трактовкой. Каждый раз приходилось смотреть на одни и те же шкалы, сопоставлять их и внимательно собирать картину. Всё, что было в тот момент доступно в онлайне, ну, мягко говоря, было сомнительного качества. В общем много рутинного - ручного труда. И вот на моем пороге появилась ИИшка. Сначала я просто ради фана собрал игру в Telegram «Верю — не верю» . За пару вечеров получилась работающая игра. Я был очень сильно удивлён. До этого путь от идеи до живого продукта ассоциировался у меня с формированием команды, аналитикой, постановкой задач, разработкой, проверками и ожиданием. А здесь я за короткое время получил вещь, которую уже можно было открыть и попробовать. Кстати, бот работает до сих пор. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "e97dc9c745f73a411582ae2833c16faf4257d902d726a2c86ade78ffb4a30047": {
+      "time": 1795875433,
+      "title": "[Перевод] 64 PR до обеда: как ИИ‑агенты ускорили разработку, а я стал узким местом",
+      "desc": "64 пулл-реквеста за два часа — впечатляющий результат работы ИИ‑агентов. Но чем быстрее агенты пишут и объединяют код, тем острее становится вопрос контроля качества: как убедиться, что изменения действительно готовы к релизу? Рассмотрим опыт организации параллельной разработки с помощью 11 агентов Claude Code в трёх проектах, разберём ошибки, проблемы ревью и ограничения автоматизированного тестирования. А также выясним, почему человек может стать главным узким местом в агентной разработке. Читать про эксперимент",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "RUSSIA",
@@ -1893,81 +1919,10 @@
     "RUSSIA",
     "WORLD",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795628461,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 37.63,
-      "candidates": 0,
-      "queue_before": 20,
-      "queue_after": 20,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1795629161,
       "status": "OK",
@@ -22652,11 +22607,148 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795875433,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 32.94,
+      "candidates": 13,
+      "queue_before": 4,
+      "queue_after": 5,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 7,
+        "known_recent": 0,
+        "already_queued": 3,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 2,
+        "candidate_count": 13,
+        "admission_rate": 15.38,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://habr.com/ru/companies/otus/articles/1108096/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1108096",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 7.0,
+          "bonus_total": 42.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость перестройки процессов QA под агентную разработку для предотвращения технического долга.",
+            "title": "[Перевод] 64 PR до обеда: как ИИ‑агенты ускорили разработку, а я стал узким местом",
+            "final_score": 70.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 2,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 63,
+        "raw_items": 623,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 40,
+          "CNews": 0,
+          "Euronews": 21
+        },
+        "score_filtered": 600,
+        "quality_filtered": 6,
+        "story_dedup": 4,
+        "candidates": 13,
+        "candidate_rate": 0.0232,
+        "score_buckets": {
+          "0–39": 577,
+          "40–49": 29,
+          "50–59": 12,
+          "60–69": 4,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 1,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795872804.7468514,
-  "last_publish_ts": 1795872804.7468514,
+  "last_search_ts": 1795875433.9643302,
+  "last_publish_ts": 1795875433.9643302,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
