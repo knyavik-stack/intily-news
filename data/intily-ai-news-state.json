@@ -1,7 +1,5 @@
 {
   "published": {
-    "de0c473f86a261cdff9afe1e30cc2e713ad6ace9b07cabfd49ea1c5485acdca8": 1793258237,
-    "6710080a4dba5e48392d2a39032ccb55a59413f242f0a64e728bc451f030d45d": 1793258476,
     "09eb31fe9cc74f0c36de043281567d7d0be057876f5c7b9ea54aeaa4530e8a2a": 1793259694,
     "ea4c79ca33d155446961742dd91acf209332bd247866fecee0e932155c1c0e2b": 1793260171,
     "39d70e64204995a74b5e44cfd9ca8fbd392d80014122f6b9a51f137a038238f4": 1793261829,
@@ -1416,30 +1414,30 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1795850218.7537432,
+    "last_start_ts": 1795850708.0413742,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795850218.7537432,
-    "last_success_ts": 1795850218.7537432,
+    "last_run_ts": 1795850708.0413742,
+    "last_success_ts": 1795850708.0413742,
     "last_candidates": 7,
     "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795853854.9093091,
-      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
-      "updated_at": 1795850254.9093122
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795850749.1076567
     },
     "GROQ": {
-      "disabled_until": 1795853858.3234773,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795850258.323479
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795850707.938692
     },
     "OPENAI": {
-      "disabled_until": 1795936664.0038528,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795850264.0038545
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795850707.938692
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1447,19 +1445,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795853863.077592,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795850263.0775928
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795850707.938692
     }
   },
   "stories": {
-    "fe43b737f198cb80089ede3a751139bd2d15c4257ecf71c85857318cfc2a7cc3": {
-      "time": 1795764300,
-      "title": "DeepSeek-V4.1-Flash для кодинга и ИИ-агентов в каталоге GPT Model Hub",
-      "desc": "Привет, Хабр! Добавили DeepSeek-V4.1-Flash в GPT Model Hub — сервис для работы с LLM через OpenAI-совместимый API внутри MWS Cloud Platform. В каталоге доступна актуальная версия модели — DeepSeek-V4.1-Flash 1017 . Она подходит для технических задач, создания ИИ-агентов и автоматизации процессов, в которых важны работа с контекстом, следование инструкциям и структурированный вывод. Контекстное окно модели — до 1 млн токенов. Это позволяет передавать на обработку большие документы, объёмные кодовые базы и длинную историю взаимодействия с ИИ-агентом. Модель также поддерживает обработку изображений: на вход можно подавать скриншоты, графики и сканы документов. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "1a5211731ec02a5e87d0b2582b59759142652e36bbc2b259a9520aefb6498095": {
       "time": 1795766228,
       "title": "Я проверил пять открытых анонимайзеров на 2 000 синтетических документах. Даже лучшие пропустили данные в каждом третьем",
@@ -1848,146 +1839,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795607305,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 54.16,
-      "candidates": 27,
-      "queue_before": 15,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 5,
-        "known_recent": 0,
-        "already_queued": 10,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 11,
-        "candidate_count": 27,
-        "admission_rate": 40.74,
-        "dominant_block": "already_queued",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/companies/ggsel/articles/1112204/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1112204",
-            "image_url": "https://habr.com/share/publication/1112204/d3c5da7425011d9837079f478378f192/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 2,
-          "average_score": 7.5,
-          "bonus_total": 45.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 1,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Необходимость срочного пересмотра бюджета на закупку оборудования из-за прогнозируемого дефицита и роста цен.",
-            "title": "NVIDIA вновь сокращает поставки игровых видеокарт: в четвертом квартале квоты урежут на 20–30%",
-            "final_score": 79.0
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 3,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 163,
-        "raw_items": 804,
-        "source_counts": {
-          "TechCrunch AI": 1,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 1,
-          "Ars Technica": 0,
-          "Habr AI/News": 40,
-          "CNews": 79,
-          "Euronews": 42
-        },
-        "score_filtered": 734,
-        "quality_filtered": 35,
-        "story_dedup": 8,
-        "candidates": 27,
-        "candidate_rate": 0.0421,
-        "score_buckets": {
-          "0–39": 690,
-          "40–49": 77,
-          "50–59": 34,
-          "60–69": 2,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 2,
-          "6": 4,
-          "7": 4,
-          "8": 4,
-          "9": 1,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI",
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 1,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795608063,
       "status": "OK",
@@ -21816,10 +21667,140 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1795850708,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 41.09,
+      "candidates": 7,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 6,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 7,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 2,
+          "average_score": 8.5,
+          "bonus_total": 51.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 9.0,
+            "bonus": 27.0,
+            "reason": "Необходим немедленный аудит безопасности систем из-за доказанной уязвимости перед автономными ИИ-агентами.",
+            "title": "ИИ-агенты взломали критическую инфраструктуру Швейцарии: успешными оказались 2 из 3 атак - prospect.com.ru",
+            "final_score": 72.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 39,
+        "raw_items": 304,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 28,
+          "CNews": 0,
+          "Euronews": 11
+        },
+        "score_filtered": 280,
+        "quality_filtered": 13,
+        "story_dedup": 4,
+        "candidates": 7,
+        "candidate_rate": 0.0264,
+        "score_buckets": {
+          "0–39": 264,
+          "40–49": 28,
+          "50–59": 11,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 1,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795850218.7537432,
+  "last_search_ts": 1795850708.0413742,
   "last_publish_ts": 1795848066.0455403,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
