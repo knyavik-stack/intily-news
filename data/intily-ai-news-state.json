@@ -1,7 +1,5 @@
 {
   "published": {
-    "3455aa015506bbaa8a77a9b3f0f98bcbdc128234e3fd6ab1676c8e190e5cb6cf": 1793254877,
-    "b7f07ed65b79cd0bc855f27d101cb3c724f524754a0638c91dea55428e45d1a7": 1793255115,
     "6c08061be7f0703bb02ee3b318513dd770f434caa2768fbd7327f46a721539e6": 1793256079,
     "de0c473f86a261cdff9afe1e30cc2e713ad6ace9b07cabfd49ea1c5485acdca8": 1793258237,
     "6710080a4dba5e48392d2a39032ccb55a59413f242f0a64e728bc451f030d45d": 1793258476,
@@ -1463,30 +1461,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795846626.24982,
+    "last_start_ts": 1795847132.5986073,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795846626.24982,
-    "last_success_ts": 1795846626.24982,
+    "last_run_ts": 1795847132.5986073,
+    "last_success_ts": 1795847132.5986073,
     "last_candidates": 9,
-    "last_published": 1,
+    "last_published": 0,
     "queue_size": 1
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795846668.6148152
+      "disabled_until": 1795850722.407569,
+      "reason": "The read operation timed out",
+      "updated_at": 1795847122.4075718
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795843982.2517135
+      "disabled_until": 1795850725.684987,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795847125.6849895
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795843982.2517135
+      "disabled_until": 1795933532.5977745,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1795847132.5977762
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1494,26 +1492,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795843982.2517135
+      "disabled_until": 1795850731.4664228,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795847131.4664242
     }
   },
   "stories": {
-    "153e4270327a1cc2d98d0ea3bf11b219512e6ef2139ad699f7f9090ccc089974": {
-      "time": 1795760459,
-      "title": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators - The Hacker News",
-      "desc": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators The Hacker News",
-      "source": "The Hacker News",
-      "region": "WORLD"
-    },
-    "7c9f006045dd42b1d5cafe25c226df1be69dfb812d259a92a17025fdccacce10": {
-      "time": 1795760695,
-      "title": "Бизнес просит ускорить рассмотрение в ГД законопроекта об автономном транспорте - Ведомости",
-      "desc": "Бизнес просит ускорить рассмотрение в ГД законопроекта об автономном транспорте Ведомости",
-      "source": "Ведомости",
-      "region": "RUSSIA"
-    },
     "742605e26e21f31900fb46ea351a2a91daf7124a93633d13ecd30f33e2f8bb78": {
       "time": 1795762385,
       "title": "Система продуктивности готова на 100% и работает на 40%: что я понял, став руководителем",
@@ -1909,78 +1893,6 @@
     "WORLD"
   ],
   "run_history": [
-    {
-      "ts": 1795601119,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 49.07,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 19,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 7,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1795602272,
       "status": "OK",
@@ -21672,10 +21584,131 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795847132,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 58.73,
+      "candidates": 9,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 4,
+        "known_recent": 1,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 3,
+        "added": 0,
+        "candidate_count": 9,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 37,
+        "raw_items": 327,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 27,
+          "CNews": 0,
+          "Euronews": 10
+        },
+        "score_filtered": 301,
+        "quality_filtered": 12,
+        "story_dedup": 5,
+        "candidates": 9,
+        "candidate_rate": 0.031,
+        "score_buckets": {
+          "0–39": 284,
+          "40–49": 28,
+          "50–59": 14,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795846626.24982,
+  "last_search_ts": 1795847132.5986073,
   "last_publish_ts": 1795846626.24982,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
