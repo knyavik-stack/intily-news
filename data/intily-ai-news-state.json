@@ -1388,38 +1388,40 @@
     "2b2ea4f5bd74d06d255b3a5ed3e8da4959bdf231d53ced38dfe6d0b3a365479e": 1795878312,
     "5764165e10fdc819e50a18ad98f8a8cd142f38af9877766f4763076c89b0e1a1": 1795878782,
     "c0861bf9e43b8d089c9f295dea7b0938bdb1b24de98ef345d18c51049089a038": 1795880947,
-    "2977b8fec0f7e3b26112139bc35364f9b160edd9e84b331a0a1b7b1cc797559b": 1795881181
+    "2977b8fec0f7e3b26112139bc35364f9b160edd9e84b331a0a1b7b1cc797559b": 1795881181,
+    "ccb9d47a0f1cca4b3d60c80e1fdcdc79da4f6068ba9eaad08335a7b0c7efb50b": 1795881898
   },
   "known": {
     "2b2ea4f5bd74d06d255b3a5ed3e8da4959bdf231d53ced38dfe6d0b3a365479e": 1795877585.467154,
-    "c0861bf9e43b8d089c9f295dea7b0938bdb1b24de98ef345d18c51049089a038": 1795879024.3059256
+    "c0861bf9e43b8d089c9f295dea7b0938bdb1b24de98ef345d18c51049089a038": 1795879024.3059256,
+    "ccb9d47a0f1cca4b3d60c80e1fdcdc79da4f6068ba9eaad08335a7b0c7efb50b": 1795881898.873418
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1795881662.8126287,
+    "last_start_ts": 1795881898.873418,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795881662.8126287,
-    "last_success_ts": 1795881662.8126287,
-    "last_candidates": 12,
-    "last_published": 0,
+    "last_run_ts": 1795881898.873418,
+    "last_success_ts": 1795881898.873418,
+    "last_candidates": 15,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795885310.6508198,
-      "reason": "The read operation timed out",
-      "updated_at": 1795881710.650823
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795881943.8056417
     },
     "GROQ": {
-      "disabled_until": 1795885313.2716684,
-      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795881713.2716706
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795881898.8009396
     },
     "OPENAI": {
-      "disabled_until": 1795968121.0242558,
-      "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795881721.0242574
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795881898.8009396
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1427,9 +1429,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795885320.1091337,
-      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795881720.1091352
+      "disabled_until": 0,
+      "reason": "",
+      "updated_at": 1795881898.8009396
     }
   },
   "stories": {
@@ -1719,11 +1721,17 @@
       "desc": "Sakana AI aims to strengthen Japan’s industrial competitiveness with homegrown AI models.",
       "source": "TechCrunch AI",
       "region": "WORLD"
+    },
+    "ccb9d47a0f1cca4b3d60c80e1fdcdc79da4f6068ba9eaad08335a7b0c7efb50b": {
+      "time": 1795881898,
+      "title": "Убрать пол и возраст из скоринга мало: 9 ловушек аудита предвзятости через SHAP и LIME",
+      "desc": "Банк убирает из GBDT-скоринга колонки gender и age , комплаенс ставит галочку, модель уходит в прод. Но разрыв в одобрениях между мужчинами и женщинами никуда не девается: регион, профессия и канал подачи заявки несут ту же информацию, и бустинг находит её сам, просто минимизируя ошибку на исторических данных. Интуитивный шаг — посчитать SHAP и проверить корреляцию признаков с полом — на практике часто приводит к ложным выводам. Ниже разберём, как развести три разных уровня аудита, на каких девяти методических ловушках спотыкаются SHAP и LIME, и что показал контролируемый эксперимент на UCI German Credit с 20 прогонами XGBoost. Спойлер: объединение SHAP и LIME через пересечение хорошо отсекает лишние признаки, но не даёт бесплатного выигрыша по всем метрикам сразу — на слабом сигнале оно наследует пропуски более осторожного метода. Почему удаление gender не работает Формально заявка описывается вектором признаков X = ( X ₁, …, X ₙ), целевая переменная Y ∈ {0, 1} означает дефолт (1 — дефолт), модель f оценивает вероятность P ( Y = 1 | X ), а решение об одобрении принимается по порогу D = 1 [ f ( X ) A (пол или возраст) из X исключён. Такой подход известен как fairness through unawareness . Он не работает, потому что информация об A утекает в остальные признаки. Признак X ᵢ выступает прокси, если его взаимная информация с A превышает порог: I ( X ᵢ; A ) > ε. Место жительства отражает жилищную сегрегацию, отрасль занятости связана с полом, канал подачи заявки и тип устройства — с возрастом и доходом. Прокси появляются не из-за ошибки инженера, а из статистической структуры общества. Картину усугубляют ещё две вещи. Первая — reject inference : фактический исход Y известен только для выданных кредитов, поэтому если какой-то группе раньше отказывали чаще, эта история уже зашита в обучающие метки. Вторая — предвзятость живёт не в весах классификатора, а в связке «данные + модель + порог τ». Один и тот же бустинг при разных τ даёт разные межгрупповые разрывы. Рис. 1. Механизм возникновения скрытой предвзятости. Атрибут A исключён из X, но статистически связан с прокси S; модель на X = (R, S) выдаёт решение D; аудит сравнивает группы при фиксированных допустимых факторах риска R. Наличие прокси само по себе не доказывает дискриминацию. Оно создаёт канал, по которому дискриминация становится возможной, и этот канал нужно проверять отдельно. Регуляторы требуют двух вещей сразу. В США это ECOA и доктрина disparate impact [6], в ЕС — статья 22 GDPR и AI Act, который относит оценку кредитоспособности к высокорисковым системам. Отсюда два требования к аудиту: измерить разницу решений на сопоставимых заявках и указать, какие признаки её формируют. Три вопроса, которые обычно склеивают в один Уровень Вопрос Чем отвечаем Чего не скажет Читать далее",
+      "source": "Habr AI/News",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "WORLD",
-    "WORLD",
     "RUSSIA",
     "RUSSIA",
     "WORLD",
@@ -1741,81 +1749,10 @@
     "WORLD",
     "RUSSIA",
     "RUSSIA",
-    "WORLD"
+    "WORLD",
+    "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795671654,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 28.85,
-      "candidates": 0,
-      "queue_before": 14,
-      "queue_after": 14,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 10,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "The read operation timed out"
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1795672112,
       "status": "OK",
@@ -22704,11 +22641,152 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1795881898,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 45.42,
+      "candidates": 15,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 13,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 1,
+        "candidate_count": 15,
+        "admission_rate": 6.67,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 1,
+          "validated": 1,
+          "photo_sent": 1,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {
+            "unknown": 1
+          },
+          "last": {
+            "status": "sent",
+            "method": null,
+            "source_url": "https://habr.com/ru/articles/1113578/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1113578",
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": null
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 8.0,
+          "bonus_total": 72.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 3,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Критически важно для финтех-разработчиков и риск-менеджеров для предотвращения регуляторных рисков и ошибок в скоринговых моделях.",
+            "title": "Убрать пол и возраст из скоринга мало: 9 ловушек аудита предвзятости через SHAP и LIME",
+            "final_score": 70.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 9,
+        "direct_feed_errors": 1,
+        "direct_raw_items": 69,
+        "raw_items": 784,
+        "source_counts": {
+          "TechCrunch AI": 1,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": 0,
+          "Hugging Face": 0,
+          "Ars Technica": 1,
+          "Habr AI/News": 40,
+          "CNews": 0,
+          "Euronews": 27
+        },
+        "score_filtered": 757,
+        "quality_filtered": 7,
+        "story_dedup": 5,
+        "candidates": 15,
+        "candidate_rate": 0.021,
+        "score_buckets": {
+          "0–39": 731,
+          "40–49": 33,
+          "50–59": 15,
+          "60–69": 4,
+          "70–79": 1,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795881662.8126287,
-  "last_publish_ts": 1795881181.8022866,
+  "last_search_ts": 1795881898.873418,
+  "last_publish_ts": 1795881898.873418,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
