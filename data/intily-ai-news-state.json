@@ -1,6 +1,5 @@
 {
   "published": {
-    "6c08061be7f0703bb02ee3b318513dd770f434caa2768fbd7327f46a721539e6": 1793256079,
     "de0c473f86a261cdff9afe1e30cc2e713ad6ace9b07cabfd49ea1c5485acdca8": 1793258237,
     "6710080a4dba5e48392d2a39032ccb55a59413f242f0a64e728bc451f030d45d": 1793258476,
     "09eb31fe9cc74f0c36de043281567d7d0be057876f5c7b9ea54aeaa4530e8a2a": 1793259694,
@@ -1418,30 +1417,30 @@
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1795848066.0455403,
+    "last_start_ts": 1795848788.1216547,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795848066.0455403,
-    "last_success_ts": 1795848066.0455403,
-    "last_candidates": 9,
-    "last_published": 1,
+    "last_run_ts": 1795848788.1216547,
+    "last_success_ts": 1795848788.1216547,
+    "last_candidates": 8,
+    "last_published": 0,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795848099.5171256
+      "disabled_until": 1795852450.82756,
+      "reason": "The read operation timed out",
+      "updated_at": 1795848850.8275626
     },
     "GROQ": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795847827.7893405
+      "disabled_until": 1795852452.9347515,
+      "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795848852.9347534
     },
     "OPENAI": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795847827.7893405
+      "disabled_until": 1795935259.0774167,
+      "reason": "DAILY_QUOTA_OR_CREDITS",
+      "updated_at": 1795848859.0774188
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1449,19 +1448,12 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 0,
-      "reason": "",
-      "updated_at": 1795847827.7893405
+      "disabled_until": 1795852457.5466635,
+      "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
+      "updated_at": 1795848857.5466654
     }
   },
   "stories": {
-    "742605e26e21f31900fb46ea351a2a91daf7124a93633d13ecd30f33e2f8bb78": {
-      "time": 1795762385,
-      "title": "Система продуктивности готова на 100% и работает на 40%: что я понял, став руководителем",
-      "desc": "Привет, Хабр! Меня зовут Ренат, я в Сбере руковожу аналитикой в направлении AI PDLC — если по-простому, мы встраиваем ИИ-инструменты в производственный процесс разработки, чтобы аналитики и инженеры работали быстрее и качественнее. Ещё недавно я сам был системным аналитиком и возглавлял небольшой стрим: писал требования, проектировал интеграции, доводил ИИ-агенты от идеи до внедрения своими руками. Потом ролей стало две, обе управленческие, и привычный способ работать сломался за пару недель. Эта статья про то, как я его чинил. Сразу скажу: с первого захода не получилось. Я собрал идеальную систему личной продуктивности — с методологией, документацией и планом, — а через два месяца обнаружил, что на бумаге она готова на 100%, а работает процентов на 40. Разбор этого разрыва дал мне больше, чем сама система. Расскажу, что не взлетело, что я пересобрал, при чём тут GTD, PARA и ИИ-агент, и почему всё в итоге упёрлось не в инструменты, а в 20 минут в день. Читать далее",
-      "source": "Habr AI/News",
-      "region": "RUSSIA"
-    },
     "8c13f5e41b8d3ec5578748f0ab1052e8a663310e991033bbcb4c7a0cd7cf9b01": {
       "time": 1795762859,
       "title": "Как Galaxy S9+ с разбитым экраном стал LTE‑роутером на Debian",
@@ -1864,84 +1856,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795602762,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 21.29,
-      "candidates": 0,
-      "queue_before": 17,
-      "queue_after": 17,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 1,
-          "average_score": 5.0,
-          "bonus_total": 15.0,
-          "max_score": 5.0,
-          "high_fit_8_10": 0,
-          "last": {
-            "score": 5.0,
-            "bonus": 15.0,
-            "reason": "Полезно для HR-стратегии и найма в производственном секторе, но не влияет на AI-стек.",
-            "title": "Spektr и Энергия+ составили рейтинг российских промышленных колледжей",
-            "final_score": 55.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 1,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1795603702,
       "status": "OK",
@@ -21734,10 +21648,143 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795848788,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "admission_blocked_published_key",
+      "searched": true,
+      "duration_sec": 70.99,
+      "candidates": 8,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 7,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 8,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 1,
+          "average_score": 8.0,
+          "bonus_total": 24.0,
+          "max_score": 8.0,
+          "high_fit_8_10": 1,
+          "last": {
+            "score": 8.0,
+            "bonus": 24.0,
+            "reason": "Необходимость пересмотра процессов разработки и контроля качества при внедрении ИИ-агентов в дизайн-команды.",
+            "title": "Вайбкодинг для дизайнеров: разрешить нельзя запретить",
+            "final_score": 74.5
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 63,
+        "query_errors": 1,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 33,
+        "raw_items": 323,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 26,
+          "CNews": 0,
+          "Euronews": 7
+        },
+        "score_filtered": 304,
+        "quality_filtered": 9,
+        "story_dedup": 2,
+        "candidates": 8,
+        "candidate_rate": 0.0276,
+        "score_buckets": {
+          "0–39": 286,
+          "40–49": 26,
+          "50–59": 10,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GROQ",
+          "OPENROUTER",
+          "OPENAI"
+        ],
+        "used": "GEMINI",
+        "failovers": 0,
+        "failures": 4,
+        "blocked": 4,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "The read operation timed out"
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795848066.0455403,
+  "last_search_ts": 1795848788.1216547,
   "last_publish_ts": 1795848066.0455403,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
