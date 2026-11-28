@@ -1,6 +1,5 @@
 {
   "published": {
-    "224303e45359ee180ba1d6fd28d22282a688b93d32d23dd6465cec4aadf2bc1e": 1793268551,
     "8694680240fdc14e1aa838aec11fddc8abb60c24118553939070c41d346e1c66": 1793268782,
     "5f9e623e3f6139ac7751a69d7c43af05ec7576c8aff43685e5ca74279ead242c": 1793269267,
     "0ead3e241535bfa9d4e4f82a124876a461aa668518d8f85c156d70ad830aa31a": 1793269995,
@@ -1393,27 +1392,29 @@
     "f21991e14d3573dd3fca5c9a842220df31ffb171314c9df0a88472a158ab52b7": 1795847829,
     "612d0b749012a82b30d6fa213da93f2d782f065760a1ab21337d0bdce2f5e09a": 1795848066,
     "f2b20ad665241c0a0b70c4b75605ac86d4476fd99bd552d02709c1d5aa2dd214": 1795855504,
-    "5982b299b702174e52c6d444bb56659d883e612010280d2acc2477b9dcc210be": 1795859582
+    "5982b299b702174e52c6d444bb56659d883e612010280d2acc2477b9dcc210be": 1795859582,
+    "88934e7cc9826c14d15d239e03bc5f7f08520717229296e0e3ccf467e66b8dc9": 1795860779
   },
   "known": {
-    "5982b299b702174e52c6d444bb56659d883e612010280d2acc2477b9dcc210be": 1795859582.3119435
+    "5982b299b702174e52c6d444bb56659d883e612010280d2acc2477b9dcc210be": 1795859582.3119435,
+    "88934e7cc9826c14d15d239e03bc5f7f08520717229296e0e3ccf467e66b8dc9": 1795860779.2634513
   },
   "queue": [],
   "health": {
-    "last_start_ts": 1795860545.9891453,
+    "last_start_ts": 1795860779.2634513,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795860545.9891453,
-    "last_success_ts": 1795860545.9891453,
-    "last_candidates": 7,
-    "last_published": 0,
+    "last_run_ts": 1795860779.2634513,
+    "last_success_ts": 1795860779.2634513,
+    "last_candidates": 8,
+    "last_published": 1,
     "queue_size": 0
   },
   "providers": {
     "GEMINI": {
       "disabled_until": 0,
       "reason": "",
-      "updated_at": 1795860578.928813
+      "updated_at": 1795860827.4278333
     },
     "GROQ": {
       "disabled_until": 0,
@@ -1758,11 +1759,17 @@
       "desc": "Google DeepMind предоставляет ИИ‑агентам возможность самостоятельно проводить эксперименты для создания следующей версии модели Gemini. Читать далее",
       "source": "Habr AI/News",
       "region": "RUSSIA"
+    },
+    "88934e7cc9826c14d15d239e03bc5f7f08520717229296e0e3ccf467e66b8dc9": {
+      "time": 1795860779,
+      "title": "Сбер представил технологию автоматического совершенствования ИИ-агентов - ТАСС",
+      "desc": "Сбер представил технологию автоматического совершенствования ИИ-агентов ТАСС",
+      "source": "ТАСС",
+      "region": "RUSSIA"
     }
   },
   "publication_regions": [
     "RUSSIA",
-    "RUSSIA",
     "WORLD",
     "RUSSIA",
     "RUSSIA",
@@ -1780,81 +1787,10 @@
     "RUSSIA",
     "RUSSIA",
     "WORLD",
+    "RUSSIA",
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795615492,
-      "status": "OK",
-      "business_result": "NO_PUBLISH",
-      "business_reason": "no_eligible_item",
-      "searched": false,
-      "duration_sec": 32.91,
-      "candidates": 0,
-      "queue_before": 19,
-      "queue_after": 19,
-      "published": 0,
-      "publish_attempts": 0,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 0,
-        "known_recent": 0,
-        "already_queued": 0,
-        "story_queue": 0,
-        "story_history": 0,
-        "added": 0,
-        "candidate_count": 0,
-        "admission_rate": 0.0,
-        "dominant_block": "published_key",
-        "image": {
-          "attempts": 0,
-          "found": 0,
-          "validated": 0,
-          "photo_sent": 0,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {},
-          "last": null
-        },
-        "audience": {
-          "evaluated": 0,
-          "average_score": null,
-          "bonus_total": 0.0,
-          "max_score": null,
-          "high_fit_8_10": 0,
-          "last": null
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {},
-      "provider": {
-        "attempts": [],
-        "used": null,
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": true,
-          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
-        },
-        "GROQ": {
-          "blocked": true,
-          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
-        },
-        "OPENAI": {
-          "blocked": true,
-          "reason": "DAILY_QUOTA_OR_CREDITS"
-        }
-      }
-    },
     {
       "ts": 1795616924,
       "status": "OK",
@@ -22135,11 +22071,152 @@
           "reason": ""
         }
       }
+    },
+    {
+      "ts": 1795860779,
+      "status": "OK",
+      "business_result": "PUBLISHED",
+      "business_reason": "telegram_delivery_ok",
+      "searched": true,
+      "duration_sec": 49.84,
+      "candidates": 8,
+      "queue_before": 0,
+      "queue_after": 0,
+      "published": 1,
+      "publish_attempts": 1,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 5,
+        "known_recent": 0,
+        "already_queued": 0,
+        "story_queue": 0,
+        "story_history": 2,
+        "added": 1,
+        "candidate_count": 8,
+        "admission_rate": 12.5,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 1,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 1,
+          "fallback_reasons": {
+            "IMAGE_NOT_FOUND": 1
+          },
+          "sources": {},
+          "last": {
+            "status": "fallback_text",
+            "method": null,
+            "source_url": null,
+            "image_url": null,
+            "width": null,
+            "height": null,
+            "error": "IMAGE_NOT_FOUND"
+          }
+        },
+        "audience": {
+          "evaluated": 3,
+          "average_score": 8.0,
+          "bonus_total": 72.0,
+          "max_score": 9.0,
+          "high_fit_8_10": 2,
+          "last": {
+            "score": 7.0,
+            "bonus": 21.0,
+            "reason": "Снижение операционных затрат на поддержку ИИ-агентов за счет автоматизации цикла дообучения.",
+            "title": "Сбер представил технологию автоматического совершенствования ИИ-агентов - ТАСС",
+            "final_score": 64.0
+          }
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 0,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 58,
+        "query_errors": 6,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 48,
+        "raw_items": 349,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 34,
+          "CNews": 0,
+          "Euronews": 14
+        },
+        "score_filtered": 327,
+        "quality_filtered": 11,
+        "story_dedup": 3,
+        "candidates": 8,
+        "candidate_rate": 0.0266,
+        "score_buckets": {
+          "0–39": 312,
+          "40–49": 25,
+          "50–59": 12,
+          "60–69": 0,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [
+          "GEMINI",
+          "GEMINI",
+          "GEMINI"
+        ],
+        "used": "GEMINI",
+        "failovers": 2,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": false,
+          "reason": ""
+        },
+        "GROQ": {
+          "blocked": false,
+          "reason": ""
+        },
+        "OPENAI": {
+          "blocked": false,
+          "reason": ""
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795860545.9891453,
-  "last_publish_ts": 1795859582.3119435,
+  "last_search_ts": 1795860779.2634513,
+  "last_publish_ts": 1795860779.2634513,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
     "GROQ": "f7754fa8ff178d5e",
