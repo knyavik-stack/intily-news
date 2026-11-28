@@ -1444,30 +1444,30 @@
     }
   ],
   "health": {
-    "last_start_ts": 1795854306.3510187,
+    "last_start_ts": 1795854793.7381997,
     "last_status": "OK",
     "last_error": "",
-    "last_run_ts": 1795854306.3510187,
-    "last_success_ts": 1795854306.3510187,
+    "last_run_ts": 1795854793.7381997,
+    "last_success_ts": 1795854793.7381997,
     "last_candidates": 7,
     "last_published": 0,
     "queue_size": 1
   },
   "providers": {
     "GEMINI": {
-      "disabled_until": 1795857971.1890388,
-      "reason": "The read operation timed out",
-      "updated_at": 1795854371.1890419
+      "disabled_until": 1795858384.521757,
+      "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",",
+      "updated_at": 1795854784.5217597
     },
     "GROQ": {
-      "disabled_until": 1795857974.304421,
+      "disabled_until": 1795858387.5888596,
       "reason": "GROQ_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795854374.3044224
+      "updated_at": 1795854787.588862
     },
     "OPENAI": {
-      "disabled_until": 1795940780.2301123,
+      "disabled_until": 1795941193.737554,
       "reason": "DAILY_QUOTA_OR_CREDITS",
-      "updated_at": 1795854380.230114
+      "updated_at": 1795854793.737556
     },
     "GITHUB_MODELS": {
       "disabled_until": 0,
@@ -1475,9 +1475,9 @@
       "updated_at": 1789464749.646598
     },
     "OPENROUTER": {
-      "disabled_until": 1795857979.330345,
+      "disabled_until": 1795858392.829981,
       "reason": "OPENROUTER_EMPTY_OR_INVALID_CONTENT",
-      "updated_at": 1795854379.3303466
+      "updated_at": 1795854792.829983
     }
   },
   "stories": {
@@ -1855,145 +1855,6 @@
     "RUSSIA"
   ],
   "run_history": [
-    {
-      "ts": 1795609234,
-      "status": "OK",
-      "business_result": "PUBLISHED",
-      "business_reason": "telegram_delivery_ok",
-      "searched": true,
-      "duration_sec": 39.63,
-      "candidates": 16,
-      "queue_before": 19,
-      "queue_after": 19,
-      "published": 1,
-      "publish_attempts": 1,
-      "item_failures": 0,
-      "admission": {
-        "published_key": 3,
-        "known_recent": 3,
-        "already_queued": 6,
-        "story_queue": 0,
-        "story_history": 1,
-        "added": 3,
-        "candidate_count": 16,
-        "admission_rate": 18.75,
-        "dominant_block": "already_queued",
-        "image": {
-          "attempts": 1,
-          "found": 1,
-          "validated": 1,
-          "photo_sent": 1,
-          "text_fallback": 0,
-          "fallback_reasons": {},
-          "sources": {
-            "og_image": 1
-          },
-          "last": {
-            "status": "sent",
-            "method": "og_image",
-            "source_url": "https://habr.com/ru/companies/ggsel/articles/1112204/?utm_source=habrahabr&utm_medium=rss&utm_campaign=1112204",
-            "image_url": "https://habr.com/share/publication/1112204/d3c5da7425011d9837079f478378f192/",
-            "width": 1200,
-            "height": 630,
-            "error": null
-          }
-        },
-        "audience": {
-          "evaluated": 3,
-          "average_score": 7.0,
-          "bonus_total": 63.0,
-          "max_score": 8.0,
-          "high_fit_8_10": 2,
-          "last": {
-            "score": 8.0,
-            "bonus": 24.0,
-            "reason": "Рост стоимости оборудования требует немедленного пересмотра бюджета на закупку вычислительных мощностей для AI-проектов.",
-            "title": "NVIDIA вновь сокращает поставки игровых видеокарт: в четвертом квартале квоты урежут на 20–30%",
-            "final_score": 78.5
-          }
-        },
-        "queue_score_audit": {
-          "pre_ai_below_final_threshold": 2,
-          "final_below_threshold": 0,
-          "invariant_ok": true
-        }
-      },
-      "rss": {
-        "queries_attempted": 64,
-        "queries_ok": 64,
-        "query_errors": 0,
-        "direct_feeds_attempted": 10,
-        "direct_feeds_ok": 9,
-        "direct_feed_errors": 1,
-        "direct_raw_items": 171,
-        "raw_items": 1020,
-        "source_counts": {
-          "TechCrunch AI": 0,
-          "VentureBeat AI": -1,
-          "The Verge AI": 0,
-          "OpenAI News": 0,
-          "Google DeepMind": 0,
-          "Hugging Face": 1,
-          "Ars Technica": 1,
-          "Habr AI/News": 40,
-          "CNews": 83,
-          "Euronews": 46
-        },
-        "score_filtered": 968,
-        "quality_filtered": 32,
-        "story_dedup": 4,
-        "candidates": 16,
-        "candidate_rate": 0.0188,
-        "score_buckets": {
-          "0–39": 909,
-          "40–49": 88,
-          "50–59": 21,
-          "60–69": 1,
-          "70–79": 1,
-          "80–84": 0,
-          "85–89": 0,
-          "90–100": 0
-        },
-        "audience_buckets": {
-          "1": 0,
-          "2": 0,
-          "3": 0,
-          "4": 0,
-          "5": 2,
-          "6": 4,
-          "7": 4,
-          "8": 5,
-          "9": 1,
-          "10": 0
-        },
-        "audience_stage": "post_editorial"
-      },
-      "provider": {
-        "attempts": [
-          "GEMINI"
-        ],
-        "used": "GEMINI",
-        "failovers": 0,
-        "failures": 0,
-        "blocked": 0,
-        "skipped_no_key": 0,
-        "retries": 0
-      },
-      "provider_state": {
-        "GEMINI": {
-          "blocked": false,
-          "reason": ""
-        },
-        "GROQ": {
-          "blocked": false,
-          "reason": ""
-        },
-        "OPENAI": {
-          "blocked": false,
-          "reason": ""
-        }
-      }
-    },
     {
       "ts": 1795609479,
       "status": "OK",
@@ -21874,10 +21735,131 @@
           "reason": "DAILY_QUOTA_OR_CREDITS"
         }
       }
+    },
+    {
+      "ts": 1795854793,
+      "status": "OK",
+      "business_result": "NO_PUBLISH",
+      "business_reason": "no_eligible_item",
+      "searched": true,
+      "duration_sec": 34.83,
+      "candidates": 7,
+      "queue_before": 1,
+      "queue_after": 1,
+      "published": 0,
+      "publish_attempts": 0,
+      "item_failures": 0,
+      "admission": {
+        "published_key": 5,
+        "known_recent": 0,
+        "already_queued": 1,
+        "story_queue": 0,
+        "story_history": 1,
+        "added": 0,
+        "candidate_count": 7,
+        "admission_rate": 0.0,
+        "dominant_block": "published_key",
+        "image": {
+          "attempts": 0,
+          "found": 0,
+          "validated": 0,
+          "photo_sent": 0,
+          "text_fallback": 0,
+          "fallback_reasons": {},
+          "sources": {},
+          "last": null
+        },
+        "audience": {
+          "evaluated": 0,
+          "average_score": null,
+          "bonus_total": 0.0,
+          "max_score": null,
+          "high_fit_8_10": 0,
+          "last": null
+        },
+        "queue_score_audit": {
+          "pre_ai_below_final_threshold": 1,
+          "final_below_threshold": 0,
+          "invariant_ok": true
+        }
+      },
+      "rss": {
+        "queries_attempted": 64,
+        "queries_ok": 64,
+        "query_errors": 0,
+        "direct_feeds_attempted": 10,
+        "direct_feeds_ok": 8,
+        "direct_feed_errors": 2,
+        "direct_raw_items": 43,
+        "raw_items": 350,
+        "source_counts": {
+          "TechCrunch AI": 0,
+          "VentureBeat AI": -1,
+          "The Verge AI": 0,
+          "OpenAI News": 0,
+          "Google DeepMind": -1,
+          "Hugging Face": 0,
+          "Ars Technica": 0,
+          "Habr AI/News": 30,
+          "CNews": 0,
+          "Euronews": 13
+        },
+        "score_filtered": 327,
+        "quality_filtered": 12,
+        "story_dedup": 4,
+        "candidates": 7,
+        "candidate_rate": 0.0228,
+        "score_buckets": {
+          "0–39": 313,
+          "40–49": 25,
+          "50–59": 11,
+          "60–69": 1,
+          "70–79": 0,
+          "80–84": 0,
+          "85–89": 0,
+          "90–100": 0
+        },
+        "audience_buckets": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0
+        },
+        "audience_stage": "post_editorial"
+      },
+      "provider": {
+        "attempts": [],
+        "used": null,
+        "failovers": 0,
+        "failures": 0,
+        "blocked": 0,
+        "skipped_no_key": 0,
+        "retries": 0
+      },
+      "provider_state": {
+        "GEMINI": {
+          "blocked": true,
+          "reason": "GEMINI_HTTP_503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\","
+        },
+        "GROQ": {
+          "blocked": true,
+          "reason": "GROQ_EMPTY_OR_INVALID_CONTENT"
+        },
+        "OPENAI": {
+          "blocked": true,
+          "reason": "DAILY_QUOTA_OR_CREDITS"
+        }
+      }
     }
   ],
   "kpi_monitoring_enabled": true,
-  "last_search_ts": 1795854306.3510187,
+  "last_search_ts": 1795854793.7381997,
   "last_publish_ts": 1795848066.0455403,
   "_provider_key_fingerprints": {
     "GEMINI": "59e3b5a021c25401",
